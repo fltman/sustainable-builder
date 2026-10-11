@@ -120,13 +120,23 @@ for x0, y0, x1, y1 in DATA['curbs']:
 wz = DATA['water_z']
 for x0, y0, x1, y1 in DATA['shore']:
     geo.wall((x0, y0), (x1, y1), wz - 1.2, 0.0, 'M_Quay', uvscale=2.0)
+# Flat bridges: a parapet and a fascia down towards the water – in a place of arched bridges (Venice) the arches'
+# brick and stone and a shallower fascia, so the few bridges left flat (an L over the water, a pontoon) match them.
+FLAT = DATA.get('bridge_style') or {}
+flat_body, flat_cap, fascia = ((FLAT.get('body', 'M_Wall_Brick_red_Blank'), FLAT.get('cap', 'M_Fixture_Stone'), -0.45)
+                               if FLAT.get('style') == 'arch' else ('M_Concrete', 'M_Concrete', -0.9))
 for x0, y0, x1, y1 in DATA['bridge_edges']:
     L = math.hypot(x1 - x0, y1 - y0)
     if L < 0.1:
         continue
     nx, ny = (y1 - y0) / L, -(x1 - x0) / L  # outward, towards the water
-    geo.box_between((x0 - nx * 0.15, y0 - ny * 0.15), (x1 - nx * 0.15, y1 - ny * 0.15), 0.3, 0.02, 1.05, 'M_Concrete')
-    geo.wall((x0, y0), (x1, y1), -0.9, 0.02, 'M_Concrete')
+    p, q = (x0 - nx * 0.15, y0 - ny * 0.15), (x1 - nx * 0.15, y1 - ny * 0.15)
+    if flat_cap == flat_body:
+        geo.box_between(p, q, 0.3, 0.02, 1.05, flat_body)
+    else:
+        geo.box_between(p, q, 0.3, 0.02, 0.95, flat_body)
+        geo.box_between(p, q, 0.34, 0.95, 1.05, flat_cap)
+    geo.wall((x0, y0), (x1, y1), fascia, 0.02, flat_body)
 h = DATA['half'] + 400
 geo.quad([(-h, -h, wz), (h, -h, wz), (h, h, wz), (-h, h, wz)], 'M_Water', uvscale=8.0)
 geo.to_object('SM_Ground_Edges_Water', G, 'base', M)
@@ -267,6 +277,26 @@ if TERRAIN:
     txt = bpy.data.texts.new('wb_terrain.json')
     txt.write(json.dumps({'x0': t['x0'], 'y0': t['y0'], 'step': t['step'], 'n': t['n'], 'd': t['d']}))
     log('terrain', f'{min(t["d"]):.1f}–{max(t["d"]):.1f} m, {len(founded)} buildings on their base')
+
+# ------------------------------------------------------------------------------------------ arched bridges
+# Bridges vaulted over the canals where the place asks for them (overrides.json defaults.bridges: Venice), built
+# after the lift at their own absolute heights: from the street at either end up over a boat's head.
+SPANS = DATA.get('bridge_spans') or []
+if SPANS:
+    bs = DATA.get('bridge_style') or {}
+    mats = (bs.get('body', 'M_Wall_Brick_red_Blank'), bs.get('trim', 'M_Fixture_Stone'), bs.get('steps', 'M_Ground_Paving'),
+            bs.get('cap', 'M_Fixture_Stone'), bs.get('rail', 'M_Furniture_Metal'))
+    sys.path.append(str(Path(__file__).resolve().parents[1]))
+    import bridges  # noqa: E402 – pipeline/bridges.py: the profile the site's map shares (make_pack.py)
+    ground = bridges.sampler(DATA.get('terrain'), STYLE['surfaces'].get('paving', {}).get('z', 0.03))
+    geo = Geo()
+    for sp in SPANS:
+        pr = bridges.profile(sp, ground, wz)
+        rng = random.Random(f'bridge {sp["a"]} {sp["b"]}')
+        if pr:
+            citylib.arch_bridge(geo, pr, mats, railing=rng.random() < bs.get('railings', 0.35))
+    geo.to_object('SM_Bridges_Arched', G, 'base', M)
+    log('arched bridges', len(SPANS))
 
 # ------------------------------------------------------------------------------------------ light, world, cameras
 world = bpy.data.worlds.new('Dusk')

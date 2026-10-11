@@ -1,6 +1,12 @@
 {
   "defaults": {
     "rest": "paving",
+    "bridges": {
+      "note": "Venice's footbridges: brick vaults over the canals with steps, parapets or iron railings and white Istrian stone",
+      "style": "arch",
+      "body": "M_Wall_Brick_salmon_Blank",
+      "railings": 0.4
+    },
     "terrain_datum": {
       "name": "ZMPS",
       "offset": 0.23

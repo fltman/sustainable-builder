@@ -14,6 +14,9 @@ speaks Italian and English (`langs: ['it', 'en']`).
   Procuratie, the Libreria and Zecca, the Torre dell'Orologio, the Piazzetta's columns, the Bridge of
   Sighs, the Salute, the Dogana, San Giorgio Maggiore, and the Rialto and Accademia bridges (shared
   drawing code in `custom/lib/vkit.py`; the bridge scripts also clear the generated deck under the arch).
+  The footbridges over the rii are vaulted (`defaults.bridges`): brick arches with Istrian stone, steps up to
+  a level crown and parapets or iron railings, high enough for a gondola to pass under; the few that turn
+  over the water or stop short of a quay keep a flat deck in the same brick and stone.
 - `vision/` – every module of the site, written in Swedish with English and Italian dictionaries
   (`en/`, `it/`), and the research behind it: 413 sourced records in `research/`, from seven
   deep-research topics. The film (`film.js`) runs 98 s in Italian and English.

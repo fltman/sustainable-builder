@@ -335,6 +335,7 @@ def main(argv=None):
 
     # ---------------------------------------------------------------- roads
     car, cobble, paving, soft, sidewalk_bands, passages, bridges = [], [], [], [], [], [], []
+    bridge_lines = []  # (centre line, width, strip) of every mapped bridge, for the arched ones below
     roads_out = []
     road_overrides = json.loads((folder / 'overrides.json').read_text()).get('roads', {}) if (folder / 'overrides.json').exists() else {}
     for el, t, g in osm.lines(lambda t: 'highway' in t):
@@ -369,6 +370,7 @@ def main(argv=None):
                 passages.append(g.buffer(w / 2 + 0.3, cap_style=2))
             if t.get('bridge') and t.get('bridge') != 'no':
                 bridges.append(strip)
+                bridge_lines.append((g, w, strip))
             # Sidewalks: tagged sides, or both sides of urban streets unless mapped separately.
             sw = t.get('sidewalk', t.get('sidewalk:both', ''))
             if hw in SIDEWALK_CLASSES and sw not in ('no', 'none', 'separate') and t.get('sidewalk:both') != 'separate':
@@ -391,6 +393,7 @@ def main(argv=None):
                 paving.append(strip)
             if t.get('bridge') and t.get('bridge') != 'no':
                 bridges.append(strip)
+                bridge_lines.append((g, w, strip))
             if t.get('tunnel') == 'building_passage' or t.get('covered') == 'yes':
                 passages.append(g.buffer(w / 2 + 0.3, cap_style=2))
             roads_out.append({'id': f'w{el["id"]}', 'name': t.get('name') or '', 'kind': hw, 'w': round(w, 1),
@@ -405,6 +408,76 @@ def main(argv=None):
             paving.append(g)
     passage = unary_union(passages) if passages else Polygon()
     bridge = unary_union(bridges).intersection(water.buffer(0.5)) if bridges else Polygon()
+    # Arched bridges (overrides.json "defaults": {"bridges": {"style": "arch"}} – Venice's stone bridges over its
+    # canals): where a bridge's centre line crosses the water from quay to quay, a span that build_city.py vaults,
+    # with steps up to a crown and parapets, high enough for a boat to pass under. The flat deck and its edges
+    # give way there.
+    bridge_spans = []
+    if (defaults.get('bridges') or {}).get('style') == 'arch' and bridge_lines:
+        joined = unary_union([g for g, _, _ in bridge_lines])
+        merged = linemerge([joined] if joined.geom_type == 'LineString' else joined)   # a bridge mapped in pieces is one span
+        arched, flat, flat_out, companions = [], defaultdict(int), [], []
+        for line in getattr(merged, 'geoms', [merged]):
+            widths = [w for g, w, _ in bridge_lines if g.intersects(line)]
+            over = line.intersection(water)
+            for seg in getattr(over, 'geoms', [over]):
+                if not widths or seg.is_empty or seg.geom_type != 'LineString':
+                    continue
+                a, b = Point(seg.coords[0]), Point(seg.coords[-1])
+                L = a.distance(b)
+                if 1.5 <= L <= 45:
+                    # A mapped bridge often stops a metre or two short of the quay: carry it on along its own line.
+                    a, b = reach_land(a, b, land), reach_land(b, a, land)
+                    L = a.distance(b) if a and b else L
+                # From quay to quay across the canal (or obliquely over it), its middle well out on the water, and
+                # straight – not a walkway along the water, nor a bridge that turns over the water (an L), nor one
+                # leaving the play area. Anything else keeps its flat deck.
+                why = ('size' if not 1.5 <= L <= 48 else 'not quay to quay' if not (a and b)
+                       else 'edge' if not (B.contains(a) and B.contains(b))
+                       else 'along the water' if land.distance(Point((a.x + b.x) / 2, (a.y + b.y) / 2)) < 0.15 * L
+                       else 'turning over the water' if LineString([seg.coords[0], seg.coords[-1]]).hausdorff_distance(seg) > max(1.8, 0.18 * L) else None)
+                if why:
+                    flat[why] += 1
+                    p, q = Point(seg.coords[0]), Point(seg.coords[-1])
+                    flat_out.append({'why': why, 'a': [r2(p.x), r2(p.y)], 'b': [r2(q.x), r2(q.y)], 'land': [r2(land.distance(p)), r2(land.distance(q))],
+                                     'bend': r2(LineString([p, q]).hausdorff_distance(seg))})
+                    if why == 'not quay to quay' and p.distance(q) >= 1.5:   # perhaps the other walkway of an arched bridge
+                        cut = LineString([p, q]).buffer(max(widths) / 2 + 0.6, cap_style=2)
+                        companions.append({'a': (p.x, p.y), 'b': (q.x, q.y), 'w': max(widths),
+                                           'cut': [cut] + [s.intersection(cut.buffer(1.0)) for _, _, s in bridge_lines if s.intersects(cut)]})
+                    continue
+                w = max(widths)
+                bridge_spans.append({'a': [r2(a.x), r2(a.y)], 'b': [r2(b.x), r2(b.y)], 'w': round(w, 2)})
+                # The flat deck gives way over the crossing and a metre around it, and nowhere else.
+                ux, uy = (b.x - a.x) / L, (b.y - a.y) / L
+                rect = LineString([(a.x - ux * 0.6, a.y - uy * 0.6), (b.x + ux * 0.6, b.y + uy * 0.6)]).buffer(w / 2 + 0.05, cap_style=2)
+                near = rect.buffer(1.0)
+                arched += [rect] + [s.intersection(near) for _, _, s in bridge_lines if s.intersects(near)]
+        # A walkway that stops short of the quays right beside an arched bridge, parallel to it, is the same bridge
+        # mapped as two ways: the arch widens to carry both, and that deck gives way too.
+        for c in companions:
+            cl = math.dist(c['a'], c['b'])
+            cu, (cmx, cmy) = ((c['b'][0] - c['a'][0]) / cl, (c['b'][1] - c['a'][1]) / cl), ((c['a'][0] + c['b'][0]) / 2, (c['a'][1] + c['b'][1]) / 2)
+            for s in bridge_spans:
+                (ax, ay), (bx, by) = s['a'], s['b']
+                L = math.dist((ax, ay), (bx, by))
+                ux, uy = (bx - ax) / L, (by - ay) / L
+                along, off = (cmx - ax) * ux + (cmy - ay) * uy, -(cmx - ax) * uy + (cmy - ay) * ux
+                if abs(ux * cu[0] + uy * cu[1]) < 0.94 or not 0 <= along <= L or abs(off) > (s['w'] + c['w']) / 2 + 2.0:
+                    continue
+                lo, hi = min(-s['w'] / 2, off - c['w'] / 2), max(s['w'] / 2, off + c['w'] / 2)
+                mid = (lo + hi) / 2
+                s.update(a=[r2(ax - uy * mid), r2(ay + ux * mid)], b=[r2(bx - uy * mid), r2(by + ux * mid)], w=round(hi - lo, 2))
+                arched += c['cut']
+                flat['not quay to quay'] -= 1
+                flat['beside an arch, widening it'] += 1
+                break
+        if arched:
+            bridge = bridge.difference(unary_union(arched))
+            bridge = unary_union([p for p in getattr(bridge, 'geoms', [bridge]) if p.area >= 3.0])   # no slivers of deck left
+        bridge_spans = merge_spans(bridge_spans)
+        say(f'  arched bridges: {len(bridge_spans)}' + (f' (pieces kept flat: {", ".join(f"{n} {k}" for k, n in flat.items())})' if flat else ''))
+        (folder / 'bridges-flat.json').write_text(json.dumps(flat_out, indent=0))   # for review: what stayed flat, and why
     walkable_land = land.union(bridge)
 
     # ---------------------------------------------------------------- buildings
@@ -837,6 +910,7 @@ def main(argv=None):
     out = {
         'version': 1, 'place': place, 'half': half, 'cell': CELL, 'water_z': STYLE['water_z'],
         'surfaces': out_layers, 'curbs': curbs, 'shore': shore, 'bridge_edges': bridge_edges,
+        'bridge_spans': bridge_spans, 'bridge_style': defaults.get('bridges') or {},
         'buildings': buildings, 'walls': walls, 'trees': trees + garden_trees, 'props': props, 'barriers': barriers,
         'rails': [[[r2(x), r2(y)] for x, y in g.intersection(B).coords] for g in rail_lines if g.intersection(B).geom_type == 'LineString'],
         'trams': [[[r2(x), r2(y)] for x, y in g.intersection(B).coords] for g in tram_lines if g.intersection(B).geom_type == 'LineString'],
@@ -876,6 +950,56 @@ def container_ring(c):
 
 def cell_of(pt):
     return [math.floor(pt.x / CELL), math.floor(pt.y / CELL)]
+
+
+def reach_land(p, q, land, beyond=6.0):
+    """The point where the line from q through p reaches the land at or beyond p (at most `beyond` metres on),
+    or None."""
+    L = p.distance(q)
+    ux, uy = (p.x - q.x) / L, (p.y - q.y) / L
+    for k in range(int(beyond / 0.25) + 1):
+        t = Point(p.x + ux * 0.25 * k, p.y + uy * 0.25 * k)
+        if land.distance(t) <= 0.3:
+            return t
+    return None
+
+
+def merge_spans(spans):
+    """One bridge mapped as two ways is one span: two crossings in a line (the halves of a bridge, or two crossings
+    over a sliver of land between them), or two side by side (a wide bridge mapped as two walkways)."""
+    def geo(s):
+        (ax, ay), (bx, by) = s['a'], s['b']
+        L = math.dist((ax, ay), (bx, by))
+        return (ax, ay), (bx, by), L, ((bx - ax) / L, (by - ay) / L), ((ax + bx) / 2, (ay + by) / 2)
+    spans = list(spans)
+    changed = True
+    while changed:
+        changed = False
+        for i in range(len(spans)):
+            for j in range(i + 1, len(spans)):
+                (a1, b1, L1, u1, m1), (a2, b2, L2, u2, m2) = geo(spans[i]), geo(spans[j])
+                cos, new = u1[0] * u2[0] + u1[1] * u2[1], None
+                off = lambda p: abs(-(p[0] - a1[0]) * u1[1] + (p[1] - a1[1]) * u1[0])      # across span i's line
+                at = lambda p: (p[0] - a1[0]) * u1[0] + (p[1] - a1[1]) * u1[1]              # along it
+                if abs(cos) > 0.94 and off(a2) < 1.2 and off(b2) < 1.2 and \
+                        min(at(a2), at(b2)) <= L1 + 0.6 and max(at(a2), at(b2)) >= -0.6:   # in a line, touching: their whole extent
+                    lo, hi = min(0.0, at(a2), at(b2)), max(L1, at(a2), at(b2))
+                    new = {'a': [r2(a1[0] + u1[0] * lo), r2(a1[1] + u1[1] * lo)], 'b': [r2(a1[0] + u1[0] * hi), r2(a1[1] + u1[1] * hi)],
+                           'w': max(spans[i]['w'], spans[j]['w'])}
+                elif abs(cos) > 0.98:                 # side by side: one wider span between them
+                    vx, vy = m2[0] - m1[0], m2[1] - m1[1]
+                    across = abs(-vx * u1[1] + vy * u1[0])
+                    if abs(vx * u1[0] + vy * u1[1]) < (L1 + L2) / 4 and across < (spans[i]['w'] + spans[j]['w']) / 2 + 1.0:
+                        mx, my, h = (m1[0] + m2[0]) / 2, (m1[1] + m2[1]) / 2, max(L1, L2) / 2
+                        new = {'a': [r2(mx - u1[0] * h), r2(my - u1[1] * h)], 'b': [r2(mx + u1[0] * h), r2(my + u1[1] * h)],
+                               'w': round(across + (spans[i]['w'] + spans[j]['w']) / 2, 2)}
+                if new:
+                    spans = [s for k, s in enumerate(spans) if k not in (i, j)] + [new]
+                    changed = True
+                    break
+            if changed:
+                break
+    return spans
 
 
 def triangulate_cells(g, z, half, sub=None):

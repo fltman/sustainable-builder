@@ -102,7 +102,7 @@ progress(.72,t('Kartlägger gator, parker och kajer …','Mapping streets, parks
 // The ground scan covers the place's model (CITY.scan, else the map's bounds) up to its highest ground.
 const groundTop=map.terrain?Math.max(...map.terrain.dm)/10:0;
 const scanRect=CITY.scan||(map.bounds?{minX:map.bounds[0],minZ:map.bounds[1],maxX:map.bounds[2],maxZ:map.bounds[3]}:{});
-const land=await scanLand(city.tiles.find(t=>t.id==='base').meshes,{...scanRect,top:groundTop+60,maxY:groundTop+14,isRoad:(x,z)=>{const r=planning.roadAt(x,z,.5);return Boolean(r)&&!(r.kind==='service'&&r.w<=4);}});
+const land=await scanLand(city.tiles.find(t=>t.id==='base').meshes,{...scanRect,top:groundTop+60,maxY:groundTop+14,bridges:map.bridges||[],isRoad:(x,z)=>{const r=planning.roadAt(x,z,.5);return Boolean(r)&&!(r.kind==='service'&&r.w<=4);}});
 progress(.85,t('Planterar framtiden …','Planting the future …','Semina del futuro …'));
 const districts=createDistricts(scene,planning,land,{lite});
 const lotKey=(x,z)=>Math.floor(x/48)+','+Math.floor(z/48);

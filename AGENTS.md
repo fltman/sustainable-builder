@@ -133,6 +133,12 @@ Edit the place's **sources** – `vision/`, `overrides.json`, `custom/*.py` – 
   `M_Window_Pane`, `M_Leaf`…; the future shader and the land scan sort them by these names; facades take
   their tint through the texture's alpha (`tintMask`). Unmapped land is grass (`"defaults": {"rest": "ground"}`
   in overrides.json brings back the game's bare ground; `"edge_containers": true` its container wall).
+- Bridges are flat decks with a parapet unless the place's own bridges are not: `"defaults": {"bridges":
+  {"style": "arch", "body": …, "trim": …, "railings": 0.4}}` (Venice) vaults every footbridge that crosses a
+  canal from quay to quay – a brick arch a boat passes under, steps up to a level crown, parapets or iron
+  railings (pipeline/bridges.py shares the profile between the 3D build and the site, whose walkers climb the
+  steps). Bridges that turn over the water or stop short of a quay keep a flat deck in the same materials;
+  `cities/<slug>/bridges-flat.json` lists them and why.
 - The model's numbers for Kalmar are frozen by `site/test/golden/kalmar-model.json`: an engine change that
   alters Kalmar's century fails the tests – unless that is the point (then regenerate the golden file and
   say so).

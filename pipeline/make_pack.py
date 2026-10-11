@@ -16,7 +16,7 @@ import shutil
 from shapely.geometry import LineString, Point, Polygon, box
 from shapely.strtree import STRtree
 
-from common import city_dir, load_place, projection_for, say, step_done, write_json
+from common import ROOT, city_dir, load_place, projection_for, say, step_done, write_json
 
 DRIVABLE = {'trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'living_street', 'pedestrian', 'service',
             'primary_link', 'secondary_link', 'tertiary_link', 'road', 'busway'}
@@ -148,8 +148,22 @@ def main(argv=None):
         for part in (g.geoms if hasattr(g, 'geoms') else [g]):
             if part.geom_type == 'LineString' and part.length > 5:
                 waterways.append({'id': r['id'], 'name': r['name'], 'kind': r['kind'], 'w': r['w'], 'p': [tz(p) for p in part.coords]})
+    # Arched bridges as they stand in 3D (pipeline/bridges.py): the site lifts walkers onto their steps.
+    arched = []
+    if city.get('bridge_spans'):
+        from bridges import profile, sampler
+        street = json.loads((ROOT / 'pipeline/style.json').read_text())['surfaces'].get('paving', {}).get('z', 0.03)
+        ground = sampler(terrain, street)
+        for sp in city['bridge_spans']:
+            pr = profile(sp, ground, city['water_z'])
+            if pr:
+                (ax, ay), (bx, by) = sp['a'], sp['b']
+                arched.append({'a': [round(ax, 2), round(-ay, 2)], 'b': [round(bx, 2), round(-by, 2)], 'hw': round(pr['hw'], 2),
+                               'hl': round(pr['hl'], 2), 'zc': round(pr['zc'], 3),
+                               'feet': [[round(sf, 3), round(zf, 3), round(run, 3), n] for sf, zf, run, n in pr['feet']]})
     game_map = {'roads': roads, 'waterways': waterways, 'buildings': [ring(f) for f in city['footprints'] if len(f) >= 3], 'land': [], 'areas': areas,
-                'attribution': attribution, 'bounds': [-half, -half, half, half], 'terrain': game_terrain(terrain, half)}
+                'attribution': attribution, 'bounds': [-half, -half, half, half], 'terrain': game_terrain(terrain, half),
+                **({'bridges': arched} if arched else {})}
     write_json(pack / 'map.json', game_map, compact=True)
 
     # ---------------------------------------------------------------- spawn: a wide named street near the centre

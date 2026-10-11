@@ -22,7 +22,7 @@ const classOf=raw=>{
   return LAND.LAND;
 };
 // top: where the rays start (above the highest ground); maxY: hits above it are not ground.
-export async function scanLand(baseMeshes,{minX=-1000,maxX=480,minZ=-360,maxZ=420,step=4,isRoad=null,top=60,maxY=14}={}){
+export async function scanLand(baseMeshes,{minX=-1000,maxX=480,minZ=-360,maxZ=420,step=4,isRoad=null,top=60,maxY=14,bridges=[]}={}){
   const nx=Math.ceil((maxX-minX)/step),nz=Math.ceil((maxZ-minZ)/step);
   const kind=new Uint8Array(nx*nz),height=new Float32Array(nx*nz);
   const ray=new THREE.Raycaster(),down=new THREE.Vector3(0,-1,0),o=new THREE.Vector3();
@@ -60,10 +60,30 @@ export async function scanLand(baseMeshes,{minX=-1000,maxX=480,minZ=-360,maxZ=42
   // mapped street is a car park (or a forecourt, which converts the same way).
   if(isRoad)for(let k=0;k<kind.length;k++)if(kind[k]===LAND.ROAD&&!isRoad(minX+(k%nx+.5)*step,minZ+(Math.floor(k/nx)+.5)*step))kind[k]=LAND.PARKING;
   const at=(x,z)=>{const i=Math.floor((x-minX)/step),j=Math.floor((z-minZ)/step);if(i<0||j<0||i>=nx||j>=nz)return -1;return j*nx+i;};
+  // Arched bridges (map.json bridges, pipeline/bridges.py – Venice's): the height of the step underfoot, finer than
+  // the grid, so a walker climbs the flight instead of dropping to the water between two cells. s runs along the
+  // bridge from its middle, a to b; feet: [s, height, run, steps] of each flight; hl: half the level crown.
+  const G=32,index=new Map(),cellOf=(x,z)=>Math.floor(x/G)*100003+Math.floor(z/G);
+  for(const b0 of bridges){
+    const dx=b0.b[0]-b0.a[0],dz=b0.b[1]-b0.a[1],L=Math.hypot(dx,dz);if(L<.5)continue;
+    const b={...b0,ux:dx/L,uz:dz/L,mx:(b0.a[0]+b0.b[0])/2,mz:(b0.a[1]+b0.b[1])/2,r:Math.max(...b0.feet.map(f=>Math.abs(f[0])))+b0.hw};
+    for(let i=Math.floor((b.mx-b.r)/G);i<=Math.floor((b.mx+b.r)/G);i++)for(let j=Math.floor((b.mz-b.r)/G);j<=Math.floor((b.mz+b.r)/G);j++){
+      const k=i*100003+j;if(!index.has(k))index.set(k,[]);index.get(k).push(b);}
+  }
+  const stepAt=(x,z)=>{
+    for(const b of index.get(cellOf(x,z))||[]){
+      const px=x-b.mx,pz=z-b.mz,s=px*b.ux+pz*b.uz;
+      if(Math.abs(pz*b.ux-px*b.uz)>b.hw+.1||s<b.feet[0][0]||s>b.feet[1][0])continue;
+      if(Math.abs(s)<=b.hl)return b.zc;
+      const [sf,zf,run,n]=s<0?b.feet[0]:b.feet[1],k=Math.max(0,Math.min(n-1,Math.floor((Math.abs(sf)-Math.abs(s))/run*n)));
+      return zf+(k+1)*(b.zc-zf)/n;
+    }
+    return null;
+  };
   return {
     step,minX,minZ,nx,nz,kind,height,
     kindAt(x,z){const k=at(x,z);return k<0?LAND.NONE:kind[k];},
-    heightAt(x,z){const k=at(x,z);return k<0?0:height[k];},
+    heightAt(x,z){const y=index.size?stepAt(x,z):null;if(y!=null)return y;const k=at(x,z);return k<0?0:height[k];},
     // Every cell of a class, as world points (cell centres).
     cells(type){const out=[];for(let k=0;k<kind.length;k++)if(kind[k]===type)out.push({x:minX+(k%nx+.5)*step,z:minZ+(Math.floor(k/nx)+.5)*step,y:height[k]});return out;}
   };

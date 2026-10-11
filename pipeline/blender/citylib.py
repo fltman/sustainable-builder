@@ -627,3 +627,119 @@ def lift(obj, terrain, b=None, keep_below=None):
     local = (w - M[:3, 3]) @ np.linalg.inv(M[:3, :3]).T
     me.vertices.foreach_set('co', local.astype(np.float32).ravel())
     me.update()
+
+
+# ------------------------------------------------------------------------------------------ arched bridges
+def arch_bridge(g, pr, mats, railing=False):
+    """A stone footbridge vaulted over a canal, as in Venice, from its profile (pipeline/bridges.py profile: the
+    level crown, two flights of steps and the vault, at absolute heights – the object is not lifted onto the
+    terrain): a brick arch from quay to quay, high enough for a boat to pass under, steps up to the crown and
+    parapets with a stone cap (or iron railings). mats: body (the brick), trim (the white stone of the arch
+    ring, the risers and the string course), steps (the treads, in the street's paving, so the site reads them
+    as ground), cap (the parapet's top and its end posts, which the site does not) and rail."""
+    L, (ux, uy), (mx, my) = pr['L'], pr['u'], pr['mid']
+    nx, ny = -uy, ux                                     # (u, n, z) is right-handed: n is to the left
+    hw, hl, zi, zc, wz = pr['hw'], pr['hl'], pr['zi'], pr['zc'], pr['wz']
+    feet = [(sf, zf, run) for sf, zf, run, _ in pr['feet']]
+    pt = 0.3                                             # the parapet's thickness
+    D = hw + pt                                          # the outer faces
+    xy = lambda s, d: (mx + ux * s + nx * d, my + uy * s + ny * d)
+    sA, sB = feet[0][0], feet[1][0]
+
+    def deck(s):                                         # the line through the steps' noses
+        if abs(s) <= hl:
+            return zc
+        sf, zf, run = feet[0] if s < 0 else feet[1]
+        return zf + (zc - zf) * (abs(sf) - abs(s)) / run
+
+    # The vault: a segment of a circle springing just above the water at the quays – or, where the canal is too
+    # narrow for a segment that high, a round arch on the quays as jambs. Its ring of white stone is concentric.
+    f = zi - (wz + 0.15)
+    r = (L * L / 4 + f * f) / (2 * f) if f <= L / 2 else L / 2
+    vault = lambda s, out=0.0: zi - r + math.sqrt(max(0.0, (r + out) ** 2 - s * s))
+    body, trim, steps, cap, rail = mats
+
+    def put(pts, toward, mat, uv='sz', scale=2.0):
+        """A face from (s, d, z) points, turned to face `toward` (an (s, d, z) direction)."""
+        n = [0.0, 0.0, 0.0]
+        for i, p in enumerate(pts):                      # Newell's normal, robust for any planar polygon
+            q = pts[(i + 1) % len(pts)]
+            n[0] += (p[1] - q[1]) * (p[2] + q[2])
+            n[1] += (p[2] - q[2]) * (p[0] + q[0])
+            n[2] += (p[0] - q[0]) * (p[1] + q[1])
+        if math.sqrt(sum(c * c for c in n)) < 1e-6:
+            return
+        if n[0] * toward[0] + n[1] * toward[1] + n[2] * toward[2] < 0:
+            pts = pts[::-1]
+        k = {'sz': (0, 2), 'dz': (1, 2), 'sd': (0, 1)}[uv]
+        g.face([(*xy(s, d), z) for s, d, z in pts], mat, [(p[k[0]] / scale, p[k[1]] / scale) for p in pts])
+
+    def bar(s0, s1, d, z0, z1, t, mat):                  # a thin rail or post along s (z0 → z1)
+        c = [(-t, -t), (t, -t), (t, t), (-t, t)]
+        for i in range(4):
+            (d0, e0), (d1, e1) = c[i], c[(i + 1) % 4]
+            put([(s0, d + d0, z0 + e0), (s1, d + d0, z1 + e0), (s1, d + d1, z1 + e1), (s0, d + d1, z0 + e1)],
+                (0.0, d0 + d1, e0 + e1), mat)
+
+    top_h = 0.15 if railing else 0.95                    # a low curb under a railing, else the parapet
+    flights = [(sA, -hl), (-hl, hl), (hl, sB)]
+    marks = sorted({sA, sB, -hl, hl, *(-L / 2 + L * i / 14 for i in range(15))})
+    marks = [s for s in marks if sA <= s <= sB]
+    over_water = lambda s0, s1: -L / 2 - 1e-6 <= s0 and s1 <= L / 2 + 1e-6
+    for d in (D, -D):
+        out = (0.0, d, 0.0)
+        # The outer face, in flush bands from the bottom up (nothing laid over anything, so nothing flickers): the
+        # arch ring of white stone over the water – concentric with the vault, thinner where the steps come close –
+        # or brick from below the street over the quays; brick; the string course of white stone; the parapet.
+        for s0, s1 in zip(marks, marks[1:]):
+            wet = over_water(s0, s1)
+
+            def bands(s):
+                lo = vault(s) if wet else (feet[0][1] if s < 0 else feet[1][1]) - 0.5
+                ring = max(lo, min(vault(s, 0.3), deck(s) - 0.3)) if wet else lo
+                return [lo, ring, deck(s) - 0.22, deck(s) - 0.06, deck(s) + top_h]
+            b0, b1 = bands(s0), bands(s1)
+            for k, mat in enumerate((trim, body, trim, body)):
+                put([(s0, d, b0[k]), (s1, d, b1[k]), (s1, d, max(b1[k], b1[k + 1])), (s0, d, max(b0[k], b0[k + 1]))], out, mat)
+        # The parapet's inner face and its cap.
+        inner = math.copysign(hw, d)
+        for s0, s1 in flights:
+            put([(s0, inner, deck(s0) - 0.25), (s1, inner, deck(s1) - 0.25), (s1, inner, deck(s1) + top_h), (s0, inner, deck(s0) + top_h)],
+                (0.0, -d, 0.0), body)
+            put([(s0, inner, deck(s0) + top_h), (s1, inner, deck(s1) + top_h), (s1, d, deck(s1) + top_h), (s0, d, deck(s0) + top_h)],
+                (0.0, 0.0, 1.0), cap, 'sd')
+        # Stone posts where the parapets (or railings) end, at the foot of each flight.
+        for sf, zf, _ in feet:
+            a, b, z = sf, sf - math.copysign(0.36, sf), zf + max(top_h + 0.22, 1.05)
+            c0, c1 = inner - math.copysign(0.04, d), d + math.copysign(0.04, d)
+            put([(a, c0, z), (b, c0, z), (b, c1, z), (a, c1, z)], (0.0, 0.0, 1.0), cap, 'sd')
+            for p, q, tw in (((a, c0), (a, c1), (math.copysign(1, sf), 0, 0)), ((b, c0), (b, c1), (-math.copysign(1, sf), 0, 0)),
+                             ((a, c1), (b, c1), (0, d, 0)), ((a, c0), (b, c0), (0, -d, 0))):
+                put([(p[0], p[1], zf - 0.1), (q[0], q[1], zf - 0.1), (q[0], q[1], z), (p[0], p[1], z)], tw, cap)
+        if railing:                                      # iron: a handrail, a middle rail and posts
+            m = math.copysign(hw + pt / 2, d)
+            for s0, s1 in flights:
+                bar(s0, s1, m, deck(s0) + 1.0, deck(s1) + 1.0, 0.025, rail)
+                bar(s0, s1, m, deck(s0) + 0.55, deck(s1) + 0.55, 0.015, rail)
+            k = max(2, int((sB - sA) / 1.1))
+            for i in range(k + 1):
+                s = sA + 0.4 + (sB - sA - 0.8) * i / k
+                post = [(s - 0.02, m - 0.02), (s + 0.02, m - 0.02), (s + 0.02, m + 0.02), (s - 0.02, m + 0.02)]
+                for j in range(4):
+                    p, q = post[j], post[(j + 1) % 4]
+                    put([(p[0], p[1], deck(s) + top_h), (q[0], q[1], deck(s) + top_h), (q[0], q[1], deck(s) + 1.0), (p[0], p[1], deck(s) + 1.0)],
+                        ((p[0] + q[0]) / 2 - s, (p[1] + q[1]) / 2 - m, 0.0), rail)
+    # The vault's underside, from quay to quay.
+    wet = [s for s in marks if -L / 2 - 1e-6 <= s <= L / 2 + 1e-6]
+    for s0, s1 in zip(wet, wet[1:]):
+        put([(s0, D, vault(s0)), (s1, D, vault(s1)), (s1, -D, vault(s1)), (s0, -D, vault(s0))], (0.0, 0.0, -1.0), body, 'sd')
+    # The steps: white stone risers and treads in the street's paving, up each flight to the level crown.
+    for sf, zf, run, n in pr['feet']:
+        side = math.copysign(1.0, sf)
+        rise, tread = (zc - zf) / n, run / n
+        for k in range(n):
+            s_out, s_in = sf - side * k * tread, sf - side * (k + 1) * tread
+            z0, z1 = zf + k * rise, zf + (k + 1) * rise
+            put([(s_out, -hw, z0), (s_out, hw, z0), (s_out, hw, z1), (s_out, -hw, z1)], (side, 0.0, 0.0), trim, 'dz')
+            put([(s_out, -hw, z1), (s_in, -hw, z1), (s_in, hw, z1), (s_out, hw, z1)], (0.0, 0.0, 1.0), steps, 'sd')
+    put([(-hl, -hw, zc), (hl, -hw, zc), (hl, hw, zc), (-hl, hw, zc)], (0.0, 0.0, 1.0), steps, 'sd')
