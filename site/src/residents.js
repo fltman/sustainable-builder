@@ -44,7 +44,7 @@ function jobForSv(p,age,year,I={}){
   if(age>=(PEOPLE.retireAge??67))return 'pensionär';
   const pool=[...JOBS_TODAY.map(j=>[j,1])];for(const [lever,job] of JOBS_FUTURE){const w=(I[lever]||0)*3;if(w>.3)pool.push([job,w]);}
   const total=pool.reduce((s,[,w])=>s+w,0);let r=hash(p.id*7.7+Math.floor(year/10)*3.1)*total;
-  for(const [j,w] of pool){if((r-=w)<=0)return j;}return pool[0][0];
+  for(const [j,w] of pool){if((r-=w)<=0)return j;}return pool[0]?.[0]??'';   // none until the place names its jobs
 }
 if(LANG!=='sv'){for(const n of NEEDS)n.name=L(n.name);for(const a of Object.values(ACTIVITIES))a.name=L(a.name);}
 // The place's age mix in 2026 (its starting values: SCB via Kolada in Sweden).

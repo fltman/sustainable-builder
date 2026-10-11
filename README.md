@@ -31,7 +31,7 @@ Without an agent the tools still run:
 
 ```sh
 python3 sustainable.py doctor               # installs and checks everything (once)
-python3 sustainable.py make "Ystad"         # find → build → Kolada → a first vision
+python3 sustainable.py make "Ystad"         # find → build → Kolada → an empty vision to write on
 python3 sustainable.py site ystad           # the site
 ```
 

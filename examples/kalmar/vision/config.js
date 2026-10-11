@@ -3,10 +3,10 @@
 export const CITY={
   slug:'kalmar',
   // Names, in Swedish and English. `centre` is the part of the place the 3D model shows.
-  sv:{name:'Kalmar',genitive:'Kalmars',kommun:'Kalmar kommun',kommunGenitive:'Kalmar kommuns',region:'Kalmar län',country:'Sverige',
+  sv:{name:'Kalmar',intro:'Hur vill vi leva i Kalmar om hundra år – tillsammans med våra barn, barnbarn och grannar? Hur mycket mat odlar vi själva, hur hjälps vi åt, vad har vi valt att göra analogt och vad har vi accelererat med teknik och AI?',crises:'torka, stormflod, pandemi …',genitive:'Kalmars',kommun:'Kalmar kommun',kommunGenitive:'Kalmar kommuns',region:'Kalmar län',country:'Sverige',
     centre:'Kvarnholmen',onCentre:'på Kvarnholmen',centreGenitive:'Kvarnholmens',tagline:'Ett sekel framåt – en hållbar vision',waters:'Kalmarsund',
     model:'Kvarnholmen i Kalmar',modelOf:'den riktiga 3D-modellen av Kvarnholmen',rise:'havet står {m} m högre år 2126'},
-  en:{name:'Kalmar',genitive:"Kalmar's",kommun:'Kalmar Municipality',kommunGenitive:"Kalmar Municipality's",region:'Kalmar County',country:'Sweden',
+  en:{name:'Kalmar',intro:'How do we want to live in Kalmar in a hundred years – with our children, grandchildren and neighbours? How much food do we grow ourselves, how do we help each other, what have we chosen to keep analogue and what have we accelerated with technology and AI?',crises:'drought, storm surge, pandemic …',genitive:"Kalmar's",kommun:'Kalmar Municipality',kommunGenitive:"Kalmar Municipality's",region:'Kalmar County',country:'Sweden',
     centre:'Kvarnholmen',onCentre:'on Kvarnholmen',centreGenitive:"Kvarnholmen's",tagline:'A century ahead – a sustainable vision',waters:'Kalmarsund',
     model:'Kvarnholmen in Kalmar',modelOf:'the real 3D model of Kvarnholmen',rise:'the sea is {m} m higher by 2126'},
   title:'KALMAR 2126',

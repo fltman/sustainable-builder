@@ -79,8 +79,9 @@ research what this place can decide, what matters and can be counted there, how 
 local research where it exists, cited general research where not), and what can physically change in its
 streets, roofs and water. An example's model is that example's: a new place writes its own.
 
-`python3 sustainable.py vision <slug> init` starts `cities/<slug>/vision/` from the nearest example; then
-write each module from the research (the contract for every file is in `AGENTS.md`):
+`python3 sustainable.py vision <slug> init` starts `cities/<slug>/vision/` empty – the place's own records, no
+levers, no visions, nothing from an example – and the site runs at once; then write each module from the
+research (the contract for every file is in `AGENTS.md`):
 
 | file | what | from |
 |---|---|---|
@@ -98,6 +99,8 @@ Calibrate and check:
 - Today's course follows the official population projection; the research-based vision beats today's
   course clearly by 2126; EXPECT says what each lever does, and the tests hold the model to it.
 - In the 2126 pictures, every change could physically happen in this place.
+- `python3 sustainable.py research <slug> check` – the vision against its research, and Place first: own
+  levers and model, visions and dilemmas only on its own levers, nothing borrowed from Kalmar.
 - `python3 sustainable.py test <slug>` – the site's tests for the place (the journey, ranges, links …).
 - The narrative modules are long; writing them in parallel with one agent each works well (Rättvik's
   were written that way) – each agent edits only its module and its `en/<module>.js`.

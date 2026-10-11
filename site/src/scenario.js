@@ -1,6 +1,6 @@
 import { LEVERS, LINK_ORDER as PLACE_LINK_ORDER } from './data/levers.js';
 import { LANG, L } from './i18n.js';
-import { VISIONS } from '@city/presets.js';
+import * as PLACE_PRESETS from '@city/presets.js';
 import { simulate, ensemble, defaultPolicy, START, END } from './model.js';
 
 // Policy schedules: a list of {from:year, set:{lever:level}} steps, each building on the previous.
@@ -22,10 +22,11 @@ export function bands(schedule,{world='ssp245',events=true,seed=7,members=24}={}
   return ensemble({policyAt:policyFromSchedule(schedule),world,events,seed},{members});
 }
 // Curated paths for "Utforska": today's course, and the place's own visions (@city/presets.js): a
-// research-based one and contrasting ones.
+// research-based one and contrasting ones. What today's course carries is the place's own model, and so
+// is the sentence that says it (presets.js TODAY: Kalmar's electric cars, Venice's tourist flats).
 export const PRESETS=[
-  {id:'dagens',name:'Dagens kurs',short:'Inga nya vägval. Nationella trender rullar på – elbilar, fossilfri el – men inget mer.',schedule:[]},
-  ...VISIONS,
+  {id:'dagens',name:'Dagens kurs',short:PLACE_PRESETS.TODAY?.short||'Inga nya vägval: det som redan pågår fortsätter, men inget mer.',schedule:[]},
+  ...PLACE_PRESETS.VISIONS,
 ];
 export function decadeOf(year){return Math.floor((year-START)/10);}
 export const DECADES=Array.from({length:10},(_,i)=>START+i*10);

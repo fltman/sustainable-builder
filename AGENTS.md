@@ -46,15 +46,17 @@ cities/<slug>/          a place (git-ignored): place.json, osm.json, terrain.jso
 The engine imports them as `@city/<file>` (site/city.config.mjs picks the place: `CITY=<slug>` or
 `site/.city`); they import the engine as `@engine/…`. The engine is a **framework**: the levers, the
 measures and the calculations are the place's own. Kalmar's are complete (its model is
-`examples/kalmar/vision/system.js`). `python3 sustainable.py vision <slug> init` writes a first set that runs.
+`examples/kalmar/vision/system.js`). `python3 sustainable.py vision <slug> init` writes a first set that runs and is
+empty where only the place's research can fill it: its own records, no levers, no visions, nothing from another
+place. `python3 sustainable.py research <slug> check` holds a place to that (see *Place first*).
 
 | file | exports | notes |
 |---|---|---|
-| `config.js` | `CITY` | names in sv/en (name, genitive, kommun, centre, onCentre, model, modelOf, rise, waters), title, url, meta, lat/lon, `water {y, level, kind}`, camera, planRect, heritage, squares, station, floodWall, harbour, floatingQuarter, mussels, turbines, boats, hide, tintMask, materialAlias, credits, film, sources, hotDaysToday, housingFloors ([min,max] storeys of new blocks; Kalmar 4–7) |
+| `config.js` | `CITY` | names in sv/en (name, genitive, kommun, centre, onCentre, model, modelOf, rise, waters; intro – the start screen's question in the place's own terms; crises – its own kinds of crisis), title, url, meta, lat/lon, `water {y, level, kind}`, camera, planRect, heritage, squares, station, floodWall, harbour, floatingQuarter, mussels, turbines, boats, hide, tintMask, materialAlias, credits, film, sources, hotDaysToday, housingFloors ([min,max] storeys of new blocks; Kalmar 4–7) |
 | `model.js` | `BASE, FACTS, BASE_UNCERTAIN, PARAMS, init, step, vision, doughnut, SDG_PARTS, capacity, EXPECT` (+ `FLOOD, P, SYSTEM_SPREAD, VARY, SPREAD, BAND_CHECK`) | the place's **own model** (see *A place's own model* below): starting values (FACTS: the research record of each), its calculations year by year, what the 3D city may show, its SDG and doughnut parts, and what its levers must do (EXPECT, checked by the tests) |
-| `levers.js` | `LEVER_DEFS, WORLD_CLIMATE, LEVER_EVIDENCE` (+ `THEMES, CAPACITY_NOTE, LINK_ORDER, LEVER_TEXT, HIDDEN_LEVERS, EXTRA_LEVERS`) | the place's **own levers** – id, theme, name, short, levels[4], cost, tau – that its model acts on; its climate per world (stress, hotDays, seaRise2126, seaPow); research per lever (`base:<id>` for the place's records) |
+| `levers.js` | `LEVER_DEFS, WORLD_CLIMATE, LEVER_EVIDENCE` (+ `THEMES, CAPACITY_NOTE, LINK_ORDER, LEVER_TEXT, HIDDEN_LEVERS, EXTRA_LEVERS`) | the place's **own levers** – id, theme, name, short, levels[4], cost, tau – that its model acts on, grouped in its own THEMES; its climate per world (stress, hotDays, seaRise2126, seaPow); research per lever (`base:<id>` for the place's records) – the place's own lists only, nothing is inherited by lever id |
 | `indicators.js` | `INDICATOR_DEFS, INDICATORS, KEY_FIGURES` | the place's **own measures**: display metadata for every indicator its model returns (name, unit, fmt, better, theme, assumption), then names, notes and `base` records |
-| `presets.js` | `VISIONS` | the research-based vision first, then contrasting ones |
+| `presets.js` | `VISIONS` (+ `TODAY`) | the research-based vision first, then contrasting ones; TODAY `{short}` – what today's course carries in the place's model |
 | `places.js` | `PLACES` | id, name, x, z, kind, now, future, lever, work/care/school/library |
 | `people.js` | `jobsToday, jobsFuture, thoughts` | the Sims layer |
 | `family.js` | `FAMILY, lifespans, alive, familyText, familyEpilogue, FAMILY_INTRO, FAMILY_TITLE` | five generations |
@@ -95,8 +97,8 @@ worlds' climate stress and the water's rise; the events; the uncertainty ensembl
 place supplies:
 
 - `init(B)` → the state in 2026 (`B`: BASE, varied in the uncertainty runs).
-- `step(c)` → the year's indicators (an object of numbers; `pop` always; with `FLOOD` also `level100`,
-  `protection` and `floodRisk` 0–1). `c` holds `s` (the state), `I` and `before` (implementation now and
+- `step(c)` → the year's indicators (an object of numbers; `pop` always, and `capacity`, `demand` and `strain`
+  passed on from `c` for the capacity bar; with `FLOOD` also `level100`, `protection` and `floodRisk` 0–1). `c` holds `s` (the state), `I` and `before` (implementation now and
   a year ago), `B`, `V` (the ensemble's variations), `W` (the world: stress, hotDays, gwl2100, shape,
   seaRise2126), `year`, `t`, `soon`, `held` (2026: nothing moves – use the `lag` you write with it),
   `policy`, `stress`, `seaRise`, `floodRise`, `level100`, `capacity`, `demand`, `strain`, `load`,
@@ -113,7 +115,7 @@ place supplies:
   social `food, health, education, income, peace, voice, equity, gender, housing, networks, energy, water`,
   ecological `climate, acidification, chemical, nutrients, freshwater, land, biodiversity, air, ozone`; `capacity(s)` – the city's
   shared capacity for change (default 10; `CAPACITY_NOTE` in levers.js says what builds it); `residents(d,I)` –
-  what the residents' everyday reads (`cohousing, digital, bloom, lonely, workday`); `EXPECT` – what its levers must do; `SYSTEM_SPREAD`/`VARY` –
+  what the residents' everyday reads (`cohousing, digital, bloom, lonely, workday, analog`; else an ordinary day); `EXPECT` – what its levers must do; `SYSTEM_SPREAD`/`VARY` –
   the uncertainty it varies (the framework's: pace, reach, sea, surge, stress).
 
 Edit the place's **sources** – `vision/`, `overrides.json`, `custom/*.py` – never generated files

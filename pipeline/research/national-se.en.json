@@ -2,7 +2,7 @@
  "indicators": {
   "konsumtionsbaserade_utslapp_sverige": {
    "name": "Consumption-based greenhouse gas emissions per person",
-   "note": "Down about 36% per capita 2008–2023; about 60% comes from household consumption. Considerably higher than the territorial figure of about 4.5 t per inhabitant. Kalmar's climate contract also covers consumption-based emissions.",
+   "note": "Down about 36% per capita 2008–2023; about 60% comes from household consumption. Considerably higher than the territorial figure of about 4.5 t per inhabitant.",
    "unit": "t CO2e per person per year"
   },
   "forsorjningsformaga_spannmal_sverige": {
@@ -68,7 +68,7 @@
   "overdodlighet_varmebolja_2018": {
    "name": "Excess mortality during the heatwave in summer 2018",
    "unit": "deaths",
-   "note": "About 700 more deaths than normal over the whole summer; SMHI cites 600–745 attributable to the heat. Mainly older people and the chronically ill were affected. Kalmar had 43 high-summer days that year."
+   "note": "About 700 more deaths than normal over the whole summer; SMHI cites 600–745 attributable to the heat. Mainly older people and the chronically ill were affected."
   },
   "dodlighetsokning_varme_26c": {
    "name": "Increase in mortality per day when it is at least 26 °C for three days in a row",
@@ -78,7 +78,7 @@
   "rvu_bil_andel_sverige": {
    "name": "Car share of main trips in Sweden",
    "unit": "%",
-   "note": "Own calculation: 2,053 million car trips out of almost 3.9 billion main trips. Trafikanalys writes \"just over half of all trips\". Kalmar (60%) is thus above the national figure."
+   "note": "Own calculation: 2,053 million car trips out of almost 3.9 billion main trips. Trafikanalys writes \"just over half of all trips\"."
   },
   "rvu_kollektiv_andel_sverige": {
    "name": "Public transport modes' share of main trips in Sweden",
@@ -98,7 +98,7 @@
   "fritidsbatar_elmotor_andel_sverige": {
    "name": "Motorboats with an electric motor",
    "unit": "% of motorboats",
-   "note": "Share of motorboats with an electric motor (multiple answers possible): 4% for open motorboats, 2% for cabin boats. 17% still have a banned carburettor two-stroke engine. Measured in energy or traffic work, the electric share is much lower. A national measure: data for Kalmarsund is lacking."
+   "note": "Share of motorboats with an electric motor (multiple answers possible): 4% for open motorboats, 2% for cabin boats. 17% still have a banned carburettor two-stroke engine. Measured in energy or traffic work, the electric share is much lower. A national measure: local data is lacking."
   },
   "arbetstid_overenskommen": {
    "name": "Agreed (contractual) mean working hours per week, employed aged 15–74",
@@ -123,7 +123,7 @@
   "hog_tillit_till_manniskor": {
    "name": "High interpersonal trust (7–10 on a scale of 0–10)",
    "unit": "%",
-   "note": "The question reads: \"to what extent can people in general be trusted?\". 31% have medium (4–6) and 12% low (0–3) trust. A different measure from the yes/no question in the Health in Sweden survey (HLV), on which the model's trust is based (66% in Kalmar)."
+   "note": "The question reads: \"to what extent can people in general be trusted?\". 31% have medium (4–6) and 12% low (0–3) trust. A different measure from the yes/no question in the Health in Sweden survey (HLV), on which the model's trust is based."
   },
   "ideellt_arbete_andel": {
    "name": "Share who have done voluntary work in the past year, aged 16–84",
@@ -168,7 +168,7 @@
   "utslapp_per_gastnatt": {
    "name": "Climate impact per tourist guest night (West Sweden)",
    "unit": "kg CO2e/guest night",
-   "note": "Life-cycle calculation for tourism in West Sweden: 110 kg CO2e per tourist and 39 kg per guest night, of which travel to and from the destination is 54% and accommodation 23%. Applying the same factor, Kalmar Municipality's 452,248 guest nights give about 17,600 tonnes a year and Öland's about 56,000 tonnes (own rough calculation). With 91–92% of trips by car, the transport share in Kalmar County is probably at least as large."
+   "note": "Life-cycle calculation for tourism in West Sweden: 110 kg CO2e per tourist and 39 kg per guest night, of which travel to and from the destination is 54% and accommodation 23%."
   },
   "ecodriving_bransle_besparing": {
    "name": "Fuel saving from simulator-based eco-driving training (Kalmar Maritime Academy)",

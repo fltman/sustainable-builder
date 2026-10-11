@@ -285,6 +285,7 @@ export const EN={
   "Modellens index av hemberedskap, matlager, vatten, egen el och analoga reserver.":"The model's index of home preparedness, food stocks, water, local power and analogue backups.",
   "Bygdens gemensamma förmåga att genomföra förändringar: välfärden och ekonomin, tilliten, föreningslivet, de ungas röst – och hur många det finns i arbetsför ålder.":"The community's shared capacity to carry out change: welfare and the economy, trust, associations, the voice of the young – and how many people there are of working age.",
   // presets.js
+  "Inga nya vägval. Nationella trender rullar på – elbilar, fossilfri el och utsläppshandeln som till sist når kalkverket – men inget mer.":"No new choices. National trends roll on – electric cars, fossil-free electricity and the emissions trading that finally reaches the lime works – but nothing more.",
   "Siljansbygden":"The Siljan Country",
   "Forskningens förslag för Rättvik: börja med det som håller ihop en åldrande bygd – bostäder för alla åldrar, omsorg nära, byarnas röst och skolan – ta hand om fäbodarna, Siljan och skogen, och bygg sedan om centrum, resorna och energin.":"The research-based proposal for Rättvik: begin with what holds an ageing community together – homes for every age, care close by, the villages' voice and the schools – look after the summer farms, Lake Siljan and the forest, then rebuild the centre, the journeys and the energy.",
   "Teknikorten":"The Tech Town",

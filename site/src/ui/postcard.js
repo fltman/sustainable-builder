@@ -2,6 +2,7 @@
 // 2026 and the plan it comes from, drawn on one canvas so it can be saved or shared as a single image.
 // Landscape 1600 px wide from a wide screen, portrait 1080 × 1350 from a phone. The style follows the
 // link preview (tools/og-image.mjs): white type on a dark-green shade.
+import { CITY } from '../city-config.js';
 const FONT='system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif';
 const font=(px,weight=400)=>`${weight} ${Math.round(px)}px ${FONT}`;
 // Spaced capitals drawn letter by letter (canvas letter-spacing is not everywhere yet).
@@ -29,8 +30,8 @@ export function drawPostcard(shot,card){
   gr=g.createLinearGradient(0,H-block-140*u,0,H);gr.addColorStop(0,'rgba(8,22,20,0)');gr.addColorStop(.42,'rgba(8,22,20,.62)');gr.addColorStop(1,'rgba(8,22,20,.88)');
   g.fillStyle=gr;g.fillRect(0,H-block-140*u,W,block+140*u);
   g.fillStyle='#fff';g.textBaseline='alphabetic';g.shadowColor='rgba(0,0,0,.35)';g.shadowBlur=14*u;
-  // Top: the title and the plan.
-  g.font=font(44*u,800);spaced(g,'KALMAR 2126',pad,pad+38*u,6*u);
+  // Top: the place's title (config.js: "VENEZIA 2126") and the plan.
+  g.font=font(44*u,800);spaced(g,CITY.title,pad,pad+38*u,6*u);
   g.font=font(24*u,500);g.fillStyle='rgba(255,255,255,.9)';g.fillText(`${card.plan} · ${card.world}`,pad,pad+80*u);
   // Bottom: the year, then what has changed, then the figures and the news of the year.
   let y=H-block+110*u;

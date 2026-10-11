@@ -7,6 +7,9 @@
 // schools and room for the water); welfare technology stays at the steady level, as the evidence on what it
 // saves is thin (rattvik_e5). The others contrast with it. A schedule is a list of {from:year,
 // set:{lever:level}} steps, each building on the previous.
+// Today's course in Rättvik's model: SCB's projection and the national trends – electric cars, fossil-free
+// power – and the emissions trading that brings capture to the lime works by mid-century (model.js).
+export const TODAY={short:'Inga nya vägval. Nationella trender rullar på – elbilar, fossilfri el och utsläppshandeln som till sist når kalkverket – men inget mer.'};
 export const VISIONS=[
   {id:'siljansbygden',name:'Siljansbygden',short:'Forskningens förslag för Rättvik: börja med det som håller ihop en åldrande bygd – bostäder för alla åldrar, omsorg nära, byarnas röst och skolan – ta hand om fäbodarna, Siljan och skogen, och bygg sedan om centrum, resorna och energin.',
     schedule:[

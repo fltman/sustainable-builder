@@ -1,20 +1,20 @@
 import { LANG, L } from '../i18n.js';
 import * as PLACE_LEVERS from '@city/levers.js';
 const {LEVER_TEXT,WORLD_CLIMATE}=PLACE_LEVERS;
-// The municipality's levers ("vägval"). Each has levels 0–3: 0 = today's course, 1 = steady,
+// The municipality's levers ("vägval"): the place's own (@city/levers.js LEVER_DEFS), what it can decide by
+// its own research – the engine has none. Each has levels 0–3: 0 = today's course, 1 = steady,
 // 2 = ambitious, 3 = radical. `cost` is the yearly demand on the city's shared capacity (money,
 // people, attention) at full implementation; `tau` how many years implementation takes to settle.
-// Every effect in model.js cites the evidence id it leans on (data/evidence.js). The words here fit any
-// place; a place says them its own way in @city/levers.js (LEVER_TEXT: Kalmar's "Levande Kalmarsund").
 // Texts are Swedish, translated with L().
-// The themes the levers are grouped in: the place's own (@city/levers.js THEMES), else these.
+// The themes the levers are grouped in: the place's own (@city/levers.js THEMES: Kalmar's "Teknik, AI & det
+// analoga", Venice's "Lagunen & maten"), else these plain ones.
 export const THEMES=PLACE_LEVERS.THEMES||[
   {id:'mat',name:'Mat & odling',color:'#7aa83a'},
   {id:'energi',name:'Energi & klimat',color:'#e0a92b'},
   {id:'stad',name:'Stad & rörlighet',color:'#3f8fc2'},
   {id:'gemenskap',name:'Gemenskap & demokrati',color:'#d0614e'},
   {id:'halsa',name:'Hälsa & omsorg',color:'#c9497a'},
-  {id:'teknik',name:'Teknik, AI & det analoga',color:'#7c5cc4'},
+  {id:'teknik',name:'Teknik & kunskap',color:'#7c5cc4'},
   {id:'resiliens',name:'Resiliens & beredskap',color:'#4a8c7a'},
 ];
 export const LEVELS=['Dagens kurs','Stadig','Ambitiös','Radikal'];
@@ -38,7 +38,8 @@ export const CAPACITY_NOTE=PLACE_LEVERS.CAPACITY_NOTE||null;
 // adds its own climate (@city/levers.js WORLD_CLIMATE): stress, the climate stress added after 2026 scaled
 // by its county's warming by 2126 (SMHI); hotDays, days above 25 °C a year in 2071–2100; seaRise2126 and
 // seaPow, how far its sea or lake's high water rises by 2126 and the curve it follows.
-const CLIMATE_DEFAULT={ssp126:{stress:.15,hotDays:20,seaRise2126:0,seaPow:.5},ssp245:{stress:.4,hotDays:28,seaRise2126:0,seaPow:.8},ssp585:{stress:1,hotDays:45,seaRise2126:0,seaPow:.9}};
+// Until the place gives its own climate the worlds only differ in stress; no hot days are said for it.
+const CLIMATE_DEFAULT={ssp126:{stress:.15,seaRise2126:0,seaPow:.5},ssp245:{stress:.4,seaRise2126:0,seaPow:.8},ssp585:{stress:1,seaRise2126:0,seaPow:.9}};
 export const WORLDS=[
   {id:'ssp126',name:'Världen samarbetar',short:'Global uppvärmning stannar kring 1,8 °C (SSP1-2.6)',gwl2100:1.8,shape:t=>1-Math.exp(-t/15)},
   {id:'ssp245',name:'Mellanvägen',short:'Omkring 2,7 °C till 2100 (SSP2-4.5)',gwl2100:2.7,shape:t=>Math.pow(Math.min(1,t/100),.45)},

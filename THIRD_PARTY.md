@@ -3,13 +3,15 @@
 | What | Where | Source | License / terms |
 |---|---|---|---|
 | Map data and everything derived from it (cities, packs, the site's map) | `cities/` (not in git) | © OpenStreetMap contributors | ODbL 1.0 – attribute "© OpenStreetMap contributors", share-alike for derived databases |
-| Terrain | `cities/*/terrain.json`, packs | Lantmäteriet Markhöjdmodell / Copernicus GLO-30 | CC BY 4.0 / Copernicus licence – keep the attribution (the site shows it) |
+| Terrain | `cities/*/terrain.json`, packs | Lantmäteriet Markhöjdmodell / Regione del Veneto's LiDAR DTM (Venice, via ARPAV) / Copernicus GLO-30 | CC BY 4.0 / the Region's open-data terms / Copernicus licence – keep the attribution (the site shows it) |
 | Place search, map download | at runtime | Nominatim, OSM API, Overpass | [Nominatim policy](https://operations.osmfoundation.org/policies/nominatim/), OSM API policy, Overpass fair use |
 | Key figures | `cities/*/vision/research/deep/kolada.json` | Kolada (RKA) and its original sources (SCB, the Public Health Agency …) | open data – cite the source (each record does) |
 | Research records | `examples/*/vision/research/`, `cities/*/vision/research/`, `pipeline/research/` | the sources each record names | facts with citations; quotes stay short |
 | General research evidence | `site/research/vision-research.json` | the research behind Kalmar 2126 (sources per item) | as above |
 | Ambient sounds and effects (`site/public/audio/amb-*`, `sfx-*`) | site | generated with ElevenLabs for Kalmar 2126 | ElevenLabs terms of the generating account; **author to confirm before publishing** |
 | Default soundtrack (`site/public/audio/music.mp3`) | site | generated with Suno for Kalmar 2126 | Suno terms of the generating account – **author to confirm** |
+| Film narration in the examples (`examples/*/media/audio/vo-film-*.mp3`) | examples | ElevenLabs (eleven_v4): the author's own cloned voice (Rättvik; Venice in English) and the library voice "Marco" (Venice in Italian) | ElevenLabs terms of the generating account; the cloned voice is the author's – not for reuse without permission |
+| The examples' soundtracks (`examples/rattvik/media/audio/music.mp3` "Midsommarnatt", `examples/venezia/media/audio/music.mp3` "Barcarola") | examples | generated with Suno | Suno terms of the generating account – **author to confirm** |
 | People and vehicles (`site/public/models/`) | site | modelled in Blender for Kalmar 2126 | **author to confirm** (suggested: CC BY 4.0) |
 | Surface textures (`site/public/textures/`) | site | made for Kalmar 2126 | **author to confirm** |
 | Procedural city textures (`cache/textures`) | generated locally | `pipeline/make_textures.py` | same as the code (MIT) |

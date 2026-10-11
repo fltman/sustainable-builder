@@ -20,7 +20,7 @@
     "publisher": "Naturvårdsverket",
     "url": "https://www.naturvardsverket.se/data-och-statistik/konsumtion/vaxthusgaser-konsumtionsbaserade-utslapp-per-person/"
    },
-   "note_sv": "Minskat ca 36 % per capita 2008–2023; ca 60 % kommer från hushållens konsumtion. Betydligt högre än de territoriella ca 4,5 t/inv. Kalmars klimatkontrakt omfattar även konsumtionsutsläpp.",
+   "note_sv": "Minskat ca 36 % per capita 2008–2023; ca 60 % kommer från hushållens konsumtion. Betydligt högre än de territoriella ca 4,5 t/inv.",
    "confidence": "high"
   },
   {
@@ -282,7 +282,7 @@
     "publisher": "Folkhälsomyndigheten",
     "url": "https://www.folkhalsomyndigheten.se/contentassets/ea328afcc93f4ad6a37693176fbb3158/hantera-halsoeffekter-varmeboljor.pdf"
    },
-   "note_sv": "Cirka 700 fler dödsfall än normalt under hela sommaren; SMHI återger 600–745 som kan tillskrivas värmen. Främst äldre och kroniskt sjuka drabbades. Kalmar hade 43 högsommardagar det året.",
+   "note_sv": "Cirka 700 fler dödsfall än normalt under hela sommaren; SMHI återger 600–745 som kan tillskrivas värmen. Främst äldre och kroniskt sjuka drabbades.",
    "confidence": "high",
    "topic": "klimat"
   },
@@ -324,7 +324,7 @@
     "publisher": "Trafikanalys (Sveriges officiella statistik)",
     "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
    },
-   "note_sv": "Egen beräkning: 2 053 miljoner bilresor av nästan 3,9 miljarder huvudresor. Trafikanalys skriver \"drygt hälften av alla resor\". Kalmar (60 %) ligger alltså över riket.",
+   "note_sv": "Egen beräkning: 2 053 miljoner bilresor av nästan 3,9 miljarder huvudresor. Trafikanalys skriver \"drygt hälften av alla resor\".",
    "confidence": "estimate",
    "topic": "resor-energi"
   },
@@ -407,7 +407,7 @@
     "publisher": "Transportstyrelsen",
     "url": "https://www.transportstyrelsen.se/globalassets/global/publikationer-och-rapporter/rapporter/sjofart/swedish-boatings-survey2025-batlivsundersokningen-2025-eng.pdf"
    },
-   "note_sv": "Andel av motorbåtarna med elmotor (flera svar möjliga): 4 % för öppna motorbåtar, 2 % för ruffade. 17 % har fortfarande en förbjuden tvåtaktsmotor med förgasare. Räknat i energi eller trafikarbete är eldriftens andel mycket lägre. Ett nationellt mått: data för Kalmarsund saknas.",
+   "note_sv": "Andel av motorbåtarna med elmotor (flera svar möjliga): 4 % för öppna motorbåtar, 2 % för ruffade. 17 % har fortfarande en förbjuden tvåtaktsmotor med förgasare. Räknat i energi eller trafikarbete är eldriftens andel mycket lägre. Ett nationellt mått: lokala data saknas.",
    "confidence": "medium",
    "replaces": "boatElectric",
    "topic": "resor-energi"
@@ -518,7 +518,7 @@
     "publisher": "SOM-institutet, Göteborgs universitet",
     "url": "https://www.gu.se/sites/default/files/2026-03/Svenska%20trender%201986-2025.pdf"
    },
-   "note_sv": "Frågan lyder: 'i vilken utsträckning går det att lita på människor i allmänhet?'. 31 % har medelhög (4–6) och 12 % låg (0–3) tillit. Ett annat mått än HLV:s ja/nej-fråga, som modellens tillit bygger på (66 % i Kalmar).",
+   "note_sv": "Frågan lyder: 'i vilken utsträckning går det att lita på människor i allmänhet?'. 31 % har medelhög (4–6) och 12 % låg (0–3) tillit. Ett annat mått än HLV:s ja/nej-fråga, som modellens tillit bygger på.",
    "confidence": "high",
    "topic": "samhalle"
   },
@@ -711,7 +711,7 @@
     "publisher": "Chalmers tekniska högskola",
     "url": "https://research.chalmers.se/publication/226288"
    },
-   "note_sv": "Livscykelberäkning för turismen i Västsverige: 110 kg CO2e per turist och 39 kg per gästnatt, varav resan till och från resmålet 54 % och logi 23 %. Med samma faktor ger Kalmar kommuns 452 248 gästnätter ca 17 600 ton per år och Ölands ca 56 000 ton (egen överslagsberäkning). Med 91–92 % bilresor är transportdelen i Kalmar län sannolikt minst lika stor.",
+   "note_sv": "Livscykelberäkning för turismen i Västsverige: 110 kg CO2e per turist och 39 kg per gästnatt, varav resan till och från resmålet 54 % och logi 23 %.",
    "confidence": "medium",
    "topic": "turism"
   },

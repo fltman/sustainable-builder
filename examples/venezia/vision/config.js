@@ -5,13 +5,13 @@ export const CITY={
   slug:'venezia',
   // Names, in Swedish and English. `centre` is the part of the city the 3D model shows: the historic city
   // round the Grand Canal's bend, from the Accademia to the Riva degli Schiavoni.
-  sv:{name:'Venedig',genitive:'Venedigs',kommun:'Venedigs kommun',kommunGenitive:'Venedigs kommuns',region:'Veneto',country:'Italien',
+  sv:{name:'Venedig',intro:'Hur vill vi leva i Venedig om hundra år – tillsammans med våra barn, barnbarn och grannar? Vem bor kvar i husen, hur många besökare bär staden, hur lever vi med vattnet som stiger och med MOSE – och vad blir kvar av lagunen?',crises:'högvatten, värmeböljor, pandemi …',genitive:'Venedigs',kommun:'Venedigs kommun',kommunGenitive:'Venedigs kommuns',region:'Veneto',country:'Italien',
     centre:'Venedigs historiska centrum',onCentre:'i Venedigs historiska centrum',centreGenitive:'det historiska Venedigs',tagline:'Ett sekel framåt i lagunen – en hållbar vision',waters:'lagunen',
     model:'Venedig i lagunen',modelOf:'en 3D-modell av Venedig byggd ur OpenStreetMap och Regione Venetos laserskannade höjddata',rise:'havet står {m} m högre år 2126'},
-  en:{name:'Venice',genitive:"Venice's",kommun:'the City of Venice',kommunGenitive:"the City of Venice's",region:'Veneto',country:'Italy',
+  en:{name:'Venice',intro:'How do we want to live in Venice in a hundred years – with our children, grandchildren and neighbours? Who will still live in its homes, how many visitors can the city carry, how do we live with the rising water and MOSE – and what is left of the lagoon?',crises:'acqua alta, heatwaves, pandemics …',genitive:"Venice's",kommun:'the City of Venice',kommunGenitive:"the City of Venice's",region:'Veneto',country:'Italy',
     centre:'historic Venice',onCentre:'in historic Venice',centreGenitive:"historic Venice's",tagline:'A century ahead in the lagoon – a sustainable vision',waters:'the lagoon',
     model:'Venice in its lagoon',modelOf:"a 3D model of Venice built from OpenStreetMap and the Veneto Region's laser-scanned elevation data",rise:'the sea stands {m} m higher by 2126'},
-  it:{name:'Venezia',genitive:'di Venezia',kommun:'il Comune di Venezia',kommunGenitive:'del Comune di Venezia',region:'Veneto',country:'Italia',
+  it:{name:'Venezia',intro:"Come vogliamo vivere a Venezia fra cent'anni – insieme ai nostri figli, ai nipoti e ai vicini? Chi abiterà ancora le case, quanti visitatori può reggere la città, come conviviamo con l'acqua che sale e con il MOSE – e che cosa resta della laguna?",crises:'acqua alta, ondate di calore, pandemie …',genitive:'di Venezia',kommun:'il Comune di Venezia',kommunGenitive:'del Comune di Venezia',region:'Veneto',country:'Italia',
     centre:'Venezia storica',onCentre:'nella Venezia storica',centreGenitive:'della Venezia storica',tagline:'Un secolo avanti nella laguna – una visione sostenibile',waters:'la laguna',
     model:'Venezia nella sua laguna',modelOf:'un modello 3D di Venezia costruito da OpenStreetMap e dai dati altimetrici laser della Regione del Veneto',rise:'il mare è {m} m più alto nel 2126'},
   // The site's languages, its own first (the first screen offers each).

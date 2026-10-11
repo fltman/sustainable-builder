@@ -93,6 +93,7 @@ export function createApp(engine){
   const lb=el('div','panel-body');
   const leverRows={};
   for(const theme of THEMES){
+    if(!LEVERS.some(l=>l.theme===theme.id))continue;   // a theme the place has no levers in
     const box=el('div','theme');const tt=el('div','theme-title');const sw=el('i');sw.style.background=theme.color;tt.append(sw,document.createTextNode(theme.name));box.append(tt);
     for(const lever of LEVERS.filter(l=>l.theme===theme.id)){
       const row=el('div','lever');const head=el('div','lever-top');const name=el('div','lever-name',lever.name);
@@ -111,7 +112,7 @@ export function createApp(engine){
   worlds.setAttribute('role','group');worlds.setAttribute('aria-label',t(`Världen runt ${PLACE.name}`,`The world around ${PLACE.name}`,`Il mondo intorno a ${PLACE.name}`));
   const worldButtons=WORLDS.map(w=>{const b=el('button','');b.append(el('b','',w.name),el('span','small muted',w.short));b.onclick=()=>{S.world=w.id;resimulate();};worlds.append(b);return [w.id,b];});
   const evToggle=el('label','small');evToggle.style.cssText='display:flex;gap:8px;align-items:center;margin:10px 8px;color:var(--ink-2)';
-  const evBox=el('input');evBox.type='checkbox';evBox.checked=true;evBox.onchange=()=>{S.events=evBox.checked;resimulate();};evToggle.append(evBox,document.createTextNode(t('Kriser och händelser (torka, stormflod, pandemi …)','Crises and events (drought, storm surge, pandemic …)','Crisi ed eventi (siccità, mareggiate, pandemie …)')));
+  const evBox=el('input');evBox.type='checkbox';evBox.checked=true;evBox.onchange=()=>{S.events=evBox.checked;resimulate();};evToggle.append(evBox,document.createTextNode(`${t('Kriser och händelser','Crises and events','Crisi ed eventi')} (${PLACE.crises||t('torka, översvämning, pandemi …','drought, floods, pandemic …','siccità, alluvioni, pandemie …')})`));   // the place's own (config.js crises)
   worldBox.append(worlds,evToggle);lb.append(worldBox);
   left.append(lh,lb);app.append(left);
   // Edge handles: always visible on the panel's outer edge; when the panel is folded away they stay at
@@ -514,7 +515,8 @@ export function createApp(engine){
     const shared=parsePlanHash(location.hash)?location.hash:null;
     modal((box,close)=>{
       const hero=el('div','hero');hero.append(el('h1','',`${CITY.title}`));
-      hero.append(el('p','',t(`Hur vill vi leva i ${PLACE.name} om hundra år – tillsammans med våra barn, barnbarn och grannar? Hur mycket mat odlar vi själva, hur hjälps vi åt, vad har vi valt att göra analogt och vad har vi accelererat med teknik och AI?`,`How do we want to live in ${PLACE.name} in a hundred years – with our children, grandchildren and neighbours? How much food do we grow ourselves, how do we help each other, what have we chosen to keep analogue and what have we accelerated with technology and AI?`,`Come vogliamo vivere a ${PLACE.name} fra cent'anni – insieme ai nostri figli, ai nipoti e ai vicini? Quanto cibo coltiviamo da soli, come ci aiutiamo a vicenda, che cosa abbiamo scelto di mantenere analogico e che cosa abbiamo accelerato con la tecnologia e l'IA?`)));
+      // The place's own question (config.js intro: what its levers are about), else the plain one.
+      hero.append(el('p','',PLACE.intro||t(`Hur vill vi leva i ${PLACE.name} om hundra år – tillsammans med våra barn, barnbarn och grannar?`,`How do we want to live in ${PLACE.name} in a hundred years – with our children, grandchildren and neighbours?`,`Come vogliamo vivere a ${PLACE.name} fra cent'anni – insieme ai nostri figli, ai nipoti e ai vicini?`)));
       hero.append(el('p','',t(`Det här är en forskningsförankrad framtidssimulering byggd på ${PLACE.modelOf} och ${PLACE.kommunGenitive} egen statistik.`,`This is a research-based future simulation built on ${PLACE.modelOf} and ${PLACE.kommunGenitive} own statistics.`,`Questa è una simulazione del futuro ancorata alla ricerca, che poggia su ${PLACE.modelOf} e sulle statistiche ${PLACE.kommunGenitive}.`)));
       // The place's film, when it has one (FILM).
       if(FILM){const fb=el('button','hero-film');fb.innerHTML=`<span class="play">▶</span>${t('Se filmen','Watch the film','Guarda il film')}<small>${t(FILM.length.sv,FILM.length.en,FILM.length.it).replace(/ minut(es)?$/,' min')}</small>`;fb.onclick=()=>showFilm();hero.append(fb);}
@@ -542,11 +544,14 @@ export function createApp(engine){
       const describe=w=>{const up=S.run?.years.at(-1)?.vision?.seaRise??w.seaRise2126,sea=dec(up,2);
         // How far the place's water rises (CITY's rise: "havet står {m} m högre år 2126") – nothing to say where it
         // does not (Rättvik's regulated lake) – and its hot days.
-        const rise=FLOOD&&PLACE.rise&&Math.abs(up)>=.005?`${PLACE.rise.replace('{m}',sea)}, `:'';
-        const deg=CITY.hotThreshold??25,hot=t(`omkring ${w.hotDays} dagar över ${deg} °C om året mot ${CITY.hotDaysToday??15} i dag`,`about ${w.hotDays} days above ${deg} °C a year against ${CITY.hotDaysToday??15} today`,`circa ${w.hotDays} giorni sopra i ${deg} °C all'anno contro i ${CITY.hotDaysToday??15} di oggi`);
-        note.textContent=w.stress<.25?t(`${w.name}: ${rise}${hot}, och torka, värmeböljor och stormar blir bara något vanligare än i dag. Gäller det du väljer ovan.`,`${w.name}: ${rise}${hot}, and droughts, heatwaves and storms become only a little more common than today. Applies to whatever you choose above.`,`${w.name}: ${rise}${hot}, e siccità, ondate di calore e tempeste diventano solo un po' più frequenti di oggi. Vale per qualunque scelta tu faccia qui sopra.`)
-          :w.stress<.7?t(`${w.name}: ${rise}${hot}, och torka, värmeböljor och stormar blir vanligare. Gäller det du väljer ovan.`,`${w.name}: ${rise}${hot}, and droughts, heatwaves and storms become more common. Applies to whatever you choose above.`,`${w.name}: ${rise}${hot}, e siccità, ondate di calore e tempeste diventano più frequenti. Vale per qualunque scelta tu faccia qui sopra.`)
-          :t(`${w.name}: ${rise}${hot}, och torka, värmeböljor och stormar blir betydligt vanligare och hårdare. Gäller det du väljer ovan.`,`${w.name}: ${rise}${hot}, and droughts, heatwaves and storms become far more common and severe. Applies to whatever you choose above.`,`${w.name}: ${rise}${hot}, e siccità, ondate di calore e tempeste diventano molto più frequenti e violente. Vale per qualunque scelta tu faccia qui sopra.`);
+        const rise=FLOOD&&PLACE.rise&&Math.abs(up)>=.005?PLACE.rise.replace('{m}',sea):'';
+        // (Hot days only where the place's climate says them – levers.js WORLD_CLIMATE – and today's only where
+        // it has measured them: config.js hotDaysToday.)
+        const deg=CITY.hotThreshold??25,now=CITY.hotDaysToday,hot=w.hotDays==null?'':t(`omkring ${w.hotDays} dagar över ${deg} °C om året${now!=null?` mot ${now} i dag`:''}`,`about ${w.hotDays} days above ${deg} °C a year${now!=null?` against ${now} today`:''}`,`circa ${w.hotDays} giorni sopra i ${deg} °C all'anno${now!=null?` contro i ${now} di oggi`:''}`);
+        const said=[rise,hot].filter(Boolean).join(', '),lead=`${w.name}: ${said?said+', '+t('och ','and ','e '):''}`;
+        note.textContent=w.stress<.25?t(`${lead}torka, värmeböljor och stormar blir bara något vanligare än i dag. Gäller det du väljer ovan.`,`${lead}droughts, heatwaves and storms become only a little more common than today. Applies to whatever you choose above.`,`${lead}siccità, ondate di calore e tempeste diventano solo un po' più frequenti di oggi. Vale per qualunque scelta tu faccia qui sopra.`)
+          :w.stress<.7?t(`${lead}torka, värmeböljor och stormar blir vanligare. Gäller det du väljer ovan.`,`${lead}droughts, heatwaves and storms become more common. Applies to whatever you choose above.`,`${lead}siccità, ondate di calore e tempeste diventano più frequenti. Vale per qualunque scelta tu faccia qui sopra.`)
+          :t(`${lead}torka, värmeböljor och stormar blir betydligt vanligare och hårdare. Gäller det du väljer ovan.`,`${lead}droughts, heatwaves and storms become far more common and severe. Applies to whatever you choose above.`,`${lead}siccità, ondate di calore e tempeste diventano molto più frequenti e violente. Vale per qualunque scelta tu faccia qui sopra.`);
         note.classList.remove('flash');void note.offsetWidth;note.classList.add('flash');};
       const ws=el('div','worlds');WORLDS.forEach(w=>{const b=el('button',w.id===S.world?'on':'');b.append(el('b','',w.name),el('span','small muted',w.short));
         b.onclick=()=>{S.world=w.id;[...ws.children].forEach(x=>x.classList.toggle('on',x===b));resimulate();describe(w);};ws.append(b);});

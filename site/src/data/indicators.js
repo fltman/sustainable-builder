@@ -12,7 +12,7 @@ const pct=v=>LANG==='sv'?`${Math.round(v*100)} %`:`${Math.round(v*100)}%`,pct1=v
 const num=(d=0)=>v=>v.toLocaleString(LOCALE,{maximumFractionDigits:d,minimumFractionDigits:d});
 export const INDICATORS={};
 for(const k of new Set([...Object.keys(GENERIC),...Object.keys(PLACE)]))INDICATORS[k]={...GENERIC[k],...PLACE[k]};
-// The key-figure board, in reading order (the place's own, or these).
-export const KEY_FIGURES=PLACE_FIGURES||['pop','lifeExp','ghgCons','foodRegional','localEnergy','carShare','lowParticipation','trust','waters','waterMargin','homePrepared','analogResilience','workHours','cohousing','heritage'];
+// The key-figure board, in reading order: the place's own (KEY_FIGURES), else its first fifteen measures.
+export const KEY_FIGURES=PLACE_FIGURES||Object.keys(INDICATORS).slice(0,15);
 
 if(LANG!=='sv')for(const m of Object.values(INDICATORS)){m.name=L(m.name);m.unit=L(m.unit);if(m.note)m.note=L(m.note);}

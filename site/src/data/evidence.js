@@ -31,29 +31,9 @@ export const ASSETS=baseline.assets||[];
 export const KOMMUN_VISION=baseline.kommun_vision||[];
 export const RESEARCH_THEMES=themes;
 
-// Links the levers to the research (ids from vision-research.json) and to the place's own records
-// ("base:<id>" in its baseline). The place's lists (@city/levers.js LEVER_EVIDENCE) replace these per
-// lever; ids that the place's research does not have are left out.
-const GENERIC={
-  stadsodling:['food_e23','food_e20','food_e41','food_e25'],
-  regionalt:['food_e5','food_e16','food_e31'],
-  kost:['food_e6','food_e9','food_e34','food_e10'],
-  hav:['biodiversity_baltic_e4','biodiversity_baltic_e11','food_e44'],
-  sol:['energy_e17'],
-  vind:['energy_e7'],
-  effektivitet:['energy_e12','governance_e8'],
-  bilfritt:['mobility_e8','mobility_e10','mobility_e19','mobility_e7'],
-  kollektivt:['mobility_e5','mobility_e6','mobility_e14'],
-  forbindelser:[],
-  bogemenskap:['community_e1','community_e12','community_e13','community_e14','community_e8'],
-  demokrati:['governance_e1','governance_e2','community_e16','community_e18','community_e17','governance_e3'],
-  arbetstid:['community_e22','community_e23','community_e24','community_e25'],
-  forebyggande:['health_e1','health_e3','health_e12','health_e6'],
-  ai:['tech_ai_e1','tech_ai_e6','tech_ai_e11','tech_ai_e3','tech_ai_e5','tech_ai_e17'],
-  kunskap:[],
-  analog:['digital_resilience_e5','digital_resilience_e4','digital_resilience_e11','digital_resilience_e12','digital_resilience_e8','digital_resilience_e7','digital_resilience_e15'],
-  beredskap:['resilience_e1','resilience_e23','resilience_e5'],
-  anpassning:['mobility_e15','mobility_e16'],
-};
+// Links the place's own levers to the research: its own lists (@city/levers.js LEVER_EVIDENCE) – ids from the
+// general research (vision-research.json), its own claims (research/evidence.json) and its records
+// ("base:<id>" in its baseline). Nothing is inherited from another place's levers; ids that the place's
+// research does not have are left out.
 const known=id=>id.startsWith('base:')?Boolean(BASELINE[id.slice(5)]):Boolean(EVIDENCE[id]);
-export const LEVER_EVIDENCE=Object.fromEntries(Object.entries({...GENERIC,...PLACE_EVIDENCE}).map(([k,ids])=>[k,ids.filter(known)]));
+export const LEVER_EVIDENCE=Object.fromEntries(Object.entries(PLACE_EVIDENCE||{}).map(([k,ids])=>[k,ids.filter(known)]));

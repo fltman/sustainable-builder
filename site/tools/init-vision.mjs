@@ -1,11 +1,13 @@
-// A first vision for a newly built place, to write on:
+// A first vision for a newly built place, to write on – empty wherever only the place's own research can fill it:
 //   node tools/init-vision.mjs <slug> [--force]      (python3 sustainable.py vision <slug> init)
-// Writes cities/<slug>/vision/ from what the pipeline and the research already know: config.js (names,
-// latitude, the water's level, the camera over the model, the station and the protected landmarks from
-// the map), model.js (BASE from Kolada and Sweden's records where they exist – the rest marked as
-// assumptions to research), places.js (the map's landmarks, texts to write), the levers, indicators,
-// visions and people in the engine's general words, and empty journey, family, events, vision text,
-// changes and AR modules – the site runs at once, and README.md lists what to write.
+// Writes cities/<slug>/vision/ from what the pipeline and the place's own records already know: config.js
+// (names, latitude, the water's level, the camera over the model, the station and the protected landmarks
+// from the map), model.js (BASE: the place's own records – Kolada's key figures for a Swedish municipality –
+// and a model that holds today's population until the place's own is written), indicators.js (the
+// population), places.js (the map's landmarks), and empty levers, visions, people, journey, family, events,
+// vision text, changes and AR. Nothing is taken from another place (AGENTS.md, Place first): the levers, the
+// measures and the calculations are written from this place's research, and `research <slug> check` holds
+// the place to that. The site starts at once, with no levers yet; README.md lists what to write.
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT } from '../city.config.mjs';
@@ -31,7 +33,7 @@ const dist=Math.round(half*1.05);
 
 w('config.js',`// ${name}: names, where things are in the 3D model (metres, x east, z south, the centre of place.json at
 // the origin: ${place.center[0]} N, ${place.center[1]} E) and what the site says about itself. Written by
-// tools/init-vision.mjs – check every field; the Kalmar and Rättvik examples show what each one does.
+// tools/init-vision.mjs – check every field; the examples (Kalmar, Rättvik, Venice) show what each one does.
 export const CITY={
   slug:${J(slug)},
   sv:{name:${J(name)},genitive:${J(gen)},kommun:${J(kommunName)},kommunGenitive:${J(kommunName+'s')},region:${J(region)},country:'Sverige',
@@ -44,7 +46,7 @@ export const CITY={
   url:${J(`./`)},
   meta:{pageTitle:${J(name+' 2126')},description:${J(`En forskningsförankrad framtidsvision för ett hållbart ${name} om hundra år. A research-based vision of a sustainable ${name} a hundred years from now.`)},
     ogTitle:${J(name+' 2126 – ett sekel framåt')},ogDescription:${J(`Välj ${gen} väg de kommande hundra åren. Choose ${name}'s path for the next hundred years.`)},ogImageAlt:${J(name+' år 2126.')}},
-  hotDaysToday:15,   // TODO research: days above 25 °C a year today (SMHI)
+  hotDaysToday:null,   // TODO research: days above 25 °C a year today (SMHI)
   lat:${place.center[0]},lon:${place.center[1]},
   // The model's water surface (y) and the real level it stands for (m RH 2000)${lake!=null?' – the main water in the elevation model':''}.
   water:{y:${waterY},level:${lake!=null?lake:0},kind:${J(lake!=null?'lake':'sea')}},   // TODO: 'sea' or 'lake'
@@ -70,94 +72,107 @@ export const CITY={
 };
 `);
 
-// Starting values: Kolada's and Sweden's records where they exist; the rest Kalmar's, marked as assumptions.
+// Starting values: the place's own records only – Kolada's key figures for a Swedish municipality (python3
+// sustainable.py research <slug> kolada, before this) – each with its record in FACTS. Nothing is borrowed
+// from another place or filled in: a value the records lack stays out until the research gives it.
 const deep=join(vision,'research/deep/kolada.json'),kol=existsSync(deep)?Object.fromEntries(read(deep).indicators.map(r=>[r.id,r])):{};
-const nat=Object.fromEntries(read(join(ROOT,'pipeline/research/national-se.json')).indicators.map(r=>[r.id,r]));
-const v=(id,f=x=>x)=>kol[id]?f(kol[id].value):null;
 const pct=x=>+(x/100).toFixed(3);
-const lifeExp=kol.medellivslangd_kvinnor&&kol.medellivslangd_man?+((kol.medellivslangd_kvinnor.value+kol.medellivslangd_man.value)/2).toFixed(2):null;
-const ghgParts=['vaxthusgaser_transporter_per_inv','vaxthusgaser_jordbruk_per_inv','vaxthusgaser_el_fjarrvarme_per_inv','vaxthusgaser_industri_per_inv'].map(id=>v(id));
-const ghgTotal=v('vaxthusgaser_per_inv');
-const other=ghgTotal!=null&&ghgParts.every(x=>x!=null)?+(ghgTotal-ghgParts.reduce((s,x)=>s+x,0)).toFixed(3):.577;
-const B={pop:v('befolkning_total')??10000,share65:v('andel_65_plus',pct)??.21,share80:v('andel_80_plus',pct)??.06,share0_19:v('andel_0_19',pct)??.22,
-  ghg:{transport:ghgParts[0]??1.4,agriculture:ghgParts[1]??.9,energy:ghgParts[2]??.04,industry:ghgParts[3]??.06,other},ghgCons:7.6,
-  renewable:.6,solarMW:v('solceller_installerad_effekt')??5,windMW:v('vindkraft_installerad_effekt')??0,elUsePerCap:v('elanvandning_per_inv')??7,elLocalOther:v('elproduktion_kraftvarme')??0,
-  carShare:.6,transitShare:.1,carsPer1000:500,evShare:v('elbilar_andel',pct)??.06,
-  regen:v('ekologisk_akermark_andel',pct)??.1,diet:.35,foodRegional:.2,foodStockDays:7,
-  waterNow:.6,waters:.5,bloom:.3,biodiversity:.35,protectedNature:v('skyddad_natur_total',pct)??.02,canopy:.25,greenShare:.3,
-  lifeExp:lifeExp??83.5,selfHealth:v('sjalvskattad_god_halsa',pct)??.72,activity:v('fysiskt_aktiva',pct)??.66,lowParticipation:.3,loneliness:.06,distress:v('allvarlig_psykisk_pafrestning',pct)??.1,youthScreen:.87,
-  trust:kol.avsaknad_tillit?+(1-kol.avsaknad_tillit.value/100).toFixed(3):.66,participation:.3,turnout:.84,gini:v('gini_disponibel_inkomst')??.27,childPoverty:.1,unsafe:v('otrygghet_kvall',pct)??.2,workHours:38,cohousing:.002,overcrowding:v('trangboddhet_norm2',pct)??.09,
-  education:v('gymnasieexamen_4ar',pct)??.7,unemployment:v('arbetsloshet_20_64',pct)??.05,
-  internet:.93,cash:.05,homePrepared:.43,waste:v('kommunalt_avfall_kg_per_inv')??400,recycling:v('materialatervinning_andel',pct)??.4,foodWaste:84};
-const FACTS=Object.fromEntries(Object.entries({pop:'befolkning_total',share65:'andel_65_plus',share80:'andel_80_plus',share0_19:'andel_0_19',
-  'ghg.transport':'vaxthusgaser_transporter_per_inv','ghg.agriculture':'vaxthusgaser_jordbruk_per_inv','ghg.energy':'vaxthusgaser_el_fjarrvarme_per_inv','ghg.industry':'vaxthusgaser_industri_per_inv',
-  solarMW:'solceller_installerad_effekt',windMW:'vindkraft_installerad_effekt',elUsePerCap:'elanvandning_per_inv',elLocalOther:'elproduktion_kraftvarme',evShare:'elbilar_andel',regen:'ekologisk_akermark_andel',
-  protectedNature:'skyddad_natur_total',lifeExp:'medellivslangd_kvinnor',selfHealth:'sjalvskattad_god_halsa',activity:'fysiskt_aktiva',distress:'allvarlig_psykisk_pafrestning',trust:'avsaknad_tillit',
-  gini:'gini_disponibel_inkomst',unsafe:'otrygghet_kvall',overcrowding:'trangboddhet_norm2',education:'gymnasieexamen_4ar',unemployment:'arbetsloshet_20_64',waste:'kommunalt_avfall_kg_per_inv',recycling:'materialatervinning_andel'}).filter(([,id])=>kol[id]));
-Object.assign(FACTS,Object.fromEntries(Object.entries({youthScreen:'unga_skarmtid_over_3h',internet:'internet_dagligen',cash:'kontant_senaste_kop',homePrepared:'hemberedskap_en_vecka',foodWaste:'livsmedelsavfall_per_person_sverige',
-  workHours:'arbetstid_overenskommen',foodStockDays:'livsmedelsberedskap_planeringsmal_dagar',loneliness:'ensamhet_ofta_alltid_sverige'}).filter(([,id])=>nat[id])));
-w('model.js',`// ${name}'s own numbers for the engine's model (site/src/model.js). Written by tools/init-vision.mjs from
-// Kolada and Sweden's records (FACTS names each value's record); every value without a record is an
-// assumption to research (TODO) – see the research-city skill and the Kalmar and Rättvik examples.
-export const BASE=${JSON.stringify(B).replace(/"(\w+)":/g,'$1:')};
-export const FACTS=${JSON.stringify(FACTS).replace(/"([\w.]+)":/g,(m,k)=>/\./.test(k)?m:`${k}:`)};
-export const BASE_UNCERTAIN=['foodRegional','foodStockDays','waters','biodiversity','greenShare','cohousing'];
-// TODO: calibrate growth on the official projection (attractMid = the model's attract in 2026), ageing on
-// the projected 65+/80+ shares, wind and solar on the place's potential, rail on the fastest train to the
-// capital, tourism on its guest nights (BASE.guestNights) – or leave rail/tourism out.
-export const PARAMS={growth:.004,growthDecay:30};
-export const FLOOD=null;   // TODO: a sea or lake that floods the streets – node tools/flood-map.mjs ${slug}
-export const WATER={};     // TODO: the drinking water's dry-year margin and plans
-export const WATERS={};    // TODO: the sea or lake's state (VISS)
-export const LOCAL={};     // what only ${name} has (Kalmar's bridge, Rättvik's summer town)
+const RECORDS={pop:['befolkning_total'],share65:['andel_65_plus',pct],share80:['andel_80_plus',pct],share0_19:['andel_0_19',pct],
+  solarMW:['solceller_installerad_effekt'],windMW:['vindkraft_installerad_effekt'],elUsePerCap:['elanvandning_per_inv'],elLocalOther:['elproduktion_kraftvarme'],
+  evShare:['elbilar_andel',pct],regen:['ekologisk_akermark_andel',pct],protectedNature:['skyddad_natur_total',pct],
+  selfHealth:['sjalvskattad_god_halsa',pct],activity:['fysiskt_aktiva',pct],distress:['allvarlig_psykisk_pafrestning',pct],
+  gini:['gini_disponibel_inkomst'],unsafe:['otrygghet_kvall',pct],overcrowding:['trangboddhet_norm2',pct],education:['gymnasieexamen_4ar',pct],
+  unemployment:['arbetsloshet_20_64',pct],waste:['kommunalt_avfall_kg_per_inv'],recycling:['materialatervinning_andel',pct]};
+const B={},FACTS={};
+for(const [k,[id,f=x=>x]] of Object.entries(RECORDS))if(kol[id]){B[k]=f(kol[id].value);FACTS[k]=id;}
+// Life expectancy: the mean of women's and men's (the women's record named); trust: one minus its lack.
+if(kol.medellivslangd_kvinnor&&kol.medellivslangd_man){B.lifeExp=+((kol.medellivslangd_kvinnor.value+kol.medellivslangd_man.value)/2).toFixed(2);FACTS.lifeExp='medellivslangd_kvinnor';}
+if(kol.avsaknad_tillit){B.trust=+(1-kol.avsaknad_tillit.value/100).toFixed(3);FACTS.trust='avsaknad_tillit';}
+// Greenhouse gases per inhabitant by sector, where the records have them (the rest of the total: other).
+const GHG={transport:'vaxthusgaser_transporter_per_inv',agriculture:'vaxthusgaser_jordbruk_per_inv',energy:'vaxthusgaser_el_fjarrvarme_per_inv',industry:'vaxthusgaser_industri_per_inv'};
+const ghg={};for(const [k,id] of Object.entries(GHG))if(kol[id]){ghg[k]=kol[id].value;FACTS['ghg.'+k]=id;}
+if(kol.vaxthusgaser_per_inv&&Object.keys(ghg).length===4)ghg.other=+(kol.vaxthusgaser_per_inv.value-Object.values(ghg).reduce((s,x)=>s+x,0)).toFixed(3);
+if(Object.keys(ghg).length)B.ghg=ghg;
+const popKnown=B.pop!=null;if(!popKnown)B.pop=0;
+const obj=o=>JSON.stringify(o).replace(/"(\w+)":/g,'$1:');
+w('model.js',`// ${gen} own model for the framework (site/src/model.js; the contract: AGENTS.md, "A place's own model").
+// Written by tools/init-vision.mjs. BASE holds ${gen} own records only – FACTS names each one's record in
+// research/baseline.json – and nothing from another place. Until ${gen} model is written there are no levers
+// and the population stays as measured: write the levers (levers.js) and the measures (indicators.js) from
+// ${gen} research, and here their effects year by year – sized by ${gen} own research where it exists and by
+// cited general research where not (research/evidence.json), every assumption marked. The examples' models
+// (Rättvik's, Venice's) show the form; their numbers are theirs.
+export const BASE=${obj(B)};${popKnown?'':'   // TODO: the population (no record yet)'}
+export const FACTS=${JSON.stringify(FACTS).replace(/"([\w]+)":/g,'$1:')};
+export const BASE_UNCERTAIN=[];   // starting values that are the model's estimates rather than records (varied ±20 %)
+export const PARAMS={};
+export const FLOOD=null;          // TODO where ${gen} water can rise into its streets: node tools/flood-map.mjs ${slug}
+// The framework's uncertainty – how fast and how far the levers reach, the climate's stress; add the model's own.
+export const SYSTEM_SPREAD={pace:[.75,1.33],reach:[.8,1.2],stress:[.75,1.25]};
+export const VARY={};
+// The state in 2026.
+export function init(B){return {pop:B.pop};}
+// One year (c: s, I, before, B, V, W, year, t, held, stress …) → the year's measures, with the framework's
+// capacity, demand and strain for the capacity bar. TODO: ${gen} levers acting on its measures; until then,
+// the population as measured.
+export function step({s,capacity,demand,strain}){return {pop:s.pop,capacity,demand,strain};}
+// What the 3D city shows (TODO): only what can physically change in ${gen} streets, roofs and water.
+export function vision(){return {};}
+// Raworth's doughnut on ${gen} own measures (TODO): social shortfall and ecological overshoot, 0 = within.
+export function doughnut(){return {social:{},ecological:{}};}
+// The global goals from ${gen} own measures: {goal: [[measure, poor, goal], …]} (TODO; a goal without parts scores 50).
+export const SDG_PARTS={};
+// The shared capacity for change (TODO: from ${gen} economy, its people of working age, its trust).
+export function capacity(){return 10;}
+// What each lever must do – {lever, level, ind, delta, year} – checked by the tests (TODO).
+export const EXPECT=[];
 `);
-w('levers.js',`// ${name}'s words for the levers (the engine's general ones are used where this says nothing), its
-// climate in the three worlds (TODO: SMHI's county scenarios – see Rättvik's levers.js) and which research
-// each lever leans on.
-export const LEVER_TEXT={};
+w('levers.js',`// ${gen} own levers (LEVER_DEFS): what the place can actually decide, found in its research
+// (research/story.json – challenges and assets – and research/deep/), in its own terms – none yet. Each:
+// {id, theme, name, short, levels:[today's course, steady, ambitious, radical], cost, tau}; the model acts on
+// them as I[id] (AGENTS.md, Place first). Also the themes they are grouped in (THEMES), ${gen} climate in the
+// three worlds (WORLD_CLIMATE: {ssp126:{stress, hotDays, seaRise2126, seaPow}, ssp245, ssp585} from its
+// region's scenarios) and the research each lever leans on (LEVER_EVIDENCE).
+export const LEVER_DEFS=[];
 export const WORLD_CLIMATE={};
 export const LEVER_EVIDENCE={};
 `);
-w('indicators.js',`// ${name}'s names, notes and records for the indicators (the engine's are used where this says nothing).
-export const INDICATORS={};
-export const KEY_FIGURES=null;
+w('indicators.js',`import { LOCALE } from '@engine/i18n.js';
+// ${gen} own measures: display metadata for every measure its model returns (INDICATOR_DEFS: name, unit, fmt,
+// better, theme, assumption), then their names, notes and records (INDICATORS: base = the record in
+// research/baseline.json). TODO: the measures that matter in ${name} and can be counted there.
+export const INDICATOR_DEFS={
+  pop:{name:'Befolkning',unit:'invånare',fmt:v=>Math.round(v).toLocaleString(LOCALE),better:0,theme:'gemenskap'},
+};
+export const INDICATORS={${popKnown?"pop:{base:'befolkning_total'}":''}};
+export const KEY_FIGURES=['pop'];
 `);
-w('presets.js',`// ${name}'s visions (the engine adds today's course first). TODO: the research-based one first, written
-// from the research; then two that contrast with it.
-export const VISIONS=[
-  {id:'forskningen',name:'Forskningens förslag',short:'Börja med gemenskap, beredskap och demokrati, bygg sedan om gatorna och energin.',
-    schedule:[
-      {from:2026,set:{demokrati:2,bogemenskap:2,analog:2,beredskap:2,forebyggande:1,regionalt:1,kost:2,stadsodling:1,kollektivt:1,sol:2,hav:1,bilfritt:1,arbetstid:1,anpassning:1,effektivitet:1,ai:1,kunskap:1}},
-      {from:2036,set:{bilfritt:2,hav:2,regionalt:2,anpassning:2,forebyggande:2,demokrati:3,kunskap:2}},
-      {from:2046,set:{vind:2,ai:2,arbetstid:2,kollektivt:2,effektivitet:2,forbindelser:2}},
-      {from:2056,set:{stadsodling:2,bogemenskap:3,hav:3}},
-      {from:2066,set:{regionalt:3,sol:3,anpassning:3}},
-      {from:2076,set:{beredskap:3,kost:3,kollektivt:3}},
-    ]},
-  {id:'teknik',name:'Teknikstaden',short:'Allt på AI, automation och energi – men lite om gemenskap, demokrati och analoga reserver.',
-    schedule:[{from:2026,set:{ai:3,sol:3,vind:3,kollektivt:3,effektivitet:2,anpassning:2,stadsodling:1,beredskap:1,kunskap:2,forbindelser:3}}]},
-  {id:'byn',name:'Den analoga byn',short:'Gemenskap, odling och tid för varandra – men ingen AI och ingen storskalig energi.',
-    schedule:[{from:2026,set:{analog:3,arbetstid:3,bogemenskap:3,stadsodling:3,regionalt:3,kost:3,demokrati:2,beredskap:2,bilfritt:2,kunskap:2,forbindelser:2}}]},
-];
+w('presets.js',`// ${gen} visions for "Utforska" – none yet. The engine adds today's course first (TODAY: {short}, what
+// today's course carries in ${gen} model). TODO: the research-based vision first, on ${gen} own levers; then two
+// that contrast with it. A schedule is a list of {from:year, set:{lever:level}} steps, each building on the previous.
+export const VISIONS=[];
 `);
 const places=[...lm.map(l=>({id:String(l.name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'').slice(0,20),name:l.name,x:Math.round(l.x),z:Math.round(-l.y),kind:/church|chapel/.test(l.kind)?'kulturarv':/school/.test(l.tags?.amenity||'')?'kunskap':/station/.test(l.kind)?'rorlighet':'plats'}))]
   .filter((p,i,a)=>p.id&&a.findIndex(q=>q.id===p.id)===i);
 w('places.js',`import { LANG, L } from '@engine/i18n.js';
-// Named places in ${name}'s model (from the map's landmarks – add the square, the library, the health
+// Named places in ${gen} model (from the map's landmarks – add the square, the library, the health
 // centre, the school, the shore …): now = what it is today (a sourced fact), future = what it becomes and
 // the lever that brings it. TODO: write the texts from the research.
 export const PLACES=${JSON.stringify(places.map(p=>({...p,now:p.name,future:''})),null,1).replace(/"(\w+)":/g,'$1:')};
 if(LANG==='en')for(const p of PLACES){p.name=L(p.name);p.now=L(p.now);p.future=L(p.future);}
 `);
-w('people.js',`// The people of ${name} in the Sims layer: today's jobs, the levers' jobs, what they say. TODO: make them ${gen}.
-export const jobsToday=['undersköterska','lärare','säljare','snickare','sjuksköterska','busschaufför','kock','lagerarbetare','frisör','elektriker'];
-export const jobsFuture=[['stadsodling','stadsodlare'],['regionalt','andelsbonde'],['sol','energitekniker i kvarterets energigemenskap'],['effektivitet','reparatör på återbruket'],['bogemenskap','kvartersvärd i Generationshuset'],['demokrati','samordnare för medborgarrådet'],['ai','AI-granskare'],['beredskap','beredskapssamordnare'],['forebyggande','hälsocoach på Hälsotorget'],['analog','bibliotekarie i Det analoga huset']];
-export const thoughts={sleep:['Zzz…'],home:['Lugn kväll hemma.'],screen:['Bara ett avsnitt till.'],work:['Mycket på jobbet idag.'],school:['Utedag med klassen idag.'],garden:['Odlingen är bästa terapin.'],
-  meal:['Det smakar bättre när man äter tillsammans.'],market:['Torget lever igen.'],park:['Fåglarna är tillbaka.'],quay:['Vattnet glittrar idag.'],library:['Mobilen ligger kvar i hallen.'],care:['Generationshuset är som en stor familj.']};
+w('people.js',`// The people of ${name} in the Sims layer. TODO from the research: what people work with today (jobsToday),
+// the jobs ${gen} own levers bring ([[lever, job], …]) and what they say (thoughts, per activity).
+export const jobsToday=[];
+export const jobsFuture=[];
+export const thoughts={sleep:['Zzz…'],home:['Lugn kväll hemma.'],work:['Mycket på jobbet idag.']};
 `);
-w('events.js','// TODO: the events that test the place (see examples/kalmar/vision/events.js and Rättvik\'s).\nexport const EVENTS=[];\n');
+w('events.js',`// The events that test ${name} – TODO from the research: its own risks (high water, drought, heat, storms, a
+// closing employer …), each resolve(ctx, r) reading the model's state; the examples' events.js show the form.
+export const EVENTS=[];
+`);
 w('family.js',`import { t } from '@engine/i18n.js';
-// TODO: a family over five generations in ${name} (see Rättvik's and Kalmar's family.js).
+// TODO: a family over five generations in ${name} (the examples' family.js show the form).
 export const FAMILY=[];
 export function lifespans(){return {};}
 export function alive(m,year,spans){return year>=m.birth&&year<(spans[m.id]??0);}
@@ -166,31 +181,39 @@ export function familyEpilogue(){return t('Hösten 2126.','Autumn 2126.');}
 export const FAMILY_INTRO={sv:'',en:''};
 export const FAMILY_TITLE={sv:'Släkten',en:'The family'};
 `);
-w('decisions.js',`// TODO: the journey's dilemmas per decade (see the examples' decisions.js).
+w('decisions.js',`// TODO: the journey's dilemmas per decade, on ${gen} own levers (the examples' decisions.js show the form).
 export const DECISIONS={};
-export const JOURNEY_INTRO={sv:${J(`${kommunName} har ${Math.round(B.pop).toLocaleString('sv-SE')} invånare.`)},en:${J(`${kommunName.replace(/s? kommun$/,'')} Municipality has ${Math.round(B.pop).toLocaleString('en-GB')} inhabitants.`)}};
+export const JOURNEY_INTRO=${popKnown?`{sv:${J(`${kommunName} har ${Math.round(B.pop).toLocaleString('sv-SE')} invånare.`)},en:${J(`${kommunName.replace(/s? kommun$/,'')} Municipality has ${Math.round(B.pop).toLocaleString('en-GB')} inhabitants.`)}}`:"{sv:'',en:''}"};
 `);
-w('vision-text.js','// TODO: the vision document, written from the model state (see the examples\' vision-text.js).\nexport function visionSections(){return [];}\n');
-w('changes.js','// TODO: the visible changes and where they show (see the examples\' changes.js).\nexport const CHANGES=[];\nexport const moved=(c,v,v0)=>c.weight*Math.abs(c.v(v)-c.v(v0));\nexport function ranked(v,v0,min=.06){return CHANGES.map(c=>({c,m:moved(c,v,v0)})).filter(o=>o.m>=min).sort((a,b)=>b.m-a.m);}\nexport function changeSpec(){return null;}\n');
-w('ar.js','// TODO: the AR spots (see the examples\' ar.js).\nexport const AR_SPOTS=[];\nexport function arSpec(spot){return spot;}\n');
-w('en.js',`// English for ${name}'s own Swedish strings (keys are exact Swedish source strings).\nexport const EN={};\n`);
+w('vision-text.js','// TODO: the vision document, written from the model state (the examples\' vision-text.js show the form).\nexport function visionSections(){return [];}\n');
+w('changes.js','// TODO: the visible changes and where they show (the examples\' changes.js show the form).\nexport const CHANGES=[];\nexport const moved=(c,v,v0)=>c.weight*Math.abs(c.v(v)-c.v(v0));\nexport function ranked(v,v0,min=.06){return CHANGES.map(c=>({c,m:moved(c,v,v0)})).filter(o=>o.m>=min).sort((a,b)=>b.m-a.m);}\nexport function changeSpec(){return null;}\n');
+w('ar.js','// TODO: the AR spots (the examples\' ar.js show the form).\nexport const AR_SPOTS=[];\nexport function arSpec(spot){return spot;}\n');
+w('en.js',`// English for ${gen} own Swedish strings (keys are exact Swedish source strings).\nexport const EN={};\n`);
 if(!existsSync(join(vision,'research/evidence.json')))w('research/evidence.json',JSON.stringify({evidence:{},themes:{},quotes:[],en:{evidence:{},themes:{},quotes:[]}})+'\n');
 if(!existsSync(join(vision,'research/story.json')))w('research/story.json',JSON.stringify({kommun:{name:kommunName},kommun_vision:[],challenges:[],assets:[],en:{challenges:{},assets:{},kommun_vision:[]}},null,1)+'\n');
 w('README.md',`# ${name} 2126 – the vision
 
-Started by \`python3 sustainable.py vision ${slug} init\`. The site runs as it is; what makes it ${gen} is
-still to write (the build-sustainable and research-city skills):
+Started by \`python3 sustainable.py vision ${slug} init\`. The site starts as it is – the 3D town, ${gen}
+own records and no levers yet. Everything that makes it a vision is written from ${gen} own conditions,
+research and measured data (AGENTS.md, *Place first*; the build-sustainable and research-city skills):
 
 - [ ] research: \`research ${slug} kolada\`, the deep topics, \`research/story.json\`, \`research ${slug} merge\`
-- [ ] config.js: names, water (sea or lake), squares, boats, credits; the camera from \`look\`
-- [ ] model.js: the starting values without a record, PARAMS calibrated, FLOOD (\`node site/tools/flood-map.mjs ${slug}\`), WATER, WATERS, LOCAL
-- [ ] levers.js, indicators.js, presets.js in ${gen} words; places.js texts
-- [ ] family.js, decisions.js, vision-text.js, events.js, changes.js, ar.js, people.js; en.js
-- [ ] \`python3 sustainable.py test ${slug}\` and \`research ${slug} check\`; \`look ${slug}\`
+- [ ] config.js: names, water (sea or lake), today's hot days, squares, boats, credits; the camera from \`look\`
+- [ ] levers.js: what ${name} can decide, from its research (LEVER_DEFS, THEMES, WORLD_CLIMATE, LEVER_EVIDENCE)
+- [ ] indicators.js: the measures that matter here and can be counted, with their records
+- [ ] model.js: the starting values still missing (each with its record${popKnown?'':', the population first'}), init/step – each lever's
+      effects, sized by local research or cited general research –, vision, doughnut, SDG_PARTS, capacity,
+      EXPECT; FLOOD (\`node site/tools/flood-map.mjs ${slug}\`)
+- [ ] presets.js (TODAY and the visions), places.js texts, people.js
+- [ ] family.js, decisions.js, vision-text.js, events.js, changes.js, ar.js; en.js
+- [ ] \`python3 sustainable.py research ${slug} check\` (it also flags what is borrowed from another place),
+      \`python3 sustainable.py test ${slug}\`; \`look ${slug}\`
 - [ ] film (optional): film.js, \`film-voices\`, \`film ${slug}\`
 `);
-// The ride's street addresses and, where there is water to flood from, the flood map.
+// The records the place has so far (Kolada's, Sweden's) into research/baseline.json, so the site starts at once;
+// then the ride's street addresses and, where there is water to flood from, the flood map.
 const { execFileSync }=await import('node:child_process');
+execFileSync(process.execPath,[join(import.meta.dirname,'merge-research.mjs'),slug],{stdio:'inherit'});
 if(existsSync(join(city,'osm.json')))execFileSync(process.execPath,[join(import.meta.dirname,'addresses.mjs'),slug],{stdio:'inherit'});
 if(lake!=null&&existsSync(join(city,'terrain.json')))execFileSync(process.execPath,[join(import.meta.dirname,'flood-map.mjs'),slug],{stdio:'inherit'});
 console.log(`\ncities/${slug}/vision/ is ready to write on: README.md lists what is left.`);

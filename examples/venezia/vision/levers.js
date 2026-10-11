@@ -7,6 +7,16 @@
 // years implementation takes to settle. Swedish here; English in en/core.js, Italian in it/core.js.
 // No cars to give up (the historic city has none), no wind parks, no gardens or panels on the palazzi: Venice's
 // levers are not Kalmar's. Ids are kept where the idea carries over and given Venice's meaning.
+// The themes they are grouped in, in Venice's words and the research's order (homes first).
+export const THEMES=[
+  {id:'gemenskap',name:'Hem & gemenskap',color:'#d0614e'},
+  {id:'stad',name:'Besökare & båtar',color:'#3f8fc2'},
+  {id:'mat',name:'Lagunen & maten',color:'#7aa83a'},
+  {id:'energi',name:'Energi & klimat',color:'#e0a92b'},
+  {id:'halsa',name:'Hälsa & svalka',color:'#c9497a'},
+  {id:'teknik',name:'Kunskap & data',color:'#7c5cc4'},
+  {id:'resiliens',name:'Vattnet & beredskap',color:'#4a8c7a'},
+];
 export const LEVER_DEFS=[
   {id:'bogemenskap',theme:'gemenskap',name:'Hem för venetianer',cost:1.2,tau:12,
     short:'Tomma kommunala hem rustas och hyrs ut, en bostadsfond köper hem åt dem som bor och arbetar här',

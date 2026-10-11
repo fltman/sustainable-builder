@@ -139,9 +139,8 @@ const STILL={depave:0,verge:0,maturity:.35,housing:0,tower:0,canals:0,boats:0,sh
   foodForest:0,market:0,community:0,shade:0,roofCover:0,greenRatio:.5,facadeGreen:0,mussels:0,floating:0,wind:0,wall:0,seaRise:0,waterClarity:.5,
   bloom:0,cars:1,parking:0,bikes:.5,pods:0,people:1,old:.2,old80:.05,ev:0,dry:0};
 export function visionOf(d,I,s){return {...STILL,...M.vision?.(d,I,s)};}
-// What the residents' everyday reads from the year (residents.js): the place's own mapping (residents(d,I)),
-// else its measures of these names – and nothing (no algal bloom, no loneliness beyond the usual) where it has none.
+// What the residents' everyday reads from the year (residents.js): the place's own mapping (residents(d,I)
+// in its model.js) – else an ordinary day: no algal bloom, no shared homes, no lever of another place's.
 export function residentsContext(d,I){
-  return {cohousing:d.cohousing??0,digital:d.digitalDependence??.85,bloom:d.bloom??0,lonely:d.lowParticipation??.38,
-    workday:1-(40-(d.workHours??38))/40,...M.residents?.(d,I)};
+  return {cohousing:0,digital:.85,bloom:0,lonely:.3,workday:.95,analog:0,...M.residents?.(d,I)};
 }

@@ -5,6 +5,9 @@
 // measure and the people's own say; the city raised and defended so that MOSE closes only when it must and the
 // lagoon keeps breathing; the marshes rebuilt and the big ships out; boats and homes on electricity and lagoon
 // heat; and, by mid-century, the city lifted with seawater as the sea passes what the gates were built for.
+// Today's course in Venice's model: Italy's and the EU's grid leaves fossil fuels, but the tourist flats keep
+// growing, the residents keep leaving and MOSE closes more often as the sea rises (model.js).
+export const TODAY={short:'Inga nya vägval. Elnätet blir fossilfritt, men turistlägenheterna blir fler, invånarna färre och MOSE stänger allt oftare.'};
 export const VISIONS=[
   {id:'lagunaviva',name:'Laguna viva',short:'Forskningens förslag för Venedig: börja med hem för venetianer och ett tak för turistlägenheterna – en stad som tömts på invånare behöver dem först – och besökare i lagom mängd. Höj och skydda staden så att MOSE bara stänger när det måste och lagunen får andas, bygg saltängarna, ta de stora fartygen ut ur lagunen, och låt båtarna och husen gå över till el och lagunvärme.',
     schedule:[

@@ -5,10 +5,10 @@
 export const CITY={
   slug:'rattvik',
   // Names, in Swedish and English. `centre` is the part of the place the 3D model shows.
-  sv:{name:'Rättvik',genitive:'Rättviks',kommun:'Rättviks kommun',kommunGenitive:'Rättviks kommuns',region:'Dalarnas län',country:'Sverige',
+  sv:{name:'Rättvik',intro:'Hur vill vi leva i Rättvik om hundra år – tillsammans med våra barn, barnbarn och grannar? Vem bor kvar i byarna och vem tar hand om de äldre, vad blir det av fäbodarna, Siljan och skogen – och vem äger vinden i norr?',crises:'skyfall, vårflod, skogsbrand …',genitive:'Rättviks',kommun:'Rättviks kommun',kommunGenitive:'Rättviks kommuns',region:'Dalarnas län',country:'Sverige',
     centre:'Rättviks centrum',onCentre:'i Rättviks centrum',centreGenitive:'Rättviks centrums',tagline:'Ett sekel framåt vid Siljan – en hållbar vision',waters:'Siljan',
     model:'Rättvik vid Siljan',modelOf:'en 3D-modell av Rättvik byggd ur OpenStreetMap och Lantmäteriets höjddata',rise:'Siljans hundraårsnivå står {m} m högre år 2126'},
-  en:{name:'Rättvik',genitive:"Rättvik's",kommun:'Rättvik Municipality',kommunGenitive:"Rättvik Municipality's",region:'Dalarna County',country:'Sweden',
+  en:{name:'Rättvik',intro:'How do we want to live in Rättvik in a hundred years – with our children, grandchildren and neighbours? Who still lives in the villages and who cares for the old, what becomes of the summer farms, Siljan and the forest – and who owns the wind in the north?',crises:'cloudbursts, spring floods, forest fires …',genitive:"Rättvik's",kommun:'Rättvik Municipality',kommunGenitive:"Rättvik Municipality's",region:'Dalarna County',country:'Sweden',
     centre:'central Rättvik',onCentre:'in central Rättvik',centreGenitive:"central Rättvik's",tagline:'A century ahead by Lake Siljan – a sustainable vision',waters:'Lake Siljan',
     model:'Rättvik by Lake Siljan',modelOf:'a 3D model of Rättvik built from OpenStreetMap and Lantmäteriet\'s elevation data',rise:'Lake Siljan\'s 100-year level is {m} m higher by 2126'},
   title:'RÄTTVIK 2126',

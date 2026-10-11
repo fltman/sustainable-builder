@@ -144,3 +144,10 @@ export const SDG_PARTS={...SYSTEM.sdgBase,...OWN_SDG_PARTS};
 
 // The measures whose uncertainty band the tests check (besides the population): measured today, uncertain later.
 export const BAND_CHECK=['trust','lifeExp'];
+
+// What the residents' everyday reads from Kalmar's year (site/src/residents.js): shared homes, the screen,
+// the sound's algal bloom, low participation, working hours, and the analogue life (Kalmar's lever).
+export function residents(d,I){
+  return {cohousing:d.cohousing??0,digital:d.digitalDependence??.85,bloom:d.bloom??0,lonely:d.lowParticipation??.38,
+    workday:1-(40-(d.workHours??38))/40,analog:I.analog??0};
+}

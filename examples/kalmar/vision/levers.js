@@ -1,6 +1,14 @@
-// Kalmar's words for the levers and its climate in the three worlds (the engine's site/src/data/levers.js
-// has the levers themselves – cost, pace, effects – and the wording any place starts from).
-// Swedish here; English in en.js.
+// Kalmar's own levers (LEVER_DEFS below, with their words in LEVER_TEXT), the themes they are grouped in
+// and Kalmar's climate in the three worlds. Swedish here; English in en.js.
+export const THEMES=[
+  {id:'mat',name:'Mat & odling',color:'#7aa83a'},
+  {id:'energi',name:'Energi & klimat',color:'#e0a92b'},
+  {id:'stad',name:'Stad & rörlighet',color:'#3f8fc2'},
+  {id:'gemenskap',name:'Gemenskap & demokrati',color:'#d0614e'},
+  {id:'halsa',name:'Hälsa & omsorg',color:'#c9497a'},
+  {id:'teknik',name:'Teknik, AI & det analoga',color:'#7c5cc4'},
+  {id:'resiliens',name:'Resiliens & beredskap',color:'#4a8c7a'},
+];
 export const LEVER_TEXT={
   stadsodling:{name:'Stadsodling',short:'Odling på gator, parkeringar, tak och i växthus',
     levels:['Koloniområden som idag','Odlingslådor i kvarteren','Parkeringar blir matparker, växthus på tak','Ätbar stad: matskog, akvaponik och odling på varje gata']},

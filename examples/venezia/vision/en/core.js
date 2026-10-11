@@ -1,5 +1,12 @@
 // English for Venice's levers and visions (keys are the exact Swedish strings in levers.js and presets.js).
 export const EN={
+  "Hem & gemenskap":"Homes & community",
+  "Besökare & båtar":"Visitors & boats",
+  "Lagunen & maten":"Lagoon & food",
+  "Hälsa & svalka":"Health & shade",
+  "Kunskap & data":"Knowledge & data",
+  "Vattnet & beredskap":"Water & preparedness",
+  "Inga nya vägval. Elnätet blir fossilfritt, men turistlägenheterna blir fler, invånarna färre och MOSE stänger allt oftare.":"No new choices. The grid goes fossil-free, but tourist flats multiply, residents dwindle and MOSE closes ever more often.",
   "Hem för venetianer":"Homes for Venetians",
   "Tomma kommunala hem rustas och hyrs ut, en bostadsfond köper hem åt dem som bor och arbetar här":"Empty municipal homes are renovated and let, a housing fund buys homes for those who live and work here",
   "Som idag: omkring 800 offentliga hem står tomma i väntan på renovering":"As today: about 800 public homes stand empty awaiting renovation",

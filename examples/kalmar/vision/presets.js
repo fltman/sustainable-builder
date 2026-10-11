@@ -1,6 +1,7 @@
-// Kalmar's visions for "Utforska" (the engine adds today's course first). The first is the
-// research-based one; the others contrast with it. A schedule is a list of {from:year, set:{lever:level}}
-// steps, each building on the previous.
+// Kalmar's visions for "Utforska" (the engine adds today's course first, in TODAY's words: what Kalmar's
+// model carries on its own). The first is the research-based one; the others contrast with it. A schedule
+// is a list of {from:year, set:{lever:level}} steps, each building on the previous.
+export const TODAY={short:'Inga nya vägval. Nationella trender rullar på – elbilar, fossilfri el – men inget mer.'};
 export const VISIONS=[
   {id:'sundstaden',name:'Sundstaden',short:'Forskningens förslag: börja med gemenskap, beredskap och demokrati, bygg sedan om gatorna, energin och havet.',
     schedule:[

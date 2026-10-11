@@ -12,11 +12,13 @@ import { IT as PLACE_IT } from '@city/it.js';
 const EN={...ENGINE_EN,...PLACE_EN},IT={...ENGINE_IT,...PLACE_IT};
 // The place's languages, its own first (vite.config.js defines __LANGS__ from CITY.langs).
 export const LANGS=typeof __LANGS__!=='undefined'?__LANGS__:['sv','en'];
+// The place's own keys in the browser's storage ("venezia-lang"): places on the same web host keep their own.
+export const STORE=typeof __CITY__!=='undefined'?__CITY__:'kalmar';
 const hasWindow=typeof window!=='undefined';
 const pick=()=>{
   if(!hasWindow)return typeof process!=='undefined'&&LANGS.includes(process.env?.SITE_LANG)?process.env.SITE_LANG:'sv';
   const q=new URLSearchParams(location.search).get('lang');
-  let saved=null;try{saved=localStorage.getItem('kalmar-lang');}catch{}
+  let saved=null;try{saved=localStorage.getItem(`${STORE}-lang`);}catch{}
   const l=q||window.__kalmarLang||saved||(navigator.language||'sv').slice(0,2);
   if(LANGS.includes(l))return l;
   // A Swedish place speaks Swedish to the rest of the world; a place in another language, English.
@@ -35,7 +37,7 @@ export const pct=v=>`${Math.round(v*100)}${LANG==='sv'?' %':'%'}`;
 // Switch language inside the app: the plan and year ride along in sessionStorage (not the address,
 // so a later visit still starts from the first screen) and the page reloads in the other language.
 export function setLang(l,resume=''){
-  try{localStorage.setItem('kalmar-lang',l);if(resume)sessionStorage.setItem('kalmar-resume',resume);}catch{}
+  try{localStorage.setItem(`${STORE}-lang`,l);if(resume)sessionStorage.setItem(`${STORE}-resume`,resume);}catch{}
   const u=new URL(location.href);u.searchParams.delete('lang');u.hash='';
   if(u.href===location.href)location.reload();else location.href=u.href;
 }

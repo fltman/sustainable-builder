@@ -492,7 +492,7 @@ def cmd_make(a):
         cmd_research(argparse.Namespace(slug=slug, action='kolada', kommun=None))
     if not vision_of(slug):
         cmd_vision(argparse.Namespace(slug=slug, force=False))
-    say(f'\n{G}{B}{slug}: the city model and a first vision are ready.{X}  Next: research (the research-city skill), then  python3 sustainable.py site {slug}')
+    say(f'\n{G}{B}{slug}: the city model and an empty vision are ready.{X}  Next: research (the research-city skill), the place\'s own levers and model from it (build-sustainable), then  python3 sustainable.py site {slug}')
 
 
 def cmd_publish(a):

@@ -18,7 +18,7 @@ import { createResidents } from './residents.js';
 import { PLACES } from '@city/places.js';
 import { FAMILY, lifespans } from '@city/family.js';
 import { createApp } from './ui/app.js';
-import { t, LANG } from './i18n.js';
+import { t, LANG, STORE } from './i18n.js';
 import { createResolutionGovernor } from './resolution.js';
 import { createAudio } from './audio.js';
 import { createPost } from './post.js';
@@ -280,7 +280,7 @@ function frame(now){
   if(app.S.run&&spanRun!==app.S.run){spanRun=app.S.run;spanCache=lifespans(app.S.run);}
   const ind=ctxInfo?.d?.ind||{};
   const rc=residentsContext(ind,ctxInfo?.I||{});
-  residents.setContext({vision:shown||{},spans:spanCache||{},I:ctxInfo?.I||{},community:shown?.community??.1,cohousing:rc.cohousing,analog:ctxInfo?.I?.analog??0,digital:rc.digital,
+  residents.setContext({vision:shown||{},spans:spanCache||{},I:ctxInfo?.I||{},community:shown?.community??.1,cohousing:rc.cohousing,analog:rc.analog,digital:rc.digital,
     bloom:rc.bloom,lonely:rc.lonely,socialDecay:.7+rc.lonely,workday:rc.workday,stayIn:weather.now.empty});
   // 1× = one game hour per 75 real seconds; 60× = a day in half a minute. While the century plays the
   // day runs as a time-lapse instead – about a day every twelve seconds, the dark hours three times
@@ -344,7 +344,7 @@ progress(1,t('Klart.','Ready.','Pronto.'));
 loading.style.transition='opacity .6s';loading.style.opacity='0';setTimeout(()=>loading.remove(),700);
 // A language switch inside the app comes back to the same plan; everyone else starts at the start
 // screen (a shared plan in the address is offered there first).
-let resume=null;try{resume=sessionStorage.getItem('kalmar-resume');sessionStorage.removeItem('kalmar-resume');}catch{}
+let resume=null;try{resume=sessionStorage.getItem(`${STORE}-resume`);sessionStorage.removeItem(`${STORE}-resume`);}catch{}
 if(resume&&app.loadShared('#'+resume)){}
 else if(params.has('preset')){const {PRESETS}=await import('./scenario.js');app.loadPreset(PRESETS.find(p=>p.id===params.get('preset'))||PRESETS[1]);}
 else if(params.has('sandbox'))app.setMode('sandbox');

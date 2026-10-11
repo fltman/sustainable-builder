@@ -8,13 +8,14 @@
 // heartbeat still there means the page died. Then the app starts again at once, in the chosen
 // language, on its leanest settings (window.__kalmarSafe) – and after three deaths it says so.
 const params=new URLSearchParams(location.search);
+const STORE=typeof __CITY__!=='undefined'?__CITY__:'kalmar';   // the place's own storage keys (see src/i18n.js)
 const save=(k,v)=>{try{localStorage.setItem(k,v);}catch{}};
 const ss={get:k=>{try{return sessionStorage.getItem(k);}catch{return null;}},set:(k,v)=>{try{sessionStorage.setItem(k,v);}catch{}},del:k=>{try{sessionStorage.removeItem(k);}catch{}}};
-let saved=null;try{saved=localStorage.getItem('kalmar-lang');}catch{}
-const resume=Boolean(ss.get('kalmar-resume'));
-const beat=Number(ss.get('kalmar-alive')||0),died=beat>0;
+let saved=null;try{saved=localStorage.getItem(`${STORE}-lang`);}catch{}
+const resume=Boolean(ss.get(`${STORE}-resume`));
+const beat=Number(ss.get(`${STORE}-alive`)||0),died=beat>0;
 // Died while in use (a recent heartbeat) is a crash; an old one is a tab Safari put away in the background.
-let crashes=+(ss.get('kalmar-crashes')||0);if(died&&Date.now()-beat<20000)ss.set('kalmar-crashes',String(++crashes));
+let crashes=+(ss.get(`${STORE}-crashes`)||0);if(died&&Date.now()-beat<20000)ss.set(`${STORE}-crashes`,String(++crashes));
 const splash=document.getElementById('loading'),pickBox=splash.querySelector('.lang-pick'),load=splash.querySelector('.splash-load');
 
 // Fetch what every visit needs while the visitor reads the first screen.
@@ -29,12 +30,12 @@ const W={sv:{again:'Startar om med mindre detaljer så att telefonen orkar …',
   en:{again:'Starting again with less detail, so the phone can keep up …',loading:c=>`Loading ${c} …`,memory:'This page needs more memory than the phone has free right now. Close other tabs and try again – or open it on a computer.',retry:'Try again'},
   it:{again:'Riparto con meno dettagli, così il telefono ce la fa …',loading:c=>`Carico ${c} …`,memory:'La pagina ha bisogno di più memoria di quella che il telefono ha libera adesso. Chiudi le altre schede e riprova – oppure aprila su un computer.',retry:'Riprova'}};
 function start(lang){
-  window.__kalmarLang=lang;save('kalmar-lang',lang);document.documentElement.lang=lang;
+  window.__kalmarLang=lang;save(`${STORE}-lang`,lang);document.documentElement.lang=lang;
   window.__kalmarSafe=crashes>0;
   splash.classList.add('chosen');pickBox.hidden=true;load.hidden=false;
   document.getElementById('load-text').textContent=crashes>0?W[lang].again:W[lang].loading(__PLACE__[lang].centre);
-  const alive=()=>ss.set('kalmar-alive',String(Date.now()));alive();setInterval(alive,4000);
-  addEventListener('pagehide',()=>ss.del('kalmar-alive'));
+  const alive=()=>ss.set(`${STORE}-alive`,String(Date.now()));alive();setInterval(alive,4000);
+  addEventListener('pagehide',()=>ss.del(`${STORE}-alive`));
   import('./main.js');
 }
 const given=params.get('lang'),home=LANGS[0],lastLang=known(given)?given:!given&&known(saved)?saved:home;
@@ -45,7 +46,7 @@ if(crashes>=3){
   document.getElementById('load-text').textContent=w.memory;
   splash.querySelector('.meter').hidden=true;
   const retry=document.createElement('button');retry.className='splash-retry';retry.textContent=w.retry;
-  retry.onclick=()=>{ss.del('kalmar-crashes');ss.del('kalmar-alive');location.reload();};load.append(retry);
+  retry.onclick=()=>{ss.del(`${STORE}-crashes`);ss.del(`${STORE}-alive`);location.reload();};load.append(retry);
 }
 else if(given||params.has('film')||resume||died)start(lastLang);
 else{

@@ -8,6 +8,8 @@ export const IT={
   "Hälsa & omsorg":"Salute & cura",
   "Teknik, AI & det analoga":"Tecnologia, IA & l'analogico",
   "Resiliens & beredskap":"Resilienza & preparazione",
+  "Teknik & kunskap":"Tecnologia & conoscenza",
+  "Inga nya vägval: det som redan pågår fortsätter, men inget mer.":"Nessuna nuova scelta: quello che è già in corso continua, ma niente di più.",
   "Dagens kurs":"Rotta attuale",
   "Stadig":"Graduale",
   "Ambitiös":"Ambizioso",
