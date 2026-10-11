@@ -1,0 +1,23 @@
+{
+  "name": "Rättvik",
+  "query": "Rättvik",
+  "display_name": "Rättvik, Rättviks kommun, Dalarnas län, 795 03, Sverige",
+  "country_code": "se",
+  "region": "Dalarnas län",
+  "center": [
+    60.886,
+    15.1098
+  ],
+  "size_m": 1700,
+  "bbox": [
+    60.878364,
+    15.094107,
+    60.893636,
+    15.125493
+  ],
+  "osm": {
+    "type": "node",
+    "id": 32686890
+  },
+  "attribution": "Map data © OpenStreetMap contributors (ODbL)"
+}

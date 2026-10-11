@@ -1,0 +1,1258 @@
+{
+ "about": "Kolada key figures sustainable-builder fetches for a Swedish municipality (pipeline/kolada.py): each becomes a record of the baseline schema. about_sv/about_en say what the figure measures – nothing about any one place: kolada.py adds the country's and the county's value for the same year where `compare` is true. {kommun} and {name} (Swedish) and {municipality} (English) are filled in.",
+ "kpis": [
+  {
+   "id": "befolkning_total",
+   "kpi": "N01951",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Folkmängd {kommun}",
+   "name_en": "Population of {municipality}",
+   "unit": "invånare",
+   "unit_en": "inhabitants",
+   "direction": "context",
+   "title": "Kolada N01951: Invånare totalt, antal",
+   "about_sv": "Folkbokförda invånare den 31 december (SCB).",
+   "about_en": "Registered residents on 31 December (Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "befolkningstillvaxt_1ar",
+   "kpi": "N01963",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Befolkningsförändring senaste året",
+   "name_en": "Population change, past year",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "context",
+   "title": "Kolada N01963: Befolkningsförändring sedan föregående år, procent",
+   "about_sv": "Förändringen av folkmängden sedan året innan (SCB).",
+   "about_en": "Change in population since the year before (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "befolkningstillvaxt_5ar",
+   "kpi": "N01958",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Befolkningsförändring senaste fem åren",
+   "name_en": "Population change, past five years",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "context",
+   "title": "Kolada N01958: Befolkningsförändring under senaste femårsperioden, procent",
+   "about_sv": "Förändringen av folkmängden under de senaste fem åren (SCB).",
+   "about_en": "Change in population over the last five years (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "befolkningstathet",
+   "kpi": "N02937",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Befolkningstäthet",
+   "name_en": "Population density",
+   "unit": "inv/km²",
+   "unit_en": "inhabitants/km²",
+   "direction": "context",
+   "title": "Kolada N02937: Invånare per kvadratkilometer",
+   "about_sv": "Invånare per kvadratkilometer landareal (SCB).",
+   "about_en": "Residents per square kilometre of land (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "andel_0_19",
+   "kpi": "N01994",
+   "gender": "T",
+   "sdg": [
+    4,
+    11
+   ],
+   "name_sv": "Andel invånare 0–19 år",
+   "name_en": "Share of inhabitants aged 0–19",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "context",
+   "title": "Kolada N01994: Invånare 0-19 år, andel (%)",
+   "about_sv": "Andelen av befolkningen som är 0–19 år (SCB).",
+   "about_en": "Share of the population aged 0–19 (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "andel_65_plus",
+   "kpi": "N01960",
+   "gender": "T",
+   "sdg": [
+    3,
+    11
+   ],
+   "name_sv": "Andel invånare 65+ år",
+   "name_en": "Share of inhabitants aged 65+",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "context",
+   "title": "Kolada N01960: Invånare 65+, andel (%)",
+   "about_sv": "Andelen av befolkningen som är 65 år eller äldre (SCB).",
+   "about_en": "Share of the population aged 65 or over (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "andel_80_plus",
+   "kpi": "N01813",
+   "gender": "T",
+   "sdg": [
+    3,
+    11
+   ],
+   "name_sv": "Andel invånare 80+ år",
+   "name_en": "Share of inhabitants aged 80+",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "context",
+   "title": "Kolada N01813: Invånare 80+, andel (%)",
+   "about_sv": "Andelen av befolkningen som är 80 år eller äldre (SCB).",
+   "about_en": "Share of the population aged 80 or over (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "landareal",
+   "kpi": "N02993",
+   "gender": "T",
+   "sdg": [
+    15
+   ],
+   "name_sv": "Landareal",
+   "name_en": "Land area",
+   "unit": "km²",
+   "unit_en": "km²",
+   "direction": "context",
+   "title": "Kolada N02993: Landareal, kvadratkilometer",
+   "about_sv": "Landareal utan vatten (SCB).",
+   "about_en": "Land area, water excluded (Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "hushall_antal",
+   "kpi": "N02938",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Antal hushåll",
+   "name_en": "Number of households",
+   "unit": "hushåll",
+   "unit_en": "households",
+   "direction": "context",
+   "title": "Kolada N02938: Hushåll, antal",
+   "about_sv": "Antalet hushåll (SCB).",
+   "about_en": "Number of households (Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "vaxthusgaser_per_inv",
+   "kpi": "N00401",
+   "gender": "T",
+   "sdg": [
+    13
+   ],
+   "name_sv": "Territoriella växthusgasutsläpp per invånare",
+   "name_en": "Territorial greenhouse gas emissions per inhabitant",
+   "unit": "ton CO2e/inv",
+   "unit_en": "t CO2e per inhabitant",
+   "direction": "lower_better",
+   "title": "Kolada N00401: Utsläpp till luft av växthusgaser totalt, ton CO2-ekv/inv",
+   "about_sv": "Territoriella utsläpp inom kommunens gräns (Nationella emissionsdatabasen, RUS/SMHI) – inte konsumtionsbaserade.",
+   "about_en": "Territorial emissions within the municipality (national emissions database, RUS/SMHI) – not consumption-based.",
+   "compare": true
+  },
+  {
+   "id": "vaxthusgaser_transporter_per_inv",
+   "kpi": "N85073",
+   "gender": "T",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Utsläpp från transporter per invånare",
+   "name_en": "Emissions from transport per inhabitant",
+   "unit": "ton CO2e/inv",
+   "unit_en": "t CO2e per inhabitant",
+   "direction": "lower_better",
+   "title": "Kolada N85073: Utsläpp till luft av växthusgaser, transporter, ton CO2e/inv",
+   "about_sv": "Inrikes transporter inom kommunens gräns (RUS/SMHI).",
+   "about_en": "Domestic transport within the municipality (RUS/SMHI).",
+   "compare": true
+  },
+  {
+   "id": "vaxthusgaser_jordbruk_per_inv",
+   "kpi": "N85078",
+   "gender": "T",
+   "sdg": [
+    2,
+    13
+   ],
+   "name_sv": "Utsläpp från jordbruk per invånare",
+   "name_en": "Emissions from agriculture per inhabitant",
+   "unit": "ton CO2e/inv",
+   "unit_en": "t CO2e per inhabitant",
+   "direction": "lower_better",
+   "title": "Kolada N85078: Utsläpp till luft av växthusgaser, jordbruk, ton CO2e/inv",
+   "about_sv": "Jordbrukets utsläpp: djurens matsmältning, gödsel och mark (RUS/SMHI).",
+   "about_en": "Farming's emissions: livestock digestion, manure and soils (RUS/SMHI).",
+   "compare": true
+  },
+  {
+   "id": "vaxthusgaser_el_fjarrvarme_per_inv",
+   "kpi": "N85076",
+   "gender": "T",
+   "sdg": [
+    7,
+    13
+   ],
+   "name_sv": "Utsläpp från el- och fjärrvärmeproduktion per invånare",
+   "name_en": "Emissions from electricity and district heating production per inhabitant",
+   "unit": "ton CO2e/inv",
+   "unit_en": "t CO2e per inhabitant",
+   "direction": "lower_better",
+   "title": "Kolada N85076: Utsläpp till luft av växthusgaser, el och fjärrvärme, ton CO2e/inv",
+   "about_sv": "Utsläpp från el- och fjärrvärmeproduktionen i kommunen (RUS/SMHI).",
+   "about_en": "Emissions from the municipality's electricity and district-heating production (RUS/SMHI).",
+   "compare": true
+  },
+  {
+   "id": "vaxthusgaser_industri_per_inv",
+   "kpi": "N85077",
+   "gender": "T",
+   "sdg": [
+    9,
+    13
+   ],
+   "name_sv": "Utsläpp från industri per invånare",
+   "name_en": "Emissions from industry per inhabitant",
+   "unit": "ton CO2e/inv",
+   "unit_en": "t CO2e per inhabitant",
+   "direction": "lower_better",
+   "title": "Kolada N85077: Utsläpp till luft av växthusgaser, industri, ton CO2e/inv",
+   "about_sv": "Industrins förbränning och processutsläpp (RUS/SMHI).",
+   "about_en": "Industry's combustion and process emissions (RUS/SMHI).",
+   "compare": true
+  },
+  {
+   "id": "elanvandning_per_inv",
+   "kpi": "N45906",
+   "gender": "T",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Slutanvändning av el per invånare",
+   "name_en": "Final electricity use per inhabitant",
+   "unit": "MWh/inv",
+   "unit_en": "MWh per inhabitant",
+   "direction": "lower_better",
+   "title": "Kolada N45906: Slutanvändning av el inom det geografiska området, MWh/inv",
+   "about_sv": "All slutanvändning av el inom kommunen, industrins inräknad (Energimyndigheten/SCB).",
+   "about_en": "All final use of electricity in the municipality, industry included (Swedish Energy Agency/Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "fjarrvarme_fornybar_andel",
+   "kpi": "N45930",
+   "gender": "T",
+   "sdg": [
+    7,
+    13
+   ],
+   "name_sv": "Förnybar andel av fjärrvärmeproduktionen",
+   "name_en": "Renewable share of district heating production",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N45930: Fjärrvärmeproduktion av förnybara energikällor, andel (%)",
+   "about_sv": "Andelen av kommunens fjärrvärmeproduktion som kommer från förnybara energikällor (Energimyndigheten/SCB).",
+   "about_en": "Share of the municipality's district-heating production from renewable sources (Swedish Energy Agency/Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "elproduktion_lokal",
+   "kpi": "N45926",
+   "gender": "T",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Elproduktion inom kommunen",
+   "name_en": "Electricity production within the municipality",
+   "unit": "MWh/år",
+   "unit_en": "MWh/year",
+   "direction": "higher_better",
+   "title": "Kolada N45926: Elproduktion totalt inom det geografiska området, MWh",
+   "about_sv": "All elproduktion inom kommunens gräns – vatten, vind, sol och kraftvärme (Energimyndigheten/SCB).",
+   "about_en": "All electricity produced within the municipality – hydro, wind, solar and combined heat and power (Swedish Energy Agency/Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "solceller_installerad_effekt",
+   "kpi": "N45970",
+   "gender": "T",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Installerad solcellseffekt",
+   "name_en": "Installed solar PV capacity",
+   "unit": "MW",
+   "unit_en": "MW",
+   "direction": "higher_better",
+   "title": "Kolada N45970: Solcellsanläggningar totalt, installerad effekt (MW)",
+   "about_sv": "Nätanslutna solcellsanläggningar, installerad effekt (Energimyndigheten).",
+   "about_en": "Grid-connected solar installations, installed capacity (Swedish Energy Agency).",
+   "compare": false
+  },
+  {
+   "id": "vindkraft_installerad_effekt",
+   "kpi": "N45979",
+   "gender": "T",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Installerad vindkrafteffekt inom kommunen",
+   "name_en": "Installed wind power capacity within the municipality",
+   "unit": "MW",
+   "unit_en": "MW",
+   "direction": "higher_better",
+   "title": "Kolada N45979: Vindkraftverk, installerad effekt, MW",
+   "about_sv": "Installerad effekt i vindkraftverk inom kommunens gräns (Energimyndigheten).",
+   "about_en": "Installed capacity of wind turbines within the municipality (Swedish Energy Agency).",
+   "compare": false
+  },
+  {
+   "id": "elbilar_andel",
+   "kpi": "N07945",
+   "gender": "T",
+   "sdg": [
+    7,
+    11,
+    13
+   ],
+   "name_sv": "Andel elbilar av personbilsbeståndet",
+   "name_en": "Share of electric cars in the passenger car fleet",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N07945: Elbilar, andel (%)",
+   "about_sv": "Elbilar som andel av personbilarna i trafik (Trafikanalys).",
+   "about_en": "Electric cars as a share of the cars in use (Transport Analysis).",
+   "compare": true
+  },
+  {
+   "id": "kollektivtrafiknara_lage",
+   "kpi": "N07418",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Befolkning i kollektivtrafiknära läge",
+   "name_en": "Population living close to public transport",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N07418: Befolkning i kollektivtrafiknära läge, andel (%)",
+   "about_sv": "Andelen som har en hållplats med minst en avgång i timmen (vardagar 06–20) inom 500 m fågelvägen.",
+   "about_en": "Share with a stop with at least one departure an hour (weekdays 6–20) within 500 m as the crow flies.",
+   "compare": true
+  },
+  {
+   "id": "cykelvag_per_inv",
+   "kpi": "N07806",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Cykelväg per invånare",
+   "name_en": "Cycle paths per inhabitant",
+   "unit": "meter/inv",
+   "unit_en": "metres per inhabitant",
+   "direction": "higher_better",
+   "title": "Kolada N07806: Cykelväg i kommunen, total, meter/inv",
+   "about_sv": "Total cykelvägslängd – kommunal, statlig och enskild – per invånare.",
+   "about_en": "Total length of cycle paths – municipal, state and private – per resident.",
+   "compare": true
+  },
+  {
+   "id": "ekologisk_akermark_andel",
+   "kpi": "N00403",
+   "gender": "T",
+   "sdg": [
+    2,
+    15
+   ],
+   "name_sv": "Ekologiskt brukad åkermark",
+   "name_en": "Organically farmed arable land",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N00403: Ekologiskt brukad åkermark, andel (%)",
+   "about_sv": "Andelen av åkermarken som brukas ekologiskt (Jordbruksverket).",
+   "about_en": "Share of arable land farmed organically (Swedish Board of Agriculture).",
+   "compare": true
+  },
+  {
+   "id": "grundvatten_god_status",
+   "kpi": "N85053",
+   "gender": "T",
+   "sdg": [
+    6
+   ],
+   "name_sv": "Grundvattenförekomster med god kemisk och kvantitativ status",
+   "name_en": "Groundwater bodies with good chemical and quantitative status",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N85053: Grundvattenförekomster med god kemisk och kvantitativ status, andel (%)",
+   "about_sv": "Andelen grundvattenförekomster med god kemisk och kvantitativ status (VISS/länsstyrelserna).",
+   "about_en": "Share of groundwater bodies in good chemical and quantitative status (VISS/county boards).",
+   "compare": true
+  },
+  {
+   "id": "kustvatten_god_ekologisk_status",
+   "kpi": "N85089",
+   "gender": "T",
+   "sdg": [
+    14
+   ],
+   "name_sv": "Kustvatten med god ekologisk status",
+   "name_en": "Coastal waters with good ecological status",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N85089: Kustvatten med god ekologisk status, andel (%)",
+   "about_sv": "Andelen kustvattenförekomster med god eller hög ekologisk status (VISS); saknas där kommunen inte har kust.",
+   "about_en": "Share of coastal water bodies in good or high ecological status (VISS); none where the municipality has no coast.",
+   "compare": true
+  },
+  {
+   "id": "skyddad_natur_total",
+   "kpi": "N85054",
+   "gender": "T",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Skyddad natur, andel av total areal",
+   "name_en": "Protected nature, share of total area",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N85054: Skyddad natur totalt, andel (%)",
+   "about_sv": "Nationalpark, naturreservat, naturvårdsområde och biotopskydd som andel av den totala arealen (SCB/Naturvårdsverket).",
+   "about_en": "National parks, nature reserves, nature conservation areas and biotope protection as a share of the total area (Statistics Sweden/Swedish EPA).",
+   "compare": true
+  },
+  {
+   "id": "medellivslangd_man",
+   "kpi": "N00923",
+   "gender": "T",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Medellivslängd män",
+   "name_en": "Life expectancy, men",
+   "unit": "år",
+   "unit_en": "years",
+   "direction": "higher_better",
+   "title": "Kolada N00923: Medellivslängd män, år",
+   "about_sv": "Medellivslängd vid födseln, femårsmedel (SCB).",
+   "about_en": "Life expectancy at birth, five-year average (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "medellivslangd_kvinnor",
+   "kpi": "N00925",
+   "gender": "T",
+   "sdg": [
+    3,
+    5
+   ],
+   "name_sv": "Medellivslängd kvinnor",
+   "name_en": "Life expectancy, women",
+   "unit": "år",
+   "unit_en": "years",
+   "direction": "higher_better",
+   "title": "Kolada N00925: Medellivslängd kvinnor, år",
+   "about_sv": "Medellivslängd vid födseln, femårsmedel (SCB).",
+   "about_en": "Life expectancy at birth, five-year average (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "sjalvskattad_god_halsa",
+   "kpi": "U01405",
+   "gender": "T",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Bra självskattat hälsotillstånd",
+   "name_en": "Good self-rated health",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada U01405: Invånare med bra självskattat hälsotillstånd, andel (%)",
+   "about_sv": "Andelen 16–84 år som bedömer sin hälsa som bra eller mycket bra (Folkhälsomyndighetens Hälsa på lika villkor, flera år sammanvägda).",
+   "about_en": "Share aged 16–84 who rate their health good or very good (Public Health Agency's national survey, several years pooled).",
+   "compare": true
+  },
+  {
+   "id": "fetma",
+   "kpi": "U01411",
+   "gender": "T",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Fetma (BMI ≥ 30)",
+   "name_en": "Obesity (BMI ≥ 30)",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada U01411: Invånare med fetma, andel (%)",
+   "about_sv": "Andelen 16–84 år med BMI 30 eller mer (Hälsa på lika villkor, flera år sammanvägda).",
+   "about_en": "Share aged 16–84 with a BMI of 30 or more (national public health survey, several years pooled).",
+   "compare": true
+  },
+  {
+   "id": "fysiskt_aktiva",
+   "kpi": "U01429",
+   "gender": "T",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Fysiskt aktiva minst 150 min/vecka",
+   "name_en": "Physically active at least 150 min/week",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada U01429: Invånare 16-84 år som är fysiskt aktiva minst 150 min/vecka, andel (%)",
+   "about_sv": "Andelen 16–84 år som är fysiskt aktiva minst 150 minuter i veckan (Hälsa på lika villkor).",
+   "about_en": "Share aged 16–84 physically active at least 150 minutes a week (national public health survey).",
+   "compare": true
+  },
+  {
+   "id": "allvarlig_psykisk_pafrestning",
+   "kpi": "N01452",
+   "gender": "T",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Allvarlig psykisk påfrestning (vuxna 16–84)",
+   "name_en": "Serious psychological distress (adults 16–84)",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada N01452: Invånare 16-84 år med allvarlig psykisk påfrestning, andel (%)",
+   "about_sv": "Andelen 16–84 år med allvarlig psykisk påfrestning enligt Kessler 6 (Hälsa på lika villkor).",
+   "about_en": "Share aged 16–84 with serious psychological distress on the Kessler 6 scale (national public health survey).",
+   "compare": true
+  },
+  {
+   "id": "psykisk_ohalsa_barn_unga",
+   "kpi": "N33820",
+   "gender": "T",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Psykisk ohälsa bland barn och unga 0–19 år",
+   "name_en": "Mental ill health among children and young people aged 0–19",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada N33820: Psykisk ohälsa bland barn och unga, andel (%)",
+   "about_sv": "Andelen 0–19 år med psykiatrisk diagnos, psykofarmaka eller psykiatrisk vård under året (Socialstyrelsen).",
+   "about_en": "Share aged 0–19 with a psychiatric diagnosis, psychotropic drugs or psychiatric care during the year (National Board of Health and Welfare).",
+   "compare": true
+  },
+  {
+   "id": "avsaknad_emotionellt_stod",
+   "kpi": "U01435",
+   "gender": "T",
+   "sdg": [
+    3,
+    10
+   ],
+   "name_sv": "Avsaknad av emotionellt stöd (proxy för ensamhet)",
+   "name_en": "Lack of emotional support (proxy for loneliness)",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada U01435: Invånare med avsaknad av emotionellt stöd, andel (%)",
+   "about_sv": "Andelen 16–84 år som saknar emotionellt stöd – ett mått nära ensamhet (Hälsa på lika villkor).",
+   "about_en": "Share aged 16–84 lacking emotional support – a measure close to loneliness (national public health survey).",
+   "compare": true
+  },
+  {
+   "id": "gymnasieexamen_4ar",
+   "kpi": "N17461",
+   "gender": "T",
+   "sdg": [
+    4
+   ],
+   "name_sv": "Gymnasieexamen inom 4 år",
+   "name_en": "Upper secondary diploma within 4 years",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N17461: Gymnasieelever med examen inom 4 år, hemkommun, andel (%)",
+   "about_sv": "Gymnasieelever folkbokförda i kommunen som tagit examen inom fyra år, introduktionsprogrammen inräknade (Skolverket).",
+   "about_en": "Upper-secondary pupils registered in the municipality who graduate within four years, introductory programmes included (National Agency for Education).",
+   "compare": true
+  },
+  {
+   "id": "eftergymnasial_utbildning_25_64",
+   "kpi": "N01982",
+   "gender": "T",
+   "sdg": [
+    4
+   ],
+   "name_sv": "Eftergymnasial utbildning, 25–64 år",
+   "name_en": "Post-secondary education, ages 25–64",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N01982: Invånare 25-64 år med eftergymnasial utbildning, andel (%)",
+   "about_sv": "Andelen 25–64 år med eftergymnasial utbildning (SCB).",
+   "about_en": "Share aged 25–64 with post-secondary education (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "arbetsloshet_20_64",
+   "kpi": "N02280",
+   "gender": "T",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Arbetslöshet 20–64 år (BAS)",
+   "name_en": "Unemployment, ages 20–64 (BAS)",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada N02280: Arbetslöshet, 20-64 år, BAS, andel (%)",
+   "about_sv": "Registerbaserad arbetslöshet bland 20–64-åringar i november (SCB).",
+   "about_en": "Register-based unemployment aged 20–64 in November (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "unga_varken_arbetar_studerar",
+   "kpi": "N02797",
+   "gender": "T",
+   "sdg": [
+    4,
+    8
+   ],
+   "name_sv": "Unga 16–24 år som varken arbetar eller studerar",
+   "name_en": "Young people aged 16–24 who are neither working nor studying",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada N02797: Invånare 16-24 år som varken arbetar eller studerar, andel (%)",
+   "about_sv": "Andelen 16–24 år som varken arbetar eller studerar (SCB).",
+   "about_en": "Share aged 16–24 neither working nor studying (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "medianinkomst_20_64",
+   "kpi": "N00906",
+   "gender": "T",
+   "sdg": [
+    8,
+    10
+   ],
+   "name_sv": "Medianinkomst (sammanräknad förvärvsinkomst) 20–64 år",
+   "name_en": "Median income (total earned income), ages 20–64",
+   "unit": "kr/år",
+   "unit_en": "SEK/year",
+   "direction": "higher_better",
+   "title": "Kolada N00906: Sammanräknad förvärvsinkomst i åldern 20-64 år (median), kr",
+   "about_sv": "Sammanräknad förvärvsinkomst för 20–64-åringar, median (SCB).",
+   "about_en": "Total earned income aged 20–64, median (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "gini_disponibel_inkomst",
+   "kpi": "N00997",
+   "gender": "T",
+   "sdg": [
+    10
+   ],
+   "name_sv": "Ginikoefficient, disponibel inkomst",
+   "name_en": "Gini coefficient, disposable income",
+   "unit": "index 0–1",
+   "unit_en": "index 0–1",
+   "direction": "lower_better",
+   "title": "Kolada N00997: Ginikoefficient – hushållens disponibla inkomster, index",
+   "about_sv": "Ginikoefficient för hushållens disponibla inkomster; 0 är total jämlikhet (SCB).",
+   "about_en": "Gini coefficient of households' disposable income; 0 is complete equality (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "barn_lag_ekonomisk_standard",
+   "kpi": "N66077",
+   "gender": "T",
+   "sdg": [
+    1,
+    10
+   ],
+   "name_sv": "Barn och unga 0–19 år med låg ekonomisk standard",
+   "name_en": "Children and young people aged 0–19 with a low economic standard",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada N66077: Invånare, 0-19 år, med låg ekonomisk standard, andel (%)",
+   "about_sv": "Andelen 0–19 år i hushåll under 60 % av medianens ekonomiska standard (SCB).",
+   "about_en": "Share aged 0–19 in households below 60% of the median economic standard (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "nystartade_foretag_per_1000",
+   "kpi": "N00999",
+   "gender": "T",
+   "sdg": [
+    8,
+    9
+   ],
+   "name_sv": "Nystartade företag per 1000 invånare 16–64 år",
+   "name_en": "New businesses per 1,000 inhabitants aged 16–64",
+   "unit": "antal/1000",
+   "unit_en": "number per 1,000",
+   "direction": "higher_better",
+   "title": "Kolada N00999: Nystartade företag, antal/1000 inv, 16-64 år",
+   "about_sv": "Nystartade företag per 1 000 invånare 16–64 år (Tillväxtanalys).",
+   "about_en": "New firms per 1,000 residents aged 16–64 (Growth Analysis).",
+   "compare": true
+  },
+  {
+   "id": "trangboddhet_norm2",
+   "kpi": "N07907",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Trångboddhet i flerbostadshus (norm 2)",
+   "name_en": "Overcrowding in multi-dwelling buildings (norm 2)",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada N07907: Trångboddhet i flerbostadshus, enligt norm 2, andel (%)",
+   "about_sv": "Andelen boende i flerbostadshus med mer än två personer per rum, kök och vardagsrum oräknade (SCB).",
+   "about_en": "Share living in blocks of flats with more than two people per room, kitchen and living room not counted (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "fardigstallda_bostader_per_1000",
+   "kpi": "N07916",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Färdigställda bostäder per 1000 invånare",
+   "name_en": "Completed dwellings per 1,000 inhabitants",
+   "unit": "bostäder/1000 inv",
+   "unit_en": "dwellings per 1,000 inhabitants",
+   "direction": "context",
+   "title": "Kolada N07916: Färdigställda bostäder, ny- och ombyggnad, antal/1000 inv",
+   "about_sv": "Färdigställda bostäder genom ny- och ombyggnad per 1 000 invånare (SCB).",
+   "about_en": "Dwellings completed by new building and conversion per 1,000 residents (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "kvinnor_kommunfullmaktige",
+   "kpi": "N05815",
+   "gender": "T",
+   "sdg": [
+    5,
+    16
+   ],
+   "name_sv": "Andel kvinnor i kommunfullmäktige",
+   "name_en": "Share of women on the Municipal Council",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N05815: Kvinnor i kommunfullmäktige, andel (%)",
+   "about_sv": "Andelen kvinnor bland ledamöterna i kommunfullmäktige under mandatperioden (SCB).",
+   "about_en": "Share of women among the municipal council's members this term (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "avsaknad_tillit",
+   "kpi": "U01413",
+   "gender": "T",
+   "sdg": [
+    16
+   ],
+   "name_sv": "Avsaknad av tillit till andra",
+   "name_en": "Lack of trust in others",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada U01413: Invånare 16-84 år med avsaknad av tillit till andra, andel (%)",
+   "about_sv": "Andelen 16–84 år som svarar nej på om man kan lita på de flesta människor (Hälsa på lika villkor).",
+   "about_en": "Share aged 16–84 answering no to whether most people can be trusted (national public health survey).",
+   "compare": true
+  },
+  {
+   "id": "otrygghet_kvall",
+   "kpi": "N07609",
+   "gender": "T",
+   "sdg": [
+    16
+   ],
+   "name_sv": "Otrygg vid utevistelse sen kväll i eget bostadsområde",
+   "name_en": "Feel unsafe outdoors late in the evening in their own neighbourhood",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "lower_better",
+   "title": "Kolada N07609: NTU - Otrygghet vid utomhusvistelse sen kväll i det egna bostadsområdet, andel (%)",
+   "about_sv": "Andelen som känner sig otrygga eller avstår från att gå ut sen kväll i det egna bostadsområdet (BRÅ:s Nationella trygghetsundersökning); osäker på kommunnivå.",
+   "about_en": "Share who feel unsafe, or stay in, late at night in their own neighbourhood (Swedish Crime Survey); uncertain at municipal level.",
+   "compare": true
+  },
+  {
+   "id": "bredband_100mbit",
+   "kpi": "N07900",
+   "gender": "T",
+   "sdg": [
+    9
+   ],
+   "name_sv": "Tillgång till fast bredband ≥ 100 Mbit/s",
+   "name_en": "Access to fixed broadband ≥ 100 Mbit/s",
+   "unit": "% av hushållen",
+   "unit_en": "% of households",
+   "direction": "higher_better",
+   "title": "Kolada N07900: Tillgång till fast bredband om minst 100 Mbit/s, andel (%)",
+   "about_sv": "Hushåll med fast bredband om minst 100 Mbit/s eller omedelbar möjlighet att ansluta, den 1 oktober (PTS).",
+   "about_en": "Households with fixed broadband of at least 100 Mbit/s, or the immediate possibility, on 1 October (Post and Telecom Authority).",
+   "compare": true
+  },
+  {
+   "id": "kommunalt_avfall_kg_per_inv",
+   "kpi": "U07801",
+   "gender": "T",
+   "sdg": [
+    12
+   ],
+   "name_sv": "Insamlat kommunalt avfall per invånare",
+   "name_en": "Municipal waste collected per inhabitant",
+   "unit": "kg/inv",
+   "unit_en": "kg per inhabitant",
+   "direction": "lower_better",
+   "title": "Kolada U07801: Insamlat kommunalt avfall totalt, kg/invånare (justerat)",
+   "about_sv": "Insamlat kommunalt avfall per invånare, justerat för fritidshus, turism och pendling (Avfall Sverige).",
+   "about_en": "Municipal waste collected per resident, adjusted for holiday homes, tourism and commuting (Avfall Sverige).",
+   "compare": true
+  },
+  {
+   "id": "materialatervinning_andel",
+   "kpi": "U07414",
+   "gender": "T",
+   "sdg": [
+    12
+   ],
+   "name_sv": "Kommunalt avfall till materialåtervinning inkl. biologisk behandling",
+   "name_en": "Municipal waste sent to material recycling, incl. biological treatment",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada U07414: Kommunalt avfall som samlats in för materialåtervinning, inkl. biologisk behandling, andel (%)",
+   "about_sv": "Andelen av det kommunala avfallet som samlats in för materialåtervinning, biologisk behandling inräknad (Avfall Sverige). EU:s mål är 55 % 2025 och 65 % 2035.",
+   "about_en": "Share of municipal waste collected for material recycling, biological treatment included (Avfall Sverige). The EU targets are 55% in 2025 and 65% in 2035.",
+   "compare": true
+  },
+  {
+   "id": "medborgare_nojda_dricksvattenarbete",
+   "kpi": "N00638",
+   "gender": "T",
+   "sdg": [
+    6
+   ],
+   "name_sv": "Invånare som anser att kommunens arbete för att säkra dricksvattnet är bra",
+   "name_en": "Inhabitants who consider the municipality's work to secure drinking water to be good",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N00638: Medborgarundersökningen – Kommunens arbete för att säkerställa tillgången till dricksvatten är bra, andel (%)",
+   "about_sv": "Andelen som tycker att kommunens arbete för att säkra tillgången till dricksvatten är bra (SCB:s medborgarundersökning).",
+   "about_en": "Share who think the municipality's work to secure drinking water is good (Statistics Sweden's citizen survey).",
+   "compare": true
+  },
+  {
+   "id": "vattenforekomster_god_status",
+   "kpi": "N85050",
+   "gender": "T",
+   "sdg": [
+    6
+   ],
+   "name_sv": "Vattenförekomster (alla typer) med god status",
+   "name_en": "Water bodies (all types) with good status",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N85050: Vattenförekomster med god status, andel (%)",
+   "about_sv": "Andelen av kommunens vattenförekomster – sjöar, vattendrag, kust och grundvatten – med god status (VISS).",
+   "about_en": "Share of the municipality's water bodies – lakes, rivers, coast and groundwater – in good status (VISS).",
+   "compare": true
+  },
+  {
+   "id": "skyddad_natur_hav",
+   "kpi": "N85056",
+   "gender": "T",
+   "sdg": [
+    14
+   ],
+   "name_sv": "Skyddad natur, andel av havsarealen",
+   "name_en": "Protected nature, share of sea area",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N85056: Skyddad natur hav, andel (%)",
+   "about_sv": "Skyddad natur som andel av havsarealen (SCB/Naturvårdsverket); saknas där kommunen inte har hav.",
+   "about_en": "Protected nature as a share of the sea area (Statistics Sweden/Swedish EPA); none where the municipality has no sea.",
+   "compare": true
+  },
+  {
+   "id": "medelavstand_skyddad_natur",
+   "kpi": "N85084",
+   "gender": "T",
+   "sdg": [
+    15
+   ],
+   "name_sv": "Medelavstånd till skyddad natur",
+   "name_en": "Average distance to protected nature",
+   "unit": "km",
+   "unit_en": "km",
+   "direction": "lower_better",
+   "title": "Kolada N85084: Medelavstånd till skyddad natur, km",
+   "about_sv": "Invånarnas medelavstånd till närmaste skyddade naturområde (SCB).",
+   "about_en": "Residents' average distance to the nearest protected nature area (Statistics Sweden).",
+   "compare": true
+  },
+  {
+   "id": "inpendling_antal",
+   "kpi": "N02277",
+   "gender": "T",
+   "sdg": [
+    8,
+    11
+   ],
+   "name_sv": "Inpendlare till {kommun}",
+   "name_en": "In-commuters to {municipality}",
+   "unit": "personer",
+   "unit_en": "people",
+   "direction": "context",
+   "title": "Kolada N02277: Inpendling, antal",
+   "about_sv": "Förvärvsarbetande som arbetar i kommunen men bor i en annan (SCB).",
+   "about_en": "Employed people who work in the municipality but live in another (Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "utpendling_antal",
+   "kpi": "N02278",
+   "gender": "T",
+   "sdg": [
+    8,
+    11
+   ],
+   "name_sv": "Utpendlare från {kommun}",
+   "name_en": "Out-commuters from {municipality}",
+   "unit": "personer",
+   "unit_en": "people",
+   "direction": "context",
+   "title": "Kolada N02278: Utpendling, antal",
+   "about_sv": "Förvärvsarbetande som bor i kommunen men arbetar i en annan (SCB).",
+   "about_en": "Employed residents who work in another municipality (Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "korstracka_personbil_per_inv",
+   "kpi": "U07917",
+   "gender": "T",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Körsträcka med personbil per invånare",
+   "name_en": "Distance driven by passenger car per inhabitant",
+   "unit": "mil/inv/år",
+   "unit_en": "mil/inhabitant/year (1 mil = 10 km)",
+   "direction": "lower_better",
+   "title": "Kolada U07917: Genomsnittlig körsträcka med personbil, mil/inv",
+   "about_sv": "Genomsnittlig körsträcka med personbilar registrerade i kommunen, per invånare (Trafikanalys).",
+   "about_en": "Average distance driven by cars registered in the municipality, per resident (Transport Analysis).",
+   "compare": true
+  },
+  {
+   "id": "fossiloberoende_personbilar_andel",
+   "kpi": "U00501",
+   "gender": "T",
+   "sdg": [
+    7,
+    13
+   ],
+   "name_sv": "Fossiloberoende personbilar, andel av beståndet",
+   "name_en": "Fossil-independent passenger cars, share of the fleet",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada U00501: Fossiloberoende personbilar, andel (%)",
+   "about_sv": "El, laddhybrid, gas, etanol m.fl. som andel av personbilarna i trafik (Trafikanalys).",
+   "about_en": "Electric, plug-in hybrid, gas, ethanol and other cars as a share of the cars in use (Transport Analysis).",
+   "compare": true
+  },
+  {
+   "id": "laddpunkter_publika_antal",
+   "kpi": "N07713",
+   "gender": "T",
+   "sdg": [
+    7,
+    11
+   ],
+   "name_sv": "Publika laddpunkter för elbil",
+   "name_en": "Public charging points for electric cars",
+   "unit": "laddpunkter",
+   "unit_en": "charging points",
+   "direction": "higher_better",
+   "title": "Kolada N07713: Elbilsladdpunkter, totalt antal",
+   "about_sv": "Publika laddpunkter för elbil i kommunen.",
+   "about_en": "Public charging points for electric cars in the municipality.",
+   "compare": false
+  },
+  {
+   "id": "vaxthusgaser_transporter_ton",
+   "kpi": "N85533",
+   "gender": "T",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Utsläpp av växthusgaser från transporter, totalt",
+   "name_en": "Greenhouse gas emissions from transport, total",
+   "unit": "ton CO2e",
+   "unit_en": "tonnes CO2e",
+   "direction": "lower_better",
+   "title": "Kolada N85533: Utsläpp till luft av växthusgaser, transporter, ton CO2e",
+   "about_sv": "Inrikes transporternas utsläpp inom kommunens gräns, totalt (RUS/SMHI).",
+   "about_en": "Domestic transport emissions within the municipality, total (RUS/SMHI).",
+   "compare": false
+  },
+  {
+   "id": "elproduktion_kraftvarme",
+   "kpi": "N45950",
+   "gender": "T",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Elproduktion i kraftvärme",
+   "name_en": "Electricity production from combined heat and power",
+   "unit": "MWh/år",
+   "unit_en": "MWh/year",
+   "direction": "higher_better",
+   "title": "Kolada N45950: Elproduktion från kraftvärmeverk samt industriellt mottryck, MWh",
+   "about_sv": "El från kraftvärmeverk och industriellt mottryck inom kommunen (Energimyndigheten/SCB).",
+   "about_en": "Electricity from combined heat and power and industrial back-pressure within the municipality (Swedish Energy Agency/Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "elproduktion_vindkraft",
+   "kpi": "N45904",
+   "gender": "T",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Elproduktion från vindkraft inom kommunen",
+   "name_en": "Electricity production from wind power within the municipality",
+   "unit": "MWh/år",
+   "unit_en": "MWh/year",
+   "direction": "higher_better",
+   "title": "Kolada N45904: Elproduktion från vindkraft, MWh",
+   "about_sv": "Elproduktion från vindkraftverk inom kommunens gräns (Energimyndigheten/SCB).",
+   "about_en": "Electricity from wind turbines within the municipality (Swedish Energy Agency/Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "elproduktion_sol",
+   "kpi": "N45952",
+   "gender": "T",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Elproduktion från solkraft inom kommunen",
+   "name_en": "Electricity production from solar power within the municipality",
+   "unit": "MWh/år",
+   "unit_en": "MWh/year",
+   "direction": "higher_better",
+   "title": "Kolada N45952: Elproduktion från solkraft, MWh",
+   "about_sv": "Elproduktion från solceller inom kommunen (Energimyndigheten/SCB).",
+   "about_en": "Electricity from solar within the municipality (Swedish Energy Agency/Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "bostadsmarknadslage_bme",
+   "kpi": "U30446",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Kommunens bedömning av bostadsmarknaden (0 = underskott, 1 = balans, 2 = överskott)",
+   "name_en": "Municipality's assessment of the housing market (0 = shortage, 1 = balance, 2 = surplus)",
+   "unit": "index 0–2",
+   "unit_en": "index 0–2",
+   "direction": "context",
+   "title": "Kolada U30446: Bostadsmarknadsläge i kommunen totalt",
+   "about_sv": "Kommunens egen bedömning i Boverkets bostadsmarknadsenkät: 0 underskott, 1 balans, 2 överskott.",
+   "about_en": "The municipality's own assessment in the National Board of Housing's survey: 0 shortage, 1 balance, 2 surplus.",
+   "compare": false
+  },
+  {
+   "id": "bostadsmarknadslage_ungdomar_bme",
+   "kpi": "U30460",
+   "gender": "T",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Kommunens bedömning av bostadsmarknaden för ungdomar 19–25 år (0 = underskott)",
+   "name_en": "Municipality's assessment of the housing market for young people aged 19–25 (0 = shortage)",
+   "unit": "index 0–2",
+   "unit_en": "index 0–2",
+   "direction": "context",
+   "title": "Kolada U30460: Bostadsmarknadsläget i kommunen, ungdomar",
+   "about_sv": "Kommunens egen bedömning för 19–25-åringar i Boverkets bostadsmarknadsenkät: 0 underskott, 1 balans, 2 överskott.",
+   "about_en": "The municipality's own assessment for 19–25-year-olds in the National Board of Housing's survey: 0 shortage, 1 balance, 2 surplus.",
+   "compare": false
+  },
+  {
+   "id": "sysselsatta_arbetsstalle_kommun",
+   "kpi": "N02201",
+   "gender": "T",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Sysselsatta med arbetsställe i {kommun}",
+   "name_en": "Employed with a workplace in {municipality}",
+   "unit": "personer",
+   "unit_en": "people",
+   "direction": "context",
+   "title": "Kolada N02201: Sysselsatta efter arbetsställets belägenhet, antal",
+   "about_sv": "Förvärvsarbetande med arbetsställe i kommunen, var de än bor (SCB).",
+   "about_en": "Employed people with their workplace in the municipality, wherever they live (Statistics Sweden).",
+   "compare": false
+  },
+  {
+   "id": "kommunen_tillsvidareanstallda",
+   "kpi": "N00071",
+   "gender": "T",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Tillsvidareanställda månadsavlönade i {kommun}",
+   "name_en": "Permanently employed, monthly-paid staff in {municipality}",
+   "unit": "personer",
+   "unit_en": "people",
+   "direction": "context",
+   "title": "Kolada N00071: Månadsavlönad personal, tillsvidareanställda i kommunen, antal",
+   "about_sv": "Kommunens tillsvidareanställda månadsavlönade – personer, inte årsarbetare (SKR).",
+   "about_en": "The municipality's permanent monthly-paid staff – people, not full-time equivalents (SKR).",
+   "compare": false
+  },
+  {
+   "id": "trygg_i_skolan_ak8",
+   "kpi": "N15643",
+   "gender": "T",
+   "sdg": [
+    4,
+    16
+   ],
+   "name_sv": "Elever i åk 8 som känner sig trygga i skolan",
+   "name_en": "Year 8 pupils who feel safe at school",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada N15643: Elever i åk 8: Känner du dig trygg i skolan? (Helt och hållet/Till stor del)",
+   "about_sv": "Andelen elever i årskurs 8 som känner sig trygga i skolan helt och hållet eller till stor del.",
+   "about_en": "Share of year-8 pupils who feel safe at school entirely or to a great extent.",
+   "compare": true
+  },
+  {
+   "id": "individuellt_valbefinnande_index",
+   "kpi": "N00366",
+   "gender": "T",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Individuellt välbefinnande, kommunindex (0–100)",
+   "name_en": "Individual well-being, municipal index (0–100)",
+   "unit": "index 0–100",
+   "unit_en": "index 0–100",
+   "direction": "higher_better",
+   "title": "Kolada N00366: Individuellt välbefinnande – Kommunindex",
+   "about_sv": "Tillväxtverkets index som väger samman självskattad hälsa, tandhälsa och psykiskt välbefinnande, normaliserat mellan landets kommuner (0–100).",
+   "about_en": "The Agency for Economic and Regional Growth's index of self-rated health, dental health and mental wellbeing, normalised across Sweden's municipalities (0–100).",
+   "compare": true
+  },
+  {
+   "id": "gott_psykiskt_valbefinnande",
+   "kpi": "U01473",
+   "gender": "T",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Invånare 16–84 år med gott psykiskt välbefinnande",
+   "name_en": "Inhabitants aged 16–84 with good mental well-being",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada U01473: Invånare 16–84 år med gott psykiskt välbefinnande, andel (%)",
+   "about_sv": "Andelen 16–84 år med gott psykiskt välbefinnande (Hälsa på lika villkor, flera år sammanvägda).",
+   "about_en": "Share aged 16–84 with good mental wellbeing (national public health survey, several years pooled).",
+   "compare": true
+  },
+  {
+   "id": "demografisk_forsorjningskvot",
+   "kpi": "N00927",
+   "gender": "T",
+   "sdg": [
+    1,
+    3,
+    8
+   ],
+   "name_sv": "Demografisk försörjningskvot ((0–19 + 65+) / 20–64 år)",
+   "name_en": "Demographic dependency ratio ((0–19 + 65+) / 20–64 years)",
+   "unit": "kvot",
+   "unit_en": "ratio",
+   "direction": "lower_better",
+   "title": "Kolada N00927: Demografisk försörjningskvot",
+   "about_sv": "Antalet 0–19- och 65+-åringar per person 20–64 år (SCB): hur många varje person i arbetsför ålder försörjer.",
+   "about_en": "People aged 0–19 and 65+ per person aged 20–64 (Statistics Sweden): how many each person of working age supports.",
+   "compare": true
+  },
+  {
+   "id": "ekologiska_livsmedel_kommunen",
+   "kpi": "U07514",
+   "gender": "T",
+   "sdg": [
+    2,
+    12
+   ],
+   "name_sv": "Ekologiska livsmedel i kommunens verksamhet",
+   "name_en": "Organic food in the municipality's operations",
+   "unit": "%",
+   "unit_en": "%",
+   "direction": "higher_better",
+   "title": "Kolada U07514: Ekologiska livsmedel i kommunens verksamhet, andel (%)",
+   "about_sv": "Ekologiska livsmedel som andel av kommunens inköpsvärde för livsmedel (KRAV, Demeter, EU-ekologiskt eller MSC); entreprenad ingår inte.",
+   "about_en": "Organic food as a share of the municipality's food purchases by value (KRAV, Demeter, EU organic or MSC); contracted catering not included.",
+   "compare": true
+  }
+ ]
+}

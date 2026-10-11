@@ -1,0 +1,2057 @@
+{
+  "topic": "kommun-plats-historia",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "folkmangd_kommun",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Rättviks kommun 31 december",
+      "value": 10978,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Minskade med 20 personer från 10 998 år 2024. Födelsenettot är negativt men flyttnettot positivt.",
+      "confidence": "high"
+    },
+    {
+      "id": "folkmangd_prognos_2034",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Kommunens befolkningsprognos för 2034",
+      "value": 10965,
+      "unit": "personer",
+      "year": 2034,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Kommunens egen framskrivning: från 10 998 invånare 2024 till 10 965 år 2034.",
+      "confidence": "medium"
+    },
+    {
+      "id": "folkmangd_tatort",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Rättviks tätort",
+      "value": 5369,
+      "unit": "personer",
+      "year": 2023,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd och landareal i tätorter, per tätort (LandarealTatortN)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/LandarealTatortN"
+      },
+      "note_sv": "SCB:s tätortsavgränsning 2023 (tätortskod 2031TC106). Tätorten har 438 invånare per km².",
+      "confidence": "high"
+    },
+    {
+      "id": "folkmangd_tatort_1960",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Rättviks tätort 1960",
+      "value": 3140,
+      "unit": "personer",
+      "year": 1960,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd och landareal i tätorter, per tätort (LandarealTatortN)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/LandarealTatortN"
+      },
+      "note_sv": "Tätorten har vuxit från 3 140 invånare 1960 till 5 369 år 2023.",
+      "confidence": "high"
+    },
+    {
+      "id": "tatort_landareal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Rättviks tätorts landareal",
+      "value": 1225,
+      "unit": "ha",
+      "year": 2023,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd och landareal i tätorter, per tätort (LandarealTatortN)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/LandarealTatortN"
+      },
+      "note_sv": "Landarealen inom SCB:s tätortsgräns 2023. Modellens kvadrat (1,7 km × 1,7 km ≈ 289 ha) täcker den centrala delen.",
+      "confidence": "high"
+    },
+    {
+      "id": "kommun_yta",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Kommunens yta",
+      "value": 2181,
+      "unit": "km²",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Mål och budget 2026–2028",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"
+      },
+      "note_sv": "Ungefär som Vätterns yta. Kommunen består av församlingarna Rättvik, Boda och Ore.",
+      "confidence": "high"
+    },
+    {
+      "id": "forsorjningskvot",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Demografisk försörjningskvot",
+      "value": 1.09,
+      "unit": "kvot",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Antal invånare utanför åldern 20–64 per invånare i åldern 20–64. Bland de högsta i landet; har stigit från 0,99 för tio år sedan.",
+      "confidence": "high"
+    },
+    {
+      "id": "forsorjningskvot_dalarna",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Demografisk försörjningskvot, Dalarnas län",
+      "value": 0.92,
+      "unit": "kvot",
+      "year": 2024,
+      "scope": "Dalarnas län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Länssnittet enligt kommunens årsredovisning.",
+      "confidence": "high"
+    },
+    {
+      "id": "forsorjningskvot_riket",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Demografisk försörjningskvot, riket",
+      "value": 0.77,
+      "unit": "kvot",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Rikssnittet enligt kommunens årsredovisning.",
+      "confidence": "high"
+    },
+    {
+      "id": "andel_80_plus",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel invånare 80 år eller äldre",
+      "value": 11.3,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "1 236 personer. Andelen var 9,4 % 2022. (Löptexten i årsredovisningen anger 13 % för 2024, vilket inte stämmer med tabellen.)",
+      "confidence": "high"
+    },
+    {
+      "id": "okning_85_89_till_2034",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Förändring av antalet 85–89-åringar till 2034",
+      "value": 74,
+      "unit": "%",
+      "year": 2034,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "+287 personer enligt kommunens prognos, i den ålder då omvårdnadsbehovet ökar mest. 90+: +53 % (+110).",
+      "confidence": "medium"
+    },
+    {
+      "id": "forandring_barn_6_12_till_2034",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Förändring av antalet barn 6–12 år till 2034",
+      "value": -9,
+      "unit": "%",
+      "year": 2034,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "−61 barn enligt kommunens prognos; 1–5 år −8 % (−36) och 16–19 år −4 % (−19).",
+      "confidence": "medium"
+    },
+    {
+      "id": "andel_20_64",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Andel invånare i arbetsför ålder (20–64 år)",
+      "value": 47.8,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "5 252 personer enligt befolkningstabellen; målet är en större andel i arbetsför ålder. (Målavsnittet i samma rapport anger 47,2 %.)",
+      "confidence": "high"
+    },
+    {
+      "id": "arbetsloshet",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Andel inskrivna arbetslösa, december",
+      "value": 4.8,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Riket 6,8 % och Dalarna 5,1 %. Bland 18–24-åringar 5,4 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "kommunalskatt",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Kommunal skattesats",
+      "value": 21.81,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Mål och budget 2026–2028",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"
+      },
+      "note_sv": "Oförändrad sedan 2024 (21,82 % 2022–2023).",
+      "confidence": "high"
+    },
+    {
+      "id": "skatter_statsbidrag_budget",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Skatteintäkter, generella statsbidrag och utjämning, budget",
+      "value": 899,
+      "unit": "mnkr",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Mål och budget 2026–2028",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"
+      },
+      "note_sv": "Varav egna skatteintäkter cirka 604 mnkr.",
+      "confidence": "high"
+    },
+    {
+      "id": "resultatmal",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Finansiellt mål: årets resultat i förhållande till skatter och statsbidrag",
+      "value": 2,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Mål och budget 2026–2028",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"
+      },
+      "note_sv": "Mål för 2026–2028. Budgeterat resultat 2026 är 17,98 mnkr.",
+      "confidence": "high"
+    },
+    {
+      "id": "resultat_2025",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Kommunens resultat",
+      "value": 326,
+      "unit": "mnkr",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Inklusive en engångsreavinst på 311 mnkr från inlösen av aktier i Dala Energi.",
+      "confidence": "high"
+    },
+    {
+      "id": "resultat_2025_exkl_reavinst",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Resultat exklusive reavinst, andel av skatter och statsbidrag",
+      "value": 1.7,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "14,7 mnkr. Under målet på 2 %; verksamheten bedrivs inte helt inom tilldelade ramar.",
+      "confidence": "high"
+    },
+    {
+      "id": "dala_energi_reavinst",
+      "sdg": [
+        7,
+        16
+      ],
+      "name_sv": "Reavinst vid inlösen av aktier i Dala Energi",
+      "value": 311,
+      "unit": "mnkr",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Kommunen löste in 50 % av sina 5,2 miljoner aktier och köpte cirka 10 % av Sambygd AB (el- och fibernät).",
+      "confidence": "high"
+    },
+    {
+      "id": "soliditet_inkl_pension",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Soliditet inklusive pensionsförpliktelser",
+      "value": 51.9,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Utan reavinsten hade soliditeten varit 32,4 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "soliditet_mal_2028",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mål för soliditet inklusive pensionsåtaganden",
+      "value": 40,
+      "unit": "%",
+      "year": 2028,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Mål och budget 2026–2028",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"
+      },
+      "note_sv": "Ska nås vid utgången av 2028.",
+      "confidence": "high"
+    },
+    {
+      "id": "koncern_laneskuld_per_invanare",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Kommunkoncernens långfristiga låneskuld per invånare",
+      "value": 112906,
+      "unit": "kr/invånare",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Totalt 1 239 mnkr. Rikssnittet var cirka 78 000 kr per invånare 2024. Ökningen kommer främst från VA-investeringar.",
+      "confidence": "high"
+    },
+    {
+      "id": "koncern_langfristig_laneskuld",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Kommunkoncernens långfristiga låneskuld",
+      "value": 1239,
+      "unit": "mnkr",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Ökade med 129 mnkr under 2025, främst genom Rättviks Vatten och Avfall AB. Räntebärande skulder var 1 173 mnkr (Mål och budget anger 1 171 mnkr).",
+      "confidence": "high"
+    },
+    {
+      "id": "investeringsbudget",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Kommunens investeringsbudget",
+      "value": 42,
+      "unit": "mnkr",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Mål och budget 2026–2028",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"
+      },
+      "note_sv": "Bland annat rodelbanan 8 mnkr, Toppstugan 7 mnkr, toaletter vid stranden 2 mnkr, Långbryggan 0,5 mnkr och infrastruktur vid Enån-stranden 0,3 mnkr.",
+      "confidence": "high"
+    },
+    {
+      "id": "socialforvaltning_andel_ramar",
+      "sdg": [
+        3,
+        16
+      ],
+      "name_sv": "Socialförvaltningens andel av verksamhetsramarna",
+      "value": 44.2,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Mål och budget 2026–2028",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"
+      },
+      "note_sv": "Barn- och utbildningsförvaltningen har 35,0 %; tillsammans nästan 80 % av ramarna.",
+      "confidence": "high"
+    },
+    {
+      "id": "socialforvaltning_underskott",
+      "sdg": [
+        3,
+        16
+      ],
+      "name_sv": "Socialförvaltningens budgetavvikelse",
+      "value": -5.6,
+      "unit": "mnkr",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "−1,5 % mot budget. Underskottet 2024 var 24 mnkr; förvaltningen räknar med 3–5 års återställning.",
+      "confidence": "high"
+    },
+    {
+      "id": "lokala_ambitioner_antal",
+      "sdg": [
+        17
+      ],
+      "name_sv": "Antal lokala hållbarhetsambitioner (Agenda 2030)",
+      "value": 94,
+      "unit": "st",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Lokala ambitioner för ett hållbart Rättvik",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/kommun-och-politik/hallbart-rattvik/lokala-ambitioner-for-ett-hallbart-rattvik.html"
+      },
+      "note_sv": "Lokala ambitioner för ett Hållbart Rättvik, KF 2024-09-26 § 62. Arbetet började 2016 när UNDP besökte Rättvik som första kommun i landet.",
+      "confidence": "high"
+    },
+    {
+      "id": "fossilfritt_transportsystem_mal",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Mål: fossilfritt transportsystem i kommunen",
+      "value": 100,
+      "unit": "%",
+      "year": 2030,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Lokala ambitioner för ett Hållbart Rättvik (pdf)",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/download/18.8ea9806168b501487c822b2/1549447131739/Lokala%20ambitioner.pdf"
+      },
+      "note_sv": "Lokalt delmål: kommunens transportsystem ska vara fossilfritt år 2030. Talet 100 % är vår omskrivning av målet.",
+      "confidence": "high"
+    },
+    {
+      "id": "energianvandning_lokaler",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Energianvändning i kommunala lokaler per uppvärmd yta",
+      "value": 150.08,
+      "unit": "kWh/m²",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Minskade från 165,61 kWh/m² 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "hvo_andel_fordon",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Andel av kommunens fordon som tankas med HVO100",
+      "value": 80,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Kommunen har inga elfordon och utsläppen mäts inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "ny_solel_ansluten",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Solel ansluten till elnätet i kommunen",
+      "value": 6.99,
+      "unit": "MW",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Ökning med 21 % (1,20 MW) från 5,79 MW 2023 enligt årsredovisningen.",
+      "confidence": "high"
+    },
+    {
+      "id": "vindkraft_antal_verk",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Antal vindkraftverk i kommunen",
+      "value": 15,
+      "unit": "st",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Ännu ett år utan ny vindkraft i Rättvik (data från Energimyndigheten)",
+        "publisher": "Newsworthy",
+        "url": "https://www.newsworthy.se/artikel/321005/%C3%A4nnu-ett-%C3%A5r-utan-ny-vind-kraft-i-r%C3%A4ttvik"
+      },
+      "note_sv": "Oförändrat i 13 år enligt Energimyndighetens statistik.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vindkraft_effekt",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Installerad vindkraftseffekt i kommunen",
+      "value": 30,
+      "unit": "MW",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Ännu ett år utan ny vindkraft i Rättvik (data från Energimyndigheten)",
+        "publisher": "Newsworthy",
+        "url": "https://www.newsworthy.se/artikel/321005/%C3%A4nnu-ett-%C3%A5r-utan-ny-vind-kraft-i-r%C3%A4ttvik"
+      },
+      "note_sv": "15 verk; i Dalarna ger varje megawatt ungefär 2,5 GWh el per år.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vindkraftsstod",
+      "sdg": [
+        7,
+        17
+      ],
+      "name_sv": "Statligt vindkraftsstöd till kommunen 2025–2026",
+      "value": 1.1,
+      "unit": "mnkr",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks kommun satsar på föreningslivet med nya vindkraftspengar",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/nyheter/nyheter/2026-06-03-rattviks-kommun-satsar-pa-foreningslivet-med-nya-vindkraftspengar.html"
+      },
+      "note_sv": "Hela beloppet går till föreningslivet. Från 2027 väntas cirka 0,5–0,6 mnkr per år.",
+      "confidence": "high"
+    },
+    {
+      "id": "lokalproducerade_livsmedel",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Andel lokalproducerade livsmedel i kommunens kök",
+      "value": 40,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Ökade från 30 % 2024. Andelen livsmedel enligt ekologiska riktlinjer var 34 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "andel_ravaror_atertaget",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Andel råvaror från naturbruksgymnasiet (Återtaget) i offentliga kök",
+      "value": 19,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Kött, potatis och spannmål från skolans jordbruk; 21 % året innan.",
+      "confidence": "high"
+    },
+    {
+      "id": "gymnasieexamen_3ar",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Andel som tar gymnasieexamen inom tre år, Stiernhööksgymnasiet",
+      "value": 88,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Ökning med 10 procentenheter från 78 % 2024 (kommunens egen statistik).",
+      "confidence": "high"
+    },
+    {
+      "id": "ak9_betyg_alla_amnen",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Andel elever i årskurs 9 med betyg i alla ämnen",
+      "value": 66.3,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Minskade från 74,4 % 2024 (Skolverket).",
+      "confidence": "high"
+    },
+    {
+      "id": "meritvarde_ak9",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Genomsnittligt meritvärde i årskurs 9",
+      "value": 208.9,
+      "unit": "poäng",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Minskade från 214,8 poäng 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "behorighet_gymnasiet",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Andel elever behöriga till nationella program",
+      "value": 82.1,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Minskade från 86,4 % 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "grundskolor_antal",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Antal kommunala grundskolor",
+      "value": 8,
+      "unit": "st",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Grundskolor",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/forskola-skola-och-utbildning/grundskola/grundskolor.html"
+      },
+      "note_sv": "Nyhedsskolan (F–6, ca 230 elever) och Rättviksskolan (7–9, drygt 250) ligger i tätorten; minst är Sätra skola med cirka 10 elever.",
+      "confidence": "high"
+    },
+    {
+      "id": "satra_skola_elever",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Antal elever i Sätra skola (F–3)",
+      "value": 10,
+      "unit": "elever",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Grundskolor",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/forskola-skola-och-utbildning/grundskola/grundskolor.html"
+      },
+      "note_sv": "Kommunen anger ”cirka 10 elever”; skolan ligger 4 km från centrala Rättvik.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundskola_elever_summa",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Elever i kommunala grundskolor, summa av kommunens ungefärliga tal",
+      "value": 945,
+      "unit": "elever",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Grundskolor",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/forskola-skola-och-utbildning/grundskola/grundskolor.html"
+      },
+      "note_sv": "Egen beräkning: summan av de avrundade elevtal (”cirka”, ”drygt”) som anges för de åtta skolorna.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "naturbruk_forstahandssokande",
+      "sdg": [
+        2,
+        4
+      ],
+      "name_sv": "Förstahandssökande till lantbruksinriktningen på naturbruksprogrammet",
+      "value": 42,
+      "unit": "sökande",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "42 förstahandsansökningar till 24 platser. Skoljordbruket har köpt ett mejeri som ska byggas i Rättvik.",
+      "confidence": "high"
+    },
+    {
+      "id": "uf_elever",
+      "sdg": [
+        4,
+        8
+      ],
+      "name_sv": "Elever på Stiernhööksgymnasiet som driver UF-företag",
+      "value": 81,
+      "unit": "elever",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Ökade från 44 elever 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "sjukfranvaro",
+      "sdg": [
+        3,
+        8
+      ],
+      "name_sv": "Total sjukfrånvaro bland kommunens anställda",
+      "value": 7.9,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Minskade från 8,9 % 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "tillsvidareanstallda",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Tillsvidareanställda i kommunen",
+      "value": 1056,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Medelålder 47,0 år; 47,6 % är 50 år eller äldre. Stora pensionsavgångar väntas bland lärare, chefer och undersköterskor.",
+      "confidence": "high"
+    },
+    {
+      "id": "personalomsattning",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Personalomsättning bland tillsvidareanställda",
+      "value": 11.1,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Ökade från 7,2 % 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "naringslivsranking",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Placering i Svenskt Näringslivs kommunranking",
+      "value": 72,
+      "unit": "placering",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Försämring med 22 placeringar från plats 50 år 2024; målet var att förbättra med 10.",
+      "confidence": "high"
+    },
+    {
+      "id": "raddningstjanst_larm",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Larm till räddningstjänsten",
+      "value": 400,
+      "unit": "larm",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Årsredovisningen anger ”omkring 400 larm”.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bostader_mal_per_ar",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Mål: nya bostäder per år",
+      "value": 30,
+      "unit": "bostäder/år",
+      "year": 2030,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Bostadsförsörjningsprogram 2020–2030",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/dcc6f9bf-98fa-42ad-8c25-29b053ec5914/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "Bostadsförsörjningsprogrammet 2020–2030: minst 30 nya bostäder per år genom samarbete med fastighetsägare och bostadsföretag.",
+      "confidence": "high"
+    },
+    {
+      "id": "smahustomter_till_maklare",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Småhustomter överlämnade till mäklare",
+      "value": 26,
+      "unit": "st",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Målet var minst fyra tomter.",
+      "confidence": "high"
+    },
+    {
+      "id": "utsikten_tomter",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Bostadstomter i detaljplanen Utsikten (Lerdal)",
+      "value": 47,
+      "unit": "tomter",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Protokoll kommunfullmäktige 2026-06-11",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/584f7f70-e57e-4acf-b4dc-94484f8ef750/b7a3faf2-941a-4a0b-8b06-84e1a4282bbe"
+      },
+      "note_sv": "Antagen av KF 11 juni 2026. Tomterna kan slås ihop till mindre flerbostadshus; dagvattendamm dimensionerad för 100-årsregn med 30 % klimatfaktor.",
+      "confidence": "high"
+    },
+    {
+      "id": "rfab_underhall_budget",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Rättviks Fastigheter AB:s budget för kostnadsfört underhåll",
+      "value": 30,
+      "unit": "kr/m²",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Bolaget bedömer att 120–130 kr/m² behövs för att undvika akuta reparationer, trots en hyreshöjning på 7 % 2025.",
+      "confidence": "high"
+    },
+    {
+      "id": "va_ledningsnat",
+      "sdg": [
+        6,
+        9
+      ],
+      "name_sv": "Längd på kommunens VA-ledningar",
+      "value": 600,
+      "unit": "km",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Vattentjänstplan",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/82d29d1b-ecae-4896-ab1d-de1569234132/1d0db0b5-fac6-4563-8b79-e8f29152afb3"
+      },
+      "note_sv": "”Cirka 60 mil”, till stor del byggda 1955–1979 och i behov av renovering.",
+      "confidence": "high"
+    },
+    {
+      "id": "va_anslutna_anlaggningar",
+      "sdg": [
+        6
+      ],
+      "name_sv": "Anläggningar anslutna till allmänt vatten och avlopp",
+      "value": 3731,
+      "unit": "st",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Vattentjänstplan",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/82d29d1b-ecae-4896-ab1d-de1569234132/1d0db0b5-fac6-4563-8b79-e8f29152afb3"
+      },
+      "note_sv": "Aktiva VA-abonnemang i maj 2024; sex vattentäkter och fem avloppsreningsverk.",
+      "confidence": "high"
+    },
+    {
+      "id": "va_skyfall_riskplatser",
+      "sdg": [
+        6,
+        11,
+        13
+      ],
+      "name_sv": "VA-anläggningar med risk vid skyfall",
+      "value": 11,
+      "unit": "platser",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Vattentjänstplan",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/82d29d1b-ecae-4896-ab1d-de1569234132/1d0db0b5-fac6-4563-8b79-e8f29152afb3"
+      },
+      "note_sv": "Alla är spillvattenpumpstationer; fyra har högre riskklass. Dagvattnet renas inte i dag.",
+      "confidence": "high"
+    },
+    {
+      "id": "rvab_investeringar",
+      "sdg": [
+        6,
+        9
+      ],
+      "name_sv": "Investeringar i Rättviks Vatten och Avfall AB",
+      "value": 81.8,
+      "unit": "mnkr",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Bland annat VA-utbyggnad i Backa (prognos 79 mnkr) och överföringsledning Furudal–Kärvsåsen (prognos 32,2–35,2 mnkr).",
+      "confidence": "high"
+    },
+    {
+      "id": "va_brukningsavgift_hojning_2026",
+      "sdg": [
+        6
+      ],
+      "name_sv": "Höjning av VA-brukningsavgifterna",
+      "value": 5,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Protokoll kommunfullmäktige 2026-05-07",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/da14b8b6-429e-42c4-87b7-ffa49bcb17e6/b7a3faf2-941a-4a0b-8b06-84e1a4282bbe"
+      },
+      "note_sv": "KF 7 maj 2026 § 15; anläggningsavgifterna oförändrade. SD reserverade sig.",
+      "confidence": "high"
+    },
+    {
+      "id": "va_brukningsavgift_hojning_2025",
+      "sdg": [
+        6
+      ],
+      "name_sv": "Höjning av VA-brukningsavgifterna från 1 april 2025",
+      "value": 20,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"
+      },
+      "note_sv": "Motsvarar 15 % på årsbasis.",
+      "confidence": "high"
+    },
+    {
+      "id": "siljan_hogsta_vattenstand_reglerad",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Siljans högsta vattenstånd under nuvarande vattendom",
+      "value": 163.04,
+      "unit": "m ö.h.",
+      "year": 2024,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Fakta om Siljan",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/kunskapsbanken/hydrologi/de-stora-sjoarna/fakta-om-siljan"
+      },
+      "note_sv": "Perioden 1964–2024. Före regleringen (1900–1925) var högsta nivån 163,9 m; medelvattenståndet är 161,18 m. Höjdsystem enligt SMHI.",
+      "confidence": "high"
+    },
+    {
+      "id": "siljan_vattendom_ovre_grans",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Siljans övre regleringsgräns enligt vattendomen",
+      "value": 161.78,
+      "unit": "m ö.h.",
+      "year": 1964,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Fakta om Siljan",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/kunskapsbanken/hydrologi/de-stora-sjoarna/fakta-om-siljan"
+      },
+      "note_sv": "Vattendomen från 1964: nivån ska hållas mellan 159,9 och 161,78 m; vid vårflod gäller särskilda tappningsregler. Regleras från Gråda kraftverk (1951).",
+      "confidence": "high"
+    },
+    {
+      "id": "lerdalsberget_naturreservat",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Lerdalsbergets naturreservat",
+      "value": 12,
+      "unit": "ha",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Protokoll kommunfullmäktige 2026-05-07",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/da14b8b6-429e-42c4-87b7-ffa49bcb17e6/b7a3faf2-941a-4a0b-8b06-84e1a4282bbe"
+      },
+      "note_sv": "Beslutat av KF 7 maj 2026; kommunens tredje kommunala naturreservat, tätortsnära gammal skog.",
+      "confidence": "high"
+    },
+    {
+      "id": "vardcentral_kopesumma",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Kommunens köp av vårdcentralens byggnad",
+      "value": 103,
+      "unit": "mnkr",
+      "year": 2023,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks kommun köper vårdcentralen för 103 miljoner kronor",
+        "publisher": "SVT Nyheter Dalarna",
+        "url": "https://www.svt.se/nyheter/lokalt/dalarna/rattviks-kommun-koper-vardcentralen-for-103-miljoner-kronor--6fpxh4"
+      },
+      "note_sv": "Beslut i KF december 2023. Huset rymmer vårdcentralen och särskilda boendet Prästskogen; köpet gjordes bl.a. för att få plats för en familjecentral, som öppnade vid årsskiftet 2025/2026.",
+      "confidence": "medium"
+    },
+    {
+      "id": "valdeltagande_kommunval",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i kommunvalet",
+      "value": 84.11,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Val till kommunfullmäktige 2026 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2026/KF/20/2031?r=S"
+      },
+      "note_sv": "Samma nivå som 2022. 9 250 röstberättigade.",
+      "confidence": "high"
+    },
+    {
+      "id": "kf_mandat_s",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat i kommunfullmäktige: Socialdemokraterna",
+      "value": 13,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Val till kommunfullmäktige 2026 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2026/KF/20/2031?r=S"
+      },
+      "note_sv": "Av 39 mandat; +2 jämfört med 2022. Andel av rösterna 31,48 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "kf_mandat_c",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat i kommunfullmäktige: Centerpartiet",
+      "value": 8,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Val till kommunfullmäktige 2026 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2026/KF/20/2031?r=S"
+      },
+      "note_sv": "Av 39 mandat; −2 jämfört med 2022. Andel av rösterna 20,77 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "kf_mandat_m",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat i kommunfullmäktige: Moderaterna",
+      "value": 8,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Val till kommunfullmäktige 2026 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2026/KF/20/2031?r=S"
+      },
+      "note_sv": "Av 39 mandat; +1 jämfört med 2022. Andel av rösterna 19,31 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "kf_mandat_sd",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat i kommunfullmäktige: Sverigedemokraterna",
+      "value": 7,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Val till kommunfullmäktige 2026 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2026/KF/20/2031?r=S"
+      },
+      "note_sv": "Av 39 mandat; ±0 jämfört med 2022. Andel av rösterna 17,34 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "kf_mandat_kd",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat i kommunfullmäktige: Kristdemokraterna",
+      "value": 2,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Val till kommunfullmäktige 2026 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2026/KF/20/2031?r=S"
+      },
+      "note_sv": "Av 39 mandat; −1 jämfört med 2022. Andel av rösterna 5,95 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "kf_mandat_v",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat i kommunfullmäktige: Vänsterpartiet",
+      "value": 1,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Val till kommunfullmäktige 2026 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2026/KF/20/2031?r=S"
+      },
+      "note_sv": "Av 39 mandat; ±0 jämfört med 2022. Andel av rösterna 3,16 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "kf_mandat_c_m_kd",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat för det tidigare styret C + M + KD",
+      "value": 18,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Val till kommunfullmäktige 2026 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2026/KF/20/2031?r=S"
+      },
+      "note_sv": "Egen beräkning (8 + 8 + 2) av 39 mandat; styret hade 20 mandat 2022–2026 och har förlorat sin majoritet.",
+      "confidence": "high"
+    },
+    {
+      "id": "ccw_bilar",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Bilar under Classic Car Week",
+      "value": 10000,
+      "unit": "bilar",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Classic car week lockar tiotusentals – blandade känslor i Rättvik",
+        "publisher": "SVT Nyheter Dalarna",
+        "url": "https://www.svt.se/nyheter/lokalt/dalarna/classic-car-week-lockar-tiotusentals-blandade-kanslor-i-rattvik"
+      },
+      "note_sv": "”Omkring tiotusen bilar och långt många fler människor” varje år; arrangemanget hålls vecka 31.",
+      "confidence": "medium"
+    },
+    {
+      "id": "ccw_startar",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Classic Car Week startade",
+      "value": 1992,
+      "unit": "år",
+      "year": 1992,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Classic Car Week – varje år under vecka 31, sedan 1992",
+        "publisher": "Classic Car Week",
+        "url": "https://www.classiccarweek.se/"
+      },
+      "note_sv": "Planeringen började våren 1991; sedan dess varje år vecka 31.",
+      "confidence": "high"
+    },
+    {
+      "id": "langbryggan_langd",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Långbryggans längd",
+      "value": 628,
+      "unit": "m",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Långbryggan",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/langbryggan.html"
+      },
+      "note_sv": "Räknad från stranden till ångbåtskajen. Beskrivs som ”nästan lika lång som evigheten” av poeten Bo Bergman.",
+      "confidence": "high"
+    },
+    {
+      "id": "langbryggan_byggd",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Långbryggan byggdes",
+      "value": 1895,
+      "unit": "år",
+      "year": 1895,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Långbryggan",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/langbryggan.html"
+      },
+      "note_sv": "Angöringsplats för ångaren S/S Rättvik, som trafikerade Siljan 1895 till 1950-talet.",
+      "confidence": "high"
+    },
+    {
+      "id": "langbryggan_namnplankor",
+      "sdg": [
+        11,
+        17
+      ],
+      "name_sv": "Sålda namnplankor vid renoveringen av Långbryggan",
+      "value": 2938,
+      "unit": "plankor",
+      "year": 1992,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Långbryggan",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/langbryggan.html"
+      },
+      "note_sv": "Allmänhet och företag köpte plankor med sina namn för att finansiera renoveringen; nyinvigd 6 juni 1992. Wikipedia anger 2 638.",
+      "confidence": "medium"
+    },
+    {
+      "id": "sandstrand_langd",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Sandstrand i centrala Rättvik",
+      "value": 1200,
+      "unit": "m",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Friluftsliv och motion",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/idrott-motion-och-friluftsliv/friluftsliv-och-motion.html"
+      },
+      "note_sv": "Kommunen anger ”1 200 meter sandstrand” bland aktiviteterna i centrala Rättvik. I OSM ligger badplatsen Siljansbadet och campingen vid stranden norr om Långbryggan.",
+      "confidence": "high"
+    },
+    {
+      "id": "kyrkstallar_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Kyrkstallar vid Rättviks kyrka",
+      "value": 87,
+      "unit": "st",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks kyrka",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/rattviks-kyrka.html"
+      },
+      "note_sv": "I två grupper; de flesta från 1700- och 1800-talen. Kyrkudden är riksintresse för kulturmiljövården (W89).",
+      "confidence": "high"
+    },
+    {
+      "id": "kyrkstall_aldsta",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Äldsta kyrkstallet enligt dendrokronologisk datering",
+      "value": 1492,
+      "unit": "år",
+      "year": 1492,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljöprogram för Rättviks kommun, antagandehandling 2026-02-10",
+        "publisher": "Rättviks kommun (WSP)",
+        "url": "https://ess-app.rattvik.se/api/download/237c45d1-ab3c-4bd4-a726-f84aade032da/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "Kulturmiljöprogrammet anger 1492; kommunens webbplats skriver att det äldsta är från 1470-talet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kyrka_takstolar_aldsta",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Långhusets takstolar, äldsta dendrodatering",
+      "value": 1354,
+      "unit": "år",
+      "year": 1354,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks kyrka",
+        "publisher": "Wikipedia (sv)",
+        "url": "https://sv.wikipedia.org/wiki/R%C3%A4ttviks_kyrka"
+      },
+      "note_sv": "Långhusets 27 takstolar är daterade till 1354–1367. Kommunen anger att kyrkan har anor från 1200-talet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kyrka_exterior",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Rättviks kyrkas nuvarande exteriör",
+      "value": 1793,
+      "unit": "år",
+      "year": 1793,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks kyrka",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/rattviks-kyrka.html"
+      },
+      "note_sv": "Kyrkan har byggts till i flera omgångar; nuvarande exteriör är från 1793.",
+      "confidence": "high"
+    },
+    {
+      "id": "kyrkklocka_aldsta",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Storklockan i Rättviks kyrka",
+      "value": 1593,
+      "unit": "år",
+      "year": 1593,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks kyrka",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/rattviks-kyrka.html"
+      },
+      "note_sv": "Dalarnas äldsta klocktrio: 1593, 1622 och 1628.",
+      "confidence": "high"
+    },
+    {
+      "id": "vasa_tal_ar",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Gustav Vasas första tal till dalkarlarna vid Rättviks kyrka",
+      "value": 1520,
+      "unit": "år",
+      "year": 1520,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Vasastenen",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/vasastenen.html"
+      },
+      "note_sv": "Enligt traditionen och Vasastenens inskription i december 1520; i januari 1521 besegrades kung Kristians krigsfolk vid kyrkan.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vasastenen_rest",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Vasastenen restes",
+      "value": 1893,
+      "unit": "år",
+      "year": 1893,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Vasastenen",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/vasastenen.html"
+      },
+      "note_sv": "Bautasten med tre sköldar och röda drakslingor, omgiven av tolv mindre stenar för dem som hjälpte Gustav Vasa.",
+      "confidence": "high"
+    },
+    {
+      "id": "stiernhook_fodd",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Juristen Johan Stiernhöök föddes i Rättvik",
+      "value": 1596,
+      "unit": "år",
+      "year": 1596,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Johan Stiernhöök",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/johan-stiernhook.html"
+      },
+      "note_sv": "Föddes på Hökbacken, dog 1675; kallas ”den svenska lagfarenhetens fader”. Kommunfullmäktige sammanträder i Stiernhöökssalen.",
+      "confidence": "high"
+    },
+    {
+      "id": "rattvik_egen_socken",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Rättvik blir egen socken",
+      "value": 1325,
+      "unit": "år",
+      "year": 1325,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljöprogram för Rättviks kommun, antagandehandling 2026-02-10",
+        "publisher": "Rättviks kommun (WSP)",
+        "url": "https://ess-app.rattvik.se/api/download/237c45d1-ab3c-4bd4-a726-f84aade032da/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "I början av 1300-talet hörde Rättviksbygden till Leksands socken; kring år 1325 bildades en egen socken.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kyrkbat_aldsta_siljan",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Årtalet på den äldsta kyrkbåten på Siljan",
+      "value": 1716,
+      "unit": "år",
+      "year": 1716,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Kyrkbåten Sörbyggarn",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/kyrkbaten-sorbyggarn.html"
+      },
+      "note_sv": "Storbåtar med 8–12 årpar; Rättviks äldsta kända kyrkbåt ”Aros” användes till 1905. ”Sörbyggarn” byggdes 1950.",
+      "confidence": "high"
+    },
+    {
+      "id": "rattviksmaleriet_start",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Rättviksmåleriet växer fram (decennium)",
+      "value": 1760,
+      "unit": "år",
+      "year": 1760,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dalmålning",
+        "publisher": "Wikipedia (sv)",
+        "url": "https://sv.wikipedia.org/wiki/Dalm%C3%A5lning"
+      },
+      "note_sv": "Rättviksmåleriet växer fram på 1760-talet; missväxtåren 1771–1773 drev dalmålare ut på arbetsvandringar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "emigranter_1864_1889",
+      "sdg": [
+        10
+      ],
+      "name_sv": "Emigranter från Rättvik 1864–1889",
+      "value": 1000,
+      "unit": "personer",
+      "year": 1889,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "From Rättvik to Isanti County (recension av R. Ostergren, A Community Transplanted, 1988)",
+        "publisher": "Pietisten",
+        "url": "https://pietisten.org/xiv/3/bookreview.html"
+      },
+      "note_sv": "”Nästan tusen” enligt Robert Ostergrens studie; nästan hälften bosatte sig i Isanti County (Minnesota) eller Clay County (Dakota). Första familjen reste 1864.",
+      "confidence": "medium"
+    },
+    {
+      "id": "emigranter_vastbjorka_1860tal",
+      "sdg": [
+        10
+      ],
+      "name_sv": "Emigranter från byn Västbjörka under 1860-talet",
+      "value": 70,
+      "unit": "personer",
+      "year": 1869,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljöprogram för Rättviks kommun, antagandehandling 2026-02-10",
+        "publisher": "Rättviks kommun (WSP)",
+        "url": "https://ess-app.rattvik.se/api/download/237c45d1-ab3c-4bd4-a726-f84aade032da/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "”Över 70 personer” emigrerade och några gårdar försvann helt.",
+      "confidence": "medium"
+    },
+    {
+      "id": "jarnvag_oppnad",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Järnvägen når Rättvik",
+      "value": 1890,
+      "unit": "år",
+      "year": 1890,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "FRMJ, Falun–Rättvik–Mora Järnväg, snabbfakta",
+        "publisher": "historiskt.nu",
+        "url": "https://www.historiskt.nu/normalsp/gdj/frmj/frmj_snabbfakta.html"
+      },
+      "note_sv": "Sträckan Sågmyra–Rättvik öppnades 12 augusti 1890; Rättvik–Mora 2 augusti 1891. Trafiken sköttes av Gävle–Dala Järnväg.",
+      "confidence": "high"
+    },
+    {
+      "id": "stationshus_byggt",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Nuvarande stationshus i Rättvik",
+      "value": 1929,
+      "unit": "år",
+      "year": 1929,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks station",
+        "publisher": "Wikipedia (sv)",
+        "url": "https://sv.wikipedia.org/wiki/R%C3%A4ttviks_station"
+      },
+      "note_sv": "Ersatte stationshuset från cirka 1890. Rättvik blev järnvägsknut 1914; linjen Falun–Rättvik lades ned 1965.",
+      "confidence": "medium"
+    },
+    {
+      "id": "lokstallarna_byggd",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Lokstallarna byggdes",
+      "value": 1890,
+      "unit": "år",
+      "year": 1890,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Lokstallarna i Rättvik",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/sevardheter/lokstallarna.html"
+      },
+      "note_sv": "Användes för service av lok och vagnar under större delen av 1900-talet; renoverade och invigda som mötesplats 2025.",
+      "confidence": "high"
+    },
+    {
+      "id": "gustaf_wasa_byggd",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Ångaren Gustaf Wasa sjösattes på Siljan",
+      "value": 1876,
+      "unit": "år",
+      "year": 1876,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "M/S Gustaf Wasa (1876)",
+        "publisher": "Wikipedia (sv)",
+        "url": "https://sv.wikipedia.org/wiki/M/S_Gustaf_Wasa_(1876)"
+      },
+      "note_sv": "Sjösatt 29 april 1876 och har trafikerat Siljan sedan dess; K-märkt, tar 140 passagerare och lägger till vid Långbryggan.",
+      "confidence": "medium"
+    },
+    {
+      "id": "municipalsamhalle",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Rättviks municipalsamhälle inrättas",
+      "value": 1910,
+      "unit": "år",
+      "year": 1910,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljöprogram för Rättviks kommun, antagandehandling 2026-02-10",
+        "publisher": "Rättviks kommun (WSP)",
+        "url": "https://ess-app.rattvik.se/api/download/237c45d1-ab3c-4bd4-a726-f84aade032da/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "Inrättat 25 november 1910; gav stationssamhället egen förvaltning för bl.a. brandskydd och hälsovård.",
+      "confidence": "high"
+    },
+    {
+      "id": "hotell_siljansborg",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Turisthotellet Siljansborg står klart",
+      "value": 1909,
+      "unit": "år",
+      "year": 1909,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljöprogram för Rättviks kommun, antagandehandling 2026-02-10",
+        "publisher": "Rättviks kommun (WSP)",
+        "url": "https://ess-app.rattvik.se/api/download/237c45d1-ab3c-4bd4-a726-f84aade032da/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "Persborg öppnade 1903. Kung Gustav V hyrde Siljansborg några veckor 1911 och 1912; servitriserna bar folkdräkt. Båda hotellen är rivna.",
+      "confidence": "high"
+    },
+    {
+      "id": "vidablick_invigd",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Utsiktstornet Vidablick invigs",
+      "value": 1898,
+      "unit": "år",
+      "year": 1898,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljöprogram för Rättviks kommun, antagandehandling 2026-02-10",
+        "publisher": "Rättviks kommun (WSP)",
+        "url": "https://ess-app.rattvik.se/api/download/237c45d1-ab3c-4bd4-a726-f84aade032da/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "Invigt 12 juni 1898 på Hedsåsberget, 252 m över Siljan; ritat av 17-årige Olof Klockars. Ligger utanför 3D-modellen.",
+      "confidence": "high"
+    },
+    {
+      "id": "kommunalhus_invigt",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Tings- och kommunalhuset invigs",
+      "value": 1952,
+      "unit": "år",
+      "year": 1952,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljöprogram för Rättviks kommun, antagandehandling 2026-02-10",
+        "publisher": "Rättviks kommun (WSP)",
+        "url": "https://ess-app.rattvik.se/api/download/237c45d1-ab3c-4bd4-a726-f84aade032da/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "Ritat av Artur von Schmalensee och byggt 1951–1952 vid tingsplatsen, Vasagatan 1.",
+      "confidence": "high"
+    },
+    {
+      "id": "vackert_rattvik_start",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Projektet ”Vackert Rättvik” startar",
+      "value": 1994,
+      "unit": "år",
+      "year": 1994,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljöprogram för Rättviks kommun, antagandehandling 2026-02-10",
+        "publisher": "Rättviks kommun (WSP)",
+        "url": "https://ess-app.rattvik.se/api/download/237c45d1-ab3c-4bd4-a726-f84aade032da/ea9b630c-fcbd-4d51-8f16-e0c049ede008"
+      },
+      "note_sv": "Pågick 1994–2005 för att överbrygga barriären som riksvägen och järnvägen skapat mot Siljan; fontänen ”Vattenspel” på Torget invigdes 2000.",
+      "confidence": "high"
+    },
+    {
+      "id": "dalhalla_invigd",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Dalhalla invigs officiellt",
+      "value": 1995,
+      "unit": "år",
+      "year": 1995,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dalhalla",
+        "publisher": "Wikipedia (sv)",
+        "url": "https://sv.wikipedia.org/wiki/Dalhalla"
+      },
+      "note_sv": "Provkonsert i juni 1993, premiärkonsert 23 juli 1994, officiell invigning 21 juni 1995 i kalkbrottet Draggängarna; cirka 6 000 platser.",
+      "confidence": "medium"
+    },
+    {
+      "id": "musik_vid_siljan_start",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Festivalen Musik vid Siljan börjar",
+      "value": 1969,
+      "unit": "år",
+      "year": 1969,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Om oss – Stämmoveckan (Händelser genom åren)",
+        "publisher": "Folkmusikens hus",
+        "url": "https://folkmusikenshus.se/stammoveckan/om-oss/"
+      },
+      "note_sv": "Festivalen firade 50 år 2019 och lades sedan ned; Stämmoveckan tog över 2021. Startåret 1969 är härlett av oss ur jubileet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "siljansringen_alder",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Siljansringens ålder",
+      "value": 377,
+      "unit": "miljoner år",
+      "year": 2026,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks kulturhus",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/kultur/rattviks-kulturhus.html"
+      },
+      "note_sv": "Kulturhusets naturmuseum anger 377 miljoner år (vetenskapliga dateringar 376,8 ± 1,7 och 377 ± 2). Kulturmiljöprogrammet och Siljan Geopark skriver cirka 380.",
+      "confidence": "medium"
+    },
+    {
+      "id": "siljansringen_diameter",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Siljansringens diameter",
+      "value": 52,
+      "unit": "km",
+      "year": 2026,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Siljan Ring",
+        "publisher": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Siljan_Ring"
+      },
+      "note_sv": "Europas största kända nedslagsstruktur; Siljan ligger i kraterns sydvästra kant.",
+      "confidence": "medium"
+    },
+    {
+      "id": "prastskogsvallen_invigd",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Prästskogsvallen invigs",
+      "value": 2014,
+      "unit": "år",
+      "year": 2014,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Fotbollsplaner",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/idrott-motion-och-friluftsliv/fotbollsplaner.html"
+      },
+      "note_sv": "Spontanidrottsplats med belyst konstgräs, löparbanor och isbana på vintern.",
+      "confidence": "high"
+    }
+  ]
+}

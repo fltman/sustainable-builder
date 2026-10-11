@@ -1,0 +1,2120 @@
+{
+ "indicators": {
+  "konsumtionsbaserade_utslapp_sverige": {
+   "name": "Consumption-based greenhouse gas emissions per person",
+   "note": "Down about 36% per capita 2008–2023; about 60% comes from household consumption. Considerably higher than the territorial figure of about 4.5 t per inhabitant. Kalmar's climate contract also covers consumption-based emissions.",
+   "unit": "t CO2e per person per year"
+  },
+  "forsorjningsformaga_spannmal_sverige": {
+   "name": "Sweden's self-sufficiency, cereals",
+   "note": "The 2023/24 season (weak harvest). Sweden is a net exporter of cereals. The Swedish Board of Agriculture does not report an overall self-sufficiency rate for all food.",
+   "unit": "%"
+  },
+  "forsorjningsformaga_mejeri_sverige": {
+   "name": "Sweden's self-sufficiency, dairy products",
+   "note": "Down from 112% in 1995. Cheese only 39%. Eggs 95% (2023, salmonella outbreak).",
+   "unit": "%"
+  },
+  "forsorjningsformaga_tomat_sverige": {
+   "name": "Sweden's self-sufficiency, fresh tomatoes",
+   "note": "An example of import dependence for fruit and vegetables: apples 29%, cucumbers 48%, strawberries 69%, onions 78%, carrots 97%.",
+   "unit": "%"
+  },
+  "ensamhet_ofta_alltid_sverige": {
+   "name": "Often or always troubled by loneliness",
+   "note": "National Public Health Survey 2024. A further 13% are sometimes troubled by it.",
+   "unit": "%"
+  },
+  "unga_skarmtid_over_3h": {
+   "name": "13–16-year-olds with more than 3 hours of leisure screen time per day",
+   "note": "Computer, mobile phone and tablet on a typical day; 93% among 17–18-year-olds. The Public Health Agency of Sweden recommends no more than 2–3 hours for 13–18-year-olds.",
+   "unit": "%"
+  },
+  "internet_dagligen": {
+   "name": "Use the internet daily",
+   "note": "Population aged 16+. 97% use the internet; almost everyone who does not is a pensioner. 4 in 10 Swedes (aged 8+) use AI tools.",
+   "unit": "%"
+  },
+  "hemberedskap_en_vecka": {
+   "name": "Households prepared at home for at least one week",
+   "note": "Web panel, 2,009 people aged 16+, Dec 2024–Feb 2025. 63% plan to strengthen their preparedness.",
+   "unit": "%"
+  },
+  "dryck_hemma_en_vecka": {
+   "name": "Have drinks/water at home for at least one week",
+   "note": "8,108 responses, December 2025. 61% have food for at least one week – water is the weakest link in household preparedness.",
+   "unit": "%"
+  },
+  "kontant_senaste_kop": {
+   "name": "Paid in cash at their most recent purchase",
+   "note": "10% in 2023 and 40% in 2010. Low cash use increases vulnerability when digital payments are disrupted.",
+   "unit": "%"
+  },
+  "beredskapslager_livsmedel_budget": {
+   "name": "Government funding for emergency stockpiles in the food supply chain",
+   "note": "Part of SEK 1,071 million for food and drinking water preparedness in 2026. Government food stockpiles are now being built up from virtually zero; a new law on emergency stockpiles is proposed to apply from 1 July 2026.",
+   "unit": "SEK million"
+  },
+  "livsmedelsavfall_per_person_sverige": {
+   "name": "Food waste in the retail and consumer stages",
+   "note": "880,000 tonnes in total. Households account for 72%: 16 kg of avoidable food waste + 45 kg of other food waste per person. No reduction since 2020, despite an interim target of −20% by 2025.",
+   "unit": "kg/person/year"
+  },
+  "skyfall_klimatfaktor_2071_2100_rcp85": {
+   "name": "Climate factor for cloudbursts 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "factor",
+   "note": "Short cloudbursts become about 40% more intense by 2071–2100 with RCP8.5 and about 20% with RCP4.5 (2041–2070: 20% and 15% respectively). Applies to all return periods and the whole country. Svenskt Vatten recommends at least 1.25 for rain shorter than one hour."
+  },
+  "overdodlighet_varmebolja_2018": {
+   "name": "Excess mortality during the heatwave in summer 2018",
+   "unit": "deaths",
+   "note": "About 700 more deaths than normal over the whole summer; SMHI cites 600–745 attributable to the heat. Mainly older people and the chronically ill were affected. Kalmar had 43 high-summer days that year."
+  },
+  "dodlighetsokning_varme_26c": {
+   "name": "Increase in mortality per day when it is at least 26 °C for three days in a row",
+   "unit": "%",
+   "note": "Mortality rises by about 10% per day at 26 °C or more three days in a row, and by a further 10% at 30 °C. Older people, the chronically ill and small children are most sensitive."
+  },
+  "rvu_bil_andel_sverige": {
+   "name": "Car share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 2,053 million car trips out of almost 3.9 billion main trips. Trafikanalys writes \"just over half of all trips\". Kalmar (60%) is thus above the national figure."
+  },
+  "rvu_kollektiv_andel_sverige": {
+   "name": "Public transport modes' share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 708 million of approx. 3,900 million main trips. Increased by 5% from 2023 but is 10% below 2019."
+  },
+  "rvu_gang_andel_sverige": {
+   "name": "Walking's share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 499 million of approx. 3,900 million main trips. Walking trips fell by 9% from 2023 and are 20% below 2019."
+  },
+  "rvu_cykel_andel_sverige": {
+   "name": "Cycling's share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 480 million of approx. 3,900 million main trips; +12% from 2023. Cycling accounts for only 2.2 of 137 billion kilometres travelled."
+  },
+  "fritidsbatar_elmotor_andel_sverige": {
+   "name": "Motorboats with an electric motor",
+   "unit": "% of motorboats",
+   "note": "Share of motorboats with an electric motor (multiple answers possible): 4% for open motorboats, 2% for cabin boats. 17% still have a banned carburettor two-stroke engine. Measured in energy or traffic work, the electric share is much lower. A national measure: data for Kalmarsund is lacking."
+  },
+  "arbetstid_overenskommen": {
+   "name": "Agreed (contractual) mean working hours per week, employed aged 15–74",
+   "unit": "hours/week",
+   "note": "Margin of error ±0.1. Aged 20–64: 38.1 hours. Men 38.2 and women 36.2 hours (aged 15–74). Agreed weekly hours is the measure that best matches the model's \"working time\". Municipal figures are not available in the Labour Force Survey (AKU)."
+  },
+  "arbetstid_faktisk": {
+   "name": "Actual mean hours worked per week, employed aged 15–74",
+   "unit": "hours/week",
+   "note": "Margin of error ±0.2. Average over all weeks of the year, so holiday, sickness and parental leave are counted. The measure therefore cannot be compared with an agreed 40-hour week. Aged 20–64: 30.6; men 31.6, women 27.7. In 2015: 30.1 hours."
+  },
+  "deltid_andel": {
+   "name": "Employed with agreed working hours under 35 hours per week",
+   "unit": "%",
+   "note": "Own calculation: (277.8 + 601.9 thousand with 1–34 hours) / 5,263.0 thousand employed = 16.7%. Women 21.6%, men 12.3%. About 254 thousand lack agreed working hours; if they are excluded, the share becomes 17.6%."
+  },
+  "sex_timmars_arbetsdag_stod": {
+   "name": "Share who think a six-hour working day is a good proposal",
+   "unit": "%",
+   "note": "The national SOM survey 2025: 55% good proposal, 22% neither, 23% bad proposal. Shows how large the support is for a reduction in working time."
+  },
+  "hog_tillit_till_manniskor": {
+   "name": "High interpersonal trust (7–10 on a scale of 0–10)",
+   "unit": "%",
+   "note": "The question reads: \"to what extent can people in general be trusted?\". 31% have medium (4–6) and 12% low (0–3) trust. A different measure from the yes/no question in the Health in Sweden survey (HLV), on which the model's trust is based (66% in Kalmar)."
+  },
+  "ideellt_arbete_andel": {
+   "name": "Share who have done voluntary work in the past year, aged 16–84",
+   "unit": "%",
+   "note": "Population study 2024. The share has been stable at 48–53% since 1992, with the most men and middle-aged people. According to SOM 2025, 34% are members of a sports or outdoor association, 40% of a trade union and 14% of a cultural association."
+  },
+  "livsmedelsberedskap_planeringsmal_dagar": {
+   "name": "National planning target: food supply during a security-policy crisis (at least three months)",
+   "unit": "days (minimum)",
+   "note": "Food supply is to be secured \"for at least three months where logistics flows with the outside world are limited\" (90 days = own conversion). On 26 May 2026 the Riksdag adopted an act on emergency stockpiles in the food chain (SFS 2026:837), in force 1 July 2026. The first state grain stores are being built in Norrland during 2026. A target level, not a measured stock."
+  },
+  "internet_icke_anvandare": {
+   "name": "Share of the population aged 16+ who do not use the internet",
+   "unit": "%",
+   "note": "Almost exclusively people of retirement age. 95% use e-ID, in practice mobile BankID, a single critical dependency. Almost one in four has refrained from booking a medical appointment because healthcare e-services are too difficult."
+  },
+  "generativ_ai_anvandning": {
+   "name": "Share aged 16+ who have used generative AI tools",
+   "unit": "%",
+   "note": "25% in 2024. 18% use AI at work. 35% of companies used AI in 2025, and among large companies 72%."
+  },
+  "kommuner_ai_i_alla_delar": {
+   "name": "Municipalities where AI is used to some extent in all parts of the operations",
+   "unit": "% of responding municipalities",
+   "note": "No municipality says that AI permeates the whole municipality. 40% use AI in some parts and 34% only among a few individuals. Barely one in four municipalities has an AI strategy (four in ten among municipalities with at least 50,000 inhabitants), and nearly half have guidelines. 7% have trained all staff. This is not an SKR survey, since none was found."
+  },
+  "ai_forordningen_hogrisk_tillampning": {
+   "name": "Year the EU AI Act starts to apply to stand-alone high-risk systems (Annex III), 2 December",
+   "unit": "year",
+   "note": "The AI Act entered into force on 1 August 2024. Prohibitions and AI literacy have applied since 2 February 2025, GPAI rules since August 2025 and the rest of the regulation since 2 August 2026. The AI Omnibus (in force 27 July 2026) postponed the high-risk requirements to 2 December 2027 (Annex III, including public benefits) and 2 August 2028 (Annex I). Municipalities' AI in the exercise of public authority is mainly affected by Annex III."
+  },
+  "konsumtion_kokvaxter_per_person": {
+   "name": "Consumption of fresh and frozen vegetables per person",
+   "unit": "kg/person/year",
+   "note": "Total consumption, almost doubled since 1980. Direct consumption of fresh vegetables is 45.8 kg and of root vegetables 10.5 kg. Used as the denominator when calculating urban cultivation's share."
+  },
+  "konsumtion_frukt_bar_per_person": {
+   "name": "Consumption of fresh and frozen fruit and berries per person",
+   "unit": "kg/person/year",
+   "note": "Same level as in 1980. Including processed products (juice, jam and so on), consumption of fruit and berries is 82.4 kg per person per year."
+  },
+  "utslapp_per_gastnatt": {
+   "name": "Climate impact per tourist guest night (West Sweden)",
+   "unit": "kg CO2e/guest night",
+   "note": "Life-cycle calculation for tourism in West Sweden: 110 kg CO2e per tourist and 39 kg per guest night, of which travel to and from the destination is 54% and accommodation 23%. Applying the same factor, Kalmar Municipality's 452,248 guest nights give about 17,600 tonnes a year and Öland's about 56,000 tonnes (own rough calculation). With 91–92% of trips by car, the transport share in Kalmar County is probably at least as large."
+  },
+  "ecodriving_bransle_besparing": {
+   "name": "Fuel saving from simulator-based eco-driving training (Kalmar Maritime Academy)",
+   "unit": "% (up to)",
+   "note": "Courses for masters of small passenger ferries in the Stockholm archipelago have cut fuel use by up to 13%. Since 2015 more than 400 crew members on the Swedish Transport Administration's road ferries have been trained (1.5 litres less per crossing, a claimed 11,000 tonnes of CO₂ a year), and more than 700 officers in total. The figures are the simulator maker Kongsberg's account of a Linnaeus University report that has not been reviewed here."
+  },
+  "unga_19_24_sverige_prognos_2050": {
+   "name": "Residents aged 19–24 in Sweden in 2050 according to Statistics Sweden's population projection",
+   "unit": "people",
+   "note": "Sum of single-year ages 19–24 (own summation): 740,827 (2026), peaking at 779,316 (2035) and 667,595 (2050), i.e. −14% from the peak and −10% compared with 2026 (own calculations). Higher education's natural recruitment base grows until the mid-2030s and then shrinks, which sharpens competition for students."
+  },
+  "befolkning_total": {
+   "name": "Population of Rättvik Municipality",
+   "unit": "inhabitants",
+   "note": "Registered residents on 31 December (Statistics Sweden)."
+  },
+  "befolkningstillvaxt_1ar": {
+   "name": "Population change, past year",
+   "unit": "%",
+   "note": "Change in population since the year before (Statistics Sweden). Sweden 0.168%, the county -0.176% (2025)."
+  },
+  "befolkningstillvaxt_5ar": {
+   "name": "Population change, past five years",
+   "unit": "%",
+   "note": "Change in population over the last five years (Statistics Sweden). Sweden 2.2%, the county -0.568% (2025)."
+  },
+  "befolkningstathet": {
+   "name": "Population density",
+   "unit": "inhabitants/km²",
+   "note": "Residents per square kilometre of land (Statistics Sweden). Sweden 25.9 inhabitants/km², the county 10.2 inhabitants/km² (2025)."
+  },
+  "andel_0_19": {
+   "name": "Share of inhabitants aged 0–19",
+   "unit": "%",
+   "note": "Share of the population aged 0–19 (Statistics Sweden). Sweden 22.4%, the county 21.6% (2025)."
+  },
+  "andel_65_plus": {
+   "name": "Share of inhabitants aged 65+",
+   "unit": "%",
+   "note": "Share of the population aged 65 or over (Statistics Sweden). Sweden 21.1%, the county 26.4% (2025)."
+  },
+  "andel_80_plus": {
+   "name": "Share of residents aged 80 or older",
+   "unit": "%",
+   "note": "1,236 people; 9.4% in 2022. (The report's text says 13% for 2024, which does not match its own table.)"
+  },
+  "landareal": {
+   "name": "Land area",
+   "unit": "km²",
+   "note": "Land area, water excluded (Statistics Sweden)."
+  },
+  "hushall_antal": {
+   "name": "Number of households",
+   "unit": "households",
+   "note": "Number of households (Statistics Sweden)."
+  },
+  "vaxthusgaser_per_inv": {
+   "name": "Territorial greenhouse gas emissions per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Territorial emissions within the municipality (national emissions database, RUS/SMHI) – not consumption-based. Sweden 4.5 t CO2e per inhabitant, the county 5.5 t CO2e per inhabitant (2024)."
+  },
+  "vaxthusgaser_transporter_per_inv": {
+   "name": "Emissions from transport per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Domestic transport within the municipality (RUS/SMHI). Sweden 1.6 t CO2e per inhabitant, the county 1.9 t CO2e per inhabitant (2024)."
+  },
+  "vaxthusgaser_jordbruk_per_inv": {
+   "name": "Emissions from agriculture per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Farming's emissions: livestock digestion, manure and soils (RUS/SMHI). Sweden 0.585 t CO2e per inhabitant, the county 0.435 t CO2e per inhabitant (2024)."
+  },
+  "vaxthusgaser_el_fjarrvarme_per_inv": {
+   "name": "Emissions from electricity and district heating production per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Emissions from the municipality's electricity and district-heating production (RUS/SMHI). Sweden 0.489 t CO2e per inhabitant, the county 0.370 t CO2e per inhabitant (2024)."
+  },
+  "vaxthusgaser_industri_per_inv": {
+   "name": "Emissions from industry per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Industry's combustion and process emissions (RUS/SMHI). Sweden 1.2 t CO2e per inhabitant, the county 2.0 t CO2e per inhabitant (2024)."
+  },
+  "elanvandning_per_inv": {
+   "name": "Final electricity use per inhabitant",
+   "unit": "MWh per inhabitant",
+   "note": "All final use of electricity in the municipality, industry included (Swedish Energy Agency/Statistics Sweden). Sweden 11.9 MWh per inhabitant, the county 18.3 MWh per inhabitant (2024)."
+  },
+  "fjarrvarme_fornybar_andel": {
+   "name": "Renewable share of district heating production",
+   "unit": "%",
+   "note": "Share of the municipality's district-heating production from renewable sources (Swedish Energy Agency/Statistics Sweden). Sweden 83.9%, the county 88.2% (2024)."
+  },
+  "elproduktion_lokal": {
+   "name": "Electricity production within the municipality",
+   "unit": "MWh/year",
+   "note": "All electricity produced within the municipality – hydro, wind, solar and combined heat and power (Swedish Energy Agency/Statistics Sweden)."
+  },
+  "solceller_installerad_effekt": {
+   "name": "Installed solar PV capacity",
+   "unit": "MW",
+   "note": "Grid-connected solar installations, installed capacity (Swedish Energy Agency)."
+  },
+  "vindkraft_installerad_effekt": {
+   "name": "Installed wind power capacity within the municipality",
+   "unit": "MW",
+   "note": "Installed capacity of wind turbines within the municipality (Swedish Energy Agency)."
+  },
+  "elbilar_andel": {
+   "name": "Share of electric cars in the passenger car fleet",
+   "unit": "%",
+   "note": "Electric cars as a share of the cars in use (Transport Analysis). Sweden 8.6%, the county 4.3% (2025)."
+  },
+  "kollektivtrafiknara_lage": {
+   "name": "Population living close to public transport",
+   "unit": "%",
+   "note": "Share with a stop with at least one departure an hour (weekdays 6–20) within 500 m as the crow flies. Sweden 80.9%, the county 75.6% (2024)."
+  },
+  "cykelvag_per_inv": {
+   "name": "Cycle paths per inhabitant",
+   "unit": "metres per inhabitant",
+   "note": "Total length of cycle paths – municipal, state and private – per resident. Sweden 2.7 metres per inhabitant (2025)."
+  },
+  "ekologisk_akermark_andel": {
+   "name": "Organically farmed arable land",
+   "unit": "%",
+   "note": "Share of arable land farmed organically (Swedish Board of Agriculture). Sweden 14.1%, the county 21.2% (2025)."
+  },
+  "grundvatten_god_status": {
+   "name": "Groundwater bodies with good chemical and quantitative status",
+   "unit": "%",
+   "note": "Share of groundwater bodies in good chemical and quantitative status (VISS/county boards). Sweden 97.2%, the county 99.7% (2022)."
+  },
+  "skyddad_natur_total": {
+   "name": "Protected nature, share of total area",
+   "unit": "%",
+   "note": "National parks, nature reserves, nature conservation areas and biotope protection as a share of the total area (Statistics Sweden/Swedish EPA). Sweden 12.1%, the county 10.9% (2025)."
+  },
+  "medellivslangd_man": {
+   "name": "Life expectancy, men",
+   "unit": "years",
+   "note": "Life expectancy at birth, five-year average (Statistics Sweden). Sweden 81.8 years, the county 81.9 years (2025)."
+  },
+  "medellivslangd_kvinnor": {
+   "name": "Life expectancy, women",
+   "unit": "years",
+   "note": "Life expectancy at birth, five-year average (Statistics Sweden). Sweden 85.1 years, the county 84.9 years (2025)."
+  },
+  "sjalvskattad_god_halsa": {
+   "name": "Good self-rated health",
+   "unit": "%",
+   "note": "Share aged 16–84 who rate their health good or very good (Public Health Agency's national survey, several years pooled). Sweden 71.0%, the county 70.1% (2024)."
+  },
+  "fetma": {
+   "name": "Obesity (BMI ≥ 30)",
+   "unit": "%",
+   "note": "Share aged 16–84 with a BMI of 30 or more (national public health survey, several years pooled). Sweden 17.3%, the county 20.8% (2024)."
+  },
+  "fysiskt_aktiva": {
+   "name": "Physically active at least 150 min/week",
+   "unit": "%",
+   "note": "Share aged 16–84 physically active at least 150 minutes a week (national public health survey). Sweden 66.1%, the county 70.1% (2024)."
+  },
+  "allvarlig_psykisk_pafrestning": {
+   "name": "Serious psychological distress (adults 16–84)",
+   "unit": "%",
+   "note": "Share aged 16–84 with serious psychological distress on the Kessler 6 scale (national public health survey). Sweden 10.0%, the county 9.6% (2024)."
+  },
+  "psykisk_ohalsa_barn_unga": {
+   "name": "Mental ill health among children and young people aged 0–19",
+   "unit": "%",
+   "note": "Share aged 0–19 with a psychiatric diagnosis, psychotropic drugs or psychiatric care during the year (National Board of Health and Welfare). Sweden 10.0% (2024)."
+  },
+  "avsaknad_emotionellt_stod": {
+   "name": "Lack of emotional support (proxy for loneliness)",
+   "unit": "%",
+   "note": "Share aged 16–84 lacking emotional support – a measure close to loneliness (national public health survey). Sweden 13.3%, the county 13.1% (2024)."
+  },
+  "gymnasieexamen_4ar": {
+   "name": "Upper secondary diploma within 4 years",
+   "unit": "%",
+   "note": "Upper-secondary pupils registered in the municipality who graduate within four years, introductory programmes included (National Agency for Education). Sweden 74.8% (2025)."
+  },
+  "eftergymnasial_utbildning_25_64": {
+   "name": "Post-secondary education, ages 25–64",
+   "unit": "%",
+   "note": "Share aged 25–64 with post-secondary education (Statistics Sweden). Sweden 48.5%, the county 38.0% (2025)."
+  },
+  "arbetsloshet_20_64": {
+   "name": "Unemployment, ages 20–64 (BAS)",
+   "unit": "%",
+   "note": "Register-based unemployment aged 20–64 in November (Statistics Sweden). Sweden 5.4%, the county 4.2% (2024)."
+  },
+  "unga_varken_arbetar_studerar": {
+   "name": "Young people aged 16–24 who are neither working nor studying",
+   "unit": "%",
+   "note": "Share aged 16–24 neither working nor studying (Statistics Sweden). Sweden 6.2%, the county 6.7% (2024)."
+  },
+  "medianinkomst_20_64": {
+   "name": "Median income (total earned income), ages 20–64",
+   "unit": "SEK/year",
+   "note": "Total earned income aged 20–64, median (Statistics Sweden). Sweden 401,400 SEK/year, the county 389,100 SEK/year (2024)."
+  },
+  "gini_disponibel_inkomst": {
+   "name": "Gini coefficient, disposable income",
+   "unit": "index 0–1",
+   "note": "Gini coefficient of households' disposable income; 0 is complete equality (Statistics Sweden). Sweden 0.314, the county 0.261 (2024)."
+  },
+  "barn_lag_ekonomisk_standard": {
+   "name": "Children and young people aged 0–19 with a low economic standard",
+   "unit": "%",
+   "note": "Share aged 0–19 in households below 60% of the median economic standard (Statistics Sweden). Sweden 17.0%, the county 20.0% (2024)."
+  },
+  "nystartade_foretag_per_1000": {
+   "name": "New businesses per 1,000 inhabitants aged 16–64",
+   "unit": "number per 1,000",
+   "note": "New firms per 1,000 residents aged 16–64 (Growth Analysis). Sweden 11.5 number per 1,000, the county 10.5 number per 1,000 (2025)."
+  },
+  "trangboddhet_norm2": {
+   "name": "Overcrowding in multi-dwelling buildings (norm 2)",
+   "unit": "%",
+   "note": "Share living in blocks of flats with more than two people per room, kitchen and living room not counted (Statistics Sweden). Sweden 15.1%, the county 14.9% (2025)."
+  },
+  "fardigstallda_bostader_per_1000": {
+   "name": "Completed dwellings per 1,000 inhabitants",
+   "unit": "dwellings per 1,000 inhabitants",
+   "note": "Dwellings completed by new building and conversion per 1,000 residents (Statistics Sweden). Sweden 3.1 dwellings per 1,000 inhabitants, the county 2.3 dwellings per 1,000 inhabitants (2025)."
+  },
+  "kvinnor_kommunfullmaktige": {
+   "name": "Share of women on the Municipal Council",
+   "unit": "%",
+   "note": "Share of women among the municipal council's members this term (Statistics Sweden). Sweden 43.0% (2025)."
+  },
+  "avsaknad_tillit": {
+   "name": "Lack of trust in others",
+   "unit": "%",
+   "note": "Share aged 16–84 answering no to whether most people can be trusted (national public health survey). Sweden 29.6%, the county 28.6% (2024)."
+  },
+  "otrygghet_kvall": {
+   "name": "Feel unsafe outdoors late in the evening in their own neighbourhood",
+   "unit": "%",
+   "note": "Share who feel unsafe, or stay in, late at night in their own neighbourhood (Swedish Crime Survey); uncertain at municipal level. Sweden 25.0%, the county 21.2% (2025)."
+  },
+  "bredband_100mbit": {
+   "name": "Access to fixed broadband ≥ 100 Mbit/s",
+   "unit": "% of households",
+   "note": "Households with fixed broadband of at least 100 Mbit/s, or the immediate possibility, on 1 October (Post and Telecom Authority). Sweden 100% of households, the county 99.3% of households (2025)."
+  },
+  "kommunalt_avfall_kg_per_inv": {
+   "name": "Municipal waste collected per inhabitant",
+   "unit": "kg per inhabitant",
+   "note": "Municipal waste collected per resident, adjusted for holiday homes, tourism and commuting (Avfall Sverige). Sweden 424 kg per inhabitant, the county 422 kg per inhabitant (2025)."
+  },
+  "materialatervinning_andel": {
+   "name": "Municipal waste sent to material recycling, incl. biological treatment",
+   "unit": "%",
+   "note": "Share of municipal waste collected for material recycling, biological treatment included (Avfall Sverige). The EU targets are 55% in 2025 and 65% in 2035. Sweden 40.0%, the county 41.5% (2025)."
+  },
+  "medborgare_nojda_dricksvattenarbete": {
+   "name": "Inhabitants who consider the municipality's work to secure drinking water to be good",
+   "unit": "%",
+   "note": "Share who think the municipality's work to secure drinking water is good (Statistics Sweden's citizen survey). Sweden 88.9%, the county 94.6% (2025)."
+  },
+  "vattenforekomster_god_status": {
+   "name": "Water bodies (all types) with good status",
+   "unit": "%",
+   "note": "Share of the municipality's water bodies – lakes, rivers, coast and groundwater – in good status (VISS). Sweden 48.5%, the county 47.0% (2022)."
+  },
+  "medelavstand_skyddad_natur": {
+   "name": "Average distance to protected nature",
+   "unit": "km",
+   "note": "Residents' average distance to the nearest protected nature area (Statistics Sweden). Sweden 2.0 km, the county 2.0 km (2025)."
+  },
+  "inpendling_antal": {
+   "name": "In-commuters to Rättvik Municipality",
+   "unit": "people",
+   "note": "Employed people who work in the municipality but live in another (Statistics Sweden)."
+  },
+  "utpendling_antal": {
+   "name": "Out-commuters from Rättvik Municipality",
+   "unit": "people",
+   "note": "Employed residents who work in another municipality (Statistics Sweden)."
+  },
+  "korstracka_personbil_per_inv": {
+   "name": "Distance driven by passenger car per inhabitant",
+   "unit": "mil/inhabitant/year (1 mil = 10 km)",
+   "note": "Average distance driven by cars registered in the municipality, per resident (Transport Analysis). Sweden 625 mil/inhabitant/year, the county 725 mil/inhabitant/year (2024)."
+  },
+  "fossiloberoende_personbilar_andel": {
+   "name": "Fossil-independent passenger cars, share of the fleet",
+   "unit": "%",
+   "note": "Electric, plug-in hybrid, gas, ethanol and other cars as a share of the cars in use (Transport Analysis). Sweden 26.0%, the county 20.4% (2025)."
+  },
+  "laddpunkter_publika_antal": {
+   "name": "Public charging points for electric cars",
+   "unit": "charging points",
+   "note": "Public charging points for electric cars in the municipality."
+  },
+  "vaxthusgaser_transporter_ton": {
+   "name": "Greenhouse gas emissions from transport, total",
+   "unit": "tonnes CO2e",
+   "note": "Domestic transport emissions within the municipality, total (RUS/SMHI)."
+  },
+  "elproduktion_kraftvarme": {
+   "name": "Electricity production from combined heat and power",
+   "unit": "MWh/year",
+   "note": "Electricity from combined heat and power and industrial back-pressure within the municipality (Swedish Energy Agency/Statistics Sweden)."
+  },
+  "elproduktion_vindkraft": {
+   "name": "Electricity production from wind power within the municipality",
+   "unit": "MWh/year",
+   "note": "Electricity from wind turbines within the municipality (Swedish Energy Agency/Statistics Sweden)."
+  },
+  "elproduktion_sol": {
+   "name": "Electricity production from solar power within the municipality",
+   "unit": "MWh/year",
+   "note": "Electricity from solar within the municipality (Swedish Energy Agency/Statistics Sweden)."
+  },
+  "bostadsmarknadslage_bme": {
+   "name": "Municipality's assessment of the housing market (0 = shortage, 1 = balance, 2 = surplus)",
+   "unit": "index 0–2",
+   "note": "The municipality's own assessment in the National Board of Housing's survey: 0 shortage, 1 balance, 2 surplus."
+  },
+  "bostadsmarknadslage_ungdomar_bme": {
+   "name": "Municipality's assessment of the housing market for young people aged 19–25 (0 = shortage)",
+   "unit": "index 0–2",
+   "note": "The municipality's own assessment for 19–25-year-olds in the National Board of Housing's survey: 0 shortage, 1 balance, 2 surplus."
+  },
+  "sysselsatta_arbetsstalle_kommun": {
+   "name": "Employed with a workplace in Rättvik Municipality",
+   "unit": "people",
+   "note": "Employed people with their workplace in the municipality, wherever they live (Statistics Sweden)."
+  },
+  "kommunen_tillsvidareanstallda": {
+   "name": "Permanently employed, monthly-paid staff in Rättvik Municipality",
+   "unit": "people",
+   "note": "The municipality's permanent monthly-paid staff – people, not full-time equivalents (SKR)."
+  },
+  "trygg_i_skolan_ak8": {
+   "name": "Year 8 pupils who feel safe at school",
+   "unit": "%",
+   "note": "Share of year-8 pupils who feel safe at school entirely or to a great extent."
+  },
+  "individuellt_valbefinnande_index": {
+   "name": "Individual well-being, municipal index (0–100)",
+   "unit": "index 0–100",
+   "note": "The Agency for Economic and Regional Growth's index of self-rated health, dental health and mental wellbeing, normalised across Sweden's municipalities (0–100). Sweden 55.2 (2025)."
+  },
+  "gott_psykiskt_valbefinnande": {
+   "name": "Inhabitants aged 16–84 with good mental well-being",
+   "unit": "%",
+   "note": "Share aged 16–84 with good mental wellbeing (national public health survey, several years pooled). Sweden 84.9%, the county 85.4% (2024)."
+  },
+  "demografisk_forsorjningskvot": {
+   "name": "Demographic dependency ratio ((0–19 + 65+) / 20–64 years)",
+   "unit": "ratio",
+   "note": "People aged 0–19 and 65+ per person aged 20–64 (Statistics Sweden): how many each person of working age supports. Sweden 0.770, the county 0.922 (2025)."
+  },
+  "ekologiska_livsmedel_kommunen": {
+   "name": "Organic food in the municipality's operations",
+   "unit": "%",
+   "note": "Organic food as a share of the municipality's food purchases by value (KRAV, Demeter, EU organic or MSC); contracted catering not included."
+  },
+  "elproduktion_vattenkraft": {
+   "name": "Hydropower electricity generation in the municipality",
+   "unit": "MWh/year",
+   "note": "Hydropower supplied 16,106 MWh of the municipality's total generation of 104,671 MWh in 2024. The rest was wind (82,531 MWh) and solar (6,033 MWh); none came from combined heat and power. Output follows the water year: 9,776 MWh in 2022 and 20,855 MWh in 2019."
+  },
+  "elanvandning_total": {
+   "name": "Total electricity use in the municipality",
+   "unit": "MWh/year",
+   "note": "Final electricity use in all sectors, based on the grid companies' deliveries by municipality. The largest users are detached houses (46,653 MWh), industry (33,386 MWh), other services (21,306 MWh), the public sector (15,822 MWh) and holiday homes (15,138 MWh). Use has stayed between 129 and 155 GWh a year from 2010 to 2024."
+  },
+  "lokal_elproduktion_andel_av_elanvandning": {
+   "name": "Local electricity generation relative to the municipality's electricity use",
+   "unit": "%",
+   "note": "104,671 MWh generated / 139,830 MWh used = 74.9% (2023: 100,450 / 140,237 = 71.6%). This is an annual balance; hour by hour, power is bought and sold through the grid. The wind farm on Hedbodberget supplies about four fifths of local generation."
+  },
+  "fjarrvarme_produktion": {
+   "name": "District heating production in the municipality",
+   "unit": "MWh/year",
+   "note": "45,813 MWh came from heat-only boilers and 10,633 MWh from flue-gas condensation. Fuel input was 55,964 MWh: 54,953 MWh solid biofuels, 580 MWh renewable oil and 431 MWh fossil oil (0.8%). The district heating produces no electricity, since there is no combined heat and power."
+  },
+  "fjarrvarme_levererad": {
+   "name": "District heating delivered to end users",
+   "unit": "MWh/year",
+   "note": "Apartment blocks 16,232 MWh, public sector 11,868 MWh, detached houses 9,519 MWh, other services 8,593 MWh and industry 1,297 MWh. Adven has run the network since 2020; it owns 51%, and Dala Energi and the municipality own 24.5% each. Adven states about 31 GWh a year and about 380 customers (500 connections) in central Rättvik, Boda and Vikarbyn. The gap to the SCB figure is unexplained."
+  },
+  "fjarrvarme_andel_flerbostadshus": {
+   "name": "District heating's share of energy use in apartment blocks",
+   "unit": "%",
+   "note": "16,232 MWh of district heating out of 19,164 MWh total energy use in apartment blocks = 84.7%. In detached houses the share is 10.7% (9,519 of 88,623 MWh). Detached houses are heated mainly with electricity (46,653 MWh) and wood, chips or pellets (32,276 MWh); SCB models the wood figure from the 2010 distribution."
+  },
+  "slutlig_energianvandning_total": {
+   "name": "Total final energy use in the municipality",
+   "unit": "MWh/year",
+   "note": "All sectors and energy carriers in 2023; the total has stayed between 512 and 598 GWh a year since 2011. The 2024 total is confidential. The transport figures also have a break in the series in 2024 (a new model for oil deliveries), so 2023 is used."
+  },
+  "industri_andel_slutlig_energianvandning": {
+   "name": "Industry's share of the municipality's final energy use",
+   "unit": "%",
+   "note": "285,935 MWh in industry and construction / 598,329 MWh in total = 47.8% (2022: 42.2%). The fuel mix is confidential for 2023. For 2024, industry is shown using 149,386 MWh of fossil oil and 15,779 MWh of solid fossil fuels, probably mainly in SMA Mineral's lime works (see kalkverk_co2_fossil)."
+  },
+  "fossilfri_andel_slutanvandning_utom_industri": {
+   "name": "Fossil-free share of final energy use outside industry",
+   "unit": "%",
+   "note": "Households, services, the public sector, agriculture and forestry, and transport used 312,395 MWh in 2023, of which 101,582 MWh was fossil fuel (95,390 MWh in transport): 1 − 101,582 / 312,395 = 67.5% (2022: 68.8%). Electricity and district heating count as fossil-free. Industry is left out because its fuels are confidential, so a renewable share for the whole municipality cannot be calculated."
+  },
+  "transporter_fornybar_andel": {
+   "name": "Renewable share of transport energy, including electricity",
+   "unit": "%",
+   "note": "(22,277 MWh renewable fuels + 473 MWh electricity) / 118,140 MWh = 19.3%; the rest is fossil petrol and diesel. The figure is based on deliveries to filling stations in the municipality, not on how far residents drive, and electricity used to charge electric cars is not included. 2023 is used because 2024 has a break in the series (260,362 MWh) and the biofuel blending mandate was lowered that year."
+  },
+  "elanvandning_fritidshus": {
+   "name": "Electricity use in holiday homes",
+   "unit": "MWh/year",
+   "note": "Holiday homes used 10.8% of the municipality's electricity in 2024 (15,138 of 139,830 MWh), about a third of what all year-round detached houses used (46,653 MWh). The figure shows Rättvik's role as a holiday-home area by Lake Siljan."
+  },
+  "kalkverk_co2_fossil": {
+   "name": "Fossil CO2 emissions from SMA Mineral's lime works in Rättvik",
+   "unit": "tonnes CO2/year",
+   "note": "Reported emissions: 119,818 t in 2024, 87,761 t in 2023 and 120,418 t in 2022. Burning lime releases CO2 from the limestone itself, not only from the fuel, so switching fuel does not remove the emissions. SMA's other plant in the municipality, Boda lime works, has no CO2 data in the register."
+  },
+  "broboberget_lannaberget_effekt": {
+   "name": "Planned wind power at Broboberget and Lannaberget: capacity in the grid connection agreement",
+   "unit": "MW",
+   "note": "The permit covers up to 115 turbines (80 at Broboberget, 35 at Lannaberget), at most 230 m tall, about 50 km north-east of Rättvik on the border with Ovanåker, and became final on 27 May 2022 after appeals. Ellevio's agreement of 16 October 2023 covers up to 740 MW through a new 400 kV substation, with the first stage in 2027. No investment decision was found."
+  },
+  "broboberget_lannaberget_produktion": {
+   "name": "Expected annual generation from Broboberget and Lannaberget",
+   "unit": "GWh/year",
+   "note": "wpd expects about 1.5 TWh a year, more than ten times the municipality's electricity use (139.8 GWh in 2024) and more than 14 times today's local generation (104.7 GWh). Part of the farms lies in Ovanåker municipality, and the split is not stated. The power is intended for industry's transition, including at SSAB and Ovako."
+  },
+  "okat_behov_elnat_forbrukning_dalarna": {
+   "name": "Forecast increase in transmission capacity needed for electricity consumption in Dalarna up to 2034",
+   "unit": "%",
+   "note": "Ellevio's scenario 1 gives +57% for consumption and +129% for generation over 2025–2034, compared with the highest need since 2022, driven by electrification of industry, data centres and new power plants (peak load today about 800 MW). A weak margin in the national grid has forced Ellevio to stop connecting new large-scale generation in its Dalarna network until the Tandö substation is ready. Rättvik's local grid passed from Dala Energi to Sambygd AB in 2025 (Nordion Energi 51%, the municipality about 10%; annual report 2025, p. 19), and parts of northern Rättvik belong to Ellevio's Hälsingland network."
+  },
+  "personbilar_per_1000_inv": {
+   "name": "Passenger cars in use per 1,000 inhabitants",
+   "unit": "cars per 1,000 inhabitants",
+   "note": "7,465 passenger cars in use in 2025, or 679 per 1,000 inhabitants, against 598 in Dalarna and 475 in Sweden. Counting only cars owned by private individuals, the figure is 500 (Dalarna 480, Sweden 377); 1,967 cars are owned by companies and organisations. In 2015 the figure was 630."
+  },
+  "utpendlare_leksand": {
+   "name": "Employed Rättvik residents working in Leksand municipality",
+   "unit": "people",
+   "note": "The largest outbound commuting flow: of 5,191 employed Rättvik residents, 3,305 (63.7%) worked in their home municipality. In the other direction, 327 people commuted from Leksand to Rättvik. The train to Leksand takes 14–16 minutes."
+  },
+  "utpendlare_falun": {
+   "name": "Employed Rättvik residents working in Falun municipality",
+   "unit": "people",
+   "note": "173 people commuted from Falun to Rättvik, so 556 commute between the two in one direction or the other. This matches Region Dalarna's figure of 500–700 commuters between Falun and Rättvik. There is no direct train; the bus takes just under an hour."
+  },
+  "utpendlare_mora": {
+   "name": "Employed Rättvik residents working in Mora municipality",
+   "unit": "people",
+   "note": "167 people commuted from Mora to Rättvik. The train takes 23–25 minutes and runs 17 times each way on weekdays."
+  },
+  "utpendlare_borlange": {
+   "name": "Employed Rättvik residents working in Borlänge municipality",
+   "unit": "people",
+   "note": "44 people commuted in the opposite direction. Another 70 Rättvik residents had their workplace in Stockholm municipality and 20 in Uppsala municipality; the register shows the workplace, not how often people travel there."
+  },
+  "kollektivtrafik_marknadsandel": {
+   "name": "Public transport's share of motorised trips in Dalarna",
+   "unit": "%",
+   "note": "The share of trips by bus and train among all trips by motor vehicle (walking and cycling excluded): 12% in 2019, 6% in 2021, 11% in 2023, 9% in 2024 and a provisional 7% for January–October 2025. The target is 12.5% in 2026 and 20% in 2035. No figure exists for Rättvik itself."
+  },
+  "kollektivtrafik_vardagsresor_bra_andel": {
+   "name": "Share of residents who find public transport easy to use for everyday trips",
+   "unit": "%",
+   "note": "36.5% in 2025 (27.2% in 2023), against 44.4% in Dalarna and 68.8% in Sweden. 52.9% say it is easy to make longer trips without a car (N00574), and 18.0% say public transport works for leisure activities (N00573). This is a sample survey with a margin of error."
+  },
+  "bilandel_resor_sverige": {
+   "name": "Car's share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 2,052,673 of 3,872,529 thousand main trips = 53.0%; walking 12.9%, cycling 12.4% and public transport 18.3%. No travel survey for Rättvik or Dalarna was found. The share of kilometres travelled on foot, by bike or by public transport is highest in the big cities, so the car share in Rättvik is probably higher than the national figure."
+  },
+  "restid_tag_stockholm_min": {
+   "name": "Fastest direct train Rättvik–Stockholm Central on a weekday",
+   "unit": "minutes",
+   "note": "SJ train 47 leaves Rättvik at 14:55 and reaches Stockholm Central at 18:16 (3 h 21 min); morning train 41 takes 3 h 26 min, and northbound train 48 is fastest at 3 h 15 min. With a change at Borlänge, the fastest trip takes 3 h 24 min (05:22–08:46). In the timetable from 13 December 2026, the direct trains become 1–9 minutes slower."
+  },
+  "direkttag_stockholm_per_vardag": {
+   "name": "Direct trains Rättvik–Stockholm per weekday in each direction",
+   "unit": "departures per weekday in each direction",
+   "note": "SJ runs two trips a day between Mora and Stockholm Central via Borlänge, Uppsala and Arlanda (trains 41 and 47 southbound, 42 and 48 northbound) on an ordinary weekday in October–November 2026; on Sundays there are three. Other journeys need a change at Borlänge, where SJ has eight departures to Stockholm per weekday, and Masexpressen coaches take 3 h 40 min–3 h 55 min to the City Terminal. No night trains stop in Rättvik in the timetable data up to January 2027."
+  },
+  "tag_avgangar_per_vardag": {
+   "name": "Train departures from Rättvik per weekday in each direction",
+   "unit": "departures per weekday in each direction",
+   "note": "On Wednesday 11 November 2026, 15 Tåg i Bergslagen regional trains (line 50 Morastrand–Borlänge; from December 2026 some continue to Sala) and 2 SJ trains run in each direction. Saturdays have 7 and Sundays 8 per direction. Region Dalarna counts 17 round trips Mora–Borlänge since December 2022, with 40–80 minutes between departures."
+  },
+  "restid_tag_borlange_min": {
+   "name": "Train travel time Rättvik–Borlänge",
+   "unit": "minutes",
+   "note": "The timetable gives 47 minutes by train, against 55 minutes by car according to Google, a travel-time ratio of 0.8. In autumn 2026 the trip takes 46–52 minutes. Borlänge is where passengers change for Stockholm, Falun and Gothenburg."
+  },
+  "restid_tag_mora_min": {
+   "name": "Shortest train travel time Rättvik–Mora",
+   "unit": "minutes",
+   "note": "The trip takes 23–25 minutes, for example 10:08–10:31. Bus 350 takes 35–45 minutes. Mora is the main commuting destination in northern Dalarna, with many commuters from Rättvik and Orsa according to Region Dalarna."
+  },
+  "restid_buss_falun_min": {
+   "name": "Bus travel time Rättvik–Falun",
+   "unit": "minutes",
+   "note": "Rättvik travel centre to Falun Knutpunkten takes 54 minutes by bus, against 45 minutes by car (travel-time ratio 1.20). Direct buses take 49 minutes (ratio 1.09). By train, passengers must change at Borlänge, and the trip then takes at least 83 minutes according to the autumn 2026 timetable data."
+  },
+  "bussturer_falun_per_vardag": {
+   "name": "Bus trips Rättvik–Falun per weekday (line 350)",
+   "unit": "trips per weekday",
+   "note": "20 departures towards Falun Monday–Friday (05:43–21:05) and 21 towards Mora; Saturdays and Sundays have 6 per direction, and some trips must be booked in advance. The express line 102 Rättvik–Borlänge ran until 16 June 2025. Line 351 Rättvik–Furudal has 13 trips per weekday in each direction."
+  },
+  "restid_uppsala_borlange_efter_atgarder_min": {
+   "name": "Travel time Uppsala–Borlänge after the planned works on the Dalabanan line (around 2031)",
+   "unit": "minutes",
+   "note": "Today's travel time is 100 minutes; works costing almost SEK 2 billion up to 2030 (passing loops that two trains can enter at once, new passing loops at Lustån and Heby, track renewal) are meant to cut it by about 7 minutes and make room for one long-distance train an hour. According to Region Dalarna, the regions' goal of 89 minutes needs works that do not fit in the 2026–2037 national plan. The whole line is single-track, and the Borlänge–Leksand–Rättvik–Mora section is called the Siljansbanan."
+  },
+  "mal_restid_mora_stockholm_min": {
+   "name": "Regional target for train travel time Mora–Stockholm",
+   "unit": "minutes",
+   "note": "The 2023–2025 regional plan sets a target of a Mora–Stockholm train link under three hours; today the direct train takes 3 h 40 min–3 h 51 min. The target is tied to 89 minutes Uppsala–Borlänge and needs faster trains with few stops and more capacity, and Region Dalarna writes that it should be worked out in a pre-study. An hourly Mora–Stockholm service is also to be studied."
+  },
+  "mora_siljan_passagerare": {
+   "name": "Passengers at Mora–Siljan airport",
+   "unit": "passengers/year",
+   "note": "3,807 arriving and departing passengers in 2025, against 3,394 in 2024. In 2019 there were 2,838, and in 2018 4,701 (Transportstyrelsen, air traffic statistics 2019), after scheduled flights to Arlanda ended in February 2018. Since 2023, the route Sveg–Mora–Arlanda has been flown under a public service obligation."
+  },
+  "dala_airport_passagerare": {
+   "name": "Passengers at Dala Airport in Borlänge",
+   "unit": "passengers/year",
+   "note": "15,820 passengers in 2025, against 15,357 in 2024, 21,421 in 2019 and 26,456 in 2018 (Transportstyrelsen, air traffic statistics 2019). Borlänge is 46–52 minutes from Rättvik by train."
+  },
+  "flyglinje_mora_arlanda_statligt_stod": {
+   "name": "State cost of the publicly procured air route Sveg–Mora–Arlanda",
+   "unit": "MSEK/year",
+   "note": "Just over 9,000 passengers flew the route in 2025, which works out at about SEK 2,425 of state support per passenger; Mora accounts for about 4,000 passengers a year. In March 2026, Trafikverket proposed not to renew the public service obligation when the contracts end in October 2027. One reason is that the trip to Stockholm by other means takes under four hours from Mora."
+  },
+  "bilandel_turistresor": {
+   "name": "Car's share of domestic tourist trips to Dalarna",
+   "unit": "%",
+   "note": "The report says the car share is highest in Jönköping, Kalmar and Dalarna counties, at 91–92%, and lowest in Stockholm, at 43%, using data for 2017–2021; 91.5 is the midpoint. Nationally, the car's share of domestic tourist trips rose by 14 percentage points during the pandemic years. No figure for the Siljan area was found."
+  },
+  "rv70_adt": {
+   "name": "Annual average daily traffic on national road 70 south of central Rättvik",
+   "unit": "vehicles/day",
+   "note": "8,698 vehicles a day (±7%), of which 468 are heavy or medium-heavy, according to a value valid from 1 January 2025. North of the centre, towards Mora, 9,349 vehicles a day pass (±12%, 2023), and on the one-way carriageways through the centre about 3,750–3,850 in each direction (2022). The map only shows annual averages; see rv70_adt_juli for summer."
+  },
+  "rv70_adt_juli": {
+   "name": "Estimated daily traffic on national road 70 at Rättvik on an average July day",
+   "unit": "vehicles/day",
+   "note": "The annual average of 8,698 is made up of 8,230 light and 468 heavy vehicles; applying Trafikverket's July index for through routes (136.9 for cars, 113.8 for trucks) gives 8,230 × 1.369 + 468 × 1.138 ≈ 11,800. The tourist-road index gives ≈ 15,900, and the general state-road index ≈ 9,750. No summer count for Rättvik was found, and Classic Car Week at the end of July adds peaks on top of this."
+  },
+  "temp_okning_2071_2100_rcp26": {
+   "name": "Increase in annual mean temperature by 2071–2100 vs 1971–2000, RCP2.6",
+   "unit": "°C",
+   "note": "Ensemble mean of regional climate models (about 12×12 km) for the whole county; modelled 1971–2000 reference 2.9 °C (observed 3.0 °C). SMHI sub-area Siljan–Lower Österdalälven: +1.7 °C."
+  },
+  "temp_okning_2071_2100_rcp45": {
+   "name": "Increase in annual mean temperature by 2071–2100 vs 1971–2000, RCP4.5",
+   "unit": "°C",
+   "note": "Ensemble mean of regional climate models (about 12×12 km) for the whole county; modelled 1971–2000 reference 2.9 °C (observed 3.0 °C). Sub-area Siljan–Lower Österdalälven: +2.9 °C; winter (Dec–Feb) +3.9 °C."
+  },
+  "temp_okning_2071_2100_rcp85": {
+   "name": "Increase in annual mean temperature by 2071–2100 vs 1971–2000, RCP8.5",
+   "unit": "°C",
+   "note": "Ensemble mean of regional climate models (about 12×12 km) for the whole county; modelled 1971–2000 reference 2.9 °C (observed 3.0 °C). Sub-area Siljan–Lower Österdalälven: +4.8 °C; winter +6.2 °C, summer +4.5 °C."
+  },
+  "hogsommardygn_1971_2000_lan": {
+   "name": "Hot days per year (daily maximum above 25 °C), observed mean 1971–2000",
+   "unit": "days/year",
+   "note": "Observation-based (gridded) county mean; the climate models' own reference for the same period is 6.6–6.7 days, which the scenario values should be compared with. The county mean is pulled down by the mountains – around Siljan the count is roughly twice as high (see hogsommardygn_1991_2020_lokal)."
+  },
+  "hogsommardygn_2071_2100_rcp26_lan": {
+   "name": "Hot days per year (daily maximum above 25 °C) 2071–2100, RCP2.6",
+   "unit": "days/year",
+   "note": "County ensemble mean; an increase of 6.5 days on the modelled 1971–2000 reference (6.6 days). For the Siljan area, see the local estimates."
+  },
+  "hogsommardygn_2071_2100_rcp45_lan": {
+   "name": "Hot days per year (daily maximum above 25 °C) 2071–2100, RCP4.5",
+   "unit": "days/year",
+   "note": "County ensemble mean; an increase of 11.0 days on the modelled 1971–2000 reference (6.7 days). For the Siljan area, see the local estimates."
+  },
+  "hogsommardygn_2071_2100_rcp85_lan": {
+   "name": "Hot days per year (daily maximum above 25 °C) 2071–2100, RCP8.5",
+   "unit": "days/year",
+   "note": "County ensemble mean; an increase of 25.0 days on the modelled 1971–2000 reference (6.7 days). Mid-century (2041–2070): 18.8 days. For the Siljan area, see the local estimates."
+  },
+  "hogsommardygn_2018_lan": {
+   "name": "Hot days in summer 2018 (daily maximum above 25 °C), observed",
+   "unit": "days",
+   "note": "Observation-based county mean for 2018, the highest in the 1961–2018 series and on a par with the average year of 2071–2100 under RCP8.5 (31.7). SMHI's Leksand station had 46 such days that summer (own count)."
+  },
+  "hogsommardygn_1991_2020_lokal": {
+   "name": "Hot days per year (daily maximum above 25 °C) at Siljan, observed mean 1991–2020 (Leksand station)",
+   "unit": "days/year",
+   "note": "Mean number of days above 25 °C per year at SMHI's Leksand station (172 m a.s.l., at Siljan's outlet, about 19 km from Rättvik), 27 complete years 1991–2020 (1992, 1993 and 2019 have gaps). The 1971–2000 mean was 14.0; Mora A had 14.5 (1991–2020). Hottest day in the series: 33.5 °C (1975)."
+  },
+  "hogsommardygn_2071_2100_rcp45_lokal": {
+   "name": "Hot days per year at Siljan 2071–2100, RCP4.5 (estimate)",
+   "unit": "days/year",
+   "note": "Leksand's observed 1971–2000 mean (14.0 days) plus the county's projected increase under RCP4.5 (+11.0 days) = 25 days. Additive scaling; proportional scaling would give more days, so the value is on the cautious side."
+  },
+  "hogsommardygn_2071_2100_rcp85_lokal": {
+   "name": "Hot days per year at Siljan 2071–2100, RCP8.5 (estimate)",
+   "unit": "days/year",
+   "note": "Leksand's observed 1971–2000 mean (14.0 days) plus the county's projected increase under RCP8.5 (+25.0 days) = 39 days. Additive scaling; proportional scaling would give more days, so the value is on the cautious side."
+  },
+  "langsta_period_hogsommardygn_2071_2100_rcp85": {
+   "name": "Longest run of hot days (heat wave) 2071–2100, RCP8.5",
+   "unit": "days",
+   "note": "The year's longest run of days with a maximum above 25 °C, county mean; observed 1971–2000: 3.6 days. RCP4.5 gives 6.6 and RCP2.6 5.3 days."
+  },
+  "arsnederbord_forandring_2071_2100_rcp85": {
+   "name": "Change in annual precipitation by 2071–2100 vs 1971–2000, RCP8.5",
+   "unit": "%",
+   "note": "SMHI gives +13 mm/month on the modelled reference of 61 mm/month for 1971–2000: 13/61 = 21%. RCP4.5 gives +9 mm/month (15%) and RCP2.6 +5 mm/month (8%)."
+  },
+  "vinternederbord_forandring_2071_2100_rcp85": {
+   "name": "Change in winter precipitation (Dec–Feb) by 2071–2100, RCP8.5",
+   "unit": "%",
+   "note": "+15 mm/month on a modelled reference of 43 mm/month: 15/43 = 35%. RCP4.5: +9 mm/month (21%). A growing share falls as rain instead of snow."
+  },
+  "sommarnederbord_forandring_2071_2100_rcp85": {
+   "name": "Change in summer precipitation (Jun–Aug) by 2071–2100, RCP8.5",
+   "unit": "%",
+   "note": "+9 mm/month on a modelled reference of 81 mm/month: 9/81 = 11%. RCP4.5: +8 mm/month (10%). Higher evaporation in warmer summers still makes drought more common (see soil moisture)."
+  },
+  "max_dygnsnederbord_forandring_2069_2098_rcp85": {
+   "name": "Change in the year's largest daily precipitation by 2069–2098 vs 1961–1990, RCP8.5",
+   "unit": "%",
+   "note": "The county mean of the year's largest daily precipitation was 32 mm in 1961–1990 and is projected to rise by about 20% under RCP8.5, somewhat less under RCP4.5. For short cloudbursts SMHI uses a climate factor of about 1.2 (RCP4.5) and 1.4 (RCP8.5) by the end of the century."
+  },
+  "vegetationsperiod_2071_2100_rcp45": {
+   "name": "Length of the growing season 2071–2100, RCP4.5",
+   "unit": "days",
+   "note": "Days from the start of the growing season (daily mean above 5 °C four days running) to its end, county mean; observed 1971–2000: 157 days. RCP2.6 gives 176 and RCP8.5 217 days."
+  },
+  "max_snovatteninnehall_forandring_2071_2100_rcp85": {
+   "name": "Change in the year's maximum snow pack (water equivalent) by 2071–2100, RCP8.5",
+   "unit": "%",
+   "note": "Applies to SMHI's sub-area Siljan–Lower Österdalälven, where the modelled maximum snow water equivalent was 71 mm in 1971–2000; the decrease is 47% under RCP4.5. Less snow means a smaller spring flood but more rain-driven floods in autumn and winter."
+  },
+  "dagar_lag_markfuktighet_2069_2098_rcp85": {
+   "name": "Days per year with low soil moisture at the end of the century (2069–2098), RCP8.5",
+   "unit": "days/year",
+   "note": "SMHI gives 30–40 days a year of low soil moisture for most of the county under RCP8.5 (20–25 under RCP4.5), against 5–10 days today; the value is the middle of the range. It is a drought index for irrigation need and fire risk."
+  },
+  "istacke_dagar_2016_2026": {
+   "name": "Length of the ice season on Siljan (Storsiljan), mean of winters 2015/16–2025/26",
+   "unit": "days",
+   "note": "Mean number of days between freeze-up and break-up for the ten winters with observations (2019/20 missing). In 1871–1900 the mean was 129 days and break-up came on average on 7 May, against 9 April in 2016–2026; in winter 2024/25 the ice lay for only 35 days."
+  },
+  "siljan_medelvattenstand": {
+   "name": "Mean water level of Siljan 1964–2024",
+   "unit": "m a.s.l. (RH 1900)",
+   "note": "Mean level under the current water-court ruling, measured at Byrviksbanken (Siljansnäs). Mean low water 160.07 and mean high water 161.98 m; before regulation (1900–1925) the mean was 161.0 m. Add about 0.4 m for RH 2000 (see hojdskillnad_rh2000_rh1900)."
+  },
+  "siljan_dammningsgrans": {
+   "name": "Siljan's upper regulation limit under the 1964 water-court ruling",
+   "unit": "m a.s.l. (RH 1900)",
+   "note": "The ruling (AD 45/1947, 27 Feb 1964) allows regulation between +159.90 and +161.78 m – an amplitude of 1.88 m – from Gråda power station about 20 km downstream of Leksand. Above the limit, releases must follow the natural discharge: 293 m³/s at +161.78 and about 2 m³/s more per cm."
+  },
+  "siljan_hogsta_vattenstand_1985": {
+   "name": "Siljan's highest level since the current regulation (13 September 1985)",
+   "unit": "m a.s.l. (RH 1900)",
+   "note": "Peak after a very wet summer and autumn; Siljan rose a metre in a week, during the same rains that breached the Noppikoski dam. Next highest: 162.90 (Nov 2000), 162.73 (June 1995) and 162.62 (Aug 2023). About +163.4 m in RH 2000."
+  },
+  "siljan_hogsta_kanda_vattenstand_1860": {
+   "name": "Siljan's highest known water level (1860)",
+   "unit": "m a.s.l. (RH 1900)",
+   "note": "The county board states that the highest known level before regulation was 3.25 m above the 161.78 m limit: 161.78 + 3.25 = 165.03 m. SMHI dates the record to 1860, about two metres above the 1985 level; the highest level in 1900–1925 was 163.9 m."
+  },
+  "siljan_hogvatten_2023": {
+   "name": "Siljan's peak level after storm Hans (18 August 2023)",
+   "unit": "m a.s.l. (RH 1900)",
+   "note": "According to SMHI the highest level since 2000 and the highest August level since regulation began in 1964; the peak came on 18 August in SMHI's daily Byrviksbanken series. Of the four highest levels since 1964, three followed summer or autumn rain (1985, 2000, 2023) and one an early-summer flood (1995)."
+  },
+  "siljan_andel_ar_over_dammningsgrans": {
+   "name": "Share of years in which Siljan rose above the +161.78 m regulation limit, 1967–2025",
+   "unit": "%",
+   "note": "The annual maximum exceeded +161.78 m in 40 of 59 years (1967–2025); in 1991–2020 in 17 of 30 years, in line with the county board's 'on average every other year'. Siljan has risen more than a metre above the limit (+162.78) twice: 1985 and 2000."
+  },
+  "siljan_utflode_100ar_idag": {
+   "name": "100-year outflow from Siljan at Gråda power station, present climate",
+   "unit": "m³/s",
+   "note": "Gråda power station controls Siljan's outlet. The 200-year flow is 655 m³/s and the design (probable maximum) flood 1,405 m³/s. MSB's climate-adjusted 100-year flow for 2098 is lower, 490 m³/s, because the spring flood shrinks in the scenarios used then; SMHI's newer projections point to an increase instead (see siljan_hogflode_50ar_forandring_2071_2100_rcp85)."
+  },
+  "siljan_100arsniva_idag": {
+   "name": "Siljan's 100-year level in the present climate (estimate)",
+   "unit": "m a.s.l. (RH 1900)",
+   "note": "The water-court discharge table gives 612 m³/s (MSB's 100-year flow at Gråda) at +163.30 m; the table matches SMHI's observations (163.04 m and about 570 m³/s in 1985). About +163.7 m in RH 2000; no official 100-year level for Siljan was found published in text."
+  },
+  "siljan_hogflode_50ar_forandring_2071_2100_rcp85": {
+   "name": "Change in the 50-year flow out of the Siljan area by 2071–2100, RCP8.5 (current regulation)",
+   "unit": "%",
+   "note": "Applies to the outlet of SMHI's sub-area Siljan–Lower Österdalälven (modelled 465 m³/s in 1971–2000). RCP4.5 gives +9.9% and RCP2.6 +11.8%; the 10-year flow rises 15% (RCP8.5). MSB's older calculation (2013) points to a decrease instead, so the direction is uncertain."
+  },
+  "siljan_100arsniva_2071_2100_rcp85": {
+   "name": "Siljan's 100-year level 2071–2100, RCP8.5 (estimate)",
+   "unit": "m a.s.l. (RH 1900)",
+   "note": "612 m³/s × 1.132 = 693 m³/s, which the water-court discharge table puts at +163.63 m (RCP4.5: 673 m³/s, +163.55 m). About +164.0 m in RH 2000 – level with Rättvik's lowest lakeside streets. With MSB's flow for 2098 (490 m³/s) the level would instead be +162.76 m."
+  },
+  "hojdskillnad_rh2000_rh1900": {
+   "name": "Difference between the RH 2000 and RH 1900 height systems at Siljan (estimate)",
+   "unit": "m",
+   "note": "In Lantmäteriet's terrain model Siljan's surface at Rättvik lies at +162.18 m (RH 2000); the tile was laser-scanned on 6 November 2020, the day SMHI measured +161.78 m (RH 1900) at Byrviksbanken. Difference about 0.40 m (uncertainty about ±0.15 m); used to convert SMHI's Siljan levels to RH 2000."
+  },
+  "lagsta_strandgata_niva": {
+   "name": "Lowest street level by Siljan and the lowest reach of Enån in Rättvik",
+   "unit": "m a.s.l. (RH 2000)",
+   "note": "Lowest point along the streets nearest the water: Badhusgatan +164.04 and Båthamnsvägen +164.12 m (4 m grid, OSM street centre lines). About +163.6 m in RH 1900 – some 2.4 m above Siljan's mean level and 0.6 m above the 1985 record; the square and the station lie at about +166 m."
+  },
+  "byggnader_under_100arsniva": {
+   "name": "Buildings in central Rättvik with ground below Siljan's estimated 100-year level (+163.7 m RH 2000)",
+   "unit": "buildings",
+   "note": "Buildings (OSM, about 2.9 × 2.9 km around the centre) whose lowest corner lies below +163.7 m RH 2000, 7 of them within 150 m of Siljan or the lake-affected lower reach of Enån – mainly houses around Badhusgatan–Knihsgatan by Enån, a shed at Enån's mouth and a shop building at the campsite. Below +164.0 m: 19 buildings; below +165.0 m: 62."
+  },
+  "camping_andel_under_100arsniva": {
+   "name": "Share of Siljanbadet campsite's ground below Siljan's estimated 100-year level (+163.7 m RH 2000)",
+   "unit": "%",
+   "note": "Share of the campsite's 9.1 ha (OSM polygon) with ground below +163.7 m RH 2000 (estimated 100-year level today); below +164.0 m (estimated 100-year level 2071–2100, RCP8.5): 57%. The campsite and beach are Rättvik's lowest-lying developed land."
+  },
+  "lagsta_grundlaggningsniva_siljan": {
+   "name": "Lowest foundation level for new buildings at Siljan's outlet (Leksand municipality)",
+   "unit": "m a.s.l.",
+   "note": "Leksand's comprehensive plan (2014) sets +165 m a.s.l. as the lowest foundation level for new buildings by Österdalälven/Siljan's outlet, based on the 10,000-year flood; the Limsjöänget detailed plan in Leksand uses +165 m in RH 2000. No equivalent published level for Rättvik was found."
+  },
+  "skyfall_2023_skadade_villor": {
+   "name": "Houses damaged by cloudbursts and flooding in August 2023 (storm Hans)",
+   "unit": "houses",
+   "note": "Local cloudbursts on 6–8 August 2023 damaged about 150 houses in Lerdal, Gärdebyn, Söderås, Utby and parts of central Rättvik (homes on steep slopes down to Siljan); about 25 km of road was wholly or partly destroyed and the rail embankment at Tällberg was washed away. Rättvik has no SMHI station of its own; Leksand got 145 mm from 30 July to 10 August."
+  },
+  "dimensionerande_skyfall_100ar_2h": {
+   "name": "Design cloudburst in Rättvik's cloudburst mapping: 100-year rain, 2 hours, including climate factor",
+   "unit": "mm",
+   "note": "The cloudburst mapping of the water and sewerage facilities (Scalgo LIVE) used a 2-hour 100-year rain with a climate factor of 1.2 (72 mm; 40 mm after deducting pipe and infiltration capacity) and a 500-year rain with a climate factor of 1.35 (149 mm). It found 11 risk sites, all sewage pumping stations, four of them in a higher risk class; storm water is not treated today."
+  },
+  "vattentakt_tillstand_max_dygn": {
+   "name": "Permitted maximum groundwater abstraction at the Gärdsjö source (Rättvik's main supply)",
+   "unit": "m³/day",
+   "note": "The permit for the municipality's abstraction just west of lake Gärdsjön allows at most 4,500 m³/day and 1.46 million m³/year (about 4,000 m³/day on average). The source lies in the Gärdsjöfältet water-supply interest (protection zones Jutjärn Boda, Rättvik, Västanå); a new well field and a new Gärdsjö water works came into service in 2025, and the water is only aerated and UV-treated."
+  },
+  "andel_egen_brunn": {
+   "name": "Share of the municipality's residents with their own well",
+   "unit": "%",
+   "note": "The municipality says 'close to 40%' of the population has its own dug or drilled well; for Dalarna county as a whole about 20% had private supply in 2020 (county board, Statistics Sweden). The municipality is not responsible for quality; uranium and radon occur in drilled wells."
+  },
+  "siljan_ekologisk_status": {
+   "name": "Ecological status of Siljan (VISS)",
+   "unit": "status class (1 = high … 5 = bad)",
+   "note": "Moderate ecological status, mainly because of fish and connectivity (dams and regulation – the eel has vanished and the Siljan brown trout has fallen from thousands to a few hundred); nutrients, light conditions and phytoplankton have high status. Chemical status: not good (mercury, PBDE). Target: good ecological status by 2033; Enån through Rättvik has good ecological status."
+  },
+  "siljansbadet_prov_algblomning": {
+   "name": "Bathing-water samples with algal bloom at Siljansbadet 2023–2026",
+   "unit": "samples",
+   "note": "None of 26 samples at the EU bathing site Siljansbadet in 2023–2026 showed an algal bloom, and the bathing profile lists no cyanobacteria risk – Siljan is nutrient-poor. Classification: excellent 2023–2024, good 2025; one sample on 7 July 2026 was unfit (bacteria) and the sample on the day of storm Hans (8 Aug 2023) was flagged."
+  },
+  "folkmangd_kommun": {
+   "name": "Population of Rättvik Municipality, 31 December",
+   "unit": "people",
+   "note": "Down 20 from 10,998 in 2024. More deaths than births, but more people move in than out."
+  },
+  "folkmangd_prognos_2034": {
+   "name": "Municipal population forecast for 2034",
+   "unit": "people",
+   "note": "The municipality's own projection: from 10,998 residents in 2024 to 10,965 in 2034."
+  },
+  "folkmangd_tatort": {
+   "name": "Population of Rättvik town (urban area)",
+   "unit": "people",
+   "note": "Statistics Sweden urban-area delineation 2023 (code 2031TC106). Density 438 residents per km²."
+  },
+  "folkmangd_tatort_1960": {
+   "name": "Population of Rättvik town in 1960",
+   "unit": "people",
+   "note": "The town grew from 3,140 residents in 1960 to 5,369 in 2023."
+  },
+  "tatort_landareal": {
+   "name": "Land area of Rättvik town",
+   "unit": "ha",
+   "note": "Land area inside the 2023 urban-area boundary. The model square (1.7 × 1.7 km ≈ 289 ha) covers the central part."
+  },
+  "kommun_yta": {
+   "name": "Area of the municipality",
+   "unit": "km²",
+   "note": "About the size of Lake Vättern. It covers the parishes of Rättvik, Boda and Ore."
+  },
+  "forsorjningskvot": {
+   "name": "Demographic dependency ratio",
+   "unit": "ratio",
+   "note": "Residents outside ages 20–64 per resident aged 20–64. Among the highest in Sweden; up from 0.99 ten years ago."
+  },
+  "forsorjningskvot_dalarna": {
+   "name": "Demographic dependency ratio, Dalarna County",
+   "unit": "ratio",
+   "note": "County average as given in the municipal annual report."
+  },
+  "forsorjningskvot_riket": {
+   "name": "Demographic dependency ratio, Sweden",
+   "unit": "ratio",
+   "note": "National average as given in the municipal annual report."
+  },
+  "okning_85_89_till_2034": {
+   "name": "Change in the number of people aged 85–89 by 2034",
+   "unit": "%",
+   "note": "+287 people in the municipal forecast, the age when care needs rise most. Aged 90+: +53% (+110)."
+  },
+  "forandring_barn_6_12_till_2034": {
+   "name": "Change in the number of children aged 6–12 by 2034",
+   "unit": "%",
+   "note": "−61 children in the municipal forecast; ages 1–5 −8% (−36), ages 16–19 −4% (−19)."
+  },
+  "andel_20_64": {
+   "name": "Share of residents of working age (20–64)",
+   "unit": "%",
+   "note": "5,252 people per the population table; the goal is a larger working-age share. (The goals section of the same report says 47.2%.)"
+  },
+  "arbetsloshet": {
+   "name": "Registered unemployment rate, December",
+   "unit": "%",
+   "note": "Sweden 6.8%, Dalarna 5.1%. Ages 18–24: 5.4%."
+  },
+  "kommunalskatt": {
+   "name": "Municipal income tax rate",
+   "unit": "%",
+   "note": "Unchanged since 2024 (21.82% in 2022–2023)."
+  },
+  "skatter_statsbidrag_budget": {
+   "name": "Tax revenue, general state grants and equalisation, budget",
+   "unit": "SEK million",
+   "note": "Of which own tax revenue about SEK 604 million."
+  },
+  "resultatmal": {
+   "name": "Financial target: annual surplus relative to taxes and grants",
+   "unit": "%",
+   "note": "Target for 2026–2028. Budgeted 2026 surplus SEK 17.98 million."
+  },
+  "resultat_2025": {
+   "name": "Municipal result (surplus)",
+   "unit": "SEK million",
+   "note": "Includes a one-off capital gain of SEK 311 million from redeeming shares in Dala Energi."
+  },
+  "resultat_2025_exkl_reavinst": {
+   "name": "Result excluding the capital gain, share of taxes and grants",
+   "unit": "%",
+   "note": "SEK 14.7 million. Below the 2% target; operations do not fully stay within budget."
+  },
+  "dala_energi_reavinst": {
+   "name": "Capital gain from redeeming Dala Energi shares",
+   "unit": "SEK million",
+   "note": "The municipality redeemed half of its 5.2 million shares and bought about 10% of Sambygd AB (power and fibre grids)."
+  },
+  "soliditet_inkl_pension": {
+   "name": "Equity ratio including pension obligations",
+   "unit": "%",
+   "note": "Without the capital gain it would have been 32.4%."
+  },
+  "soliditet_mal_2028": {
+   "name": "Target equity ratio including pension obligations",
+   "unit": "%",
+   "note": "To be reached by the end of 2028."
+  },
+  "koncern_laneskuld_per_invanare": {
+   "name": "Long-term debt of the municipal group per resident",
+   "unit": "SEK/resident",
+   "note": "SEK 1,239 million in total. National average about SEK 78,000 per resident in 2024. The rise comes mainly from water and sewage investment."
+  },
+  "koncern_langfristig_laneskuld": {
+   "name": "Long-term debt of the municipal group",
+   "unit": "SEK million",
+   "note": "Up SEK 129 million in 2025, mainly in the water and waste company. Interest-bearing debt was SEK 1,173 million (the budget document says 1,171)."
+  },
+  "investeringsbudget": {
+   "name": "Municipal capital budget",
+   "unit": "SEK million",
+   "note": "Includes the toboggan run SEK 8m, Toppstugan SEK 7m, beach toilets SEK 2m, Långbryggan SEK 0.5m and Enån beach infrastructure SEK 0.3m."
+  },
+  "socialforvaltning_andel_ramar": {
+   "name": "Social services' share of the operating budget",
+   "unit": "%",
+   "note": "Education has 35.0%; together almost 80% of the budget."
+  },
+  "socialforvaltning_underskott": {
+   "name": "Social services budget deviation",
+   "unit": "SEK million",
+   "note": "−1.5% of budget. The 2024 overrun was SEK 24 million; recovery is expected to take 3–5 years."
+  },
+  "lokala_ambitioner_antal": {
+   "name": "Number of local sustainability ambitions (Agenda 2030)",
+   "unit": "count",
+   "note": "Local ambitions for a sustainable Rättvik, adopted 26 Sep 2024. The work began in 2016 when UNDP visited Rättvik, the first Swedish municipality."
+  },
+  "fossilfritt_transportsystem_mal": {
+   "name": "Goal: fossil-free transport system in the municipality",
+   "unit": "%",
+   "note": "Local sub-goal: the municipality's transport system is to be fossil-free by 2030. The value 100% is our restatement of the goal."
+  },
+  "energianvandning_lokaler": {
+   "name": "Energy use in municipal buildings per heated area",
+   "unit": "kWh/m²",
+   "note": "Down from 165.61 kWh/m² in 2024."
+  },
+  "hvo_andel_fordon": {
+   "name": "Share of municipal vehicles fuelled with HVO100",
+   "unit": "%",
+   "note": "The municipality has no electric vehicles and does not measure emissions."
+  },
+  "ny_solel_ansluten": {
+   "name": "Solar power connected to the grid in the municipality",
+   "unit": "MW",
+   "note": "Up 21% (1.20 MW) from 5.79 MW in 2023, per the annual report."
+  },
+  "vindkraft_antal_verk": {
+   "name": "Number of wind turbines in the municipality",
+   "unit": "count",
+   "note": "Unchanged for 13 years per the Swedish Energy Agency."
+  },
+  "vindkraft_effekt": {
+   "name": "Installed wind power capacity in the municipality",
+   "unit": "MW",
+   "note": "15 turbines; in Dalarna each MW yields about 2.5 GWh a year."
+  },
+  "vindkraftsstod": {
+   "name": "State wind power grant to the municipality 2025–2026",
+   "unit": "SEK million",
+   "note": "All of it goes to local associations. From 2027 about SEK 0.5–0.6 million a year is expected."
+  },
+  "lokalproducerade_livsmedel": {
+   "name": "Share of locally produced food in municipal kitchens",
+   "unit": "%",
+   "note": "Up from 30% in 2024. Food meeting organic criteria: 34%."
+  },
+  "andel_ravaror_atertaget": {
+   "name": "Share of produce from the agricultural school ('Återtaget') in public kitchens",
+   "unit": "%",
+   "note": "Meat, potatoes and grain from the school farm; 21% the year before."
+  },
+  "gymnasieexamen_3ar": {
+   "name": "Share graduating upper secondary within three years, Stiernhööksgymnasiet",
+   "unit": "%",
+   "note": "Up 10 points from 78% in 2024 (municipal statistics)."
+  },
+  "ak9_betyg_alla_amnen": {
+   "name": "Share of year-9 pupils with passing grades in all subjects",
+   "unit": "%",
+   "note": "Down from 74.4% in 2024 (National Agency for Education)."
+  },
+  "meritvarde_ak9": {
+   "name": "Average merit rating in year 9",
+   "unit": "points",
+   "note": "Down from 214.8 in 2024."
+  },
+  "behorighet_gymnasiet": {
+   "name": "Share of pupils eligible for national upper-secondary programmes",
+   "unit": "%",
+   "note": "Down from 86.4% in 2024."
+  },
+  "grundskolor_antal": {
+   "name": "Number of municipal compulsory schools",
+   "unit": "count",
+   "note": "Nyhedsskolan (years F–6, ~230 pupils) and Rättviksskolan (years 7–9, 250+) are in town; the smallest, Sätra, has about 10 pupils."
+  },
+  "satra_skola_elever": {
+   "name": "Pupils at Sätra school (years F–3)",
+   "unit": "pupils",
+   "note": "The municipality says 'about 10 pupils'; the school is 4 km from central Rättvik."
+  },
+  "grundskola_elever_summa": {
+   "name": "Pupils in municipal compulsory schools, sum of approximate figures",
+   "unit": "pupils",
+   "note": "Our own calculation: the sum of the rounded pupil numbers ('about', 'just over') given for the eight schools."
+  },
+  "naturbruk_forstahandssokande": {
+   "name": "First-choice applicants to the agriculture track",
+   "unit": "applicants",
+   "note": "42 first-choice applications for 24 places. The school farm has bought a dairy to be installed in Rättvik."
+  },
+  "uf_elever": {
+   "name": "Students running Young Enterprise companies",
+   "unit": "students",
+   "note": "Up from 44 in 2024."
+  },
+  "sjukfranvaro": {
+   "name": "Total sick leave among municipal employees",
+   "unit": "%",
+   "note": "Down from 8.9% in 2024."
+  },
+  "tillsvidareanstallda": {
+   "name": "Permanent municipal employees",
+   "unit": "people",
+   "note": "Average age 47.0; 47.6% are 50 or older. Many retirements are expected among teachers, managers and assistant nurses."
+  },
+  "personalomsattning": {
+   "name": "Staff turnover among permanent employees",
+   "unit": "%",
+   "note": "Up from 7.2% in 2024."
+  },
+  "naringslivsranking": {
+   "name": "Rank in the Confederation of Swedish Enterprise business climate ranking",
+   "unit": "rank",
+   "note": "Down 22 places from 50th in 2024; the goal was to improve by 10."
+  },
+  "raddningstjanst_larm": {
+   "name": "Fire and rescue call-outs",
+   "unit": "call-outs",
+   "note": "The annual report says 'about 400 call-outs'."
+  },
+  "bostader_mal_per_ar": {
+   "name": "Goal: new homes per year",
+   "unit": "homes/year",
+   "note": "Housing programme 2020–2030: at least 30 new homes a year through work with property owners."
+  },
+  "smahustomter_till_maklare": {
+   "name": "Plots for detached houses handed to estate agents",
+   "unit": "count",
+   "note": "The goal was at least four plots."
+  },
+  "utsikten_tomter": {
+   "name": "Housing plots in the 'Utsikten' detailed plan (Lerdal)",
+   "unit": "plots",
+   "note": "Adopted 11 June 2026. Plots can be merged for small blocks of flats; a storm pond is sized for a 100-year rain plus a 30% climate factor."
+  },
+  "rfab_underhall_budget": {
+   "name": "Maintenance budget of the municipal housing company",
+   "unit": "SEK/m²",
+   "note": "The company says SEK 120–130/m² is needed to avoid emergency repairs, despite a 7% rent rise in 2025."
+  },
+  "va_ledningsnat": {
+   "name": "Length of water and sewer pipes",
+   "unit": "km",
+   "note": "'About 600 km', largely built 1955–1979 and in need of renewal."
+  },
+  "va_anslutna_anlaggningar": {
+   "name": "Properties connected to public water and sewage",
+   "unit": "count",
+   "note": "Active subscriptions in May 2024; six water sources and five treatment plants."
+  },
+  "va_skyfall_riskplatser": {
+   "name": "Water and sewage facilities at risk in cloudbursts",
+   "unit": "sites",
+   "note": "All are sewage pumping stations; four are higher risk. Stormwater is not treated today."
+  },
+  "rvab_investeringar": {
+   "name": "Investment by the municipal water and waste company",
+   "unit": "SEK million",
+   "note": "Including sewer extension in Backa (forecast SEK 79m) and the Furudal–Kärvsåsen transfer pipe (forecast SEK 32.2–35.2m)."
+  },
+  "va_brukningsavgift_hojning_2026": {
+   "name": "Increase in water and sewage usage charges",
+   "unit": "%",
+   "note": "Council decision 7 May 2026; connection fees unchanged. The Sweden Democrats dissented."
+  },
+  "va_brukningsavgift_hojning_2025": {
+   "name": "Increase in water and sewage usage charges from 1 April 2025",
+   "unit": "%",
+   "note": "Equal to 15% on an annual basis."
+  },
+  "siljan_hogsta_vattenstand_reglerad": {
+   "name": "Highest water level of Lake Siljan under the current water court ruling",
+   "unit": "m a.s.l.",
+   "note": "Period 1964–2024. Before regulation (1900–1925) the maximum was 163.9 m; the mean is 161.18 m. Height system as given by SMHI."
+  },
+  "siljan_vattendom_ovre_grans": {
+   "name": "Upper regulation limit for Lake Siljan",
+   "unit": "m a.s.l.",
+   "note": "1964 water court ruling: the level is to stay between 159.9 and 161.78 m, with special rules in spring floods. Regulated at Gråda power plant (1951)."
+  },
+  "lerdalsberget_naturreservat": {
+   "name": "Lerdalsberget nature reserve",
+   "unit": "ha",
+   "note": "Decided 7 May 2026; the municipality's third own reserve, old forest close to town."
+  },
+  "vardcentral_kopesumma": {
+   "name": "Municipal purchase of the health centre building",
+   "unit": "SEK million",
+   "note": "Council decision Dec 2023. The building houses the health centre and the Prästskogen care home; it was bought partly to make room for a family centre, which opened around the turn of 2025/2026."
+  },
+  "valdeltagande_kommunval": {
+   "name": "Turnout in the municipal election",
+   "unit": "%",
+   "note": "Same as 2022. 9,250 eligible voters."
+  },
+  "kf_mandat_s": {
+   "name": "Council seats: Social Democrats",
+   "unit": "seats",
+   "note": "Of 39 seats; +2 vs 2022. Vote share 31.48%."
+  },
+  "kf_mandat_c": {
+   "name": "Council seats: Centre Party",
+   "unit": "seats",
+   "note": "Of 39 seats; -2 vs 2022. Vote share 20.77%."
+  },
+  "kf_mandat_m": {
+   "name": "Council seats: Moderates",
+   "unit": "seats",
+   "note": "Of 39 seats; +1 vs 2022. Vote share 19.31%."
+  },
+  "kf_mandat_sd": {
+   "name": "Council seats: Sweden Democrats",
+   "unit": "seats",
+   "note": "Of 39 seats; ±0 vs 2022. Vote share 17.34%."
+  },
+  "kf_mandat_kd": {
+   "name": "Council seats: Christian Democrats",
+   "unit": "seats",
+   "note": "Of 39 seats; -1 vs 2022. Vote share 5.95%."
+  },
+  "kf_mandat_v": {
+   "name": "Council seats: Left Party",
+   "unit": "seats",
+   "note": "Of 39 seats; ±0 vs 2022. Vote share 3.16%."
+  },
+  "kf_mandat_c_m_kd": {
+   "name": "Seats held by the outgoing Centre–Moderate–Christian Democrat coalition",
+   "unit": "seats",
+   "note": "Our own sum (8 + 8 + 2) of 39 seats; the coalition held 20 in 2022–2026 and has lost its majority."
+  },
+  "ccw_bilar": {
+   "name": "Cars during Classic Car Week",
+   "unit": "cars",
+   "note": "'Around ten thousand cars and many more people' each year; held in week 31."
+  },
+  "ccw_startar": {
+   "name": "Classic Car Week first held",
+   "unit": "year",
+   "note": "Planning began in spring 1991; held every year in week 31 since."
+  },
+  "langbryggan_langd": {
+   "name": "Length of Långbryggan pier",
+   "unit": "m",
+   "note": "Measured from the shore to the steamer quay. Poet Bo Bergman called it 'almost as long as eternity'."
+  },
+  "langbryggan_byggd": {
+   "name": "Långbryggan built",
+   "unit": "year",
+   "note": "Landing for the steamer S/S Rättvik, in service on Siljan from 1895 to the 1950s."
+  },
+  "langbryggan_namnplankor": {
+   "name": "Name planks sold to fund the Långbryggan renovation",
+   "unit": "planks",
+   "note": "The public and firms bought engraved planks to fund the renovation; reopened 6 June 1992. Wikipedia says 2,638."
+  },
+  "sandstrand_langd": {
+   "name": "Sandy beach in central Rättvik",
+   "unit": "m",
+   "note": "The municipality lists '1,200 metres of sandy beach' in central Rättvik. In OSM, the Siljansbadet bathing place and campsite lie on the beach north of the pier."
+  },
+  "kyrkstallar_antal": {
+   "name": "Church stables at Rättvik church",
+   "unit": "count",
+   "note": "In two groups, mostly 18th–19th century. Kyrkudden is a cultural heritage area of national interest (W89)."
+  },
+  "kyrkstall_aldsta": {
+   "name": "Oldest church stable by tree-ring dating",
+   "unit": "year",
+   "note": "The heritage programme gives 1492; the municipal website says the 1470s."
+  },
+  "kyrka_takstolar_aldsta": {
+   "name": "Nave roof trusses, earliest tree-ring date",
+   "unit": "year",
+   "note": "The 27 nave roof trusses date from 1354–1367. The municipality says the church dates back to the 1200s."
+  },
+  "kyrka_exterior": {
+   "name": "Current exterior of Rättvik church",
+   "unit": "year",
+   "note": "Extended several times; the present exterior dates from 1793."
+  },
+  "kyrkklocka_aldsta": {
+   "name": "The great bell of Rättvik church",
+   "unit": "year",
+   "note": "Dalarna's oldest set of three bells: 1593, 1622 and 1628."
+  },
+  "vasa_tal_ar": {
+   "name": "Gustav Vasa's first speech to the Dalecarlians at Rättvik church",
+   "unit": "year",
+   "note": "By tradition and the inscription on Vasastenen, December 1520; in January 1521 King Christian's troops were defeated at the church."
+  },
+  "vasastenen_rest": {
+   "name": "Vasastenen monument raised",
+   "unit": "year",
+   "note": "A memorial stone with three shields and red dragon bands, ringed by twelve smaller stones for Vasa's helpers."
+  },
+  "stiernhook_fodd": {
+   "name": "Jurist Johan Stiernhöök born in Rättvik",
+   "unit": "year",
+   "note": "Born at Hökbacken, died 1675; called 'the father of Swedish jurisprudence'. The council meets in the Stiernhöök hall."
+  },
+  "rattvik_egen_socken": {
+   "name": "Rättvik becomes its own parish",
+   "unit": "year",
+   "note": "In the early 1300s the area belonged to Leksand parish; around 1325 it became a parish of its own."
+  },
+  "kyrkbat_aldsta_siljan": {
+   "name": "Year carved on the oldest church boat on Siljan",
+   "unit": "year",
+   "note": "Big boats with 8–12 pairs of oars; Rättvik's oldest known church boat 'Aros' was used until 1905. 'Sörbyggarn' was built in 1950."
+  },
+  "rattviksmaleriet_start": {
+   "name": "Rättvik folk painting emerges (decade)",
+   "unit": "year",
+   "note": "The Rättvik painting style emerged in the 1760s; the crop failures of 1771–1773 sent painters on work journeys."
+  },
+  "emigranter_1864_1889": {
+   "name": "Emigrants from Rättvik 1864–1889",
+   "unit": "people",
+   "note": "'Nearly one thousand' per Robert Ostergren's study; almost half settled in Isanti County (Minnesota) or Clay County (Dakota). The first family left in 1864."
+  },
+  "emigranter_vastbjorka_1860tal": {
+   "name": "Emigrants from Västbjörka village in the 1860s",
+   "unit": "people",
+   "note": "'Over 70 people' emigrated and some farms disappeared entirely."
+  },
+  "jarnvag_oppnad": {
+   "name": "The railway reaches Rättvik",
+   "unit": "year",
+   "note": "Sågmyra–Rättvik opened 12 August 1890; Rättvik–Mora on 2 August 1891."
+  },
+  "stationshus_byggt": {
+   "name": "Current station building in Rättvik",
+   "unit": "year",
+   "note": "Replaced the c.1890 building. Rättvik became a junction in 1914; the Falun line closed in 1965."
+  },
+  "lokstallarna_byggd": {
+   "name": "The locomotive sheds built",
+   "unit": "year",
+   "note": "Used to service engines and carriages for most of the 1900s; renovated and reopened as a venue in 2025."
+  },
+  "gustaf_wasa_byggd": {
+   "name": "Steamer Gustaf Wasa launched on Siljan",
+   "unit": "year",
+   "note": "Launched 29 April 1876 and on Siljan ever since; a listed historic vessel for 140 passengers that calls at Långbryggan."
+  },
+  "municipalsamhalle": {
+   "name": "Rättvik becomes a 'municipal community'",
+   "unit": "year",
+   "note": "Founded 25 November 1910, giving the station town its own administration for fire safety and health."
+  },
+  "hotell_siljansborg": {
+   "name": "Tourist hotel Siljansborg completed",
+   "unit": "year",
+   "note": "Persborg opened in 1903. King Gustav V rented Siljansborg for some weeks in 1911 and 1912; waitresses wore folk costume. Both hotels are gone."
+  },
+  "vidablick_invigd": {
+   "name": "Vidablick lookout tower opened",
+   "unit": "year",
+   "note": "Opened 12 June 1898 on Hedsåsberget, 252 m above Siljan; designed by 17-year-old Olof Klockars. Outside the 3D model."
+  },
+  "kommunalhus_invigt": {
+   "name": "Court and town hall opened",
+   "unit": "year",
+   "note": "Designed by Artur von Schmalensee and built 1951–1952 on the old court site, Vasagatan 1."
+  },
+  "vackert_rattvik_start": {
+   "name": "'Beautiful Rättvik' project begins",
+   "unit": "year",
+   "note": "Ran 1994–2005 to bridge the barrier that the highway and railway created towards Siljan; the 'Vattenspel' fountain on the square opened in 2000."
+  },
+  "dalhalla_invigd": {
+   "name": "Dalhalla officially opened",
+   "unit": "year",
+   "note": "Test concert June 1993, first season concert 23 July 1994, official opening 21 June 1995 in a former limestone quarry; about 6,000 seats."
+  },
+  "musik_vid_siljan_start": {
+   "name": "'Musik vid Siljan' festival begins",
+   "unit": "year",
+   "note": "Celebrated its 50th anniversary in 2019 and then ended; Stämmoveckan took over in 2021. The start year 1969 is our inference from the anniversary."
+  },
+  "siljansringen_alder": {
+   "name": "Age of the Siljan Ring impact",
+   "unit": "million years",
+   "note": "The culture house's nature museum says 377 million years (dates of 376.8 ± 1.7 and 377 ± 2 Ma). Other local sources say about 380."
+  },
+  "siljansringen_diameter": {
+   "name": "Diameter of the Siljan Ring",
+   "unit": "km",
+   "note": "Europe's largest known impact structure; Lake Siljan lies on its south-western rim."
+  },
+  "prastskogsvallen_invigd": {
+   "name": "Prästskogsvallen sports ground opened",
+   "unit": "year",
+   "note": "Open-access sports ground with lit artificial turf, running track and a winter ice rink."
+  },
+  "akermark_hektar": {
+   "name": "Arable land in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Total arable land in the Swedish Board of Agriculture's area statistics (farm support applications and the farm register). The area has been almost unchanged since 2010 (2,365 ha) but was 2,666 ha in 1981 and 2,700 ha in 1985, i.e. 300–330 ha more than today."
+  },
+  "vall_andel_akermark": {
+   "name": "Share of arable land under grass ley (hay and grazing)",
+   "unit": "%",
+   "note": "1,910 ha of ley in use divided by 2,368 ha of arable land in 2025. Including 135 ha of green fodder crops, just over 86% of the arable land grows feed for cattle, sheep and horses. In 1981 the ley share was 56% (1,480 of 2,666 ha)."
+  },
+  "spannmal_hektar": {
+   "name": "Cereal growing in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Total cereals in 2025: spring barley 136 ha, oats 62 ha, spring wheat 22 ha and winter wheat 8 ha etc., 9.7% of arable land; in addition 6 ha of table potatoes and 2 ha of horticultural crops. In 1981 at least 941 ha of cereals were grown, 756 ha of it barley (own sum of the crops), so the area has shrunk by more than three quarters."
+  },
+  "betesmark_slatterang_hektar": {
+   "name": "Pasture and hay meadows in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Total pasture and hay meadow in 2025: summer-farm (fäbod) grazing 608 ha, pasture 349 ha, hay meadow 6 ha and unspecified 9 ha. The area has varied between 766 and 1,825 ha since 2003, and the swings are mainly in fäbod grazing (449–1,322 ha)."
+  },
+  "fabodbete_hektar": {
+   "name": "Summer-farm (fäbod) grazing in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Forest grazing at summer farms registered in the farm support system. It is 63% of the municipality's pasture (608 of 971 ha), 12% of Dalarna's fäbod grazing (5,224 ha) and 4% of Sweden's (15,703 ha). Rättvik ranks third in the county after Malung-Sälen (1,975 ha) and Älvdalen (1,351 ha)."
+  },
+  "fabodbete_foretag_lan": {
+   "name": "Farm businesses with summer-farm (fäbod) grazing in Dalarna",
+   "unit": "businesses",
+   "note": "Number of businesses with fäbod grazing in the county in 2025 (78 in 2023 and 2024); 205 in all of Sweden. The number is not published per municipality. In 2008 the County Administrative Board counted 85 actively used summer-farm sites with 100 farmers in Dalarna, of which only about twenty had traditional operation with milking and dairy processing (report 2008:12)."
+  },
+  "jordbruksforetag_antal": {
+   "name": "Farm businesses in Rättvik Municipality",
+   "unit": "businesses",
+   "note": "All size groups; there were 106 in 2020. Farms with more than 2 ha of arable land have halved from 210 in 1981 to 103 in 2025 (own sum of the size groups). Eleven farms have more than 50 ha of arable land, and the County Administrative Board judges that seven are large enough to employ more than one person full time."
+  },
+  "mjolkkor_antal": {
+   "name": "Dairy cows in Rättvik Municipality",
+   "unit": "cows",
+   "note": "Dairy cows in June 2023 on only five farms (twelve in 2010); there were 909 dairy cows in 1981. Even so, milk production covers the municipality's entire consumption, according to the County Administrative Board. Municipal figures exist for 2010, 2013, 2016, 2020 and 2023."
+  },
+  "notkreatur_antal": {
+   "name": "Cattle in Rättvik Municipality",
+   "unit": "animals",
+   "note": "Sum of dairy cows (437), suckler cows (255), heifers, bulls and steers (591) and calves under one year (410) in June 2023. The corresponding sum was 1,975 in 1981, 1,859 in 2010 and 1,613 in 2020. Suckler cows have grown from 10 in 1981 to 255 while dairy cows have halved; there were also 181 horses in 2023."
+  },
+  "far_antal": {
+   "name": "Sheep (ewes and rams) in Rättvik Municipality",
+   "unit": "animals",
+   "note": "Ewes and rams in June 2023 on 27 farms, plus 560 lambs. The number has almost doubled since 1981 (317) and 1990 (288); the 2019 comprehensive plan notes that sheep are often kept as a hobby."
+  },
+  "sjalvforsorjningsgrad_vikt_lan": {
+   "name": "Food self-sufficiency in Dalarna, by weight",
+   "unit": "%",
+   "note": "The county's production (90,000 tonnes) divided by its consumption (239,000 tonnes), assuming everything produced stays in the county; Sweden as a whole is at 75%. The County Administrative Board stresses that the calculation is very uncertain; the previous situation report (2022) gave 42%. Only 10% of the raw materials cannot be produced locally, such as coffee, tea, rice and exotic fruit."
+  },
+  "sjalvforsorjningsgrad_energi_lan": {
+   "name": "Food self-sufficiency in Dalarna, by energy",
+   "unit": "%",
+   "note": "Production corresponds to 890 kcal per person per day against consumption of 3,000 kcal. The Swedish Food Agency's crisis diet is 2,450 kcal, so the county's primary production covers just over a third of crisis needs, and less if the raw materials must also be processed in the county."
+  },
+  "sjalvforsorjningsgrad_notkott": {
+   "name": "Self-sufficiency in beef in Rättvik Municipality",
+   "unit": "%",
+   "note": "The County Administrative Board's calculation of local production against local consumption. In the same calculation milk production covers the municipality's entire consumption, while the cereal harvest covers one fifth."
+  },
+  "sjalvforsorjningsgrad_lamm": {
+   "name": "Self-sufficiency in lamb in Rättvik Municipality",
+   "unit": "%",
+   "note": "Same calculation as for beef. Overall, primary production in the municipality is 'clearly lower than consumption', according to the County Administrative Board."
+  },
+  "livsmedelskedjan_sysselsatta": {
+   "name": "People employed in the food chain in Rättvik Municipality",
+   "unit": "people",
+   "note": "The County Administrative Board's estimate, from farming to restaurants; half are women and most work in restaurants and retail. In all of Dalarna 9,500 people work in the food chain."
+  },
+  "livsmedelsforadlare_antal": {
+   "name": "Food processing businesses in Rättvik Municipality",
+   "unit": "businesses",
+   "note": "Sum of the County Administrative Board's list: Nya Siljans Chark (slaughterhouse, 25 employees), Rättviks glass (ice cream, 11 employees), five bakeries, two chocolate makers, one brewery and three other meat businesses. In addition there are five greenhouse businesses (two growing ornamentals), ten food shops and 47 restaurants."
+  },
+  "akermark_per_invanare": {
+   "name": "Arable land per inhabitant in Rättvik Municipality",
+   "unit": "hectares per inhabitant",
+   "note": "2,343 ha of arable land divided by 11,042 inhabitants in 2023, just above the world average of 0.19 ha. With Swedish consumption and average world yields, at least 0.38 ha per person would be needed for self-sufficiency, according to the County Administrative Board."
+  },
+  "skogsmark_andel_landareal": {
+   "name": "Forest land as share of land area",
+   "unit": "%",
+   "note": "172,707 ha of forest land (157,660 ha of it productive) divided by 193,047 ha of land in 2020. Open mire takes another 5.9% (11,463 ha). Water covers 21,942 ha, 10% of the municipality's total area."
+  },
+  "jordbruksmark_andel_landareal": {
+   "name": "Agricultural land as share of land area",
+   "unit": "%",
+   "note": "3,260 ha of agricultural land (2,347 ha arable and 913 ha pasture) divided by 193,047 ha of land in 2020; in 2010 it was 3,513 ha. The 2019 comprehensive plan says 'just under three per cent' and describes the land as small-scale, lime-rich and fertile, mainly along the lakes of the Siljan Ring."
+  },
+  "bebyggd_mark_andel_landareal": {
+   "name": "Built-up and developed land as share of land area",
+   "unit": "%",
+   "note": "4,462 ha of built-up and developed land (buildings, plots, roads, railway etc.) divided by 193,047 ha of land in 2020. In 2010 the area was 4,309 ha, so it grew by 153 ha in ten years, about 15 ha a year."
+  },
+  "skog_privatpersoner_andel": {
+   "name": "Share of productive forest land owned by private individuals",
+   "unit": "%",
+   "note": "51,000 ha of declared productive forest land owned by natural persons divided by 157,000 ha in total in 2025; both figures are rounded to thousands of hectares. The rest is owned by companies, the state and other public or private owners. Of the private individuals' forest, 31,000 ha is owned by residents of the municipality and 14,000 ha by owners living outside Dalarna."
+  },
+  "skogsagare_privatpersoner_antal": {
+   "name": "Private individuals owning forest in Rättvik Municipality",
+   "unit": "owners",
+   "note": "1,235 of the owners are registered residents of the municipality, 377 live elsewhere in Dalarna and 679 outside the county; 952 are women. The number has fallen from 2,740 in 1999. The median holding per management unit is only 11 ha while the mean is 85 ha (table PX12)."
+  },
+  "foryngringsavverkning_anmald_hektar": {
+   "name": "Notified regeneration felling (clear-cutting) in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Felling notifications and permit applications in 2025: 708 ha by private owners and 708 ha by other owners. The 2021–2025 average was 1,405 ha a year (0.9% of the productive forest land), against 2,030 ha a year in 2010–2014, when other owners notified far more. Notified area is not the same as area actually felled."
+  },
+  "naturreservat_antal": {
+   "name": "Nature reserves in Rättvik Municipality",
+   "unit": "reserves",
+   "note": "29 nature reserves in force covering 3,724 ha in total (3,611 ha of land), ten of them created since 2015. The newest is the municipal Lerdalsberget reserve next to Rättvik's ski slope, decided by the municipal council on 7 May 2026 (13.9 ha in the register, about 12 ha according to the decision). The municipality's own web page still counts 27."
+  },
+  "natura2000_omraden_antal": {
+   "name": "Natura 2000 sites in Rättvik Municipality",
+   "unit": "sites",
+   "note": "14 sites lie entirely within the municipality (1,688 ha), and the Voxnan river (912 ha) is shared with Ovanåker and Ljusdal. Gåsberget and Glistjärn are designated under both the Habitats and the Birds Directive; Glistjärn, near the lime works north of the town, is described as the municipality's finest bird lake."
+  },
+  "rodlistade_arter_observerade_antal": {
+   "name": "Red-listed species recorded in Rättvik Municipality since 2000",
+   "unit": "species",
+   "note": "Number of distinct species on the 2020 Swedish Red List with at least one record from 2000–2026 in the municipality, extracted on 11 October 2026 (729 species for all years, 511 since 2010). The figure reflects both species richness and survey effort; protected records have generalised coordinates and the 2025 Red List was not yet in the database. The most recorded species are the marsh fritillary butterfly, the lichen Alectoria sarmentosa and the orchid creeping lady's-tresses."
+  },
+  "geosites_antal": {
+   "name": "Geosites of Siljan Geopark within Rättvik Municipality",
+   "unit": "sites",
+   "note": "The municipality lists twelve geosites: the Amtjärn quarry, Boda church, Dalhalla, the Enån nature reserve, Fjäckan, Långbryggan, the Solberga limestone quarry, Springkällan, Styggforsen, Vidablick, Vindförbergs udde and the Östbjörka nature reserve. Siljan Geopark is run by Leksand, Mora, Orsa and Rättvik with the County Administrative Board and Visit Dalarna; it became Sweden's first national geopark in 2019, and SGU extended the status by five years in November 2025. The meteorite impact that created the Siljan Ring has been dated to 377 million years ago (SGU report 2010:21)."
+  },
+  "gronyta_andel_tatort": {
+   "name": "Green space in Rättvik town, share of land area",
+   "unit": "%",
+   "note": "854 ha of green space (490 ha open land and 364 ha forest) divided by 1,242 ha of land in the built-up area in 2020; there is also 114 ha of arable land. Publicly accessible green space is 499 ha (40%). Statistics Sweden counts private gardens and lawns between houses as green space."
+  },
+  "hardgjord_mark_andel_tatort": {
+   "name": "Sealed (impervious) land in Rättvik town, share of land area",
+   "unit": "%",
+   "note": "272 ha of sealed land divided by 1,242 ha of land in 2020: buildings 78 ha, roads and railway 103 ha and other sealed surfaces 91 ha. In 2015 the share was 22.1% (274 of 1,238 ha). For comparison, Kalmar's built-up area is 40% sealed (Statistics Sweden)."
+  },
+  "tradbevuxen_mark_andel_tatort": {
+   "name": "Forest-covered land in Rättvik town, share of land area",
+   "unit": "%",
+   "note": "364 ha of land classed as forest within the town's green space divided by 1,242 ha of land in 2020 (388 ha and 31.3% in 2015). It is not a tree-canopy measurement: street trees and scattered garden trees are not counted, so it may underestimate canopy cover. No canopy-cover figure for Rättvik has been found."
+  },
+  "narhet_gronomrade_200m_andel": {
+   "name": "Share of town residents with a green area within 200 metres",
+   "unit": "%",
+   "note": "Covers the 5,318 residents of Rättvik town and green areas of at least 0.5 ha; 98% have one within 300 m and 100% within 500 m. The town has 167 such green areas totalling 345 ha, four of them larger than 10 ha."
+  },
+  "lis_omraden_antal": {
+   "name": "Lakeshore rural-development (LIS) areas in the comprehensive plan",
+   "unit": "areas",
+   "note": "Of 24 shoreline areas studied, 20 were designated where exemptions from shoreline protection can be granted on rural-development grounds; five are on Lake Siljan (Ickviken–Vikarbyn, Stumsnäs, Tina–Gärdebyn, the boat harbour and Lerdal). Shoreline protection is otherwise 100 m, extended at Säsvik on Oresjön and at Sollen and Storholmen in Amungen (plan part 2). The 2024 planning strategy judges that the LIS plan needs revision."
+  },
+  "detaljplanerad_mark_smahus_antal": {
+   "name": "Land zoned for detached houses (planning reserve)",
+   "unit": "houses",
+   "note": "The comprehensive plan states that zoned land exists for 'just over 250 detached houses', mainly in central Rättvik, Lerdal–Gärdebyn, Vikarbyn and Furudal, but several plans are old and lack roads or water and sewerage. At the time 5–10 houses were being built a year, and the town lacks flats in apartment buildings."
+  },
+  "detaljplaner_pagaende_antal": {
+   "name": "Detailed development plans in active preparation in Rättvik Municipality",
+   "unit": "plans",
+   "note": "Active plans: Klockargården (detached houses), Utsikten, Persborg and Siljansborg (housing, Siljansborg also temporary accommodation), Haga- and Börjes väg (streets, nature and stormwater), Stora Lissbrändan, and Garvaren, Mangeln and Färgaren. Utsikten (about 47 house plots south of the ski slope) was adopted by the municipal council on 11 June 2026, and the development agreement for Klockargården (up to seven plots) was approved on 7 May 2026. Nine assignments are queued, among them a new comprehensive plan with an in-depth plan for Rättvik–Vikarbyn, 'Vackert Rättvik 2.0' and the Hedslund sports ground."
+  },
+  "persborg_planerade_bostader": {
+   "name": "Planned homes in the new Persborg area",
+   "unit": "homes",
+   "note": "About 100 homes in apartment buildings, detached and semi-detached houses, conceived as multigenerational housing in an eco-village; the detailed plan is prioritised but the design is not settled. Students at Dalarna University produced nine proposals in spring 2026. The site is in Sjurberg on Lake Siljan, where the tourist hotel Persborg stood; a 1960s–70s cabin village now occupies the hotel site (heritage programme 2026)."
+  },
+  "langbryggan_kajreparation_kostnad": {
+   "name": "Cost of repairing Långbryggan's outer quay in 2020",
+   "unit": "SEK",
+   "note": "The municipality's cost of 'around half a million kronor' after a storm in January 2020 tore up the planks where the Gustaf Wasa docks; according to Dala-Demokraten the job grew larger than expected and the whole quay was rebuilt with a new wave guard. The pier is 628 m long, was built in 1895 and reopened on 6 June 1992 after a major renovation partly financed by 2,938 named planks; that was the last major repair before 2020."
+  },
+  "lokstallarna_renovering_kostnad": {
+   "name": "Renovation cost of Lokstallarna (engine sheds) at Rättvik station",
+   "unit": "SEK",
+   "note": "Estimated total cost of the multi-year renovation of the engine shed from about 1890, which the municipality took over in 2006. The building reopened on 4 June 2025 with four halls totalling 800 m² and up to 15 m ceiling height for culture, food, crafts and associations (municipal news item, 4 June 2025)."
+  },
+  "byggnadsminnen_antal": {
+   "name": "Listed buildings (byggnadsminnen) in Rättvik Municipality",
+   "unit": "listed buildings",
+   "note": "Among them the 1840s spa pavilion at Hvilan in Lerdal (listed 1988), Solgården (1897) and Tånggården in Sjurberg, Danielsgården in Bingsjö, Matsgården in Östbjörka and the Blånnes barn in Gärdsjö; the 2019 comprehensive plan counted ten. Rättvik church is instead protected as an ecclesiastical monument, and according to the Diocese of Västerås's assessment (2006) the adjoining church stables are also covered by the heritage law."
+  },
+  "riksintressen_kulturmiljo_antal": {
+   "name": "Areas of national interest for cultural heritage in Rättvik Municipality",
+   "unit": "areas",
+   "note": "There are also 55 municipal heritage areas, and a heritage programme was adopted by the municipal executive board on 17 March 2026. Closest to the centre is Kyrkudden (W 89) with the medieval church, a tithe barn from 1758 and 87 church stables, one of them tree-ring dated to 1492 according to the heritage programme. Five of the national-interest areas are summer-farm environments (Swedish National Heritage Board's list)."
+  },
+  "kretsloppsplan_mal_avfallsminskning": {
+   "name": "Target in the 2023–2030 waste plan: less waste generated by 2030",
+   "unit": "%",
+   "note": "The waste plan for Rättvik, Leksand, Gagnef and Vansbro was adopted in Rättvik on 22 February 2024: waste is to fall by at least 25% and waste sent to incineration by 50% by 2030. Households take bulky waste to the Drafsån recycling centre (open around the clock with 'Anytime') and to Furudal, and since October 2025 the municipality's Ta Till Vara shop at Riksvägen 23 sells reused goods collected from a staffed container at Drafsån."
+  },
+  "befolkning_1970": {
+   "name": "Population in 1970",
+   "unit": "inhabitants",
+   "note": "Population on 31 December within today's municipal boundary (SCB reports 1968–1982 on the 1983 division; Rättvik Municipality was formed in 1971 and Ore was added in 1974). In 1968 the area had 11,300 inhabitants; the 1970s low was 10,634 (1973)."
+  },
+  "befolkning_1990": {
+   "name": "Population in 1990",
+   "unit": "inhabitants",
+   "note": "The population grew during the 1980s and peaked at 11,418 in 1992. It then fell to a low of 10,748 in 2014."
+  },
+  "befolkning_2010": {
+   "name": "Population in 2010",
+   "unit": "inhabitants",
+   "note": "The population has stayed between 10,600 and 11,450 since 1970. After 2014 it rose to 11,103 in 2021 (high in-migration during the pandemic years); it was 10,978 on 31 December 2025 and 10,962 in August 2026 (SCB, BE0101)."
+  },
+  "befolkning_prognos_2030": {
+   "name": "Population in 2030 according to SCB's regional projection (2024)",
+   "unit": "inhabitants",
+   "note": "The projection starts from 11,053 inhabitants in 2024 and 11,061 in 2025. The outcome was 10,978 (December 2025) and 10,962 (August 2026), i.e. below SCB's path. The municipality's own forecast in its 2025 annual report gives 10,965 in 2034, against SCB's 11,103."
+  },
+  "befolkning_prognos_2040": {
+   "name": "Population in 2040 according to SCB's regional projection (2024)",
+   "unit": "inhabitants",
+   "note": "SCB's projection (published 11 June 2024) gives an almost unchanged population: 11,106 in 2035 and 11,107 in 2040. It assumes a natural decrease of about 100 a year offset by in-migration; the number of people aged 20–64 falls from 5,326 (2024) to about 5,250 (2030–2040)."
+  },
+  "befolkning_prognos_2070": {
+   "name": "Population in 2070 according to SCB's regional projection (2024)",
+   "unit": "inhabitants",
+   "note": "SCB's longest projection for the municipality: 11,224 in 2050, 11,393 in 2060 and 11,580 in 2070. On average it assumes 79 births and 180 deaths a year in 2025–2070 (own calculation from the table), which requires net in-migration of just over 100 a year. No official projection beyond 2070 exists."
+  },
+  "andel_65plus_prognos_2040": {
+   "name": "Share of residents aged 65 and over in 2040 according to SCB's projection",
+   "unit": "%",
+   "note": "4,054 of 11,107 residents are 65+ in 2040 (summed over single-year ages in SCB's table). Projection base year 2024: 34.3%; 2070: 37.4%. Dalarna County in 2040: 28.9%."
+  },
+  "andel_80plus_prognos_2040": {
+   "name": "Share of residents aged 80 and over in 2040 according to SCB's projection",
+   "unit": "%",
+   "note": "1,605 of 11,107 residents are 80+ in 2040, against 10.7% in 2024 and 16.4% in 2070; the fastest rise comes before 2030 (already 14.0% then). The 2025 outcome was 1,236 people or 11.3% (annual report 2025). Dalarna County in 2040: 10.8%."
+  },
+  "fodelseoverskott_2025": {
+   "name": "Natural increase (births minus deaths)",
+   "unit": "people/year",
+   "note": "72 births and 143 deaths in 2025, that is 6.6 and 13.0 per 1,000 residents (own calculation; Sweden 9.2 and 8.7). Deaths have exceeded births every year since at least 2000; 2015–2024 averaged 79 births and 159 deaths a year. First half of 2026: 30 births and 90 deaths."
+  },
+  "flyttnetto_2025": {
+   "name": "Net migration (domestic and international)",
+   "unit": "people/year",
+   "note": "535 in-movers and 479 out-movers: net −30 against the rest of Dalarna and +57 against the rest of Sweden, and net immigration +28 (48 immigrants, 20 emigrants). 2015–2024 averaged +101 a year (own calculation), with peaks in 2016 (+203, refugee reception) and 2020 (+168). First half of 2026: +53."
+  },
+  "fritidshus_antal": {
+   "name": "Second homes owned by private persons or estates",
+   "unit": "second homes",
+   "note": "Up from 2,520 in 1998 (+18%). That is 271 second homes per 1,000 residents, against 164 in Dalarna County and 60 in Sweden (own calculation with SCB's 2025 population). Company-owned second homes are not included."
+  },
+  "sommarbefolkning_topp_faktor": {
+   "name": "Summer population peak (Saturday of Classic Car Week) relative to the annual median",
+   "unit": "times the annual median",
+   "note": "SCB's analysis of mobile-network data (Telia Crowd Insights) for summer 2023: \"On the Saturday of Classic Car Week the population of Rättvik triples\". For most of the summer the population was close to the annual median; Rättvik belongs to the municipalities with a few peak days rather than a long summer season. No absolute count of summer residents exists."
+  },
+  "ensamhet_besvar": {
+   "name": "Share of residents 16+ bothered by loneliness sometimes, often or always",
+   "unit": "%",
+   "note": "Health on Equal Terms 2024 with Dalarna's extra sample (about 940 respondents in Rättvik). Confidence interval 10.2–14.5%, significantly below Sweden (18.2%); Dalarna 17.2%. The question is only reported for 2024, so there is no time series."
+  },
+  "ensamhet_ofta": {
+   "name": "Share of residents 16+ bothered by loneliness often or always",
+   "unit": "%",
+   "note": "Confidence interval 2.7–5.1%, significantly below Sweden (5.5%); Dalarna 5.4%."
+  },
+  "lagt_socialt_deltagande": {
+   "name": "Share of residents with low social participation (latest pre-pandemic measurement)",
+   "unit": "%",
+   "note": "The indicator counts how few of the survey's social activities a person took part in during the past year. 2014: Rättvik 26.5% (CI 23.7–29.4), Dalarna 25.4%, Sweden 20.4%. The 2021 survey gave 61.1% (Dalarna 53.7%, Sweden 48.6%) but was taken under pandemic restrictions and is not comparable; the question is not reported for 2024."
+  },
+  "positiv_syn_pa_framtiden": {
+   "name": "Share of residents 16+ who always or mostly feel positive about the future",
+   "unit": "%",
+   "note": "The survey's closest measure of hope and sense of meaning. CI 70.3–76.0%; Dalarna 71.3%, Sweden 72.0%. In 2021 the share was 80.7% in Rättvik, a fall of 7.5 percentage points in three years (Dalarna −5.2)."
+  },
+  "radd_ga_ut_ensam": {
+   "name": "Share of residents 16+ who have refrained from going out alone for fear of being attacked",
+   "unit": "%",
+   "note": "CI 10.6–14.9%, significantly below Sweden (28.3%); Dalarna 22.9%. In 2014 the share was 8.8% in Rättvik. Kolada U01420 (years 2021–2024 pooled) gives 13.2%."
+  },
+  "ensamhet_hemtjanst_65plus": {
+   "name": "Share of people aged 65+ with home care who are bothered by loneliness",
+   "unit": "%",
+   "note": "Share answering 'yes, mild' or 'yes, severe' in the National Board of Health and Welfare's survey of people 65+ receiving home care; Sweden 51.0%. Severe: 8.7% (Sweden 10.0%, Kolada U21478). Compare 3.9% of all residents 16+ who are often or always bothered by loneliness."
+  },
+  "klarar_inte_ovantad_utgift": {
+   "name": "Share of residents 16+ who could not cover an unexpected expense",
+   "unit": "%",
+   "note": "CI 17.2–22.3%; Dalarna 21.4%, Sweden 20.3%; in 2021 the share was 20.5% in Rättvik. According to Kolada (Health on Equal Terms 2021–2024 pooled) 14.5% have had an economic crisis in the past year (U01407) and 11.3% have gone without dental care for financial reasons (N01464, Sweden 10.5%)."
+  },
+  "unga_nojda_med_livet": {
+   "name": "Share of young people (lower and upper secondary) who are very or fairly satisfied with life as a whole",
+   "unit": "%",
+   "note": "158 of 179 respondents (Dalarna 86%); upper secondary 91%, lower secondary 86%, and 81% in 2021. The picture differs from the school-health interviews, where 66.7% of first-year upper-secondary students say they feel good; the questions and samples differ."
+  },
+  "unga_tror_flytta_fran_kommunen": {
+   "name": "Share of young people (lower and upper secondary) who think they will move away from the municipality",
+   "unit": "%",
+   "note": "114 of 180 respondents in Rättvik (Dalarna 56%; Rättvik 2021: 66%), among upper-secondary students 78% (Dalarna 73%). Of those who expect to move, 54% give work and 37% further studies as the reason. The best things about living in the municipality: family and relatives (53%) and nearness to nature (38%)."
+  },
+  "gymnasieelever_ar1_mar_bra": {
+   "name": "Share of first-year upper-secondary students who feel good or very good most of the time",
+   "unit": "%",
+   "note": "(26 'very good' + 64 'good') / 135 respondents in the school-health interviews at the municipality's upper-secondary school, which also has students from other municipalities; Dalarna 75.4%, and Rättvik 67.8% in school year 2024/25. 42% of the students felt low or sad at least once a week (Dalarna 30%). In year 7, 85% felt good (Dalarna 80%)."
+  },
+  "unga_mojlighet_paverka": {
+   "name": "Share of young people who feel they have good opportunities to put their views to the municipality's decision-makers",
+   "unit": "%",
+   "note": "39 of 180 respondents in lower and upper secondary answer very or fairly good opportunities (Dalarna 16%). 36% have very or fairly high trust in politicians (Dalarna 38%), against 45% in 2021."
+  },
+  "valdeltagande_kommunval_2022": {
+   "name": "Turnout in the 2022 municipal council election",
+   "unit": "%",
+   "note": "7,813 of 9,289 eligible voters; lowest voting district 75.3%, highest 88.0% (Vikarbyn) according to Kolada N05831/N05833. The election of 13 September 2026 gave exactly the same turnout, 84.11% (7,780 of 9,250; Dalarna County 83.33%, Sweden 82.34%). Seats 2022: S 11, C 10, M 7, SD 7, KD 3, V 1; 2026: S 13, C 8, M 8, SD 7, KD 2, V 1."
+  },
+  "barnfattigdom_andel": {
+   "name": "Share of children aged 0–17 in economic hardship (Save the Children's revised measure)",
+   "unit": "%",
+   "note": "161 of 1,714 children live in households with a low income standard based on the Consumer Agency's basic needs and/or receiving social assistance; rank 75 of 290 municipalities. Dalarna County 14.3%, Sweden 12.9%; with Save the Children's earlier measure 5.7% (98 children). The same figures are in the report's Excel annex for counties and municipalities 2023."
+  },
+  "skattesats_total_2026": {
+   "name": "Total municipal tax rate 2026 (municipality + region)",
+   "unit": "%",
+   "note": "21.81% to the municipality and 11.99% to Region Dalarna. The national average is 32.38% and Dalarna County's 34.18%. Unchanged since 2025; 33.45% in 2020."
+  },
+  "sarskilt_boende_65plus_antal": {
+   "name": "People aged 65+ in special housing (residential care)",
+   "unit": "people",
+   "note": "Median over the year, including needs-assessed sheltered housing; 148 in 2021. That is 3.05% of residents aged 65+ (Sweden 3.82%, Kolada N23890). The municipality rents 185 flats from Rättviks Fastigheter for elderly and disability housing, and its housing plan for older people is being revised (annual report 2025)."
+  },
+  "hemtjanst_65plus_antal": {
+   "name": "People aged 65+ receiving home care in ordinary housing",
+   "unit": "people",
+   "note": "Up from 250 (2022) and 270 (2024); 224 of them are 80+. In all, 25.6% of residents aged 80+ have home care or special housing (Sweden 25.5%, Kolada N20892), against 33.5% in 2018: more older people are cared for at home and fewer live in care homes."
+  },
+  "listade_invanare_per_allmanlakare": {
+   "name": "Listed residents per full-time GP (specialist in general practice) at health centres",
+   "unit": "residents per doctor",
+   "note": "The National Board of Health and Welfare's guideline is 1,100; the survey average for Sweden is 1,750 and regions range from 1,275 to 2,337. 66% of the county's 29 health centres responded; Rättvik health centre (Region Dalarna, in the same building as the Prästskogen care home) is not reported separately."
+  },
+  "hyrlakare_andel_vardcentral": {
+   "name": "Share of GP specialist work at health centres done by agency (locum) doctors",
+   "unit": "%",
+   "note": "In Region Dalarna 80% of the work is done by permanent staff and 2% by substitutes. Sweden 11%; highest in Gävleborg (31%) and lowest in Halland (0%). The report warns that long-term dependence on agency doctors puts continuity of care at risk."
+  },
+  "gymnasieelever_i_kommunen": {
+   "name": "Students at upper-secondary schools located in the municipality (Stiernhööksgymnasiet)",
+   "unit": "students",
+   "note": "Counted on 15 October 2025; the largest programme is natural resource use (the national upper-secondary school for naturbruk) with about 190 students, followed by electricity and energy (about 60), building, business and social science (about 50 each), introductory programmes (about 40) and natural science (about 10), according to the Swedish National Agency for Education 2025/26. The agriculture track had 42 first-choice applicants for 24 places in 2025. Of the 308 upper-secondary students registered in Rättvik, 28% attend another municipality's school (Sweden 20%)."
+  },
+  "bostader_antal": {
+   "name": "Number of dwellings (all building types including special housing)",
+   "unit": "dwellings",
+   "note": "Sum of the table cells: 3,753 in one- or two-dwelling houses (64%), 1,680 in multi-dwelling buildings, 137 in other buildings and 292 special-housing units. Up 270 since 2015 (5,592), about 27 a year. In addition there are 2,980 second homes."
+  },
+  "andel_hyresratt": {
+   "name": "Share of dwellings that are rental flats (including special housing)",
+   "unit": "%",
+   "note": "1,590 of 5,862 dwellings. Owner-occupied houses 3,574 (61.0%), tenant-owned (bostadsrätt) 694 (11.8%). Excluding special housing the rental share is 23.3% (1,298 of 5,570)."
+  },
+  "allmannyttan_lagenheter": {
+   "name": "Flats owned by the municipal housing company Rättviks Fastigheter AB",
+   "unit": "flats",
+   "note": "About 36,000 m² of residential floor area; in addition the municipality block-rents 185 flats for elderly and disability housing, and the page 'Våra bostadsområden' (2025) gives 594 flats in three categories: ordinary (from age 18), 55+ and sheltered housing (from age 70). The queue has grown (annual report 2025), but its length is not published. The company plans two buildings with eight flats in Boda, ready in spring 2027."
+  },
+  "kollektivhus_lagenheter_lan": {
+   "name": "Flats in cohousing communities in Dalarna County (members of Kollektivhus NU)",
+   "unit": "flats",
+   "note": "The only house in the county is Tersen in Falun: a cooperative rental for 'the second half of life' with 44 flats. There is no start-up group in Dalarna and no cohousing in Rättvik. Houses that are not members of the association are not on the list."
+  },
+  "foreningar_i_registret": {
+   "name": "Associations in the municipality's register of associations",
+   "unit": "associations",
+   "note": "Sum of the register's categories: 33 sports clubs, 24 village-hall associations, 13 other, 9 cultural associations (incl. the Rättvik, Boda and Ore local-history societies and Boda fiddlers' group), 6 adult-education associations, 3 pensioners' associations, 2 church, 2 political and 1 disability association. Only associations that chose to be listed are included."
+  },
+  "unga_medlem_forening": {
+   "name": "Share of young people (lower and upper secondary) who are members of an association",
+   "unit": "%",
+   "note": "95 of 180 respondents (Dalarna 50%). Lower secondary 62% (Dalarna 55%), upper secondary 45% (Dalarna 43%). 62% think there is a lot or quite a lot to do in their free time (Dalarna 63%)."
+  },
+  "idrottsforeningar_lok_per_10000": {
+   "name": "Sports clubs receiving state LOK activity grants per 10,000 residents",
+   "unit": "clubs per 10,000 residents",
+   "note": "About 19 clubs (own calculation: 17.28 × 1.0998). Sweden 9.59. Participation is lower, however: 25.7 activity sessions per resident aged 7–20 against 33.4 in Sweden (Kolada U09800)."
+  },
+  "anmalda_brott_per_100000": {
+   "name": "Reported crimes per 100,000 residents",
+   "unit": "crimes per 100,000 residents",
+   "note": "Sweden 13,581. The rise from 7,305 (2024) is large; the cause has not been checked in BRÅ's statistics by offence type, and in a small municipality single cases with many reports can make a big difference. Reported violent crimes 2025: 1,110 per 100,000 (Sweden 1,067)."
+  },
+  "utsatthet_brott_mot_person_ntu": {
+   "name": "Share of people aged 16–84 exposed to crime against the person (Swedish Crime Survey, NTU)",
+   "unit": "%",
+   "note": "At least one of: card or sales fraud, pickpocketing, robbery, sexual offence, assault, threats, harassment or online abuse in the previous year; Sweden 20.0%. For Rättvik only 2020–2021 exists (10.5%, two years pooled). Worry about crime in society: Dalarna 52.2% (2025), Sweden 53.6%."
+  },
+  "gastnatter": {
+   "name": "Guest nights in commercial accommodation",
+   "unit": "guest nights",
+   "note": "All guest nights in 2025 at hotels, campsites, cabin villages, hostels and agency-let cottages that report to the accommodation statistics, +0.6% on 2024 (Swedish 201,559, foreign 24,788). Stays in own second homes, with relatives or via Airbnb are not included. In the portal choose level Kommun, municipality Rättvik and period 2025-01 to 2025-12."
+  },
+  "gastnatter_2019": {
+   "name": "Guest nights in commercial accommodation 2019 (pre-pandemic)",
+   "unit": "guest nights",
+   "note": "The peak pre-pandemic year, +7.7% on 2018 (Swedish 253,421, foreign 26,014); hotels 23%, camping 38%, hostels 6% and confidential accommodation types 34%. In 2025 Rättvik was 19% below 2019, while the four Siljan municipalities together were 9% below."
+  },
+  "gastnatter_2020": {
+   "name": "Guest nights in commercial accommodation 2020 (pandemic year)",
+   "unit": "guest nights",
+   "note": "−27.6% on 2019. Foreign guest nights fell 69% to 7,970 and Swedish ones 23% to 194,943."
+  },
+  "gastnatter_2023": {
+   "name": "Guest nights in commercial accommodation 2023",
+   "unit": "guest nights",
+   "note": "−12.0% on 2022, when 263,802 guest nights marked a peak during the post-pandemic staycation boom. Foreign guest nights 22,204."
+  },
+  "gastnatter_2024": {
+   "name": "Guest nights in commercial accommodation 2024",
+   "unit": "guest nights",
+   "note": "−2.9% on 2023: Swedish guest nights fell 5.1% while foreign ones rose 17.3% to 26,051. Camping 52%, hotels 23%."
+  },
+  "gastnatter_sommar_andel": {
+   "name": "Share of the year's guest nights in June–August",
+   "unit": "%",
+   "note": "149,979 guest nights in June–August 2025 divided by 226,773 for the whole year = 66.1%; July alone had 80,487 (35%), 74% of them on campsites. In 2019 the share was 63.4% (178,305 / 281,099): since then summer has fallen 16% and the rest of the year 25%."
+  },
+  "gastnatter_vinter": {
+   "name": "Guest nights in the winter season December–March",
+   "unit": "guest nights",
+   "note": "December 2024–March 2025, −9.7% on the previous winter (28,965); about 12% of the 2025 annual total (own comparison, periods do not fully overlap). For Dalarna as a whole roughly half of all guest nights fall in winter (3.07 million December 2025–April 2026 according to Visit Dalarna), mainly in the mountains."
+  },
+  "utlandska_gastnatter_andel": {
+   "name": "Foreign guests' share of guest nights",
+   "unit": "%",
+   "note": "24,788 foreign guest nights out of 226,773 in 2025 (−4.8% on 2024); largest markets Norway, Germany, the Netherlands, the UK and Denmark. The share was 9.3% in 2019 and 11.6% in 2024, against 15.4% in the four Siljan municipalities and 20% in Dalarna."
+  },
+  "camping_andel_gastnatter": {
+   "name": "Camping's share of guest nights",
+   "unit": "%",
+   "note": "Camping 52.6%, hotels 23.0% and confidential accommodation types (cabin villages, hostels, agency-let cottages) 24.4% of guest nights in 2025. Camping's share was 37.7% in 2019; campers are weather-sensitive and concentrated in July."
+  },
+  "gastnatter_per_invanare": {
+   "name": "Guest nights per inhabitant",
+   "unit": "guest nights per inhabitant",
+   "note": "The year's commercial guest nights divided by the population on 31 December. Dalarna 18.0 and Sweden 6.7; Leksand 21.8, Orsa 19.6 and Mora 16.4 (2025); Rättvik had 25.7 in 2019."
+  },
+  "disponibla_baddar": {
+   "name": "Available beds per day in commercial accommodation (annual average)",
+   "unit": "beds",
+   "note": "On average 1,020 beds per day in 2025 (+1.8%), of which 244 occupied, giving an occupancy rate of 23.9%; for rooms 396 available and 34.1% occupancy. Campsite pitches for tents, caravans and motorhomes are probably not counted, so summer capacity is larger than this figure."
+  },
+  "logiintakter": {
+   "name": "Accommodation revenue in commercial accommodation",
+   "unit": "MSEK",
+   "note": "SEK 79,886,431 in 2025, +1.5% on 2024, about SEK 350 per guest night (own calculation). The average rate per occupied room was SEK 1,092 and revenue per available room SEK 372; Dalarna county had SEK 2,005 million (Tillväxtverket, Inkvartering 2025, p. 13)."
+  },
+  "gastnatter_siljan": {
+   "name": "Guest nights in the four Siljan municipalities (Leksand, Mora, Orsa, Rättvik)",
+   "unit": "guest nights",
+   "note": "−1.4% on 2024 and 9% below 2019 (1,151,570); Rättvik's share is 21.6%. Leksand had about 352,400, Mora 335,500 and Orsa 135,100 (derived by stepwise selection in the portal, consistent with Kolada)."
+  },
+  "turismkonsumtion": {
+   "name": "Tourism consumption in the municipality (visitor spending)",
+   "unit": "MSEK",
+   "note": "Spending by Swedish and foreign visitors in 2025: accommodation 29%, retail 23%, second homes/apartments 16%, culture 11%, restaurants 9%; about SEK 81,000 per inhabitant against the national SEK 47,500. In 2019 it was SEK 915 million in 2025 prices (−3%), and the four Siljan municipalities together had SEK 3,956 million in 2025. Experimental statistics that Tillväxtverket says should be read with caution at municipal level."
+  },
+  "turism_arsarbetskrafter": {
+   "name": "Employment generated by tourism (full-time equivalents)",
+   "unit": "FTEs",
+   "note": "Full-time jobs generated by visitor demand in the municipality in 2025, −2 on 2024 and 202 in 2019; seasonal jobs are converted to full-year, so more people work in the industry. The four Siljan municipalities together have 955. Experimental municipal statistics."
+  },
+  "turism_andel_bkp": {
+   "name": "Tourism's share of the municipal economy (gross municipal product)",
+   "unit": "%",
+   "note": "Share at current prices including taxes on products, 2023 is the latest year; tourism value added was SEK 182 million (44.9% in accommodation, 22.0% in retail, 18.6% in restaurants) and the municipality's GRP SEK 3,605 million. In 2019 the share was 8%, and in 2020 it fell to about 5.5%. Sweden 2.6%; neighbouring Orsa is among the ten municipalities in the country with the highest share."
+  },
+  "overnattningar_eget_fritidshus_dalarna": {
+   "name": "Overnight stays in own second homes in Dalarna",
+   "unit": "million overnight stays",
+   "note": "Visit Dalarna's tourism economic model (TEM) gives 17.4 million tourist overnight stays in Dalarna in 2025, of which 7.6 million (44%; 4.6 million in 2019) in own second homes, more than the 5.15 million commercial guest nights. With the county's 46,945 second homes that is about 160 nights per second home per year (own calculation); TEM also gives SEK 12.6 billion in turnover and 7,795 FTEs in the county's visitor industry."
+  },
+  "fritidshus": {
+   "name": "Second homes in the municipality",
+   "unit": "second homes",
+   "note": "Small houses with no registered residents, owned by private persons or estates, per the property tax register on 1 January 2025; 2,520 in 1998 and 2,902 in 2019 (SCB table TAB825). That is 271 second homes per 1,000 inhabitants (Sweden 60); Leksand has 4,157, Mora 5,003 and Orsa 1,830."
+  },
+  "fritidshus_lokalt_agda_andel": {
+   "name": "Share of second homes owned by people registered in the municipality",
+   "unit": "%",
+   "note": "So more than four in five second homes (about 83%) are owned by people in other municipalities, people abroad or estates, and the owners come from 160 municipalities. Nationally one in four second homes is locally owned."
+  },
+  "befolkning_juli_okning": {
+   "name": "Increase in people present in July compared with October–November",
+   "unit": "%",
+   "note": "SCB experimental statistics from mobile network data (Telia, calibrated to population statistics): about 11,140 people in October–November, 17,630 in July (+6,490) and 20,310 at Midsummer (+82%) in 2022. Leksand rose 49% in July, Orsa 35% and Mora 22%."
+  },
+  "befolkning_max_faktor": {
+   "name": "Peak summer presence relative to the year's median population (Classic Car Week Saturday)",
+   "unit": "times median population",
+   "note": "On Saturday 29 July 2023 at 20:00, mobile data showed three times as many people in the municipality as the year's median (about 10,000), the fifth-highest value among Swedish municipalities that summer. Leksand reached 2.4 times on Midsummer Eve."
+  },
+  "classic_car_week_gastnatter": {
+   "name": "Guest nights linked to Classic Car Week (weeks 30–31)",
+   "unit": "guest nights",
+   "note": "The municipality's situation report gives about 35,000 guest nights linked to the car week, plus day visitors; the figure probably also covers private letting, temporary camping and second homes. The organiser speaks of 10,000 cars during the week, held in week 31 since 1992; a 2018 parliamentary motion gave 40,000 guest nights."
+  },
+  "classic_car_week_andel_brott": {
+   "name": "Share of the municipality's annual reported crimes reported during Classic Car Week",
+   "unit": "%",
+   "note": "Police assessment after the 2026 car week, when among other things five suspected rapes, 30 assaults and about 900 fineable offences were reported; 245 people were fined for loud music (89 in 2025). The municipality's situation report shows about 100 reported crimes in week 31 against about 20 in a normal week."
+  },
+  "dalhalla_besokare": {
+   "name": "Concert visitors at Dalhalla per season",
+   "unit": "visitors",
+   "note": "About 120,000 visitors in summer 2026 with the venue's highest average audience so far; the record is 129,000 (2023) and in 2012 it was 40,000 (dalhalla.se/historia). The Draggängarna limestone quarry, worked until 1990, became a concert venue in 1994–1995 and now holds about 4,800–6,000 people; up to 400 people are on the payroll each season."
+  },
+  "rattviks_marknad_besokare": {
+   "name": "Visitors per Rättvik market (May and October)",
+   "unit": "visitors",
+   "note": "The municipality gives over 1,000 booked stalls and 100,000–120,000 visitors per market; the lower bound is used here. The market is held in early May and early October and dates back to the 1890s; an estimate, not a count."
+  },
+  "skiddagar_2100_rcp45": {
+   "name": "Days per year with good skiing snow in southern Dalarna 2069–2098 (RCP4.5)",
+   "unit": "days per year",
+   "note": "SMHI's calculation for Runn near Falun, the nearest example area (snow cover above 20 mm water equivalent): from about 90 days in 1961–1990 to just under 40 at the end of the century with limited emissions, and with high emissions (RCP8.5) good skiing becomes rare. There is no calculation for Rättvik, which lies somewhat further north."
+  },
+  "vegetationsperiod_2100_rcp85": {
+   "name": "Length of the growing season around Siljan 2069–2098 (RCP8.5)",
+   "unit": "months",
+   "note": "The period with daily mean temperature above about 5 °C, on average 5 months around Siljan in 1961–1990, is projected to be about 7 months by the end of the century with high emissions (2–3 weeks shorter with RCP4.5). A longer summer half-year may favour camping and outdoor life, but SMHI also expects heatwaves of up to two weeks around Siljan."
+  },
+  "klimat_hotellnatt": {
+   "name": "Climate impact per hotel night in Sweden",
+   "unit": "kg CO2 per guest night",
+   "note": "Energy for heating, electricity, hot water and laundry at a four-star hotel (hostels and similar 0.9 kg); food and construction are excluded. Accommodation weighs little against the journey: a week in a hotel gives 26 kg, while 1,000 km by fossil car gives 76 kg per person."
+  },
+  "klimat_bilresa_100mil": {
+   "name": "Climate impact per person of a 1,000 km holiday trip by fossil car (three people in the car)",
+   "unit": "kg CO2e per person",
+   "note": "Mid-size diesel car, 229 g CO2e per vehicle-km including manufacture of the car, split between three travellers; the same distance by electric car in the Nordics gives 20 kg, bus 30 kg and Nordic train 7 kg per person. A week in a hotel gives 26 kg, so the journey weighs more than the stay."
+  },
+  "sysselsatta_hotell_restaurang_andel": {
+   "name": "Employed in hotels and restaurants, share of all working in the municipality",
+   "unit": "%",
+   "note": "Share of people employed at workplaces in the municipality in November 2024, almost twice Dalarna (3.3%) and Sweden (3.75%). With 4,324 employed that is about 300 people (own calculation); the municipality calls tourism its largest private industry."
+  },
+  "sysselsatta_vard_omsorg_andel": {
+   "name": "Employed in health and social care, share of all working in the municipality",
+   "unit": "%",
+   "note": "Health care, elderly care and social services in November 2024; Dalarna 20.3%, Sweden 16.4%. The municipal and regional sector employs 34.5% of all who work in Rättvik (Sweden 23.3%), and the municipality is the largest employer with 1,056 permanent staff in 2025."
+  },
+  "sysselsatta_bygg_andel": {
+   "name": "Employed in construction, share of all working in the municipality",
+   "unit": "%",
+   "note": "November 2024; Dalarna 8.9%, Sweden 7.1%. The share has been 11–11.5% since 2020."
+  },
+  "sysselsatta_tillverkning_andel": {
+   "name": "Employed in manufacturing and mining, share of all working in the municipality",
+   "unit": "%",
+   "note": "November 2024; Dalarna 14.3%, Sweden 10.7%. The municipality counts the wood industry among its main industries; the share has fallen from 10.6% in 2020."
+  },
+  "sysselsatta_jord_skog_andel": {
+   "name": "Employed in agriculture, forestry and fishing, share of all working in the municipality",
+   "unit": "%",
+   "note": "November 2024; Dalarna 3.1%, Sweden 1.8%. The share was 6.3% in 2020."
+  },
+  "storsta_privata_arbetsgivare": {
+   "name": "Largest private employer (Rättvik Event AB, which runs Dalhalla), employees",
+   "unit": "employees",
+   "note": "SCB size class 250–299 employees in November 2025, shown as 275 by Ekonomifakta; the figure reflects many seasonal and hourly staff. That the largest private employer is an events company shows the weight of tourism; the municipality itself had 1,056 permanent staff."
+  },
+  "gastnatter_per_ankomst": {
+   "name": "Average length of stay (guest nights per arrival)",
+   "unit": "nights per arrival",
+   "note": "20.66 guest nights per inhabitant divided by 9.02 arrivals per inhabitant = 2.29 nights per arrival, equivalent to about 99,100 arrivals in 2025 (9.024 × 10,978). In 2019 the stay was 2.64 nights; Dalarna 3.12, Sweden 2.00, Leksand 1.89, Mora 1.95 and Orsa 2.54 (2025)."
+  },
+  "besparing_socialforvaltning": {
+   "name": "Savings requirement in elderly care and disability services (social services)",
+   "unit": "MSEK",
+   "note": "The social services department needed to cut costs by about SEK 25 million and gave notice on about 60 posts in elderly care and disability services in February 2025. It still overran its budget by SEK 5.6 million in 2025, and without the Dala Energi capital gain the municipality's result was SEK 14.8 million (1.7% of taxes and grants, below the 2% target)."
+  },
+  "foretagsklimat_ranking": {
+   "name": "Business climate, rank among 290 municipalities (Svenskt Näringsliv)",
+   "unit": "rank",
+   "note": "Rank 65 in the 2026 ranking (72 in 2025, 50 in 2024, best 31 in 2018 and worst 240 in 2009); firms' overall rating is 4.0 out of 6 against the Swedish average 3.5. In Dalarna, Orsa ranks 53, Leksand 76 and Mora 153."
+  },
+  "brp_per_invanare": {
+   "name": "Gross regional product (GRP) per inhabitant",
+   "unit": "SEK thousand per inhabitant",
+   "note": "The municipality's GRP was SEK 3,751 million in 2024 at current prices, 56% of the national average per inhabitant (SEK 606 thousand); Leksand 424, Mora 492 and Orsa 282. Per employed person SEK 834 thousand against Sweden's 1,184, reflecting labour-intensive industries such as tourism, retail and care and a large share of older residents."
+  },
+  "foretagare_andel_sysselsatta": {
+   "name": "Business owners as a share of the employed",
+   "unit": "%",
+   "note": "833 business owners in 2024 (844 the year before), rank 29 of 290; Dalarna 10.6%, Sweden 9.9%. Small firms with fewer than 50 employees have 2,008 jobs, 46% of all jobs in the municipality (p. 11)."
+  }
+ },
+ "challenges": {
+  "aldrande_befolkning": {
+   "title": "An ageing population",
+   "text": "The dependency ratio is 1.09, among the highest in Sweden (country 0.77), and the number of 85–89-year-olds is expected to rise by 74% by 2034. Deaths are twice the births, so Rättvik needs about a hundred more people moving in than out each year not to shrink; in 2022–2025 it was between 16 and 67."
+  },
+  "kompetens": {
+   "title": "Who will work in the schools and in care?",
+   "text": "The average age of the municipality's 1,056 permanent staff is 47, and many teachers, preschool teachers and assistant nurses will retire. Meanwhile 63% of young people think they will move away."
+  },
+  "skolresultat": {
+   "title": "School results and the village schools",
+   "text": "The share of year-9 pupils passing all subjects fell to 66.3%, while upper-secondary graduation within three years rose to 88%. There are fewer children and preschool groups are closing – and the village schools are part of the Rättvik model."
+  },
+  "va_natet": {
+   "title": "Old water and sewer pipes",
+   "text": "About 600 km of pipes, most built in 1955–1979, are to be renewed with borrowed money. Charges rose 20% in 2025 and 5% in 2026, and the group's debt is 113,000 kronor per inhabitant, mostly for water and sewerage."
+  },
+  "skyfall_hogvatten": {
+   "title": "Cloudbursts and Lake Siljan's high water",
+   "text": "Storm Hans in August 2023 damaged some 150 houses in the municipality and destroyed 25 km of road. Siljan's 100-year level already reaches the beach and almost half the campsite, and the high water is expected to rise a little in a warmer climate with wetter winters."
+  },
+  "vard_i_byarna": {
+   "title": "Care close by – in the villages too",
+   "text": "Region Dalarna's healthcare bus to Furudal, Bingsjö and Boda, decided in 2023, has still not come. Agency doctors do 18% of the GP work at the county's health centres, and each GP has 1,775 listed patients on average."
+  },
+  "ekonomi": {
+   "title": "A balanced budget",
+   "text": "Without the one-off gain from the Dala Energi shares, the 2025 result was only 1.7%, below the 2% goal, and social services went over budget. The municipality's own investments are small: 42 million kronor in 2026."
+  }
+ },
+ "assets": {
+  "fabodarna": {
+   "title": "The summer farms and the open landscape",
+   "text": "Rättvik has 608 hectares of summer-farm pasture, two thirds of its pasture, and the summer-farm tradition has been on UNESCO's intangible heritage list since 2024. 437 dairy cows on five farms still cover all local milk."
+  },
+  "besoksnaringen": {
+   "title": "Tourism",
+   "text": "Tourism is the municipality's largest private industry: Lake Siljan, Långbryggan, Dalhalla, Classic Car Week and Vidablick. On the Saturday of Classic Car Week three times as many people are in Rättvik as usual."
+  },
+  "naturbruket": {
+   "title": "Natural resource studies at Stiernhööksgymnasiet",
+   "text": "The upper-secondary school's natural resource programme has its own school farm and a newly bought dairy, and 42 applied for 24 places as their first choice. School meals get meat, potatoes and grain from the farm."
+  },
+  "foreningslivet": {
+   "title": "Associations and folk music",
+   "text": "93 associations, 24 of them village-hall associations, and almost twice as many sports clubs per inhabitant as the country. “When three Rättvik people meet, four fiddles play.”"
+  },
+  "egen_energi": {
+   "title": "Own electricity and renewable heat",
+   "text": "The municipality produced 105 GWh of electricity in 2024, three quarters of its use, mostly from wind, and district heating is 99% renewable. The municipality co-owns the grid and the district heating."
+  },
+  "tillit": {
+   "title": "Safety and trust",
+   "text": "Only 11% feel unsafe out in the evening and 73% trust other people, and child poverty is 9.4% against 12.9% in Sweden. Fewer are lonely than in Dalarna and the country."
+  },
+  "siljan": {
+   "title": "Lake Siljan",
+   "text": "Clear water with no algal blooms in 26 bathing-water samples in 2023–2026. The ice now stays about 74 days a year, against 129 days in the 1800s."
+  }
+ },
+ "kommun_vision": [
+  {
+   "title": "Vision 2030 – Rättvik, where tradition meets the future",
+   "text": "Rättvik is to be a growing municipality that takes responsibility for future generations – ecologically, socially and economically sustainable, with attractive places to live across the municipality, small-scale business and a safe, inclusive society. The municipality calls its approach the Rättvik model: integration, keeping the villages and village schools, renewable energy, locally produced food and an open landscape. Its Agenda 2030 work began in 2016, when UNDP visited Rättvik as the first municipality in Sweden, and today has 94 local ambitions."
+  }
+ ]
+}

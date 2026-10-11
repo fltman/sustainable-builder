@@ -1,0 +1,396 @@
+{
+  "topic": "oversvamning",
+  "compiled": "2026-10-08",
+  "indicators": [
+    {
+      "id": "markniva_lagsta_gata_kvarnholmen",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Lägsta gatu-/kajnivå på Kvarnholmen (Ölandskajen)",
+      "value": 1.5,
+      "unit": "m RH2000",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Hotkarta Kalmar, 100-årsnivå SSP5-8.5 år 2150 (+3,4 m), vattendjup i punkt vid Ölandskajen",
+        "publisher": "Myndigheten för civilt försvar, MCF (ursprungskälla: Lantmäteriets höjdmodell, SMHI)",
+        "url": "https://gis-tjanster.mcf.se/arcgis/rest/services/Oversvamningskarteringar/hotkartor_2026/MapServer/identify?geometry=16.361737,56.660365&geometryType=esriGeometryPoint&sr=4326&layers=all:93&tolerance=0&mapExtent=16.35,56.65,16.38,56.67&imageDisplay=800,600,96&returnGeometry=false&f=json"
+      },
+      "note_sv": "Egen beräkning: marknivå = vattennivå 3,4 m minus kartans vattendjup 1,89 m = 1,51 m; samma resultat ur hotkartan för 2,7 m. Därefter Skeppsbrogatan vid Skeppsbron 1,6 m, Kaggensgatan (södra) 1,8 m, Södra Vallgatan, Elevatorkajen och Östra Sjögatan (norra) 1,9 m. Kajkanter och trappor kan ligga lägre.",
+      "confidence": "estimate",
+      "replaces": "floodRisk",
+      "range": [
+        1.5,
+        1.9
+      ]
+    },
+    {
+      "id": "markniva_typisk_kvarnholmen",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Typisk marknivå på Kvarnholmen (median av markytan)",
+      "value": 2.7,
+      "unit": "m RH2000",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kustöversvämning – översvämmad mark vid nivå 0,1–5,0 m (RH2000)",
+        "publisher": "Myndigheten för civilt försvar, MCF (ursprungskälla: Lantmäteriets höjdmodell)",
+        "url": "https://gis-tjanster.mcf.se/arcgis/rest/services/Oversvamningskarteringar/kustoversvamning/MapServer"
+      },
+      "note_sv": "Egen beräkning: andel av Kvarnholmens 45 ha markyta som MCF:s kustskikt visar översvämmad vid varje decimeter. 50 % ligger under ca 2,7 m. Intervallet anger 25:e–75:e percentilen, 2,1–3,7 m. 17 % ligger under 2,0 m. Den högsta delen är Storgatan–Stortorget, ca 3,9–4,4 m. Vallarna och bastionerna ligger över 5 m och utgör 2 % av ytan.",
+      "confidence": "estimate",
+      "replaces": "floodRisk",
+      "range": [
+        2.1,
+        3.7
+      ]
+    },
+    {
+      "id": "andel_kvarnholmen_under_2m",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av Kvarnholmens markyta som översvämmas vid havsnivå +2,0 m RH2000",
+      "value": 17,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kustöversvämning – översvämmad mark vid nivå 2,0 m (RH2000)",
+        "publisher": "Myndigheten för civilt försvar, MCF (ursprungskälla: Lantmäteriets höjdmodell)",
+        "url": "https://gis-tjanster.mcf.se/arcgis/rest/services/Oversvamningskarteringar/kustoversvamning/MapServer"
+      },
+      "note_sv": "Egen beräkning med pixelräkning: 5 % vid 1,8 m, 17 % vid 2,0 m, 42 % vid 2,5 m och 57 % vid 3,0 m. Hamnområdet söder om Kvarnholmen (Barlastholmen, Tjärhovet och bangården, 51 ha) är till 68 % översvämmat redan vid 2,0 m. Beräkningen förutsätter inga skydd och inga vågor.",
+      "confidence": "estimate",
+      "replaces": "floodRisk"
+    },
+    {
+      "id": "hogvatten_100ar_idag",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Havsvattenstånd med 100 års återkomsttid i Kalmar, dagens klimat",
+      "value": 129,
+      "unit": "cm RH2000",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Högvattenhändelser i Kalmar idag och i framtiden (SMHI rapport nr 2025-09)",
+        "publisher": "SMHI på uppdrag av MSB/MCF",
+        "url": "https://www.mcf.se/siteassets/dokument/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/naturolyckor-och-klimat/oversvamning/oversvamningskartering-kust/kalmar-smhi-rapport-nr-2025-09-v01.pdf"
+      },
+      "note_sv": "Det är 115 cm över medelvattenståndet 1995–2014, som är 14 cm RH2000. Intervallet 122–136 cm är ett 90 % kredibilitetsintervall. Värdet kommer från en bayesiansk modell med 44 mätstationer, eftersom Kalmar saknar en lång mätserie. Det ersätter modellens antagna stormhöjning på 1,75 m.",
+      "confidence": "high",
+      "replaces": "floodRisk",
+      "range": [
+        122,
+        136
+      ]
+    },
+    {
+      "id": "hogvatten_500ar_idag",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Havsvattenstånd med 500 års återkomsttid i Kalmar, dagens klimat",
+      "value": 139,
+      "unit": "cm RH2000",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Högvattenhändelser i Kalmar idag och i framtiden (SMHI rapport nr 2025-09)",
+        "publisher": "SMHI på uppdrag av MSB/MCF",
+        "url": "https://www.mcf.se/siteassets/dokument/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/naturolyckor-och-klimat/oversvamning/oversvamningskartering-kust/kalmar-smhi-rapport-nr-2025-09-v01.pdf"
+      },
+      "note_sv": "Det är 125 cm över medelvattenståndet, med ett 90 % intervall på 131–148 cm. 50-årsnivån är 123 cm (117–129).",
+      "confidence": "high",
+      "range": [
+        131,
+        148
+      ]
+    },
+    {
+      "id": "hogvatten_100ar_2100_ssp245",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "100-årsnivå för havsvattenstånd i Kalmar år 2100 (SSP2-4.5)",
+      "value": 176,
+      "unit": "cm RH2000",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Högvattenhändelser i Kalmar idag och i framtiden (SMHI rapport nr 2025-09)",
+        "publisher": "SMHI på uppdrag av MSB/MCF",
+        "url": "https://www.mcf.se/siteassets/dokument/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/naturolyckor-och-klimat/oversvamning/oversvamningskartering-kust/kalmar-smhi-rapport-nr-2025-09-v01.pdf"
+      },
+      "note_sv": "Inkluderar landhöjning. 90 % konfidensintervall 138–215 cm. 500-årsnivån är 186 cm.",
+      "confidence": "high",
+      "range": [
+        138,
+        215
+      ]
+    },
+    {
+      "id": "hogvatten_100ar_2100_ssp585",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "100-årsnivå för havsvattenstånd i Kalmar år 2100 (SSP5-8.5)",
+      "value": 197,
+      "unit": "cm RH2000",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Högvattenhändelser i Kalmar idag och i framtiden (SMHI rapport nr 2025-09)",
+        "publisher": "SMHI på uppdrag av MSB/MCF",
+        "url": "https://www.mcf.se/siteassets/dokument/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/naturolyckor-och-klimat/oversvamning/oversvamningskartering-kust/kalmar-smhi-rapport-nr-2025-09-v01.pdf"
+      },
+      "note_sv": "Inkluderar landhöjning. 90 % konfidensintervall 144–250 cm. SSP3-7.0 ger 185 cm (137–234).",
+      "confidence": "high",
+      "range": [
+        144,
+        250
+      ]
+    },
+    {
+      "id": "hogvatten_100ar_2150_ssp245",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "100-årsnivå för havsvattenstånd i Kalmar år 2150 (SSP2-4.5)",
+      "value": 202,
+      "unit": "cm RH2000",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Högvattenhändelser i Kalmar idag och i framtiden (SMHI rapport nr 2025-09)",
+        "publisher": "SMHI på uppdrag av MSB/MCF",
+        "url": "https://www.mcf.se/siteassets/dokument/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/naturolyckor-och-klimat/oversvamning/oversvamningskartering-kust/kalmar-smhi-rapport-nr-2025-09-v01.pdf"
+      },
+      "note_sv": "90 % konfidensintervall 134–271 cm. MCF:s hotkarta från 2026 använder övre gränsen, avrundad till 2,7 m.",
+      "confidence": "high",
+      "range": [
+        134,
+        271
+      ]
+    },
+    {
+      "id": "hogvatten_100ar_2150_ssp585",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "100-årsnivå för havsvattenstånd i Kalmar år 2150 (SSP5-8.5)",
+      "value": 241,
+      "unit": "cm RH2000",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Högvattenhändelser i Kalmar idag och i framtiden (SMHI rapport nr 2025-09)",
+        "publisher": "SMHI på uppdrag av MSB/MCF",
+        "url": "https://www.mcf.se/siteassets/dokument/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/naturolyckor-och-klimat/oversvamning/oversvamningskartering-kust/kalmar-smhi-rapport-nr-2025-09-v01.pdf"
+      },
+      "note_sv": "90 % konfidensintervall 142–339 cm. MCF:s hotkarta från 2026 använder övre gränsen, 3,4 m. Vid den nivån står ca 64 % av Kvarnholmens markyta under vatten utan skydd (egen pixelräkning).",
+      "confidence": "high",
+      "range": [
+        142,
+        339
+      ]
+    },
+    {
+      "id": "havsniva_hojning_2150_ssp245",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Havsnivåhöjning i Kalmar till 2150 (SSP2-4.5, median)",
+      "value": 73,
+      "unit": "cm",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Beräknade framtida medelvattenstånd för Kalmar kommun (baserat på IPCC AR6 WG1)",
+        "publisher": "SMHI",
+        "url": "https://opendata-download.smhi.se/framtida_medelvattenstand/baserat-pa-ipcc-ar6-wg-1-2021/csv/Kalmar.csv"
+      },
+      "note_sv": "Nettohöjning efter landhöjning: medelvattenståndet går från 14 cm (1995–2014) till 87 cm i RH 2000. Det sannolika intervallet (17:e–83:e percentilen) är 55–131 cm i RH 2000, alltså 41–117 cm höjning.",
+      "confidence": "high",
+      "replaces": "seaRise",
+      "range": [
+        41,
+        117
+      ]
+    },
+    {
+      "id": "havsniva_hojning_2150_ssp585",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Havsnivåhöjning i Kalmar till 2150 (SSP5-8.5, median)",
+      "value": 112,
+      "unit": "cm",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Beräknade framtida medelvattenstånd för Kalmar kommun (baserat på IPCC AR6 WG1)",
+        "publisher": "SMHI",
+        "url": "https://opendata-download.smhi.se/framtida_medelvattenstand/baserat-pa-ipcc-ar6-wg-1-2021/csv/Kalmar.csv"
+      },
+      "note_sv": "Medelvattenståndet blir 126 cm i RH 2000 mot 14 cm 1995–2014. Det sannolika intervallet är 80–187 cm i RH 2000, alltså 66–173 cm höjning. 5:e–95:e percentilen är 57–236 cm i RH 2000.",
+      "confidence": "high",
+      "replaces": "seaRise",
+      "range": [
+        66,
+        173
+      ]
+    },
+    {
+      "id": "havsniva_hojning_2150_ssp585_mindre_troligt",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Havsnivåhöjning i Kalmar till 2150, mindre troligt högscenario (SSP5-8.5, median)",
+      "value": 175,
+      "unit": "cm",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Beräknade framtida medelvattenstånd för Kalmar kommun (baserat på IPCC AR6 WG1)",
+        "publisher": "SMHI",
+        "url": "https://opendata-download.smhi.se/framtida_medelvattenstand/baserat-pa-ipcc-ar6-wg-1-2021/csv/Kalmar.csv"
+      },
+      "note_sv": "Scenariot inkluderar instabila inlandsisar. Medelvattenståndet blir 189 cm i RH 2000, med 80–488 cm som 17:e–83:e percentil, alltså 66–474 cm höjning. Det är relevant som stresstest, inte som planeringsfall.",
+      "confidence": "medium",
+      "range": [
+        66,
+        474
+      ]
+    },
+    {
+      "id": "hogsta_uppmatta_vattenstand_kalmar",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Högsta uppmätta havsvattenstånd vid Kalmars mätstation (januari 2012)",
+      "value": 92,
+      "unit": "cm över medelvattenstånd",
+      "year": 2012,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Högvattenhändelser i Kalmar idag och i framtiden (SMHI rapport nr 2025-09)",
+        "publisher": "SMHI på uppdrag av MSB/MCF",
+        "url": "https://www.mcf.se/siteassets/dokument/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/naturolyckor-och-klimat/oversvamning/oversvamningskartering-kust/kalmar-smhi-rapport-nr-2025-09-v01.pdf"
+      },
+      "note_sv": "Sjöfartsverkets station Kalmar mäter sedan 2009. Enligt SMHI:s timdata motsvarar toppen 14 januari 2012 ca 110 cm RH2000, men värdet är inte kvalitetskontrollerat. Högsta kontrollerade timvärde är 104 cm RH2000 den 2 januari 2019. Oskarshamns rekord är 115 cm över medelvattenståndet (4 januari 2017) och Kungsholmsforts 133 cm (januari 1914).",
+      "confidence": "high"
+    },
+    {
+      "id": "medelvattenstand_kalmar_2024",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Beräknat medelvattenstånd i Kalmar 2024",
+      "value": 12.4,
+      "unit": "cm RH2000",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Havsvattenstånd 2024 – beräknat medelvattenstånd för 2024 i olika höjdsystem",
+        "publisher": "SMHI (ursprungskälla: SMHI och Sjöfartsverket)",
+        "url": "https://smhi.se/download/18.18f5a56618fc9f08e83498cb/1719387927770/mwreg_MW_2024.pdf"
+      },
+      "note_sv": "Skenbar landhöjning vid stationen Kalmar är 0,06 cm/år för mätperioden, alltså nästan noll: havet har i praktiken ätit upp landhöjningen. Medelvärdet av SMHI:s timdata 2016–2026 är ca 17 cm (egen beräkning).",
+      "confidence": "high"
+    },
+    {
+      "id": "hamn_klarar_permanent_hojning",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Permanent havsnivåhöjning som Kalmar hamn klarar i nuvarande utformning",
+      "value": 70,
+      "unit": "cm",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Klimatanpassningsplan för Kalmar kommun (uppdaterad 2025)",
+        "publisher": "Kalmar kommun",
+        "url": "https://www.kalmar.se/download/18.7d8831d195b2429620388a0/1744111167037/Uppdaterad_Klimatanpassningsplan_2025.pdf"
+      },
+      "note_sv": "Kommunens bedömning: hamnen kan behöva förstärkas mot tillfälliga högvatten redan innan. Även gästhamnen påverkas kraftigt om medelnivån stiger mer än ca 0,7 m. Vid 1 m krävs ytterligare skyddsåtgärder.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bhn_idag_kalmar",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Beräknad högsta havsnivå i Kalmar i dagsläget (BHN, utan planeringshorisont)",
+      "value": 160,
+      "unit": "cm RH2000",
+      "year": 2021,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Riskhanteringsplan för Kalmar tätort 2022–2027",
+        "publisher": "Länsstyrelsen i Kalmar län (ursprungskälla: SMHI/MSB)",
+        "url": "https://www.lansstyrelsen.se/download/18.74bb1bce17ce9bbba594b911/1639495619966/Beslutad%20riskhanteringsplan%20f%C3%B6r%20Kalmar.pdf"
+      },
+      "note_sv": "Länsstyrelsen anser att befintliga bostäder och samhällsviktiga funktioner bör ta hänsyn till risker upp till denna nivå redan idag. BHN med horisont 2120 är 278 cm, avrundat till 280 cm, vilket är planeringsnivån för ny bebyggelse.",
+      "confidence": "medium"
+    },
+    {
+      "id": "hogsta_havsvattenstand_2100",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Högsta beräknade havsvattenstånd i Kalmar år 2100",
+      "value": 246,
+      "unit": "cm RH2000",
+      "year": 2018,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Hotkartor Kalmar 2018: Beräknad högsta nivå i slutet av seklet (2,46 m i RH2000)",
+        "publisher": "Myndigheten för civilt försvar, MCF (tidigare MSB)",
+        "url": "https://kartor.mcf.se/oversvamningsportal/avancerade-kartor/hot-och-riskkartor/kalmar_2018/hotkartor.html"
+      },
+      "note_sv": "Värdet är detsamma som i baslinjen, men källan är nu primär. Samma hotkarta anger 100-årsnivån i slutet av seklet till 1,85 m och 200-årsnivån till 1,90 m (RCP8.5). MCF:s nya hotkartor från 2026 bygger i stället på SMHI 2025: 1,3 m (50 år idag), 2,7 m (100 år 2150, SSP2-4.5) och 3,4 m (100 år 2150, SSP5-8.5).",
+      "confidence": "high"
+    }
+  ]
+}

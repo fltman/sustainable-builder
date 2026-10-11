@@ -2,17 +2,18 @@
 
 | What | Where | Source | License / terms |
 |---|---|---|---|
-| Map data and everything derived from it (generated `cities/*`, game packs) | `cities/` (not in git) | © OpenStreetMap contributors | ODbL 1.0 — attribute "© OpenStreetMap contributors", share-alike for derived databases |
-| Place search | at runtime | Nominatim (OSMF) | [usage policy](https://operations.osmfoundation.org/policies/nominatim/): ≤1 request/s, identify the app |
-| Map download | at runtime | OSM API, Overpass API mirrors | [OSM API usage policy](https://operations.osmfoundation.org/policies/api/), Overpass fair use |
-| Vehicles (`game/public/models`, `game/art/battlecars.blend`) | game | Kalmar Wasteland, Anders Bjarby | **author to confirm before publishing** (suggested: CC BY 4.0) |
-| Bitmaps (`game/public/art`) | game | generated with OpenAI image models for Kalmar Wasteland | **author to confirm** (suggested: CC BY 4.0) |
-| Sound effects and generic narrator lines (`game/public/audio/sfx-*`, `voice-*`) | game | generated with ElevenLabs for Kalmar Wasteland | ElevenLabs terms for the generating account; **author to confirm** |
-| Music (`game/public/audio/music*.mp3`) | game | generated with Suno for Kalmar Wasteland | Suno terms of the generating account (paid plans: owner may use commercially) — **author to confirm** |
-| Procedural textures (`cache/textures`) | generated locally | `pipeline/make_textures.py` | same as the code (MIT) |
-| ElevenLabs sound-effects skill notes | `.agents/skills/elevenlabs/references/sound-effects.md` | elevenlabs/skills | MIT |
-| Image API wrapper | `.agents/skills/imagegen/scripts/generate_image.py` | this project | MIT |
-| npm and Python dependencies | `game/package.json`, `pipeline/web/package.json`, `requirements.txt` | their authors | their own licenses (MIT, Apache-2.0, BSD …) |
+| Map data and everything derived from it (cities, packs, the site's map) | `cities/` (not in git) | © OpenStreetMap contributors | ODbL 1.0 – attribute "© OpenStreetMap contributors", share-alike for derived databases |
+| Terrain | `cities/*/terrain.json`, packs | Lantmäteriet Markhöjdmodell / Copernicus GLO-30 | CC BY 4.0 / Copernicus licence – keep the attribution (the site shows it) |
+| Place search, map download | at runtime | Nominatim, OSM API, Overpass | [Nominatim policy](https://operations.osmfoundation.org/policies/nominatim/), OSM API policy, Overpass fair use |
+| Key figures | `cities/*/vision/research/deep/kolada.json` | Kolada (RKA) and its original sources (SCB, the Public Health Agency …) | open data – cite the source (each record does) |
+| Research records | `examples/*/vision/research/`, `cities/*/vision/research/`, `pipeline/research/` | the sources each record names | facts with citations; quotes stay short |
+| General research evidence | `site/research/vision-research.json` | the research behind Kalmar 2126 (sources per item) | as above |
+| Ambient sounds and effects (`site/public/audio/amb-*`, `sfx-*`) | site | generated with ElevenLabs for Kalmar 2126 | ElevenLabs terms of the generating account; **author to confirm before publishing** |
+| Default soundtrack (`site/public/audio/music.mp3`) | site | generated with Suno for Kalmar 2126 | Suno terms of the generating account – **author to confirm** |
+| People and vehicles (`site/public/models/`) | site | modelled in Blender for Kalmar 2126 | **author to confirm** (suggested: CC BY 4.0) |
+| Surface textures (`site/public/textures/`) | site | made for Kalmar 2126 | **author to confirm** |
+| Procedural city textures (`cache/textures`) | generated locally | `pipeline/make_textures.py` | same as the code (MIT) |
+| npm and Python dependencies | `site/package.json`, `pipeline/web/package.json`, `requirements.txt` | their authors | their own licenses (MIT, Apache-2.0, BSD …) |
 
 Google Street View is used only as a visual reference during refinement rounds; no Google imagery is
-stored in this repository or in generated cities.
+stored in this repository or in generated places.

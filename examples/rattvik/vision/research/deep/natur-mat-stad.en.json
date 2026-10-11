@@ -1,0 +1,204 @@
+{
+ "indicators": {
+  "akermark_hektar": {
+   "name": "Arable land in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Total arable land in the Swedish Board of Agriculture's area statistics (farm support applications and the farm register). The area has been almost unchanged since 2010 (2,365 ha) but was 2,666 ha in 1981 and 2,700 ha in 1985, i.e. 300–330 ha more than today."
+  },
+  "vall_andel_akermark": {
+   "name": "Share of arable land under grass ley (hay and grazing)",
+   "unit": "%",
+   "note": "1,910 ha of ley in use divided by 2,368 ha of arable land in 2025. Including 135 ha of green fodder crops, just over 86% of the arable land grows feed for cattle, sheep and horses. In 1981 the ley share was 56% (1,480 of 2,666 ha)."
+  },
+  "spannmal_hektar": {
+   "name": "Cereal growing in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Total cereals in 2025: spring barley 136 ha, oats 62 ha, spring wheat 22 ha and winter wheat 8 ha etc., 9.7% of arable land; in addition 6 ha of table potatoes and 2 ha of horticultural crops. In 1981 at least 941 ha of cereals were grown, 756 ha of it barley (own sum of the crops), so the area has shrunk by more than three quarters."
+  },
+  "betesmark_slatterang_hektar": {
+   "name": "Pasture and hay meadows in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Total pasture and hay meadow in 2025: summer-farm (fäbod) grazing 608 ha, pasture 349 ha, hay meadow 6 ha and unspecified 9 ha. The area has varied between 766 and 1,825 ha since 2003, and the swings are mainly in fäbod grazing (449–1,322 ha)."
+  },
+  "fabodbete_hektar": {
+   "name": "Summer-farm (fäbod) grazing in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Forest grazing at summer farms registered in the farm support system. It is 63% of the municipality's pasture (608 of 971 ha), 12% of Dalarna's fäbod grazing (5,224 ha) and 4% of Sweden's (15,703 ha). Rättvik ranks third in the county after Malung-Sälen (1,975 ha) and Älvdalen (1,351 ha)."
+  },
+  "fabodbete_foretag_lan": {
+   "name": "Farm businesses with summer-farm (fäbod) grazing in Dalarna",
+   "unit": "businesses",
+   "note": "Number of businesses with fäbod grazing in the county in 2025 (78 in 2023 and 2024); 205 in all of Sweden. The number is not published per municipality. In 2008 the County Administrative Board counted 85 actively used summer-farm sites with 100 farmers in Dalarna, of which only about twenty had traditional operation with milking and dairy processing (report 2008:12)."
+  },
+  "jordbruksforetag_antal": {
+   "name": "Farm businesses in Rättvik Municipality",
+   "unit": "businesses",
+   "note": "All size groups; there were 106 in 2020. Farms with more than 2 ha of arable land have halved from 210 in 1981 to 103 in 2025 (own sum of the size groups). Eleven farms have more than 50 ha of arable land, and the County Administrative Board judges that seven are large enough to employ more than one person full time."
+  },
+  "mjolkkor_antal": {
+   "name": "Dairy cows in Rättvik Municipality",
+   "unit": "cows",
+   "note": "Dairy cows in June 2023 on only five farms (twelve in 2010); there were 909 dairy cows in 1981. Even so, milk production covers the municipality's entire consumption, according to the County Administrative Board. Municipal figures exist for 2010, 2013, 2016, 2020 and 2023."
+  },
+  "notkreatur_antal": {
+   "name": "Cattle in Rättvik Municipality",
+   "unit": "animals",
+   "note": "Sum of dairy cows (437), suckler cows (255), heifers, bulls and steers (591) and calves under one year (410) in June 2023. The corresponding sum was 1,975 in 1981, 1,859 in 2010 and 1,613 in 2020. Suckler cows have grown from 10 in 1981 to 255 while dairy cows have halved; there were also 181 horses in 2023."
+  },
+  "far_antal": {
+   "name": "Sheep (ewes and rams) in Rättvik Municipality",
+   "unit": "animals",
+   "note": "Ewes and rams in June 2023 on 27 farms, plus 560 lambs. The number has almost doubled since 1981 (317) and 1990 (288); the 2019 comprehensive plan notes that sheep are often kept as a hobby."
+  },
+  "sjalvforsorjningsgrad_vikt_lan": {
+   "name": "Food self-sufficiency in Dalarna, by weight",
+   "unit": "%",
+   "note": "The county's production (90,000 tonnes) divided by its consumption (239,000 tonnes), assuming everything produced stays in the county; Sweden as a whole is at 75%. The County Administrative Board stresses that the calculation is very uncertain; the previous situation report (2022) gave 42%. Only 10% of the raw materials cannot be produced locally, such as coffee, tea, rice and exotic fruit."
+  },
+  "sjalvforsorjningsgrad_energi_lan": {
+   "name": "Food self-sufficiency in Dalarna, by energy",
+   "unit": "%",
+   "note": "Production corresponds to 890 kcal per person per day against consumption of 3,000 kcal. The Swedish Food Agency's crisis diet is 2,450 kcal, so the county's primary production covers just over a third of crisis needs, and less if the raw materials must also be processed in the county."
+  },
+  "sjalvforsorjningsgrad_notkott": {
+   "name": "Self-sufficiency in beef in Rättvik Municipality",
+   "unit": "%",
+   "note": "The County Administrative Board's calculation of local production against local consumption. In the same calculation milk production covers the municipality's entire consumption, while the cereal harvest covers one fifth."
+  },
+  "sjalvforsorjningsgrad_lamm": {
+   "name": "Self-sufficiency in lamb in Rättvik Municipality",
+   "unit": "%",
+   "note": "Same calculation as for beef. Overall, primary production in the municipality is 'clearly lower than consumption', according to the County Administrative Board."
+  },
+  "livsmedelskedjan_sysselsatta": {
+   "name": "People employed in the food chain in Rättvik Municipality",
+   "unit": "people",
+   "note": "The County Administrative Board's estimate, from farming to restaurants; half are women and most work in restaurants and retail. In all of Dalarna 9,500 people work in the food chain."
+  },
+  "livsmedelsforadlare_antal": {
+   "name": "Food processing businesses in Rättvik Municipality",
+   "unit": "businesses",
+   "note": "Sum of the County Administrative Board's list: Nya Siljans Chark (slaughterhouse, 25 employees), Rättviks glass (ice cream, 11 employees), five bakeries, two chocolate makers, one brewery and three other meat businesses. In addition there are five greenhouse businesses (two growing ornamentals), ten food shops and 47 restaurants."
+  },
+  "akermark_per_invanare": {
+   "name": "Arable land per inhabitant in Rättvik Municipality",
+   "unit": "hectares per inhabitant",
+   "note": "2,343 ha of arable land divided by 11,042 inhabitants in 2023, just above the world average of 0.19 ha. With Swedish consumption and average world yields, at least 0.38 ha per person would be needed for self-sufficiency, according to the County Administrative Board."
+  },
+  "skogsmark_andel_landareal": {
+   "name": "Forest land as share of land area",
+   "unit": "%",
+   "note": "172,707 ha of forest land (157,660 ha of it productive) divided by 193,047 ha of land in 2020. Open mire takes another 5.9% (11,463 ha). Water covers 21,942 ha, 10% of the municipality's total area."
+  },
+  "jordbruksmark_andel_landareal": {
+   "name": "Agricultural land as share of land area",
+   "unit": "%",
+   "note": "3,260 ha of agricultural land (2,347 ha arable and 913 ha pasture) divided by 193,047 ha of land in 2020; in 2010 it was 3,513 ha. The 2019 comprehensive plan says 'just under three per cent' and describes the land as small-scale, lime-rich and fertile, mainly along the lakes of the Siljan Ring."
+  },
+  "bebyggd_mark_andel_landareal": {
+   "name": "Built-up and developed land as share of land area",
+   "unit": "%",
+   "note": "4,462 ha of built-up and developed land (buildings, plots, roads, railway etc.) divided by 193,047 ha of land in 2020. In 2010 the area was 4,309 ha, so it grew by 153 ha in ten years, about 15 ha a year."
+  },
+  "skog_privatpersoner_andel": {
+   "name": "Share of productive forest land owned by private individuals",
+   "unit": "%",
+   "note": "51,000 ha of declared productive forest land owned by natural persons divided by 157,000 ha in total in 2025; both figures are rounded to thousands of hectares. The rest is owned by companies, the state and other public or private owners. Of the private individuals' forest, 31,000 ha is owned by residents of the municipality and 14,000 ha by owners living outside Dalarna."
+  },
+  "skogsagare_privatpersoner_antal": {
+   "name": "Private individuals owning forest in Rättvik Municipality",
+   "unit": "owners",
+   "note": "1,235 of the owners are registered residents of the municipality, 377 live elsewhere in Dalarna and 679 outside the county; 952 are women. The number has fallen from 2,740 in 1999. The median holding per management unit is only 11 ha while the mean is 85 ha (table PX12)."
+  },
+  "foryngringsavverkning_anmald_hektar": {
+   "name": "Notified regeneration felling (clear-cutting) in Rättvik Municipality",
+   "unit": "hectares",
+   "note": "Felling notifications and permit applications in 2025: 708 ha by private owners and 708 ha by other owners. The 2021–2025 average was 1,405 ha a year (0.9% of the productive forest land), against 2,030 ha a year in 2010–2014, when other owners notified far more. Notified area is not the same as area actually felled."
+  },
+  "naturreservat_antal": {
+   "name": "Nature reserves in Rättvik Municipality",
+   "unit": "reserves",
+   "note": "29 nature reserves in force covering 3,724 ha in total (3,611 ha of land), ten of them created since 2015. The newest is the municipal Lerdalsberget reserve next to Rättvik's ski slope, decided by the municipal council on 7 May 2026 (13.9 ha in the register, about 12 ha according to the decision). The municipality's own web page still counts 27."
+  },
+  "natura2000_omraden_antal": {
+   "name": "Natura 2000 sites in Rättvik Municipality",
+   "unit": "sites",
+   "note": "14 sites lie entirely within the municipality (1,688 ha), and the Voxnan river (912 ha) is shared with Ovanåker and Ljusdal. Gåsberget and Glistjärn are designated under both the Habitats and the Birds Directive; Glistjärn, near the lime works north of the town, is described as the municipality's finest bird lake."
+  },
+  "rodlistade_arter_observerade_antal": {
+   "name": "Red-listed species recorded in Rättvik Municipality since 2000",
+   "unit": "species",
+   "note": "Number of distinct species on the 2020 Swedish Red List with at least one record from 2000–2026 in the municipality, extracted on 11 October 2026 (729 species for all years, 511 since 2010). The figure reflects both species richness and survey effort; protected records have generalised coordinates and the 2025 Red List was not yet in the database. The most recorded species are the marsh fritillary butterfly, the lichen Alectoria sarmentosa and the orchid creeping lady's-tresses."
+  },
+  "geosites_antal": {
+   "name": "Geosites of Siljan Geopark within Rättvik Municipality",
+   "unit": "sites",
+   "note": "The municipality lists twelve geosites: the Amtjärn quarry, Boda church, Dalhalla, the Enån nature reserve, Fjäckan, Långbryggan, the Solberga limestone quarry, Springkällan, Styggforsen, Vidablick, Vindförbergs udde and the Östbjörka nature reserve. Siljan Geopark is run by Leksand, Mora, Orsa and Rättvik with the County Administrative Board and Visit Dalarna; it became Sweden's first national geopark in 2019, and SGU extended the status by five years in November 2025. The meteorite impact that created the Siljan Ring has been dated to 377 million years ago (SGU report 2010:21)."
+  },
+  "gronyta_andel_tatort": {
+   "name": "Green space in Rättvik town, share of land area",
+   "unit": "%",
+   "note": "854 ha of green space (490 ha open land and 364 ha forest) divided by 1,242 ha of land in the built-up area in 2020; there is also 114 ha of arable land. Publicly accessible green space is 499 ha (40%). Statistics Sweden counts private gardens and lawns between houses as green space."
+  },
+  "hardgjord_mark_andel_tatort": {
+   "name": "Sealed (impervious) land in Rättvik town, share of land area",
+   "unit": "%",
+   "note": "272 ha of sealed land divided by 1,242 ha of land in 2020: buildings 78 ha, roads and railway 103 ha and other sealed surfaces 91 ha. In 2015 the share was 22.1% (274 of 1,238 ha). For comparison, Kalmar's built-up area is 40% sealed (Statistics Sweden)."
+  },
+  "tradbevuxen_mark_andel_tatort": {
+   "name": "Forest-covered land in Rättvik town, share of land area",
+   "unit": "%",
+   "note": "364 ha of land classed as forest within the town's green space divided by 1,242 ha of land in 2020 (388 ha and 31.3% in 2015). It is not a tree-canopy measurement: street trees and scattered garden trees are not counted, so it may underestimate canopy cover. No canopy-cover figure for Rättvik has been found."
+  },
+  "narhet_gronomrade_200m_andel": {
+   "name": "Share of town residents with a green area within 200 metres",
+   "unit": "%",
+   "note": "Covers the 5,318 residents of Rättvik town and green areas of at least 0.5 ha; 98% have one within 300 m and 100% within 500 m. The town has 167 such green areas totalling 345 ha, four of them larger than 10 ha."
+  },
+  "lis_omraden_antal": {
+   "name": "Lakeshore rural-development (LIS) areas in the comprehensive plan",
+   "unit": "areas",
+   "note": "Of 24 shoreline areas studied, 20 were designated where exemptions from shoreline protection can be granted on rural-development grounds; five are on Lake Siljan (Ickviken–Vikarbyn, Stumsnäs, Tina–Gärdebyn, the boat harbour and Lerdal). Shoreline protection is otherwise 100 m, extended at Säsvik on Oresjön and at Sollen and Storholmen in Amungen (plan part 2). The 2024 planning strategy judges that the LIS plan needs revision."
+  },
+  "detaljplanerad_mark_smahus_antal": {
+   "name": "Land zoned for detached houses (planning reserve)",
+   "unit": "houses",
+   "note": "The comprehensive plan states that zoned land exists for 'just over 250 detached houses', mainly in central Rättvik, Lerdal–Gärdebyn, Vikarbyn and Furudal, but several plans are old and lack roads or water and sewerage. At the time 5–10 houses were being built a year, and the town lacks flats in apartment buildings."
+  },
+  "detaljplaner_pagaende_antal": {
+   "name": "Detailed development plans in active preparation in Rättvik Municipality",
+   "unit": "plans",
+   "note": "Active plans: Klockargården (detached houses), Utsikten, Persborg and Siljansborg (housing, Siljansborg also temporary accommodation), Haga- and Börjes väg (streets, nature and stormwater), Stora Lissbrändan, and Garvaren, Mangeln and Färgaren. Utsikten (about 47 house plots south of the ski slope) was adopted by the municipal council on 11 June 2026, and the development agreement for Klockargården (up to seven plots) was approved on 7 May 2026. Nine assignments are queued, among them a new comprehensive plan with an in-depth plan for Rättvik–Vikarbyn, 'Vackert Rättvik 2.0' and the Hedslund sports ground."
+  },
+  "persborg_planerade_bostader": {
+   "name": "Planned homes in the new Persborg area",
+   "unit": "homes",
+   "note": "About 100 homes in apartment buildings, detached and semi-detached houses, conceived as multigenerational housing in an eco-village; the detailed plan is prioritised but the design is not settled. Students at Dalarna University produced nine proposals in spring 2026. The site is in Sjurberg on Lake Siljan, where the tourist hotel Persborg stood; a 1960s–70s cabin village now occupies the hotel site (heritage programme 2026)."
+  },
+  "langbryggan_kajreparation_kostnad": {
+   "name": "Cost of repairing Långbryggan's outer quay in 2020",
+   "unit": "SEK",
+   "note": "The municipality's cost of 'around half a million kronor' after a storm in January 2020 tore up the planks where the Gustaf Wasa docks; according to Dala-Demokraten the job grew larger than expected and the whole quay was rebuilt with a new wave guard. The pier is 628 m long, was built in 1895 and reopened on 6 June 1992 after a major renovation partly financed by 2,938 named planks; that was the last major repair before 2020."
+  },
+  "lokstallarna_renovering_kostnad": {
+   "name": "Renovation cost of Lokstallarna (engine sheds) at Rättvik station",
+   "unit": "SEK",
+   "note": "Estimated total cost of the multi-year renovation of the engine shed from about 1890, which the municipality took over in 2006. The building reopened on 4 June 2025 with four halls totalling 800 m² and up to 15 m ceiling height for culture, food, crafts and associations (municipal news item, 4 June 2025)."
+  },
+  "byggnadsminnen_antal": {
+   "name": "Listed buildings (byggnadsminnen) in Rättvik Municipality",
+   "unit": "listed buildings",
+   "note": "Among them the 1840s spa pavilion at Hvilan in Lerdal (listed 1988), Solgården (1897) and Tånggården in Sjurberg, Danielsgården in Bingsjö, Matsgården in Östbjörka and the Blånnes barn in Gärdsjö; the 2019 comprehensive plan counted ten. Rättvik church is instead protected as an ecclesiastical monument, and according to the Diocese of Västerås's assessment (2006) the adjoining church stables are also covered by the heritage law."
+  },
+  "riksintressen_kulturmiljo_antal": {
+   "name": "Areas of national interest for cultural heritage in Rättvik Municipality",
+   "unit": "areas",
+   "note": "There are also 55 municipal heritage areas, and a heritage programme was adopted by the municipal executive board on 17 March 2026. Closest to the centre is Kyrkudden (W 89) with the medieval church, a tithe barn from 1758 and 87 church stables, one of them tree-ring dated to 1492 according to the heritage programme. Five of the national-interest areas are summer-farm environments (Swedish National Heritage Board's list)."
+  },
+  "kretsloppsplan_mal_avfallsminskning": {
+   "name": "Target in the 2023–2030 waste plan: less waste generated by 2030",
+   "unit": "%",
+   "note": "The waste plan for Rättvik, Leksand, Gagnef and Vansbro was adopted in Rättvik on 22 February 2024: waste is to fall by at least 25% and waste sent to incineration by 50% by 2030. Households take bulky waste to the Drafsån recycling centre (open around the clock with 'Anytime') and to Furudal, and since October 2025 the municipality's Ta Till Vara shop at Riksvägen 23 sells reused goods collected from a staffed container at Drafsån."
+  }
+ }
+}

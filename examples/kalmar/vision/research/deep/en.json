@@ -1,0 +1,899 @@
+{
+ "indicators": {
+  "kustvatten_kalmar_god_ekologisk_status_antal": {
+   "name": "Coastal water bodies in Kalmar Municipality with good ecological status",
+   "unit": "of 9 coastal water bodies",
+   "note": "Seven of the nine water bodies have moderate ecological status and two (Hossmoviken, Västra sjön) have poor status. None reaches good chemical status, mainly because of mercury and PBDE in fish, which exceed the limits throughout the country. Confirms Kolada's 0% (N85089) at water-body level. The water bodies and their MS_CD codes are listed in the notes file."
+  },
+  "kustvatten_kalmar_naringsamnen_ej_god_andel": {
+   "name": "Coastal water bodies in Kalmar Municipality where the nutrients quality factor is poor",
+   "unit": "% (9 of 9)",
+   "note": "Nutrients are poor in all nine water bodies. In Södra Kalmarsund and Västra sjön, summer total phosphorus is classed as bad. Phytoplankton (chlorophyll) is moderate in seven and poor in two. Benthic fauna and macrophytes (eelgrass) are not classified in VISS."
+  },
+  "kustvatten_kalmar_tidsfrist_god_status": {
+   "name": "Deadline for good ecological status in Kalmar's coastal waters (environmental quality standard)",
+   "unit": "year",
+   "note": "All nine water bodies have an exemption with a deadline of 2039 on the grounds of natural conditions. The pressures identified are agriculture and the surrounding sea water. For pressure from private sewage systems, treatment plants and stormwater, the deadline is 2027."
+  },
+  "kalmarstationer_naringsamnen_nklass": {
+   "name": "Nutrient status at the Kalmar stations (mean numerical class, 0–1)",
+   "unit": "Nclass (good ≥ 0.6)",
+   "note": "Own average calculation for 2021–2023 and the stations K15-MV (0.34), K3-V (0.28) and K11-MV (0.30), all of which are poor. The threshold for good status is 0.6. Chlorophyll at the same stations: 0.50, 0.50 and 0.69."
+  },
+  "kuststationer_god_klorofyll_lan": {
+   "name": "Coastal stations with good or high status for phytoplankton (chlorophyll a)",
+   "unit": "number of 21",
+   "note": "Refers to 2021–2023 and is the same number as the previous period. Chlorophyll status is often better than nutrient status because nitrogen limits the phytoplankton while phosphorus concentrations are high. Secchi depth: 5 stations good, 6 moderate, 9 poor."
+  },
+  "kalmar_arv_kvaveutslapp": {
+   "name": "Nitrogen discharge from Kalmar wastewater treatment plant",
+   "unit": "kg N/year",
+   "note": "6.24 million m³ of treated wastewater. Kalmar wastewater treatment plant is the county's largest point source of nitrogen. For comparison, the Ljungbyån river carried out about 390 tonnes of nitrogen in 2021. Diffuse emissions from agriculture are the largest source."
+  },
+  "kalmar_arv_fosforutslapp": {
+   "name": "Phosphorus discharge from Kalmar wastewater treatment plant",
+   "unit": "kg P/year",
+   "note": "For comparison, the Ljungbyån river carried about 4.2 tonnes of phosphorus out to sea in 2021, according to the same report."
+  },
+  "kalmarsundsverket_minskning_n_p": {
+   "name": "Planned reduction in nitrogen and phosphorus discharge with Kalmarsundsverket (completed 2027)",
+   "unit": "% (at least), compared with the current plant",
+   "note": "The plant is being brought into operation in stages in 2026 and is to be completed in 2027. Up to 80% of the water is to be treatable for reuse. With 2023 discharges, 35% corresponds to about 30 tonnes of nitrogen and 0.55 tonnes of phosphorus per year (own calculation)."
+  },
+  "algras_djuputbredning_kalmarsund": {
+   "name": "Maximum depth distribution of eelgrass in Kalmarsund",
+   "unit": "m",
+   "note": "The range was 6.0–6.6 m at three sites (Beijershamn, Stora Rör, Köpingsvik), with a declining trend 2007–2023. At the baseline survey in 2006/07, eelgrass was found down to at least 8.3 m. At Stora Rör, fennel pondweed covered more than eelgrass in 2021–2023. The report nevertheless assesses the depth distribution as at least good."
+  },
+  "storspigg_andel_kustfangst_lan": {
+   "name": "Share of stickleback in the catch in the coastal small-fish survey",
+   "unit": "% of total catch",
+   "note": "Refers to 2021 and 2022. The density of three-spined stickleback in Kalmarsund has more than increased tenfold over 30–40 years. Along the east coast, spawning and nursery areas for perch and pike have shrunk by 40–65%. The report describes a continued difficult situation for predatory fish in Kalmarsund."
+  },
+  "dricksvattenproduktion_kalmar": {
+   "name": "Drinking water production in Kalmar Municipality (annual mean, all waterworks)",
+   "unit": "m³/day",
+   "note": "An annual mean for all waterworks, but the page does not state which year. The raw water comes from the Nybroåsen esker, supplemented with pretreated river water. The waterworks and water tower in Berga were completed in 1972. No information on maximum capacity or the ceiling of the water permit has been found."
+  },
+  "dricksvatten_per_invanare_kalmar": {
+   "name": "Drinking water produced per inhabitant per day, Kalmar Municipality",
+   "unit": "litres/inhabitant/day",
+   "note": "Own calculation: 16,000 m³ per day divided by the whole population (73,068) gives 219 l, and divided by those connected (92%) gives 238 l. The figure is total production, i.e. including businesses, leakage and deliveries to Torsås, and is not household consumption (county: about 150 l). Kalmar Vatten states 140 l as the national average for households."
+  },
+  "kalmar_ravatten_konstgjord_infiltration": {
+   "name": "Share of Kalmar Municipality's raw water from artificial infiltration",
+   "unit": "%",
+   "note": "Updates the baseline's 80% (regional water supply plan, survey 2021). Kalmar Vatten now states that roughly half is natural groundwater and half artificial infiltration. Infiltration is described as decisive for supply during dry summers."
+  },
+  "somrar_utan_vattenrestriktioner_kalmar": {
+   "name": "Consecutive summers without restrictions on municipal water in Kalmar (since 2016)",
+   "unit": "summers (2017–2026)",
+   "note": "According to Kalmar Vatten there have been no restrictions since summer 2016. The municipality got through 2026 without an irrigation ban even though groundwater levels were very low and surface water reservoirs were low for the time of year."
+  },
+  "kommuner_bevattningsforbud_lan": {
+   "name": "Municipalities in the county with an irrigation ban (September 2026)",
+   "unit": "of 12 municipalities",
+   "note": "The bans apply in Mönsterås (from 1 Sept), Nybro (from 15 July) and Vimmerby (from 1 April). Groundwater in large aquifers is unusually low in almost the whole county, far below normal for the period 1961–2025. All measuring sites in watercourses were below mean low flow (MLQ)."
+  },
+  "medborgare_nojda_dricksvattenarbete": {
+   "name": "Inhabitants who consider the municipality's work to secure drinking water to be good",
+   "unit": "%",
+   "note": "The share was 94.6% in 2024 and 90.7% in 2022. The national figure was 88.9% in 2025."
+  },
+  "atervunnet_vatten_bevattning_andel": {
+   "name": "Share of the municipality's irrigation of park trees and plants using treated wastewater",
+   "unit": "%",
+   "note": "Replaces 1.5 million litres of drinking water per year. The water is UV-treated in a container. Kalmar Vatten is also investigating a desalination plant close to the city on behalf of the municipal council, and a pilot using reclaimed water as raw water for drinking water."
+  },
+  "vattenforekomster_god_status_kalmar": {
+   "name": "Water bodies (all types) with good status",
+   "unit": "%",
+   "note": "The county stands at 39.5% and the country at 48.5%. For watercourses with good ecological status (N85052) the figures are 16.7% in Kalmar, 15.0% in the county and 34.3% in the country."
+  },
+  "skyddad_natur_hav_kalmar": {
+   "name": "Protected nature, share of sea area",
+   "unit": "%",
+   "note": "The county stands at 4.06% and the country at 10.09%. Protection of inland waters in Kalmar is 7.11% (N85057), and land protection 0.99% (N85055, 2025). Stensö nature reserve is not included."
+  },
+  "medelavstand_skyddad_natur": {
+   "name": "Average distance to protected nature",
+   "unit": "km",
+   "note": "The county stands at 2.4 km and the country at 2.0 km. The value is unchanged 2022–2025."
+  },
+  "stenso_naturreservat_areal": {
+   "name": "Stensö nature reserve, Kalmar Municipality's first municipal reserve",
+   "unit": "ha (86 ha land, 269 ha water)",
+   "note": "The reserve protects oak forest, grazing land, shore meadows, bladderwrack belts and eelgrass meadows, and the regulations limit wear from boating. According to the Environmental Accounts 2024, a reserve at Revsudden (Skäggenäs) is to be established in 2026."
+  },
+  "skyddad_natur_total_inkl_stenso": {
+   "name": "Protected nature, share of total area, including Stensö nature reserve",
+   "unit": "%",
+   "note": "Own calculation: 2.18% of 125,626 ha is 2,743 ha. With Stensö's 355 ha it becomes 3,098 ha, i.e. 2.47%. Land protection then becomes about 1.08% and sea protection about 6.96%. The calculation assumes that the reserve does not overlap already protected area and that the decision has become final."
+  },
+  "rodlistade_arter_kalmar_kommun": {
+   "name": "Red-listed species in Kalmar Municipality",
+   "unit": "species (approx.)",
+   "note": "Roughly 700 red-listed species according to the 2020 Red List: 1 RE, 6 CR, approx. 60 EN, 180 VU and approx. 450 NT. That gives about 246 threatened species (CR+EN+VU, own summation). In addition, roughly 70 species are covered by action programmes (ÅGP). The number also reflects how much has been surveyed."
+  },
+  "arsmedeltemperatur_kalmar_normal_1991_2020": {
+   "name": "Annual mean temperature in Kalmar, normal period 1991–2020",
+   "unit": "°C",
+   "note": "Kalmar airport 7.88 °C (July 17.5 °C, January −0.2 °C). The 1961–1990 normal was 6.78 °C, so Kalmar has already become about 1.1 °C warmer between the normal periods."
+  },
+  "arsmedeltemperatur_kalmar_normal_1961_1990": {
+   "name": "Annual mean temperature in Kalmar, normal period 1961–1990",
+   "unit": "°C",
+   "note": "6.78 °C at Kalmar airport. Reference level for SMHI's older county analysis (Klimatologi 26, which gave 6.4 °C for the whole county)."
+  },
+  "arsmedeltemperatur_kalmar_2016_2025": {
+   "name": "Annual mean temperature in Kalmar, mean 2016–2025",
+   "unit": "°C",
+   "note": "Own calculation: mean of ten complete years from SMHI's monthly data (8.71 °C), approx. 1.9 °C above the 1961–1990 normal. 2020 is the warmest year in Kalmar's measurement series (9.6 °C; previous record 8.85 °C in 1934 at the old station 66430), followed by 2025 and 2019 (9.0 °C)."
+  },
+  "hogsommardagar_kalmar_observerat_1997_2025": {
+   "name": "High-summer days (max > 25 °C) in Kalmar, mean 1997–2025",
+   "unit": "days per year",
+   "note": "Own count of days with a maximum temperature above 25 °C (29 complete years). 2016–2025 averaged 19.0 days; the record is 2018 with 43 days, and 2026 had 25 days up to 7 October. The coastal station has fewer high-summer days than the county average (the inland is warmer in summer)."
+  },
+  "varmeepisoder_26c_kalmar_1997_2025": {
+   "name": "Days per year in heat episodes (at least 3 consecutive days with max ≥ 26 °C) in Kalmar, 1997–2025",
+   "unit": "days per year",
+   "note": "Own count using the same threshold as SMHI's high-temperature warning and the Public Health Agency of Sweden's mortality relationship (26 °C three days in a row). On average 1.3 episodes per year; 21 of 29 years had at least one. In 2018, 31 days fell within such episodes."
+  },
+  "vegetationsperiod_kalmar_normal_1991_2020": {
+   "name": "Length of the growing season in Kalmar, normal period 1991–2020",
+   "unit": "days",
+   "note": "Daily mean above 5 °C. The 1961–1990 normal was 203 days (same station), so the season has grown by 11 days and now starts on average around 10 April instead of around 18 April."
+  },
+  "arsnederbord_kalmar_normal_1991_2020": {
+   "name": "Annual precipitation in Kalmar, normal period 1991–2020",
+   "unit": "mm",
+   "note": "521.9 mm. In 1961–1990 the normal was 490 mm (same station), i.e. about 6% more precipitation. July is the wettest (63 mm), March–April the driest (26 mm)."
+  },
+  "storsta_dygnsnederbord_kalmar_normal_1991_2020": {
+   "name": "Largest daily precipitation of the year in Kalmar, mean 1991–2020",
+   "unit": "mm",
+   "note": "The mean of each year's largest daily precipitation. In 1961–1990 it was 28.4 mm (same station), an increase of about 20%. July has the heaviest daily rainfall (22.5 mm)."
+  },
+  "skyfall_1h_100ar_region_sydost": {
+   "name": "Cloudburst: 100-year rainfall over 1 hour in the South-East Sweden region (current climate)",
+   "unit": "mm",
+   "note": "38.3 ± 6.7 mm in one hour; the 10-year rainfall is 22.6 ± 1.3 mm. Based on SMHI's automatic stations since 1996. Kalmar County lies in region SÖ according to the report's map."
+  },
+  "temperaturokning_lan_rcp85": {
+   "name": "Increase in annual mean temperature in Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "°C",
+   "note": "Updated: previously 5 °C compared with 1961–1990 (Klimatologi 26, 2015), now 4.6 °C compared with 1971–2000 according to SMHI's climate scenario service (61 model runs). Winter warms most (+5.4 °C), summer +4.5 °C. Compared with 1971–2000 (when the county's annual mean was 6.7 °C according to observations). The range is the min–max of 17 models in SMHI's hydrological ensemble for the coastal area of Kalmar County (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp85/graphs/ctmpAnom_unregulated_rcp85_ANN_292.json). SMHI has not published SSP-based county values; RCP8.5 is used as the closest equivalent to SSP5-8.5."
+  },
+  "temperaturokning_lan_2071_2100_rcp45": {
+   "name": "Increase in annual mean temperature in Kalmar County 2071–2100 (RCP4.5 ≈ SSP2-4.5)",
+   "unit": "°C",
+   "note": "Compared with 1971–2000 (when the county's annual mean was 6.7 °C according to observations). The range is the min–max of 17 models in SMHI's hydrological ensemble for the coastal area of Kalmar County (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp45/graphs/ctmpAnom_unregulated_rcp45_ANN_292.json). SMHI has not published SSP-based county values; RCP4.5 is used as the closest equivalent to SSP2-4.5."
+  },
+  "temperaturokning_lan_2071_2100_rcp26": {
+   "name": "Increase in annual mean temperature in Kalmar County 2071–2100 (RCP2.6 ≈ SSP1-2.6)",
+   "unit": "°C",
+   "note": "Compared with 1971–2000 (when the county's annual mean was 6.7 °C according to observations). The range is the min–max of 17 models in SMHI's hydrological ensemble for the coastal area of Kalmar County (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp26/graphs/ctmpAnom_unregulated_rcp26_ANN_292.json). SMHI has not published SSP-based county values; RCP2.6 is used as the closest equivalent to SSP1-2.6."
+  },
+  "temperaturokning_lan_2041_2070_rcp85": {
+   "name": "Increase in annual mean temperature in Kalmar County 2041–2070 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "°C",
+   "note": "Compared with 1971–2000 (when the county's annual mean was 6.7 °C according to observations). The range is the min–max of 17 models in SMHI's hydrological ensemble for the coastal area of Kalmar County (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp85/graphs/ctmpAnom_unregulated_rcp85_ANN_292.json). SMHI has not published SSP-based county values; RCP8.5 is used as the closest equivalent to SSP5-8.5."
+  },
+  "temperaturokning_lan_2041_2070_rcp45": {
+   "name": "Increase in annual mean temperature in Kalmar County 2041–2070 (RCP4.5 ≈ SSP2-4.5)",
+   "unit": "°C",
+   "note": "Compared with 1971–2000 (when the county's annual mean was 6.7 °C according to observations). The range is the min–max of 17 models in SMHI's hydrological ensemble for the coastal area of Kalmar County (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp45/graphs/ctmpAnom_unregulated_rcp45_ANN_292.json). SMHI has not published SSP-based county values; RCP4.5 is used as the closest equivalent to SSP2-4.5."
+  },
+  "temperaturokning_lan_2041_2070_rcp26": {
+   "name": "Increase in annual mean temperature in Kalmar County 2041–2070 (RCP2.6 ≈ SSP1-2.6)",
+   "unit": "°C",
+   "note": "Compared with 1971–2000 (when the county's annual mean was 6.7 °C according to observations). The range is the min–max of 17 models in SMHI's hydrological ensemble for the coastal area of Kalmar County (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp26/graphs/ctmpAnom_unregulated_rcp26_ANN_292.json). SMHI has not published SSP-based county values; RCP2.6 is used as the closest equivalent to SSP1-2.6."
+  },
+  "hogsommardagar_lan_1971_2000": {
+   "name": "High-summer days (max > 25 °C) in Kalmar County, observed 1971–2000",
+   "unit": "days per year",
+   "note": "County mean from gridded observations (the refGclim field). The models' own reference value is 14.7–14.8 and their value for 2011–2040 is about 24 days. The coastal station Kalmar airport has fewer (14.8 days 1997–2025)."
+  },
+  "hogsommardagar_lan_2071_2100_rcp85": {
+   "name": "High-summer days (max > 25 °C) in Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "days per year",
+   "note": "From 14.8 days in the models' 1971–2000 reference; 2041–2070 36.0 days. The range (own calculation from https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp85/graphs/suAnom_rcp85_ANN_yr_1951_2100_kalmar_lan.json) is the mean of annual 10th–90th percentiles for 2071–2100 and thus shows both model spread and differences between individual summers."
+  },
+  "hogsommardagar_lan_2071_2100_rcp45": {
+   "name": "High-summer days (max > 25 °C) in Kalmar County 2071–2100 (RCP4.5 ≈ SSP2-4.5)",
+   "unit": "days per year",
+   "note": "From 14.8 days in the models' 1971–2000 reference; 2041–2070 31.9 days. The range (own calculation from https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp45/graphs/suAnom_rcp45_ANN_yr_1951_2100_kalmar_lan.json) is the mean of annual 10th–90th percentiles for 2071–2100 and thus shows both model spread and differences between individual summers."
+  },
+  "hogsommardagar_lan_2071_2100_rcp26": {
+   "name": "High-summer days (max > 25 °C) in Kalmar County 2071–2100 (RCP2.6 ≈ SSP1-2.6)",
+   "unit": "days per year",
+   "note": "From 14.7 days in the models' 1971–2000 reference; 2041–2070 27.3 days. The range (own calculation from https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp26/graphs/suAnom_rcp26_ANN_yr_1951_2100_kalmar_lan.json) is the mean of annual 10th–90th percentiles for 2071–2100 and thus shows both model spread and differences between individual summers."
+  },
+  "langsta_hogsommarperiod_lan_2071_2100_rcp85": {
+   "name": "Longest spell of high-summer days (max > 25 °C) in Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "days per year",
+   "note": "Replaces the older measure longest heatwave (daily mean > 20 °C, about 20 days), which no longer exists in SMHI's service. Observed 1971–2000: 5.5 days. RCP4.5: 12.1; RCP2.6: 9.4; RCP8.5 2041–2070: 12.7 days. The range is the mean of annual 10th–90th percentiles (own calculation from SMHI's graph data)."
+  },
+  "tropiska_natter_lan_2071_2100_rcp85": {
+   "name": "Tropical nights (min > 20 °C) in Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "days per year",
+   "note": "Observed 1971–2000: 0.0; the models about 0.3 for 2011–2040. RCP4.5: 1.1; RCP2.6: 0.5 per year. Kalmar airport had 2 tropical nights in 2018 and 1 in 2021. The range is the mean of annual 10th–90th percentiles."
+  },
+  "vegetationsperiod_lan_2071_2100_rcp85": {
+   "name": "Length of the growing season in Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "days",
+   "note": "From 204 days in 1971–2000; 2041–2070 265 days. The start moves from day 103 (mid-April) to day 31, the end from day 306 to day 334. Based on temperature only (daily mean > 5 °C) and does not take light or drought into account. The range is the mean of annual 10th–90th percentiles."
+  },
+  "vegetationsperiod_lan_2071_2100_rcp45": {
+   "name": "Length of the growing season in Kalmar County 2071–2100 (RCP4.5 ≈ SSP2-4.5)",
+   "unit": "days",
+   "note": "From 204 days in 1971–2000; 2041–2070 250 days. The start moves from day 103 (mid-April) to day 57, the end from day 306 to day 322. Based on temperature only (daily mean > 5 °C) and does not take light or drought into account. The range is the mean of annual 10th–90th percentiles."
+  },
+  "vegetationsperiod_lan_2071_2100_rcp26": {
+   "name": "Length of the growing season in Kalmar County 2071–2100 (RCP2.6 ≈ SSP1-2.6)",
+   "unit": "days",
+   "note": "From 204 days in 1971–2000; 2041–2070 238 days. The start moves from day 103 (mid-April) to day 78, the end from day 306 to day 316. Based on temperature only (daily mean > 5 °C) and does not take light or drought into account. The range is the mean of annual 10th–90th percentiles."
+  },
+  "frostdygn_lan_2071_2100_rcp85": {
+   "name": "Frost days (min < 0 °C) in Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "days per year",
+   "note": "From 128 days in 1971–2000 (101–107 for 2011–2040). RCP4.5: 78; RCP2.6: 99 days. The range is the mean of annual 10th–90th percentiles."
+  },
+  "nederbord_forandring_kustomrade_2071_2100_rcp85": {
+   "name": "Change in annual precipitation in the coastal area of Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "%",
+   "note": "The range is the min–max of 17 models. RCP4.5: +15% (2–30%); RCP2.6: +10%. The county's meteorological ensemble gives 49 → 57 mm/month (about +16%), mostly in winter (+11 mm/month) and a little in summer (+4)."
+  },
+  "dygn_extrem_nederbord_lan_2071_2100_rcp85": {
+   "name": "Days with extreme precipitation (≥ 20 mm) in Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "days per year",
+   "note": "Observed 1971–2000: 1.9 days per year (models 2.1). RCP4.5: 3.3; RCP2.6: 2.9. Days with heavy precipitation (≥ 10 mm) increase from 12 to 16.6. The range is the mean of annual 10th–90th percentiles."
+  },
+  "skyfall_klimatfaktor_2071_2100_rcp85": {
+   "name": "Climate factor for cloudbursts 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "factor",
+   "note": "Short cloudbursts become about 40% more intense by 2071–2100 with RCP8.5 and about 20% with RCP4.5 (2041–2070: 20% and 15% respectively). Applies to all return periods and the whole country. Svenskt Vatten recommends at least 1.25 for rain shorter than one hour."
+  },
+  "skyfall_1h_100ar_2071_2100_rcp85": {
+   "name": "Cloudburst: 100-year rainfall over 1 hour in Kalmar 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "mm",
+   "note": "Today's 38.3 mm (region SÖ) × climate factor 1.4. With RCP4.5 (factor 1.2) it becomes about 46 mm. The range combines the uncertainty in today's value (± 6.7 mm) with the factors 1.36–1.41."
+  },
+  "dagar_lag_markfuktighet_okning_2071_2100_rcp85": {
+   "name": "Increase in days with low soil moisture in the coastal area of Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "days per year",
+   "note": "Change in the number of days when root-zone soil moisture is below 50% of field capacity. 2041–2070: +24 days. Already in 2011–2040 about +11 days. For the Ljungbyån (Kalmar Municipality) +20 days. The older county report (2015) gave about 15 days today and 30–50 days at the end of the century; SMHI's new service reports only the change. The range is the min–max of 17 models."
+  },
+  "dagar_lag_markfuktighet_okning_2071_2100_rcp45": {
+   "name": "Increase in days with low soil moisture in the coastal area of Kalmar County 2071–2100 (RCP4.5 ≈ SSP2-4.5)",
+   "unit": "days per year",
+   "note": "Change in the number of days when root-zone soil moisture is below 50% of field capacity. 2041–2070: +20 days. The older county report (2015) gave about 15 days today and 30–50 days at the end of the century; SMHI's new service reports only the change. The range is the min–max of 17 models."
+  },
+  "dagar_lag_markfuktighet_okning_2071_2100_rcp26": {
+   "name": "Increase in days with low soil moisture in the coastal area of Kalmar County 2071–2100 (RCP2.6 ≈ SSP1-2.6)",
+   "unit": "days per year",
+   "note": "Change in the number of days when root-zone soil moisture is below 50% of field capacity. 2041–2070: +12 days. The older county report (2015) gave about 15 days today and 30–50 days at the end of the century; SMHI's new service reports only the change. The range is the min–max of 17 models."
+  },
+  "markavrinning_forandring_kustomrade_2071_2100_rcp85": {
+   "name": "Change in land runoff in the coastal area of Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "%",
+   "note": "Less water flows to watercourses and reservoirs despite more precipitation, because evaporation increases (median −10%). RCP4.5: +1.6%; RCP2.6: +3.1%. The range is the min–max of 17 models, i.e. large uncertainty."
+  },
+  "lagvattenforing_ljungbyan_2071_2100_rcp85": {
+   "name": "Change in mean low flow (MLQ) in the Ljungbyån 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "%",
+   "note": "The Ljungbyån flows into Kalmarsund in Kalmar Municipality. All 17 models give a decrease (−0.7 to −24.5%). Days with low flow increase by about 17 per year. RCP4.5: −3.4%; RCP2.6: −2.5%."
+  },
+  "snovatteninnehall_max_forandring_2071_2100_rcp85": {
+   "name": "Change in the year's maximum snow amount in the coastal area of Kalmar County 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "%",
+   "note": "Snow becomes rare: RCP4.5 −47.5%, RCP2.6 −30%. SMHI's service has no measure of the number of days with snow cover. Less snowmelt also means less spring replenishment of groundwater."
+  },
+  "overdodlighet_varmebolja_2018": {
+   "name": "Excess mortality during the heatwave in summer 2018",
+   "unit": "deaths",
+   "note": "About 700 more deaths than normal over the whole summer; SMHI cites 600–745 attributable to the heat. Mainly older people and the chronically ill were affected. Kalmar had 43 high-summer days that year."
+  },
+  "dodlighetsokning_varme_26c": {
+   "name": "Increase in mortality per day when it is at least 26 °C for three days in a row",
+   "unit": "%",
+   "note": "Mortality rises by about 10% per day at 26 °C or more three days in a row, and by a further 10% at 30 °C. Older people, the chronically ill and small children are most sensitive."
+  },
+  "temperaturokning_lan_2126_ssp126": {
+   "name": "Increase in annual mean temperature in Kalmar County to 2126 (SSP1-2.6)",
+   "unit": "°C",
+   "note": "Compared with 1971–2000. The county's value for 2081–2100 multiplied by the ratio between global warming in 2126 and in 2081–2100 (linear between the IPCC's values for 2081–2100 and 2300). The range takes into account the IPCC's spread, a trend extrapolation and the somewhat greater warming over Northern Europe in CMIP6 models. Step by step in klimat-notes.md."
+  },
+  "hogsommardagar_lan_2126_ssp126": {
+   "name": "High-summer days (max > 25 °C) in Kalmar County in 2126 (SSP1-2.6)",
+   "unit": "days per year",
+   "note": "The relationship between the county's temperature increase and the number of high-summer days in SMHI's scenarios (increase ≈ 4.77·ΔT + 0.94·ΔT²) applied to the temperature estimate for 2126. The upper limit for SSP5-8.5 lies far outside SMHI's data and is very uncertain."
+  },
+  "temperaturokning_lan_2126_ssp245": {
+   "name": "Increase in annual mean temperature in Kalmar County to 2126 (SSP2-4.5)",
+   "unit": "°C",
+   "note": "Compared with 1971–2000. The county's value for 2081–2100 multiplied by the ratio between global warming in 2126 and in 2081–2100 (linear between the IPCC's values for 2081–2100 and 2300). The range takes into account the IPCC's spread, a trend extrapolation and the somewhat greater warming over Northern Europe in CMIP6 models. Step by step in klimat-notes.md."
+  },
+  "hogsommardagar_lan_2126_ssp245": {
+   "name": "High-summer days (max > 25 °C) in Kalmar County in 2126 (SSP2-4.5)",
+   "unit": "days per year",
+   "note": "The relationship between the county's temperature increase and the number of high-summer days in SMHI's scenarios (increase ≈ 4.77·ΔT + 0.94·ΔT²) applied to the temperature estimate for 2126. The upper limit for SSP5-8.5 lies far outside SMHI's data and is very uncertain."
+  },
+  "temperaturokning_lan_2126_ssp585": {
+   "name": "Increase in annual mean temperature in Kalmar County to 2126 (SSP5-8.5)",
+   "unit": "°C",
+   "note": "Compared with 1971–2000. The county's value for 2081–2100 multiplied by the ratio between global warming in 2126 and in 2081–2100 (linear between the IPCC's values for 2081–2100 and 2300). The range takes into account the IPCC's spread, a trend extrapolation and the somewhat greater warming over Northern Europe in CMIP6 models. Step by step in klimat-notes.md."
+  },
+  "hogsommardagar_lan_2126_ssp585": {
+   "name": "High-summer days (max > 25 °C) in Kalmar County in 2126 (SSP5-8.5)",
+   "unit": "days per year",
+   "note": "The relationship between the county's temperature increase and the number of high-summer days in SMHI's scenarios (increase ≈ 4.77·ΔT + 0.94·ΔT²) applied to the temperature estimate for 2126. The upper limit for SSP5-8.5 lies far outside SMHI's data and is very uncertain."
+  },
+  "bilandel_resor": {
+   "name": "Car share of trips",
+   "unit": "%",
+   "note": "Unchanged value but now with support: the Public Transport Barometer's Kalmar sample Sept 2022–Feb 2023 gave a car share of 64% for men and 54% for women (all trips). The municipality does not state which survey the 60% is based on; no full national travel survey (RVU) has been done for the municipality since the Swedish Transport Administration's RVU South-East Sweden in 2012."
+  },
+  "hallbara_resor_andel": {
+   "name": "Share of trips by walking, cycling and public transport",
+   "unit": "%",
+   "note": "The municipality: \"In 2024 the corresponding figure was about 40 percent\"; the target in the mobility strategy (Municipal Council 29 Jan 2024) is 60% by 2035. The Environmental Accounts 2024 state an increase from 35 to 39%. A breakdown into walking, cycling and public transport is not reported."
+  },
+  "bilandel_resor_man": {
+   "name": "Car share of men's trips",
+   "unit": "%",
+   "note": "Previous-day trips for residents aged 15–85, interviews 1 Sept 2022–28 Feb 2023 (winter half-year, about 220 responses/month). Car as driver or passenger. 55% of men's trips under 5 km are made by car."
+  },
+  "bilandel_resor_kvinnor": {
+   "name": "Car share of women's trips",
+   "unit": "%",
+   "note": "Same sample as for men. 43% of women's trips under 5 km are made by car. Among Kalmar residents who travelled, 67% used a car at some point during the day; 36% of car trips are shorter than 5 km."
+  },
+  "kollektivtrafik_marknadsandel_2022_2023": {
+   "name": "Public transport share of motorised trips (2022+2023)",
+   "unit": "%",
+   "note": "Combined 2022+2023; county 12%. The share refers to motorised trips (public transport incl. taxi versus car/moped/motorcycle), not all trips. The Public Transport Supply Programme states 21% for Kalmar Municipality in 2022 – the difference shows the uncertainty in the municipal sample."
+  },
+  "kollektivtrafik_andel_alla_resor_uppskattning": {
+   "name": "Public transport share of all trips (estimate)",
+   "unit": "%",
+   "note": "Share of all trips = 0.60 × p/(1−p), where p is public transport's share of motorised trips: p=0.17 gives 12%, p=0.21 gives 16%. The model's transitShare (0.21) is the share of motorised trips, not of all trips."
+  },
+  "gang_cykel_andel_uppskattning": {
+   "name": "Walking and cycling, share of all trips (estimate)",
+   "unit": "%",
+   "note": "Residual: 40% sustainable trips minus 14% public transport. Split according to the national RVU 2024 (499 million walking trips versus 480 million cycling trips), that gives about 13% walking and 13% cycling. There is no local measurement of walking and cycling separately."
+  },
+  "rvu_bil_andel_sverige": {
+   "name": "Car share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 2,053 million car trips out of almost 3.9 billion main trips. Trafikanalys writes \"just over half of all trips\". Kalmar (60%) is thus above the national figure."
+  },
+  "rvu_kollektiv_andel_sverige": {
+   "name": "Public transport modes' share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 708 million of approx. 3,900 million main trips. Increased by 5% from 2023 but is 10% below 2019."
+  },
+  "rvu_gang_andel_sverige": {
+   "name": "Walking's share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 499 million of approx. 3,900 million main trips. Walking trips fell by 9% from 2023 and are 20% below 2019."
+  },
+  "rvu_cykel_andel_sverige": {
+   "name": "Cycling's share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 480 million of approx. 3,900 million main trips; +12% from 2023. Cycling accounts for only 2.2 of 137 billion kilometres travelled."
+  },
+  "inpendling_antal": {
+   "name": "In-commuters to Kalmar Municipality",
+   "unit": "people",
+   "note": "25.7% of those who work in the municipality live in another municipality (N02276). Up from 9,465 in 2020."
+  },
+  "utpendling_antal": {
+   "name": "Out-commuters from Kalmar Municipality",
+   "unit": "people",
+   "note": "20.1% of the employed residents of Kalmar work in another municipality (N02279). Net in-commuting approx. 2,700 people."
+  },
+  "korstracka_personbil_per_inv": {
+   "name": "Distance driven by passenger car per inhabitant",
+   "unit": "mil/inhabitant/year (1 mil = 10 km)",
+   "note": "National 625, county 701 mil/inhabitant. The peak was 706 mil in 2017; it fell to 632 mil in 2021 and is now rising again."
+  },
+  "kollektivtrafikresor_kommun": {
+   "name": "Public transport trips within Kalmar Municipality",
+   "unit": "trips/year",
+   "note": "Rounded value. About 62 trips per inhabitant (own calculation, 72,704 inhabitants). Over 30,000 monthly passes were sold in 2024. County: 39.6 trips/inhabitant in 2025 (Kolada N60404)."
+  },
+  "periodkort_30_dagar_vuxen": {
+   "name": "Price of a 30-day pass, adult, within Kalmar Municipality",
+   "unit": "SEK",
+   "note": "Subsidised with parking revenue (\"climate exchange\"). From 1 July to 31 Dec 2026 the price is halved to SEK 264.50 following a government decision. In 2024 the pass cost SEK 609."
+  },
+  "kommunvelometern_poang": {
+   "name": "Swedish Cycling Association's municipal velometer, score",
+   "unit": "points out of 90",
+   "note": "Rank 9 of 54 participating municipalities (4th of 14 medium-sized); 40.5 points in 2015. Full marks for information and marketing, weak on cycling policy (lacks a current cycling plan). Kalmar's results in later years have not been checked."
+  },
+  "cykelinfrastruktur_investering_per_inv": {
+   "name": "Investment in new cycling infrastructure per inhabitant",
+   "unit": "SEK/inhabitant",
+   "note": "Plus SEK 56/inhabitant in operation and maintenance. The average for medium-sized municipalities was SEK 381/inhabitant in total."
+  },
+  "delbilspoolen_bokningar": {
+   "name": "Bookings in Delbilspoolen (electric car pool)",
+   "unit": "bookings/year",
+   "note": "\"Over 4,000\" bookings of some 20 electric cars in Kalmar and on Öland; 60% from private individuals, on average 6 hours and 50 km per booking. Cooperation with Kalmarhem and Kalmar Energi, extended by three years in 2024."
+  },
+  "olandsbron_fordon_per_dygn": {
+   "name": "Traffic on the Öland Bridge outside summer",
+   "unit": "vehicles/day",
+   "note": "\"Around 25,000 vehicles per day during the summer months and around 15,000 vehicles per day the rest of the year\" (page updated 25 Aug 2026). Rounded values; the Swedish Transport Administration has measured only every fourth year since 2020."
+  },
+  "olandsbron_fordon_per_dygn_sommar": {
+   "name": "Traffic on the Öland Bridge during the summer months",
+   "unit": "vehicles/day",
+   "note": "Rounded average. The bridge was built with two lanes in 1972 and widened to four lanes in 1995."
+  },
+  "elbilar_andel": {
+   "name": "Share of electric cars in the passenger car fleet",
+   "unit": "%",
+   "note": "Confirmed: 2025 is the latest year (2026 not published). Increase of 0.9 percentage points/year 2023–2025 (4.3 → 5.2 → 6.1%), from 0.9% in 2020. 30.3 electric cars/1,000 inhabitants. National 8.6%, county 4.4%."
+  },
+  "fossiloberoende_personbilar_andel": {
+   "name": "Fossil-independent passenger cars, share of the fleet",
+   "unit": "%",
+   "note": "Electric, plug-in hybrid, gas, ethanol and others. Up from 12.3% in 2020. National 26.0%."
+  },
+  "laddpunkter_publika_antal": {
+   "name": "Public charging points for electric cars",
+   "unit": "charging points",
+   "note": "Up from 203 (2023) and 358 (2024). About 7.0 per 1,000 inhabitants versus 5.7 nationally (own calculation). Kalmarhem also has 151 rented and 8 semi-public charging spaces."
+  },
+  "vaxthusgaser_transporter_ton": {
+   "name": "Greenhouse gas emissions from transport, total",
+   "unit": "tonnes CO2e",
+   "note": "Trend: 128,350 t (2010) → 92,024 t (2020) → 81,570 t (2023) → 102,209 t (2024), +25% in one year when the emissions reduction obligation was lowered. Per inhabitant 2.04 t (2010) → 1.13 t (2023) → 1.41 t (2024). The municipality states that cars account for 70% of transport emissions."
+  },
+  "cykelfarja_dessi_passagerare": {
+   "name": "Passengers on the Dessi bicycle ferry Kalmar–Färjestaden",
+   "unit": "passengers/season",
+   "note": "May–August 2025. The only boat route the municipality lists (catamaran from 2006, 118 passengers, 50 bicycles, Ressel Rederi). The Swedish Transport Administration's support (SEK 1.4 million/year) was withdrawn; in 2026 it runs only 15 June–16 August with support from Kalmar and Mörbylånga. No information on electric propulsion has been found."
+  },
+  "gasthamn_batplatser": {
+   "name": "Guest berths in Kalmar guest harbour",
+   "unit": "berths",
+   "note": "About 150 berths: 135 in Ölandshamnen and 15 at Slottsfjärden. Shore power is sold per day (10–32 A). The number of guest nights is not published."
+  },
+  "fritidsbatar_elmotor_andel_sverige": {
+   "name": "Motorboats with an electric motor",
+   "unit": "% of motorboats",
+   "note": "Share of motorboats with an electric motor (multiple answers possible): 4% for open motorboats, 2% for cabin boats. 17% still have a banned carburettor two-stroke engine. Measured in energy or traffic work, the electric share is much lower. A national measure: data for Kalmarsund is lacking."
+  },
+  "fjarrvarme_bransle_fornybart_andel": {
+   "name": "Renewable fuels in Kalmar Energi's district heating",
+   "unit": "%",
+   "note": "Wood chips, bark, forestry residues and by-products from the wood industry (Moskogen and Draken). The value is in the embedded chart (Infogram) on the page, updated Feb 2026. Closes the baseline's gap on fuel mix."
+  },
+  "fjarrvarme_atervunnen_energi_andel": {
+   "name": "Recovered energy in Kalmar Energi's district heating",
+   "unit": "%",
+   "note": "Category according to the Heating Market Committee's reporting rules. The page does not break this item down further. Moskogen has flue gas condensation (26 MW) and Draken a heat pump on wastewater."
+  },
+  "fjarrvarme_fossil_andel": {
+   "name": "Fossil fuels in Kalmar Energi's district heating",
+   "unit": "%",
+   "note": "Start-up fuel and disruptions. The company buys emission allowances and calls the deliveries \"100% renewable\". Emissions: 4.471 g CO2e/kWh from combustion plus 6.56 g from fuel production and transport; primary energy factor 0.078. Kolada N45930: 99.4% renewable in 2024."
+  },
+  "elproduktion_kraftvarme": {
+   "name": "Electricity production from combined heat and power (Moskogen)",
+   "unit": "MWh/year",
+   "note": "Moskogen (31 MW electric, in operation 2009) is the municipality's only combined heat and power plant; nominally 130 GWh of electricity and 360 GWh of heat per year according to Kalmar Energi. Actual output 119,795 MWh in 2023 and 124,758 MWh in 2021."
+  },
+  "elproduktion_vindkraft": {
+   "name": "Electricity production from wind power within the municipality",
+   "unit": "MWh/year",
+   "note": "59% of the municipality's electricity production. 199,277 MWh in 2023. With 81 MW that gives 2.36 GWh per MW (capacity factor about 27%; 2023: 2.46 GWh/MW, 28%) – own calculation."
+  },
+  "elproduktion_sol": {
+   "name": "Electricity production from solar power within the municipality",
+   "unit": "MWh/year",
+   "note": "Doubled since 2022 (19,670 MWh). About 0.93 GWh per MW installed on average during the year (own calculation, mean of 38.8 and 45.0 MW)."
+  },
+  "lokal_el_andel_av_anvandning": {
+   "name": "Local electricity production relative to electricity use",
+   "unit": "%",
+   "note": "322,570 MWh / (7.3405 MWh/inhabitant × 72,704 inhabitants = 533,684 MWh). Confirms the baseline's approx. 60%. Mix 2024: wind 59%, combined heat and power 29%, solar 12%."
+  },
+  "solceller_installerad_effekt": {
+   "name": "Installed solar PV capacity",
+   "unit": "MW",
+   "note": "Confirmed; 2026 not published. Growth has slowed: +8.8 MW (2022), +15.6 (2023), +6.2 (2024), +2.4 (2025). 10.2 MW in 2020. County 323 MW, national 5,541 MW."
+  },
+  "vindkraft_installerad_effekt": {
+   "name": "Installed wind power capacity within the municipality",
+   "unit": "MW",
+   "note": "Confirmed; unchanged since 2021, when capacity rose from 33 to 81 MW (19 → 31 turbines). County 680 MW. The Kårehamn offshore wind farm (48 MW) is in Borgholm Municipality."
+  },
+  "elproduktion_lan": {
+   "name": "Electricity production in Kalmar County",
+   "unit": "MWh/year",
+   "note": "About 4.1 times the county's electricity use (13.20 MWh/inhabitant × 246,352 inhabitants ≈ 3.25 TWh, own calculation), mainly nuclear power in Oskarshamn. Wind power 1.55 TWh."
+  },
+  "solceller_installerad_effekt_lan": {
+   "name": "Installed solar PV capacity in Kalmar County",
+   "unit": "MW",
+   "note": "About 1,310 W/inhabitant in the county versus about 650 W/inhabitant in Kalmar Municipality (own calculation). Large ground-mounted parks are located outside the city."
+  },
+  "kalmarsund_vind_medlemmar": {
+   "name": "Members of the wind power cooperative Kalmarsund Vind II",
+   "unit": "members (just over)",
+   "note": "Energy community since 2009 with shares in Rockneby wind farm (5 × Vestas V100 1.5 MW, inaugurated 2012, up to about 25,000 MWh/year). The association owns about 190 kW and about 600 MWh/year."
+  },
+  "torneby_solpark_produktion": {
+   "name": "Annual production at the member-owned Törneby solar park",
+   "unit": "MWh/year",
+   "note": "20,000 m² at Kalmar Öland Airport, four phases 2017–2022, operated by an association. The page states both \"about 3,000,000 kWh\" and \"estimated annual production of approx. 2,250,000 kWh\". Nöbble solar park (approx. 600 MWh) is also member-owned."
+  },
+  "utgrunden_avvecklad_effekt": {
+   "name": "Utgrunden I in Kalmarsund, decommissioned offshore wind farm",
+   "unit": "MW",
+   "note": "7 turbines, in operation Dec 2000–2018; dismantling was completed in autumn 2018. Industry source – Vattenfall's own announcement has not been checked."
+  },
+  "nya_utgrunden_planerad_effekt": {
+   "name": "Planned offshore wind farm Nya Utgrunden (Kalmarsund)",
+   "unit": "MW",
+   "note": "Status \"planned\" (updated 8 June 2026). Located in southern Kalmarsund, Mörbylånga Municipality. Consultation was held in Dec 2021 (SMHI's statement ref. 2021/2299/14.1). No permit has been found. 340 MW is a second-hand database figure."
+  },
+  "aurora_havsvindpark_produktion": {
+   "name": "Rejected offshore wind farm Aurora east of Öland, possible annual production",
+   "unit": "TWh/year",
+   "note": "More than 30 km east of Öland in the economic zone; \"up to 24 TWh\" if the whole area had been approved. The government rejected Aurora and 12 other Baltic Sea farms on 4 Nov 2024 for defence reasons (regeringen.se). Shows the scale of the offshore wind that is blocked near Kalmar."
+  },
+  "bostadsmarknadslage_bme": {
+   "name": "Municipality's assessment of the housing market (0 = shortage, 1 = balance, 2 = surplus)",
+   "unit": "index 0–2",
+   "note": "Kalmar has reported a shortage in 2024, 2025 and 2026 (situation in January 2026). According to the County Administrative Board's housing market analysis 2026, Kalmar is one of four municipalities in the county with a shortage (with Torsås, Mörbylånga and Borgholm), both in the main town and in other parts of the municipality, while five municipalities report a surplus."
+  },
+  "bostadsmarknadslage_ungdomar_bme": {
+   "name": "Municipality's assessment of the housing market for young people aged 19–25 (0 = shortage)",
+   "unit": "index 0–2",
+   "note": "Shortage in 2026 (balance 2024–2025). The County Administrative Board (Regional housing market analysis 2026) writes that Kalmar reports a general housing shortage and that available homes are too expensive for young people. For students there is balance; Kalmarhem has had a surplus of student housing and has converted some of it into regular rental apartments."
+  },
+  "hyra_median_kr_per_kvm": {
+   "name": "Median rent in rental apartments (annual rent per sqm)",
+   "unit": "SEK/m²/year",
+   "note": "Margin of error ±77 SEK. National SEK 1,483, Kalmar County SEK 1,274; the mean rent in Kalmar SEK 1,485. New monthly rent SEK 125/m², which for 70 m² comes to about SEK 8,700 a month (own calculation: 1,496 × 70 / 12). Rent rose about 10% from 2024 (SEK 1,352)."
+  },
+  "enpersonshushall_antal": {
+   "name": "Single-person households",
+   "unit": "households",
+   "note": "44.7% of the municipality's 35,876 households (own calculation), versus 42.0% nationally (2,103,186 of 5,002,559). Kolada N02942 (51.2%) also counts single parents and thus measures something different."
+  },
+  "personer_som_bor_ensamma_andel": {
+   "name": "Share of inhabitants living alone",
+   "unit": "%",
+   "note": "Own calculation: 16,046 single-person households / 73,068 inhabitants (Kolada N01951, 2025) = 22.0%. National 19.8% (2,103,186 / 10,605,529). People without household registration are included in the denominator, so the share is somewhat underestimated."
+  },
+  "kollektivhus_kalmar_lan": {
+   "name": "Co-housing schemes and start-up groups in Kalmar County affiliated with Kollektivhus NU",
+   "unit": "number",
+   "note": "No co-housing scheme, no residential community and no start-up group in the county appears in Kollektivhus NU's directories (start-up groups also checked). The nearest is Växjö (Slånbäret, 34 apartments, Sämjan). The directory covers members only. The senior housing Bovieran with a shared winter garden exists in Kalmar but has not been verified here."
+  },
+  "kalmarhem_uthyrningsgrad": {
+   "name": "Occupancy rate in Kalmarhem's housing stock",
+   "unit": "%",
+   "note": "At the turn of the year 2024/25 Kalmarhem had 5,218 homes, of which 928 student homes (5,247 and 984 respectively the year before). Turnover was 20% in regular homes and 63% in student homes. Kalmarhem publishes no queue statistics: one earns one queue point per day, and the points required are visible only per advertisement."
+  },
+  "arbetstid_overenskommen": {
+   "name": "Agreed (contractual) mean working hours per week, employed aged 15–74",
+   "unit": "hours/week",
+   "note": "Margin of error ±0.1. Aged 20–64: 38.1 hours. Men 38.2 and women 36.2 hours (aged 15–74). Agreed weekly hours is the measure that best matches the model's \"working time\". Municipal figures are not available in the Labour Force Survey (AKU)."
+  },
+  "arbetstid_faktisk": {
+   "name": "Actual mean hours worked per week, employed aged 15–74",
+   "unit": "hours/week",
+   "note": "Margin of error ±0.2. Average over all weeks of the year, so holiday, sickness and parental leave are counted. The measure therefore cannot be compared with an agreed 40-hour week. Aged 20–64: 30.6; men 31.6, women 27.7. In 2015: 30.1 hours."
+  },
+  "deltid_andel": {
+   "name": "Employed with agreed working hours under 35 hours per week",
+   "unit": "%",
+   "note": "Own calculation: (277.8 + 601.9 thousand with 1–34 hours) / 5,263.0 thousand employed = 16.7%. Women 21.6%, men 12.3%. About 254 thousand lack agreed working hours; if they are excluded, the share becomes 17.6%."
+  },
+  "sex_timmars_arbetsdag_stod": {
+   "name": "Share who think a six-hour working day is a good proposal",
+   "unit": "%",
+   "note": "The national SOM survey 2025: 55% good proposal, 22% neither, 23% bad proposal. Shows how large the support is for a reduction in working time."
+  },
+  "sysselsatta_arbetsstalle_kommun": {
+   "name": "Employed with a workplace in Kalmar Municipality",
+   "unit": "people",
+   "note": "36,588 employed people live in the municipality (N02202), so the municipality has a net inflow of about 2,700 commuters (own calculation). 30.9% of jobs are in the municipal or regional sector (N02203: women 45.6%, men 16.3%) and 7.4% in the state sector."
+  },
+  "storsta_privata_arbetsgivare_anstallda": {
+   "name": "Employees at the largest private employer (KLS Ugglarps AB)",
+   "unit": "employees",
+   "note": "The same page states 5,978 employees for Kalmar Municipality (2025). The municipality's own list of the largest employers in 2022 (Kalmar i fickformat 2023, without numbers and in unclear order) includes Kalmar Municipality, Region Kalmar County, Linnaeus University, Kalmarsund Upper Secondary School Association, KLS Ugglarps, Sitel Sweden, the Swedish Social Insurance Agency, Bergkvarabuss, Webhelp Sweden and Nordic Nest."
+  },
+  "kommunen_tillsvidareanstallda": {
+   "name": "Permanently employed, monthly-paid staff in Kalmar Municipality",
+   "unit": "people",
+   "note": "Counts people, not full-time equivalents, and can therefore not be compared directly with the baseline's 5,426 full-time equivalents (2022). 5,678 in 2024."
+  },
+  "foretag_antal_uppskattat": {
+   "name": "Companies with a workplace in the municipality (business presences), estimated number",
+   "unit": "companies",
+   "note": "Own calculation: 50.95 business presences per 1,000 inhabitants × 72,304 inhabitants (2023) ≈ 3,680. National 54.0 per 1,000. The measure covers only companies with one or more workplaces in the municipality according to SCB's BAS, not all registered (including dormant) companies at the Swedish Companies Registration Office. Published every second year."
+  },
+  "trygg_i_skolan_ak8": {
+   "name": "Year 8 pupils who feel safe at school",
+   "unit": "%",
+   "note": "Girls 80%, boys 89%. In 2024–2025 the share was 78.1% (girls 70%). Liv & hälsa ung is published only as Power BI, so this is the closest verifiable municipal measure of young people's safety."
+  },
+  "hog_tillit_till_manniskor": {
+   "name": "High interpersonal trust (7–10 on a scale of 0–10)",
+   "unit": "%",
+   "note": "The question reads: \"to what extent can people in general be trusted?\". 31% have medium (4–6) and 12% low (0–3) trust. A different measure from the yes/no question in the Health in Sweden survey (HLV), on which the model's trust is based (66% in Kalmar)."
+  },
+  "ideellt_arbete_andel": {
+   "name": "Share who have done voluntary work in the past year, aged 16–84",
+   "unit": "%",
+   "note": "Population study 2024. The share has been stable at 48–53% since 1992, with the most men and middle-aged people. According to SOM 2025, 34% are members of a sports or outdoor association, 40% of a trade union and 14% of a cultural association."
+  },
+  "foreningar_kalmar": {
+   "name": "Associations in Kalmar Municipality",
+   "unit": "associations",
+   "note": "Of which 108 with children's and youth activities and 62 cultural associations. Probably the associations registered with the municipality's culture and leisure department, i.e. not all non-profit associations in the municipality. The source gives no exact reference date (the brochure is from October 2023)."
+  },
+  "individuellt_valbefinnande_index": {
+   "name": "Individual well-being, municipal index (0–100)",
+   "unit": "index 0–100",
+   "note": "The Swedish Agency for Economic and Regional Growth's index combines self-rated health, dental health and mental well-being, normalised across the country's municipalities. The national value in Kolada is 55.2. A measured anchor for the model's well-being (0.58 on a scale of 0–1)."
+  },
+  "gott_psykiskt_valbefinnande": {
+   "name": "Inhabitants aged 16–84 with good mental well-being",
+   "unit": "%",
+   "note": "Pooled HLV years (2021–2024). National 84.9%. The share fell from 86.2% in the previous measurement. According to SOM 2025, 92% nationally are very or fairly satisfied with life."
+  },
+  "livsmedelsberedskap_planeringsmal_dagar": {
+   "name": "National planning target: food supply during a security-policy crisis (at least three months)",
+   "unit": "days (minimum)",
+   "note": "Food supply is to be secured \"for at least three months where logistics flows with the outside world are limited\" (90 days = own conversion). On 26 May 2026 the Riksdag adopted an act on emergency stockpiles in the food chain (SFS 2026:837), in force 1 July 2026. The first state grain stores are being built in Norrland during 2026. A target level, not a measured stock."
+  },
+  "sarskilda_samlingsplatser_kalmar": {
+   "name": "Planned special gathering points (safety points) in Kalmar Municipality",
+   "unit": "places (approx.)",
+   "note": "The municipality writes \"some 20 designated premises or places\". They are to offer warmth, information, charging, drinking water, toilets and first aid in a crisis. The municipality urges residents to cope for at least a week without society's support."
+  },
+  "skyddsrum_platser_kalmar": {
+   "name": "Shelter places in Kalmar",
+   "unit": "people (approx.)",
+   "note": "Corresponds to about 75% of inhabitants (own calculation: 55,000 / 73,068). Property owners are responsible for maintenance and the Swedish Civil Defence and Resilience Agency for supervision."
+  },
+  "it_angrepp_stabslage_dagar": {
+   "name": "Days in command-staff mode after the IT attack on Kalmar Municipality (February 2024)",
+   "unit": "days",
+   "note": "On 6 February 2024 the whole municipal group was hit by an IT attack, and the command-staff mode lasted thirteen days. A local example of the digital dependence that the model's analogue reserve describes."
+  },
+  "internet_icke_anvandare": {
+   "name": "Share of the population aged 16+ who do not use the internet",
+   "unit": "%",
+   "note": "Almost exclusively people of retirement age. 95% use e-ID, in practice mobile BankID, a single critical dependency. Almost one in four has refrained from booking a medical appointment because healthcare e-services are too difficult."
+  },
+  "generativ_ai_anvandning": {
+   "name": "Share aged 16+ who have used generative AI tools",
+   "unit": "%",
+   "note": "25% in 2024. 18% use AI at work. 35% of companies used AI in 2025, and among large companies 72%."
+  },
+  "kommuner_ai_i_alla_delar": {
+   "name": "Municipalities where AI is used to some extent in all parts of the operations",
+   "unit": "% of responding municipalities",
+   "note": "No municipality says that AI permeates the whole municipality. 40% use AI in some parts and 34% only among a few individuals. Barely one in four municipalities has an AI strategy (four in ten among municipalities with at least 50,000 inhabitants), and nearly half have guidelines. 7% have trained all staff. This is not an SKR survey, since none was found."
+  },
+  "ai_forordningen_hogrisk_tillampning": {
+   "name": "Year the EU AI Act starts to apply to stand-alone high-risk systems (Annex III), 2 December",
+   "unit": "year",
+   "note": "The AI Act entered into force on 1 August 2024. Prohibitions and AI literacy have applied since 2 February 2025, GPAI rules since August 2025 and the rest of the regulation since 2 August 2026. The AI Omnibus (in force 27 July 2026) postponed the high-risk requirements to 2 December 2027 (Annex III, including public benefits) and 2 August 2028 (Annex I). Municipalities' AI in the exercise of public authority is mainly affected by Annex III."
+  },
+  "konsumtionsutslapp_hushall_kalmar": {
+   "name": "Households' consumption-based greenhouse gas emissions per inhabitant",
+   "unit": "tonnes CO2e/inhabitant",
+   "note": "Total 376,996 tonnes. Kalmar County 5.42 t and Sweden 5.64 t according to the same model. Covers household consumption only (about 60% of the total), not public consumption and investments, which nationally add about 3.4 t (0.85 + 2.59). Long-haul flights and high-altitude effects are included, so the level is higher than SCB's approx. 5.2 t. Trend 2019–2023: −0.4% per year."
+  },
+  "konsumtionsutslapp_total_kalmar_uppskattad": {
+   "name": "Consumption-based emissions per inhabitant in Kalmar, estimated",
+   "unit": "tonnes CO2e/person/year",
+   "note": "Own calculation: the Swedish Environmental Protection Agency's 7.6 t (Sweden 2023) × SEI's Kalmar/Sweden ratio for households 2022 (5,235 / 5,638 = 0.93) ≈ 7.1 t. Assumes that public consumption and investments per person are the same as nationally. With SEI's own total model it comes to about 8.7 t (5.24 + 0.85 + 2.59)."
+  },
+  "demografisk_forsorjningskvot": {
+   "name": "Demographic dependency ratio ((0–19 + 65+) / 20–64 years)",
+   "unit": "ratio",
+   "note": "National 0.770. In 2024 the ratio was 0.760. A measured basis for how the dependency burden affects the model's welfare capacity. SCB's 10-year projection (N02847) uses a 67-year limit and is therefore not comparable."
+  },
+  "hardgjord_mark_andel_tatort": {
+   "name": "Hard-surfaced land in Kalmar urban area",
+   "unit": "% of land area",
+   "note": "The share is 832 ha of hard-surfaced land divided by 2,060 ha of land area in Kalmar urban area: buildings 271 ha, roads and railway 230 ha, other hard-surfaced land 331 ha. In 2010 it was 781 of 1,958 ha (39.9%). SCB also counts exposed bedrock and gravel pitches as hard-surfaced."
+  },
+  "gronyta_andel_tatort": {
+   "name": "Green space in Kalmar urban area",
+   "unit": "% of land area",
+   "note": "The share is 1,204 ha of green space (619 ha open land and 585 ha forest) divided by 2,060 ha of land. If 7 ha of arable land is included, non-hard-surfaced land is 1,211 ha (58.8%). Green space also includes villa gardens and grass between buildings. It is a measure for the whole urban area, not for the city centre."
+  },
+  "genomslapplig_yta_kvarnholmen": {
+   "name": "Permeable (not hard-surfaced) land on Kvarnholmen",
+   "unit": "% of land area",
+   "note": "Own calculation: the NMD class was read at 1,533 points (grid with 20 m spacing) within the district of Kvarnholmen. 1,235 of the points were on land. 81.5% were hard-surfaced (building 32.1%, road 27.4%, other developed land 22.0%) and 17.6% had vegetation (tree-covered 9.7%). Bare ground made up 1.0%. The area boundary also includes the harbour areas. At 10 m resolution, small courtyards and street trees are missed."
+  },
+  "tradkronstackning_tatort": {
+   "name": "Tree canopy cover in Kalmar urban area",
+   "unit": "%",
+   "note": "Updates the baseline, which was about 22% according to the Environmental Accounts 2024: the value is now the exact result of the measurement. The municipality measured with i-Tree (LONA grant) in spring 2022. The result is preliminary. Of the urban area's 32 sub-areas, 10 have over 30% canopy cover, 14 under 20% and 5 under 10%. According to the 2024 action plan, Malmen, Bremerlyckan and Sandås are prioritised."
+  },
+  "koloniomrade_areal_kommun": {
+   "name": "Land with allotment garden areas in Kalmar Municipality",
+   "unit": "hectares",
+   "note": "The area was 18 ha in 2010 and 25 ha in 2015. Kalmar County has 59 ha and the country 1,985 ha. This is land use, not cultivated area: paths, cottages and lawns are included."
+  },
+  "odlingslotter_kommunala": {
+   "name": "Municipal allotments in Kalmar",
+   "unit": "plots (approx.)",
+   "note": "About 250 plots at 6 sites, 50–250 m² each. The rent is SEK 9.68 per m² per year (2026). In 2019 there were 317 plots at 9 sites (Service Committee 2019-06-19 § 90); the Stallgärdsgatan area was closed down the same year. The allotment garden colonies are run by associations and are not included."
+  },
+  "tradgardsvaxter_areal_kommun": {
+   "name": "Arable land with horticultural crops in Kalmar Municipality",
+   "unit": "hectares",
+   "note": "That is 0.4% of the municipality's 20,129 ha of arable land. The area was 208 ha in 2020, 77 ha in 2023 and 89 ha in 2024. Table potatoes were grown on 12 ha in 2025. Cultivation of fruit and vegetables in the municipality is small and has declined."
+  },
+  "tradgardsodling_areal_lan": {
+   "name": "Outdoor horticulture in Kalmar County",
+   "unit": "hectares",
+   "note": "81 businesses and 28,378 m² of greenhouses. In 2020: 106 businesses, 676 ha and 42,725 m² of greenhouses. The county has 3.5% of the country's horticultural area (13,506 ha) and 1.0% of the greenhouse area, but 2.3% of the population. Outdoor vegetables: 233 ha."
+  },
+  "konsumtion_kokvaxter_per_person": {
+   "name": "Consumption of fresh and frozen vegetables per person",
+   "unit": "kg/person/year",
+   "note": "Total consumption, almost doubled since 1980. Direct consumption of fresh vegetables is 45.8 kg and of root vegetables 10.5 kg. Used as the denominator when calculating urban cultivation's share."
+  },
+  "konsumtion_frukt_bar_per_person": {
+   "name": "Consumption of fresh and frozen fruit and berries per person",
+   "unit": "kg/person/year",
+   "note": "Same level as in 1980. Including processed products (juice, jam and so on), consumption of fruit and berries is 82.4 kg per person per year."
+  },
+  "ekologiska_livsmedel_kommunen": {
+   "name": "Organic food in the municipality's operations",
+   "unit": "%",
+   "note": "Share of purchase value in kronor (KRAV, Demeter, EU organic or MSC); contracted services are not included. The share is falling: 28.0% (2022), 27.6% (2023), 24.6% (2024). The municipality's own target is 30% (Environmental Accounts 2023). Kolada reports no national figure."
+  },
+  "ekologiska_livsmedel_regionen": {
+   "name": "Organic food in Region Kalmar County's operations",
+   "unit": "%",
+   "note": "Share of purchase value in kronor in the region's own operations, for example the hospitals, with contracted services included. The share was 43.9% in 2024 and is twice as high as in Kalmar Municipality's operations."
+  },
+  "livsmedel_naromradet_kommunen": {
+   "name": "Food from the local area in the municipal group's purchasing",
+   "unit": "%",
+   "note": "The share was 40% in 2021 and 45.9% in 2022. According to \"Ett grönare Kalmar\", at least 45% is to come from the local area and 85% be organic or Swedish (82.0% in 2023). How the \"local area\" is delimited is not stated in the source. Applies only to public meals, about 12,000 portions per day."
+  },
+  "svenska_livsmedel_kommunen": {
+   "name": "Swedish food as a share of the municipality's food purchases",
+   "unit": "%",
+   "note": "In 2024, 25% of purchases were organic and the climate impact was 1.6 kg CO2e per kg of food. The catering operation prepares about 12,000 portions per day. The share from the local area is not reported for 2024."
+  },
+  "byggnadsminnen_kvarnholmen": {
+   "name": "Buildings protected as listed buildings (byggnadsminnen) on Kvarnholmen",
+   "unit": "buildings",
+   "note": "National interest H48 Kalmar: \"Renaissance town with castle environment and fortification system\". The expressions of the national interest include the grid plan, the stone houses from the 17th and 18th centuries, the silhouette with the Cathedral, the canals, the remains of ramparts and bastions and the sightlines to the castle. In the 2015–2016 revision the area was limited to the 17th-century environments, so that the city blocks on Ängö, parts of Malmen, Kalmarsundsparken and Stensö ended up outside (Swedish National Heritage Board press release)."
+  },
+  "byggnadsminnen_klimatrisk_lan": {
+   "name": "Listed buildings in Kalmar County at risk of damage from climate change by 2100",
+   "unit": "%",
+   "note": "48 of 136 listed buildings; 46 of them are threatened by sea level rise. In the same GIS analysis, 24.9% of the q-marked buildings (622 of 2,497), 41.6% of the national interests (32 of 77) and 14.4% of the ancient monuments are affected. The scenario is RCP8.5: 1 m higher mean water level plus 1.5 m high water, i.e. 2.5 m. In Kalmar, the castle, the residence and the Klapphuset are in the risk zone."
+  },
+  "kalmar_slott_besokare": {
+   "name": "Visitors to Kalmar Castle per year",
+   "unit": "visitors (approx.)",
+   "note": "\"Latest annual statistics\" in a 2025 issue; the year 2024 is assumed. The castle is a state-listed building owned and managed by the National Property Board of Sweden. The figure shows the castle's role as a visitor destination in the cultural environment threatened by rising seas."
+  },
+  "op_planeringsniva_invanare_2035": {
+   "name": "Comprehensive plan's planning level: inhabitants in Kalmar Municipality in 2035",
+   "unit": "inhabitants",
+   "note": "\"The comprehensive plan allows for about 82,000 inhabitants in 2035.\" That corresponds to approx. +1.2% per year from 73,068 inhabitants in 2025, versus +0.5% during 2025. The comprehensive plan text itself gives no housing figures per area (consultation report 2022)."
+  },
+  "mal_fardigstallda_bostader_per_ar": {
+   "name": "Target: completed homes per year (five-year average)",
+   "unit": "homes/year",
+   "note": "The municipal group is to contribute to at least 500 homes being completed per year and 50 new detached-house plots being made available each year. In 2025 about 70 homes were completed (0.96 per 1,000 inhabitants). A new housing supply programme is to be drawn up."
+  },
+  "snurrom_friluftsstaden_kapacitet": {
+   "name": "Snurrom (the outdoor city): people who can live and work there at full build-out",
+   "unit": "people",
+   "note": "About 1,100 homes are already complete. The planning programme covers Krafslösa, Vimpeltorpet and Snurrom. The 2024 operational plan states that about 8,500 inhabitants can live there in the long term. It is the municipality's largest development area."
+  },
+  "markniva_lagsta_gata_kvarnholmen": {
+   "name": "Lowest street/quay level on Kvarnholmen (Ölandskajen)",
+   "unit": "m RH2000",
+   "note": "Own calculation: ground level = water level 3.4 m minus the map's water depth 1.89 m = 1.51 m; same result from the threat map for 2.7 m. Next come Skeppsbrogatan at Skeppsbron 1.6 m, Kaggensgatan (southern) 1.8 m, Södra Vallgatan, Elevatorkajen and Östra Sjögatan (northern) 1.9 m. Quay edges and steps may lie lower."
+  },
+  "markniva_typisk_kvarnholmen": {
+   "name": "Typical ground level on Kvarnholmen (median of the land surface)",
+   "unit": "m RH2000",
+   "note": "Own calculation: share of Kvarnholmen's 45 ha of land surface that MCF's coastal layer shows as flooded at each decimetre. 50% lies below approx. 2.7 m. The range gives the 25th–75th percentile, 2.1–3.7 m. 17% lies below 2.0 m. The highest part is Storgatan–Stortorget, approx. 3.9–4.4 m. The ramparts and bastions lie above 5 m and make up 2% of the area."
+  },
+  "andel_kvarnholmen_under_2m": {
+   "name": "Share of Kvarnholmen's land surface flooded at sea level +2.0 m RH2000",
+   "unit": "%",
+   "note": "Own calculation by pixel counting: 5% at 1.8 m, 17% at 2.0 m, 42% at 2.5 m and 57% at 3.0 m. The harbour area south of Kvarnholmen (Barlastholmen, Tjärhovet and the railway yard, 51 ha) is already 68% flooded at 2.0 m. The calculation assumes no protection and no waves."
+  },
+  "hogvatten_100ar_idag": {
+   "name": "Sea water level with a 100-year return period in Kalmar, current climate",
+   "unit": "cm RH2000",
+   "note": "That is 115 cm above the 1995–2014 mean water level, which is 14 cm RH2000. The range 122–136 cm is a 90% credibility interval. The value comes from a Bayesian model with 44 measuring stations, since Kalmar lacks a long measurement series. It replaces the model's assumed storm surge of 1.75 m."
+  },
+  "hogvatten_500ar_idag": {
+   "name": "Sea water level with a 500-year return period in Kalmar, current climate",
+   "unit": "cm RH2000",
+   "note": "That is 125 cm above the mean water level, with a 90% interval of 131–148 cm. The 50-year level is 123 cm (117–129)."
+  },
+  "hogvatten_100ar_2100_ssp245": {
+   "name": "100-year sea water level in Kalmar in 2100 (SSP2-4.5)",
+   "unit": "cm RH2000",
+   "note": "Includes land uplift. 90% confidence interval 138–215 cm. The 500-year level is 186 cm."
+  },
+  "hogvatten_100ar_2100_ssp585": {
+   "name": "100-year sea water level in Kalmar in 2100 (SSP5-8.5)",
+   "unit": "cm RH2000",
+   "note": "Includes land uplift. 90% confidence interval 144–250 cm. SSP3-7.0 gives 185 cm (137–234)."
+  },
+  "hogvatten_100ar_2150_ssp245": {
+   "name": "100-year sea water level in Kalmar in 2150 (SSP2-4.5)",
+   "unit": "cm RH2000",
+   "note": "90% confidence interval 134–271 cm. MCF's 2026 threat map uses the upper limit, rounded to 2.7 m."
+  },
+  "hogvatten_100ar_2150_ssp585": {
+   "name": "100-year sea water level in Kalmar in 2150 (SSP5-8.5)",
+   "unit": "cm RH2000",
+   "note": "90% confidence interval 142–339 cm. MCF's 2026 threat map uses the upper limit, 3.4 m. At that level about 64% of Kvarnholmen's land surface is under water without protection (own pixel count)."
+  },
+  "havsniva_hojning_2150_ssp245": {
+   "name": "Sea level rise in Kalmar to 2150 (SSP2-4.5, median)",
+   "unit": "cm",
+   "note": "Net rise after land uplift: the mean water level goes from 14 cm (1995–2014) to 87 cm in RH 2000. The likely range (17th–83rd percentile) is 55–131 cm in RH 2000, i.e. a rise of 41–117 cm."
+  },
+  "havsniva_hojning_2150_ssp585": {
+   "name": "Sea level rise in Kalmar to 2150 (SSP5-8.5, median)",
+   "unit": "cm",
+   "note": "The mean water level becomes 126 cm in RH 2000 versus 14 cm in 1995–2014. The likely range is 80–187 cm in RH 2000, i.e. a rise of 66–173 cm. The 5th–95th percentile is 57–236 cm in RH 2000."
+  },
+  "havsniva_hojning_2150_ssp585_mindre_troligt": {
+   "name": "Sea level rise in Kalmar to 2150, low-likelihood high scenario (SSP5-8.5, median)",
+   "unit": "cm",
+   "note": "The scenario includes unstable ice sheets. The mean water level becomes 189 cm in RH 2000, with 80–488 cm as the 17th–83rd percentile, i.e. a rise of 66–474 cm. It is relevant as a stress test, not as a planning case."
+  },
+  "hogsta_uppmatta_vattenstand_kalmar": {
+   "name": "Highest measured sea water level at Kalmar's measuring station (January 2012)",
+   "unit": "cm above mean water level",
+   "note": "The Swedish Maritime Administration's Kalmar station has measured since 2009. According to SMHI's hourly data, the peak on 14 January 2012 corresponds to approx. 110 cm RH2000, but the value is not quality-controlled. The highest checked hourly value is 104 cm RH2000 on 2 January 2019. Oskarshamn's record is 115 cm above mean water level (4 January 2017) and Kungsholmsfort's 133 cm (January 1914)."
+  },
+  "medelvattenstand_kalmar_2024": {
+   "name": "Calculated mean water level in Kalmar 2024",
+   "unit": "cm RH2000",
+   "note": "Apparent land uplift at the Kalmar station is 0.06 cm/year for the measurement period, i.e. almost zero: the sea has in practice eaten up the land uplift. The mean of SMHI's hourly data 2016–2026 is approx. 17 cm (own calculation)."
+  },
+  "hamn_klarar_permanent_hojning": {
+   "name": "Permanent sea level rise that Kalmar harbour can withstand in its current design",
+   "unit": "cm",
+   "note": "The municipality's assessment: the harbour may need reinforcement against temporary high water even before then. The guest harbour is also severely affected if the mean level rises more than approx. 0.7 m. At 1 m, further protective measures are required."
+  },
+  "bhn_idag_kalmar": {
+   "name": "Calculated highest sea level in Kalmar at present (BHN, no planning horizon)",
+   "unit": "cm RH2000",
+   "note": "The County Administrative Board considers that existing housing and critical societal functions should take into account risks up to this level already today. BHN with a 2120 horizon is 278 cm, rounded to 280 cm, which is the planning level for new development."
+  },
+  "hogsta_havsvattenstand_2100": {
+   "name": "Highest calculated sea water level in Kalmar in 2100",
+   "unit": "cm RH2000",
+   "note": "The value is the same as in the baseline, but the source is now primary. The same threat map gives the 100-year level at the end of the century as 1.85 m and the 200-year level as 1.90 m (RCP8.5). MCF's new 2026 threat maps are instead based on SMHI 2025: 1.3 m (50-year today), 2.7 m (100-year in 2150, SSP2-4.5) and 3.4 m (100-year in 2150, SSP5-8.5)."
+  }
+ }
+}

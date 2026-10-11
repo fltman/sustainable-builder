@@ -1,0 +1,795 @@
+{
+  "topic": "natur-mat-stad",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "akermark_hektar",
+      "sdg": [
+        2,
+        15
+      ],
+      "name_sv": "Åkermark i Rättviks kommun",
+      "value": 2368,
+      "unit": "hektar",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Åkermarkens användning efter kommun och gröda. År 1981–2025 (JO0104B2)",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Arealer__1%20Riket%20l%C3%A4n%20kommun/JO0104B2.px/"
+      },
+      "note_sv": "Total åkermark i Jordbruksverkets arealstatistik (jordbrukarstöd och Lantbruksregistret). Arealen har legat nästan still sedan 2010 (2 365 ha) men var 2 666 ha år 1981 och 2 700 ha år 1985, alltså 300–330 ha mer än i dag.",
+      "confidence": "high"
+    },
+    {
+      "id": "vall_andel_akermark",
+      "sdg": [
+        2,
+        15
+      ],
+      "name_sv": "Andel av åkermarken med slåtter- och betesvall",
+      "value": 80.7,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Åkermarkens användning efter kommun och gröda. År 1981–2025 (JO0104B2)",
+        "publisher": "Egen beräkning (ursprungskällor: Jordbruksverket, JO0104B2)",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Arealer__1%20Riket%20l%C3%A4n%20kommun/JO0104B2.px/"
+      },
+      "note_sv": "1 910 ha utnyttjad slåtter- och betesvall delat med 2 368 ha åkermark 2025. Räknas 135 ha grönfoderväxter med odlar drygt 86 % av åkern foder åt nötkreatur, får och hästar. År 1981 var vallandelen 56 % (1 480 av 2 666 ha).",
+      "confidence": "medium"
+    },
+    {
+      "id": "spannmal_hektar",
+      "sdg": [
+        2
+      ],
+      "name_sv": "Spannmålsodling i Rättviks kommun",
+      "value": 229,
+      "unit": "hektar",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Åkermarkens användning efter kommun och gröda. År 1981–2025 (JO0104B2)",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Arealer__1%20Riket%20l%C3%A4n%20kommun/JO0104B2.px/"
+      },
+      "note_sv": "Summa spannmål 2025: vårkorn 136 ha, havre 62 ha, vårvete 22 ha och höstvete 8 ha m.m., 9,7 % av åkern; därtill 6 ha matpotatis och 2 ha trädgårdsväxter. År 1981 odlades minst 941 ha spannmål, varav 756 ha korn (egen summering av grödorna), så arealen har krympt med drygt tre fjärdedelar.",
+      "confidence": "high"
+    },
+    {
+      "id": "betesmark_slatterang_hektar",
+      "sdg": [
+        2,
+        15
+      ],
+      "name_sv": "Betesmark och slåtteräng i Rättviks kommun",
+      "value": 971,
+      "unit": "hektar",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Betesmarkens användning efter kommun och gröda. År 2003–2025 (JO0104B7)",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Arealer__1%20Riket%20l%C3%A4n%20kommun/JO0104B7.px/"
+      },
+      "note_sv": "Total betesmark och slåtteräng 2025: fäbodbete 608 ha, betesmark 349 ha, slåtteräng 6 ha och ospecificerat 9 ha. Arealen har svängt mellan 766 och 1 825 ha sedan 2003, och svängningarna sitter främst i fäbodbetet (449–1 322 ha).",
+      "confidence": "high"
+    },
+    {
+      "id": "fabodbete_hektar",
+      "sdg": [
+        2,
+        15,
+        11
+      ],
+      "name_sv": "Fäbodbete i Rättviks kommun",
+      "value": 608,
+      "unit": "hektar",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Betesmarkens användning efter kommun och gröda. År 2003–2025 (JO0104B7)",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Arealer__1%20Riket%20l%C3%A4n%20kommun/JO0104B7.px/"
+      },
+      "note_sv": "Skogsbete vid fäbodar som registrerats i jordbrukarstödet. Det är 63 % av kommunens betesmark (608 av 971 ha), 12 % av Dalarnas fäbodbete (5 224 ha) och 4 % av Sveriges (15 703 ha). Rättvik ligger trea i länet efter Malung-Sälen (1 975 ha) och Älvdalen (1 351 ha).",
+      "confidence": "high"
+    },
+    {
+      "id": "fabodbete_foretag_lan",
+      "sdg": [
+        2,
+        15,
+        11
+      ],
+      "name_sv": "Jordbruksföretag med fäbodbete i Dalarna",
+      "value": 84,
+      "unit": "företag",
+      "year": 2025,
+      "scope": "Dalarnas län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Betesmarkens användning och antal företag med betesmark efter län och gröda. År 2003–2025 (JO0104B6)",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Arealer__1%20Riket%20l%C3%A4n%20kommun/JO0104B6.px/"
+      },
+      "note_sv": "Antal företag med fäbodbete i länet 2025 (78 år 2023 och 2024); i hela Sverige 205. Antalet per kommun redovisas inte. Länsstyrelsen räknade 2008 till 85 aktivt brukade fäbodställen med 100 brukare i Dalarna, varav bara ett tjugotal med traditionell drift med mjölkning och förädling (rapport 2008:12).",
+      "confidence": "high"
+    },
+    {
+      "id": "jordbruksforetag_antal",
+      "sdg": [
+        2,
+        8
+      ],
+      "name_sv": "Jordbruksföretag i Rättviks kommun",
+      "value": 112,
+      "unit": "företag",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Jordbruksföretag efter kommun och storleksgrupp. År 1981–2025 (JO0106F31)",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Jordbruksforetag__Jordbruksforetag%20och%20jordbruksforetagare/JO0106F31.px/"
+      },
+      "note_sv": "Samtliga storleksgrupper; 2020 fanns 106. Företagen med mer än 2 ha åker har halverats från 210 år 1981 till 103 år 2025 (egen summering av storleksgrupperna). Elva företag har över 50 ha åker, och Länsstyrelsen bedömer att sju är stora nog att sysselsätta mer än en person på heltid.",
+      "confidence": "high"
+    },
+    {
+      "id": "mjolkkor_antal",
+      "sdg": [
+        2
+      ],
+      "name_sv": "Mjölkkor i Rättviks kommun",
+      "value": 437,
+      "unit": "kor",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal djur och jordbruksföretag med djur efter kommun och djurslag. År 1981–2023 (JO0103F05)",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Lantbrukets%20djur__Lantbruksdjur%20i%20juni/JO0103F05.px/"
+      },
+      "note_sv": "Kor för mjölkproduktion i juni 2023 hos bara fem företag (tolv år 2010); 1981 fanns 909 mjölkkor. Ändå täcker mjölkproduktionen hela kommunens förbrukning enligt Länsstyrelsen. Kommunsiffror finns för 2010, 2013, 2016, 2020 och 2023.",
+      "confidence": "high"
+    },
+    {
+      "id": "notkreatur_antal",
+      "sdg": [
+        2,
+        13
+      ],
+      "name_sv": "Nötkreatur i Rättviks kommun",
+      "value": 1693,
+      "unit": "djur",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal djur och jordbruksföretag med djur efter kommun och djurslag. År 1981–2023 (JO0103F05)",
+        "publisher": "Egen beräkning (ursprungskällor: Jordbruksverket, JO0103F05)",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Lantbrukets%20djur__Lantbruksdjur%20i%20juni/JO0103F05.px/"
+      },
+      "note_sv": "Summa av mjölkkor (437), dikor (255), kvigor, tjurar och stutar (591) samt kalvar under ett år (410) i juni 2023. Motsvarande summa var 1 975 år 1981, 1 859 år 2010 och 1 613 år 2020. Dikorna har ökat från 10 år 1981 till 255, medan mjölkkorna har halverats; därtill fanns 181 hästar 2023.",
+      "confidence": "medium"
+    },
+    {
+      "id": "far_antal",
+      "sdg": [
+        2,
+        15
+      ],
+      "name_sv": "Får (tackor och baggar) i Rättviks kommun",
+      "value": 579,
+      "unit": "djur",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal djur och jordbruksföretag med djur efter kommun och djurslag. År 1981–2023 (JO0103F05)",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Lantbrukets%20djur__Lantbruksdjur%20i%20juni/JO0103F05.px/"
+      },
+      "note_sv": "Baggar och tackor i juni 2023 hos 27 företag, plus 560 lamm. Antalet har nästan fördubblats sedan 1981 (317) och 1990 (288); ÖP 2019 noterar att fårskötseln ofta bedrivs som fritidsverksamhet.",
+      "confidence": "high"
+    },
+    {
+      "id": "sjalvforsorjningsgrad_vikt_lan",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Självförsörjningsgrad för livsmedel i Dalarna, räknat i vikt",
+      "value": 38,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Dalarnas län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Livsmedelskedjan i Dalarnas län – lägesbeskrivning 2023, rapport 2025:05, s. 9 och 35 (pdf-sida 8 och 34)",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.75dc539919618cb34bb3502d/1744876622642/Livsmedelskedjan%20i%20Dalarna%20l%C3%A4gesbeskrivning%202023.pdf"
+      },
+      "note_sv": "Länets produktion (90 000 ton) delad med konsumtionen (239 000 ton), med antagandet att allt som produceras stannar i länet; Sverige som helhet ligger på 75 %. Länsstyrelsen påpekar att beräkningen har många osäkerheter; förra lägesbeskrivningen (2022) angav 42 %. Bara 10 % av råvarorna är sådant som inte kan produceras lokalt, som kaffe, te, ris och exotiska frukter.",
+      "confidence": "medium"
+    },
+    {
+      "id": "sjalvforsorjningsgrad_energi_lan",
+      "sdg": [
+        2
+      ],
+      "name_sv": "Självförsörjningsgrad för livsmedel i Dalarna, räknat i energi",
+      "value": 29,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Dalarnas län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Livsmedelskedjan i Dalarnas län – lägesbeskrivning 2023, rapport 2025:05, s. 9 (pdf-sida 8)",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.75dc539919618cb34bb3502d/1744876622642/Livsmedelskedjan%20i%20Dalarna%20l%C3%A4gesbeskrivning%202023.pdf"
+      },
+      "note_sv": "Produktionen motsvarar 890 kcal per person och dag mot en konsumtion på 3 000 kcal. Livsmedelsverkets kriskost är 2 450 kcal, så länets primärproduktion täcker drygt en tredjedel av behovet i en kris, och mindre om råvarorna också ska förädlas i länet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "sjalvforsorjningsgrad_notkott",
+      "sdg": [
+        2
+      ],
+      "name_sv": "Självförsörjningsgrad för nötkött i Rättviks kommun",
+      "value": 50,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Livsmedelskedjan i Dalarnas län – lägesbeskrivning 2023, rapport 2025:05, kommunavsnittet Rättvik s. 89–90 (pdf-sida 88–89)",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.75dc539919618cb34bb3502d/1744876622642/Livsmedelskedjan%20i%20Dalarna%20l%C3%A4gesbeskrivning%202023.pdf"
+      },
+      "note_sv": "Länsstyrelsens beräkning av lokal produktion mot lokal förbrukning. I samma beräkning täcker mjölkproduktionen hela kommunens förbrukning, medan spannmålsskörden täcker en femtedel.",
+      "confidence": "medium"
+    },
+    {
+      "id": "sjalvforsorjningsgrad_lamm",
+      "sdg": [
+        2
+      ],
+      "name_sv": "Självförsörjningsgrad för lammkött i Rättviks kommun",
+      "value": 70,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Livsmedelskedjan i Dalarnas län – lägesbeskrivning 2023, rapport 2025:05, kommunavsnittet Rättvik s. 90 (pdf-sida 89)",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.75dc539919618cb34bb3502d/1744876622642/Livsmedelskedjan%20i%20Dalarna%20l%C3%A4gesbeskrivning%202023.pdf"
+      },
+      "note_sv": "Samma beräkning som för nötkött. Totalt sett är primärproduktionen i kommunen 'klart lägre än förbrukningen' enligt Länsstyrelsen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "livsmedelskedjan_sysselsatta",
+      "sdg": [
+        8,
+        2
+      ],
+      "name_sv": "Sysselsatta i livsmedelskedjan i Rättviks kommun",
+      "value": 440,
+      "unit": "personer",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Livsmedelskedjan i Dalarnas län – lägesbeskrivning 2023, rapport 2025:05, kommunavsnittet Rättvik s. 89 (pdf-sida 88)",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.75dc539919618cb34bb3502d/1744876622642/Livsmedelskedjan%20i%20Dalarna%20l%C3%A4gesbeskrivning%202023.pdf"
+      },
+      "note_sv": "Länsstyrelsens uppskattning från jordbruk till restaurang; hälften är kvinnor och flest arbetar på restauranger och i detaljhandeln. I hela Dalarna arbetar 9 500 personer i livsmedelskedjan.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "livsmedelsforadlare_antal",
+      "sdg": [
+        2,
+        8,
+        12
+      ],
+      "name_sv": "Livsmedelsförädlande företag i Rättviks kommun",
+      "value": 13,
+      "unit": "företag",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Livsmedelskedjan i Dalarnas län – lägesbeskrivning 2023, rapport 2025:05, kommunavsnittet Rättvik s. 89 (pdf-sida 88)",
+        "publisher": "Egen beräkning (ursprungskällor: Länsstyrelsen i Dalarnas län, rapport 2025:05)",
+        "url": "https://www.lansstyrelsen.se/download/18.75dc539919618cb34bb3502d/1744876622642/Livsmedelskedjan%20i%20Dalarna%20l%C3%A4gesbeskrivning%202023.pdf"
+      },
+      "note_sv": "Summa av Länsstyrelsens uppräkning: Nya Siljans Chark (slakteri, 25 anställda), Rättviks glass (11 anställda), fem bagerier, två chokladtillverkare, ett bryggeri och tre andra slakt- och charkföretag. Därtill finns fem företag med växthus (två med prydnadsväxter), tio livsmedelsbutiker och 47 restauranger.",
+      "confidence": "medium"
+    },
+    {
+      "id": "akermark_per_invanare",
+      "sdg": [
+        2
+      ],
+      "name_sv": "Åkermark per invånare i Rättviks kommun",
+      "value": 0.21,
+      "unit": "hektar per invånare",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Livsmedelskedjan i Dalarnas län – lägesbeskrivning 2023, rapport 2025:05, s. 42 och 89 (pdf-sida 41 och 88)",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.75dc539919618cb34bb3502d/1744876622642/Livsmedelskedjan%20i%20Dalarna%20l%C3%A4gesbeskrivning%202023.pdf"
+      },
+      "note_sv": "2 343 ha åker delat med 11 042 invånare 2023, strax över världsgenomsnittet på 0,19 ha. Med svensk konsumtion och världens genomsnittliga skördar skulle det enligt Länsstyrelsen behövas minst 0,38 ha per person för självförsörjning.",
+      "confidence": "high"
+    },
+    {
+      "id": "skogsmark_andel_landareal",
+      "sdg": [
+        15,
+        13
+      ],
+      "name_sv": "Skogsmark som andel av landarealen",
+      "value": 89.5,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Markanvändningen i Sverige efter region och markanvändningsklass, vart 5:e år 2010–2020 (MI0803, MarkanvN)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB, MI0803)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0803__MI0803A/MarkanvN/"
+      },
+      "note_sv": "172 707 ha skogsmark (varav 157 660 ha produktiv) delat med 193 047 ha landareal 2020. Öppen myr tar ytterligare 5,9 % (11 463 ha). Vattenarealen är 21 942 ha, 10 % av kommunens totala yta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "jordbruksmark_andel_landareal",
+      "sdg": [
+        2,
+        15
+      ],
+      "name_sv": "Jordbruksmark som andel av landarealen",
+      "value": 1.7,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Markanvändningen i Sverige efter region och markanvändningsklass, vart 5:e år 2010–2020 (MI0803, MarkanvN)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB, MI0803)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0803__MI0803A/MarkanvN/"
+      },
+      "note_sv": "3 260 ha jordbruksmark (2 347 ha åker och 913 ha betesmark) delat med 193 047 ha landareal 2020; 2010 var det 3 513 ha. ÖP 2019 anger 'knappt tre procent' och beskriver marken som småskalig, kalkrik och bördig, främst längs Siljansringens sjöar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bebyggd_mark_andel_landareal",
+      "sdg": [
+        11,
+        15
+      ],
+      "name_sv": "Bebyggd och anlagd mark som andel av landarealen",
+      "value": 2.3,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Markanvändningen i Sverige efter region och markanvändningsklass, vart 5:e år 2010–2020 (MI0803, MarkanvN)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB, MI0803)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0803__MI0803A/MarkanvN/"
+      },
+      "note_sv": "4 462 ha bebyggd och anlagd mark (byggnader, tomter, vägar, järnväg m.m.) delat med 193 047 ha landareal 2020. År 2010 var arealen 4 309 ha, så den har ökat med 153 ha på tio år, ungefär 15 ha per år.",
+      "confidence": "medium"
+    },
+    {
+      "id": "skog_privatpersoner_andel",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Andel av den produktiva skogsmarken som ägs av privatpersoner",
+      "value": 32.5,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal ägare och deklarerad produktiv skogsmarksareal (fysiska personer) efter kommun (PX11) samt deklarerad areal per kommun (PX12). År 1999–2025",
+        "publisher": "Egen beräkning (ursprungskällor: Skogsstyrelsens statistikdatabas, tabell PX11 och PX12)",
+        "url": "https://pxweb.skogsstyrelsen.se/pxweb/sv/Skogsstyrelsens%20statistikdatabas/Skogsstyrelsens%20statistikdatabas__Fastighets-%20och%20agarstruktur/PX11.px/"
+      },
+      "note_sv": "51 000 ha deklarerad produktiv skogsmark ägd av fysiska personer delat med 157 000 ha totalt 2025; båda talen är avrundade till tusental hektar. Resten ägs av bolag, staten och andra allmänna eller privata ägare. Av privatpersonernas skog ägs 31 000 ha av folkbokförda i kommunen och 14 000 ha av ägare utanför Dalarna.",
+      "confidence": "medium"
+    },
+    {
+      "id": "skogsagare_privatpersoner_antal",
+      "sdg": [
+        15,
+        8
+      ],
+      "name_sv": "Privatpersoner som äger skog i Rättviks kommun",
+      "value": 2291,
+      "unit": "ägare",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal ägare och deklarerad produktiv skogsmarksareal (fysiska personer) efter kommun, juridiskt kön och folkbokföringsort (PX11). År 1999–2025",
+        "publisher": "Skogsstyrelsens statistikdatabas",
+        "url": "https://pxweb.skogsstyrelsen.se/pxweb/sv/Skogsstyrelsens%20statistikdatabas/Skogsstyrelsens%20statistikdatabas__Fastighets-%20och%20agarstruktur/PX11.px/"
+      },
+      "note_sv": "1 235 av ägarna är folkbokförda i kommunen, 377 i övriga Dalarna och 679 utanför länet; 952 är kvinnor. Antalet har minskat från 2 740 år 1999. Medianinnehavet per brukningsenhet är bara 11 ha medan medelvärdet är 85 ha (tabell PX12).",
+      "confidence": "high"
+    },
+    {
+      "id": "foryngringsavverkning_anmald_hektar",
+      "sdg": [
+        15,
+        13
+      ],
+      "name_sv": "Anmäld föryngringsavverkning i Rättviks kommun",
+      "value": 1416,
+      "unit": "hektar",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Anmälan och ansökan om tillstånd för föryngringsavverkning per kommun och ägarkategori. År 2010– (tabell 12)",
+        "publisher": "Skogsstyrelsens statistikdatabas",
+        "url": "https://pxweb.skogsstyrelsen.se/pxweb/sv/Skogsstyrelsens%20statistikdatabas/Skogsstyrelsens%20statistikdatabas__Avverkningsanmalan/12_per_kommun.px/"
+      },
+      "note_sv": "Anmälningar och tillståndsansökningar 2025: 708 ha hos enskilda ägare och 708 ha hos övriga ägare. Snittet 2021–2025 var 1 405 ha per år (0,9 % av den produktiva skogsmarken) mot 2 030 ha per år 2010–2014, då övriga ägare anmälde betydligt mer. Anmäld areal är inte detsamma som faktiskt avverkad areal.",
+      "confidence": "high"
+    },
+    {
+      "id": "naturreservat_antal",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Naturreservat i Rättviks kommun",
+      "value": 29,
+      "unit": "reservat",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Naturvårdsregistret, REST-API v3: gällande skyddade områden i kommun 2031",
+        "publisher": "Naturvårdsverket",
+        "url": "https://geodata.naturvardsverket.se/naturvardsregistret/rest/v3/omrade/nolinks?kommun=2031&beslutsstatus=G%C3%A4llande&limit=500"
+      },
+      "note_sv": "29 gällande naturreservat med sammanlagt 3 724 ha (3 611 ha land), varav tio har bildats sedan 2015. Det senaste är det kommunala Lerdalsbergets naturreservat intill Rättviks slalombacke, beslutat av kommunfullmäktige 7 maj 2026 (13,9 ha i registret, cirka 12 ha enligt beslutet). Kommunens egen webbsida räknar fortfarande 27.",
+      "confidence": "high"
+    },
+    {
+      "id": "natura2000_omraden_antal",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Natura 2000-områden i Rättviks kommun",
+      "value": 15,
+      "unit": "områden",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "N2000, REST-API v3: Natura 2000-områden i kommun 2031",
+        "publisher": "Naturvårdsverket",
+        "url": "https://geodata.naturvardsverket.se/n2000/rest/v3/omrade/nolinks?kommun=2031&limit=500"
+      },
+      "note_sv": "14 områden ligger helt i kommunen (1 688 ha), och älven Voxnan (912 ha) delas med Ovanåker och Ljusdal. Gåsberget och Glistjärn är både habitat- och fågeldirektivsområden; Glistjärn nära kalkfabriken norr om tätorten beskrivs som kommunens förnämsta fågelsjö.",
+      "confidence": "high"
+    },
+    {
+      "id": "rodlistade_arter_observerade_antal",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Rödlistade arter med fynd i Rättviks kommun sedan 2000",
+      "value": 556,
+      "unit": "arter",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "SBDI Bioatlas, förekomstsökning: fynd 2000–2026 i Rättviks kommun (lager cl10040) av arter på Rödlistan 2020 (lista dr204), facett per art",
+        "publisher": "Egen beräkning (ursprungskällor: SBDI/Biodiversity Atlas Sweden med data från bl.a. Artportalen; SLU Artdatabanken, Rödlistade arter i Sverige 2020)",
+        "url": "https://records.biodiversitydata.se/ws/occurrences/search?q=*:*&fq=species_list_uid:dr204&fq=cl10040:%22R%C3%A4ttvik%22&fq=year:%5B2000%20TO%20*%5D&pageSize=0&facets=species&flimit=-1"
+      },
+      "note_sv": "Antal unika arter på Rödlistan 2020 med minst ett fynd 2000–2026 i kommunen, uttaget 11 oktober 2026 (729 arter alla år, 511 sedan 2010). Talet speglar både artrikedom och inventeringsinsats; skyddsklassade fynd har generaliserade koordinater och Rödlistan 2025 fanns inte i databasen. Flest fynd har ärenprisnätfjäril, garnlav och knärot.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "geosites_antal",
+      "sdg": [
+        11,
+        15,
+        8
+      ],
+      "name_sv": "Geosites i Siljan Geopark inom Rättviks kommun",
+      "value": 12,
+      "unit": "platser",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Siljan Geopark (Rättvik outdoor)",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/rattvik-outdoor/siljan-geopark.html"
+      },
+      "note_sv": "Kommunen listar tolv geosites: Amtjärnsbrottet, Boda kyrka, Dalhalla, Enåns naturreservat, Fjäckan, Långbryggan, Solberga kalkbrott, Springkällan, Styggforsen, Vidablick, Vindförbergs udde och Östbjörka naturreservat. Siljan Geopark drivs av Leksand, Mora, Orsa och Rättvik med Länsstyrelsen och Visit Dalarna; den blev 2019 Sveriges första nationella geopark och SGU förlängde statusen med fem år i november 2025. Meteoritnedslaget som skapade Siljansringen har daterats till 377 miljoner år (SGU-rapport 2010:21).",
+      "confidence": "high"
+    },
+    {
+      "id": "gronyta_andel_tatort",
+      "sdg": [
+        11,
+        15
+      ],
+      "name_sv": "Grönyta i Rättviks tätort, andel av landarealen",
+      "value": 68.8,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Rättvik tätort",
+      "direction": "higher_better",
+      "source": {
+        "title": "Grönyta, hårdgjord mark och övrig mark i hektar efter tätort och markanvändning (MI0805, GYMarkTypToN)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB, MI0805)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0805__MI0805A/GYMarkTypToN/"
+      },
+      "note_sv": "854 ha grönyta (490 ha öppen mark och 364 ha skog) delat med 1 242 ha landareal i tätorten 2020; därtill 114 ha åker. Allmänt tillgänglig grönyta är 499 ha (40 %). SCB räknar även villaträdgårdar och gräsytor mellan hus som grönyta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "hardgjord_mark_andel_tatort",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Hårdgjord mark i Rättviks tätort, andel av landarealen",
+      "value": 21.9,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Rättvik tätort",
+      "direction": "lower_better",
+      "source": {
+        "title": "Hårdgjord mark i hektar efter tätort och kategori (MI0805, GYHgMarkToN)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB, MI0805)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0805__MI0805A/GYHgMarkToN/"
+      },
+      "note_sv": "272 ha hårdgjord mark delat med 1 242 ha land 2020: byggnader 78 ha, vägar och järnväg 103 ha och övrig hårdgjord mark 91 ha. År 2015 var andelen 22,1 % (274 av 1 238 ha). Som jämförelse är Kalmar tätort hårdgjord till 40 % (SCB).",
+      "confidence": "medium"
+    },
+    {
+      "id": "tradbevuxen_mark_andel_tatort",
+      "sdg": [
+        11,
+        13,
+        15
+      ],
+      "name_sv": "Skogsklädd mark i Rättviks tätort, andel av landarealen",
+      "value": 29.3,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Rättvik tätort",
+      "direction": "higher_better",
+      "source": {
+        "title": "Grönyta i hektar efter tätort och marktäcke (MI0805, GYMaTackeToN)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB, MI0805)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0805__MI0805A/GYMaTackeToN/"
+      },
+      "note_sv": "364 ha mark klassad som skog inom tätortens grönyta delat med 1 242 ha land 2020 (388 ha och 31,3 % år 2015). Det är ingen mätning av trädkronor: gatuträd och spridda trädgårdsträd räknas inte, så måttet kan underskatta krontäckningen. Någon krontäckningsgrad för Rättvik har inte hittats.",
+      "confidence": "medium"
+    },
+    {
+      "id": "narhet_gronomrade_200m_andel",
+      "sdg": [
+        11,
+        3
+      ],
+      "name_sv": "Andel av tätortsborna med ett grönområde inom 200 meter",
+      "value": 84,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Rättvik tätort",
+      "direction": "higher_better",
+      "source": {
+        "title": "Tätortsbefolkningens närhet till grönområden per tätort (MI0805, GrOmrBefToN)",
+        "publisher": "SCB Statistikdatabasen",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0805__MI0805B/GrOmrBefToN/"
+      },
+      "note_sv": "Gäller de 5 318 invånarna i Rättviks tätort och grönområden på minst 0,5 ha; 98 % har ett inom 300 m och 100 % inom 500 m. Tätorten har 167 sådana grönområden på sammanlagt 345 ha, varav fyra är större än 10 ha.",
+      "confidence": "high"
+    },
+    {
+      "id": "lis_omraden_antal",
+      "sdg": [
+        11,
+        15
+      ],
+      "name_sv": "LIS-områden (landsbygdsutveckling i strandnära lägen) i översiktsplanen",
+      "value": 20,
+      "unit": "områden",
+      "year": 2019,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Översiktsplan för Rättviks kommun 2030, Del 4 – LIS Landsbygdsutveckling i strandnära lägen, s. 5 (pdf)",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/download/18.6e7a1da16b8abf1f9b851c1/1562077783009/Del4_Landsbygdsutveckling_i_strandnara_lagen_LIS.pdf"
+      },
+      "note_sv": "Av 24 utredda strandområden pekades 20 ut där strandskyddsdispens kan ges med landsbygdsutveckling som skäl; fem ligger vid Siljan (Ickviken–Vikarbyn, Stumsnäs, Tina–Gärdebyn, Båthamnen och Lerdal). Strandskyddet är i övrigt 100 m, utökat vid Säsvik i Oresjön samt Sollen och Storholmen i Amungen (ÖP del 2). Planeringsstrategin 2024 bedömer att LIS-planen behöver revideras.",
+      "confidence": "high"
+    },
+    {
+      "id": "detaljplanerad_mark_smahus_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Detaljplanerad mark för småhus (planberedskap)",
+      "value": 250,
+      "unit": "småhus",
+      "year": 2019,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Översiktsplan för Rättviks kommun 2030, Del 2 – Planeringsinriktningar, s. 38–39 (pdf-sida 15–16)",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/download/18.6e7a1da16b8abf1f9b851bf/1562077782379/Del2_Planeringsinriktningar.pdf"
+      },
+      "note_sv": "ÖP anger detaljplanerad mark för 'drygt 250 småhus', främst i centrala Rättvik, Lerdal–Gärdebyn, Vikarbyn och Furudal, men flera planer är gamla och saknar vägar eller VA. Småhusbyggandet låg då på 5–10 villor per år, och i tätorten råder brist på lägenheter i flerbostadshus.",
+      "confidence": "medium"
+    },
+    {
+      "id": "detaljplaner_pagaende_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Detaljplaner under aktivt arbete i Rättviks kommun",
+      "value": 7,
+      "unit": "detaljplaner",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Pågående detaljplanering (prioriteringsordning beslutad av samhällsutvecklingsutskottet 2026-04-15 § 30)",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/bygga-bo-och-miljo/oversiktsplan-och-detaljplaner/pagaende-detaljplanering.html"
+      },
+      "note_sv": "Aktiva planer: Klockargården (småhus), Utsikten, Persborg och Siljansborg (bostäder, Siljansborg även tillfälligt boende), Haga- och Börjes väg (gator, natur och dagvatten), Stora Lissbrändan samt Garvaren, Mangeln och Färgaren. Utsikten (cirka 47 småhustomter söder om slalombacken) antogs av kommunfullmäktige 11 juni 2026, och för Klockargården (upp till sju tomter) godkändes exploateringsavtalet 7 maj 2026. Nio uppdrag står i kö, bland dem en ny översiktsplan med fördjupning för Rättvik–Vikarbyn, Vackert Rättvik 2.0 och Hedslund IP.",
+      "confidence": "high"
+    },
+    {
+      "id": "persborg_planerade_bostader",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Planerade bostäder i det nya området vid Persborg",
+      "value": 100,
+      "unit": "bostäder",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Studenter gav inspiration till nytt bostadsområde vid Persborg (2026-05-25)",
+        "publisher": "Siljan News",
+        "url": "https://www.siljannews.se/rattvik/studenter-gav-inspiration-till-nytt-bostadsomrade-vid-persborg/"
+      },
+      "note_sv": "Cirka 100 bostäder i flerbostadshus, villor och parhus, tänkt som generationsboende i en ekoby; detaljplanen är prioriterad men utformningen inte bestämd. Studenter vid Högskolan Dalarna tog våren 2026 fram nio förslag. Platsen ligger i Sjurberg vid Siljan, där turisthotellet Persborg stod; på hotelltomten finns i dag en stugby från 1960- eller 1970-talet (kulturmiljöprogrammet 2026).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "langbryggan_kajreparation_kostnad",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Kostnad för reparationen av Långbryggans yttre kaj 2020",
+      "value": 500000,
+      "unit": "kronor",
+      "year": 2020,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Nu repareras kajen på långbryggan (2020-04-06)",
+        "publisher": "Siljan News",
+        "url": "https://www.siljannews.se/rattvik/nu-repareras-kajen-pa-langbryggan/"
+      },
+      "note_sv": "Kommunens kostnad 'runt en halv miljon kronor' sedan en storm i januari 2020 slitit upp plankorna där Gustaf Wasa lägger till; enligt Dala-Demokraten blev jobbet större än väntat och hela kajen byggdes om med ett nytt vågskydd. Bryggan är 628 m lång, byggdes 1895 och nyinvigdes 6 juni 1992 efter en storrenovering, delvis finansierad med 2 938 namnplankor; den senaste större reparationen före 2020 gjordes då.",
+      "confidence": "medium"
+    },
+    {
+      "id": "lokstallarna_renovering_kostnad",
+      "sdg": [
+        11,
+        8
+      ],
+      "name_sv": "Renoveringskostnad för Lokstallarna vid Rättviks station",
+      "value": 7500000,
+      "unit": "kronor",
+      "year": 2025,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Mat och hantverk när lokstallarna slår upp portarna (2025-02-03)",
+        "publisher": "Siljan News",
+        "url": "https://www.siljannews.se/rattvik/mat-och-hantverk-nar-lokstallarna-slar-upp-portarna/"
+      },
+      "note_sv": "Beräknad totalkostnad för den flera år långa renoveringen av lokstallet från omkring 1890, som kommunen tog över 2006. Byggnaden återinvigdes 4 juni 2025 med fyra hallar på totalt 800 m² och upp till 15 m takhöjd för kultur, mat, hantverk och föreningsliv (kommunens nyhet 2025-06-04).",
+      "confidence": "medium"
+    },
+    {
+      "id": "byggnadsminnen_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Byggnadsminnen i Rättviks kommun",
+      "value": 12,
+      "unit": "byggnadsminnen",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Byggnadsminnen i Dalarnas län, förteckning per kommun",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/dalarna/samhalle/kulturmiljo/byggnadsminnen.html"
+      },
+      "note_sv": "Bland dem Hvilans societetspaviljong från 1840-talet i Lerdal (byggnadsminne 1988), Solgården (1897) och Tånggården i Sjurberg, Danielsgården i Bingsjö, Matsgården i Östbjörka och Blånnesladan i Gärdsjö; ÖP 2019 räknade tio. Rättviks kyrka skyddas i stället som kyrkligt kulturminne, och enligt Västerås stifts karakteristik (2006) omfattas även de angränsande kyrkstallarna av kulturminneslagen.",
+      "confidence": "high"
+    },
+    {
+      "id": "riksintressen_kulturmiljo_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Riksintressen för kulturmiljövården i Rättviks kommun",
+      "value": 18,
+      "unit": "områden",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kulturmiljö (bygga nytt, ändra eller riva)",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/bygga-bo-och-miljo/bygga-nytt-andra-eller-riva/kulturmiljo.html"
+      },
+      "note_sv": "Därtill finns 55 kommunala kulturmiljöintressen, och ett kulturmiljöprogram antogs av kommunstyrelsen 17 mars 2026. Närmast centrum ligger Kyrkudden (W 89) med den medeltida kyrkan, en tiondebod från 1758 och 87 kyrkstallar, varav ett är dendrodaterat till 1492 enligt kulturmiljöprogrammet. Fem av riksintressena är fäbodmiljöer (Riksantikvarieämbetets förteckning).",
+      "confidence": "high"
+    },
+    {
+      "id": "kretsloppsplan_mal_avfallsminskning",
+      "sdg": [
+        12,
+        11
+      ],
+      "name_sv": "Mål i Kretsloppsplan 2023–2030: minskad avfallsuppkomst till 2030",
+      "value": 25,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Avfallsplan, föreskrifter och kretsloppsplan (Kretsloppsplan 2023–2030)",
+        "publisher": "Dala Vatten och Avfall AB",
+        "url": "https://www.dalavattenavfall.se/avfall-och-atervinning/avfallsplan-foreskrifter-och-kretsloppsplan.html"
+      },
+      "note_sv": "Kretsloppsplanen för Rättvik, Leksand, Gagnef och Vansbro antogs i Rättvik 22 februari 2024: avfallet ska minska med minst 25 % och avfallet till förbränning med 50 % till 2030. Hushållen lämnar grovavfall på Drafsåns ÅVC (dygnet runt med Anytime) och i Furudal, och sedan oktober 2025 tar kommunens Ta Till Vara-butik på Riksvägen 23 emot återbruk från en bemannad container på Drafsån.",
+      "confidence": "high"
+    }
+  ]
+}

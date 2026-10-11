@@ -1,0 +1,1369 @@
+{
+ "topic": "kolada",
+ "compiled": "2026-10-11",
+ "kommun": {
+  "id": "2031",
+  "name": "Rättviks kommun"
+ },
+ "indicators": [
+  {
+   "id": "befolkning_total",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Folkmängd Rättviks kommun",
+   "value": 10978.0,
+   "unit": "invånare",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N01951: Invånare totalt, antal",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N01951/municipality/2031/year/2025"
+   },
+   "note_sv": "Folkbokförda invånare den 31 december (SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "befolkningstillvaxt_1ar",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Befolkningsförändring senaste året",
+   "value": -0.182,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N01963: Befolkningsförändring sedan föregående år, procent",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N01963/municipality/2031/year/2025"
+   },
+   "note_sv": "Förändringen av folkmängden sedan året innan (SCB). Riket 0,168 %, länet -0,176 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "befolkningstillvaxt_5ar",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Befolkningsförändring senaste fem åren",
+   "value": -0.625,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N01958: Befolkningsförändring under senaste femårsperioden, procent",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N01958/municipality/2031/year/2025"
+   },
+   "note_sv": "Förändringen av folkmängden under de senaste fem åren (SCB). Riket 2,2 %, länet -0,568 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "befolkningstathet",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Befolkningstäthet",
+   "value": 5.687,
+   "unit": "inv/km²",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N02937: Invånare per kvadratkilometer",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N02937/municipality/2031/year/2025"
+   },
+   "note_sv": "Invånare per kvadratkilometer landareal (SCB). Riket 25,9 inv/km², länet 10,2 inv/km² (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "andel_0_19",
+   "sdg": [
+    4,
+    11
+   ],
+   "name_sv": "Andel invånare 0–19 år",
+   "value": 17.526,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N01994: Invånare 0-19 år, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N01994/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen av befolkningen som är 0–19 år (SCB). Riket 22,4 %, länet 21,6 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "andel_65_plus",
+   "sdg": [
+    3,
+    11
+   ],
+   "name_sv": "Andel invånare 65+ år",
+   "value": 34.642,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N01960: Invånare 65+, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N01960/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen av befolkningen som är 65 år eller äldre (SCB). Riket 21,1 %, länet 26,4 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "andel_80_plus",
+   "sdg": [
+    3,
+    11
+   ],
+   "name_sv": "Andel invånare 80+ år",
+   "value": 11.259,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N01813: Invånare 80+, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N01813/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen av befolkningen som är 80 år eller äldre (SCB). Riket 6,4 %, länet 8,1 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "landareal",
+   "sdg": [
+    15
+   ],
+   "name_sv": "Landareal",
+   "value": 1930.46,
+   "unit": "km²",
+   "year": 2026,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N02993: Landareal, kvadratkilometer",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N02993/municipality/2031/year/2026"
+   },
+   "note_sv": "Landareal utan vatten (SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "hushall_antal",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Antal hushåll",
+   "value": 5664.0,
+   "unit": "hushåll",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N02938: Hushåll, antal",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N02938/municipality/2031/year/2025"
+   },
+   "note_sv": "Antalet hushåll (SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "vaxthusgaser_per_inv",
+   "sdg": [
+    13
+   ],
+   "name_sv": "Territoriella växthusgasutsläpp per invånare",
+   "value": 17.505,
+   "unit": "ton CO2e/inv",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N00401: Utsläpp till luft av växthusgaser totalt, ton CO2-ekv/inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00401/municipality/2031/year/2024"
+   },
+   "note_sv": "Territoriella utsläpp inom kommunens gräns (Nationella emissionsdatabasen, RUS/SMHI) – inte konsumtionsbaserade. Riket 4,5 ton CO2e/inv, länet 5,5 ton CO2e/inv (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "vaxthusgaser_transporter_per_inv",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Utsläpp från transporter per invånare",
+   "value": 2.204,
+   "unit": "ton CO2e/inv",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N85073: Utsläpp till luft av växthusgaser, transporter, ton CO2e/inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85073/municipality/2031/year/2024"
+   },
+   "note_sv": "Inrikes transporter inom kommunens gräns (RUS/SMHI). Riket 1,6 ton CO2e/inv, länet 1,9 ton CO2e/inv (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "vaxthusgaser_jordbruk_per_inv",
+   "sdg": [
+    2,
+    13
+   ],
+   "name_sv": "Utsläpp från jordbruk per invånare",
+   "value": 0.643,
+   "unit": "ton CO2e/inv",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N85078: Utsläpp till luft av växthusgaser, jordbruk, ton CO2e/inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85078/municipality/2031/year/2024"
+   },
+   "note_sv": "Jordbrukets utsläpp: djurens matsmältning, gödsel och mark (RUS/SMHI). Riket 0,585 ton CO2e/inv, länet 0,435 ton CO2e/inv (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "vaxthusgaser_el_fjarrvarme_per_inv",
+   "sdg": [
+    7,
+    13
+   ],
+   "name_sv": "Utsläpp från el- och fjärrvärmeproduktion per invånare",
+   "value": 0.021,
+   "unit": "ton CO2e/inv",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N85076: Utsläpp till luft av växthusgaser, el och fjärrvärme, ton CO2e/inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85076/municipality/2031/year/2024"
+   },
+   "note_sv": "Utsläpp från el- och fjärrvärmeproduktionen i kommunen (RUS/SMHI). Riket 0,489 ton CO2e/inv, länet 0,370 ton CO2e/inv (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "vaxthusgaser_industri_per_inv",
+   "sdg": [
+    9,
+    13
+   ],
+   "name_sv": "Utsläpp från industri per invånare",
+   "value": 13.766,
+   "unit": "ton CO2e/inv",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N85077: Utsläpp till luft av växthusgaser, industri, ton CO2e/inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85077/municipality/2031/year/2024"
+   },
+   "note_sv": "Industrins förbränning och processutsläpp (RUS/SMHI). Riket 1,2 ton CO2e/inv, länet 2,0 ton CO2e/inv (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "elanvandning_per_inv",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Slutanvändning av el per invånare",
+   "value": 12.714,
+   "unit": "MWh/inv",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N45906: Slutanvändning av el inom det geografiska området, MWh/inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N45906/municipality/2031/year/2024"
+   },
+   "note_sv": "All slutanvändning av el inom kommunen, industrins inräknad (Energimyndigheten/SCB). Riket 11,9 MWh/inv, länet 18,3 MWh/inv (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "fjarrvarme_fornybar_andel",
+   "sdg": [
+    7,
+    13
+   ],
+   "name_sv": "Förnybar andel av fjärrvärmeproduktionen",
+   "value": 99.375,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N45930: Fjärrvärmeproduktion av förnybara energikällor, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N45930/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen av kommunens fjärrvärmeproduktion som kommer från förnybara energikällor (Energimyndigheten/SCB). Riket 83,9 %, länet 88,2 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "elproduktion_lokal",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Elproduktion inom kommunen",
+   "value": 104671.0,
+   "unit": "MWh/år",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N45926: Elproduktion totalt inom det geografiska området, MWh",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N45926/municipality/2031/year/2024"
+   },
+   "note_sv": "All elproduktion inom kommunens gräns – vatten, vind, sol och kraftvärme (Energimyndigheten/SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "solceller_installerad_effekt",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Installerad solcellseffekt",
+   "value": 7.42,
+   "unit": "MW",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N45970: Solcellsanläggningar totalt, installerad effekt (MW)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N45970/municipality/2031/year/2025"
+   },
+   "note_sv": "Nätanslutna solcellsanläggningar, installerad effekt (Energimyndigheten).",
+   "confidence": "high"
+  },
+  {
+   "id": "vindkraft_installerad_effekt",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Installerad vindkrafteffekt inom kommunen",
+   "value": 30.0,
+   "unit": "MW",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N45979: Vindkraftverk, installerad effekt, MW",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N45979/municipality/2031/year/2025"
+   },
+   "note_sv": "Installerad effekt i vindkraftverk inom kommunens gräns (Energimyndigheten).",
+   "confidence": "high"
+  },
+  {
+   "id": "elbilar_andel",
+   "sdg": [
+    7,
+    11,
+    13
+   ],
+   "name_sv": "Andel elbilar av personbilsbeståndet",
+   "value": 3.697,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N07945: Elbilar, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N07945/municipality/2031/year/2025"
+   },
+   "note_sv": "Elbilar som andel av personbilarna i trafik (Trafikanalys). Riket 8,6 %, länet 4,3 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "kollektivtrafiknara_lage",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Befolkning i kollektivtrafiknära läge",
+   "value": 62.0,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N07418: Befolkning i kollektivtrafiknära läge, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N07418/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen som har en hållplats med minst en avgång i timmen (vardagar 06–20) inom 500 m fågelvägen. Riket 80,9 %, länet 75,6 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "cykelvag_per_inv",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Cykelväg per invånare",
+   "value": 1.779,
+   "unit": "meter/inv",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N07806: Cykelväg i kommunen, total, meter/inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N07806/municipality/2031/year/2025"
+   },
+   "note_sv": "Total cykelvägslängd – kommunal, statlig och enskild – per invånare. Riket 2,7 meter/inv (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "ekologisk_akermark_andel",
+   "sdg": [
+    2,
+    15
+   ],
+   "name_sv": "Ekologiskt brukad åkermark",
+   "value": 29.645,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N00403: Ekologiskt brukad åkermark, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00403/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen av åkermarken som brukas ekologiskt (Jordbruksverket). Riket 14,1 %, länet 21,2 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "grundvatten_god_status",
+   "sdg": [
+    6
+   ],
+   "name_sv": "Grundvattenförekomster med god kemisk och kvantitativ status",
+   "value": 100.0,
+   "unit": "%",
+   "year": 2022,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N85053: Grundvattenförekomster med god kemisk och kvantitativ status, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85053/municipality/2031/year/2022"
+   },
+   "note_sv": "Andelen grundvattenförekomster med god kemisk och kvantitativ status (VISS/länsstyrelserna). Riket 97,2 %, länet 99,7 % (2022).",
+   "confidence": "high"
+  },
+  {
+   "id": "skyddad_natur_total",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Skyddad natur, andel av total areal",
+   "value": 1.808,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N85054: Skyddad natur totalt, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85054/municipality/2031/year/2025"
+   },
+   "note_sv": "Nationalpark, naturreservat, naturvårdsområde och biotopskydd som andel av den totala arealen (SCB/Naturvårdsverket). Riket 12,1 %, länet 10,9 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "medellivslangd_man",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Medellivslängd män",
+   "value": 82.8,
+   "unit": "år",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N00923: Medellivslängd män, år",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00923/municipality/2031/year/2025"
+   },
+   "note_sv": "Medellivslängd vid födseln, femårsmedel (SCB). Riket 81,8 år, länet 81,9 år (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "medellivslangd_kvinnor",
+   "sdg": [
+    3,
+    5
+   ],
+   "name_sv": "Medellivslängd kvinnor",
+   "value": 85.12,
+   "unit": "år",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N00925: Medellivslängd kvinnor, år",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00925/municipality/2031/year/2025"
+   },
+   "note_sv": "Medellivslängd vid födseln, femårsmedel (SCB). Riket 85,1 år, länet 84,9 år (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "sjalvskattad_god_halsa",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Bra självskattat hälsotillstånd",
+   "value": 65.8,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada U01405: Invånare med bra självskattat hälsotillstånd, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U01405/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 16–84 år som bedömer sin hälsa som bra eller mycket bra (Folkhälsomyndighetens Hälsa på lika villkor, flera år sammanvägda). Riket 71,0 %, länet 70,1 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "fetma",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Fetma (BMI ≥ 30)",
+   "value": 21.5,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada U01411: Invånare med fetma, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U01411/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 16–84 år med BMI 30 eller mer (Hälsa på lika villkor, flera år sammanvägda). Riket 17,3 %, länet 20,8 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "fysiskt_aktiva",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Fysiskt aktiva minst 150 min/vecka",
+   "value": 63.5,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada U01429: Invånare 16-84 år som är fysiskt aktiva minst 150 min/vecka, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U01429/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 16–84 år som är fysiskt aktiva minst 150 minuter i veckan (Hälsa på lika villkor). Riket 66,1 %, länet 70,1 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "allvarlig_psykisk_pafrestning",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Allvarlig psykisk påfrestning (vuxna 16–84)",
+   "value": 7.5,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N01452: Invånare 16-84 år med allvarlig psykisk påfrestning, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N01452/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 16–84 år med allvarlig psykisk påfrestning enligt Kessler 6 (Hälsa på lika villkor). Riket 10,0 %, länet 9,6 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "psykisk_ohalsa_barn_unga",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Psykisk ohälsa bland barn och unga 0–19 år",
+   "value": 12.84,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N33820: Psykisk ohälsa bland barn och unga, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N33820/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 0–19 år med psykiatrisk diagnos, psykofarmaka eller psykiatrisk vård under året (Socialstyrelsen). Riket 10,0 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "avsaknad_emotionellt_stod",
+   "sdg": [
+    3,
+    10
+   ],
+   "name_sv": "Avsaknad av emotionellt stöd (proxy för ensamhet)",
+   "value": 10.0,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada U01435: Invånare med avsaknad av emotionellt stöd, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U01435/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 16–84 år som saknar emotionellt stöd – ett mått nära ensamhet (Hälsa på lika villkor). Riket 13,3 %, länet 13,1 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "gymnasieexamen_4ar",
+   "sdg": [
+    4
+   ],
+   "name_sv": "Gymnasieexamen inom 4 år",
+   "value": 71.171,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N17461: Gymnasieelever med examen inom 4 år, hemkommun, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N17461/municipality/2031/year/2025"
+   },
+   "note_sv": "Gymnasieelever folkbokförda i kommunen som tagit examen inom fyra år, introduktionsprogrammen inräknade (Skolverket). Riket 74,8 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "eftergymnasial_utbildning_25_64",
+   "sdg": [
+    4
+   ],
+   "name_sv": "Eftergymnasial utbildning, 25–64 år",
+   "value": 34.393,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N01982: Invånare 25-64 år med eftergymnasial utbildning, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N01982/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen 25–64 år med eftergymnasial utbildning (SCB). Riket 48,5 %, länet 38,0 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "arbetsloshet_20_64",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Arbetslöshet 20–64 år (BAS)",
+   "value": 3.092,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N02280: Arbetslöshet, 20-64 år, BAS, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N02280/municipality/2031/year/2024"
+   },
+   "note_sv": "Registerbaserad arbetslöshet bland 20–64-åringar i november (SCB). Riket 5,4 %, länet 4,2 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "unga_varken_arbetar_studerar",
+   "sdg": [
+    4,
+    8
+   ],
+   "name_sv": "Unga 16–24 år som varken arbetar eller studerar",
+   "value": 8.105,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N02797: Invånare 16-24 år som varken arbetar eller studerar, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N02797/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 16–24 år som varken arbetar eller studerar (SCB). Riket 6,2 %, länet 6,7 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "medianinkomst_20_64",
+   "sdg": [
+    8,
+    10
+   ],
+   "name_sv": "Medianinkomst (sammanräknad förvärvsinkomst) 20–64 år",
+   "value": 375400.0,
+   "unit": "kr/år",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N00906: Sammanräknad förvärvsinkomst i åldern 20-64 år (median), kr",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00906/municipality/2031/year/2024"
+   },
+   "note_sv": "Sammanräknad förvärvsinkomst för 20–64-åringar, median (SCB). Riket 401 400 kr/år, länet 389 100 kr/år (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "gini_disponibel_inkomst",
+   "sdg": [
+    10
+   ],
+   "name_sv": "Ginikoefficient, disponibel inkomst",
+   "value": 0.256,
+   "unit": "index 0–1",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N00997: Ginikoefficient – hushållens disponibla inkomster, index",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00997/municipality/2031/year/2024"
+   },
+   "note_sv": "Ginikoefficient för hushållens disponibla inkomster; 0 är total jämlikhet (SCB). Riket 0,314, länet 0,261 (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "barn_lag_ekonomisk_standard",
+   "sdg": [
+    1,
+    10
+   ],
+   "name_sv": "Barn och unga 0–19 år med låg ekonomisk standard",
+   "value": 15.0,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N66077: Invånare, 0-19 år, med låg ekonomisk standard, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N66077/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 0–19 år i hushåll under 60 % av medianens ekonomiska standard (SCB). Riket 17,0 %, länet 20,0 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "nystartade_foretag_per_1000",
+   "sdg": [
+    8,
+    9
+   ],
+   "name_sv": "Nystartade företag per 1000 invånare 16–64 år",
+   "value": 12.738,
+   "unit": "antal/1000",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N00999: Nystartade företag, antal/1000 inv, 16-64 år",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00999/municipality/2031/year/2025"
+   },
+   "note_sv": "Nystartade företag per 1 000 invånare 16–64 år (Tillväxtanalys). Riket 11,5 antal/1000, länet 10,5 antal/1000 (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "trangboddhet_norm2",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Trångboddhet i flerbostadshus (norm 2)",
+   "value": 8.472,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N07907: Trångboddhet i flerbostadshus, enligt norm 2, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N07907/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen boende i flerbostadshus med mer än två personer per rum, kök och vardagsrum oräknade (SCB). Riket 15,1 %, länet 14,9 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "fardigstallda_bostader_per_1000",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Färdigställda bostäder per 1000 invånare",
+   "value": 0.091,
+   "unit": "bostäder/1000 inv",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N07916: Färdigställda bostäder, ny- och ombyggnad, antal/1000 inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N07916/municipality/2031/year/2025"
+   },
+   "note_sv": "Färdigställda bostäder genom ny- och ombyggnad per 1 000 invånare (SCB). Riket 3,1 bostäder/1000 inv, länet 2,3 bostäder/1000 inv (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "kvinnor_kommunfullmaktige",
+   "sdg": [
+    5,
+    16
+   ],
+   "name_sv": "Andel kvinnor i kommunfullmäktige",
+   "value": 38.0,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N05815: Kvinnor i kommunfullmäktige, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N05815/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen kvinnor bland ledamöterna i kommunfullmäktige under mandatperioden (SCB). Riket 43,0 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "avsaknad_tillit",
+   "sdg": [
+    16
+   ],
+   "name_sv": "Avsaknad av tillit till andra",
+   "value": 26.8,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada U01413: Invånare 16-84 år med avsaknad av tillit till andra, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U01413/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 16–84 år som svarar nej på om man kan lita på de flesta människor (Hälsa på lika villkor). Riket 29,6 %, länet 28,6 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "otrygghet_kvall",
+   "sdg": [
+    16
+   ],
+   "name_sv": "Otrygg vid utevistelse sen kväll i eget bostadsområde",
+   "value": 11.0,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N07609: NTU - Otrygghet vid utomhusvistelse sen kväll i det egna bostadsområdet, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N07609/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen som känner sig otrygga eller avstår från att gå ut sen kväll i det egna bostadsområdet (BRÅ:s Nationella trygghetsundersökning); osäker på kommunnivå. Riket 25,0 %, länet 21,2 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "bredband_100mbit",
+   "sdg": [
+    9
+   ],
+   "name_sv": "Tillgång till fast bredband ≥ 100 Mbit/s",
+   "value": 98.97,
+   "unit": "% av hushållen",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N07900: Tillgång till fast bredband om minst 100 Mbit/s, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N07900/municipality/2031/year/2025"
+   },
+   "note_sv": "Hushåll med fast bredband om minst 100 Mbit/s eller omedelbar möjlighet att ansluta, den 1 oktober (PTS). Riket 100 % av hushållen, länet 99,3 % av hushållen (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "kommunalt_avfall_kg_per_inv",
+   "sdg": [
+    12
+   ],
+   "name_sv": "Insamlat kommunalt avfall per invånare",
+   "value": 395.0,
+   "unit": "kg/inv",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada U07801: Insamlat kommunalt avfall totalt, kg/invånare (justerat)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U07801/municipality/2031/year/2025"
+   },
+   "note_sv": "Insamlat kommunalt avfall per invånare, justerat för fritidshus, turism och pendling (Avfall Sverige). Riket 424 kg/inv, länet 422 kg/inv (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "materialatervinning_andel",
+   "sdg": [
+    12
+   ],
+   "name_sv": "Kommunalt avfall till materialåtervinning inkl. biologisk behandling",
+   "value": 45.0,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada U07414: Kommunalt avfall som samlats in för materialåtervinning, inkl. biologisk behandling, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U07414/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen av det kommunala avfallet som samlats in för materialåtervinning, biologisk behandling inräknad (Avfall Sverige). EU:s mål är 55 % 2025 och 65 % 2035. Riket 40,0 %, länet 41,5 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "medborgare_nojda_dricksvattenarbete",
+   "sdg": [
+    6
+   ],
+   "name_sv": "Invånare som anser att kommunens arbete för att säkra dricksvattnet är bra",
+   "value": 89.2,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N00638: Medborgarundersökningen – Kommunens arbete för att säkerställa tillgången till dricksvatten är bra, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00638/municipality/2031/year/2025"
+   },
+   "note_sv": "Andelen som tycker att kommunens arbete för att säkra tillgången till dricksvatten är bra (SCB:s medborgarundersökning). Riket 88,9 %, länet 94,6 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "vattenforekomster_god_status",
+   "sdg": [
+    6
+   ],
+   "name_sv": "Vattenförekomster (alla typer) med god status",
+   "value": 46.47,
+   "unit": "%",
+   "year": 2022,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N85050: Vattenförekomster med god status, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85050/municipality/2031/year/2022"
+   },
+   "note_sv": "Andelen av kommunens vattenförekomster – sjöar, vattendrag, kust och grundvatten – med god status (VISS). Riket 48,5 %, länet 47,0 % (2022).",
+   "confidence": "high"
+  },
+  {
+   "id": "medelavstand_skyddad_natur",
+   "sdg": [
+    15
+   ],
+   "name_sv": "Medelavstånd till skyddad natur",
+   "value": 1.6,
+   "unit": "km",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N85084: Medelavstånd till skyddad natur, km",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85084/municipality/2031/year/2025"
+   },
+   "note_sv": "Invånarnas medelavstånd till närmaste skyddade naturområde (SCB). Riket 2,0 km, länet 2,0 km (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "inpendling_antal",
+   "sdg": [
+    8,
+    11
+   ],
+   "name_sv": "Inpendlare till Rättviks kommun",
+   "value": 1021.0,
+   "unit": "personer",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N02277: Inpendling, antal",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N02277/municipality/2031/year/2024"
+   },
+   "note_sv": "Förvärvsarbetande som arbetar i kommunen men bor i en annan (SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "utpendling_antal",
+   "sdg": [
+    8,
+    11
+   ],
+   "name_sv": "Utpendlare från Rättviks kommun",
+   "value": 1895.0,
+   "unit": "personer",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N02278: Utpendling, antal",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N02278/municipality/2031/year/2024"
+   },
+   "note_sv": "Förvärvsarbetande som bor i kommunen men arbetar i en annan (SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "korstracka_personbil_per_inv",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Körsträcka med personbil per invånare",
+   "value": 788.877,
+   "unit": "mil/inv/år",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada U07917: Genomsnittlig körsträcka med personbil, mil/inv",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U07917/municipality/2031/year/2024"
+   },
+   "note_sv": "Genomsnittlig körsträcka med personbilar registrerade i kommunen, per invånare (Trafikanalys). Riket 625 mil/inv/år, länet 725 mil/inv/år (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "fossiloberoende_personbilar_andel",
+   "sdg": [
+    7,
+    13
+   ],
+   "name_sv": "Fossiloberoende personbilar, andel av beståndet",
+   "value": 17.388,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada U00501: Fossiloberoende personbilar, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U00501/municipality/2031/year/2025"
+   },
+   "note_sv": "El, laddhybrid, gas, etanol m.fl. som andel av personbilarna i trafik (Trafikanalys). Riket 26,0 %, länet 20,4 % (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "laddpunkter_publika_antal",
+   "sdg": [
+    7,
+    11
+   ],
+   "name_sv": "Publika laddpunkter för elbil",
+   "value": 81.0,
+   "unit": "laddpunkter",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N07713: Elbilsladdpunkter, totalt antal",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N07713/municipality/2031/year/2025"
+   },
+   "note_sv": "Publika laddpunkter för elbil i kommunen.",
+   "confidence": "high"
+  },
+  {
+   "id": "vaxthusgaser_transporter_ton",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Utsläpp av växthusgaser från transporter, totalt",
+   "value": 24244.025,
+   "unit": "ton CO2e",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N85533: Utsläpp till luft av växthusgaser, transporter, ton CO2e",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N85533/municipality/2031/year/2024"
+   },
+   "note_sv": "Inrikes transporternas utsläpp inom kommunens gräns, totalt (RUS/SMHI).",
+   "confidence": "high"
+  },
+  {
+   "id": "elproduktion_kraftvarme",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Elproduktion i kraftvärme",
+   "value": 0.0,
+   "unit": "MWh/år",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N45950: Elproduktion från kraftvärmeverk samt industriellt mottryck, MWh",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N45950/municipality/2031/year/2024"
+   },
+   "note_sv": "El från kraftvärmeverk och industriellt mottryck inom kommunen (Energimyndigheten/SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "elproduktion_vindkraft",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Elproduktion från vindkraft inom kommunen",
+   "value": 82531.0,
+   "unit": "MWh/år",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N45904: Elproduktion från vindkraft, MWh",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N45904/municipality/2031/year/2024"
+   },
+   "note_sv": "Elproduktion från vindkraftverk inom kommunens gräns (Energimyndigheten/SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "elproduktion_sol",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Elproduktion från solkraft inom kommunen",
+   "value": 6033.0,
+   "unit": "MWh/år",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N45952: Elproduktion från solkraft, MWh",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N45952/municipality/2031/year/2024"
+   },
+   "note_sv": "Elproduktion från solceller inom kommunen (Energimyndigheten/SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "bostadsmarknadslage_bme",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Kommunens bedömning av bostadsmarknaden (0 = underskott, 1 = balans, 2 = överskott)",
+   "value": 0.0,
+   "unit": "index 0–2",
+   "year": 2026,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada U30446: Bostadsmarknadsläge i kommunen totalt",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U30446/municipality/2031/year/2026"
+   },
+   "note_sv": "Kommunens egen bedömning i Boverkets bostadsmarknadsenkät: 0 underskott, 1 balans, 2 överskott.",
+   "confidence": "high"
+  },
+  {
+   "id": "bostadsmarknadslage_ungdomar_bme",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Kommunens bedömning av bostadsmarknaden för ungdomar 19–25 år (0 = underskott)",
+   "value": 0.0,
+   "unit": "index 0–2",
+   "year": 2026,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada U30460: Bostadsmarknadsläget i kommunen, ungdomar",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U30460/municipality/2031/year/2026"
+   },
+   "note_sv": "Kommunens egen bedömning för 19–25-åringar i Boverkets bostadsmarknadsenkät: 0 underskott, 1 balans, 2 överskott.",
+   "confidence": "high"
+  },
+  {
+   "id": "sysselsatta_arbetsstalle_kommun",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Sysselsatta med arbetsställe i Rättviks kommun",
+   "value": 4324.0,
+   "unit": "personer",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N02201: Sysselsatta efter arbetsställets belägenhet, antal",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N02201/municipality/2031/year/2024"
+   },
+   "note_sv": "Förvärvsarbetande med arbetsställe i kommunen, var de än bor (SCB).",
+   "confidence": "high"
+  },
+  {
+   "id": "kommunen_tillsvidareanstallda",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Tillsvidareanställda månadsavlönade i Rättviks kommun",
+   "value": 1060.0,
+   "unit": "personer",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "context",
+   "source": {
+    "title": "Kolada N00071: Månadsavlönad personal, tillsvidareanställda i kommunen, antal",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00071/municipality/2031/year/2025"
+   },
+   "note_sv": "Kommunens tillsvidareanställda månadsavlönade – personer, inte årsarbetare (SKR).",
+   "confidence": "high"
+  },
+  {
+   "id": "trygg_i_skolan_ak8",
+   "sdg": [
+    4,
+    16
+   ],
+   "name_sv": "Elever i åk 8 som känner sig trygga i skolan",
+   "value": 72.6,
+   "unit": "%",
+   "year": 2026,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N15643: Elever i åk 8: Känner du dig trygg i skolan? (Helt och hållet/Till stor del)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N15643/municipality/2031/year/2026"
+   },
+   "note_sv": "Andelen elever i årskurs 8 som känner sig trygga i skolan helt och hållet eller till stor del.",
+   "confidence": "high"
+  },
+  {
+   "id": "individuellt_valbefinnande_index",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Individuellt välbefinnande, kommunindex (0–100)",
+   "value": 49.087,
+   "unit": "index 0–100",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada N00366: Individuellt välbefinnande – Kommunindex",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00366/municipality/2031/year/2025"
+   },
+   "note_sv": "Tillväxtverkets index som väger samman självskattad hälsa, tandhälsa och psykiskt välbefinnande, normaliserat mellan landets kommuner (0–100). Riket 55,2 (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "gott_psykiskt_valbefinnande",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Invånare 16–84 år med gott psykiskt välbefinnande",
+   "value": 84.6,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada U01473: Invånare 16–84 år med gott psykiskt välbefinnande, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U01473/municipality/2031/year/2024"
+   },
+   "note_sv": "Andelen 16–84 år med gott psykiskt välbefinnande (Hälsa på lika villkor, flera år sammanvägda). Riket 84,9 %, länet 85,4 % (2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "demografisk_forsorjningskvot",
+   "sdg": [
+    1,
+    3,
+    8
+   ],
+   "name_sv": "Demografisk försörjningskvot ((0–19 + 65+) / 20–64 år)",
+   "value": 1.091,
+   "unit": "kvot",
+   "year": 2025,
+   "scope": "Rättviks kommun",
+   "direction": "lower_better",
+   "source": {
+    "title": "Kolada N00927: Demografisk försörjningskvot",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/N00927/municipality/2031/year/2025"
+   },
+   "note_sv": "Antalet 0–19- och 65+-åringar per person 20–64 år (SCB): hur många varje person i arbetsför ålder försörjer. Riket 0,770, länet 0,922 (2025).",
+   "confidence": "high"
+  },
+  {
+   "id": "ekologiska_livsmedel_kommunen",
+   "sdg": [
+    2,
+    12
+   ],
+   "name_sv": "Ekologiska livsmedel i kommunens verksamhet",
+   "value": 32.0,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Kolada U07514: Ekologiska livsmedel i kommunens verksamhet, andel (%)",
+    "publisher": "RKA Kolada",
+    "url": "https://api.kolada.se/v3/data/kpi/U07514/municipality/2031/year/2024"
+   },
+   "note_sv": "Ekologiska livsmedel som andel av kommunens inköpsvärde för livsmedel (KRAV, Demeter, EU-ekologiskt eller MSC); entreprenad ingår inte.",
+   "confidence": "high"
+  }
+ ]
+}

@@ -343,6 +343,15 @@ def ground(name, col, g):
         if name == 'pitch':
             stripes = (np.floor(x * 2) % 2) == 1
             rgb[stripes] *= 1.08
+        if name == 'field':
+            # Summer ley and crops: drill rows a few decimetres apart, slightly wavering, and the paler
+            # swathes and darker wheel tracks a season of mowing leaves.
+            rows = np.sin((y * 40 + g.noise(40) * 0.25) * 2 * np.pi) * 0.5 + 0.5
+            rgb *= (0.92 + 0.12 * rows)[:, :, None]
+            swathe = g.noise(70) > 0.45
+            rgb[swathe] = rgb[swathe] * 0.82 + np.array([0.66, 0.64, 0.38]) * 0.18
+            track = np.abs(((x * 2 + g.noise(60) * 0.02) % 1) - 0.5) < 0.012
+            rgb[track] *= 0.86
         h = blades * 0.002
         rough = 0.95 + 0 * h
     return np.clip(rgb, 0, 1), h, np.clip(rough, 0, 1)
@@ -396,7 +405,7 @@ def fingerprint():
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog='wasteland.py textures')
+    ap = argparse.ArgumentParser(prog='sustainable.py textures')
     ap.add_argument('--force', action='store_true')
     args = ap.parse_args(argv)
     OUT.mkdir(parents=True, exist_ok=True)

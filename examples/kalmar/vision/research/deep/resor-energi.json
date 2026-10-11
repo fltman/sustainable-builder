@@ -1,0 +1,902 @@
+{
+  "topic": "resor-energi",
+  "compiled": "2026-10-08",
+  "indicators": [
+    {
+      "id": "bilandel_resor",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Bilens andel av resorna",
+      "value": 60,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Miljöbokslut 2024 (s. 39: Kalmar kommuns första mobilitetsstrategi är på plats)",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.5138cb75196c385630127a/1747039600684/Miljobokslut_2024_v1.1_h%C3%B6guppl%C3%B6st.pdf"
+      },
+      "note_sv": "Oförändrat värde men nu med stöd: Kollektivtrafikbarometerns Kalmarurval sept 2022–feb 2023 gav bilandel 64 % för män och 54 % för kvinnor (alla resor). Kommunen anger inte vilken undersökning 60 % bygger på; någon fullständig RVU för kommunen har inte gjorts sedan Trafikverkets RVU Sydöstra Sverige 2012.",
+      "confidence": "medium",
+      "replaces": "carShare"
+    },
+    {
+      "id": "hallbara_resor_andel",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel resor med gång, cykel och kollektivtrafik",
+      "value": 40,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Frågor och svar – Min lilla resa",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/trafik-och-resor/min-lilla-resa/fragor-och-svar---min-lilla-resa.html"
+      },
+      "note_sv": "Kommunen: \"Under 2024 var motsvarande värde cirka 40 procent\"; målet i mobilitetsstrategin (KF 29 jan 2024) är 60 % år 2035. Miljöbokslut 2024 anger en ökning från 35 till 39 %. Uppdelning på gång, cykel och kollektivtrafik redovisas inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bilandel_resor_man",
+      "sdg": [
+        5,
+        11
+      ],
+      "name_sv": "Bilens andel av mäns resor",
+      "value": 64,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kollektivtrafikbarometern 2023 – Analys av korta bilresor i Kalmar kommun",
+        "publisher": "Svensk Kollektivtrafik/Origo Group på uppdrag av Kalmar kommun (ursprungskälla: Kollektivtrafikbarometern)",
+        "url": "https://svenskkollektivtrafik.se/app/uploads/2024/09/rapport-kalmar-kommun-analys-av-korta-bilresor-inkl-bilaga-tillaggsfragor.pdf"
+      },
+      "note_sv": "Gårdagsresor för boende 15–85 år, intervjuer 1 sept 2022–28 feb 2023 (vinterhalvår, ca 220 svar/månad). Bil som förare eller passagerare. 55 % av männens resor under 5 km görs med bil.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bilandel_resor_kvinnor",
+      "sdg": [
+        5,
+        11
+      ],
+      "name_sv": "Bilens andel av kvinnors resor",
+      "value": 54,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kollektivtrafikbarometern 2023 – Analys av korta bilresor i Kalmar kommun",
+        "publisher": "Svensk Kollektivtrafik/Origo Group på uppdrag av Kalmar kommun (ursprungskälla: Kollektivtrafikbarometern)",
+        "url": "https://svenskkollektivtrafik.se/app/uploads/2024/09/rapport-kalmar-kommun-analys-av-korta-bilresor-inkl-bilaga-tillaggsfragor.pdf"
+      },
+      "note_sv": "Samma urval som för männen. 43 % av kvinnornas resor under 5 km görs med bil. Bland kalmarbor som rest använde 67 % bil någon gång under dagen; 36 % av bilresorna är kortare än 5 km.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kollektivtrafik_marknadsandel_2022_2023",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Kollektivtrafikens andel av motoriserade resor (2022+2023)",
+      "value": 17,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kundnöjdhet och marknadsandel tertial 1 2023 (bildspel till Kollektivtrafiknämnden 2023-05-16, s. 8)",
+        "publisher": "Kalmar länstrafik (ursprungskälla: Kollektivtrafikbarometern)",
+        "url": "https://www.ltkalmar.se/globalassets/dokument/press/pressmeddelande/2023/ktn/maj/ktn230516kundnojdhet.pdf"
+      },
+      "note_sv": "Sammanslaget 2022+2023; länet 12 %. Andelen avser motoriserade resor (kollektivtrafik inkl. taxi mot bil/moped/MC), inte alla resor. Trafikförsörjningsprogrammet anger 21 % för Kalmar kommun 2022 – skillnaden visar osäkerheten i kommunurvalet.",
+      "confidence": "medium",
+      "replaces": "kollektivtrafik_marknadsandel",
+      "range": [
+        17,
+        21
+      ]
+    },
+    {
+      "id": "kollektivtrafik_andel_alla_resor_uppskattning",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Kollektivtrafikens andel av alla resor (uppskattning)",
+      "value": 14,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Egen beräkning från Kalmar kommun (bil 60 %) och Kollektivtrafikbarometern (17–21 % av motoriserade resor)",
+        "publisher": "Egen beräkning (ursprungskällor: Kalmar kommun, Kalmar länstrafik, Region Kalmar län)",
+        "url": "https://www.ltkalmar.se/globalassets/dokument/press/pressmeddelande/2023/ktn/maj/ktn230516kundnojdhet.pdf"
+      },
+      "note_sv": "Andel av alla resor = 0,60 × p/(1−p) där p är kollektivtrafikens andel av motoriserade resor: p=0,17 ger 12 %, p=0,21 ger 16 %. Modellens transitShare (0,21) är andelen av motoriserade resor, inte av alla resor.",
+      "confidence": "estimate",
+      "replaces": "transitShare (BASE i src/model.js)",
+      "range": [
+        12,
+        16
+      ]
+    },
+    {
+      "id": "gang_cykel_andel_uppskattning",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Gång och cykel, andel av alla resor (uppskattning)",
+      "value": 26,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Egen beräkning: 100 % − bil 60 % − kollektivtrafik 12–16 %",
+        "publisher": "Egen beräkning (ursprungskällor: Kalmar kommun, Kollektivtrafikbarometern)",
+        "url": "https://kalmar.se/trafik-och-resor/min-lilla-resa/fragor-och-svar---min-lilla-resa.html"
+      },
+      "note_sv": "Restpost: 40 % hållbara resor minus 14 % kollektivtrafik. Fördelat enligt rikets RVU 2024 (499 miljoner gångresor mot 480 miljoner cykelresor) blir det ca 13 % gång och 13 % cykel. Ingen lokal mätning av gång och cykel var för sig finns.",
+      "confidence": "estimate",
+      "range": [
+        24,
+        28
+      ]
+    },
+    {
+      "id": "rvu_bil_andel_sverige",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Bilens andel av huvudresorna i Sverige",
+      "value": 52.6,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Resvanor i Sverige 2024 (Statistik 2025:17)",
+        "publisher": "Trafikanalys (Sveriges officiella statistik)",
+        "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
+      },
+      "note_sv": "Egen beräkning: 2 053 miljoner bilresor av nästan 3,9 miljarder huvudresor. Trafikanalys skriver \"drygt hälften av alla resor\". Kalmar (60 %) ligger alltså över riket.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "rvu_kollektiv_andel_sverige",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Kollektiva färdsätts andel av huvudresorna i Sverige",
+      "value": 18.2,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "higher_better",
+      "source": {
+        "title": "Resvanor i Sverige 2024 (Statistik 2025:17)",
+        "publisher": "Trafikanalys (Sveriges officiella statistik)",
+        "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
+      },
+      "note_sv": "Egen beräkning: 708 miljoner av ca 3 900 miljoner huvudresor. Ökade med 5 % från 2023 men ligger 10 % under 2019.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "rvu_gang_andel_sverige",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Gångens andel av huvudresorna i Sverige",
+      "value": 12.8,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "higher_better",
+      "source": {
+        "title": "Resvanor i Sverige 2024 (Statistik 2025:17)",
+        "publisher": "Trafikanalys (Sveriges officiella statistik)",
+        "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
+      },
+      "note_sv": "Egen beräkning: 499 miljoner av ca 3 900 miljoner huvudresor. Gångresorna minskade 9 % från 2023 och ligger 20 % under 2019.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "rvu_cykel_andel_sverige",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Cykelns andel av huvudresorna i Sverige",
+      "value": 12.3,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "higher_better",
+      "source": {
+        "title": "Resvanor i Sverige 2024 (Statistik 2025:17)",
+        "publisher": "Trafikanalys (Sveriges officiella statistik)",
+        "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
+      },
+      "note_sv": "Egen beräkning: 480 miljoner av ca 3 900 miljoner huvudresor; +12 % från 2023. Cykeln står för bara 2,2 av 137 miljarder resta km.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "inpendling_antal",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Inpendlare till Kalmar kommun",
+      "value": 10092,
+      "unit": "personer",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02277: Inpendling, antal",
+        "publisher": "RKA Kolada (ursprungskälla: SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N02277/municipality/0880/year/2024"
+      },
+      "note_sv": "25,7 % av dem som arbetar i kommunen bor i en annan kommun (N02276). Ökade från 9 465 år 2020.",
+      "confidence": "high"
+    },
+    {
+      "id": "utpendling_antal",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Utpendlare från Kalmar kommun",
+      "value": 7349,
+      "unit": "personer",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02278: Utpendling, antal",
+        "publisher": "RKA Kolada (ursprungskälla: SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N02278/municipality/0880/year/2024"
+      },
+      "note_sv": "20,1 % av de förvärvsarbetande kalmarborna arbetar i en annan kommun (N02279). Nettoinpendling ca 2 700 personer.",
+      "confidence": "high"
+    },
+    {
+      "id": "korstracka_personbil_per_inv",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Körsträcka med personbil per invånare",
+      "value": 648,
+      "unit": "mil/inv/år",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kolada U07917: Genomsnittlig körsträcka med personbil, mil/inv",
+        "publisher": "RKA Kolada (ursprungskälla: Trafikanalys)",
+        "url": "https://api.kolada.se/v3/data/kpi/U07917/municipality/0880/year/2024"
+      },
+      "note_sv": "Riket 625, länet 701 mil/inv. Toppen var 706 mil 2017; sjönk till 632 mil 2021 och ökar nu igen.",
+      "confidence": "high"
+    },
+    {
+      "id": "kollektivtrafikresor_kommun",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Resor med kollektivtrafik inom Kalmar kommun",
+      "value": 4500000,
+      "unit": "resor/år",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Miljöbokslut 2024 (s. 40: Kollektivtrafiken i vår kommun)",
+        "publisher": "Kalmar kommun (ursprungskälla: Kalmar länstrafik)",
+        "url": "https://kalmar.se/download/18.5138cb75196c385630127a/1747039600684/Miljobokslut_2024_v1.1_h%C3%B6guppl%C3%B6st.pdf"
+      },
+      "note_sv": "Avrundat värde. Ca 62 resor per invånare (egen beräkning, 72 704 inv). Över 30 000 månadskort såldes 2024. Länet: 39,6 resor/inv 2025 (Kolada N60404).",
+      "confidence": "medium"
+    },
+    {
+      "id": "periodkort_30_dagar_vuxen",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Pris för 30-dagarskort, vuxen, inom Kalmar kommun",
+      "value": 529,
+      "unit": "kr",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Åk buss",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/trafik-och-resor/buss-bat-och-tag/ak-buss.html"
+      },
+      "note_sv": "Subventioneras med parkeringsintäkter (\"klimatväxling\"). 1 juli–31 dec 2026 halveras priset till 264,50 kr efter statligt beslut. 2024 kostade kortet 609 kr.",
+      "confidence": "high"
+    },
+    {
+      "id": "kommunvelometern_poang",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Cykelfrämjandets kommunvelometer, poäng",
+      "value": 68.5,
+      "unit": "poäng av 90",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Cykelfrämjandets kommunvelometer 2023",
+        "publisher": "Cykelfrämjandet",
+        "url": "https://cykelframjandet.se/wp-content/uploads/2023/08/kommunvelometern2023.pdf"
+      },
+      "note_sv": "Plats 9 av 54 deltagande kommuner (4:a av 14 mellanstora); 40,5 poäng 2015. Full pott för information och marknadsföring, svagt på cykelpolitik (saknar aktuell cykelplan). Senare års resultat för Kalmar har inte kontrollerats.",
+      "confidence": "high"
+    },
+    {
+      "id": "cykelinfrastruktur_investering_per_inv",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Investering i ny cykelinfrastruktur per invånare",
+      "value": 264,
+      "unit": "kr/inv",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Cykelfrämjandets kommunvelometer 2023",
+        "publisher": "Cykelfrämjandet (ursprungskälla: Kalmar kommuns enkätsvar)",
+        "url": "https://cykelframjandet.se/wp-content/uploads/2023/08/kommunvelometern2023.pdf"
+      },
+      "note_sv": "Plus 56 kr/inv i drift och underhåll. Snittet för mellanstora kommuner var 381 kr/inv totalt.",
+      "confidence": "medium"
+    },
+    {
+      "id": "delbilspoolen_bokningar",
+      "sdg": [
+        11,
+        12
+      ],
+      "name_sv": "Bokningar i Delbilspoolen (elbilspool)",
+      "value": 4000,
+      "unit": "bokningar/år",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Miljöbokslut 2024 (s. 43: Delbilspoolen)",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.5138cb75196c385630127a/1747039600684/Miljobokslut_2024_v1.1_h%C3%B6guppl%C3%B6st.pdf"
+      },
+      "note_sv": "\"Drygt 4 000\" bokningar av ett 20-tal elbilar i Kalmar och på Öland; 60 % från privatpersoner, i snitt 6 timmar och 5 mil per bokning. Samarbete med Kalmarhem och Kalmar Energi, förlängt tre år 2024.",
+      "confidence": "medium"
+    },
+    {
+      "id": "olandsbron_fordon_per_dygn",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Trafik på Ölandsbron utanför sommaren",
+      "value": 15000,
+      "unit": "fordon/dygn",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "E22 genom Kalmar",
+        "publisher": "Trafikverket",
+        "url": "https://www.trafikverket.se/vara-projekt/alla-strak/e22-genom-kalmar/"
+      },
+      "note_sv": "\"Omkring 25000 fordon per dygn under sommarmånaderna och omkring 15000 fordon per dygn resten av året\" (sidan uppdaterad 25 aug 2026). Avrundade värden; Trafikverket mäter bara vart fjärde år sedan 2020.",
+      "confidence": "medium"
+    },
+    {
+      "id": "olandsbron_fordon_per_dygn_sommar",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Trafik på Ölandsbron under sommarmånaderna",
+      "value": 25000,
+      "unit": "fordon/dygn",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "E22 genom Kalmar",
+        "publisher": "Trafikverket",
+        "url": "https://www.trafikverket.se/vara-projekt/alla-strak/e22-genom-kalmar/"
+      },
+      "note_sv": "Avrundat medelvärde. Bron byggdes tvåfilig 1972 och breddades till fyra filer 1995.",
+      "confidence": "medium"
+    },
+    {
+      "id": "elbilar_andel",
+      "sdg": [
+        7,
+        11,
+        13
+      ],
+      "name_sv": "Andel elbilar av personbilsbeståndet",
+      "value": 6.1,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N07945: Elbilar, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: Trafikanalys och SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N07945/municipality/0880/year/2025"
+      },
+      "note_sv": "Bekräftat: 2025 är senaste år (2026 ej publicerat). Ökning 0,9 %-enheter/år 2023–2025 (4,3 → 5,2 → 6,1 %), från 0,9 % 2020. 30,3 elbilar/1000 inv. Riket 8,6 %, länet 4,4 %.",
+      "confidence": "high",
+      "replaces": "evShare (BASE i src/model.js)"
+    },
+    {
+      "id": "fossiloberoende_personbilar_andel",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Fossiloberoende personbilar, andel av beståndet",
+      "value": 23.2,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada U00501: Fossiloberoende personbilar, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: Miljöfordon Sverige)",
+        "url": "https://api.kolada.se/v3/data/kpi/U00501/municipality/0880/year/2025"
+      },
+      "note_sv": "El, laddhybrid, gas, etanol m.fl. Från 12,3 % 2020. Riket 26,0 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "laddpunkter_publika_antal",
+      "sdg": [
+        7,
+        11
+      ],
+      "name_sv": "Publika laddpunkter för elbil",
+      "value": 514,
+      "unit": "laddpunkter",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N07713: Elbilsladdpunkter, totalt antal",
+        "publisher": "RKA Kolada (ursprungskälla: Energimyndigheten/Nobil)",
+        "url": "https://api.kolada.se/v3/data/kpi/N07713/municipality/0880/year/2025"
+      },
+      "note_sv": "Från 203 (2023) och 358 (2024). Ca 7,0 per 1000 inv mot 5,7 i riket (egen beräkning). Kalmarhem har dessutom 151 hyrda och 8 semipublika laddplatser.",
+      "confidence": "high"
+    },
+    {
+      "id": "vaxthusgaser_transporter_ton",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Utsläpp av växthusgaser från transporter, totalt",
+      "value": 102209,
+      "unit": "ton CO2e",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kolada N85533: Utsläpp till luft av växthusgaser, transporter, ton CO2e",
+        "publisher": "RKA Kolada (ursprungskälla: Nationella emissionsdatabasen)",
+        "url": "https://api.kolada.se/v3/data/kpi/N85533/municipality/0880/year/2024"
+      },
+      "note_sv": "Trend: 128 350 t (2010) → 92 024 t (2020) → 81 570 t (2023) → 102 209 t (2024), +25 % på ett år när reduktionsplikten sänktes. Per invånare 2,04 t (2010) → 1,13 t (2023) → 1,41 t (2024). Kommunen anger att bilen står för 70 % av transportutsläppen.",
+      "confidence": "high",
+      "replaces": "vaxthusgaser_transporter_per_inv"
+    },
+    {
+      "id": "cykelfarja_dessi_passagerare",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Passagerare med cykelfärjan Dessi Kalmar–Färjestaden",
+      "value": 42625,
+      "unit": "passagerare/säsong",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Efter indraget miljonstöd – nu går sista turen med öländska cykelfärjan (11 sept 2025)",
+        "publisher": "SVT Nyheter Småland",
+        "url": "https://www.svt.se/nyheter/lokalt/smaland/efter-indraget-miljonstod-nu-gar-sista-turen-med-olandska-cykelfarjan"
+      },
+      "note_sv": "Maj–augusti 2025. Den enda båtlinje kommunen listar (katamaran från 2006, 118 passagerare, 50 cyklar, Ressel Rederi). Trafikverkets stöd (1,4 mnkr/år) drogs in; 2026 körs bara 15 juni–16 augusti med stöd från Kalmar och Mörbylånga. Inga uppgifter om eldrift har hittats.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gasthamn_batplatser",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Gästplatser i Kalmar gästhamn",
+      "value": 150,
+      "unit": "båtplatser",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar guest harbour",
+        "publisher": "Kalmar kommun/Destination Kalmar (kalmar.com)",
+        "url": "https://kalmar.com/en/kalmar/good-to-know/kalmar-guest-harbour"
+      },
+      "note_sv": "Ca 150 platser: 135 i Ölandshamnen och 15 vid Slottsfjärden. Landström säljs per dygn (10–32 A). Antal gästnätter publiceras inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fritidsbatar_elmotor_andel_sverige",
+      "sdg": [
+        7,
+        14
+      ],
+      "name_sv": "Motorbåtar med elmotor",
+      "value": 4,
+      "unit": "% av motorbåtarna",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "higher_better",
+      "source": {
+        "title": "Båtlivsundersökningen 2025 (Swedish Boating Survey 2025)",
+        "publisher": "Transportstyrelsen",
+        "url": "https://www.transportstyrelsen.se/globalassets/global/publikationer-och-rapporter/rapporter/sjofart/swedish-boatings-survey2025-batlivsundersokningen-2025-eng.pdf"
+      },
+      "note_sv": "Andel av motorbåtarna med elmotor (flera svar möjliga): 4 % för öppna motorbåtar, 2 % för ruffade. 17 % har fortfarande en förbjuden tvåtaktsmotor med förgasare. Räknat i energi eller trafikarbete är eldriftens andel mycket lägre. Ett nationellt mått: data för Kalmarsund saknas.",
+      "confidence": "medium",
+      "replaces": "boatElectric"
+    },
+    {
+      "id": "fjarrvarme_bransle_fornybart_andel",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Förnybara bränslen i Kalmar Energis fjärrvärme",
+      "value": 77.22,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Miljövänlig uppvärmning – Miljövärden 2025 (diagram Bränslemix fjärrvärme)",
+        "publisher": "Kalmar Energi",
+        "url": "https://kalmarenergi.se/fjarrvarme/miljovanlig-uppvarmning-fjarrvarme/"
+      },
+      "note_sv": "Skogsflis, bark, grot och biprodukter från träindustrin (Moskogen och Draken). Värdet finns i det inbäddade diagrammet (Infogram) på sidan, uppdaterat feb 2026. Stänger baslinjens lucka om bränslemix.",
+      "confidence": "high"
+    },
+    {
+      "id": "fjarrvarme_atervunnen_energi_andel",
+      "sdg": [
+        7,
+        12
+      ],
+      "name_sv": "Återvunnen energi i Kalmar Energis fjärrvärme",
+      "value": 22.43,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Miljövänlig uppvärmning – Miljövärden 2025 (diagram Bränslemix fjärrvärme)",
+        "publisher": "Kalmar Energi",
+        "url": "https://kalmarenergi.se/fjarrvarme/miljovanlig-uppvarmning-fjarrvarme/"
+      },
+      "note_sv": "Kategori enligt Värmemarknadskommitténs redovisningsregler. Sidan bryter inte ner posten vidare. Moskogen har rökgaskondensering (26 MW) och Draken värmepump på avloppsvatten.",
+      "confidence": "high"
+    },
+    {
+      "id": "fjarrvarme_fossil_andel",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Fossila bränslen i Kalmar Energis fjärrvärme",
+      "value": 0.35,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Miljövänlig uppvärmning – Miljövärden 2025",
+        "publisher": "Kalmar Energi",
+        "url": "https://kalmarenergi.se/fjarrvarme/miljovanlig-uppvarmning-fjarrvarme/"
+      },
+      "note_sv": "Uppstartsbränsle och störningar. Bolaget köper utsläppsrätter och kallar leveranserna \"100 % förnybara\". Utsläpp: 4,471 g CO2e/kWh från förbränning plus 6,56 g från bränsleproduktion och transport; primärenergifaktor 0,078. Kolada N45930: 99,4 % förnybart 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "elproduktion_kraftvarme",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Elproduktion i kraftvärme (Moskogen)",
+      "value": 92891,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N45950: Elproduktion från kraftvärmeverk samt industriellt mottryck, MWh",
+        "publisher": "RKA Kolada (ursprungskälla: Energimyndigheten och SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45950/municipality/0880/year/2024"
+      },
+      "note_sv": "Moskogen (31 MW el, i drift 2009) är kommunens enda kraftvärmeverk; nominellt 130 GWh el och 360 GWh värme per år enligt Kalmar Energi. Utfall 119 795 MWh 2023 och 124 758 MWh 2021.",
+      "confidence": "high"
+    },
+    {
+      "id": "elproduktion_vindkraft",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Elproduktion från vindkraft inom kommunen",
+      "value": 190864,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N45904: Elproduktion från vindkraft, MWh",
+        "publisher": "RKA Kolada (ursprungskälla: Energimyndigheten och SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45904/municipality/0880/year/2024"
+      },
+      "note_sv": "59 % av kommunens elproduktion. 199 277 MWh 2023. Med 81 MW ger det 2,36 GWh per MW (kapacitetsfaktor ca 27 %; 2023: 2,46 GWh/MW, 28 %) – egen beräkning.",
+      "confidence": "high"
+    },
+    {
+      "id": "elproduktion_sol",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Elproduktion från solkraft inom kommunen",
+      "value": 38815,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N45952: Elproduktion från solkraft, MWh",
+        "publisher": "RKA Kolada (ursprungskälla: Energimyndigheten och SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45952/municipality/0880/year/2024"
+      },
+      "note_sv": "Fördubbling sedan 2022 (19 670 MWh). Ca 0,93 GWh per MW installerat i snitt under året (egen beräkning, medel av 38,8 och 45,0 MW).",
+      "confidence": "high"
+    },
+    {
+      "id": "lokal_el_andel_av_anvandning",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Lokal elproduktion i förhållande till elanvändningen",
+      "value": 60.4,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N45926 (elproduktion) och N45906 (elanvändning per inv)",
+        "publisher": "Egen beräkning (ursprungskälla: Energimyndigheten och SCB via Kolada)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45926/municipality/0880/year/2024"
+      },
+      "note_sv": "322 570 MWh / (7,3405 MWh/inv × 72 704 inv = 533 684 MWh). Bekräftar baslinjens ca 60 %. Mix 2024: vind 59 %, kraftvärme 29 %, sol 12 %.",
+      "confidence": "estimate",
+      "replaces": "localEnergy"
+    },
+    {
+      "id": "solceller_installerad_effekt",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Installerad solcellseffekt",
+      "value": 47.42,
+      "unit": "MW",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N45970: Solcellsanläggningar totalt, installerad effekt (MW)",
+        "publisher": "RKA Kolada (ursprungskälla: Energimyndigheten)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45970/municipality/0880/year/2025"
+      },
+      "note_sv": "Bekräftat; 2026 ej publicerat. Tillväxten har bromsat: +8,8 MW (2022), +15,6 (2023), +6,2 (2024), +2,4 (2025). 10,2 MW 2020. Länet 323 MW, riket 5 541 MW.",
+      "confidence": "high",
+      "replaces": "solarMW"
+    },
+    {
+      "id": "vindkraft_installerad_effekt",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Installerad vindkrafteffekt inom kommunen",
+      "value": 80.98,
+      "unit": "MW",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N45979: Vindkraftverk, installerad effekt, MW",
+        "publisher": "RKA Kolada (ursprungskälla: Energimyndigheten)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45979/municipality/0880/year/2025"
+      },
+      "note_sv": "Bekräftat; oförändrat sedan 2021, då effekten steg från 33 till 81 MW (19 → 31 verk). Länet 680 MW. Havsparken Kårehamn (48 MW) ligger i Borgholms kommun.",
+      "confidence": "high",
+      "replaces": "windMW"
+    },
+    {
+      "id": "elproduktion_lan",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Elproduktion i Kalmar län",
+      "value": 13372170,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N45926: Elproduktion totalt, MWh (Kalmar län)",
+        "publisher": "RKA Kolada (ursprungskälla: Energimyndigheten och SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45926/municipality/0008/year/2024"
+      },
+      "note_sv": "Ca 4,1 gånger länets elanvändning (13,20 MWh/inv × 246 352 inv ≈ 3,25 TWh, egen beräkning), främst kärnkraft i Oskarshamn. Vindkraft 1,55 TWh.",
+      "confidence": "high"
+    },
+    {
+      "id": "solceller_installerad_effekt_lan",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Installerad solcellseffekt i Kalmar län",
+      "value": 323.03,
+      "unit": "MW",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N45970 (Kalmar län)",
+        "publisher": "RKA Kolada (ursprungskälla: Energimyndigheten)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45970/municipality/0008/year/2025"
+      },
+      "note_sv": "Ca 1 310 W/inv i länet mot ca 650 W/inv i Kalmar kommun (egen beräkning). Stora markparker ligger utanför staden.",
+      "confidence": "high"
+    },
+    {
+      "id": "kalmarsund_vind_medlemmar",
+      "sdg": [
+        7,
+        11
+      ],
+      "name_sv": "Medlemmar i vindkraftskooperativet Kalmarsund Vind II",
+      "value": 200,
+      "unit": "medlemmar (drygt)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Om föreningen – Kalmarsund Vind",
+        "publisher": "Kalmarsund Vind II ek. för. c/o Kalmar Energi",
+        "url": "https://kalmarenergi.se/vind/kalmarsundvind/om-foreningen/"
+      },
+      "note_sv": "Energigemenskap sedan 2009 med andelar i Rockneby vindpark (5 × Vestas V100 1,5 MW, invigd 2012, upp till ca 25 000 MWh/år). Föreningen äger ca 190 kW och ca 600 MWh/år.",
+      "confidence": "medium"
+    },
+    {
+      "id": "torneby_solpark_produktion",
+      "sdg": [
+        7,
+        11
+      ],
+      "name_sv": "Årsproduktion i den medlemsägda Törneby solpark",
+      "value": 3000,
+      "unit": "MWh/år",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Törneby Solpark",
+        "publisher": "Kalmar Energi",
+        "url": "https://kalmarenergi.se/sol/torneby-solpark/"
+      },
+      "note_sv": "20 000 m² på Kalmar Öland Airport, fyra etapper 2017–2022, driftförening. Sidan anger både \"cirka 3 000 000 kWh\" och \"beräknad årsproduktion på ca 2 250 000 kWh\". Även Nöbble solpark (ca 600 MWh) är medlemsägd.",
+      "confidence": "medium",
+      "range": [
+        2250,
+        3000
+      ]
+    },
+    {
+      "id": "utgrunden_avvecklad_effekt",
+      "sdg": [
+        7,
+        14
+      ],
+      "name_sv": "Utgrunden I i Kalmarsund, avvecklad havsvindpark",
+      "value": 10.5,
+      "unit": "MW",
+      "year": 2018,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Decommissioning of Utgrunden complete",
+        "publisher": "TGS 4C Offshore (ursprungskälla: Vattenfall/ZITON)",
+        "url": "https://www.tgs4c.com/news/decommissioning-of-utgrunden-complete-nid8647.html"
+      },
+      "note_sv": "7 verk, i drift dec 2000–2018; nedmonteringen avslutades hösten 2018. Branschkälla – Vattenfalls eget meddelande har inte kontrollerats.",
+      "confidence": "medium"
+    },
+    {
+      "id": "nya_utgrunden_planerad_effekt",
+      "sdg": [
+        7,
+        14
+      ],
+      "name_sv": "Planerad havsvindpark Nya Utgrunden (Kalmarsund)",
+      "value": 340,
+      "unit": "MW",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Nya Utgrunden (offshore wind farm)",
+        "publisher": "The Wind Power (databas; projektör MarCon Windpower AB)",
+        "url": "https://thewindpower.net/windfarm_en_31482_nya-utgrunden.php"
+      },
+      "note_sv": "Status \"planned\" (uppdaterad 8 juni 2026). Ligger i södra Kalmarsund, Mörbylånga kommun. Samråd hölls dec 2021 (SMHI:s yttrande dnr 2021/2299/14.1). Inget tillstånd har hittats. 340 MW är en databasuppgift från andra hand.",
+      "confidence": "medium"
+    },
+    {
+      "id": "aurora_havsvindpark_produktion",
+      "sdg": [
+        7,
+        14,
+        16
+      ],
+      "name_sv": "Avslagen havsvindpark Aurora öster om Öland, möjlig årsproduktion",
+      "value": 24,
+      "unit": "TWh/år",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "OX2 och Ingka Investments havsvindpark Aurora får Natura 2000-tillstånd (3 april 2024)",
+        "publisher": "OX2",
+        "url": "https://storage.mfn.se/3b35431c-8e66-4334-ad14-2fffe5b25d36/ox2-och-ingka-investments-havsvindpark-aurora-far-natura-2000-tillstand.pdf"
+      },
+      "note_sv": "Över 30 km öster om Öland i ekonomiska zonen; \"upp till 24 TWh\" om hela ytan godkänts. Regeringen avslog Aurora och 12 andra Östersjöparker den 4 nov 2024 av försvarsskäl (regeringen.se). Visar storleken på den havsvind som är blockerad nära Kalmar.",
+      "confidence": "high"
+    }
+  ]
+}

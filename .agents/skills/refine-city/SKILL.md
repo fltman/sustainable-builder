@@ -17,16 +17,16 @@ pass. Three levels, cheapest first:
 
 - **Known buildings and places** (church, station, town hall, a landmark the user names): find photos
   online and model them by hand as custom scripts. See *Landmarks from photos* below.
-- **The many ordinary houses**: Street View survey rounds with `wasteland.py survey`, facts into
-  overrides.json, housekit starter scripts with `wasteland.py seed`, then hand edits. See *Survey
+- **The many ordinary houses**: Street View survey rounds with `sustainable.py survey`, facts into
+  overrides.json, housekit starter scripts with `sustainable.py seed`, then hand edits. See *Survey
   rounds* below.
 
 ## Survey rounds (many houses at once)
 
 ```sh
-python3 wasteland.py survey <slug> plan --out /tmp/<slug>-sv     # or --street "Storgatan" / --near "Torget"
+python3 sustainable.py survey <slug> plan --out /tmp/<slug>-sv     # or --street "Storgatan" / --near "Torget"
 # open each printed Street View link, screenshot it, save as /tmp/<slug>-sv/<index>.jpg
-python3 wasteland.py survey <slug> compare /tmp/<slug>-sv         # sheets/*.jpg: frame above model, ids labelled
+python3 sustainable.py survey <slug> compare /tmp/<slug>-sv         # sheets/*.jpg: frame above model, ids labelled
 ```
 - `plan` covers every house that has no observation yet: no overrides entry, or a script still marked
   "not surveyed yet". Viewpoints are chosen so each sees as many such houses as possible, nearest the
@@ -41,9 +41,9 @@ python3 wasteland.py survey <slug> compare /tmp/<slug>-sv         # sheets/*.jpg
 - When most houses in a district share a look, also set its area mixes.
 - Then:
   ```sh
-  python3 wasteland.py seed <slug> --ids w1,w2,… --force   # housekit starter scripts from the notes
-  python3 wasteland.py rebuild <slug>
-  python3 wasteland.py survey <slug> compare /tmp/<slug>-sv   # again: compare after the change
+  python3 sustainable.py seed <slug> --ids w1,w2,… --force   # housekit starter scripts from the notes
+  python3 sustainable.py rebuild <slug>
+  python3 sustainable.py survey <slug> compare /tmp/<slug>-sv   # again: compare after the change
   ```
 - Hand-edit the scripts where the photo shows more than the note says (signs, shop names, two-tone
   walls, stair towers). Replace the "Starter script…" docstring line when you do, so later seeding
@@ -73,8 +73,8 @@ How to use them:
    round to ~5–25 buildings.
 2. **List what the generator made:**
    ```sh
-   python3 wasteland.py buildings <slug> --street "Strandgatan" --json
-   python3 wasteland.py buildings <slug> --near "Stora torget" --radius 80 --json
+   python3 sustainable.py buildings <slug> --street "Strandgatan" --json
+   python3 sustainable.py buildings <slug> --near "Stora torget" --radius 80 --json
    ```
    Each row: id, name, kind, levels, height, wall style/colour, roof, a Street View link aimed at the
    facade (`view.streetview`) and a Blender camera spec (`view.render`).
@@ -122,8 +122,8 @@ How to use them:
    Road keys: `surface` (asphalt, sett, paving_stones, gravel …), `width`, `sidewalk` (both|left|right|no), `hide`.
 5. **Rebuild and compare:**
    ```sh
-   python3 wasteland.py rebuild <slug>                       # ~1 min, keeps OSM data and media
-   python3 wasteland.py render <slug> --street "Strandgatan" # street-level views → cities/<slug>/renders/
+   python3 sustainable.py rebuild <slug>                       # ~1 min, keeps OSM data and media
+   python3 sustainable.py render <slug> --street "Strandgatan" # street-level views → cities/<slug>/renders/
    ```
    Put each render next to its Street View screenshot and adjust. Two or three iterations are normal.
    Street cameras stand on the terrain (eye height over the ground). A building sits on its `base`
@@ -145,12 +145,12 @@ Start from `docs/custom-building-example.py`. The script gets `ctx`:
 
 Facade textures repeat per window bay (≈3.2 m) and storey (3 m), so draw walls with `ctx.geo.wall`
 using `uvscale` ≈ 3 to keep windows the right size. Keep custom models under ~20 000 triangles; the
-game streams them like any tile. Rebuild and render as above.
+site streams them like any tile. Rebuild and render as above.
 
 ## Done
 
 Summarise the round for the user (buildings changed, before/after renders in `cities/<slug>/renders/`),
-then `python3 wasteland.py play <slug>` if they want to drive it.
+then `python3 sustainable.py play <slug>` if they want to drive it.
 
 ## Ordinary houses: housekit
 
@@ -172,7 +172,7 @@ h.gallery(wall_index, 4.0, 12.0, stair='left')                       # loftgång
 h.porch(wall_index, x=6.0, roof_mat='M_Roof_Tiles_red')               # gabled entrance porch (facades(skip=…))
 ```
 Starter scripts for many houses at once come from the overrides notes:
-`python3 wasteland.py seed <slug> --ids w1,w2 --force` (`--unsurveyed` also seeds every other house from
+`python3 sustainable.py seed <slug> --ids w1,w2 --force` (`--unsurveyed` also seeds every other house from
 its generated look, marked "not surveyed yet"). `--force` only replaces untouched starter scripts. When
 you edit a script by hand, replace the "Starter script…" line in its docstring, and the seeder will
 keep it.

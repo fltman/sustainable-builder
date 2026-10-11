@@ -1,6 +1,0 @@
-<!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wasteland mobile preview</title>
-<style>body{margin:0;background:#131712;color:#e4b26e;font:13px monospace;padding:20px}nav{display:flex;gap:12px;margin-bottom:20px}button{background:#292f25;border:1px solid #b39162;color:inherit;padding:12px;cursor:pointer}iframe{border:1px solid #746045;display:block;width:844px;height:390px;transform-origin:top left}</style>
-<nav><button id="landscape">Landscape / 844 × 390</button><button id="portrait">Portrait / 390 × 844</button></nav>
-<div id="frame"><iframe title="Wasteland game on a phone" src="../?touch=1"></iframe></div>
-<script>const phone=document.querySelector('iframe'),frame=document.querySelector('#frame');let w=844,h=390;function fit(){const scale=Math.min(1,(innerWidth-40)/w,(innerHeight-105)/h);phone.style.width=w+'px';phone.style.height=h+'px';phone.style.transform='scale('+scale+')';frame.style.width=w*scale+'px';frame.style.height=h*scale+'px';}document.querySelector('#landscape').onclick=()=>{w=844;h=390;fit();};document.querySelector('#portrait').onclick=()=>{w=390;h=844;fit();};addEventListener('resize',fit);fit();</script></html>

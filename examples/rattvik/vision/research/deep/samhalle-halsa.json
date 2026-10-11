@@ -1,0 +1,782 @@
+{
+  "topic": "samhalle-halsa",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "befolkning_1970",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd 1970",
+      "value": 10805,
+      "unit": "invånare",
+      "year": 1970,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängden efter region, civilstånd, ålder och kön. År 1968–2024 (BefolkningNy)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0101__BE0101A/BefolkningNy/"
+      },
+      "note_sv": "Folkmängd den 31 december enligt dagens kommungräns (SCB redovisar 1968–1982 enligt indelningen 1983; Rättviks kommun bildades 1971 och Ore lades till 1974). 1968 bodde 11 300 i området och lägsta värdet under 1970-talet var 10 634 (1973).",
+      "confidence": "high"
+    },
+    {
+      "id": "befolkning_1990",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd 1990",
+      "value": 11345,
+      "unit": "invånare",
+      "year": 1990,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängden efter region, civilstånd, ålder och kön. År 1968–2024 (BefolkningNy)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0101__BE0101A/BefolkningNy/"
+      },
+      "note_sv": "Befolkningen växte under 1980-talet och nådde sin högsta nivå, 11 418, år 1992. Därefter minskade den till lägst 10 748 år 2014.",
+      "confidence": "high"
+    },
+    {
+      "id": "befolkning_2010",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd 2010",
+      "value": 10811,
+      "unit": "invånare",
+      "year": 2010,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängden efter region, civilstånd, ålder och kön. År 1968–2024 (BefolkningNy)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0101__BE0101A/BefolkningNy/"
+      },
+      "note_sv": "Folkmängden har legat mellan 10 600 och 11 450 sedan 1970. Efter 2014 ökade den till 11 103 år 2021 (hög inflyttning under pandemiåren) och var 10 978 den 31 december 2025 och 10 962 i augusti 2026 (SCB, BE0101).",
+      "confidence": "high"
+    },
+    {
+      "id": "befolkning_prognos_2030",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Befolkning år 2030 enligt SCB:s regionala framskrivning (2024)",
+      "value": 11083,
+      "unit": "invånare",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd, antalet födda, döda och flyttningar efter region, kön och ålder. År 2024–2070 (BefProgOsiktRegN)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefProgOsiktRegN/"
+      },
+      "note_sv": "Framskrivningen utgår från 11 053 invånare 2024 och 11 061 år 2025. Utfallet blev 10 978 (december 2025) och 10 962 (augusti 2026), alltså under SCB:s bana. Kommunens egen prognos i årsredovisningen 2025 ger 10 965 år 2034, mot SCB:s 11 103.",
+      "confidence": "high"
+    },
+    {
+      "id": "befolkning_prognos_2040",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Befolkning år 2040 enligt SCB:s regionala framskrivning (2024)",
+      "value": 11107,
+      "unit": "invånare",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd, antalet födda, döda och flyttningar efter region, kön och ålder. År 2024–2070 (BefProgOsiktRegN)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefProgOsiktRegN/"
+      },
+      "note_sv": "SCB:s framskrivning (publicerad 11 juni 2024) ger en nästan oförändrad folkmängd: 11 106 år 2035 och 11 107 år 2040. Den bygger på ett födelseunderskott på omkring 100 per år som vägs upp av inflyttning; antalet 20–64-åringar minskar från 5 326 (2024) till omkring 5 250 (2030–2040).",
+      "confidence": "high"
+    },
+    {
+      "id": "befolkning_prognos_2070",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Befolkning år 2070 enligt SCB:s regionala framskrivning (2024)",
+      "value": 11580,
+      "unit": "invånare",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd, antalet födda, döda och flyttningar efter region, kön och ålder. År 2024–2070 (BefProgOsiktRegN)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefProgOsiktRegN/"
+      },
+      "note_sv": "SCB:s längsta framskrivning för kommunen: 11 224 år 2050, 11 393 år 2060 och 11 580 år 2070. I genomsnitt antas 79 födda och 180 döda per år 2025–2070 (egen beräkning ur tabellen), vilket kräver ett flyttnetto på drygt 100 per år. Någon officiell framskrivning efter 2070 finns inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "andel_65plus_prognos_2040",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel invånare 65 år och äldre år 2040 enligt SCB:s framskrivning",
+      "value": 36.5,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd, antalet födda, döda och flyttningar efter region, kön och ålder. År 2024–2070 (BefProgOsiktRegN)",
+        "publisher": "Egen beräkning (ursprungskälla: SCB, BefProgOsiktRegN)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefProgOsiktRegN/"
+      },
+      "note_sv": "4 054 av 11 107 invånare är 65+ år 2040 (summerat över ettårsklasser i SCB:s tabell). Framskrivningens startår 2024: 34,3 %; 2070: 37,4 %. Dalarnas län 2040: 28,9 %.",
+      "confidence": "medium"
+    },
+    {
+      "id": "andel_80plus_prognos_2040",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel invånare 80 år och äldre år 2040 enligt SCB:s framskrivning",
+      "value": 14.5,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd, antalet födda, döda och flyttningar efter region, kön och ålder. År 2024–2070 (BefProgOsiktRegN)",
+        "publisher": "Egen beräkning (ursprungskälla: SCB, BefProgOsiktRegN)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefProgOsiktRegN/"
+      },
+      "note_sv": "1 605 av 11 107 invånare är 80+ år 2040, mot 10,7 % år 2024 och 16,4 % år 2070; den snabbaste ökningen sker före 2030 (14,0 % redan då). Utfallet 2025 var 1 236 personer eller 11,3 % (årsredovisning 2025). Dalarnas län 2040: 10,8 %.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fodelseoverskott_2025",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Födelseöverskott (födda minus döda)",
+      "value": -71,
+      "unit": "personer/år",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Befolkningsstatistik per kvartal/halvår/helår efter region och kön. År 2025–2026 (BefforandrKvRLKCKM)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0101__BE0101G/BefforandrKvRLKCKM/"
+      },
+      "note_sv": "72 födda och 143 döda 2025, det vill säga 6,6 respektive 13,0 per 1 000 invånare (egen beräkning; riket 9,2 och 8,7). Kommunen har haft födelseunderskott varje år sedan minst 2000; 2015–2024 i snitt 79 födda och 159 döda per år. Första halvåret 2026: 30 födda och 90 döda.",
+      "confidence": "high"
+    },
+    {
+      "id": "flyttnetto_2025",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Flyttningsnetto (inrikes och utrikes)",
+      "value": 56,
+      "unit": "personer/år",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Befolkningsstatistik per kvartal/halvår/helår efter region och kön. År 2025–2026 (BefforandrKvRLKCKM)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0101__BE0101G/BefforandrKvRLKCKM/"
+      },
+      "note_sv": "535 inflyttade och 479 utflyttade: netto −30 mot övriga Dalarna och +57 mot övriga Sverige, och invandringsöverskott +28 (48 invandrade, 20 utvandrade). Snitt 2015–2024 +101 per år (egen beräkning), med toppar 2016 (+203, flyktingmottagande) och 2020 (+168). Första halvåret 2026: +53.",
+      "confidence": "high"
+    },
+    {
+      "id": "fritidshus_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Fritidshus ägda av privatpersoner eller dödsbon",
+      "value": 2980,
+      "unit": "fritidshus",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal fritidshus ägda av fysiska personer eller dödsbon efter region. År 1998–2025 (BO0104T08)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BO__BO0104__BO0104H/BO0104T08/"
+      },
+      "note_sv": "Ökning från 2 520 år 1998 (+18 %). Det motsvarar 271 fritidshus per 1 000 invånare, mot 164 i Dalarnas län och 60 i riket (egen beräkning med SCB:s folkmängd 2025). Fritidshus som ägs av företag ingår inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "sommarbefolkning_topp_faktor",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Befolkningstopp under sommaren (lördagen under Classic Car Week) jämfört med årets median",
+      "value": 3,
+      "unit": "gånger årsmedianen",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Musik, idrott och bilar drar folk i Sommarsverige (Kort analys, 2024-07-02)",
+        "publisher": "SCB",
+        "url": "https://www.scb.se/hitta-statistik/artiklar/2024/musik-idrott-och-bilar-drar-folk-i-sommarsverige/"
+      },
+      "note_sv": "SCB:s analys av mobilnätsdata (Telia Crowd Insights) sommaren 2023: \"Under lördagen på Classic Car Week är befolkningen tredubblad i Rättvik\". Under större delen av sommaren låg folkmängden nära årsmedianen; Rättvik räknas till kommunerna med enstaka toppdagar snarare än lång sommarsäsong. Något absolut antal sommarboende finns inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "ensamhet_besvar",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Andel invånare 16+ som besväras av ensamhet ibland, ofta eller alltid",
+      "value": 12.3,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Nationella folkhälsoenkäten Dalarna – Dalarnas resultat för år 2014, 2018, 2021 och 2024 (Power BI-rapport, sidorna Livsförhållanden och Jämförelse kommuner)",
+        "publisher": "Region Dalarna (data: Folkhälsomyndigheten, Hälsa på lika villkor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZGQ3ODdmMzItOTNiZS00NTMzLTg1YzUtNmE4NDJhN2JmZGQ0IiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "Hälsa på lika villkor 2024 med Dalarnas tilläggsurval (cirka 940 svarande i Rättvik). Konfidensintervall 10,2–14,5 %, signifikant lägre än riket (18,2 %); Dalarna 17,2 %. Frågan redovisas bara för 2024, så det finns ingen tidsserie.",
+      "confidence": "medium"
+    },
+    {
+      "id": "ensamhet_ofta",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Andel invånare 16+ som besväras av ensamhet ofta eller alltid",
+      "value": 3.9,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Nationella folkhälsoenkäten Dalarna – Dalarnas resultat för år 2014, 2018, 2021 och 2024 (Power BI-rapport, sidorna Livsförhållanden och Jämförelse kommuner)",
+        "publisher": "Region Dalarna (data: Folkhälsomyndigheten, Hälsa på lika villkor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZGQ3ODdmMzItOTNiZS00NTMzLTg1YzUtNmE4NDJhN2JmZGQ0IiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "Konfidensintervall 2,7–5,1 %, signifikant lägre än riket (5,5 %); Dalarna 5,4 %.",
+      "confidence": "medium"
+    },
+    {
+      "id": "lagt_socialt_deltagande",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel invånare med lågt socialt deltagande (senaste mätning före pandemin)",
+      "value": 26.5,
+      "unit": "%",
+      "year": 2014,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Nationella folkhälsoenkäten Dalarna – Dalarnas resultat för år 2014, 2018, 2021 och 2024 (Power BI-rapport, sidorna Livsförhållanden och Jämförelse kommuner)",
+        "publisher": "Region Dalarna (data: Folkhälsomyndigheten, Hälsa på lika villkor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZGQ3ODdmMzItOTNiZS00NTMzLTg1YzUtNmE4NDJhN2JmZGQ0IiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "Indikatorn bygger på hur få av enkätens sociala aktiviteter man deltagit i under det senaste året. 2014: Rättvik 26,5 % (KI 23,7–29,4), Dalarna 25,4 %, riket 20,4 %. Mätningen 2021 gav 61,1 % (Dalarna 53,7 %, riket 48,6 %) men gjordes under pandemirestriktioner och är inte jämförbar; för 2024 redovisas frågan inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "positiv_syn_pa_framtiden",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Andel invånare 16+ som alltid eller oftast ser positivt på framtiden",
+      "value": 73.2,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Nationella folkhälsoenkäten Dalarna – Dalarnas resultat för år 2014, 2018, 2021 och 2024 (Power BI-rapport, sidorna Hälsa och Jämförelse kommuner)",
+        "publisher": "Region Dalarna (data: Folkhälsomyndigheten, Hälsa på lika villkor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZGQ3ODdmMzItOTNiZS00NTMzLTg1YzUtNmE4NDJhN2JmZGQ0IiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "Enkätens närmaste mått på framtidstro och mening. KI 70,3–76,0 %; Dalarna 71,3 %, riket 72,0 %. 2021 var andelen 80,7 % i Rättvik, en minskning med 7,5 procentenheter på tre år (Dalarna −5,2).",
+      "confidence": "medium"
+    },
+    {
+      "id": "radd_ga_ut_ensam",
+      "sdg": [
+        11,
+        16
+      ],
+      "name_sv": "Andel invånare 16+ som avstått från att gå ut ensam av rädsla för att bli överfallen",
+      "value": 12.7,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Nationella folkhälsoenkäten Dalarna – Dalarnas resultat för år 2014, 2018, 2021 och 2024 (Power BI-rapport, sidorna Livsförhållanden och Jämförelse kommuner)",
+        "publisher": "Region Dalarna (data: Folkhälsomyndigheten, Hälsa på lika villkor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZGQ3ODdmMzItOTNiZS00NTMzLTg1YzUtNmE4NDJhN2JmZGQ0IiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "KI 10,6–14,9 %, signifikant lägre än riket (28,3 %); Dalarna 22,9 %. 2014 var andelen 8,8 % i Rättvik. Kolada U01420 (åren 2021–2024 sammanslagna) ger 13,2 %.",
+      "confidence": "medium"
+    },
+    {
+      "id": "ensamhet_hemtjanst_65plus",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Andel personer 65+ med hemtjänst som besväras av ensamhet",
+      "value": 52.7,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kolada U01421: Brukarbedömning hemtjänst äldreomsorg – besväras av ensamhet kommun, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: Socialstyrelsen, Vad tycker de äldre om äldreomsorgen?)",
+        "url": "https://api.kolada.se/v3/data/kpi/U01421/municipality/2031"
+      },
+      "note_sv": "Andel som svarat 'ja, lätta besvär' eller 'ja, svåra besvär' i Socialstyrelsens enkät till personer 65+ med hemtjänst; riket 51,0 %. Svåra besvär: 8,7 % (riket 10,0 %, Kolada U21478). Jämför 3,9 % av alla invånare 16+ som ofta eller alltid besväras av ensamhet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "klarar_inte_ovantad_utgift",
+      "sdg": [
+        1,
+        10
+      ],
+      "name_sv": "Andel invånare 16+ som inte skulle klara en oväntad utgift",
+      "value": 19.7,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Nationella folkhälsoenkäten Dalarna – Dalarnas resultat för år 2014, 2018, 2021 och 2024 (Power BI-rapport, sidorna Livsförhållanden och Jämförelse kommuner)",
+        "publisher": "Region Dalarna (data: Folkhälsomyndigheten, Hälsa på lika villkor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZGQ3ODdmMzItOTNiZS00NTMzLTg1YzUtNmE4NDJhN2JmZGQ0IiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "KI 17,2–22,3 %; Dalarna 21,4 %, riket 20,3 %; 2021 var andelen 20,5 % i Rättvik. Enligt Kolada (Hälsa på lika villkor 2021–2024 sammanslagna) har 14,5 % haft ekonomisk kris det senaste året (U01407) och 11,3 % avstått tandvård av ekonomiska skäl (N01464, riket 10,5 %).",
+      "confidence": "medium"
+    },
+    {
+      "id": "unga_nojda_med_livet",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Andel unga i högstadiet och gymnasiet som är mycket eller ganska nöjda med livet i sin helhet",
+      "value": 88,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Lupp-rapport Dalarna 2015–2024 (Power BI-rapport, sidan Inledande Lupp-frågor)",
+        "publisher": "Region Dalarna (data: Lupp, Myndigheten för ungdoms- och civilsamhällesfrågor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZjFhNzUxNjYtYjE3Yy00ZDgyLWE3MzctYzViZWE3OTQ3MTZiIiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "158 av 179 svarande (Dalarna 86 %); gymnasiet 91 %, högstadiet 86 %, och 81 % år 2021. Bilden skiljer sig från elevhälsosamtalen, där 66,7 % av förstaårseleverna på gymnasiet säger att de mår bra; frågorna och urvalen är olika.",
+      "confidence": "medium"
+    },
+    {
+      "id": "unga_tror_flytta_fran_kommunen",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Andel unga i högstadiet och gymnasiet som tror att de kommer att flytta från kommunen",
+      "value": 63,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Lupp-rapport Dalarna 2015–2024 (Power BI-rapport, sidan Framtid)",
+        "publisher": "Region Dalarna (data: Lupp, Myndigheten för ungdoms- och civilsamhällesfrågor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZjFhNzUxNjYtYjE3Yy00ZDgyLWE3MzctYzViZWE3OTQ3MTZiIiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "114 av 180 svarande i Rättvik (Dalarna 56 %; Rättvik 2021: 66 %), bland gymnasieelever 78 % (Dalarna 73 %). Av dem som tror att de flyttar anger 54 % arbete och 37 % fortsatta studier som skäl. Det bästa med att bo i kommunen: familj och släkt (53 %) och närheten till naturen (38 %).",
+      "confidence": "medium"
+    },
+    {
+      "id": "gymnasieelever_ar1_mar_bra",
+      "sdg": [
+        3,
+        4
+      ],
+      "name_sv": "Andel elever i år 1 på gymnasiet som mår bra eller mycket bra för det mesta",
+      "value": 66.7,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Elevhälsorapport Dalarna (Power BI-rapport, sidan Hälsa & välbefinnande), läsåret 2025/26",
+        "publisher": "Egen beräkning (ursprungskälla: Region Dalarna, Elevhälsorapport Dalarna)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiM2FmZWRjMmMtMzU1MC00OTE5LWJhN2QtNjg3ZjAxOGMzYjNmIiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "(26 svar 'mycket bra' + 64 'bra') / 135 svarande i elevhälsans hälsosamtal på kommunens gymnasieskola, som även har elever från andra kommuner; Dalarna 75,4 %, och Rättvik 67,8 % läsåret 2024/25. 42 % av eleverna var nedstämda eller ledsna minst en gång i veckan (Dalarna 30 %). I årskurs 7 mådde 85 % bra (Dalarna 80 %).",
+      "confidence": "medium"
+    },
+    {
+      "id": "unga_mojlighet_paverka",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Andel unga som anser att de har stora möjligheter att föra fram sina åsikter till dem som bestämmer i kommunen",
+      "value": 22,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Lupp-rapport Dalarna 2015–2024 (Power BI-rapport, sidan Samhälle & demokrati)",
+        "publisher": "Region Dalarna (data: Lupp, Myndigheten för ungdoms- och civilsamhällesfrågor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZjFhNzUxNjYtYjE3Yy00ZDgyLWE3MzctYzViZWE3OTQ3MTZiIiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "39 av 180 svarande i högstadiet och gymnasiet svarar mycket eller ganska stora möjligheter (Dalarna 16 %). 36 % har mycket eller ganska stort förtroende för politiker (Dalarna 38 %), mot 45 % 2021.",
+      "confidence": "medium"
+    },
+    {
+      "id": "valdeltagande_kommunval_2022",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i kommunfullmäktigevalet 2022",
+      "value": 84.11,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Val till kommunfullmäktige 2022 – slutligt valresultat, Rättvik",
+        "publisher": "Valmyndigheten",
+        "url": "https://resultat.val.se/val2022/KF/20/2031"
+      },
+      "note_sv": "7 813 av 9 289 röstberättigade; lägsta valdistrikt 75,3 %, högsta 88,0 % (Vikarbyn) enligt Kolada N05831/N05833. Valet den 13 september 2026 gav exakt samma deltagande, 84,11 % (7 780 av 9 250; Dalarnas län 83,33 %, riket 82,34 %). Mandat 2022: S 11, C 10, M 7, SD 7, KD 3, V 1; 2026: S 13, C 8, M 8, SD 7, KD 2, V 1.",
+      "confidence": "high"
+    },
+    {
+      "id": "barnfattigdom_andel",
+      "sdg": [
+        1,
+        10
+      ],
+      "name_sv": "Andel barn 0–17 år i ekonomisk utsatthet (Rädda Barnens reviderade mått)",
+      "value": 9.4,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Barnfattigdomsrapporten 2025: En ny verklighet, kommunbilaga s. 54",
+        "publisher": "Rädda Barnen",
+        "url": "https://www.raddabarnen.se/globalassets/bilder/rad--kunskap/barnfattigdom/barnfattigdomsrapporten-2025.pdf"
+      },
+      "note_sv": "161 av 1 714 barn lever i hushåll med låg inkomststandard enligt Konsumentverkets basbehov och/eller med försörjningsstöd; plats 75 av 290 kommuner. Dalarnas län 14,3 %, riket 12,9 %; med Rädda Barnens tidigare mått 5,7 % (98 barn). Samma siffror finns i rapportens Excel-bilaga för län och kommuner 2023.",
+      "confidence": "high"
+    },
+    {
+      "id": "skattesats_total_2026",
+      "sdg": [
+        17
+      ],
+      "name_sv": "Total kommunal skattesats 2026 (kommun + region)",
+      "value": 33.8,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kommunala skattesatser. År 2000–2026 (Kommunalskatter2000)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__OE__OE0101/Kommunalskatter2000/"
+      },
+      "note_sv": "21,81 % till kommunen och 11,99 % till Region Dalarna. Riksgenomsnittet är 32,38 % och Dalarnas läns 34,18 %. Oförändrad sedan 2025; 33,45 % år 2020.",
+      "confidence": "high"
+    },
+    {
+      "id": "sarskilt_boende_65plus_antal",
+      "sdg": [
+        3,
+        10
+      ],
+      "name_sv": "Personer 65+ i särskilt boende (äldreboende)",
+      "value": 116,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N23805: Brukare 65+ i särskilt boende äldre, antal",
+        "publisher": "RKA Kolada (ursprungskälla: Socialstyrelsen och SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N23805/municipality/2031"
+      },
+      "note_sv": "Median över året, inklusive biståndsbedömt trygghetsboende; 148 år 2021. Det motsvarar 3,05 % av invånarna 65+ (riket 3,82 %, Kolada N23890). Kommunen hyr 185 lägenheter av Rättviks Fastigheter för äldreboende och LSS, och boendeplanen för äldre ses över (årsredovisning 2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "hemtjanst_65plus_antal",
+      "sdg": [
+        3,
+        10
+      ],
+      "name_sv": "Personer 65+ med hemtjänst i ordinärt boende",
+      "value": 293,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N21702: Hemtjänsttagare 65+ i ordinärt boende, antal",
+        "publisher": "RKA Kolada (ursprungskälla: Socialstyrelsen och SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N21702/municipality/2031"
+      },
+      "note_sv": "Ökning från 250 (2022) och 270 (2024); 224 av dem är 80+. Sammantaget har 25,6 % av invånarna 80+ hemtjänst eller särskilt boende (riket 25,5 %, Kolada N20892), mot 33,5 % år 2018: fler äldre får omsorg hemma och färre bor på äldreboende.",
+      "confidence": "high"
+    },
+    {
+      "id": "listade_invanare_per_allmanlakare",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Listade invånare per heltidsarbetande specialist i allmänmedicin på vårdcentral",
+      "value": 1775,
+      "unit": "invånare per läkare",
+      "year": 2025,
+      "scope": "Dalarnas län",
+      "direction": "lower_better",
+      "source": {
+        "title": "1 100 invånare per läkare – vårdcentralers läkarbemanning (september 2025), figur 2 s. 11 och tabell 1 s. 13",
+        "publisher": "Sveriges läkarförbund",
+        "url": "https://slf.se/app/uploads/2025/10/1-100-invanare-per-lakare-vardcentralers-lakarbemanning-1.pdf"
+      },
+      "note_sv": "Socialstyrelsens riktvärde är 1 100; rikssnittet i enkäten 1 750 och spannet mellan regionerna 1 275–2 337. 66 % av länets 29 vårdcentraler svarade; Rättviks vårdcentral (Region Dalarna, i samma hus som äldreboendet Prästskogen) redovisas inte separat.",
+      "confidence": "medium"
+    },
+    {
+      "id": "hyrlakare_andel_vardcentral",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Andel av specialistläkarnas arbete i allmänmedicin på vårdcentralerna som utförs av hyrläkare",
+      "value": 18,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Dalarnas län",
+      "direction": "lower_better",
+      "source": {
+        "title": "1 100 invånare per läkare – vårdcentralers läkarbemanning (september 2025), tabell 1 s. 13",
+        "publisher": "Sveriges läkarförbund",
+        "url": "https://slf.se/app/uploads/2025/10/1-100-invanare-per-lakare-vardcentralers-lakarbemanning-1.pdf"
+      },
+      "note_sv": "I Region Dalarna utförs 80 % av arbetet av tillsvidareanställda och 2 % av vikarier. Riket 11 %; högst i Gävleborg (31 %) och lägst i Halland (0 %). Rapporten varnar för att långvarigt hyrläkarberoende riskerar kontinuiteten i patientkontakterna.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gymnasieelever_i_kommunen",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Elever i gymnasieskola belägen i kommunen (Stiernhööksgymnasiet)",
+      "value": 447,
+      "unit": "elever",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N17819: Elever i gymnasieskola, lägeskommun, antal",
+        "publisher": "RKA Kolada (ursprungskälla: Skolverket)",
+        "url": "https://api.kolada.se/v3/data/kpi/N17819/municipality/2031"
+      },
+      "note_sv": "Mätt 15 oktober 2025; störst är naturbruksprogrammet (riksgymnasiet för naturbruk) med cirka 190 elever, följt av el och energi (cirka 60), bygg, ekonomi och samhälle (cirka 50 var), introduktionsprogram (cirka 40) och natur (cirka 10) enligt Skolverket 2025/26. Lantbruksinriktningen hade 42 förstahandssökande till 24 platser 2025. Av de 308 gymnasieelever som är folkbokförda i Rättvik går 28 % i en annan kommuns skola (riket 20 %).",
+      "confidence": "high"
+    },
+    {
+      "id": "bostader_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Antal bostäder (lägenheter i alla hustyper inklusive specialbostäder)",
+      "value": 5862,
+      "unit": "bostäder",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal lägenheter efter region, hustyp och upplåtelseform (inklusive specialbostäder). År 1990–2025 (BO0104T04)",
+        "publisher": "Egen beräkning (ursprungskälla: SCB)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BO__BO0104__BO0104D/BO0104T04/"
+      },
+      "note_sv": "Summa av tabellens celler: 3 753 i småhus (64 %), 1 680 i flerbostadshus, 137 i övriga hus och 292 specialbostäder. Ökning med 270 sedan 2015 (5 592), alltså cirka 27 per år. Utöver detta finns 2 980 fritidshus.",
+      "confidence": "medium"
+    },
+    {
+      "id": "andel_hyresratt",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Andel bostäder som är hyresrätter (inklusive specialbostäder)",
+      "value": 27.1,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal lägenheter efter region, hustyp och upplåtelseform (inklusive specialbostäder). År 1990–2025 (BO0104T04)",
+        "publisher": "Egen beräkning (ursprungskälla: SCB)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BO__BO0104__BO0104D/BO0104T04/"
+      },
+      "note_sv": "1 590 av 5 862 bostäder. Äganderätt 3 574 (61,0 %), bostadsrätt 694 (11,8 %). Utan specialbostäder är hyresrättsandelen 23,3 % (1 298 av 5 570).",
+      "confidence": "medium"
+    },
+    {
+      "id": "allmannyttan_lagenheter",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Bostadslägenheter i det kommunala bostadsbolaget Rättviks Fastigheter AB",
+      "value": 588,
+      "unit": "lägenheter",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Om oss – Rättviks Fastigheter AB (uppdaterad 2026-03-18)",
+        "publisher": "Rättviks Fastigheter AB",
+        "url": "https://www.rattviksfastigheter.se/om-oss.html"
+      },
+      "note_sv": "Cirka 36 000 m² bostadsyta; därutöver blockhyr kommunen 185 lägenheter för äldreboende och LSS, och sidan 'Våra bostadsområden' (2025) anger 594 lägenheter i tre kategorier: vanliga (från 18 år), 55+ och trygghetsboende (från 70 år). Bostadskön har vuxit (årsredovisning 2025), men kölängden publiceras inte. Bolaget planerar två hus med åtta lägenheter i Boda, inflyttning våren 2027.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kollektivhus_lagenheter_lan",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Lägenheter i kollektivhus och bogemenskaper i Dalarnas län (medlemmar i Kollektivhus NU)",
+      "value": 44,
+      "unit": "lägenheter",
+      "year": 2026,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Kollektivhus i övriga landet",
+        "publisher": "Kollektivhus NU",
+        "url": "https://kollektivhus.se/kollektivhus-ovriga-sverige/"
+      },
+      "note_sv": "Enda huset i länet är Tersen i Falun: kooperativ hyresrätt för 'andra halvan av livet', 44 lägenheter. Det finns ingen startargrupp i Dalarna och inget kollektivhus i Rättvik. Hus som inte är medlemmar i föreningen syns inte i listan.",
+      "confidence": "medium"
+    },
+    {
+      "id": "foreningar_i_registret",
+      "sdg": [
+        11,
+        16
+      ],
+      "name_sv": "Föreningar i kommunens föreningsregister",
+      "value": 93,
+      "unit": "föreningar",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Sök föreningar i Rättviks kommun (föreningsregistret)",
+        "publisher": "Egen beräkning (ursprungskälla: Rättviks kommun)",
+        "url": "https://friweb.rattvik.se/forening/"
+      },
+      "note_sv": "Summa av registrets kategorier: 33 idrottsföreningar, 24 bystuge- och bygdegårdsföreningar, 13 övriga, 9 kulturföreningar (bl.a. Rättviks, Boda och Ore hembygdsföreningar och Boda spelmanslag), 6 studieförbund, 3 pensionärsföreningar, 2 kyrkliga, 2 politiska och 1 handikappförening. Bara föreningar som själva valt att synas ingår.",
+      "confidence": "medium"
+    },
+    {
+      "id": "unga_medlem_forening",
+      "sdg": [
+        3,
+        16
+      ],
+      "name_sv": "Andel unga i högstadiet och gymnasiet som är medlemmar i en förening",
+      "value": 53,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Lupp-rapport Dalarna 2015–2024 (Power BI-rapport, sidan Fritid)",
+        "publisher": "Region Dalarna (data: Lupp, Myndigheten för ungdoms- och civilsamhällesfrågor)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZjFhNzUxNjYtYjE3Yy00ZDgyLWE3MzctYzViZWE3OTQ3MTZiIiwidCI6IjRhZTg5ZmEzLWFkYjktNGY5OS1iOGQ4LTQ0Mzc3ZDQ0ZWE4YSIsImMiOjh9"
+      },
+      "note_sv": "95 av 180 svarande (Dalarna 50 %). Högstadiet 62 % (Dalarna 55 %), gymnasiet 45 % (Dalarna 43 %). 62 % tycker att det finns väldigt eller ganska mycket att göra på fritiden (Dalarna 63 %).",
+      "confidence": "medium"
+    },
+    {
+      "id": "idrottsforeningar_lok_per_10000",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Idrottsföreningar med statligt LOK-stöd per 10 000 invånare",
+      "value": 17.28,
+      "unit": "föreningar per 10 000 inv",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada U09804: Idrottsföreningar med LOK-stöd, antal/10 000 inv",
+        "publisher": "RKA Kolada (ursprungskälla: Riksidrottsförbundet)",
+        "url": "https://api.kolada.se/v3/data/kpi/U09804/municipality/2031"
+      },
+      "note_sv": "Cirka 19 föreningar (egen beräkning: 17,28 × 1,0998). Riket 9,59. Deltagandet är däremot lägre: 25,7 deltagartillfällen per invånare 7–20 år mot 33,4 i riket (Kolada U09800).",
+      "confidence": "high"
+    },
+    {
+      "id": "anmalda_brott_per_100000",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Anmälda brott per 100 000 invånare",
+      "value": 9829,
+      "unit": "brott per 100 000 inv",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kolada N07540: Anmälda brott totalt, antal/100 000 inv",
+        "publisher": "RKA Kolada (ursprungskälla: BRÅ och SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N07540/municipality/2031"
+      },
+      "note_sv": "Riket 13 581. Ökningen från 7 305 (2024) är stor; orsaken har inte kontrollerats i BRÅ:s statistik per brottstyp, och i en liten kommun kan enstaka ärenden med många anmälningar ge stora utslag. Anmälda våldsbrott 2025: 1 110 per 100 000 (riket 1 067).",
+      "confidence": "high"
+    },
+    {
+      "id": "utsatthet_brott_mot_person_ntu",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Andel 16–84 år som utsatts för brott mot enskild person (NTU)",
+      "value": 16.8,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Dalarnas län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kolada N07633: NTU – Självrapporterad utsatthet för brott mot enskild person, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: BRÅ, Nationella trygghetsundersökningen)",
+        "url": "https://api.kolada.se/v3/data/kpi/N07633/municipality/0020"
+      },
+      "note_sv": "Minst ett av: kort- eller försäljningsbedrägeri, fickstöld, personrån, sexualbrott, misshandel, hot, trakasserier eller nätkränkning under föregående år; riket 20,0 %. För Rättvik finns bara 2020–2021 (10,5 %, två år sammanslagna). Oro över brottsligheten i samhället: Dalarna 52,2 % (2025), riket 53,6 %.",
+      "confidence": "medium"
+    }
+  ]
+}

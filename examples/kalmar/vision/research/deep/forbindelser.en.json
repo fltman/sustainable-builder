@@ -1,0 +1,174 @@
+{
+  "indicators": {
+    "olandsbron_livslangd_planerad_till": {
+      "name": "Planned service life of Ölandsbron (at least until year)",
+      "unit": "year",
+      "note": "Trafikverket's bridge manager in 2022: the bridge \"shall last until at least 2075, unless there are major changes in how we live or travel\", and the intention is a total life of at least 100 years from the 1972 opening. Parliamentary motion 2025/26:3712 confirms that Trafikverket plans for 2075, and the 2026–2030 renovation is meant to extend the bridge's life."
+    },
+    "olandsbron_renovering_2027_2030_mnkr": {
+      "name": "Contract value for the 2027–2030 concrete renovation of Ölandsbron",
+      "unit": "MSEK",
+      "note": "NCC's winning bid (W-Tech bid 787.5 MSEK) to restore and thicken the concrete cover on the main and cross beams of 135 spans, January 2027–June 2030, after a 2025 pilot covering 13 spans. Trafikverket is also replacing the expansion joints from August 2026 to March 2027, with one lane closed in each direction. The bridge cost 130 MSEK to build."
+    },
+    "olandsbron_segelfri_hojd_m": {
+      "name": "Navigation clearance under the high span of Ölandsbron",
+      "unit": "m",
+      "note": "The bridge is 6,072 m long, built of reinforced concrete in 155 spans, and reaches a maximum height of 41.69 m (Dagens PS 2026). The clearance governs shipping through Kalmarsund and the gradient of any future replacement bridge."
+    },
+    "olandsbron_bredd_m": {
+      "name": "Width of Ölandsbron between the edge beams",
+      "unit": "m",
+      "note": "The deck is divided into four lanes with 0.2 m shoulders and has no footpath or cycle lane. The speed limit varies between 50 and 90 km/h. A tram, bus or cycle lane fits only if car traffic loses lanes or a new bridge is built."
+    },
+    "olandsbron_adt_2009": {
+      "name": "Annual average daily traffic on Ölandsbron in 2009",
+      "unit": "vehicles/day (annual average)",
+      "note": "The most recent exact annual average found in an official source. Trafikverket now gives rounded figures of about 15,000 vehicles a day outside summer and 25,000 in summer (see olandsbron_fordon_per_dygn). Motion 2025/26:3712 gives nearly 7 million vehicles a year, about 19,000 a day."
+    },
+    "olandsbron_fordon_toppdygn": {
+      "name": "Traffic on Ölandsbron on peak days (Öland harvest festival)",
+      "unit": "vehicles/day",
+      "note": "During the harvest festival on the last weekend of September, up to 36,000 vehicles can cross per day, compared with an average of 25,000 in summer and 15,000 the rest of the year. The peak days set the length of the queues at the bridgeheads in Färjestaden and Kalmar."
+    },
+    "olandsbron_vind_avradan_ms": {
+      "name": "Wind speed at which wind-sensitive vehicles are advised not to cross Ölandsbron",
+      "unit": "m/s",
+      "note": "\"Already at 27 metres per second we advise wind-sensitive vehicles not to cross\"; trailers have overturned in strong winds. Since 14 May 2018, Trafikverket rather than the police closes the bridge with red lights and barriers, and traffic is turned back at Svinö and Färjestaden."
+    },
+    "olandsbron_vind_stangning_ms": {
+      "name": "Wind speed at which Ölandsbron is closed to all traffic",
+      "unit": "m/s",
+      "note": "\"If there is a hurricane and the wind blows at 32 metres per second, the bridge is closed.\" Trafikverket describes wind closures as \"isolated occasions\". No official count of closure days per year has been found."
+    },
+    "olandsbron_gang_cykelforbud_sedan": {
+      "name": "Walking and cycling on Ölandsbron banned since",
+      "unit": "year",
+      "note": "The county administrative board decided the ban on 17 December 2009. Transportstyrelsen rejected the appeal by Cykelfrämjandet and Kalmar miljögrupp on 21 June 2010, citing four lanes, high speeds and 0.2 m shoulders. Today's alternatives are taking a bike on the regional bus, space permitting, and the seasonal bicycle ferry."
+    },
+    "olandsleden_tallhagen_lagsta_niva": {
+      "name": "Lowest ground level on road 137 (Ölandsleden) between Ölandsbron and the mainland, Tallhagen",
+      "unit": "m RH2000",
+      "note": "Own derived value: the 1.09 m water depth at the +3.4 m level gives a ground level of 2.31 m, and the coastal flood layers give \"wet from\" 2.4 m. About 440 m of the road, 1.0–1.4 km west of the bridgehead on Svinö, lies below 3.4 m. The road clears the model's 2126 100-year levels (1.89–2.18 m) by 0.1–0.4 m but is under 0.4 m of water at the 2150 level of 2.7 m (SSP2-4.5). The Öland side at Möllstorp lies above 3.4 m."
+    },
+    "olandsbron_reservfarja_ledtid": {
+      "name": "Time needed to get a replacement ferry in place if Ölandsbron is closed (figure from a parliamentary question)",
+      "unit": "days",
+      "note": "According to the MP asking the question (also question 2022/23:131), it can take up to two weeks to reclassify Trafikverket's road ferry and move it from the Blekinge archipelago to Kalmarsund. He wants a maximum of 24 hours. The government's answers of 13 December 2022 and 24 February 2026 do not confirm the figure but refer to Trafikverket's continuity planning. There is no permanent backup link for cars."
+    },
+    "olandsbron_bargning_installelsetid": {
+      "name": "Permitted response time for contracted recovery (towing) services on Ölandsbron",
+      "unit": "minutes",
+      "note": "The figure was given in a parliamentary question after at least two accidents in winter 2025/26 caused long queues across the bridge. On 24 February 2026, the infrastructure minister replied that Trafikverket is analysing whether its routines and contract requirements need to change."
+    },
+    "oland_arbetspendlare_till_kalmar": {
+      "name": "Employed residents of Öland whose workplace is in Kalmar Municipality (Öland)",
+      "unit": "persons",
+      "note": "The sum of Mörbylånga (2,988) and Borgholm (779) from SCB register data for 2024. A further 1,017 Öland residents work in other mainland municipalities, and 2,077 mainland residents (1,537 of them in Kalmar) work on Öland, so in total about 6,860 people commute across the strait. The register records the workplace, not that the trip is made every day."
+    },
+    "morbylanga_utpendling_andel": {
+      "name": "Share of employed residents of Mörbylånga Municipality who commute to another municipality (Öland)",
+      "unit": "%",
+      "note": "The highest share in the county, and rising (51.3% in 2020). Borgholm had 28.9% and Kalmar 20.1% in 2024. Most out-commuters from Mörbylånga work in Kalmar and so depend on Ölandsbron."
+    },
+    "cykelfarja_cyklar_per_sasong": {
+      "name": "Bicycles carried by the Kalmar–Färjestaden bicycle ferry per season (Öland)",
+      "unit": "bicycles/season",
+      "note": "The requirement in the municipalities' direct procurement of the service from 2026: the operator must handle just over 40,000 passengers and 13,000 bicycles per season. Trafikverket's support of 1.4 MSEK a year has ended, and Kalmar and Mörbylånga contribute about 100,000 SEK each."
+    },
+    "kalmar_c_tagrorelser_per_dygn": {
+      "name": "Train movements to and from Kalmar C per day",
+      "unit": "train movements/day",
+      "note": "\"Just under 70 train movements\", meaning just over 30 departures a day. Kalmar C is a terminus with three platform tracks for trains of at most 250 m. In rush hour, the barriers at the three level crossings on the single track towards Kalmar södra are down for up to 20 minutes an hour."
+    },
+    "kalmar_c_ombyggnad_mnkr": {
+      "name": "Investment cost of a new island platform and new platform tracks at Kalmar C",
+      "unit": "MSEK (June 2023 prices)",
+      "note": "A new island platform, new platform tracks 6–7 and a longer platform for longer trains. The project is in the national plan adopted on 24 April 2026, but only under \"planning\", with no construction start decided. The rebuilding of Emmaboda station was dropped from the plan."
+    },
+    "kalmar_c_resor_prognos_2045": {
+      "name": "Forecast of train trips to and from Kalmar C in 2045",
+      "unit": "trips/year",
+      "note": "Trafikverket's base forecast for 2045: 80 passenger trains a day and 1.4 million trips a year on the track into Kalmar C. None of the sources found gives today's passenger numbers at Kalmar C."
+    },
+    "oresundstag_avgangar_kalmar_vardag": {
+      "name": "Direct Öresundståg trains from Kalmar C towards Malmö/Copenhagen per weekday",
+      "unit": "departures/weekday",
+      "note": "Own count from the timetable: departures from Kalmar between 06:00 and 21:00, Monday to Friday, most of them running through to Østerport. Krösatåg trains also run Kalmar–Emmaboda–Karlskrona/Växjö and Kalmar–Linköping, and SJ runs towards Alvesta and Gothenburg."
+    },
+    "restid_tag_kalmar_kobenhavn_min": {
+      "name": "Fastest train journey time Kalmar C–København H",
+      "unit": "minutes",
+      "note": "Direct Öresundståg train with no change, for example departing 06:00 and arriving 09:44. The journey to Copenhagen Airport takes 3 h 28 min. All through trains during the day have the same running time."
+    },
+    "restid_tag_kalmar_malmo_min": {
+      "name": "Fastest train journey time Kalmar C–Malmö C",
+      "unit": "minutes",
+      "note": "Öresundståg train from Kalmar at 06:00 to Malmö C at 09:03, via Växjö, Alvesta, Hässleholm and Lund. The Hässleholm–Lund project (two new tracks) is in the 2026–2037 national plan and, according to SVT, will improve train services between Kalmar and Malmö/Copenhagen."
+    },
+    "restid_tag_kalmar_vaxjo_min": {
+      "name": "Fastest train journey time Kalmar C–Växjö",
+      "unit": "minutes",
+      "note": "Öresundståg train stopping at Nybro, Emmaboda, Lessebo and Hovmantorp. The Kust till kust line is electrified but single-track. The target of Regionsamverkan Sydsverige is 45 minutes by 2040 (see restid_mal_kalmar_vaxjo_2040)."
+    },
+    "restid_tag_kalmar_linkoping_min": {
+      "name": "Fastest train journey time Kalmar C–Linköping (Stångådalsbanan)",
+      "unit": "minutes",
+      "note": "Krösatåg train from Kalmar at 10:35 to Linköping at 13:40 in the 2024 timetable. The trip is up to 20 minutes shorter via Alvesta and the Southern Main Line. The 1990s upgrade cut the journey from about four hours to three."
+    },
+    "restid_tag_kalmar_stockholm_min": {
+      "name": "Approximate fastest train journey time Kalmar C–Stockholm C (with a change)",
+      "unit": "minutes",
+      "note": "Derived: Trafikverket states that Kalmar–Stockholm is 20–30 minutes faster via Alvesta than via Linköping. Kalmar–Linköping (3 h 05) plus a change and SJ's roughly 1 h 40 for Linköping–Stockholm (an assumption) gives about 4 h 55–5 h 05, so about 4 h 30–4 h 45 via Alvesta (Kalmar–Alvesta takes 1 h 20 on Öresundståg). There are no direct trains; the direct trains via Linköping ended after 2003."
+    },
+    "stangadalsbanan_elektrifierad_andel": {
+      "name": "Electrified share of Stångådalsbanan, Kalmar–Linköping",
+      "unit": "%",
+      "note": "The line is 235 km long, single-track and has no overhead wire. In 2024, Trafikverket proposed neither overhead wire nor partial electrification. The Kust till kust line Kalmar–Emmaboda–Alvesta, by contrast, is electrified. Eight new bimodal Krösatåg trains (electric and biodiesel), delivered from 2026–2027, are to make fossil-free operation possible."
+    },
+    "stangadalsbanan_resor_per_ar": {
+      "name": "Trips per year on Stångådalsbanan",
+      "unit": "trips/year",
+      "note": "\"Just under 340,000\" trips in 2018, just over 230,000 in 2020 and just over 180,000 in 2021. Ridership has been flat since around 2000. Kalmar C is part of 45% of the trips on the line, and Kalmar–Linköping is the largest single pair (14%)."
+    },
+    "stangadalsbanan_genomgaende_turer": {
+      "name": "Through trains Kalmar–Linköping per weekday",
+      "unit": "return trips/weekday",
+      "note": "Seven through return trips in the 2024 timetable plus some split services, about 23 passenger trains a day on the line in total (Trafikverket 2024). Collisions with fallen trees are increasing: 37 cases in 2018–2022 and 30 in 2023 alone."
+    },
+    "stangadalsbanan_atgarder_2022_2033_mnkr": {
+      "name": "Decided state measures on Stångådalsbanan and Tjustbanan 2022–2033",
+      "unit": "MSEK",
+      "note": "\"Just over 2.2 billion SEK\", about half of it routine maintenance. A new radio-block signalling system costs about 800 MSEK. A triangle junction at Berga and a passing loop at Kåremo would cut Kalmar–Linköping by just under 10 minutes."
+    },
+    "restid_mal_kalmar_vaxjo_2040": {
+      "name": "Target train journey time Kalmar–Växjö by 2040 (Regionsamverkan Sydsverige)",
+      "unit": "minutes",
+      "note": "Down from 60 minutes in 2018. The same position paper aims to cut Kalmar–Karlskrona from 75 to 60 minutes. Region Kalmar wants double track Kalmar–Alvesta in the long run, but double track Växjö–Alvesta is not in the 2026–2037 national plan."
+    },
+    "kollektivtrafik_marknadsandel_mal_2028": {
+      "name": "Target public transport share of motorised trips in the county by 2028",
+      "unit": "%",
+      "note": "The share was 12% in 2022 (14% before the pandemic) and 21% in Kalmar Municipality. The number of trips is also to rise above the 2019 level; in 2022 there were almost 10 million trips on subsidised public transport."
+    },
+    "lansplan_kalmar_2026_2037_mnkr": {
+      "name": "Financial frame for the regional transport infrastructure plan for Kalmar County 2026–2037",
+      "unit": "MSEK",
+      "note": "Out of a national frame of 1,171 billion SEK; according to SVT, 307 MSEK more than the previous period. Ölandsbron, a second link to Öland and electrification of Stångådalsbanan are not named projects in the national plan."
+    },
+    "flyg_passagerare_kalmar_2025": {
+      "name": "Passengers at Kalmar Öland Airport in 2025",
+      "unit": "passengers/year",
+      "note": "Down 1.3% on 2024 and 38% of the 2019 level. The second quarter of 2026 was 13% below the year before. The only scheduled route is SAS to Arlanda (no Bromma route since January 2025), plus charter flights. The airport is owned half by Kalmar Municipality and half by Region Kalmar län."
+    },
+    "flyg_passagerare_kalmar_2019": {
+      "name": "Passengers at Kalmar Öland Airport in 2019",
+      "unit": "passengers/year",
+      "note": "Down 4.6% from 243,296 passengers in 2018. This is the pre-pandemic level, when there were routes to both Arlanda and Bromma."
+    },
+    "flyg_co2_inrikes_kalmar_2024": {
+      "name": "Carbon dioxide from domestic aviation allocated to Kalmar Municipality",
+      "unit": "tonnes CO2",
+      "note": "Emissions were 1,636 tonnes in 1990, 1,001 tonnes in 2015 and 686 tonnes in 2023. The value covers only the part of emissions that the database allocates geographically to the municipality, mainly take-off and landing near the airport, not the whole flights. International charter flights are reported as 0."
+    }
+  }
+}

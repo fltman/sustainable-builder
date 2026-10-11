@@ -1,0 +1,204 @@
+{
+  "indicators": {
+    "gastnatter": {
+      "name": "Guest nights in commercial accommodation",
+      "unit": "guest nights",
+      "note": "All guest nights in 2025 at hotels, campsites, cabin villages, hostels and agency-let cottages that report to the accommodation statistics, +0.6% on 2024 (Swedish 201,559, foreign 24,788). Stays in own second homes, with relatives or via Airbnb are not included. In the portal choose level Kommun, municipality Rättvik and period 2025-01 to 2025-12."
+    },
+    "gastnatter_2019": {
+      "name": "Guest nights in commercial accommodation 2019 (pre-pandemic)",
+      "unit": "guest nights",
+      "note": "The peak pre-pandemic year, +7.7% on 2018 (Swedish 253,421, foreign 26,014); hotels 23%, camping 38%, hostels 6% and confidential accommodation types 34%. In 2025 Rättvik was 19% below 2019, while the four Siljan municipalities together were 9% below."
+    },
+    "gastnatter_2020": {
+      "name": "Guest nights in commercial accommodation 2020 (pandemic year)",
+      "unit": "guest nights",
+      "note": "−27.6% on 2019. Foreign guest nights fell 69% to 7,970 and Swedish ones 23% to 194,943."
+    },
+    "gastnatter_2023": {
+      "name": "Guest nights in commercial accommodation 2023",
+      "unit": "guest nights",
+      "note": "−12.0% on 2022, when 263,802 guest nights marked a peak during the post-pandemic staycation boom. Foreign guest nights 22,204."
+    },
+    "gastnatter_2024": {
+      "name": "Guest nights in commercial accommodation 2024",
+      "unit": "guest nights",
+      "note": "−2.9% on 2023: Swedish guest nights fell 5.1% while foreign ones rose 17.3% to 26,051. Camping 52%, hotels 23%."
+    },
+    "gastnatter_sommar_andel": {
+      "name": "Share of the year's guest nights in June–August",
+      "unit": "%",
+      "note": "149,979 guest nights in June–August 2025 divided by 226,773 for the whole year = 66.1%; July alone had 80,487 (35%), 74% of them on campsites. In 2019 the share was 63.4% (178,305 / 281,099): since then summer has fallen 16% and the rest of the year 25%."
+    },
+    "gastnatter_vinter": {
+      "name": "Guest nights in the winter season December–March",
+      "unit": "guest nights",
+      "note": "December 2024–March 2025, −9.7% on the previous winter (28,965); about 12% of the 2025 annual total (own comparison, periods do not fully overlap). For Dalarna as a whole roughly half of all guest nights fall in winter (3.07 million December 2025–April 2026 according to Visit Dalarna), mainly in the mountains."
+    },
+    "utlandska_gastnatter_andel": {
+      "name": "Foreign guests' share of guest nights",
+      "unit": "%",
+      "note": "24,788 foreign guest nights out of 226,773 in 2025 (−4.8% on 2024); largest markets Norway, Germany, the Netherlands, the UK and Denmark. The share was 9.3% in 2019 and 11.6% in 2024, against 15.4% in the four Siljan municipalities and 20% in Dalarna."
+    },
+    "camping_andel_gastnatter": {
+      "name": "Camping's share of guest nights",
+      "unit": "%",
+      "note": "Camping 52.6%, hotels 23.0% and confidential accommodation types (cabin villages, hostels, agency-let cottages) 24.4% of guest nights in 2025. Camping's share was 37.7% in 2019; campers are weather-sensitive and concentrated in July."
+    },
+    "gastnatter_per_invanare": {
+      "name": "Guest nights per inhabitant",
+      "unit": "guest nights per inhabitant",
+      "note": "The year's commercial guest nights divided by the population on 31 December. Dalarna 18.0 and Sweden 6.7; Leksand 21.8, Orsa 19.6 and Mora 16.4 (2025); Rättvik had 25.7 in 2019."
+    },
+    "disponibla_baddar": {
+      "name": "Available beds per day in commercial accommodation (annual average)",
+      "unit": "beds",
+      "note": "On average 1,020 beds per day in 2025 (+1.8%), of which 244 occupied, giving an occupancy rate of 23.9%; for rooms 396 available and 34.1% occupancy. Campsite pitches for tents, caravans and motorhomes are probably not counted, so summer capacity is larger than this figure."
+    },
+    "logiintakter": {
+      "name": "Accommodation revenue in commercial accommodation",
+      "unit": "MSEK",
+      "note": "SEK 79,886,431 in 2025, +1.5% on 2024, about SEK 350 per guest night (own calculation). The average rate per occupied room was SEK 1,092 and revenue per available room SEK 372; Dalarna county had SEK 2,005 million (Tillväxtverket, Inkvartering 2025, p. 13)."
+    },
+    "gastnatter_siljan": {
+      "name": "Guest nights in the four Siljan municipalities (Leksand, Mora, Orsa, Rättvik)",
+      "unit": "guest nights",
+      "note": "−1.4% on 2024 and 9% below 2019 (1,151,570); Rättvik's share is 21.6%. Leksand had about 352,400, Mora 335,500 and Orsa 135,100 (derived by stepwise selection in the portal, consistent with Kolada)."
+    },
+    "turismkonsumtion": {
+      "name": "Tourism consumption in the municipality (visitor spending)",
+      "unit": "MSEK",
+      "note": "Spending by Swedish and foreign visitors in 2025: accommodation 29%, retail 23%, second homes/apartments 16%, culture 11%, restaurants 9%; about SEK 81,000 per inhabitant against the national SEK 47,500. In 2019 it was SEK 915 million in 2025 prices (−3%), and the four Siljan municipalities together had SEK 3,956 million in 2025. Experimental statistics that Tillväxtverket says should be read with caution at municipal level."
+    },
+    "turism_arsarbetskrafter": {
+      "name": "Employment generated by tourism (full-time equivalents)",
+      "unit": "FTEs",
+      "note": "Full-time jobs generated by visitor demand in the municipality in 2025, −2 on 2024 and 202 in 2019; seasonal jobs are converted to full-year, so more people work in the industry. The four Siljan municipalities together have 955. Experimental municipal statistics."
+    },
+    "turism_andel_bkp": {
+      "name": "Tourism's share of the municipal economy (gross municipal product)",
+      "unit": "%",
+      "note": "Share at current prices including taxes on products, 2023 is the latest year; tourism value added was SEK 182 million (44.9% in accommodation, 22.0% in retail, 18.6% in restaurants) and the municipality's GRP SEK 3,605 million. In 2019 the share was 8%, and in 2020 it fell to about 5.5%. Sweden 2.6%; neighbouring Orsa is among the ten municipalities in the country with the highest share."
+    },
+    "overnattningar_eget_fritidshus_dalarna": {
+      "name": "Overnight stays in own second homes in Dalarna",
+      "unit": "million overnight stays",
+      "note": "Visit Dalarna's tourism economic model (TEM) gives 17.4 million tourist overnight stays in Dalarna in 2025, of which 7.6 million (44%; 4.6 million in 2019) in own second homes, more than the 5.15 million commercial guest nights. With the county's 46,945 second homes that is about 160 nights per second home per year (own calculation); TEM also gives SEK 12.6 billion in turnover and 7,795 FTEs in the county's visitor industry."
+    },
+    "fritidshus": {
+      "name": "Second homes in the municipality",
+      "unit": "second homes",
+      "note": "Small houses with no registered residents, owned by private persons or estates, per the property tax register on 1 January 2025; 2,520 in 1998 and 2,902 in 2019 (SCB table TAB825). That is 271 second homes per 1,000 inhabitants (Sweden 60); Leksand has 4,157, Mora 5,003 and Orsa 1,830."
+    },
+    "fritidshus_lokalt_agda_andel": {
+      "name": "Share of second homes owned by people registered in the municipality",
+      "unit": "%",
+      "note": "So more than four in five second homes (about 83%) are owned by people in other municipalities, people abroad or estates, and the owners come from 160 municipalities. Nationally one in four second homes is locally owned."
+    },
+    "befolkning_juli_okning": {
+      "name": "Increase in people present in July compared with October–November",
+      "unit": "%",
+      "note": "SCB experimental statistics from mobile network data (Telia, calibrated to population statistics): about 11,140 people in October–November, 17,630 in July (+6,490) and 20,310 at Midsummer (+82%) in 2022. Leksand rose 49% in July, Orsa 35% and Mora 22%."
+    },
+    "befolkning_max_faktor": {
+      "name": "Peak summer presence relative to the year's median population (Classic Car Week Saturday)",
+      "unit": "times median population",
+      "note": "On Saturday 29 July 2023 at 20:00, mobile data showed three times as many people in the municipality as the year's median (about 10,000), the fifth-highest value among Swedish municipalities that summer. Leksand reached 2.4 times on Midsummer Eve."
+    },
+    "classic_car_week_gastnatter": {
+      "name": "Guest nights linked to Classic Car Week (weeks 30–31)",
+      "unit": "guest nights",
+      "note": "The municipality's situation report gives about 35,000 guest nights linked to the car week, plus day visitors; the figure probably also covers private letting, temporary camping and second homes. The organiser speaks of 10,000 cars during the week, held in week 31 since 1992; a 2018 parliamentary motion gave 40,000 guest nights."
+    },
+    "classic_car_week_andel_brott": {
+      "name": "Share of the municipality's annual reported crimes reported during Classic Car Week",
+      "unit": "%",
+      "note": "Police assessment after the 2026 car week, when among other things five suspected rapes, 30 assaults and about 900 fineable offences were reported; 245 people were fined for loud music (89 in 2025). The municipality's situation report shows about 100 reported crimes in week 31 against about 20 in a normal week."
+    },
+    "dalhalla_besokare": {
+      "name": "Concert visitors at Dalhalla per season",
+      "unit": "visitors",
+      "note": "About 120,000 visitors in summer 2026 with the venue's highest average audience so far; the record is 129,000 (2023) and in 2012 it was 40,000 (dalhalla.se/historia). The Draggängarna limestone quarry, worked until 1990, became a concert venue in 1994–1995 and now holds about 4,800–6,000 people; up to 400 people are on the payroll each season."
+    },
+    "rattviks_marknad_besokare": {
+      "name": "Visitors per Rättvik market (May and October)",
+      "unit": "visitors",
+      "note": "The municipality gives over 1,000 booked stalls and 100,000–120,000 visitors per market; the lower bound is used here. The market is held in early May and early October and dates back to the 1890s; an estimate, not a count."
+    },
+    "skiddagar_2100_rcp45": {
+      "name": "Days per year with good skiing snow in southern Dalarna 2069–2098 (RCP4.5)",
+      "unit": "days per year",
+      "note": "SMHI's calculation for Runn near Falun, the nearest example area (snow cover above 20 mm water equivalent): from about 90 days in 1961–1990 to just under 40 at the end of the century with limited emissions, and with high emissions (RCP8.5) good skiing becomes rare. There is no calculation for Rättvik, which lies somewhat further north."
+    },
+    "vegetationsperiod_2100_rcp85": {
+      "name": "Length of the growing season around Siljan 2069–2098 (RCP8.5)",
+      "unit": "months",
+      "note": "The period with daily mean temperature above about 5 °C, on average 5 months around Siljan in 1961–1990, is projected to be about 7 months by the end of the century with high emissions (2–3 weeks shorter with RCP4.5). A longer summer half-year may favour camping and outdoor life, but SMHI also expects heatwaves of up to two weeks around Siljan."
+    },
+    "klimat_hotellnatt": {
+      "name": "Climate impact per hotel night in Sweden",
+      "unit": "kg CO2 per guest night",
+      "note": "Energy for heating, electricity, hot water and laundry at a four-star hotel (hostels and similar 0.9 kg); food and construction are excluded. Accommodation weighs little against the journey: a week in a hotel gives 26 kg, while 1,000 km by fossil car gives 76 kg per person."
+    },
+    "klimat_bilresa_100mil": {
+      "name": "Climate impact per person of a 1,000 km holiday trip by fossil car (three people in the car)",
+      "unit": "kg CO2e per person",
+      "note": "Mid-size diesel car, 229 g CO2e per vehicle-km including manufacture of the car, split between three travellers; the same distance by electric car in the Nordics gives 20 kg, bus 30 kg and Nordic train 7 kg per person. A week in a hotel gives 26 kg, so the journey weighs more than the stay."
+    },
+    "sysselsatta_hotell_restaurang_andel": {
+      "name": "Employed in hotels and restaurants, share of all working in the municipality",
+      "unit": "%",
+      "note": "Share of people employed at workplaces in the municipality in November 2024, almost twice Dalarna (3.3%) and Sweden (3.75%). With 4,324 employed that is about 300 people (own calculation); the municipality calls tourism its largest private industry."
+    },
+    "sysselsatta_vard_omsorg_andel": {
+      "name": "Employed in health and social care, share of all working in the municipality",
+      "unit": "%",
+      "note": "Health care, elderly care and social services in November 2024; Dalarna 20.3%, Sweden 16.4%. The municipal and regional sector employs 34.5% of all who work in Rättvik (Sweden 23.3%), and the municipality is the largest employer with 1,056 permanent staff in 2025."
+    },
+    "sysselsatta_bygg_andel": {
+      "name": "Employed in construction, share of all working in the municipality",
+      "unit": "%",
+      "note": "November 2024; Dalarna 8.9%, Sweden 7.1%. The share has been 11–11.5% since 2020."
+    },
+    "sysselsatta_tillverkning_andel": {
+      "name": "Employed in manufacturing and mining, share of all working in the municipality",
+      "unit": "%",
+      "note": "November 2024; Dalarna 14.3%, Sweden 10.7%. The municipality counts the wood industry among its main industries; the share has fallen from 10.6% in 2020."
+    },
+    "sysselsatta_jord_skog_andel": {
+      "name": "Employed in agriculture, forestry and fishing, share of all working in the municipality",
+      "unit": "%",
+      "note": "November 2024; Dalarna 3.1%, Sweden 1.8%. The share was 6.3% in 2020."
+    },
+    "storsta_privata_arbetsgivare": {
+      "name": "Largest private employer (Rättvik Event AB, which runs Dalhalla), employees",
+      "unit": "employees",
+      "note": "SCB size class 250–299 employees in November 2025, shown as 275 by Ekonomifakta; the figure reflects many seasonal and hourly staff. That the largest private employer is an events company shows the weight of tourism; the municipality itself had 1,056 permanent staff."
+    },
+    "gastnatter_per_ankomst": {
+      "name": "Average length of stay (guest nights per arrival)",
+      "unit": "nights per arrival",
+      "note": "20.66 guest nights per inhabitant divided by 9.02 arrivals per inhabitant = 2.29 nights per arrival, equivalent to about 99,100 arrivals in 2025 (9.024 × 10,978). In 2019 the stay was 2.64 nights; Dalarna 3.12, Sweden 2.00, Leksand 1.89, Mora 1.95 and Orsa 2.54 (2025)."
+    },
+    "besparing_socialforvaltning": {
+      "name": "Savings requirement in elderly care and disability services (social services)",
+      "unit": "MSEK",
+      "note": "The social services department needed to cut costs by about SEK 25 million and gave notice on about 60 posts in elderly care and disability services in February 2025. It still overran its budget by SEK 5.6 million in 2025, and without the Dala Energi capital gain the municipality's result was SEK 14.8 million (1.7% of taxes and grants, below the 2% target)."
+    },
+    "foretagsklimat_ranking": {
+      "name": "Business climate, rank among 290 municipalities (Svenskt Näringsliv)",
+      "unit": "rank",
+      "note": "Rank 65 in the 2026 ranking (72 in 2025, 50 in 2024, best 31 in 2018 and worst 240 in 2009); firms' overall rating is 4.0 out of 6 against the Swedish average 3.5. In Dalarna, Orsa ranks 53, Leksand 76 and Mora 153."
+    },
+    "brp_per_invanare": {
+      "name": "Gross regional product (GRP) per inhabitant",
+      "unit": "SEK thousand per inhabitant",
+      "note": "The municipality's GRP was SEK 3,751 million in 2024 at current prices, 56% of the national average per inhabitant (SEK 606 thousand); Leksand 424, Mora 492 and Orsa 282. Per employed person SEK 834 thousand against Sweden's 1,184, reflecting labour-intensive industries such as tourism, retail and care and a large share of older residents."
+    },
+    "foretagare_andel_sysselsatta": {
+      "name": "Business owners as a share of the employed",
+      "unit": "%",
+      "note": "833 business owners in 2024 (844 the year before), rank 29 of 290; Dalarna 10.6%, Sweden 9.9%. Small firms with fewer than 50 employees have 2,008 jobs, 46% of all jobs in the municipality (p. 11)."
+    }
+  }
+}

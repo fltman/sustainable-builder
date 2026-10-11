@@ -1,0 +1,534 @@
+{
+  "indicators": {
+    "folkmangd_kommun": {
+      "name": "Population of Rättvik Municipality, 31 December",
+      "unit": "people",
+      "note": "Down 20 from 10,998 in 2024. More deaths than births, but more people move in than out."
+    },
+    "folkmangd_prognos_2034": {
+      "name": "Municipal population forecast for 2034",
+      "unit": "people",
+      "note": "The municipality's own projection: from 10,998 residents in 2024 to 10,965 in 2034."
+    },
+    "folkmangd_tatort": {
+      "name": "Population of Rättvik town (urban area)",
+      "unit": "people",
+      "note": "Statistics Sweden urban-area delineation 2023 (code 2031TC106). Density 438 residents per km²."
+    },
+    "folkmangd_tatort_1960": {
+      "name": "Population of Rättvik town in 1960",
+      "unit": "people",
+      "note": "The town grew from 3,140 residents in 1960 to 5,369 in 2023."
+    },
+    "tatort_landareal": {
+      "name": "Land area of Rättvik town",
+      "unit": "ha",
+      "note": "Land area inside the 2023 urban-area boundary. The model square (1.7 × 1.7 km ≈ 289 ha) covers the central part."
+    },
+    "kommun_yta": {
+      "name": "Area of the municipality",
+      "unit": "km²",
+      "note": "About the size of Lake Vättern. It covers the parishes of Rättvik, Boda and Ore."
+    },
+    "forsorjningskvot": {
+      "name": "Demographic dependency ratio",
+      "unit": "ratio",
+      "note": "Residents outside ages 20–64 per resident aged 20–64. Among the highest in Sweden; up from 0.99 ten years ago."
+    },
+    "forsorjningskvot_dalarna": {
+      "name": "Demographic dependency ratio, Dalarna County",
+      "unit": "ratio",
+      "note": "County average as given in the municipal annual report."
+    },
+    "forsorjningskvot_riket": {
+      "name": "Demographic dependency ratio, Sweden",
+      "unit": "ratio",
+      "note": "National average as given in the municipal annual report."
+    },
+    "andel_80_plus": {
+      "name": "Share of residents aged 80 or older",
+      "unit": "%",
+      "note": "1,236 people; 9.4% in 2022. (The report's text says 13% for 2024, which does not match its own table.)"
+    },
+    "okning_85_89_till_2034": {
+      "name": "Change in the number of people aged 85–89 by 2034",
+      "unit": "%",
+      "note": "+287 people in the municipal forecast, the age when care needs rise most. Aged 90+: +53% (+110)."
+    },
+    "forandring_barn_6_12_till_2034": {
+      "name": "Change in the number of children aged 6–12 by 2034",
+      "unit": "%",
+      "note": "−61 children in the municipal forecast; ages 1–5 −8% (−36), ages 16–19 −4% (−19)."
+    },
+    "andel_20_64": {
+      "name": "Share of residents of working age (20–64)",
+      "unit": "%",
+      "note": "5,252 people per the population table; the goal is a larger working-age share. (The goals section of the same report says 47.2%.)"
+    },
+    "arbetsloshet": {
+      "name": "Registered unemployment rate, December",
+      "unit": "%",
+      "note": "Sweden 6.8%, Dalarna 5.1%. Ages 18–24: 5.4%."
+    },
+    "kommunalskatt": {
+      "name": "Municipal income tax rate",
+      "unit": "%",
+      "note": "Unchanged since 2024 (21.82% in 2022–2023)."
+    },
+    "skatter_statsbidrag_budget": {
+      "name": "Tax revenue, general state grants and equalisation, budget",
+      "unit": "SEK million",
+      "note": "Of which own tax revenue about SEK 604 million."
+    },
+    "resultatmal": {
+      "name": "Financial target: annual surplus relative to taxes and grants",
+      "unit": "%",
+      "note": "Target for 2026–2028. Budgeted 2026 surplus SEK 17.98 million."
+    },
+    "resultat_2025": {
+      "name": "Municipal result (surplus)",
+      "unit": "SEK million",
+      "note": "Includes a one-off capital gain of SEK 311 million from redeeming shares in Dala Energi."
+    },
+    "resultat_2025_exkl_reavinst": {
+      "name": "Result excluding the capital gain, share of taxes and grants",
+      "unit": "%",
+      "note": "SEK 14.7 million. Below the 2% target; operations do not fully stay within budget."
+    },
+    "dala_energi_reavinst": {
+      "name": "Capital gain from redeeming Dala Energi shares",
+      "unit": "SEK million",
+      "note": "The municipality redeemed half of its 5.2 million shares and bought about 10% of Sambygd AB (power and fibre grids)."
+    },
+    "soliditet_inkl_pension": {
+      "name": "Equity ratio including pension obligations",
+      "unit": "%",
+      "note": "Without the capital gain it would have been 32.4%."
+    },
+    "soliditet_mal_2028": {
+      "name": "Target equity ratio including pension obligations",
+      "unit": "%",
+      "note": "To be reached by the end of 2028."
+    },
+    "koncern_laneskuld_per_invanare": {
+      "name": "Long-term debt of the municipal group per resident",
+      "unit": "SEK/resident",
+      "note": "SEK 1,239 million in total. National average about SEK 78,000 per resident in 2024. The rise comes mainly from water and sewage investment."
+    },
+    "koncern_langfristig_laneskuld": {
+      "name": "Long-term debt of the municipal group",
+      "unit": "SEK million",
+      "note": "Up SEK 129 million in 2025, mainly in the water and waste company. Interest-bearing debt was SEK 1,173 million (the budget document says 1,171)."
+    },
+    "investeringsbudget": {
+      "name": "Municipal capital budget",
+      "unit": "SEK million",
+      "note": "Includes the toboggan run SEK 8m, Toppstugan SEK 7m, beach toilets SEK 2m, Långbryggan SEK 0.5m and Enån beach infrastructure SEK 0.3m."
+    },
+    "socialforvaltning_andel_ramar": {
+      "name": "Social services' share of the operating budget",
+      "unit": "%",
+      "note": "Education has 35.0%; together almost 80% of the budget."
+    },
+    "socialforvaltning_underskott": {
+      "name": "Social services budget deviation",
+      "unit": "SEK million",
+      "note": "−1.5% of budget. The 2024 overrun was SEK 24 million; recovery is expected to take 3–5 years."
+    },
+    "lokala_ambitioner_antal": {
+      "name": "Number of local sustainability ambitions (Agenda 2030)",
+      "unit": "count",
+      "note": "Local ambitions for a sustainable Rättvik, adopted 26 Sep 2024. The work began in 2016 when UNDP visited Rättvik, the first Swedish municipality."
+    },
+    "fossilfritt_transportsystem_mal": {
+      "name": "Goal: fossil-free transport system in the municipality",
+      "unit": "%",
+      "note": "Local sub-goal: the municipality's transport system is to be fossil-free by 2030. The value 100% is our restatement of the goal."
+    },
+    "energianvandning_lokaler": {
+      "name": "Energy use in municipal buildings per heated area",
+      "unit": "kWh/m²",
+      "note": "Down from 165.61 kWh/m² in 2024."
+    },
+    "hvo_andel_fordon": {
+      "name": "Share of municipal vehicles fuelled with HVO100",
+      "unit": "%",
+      "note": "The municipality has no electric vehicles and does not measure emissions."
+    },
+    "ny_solel_ansluten": {
+      "name": "Solar power connected to the grid in the municipality",
+      "unit": "MW",
+      "note": "Up 21% (1.20 MW) from 5.79 MW in 2023, per the annual report."
+    },
+    "vindkraft_antal_verk": {
+      "name": "Number of wind turbines in the municipality",
+      "unit": "count",
+      "note": "Unchanged for 13 years per the Swedish Energy Agency."
+    },
+    "vindkraft_effekt": {
+      "name": "Installed wind power capacity in the municipality",
+      "unit": "MW",
+      "note": "15 turbines; in Dalarna each MW yields about 2.5 GWh a year."
+    },
+    "vindkraftsstod": {
+      "name": "State wind power grant to the municipality 2025–2026",
+      "unit": "SEK million",
+      "note": "All of it goes to local associations. From 2027 about SEK 0.5–0.6 million a year is expected."
+    },
+    "lokalproducerade_livsmedel": {
+      "name": "Share of locally produced food in municipal kitchens",
+      "unit": "%",
+      "note": "Up from 30% in 2024. Food meeting organic criteria: 34%."
+    },
+    "andel_ravaror_atertaget": {
+      "name": "Share of produce from the agricultural school ('Återtaget') in public kitchens",
+      "unit": "%",
+      "note": "Meat, potatoes and grain from the school farm; 21% the year before."
+    },
+    "gymnasieexamen_3ar": {
+      "name": "Share graduating upper secondary within three years, Stiernhööksgymnasiet",
+      "unit": "%",
+      "note": "Up 10 points from 78% in 2024 (municipal statistics)."
+    },
+    "ak9_betyg_alla_amnen": {
+      "name": "Share of year-9 pupils with passing grades in all subjects",
+      "unit": "%",
+      "note": "Down from 74.4% in 2024 (National Agency for Education)."
+    },
+    "meritvarde_ak9": {
+      "name": "Average merit rating in year 9",
+      "unit": "points",
+      "note": "Down from 214.8 in 2024."
+    },
+    "behorighet_gymnasiet": {
+      "name": "Share of pupils eligible for national upper-secondary programmes",
+      "unit": "%",
+      "note": "Down from 86.4% in 2024."
+    },
+    "grundskolor_antal": {
+      "name": "Number of municipal compulsory schools",
+      "unit": "count",
+      "note": "Nyhedsskolan (years F–6, ~230 pupils) and Rättviksskolan (years 7–9, 250+) are in town; the smallest, Sätra, has about 10 pupils."
+    },
+    "satra_skola_elever": {
+      "name": "Pupils at Sätra school (years F–3)",
+      "unit": "pupils",
+      "note": "The municipality says 'about 10 pupils'; the school is 4 km from central Rättvik."
+    },
+    "grundskola_elever_summa": {
+      "name": "Pupils in municipal compulsory schools, sum of approximate figures",
+      "unit": "pupils",
+      "note": "Our own calculation: the sum of the rounded pupil numbers ('about', 'just over') given for the eight schools."
+    },
+    "naturbruk_forstahandssokande": {
+      "name": "First-choice applicants to the agriculture track",
+      "unit": "applicants",
+      "note": "42 first-choice applications for 24 places. The school farm has bought a dairy to be installed in Rättvik."
+    },
+    "uf_elever": {
+      "name": "Students running Young Enterprise companies",
+      "unit": "students",
+      "note": "Up from 44 in 2024."
+    },
+    "sjukfranvaro": {
+      "name": "Total sick leave among municipal employees",
+      "unit": "%",
+      "note": "Down from 8.9% in 2024."
+    },
+    "tillsvidareanstallda": {
+      "name": "Permanent municipal employees",
+      "unit": "people",
+      "note": "Average age 47.0; 47.6% are 50 or older. Many retirements are expected among teachers, managers and assistant nurses."
+    },
+    "personalomsattning": {
+      "name": "Staff turnover among permanent employees",
+      "unit": "%",
+      "note": "Up from 7.2% in 2024."
+    },
+    "naringslivsranking": {
+      "name": "Rank in the Confederation of Swedish Enterprise business climate ranking",
+      "unit": "rank",
+      "note": "Down 22 places from 50th in 2024; the goal was to improve by 10."
+    },
+    "raddningstjanst_larm": {
+      "name": "Fire and rescue call-outs",
+      "unit": "call-outs",
+      "note": "The annual report says 'about 400 call-outs'."
+    },
+    "bostader_mal_per_ar": {
+      "name": "Goal: new homes per year",
+      "unit": "homes/year",
+      "note": "Housing programme 2020–2030: at least 30 new homes a year through work with property owners."
+    },
+    "smahustomter_till_maklare": {
+      "name": "Plots for detached houses handed to estate agents",
+      "unit": "count",
+      "note": "The goal was at least four plots."
+    },
+    "utsikten_tomter": {
+      "name": "Housing plots in the 'Utsikten' detailed plan (Lerdal)",
+      "unit": "plots",
+      "note": "Adopted 11 June 2026. Plots can be merged for small blocks of flats; a storm pond is sized for a 100-year rain plus a 30% climate factor."
+    },
+    "rfab_underhall_budget": {
+      "name": "Maintenance budget of the municipal housing company",
+      "unit": "SEK/m²",
+      "note": "The company says SEK 120–130/m² is needed to avoid emergency repairs, despite a 7% rent rise in 2025."
+    },
+    "va_ledningsnat": {
+      "name": "Length of water and sewer pipes",
+      "unit": "km",
+      "note": "'About 600 km', largely built 1955–1979 and in need of renewal."
+    },
+    "va_anslutna_anlaggningar": {
+      "name": "Properties connected to public water and sewage",
+      "unit": "count",
+      "note": "Active subscriptions in May 2024; six water sources and five treatment plants."
+    },
+    "va_skyfall_riskplatser": {
+      "name": "Water and sewage facilities at risk in cloudbursts",
+      "unit": "sites",
+      "note": "All are sewage pumping stations; four are higher risk. Stormwater is not treated today."
+    },
+    "rvab_investeringar": {
+      "name": "Investment by the municipal water and waste company",
+      "unit": "SEK million",
+      "note": "Including sewer extension in Backa (forecast SEK 79m) and the Furudal–Kärvsåsen transfer pipe (forecast SEK 32.2–35.2m)."
+    },
+    "va_brukningsavgift_hojning_2026": {
+      "name": "Increase in water and sewage usage charges",
+      "unit": "%",
+      "note": "Council decision 7 May 2026; connection fees unchanged. The Sweden Democrats dissented."
+    },
+    "va_brukningsavgift_hojning_2025": {
+      "name": "Increase in water and sewage usage charges from 1 April 2025",
+      "unit": "%",
+      "note": "Equal to 15% on an annual basis."
+    },
+    "siljan_hogsta_vattenstand_reglerad": {
+      "name": "Highest water level of Lake Siljan under the current water court ruling",
+      "unit": "m a.s.l.",
+      "note": "Period 1964–2024. Before regulation (1900–1925) the maximum was 163.9 m; the mean is 161.18 m. Height system as given by SMHI."
+    },
+    "siljan_vattendom_ovre_grans": {
+      "name": "Upper regulation limit for Lake Siljan",
+      "unit": "m a.s.l.",
+      "note": "1964 water court ruling: the level is to stay between 159.9 and 161.78 m, with special rules in spring floods. Regulated at Gråda power plant (1951)."
+    },
+    "lerdalsberget_naturreservat": {
+      "name": "Lerdalsberget nature reserve",
+      "unit": "ha",
+      "note": "Decided 7 May 2026; the municipality's third own reserve, old forest close to town."
+    },
+    "vardcentral_kopesumma": {
+      "name": "Municipal purchase of the health centre building",
+      "unit": "SEK million",
+      "note": "Council decision Dec 2023. The building houses the health centre and the Prästskogen care home; it was bought partly to make room for a family centre, which opened around the turn of 2025/2026."
+    },
+    "valdeltagande_kommunval": {
+      "name": "Turnout in the municipal election",
+      "unit": "%",
+      "note": "Same as 2022. 9,250 eligible voters."
+    },
+    "kf_mandat_s": {
+      "name": "Council seats: Social Democrats",
+      "unit": "seats",
+      "note": "Of 39 seats; +2 vs 2022. Vote share 31.48%."
+    },
+    "kf_mandat_c": {
+      "name": "Council seats: Centre Party",
+      "unit": "seats",
+      "note": "Of 39 seats; -2 vs 2022. Vote share 20.77%."
+    },
+    "kf_mandat_m": {
+      "name": "Council seats: Moderates",
+      "unit": "seats",
+      "note": "Of 39 seats; +1 vs 2022. Vote share 19.31%."
+    },
+    "kf_mandat_sd": {
+      "name": "Council seats: Sweden Democrats",
+      "unit": "seats",
+      "note": "Of 39 seats; ±0 vs 2022. Vote share 17.34%."
+    },
+    "kf_mandat_kd": {
+      "name": "Council seats: Christian Democrats",
+      "unit": "seats",
+      "note": "Of 39 seats; -1 vs 2022. Vote share 5.95%."
+    },
+    "kf_mandat_v": {
+      "name": "Council seats: Left Party",
+      "unit": "seats",
+      "note": "Of 39 seats; ±0 vs 2022. Vote share 3.16%."
+    },
+    "kf_mandat_c_m_kd": {
+      "name": "Seats held by the outgoing Centre–Moderate–Christian Democrat coalition",
+      "unit": "seats",
+      "note": "Our own sum (8 + 8 + 2) of 39 seats; the coalition held 20 in 2022–2026 and has lost its majority."
+    },
+    "ccw_bilar": {
+      "name": "Cars during Classic Car Week",
+      "unit": "cars",
+      "note": "'Around ten thousand cars and many more people' each year; held in week 31."
+    },
+    "ccw_startar": {
+      "name": "Classic Car Week first held",
+      "unit": "year",
+      "note": "Planning began in spring 1991; held every year in week 31 since."
+    },
+    "langbryggan_langd": {
+      "name": "Length of Långbryggan pier",
+      "unit": "m",
+      "note": "Measured from the shore to the steamer quay. Poet Bo Bergman called it 'almost as long as eternity'."
+    },
+    "langbryggan_byggd": {
+      "name": "Långbryggan built",
+      "unit": "year",
+      "note": "Landing for the steamer S/S Rättvik, in service on Siljan from 1895 to the 1950s."
+    },
+    "langbryggan_namnplankor": {
+      "name": "Name planks sold to fund the Långbryggan renovation",
+      "unit": "planks",
+      "note": "The public and firms bought engraved planks to fund the renovation; reopened 6 June 1992. Wikipedia says 2,638."
+    },
+    "sandstrand_langd": {
+      "name": "Sandy beach in central Rättvik",
+      "unit": "m",
+      "note": "The municipality lists '1,200 metres of sandy beach' in central Rättvik. In OSM, the Siljansbadet bathing place and campsite lie on the beach north of the pier."
+    },
+    "kyrkstallar_antal": {
+      "name": "Church stables at Rättvik church",
+      "unit": "count",
+      "note": "In two groups, mostly 18th–19th century. Kyrkudden is a cultural heritage area of national interest (W89)."
+    },
+    "kyrkstall_aldsta": {
+      "name": "Oldest church stable by tree-ring dating",
+      "unit": "year",
+      "note": "The heritage programme gives 1492; the municipal website says the 1470s."
+    },
+    "kyrka_takstolar_aldsta": {
+      "name": "Nave roof trusses, earliest tree-ring date",
+      "unit": "year",
+      "note": "The 27 nave roof trusses date from 1354–1367. The municipality says the church dates back to the 1200s."
+    },
+    "kyrka_exterior": {
+      "name": "Current exterior of Rättvik church",
+      "unit": "year",
+      "note": "Extended several times; the present exterior dates from 1793."
+    },
+    "kyrkklocka_aldsta": {
+      "name": "The great bell of Rättvik church",
+      "unit": "year",
+      "note": "Dalarna's oldest set of three bells: 1593, 1622 and 1628."
+    },
+    "vasa_tal_ar": {
+      "name": "Gustav Vasa's first speech to the Dalecarlians at Rättvik church",
+      "unit": "year",
+      "note": "By tradition and the inscription on Vasastenen, December 1520; in January 1521 King Christian's troops were defeated at the church."
+    },
+    "vasastenen_rest": {
+      "name": "Vasastenen monument raised",
+      "unit": "year",
+      "note": "A memorial stone with three shields and red dragon bands, ringed by twelve smaller stones for Vasa's helpers."
+    },
+    "stiernhook_fodd": {
+      "name": "Jurist Johan Stiernhöök born in Rättvik",
+      "unit": "year",
+      "note": "Born at Hökbacken, died 1675; called 'the father of Swedish jurisprudence'. The council meets in the Stiernhöök hall."
+    },
+    "rattvik_egen_socken": {
+      "name": "Rättvik becomes its own parish",
+      "unit": "year",
+      "note": "In the early 1300s the area belonged to Leksand parish; around 1325 it became a parish of its own."
+    },
+    "kyrkbat_aldsta_siljan": {
+      "name": "Year carved on the oldest church boat on Siljan",
+      "unit": "year",
+      "note": "Big boats with 8–12 pairs of oars; Rättvik's oldest known church boat 'Aros' was used until 1905. 'Sörbyggarn' was built in 1950."
+    },
+    "rattviksmaleriet_start": {
+      "name": "Rättvik folk painting emerges (decade)",
+      "unit": "year",
+      "note": "The Rättvik painting style emerged in the 1760s; the crop failures of 1771–1773 sent painters on work journeys."
+    },
+    "emigranter_1864_1889": {
+      "name": "Emigrants from Rättvik 1864–1889",
+      "unit": "people",
+      "note": "'Nearly one thousand' per Robert Ostergren's study; almost half settled in Isanti County (Minnesota) or Clay County (Dakota). The first family left in 1864."
+    },
+    "emigranter_vastbjorka_1860tal": {
+      "name": "Emigrants from Västbjörka village in the 1860s",
+      "unit": "people",
+      "note": "'Over 70 people' emigrated and some farms disappeared entirely."
+    },
+    "jarnvag_oppnad": {
+      "name": "The railway reaches Rättvik",
+      "unit": "year",
+      "note": "Sågmyra–Rättvik opened 12 August 1890; Rättvik–Mora on 2 August 1891."
+    },
+    "stationshus_byggt": {
+      "name": "Current station building in Rättvik",
+      "unit": "year",
+      "note": "Replaced the c.1890 building. Rättvik became a junction in 1914; the Falun line closed in 1965."
+    },
+    "lokstallarna_byggd": {
+      "name": "The locomotive sheds built",
+      "unit": "year",
+      "note": "Used to service engines and carriages for most of the 1900s; renovated and reopened as a venue in 2025."
+    },
+    "gustaf_wasa_byggd": {
+      "name": "Steamer Gustaf Wasa launched on Siljan",
+      "unit": "year",
+      "note": "Launched 29 April 1876 and on Siljan ever since; a listed historic vessel for 140 passengers that calls at Långbryggan."
+    },
+    "municipalsamhalle": {
+      "name": "Rättvik becomes a 'municipal community'",
+      "unit": "year",
+      "note": "Founded 25 November 1910, giving the station town its own administration for fire safety and health."
+    },
+    "hotell_siljansborg": {
+      "name": "Tourist hotel Siljansborg completed",
+      "unit": "year",
+      "note": "Persborg opened in 1903. King Gustav V rented Siljansborg for some weeks in 1911 and 1912; waitresses wore folk costume. Both hotels are gone."
+    },
+    "vidablick_invigd": {
+      "name": "Vidablick lookout tower opened",
+      "unit": "year",
+      "note": "Opened 12 June 1898 on Hedsåsberget, 252 m above Siljan; designed by 17-year-old Olof Klockars. Outside the 3D model."
+    },
+    "kommunalhus_invigt": {
+      "name": "Court and town hall opened",
+      "unit": "year",
+      "note": "Designed by Artur von Schmalensee and built 1951–1952 on the old court site, Vasagatan 1."
+    },
+    "vackert_rattvik_start": {
+      "name": "'Beautiful Rättvik' project begins",
+      "unit": "year",
+      "note": "Ran 1994–2005 to bridge the barrier that the highway and railway created towards Siljan; the 'Vattenspel' fountain on the square opened in 2000."
+    },
+    "dalhalla_invigd": {
+      "name": "Dalhalla officially opened",
+      "unit": "year",
+      "note": "Test concert June 1993, first season concert 23 July 1994, official opening 21 June 1995 in a former limestone quarry; about 6,000 seats."
+    },
+    "musik_vid_siljan_start": {
+      "name": "'Musik vid Siljan' festival begins",
+      "unit": "year",
+      "note": "Celebrated its 50th anniversary in 2019 and then ended; Stämmoveckan took over in 2021. The start year 1969 is our inference from the anniversary."
+    },
+    "siljansringen_alder": {
+      "name": "Age of the Siljan Ring impact",
+      "unit": "million years",
+      "note": "The culture house's nature museum says 377 million years (dates of 376.8 ± 1.7 and 377 ± 2 Ma). Other local sources say about 380."
+    },
+    "siljansringen_diameter": {
+      "name": "Diameter of the Siljan Ring",
+      "unit": "km",
+      "note": "Europe's largest known impact structure; Lake Siljan lies on its south-western rim."
+    },
+    "prastskogsvallen_invigd": {
+      "name": "Prästskogsvallen sports ground opened",
+      "unit": "year",
+      "note": "Open-access sports ground with lit artificial turf, running track and a winter ice rink."
+    }
+  }
+}

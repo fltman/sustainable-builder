@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crowd preview</title>
+<link rel="icon" href="data:,">
+<style>
+  html,body{margin:0;height:100%;background:#c9d8e4;overflow:hidden;font:12px/1.4 system-ui,sans-serif}
+  canvas{display:block}
+  #hud{position:fixed;left:10px;top:10px;padding:6px 9px;background:rgba(20,26,32,.72);color:#e9eef2;border-radius:6px;white-space:pre;pointer-events:none}
+  #views{position:fixed;right:10px;top:10px;display:flex;gap:4px}
+  #views a{padding:4px 8px;background:rgba(20,26,32,.72);color:#e9eef2;border-radius:5px;text-decoration:none}
+</style>
+</head>
+<body>
+<div id="hud">loading…</div>
+<div id="views"><a href="?view=close">close</a><a href="?view=overview">overview</a><a href="?view=sit">table</a><a href="?view=bikes">bikes</a><a href="?view=vehicles">vehicles</a><a href="?view=boats">boats</a><a href="?view=street">street</a></div>
+<script type="module">
+// Standalone check of the Blender-built crowd (src/crowd.js) and vehicles (src/vehicles3d.js):
+// ~200 instanced people walking in circles, idling in groups and sitting at tables, cyclists on an
+// outer ring, and every vehicle with the kit material, under a shadow-casting sun with fog.
+// URL: ?n=200 people, ?view=close|overview|sit|bikes|vehicles|boats|street, ?shadows=0, ?bench=1 (no orbit damping, uncapped stats)
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { loadCrowd } from '/src/crowd.js';
+import { loadVehicles } from '/src/vehicles3d.js';
+import { kitMaterial } from '/src/kit.js';
+import { personLooks } from '/src/meshes.js';
+import { FUTURE } from '/src/future.js';
+
+const Q = new URLSearchParams(location.search);
+const N = +(Q.get('n') || 200), VIEW = Q.get('view') || 'close', SHADOWS = Q.get('shadows') !== '0';
+const preview = window.preview = { ready: false, fps: 0, frameMs: 0, errors: [] };
+const hud = document.getElementById('hud');
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight);
+renderer.toneMapping = THREE.AgXToneMapping; renderer.toneMappingExposure = 1.15;
+renderer.shadowMap.enabled = SHADOWS; renderer.shadowMap.type = THREE.PCFShadowMap;
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xc9d8e4); scene.fog = new THREE.Fog(0xc9d8e4, 90, 420);
+const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 2000);
+const controls = new OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
+addEventListener('resize', () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+
+scene.add(new THREE.HemisphereLight(0xdfeaf5, 0x6b6a5c, 1.1));
+const sun = new THREE.DirectionalLight(0xfff1dc, 3.2); sun.position.set(-30, 45, 22); sun.castShadow = true;
+sun.shadow.mapSize.set(4096, 4096); Object.assign(sun.shadow.camera, { left: -60, right: 60, top: 60, bottom: -60, near: 1, far: 160 });
+sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.02;
+scene.add(sun, sun.target);
+
+// Ground: light granite pavers drawn on a canvas, water to the east for the boats.
+const cv = document.createElement('canvas'); cv.width = cv.height = 512; const cx = cv.getContext('2d');
+cx.fillStyle = '#a9a69f'; cx.fillRect(0, 0, 512, 512);
+for (let y = 0; y < 8; y++) for (let x = 0; x < 4; x++) {
+  const o = (y % 2) * 64, s = 150 + ((x * 7 + y * 13) % 5) * 9;
+  cx.fillStyle = `rgb(${s},${s - 3},${s - 9})`; cx.fillRect(x * 128 + o + 2, y * 64 + 2, 124, 60);
+  cx.fillRect((x * 128 + o + 2) - 512, y * 64 + 2, 124, 60);
+}
+const pav = new THREE.CanvasTexture(cv); pav.wrapS = pav.wrapT = THREE.RepeatWrapping; pav.repeat.set(60, 60); pav.colorSpace = THREE.SRGBColorSpace; pav.anisotropy = 8;
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(240, 240).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ map: pav, roughness: .92 }));
+ground.receiveShadow = true; scene.add(ground);
+const water = new THREE.Mesh(new THREE.PlaneGeometry(120, 240).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ color: 0x2f5f73, roughness: .25, metalness: .1 }));
+water.position.set(180, 0.02, 0); water.receiveShadow = true; scene.add(water);
+const quay = new THREE.Mesh(new THREE.BoxGeometry(4, 1.2, 240), new THREE.MeshStandardMaterial({ color: 0x8d8a83, roughness: .9 }));
+quay.position.set(120, -0.55, 0); quay.receiveShadow = true; scene.add(quay);
+
+// Shared seconds uniform, as the app would pass FUTURE.uTime.
+const time = FUTURE.uTime;
+const t0 = performance.now();
+const crowd = await loadCrowd({ basePath: '/models/crowd/', time });
+const people = crowd.variants.filter(v => v.name !== 'cyclist');
+const SHIRTS = [0xd9534f, 0x3b7dd8, 0xf0ad4e, 0x5cb85c, 0x8e44ad, 0xf4f4f4, 0x2c3e50, 0xe67e22, 0x1abc9c, 0xf1c40f, 0x90a4ae, 0xff8a80, 0x6d4c41, 0x283593, 0xc2185b, 0x00897b];
+let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+
+// Agents: walkers on rings, idle groups, sitters at two long tables, cyclists on an outer ring.
+const agents = [];
+const nSit = Math.min(16, Math.round(N * 0.08)), nBike = Math.round(N * 0.08), nIdle = Math.round(N * 0.22), nWalk = Math.max(0, N - nSit - nBike - nIdle);
+const pick = () => { const r = rnd(); return people[r < .2 ? 0 : r < .36 ? 1 : r < .52 ? 2 : r < .7 ? 3 : r < .84 ? 4 : 5 % people.length] || people[0]; };
+const byWeight = () => { const names = ['coat', 'tshirt', 'dress', 'jacket', 'child', 'elder'], w = [.2, .18, .18, .2, .13, .11]; let r = rnd(); for (let i = 0; i < names.length; i++) { if ((r -= w[i]) <= 0) return crowd.byName[names[i]] || people[0]; } return people[0]; };
+for (let i = 0; i < nWalk; i++) {
+  const v = byWeight(), r = 4 + rnd() * 22, dir = rnd() < .5 ? 1 : -1;
+  agents.push({ v, mode: 1, r, a: rnd() * Math.PI * 2, dir, x: 0, z: 0 });
+}
+// a close group strolling past the camera
+for (let g = 0; g < 6 && agents.length; g++) Object.assign(agents[g], { r: 7 + g * 0.55, a: 0.25 + g * 0.11, dir: 1 });
+for (let i = 0; i < nIdle; i++) {
+  const gi = Math.floor(i / 4), ga = gi * 2.4, gr = 9 + (gi % 4) * 5, k = i % 4;
+  const gx = Math.cos(ga) * gr, gz = Math.sin(ga) * gr, a = k * Math.PI / 2 + gi;
+  agents.push({ v: byWeight(), mode: 0, x: gx + Math.cos(a) * 0.75, z: gz + Math.sin(a) * 0.75, rot: Math.atan2(-Math.cos(a), -Math.sin(a)) });
+}
+const tables = [];
+for (let t = 0; t < 2; t++) tables.push({ x: -6 + t * 0, z: 30 + t * 4 });
+for (let i = 0; i < nSit; i++) {
+  const t = tables[Math.floor(i / 8) % 2], k = i % 8, side = k % 2 ? 1 : -1, along = (Math.floor(k / 2) - 1.5) * 0.9;
+  agents.push({ v: byWeight(), mode: 2, x: t.x + along, z: t.z + side * 0.88, rot: side > 0 ? Math.PI : 0 });
+}
+const cyc = crowd.byName.cyclist;
+for (let i = 0; cyc && i < nBike; i++) agents.push({ v: cyc, mode: 1, r: 33 + (i % 3) * 1.6, a: i * (Math.PI * 2 / nBike) + rnd() * 0.2, dir: i % 2 ? 1 : -1, bike: true });
+
+// Tables and benches for the sitters (manifest: seat 0.46, table 0.80; origin under the hips, 0.38 m from the table edge)
+const wood = new THREE.MeshStandardMaterial({ color: 0x9a7350, roughness: .8 });
+for (const t of tables) {
+  const top = new THREE.Mesh(new THREE.BoxGeometry(4.2, 0.06, 1.0), wood); top.position.set(t.x, 0.77, t.z);
+  const bench = (s) => { const b = new THREE.Mesh(new THREE.BoxGeometry(4.2, 0.05, 0.32), wood); b.position.set(t.x, 0.435, t.z + s * 0.88); return b; };
+  for (const m of [top, bench(1), bench(-1)]) { m.castShadow = m.receiveShadow = true; scene.add(m); }
+  for (const lx of [-1.9, 1.9]) { const l = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.73, 0.8), wood); l.position.set(t.x + lx, 0.365, t.z); l.castShadow = true; scene.add(l); }
+}
+
+// People: one batch (an InstancedMesh per variant) refilled every frame, as the app would do.
+const capacity = {};
+for (const a of agents) capacity[a.v.name] = (capacity[a.v.name] || 0) + 1;
+const batch = crowd.makeBatch({ capacity });
+scene.add(batch.group);
+const looks = personLooks(agents.length, 5);
+agents.forEach((a, i) => {
+  a.phase = rnd() * 100; a.top = SHIRTS[Math.floor(rnd() * SHIRTS.length)];
+  a.hair = [looks.hair.getX(i), looks.hair.getY(i), looks.hair.getZ(i)];
+  a.skin = [looks.skin.getX(i), looks.skin.getY(i), looks.skin.getZ(i)];
+  if (a.v.name === 'elder') a.hair = [0.6, 0.58, 0.55];
+});
+let useBatch = true;
+const meshes = new Map();  // lineup mode only
+
+// Vehicles with the kit material, three tints each.
+let vehicles = {};
+try { vehicles = await loadVehicles(new GLTFLoader(), '/models/vehicles.glb'); }
+catch (e) { console.warn('vehicles.glb not loaded:', e.message); }
+const PAINT = [0xe8e8e4, 0x2c4a72, 0x7a1e22, 0x8a8f96, 0x2f6b4f];
+const vmat = kitMaterial({ roughness: .38, metalness: .35 });
+const land = ['car2026', 'robotaxi', 'cargobike', 'bike', 'ebus', 'tram'], sea = ['watertaxi', 'hydrofoil'];
+let xoff = -40;
+for (const name of land) {
+  const g = vehicles[name]; if (!g) continue;
+  const w = g.userData.width, cnt = 3, im = new THREE.InstancedMesh(g, vmat, cnt);
+  const m = new THREE.Matrix4(), c = new THREE.Color();
+  for (let i = 0; i < cnt; i++) {
+    m.makeTranslation(xoff + w / 2 + i * (w + 1.2), 0, -14 - (name === 'tram' ? 6 : 0));
+    im.setMatrixAt(i, m); im.setColorAt(i, c.set(PAINT[(i + land.indexOf(name)) % PAINT.length]));
+  }
+  im.castShadow = im.receiveShadow = true; scene.add(im);
+  xoff += cnt * (w + 1.2) + 2.5;
+}
+let zoff = -30;
+for (const name of sea) {
+  const g = vehicles[name]; if (!g) continue;
+  const im = new THREE.InstancedMesh(g, vmat, 2), m = new THREE.Matrix4(), c = new THREE.Color();
+  for (let i = 0; i < 2; i++) { m.makeTranslation(132 + i * (g.userData.width + 6), 0, zoff + g.userData.length / 2); im.setMatrixAt(i, m); im.setColorAt(i, c.set(PAINT[i * 2])); }
+  im.castShadow = im.receiveShadow = true; scene.add(im);
+  zoff += g.userData.length + 8;
+}
+
+var views = {
+  close: [[5.2, 1.55, 9.4], [6.6, 0.95, 2.6]],
+  overview: [[46, 34, 52], [0, 0, 4]],
+  sit: [[-2.2, 2.4, 25.6], [-6, 0.6, 31]],
+  bikes: [[29.5, 1.9, -4], [34, 0.9, 6]],
+  vehicles: [[-6, 9, 12], [-6, 1.2, -16]],
+  boats: [[118, 9, -24], [136, 0.5, -10]],
+  street: [[2.2, 1.65, 13.5], [3, 1.2, 0]],
+};
+// Lineup (?lineup=walk|idle|sit&side=1&t=seconds): every variant side by side on a treadmill.
+const LINEUP = Q.get('lineup'), FREEZE = Q.get('t');
+if (LINEUP) {
+  scene.remove(batch.group); useBatch = false;
+  const mode = { walk: 1, idle: 0, sit: 2 }[LINEUP] ?? 1;
+  const only = Q.get('only')?.split(','), shown = crowd.variants.filter(v => (!only || only.includes(v.name)) && (mode !== 2 || v.clips.sit));
+  shown.forEach((v, i) => {
+    const mesh = crowd.makeMesh(v, 1), a = { v, mode, x: (i - (shown.length - 1) / 2) * 1.15, z: 0, rot: Q.get('side') ? Math.PI / 2 : 0, slot: 0 };
+    mesh.geometry.getAttribute('aWalk').setXY(0, 0, mode);
+    mesh.setColorAt(0, new THREE.Color(SHIRTS[i * 3 % SHIRTS.length]));
+    scene.add(mesh); meshes.set(v, { mesh, list: [a] });
+  });
+  const d = 1.3 + shown.length * 0.95, ang = +(Q.get('ang') || (Q.get('side') ? 90 : 0)) * Math.PI / 180;
+  if (Q.get('side')) for (const { list } of meshes.values()) list[0].rot = Math.PI / 2;
+  views.lineup = [[Math.sin(ang) * d * 0.15, +(Q.get('camy') || 1.0), d], [0, +(Q.get('camy') || 1.0) - 0.1, 0]];
+  if (mode === 2) for (const { list } of meshes.values()) list[0].z = 0;
+}
+
+// Single vehicle (?vehicle=name&ang=deg&elev=deg): framed 3/4 view, people hidden.
+const VEH = Q.get('vehicle');
+if (VEH && vehicles[VEH]) {
+  scene.remove(batch.group); useBatch = false;
+  scene.traverse(o => { if (o.isInstancedMesh && o.geometry !== vehicles[VEH] && o.material === vmat) o.visible = false; });
+  const g = vehicles[VEH], im = new THREE.InstancedMesh(g, vmat, 1), c = new THREE.Color(Q.get('color') ? '#' + Q.get('color') : 0x2c4a72);
+  im.setMatrixAt(0, new THREE.Matrix4()); im.setColorAt(0, c); im.castShadow = im.receiveShadow = true; scene.add(im);
+  if (sea.includes(VEH)) { water.position.set(0, 0.02, 0); quay.visible = false; }
+  const { length: Lv, width: Wv, height: Hv } = g.userData, R = Math.max(Lv, Hv * 1.6) * 0.95 + 1.2;
+  const ang = +(Q.get('ang') ?? 35) * Math.PI / 180, el = +(Q.get('elev') ?? 14) * Math.PI / 180;
+  views.vehicle = [[Math.sin(ang) * R * Math.cos(el), Hv * 0.45 + R * Math.sin(el), Math.cos(ang) * R * Math.cos(el)], [0, Hv * 0.42, 0]];
+}
+
+// Camera views.
+
+const [cp, ct] = (LINEUP ? views.lineup : VEH ? views.vehicle : views[VIEW]) || views.close; camera.position.set(...cp); controls.target.set(...ct); controls.update();
+sun.target.position.copy(controls.target);
+
+const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), pv = new THREE.Vector3(), sv = new THREE.Vector3(1, 1, 1), up = new THREE.Vector3(0, 1, 0);
+function move(a, dt) {  // walkers and cyclists keep their feet planted: angular speed = baked ground speed / radius
+  if (!a.r) return;
+  a.a += a.dir * a.v.walkSpeed / a.r * dt;
+  a.x = Math.cos(a.a) * a.r; a.z = Math.sin(a.a) * a.r;
+  a.rot = Math.atan2(-Math.sin(a.a) * a.dir, Math.cos(a.a) * a.dir);
+}
+function place(dt) {
+  if (useBatch) {
+    batch.begin();
+    for (const a of agents) {
+      move(a, dt); pv.set(a.x, 0, a.z); q.setFromAxisAngle(up, a.rot); m4.compose(pv, q, sv);
+      batch.add(a.v, m4, { mode: a.mode, phase: a.phase, top: a.top, hair: a.hair, skin: a.skin });
+    }
+    batch.end();
+    return;
+  }
+  for (const { mesh, list } of meshes.values()) {
+    for (const a of list) {
+      if (a.r) {  // walkers and cyclists keep their feet planted: angular speed = baked ground speed / radius
+        a.a += a.dir * a.v.walkSpeed / a.r * dt;
+        a.x = Math.cos(a.a) * a.r; a.z = Math.sin(a.a) * a.r;
+        a.rot = Math.atan2(-Math.sin(a.a) * a.dir, Math.cos(a.a) * a.dir);
+      }
+      pv.set(a.x, 0, a.z); q.setFromAxisAngle(up, a.rot); m4.compose(pv, q, sv); mesh.setMatrixAt(a.slot, m4);
+    }
+    mesh.instanceMatrix.needsUpdate = true;
+  }
+}
+let last = performance.now(), acc = 0, frames = 0, worst = 0, statT = performance.now();
+const ft = [];
+function frame(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  time.value = FREEZE != null ? +FREEZE : time.value + dt;
+  place(dt); controls.update();
+  const s = performance.now(); renderer.render(scene, camera); const rt = performance.now() - s;
+  ft.push(dt * 1000); if (ft.length > 120) ft.shift();
+  frames++;
+  if (now - statT > 500) {
+    const avg = ft.reduce((x, y) => x + y, 0) / ft.length;
+    preview.fps = 1000 / avg; preview.frameMs = avg; preview.cpuRenderMs = rt;
+    const info = renderer.info.render;
+    hud.textContent = `people ${N - nBike}  cyclists ${nBike}  variants ${crowd.variants.length}\nfps ${preview.fps.toFixed(1)}  frame ${avg.toFixed(2)} ms\ncalls ${info.calls}  tris ${(info.triangles / 1000).toFixed(0)}k\nload ${preview.loadMs | 0} ms`;
+    statT = now;
+  }
+  requestAnimationFrame(frame);
+}
+preview.loadMs = performance.now() - t0;
+preview.scene = scene; preview.renderer = renderer; preview.camera = camera; preview.crowd = crowd; preview.vehicles = vehicles; preview.controls = controls;
+preview.setView = (p, t) => { camera.position.set(...p); controls.target.set(...t); controls.update(); };
+requestAnimationFrame(frame);
+setTimeout(() => { preview.ready = true; }, 300);
+</script>
+</body>
+</html>

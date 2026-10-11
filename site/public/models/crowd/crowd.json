@@ -1,0 +1,639 @@
+{
+ "version": 1,
+ "generator": "tools/build-crowd.py",
+ "units": "metres",
+ "up": "+Y",
+ "forward": "+Z",
+ "format": {
+  "position": "rest pose, float32 xyz (three.js space)",
+  "normal": "rest pose, float32 xyz",
+  "color": "uint8 RGBA, sRGB base colour with baked AO (A=255)",
+  "mask": "uint8 RGBA: R = top tint (instanceColor), G = skin (aSkin), B = hair (aHair), A = bottom (trousers/skirt) variety",
+  "index": "uint16 (uint32 if vertexCount > 65535) triangle list",
+  "framePositions": "float16 xyz per vertex, frame-major: frame f starts at f*vertexCount*3 halves",
+  "frameNormals": "int8 x2 per vertex, octahedral-encoded unit normal (snorm /127), frame-major",
+  "clips": "start = first frame row, frames = loop length, fps = playback rate at walkRate 1; stride_m = metres travelled per walk loop"
+ },
+ "variants": [
+  {
+   "name": "coat",
+   "file": "coat.bin",
+   "height": 1.7965,
+   "vertexCount": 1211,
+   "indexCount": 6738,
+   "triangleCount": 2246,
+   "frameCount": 80,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 24,
+     "fps": 22.6415,
+     "loop": true,
+     "stride_m": 1.3,
+     "speed_mps": 1.2264
+    },
+    "idle": {
+     "start": 24,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true
+    },
+    "sit": {
+     "start": 52,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true,
+     "seat_height": 0.46,
+     "table_height": 0.8
+    }
+   },
+   "layout": {
+    "position": {
+     "byteOffset": 0,
+     "byteLength": 14532,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "normal": {
+     "byteOffset": 14532,
+     "byteLength": 14532,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "color": {
+     "byteOffset": 29064,
+     "byteLength": 4844,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "mask": {
+     "byteOffset": 33908,
+     "byteLength": 4844,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "index": {
+     "byteOffset": 38752,
+     "byteLength": 13476,
+     "type": "uint16",
+     "itemSize": 1
+    },
+    "framePositions": {
+     "byteOffset": 52228,
+     "byteLength": 581280,
+     "type": "float16",
+     "itemSize": 3
+    },
+    "frameNormals": {
+     "byteOffset": 633508,
+     "byteLength": 193760,
+     "type": "int8",
+     "itemSize": 2
+    }
+   },
+   "bounds": {
+    "min": [
+     -0.3504,
+     -0.0238,
+     -0.4845
+    ],
+    "max": [
+     0.3494,
+     1.7934,
+     0.646
+    ]
+   }
+  },
+  {
+   "name": "tshirt",
+   "file": "tshirt.bin",
+   "height": 1.7827,
+   "vertexCount": 1129,
+   "indexCount": 6252,
+   "triangleCount": 2084,
+   "frameCount": 80,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 24,
+     "fps": 22.6415,
+     "loop": true,
+     "stride_m": 1.3,
+     "speed_mps": 1.2264
+    },
+    "idle": {
+     "start": 24,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true
+    },
+    "sit": {
+     "start": 52,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true,
+     "seat_height": 0.46,
+     "table_height": 0.8
+    }
+   },
+   "layout": {
+    "position": {
+     "byteOffset": 0,
+     "byteLength": 13548,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "normal": {
+     "byteOffset": 13548,
+     "byteLength": 13548,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "color": {
+     "byteOffset": 27096,
+     "byteLength": 4516,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "mask": {
+     "byteOffset": 31612,
+     "byteLength": 4516,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "index": {
+     "byteOffset": 36128,
+     "byteLength": 12504,
+     "type": "uint16",
+     "itemSize": 1
+    },
+    "framePositions": {
+     "byteOffset": 48632,
+     "byteLength": 541920,
+     "type": "float16",
+     "itemSize": 3
+    },
+    "frameNormals": {
+     "byteOffset": 590552,
+     "byteLength": 180640,
+     "type": "int8",
+     "itemSize": 2
+    }
+   },
+   "bounds": {
+    "min": [
+     -0.3343,
+     -0.0235,
+     -0.4841
+    ],
+    "max": [
+     0.3347,
+     1.7796,
+     0.6398
+    ]
+   }
+  },
+  {
+   "name": "dress",
+   "file": "dress.bin",
+   "height": 1.7005,
+   "vertexCount": 1233,
+   "indexCount": 6840,
+   "triangleCount": 2280,
+   "frameCount": 80,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 24,
+     "fps": 24.4898,
+     "loop": true,
+     "stride_m": 1.18,
+     "speed_mps": 1.2041
+    },
+    "idle": {
+     "start": 24,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true
+    },
+    "sit": {
+     "start": 52,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true,
+     "seat_height": 0.46,
+     "table_height": 0.8
+    }
+   },
+   "layout": {
+    "position": {
+     "byteOffset": 0,
+     "byteLength": 14796,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "normal": {
+     "byteOffset": 14796,
+     "byteLength": 14796,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "color": {
+     "byteOffset": 29592,
+     "byteLength": 4932,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "mask": {
+     "byteOffset": 34524,
+     "byteLength": 4932,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "index": {
+     "byteOffset": 39456,
+     "byteLength": 13680,
+     "type": "uint16",
+     "itemSize": 1
+    },
+    "framePositions": {
+     "byteOffset": 53136,
+     "byteLength": 591840,
+     "type": "float16",
+     "itemSize": 3
+    },
+    "frameNormals": {
+     "byteOffset": 644976,
+     "byteLength": 197280,
+     "type": "int8",
+     "itemSize": 2
+    }
+   },
+   "bounds": {
+    "min": [
+     -0.3314,
+     -0.0211,
+     -0.4388
+    ],
+    "max": [
+     0.3306,
+     1.6972,
+     0.6028
+    ]
+   }
+  },
+  {
+   "name": "jacket",
+   "file": "jacket.bin",
+   "height": 1.7197,
+   "vertexCount": 1201,
+   "indexCount": 6666,
+   "triangleCount": 2222,
+   "frameCount": 80,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 24,
+     "fps": 24.4898,
+     "loop": true,
+     "stride_m": 1.18,
+     "speed_mps": 1.2041
+    },
+    "idle": {
+     "start": 24,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true
+    },
+    "sit": {
+     "start": 52,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true,
+     "seat_height": 0.46,
+     "table_height": 0.8
+    }
+   },
+   "layout": {
+    "position": {
+     "byteOffset": 0,
+     "byteLength": 14412,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "normal": {
+     "byteOffset": 14412,
+     "byteLength": 14412,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "color": {
+     "byteOffset": 28824,
+     "byteLength": 4804,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "mask": {
+     "byteOffset": 33628,
+     "byteLength": 4804,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "index": {
+     "byteOffset": 38432,
+     "byteLength": 13332,
+     "type": "uint16",
+     "itemSize": 1
+    },
+    "framePositions": {
+     "byteOffset": 51764,
+     "byteLength": 576480,
+     "type": "float16",
+     "itemSize": 3
+    },
+    "frameNormals": {
+     "byteOffset": 628244,
+     "byteLength": 192160,
+     "type": "int8",
+     "itemSize": 2
+    }
+   },
+   "bounds": {
+    "min": [
+     -0.333,
+     -0.0215,
+     -0.439
+    ],
+    "max": [
+     0.3322,
+     1.7163,
+     0.6115
+    ]
+   }
+  },
+  {
+   "name": "child",
+   "file": "child.bin",
+   "height": 1.2197,
+   "vertexCount": 1225,
+   "indexCount": 6858,
+   "triangleCount": 2286,
+   "frameCount": 80,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 24,
+     "fps": 29.2683,
+     "loop": true,
+     "stride_m": 0.92,
+     "speed_mps": 1.122
+    },
+    "idle": {
+     "start": 24,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true
+    },
+    "sit": {
+     "start": 52,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true,
+     "seat_height": 0.46,
+     "table_height": 0.8
+    }
+   },
+   "layout": {
+    "position": {
+     "byteOffset": 0,
+     "byteLength": 14700,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "normal": {
+     "byteOffset": 14700,
+     "byteLength": 14700,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "color": {
+     "byteOffset": 29400,
+     "byteLength": 4900,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "mask": {
+     "byteOffset": 34300,
+     "byteLength": 4900,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "index": {
+     "byteOffset": 39200,
+     "byteLength": 13716,
+     "type": "uint16",
+     "itemSize": 1
+    },
+    "framePositions": {
+     "byteOffset": 52916,
+     "byteLength": 588000,
+     "type": "float16",
+     "itemSize": 3
+    },
+    "frameNormals": {
+     "byteOffset": 640916,
+     "byteLength": 196000,
+     "type": "int8",
+     "itemSize": 2
+    }
+   },
+   "bounds": {
+    "min": [
+     -0.2411,
+     -0.0152,
+     -0.3377
+    ],
+    "max": [
+     0.2404,
+     1.2174,
+     0.4579
+    ]
+   }
+  },
+  {
+   "name": "elder",
+   "file": "elder.bin",
+   "height": 1.6348,
+   "vertexCount": 1327,
+   "indexCount": 7452,
+   "triangleCount": 2484,
+   "frameCount": 80,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 24,
+     "fps": 19.6721,
+     "loop": true,
+     "stride_m": 0.8,
+     "speed_mps": 0.6557
+    },
+    "idle": {
+     "start": 24,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true
+    },
+    "sit": {
+     "start": 52,
+     "frames": 28,
+     "fps": 5.0,
+     "loop": true,
+     "seat_height": 0.46,
+     "table_height": 0.8
+    }
+   },
+   "layout": {
+    "position": {
+     "byteOffset": 0,
+     "byteLength": 15924,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "normal": {
+     "byteOffset": 15924,
+     "byteLength": 15924,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "color": {
+     "byteOffset": 31848,
+     "byteLength": 5308,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "mask": {
+     "byteOffset": 37156,
+     "byteLength": 5308,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "index": {
+     "byteOffset": 42464,
+     "byteLength": 14904,
+     "type": "uint16",
+     "itemSize": 1
+    },
+    "framePositions": {
+     "byteOffset": 57368,
+     "byteLength": 636960,
+     "type": "float16",
+     "itemSize": 3
+    },
+    "frameNormals": {
+     "byteOffset": 694328,
+     "byteLength": 212320,
+     "type": "int8",
+     "itemSize": 2
+    }
+   },
+   "bounds": {
+    "min": [
+     -0.3327,
+     -0.0119,
+     -0.3375
+    ],
+    "max": [
+     0.3304,
+     1.5503,
+     0.5826
+    ]
+   }
+  },
+  {
+   "name": "cyclist",
+   "file": "cyclist.bin",
+   "height": 1.7975,
+   "vertexCount": 2172,
+   "indexCount": 11826,
+   "triangleCount": 3942,
+   "frameCount": 48,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 24,
+     "fps": 24.0,
+     "loop": true,
+     "stride_m": 5.4978,
+     "speed_mps": 5.4978
+    },
+    "idle": {
+     "start": 24,
+     "frames": 24,
+     "fps": 6.0,
+     "loop": true
+    }
+   },
+   "layout": {
+    "position": {
+     "byteOffset": 0,
+     "byteLength": 26064,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "normal": {
+     "byteOffset": 26064,
+     "byteLength": 26064,
+     "type": "float32",
+     "itemSize": 3
+    },
+    "color": {
+     "byteOffset": 52128,
+     "byteLength": 8688,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "mask": {
+     "byteOffset": 60816,
+     "byteLength": 8688,
+     "type": "uint8",
+     "itemSize": 4
+    },
+    "index": {
+     "byteOffset": 69504,
+     "byteLength": 23652,
+     "type": "uint16",
+     "itemSize": 1
+    },
+    "framePositions": {
+     "byteOffset": 93156,
+     "byteLength": 625536,
+     "type": "float16",
+     "itemSize": 3
+    },
+    "frameNormals": {
+     "byteOffset": 718692,
+     "byteLength": 208512,
+     "type": "int8",
+     "itemSize": 2
+    }
+   },
+   "bounds": {
+    "min": [
+     -0.3781,
+     0.0009,
+     -0.9634
+    ],
+    "max": [
+     0.4558,
+     1.779,
+     0.9711
+    ]
+   },
+   "bike": {
+    "wheel_radius": 0.35,
+    "gear": 2.5,
+    "wheelbase": 1.11
+   }
+  }
+ ]
+}

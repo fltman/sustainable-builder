@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<title>%PAGE_TITLE%</title>
+<meta name="description" content="%DESCRIPTION%">
+<!-- Link previews (Messenger, Slack, iMessage, LinkedIn …): the crawlers need absolute URLs. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="%PAGE_TITLE%">
+<meta property="og:url" content="%URL%">
+<meta property="og:title" content="%OG_TITLE%">
+<meta property="og:description" content="%OG_DESCRIPTION%">
+<meta property="og:image" content="%URL%city/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="%OG_IMAGE_ALT%">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+<canvas id="scene"></canvas>
+<div id="app"></div>
+<!-- First screen: pick the language before anything heavy loads (src/boot.js), then the loading meter. -->
+<div id="loading" class="splash">
+  <div class="box">
+    <h1>%TITLE%</h1>
+    <p class="splash-tag"><span lang="sv">%TAGLINE_SV%</span><span lang="en">%TAGLINE_EN%</span></p>
+    <div class="lang-pick">
+      <button data-lang="sv"><b>Svenska</b><span>Börja på svenska</span></button>
+      <button data-lang="en" lang="en"><b>English</b><span>Start in English</span></button>
+    </div>
+    <div class="splash-load" hidden>
+      <p id="load-text" role="status"></p>
+      <div class="meter"><i id="load-fill" style="width:0%"></i></div>
+    </div>
+  </div>
+</div>
+<script type="module" src="./src/boot.js"></script>
+</body>
+</html>

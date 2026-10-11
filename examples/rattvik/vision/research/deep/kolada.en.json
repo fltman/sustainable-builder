@@ -1,0 +1,354 @@
+{
+ "indicators": {
+  "befolkning_total": {
+   "name": "Population of Rättvik Municipality",
+   "unit": "inhabitants",
+   "note": "Registered residents on 31 December (Statistics Sweden)."
+  },
+  "befolkningstillvaxt_1ar": {
+   "name": "Population change, past year",
+   "unit": "%",
+   "note": "Change in population since the year before (Statistics Sweden). Sweden 0.168%, the county -0.176% (2025)."
+  },
+  "befolkningstillvaxt_5ar": {
+   "name": "Population change, past five years",
+   "unit": "%",
+   "note": "Change in population over the last five years (Statistics Sweden). Sweden 2.2%, the county -0.568% (2025)."
+  },
+  "befolkningstathet": {
+   "name": "Population density",
+   "unit": "inhabitants/km²",
+   "note": "Residents per square kilometre of land (Statistics Sweden). Sweden 25.9 inhabitants/km², the county 10.2 inhabitants/km² (2025)."
+  },
+  "andel_0_19": {
+   "name": "Share of inhabitants aged 0–19",
+   "unit": "%",
+   "note": "Share of the population aged 0–19 (Statistics Sweden). Sweden 22.4%, the county 21.6% (2025)."
+  },
+  "andel_65_plus": {
+   "name": "Share of inhabitants aged 65+",
+   "unit": "%",
+   "note": "Share of the population aged 65 or over (Statistics Sweden). Sweden 21.1%, the county 26.4% (2025)."
+  },
+  "andel_80_plus": {
+   "name": "Share of inhabitants aged 80+",
+   "unit": "%",
+   "note": "Share of the population aged 80 or over (Statistics Sweden). Sweden 6.4%, the county 8.1% (2025)."
+  },
+  "landareal": {
+   "name": "Land area",
+   "unit": "km²",
+   "note": "Land area, water excluded (Statistics Sweden)."
+  },
+  "hushall_antal": {
+   "name": "Number of households",
+   "unit": "households",
+   "note": "Number of households (Statistics Sweden)."
+  },
+  "vaxthusgaser_per_inv": {
+   "name": "Territorial greenhouse gas emissions per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Territorial emissions within the municipality (national emissions database, RUS/SMHI) – not consumption-based. Sweden 4.5 t CO2e per inhabitant, the county 5.5 t CO2e per inhabitant (2024)."
+  },
+  "vaxthusgaser_transporter_per_inv": {
+   "name": "Emissions from transport per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Domestic transport within the municipality (RUS/SMHI). Sweden 1.6 t CO2e per inhabitant, the county 1.9 t CO2e per inhabitant (2024)."
+  },
+  "vaxthusgaser_jordbruk_per_inv": {
+   "name": "Emissions from agriculture per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Farming's emissions: livestock digestion, manure and soils (RUS/SMHI). Sweden 0.585 t CO2e per inhabitant, the county 0.435 t CO2e per inhabitant (2024)."
+  },
+  "vaxthusgaser_el_fjarrvarme_per_inv": {
+   "name": "Emissions from electricity and district heating production per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Emissions from the municipality's electricity and district-heating production (RUS/SMHI). Sweden 0.489 t CO2e per inhabitant, the county 0.370 t CO2e per inhabitant (2024)."
+  },
+  "vaxthusgaser_industri_per_inv": {
+   "name": "Emissions from industry per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Industry's combustion and process emissions (RUS/SMHI). Sweden 1.2 t CO2e per inhabitant, the county 2.0 t CO2e per inhabitant (2024)."
+  },
+  "elanvandning_per_inv": {
+   "name": "Final electricity use per inhabitant",
+   "unit": "MWh per inhabitant",
+   "note": "All final use of electricity in the municipality, industry included (Swedish Energy Agency/Statistics Sweden). Sweden 11.9 MWh per inhabitant, the county 18.3 MWh per inhabitant (2024)."
+  },
+  "fjarrvarme_fornybar_andel": {
+   "name": "Renewable share of district heating production",
+   "unit": "%",
+   "note": "Share of the municipality's district-heating production from renewable sources (Swedish Energy Agency/Statistics Sweden). Sweden 83.9%, the county 88.2% (2024)."
+  },
+  "elproduktion_lokal": {
+   "name": "Electricity production within the municipality",
+   "unit": "MWh/year",
+   "note": "All electricity produced within the municipality – hydro, wind, solar and combined heat and power (Swedish Energy Agency/Statistics Sweden)."
+  },
+  "solceller_installerad_effekt": {
+   "name": "Installed solar PV capacity",
+   "unit": "MW",
+   "note": "Grid-connected solar installations, installed capacity (Swedish Energy Agency)."
+  },
+  "vindkraft_installerad_effekt": {
+   "name": "Installed wind power capacity within the municipality",
+   "unit": "MW",
+   "note": "Installed capacity of wind turbines within the municipality (Swedish Energy Agency)."
+  },
+  "elbilar_andel": {
+   "name": "Share of electric cars in the passenger car fleet",
+   "unit": "%",
+   "note": "Electric cars as a share of the cars in use (Transport Analysis). Sweden 8.6%, the county 4.3% (2025)."
+  },
+  "kollektivtrafiknara_lage": {
+   "name": "Population living close to public transport",
+   "unit": "%",
+   "note": "Share with a stop with at least one departure an hour (weekdays 6–20) within 500 m as the crow flies. Sweden 80.9%, the county 75.6% (2024)."
+  },
+  "cykelvag_per_inv": {
+   "name": "Cycle paths per inhabitant",
+   "unit": "metres per inhabitant",
+   "note": "Total length of cycle paths – municipal, state and private – per resident. Sweden 2.7 metres per inhabitant (2025)."
+  },
+  "ekologisk_akermark_andel": {
+   "name": "Organically farmed arable land",
+   "unit": "%",
+   "note": "Share of arable land farmed organically (Swedish Board of Agriculture). Sweden 14.1%, the county 21.2% (2025)."
+  },
+  "grundvatten_god_status": {
+   "name": "Groundwater bodies with good chemical and quantitative status",
+   "unit": "%",
+   "note": "Share of groundwater bodies in good chemical and quantitative status (VISS/county boards). Sweden 97.2%, the county 99.7% (2022)."
+  },
+  "skyddad_natur_total": {
+   "name": "Protected nature, share of total area",
+   "unit": "%",
+   "note": "National parks, nature reserves, nature conservation areas and biotope protection as a share of the total area (Statistics Sweden/Swedish EPA). Sweden 12.1%, the county 10.9% (2025)."
+  },
+  "medellivslangd_man": {
+   "name": "Life expectancy, men",
+   "unit": "years",
+   "note": "Life expectancy at birth, five-year average (Statistics Sweden). Sweden 81.8 years, the county 81.9 years (2025)."
+  },
+  "medellivslangd_kvinnor": {
+   "name": "Life expectancy, women",
+   "unit": "years",
+   "note": "Life expectancy at birth, five-year average (Statistics Sweden). Sweden 85.1 years, the county 84.9 years (2025)."
+  },
+  "sjalvskattad_god_halsa": {
+   "name": "Good self-rated health",
+   "unit": "%",
+   "note": "Share aged 16–84 who rate their health good or very good (Public Health Agency's national survey, several years pooled). Sweden 71.0%, the county 70.1% (2024)."
+  },
+  "fetma": {
+   "name": "Obesity (BMI ≥ 30)",
+   "unit": "%",
+   "note": "Share aged 16–84 with a BMI of 30 or more (national public health survey, several years pooled). Sweden 17.3%, the county 20.8% (2024)."
+  },
+  "fysiskt_aktiva": {
+   "name": "Physically active at least 150 min/week",
+   "unit": "%",
+   "note": "Share aged 16–84 physically active at least 150 minutes a week (national public health survey). Sweden 66.1%, the county 70.1% (2024)."
+  },
+  "allvarlig_psykisk_pafrestning": {
+   "name": "Serious psychological distress (adults 16–84)",
+   "unit": "%",
+   "note": "Share aged 16–84 with serious psychological distress on the Kessler 6 scale (national public health survey). Sweden 10.0%, the county 9.6% (2024)."
+  },
+  "psykisk_ohalsa_barn_unga": {
+   "name": "Mental ill health among children and young people aged 0–19",
+   "unit": "%",
+   "note": "Share aged 0–19 with a psychiatric diagnosis, psychotropic drugs or psychiatric care during the year (National Board of Health and Welfare). Sweden 10.0% (2024)."
+  },
+  "avsaknad_emotionellt_stod": {
+   "name": "Lack of emotional support (proxy for loneliness)",
+   "unit": "%",
+   "note": "Share aged 16–84 lacking emotional support – a measure close to loneliness (national public health survey). Sweden 13.3%, the county 13.1% (2024)."
+  },
+  "gymnasieexamen_4ar": {
+   "name": "Upper secondary diploma within 4 years",
+   "unit": "%",
+   "note": "Upper-secondary pupils registered in the municipality who graduate within four years, introductory programmes included (National Agency for Education). Sweden 74.8% (2025)."
+  },
+  "eftergymnasial_utbildning_25_64": {
+   "name": "Post-secondary education, ages 25–64",
+   "unit": "%",
+   "note": "Share aged 25–64 with post-secondary education (Statistics Sweden). Sweden 48.5%, the county 38.0% (2025)."
+  },
+  "arbetsloshet_20_64": {
+   "name": "Unemployment, ages 20–64 (BAS)",
+   "unit": "%",
+   "note": "Register-based unemployment aged 20–64 in November (Statistics Sweden). Sweden 5.4%, the county 4.2% (2024)."
+  },
+  "unga_varken_arbetar_studerar": {
+   "name": "Young people aged 16–24 who are neither working nor studying",
+   "unit": "%",
+   "note": "Share aged 16–24 neither working nor studying (Statistics Sweden). Sweden 6.2%, the county 6.7% (2024)."
+  },
+  "medianinkomst_20_64": {
+   "name": "Median income (total earned income), ages 20–64",
+   "unit": "SEK/year",
+   "note": "Total earned income aged 20–64, median (Statistics Sweden). Sweden 401,400 SEK/year, the county 389,100 SEK/year (2024)."
+  },
+  "gini_disponibel_inkomst": {
+   "name": "Gini coefficient, disposable income",
+   "unit": "index 0–1",
+   "note": "Gini coefficient of households' disposable income; 0 is complete equality (Statistics Sweden). Sweden 0.314, the county 0.261 (2024)."
+  },
+  "barn_lag_ekonomisk_standard": {
+   "name": "Children and young people aged 0–19 with a low economic standard",
+   "unit": "%",
+   "note": "Share aged 0–19 in households below 60% of the median economic standard (Statistics Sweden). Sweden 17.0%, the county 20.0% (2024)."
+  },
+  "nystartade_foretag_per_1000": {
+   "name": "New businesses per 1,000 inhabitants aged 16–64",
+   "unit": "number per 1,000",
+   "note": "New firms per 1,000 residents aged 16–64 (Growth Analysis). Sweden 11.5 number per 1,000, the county 10.5 number per 1,000 (2025)."
+  },
+  "trangboddhet_norm2": {
+   "name": "Overcrowding in multi-dwelling buildings (norm 2)",
+   "unit": "%",
+   "note": "Share living in blocks of flats with more than two people per room, kitchen and living room not counted (Statistics Sweden). Sweden 15.1%, the county 14.9% (2025)."
+  },
+  "fardigstallda_bostader_per_1000": {
+   "name": "Completed dwellings per 1,000 inhabitants",
+   "unit": "dwellings per 1,000 inhabitants",
+   "note": "Dwellings completed by new building and conversion per 1,000 residents (Statistics Sweden). Sweden 3.1 dwellings per 1,000 inhabitants, the county 2.3 dwellings per 1,000 inhabitants (2025)."
+  },
+  "kvinnor_kommunfullmaktige": {
+   "name": "Share of women on the Municipal Council",
+   "unit": "%",
+   "note": "Share of women among the municipal council's members this term (Statistics Sweden). Sweden 43.0% (2025)."
+  },
+  "avsaknad_tillit": {
+   "name": "Lack of trust in others",
+   "unit": "%",
+   "note": "Share aged 16–84 answering no to whether most people can be trusted (national public health survey). Sweden 29.6%, the county 28.6% (2024)."
+  },
+  "otrygghet_kvall": {
+   "name": "Feel unsafe outdoors late in the evening in their own neighbourhood",
+   "unit": "%",
+   "note": "Share who feel unsafe, or stay in, late at night in their own neighbourhood (Swedish Crime Survey); uncertain at municipal level. Sweden 25.0%, the county 21.2% (2025)."
+  },
+  "bredband_100mbit": {
+   "name": "Access to fixed broadband ≥ 100 Mbit/s",
+   "unit": "% of households",
+   "note": "Households with fixed broadband of at least 100 Mbit/s, or the immediate possibility, on 1 October (Post and Telecom Authority). Sweden 100% of households, the county 99.3% of households (2025)."
+  },
+  "kommunalt_avfall_kg_per_inv": {
+   "name": "Municipal waste collected per inhabitant",
+   "unit": "kg per inhabitant",
+   "note": "Municipal waste collected per resident, adjusted for holiday homes, tourism and commuting (Avfall Sverige). Sweden 424 kg per inhabitant, the county 422 kg per inhabitant (2025)."
+  },
+  "materialatervinning_andel": {
+   "name": "Municipal waste sent to material recycling, incl. biological treatment",
+   "unit": "%",
+   "note": "Share of municipal waste collected for material recycling, biological treatment included (Avfall Sverige). The EU targets are 55% in 2025 and 65% in 2035. Sweden 40.0%, the county 41.5% (2025)."
+  },
+  "medborgare_nojda_dricksvattenarbete": {
+   "name": "Inhabitants who consider the municipality's work to secure drinking water to be good",
+   "unit": "%",
+   "note": "Share who think the municipality's work to secure drinking water is good (Statistics Sweden's citizen survey). Sweden 88.9%, the county 94.6% (2025)."
+  },
+  "vattenforekomster_god_status": {
+   "name": "Water bodies (all types) with good status",
+   "unit": "%",
+   "note": "Share of the municipality's water bodies – lakes, rivers, coast and groundwater – in good status (VISS). Sweden 48.5%, the county 47.0% (2022)."
+  },
+  "medelavstand_skyddad_natur": {
+   "name": "Average distance to protected nature",
+   "unit": "km",
+   "note": "Residents' average distance to the nearest protected nature area (Statistics Sweden). Sweden 2.0 km, the county 2.0 km (2025)."
+  },
+  "inpendling_antal": {
+   "name": "In-commuters to Rättvik Municipality",
+   "unit": "people",
+   "note": "Employed people who work in the municipality but live in another (Statistics Sweden)."
+  },
+  "utpendling_antal": {
+   "name": "Out-commuters from Rättvik Municipality",
+   "unit": "people",
+   "note": "Employed residents who work in another municipality (Statistics Sweden)."
+  },
+  "korstracka_personbil_per_inv": {
+   "name": "Distance driven by passenger car per inhabitant",
+   "unit": "mil/inhabitant/year (1 mil = 10 km)",
+   "note": "Average distance driven by cars registered in the municipality, per resident (Transport Analysis). Sweden 625 mil/inhabitant/year, the county 725 mil/inhabitant/year (2024)."
+  },
+  "fossiloberoende_personbilar_andel": {
+   "name": "Fossil-independent passenger cars, share of the fleet",
+   "unit": "%",
+   "note": "Electric, plug-in hybrid, gas, ethanol and other cars as a share of the cars in use (Transport Analysis). Sweden 26.0%, the county 20.4% (2025)."
+  },
+  "laddpunkter_publika_antal": {
+   "name": "Public charging points for electric cars",
+   "unit": "charging points",
+   "note": "Public charging points for electric cars in the municipality."
+  },
+  "vaxthusgaser_transporter_ton": {
+   "name": "Greenhouse gas emissions from transport, total",
+   "unit": "tonnes CO2e",
+   "note": "Domestic transport emissions within the municipality, total (RUS/SMHI)."
+  },
+  "elproduktion_kraftvarme": {
+   "name": "Electricity production from combined heat and power",
+   "unit": "MWh/year",
+   "note": "Electricity from combined heat and power and industrial back-pressure within the municipality (Swedish Energy Agency/Statistics Sweden)."
+  },
+  "elproduktion_vindkraft": {
+   "name": "Electricity production from wind power within the municipality",
+   "unit": "MWh/year",
+   "note": "Electricity from wind turbines within the municipality (Swedish Energy Agency/Statistics Sweden)."
+  },
+  "elproduktion_sol": {
+   "name": "Electricity production from solar power within the municipality",
+   "unit": "MWh/year",
+   "note": "Electricity from solar within the municipality (Swedish Energy Agency/Statistics Sweden)."
+  },
+  "bostadsmarknadslage_bme": {
+   "name": "Municipality's assessment of the housing market (0 = shortage, 1 = balance, 2 = surplus)",
+   "unit": "index 0–2",
+   "note": "The municipality's own assessment in the National Board of Housing's survey: 0 shortage, 1 balance, 2 surplus."
+  },
+  "bostadsmarknadslage_ungdomar_bme": {
+   "name": "Municipality's assessment of the housing market for young people aged 19–25 (0 = shortage)",
+   "unit": "index 0–2",
+   "note": "The municipality's own assessment for 19–25-year-olds in the National Board of Housing's survey: 0 shortage, 1 balance, 2 surplus."
+  },
+  "sysselsatta_arbetsstalle_kommun": {
+   "name": "Employed with a workplace in Rättvik Municipality",
+   "unit": "people",
+   "note": "Employed people with their workplace in the municipality, wherever they live (Statistics Sweden)."
+  },
+  "kommunen_tillsvidareanstallda": {
+   "name": "Permanently employed, monthly-paid staff in Rättvik Municipality",
+   "unit": "people",
+   "note": "The municipality's permanent monthly-paid staff – people, not full-time equivalents (SKR)."
+  },
+  "trygg_i_skolan_ak8": {
+   "name": "Year 8 pupils who feel safe at school",
+   "unit": "%",
+   "note": "Share of year-8 pupils who feel safe at school entirely or to a great extent."
+  },
+  "individuellt_valbefinnande_index": {
+   "name": "Individual well-being, municipal index (0–100)",
+   "unit": "index 0–100",
+   "note": "The Agency for Economic and Regional Growth's index of self-rated health, dental health and mental wellbeing, normalised across Sweden's municipalities (0–100). Sweden 55.2 (2025)."
+  },
+  "gott_psykiskt_valbefinnande": {
+   "name": "Inhabitants aged 16–84 with good mental well-being",
+   "unit": "%",
+   "note": "Share aged 16–84 with good mental wellbeing (national public health survey, several years pooled). Sweden 84.9%, the county 85.4% (2024)."
+  },
+  "demografisk_forsorjningskvot": {
+   "name": "Demographic dependency ratio ((0–19 + 65+) / 20–64 years)",
+   "unit": "ratio",
+   "note": "People aged 0–19 and 65+ per person aged 20–64 (Statistics Sweden): how many each person of working age supports. Sweden 0.770, the county 0.922 (2025)."
+  },
+  "ekologiska_livsmedel_kommunen": {
+   "name": "Organic food in the municipality's operations",
+   "unit": "%",
+   "note": "Organic food as a share of the municipality's food purchases by value (KRAV, Demeter, EU organic or MSC); contracted catering not included."
+  }
+ }
+}

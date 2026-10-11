@@ -102,7 +102,7 @@ def osm_api_elements(bbox, depth=0):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog='wasteland.py fetch')
+    ap = argparse.ArgumentParser(prog='sustainable.py fetch')
     ap.add_argument('slug')
     ap.add_argument('--force', action='store_true')
     args = ap.parse_args(argv)

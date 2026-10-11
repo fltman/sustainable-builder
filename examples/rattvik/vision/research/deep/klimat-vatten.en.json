@@ -1,0 +1,209 @@
+{
+  "indicators": {
+    "temp_okning_2071_2100_rcp26": {
+      "name": "Increase in annual mean temperature by 2071–2100 vs 1971–2000, RCP2.6",
+      "unit": "°C",
+      "note": "Ensemble mean of regional climate models (about 12×12 km) for the whole county; modelled 1971–2000 reference 2.9 °C (observed 3.0 °C). SMHI sub-area Siljan–Lower Österdalälven: +1.7 °C."
+    },
+    "temp_okning_2071_2100_rcp45": {
+      "name": "Increase in annual mean temperature by 2071–2100 vs 1971–2000, RCP4.5",
+      "unit": "°C",
+      "note": "Ensemble mean of regional climate models (about 12×12 km) for the whole county; modelled 1971–2000 reference 2.9 °C (observed 3.0 °C). Sub-area Siljan–Lower Österdalälven: +2.9 °C; winter (Dec–Feb) +3.9 °C."
+    },
+    "temp_okning_2071_2100_rcp85": {
+      "name": "Increase in annual mean temperature by 2071–2100 vs 1971–2000, RCP8.5",
+      "unit": "°C",
+      "note": "Ensemble mean of regional climate models (about 12×12 km) for the whole county; modelled 1971–2000 reference 2.9 °C (observed 3.0 °C). Sub-area Siljan–Lower Österdalälven: +4.8 °C; winter +6.2 °C, summer +4.5 °C."
+    },
+    "hogsommardygn_1971_2000_lan": {
+      "name": "Hot days per year (daily maximum above 25 °C), observed mean 1971–2000",
+      "unit": "days/year",
+      "note": "Observation-based (gridded) county mean; the climate models' own reference for the same period is 6.6–6.7 days, which the scenario values should be compared with. The county mean is pulled down by the mountains – around Siljan the count is roughly twice as high (see hogsommardygn_1991_2020_lokal)."
+    },
+    "hogsommardygn_2071_2100_rcp26_lan": {
+      "name": "Hot days per year (daily maximum above 25 °C) 2071–2100, RCP2.6",
+      "unit": "days/year",
+      "note": "County ensemble mean; an increase of 6.5 days on the modelled 1971–2000 reference (6.6 days). For the Siljan area, see the local estimates."
+    },
+    "hogsommardygn_2071_2100_rcp45_lan": {
+      "name": "Hot days per year (daily maximum above 25 °C) 2071–2100, RCP4.5",
+      "unit": "days/year",
+      "note": "County ensemble mean; an increase of 11.0 days on the modelled 1971–2000 reference (6.7 days). For the Siljan area, see the local estimates."
+    },
+    "hogsommardygn_2071_2100_rcp85_lan": {
+      "name": "Hot days per year (daily maximum above 25 °C) 2071–2100, RCP8.5",
+      "unit": "days/year",
+      "note": "County ensemble mean; an increase of 25.0 days on the modelled 1971–2000 reference (6.7 days). Mid-century (2041–2070): 18.8 days. For the Siljan area, see the local estimates."
+    },
+    "hogsommardygn_2018_lan": {
+      "name": "Hot days in summer 2018 (daily maximum above 25 °C), observed",
+      "unit": "days",
+      "note": "Observation-based county mean for 2018, the highest in the 1961–2018 series and on a par with the average year of 2071–2100 under RCP8.5 (31.7). SMHI's Leksand station had 46 such days that summer (own count)."
+    },
+    "hogsommardygn_1991_2020_lokal": {
+      "name": "Hot days per year (daily maximum above 25 °C) at Siljan, observed mean 1991–2020 (Leksand station)",
+      "unit": "days/year",
+      "note": "Mean number of days above 25 °C per year at SMHI's Leksand station (172 m a.s.l., at Siljan's outlet, about 19 km from Rättvik), 27 complete years 1991–2020 (1992, 1993 and 2019 have gaps). The 1971–2000 mean was 14.0; Mora A had 14.5 (1991–2020). Hottest day in the series: 33.5 °C (1975)."
+    },
+    "hogsommardygn_2071_2100_rcp45_lokal": {
+      "name": "Hot days per year at Siljan 2071–2100, RCP4.5 (estimate)",
+      "unit": "days/year",
+      "note": "Leksand's observed 1971–2000 mean (14.0 days) plus the county's projected increase under RCP4.5 (+11.0 days) = 25 days. Additive scaling; proportional scaling would give more days, so the value is on the cautious side."
+    },
+    "hogsommardygn_2071_2100_rcp85_lokal": {
+      "name": "Hot days per year at Siljan 2071–2100, RCP8.5 (estimate)",
+      "unit": "days/year",
+      "note": "Leksand's observed 1971–2000 mean (14.0 days) plus the county's projected increase under RCP8.5 (+25.0 days) = 39 days. Additive scaling; proportional scaling would give more days, so the value is on the cautious side."
+    },
+    "langsta_period_hogsommardygn_2071_2100_rcp85": {
+      "name": "Longest run of hot days (heat wave) 2071–2100, RCP8.5",
+      "unit": "days",
+      "note": "The year's longest run of days with a maximum above 25 °C, county mean; observed 1971–2000: 3.6 days. RCP4.5 gives 6.6 and RCP2.6 5.3 days."
+    },
+    "arsnederbord_forandring_2071_2100_rcp85": {
+      "name": "Change in annual precipitation by 2071–2100 vs 1971–2000, RCP8.5",
+      "unit": "%",
+      "note": "SMHI gives +13 mm/month on the modelled reference of 61 mm/month for 1971–2000: 13/61 = 21%. RCP4.5 gives +9 mm/month (15%) and RCP2.6 +5 mm/month (8%)."
+    },
+    "vinternederbord_forandring_2071_2100_rcp85": {
+      "name": "Change in winter precipitation (Dec–Feb) by 2071–2100, RCP8.5",
+      "unit": "%",
+      "note": "+15 mm/month on a modelled reference of 43 mm/month: 15/43 = 35%. RCP4.5: +9 mm/month (21%). A growing share falls as rain instead of snow."
+    },
+    "sommarnederbord_forandring_2071_2100_rcp85": {
+      "name": "Change in summer precipitation (Jun–Aug) by 2071–2100, RCP8.5",
+      "unit": "%",
+      "note": "+9 mm/month on a modelled reference of 81 mm/month: 9/81 = 11%. RCP4.5: +8 mm/month (10%). Higher evaporation in warmer summers still makes drought more common (see soil moisture)."
+    },
+    "max_dygnsnederbord_forandring_2069_2098_rcp85": {
+      "name": "Change in the year's largest daily precipitation by 2069–2098 vs 1961–1990, RCP8.5",
+      "unit": "%",
+      "note": "The county mean of the year's largest daily precipitation was 32 mm in 1961–1990 and is projected to rise by about 20% under RCP8.5, somewhat less under RCP4.5. For short cloudbursts SMHI uses a climate factor of about 1.2 (RCP4.5) and 1.4 (RCP8.5) by the end of the century."
+    },
+    "vegetationsperiod_2071_2100_rcp45": {
+      "name": "Length of the growing season 2071–2100, RCP4.5",
+      "unit": "days",
+      "note": "Days from the start of the growing season (daily mean above 5 °C four days running) to its end, county mean; observed 1971–2000: 157 days. RCP2.6 gives 176 and RCP8.5 217 days."
+    },
+    "max_snovatteninnehall_forandring_2071_2100_rcp85": {
+      "name": "Change in the year's maximum snow pack (water equivalent) by 2071–2100, RCP8.5",
+      "unit": "%",
+      "note": "Applies to SMHI's sub-area Siljan–Lower Österdalälven, where the modelled maximum snow water equivalent was 71 mm in 1971–2000; the decrease is 47% under RCP4.5. Less snow means a smaller spring flood but more rain-driven floods in autumn and winter."
+    },
+    "dagar_lag_markfuktighet_2069_2098_rcp85": {
+      "name": "Days per year with low soil moisture at the end of the century (2069–2098), RCP8.5",
+      "unit": "days/year",
+      "note": "SMHI gives 30–40 days a year of low soil moisture for most of the county under RCP8.5 (20–25 under RCP4.5), against 5–10 days today; the value is the middle of the range. It is a drought index for irrigation need and fire risk."
+    },
+    "istacke_dagar_2016_2026": {
+      "name": "Length of the ice season on Siljan (Storsiljan), mean of winters 2015/16–2025/26",
+      "unit": "days",
+      "note": "Mean number of days between freeze-up and break-up for the ten winters with observations (2019/20 missing). In 1871–1900 the mean was 129 days and break-up came on average on 7 May, against 9 April in 2016–2026; in winter 2024/25 the ice lay for only 35 days."
+    },
+    "siljan_medelvattenstand": {
+      "name": "Mean water level of Siljan 1964–2024",
+      "unit": "m a.s.l. (RH 1900)",
+      "note": "Mean level under the current water-court ruling, measured at Byrviksbanken (Siljansnäs). Mean low water 160.07 and mean high water 161.98 m; before regulation (1900–1925) the mean was 161.0 m. Add about 0.4 m for RH 2000 (see hojdskillnad_rh2000_rh1900)."
+    },
+    "siljan_dammningsgrans": {
+      "name": "Siljan's upper regulation limit under the 1964 water-court ruling",
+      "unit": "m a.s.l. (RH 1900)",
+      "note": "The ruling (AD 45/1947, 27 Feb 1964) allows regulation between +159.90 and +161.78 m – an amplitude of 1.88 m – from Gråda power station about 20 km downstream of Leksand. Above the limit, releases must follow the natural discharge: 293 m³/s at +161.78 and about 2 m³/s more per cm."
+    },
+    "siljan_hogsta_vattenstand_1985": {
+      "name": "Siljan's highest level since the current regulation (13 September 1985)",
+      "unit": "m a.s.l. (RH 1900)",
+      "note": "Peak after a very wet summer and autumn; Siljan rose a metre in a week, during the same rains that breached the Noppikoski dam. Next highest: 162.90 (Nov 2000), 162.73 (June 1995) and 162.62 (Aug 2023). About +163.4 m in RH 2000."
+    },
+    "siljan_hogsta_kanda_vattenstand_1860": {
+      "name": "Siljan's highest known water level (1860)",
+      "unit": "m a.s.l. (RH 1900)",
+      "note": "The county board states that the highest known level before regulation was 3.25 m above the 161.78 m limit: 161.78 + 3.25 = 165.03 m. SMHI dates the record to 1860, about two metres above the 1985 level; the highest level in 1900–1925 was 163.9 m."
+    },
+    "siljan_hogvatten_2023": {
+      "name": "Siljan's peak level after storm Hans (18 August 2023)",
+      "unit": "m a.s.l. (RH 1900)",
+      "note": "According to SMHI the highest level since 2000 and the highest August level since regulation began in 1964; the peak came on 18 August in SMHI's daily Byrviksbanken series. Of the four highest levels since 1964, three followed summer or autumn rain (1985, 2000, 2023) and one an early-summer flood (1995)."
+    },
+    "siljan_andel_ar_over_dammningsgrans": {
+      "name": "Share of years in which Siljan rose above the +161.78 m regulation limit, 1967–2025",
+      "unit": "%",
+      "note": "The annual maximum exceeded +161.78 m in 40 of 59 years (1967–2025); in 1991–2020 in 17 of 30 years, in line with the county board's 'on average every other year'. Siljan has risen more than a metre above the limit (+162.78) twice: 1985 and 2000."
+    },
+    "siljan_utflode_100ar_idag": {
+      "name": "100-year outflow from Siljan at Gråda power station, present climate",
+      "unit": "m³/s",
+      "note": "Gråda power station controls Siljan's outlet. The 200-year flow is 655 m³/s and the design (probable maximum) flood 1,405 m³/s. MSB's climate-adjusted 100-year flow for 2098 is lower, 490 m³/s, because the spring flood shrinks in the scenarios used then; SMHI's newer projections point to an increase instead (see siljan_hogflode_50ar_forandring_2071_2100_rcp85)."
+    },
+    "siljan_100arsniva_idag": {
+      "name": "Siljan's 100-year level in the present climate (estimate)",
+      "unit": "m a.s.l. (RH 1900)",
+      "note": "The water-court discharge table gives 612 m³/s (MSB's 100-year flow at Gråda) at +163.30 m; the table matches SMHI's observations (163.04 m and about 570 m³/s in 1985). About +163.7 m in RH 2000; no official 100-year level for Siljan was found published in text."
+    },
+    "siljan_hogflode_50ar_forandring_2071_2100_rcp85": {
+      "name": "Change in the 50-year flow out of the Siljan area by 2071–2100, RCP8.5 (current regulation)",
+      "unit": "%",
+      "note": "Applies to the outlet of SMHI's sub-area Siljan–Lower Österdalälven (modelled 465 m³/s in 1971–2000). RCP4.5 gives +9.9% and RCP2.6 +11.8%; the 10-year flow rises 15% (RCP8.5). MSB's older calculation (2013) points to a decrease instead, so the direction is uncertain."
+    },
+    "siljan_100arsniva_2071_2100_rcp85": {
+      "name": "Siljan's 100-year level 2071–2100, RCP8.5 (estimate)",
+      "unit": "m a.s.l. (RH 1900)",
+      "note": "612 m³/s × 1.132 = 693 m³/s, which the water-court discharge table puts at +163.63 m (RCP4.5: 673 m³/s, +163.55 m). About +164.0 m in RH 2000 – level with Rättvik's lowest lakeside streets. With MSB's flow for 2098 (490 m³/s) the level would instead be +162.76 m."
+    },
+    "hojdskillnad_rh2000_rh1900": {
+      "name": "Difference between the RH 2000 and RH 1900 height systems at Siljan (estimate)",
+      "unit": "m",
+      "note": "In Lantmäteriet's terrain model Siljan's surface at Rättvik lies at +162.18 m (RH 2000); the tile was laser-scanned on 6 November 2020, the day SMHI measured +161.78 m (RH 1900) at Byrviksbanken. Difference about 0.40 m (uncertainty about ±0.15 m); used to convert SMHI's Siljan levels to RH 2000."
+    },
+    "lagsta_strandgata_niva": {
+      "name": "Lowest street level by Siljan and the lowest reach of Enån in Rättvik",
+      "unit": "m a.s.l. (RH 2000)",
+      "note": "Lowest point along the streets nearest the water: Badhusgatan +164.04 and Båthamnsvägen +164.12 m (4 m grid, OSM street centre lines). About +163.6 m in RH 1900 – some 2.4 m above Siljan's mean level and 0.6 m above the 1985 record; the square and the station lie at about +166 m."
+    },
+    "byggnader_under_100arsniva": {
+      "name": "Buildings in central Rättvik with ground below Siljan's estimated 100-year level (+163.7 m RH 2000)",
+      "unit": "buildings",
+      "note": "Buildings (OSM, about 2.9 × 2.9 km around the centre) whose lowest corner lies below +163.7 m RH 2000, 7 of them within 150 m of Siljan or the lake-affected lower reach of Enån – mainly houses around Badhusgatan–Knihsgatan by Enån, a shed at Enån's mouth and a shop building at the campsite. Below +164.0 m: 19 buildings; below +165.0 m: 62."
+    },
+    "camping_andel_under_100arsniva": {
+      "name": "Share of Siljanbadet campsite's ground below Siljan's estimated 100-year level (+163.7 m RH 2000)",
+      "unit": "%",
+      "note": "Share of the campsite's 9.1 ha (OSM polygon) with ground below +163.7 m RH 2000 (estimated 100-year level today); below +164.0 m (estimated 100-year level 2071–2100, RCP8.5): 57%. The campsite and beach are Rättvik's lowest-lying developed land."
+    },
+    "lagsta_grundlaggningsniva_siljan": {
+      "name": "Lowest foundation level for new buildings at Siljan's outlet (Leksand municipality)",
+      "unit": "m a.s.l.",
+      "note": "Leksand's comprehensive plan (2014) sets +165 m a.s.l. as the lowest foundation level for new buildings by Österdalälven/Siljan's outlet, based on the 10,000-year flood; the Limsjöänget detailed plan in Leksand uses +165 m in RH 2000. No equivalent published level for Rättvik was found."
+    },
+    "skyfall_2023_skadade_villor": {
+      "name": "Houses damaged by cloudbursts and flooding in August 2023 (storm Hans)",
+      "unit": "houses",
+      "note": "Local cloudbursts on 6–8 August 2023 damaged about 150 houses in Lerdal, Gärdebyn, Söderås, Utby and parts of central Rättvik (homes on steep slopes down to Siljan); about 25 km of road was wholly or partly destroyed and the rail embankment at Tällberg was washed away. Rättvik has no SMHI station of its own; Leksand got 145 mm from 30 July to 10 August."
+    },
+    "dimensionerande_skyfall_100ar_2h": {
+      "name": "Design cloudburst in Rättvik's cloudburst mapping: 100-year rain, 2 hours, including climate factor",
+      "unit": "mm",
+      "note": "The cloudburst mapping of the water and sewerage facilities (Scalgo LIVE) used a 2-hour 100-year rain with a climate factor of 1.2 (72 mm; 40 mm after deducting pipe and infiltration capacity) and a 500-year rain with a climate factor of 1.35 (149 mm). It found 11 risk sites, all sewage pumping stations, four of them in a higher risk class; storm water is not treated today."
+    },
+    "vattentakt_tillstand_max_dygn": {
+      "name": "Permitted maximum groundwater abstraction at the Gärdsjö source (Rättvik's main supply)",
+      "unit": "m³/day",
+      "note": "The permit for the municipality's abstraction just west of lake Gärdsjön allows at most 4,500 m³/day and 1.46 million m³/year (about 4,000 m³/day on average). The source lies in the Gärdsjöfältet water-supply interest (protection zones Jutjärn Boda, Rättvik, Västanå); a new well field and a new Gärdsjö water works came into service in 2025, and the water is only aerated and UV-treated."
+    },
+    "andel_egen_brunn": {
+      "name": "Share of the municipality's residents with their own well",
+      "unit": "%",
+      "note": "The municipality says 'close to 40%' of the population has its own dug or drilled well; for Dalarna county as a whole about 20% had private supply in 2020 (county board, Statistics Sweden). The municipality is not responsible for quality; uranium and radon occur in drilled wells."
+    },
+    "siljan_ekologisk_status": {
+      "name": "Ecological status of Siljan (VISS)",
+      "unit": "status class (1 = high … 5 = bad)",
+      "note": "Moderate ecological status, mainly because of fish and connectivity (dams and regulation – the eel has vanished and the Siljan brown trout has fallen from thousands to a few hundred); nutrients, light conditions and phytoplankton have high status. Chemical status: not good (mercury, PBDE). Target: good ecological status by 2033; Enån through Rättvik has good ecological status."
+    },
+    "siljansbadet_prov_algblomning": {
+      "name": "Bathing-water samples with algal bloom at Siljansbadet 2023–2026",
+      "unit": "samples",
+      "note": "None of 26 samples at the EU bathing site Siljansbadet in 2023–2026 showed an algal bloom, and the bathing profile lists no cyanobacteria risk – Siljan is nutrient-poor. Classification: excellent 2023–2024, good 2025; one sample on 7 July 2026 was unfit (bacteria) and the sample on the day of storm Hans (8 Aug 2023) was flagged."
+    }
+  }
+}

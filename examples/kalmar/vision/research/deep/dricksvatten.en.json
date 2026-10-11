@@ -1,0 +1,174 @@
+{
+  "indicators": {
+    "dricksvattenproduktion_kalmar": {
+      "name": "Drinking water production in Kalmar municipality (annual mean, all waterworks)",
+      "unit": "m³/day",
+      "note": "Updates the earlier 16,000 m³/day, an undated, rounded annual mean on Kalmar Vatten's production page. 5,437,000 m³ in 2025 divided by 365 gives 14,900 m³/day; in 2023 production was probably about 16,400 m³/day (sold volume 5,038,773 m³ divided by the 84 % billing ratio, own calculation). Includes deliveries to Torsås and Öland."
+    },
+    "dricksvatten_per_invanare_kalmar": {
+      "name": "Drinking water produced per connected resident per day, Kalmar municipality",
+      "unit": "litres/person/day",
+      "note": "Own calculation: 5,437,000 m³ / 67,380 connected / 365 gives 221 l; per resident of the whole municipality (73,068) it is 204 l. This is total production including businesses, network losses and deliveries to Torsås and Öland, not household use. Replaces the earlier estimate of 230 l (219–238)."
+    },
+    "dricksvattenmarginal_kalmar": {
+      "name": "Drinking water margin in Kalmar (available raw water above demand)",
+      "unit": "%",
+      "note": "Kalmar Vatten's own key figure for the ratio between available raw water and what society needs. At the end of 2024 the margin was 39 % ('overcapacity in water resources of 39 %', annual report 2024); in the dry year 2025 it fell to 19 % as wells outside the infiltration areas lost capacity. The report does not say whether the margin is based on annual volume or peak day."
+    },
+    "ofakturerat_dricksvatten_andel_kalmar": {
+      "name": "Share of produced drinking water not billed in Kalmar (leakage, metering error, own use)",
+      "unit": "% of production",
+      "note": "Non-billed water = 100 minus the billing ratio. It was 16 % in 2023 and about 9 % in 2025 (4,947,670 m³ sold of 5,437,000 m³ produced, own calculation), a cut of roughly 0.5 million m³ a year in two years. The national average for delivered volume without revenue was 22 % in 2024 (Svenskt Vatten, VASS)."
+    },
+    "hushallens_vattenanvandning_per_person_kalmar": {
+      "name": "Household drinking water use per connected person per day, Kalmar municipality",
+      "unit": "litres/person/day",
+      "note": "Own calculation: households' 3.9 million m³ a year divided by 66,000 connected people and 365 days. The national average is 140 l according to Kalmar Vatten and 135 l according to Svenskt Vatten 2024; households in the county used about 150 l (SCB 2020). The sector split in the source is rounded and its total (5.56 million m³) is higher than the volume sold in 2025."
+    },
+    "hushallens_vattenbehov_2050_kalmar": {
+      "name": "Forecast household drinking water use in Kalmar municipality in 2050",
+      "unit": "million m³/year",
+      "note": "Up from 3.9 million m³ a year today, with more residents and a higher connection rate; this corresponds to about 100,000 connected people at 140–150 l per person per day (own calculation). Cutting use by 15 % to 120 l per person per day would need only 4.5 million m³. The municipal water supply plan concludes that the municipality's water resources are not large enough to secure future needs."
+    },
+    "oberoende_ravattensystem_kalmar": {
+      "name": "Number of independent raw-water systems for Kalmar's drinking water",
+      "unit": "raw-water systems (target: several independent)",
+      "note": "All production comes from the Nybroåsen esker: natural groundwater plus groundwater formed from pre-treated water from the river Hagbyån, topped up from a lake reservoir (Hultebräan lies within Hagbyån's protection zone); the wellfields are Hagbymassivet (Bottorp–Stenkällan), Vassmolösa–Ölvingstorp and Råsbäck, and the water is treated at Skälby waterworks. Desalination and recycled water are being studied but nothing is decided. The 2013 regional plan said there was no reserve water that could replace Hagbyån."
+    },
+    "nybroasen_teoretiskt_max_uttag": {
+      "name": "Theoretical maximum abstraction from the Nybroåsen esker (Nybro and Kalmar)",
+      "unit": "million m³/year",
+      "note": "A rough estimate of the theoretical maximum, not a permit. The same table gives 1.2 million m³/year for Hagbyån with lake Hultebräan (Kalmar's infiltration source) and 1.8 million m³/year for Ljungbyån with lake Orranäsasjön. For comparison, Kalmar produced 5.4 million m³ of drinking water in 2025, about half from infiltrated river water, and Nybro also draws on the esker."
+    },
+    "hagbymassivet_naturlig_grundvattenbildning": {
+      "name": "Natural groundwater recharge in Hagbymassivet, Kalmar's main wellfield area in Nybroåsen",
+      "unit": "l/s",
+      "note": "SGU gives 40–45 l/s, i.e. 1.3–1.4 million m³/year, while abstraction in the area was about 140 l/s (4.4 million m³/year) thanks to basin infiltration since the late 1950s. SGU judged that abstraction could rise to 300 l/s with more infiltration, and named the Fröstorp and Råsbäck areas (each at least about 25 l/s) as the most important future additions. Kalmar Vatten is now seeking a new water permit for Hockland and Fröstorp."
+    },
+    "reservvattentakter_kapacitet_kalmar": {
+      "name": "Combined capacity of Kalmar's reserve water sources",
+      "unit": "m³/day",
+      "note": "Sum of the stated capacities of nine small reserve wells (Halltorp 1 and 2, Tvärskog, Påryd/Ugglebo, Trekanten, Norra Hagby, Lindsdal, Läckeby, Rockneby): 43 l/s, own calculation. That is about 25 % of mean production in 2025; the 2013 regional plan gave about 3,400 m³/day. They are small groundwater sources that are also hit by drought, and in 2020 it was unclear whether they would be kept."
+    },
+    "dricksvatten_sasongsokning_juli_kalmar": {
+      "name": "Increase in Kalmar's drinking water production in July compared with January",
+      "unit": "m³/day",
+      "note": "Production in July was about 3,900 m³/day higher than in January 2010, roughly 25 % of the annual mean of 15,600 m³/day (5.7 million m³, own calculation). No newer figure for peak day or installed capacity was found. In Borgholm, July abstraction was 2.4 times January's in the same year."
+    },
+    "kalmar_vatten_investeringar_2026_2032": {
+      "name": "Kalmar Vatten's planned investments over seven years (2026–2032)",
+      "unit": "million SEK",
+      "note": "Of which 834 million SEK in 2026; the plan is dominated by the Kalmarsundsverket treatment plant and pipe renewal. The drinking-water projects are a rebuild of the Yxneberga infiltration plant for more capacity, a new raw-water main from Bottorp to Kalmar (2027), an extra pumping line at Skälby, a new water permit for Hockland and Fröstorp (about 5 years) and backup power, with a study of running fully for three months without grid power. The water operations themselves invested 46 million SEK in 2025."
+    },
+    "torsas_dricksvatten_fran_kalmar_andel": {
+      "name": "Share of Torsås municipality's public drinking water bought from Kalmar",
+      "unit": "%",
+      "note": "Kalmar Vatten has supplied Torsås since 2001 (about 0.37 million m³/year according to the 2013 plan) and, since 2016, Öland by pipeline as well. Sales to Torsås were 1.8 million SEK and to the two Öland municipalities 0.35 million SEK in 2025 (annual report). Kalmar is thus the hub and supplier in regional cooperation, not a recipient."
+    },
+    "kalmarsundsverket_atervunnet_vatten_kapacitet": {
+      "name": "Capacity for recycled water from the Kalmarsundsverket plant (from 2027)",
+      "unit": "m³/day",
+      "note": "Planned capacity at class A quality under EU Regulation 2020/741, 50–80 % of incoming wastewater (5.2 million m³ in 2025); this equals about 80 % of today's mean drinking-water production. The first planned uses are a water kiosk, the plant's own process water (about 200 m³/day) and possibly toilet flushing etc. at the county hospital (250–300 m³/day, about 10 million SEK according to Region Kalmar's pre-study). Drinking water from recycled water is being studied through a two-year pilot that needs external funding."
+    },
+    "tekniskt_vatten_bevattningsbehov_kalmar": {
+      "name": "Estimated demand for technical (recycled) water for irrigation in Kalmar",
+      "unit": "m³/year",
+      "note": "Midpoint of 113,000–172,500 m³/year for users such as Kalmar golf club, football pitches, parks and allotments. That is 2–3 % of annual production but falls on the summer peak; football pitches (about 34,000 m³/year) are watered mostly with drinking water today. A separate pipe network is judged too costly, so water kiosks and point solutions are more realistic."
+    },
+    "atervunnet_vatten_pilot_kostnad_kalmar": {
+      "name": "Production cost of recycled water in the municipal irrigation pilot",
+      "unit": "SEK/m³",
+      "note": "A UV unit for treated wastewater (investment 1.69 million SEK plus about 0.2 million SEK, 10-year depreciation, 4 % interest) at today's use of about 1,500 m³ a year, although capacity is 864 m³/day. After EU and HaV grants (90 %), the municipality's cost is about 15 SEK/m³, against about 34 SEK/m³ for drinking water. The cost per m³ falls steeply with larger volumes."
+    },
+    "avsaltning_sandvik_kapacitet": {
+      "name": "Capacity of the Sandvik desalination plant, Borgholm municipality (Öland)",
+      "unit": "m³/day",
+      "note": "Brackish water is drawn from 28 m depth in Kalmarsund and desalinated by reverse osmosis; the plant was built in record time (ground broken August 2016, opened June 2017) and supplies about 3,000 households. According to SVT (2017) it cost 85 million SEK plus 28 million SEK for pipelines, and it takes in 6,000 m³ of seawater a day. Energy use is not published."
+    },
+    "avsaltning_morbylanga_kapacitet": {
+      "name": "Capacity of the Mörbylånga desalination and reuse waterworks (Öland)",
+      "unit": "m³/day",
+      "note": "The plant (opened 2019) treats brackish groundwater from beach wells (up to 5,800 m³/day of raw water) and up to 1,500 m³/day of process water from the Guldfågeln food plant's treatment works; losses in the plant are just over 30 %. The municipality describes it as the first in Sweden to reuse used water as drinking water. Together with Sandvik, Öland has 7,000 m³/day, about 2.5 million m³/year, that does not depend on rain."
+    },
+    "avsaltning_morbylanga_investering": {
+      "name": "Investment in the Mörbylånga desalination and reuse waterworks (Öland)",
+      "unit": "million SEK",
+      "note": "The municipality's forecast in spring 2019 was about 110 million SEK, and its water services plan gives about 180 million SEK for the two waterworks built since 2015. Per m³/day of capacity that is about 33,000 SEK, close to Sandvik (85 million SEK for 3,000 m³/day, about 28,000 SEK; own calculation)."
+    },
+    "morbylanga_forbrukning_hogsasong": {
+      "name": "Drinking water use in Mörbylånga municipality in high season (Öland)",
+      "unit": "m³/day",
+      "note": "Against about 3,500 m³/day in low season, i.e. 57 % higher in summer. The municipality delivered about 1.4 million m³ in 2023 to almost 70 % of its 15,700 residents and expects use to exceed 2 million m³ a year by 2037 if growth continues (water services plan 2025–2037). The 4,000 m³/day desalination plant thus covers just under three quarters of summer demand."
+    },
+    "borgholm_vattenuttag_juli_jamfort_januari": {
+      "name": "Water abstraction in Borgholm municipality in July compared with January (Öland)",
+      "unit": "times January abstraction",
+      "note": "Several waterworks then reach maximum capacity. In 2010 abstraction was 3,890 m³/day in January and 9,208 in July (2.4 times, 2013 regional plan), and SVT reported about 110,000 m³ in January and 260,000 m³ in July 2024. The municipality's six waterworks produce about 2 million m³ a year, and about 70 % of 11,000 residents are connected."
+    },
+    "befolkning_borgholm_juli_okning": {
+      "name": "Increase in people present in Borgholm municipality in July compared with October–November (Öland)",
+      "unit": "%",
+      "note": "From about 10,900 to 52,200 people, according to SCB's experimental statistics from mobile network data. Mörbylånga rose 73 % (16,000 to 27,600), Öland as a whole roughly tripled, while Kalmar municipality rose 1 %. In summer 2023 Borgholm's peak population was 4.5 times its annual median."
+    },
+    "ledning_fastland_oland_kapacitet": {
+      "name": "Capacity of the drinking water pipeline across Kalmarsund (Öland)",
+      "unit": "m³/day",
+      "note": "The pipeline across Kalmarsund was built during the 2016 water crisis and still carries water from Kalmar Vatten. Mörbylånga gives about 7.3 million SEK for the pipeline with a booster station, which can carry water both ways and on to Borgholm. Its capacity is about 7 % of Kalmar's mean production and about a fifth of Mörbylånga's summer demand."
+    },
+    "vattentransporter_morbylanga_2016_kostnad": {
+      "name": "Cost of water transports to Mörbylånga during the 2016 water crisis (Öland)",
+      "unit": "million SEK",
+      "note": "When drinking water ran out in Mörbylånga in 2016, tankers carried 1,000 m³ a day from the mainland through spring, summer and autumn. The waterworks that desalinates and treats sea and industrial water was then built for 130 million SEK. According to the regional plan, groundwater on northern Öland reached a record low in November 2016."
+    },
+    "bevattningsforbud_borgholm_dagar": {
+      "name": "Days per year with a garden-watering ban on municipal water in Borgholm municipality (Öland)",
+      "unit": "days/year (1 May–30 August)",
+      "note": "The ban recurs every year, both because rainfall is low and because the summer load can cause supply problems and poorer water quality. Pools of 3 m³ or more may not be filled from the mains. Kalmar, by contrast, has had no restrictions since summer 2016."
+    },
+    "grundvatten_god_status_morbylanga": {
+      "name": "Groundwater bodies with good chemical and quantitative status in Mörbylånga municipality (Öland)",
+      "unit": "%",
+      "note": "Borgholm has 22.2 %, Kalmar municipality 77.8 %, the county 90 % and Sweden 97 % (Kolada 2022). Mörbylånga's water services plan states that all groundwater bodies on Öland have poor quantitative but good chemical status."
+    },
+    "grundvattentorrar_nybroasen_andel_2016_2026": {
+      "name": "Share of years 2016–2026 with groundwater drought in the natural parts of Nybroåsen",
+      "unit": "% of years (3 of 11)",
+      "note": "Own analysis: a drought year has at least three months below the 10th percentile of the same month in 1961–1990. Both stations give 2016, 2025 and 2026 (data to 9 September), against 6 of 29 years in 1961–1990 and 1 of 25 in 1991–2015; in winter 2025/26 station 6_26 was only 0.1 m above its 1964 record. Station 6_23, in the infiltrated area, had no drought year in 2016–2026."
+    },
+    "grundvattentorrar_oland_andel_2016_2026": {
+      "name": "Share of years 2016–2026 with groundwater drought at SGU's Böda station, northern Öland (Öland)",
+      "unit": "% of years (7 of 11)",
+      "note": "Own analysis with the same definition as for Nybroåsen: drought years 2016, 2017, 2019, 2020, 2023, 2025 and 2026, against 3 of 23 years in 1968–1990. The neighbouring station Böda_9 gives 6 of 11 years, and both had their lowest levels since 1968 in October 2016. The series has over 23,000 values and must be fetched in several pages (startIndex); abstraction at nearby wellfields may affect the levels."
+    },
+    "grundvattenbildning_nybroasen_2071_2100_ssp585": {
+      "name": "Change in groundwater recharge at Kalmar's wellfields in Nybroåsen, 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "unit": "%",
+      "note": "Mean of 17 simulations against 1971–2000 (149 mm/year); the range is ±1 standard deviation, and 15 of 17 simulations show a decrease. RCP4.5 ≈ SSP2-4.5 gives −7.1 % in 2041–2070 and −4.6 % in 2071–2100, and RCP8.5 gives −9.6 % in 2041–2070. Spring recharge falls most (−29 % in 2071–2100 under RCP8.5)."
+    },
+    "grundvattenbildning_torrar_nybroasen_2071_2100_ssp585": {
+      "name": "Change in groundwater recharge in a dry year at Kalmar's wellfields in Nybroåsen, 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "unit": "%",
+      "note": "A dry year is the 25th percentile of annual values, so dry years worsen more than the average year (−22.6 %). Under RCP4.5 ≈ SSP2-4.5 the change is −8.1 % in 2041–2070 and −10.2 % in 2071–2100, and under RCP8.5 −19.9 % in 2041–2070. The range is ±1 standard deviation across 17 simulations."
+    },
+    "langsta_grundvattentorka_okning_nybroasen_2071_2100_ssp585": {
+      "name": "Lengthening of the year's longest groundwater drought at Kalmar's wellfields in Nybroåsen, 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "unit": "days",
+      "note": "A groundwater drought is a period when recharge over the last 30 days is below 10 mm; the longest such period was about 187 days in 1971–2000, and all 17 simulations show it getting longer. RCP4.5 ≈ SSP2-4.5 gives +15.8 days in 2041–2070 and +14.9 days in 2071–2100, and RCP8.5 gives +22.0 days in 2041–2070. A dry year lengthens by 37 days under RCP8.5."
+    },
+    "grundvattenbildning_oland_2071_2100_ssp585": {
+      "name": "Change in groundwater recharge at Borgholm's main wellfield, 2071–2100 (Öland, RCP8.5 ≈ SSP5-8.5)",
+      "unit": "%",
+      "note": "The area is at Solbergafältet, Borgholm's largest wellfield; the 1971–2000 reference is 144 mm/year. Böda on northern Öland gets −34 % and Mörbylånga −22 %, and a dry year falls by 41 % at Köpingsvik and 54 % at Böda. Under RCP4.5 ≈ SSP2-4.5 the change at Köpingsvik is −11.5 % in 2041–2070 and −7.3 % in 2071–2100."
+    },
+    "lagvattenforing_hagbyan_2071_2100_rcp85": {
+      "name": "Change in mean low flow (MLQ) in the river Hagbyån, the source of Kalmar's artificial infiltration, 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "unit": "%",
+      "note": "All 17 models show a decrease; the range is min–max. RCP4.5 ≈ SSP2-4.5 gives −9.9 % in 2041–2070 and −6.7 % in 2071–2100, and RCP8.5 gives −11.1 % in 2041–2070. Kalmar Vatten tops up the river in summer from its lake reservoir, so lower low flows mean the reservoir empties faster."
+    },
+    "torrar_sannolikhet_nybroasen_2071_2100_ssp585": {
+      "name": "Annual probability of a recharge year as dry as today's 1-in-10 dry year at Kalmar's wellfields, 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "unit": "% per year",
+      "note": "Own estimate: annual values are assumed normally distributed with the mean and 25th percentile from SGU, and the threshold is today's 1-in-10 dry year (10 % a year in 1971–2000). RCP4.5 ≈ SSP2-4.5 gives 9 % in 2041–2070 and 11 % in 2071–2100, and RCP8.5 ≈ SSP5-8.5 gives 15 % in 2041–2070 and 21 % in 2071–2100, i.e. about one year in five. For Böda on northern Öland it is 16–18 % (SSP2-4.5) and 19–24 % (SSP5-8.5)."
+    }
+  }
+}

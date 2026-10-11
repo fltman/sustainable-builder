@@ -1,0 +1,669 @@
+{
+  "topic": "turism",
+  "compiled": "2026-10-09",
+  "indicators": [
+    {
+      "id": "gastnatter_kalmar_kommun",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden i Kalmar kommun",
+      "value": 452248,
+      "unit": "gästnätter/år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik 2025, kartlager KOM_GN (gästnätter per kommun 2025)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets inkvarteringsstatistik)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/KOM_GN/FeatureServer/100/query?where=KOM_GN__ID+IN+(%270880%27,%270885%27,%270840%27)&outFields=KOM_GN__KOM_NAMN,KOM_GN__Total_2025,KOM_GN__Folkm%C3%A4ngd&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "Hotell, stugbyar, vandrarhem, camping och förmedlade stugor/lägenheter (SoL). Med Kolada N45850 (gästnätter per invånare) gånger folkmängden blir serien 418 023 (2019), 343 499 (2020), 428 410 (2023) och 445 963 (2024), alltså +8 % sedan 2019 och 6,2 gästnätter per invånare 2025 (riket 6,7). Koladas värde för 2022 (44,4 per invånare) är uppenbart felaktigt och har inte använts.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_kalmar_lan",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden i Kalmar län",
+      "value": 3307583,
+      "unit": "gästnätter/år",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Inkvarteringsstatistiken 2025 (PM, tabell s. 13 och figur 1.6)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtverket.se/download/18.61bf24f419e6366026b51a3d/1780038956367/inkvarteringsstatistik-2025.pdf"
+      },
+      "note_sv": "Femte flest i landet; −1,0 % mot 2024 (3 340 127) men +17 % mot 2019 (2 822 492 enligt Kolada N45850 gånger folkmängden). Logiintäkterna var 1 189 MSEK och antalet gästnätter 13 per invånare (riket ca 7). Region Kalmar läns rapport anger avrundat 3,4 miljoner och +1,8 %, vilket avviker från Tillväxtverkets slutliga siffror.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_borgholm",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden i Borgholms kommun (Öland)",
+      "value": 1079809,
+      "unit": "gästnätter/år",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik 2025, kartlager KOM_GN (gästnätter per kommun 2025)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets inkvarteringsstatistik)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/KOM_GN/FeatureServer/100/query?where=KOM_GN__ID+IN+(%270880%27,%270885%27,%270840%27)&outFields=KOM_GN__KOM_NAMN,KOM_GN__Total_2025,KOM_GN__Folkm%C3%A4ngd&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "Länets största turistkommun med 102 gästnätter per invånare (10 626 invånare). Kolada N45850 gånger folkmängden ger 1 016 297 (2019) och 1 115 271 (2024), alltså −3,2 % 2025. Tillsammans med Mörbylånga hade Öland 1 443 657 gästnätter 2025, 44 % av länets.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_morbylanga",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden i Mörbylånga kommun (Öland)",
+      "value": 363848,
+      "unit": "gästnätter/år",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik 2025, kartlager KOM_GN (gästnätter per kommun 2025)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets inkvarteringsstatistik)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/KOM_GN/FeatureServer/100/query?where=KOM_GN__ID+IN+(%270880%27,%270885%27,%270840%27)&outFields=KOM_GN__KOM_NAMN,KOM_GN__Total_2025,KOM_GN__Folkm%C3%A4ngd&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "22 gästnätter per invånare (16 306 invånare). Kolada N45850 gånger folkmängden ger 369 521 (2019) och 362 536 (2024), så nivån är i stort sett oförändrad sedan 2019.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_utlandsk_andel_lan",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Utländska gästers andel av gästnätterna i Kalmar län",
+      "value": 19.8,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik 2025 – 1. Inkvarteringsstatistik (avsnittet Gästnätter per månad, land och anläggningstyp)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets inkvarteringsstatistik)",
+        "url": "https://storymaps.arcgis.com/stories/012e9f7acd1e450f9b5a3b1596055db3"
+      },
+      "note_sv": "Svenska gäster stod för 80,2 % 2025. De utländska gästnätterna var ca 640 000, ca 15 000 färre än 2024; Tyskland är största land och USA ökade mest (+19 %). Tillväxtverkets figur 1.8 anger 20 % (riket 26 %), och för 2024 anges 19,7 % (Visita) respektive 21 % (Region Kalmar län) beroende på hur gäster med okänt hemland räknas.",
+      "confidence": "medium",
+      "range": [
+        19,
+        20
+      ]
+    },
+    {
+      "id": "gastnatter_sommarandel_lan",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Andel av länets gästnätter som infaller i juni–augusti",
+      "value": 72,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kalmar läns turismstatistik 2025 – 1. Inkvarteringsstatistik (avsnittet Gästnätter per månad)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets inkvarteringsstatistik)",
+        "url": "https://storymaps.arcgis.com/stories/012e9f7acd1e450f9b5a3b1596055db3"
+      },
+      "note_sv": "\"Ungefär 72 procent\" 2025, mot 75 % 2024 och 73 % 2023; i riket är andelen 43 % (Tillväxtverket). Säsongen breddas: april 2025 hade ca 50 000 fler gästnätter än 2024 (+60 %), maj ca 40 000 fler (+16 %) och september ca 35 000 fler (+23 %). Länets besöksnäringsstrategi har målet att länet ska vara en året-runt-destination 2030.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gastnatter_camping_andel_lan",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Campingens andel av gästnätterna i Kalmar län",
+      "value": 60,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Inkvarteringsstatistiken 2025 (PM, s. 10 och figur 1.10)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtverket.se/download/18.61bf24f419e6366026b51a3d/1780038956367/inkvarteringsstatistik-2025.pdf"
+      },
+      "note_sv": "Högst andel camping av alla län (Halland 53 %, medan hotellen står för 91 % i Stockholms län). Campingen ökade med ca 20 000 gästnätter 2025 och står för ca 32 % av länets logiintäkter, hotellen för drygt hälften (Region Kalmar län). En campingtung besöksnäring är särskilt känslig för väder, stränder och vattenkvalitet.",
+      "confidence": "high"
+    },
+    {
+      "id": "korttidsuthyrning_gastnatter_lan",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Gästnätter via plattformar för korttidsuthyrning i Kalmar län",
+      "value": 425481,
+      "unit": "gästnätter/år",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik, kartlager 'Gästnätter STR Total' (experimentell statistik över korttidsuthyrning)",
+        "publisher": "Region Kalmar län (ursprungskälla: Eurostat, data från Airbnb, Booking, Expedia och Tripadvisor)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/Turismstatistik/FeatureServer/64/query?where=NUTS3_CopyFeatures_NUTS_3_NUTS_=%27SE213%27&outFields=*&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "Serien är 115 604 (2018), 164 752 (2019), 124 668 (2020), 188 916 (2021), 256 094 (2022), 322 537 (2023) och 425 481 (2024), alltså +268 % sedan 2018. Det motsvarar ca 13 % utöver länets kommersiella gästnätter 2024 (egen beräkning). Statistiken är experimentell och kan delvis överlappa SoL i inkvarteringsstatistiken.",
+      "confidence": "medium"
+    },
+    {
+      "id": "belaggningsgrad_kalmar_kommun",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Beläggningsgrad på kommersiella boenden i Kalmar kommun",
+      "value": 55.8,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik 2025, kartlager KOM_belaggningsgrad",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets inkvarteringsstatistik)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/KOM_belaggningsgrad/FeatureServer/101/query?where=KOM_omnejd_ID+IN+(%270880%27,%270885%27,%270840%27)&outFields=Blad1__Kommun,Blad1__Ar,Blad1__Bel%C3%A4ggningsgrad&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "Länets högsta 2025, före Oskarshamn (54 %); Borgholm hade 42 % och Mörbylånga 39,1 %. En hög beläggning tyder på jämnare efterfrågan över året (konferenser och affärsresor). Kalmars destinationsstrategi (2024) pekar ut kapacitetsbrist på hotell, konferenslokaler och arenor som en svaghet.",
+      "confidence": "high"
+    },
+    {
+      "id": "logiintakter_kalmar_kommun",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Logiintäkter på kommersiella boenden i Kalmar kommun",
+      "value": 264.0,
+      "unit": "MSEK/år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik 2025, kartlager KOM_LI (logiintäkter per kommun)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets inkvarteringsstatistik)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/KOM_LI/FeatureServer/99/query?where=KOM_LI__ID+IN+(%270880%27,%270885%27,%270840%27)&outFields=KOM_LI__KOM_NAMN,KOM_LI__F2024,KOM_LI__F2025&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "263 980 018 kr 2025 (262 911 689 kr 2024). Borgholm hade 278,9 MSEK och Mörbylånga 114,1 MSEK; länet 1 188,6 MSEK (Tillväxtverket). Per gästnatt blir det ca 584 kr i Kalmar men ca 258 kr i Borgholm (egen beräkning), vilket speglar hotell i staden och camping på Öland.",
+      "confidence": "high"
+    },
+    {
+      "id": "turismkonsumtion_kalmar_kommun",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Turismkonsumtion i Kalmar kommun (inkommande besökare)",
+      "value": 2748,
+      "unit": "MSEK/år (löpande priser)",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik, kartlager 'Turismkonsumtion kommun total' (2024–2025)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets turismräkenskaper)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/Turismstatistik/FeatureServer/59/query?where=angransandelanskommuner_ID+LIKE+%2708%25%27&outFields=angransandelanskommuner_KOM_NAM,LP2024,LP2025&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "Det besökare från andra orter spenderar i kommunen enligt Tillväxtverkets regionala turismräkenskaper: 2 539 MSEK 2024 och 2 748 MSEK 2025, eller 37 609 kr per invånare. Borgholm hade 2 463 MSEK (231 790 kr per invånare) och Mörbylånga 1 105 MSEK. I Kalmar är detaljhandeln den största produktgruppen, på Öland inkvarteringen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "turismkonsumtion_kalmar_lan",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Turismkonsumtion i Kalmar län (inkommande besökare)",
+      "value": 11,
+      "unit": "miljarder kr/år (löpande priser)",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik 2025 – 2. Turismekonomi (avsnittet Turismkonsumtion)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets turismräkenskaper)",
+        "url": "https://storymaps.arcgis.com/stories/3ef9fd1a282f44a9b6a643d6cf4f1bff"
+      },
+      "note_sv": "\"Ungefär 11 miljarder\" 2025; kommunernas värden summerar till 11 102 MSEK (10 600 MSEK 2024). Detaljhandeln står för 32 %, inkvarteringen för 30 %, fritidshus/lägenhet för 14 % och kultur för 3 %. Inkommande inhemsk turism översteg länsbornas egen turism i övriga Sverige med ca 1,6 miljarder kr.",
+      "confidence": "medium"
+    },
+    {
+      "id": "turism_foradlingsvarde_andel_kalmar_kommun",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Turismens andel av förädlingsvärdet i Kalmar kommun",
+      "value": 2.07,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik, kartlager 'Turismproduktion kommun' (2022, med förädlingsvärde 2023)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets turismräkenskaper)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/Turismstatistik/FeatureServer/61/query?where=T_Total_2022___L%C3%A4n=%27Kalmar%27&outFields=T_Total_2022___Kommun,T_Total_2022___F%C3%B6r%C3%A4dlingsv%C3%A4rde1,T_Total_2022___F%C3%B6r%C3%A4dlingsv%C3%A4rd_1,T_Total_2022___%C3%85rsarbetskrafter,FV2023&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "Egen beräkning: turismens förädlingsvärde 607 MSEK delat med kommunens totala förädlingsvärde 29 340 MSEK (löpande priser 2022). För hela länet blir andelen 2,3 % (2 118 av 92 273 MSEK). Turismens förädlingsvärde i Kalmar var 609 MSEK 2023.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "turism_foradlingsvarde_andel_borgholm",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Turismens andel av förädlingsvärdet i Borgholms kommun (Öland)",
+      "value": 11.39,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik, kartlager 'Turismproduktion kommun' (2022, med förädlingsvärde 2023)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets turismräkenskaper)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/Turismstatistik/FeatureServer/61/query?where=T_Total_2022___L%C3%A4n=%27Kalmar%27&outFields=T_Total_2022___Kommun,T_Total_2022___F%C3%B6r%C3%A4dlingsv%C3%A4rde1,T_Total_2022___F%C3%B6r%C3%A4dlingsv%C3%A4rd_1,T_Total_2022___%C3%85rsarbetskrafter,FV2023&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "Egen beräkning: 334 MSEK av kommunens 2 935 MSEK (löpande priser 2022), fem gånger Kalmars andel. Mörbylånga ligger på 4,5 % (178 av 3 997 MSEK). Borgholms turismförädlingsvärde steg till 442 MSEK 2023.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "turism_arsarbetskrafter_kalmar_kommun",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Årsarbetskrafter i turismproduktionen i Kalmar kommun",
+      "value": 1005,
+      "unit": "årsarbetskrafter",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar läns turismstatistik, kartlager 'Turismproduktion kommun' (2022)",
+        "publisher": "Region Kalmar län (ursprungskälla: Tillväxtverkets turismräkenskaper)",
+        "url": "https://services-eu1.arcgis.com/mcbvw8BrZ646aTUp/arcgis/rest/services/Turismstatistik/FeatureServer/61/query?where=T_Total_2022___L%C3%A4n=%27Kalmar%27&outFields=T_Total_2022___Kommun,T_Total_2022___F%C3%B6r%C3%A4dlingsv%C3%A4rde1,T_Total_2022___F%C3%B6r%C3%A4dlingsv%C3%A4rd_1,T_Total_2022___%C3%85rsarbetskrafter,FV2023&returnGeometry=false&f=pjson"
+      },
+      "note_sv": "1 004,87 årsarbetskrafter 2022 enligt turismräkenskaperna; Borgholm 275, Mörbylånga 193 och länet totalt 2 676 (egen summering). Det motsvarar ca 2,6 % av de 39 331 sysselsatta med arbetsställe i kommunen 2024, men årsarbetskrafter och personer är olika mått.",
+      "confidence": "medium"
+    },
+    {
+      "id": "besoksnaring_anstallda_lan",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Anställda i logi- och restaurangverksamhet i Kalmar län",
+      "value": 4584,
+      "unit": "anställda",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Dimensioneringsunderlag för besöksnäringen – Kalmar län (mars 2026), s. 8",
+        "publisher": "Visita (ursprungskälla: SCB:s omsättningsstatistik, LSUM och momsregistret)",
+        "url": "https://visita.se/app/uploads/2026/03/Dimensioneringsunderlag-Kalmar-lan.pdf"
+      },
+      "note_sv": "694 enheter (88 logi, 606 restaurang) med 4 584 anställda och 3 893 MSEK i inrikes omsättning exkl. moms 2024. Besöksnäringen gav 885 MSEK i skatteintäkter 2023 (294 MSEK arbetsgivaravgifter och 591 MSEK moms). Branschen bedömer att 1 661 personer behöver anställas de kommande tre åren.",
+      "confidence": "medium"
+    },
+    {
+      "id": "sommarbefolkning_borgholm_juli",
+      "sdg": [
+        6,
+        11
+      ],
+      "name_sv": "Personer på plats i Borgholms kommun nattetid i juli (Öland)",
+      "value": 52160,
+      "unit": "personer (genomsnitt för juli)",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Befolkning kommunvis midsommar och juli jämfört med oktober och november (2022), tabell till Kort analys 'Snart väntas sommarens stora folkförflyttning'",
+        "publisher": "SCB (ursprungskälla: Telia Crowd Insights, kalibrerad mot befolkningsstatistiken)",
+        "url": "https://www.scb.se/contentassets/0a2bcdf10d5d4d44a597d3656257ffa8/kort_analys_kommuntabell.xlsx"
+      },
+      "note_sv": "Mobildata kl. 03–05: 10 880 personer i oktober–november, 42 940 vid midsommar och 52 160 i juli 2022, alltså +379 %. Mörbylånga ökade från 15 970 till 27 610 (+73 %), medan Kalmar var oförändrat (+0,8 % i juli, −4,8 % vid midsommar). Uppgiften i medier om 250 000 personer i Borgholm på sommaren har inte kunnat beläggas.",
+      "confidence": "medium"
+    },
+    {
+      "id": "oland_befolkning_juli_faktor",
+      "sdg": [
+        6,
+        11
+      ],
+      "name_sv": "Ölands befolkning i juli jämfört med oktober–november (Öland)",
+      "value": 2.97,
+      "unit": "gånger",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Befolkning kommunvis midsommar och juli jämfört med oktober och november (2022), tabell till Kort analys 'Snart väntas sommarens stora folkförflyttning'",
+        "publisher": "SCB (ursprungskälla: Telia Crowd Insights, kalibrerad mot befolkningsstatistiken)",
+        "url": "https://www.scb.se/contentassets/0a2bcdf10d5d4d44a597d3656257ffa8/kort_analys_kommuntabell.xlsx"
+      },
+      "note_sv": "Egen beräkning ur SCB:s tabell: (52 160 + 27 610) / (10 880 + 15 970) = 79 770 / 26 850. Det betyder ca 52 900 fler personer på ön under julinätterna 2022. Värdet är ett månadsgenomsnitt; enskilda toppdagar ligger högre.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "fritidshus_per_1000_borgholm",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Fritidshus per 1 000 invånare i Borgholms kommun (Öland)",
+      "value": 863,
+      "unit": "fritidshus/1000 inv",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N07911: Fritidshus, antal/1000 inv",
+        "publisher": "RKA Kolada (ursprungskälla: SCB, fastighetstaxeringsregistret)",
+        "url": "https://api.kolada.se/v3/data/kpi/N07911/municipality/0880,0885,0840,0000/year/2025"
+      },
+      "note_sv": "Ca 9 200 fritidshus (egen omräkning med folkmängden). Mörbylånga har 255 per 1 000 (ca 4 150), Kalmar 31 (ca 2 300) och riket 60, så Öland har ca 13 300 fritidshus. Enligt Region Kalmar län har ca 10 % av länets fritidshus utländsk ägare; 2 268 ägs av tyskar, flest i Sverige.",
+      "confidence": "high"
+    },
+    {
+      "id": "vatten_borgholm_juli",
+      "sdg": [
+        6
+      ],
+      "name_sv": "Vattenförbrukning i Borgholms kommun i juli (Öland)",
+      "value": 260000,
+      "unit": "m³/månad",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Mer än dubbelt så mycket vatten går åt i Borgholm i juli – vattenverken hinner inte med (17 juli 2024)",
+        "publisher": "SVT Nyheter Småland (uppgifter från Borgholm Energi)",
+        "url": "https://www.svt.se/nyheter/lokalt/smaland/mer-an-dubbelt-sa-mycket-vatten-gar-at-i-borgholm-i-juli-vattenverken-hinner-inte-med"
+      },
+      "note_sv": "Ca 260 000 m³ i juli mot ca 110 000 m³ i januari, alltså 2,4 gånger mer. Med SCB:s mobildata blir merförbrukningen ca 120 liter per extra person och dygn (egen beräkning: 150 000 m³ på 31 dygn delat med 41 280 extra personer). Borgholm Energi producerar ca 1,8 miljoner m³ dricksvatten per år och har ett avsaltningsverk.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bilandel_turistresor_lan",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Bilens andel av inhemska turistresor till Kalmar län",
+      "value": 91.5,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Transportsystemet för turism – kunskapssammanställning och framåtblick",
+        "publisher": "Ramboll på uppdrag av Tillväxtverket och Myndighetsgruppen för turism och besöksnäring (ursprungskälla: Tillväxtverket och SCB)",
+        "url": "https://orta.regionorebrolan.se/contentassets/36ec90f4d52a47148f6241391e73b2d7/transportsystemet-for-turism---kunskapssammanstallning-och-framatblick.pdf"
+      },
+      "note_sv": "Rapporten anger att bilandelen är högst i Jönköpings, Kalmar och Dalarnas län (91–92 %) och lägst i Stockholm (43 %), med data för 2017–2021; 91,5 är mittvärdet. Bilens andel av inhemska turistresor i landet ökade med 14 procentenheter under pandemiåren. Ölandsbron är öns enda fasta förbindelse.",
+      "confidence": "medium",
+      "range": [
+        91,
+        92
+      ]
+    },
+    {
+      "id": "kalmar_lans_museum_besok",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Besök på Kalmar läns museum",
+      "value": 91929,
+      "unit": "besök/år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Museibesöken 2025 från Sveriges museer (januari 2026)",
+        "publisher": "Sveriges Museer",
+        "url": "https://sverigesmuseer.se/wp-content/uploads/2026/01/museibesoken-2025-fran-sveriges-museer.pdf"
+      },
+      "note_sv": "86 978 besök 2024 (+5,7 %). Kalmar konstmuseum hade 26 650 besök 2025 (22 144 år 2024, inklusive Designarkivet i Nybro) och Ölands museum Himmelsberga 29 171. Kalmar slott har ca 190 000 besökare per år (se kalmar_slott_besokare).",
+      "confidence": "high"
+    },
+    {
+      "id": "ironman_kalmar_omsattning",
+      "sdg": [
+        3,
+        8
+      ],
+      "name_sv": "Turistekonomisk omsättning kring Ironman Kalmar",
+      "value": 80,
+      "unit": "MSEK per år",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Ironman Kalmar 2027 är utsålt! (pressmeddelande 21 augusti 2026)",
+        "publisher": "Destination Kalmar",
+        "url": "https://www.mynewsdesk.com/se/destinationkalmar/pressreleases/ironman-kalmar-2027-aer-utsaalt-3461843"
+      },
+      "note_sv": "Destination Kalmars uppskattning med verktyget Event Impact Calculator. Över 3 000 triathleter har anmält sig till loppet 2027 (utsålt på en timme); varje deltagare bor i snitt fyra nätter och har fyra medföljare, och 2025 var hälften av de 2 850 deltagarna utländska. Det ger i storleksordningen 60 000 personnätter under en vecka i augusti (egen överslagsberäkning).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "skordefest_besokare_oland",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Besökare på Ölands skördefest (Öland)",
+      "value": 220000,
+      "unit": "besökare (förväntat)",
+      "year": 2018,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Skördefesten på Öland lockar runt 220 000 besökare (29 september 2018)",
+        "publisher": "SVT Nyheter Småland (uppgift från arrangören Ölands skördefest)",
+        "url": "https://www.svt.se/nyheter/lokalt/smaland/skordefesten-pa-oland-lockar-runt-220-000-besokare"
+      },
+      "note_sv": "Förväntat antal besökare 2018, med över 900 aktiviteter över hela ön. Festen hålls sista helgen i september och förlänger alltså säsongen. Ingen senare officiell siffra har hittats.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "kryssningsanlop_kalmar",
+      "sdg": [
+        8,
+        14
+      ],
+      "name_sv": "Anlöp av kryssningsfartyg i Kalmar",
+      "value": 2,
+      "unit": "anlöp/år",
+      "year": 2019,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmar: Two Port Calls Scheduled in 2019 (27 juli 2019)",
+        "publisher": "Cruise Industry News",
+        "url": "https://cruiseindustrynews.com/cruise-news/2019/07/kalmar-two-port-calls-scheduled-in-2019/"
+      },
+      "note_sv": "Två anlöp (Ocean Nova och Ocean Majesty) med ca 700 gäster väntades 2019, mot ett anlöp 2018. Kryssningsturismen är därmed försumbar jämfört med 452 000 kommersiella gästnätter. Kalmar Hamn redovisar ingen kryssningsstatistik.",
+      "confidence": "medium"
+    },
+    {
+      "id": "badvatten_eu_utmarkt_antal",
+      "sdg": [
+        3,
+        6,
+        14
+      ],
+      "name_sv": "EU-badvatten med utmärkt kvalitet (Kalmar kommun och Öland)",
+      "value": 23,
+      "unit": "av 27 EU-badvatten",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Badplatsen – öppet API för badvatten (bathing-waters v2: badvattenprofiler, klassificeringar och provresultat per badplats)",
+        "publisher": "Havs- och vattenmyndigheten",
+        "url": "https://gw.havochvatten.se/external-public/bathing-waters/v2/bathing-waters"
+      },
+      "note_sv": "Klassning 2025 enligt badvattendirektivet (E. coli och enterokocker under fyra säsonger): Kalmars 4 och Mörbylångas 6 är utmärkta, medan Borgholm har 13 utmärkta, 2 bra och 2 tillfredsställande (Böda Riviera/Kyrketorp och Byrum-Sandvik). Böda Riviera klassades som dålig 2024. Algblomning ingår inte i klassningen.",
+      "confidence": "high"
+    },
+    {
+      "id": "badplatser_cyanorisk_oland_antal",
+      "sdg": [
+        3,
+        14
+      ],
+      "name_sv": "Badplatser på Öland med risk för cyanobakterieblomning enligt badvattenprofilen (Öland)",
+      "value": 22,
+      "unit": "av 31 badplatser",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Badplatsen – öppet API för badvatten (bathing-waters v2: badvattenprofiler, klassificeringar och provresultat per badplats)",
+        "publisher": "Havs- och vattenmyndigheten",
+        "url": "https://gw.havochvatten.se/external-public/bathing-waters/v2/bathing-waters"
+      },
+      "note_sv": "Borgholm 10 av 17 och Mörbylånga 12 av 14 badplatser har markerad blomningsrisk; ingen av Kalmar kommuns 26 badplatser har det. Den officiella badsäsongen 2026 var bara 21 juni–15 augusti.",
+      "confidence": "high"
+    },
+    {
+      "id": "badvattenprover_algblomning_antal",
+      "sdg": [
+        3,
+        14
+      ],
+      "name_sv": "Badvattenprover med observerad algblomning (Kalmar kommun och Öland)",
+      "value": 11,
+      "unit": "av 986 prover 2022–2026",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Badplatsen – öppet API för badvatten (bathing-waters v2: badvattenprofiler, klassificeringar och provresultat per badplats)",
+        "publisher": "Havs- och vattenmyndigheten",
+        "url": "https://gw.havochvatten.se/external-public/bathing-waters/v2/bathing-waters"
+      },
+      "note_sv": "Egen räkning i provresultaten (/{id}/results) för 57 badplatser: 1, 1, 2, 4 och 3 prover med blomning åren 2022–2026, varav 10 av 11 på Öland. Prov tas bara 3–4 gånger per säsong och fram till mitten av augusti, så kortvariga blomningar fångas dåligt. 9 prover var otjänliga på grund av bakterier.",
+      "confidence": "medium"
+    },
+    {
+      "id": "oland_algblomning_turismforlust_2005",
+      "sdg": [
+        8,
+        14
+      ],
+      "name_sv": "Turismens förlust under algblomningssommaren 2005 (Öland)",
+      "value": 20,
+      "unit": "miljoner euro",
+      "year": 2005,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Minimizing Economical Losses with the Help of \"Real-Time\" Algal Surveillance (Granéli m.fl., Linnaeus ECO-TECH '12)",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://conferences.lnu.se/index.php/eco-tech/article/view/490"
+      },
+      "note_sv": "Författarna anger förluster på 17–23 miljoner euro för Ölands turistnäring sommaren 2005; metoden redovisas inte i sammanfattningen. Sommaren efter, med daglig algövervakning (\"Miss Algae\"), vände det till en vinst på 17 miljoner euro. Värdet 20 är mittpunkten.",
+      "confidence": "estimate",
+      "range": [
+        17,
+        23
+      ]
+    },
+    {
+      "id": "jrc_turismefterfragan_se21_sommar",
+      "sdg": [
+        8,
+        13
+      ],
+      "name_sv": "Ökad turistefterfrågan sommar och tidig höst i Småland med öarna vid 3–4 °C global uppvärmning",
+      "value": 5,
+      "unit": "% (minst)",
+      "year": 2023,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Regional impact of climate change on European tourism demand (JRC131508, Matei m.fl. 2023), s. 20–23",
+        "publisher": "Europeiska kommissionen, Joint Research Centre",
+        "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC131508/JRC131508_01.pdf"
+      },
+      "note_sv": "Panelmodell för 269 EU-regioner 2000–2019: 1 % bättre klimatkomfort (Tourism Climate Index) ger 0,57 % fler gästnätter, 1,2 % i kustregioner. Kustregionen SE21 (där Kalmar län ingår) väntas få mer än +5 % efterfrågan under sommar och tidig höst vid 3–4 °C, medan EU som helhet ökar 1,58 % vid 4 °C och juli minskar med 5,7 % i Europa.",
+      "confidence": "medium"
+    },
+    {
+      "id": "varldsarv_betesmark_havsniva_25m",
+      "sdg": [
+        11,
+        13,
+        15
+      ],
+      "name_sv": "Betade alvar och sjömarker i världsarvet som berörs vid 2,5 m havsnivåhöjning (Öland)",
+      "value": 3000,
+      "unit": "ha (av 28 000 ha)",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatförändringar och världsarv – Södra Ölands odlingslandskap i ett förändrat klimat (Meddelande 2021:04), tabell s. 21",
+        "publisher": "Länsstyrelsen i Kalmar län",
+        "url": "https://sodraoland.com/wp-content/uploads/2021/04/Klimatforandringar_och_varldsarv_202104_TGA-1.pdf"
+      },
+      "note_sv": "GIS-analys: 900 ha berörs vid +1 m och 3 000 ha vid +2,5 m, och 13 000 ha ligger i områden som kan översvämmas vid kraftiga högflöden. Av världsarvets 18 hamnar och sjöbodplaner berörs 7 vid +1 m och alla vid +2,5 m. Världsarvet omfattar drygt 56 000 ha (Riksantikvarieämbetet) och kräver fortsatt bete och lantbruk.",
+      "confidence": "medium"
+    },
+    {
+      "id": "invanare_turism_trafikproblem_andel",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Invånare som anser att turismen ger ökade trafikproblem i hemkommunen",
+      "value": 47,
+      "unit": "% instämmer",
+      "year": 2023,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Invånarnas syn på turism 2023 (enkät maj 2023, s. 6–7)",
+        "publisher": "Region Kalmar län (undersökning av Indikator)",
+        "url": "https://utveckling.regionkalmar.se/globalassets/utvecklingsomraden/besoksnaring/omvarldsbevakning-och-statistik/rapport-kalmar-lan-turism-2023_redigera.pdf"
+      },
+      "note_sv": "Enkät till invånare i länet med 1 864 svar (svarsfrekvens 23 %). Samtidigt instämde 85 % i att turismen ger bättre ekonomi och 80 % var positiva till turismens utveckling, medan 40 % ansåg att ökad turism skadar naturområden och 9 % att turister påverkar deras vardag negativt.",
+      "confidence": "medium"
+    },
+    {
+      "id": "utslapp_per_gastnatt",
+      "sdg": [
+        12,
+        13
+      ],
+      "name_sv": "Klimatpåverkan per turistgästnatt (Västsverige)",
+      "value": 39,
+      "unit": "kg CO2e/gästnatt",
+      "year": 2015,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Turistens klimatpåverkan – modell och beräkning för Västsverige (Brunklaus m.fl. 2015)",
+        "publisher": "Chalmers tekniska högskola",
+        "url": "https://research.chalmers.se/publication/226288"
+      },
+      "note_sv": "Livscykelberäkning för turismen i Västsverige: 110 kg CO2e per turist och 39 kg per gästnatt, varav resan till och från resmålet 54 % och logi 23 %. Med samma faktor ger Kalmar kommuns 452 248 gästnätter ca 17 600 ton per år och Ölands ca 56 000 ton (egen överslagsberäkning). Med 91–92 % bilresor är transportdelen i Kalmar län sannolikt minst lika stor.",
+      "confidence": "medium"
+    }
+  ]
+}

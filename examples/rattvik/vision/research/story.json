@@ -1,0 +1,79 @@
+{
+ "kommun": {
+  "name": "Rättviks kommun",
+  "notes_sv": "Rättviks kommun (kommunkod 2031) i Dalarnas län har 10 978 invånare (2025), varav 5 369 i tätorten vid Siljan, och 2 181 km² yta, nästan nio tiondelar skog. Försörjningskvoten är 1,09, bland landets högsta. Kommunfullmäktige har 39 mandat; efter valet 13 september 2026 (slutligt resultat): S 13, C 8, M 8, SD 7, KD 2, V 1. C, M och KD har styrt sedan 2010 men förlorade majoriteten; i oktober 2026 förhandlas styret. Datakällor: främst Kolada (RKA), SCB, SMHI, Region Dalarna, Länsstyrelsen Dalarna, Jordbruksverket, Valmyndigheten och Rättviks kommuns årsredovisning 2025 och mål och budget 2026–2028."
+ },
+ "kommun_vision": [
+  {"title_sv": "Vision 2030 – Rättvik, där tradition möter framtid", "owner": "Rättviks kommun", "horizon": 2030,
+   "text_sv": "Rättvik ska vara en tillväxtkommun som tar ansvar för kommande generationer – ekologiskt, socialt och ekonomiskt hållbar, med attraktiva boendemiljöer i hela kommunen, ett småskaligt näringsliv och ett tryggt, inkluderande samhälle. Kommunen kallar sin hållning Rättviksmodellen: integration, bevarade byar och byskolor, förnybar energi, lokalproducerad mat och ett öppet landskap. Agenda 2030-arbetet började 2016, när UNDP besökte Rättvik som första kommun i landet, och har i dag 94 lokala ambitioner.",
+   "sources": [{"title": "Vision 2030", "url": "https://ess-app.rattvik.se/api/download/8c763461-b53b-4dd9-985c-8960cdc9b7f8/7598df97-dac7-4e3b-a326-a3a072f5ab56"},
+    {"title": "Mål och budget 2026–2028", "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"}]}
+ ],
+ "challenges": [
+  {"id": "aldrande_befolkning", "title_sv": "En åldrande befolkning", "sdg": [3, 8, 10],
+   "text_sv": "Försörjningskvoten är 1,09, bland landets högsta (riket 0,77), och antalet 85–89-åringar väntas öka med 74 % till 2034. Dödsfallen är dubbelt så många som födslarna, så Rättvik behöver ett hundratal fler som flyttar in än ut varje år för att inte krympa; 2022–2025 var det mellan 16 och 67.",
+   "sources": [{"title": "Rättviks kommun, Årsredovisning 2025", "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"}]},
+  {"id": "kompetens", "title_sv": "Vem ska arbeta i skolan och omsorgen?", "sdg": [4, 8],
+   "text_sv": "Medelåldern bland kommunens 1 056 tillsvidareanställda är 47 år, och stora pensionsavgångar väntar bland lärare, förskollärare och undersköterskor. Samtidigt tror 63 % av de unga att de kommer att flytta från kommunen.",
+   "sources": [{"title": "Rättviks kommun, Mål och budget 2026–2028", "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"}]},
+  {"id": "skolresultat", "title_sv": "Skolresultaten och byskolorna", "sdg": [4],
+   "text_sv": "Andelen niondeklassare med godkänt i alla ämnen föll till 66,3 %, medan gymnasieexamen inom tre år steg till 88 %. Barnen blir färre och förskoleavdelningar stängs – och byskolorna är en del av Rättviksmodellen.",
+   "sources": [{"title": "Rättviks kommun, Årsredovisning 2025", "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"}]},
+  {"id": "va_natet", "title_sv": "Gamla vatten- och avloppsledningar", "sdg": [6, 9],
+   "text_sv": "Omkring 600 km ledningar, de flesta byggda 1955–1979, ska förnyas med lånade pengar. Taxorna höjdes med 20 % 2025 och 5 % 2026, och koncernens låneskuld är 113 000 kr per invånare, mest för vatten och avlopp.",
+   "sources": [{"title": "Rättviks kommun, Årsredovisning 2025", "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"}]},
+  {"id": "skyfall_hogvatten", "title_sv": "Skyfall och Siljans högvatten", "sdg": [11, 13],
+   "text_sv": "Stormen Hans i augusti 2023 skadade omkring 150 hus i kommunen och förstörde 25 km väg. Siljans hundraårsnivå når redan stranden och nästan halva campingen, och högvattnet väntas stiga något i ett varmare klimat med blötare vintrar.",
+   "sources": [{"title": "Rättviks kommun, Vattentjänstplan 2024", "url": "https://www.rattvik.se/"}, {"title": "SMHI, Siljans vattenstånd", "url": "https://www.smhi.se/"}]},
+  {"id": "vard_i_byarna", "title_sv": "Vården nära – också i byarna", "sdg": [3],
+   "text_sv": "Region Dalarnas vårdbuss till Furudal, Bingsjö och Boda, beslutad 2023, har ännu inte kommit. På länets vårdcentraler gör hyrläkare 18 % av läkararbetet, och varje allmänläkare har i snitt 1 775 listade.",
+   "sources": [{"title": "Siljan News 3 september 2026", "url": "https://www.siljannews.se/rattvik/efter-tre-ars-vantan-nu-tar-varden-ny-vag-i-furudal/"}]},
+  {"id": "ekonomi", "title_sv": "En ekonomi i balans", "sdg": [8, 16],
+   "text_sv": "Utan engångsvinsten från Dala Energi-aktierna blev resultatet 2025 bara 1,7 %, under målet 2 %, och socialtjänsten gick över budget. Kommunens egna investeringar är små: 42 miljoner kronor 2026.",
+   "sources": [{"title": "Rättviks kommun, Årsredovisning 2025", "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"}]}
+ ],
+ "assets": [
+  {"id": "fabodarna", "title_sv": "Fäbodarna och det öppna landskapet", "sdg": [2, 15],
+   "text_sv": "Rättvik har 608 hektar fäbodbete, två tredjedelar av kommunens betesmark, och fäbodbruket är sedan 2024 Unescos immateriella kulturarv. 437 mjölkkor på fem gårdar täcker fortfarande all lokal mjölk.",
+   "sources": [{"title": "Jordbruksverket, statistikdatabasen", "url": "https://statistik.sjv.se/"}]},
+  {"id": "besoksnaringen", "title_sv": "Besöksnäringen", "sdg": [8, 12],
+   "text_sv": "Besöksnäringen är kommunens största privata näring: Siljan, Långbryggan, Dalhalla, Classic Car Week och Vidablick. På Classic Car Weeks lördag är tre gånger så många människor i Rättvik som vanligt.",
+   "sources": [{"title": "Rättviks kommun, Mål och budget 2026–2028", "url": "https://ess-app.rattvik.se/api/download/9c6ec099-9e31-4b9a-b4fc-132d4c52195a/3312201d-a8aa-4fcc-b71e-0a6097d18696"}]},
+  {"id": "naturbruket", "title_sv": "Naturbruket på Stiernhööksgymnasiet", "sdg": [2, 4],
+   "text_sv": "Gymnasiets naturbruksprogram har eget skoljordbruk och ett nyköpt mejeri, och 42 sökte i första hand till 24 platser. Skolmaten får kött, potatis och spannmål från gården.",
+   "sources": [{"title": "Rättviks kommun, Årsredovisning 2025", "url": "https://ess-app.rattvik.se/api/download/918ef6a6-3f83-48da-b06c-68eb8b77e9ac/b96a9b6b-0142-43a4-931c-7f44d02749bf"}]},
+  {"id": "foreningslivet", "title_sv": "Föreningslivet och folkmusiken", "sdg": [3, 11, 16],
+   "text_sv": "93 föreningar, varav 24 bygdegårdsföreningar, och nästan dubbelt så många idrottsföreningar per invånare som i riket. ”Om tre rättvikare träffas spelar fyra fiol.”",
+   "sources": [{"title": "Rättviks kommun, kulturarv", "url": "https://www.rattvik.se/uppleva-och-gora/kultur/kulturarv.html"}]},
+  {"id": "egen_energi", "title_sv": "Egen el och förnybar värme", "sdg": [7],
+   "text_sv": "Kommunen producerade 105 GWh el 2024, tre fjärdedelar av sin användning, mest från vindkraft, och fjärrvärmen är 99 % förnybar. Kommunen äger del i elnätet och fjärrvärmen.",
+   "sources": [{"title": "Kolada N45926, N45904 och N45930", "url": "https://api.kolada.se/v3/data/kpi/N45926/municipality/2031"}]},
+  {"id": "tillit", "title_sv": "Trygghet och tillit", "sdg": [1, 16],
+   "text_sv": "Bara 11 % känner sig otrygga ute på kvällen och 73 % litar på andra, och barnfattigdomen är 9,4 % mot 12,9 % i riket. Färre är ensamma än i Dalarna och i landet.",
+   "sources": [{"title": "Kolada N07609 och U01413", "url": "https://api.kolada.se/v3/data/kpi/N07609/municipality/2031"}]},
+  {"id": "siljan", "title_sv": "Siljan", "sdg": [6, 14],
+   "text_sv": "Klart vatten utan algblomning i 26 badvattenprov 2023–2026. Isen ligger i dag kvar omkring 74 dagar om året, mot 129 dagar på 1800-talet.",
+   "sources": [{"title": "Havs- och vattenmyndigheten, badplatsen Siljansbadet", "url": "https://www.havochvatten.se/badplatser-och-badvatten.html"}]}
+ ],
+ "en": {
+  "challenges": {
+   "aldrande_befolkning": {"title": "An ageing population", "text": "The dependency ratio is 1.09, among the highest in Sweden (country 0.77), and the number of 85–89-year-olds is expected to rise by 74% by 2034. Deaths are twice the births, so Rättvik needs about a hundred more people moving in than out each year not to shrink; in 2022–2025 it was between 16 and 67."},
+   "kompetens": {"title": "Who will work in the schools and in care?", "text": "The average age of the municipality's 1,056 permanent staff is 47, and many teachers, preschool teachers and assistant nurses will retire. Meanwhile 63% of young people think they will move away."},
+   "skolresultat": {"title": "School results and the village schools", "text": "The share of year-9 pupils passing all subjects fell to 66.3%, while upper-secondary graduation within three years rose to 88%. There are fewer children and preschool groups are closing – and the village schools are part of the Rättvik model."},
+   "va_natet": {"title": "Old water and sewer pipes", "text": "About 600 km of pipes, most built in 1955–1979, are to be renewed with borrowed money. Charges rose 20% in 2025 and 5% in 2026, and the group's debt is 113,000 kronor per inhabitant, mostly for water and sewerage."},
+   "skyfall_hogvatten": {"title": "Cloudbursts and Lake Siljan's high water", "text": "Storm Hans in August 2023 damaged some 150 houses in the municipality and destroyed 25 km of road. Siljan's 100-year level already reaches the beach and almost half the campsite, and the high water is expected to rise a little in a warmer climate with wetter winters."},
+   "vard_i_byarna": {"title": "Care close by – in the villages too", "text": "Region Dalarna's healthcare bus to Furudal, Bingsjö and Boda, decided in 2023, has still not come. Agency doctors do 18% of the GP work at the county's health centres, and each GP has 1,775 listed patients on average."},
+   "ekonomi": {"title": "A balanced budget", "text": "Without the one-off gain from the Dala Energi shares, the 2025 result was only 1.7%, below the 2% goal, and social services went over budget. The municipality's own investments are small: 42 million kronor in 2026."}
+  },
+  "assets": {
+   "fabodarna": {"title": "The summer farms and the open landscape", "text": "Rättvik has 608 hectares of summer-farm pasture, two thirds of its pasture, and the summer-farm tradition has been on UNESCO's intangible heritage list since 2024. 437 dairy cows on five farms still cover all local milk."},
+   "besoksnaringen": {"title": "Tourism", "text": "Tourism is the municipality's largest private industry: Lake Siljan, Långbryggan, Dalhalla, Classic Car Week and Vidablick. On the Saturday of Classic Car Week three times as many people are in Rättvik as usual."},
+   "naturbruket": {"title": "Natural resource studies at Stiernhööksgymnasiet", "text": "The upper-secondary school's natural resource programme has its own school farm and a newly bought dairy, and 42 applied for 24 places as their first choice. School meals get meat, potatoes and grain from the farm."},
+   "foreningslivet": {"title": "Associations and folk music", "text": "93 associations, 24 of them village-hall associations, and almost twice as many sports clubs per inhabitant as the country. “When three Rättvik people meet, four fiddles play.”"},
+   "egen_energi": {"title": "Own electricity and renewable heat", "text": "The municipality produced 105 GWh of electricity in 2024, three quarters of its use, mostly from wind, and district heating is 99% renewable. The municipality co-owns the grid and the district heating."},
+   "tillit": {"title": "Safety and trust", "text": "Only 11% feel unsafe out in the evening and 73% trust other people, and child poverty is 9.4% against 12.9% in Sweden. Fewer are lonely than in Dalarna and the country."},
+   "siljan": {"title": "Lake Siljan", "text": "Clear water with no algal blooms in 26 bathing-water samples in 2023–2026. The ice now stays about 74 days a year, against 129 days in the 1800s."}
+  },
+  "kommun_vision": [{"title": "Vision 2030 – Rättvik, where tradition meets the future", "text": "Rättvik is to be a growing municipality that takes responsibility for future generations – ecologically, socially and economically sustainable, with attractive places to live across the municipality, small-scale business and a safe, inclusive society. The municipality calls its approach the Rättvik model: integration, keeping the villages and village schools, renewable energy, locally produced food and an open landscape. Its Agenda 2030 work began in 2016, when UNDP visited Rättvik as the first municipality in Sweden, and today has 94 local ambitions."}]
+ }
+}

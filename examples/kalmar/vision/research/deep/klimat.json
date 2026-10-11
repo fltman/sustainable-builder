@@ -1,0 +1,994 @@
+{
+  "topic": "klimat",
+  "compiled": "2026-10-08",
+  "indicators": [
+    {
+      "id": "arsmedeltemperatur_kalmar_normal_1991_2020",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Årsmedeltemperatur i Kalmar, normalperioden 1991–2020",
+      "value": 7.9,
+      "unit": "°C",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dataserier med normalvärden för perioden 1991–2020: normal månadstemperatur (Normal-temp-1991-2020.xlsx), station Kalmar flygplats 66420",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8313e96/1741337300232/Normal-temp-1991-2020.xlsx"
+      },
+      "note_sv": "Kalmar flygplats 7,88 °C (juli 17,5 °C, januari −0,2 °C). Normalen 1961–1990 var 6,78 °C, så Kalmar har redan blivit ca 1,1 °C varmare mellan normalperioderna.",
+      "confidence": "high"
+    },
+    {
+      "id": "arsmedeltemperatur_kalmar_normal_1961_1990",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Årsmedeltemperatur i Kalmar, normalperioden 1961–1990",
+      "value": 6.8,
+      "unit": "°C",
+      "year": 1990,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dataserier med normalvärden för perioden 1961–1990: normal månadstemperatur (Normal-temp-1961-1990.xlsx), station Kalmar flygplats 66420",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8316288/1741350949017/Normal-temp-1961-1990.xlsx"
+      },
+      "note_sv": "6,78 °C vid Kalmar flygplats. Referensnivå för SMHI:s äldre länsanalys (Klimatologi 26, som angav 6,4 °C för hela länet).",
+      "confidence": "high"
+    },
+    {
+      "id": "arsmedeltemperatur_kalmar_2016_2025",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Årsmedeltemperatur i Kalmar, medel 2016–2025",
+      "value": 8.7,
+      "unit": "°C",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Meteorologiska observationer: lufttemperatur, månadsmedel, Kalmar flygplats 66420 (öppna data)",
+        "publisher": "SMHI",
+        "url": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/22/station/66420/period/corrected-archive/data.csv"
+      },
+      "note_sv": "Egen beräkning: medel av tio kompletta år ur SMHI:s månadsdata (8,71 °C), ca 1,9 °C över normalen 1961–1990. 2020 är varmaste året i Kalmars mätserier (9,6 °C; tidigare rekord 8,85 °C år 1934 vid den gamla stationen 66430), följt av 2025 och 2019 (9,0 °C).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "hogsommardagar_kalmar_observerat_1997_2025",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Högsommardagar (max > 25 °C) i Kalmar, medel 1997–2025",
+      "value": 14.8,
+      "unit": "dygn/år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Meteorologiska observationer: lufttemperatur max 1 gång/dygn, Kalmar flygplats 66420 (öppna data)",
+        "publisher": "SMHI",
+        "url": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/20/station/66420/period/corrected-archive/data.csv"
+      },
+      "note_sv": "Egen räkning av dygn med maxtemperatur över 25 °C (29 kompletta år). 2016–2025 i medel 19,0 dygn; rekordet är 2018 med 43 dygn, och 2026 hade 25 dygn t.o.m. 7 oktober. Kuststationen har färre högsommardagar än länet i snitt (inlandet är varmare på sommaren).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "varmeepisoder_26c_kalmar_1997_2025",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Dygn per år i värmeepisoder (minst 3 dygn i rad med max ≥ 26 °C) i Kalmar, 1997–2025",
+      "value": 6.5,
+      "unit": "dygn/år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Meteorologiska observationer: lufttemperatur max 1 gång/dygn, Kalmar flygplats 66420 (öppna data)",
+        "publisher": "SMHI",
+        "url": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/20/station/66420/period/corrected-archive/data.csv"
+      },
+      "note_sv": "Egen räkning med samma tröskel som SMHI:s meddelande om höga temperaturer och Folkhälsomyndighetens dödlighetssamband (26 °C tre dygn i rad). I snitt 1,3 episoder per år; 21 av 29 år hade minst en. 2018 låg 31 dygn i sådana episoder.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "vegetationsperiod_kalmar_normal_1991_2020",
+      "sdg": [
+        2,
+        13
+      ],
+      "name_sv": "Vegetationsperiodens längd i Kalmar, normalperioden 1991–2020",
+      "value": 214,
+      "unit": "dygn",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dataserier med normalvärden för perioden 1991–2020: vegetationsperioden (Vegetationsperioden-1991-2020.xlsx), Kalmar flygplats 66420",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8313e98/1741339913554/Vegetationsperioden-1991-2020.xlsx"
+      },
+      "note_sv": "Dygnsmedel över 5 °C. Normalen 1961–1990 var 203 dygn (samma station), så säsongen har vuxit 11 dygn och börjar nu i snitt ca 10 april i stället för ca 18 april.",
+      "confidence": "high"
+    },
+    {
+      "id": "arsnederbord_kalmar_normal_1991_2020",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Årsnederbörd i Kalmar, normalperioden 1991–2020",
+      "value": 522,
+      "unit": "mm",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dataserier med normalvärden för perioden 1991–2020: normal månadsnederbörd (Normal-nbd-1991-2020.xlsx), station Kalmar D 66430",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8313e9b/1741340061788/Normal-nbd-1991-2020.xlsx"
+      },
+      "note_sv": "521,9 mm. 1961–1990 var normalen 490 mm (samma station), alltså ca 6 % mer nederbörd. Juli är blötast (63 mm), mars–april torrast (26 mm).",
+      "confidence": "high"
+    },
+    {
+      "id": "storsta_dygnsnederbord_kalmar_normal_1991_2020",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Årets största dygnsnederbörd i Kalmar, medel 1991–2020",
+      "value": 34.0,
+      "unit": "mm",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dataserier med normalvärden för perioden 1991–2020: största dygnsnederbörd (Max-dygnsnbd-1991-2020.xlsx), station Kalmar D 66430",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8313e9c/1741340103548/Max-dygnsnbd-1991-2020.xlsx"
+      },
+      "note_sv": "Medelvärdet av varje års största dygnsnederbörd. 1961–1990 var det 28,4 mm (samma station), en ökning med ca 20 %. Juli har störst dygnsregn (22,5 mm).",
+      "confidence": "high"
+    },
+    {
+      "id": "skyfall_1h_100ar_region_sydost",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Skyfall: 100-årsregn under 1 timme i region Sydöstra Sverige (dagens klimat)",
+      "value": 38.3,
+      "unit": "mm",
+      "year": 2017,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatologi 47: Sammanfattning till extremregn i nuvarande och framtida klimat, tabell 1",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8329c86/1717801000638/klimatologi_47%20Sammanfattning%20till%20extremregn%20i%20nuvarande%20och%20framtida%20klimat.pdf"
+      },
+      "note_sv": "38,3 ± 6,7 mm på en timme; 10-årsregnet är 22,6 ± 1,3 mm. Bygger på SMHI:s automatstationer sedan 1996. Kalmar län ligger i region SÖ enligt rapportens karta.",
+      "confidence": "high",
+      "range": [
+        31.6,
+        45.0
+      ]
+    },
+    {
+      "id": "temperaturokning_lan_rcp85",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 4.6,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – medeltemperatur (RCP8.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Uppdaterad: tidigare 5 °C jämfört med 1961–1990 (Klimatologi 26, 2015), nu 4,6 °C jämfört med 1971–2000 enligt SMHI:s klimatscenariotjänst (61 modellkörningar). Vintern värms mest (+5,4 °C), sommaren +4,5 °C. Jämfört med 1971–2000 (då länets årsmedel var 6,7 °C enligt observationer). Intervallet är min–max för 17 modeller i SMHI:s hydrologiska ensemble för Kalmar läns kustområde (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp85/graphs/ctmpAnom_unregulated_rcp85_ANN_292.json). SMHI har inte publicerat SSP-baserade länsvärden; RCP8.5 används som närmaste motsvarighet till SSP5-8.5.",
+      "confidence": "high",
+      "range": [
+        3.2,
+        5.7
+      ]
+    },
+    {
+      "id": "temperaturokning_lan_2071_2100_rcp45",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län 2071–2100 (RCP4.5 ≈ SSP2-4.5)",
+      "value": 2.8,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – medeltemperatur (RCP4.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp45/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Jämfört med 1971–2000 (då länets årsmedel var 6,7 °C enligt observationer). Intervallet är min–max för 17 modeller i SMHI:s hydrologiska ensemble för Kalmar läns kustområde (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp45/graphs/ctmpAnom_unregulated_rcp45_ANN_292.json). SMHI har inte publicerat SSP-baserade länsvärden; RCP4.5 används som närmaste motsvarighet till SSP2-4.5.",
+      "confidence": "high",
+      "range": [
+        1.6,
+        3.6
+      ]
+    },
+    {
+      "id": "temperaturokning_lan_2071_2100_rcp26",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län 2071–2100 (RCP2.6 ≈ SSP1-2.6)",
+      "value": 1.7,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – medeltemperatur (RCP2.6), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp26/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Jämfört med 1971–2000 (då länets årsmedel var 6,7 °C enligt observationer). Intervallet är min–max för 17 modeller i SMHI:s hydrologiska ensemble för Kalmar läns kustområde (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp26/graphs/ctmpAnom_unregulated_rcp26_ANN_292.json). SMHI har inte publicerat SSP-baserade länsvärden; RCP2.6 används som närmaste motsvarighet till SSP1-2.6.",
+      "confidence": "high",
+      "range": [
+        1.0,
+        2.6
+      ]
+    },
+    {
+      "id": "temperaturokning_lan_2041_2070_rcp85",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län 2041–2070 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 2.8,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – medeltemperatur (RCP8.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp85/textdata/kalmar_lan_ANN_2041_2070.json"
+      },
+      "note_sv": "Jämfört med 1971–2000 (då länets årsmedel var 6,7 °C enligt observationer). Intervallet är min–max för 17 modeller i SMHI:s hydrologiska ensemble för Kalmar läns kustområde (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp85/graphs/ctmpAnom_unregulated_rcp85_ANN_292.json). SMHI har inte publicerat SSP-baserade länsvärden; RCP8.5 används som närmaste motsvarighet till SSP5-8.5.",
+      "confidence": "high",
+      "range": [
+        2.0,
+        3.7
+      ]
+    },
+    {
+      "id": "temperaturokning_lan_2041_2070_rcp45",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län 2041–2070 (RCP4.5 ≈ SSP2-4.5)",
+      "value": 2.3,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – medeltemperatur (RCP4.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp45/textdata/kalmar_lan_ANN_2041_2070.json"
+      },
+      "note_sv": "Jämfört med 1971–2000 (då länets årsmedel var 6,7 °C enligt observationer). Intervallet är min–max för 17 modeller i SMHI:s hydrologiska ensemble för Kalmar läns kustområde (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp45/graphs/ctmpAnom_unregulated_rcp45_ANN_292.json). SMHI har inte publicerat SSP-baserade länsvärden; RCP4.5 används som närmaste motsvarighet till SSP2-4.5.",
+      "confidence": "high",
+      "range": [
+        1.0,
+        3.4
+      ]
+    },
+    {
+      "id": "temperaturokning_lan_2041_2070_rcp26",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län 2041–2070 (RCP2.6 ≈ SSP1-2.6)",
+      "value": 1.8,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – medeltemperatur (RCP2.6), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp26/textdata/kalmar_lan_ANN_2041_2070.json"
+      },
+      "note_sv": "Jämfört med 1971–2000 (då länets årsmedel var 6,7 °C enligt observationer). Intervallet är min–max för 17 modeller i SMHI:s hydrologiska ensemble för Kalmar läns kustområde (https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/ctmpAnom_unregulated/rcp26/graphs/ctmpAnom_unregulated_rcp26_ANN_292.json). SMHI har inte publicerat SSP-baserade länsvärden; RCP2.6 används som närmaste motsvarighet till SSP1-2.6.",
+      "confidence": "high",
+      "range": [
+        0.9,
+        2.3
+      ]
+    },
+    {
+      "id": "hogsommardagar_lan_1971_2000",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Högsommardagar (max > 25 °C) i Kalmar län, observerat 1971–2000",
+      "value": 15.6,
+      "unit": "dygn/år",
+      "year": 2000,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten – högsommardygn, Kalmar län: observationsbaserat referensvärde 1971–2000 (fältet refGclim)",
+        "publisher": "SMHI (ursprungskälla: griddade observationer, ca 12 × 12 km)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Länsmedel från griddade observationer (fältet refGclim). Modellernas eget referensvärde är 14,7–14,8 och deras värde för 2011–2040 ca 24 dygn. Kuststationen Kalmar flygplats har färre (14,8 dygn 1997–2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "hogsommardagar_lan_2071_2100_rcp85",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Högsommardagar (max > 25 °C) i Kalmar län 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 56.7,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – högsommardygn (RCP8.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Från 14.8 dygn i modellernas referens 1971–2000; 2041–2070 36,0 dygn. Intervallet (egen beräkning ur https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp85/graphs/suAnom_rcp85_ANN_yr_1951_2100_kalmar_lan.json) är medel av årliga 10:e–90:e percentiler 2071–2100 och visar alltså både modellspridning och skillnad mellan enskilda somrar.",
+      "confidence": "high",
+      "range": [
+        27.9,
+        85.2
+      ]
+    },
+    {
+      "id": "hogsommardagar_lan_2071_2100_rcp45",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Högsommardagar (max > 25 °C) i Kalmar län 2071–2100 (RCP4.5 ≈ SSP2-4.5)",
+      "value": 35.1,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – högsommardygn (RCP4.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp45/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Från 14.8 dygn i modellernas referens 1971–2000; 2041–2070 31,9 dygn. Intervallet (egen beräkning ur https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp45/graphs/suAnom_rcp45_ANN_yr_1951_2100_kalmar_lan.json) är medel av årliga 10:e–90:e percentiler 2071–2100 och visar alltså både modellspridning och skillnad mellan enskilda somrar.",
+      "confidence": "high",
+      "range": [
+        13.9,
+        56.3
+      ]
+    },
+    {
+      "id": "hogsommardagar_lan_2071_2100_rcp26",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Högsommardagar (max > 25 °C) i Kalmar län 2071–2100 (RCP2.6 ≈ SSP1-2.6)",
+      "value": 26.9,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – högsommardygn (RCP2.6), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp26/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Från 14.7 dygn i modellernas referens 1971–2000; 2041–2070 27,3 dygn. Intervallet (egen beräkning ur https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp26/graphs/suAnom_rcp26_ANN_yr_1951_2100_kalmar_lan.json) är medel av årliga 10:e–90:e percentiler 2071–2100 och visar alltså både modellspridning och skillnad mellan enskilda somrar.",
+      "confidence": "high",
+      "range": [
+        10.7,
+        45.1
+      ]
+    },
+    {
+      "id": "langsta_hogsommarperiod_lan_2071_2100_rcp85",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Längsta period med högsommardygn (max > 25 °C) i Kalmar län 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 22.1,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – längsta period med högsommardygn (RCP8.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/csuAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Ersätter det äldre måttet längsta värmebölja (dygnsmedel > 20 °C, ca 20 dygn) som inte längre finns i SMHI:s tjänst. Observerat 1971–2000: 5,5 dygn. RCP4.5: 12,1; RCP2.6: 9,4; RCP8.5 2041–2070: 12,7 dygn. Intervallet är medel av årliga 10:e–90:e percentiler (egen beräkning ur SMHI:s grafdata).",
+      "confidence": "high",
+      "replaces": "varmebolja_langd_rcp85",
+      "range": [
+        7.9,
+        39.7
+      ]
+    },
+    {
+      "id": "tropiska_natter_lan_2071_2100_rcp85",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Tropiska nätter (min > 20 °C) i Kalmar län 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 5.4,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – tropiska dygn (RCP8.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/trAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Observerat 1971–2000: 0,0; modellerna ca 0,3 för 2011–2040. RCP4.5: 1,1; RCP2.6: 0,5 per år. Kalmar flygplats hade 2 tropiska nätter 2018 och 1 år 2021. Intervallet är medel av årliga 10:e–90:e percentiler.",
+      "confidence": "high",
+      "range": [
+        0.6,
+        12.2
+      ]
+    },
+    {
+      "id": "vegetationsperiod_lan_2071_2100_rcp85",
+      "sdg": [
+        2,
+        13
+      ],
+      "name_sv": "Vegetationsperiodens längd i Kalmar län 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 304,
+      "unit": "dygn",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten – vegetationsperiodens längd (RCP8.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/gslAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Från 204 dygn 1971–2000; 2041–2070 265 dygn. Starten flyttas från dag 103 (mitten av april) till dag 31, slutet från dag 306 till dag 334. Bygger bara på temperatur (dygnsmedel > 5 °C) och tar inte hänsyn till ljus eller torka. Intervallet är medel av årliga 10:e–90:e percentiler.",
+      "confidence": "high",
+      "range": [
+        259,
+        341
+      ]
+    },
+    {
+      "id": "vegetationsperiod_lan_2071_2100_rcp45",
+      "sdg": [
+        2,
+        13
+      ],
+      "name_sv": "Vegetationsperiodens längd i Kalmar län 2071–2100 (RCP4.5 ≈ SSP2-4.5)",
+      "value": 266,
+      "unit": "dygn",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten – vegetationsperiodens längd (RCP4.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/gslAnom/rcp45/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Från 204 dygn 1971–2000; 2041–2070 250 dygn. Starten flyttas från dag 103 (mitten av april) till dag 57, slutet från dag 306 till dag 322. Bygger bara på temperatur (dygnsmedel > 5 °C) och tar inte hänsyn till ljus eller torka. Intervallet är medel av årliga 10:e–90:e percentiler.",
+      "confidence": "high",
+      "range": [
+        220,
+        310
+      ]
+    },
+    {
+      "id": "vegetationsperiod_lan_2071_2100_rcp26",
+      "sdg": [
+        2,
+        13
+      ],
+      "name_sv": "Vegetationsperiodens längd i Kalmar län 2071–2100 (RCP2.6 ≈ SSP1-2.6)",
+      "value": 238,
+      "unit": "dygn",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten – vegetationsperiodens längd (RCP2.6), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/gslAnom/rcp26/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Från 204 dygn 1971–2000; 2041–2070 238 dygn. Starten flyttas från dag 103 (mitten av april) till dag 78, slutet från dag 306 till dag 316. Bygger bara på temperatur (dygnsmedel > 5 °C) och tar inte hänsyn till ljus eller torka. Intervallet är medel av årliga 10:e–90:e percentiler.",
+      "confidence": "high",
+      "range": [
+        202,
+        281
+      ]
+    },
+    {
+      "id": "frostdygn_lan_2071_2100_rcp85",
+      "sdg": [
+        2,
+        13
+      ],
+      "name_sv": "Frostdygn (min < 0 °C) i Kalmar län 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 52,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten – frostdygn (RCP8.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/fdAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Från 128 dygn 1971–2000 (101–107 för 2011–2040). RCP4.5: 78; RCP2.6: 99 dygn. Intervallet är medel av årliga 10:e–90:e percentiler.",
+      "confidence": "high",
+      "range": [
+        30,
+        75
+      ]
+    },
+    {
+      "id": "nederbord_forandring_kustomrade_2071_2100_rcp85",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Förändring av årsnederbörd i Kalmar läns kustområde 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 19.7,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi – nederbörd (medel), Kalmar län kustområde, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: HYPE-modellen driven av 17 EURO-CORDEX-körningar)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/cprcAnom_unregulated/rcp85/graphs/cprcAnom_unregulated_rcp85_ANN_292.json"
+      },
+      "note_sv": "Intervallet är min–max för 17 modeller. RCP4.5: +15 % (2–30 %); RCP2.6: +10 %. Länets meteorologiska ensemble ger 49 → 57 mm/månad (ca +16 %), mest på vintern (+11 mm/månad) och lite på sommaren (+4).",
+      "confidence": "high",
+      "range": [
+        10.7,
+        35.2
+      ]
+    },
+    {
+      "id": "dygn_extrem_nederbord_lan_2071_2100_rcp85",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Dygn med extrem nederbörd (≥ 20 mm) i Kalmar län 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 3.8,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten – antal dygn med extrem nederbörd (RCP8.5), Kalmar län, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: EURO-CORDEX-ensemble, bias-justerad; version 1.0, 2021-11-17)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/r20mmAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Observerat 1971–2000: 1,9 dygn per år (modellerna 2,1). RCP4.5: 3,3; RCP2.6: 2,9. Dygn med kraftig nederbörd (≥ 10 mm) ökar från 12 till 16,6. Intervallet är medel av årliga 10:e–90:e percentiler.",
+      "confidence": "high",
+      "range": [
+        1.9,
+        5.9
+      ]
+    },
+    {
+      "id": "skyfall_klimatfaktor_2071_2100_rcp85",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Klimatfaktor för skyfall 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 1.4,
+      "unit": "faktor",
+      "year": 2017,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatologi 47: Sammanfattning till extremregn i nuvarande och framtida klimat, tabell 2",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8329c86/1717801000638/klimatologi_47%20Sammanfattning%20till%20extremregn%20i%20nuvarande%20och%20framtida%20klimat.pdf"
+      },
+      "note_sv": "Korta skyfall blir ca 40 % kraftigare till 2071–2100 med RCP8.5 och ca 20 % med RCP4.5 (2041–2070: 20 % respektive 15 %). Gäller alla återkomsttider och hela landet. Svenskt Vatten rekommenderar minst 1,25 för regn kortare än en timme.",
+      "confidence": "high",
+      "range": [
+        1.36,
+        1.41
+      ]
+    },
+    {
+      "id": "skyfall_1h_100ar_2071_2100_rcp85",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Skyfall: 100-årsregn under 1 timme i Kalmar 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 53.6,
+      "unit": "mm",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Egen beräkning ur Klimatologi 47, tabell 1 och 2",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8329c86/1717801000638/klimatologi_47%20Sammanfattning%20till%20extremregn%20i%20nuvarande%20och%20framtida%20klimat.pdf"
+      },
+      "note_sv": "Dagens 38,3 mm (region SÖ) × klimatfaktorn 1,4. Med RCP4.5 (faktor 1,2) blir det ca 46 mm. Intervallet kombinerar osäkerheten i dagens värde (± 6,7 mm) med faktorerna 1,36–1,41.",
+      "confidence": "estimate",
+      "range": [
+        43.0,
+        63.5
+      ]
+    },
+    {
+      "id": "dagar_lag_markfuktighet_okning_2071_2100_rcp85",
+      "sdg": [
+        2,
+        6,
+        13
+      ],
+      "name_sv": "Ökning av dygn med låg markfuktighet i Kalmar läns kustområde 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 39.1,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi – dygn med låg markfuktighet, Kalmar län kustområde, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: HYPE-modellen driven av 17 EURO-CORDEX-körningar)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/smoistnodbm05Anom_unregulated/rcp85/graphs/smoistnodbm05Anom_unregulated_rcp85_ANN_292.json"
+      },
+      "note_sv": "Förändring i antal dygn då markfuktigheten i rotzonen är under 50 % av fältkapaciteten. 2041–2070: +24 dygn. Redan 2011–2040 ca +11 dygn. För Ljungbyån (Kalmar kommun) +20 dygn. Den äldre länsrapporten (2015) angav ca 15 dygn i dag och 30–50 dygn i slutet av seklet; SMHI:s nya tjänst redovisar bara förändringen. Intervallet är min–max för 17 modeller.",
+      "confidence": "high",
+      "replaces": "dagar_lag_markfuktighet_framtid",
+      "range": [
+        18.0,
+        68.9
+      ]
+    },
+    {
+      "id": "dagar_lag_markfuktighet_okning_2071_2100_rcp45",
+      "sdg": [
+        2,
+        6,
+        13
+      ],
+      "name_sv": "Ökning av dygn med låg markfuktighet i Kalmar läns kustområde 2071–2100 (RCP4.5 ≈ SSP2-4.5)",
+      "value": 19.8,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi – dygn med låg markfuktighet, Kalmar län kustområde, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: HYPE-modellen driven av 17 EURO-CORDEX-körningar)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/smoistnodbm05Anom_unregulated/rcp45/graphs/smoistnodbm05Anom_unregulated_rcp45_ANN_292.json"
+      },
+      "note_sv": "Förändring i antal dygn då markfuktigheten i rotzonen är under 50 % av fältkapaciteten. 2041–2070: +20 dygn. Den äldre länsrapporten (2015) angav ca 15 dygn i dag och 30–50 dygn i slutet av seklet; SMHI:s nya tjänst redovisar bara förändringen. Intervallet är min–max för 17 modeller.",
+      "confidence": "high",
+      "replaces": "dagar_lag_markfuktighet_framtid",
+      "range": [
+        -1.9,
+        38.3
+      ]
+    },
+    {
+      "id": "dagar_lag_markfuktighet_okning_2071_2100_rcp26",
+      "sdg": [
+        2,
+        6,
+        13
+      ],
+      "name_sv": "Ökning av dygn med låg markfuktighet i Kalmar läns kustområde 2071–2100 (RCP2.6 ≈ SSP1-2.6)",
+      "value": 13.4,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi – dygn med låg markfuktighet, Kalmar län kustområde, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: HYPE-modellen driven av 17 EURO-CORDEX-körningar)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/smoistnodbm05Anom_unregulated/rcp26/graphs/smoistnodbm05Anom_unregulated_rcp26_ANN_292.json"
+      },
+      "note_sv": "Förändring i antal dygn då markfuktigheten i rotzonen är under 50 % av fältkapaciteten. 2041–2070: +12 dygn. Den äldre länsrapporten (2015) angav ca 15 dygn i dag och 30–50 dygn i slutet av seklet; SMHI:s nya tjänst redovisar bara förändringen. Intervallet är min–max för 17 modeller.",
+      "confidence": "high",
+      "replaces": "dagar_lag_markfuktighet_framtid",
+      "range": [
+        -1.2,
+        31.1
+      ]
+    },
+    {
+      "id": "markavrinning_forandring_kustomrade_2071_2100_rcp85",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Förändring av markavrinning i Kalmar läns kustområde 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": -6.8,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi – markavrinning (medel), Kalmar län kustområde, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: HYPE-modellen driven av 17 EURO-CORDEX-körningar)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/wrunAnom_unregulated/rcp85/graphs/wrunAnom_unregulated_rcp85_ANN_292.json"
+      },
+      "note_sv": "Mindre vatten rinner till vattendrag och magasin trots mer nederbörd, eftersom avdunstningen ökar (medianen −10 %). RCP4.5: +1,6 %; RCP2.6: +3,1 %. Intervallet är min–max för 17 modeller, alltså stor osäkerhet.",
+      "confidence": "medium",
+      "range": [
+        -28.5,
+        30.4
+      ]
+    },
+    {
+      "id": "lagvattenforing_ljungbyan_2071_2100_rcp85",
+      "sdg": [
+        6,
+        15
+      ],
+      "name_sv": "Förändring av medellågvattenföring (MLQ) i Ljungbyån 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": -11.7,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi – vattenföring (MLQ), Ljungbyån, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: HYPE-modellen driven av 17 EURO-CORDEX-körningar)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/wdisyearminAnom_unregulated/rcp85/graphs/wdisyearminAnom_unregulated_rcp85_ANN_171.json"
+      },
+      "note_sv": "Ljungbyån mynnar i Kalmarsund i Kalmar kommun. Alla 17 modeller ger minskning (−0,7 till −24,5 %). Dygn med låg vattenföring ökar med ca 17 per år. RCP4.5: −3,4 %; RCP2.6: −2,5 %.",
+      "confidence": "medium",
+      "range": [
+        -24.5,
+        -0.7
+      ]
+    },
+    {
+      "id": "snovatteninnehall_max_forandring_2071_2100_rcp85",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Förändring av årets största snömängd i Kalmar läns kustområde 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": -76.5,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi – snövatteninnehåll (max), Kalmar län kustområde, jämfört med 1971–2000",
+        "publisher": "SMHI (ursprungskälla: HYPE-modellen driven av 17 EURO-CORDEX-körningar)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/snowyearmaxAnom_unregulated/rcp85/graphs/snowyearmaxAnom_unregulated_rcp85_ANN_292.json"
+      },
+      "note_sv": "Snön blir ovanlig: RCP4.5 −47,5 %, RCP2.6 −30 %. SMHI:s tjänst har inget mått på antal dygn med snötäcke. Mindre snösmältning betyder också mindre vårpåfyllnad av grundvattnet.",
+      "confidence": "high",
+      "range": [
+        -89.2,
+        -51.6
+      ]
+    },
+    {
+      "id": "overdodlighet_varmebolja_2018",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Överdödlighet under värmeböljan sommaren 2018",
+      "value": 700,
+      "unit": "dödsfall",
+      "year": 2018,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Att hantera hälsoeffekter av värmeböljor – vägledning till handlingsplaner (2022)",
+        "publisher": "Folkhälsomyndigheten",
+        "url": "https://www.folkhalsomyndigheten.se/contentassets/ea328afcc93f4ad6a37693176fbb3158/hantera-halsoeffekter-varmeboljor.pdf"
+      },
+      "note_sv": "Cirka 700 fler dödsfall än normalt under hela sommaren; SMHI återger 600–745 som kan tillskrivas värmen. Främst äldre och kroniskt sjuka drabbades. Kalmar hade 43 högsommardagar det året.",
+      "confidence": "high"
+    },
+    {
+      "id": "dodlighetsokning_varme_26c",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Ökning av dödligheten per dygn när det är minst 26 °C tre dygn i rad",
+      "value": 10,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Tillsynsvägledning om temperatur inomhus",
+        "publisher": "Folkhälsomyndigheten (ursprungskälla: svenska studier, ref. 14)",
+        "url": "https://www.folkhalsomyndigheten.se/publikationer-och-material/publikationsarkiv/t/tillsynsvagledning-om-temperatur-inomhus/?pub=133705"
+      },
+      "note_sv": "Dödligheten ökar med ca 10 % per dag vid 26 °C eller mer tre dygn i rad och med ytterligare 10 % vid 30 °C. Äldre, kroniskt sjuka och små barn är mest känsliga.",
+      "confidence": "high"
+    },
+    {
+      "id": "temperaturokning_lan_2126_ssp126",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län till 2126 (SSP1-2.6)",
+      "value": 1.7,
+      "unit": "°C",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Egen skattning: SMHI Klimatscenariotjänsten (RCP2.6, 2081–2100) skalad med IPCC AR6 WG1 (tabell SPM.1 och tabell 4.9)",
+        "publisher": "SMHI; IPCC (egen beräkning)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp26/graphs/tasAnom_rcp26_ANN_yr_1951_2100_kalmar_lan.json"
+      },
+      "note_sv": "Jämfört med 1971–2000. Länets värde 2081–2100 multiplicerat med kvoten mellan global uppvärmning 2126 och 2081–2100 (linjärt mellan IPCC:s värden för 2081–2100 och 2300). Intervallet väger in IPCC:s spridning, en trendförlängning och CMIP6-modellernas något större uppvärmning över Nordeuropa. Steg för steg i klimat-notes.md.",
+      "confidence": "estimate",
+      "range": [
+        1.0,
+        2.6
+      ]
+    },
+    {
+      "id": "hogsommardagar_lan_2126_ssp126",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Högsommardagar (max > 25 °C) i Kalmar län 2126 (SSP1-2.6)",
+      "value": 26,
+      "unit": "dygn/år",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Egen skattning ur SMHI Klimatscenariotjänsten (samband mellan temperaturökning och högsommardygn i länet)",
+        "publisher": "SMHI (egen beräkning)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp26/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Sambandet mellan länets temperaturökning och antalet högsommardygn i SMHI:s scenarier (ökning ≈ 4,77·ΔT + 0,94·ΔT²) tillämpat på temperaturskattningen för 2126. Övre gränsen för SSP5-8.5 ligger långt utanför SMHI:s data och är mycket osäker.",
+      "confidence": "estimate",
+      "range": [
+        20,
+        34
+      ]
+    },
+    {
+      "id": "temperaturokning_lan_2126_ssp245",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län till 2126 (SSP2-4.5)",
+      "value": 3.0,
+      "unit": "°C",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Egen skattning: SMHI Klimatscenariotjänsten (RCP4.5, 2081–2100) skalad med IPCC AR6 WG1 (tabell SPM.1 och tabell 4.9)",
+        "publisher": "SMHI; IPCC (egen beräkning)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp45/graphs/tasAnom_rcp45_ANN_yr_1951_2100_kalmar_lan.json"
+      },
+      "note_sv": "Jämfört med 1971–2000. Länets värde 2081–2100 multiplicerat med kvoten mellan global uppvärmning 2126 och 2081–2100 (linjärt mellan IPCC:s värden för 2081–2100 och 2300). Intervallet väger in IPCC:s spridning, en trendförlängning och CMIP6-modellernas något större uppvärmning över Nordeuropa. Steg för steg i klimat-notes.md.",
+      "confidence": "estimate",
+      "range": [
+        2.3,
+        4.6
+      ]
+    },
+    {
+      "id": "hogsommardagar_lan_2126_ssp245",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Högsommardagar (max > 25 °C) i Kalmar län 2126 (SSP2-4.5)",
+      "value": 38,
+      "unit": "dygn/år",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Egen skattning ur SMHI Klimatscenariotjänsten (samband mellan temperaturökning och högsommardygn i länet)",
+        "publisher": "SMHI (egen beräkning)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp45/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Sambandet mellan länets temperaturökning och antalet högsommardygn i SMHI:s scenarier (ökning ≈ 4,77·ΔT + 0,94·ΔT²) tillämpat på temperaturskattningen för 2126. Övre gränsen för SSP5-8.5 ligger långt utanför SMHI:s data och är mycket osäker.",
+      "confidence": "estimate",
+      "range": [
+        31,
+        56
+      ]
+    },
+    {
+      "id": "temperaturokning_lan_2126_ssp585",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperatur i Kalmar län till 2126 (SSP5-8.5)",
+      "value": 5.9,
+      "unit": "°C",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Egen skattning: SMHI Klimatscenariotjänsten (RCP8.5, 2081–2100) skalad med IPCC AR6 WG1 (tabell SPM.1 och tabell 4.9)",
+        "publisher": "SMHI; IPCC (egen beräkning)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp85/graphs/tasAnom_rcp85_ANN_yr_1951_2100_kalmar_lan.json"
+      },
+      "note_sv": "Jämfört med 1971–2000. Länets värde 2081–2100 multiplicerat med kvoten mellan global uppvärmning 2126 och 2081–2100 (linjärt mellan IPCC:s värden för 2081–2100 och 2300). Intervallet väger in IPCC:s spridning, en trendförlängning och CMIP6-modellernas något större uppvärmning över Nordeuropa. Steg för steg i klimat-notes.md.",
+      "confidence": "estimate",
+      "range": [
+        4.3,
+        8.9
+      ]
+    },
+    {
+      "id": "hogsommardagar_lan_2126_ssp585",
+      "sdg": [
+        3,
+        13
+      ],
+      "name_sv": "Högsommardagar (max > 25 °C) i Kalmar län 2126 (SSP5-8.5)",
+      "value": 75,
+      "unit": "dygn/år",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Egen skattning ur SMHI Klimatscenariotjänsten (samband mellan temperaturökning och högsommardygn i länet)",
+        "publisher": "SMHI (egen beräkning)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/suAnom/rcp85/textdata/kalmar_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Sambandet mellan länets temperaturökning och antalet högsommardygn i SMHI:s scenarier (ökning ≈ 4,77·ΔT + 0,94·ΔT²) tillämpat på temperaturskattningen för 2126. Övre gränsen för SSP5-8.5 ligger långt utanför SMHI:s data och är mycket osäker.",
+      "confidence": "estimate",
+      "range": [
+        53,
+        131
+      ]
+    }
+  ]
+}

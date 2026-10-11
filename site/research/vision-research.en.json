@@ -1,0 +1,888 @@
+{
+ "themes": {
+  "food": {
+   "title": "Food & growing",
+   "summary": "How much land a population needs depends more on what it eats than on how it farms: land requirements per person differ by up to eight times between diets, and the average Swedish diet exceeds the global per-capita boundaries for climate, cropland and nutrients by two to four times. Urban growing gives high yields per square metre, but mainly vegetables and social value; the calories must come from the surrounding farmland, so self-sufficiency is a regional question rather than an urban one."
+  },
+  "energy": {
+   "title": "Energy",
+   "summary": "The biofuel-fired Moskogen combined heat and power plant covers about 90 per cent of district heating demand and a third of the municipality's electricity demand, but solar power is highly seasonal and requires storage, flexibility and supplementary wind or biopower in winter. Offshore wind in the southern Baltic Sea has great potential, but in 2024 the Government rejected thirteen wind farms on defence grounds, which makes local generation, energy communities and energy efficiency all the more important. The costs of solar, onshore wind and batteries have fallen sharply since 2010, while Sweden's electricity demand is expected to more than double by 2045, creating competition for electricity, land and grid capacity."
+  },
+  "mobility": {
+   "title": "Mobility & urban form",
+   "summary": "Research shows clear health benefits of active travel (cycle commuting is linked to markedly lower mortality) and that urban environments with less car traffic, such as Barcelona's superblocks, can prevent hundreds of premature deaths per year in a large city. Experience from Pontevedra, Oslo and Ghent shows that car-free or low-car centres are possible, but the effects on retail and accessibility must be actively managed, especially for older people, people with disabilities and commuters from rural areas."
+  },
+  "community": {
+   "title": "Community & cooperation",
+   "summary": "Social relationships are as strong a survival factor as well-known risk factors: meta-analyses show a 50% higher likelihood of survival for people with strong social ties, and the WHO links loneliness to about 871,000 deaths a year worldwide. The municipality can influence this through social infrastructure (libraries, meeting places, green spaces, activities in residential care homes), community and intergenerational housing, deliberative democracy (citizens' assemblies, participatory budgeting) and working-time trials that free up time for relationships and civic engagement. The evidence is strong for the link between loneliness and health but weaker and more context-dependent for the effect of individual measures, which the model should reflect with cautious effect sizes."
+  },
+  "health": {
+   "title": "Health",
+   "summary": "Strong evidence shows that nature and greenery close to home (at least 120 minutes in nature a week, a green space within 300 metres) and physical activity (150–300 minutes a week) prevent both physical and mental ill-health, and that preventive public health measures on average return several kronor for every krona invested. At the same time, psychosomatic complaints among young people are rising – 77% of 15-year-old girls have recurring complaints – and only one in five schoolchildren is sufficiently active."
+  },
+  "digital_resilience": {
+   "title": "De-digitalisation & digital resilience",
+   "summary": "Since 2023, Sweden has swung from “digital first” in schools to analogue teaching materials, a phone-free school day (law from 1 August 2026) and national screen-time recommendations for children. At the same time, the state is building up analogue back-up capacity in the payment system: legal requirements that grocery stores and pharmacies accept cash and offline card payments for essential goods for up to seven days apply from 1 July 2026. The evidence on screen and phone restrictions is mixed – some studies show improved results for low-performing pupils and girls, others no effect on well-being. A coastal municipality with many older residents and a location close to the security-policy tensions around the Baltic Sea has particular reasons to plan for outages in electricity, telecoms and payments."
+  },
+  "tech_ai": {
+   "title": "Acceleration with technology & AI",
+   "summary": "The evidence points to a few areas where AI delivers large, documented public benefit: a Swedish randomised trial (MASAI) shows that AI-supported mammography finds 29% more cancers with a 44% lower reading workload, AI can shorten power outages by 30–50% and give flood warnings several days earlier, and AI-supported interpreting can sharply reduce costs in the public sector. At the same time there are clear risks: data centres’ electricity demand is expected to more than double by 2030, professional skills can erode (endoscopists detected fewer polyps after getting used to AI), and surveillance is restricted only by the EU AI Act. The AI Commission’s roadmap (SOU 2025:12) proposes 75 measures costing just under SEK 17 billion over ten years and notes that many smaller municipalities have not even begun using AI."
+  },
+  "resilience": {
+   "title": "Preparedness & resilience",
+   "summary": "Sweden’s total defence planning assumes that society must be able to cope with at least three months of a security policy crisis, including war, and households are urged by the Swedish Civil Defence and Resilience Agency (MCF, formerly the Swedish Civil Contingencies Agency, MSB) to manage on their own for at least one week. The security situation in the Baltic Sea has become more tense since Sweden joined NATO in 2024 and since several undersea cables and gas pipelines were damaged in 2023–2024. Preparedness in the game is therefore about both war/crisis (days of self-sufficiency) and slow-onset climate risks (water, sea level)."
+  },
+  "biodiversity_baltic": {
+   "title": "Biodiversity & the Baltic Sea",
+   "summary": "Over 96% of the Baltic Sea is not in good status with regard to eutrophication, oxygen-free seabeds have increased tenfold in a century, the eastern Baltic cod stock has collapsed, and along the Swedish coast the three-spined stickleback has taken over from perch and pike in more and more bays. There are proven measures with known effects: wetlands, catch crops, better wastewater treatment and protected areas, but the Baltic Sea responds with a delay of decades."
+  },
+  "governance": {
+   "title": "Long-term governance & vision",
+   "summary": "Long-term governance is about giving future generations a voice in today’s decisions. The Welsh Well-being of Future Generations Act (2015) and Finland’s Committee for the Future (since 1993) show that long-term thinking can be institutionalised, but evaluations show that the effect depends on whether it is tied to budgets and investment. The Doughnut model (Raworth 2017) and the Stockholm Resilience Centre’s “wedding cake” provide frameworks for a good life within planetary boundaries, and Amsterdam and Tomelilla already use them in their governance. In the game, the player can build the institutions for responsibility towards the future that are missing today."
+  },
+  "demography": {
+   "title": "Demography 2026–2126",
+   "summary": "Sweden is growing slowly and ageing: the Statistics Sweden (SCB) projection gives 11.8 million inhabitants in 2070 and – in the statistical database’s extension – just under 13 million in 2120, driven almost entirely by immigration because more people die than are born. Fertility is at a record low (1.43 children per woman in 2024 and 2025), and the share of people aged 80 and over is expected to almost double by 2070. Swedes unusually often live alone and leave home early, so multigenerational living would be a real cultural change. There are no official municipal projections beyond 2070 – the game’s values for 2070–2126 are explicit assumptions."
+  }
+ },
+ "evidence": {
+  "food_e1": {
+   "claim": "The average American diet requires about 1.08 hectares of agricultural land per person per year – the most of ten diet scenarios studied.",
+   "context": "Biophysical model of US agricultural land (cropland + pasture) with ten diet scenarios; land requirements ranged from 0.13 to 1.08 ha/person/year and carrying capacity from 402 to 807 million people. Used as an upper reference point for a meat-heavy Western diet."
+  },
+  "food_e2": {
+   "claim": "The plant-based (vegan) diet required the least land (about 0.13 ha/person/year, roughly one eighth of the baseline diet), but the lacto-vegetarian diet gave the highest carrying capacity, and the vegan diet a lower carrying capacity than two healthy mixed diets.",
+   "context": "The paradox is explained by the fact that pasture that cannot be used for crops is only useful via ruminants. The one-eighth figure is from Tufts' press release."
+  },
+  "food_e3": {
+   "claim": "A global shift to a plant-based diet would reduce agricultural land by about 76% (about 3.1 billion hectares).",
+   "context": "Meta-analysis of life-cycle data from about 38,700 farms and 1,600 processors/retailers. Impacts vary up to 50-fold between producers of the same product, but even the lowest-impact animal products usually have higher impacts than plant-based alternatives. The 76% figure has been verified via secondary summaries (press material), not directly in the article text; hence medium confidence. Used as an upper limit for land savings from a dietary shift."
+  },
+  "food_e4": {
+   "claim": "'Fair' Swedish diets that use no more arable land than the globally available amount per capita, and in which animals are raised on pasture and by-products ('ecological leftovers'), have a considerably lower environmental impact than today's Swedish diet – but still exceed the climate boundary and the nitrogen/phosphorus boundaries.",
+   "context": "Scenario analysis for Sweden in which semi-natural pastures are grazed by ruminants for biodiversity reasons; the scenarios gave, for example, 0–350 ml of milk per day and meat two to four times a week. Qualitative basis for the 'animals on pasture and leftovers' principle in the model."
+  },
+  "food_e5": {
+   "claim": "A Nordic organic food system with no competition between food and feed could feed 109–130% of the projected Nordic population in 2030, but with 81% less meat than today.",
+   "context": "Modelling study (SLU, Swedish University of Agricultural Sciences) in which animals eat only pasture, ley from the crop rotation and by-products, and in which agriculture is self-sufficient in bioenergy. Shows that lower organic yields can be offset by a dietary shift. Trade-off: more ley for animals gives more food overall but a larger climate impact per person. Nitrogen and phosphorus deficits require increased recycling of nutrients from society."
+  },
+  "food_e6": {
+   "claim": "The average Swedish diet exceeds the global EAT-Lancet boundaries (converted per capita) for greenhouse gases, cropland and nutrient inputs by two to more than four times, and for biodiversity by six times.",
+   "context": "Benchmarking of the Swedish diet (SLU/SEI, Stockholm Environment Institute). Freshwater use was within the boundary. Can be used as the starting value for the indicator 'the diet's pressure on planetary boundaries' in 2026 (value ~2–4 for climate/land/N-P, 6 for biodiversity)."
+  },
+  "food_e7": {
+   "claim": "Total consumption of red meat (beef, mutton/lamb, pork) in Sweden was about 53 kg per person in 2025 (preliminary, bone-in weight); all meat including poultry about 80 kg.",
+   "context": "Swedish Board of Agriculture consumption statistics 2025, preliminary: beef 22.41, mutton 1.61, pork 29.30, poultry 23.36, total meat 79.92 kg/person. Corresponds to about 146 g of red meat per day calculated bone-in; the edible amount is lower, but even after conversion the intake is several times above the EAT-Lancet reference of 15 g/day (food_e9). Starting value for the diet indicator."
+  },
+  "food_e8": {
+   "claim": "In 2024 Swedes consumed about 65.5 kg of fresh and frozen vegetables and 53.7 kg of fresh and frozen fruit and berries per person.",
+   "context": "Swedish Board of Agriculture total consumption 2024 (preliminary). Processed vegetables/fruit come on top of this."
+  },
+  "food_e9": {
+   "claim": "The EAT-Lancet Commission's planetary health diet (2025) specifies about 15 g of red meat per day (range 0–30 g) within an average energy intake of about 2,400 kcal/day; half the plate fruit and vegetables (300 g vegetables, 200 g fruit), 75 g legumes, 50 g nuts, 210 g whole grains.",
+   "context": "Updated reference diet from EAT-Lancet 2.0 (Rockström, Thilsted, Willett et al. 2025). Other reference amounts: dairy 250 g (0–500), poultry 30 g (0–60), fish 30 g (0–100), eggs 15 g (0–25). Used as the target diet ('planetary health diet') in the game's diet indicator."
+  },
+  "food_e10": {
+   "claim": "If the world ate according to the planetary health diet, about 15 million premature deaths per year could be avoided, around 27% of global mortality.",
+   "context": "Model calculation in EAT-Lancet 2025. The largest effect comes when dietary change, reduced food waste and more efficient/sustainable production are combined. Can be translated into the health indicator as a relative reduction in the diet-related disease burden; Sweden's share is lower than the global one because undernutrition is absent."
+  },
+  "food_e11": {
+   "claim": "Food systems account for nearly 30% of global greenhouse gas emissions and for almost the entire overshoot of the nitrogen and phosphorus boundary; only about 1% of the world's population lives within a 'safe and just' space.",
+   "context": "EAT-Lancet 2025. According to the Commission, food-related emissions should come down to about 5 Gt CO2e/year by 2050; agriculture has already converted 37% of the Earth's ice-free land area. Links directly to the ecological ceiling of the Doughnut model (climate, land, nitrogen/phosphorus)."
+  },
+  "food_e12": {
+   "claim": "In 2025 Sweden had about 2.53 million hectares of arable land, corresponding to roughly 0.24 hectares per inhabitant.",
+   "context": "Own calculation: 2,526,869 ha of arable land in 2025 (Swedish Board of Agriculture, JO0104B1) divided by 10,605,529 inhabitants on 31 Dec 2025 (Statistics Sweden (SCB)). Arable land has decreased slightly (2,529,820 ha in 2023). Of which cereals about 1.01 million ha and ley about 1.06 million ha."
+  },
+  "food_e16": {
+   "claim": "Roughly every second mouthful eaten in Sweden is produced in the country (a self-sufficiency rate of around 50%).",
+   "context": "LRF's (the Federation of Swedish Farmers') wording on its preparedness page. LRF proposes emergency stockpiles of grain and farm inputs (fertiliser, feed, fuel). The Swedish Board of Agriculture explicitly does not calculate an overall self-sufficiency rate. Instead, the agency reports 'supply capacity' per product group (see food_e46) and points out that production depends on imported inputs. The figure is therefore a rough benchmark used in politics, not an official measure. Use 50% as a rough national starting value."
+  },
+  "food_e17": {
+   "claim": "The state has resumed emergency stockpiling of food: the Swedish Food Agency stores freeze-dried food in the four northernmost counties via framework agreements with five companies and proposes that the state purchase mobile mills; public kitchens are urged to plan crisis menus and stocks.",
+   "context": "The Swedish Food Agency's pages on emergency stockpiling and crisis preparedness for public kitchens (reviewed 2026-05-05). Investment support is available through the preparedness sector's investment programme, but there are no national requirements on the number of days for municipal kitchens – the municipality decides for itself. Basis for the game's preparedness lever."
+  },
+  "food_e18": {
+   "claim": "With the global potential of near-urban (peri-urban) agriculture, about 1 billion city dwellers, around 30% of the world's urban population, could be supplied locally; the share falls to about 22% by 2050 and is about 20% in North America.",
+   "context": "Global model (PIK) using remote sensing, population and climate data; 35% with optimised yields. Urbanisation is the biggest pressure factor, followed by dietary changes and climate. Optimised local supply could reduce transport emissions tenfold (but transport is a small part of food's climate impact)."
+  },
+  "food_e19": {
+   "claim": "Current home growing in gardens and allotments in a British town (Bedford) is enough to supply residents' fruit and vegetables for about 30 days a year; in the most optimistic scenario, land already under cultivation could cover over half of annual needs.",
+   "context": "Combines yield data from home growers with mapping of gardens, allotments and fruit trees. Corresponds to about 8% of fruit and vegetable needs today and up to 50% with a major scale-up on existing land. Fruit/vegetables only, not calories."
+  },
+  "food_e20": {
+   "claim": "Allotments on 1.5% of Leicester's urban area provide fruit and vegetables for about 3% of the population (over 1,200 tonnes of fruit/vegetables and 200 tonnes of potatoes per year); yields per unit area were similar to commercial horticulture.",
+   "context": "Citizen science + GIS. Only about 52% of the allotment area was used for growing. In the 1950s there were 475 ha of allotments (compared with 97 ha today), which supplied over 45,000 people. Shows the potential of restoring allotment areas. Figures verified via a summary of the article."
+  },
+  "food_e21": {
+   "claim": "Small-scale organic urban farms in Sydney yielded on average 5.94 kg of vegetables per m² per year – roughly double the yield on commercial vegetable farms (3.18 kg/m²) – but labour productivity was only 1.29 kg per working hour.",
+   "context": "13 farms followed for one year. Benefit/cost ratio 0.62 when working time is valued (2.81 without labour costs); only 14.7% of inputs were renewable (purchased compost, municipal water). Upper realistic value for intensive small-scale growing; very labour-intensive – better suited as a leisure/social activity than commercial production."
+  },
+  "food_e22": {
+   "claim": "Urban growers in Brighton and Hove harvested around 1 kg of insect-pollinated fruit and vegetables per m² per season, comparable to conventional farms, and recorded over 2,000 pollinating insects in their plots.",
+   "context": "Case study in a review of urban agriculture's contribution to the Global Goals. The figure applies only to insect-pollinated crops and is taken from press material about the study; the article stresses large knowledge gaps about productivity and economics. A reasonably low value for allotments in a temperate climate."
+  },
+  "food_e23": {
+   "claim": "Global meta-analysis (200 studies, 2,062 observations): urban agriculture yields are on a par with or higher than conventional agriculture; the largest difference was for cucumber (17 kg/m² per growing cycle versus 3.8 kg/m²).",
+   "context": "Yields per growing cycle – several cycles per year are possible in greenhouses/indoors, fewer outdoors in Sweden. Hydroponic tomatoes gave significantly higher yields than soil-grown ones. Lettuce/chicory were the most commonly studied. Use for relative comparison between growing systems."
+  },
+  "food_e24": {
+   "claim": "In 2025 Swedish commercial greenhouses harvested on average about 36.5 kg of tomatoes and 50 kg of cucumbers per m² of greenhouse area.",
+   "context": "Own calculation from Swedish Board of Agriculture data: tomatoes 17,700 tonnes on 484,500 m², cucumbers 31,600 tonnes on 630,600 m² (2025). Heating/lighting requires energy – link to waste heat or district heating."
+  },
+  "food_e25": {
+   "claim": "Vertical farms/plant factories with artificial light require about 15.6–20.1 kWh of electricity per kg of lettuce depending on climate (lowest in cold regions, e.g. Reykjavik 15.6; highest in hot ones, e.g. the United Arab Emirates 20.1).",
+   "context": "Simulation of the same plant factory in different locations (Weidner et al. 2021), summarised in a review (Cai et al. 2024, arXiv preprint). Lighting and ventilation dominate. A later study by the same group (Nature Food 2022, nine urban regions including Stockholm) found that greenhouses have lower energy requirements per unit produced and, in most regions, the lowest land requirements when renewable electricity is included. Use as the electricity cost per kg for the vertical farming lever."
+  },
+  "food_e26": {
+   "claim": "A mussel farm optimised for nutrient removal in a eutrophic Danish fjord produced 60 tonnes of mussels per hectare and removed 0.6–0.9 tonnes of nitrogen and 0.03–0.04 tonnes of phosphorus per hectare per year, at a cost of 14.8 euros per kg of nitrogen.",
+   "context": "The cost was competitive with the most expensive land-based measures. Should be seen as an upper reference value; in the brackish water of the Baltic Sea, growth and nutrient removal are much lower (food_e27, food_e38)."
+  },
+  "food_e27": {
+   "claim": "Along a salinity gradient in the German Baltic Sea (7–17 psu), 1 ha of mussel farming over six months yielded 1–51 tonnes of mussels and removed 24.7–612.7 kg of nitrogen and 1.1–27.7 kg of phosphorus; the cost of nitrogen removal was 162–4,018 euros per kg N.",
+   "context": "Four trial farms + a dynamic energy budget model. Growth increased with salinity; only saltier sites west of Rostock were profitable for food (2.2 €/kg), and no site was profitable for feed sales (0.06 €/kg). Low salinity (as in the Baltic Proper) gives the lowest values and the highest costs per kg N."
+  },
+  "food_e28": {
+   "claim": "Farming and harvesting blue mussels in the central Baltic Sea can be a cost-effective complement to land-based measures against eutrophication, despite the mussels' low nutrient content; farming technique affects the cost more than nutrient content does, and current regulations are a bottleneck.",
+   "context": "Baltic-wide study (Baltic Blue Growth researchers). Mussels from the saltier outer Baltic Sea had higher N and P content."
+  },
+  "food_e29": {
+   "claim": "Swedish farming of molluscs (mainly mussels and oysters) amounted to about 2,100 tonnes in 2025, spread across 9 companies (900 tonnes in 2024).",
+   "context": "Swedish Board of Agriculture aquaculture statistics. Shows that the sector is small and uneven from year to year; 'other organisms' (including algae) about 200 tonnes. Starting point for the mussel lever."
+  },
+  "food_e30": {
+   "claim": "Regenerative maize farms in the northern US had 29% lower yields but 78% higher profits than conventional farms, and pests were ten times more common in insecticide-treated fields.",
+   "context": "Single study with farm-defined practices (cover crops, no tillage, grazing, no insecticides). Profit correlated with soil organic matter, not with yield. Shows the trade-off: better economics and ecosystem services but lower production per hectare – more land or a dietary shift is required."
+  },
+  "food_e31": {
+   "claim": "Organic yields are on average lower than conventional yields: from 5% lower (rain-fed legumes and perennials) and 13% lower (best organic practices) to 34% lower when the systems are most comparable.",
+   "context": "Global meta-analysis. Used as a yield deduction when the player chooses a large-scale organic/agroecological transition. Compare Pittelkow et al. 2015 (Nature): no-till farming lowers yields, but least when combined with crop rotation and crop residues."
+  },
+  "food_e32": {
+   "claim": "Catch crops (cover crops) increase soil carbon stocks by on average 0.32 ± 0.08 tonnes of carbon per hectare per year; a new equilibrium is reached after about 155 years, with a total of about 16.7 tonnes C/ha.",
+   "context": "Meta-analysis of 139 trial plots at 37 sites (0–22 cm). Corresponds to about 1.2 tonnes CO2/ha/year. Nitrous oxide and albedo not included."
+  },
+  "food_e33": {
+   "claim": "When soil carbon saturation is taken into account, the possible climate contribution of soil carbon sequestration up to 2100 falls by 53–81%, and the effect of increased soil carbon on yields is inconsistent (negative to positive) across more than 21 meta-analyses.",
+   "context": "Critical review. Soil carbon should be seen as a co-benefit ('carbon for soils, not soils for carbon'), not as a primary climate measure. In the model: let carbon sequestration taper off towards saturation and do not give an automatic yield bonus."
+  },
+  "food_e34": {
+   "claim": "Optimised school lunches in four Swedish schools (OPTIMAT) had a 28% lower climate impact and were slightly cheaper, with no significant change in how much the pupils ate or in plate waste.",
+   "context": "Linear programming with nutritional requirements and a cap of 500 g CO2e/meal; more legumes, cereals, eggs and non-ruminant meat, less beef, fat and sauces. Short intervention (3+3 weeks). Directly applicable to the public meals lever."
+  },
+  "food_e35": {
+   "claim": "Experience from establishing edible forest gardens on 12 Swedish farms shows potential in multi-layered growing, but major knowledge gaps remain about production, economics and cultivation techniques; to contribute more than locally they must be scaled up, e.g. on marginal land and in transition zones.",
+   "context": "Participatory action research in Sweden. No reliable yield figures for forest gardens in a Nordic climate were found in this review – model forest gardens mainly as biodiversity, climate adaptation and social benefits, with low and uncertain food production (assumption)."
+  },
+  "food_e36": {
+   "claim": "Assumption: today's average Swedish diet requires about 0.45 ha of arable-land equivalents per person (range 0.35–0.6), while a planetary health diet with animals on pasture and leftovers requires about 0.2 ha (range 0.15–0.3).",
+   "context": "Model assumption, not measured. Derivation: Sweden has ~0.24 ha of arable land per inhabitant (food_e12) and produces roughly half of what is eaten (food_e16) → total land requirement including imports roughly 0.45 ha. The target diet is based on Peters et al. (food_e1–e2: 0.13 ha for a vegan diet, lower carrying capacity without pasture) and on plant-based diets saving up to 76% of land (food_e3); the Swedish diet exceeds the cropland boundary 2–4 times (food_e6). Calibrate against national calculations from SLU (Swedish University of Agricultural Sciences) if such are produced."
+  },
+  "food_e39": {
+   "claim": "Sweden's national food strategy has as its overall objective a competitive food supply chain in which total food production increases while relevant national environmental objectives are achieved.",
+   "context": "The Swedish Board of Agriculture follows up the strategy annually. food_e13). No quantitative targets for self-sufficiency were found on the page."
+  },
+  "food_e40": {
+   "claim": "If all suitable flat roofs in Bologna (Italy) were used for growing, they could produce just over 12,000 tonnes of vegetables per year, corresponding to around 77% of residents' vegetable needs.",
+   "context": "Based on rooftop growing trials in Bologna, a GIS mapping of flat roofs and residents' dietary needs. The figure is a technical maximum potential and does not take into account load-bearing capacity, ownership, economics or the winter season. The figures (>12,000 t/year, 77%) have been verified via summaries (the European Commission's 'Science for Environment Policy', according to TABLE, and search hits on the abstract). The abstract itself could not be opened. Use as an upper limit."
+  },
+  "food_e41": {
+   "claim": "In a rooftop garden on a public housing apartment block in Bologna (2012–2014), tomatoes yielded 13–14 kg/m² and aubergines 8.2 kg/m² per season in soil. Other crops yielded less than 5 kg/m², and lettuce 1–1.3 kg/m² per growing cycle.",
+   "context": "Trial with life-cycle assessment in a shared rooftop garden. Growing in soil was cheapest and had the lowest climate impact for fruiting vegetables (about 74 g CO2 per kg for tomatoes and aubergines). Floating hydroponics was best for lettuce in summer. Growing was done as polyculture for household needs, which gave lower yields per area for some crops than in commercial monoculture. A reasonable range for open-air rooftop growing in southern Sweden is probably lower than for Bologna (assumption: 2–8 kg/m²)."
+  },
+  "food_e42": {
+   "claim": "Hydroponic lettuce growing in greenhouses is estimated to yield 41 ± 6.1 kg/m² per year versus 3.9 kg/m² in open fields, i.e. about 11 times more per area. However, it requires about 82 times more energy: 90,000 kJ (about 25 kWh) per kg versus 1,100 kJ per kg.",
+   "context": "Model calculation for Yuma, Arizona (USA). Water requirements were 20 L/kg versus 250 L/kg in open fields. Energy requirements are dominated by heating and cooling, and in a Swedish climate would mainly be heating and lighting in winter. The parameter illustrates the central dilemma for near-urban greenhouses and vertical farming: a lot of food per area, but high energy requirements (cf. food_e25 on vertical farming). Cheap waste heat, for example from combined heat and power plants or data centres, can change the calculation."
+  },
+  "food_e43": {
+   "claim": "Aquaponics (fish farming in which the fish waste fertilises the plants) gave as much lettuce as pure hydroponics: 2.7 versus 2.8 kg/m² in the first growing cycle and 5.6–5.7 versus 6.0 kg/m² in the second.",
+   "context": "A single trial in Italy (Università della Tuscia) with tilapia at different stocking densities. The yield per year depends on the number of growing cycles, often 6–10 per year in a heated greenhouse. Aquaponics produces both fish and vegetables but is technically sensitive, and according to market studies few commercial facilities are highly profitable. In the model, aquaponics should be treated as a greenhouse technology with the yields and energy requirements of hydroponics (food_e42), plus a small fish production."
+  },
+  "food_e44": {
+   "claim": "Sugar kelp (Saccharina latissima) requires a salinity above 23 psu for high yields and can therefore only be farmed in the westernmost parts of the Baltic Sea. Gut weed (Ulva intestinalis) and bladderwrack (Fucus vesiculosus), on the other hand, have farming potential in the southern and eastern Baltic Sea as well.",
+   "context": "Modelling of the farming potential for macroalgae across the whole Baltic Sea. The farms caused no significant nutrient depletion, and the impact spread less than 100–250 m. The spread was greater in nutrient-poor areas with little water exchange, such as the open sea of the Baltic Proper. food_e27, where the study's lowest salinity was 7 psu). It should be modelled as a small complement to mussel farming, not as a large nutrient trap."
+  },
+  "food_e46": {
+   "claim": "The Swedish Board of Agriculture's 'supply capacity' (Swedish production as a share of consumption) in 2023: cereals about 105% (2023/24), drinking milk about 100%, dairy products overall 75% (cheese 39%), eggs 95%, carrots 97%, onions 78%, strawberries 69%, cucumbers 48%, apples 29% and tomatoes 19%.",
+   "context": "The Swedish Board of Agriculture deliberately presents no overall figure for Sweden. The agency points out that production depends on imported inputs (fertiliser, pesticides, feed, fuel, machinery and spare parts), so that actual self-sufficiency in a crisis is lower than these shares. The measure applies to fresh products, not processed or composite foods. It is suitable as starting values per food group in the model. Vegetables (especially greenhouse vegetables) are weakest and cereals strongest."
+  },
+  "energy_e3": {
+   "claim": "At the end of 2025 there were about 314,600 grid-connected solar PV installations in Sweden with a total capacity of 5,541 MW.",
+   "context": "Official statistics from the Swedish Energy Agency (published 7 April 2026). In 2025, 21,600 new installations were added (roughly half as many as in 2024), and total installed capacity increased by approx. 15% compared with 2024. Over a year, the total capacity corresponds to roughly the electricity use of Halland County, or approx. 13.4% of household electricity use. Trend: 4,800 MW at the end of 2024, and the record year 2023 with 1.6 GW of new capacity. Growth is sensitive to electricity prices and interest rates."
+  },
+  "energy_e5": {
+   "claim": "An estimated 650–800 MW of battery capacity was installed in Sweden in 2024, often together with solar PV for self-consumption and flexibility services.",
+   "context": "Estimate in the Swedish Energy Agency's Swedish-language summary of the IEA PVPS National Survey Report for 2024. Driven by the tax reduction for green technology. Shows that local storage is already scaling up in Sweden; useful as a growth parameter for household and building batteries."
+  },
+  "energy_e7": {
+   "claim": "On 4 November 2024 the Government rejected thirteen offshore wind farms in the Baltic Sea on defence grounds; according to the Government, wind farms can halve the time available to detect incoming cruise missiles, from 2 minutes to 60 seconds.",
+   "context": "Rejected wind farms: Arkona, Aurora, Baltic Offshore Beta, Baltic Offshore Delta North, Cirrus, Dyning, Erik Segersäll, Neptunus, Pleione, Skidbladner, Skåne Havsvindpark, Södra Victoria and Triton. At the same time, Poseidon (west coast, up to 5.5 TWh/year) was granted a permit."
+  },
+  "energy_e9": {
+   "claim": "In 2024 the global weighted average levelised cost of electricity (LCOE) was 0.043 USD/kWh for new solar power, 0.034 USD/kWh for onshore wind and 0.079 USD/kWh for offshore wind (Europe 0.080 USD/kWh).",
+   "context": "IRENA's annual cost report. Onshore wind was 53% cheaper and solar power 41% cheaper than the cheapest fossil alternative; 91% of new renewable capacity in 2024 was cheaper than new fossil capacity. Costs rose slightly in 2023–2024 (solar +0.6%, onshore wind +3%, offshore wind +4%) after large declines since 2010 (solar LCOE −90% in 2010–2023 according to IRENA's report for 2023). In the EU, solar LCOE rose because of permitting processes and grid connection. Use as a relative cost ranking; Swedish levels differ (lower solar irradiance, higher labour costs)."
+  },
+  "energy_e10": {
+   "claim": "The total installed cost of utility-scale battery storage fell by 93% between 2010 and 2024, from 2,571 to 192 USD/kWh.",
+   "context": "IRENA 2025. Solar-plus-battery hybrid projects (17 projects in 2024) reached 0.079 USD/kWh, on a par with combined-cycle gas power plants. Model parameter for cost learning: approx. −17% per year on average in 2010–2024 (derived: (192/2571)^(1/14) ≈ 0.83). The future rate is uncertain."
+  },
+  "energy_e11": {
+   "claim": "The price of lithium-ion battery packs fell by 20% in 2024 to a record-low global average of 115 USD/kWh.",
+   "context": "BloombergNEF's annual price survey (10 Dec 2024). Europe was approx. 48% above China (94 USD/kWh). Electric-vehicle packs dropped below 100 USD/kWh (97 USD/kWh). Relevant for electric cars, vehicle-to-grid (V2G) and building batteries."
+  },
+  "energy_e12": {
+   "claim": "Heat pumps are three to five times more energy efficient than gas boilers, and in Sweden over 40% of buildings have a heat pump.",
+   "context": "IEA's global heat pump report: “Heat pumps currently available on the market are three-to-five times more energy efficient than natural gas boilers” and “In Norway, 60% of buildings are equipped with heat pumps, with Sweden and Finland at over 40%”. Heinrich-Böll-Stiftung (2025, with EHPA data) reports approx. 50 heat pumps per 100 households in Sweden in 2024."
+  },
+  "energy_e16": {
+   "claim": "Svenska kraftnät expects Sweden's electricity use to rise from 138 TWh (2022) to just over 340 TWh in 2045 in the two most likely electrification scenarios.",
+   "context": "Långsiktig marknadsanalys 2024 (LMA2024, long-term market analysis). Four scenarios for 2050: Small-scale renewables 210 TWh, Mixed roadmap 265 TWh, Electrification dispatchable 365 TWh, Electrification renewables 365 TWh. “These are not forecasts.” The increase is driven mainly by industry (steel). Model implication: competition for electricity and grid capacity raises electricity prices and the value of local generation and energy efficiency."
+  },
+  "energy_e17": {
+   "claim": "The European federation of citizen-owned energy cooperatives represents over 2,250 cooperatives and 1.5 million citizens; according to a study cited by the European Commission, approx. 45% of the EU's renewable energy production could come from citizens in 2050.",
+   "context": "The European Commission's Sustainable Energy Week (March 2024), with figures from REScoop.eu. The legal basis is the EU Renewable Energy Directive (RED II, renewable energy communities) and the Electricity Market Directive (citizen energy communities). The 45% figure comes from CE Delft and is an assessment of potential, not a forecast."
+  },
+  "energy_e20": {
+   "claim": "Assumption: 1 kWp of modern solar panels requires about 5 m² of roof area.",
+   "context": "Physically derived: kWp is defined at an irradiance of 1,000 W/m²; with a module efficiency of approx. 20–22%, 4.5–5 m² of module area is needed per kWp, plus margins for edges, shading and fire access paths. Combined with energy_e1 this gives approx. Not directly verified against a source in this compilation – check against manufacturer data."
+  },
+  "mobility_e4": {
+   "claim": "In 2025, 3.8 billion trips were made in Sweden, of which about 1,946 million by car (approx. 51%), 707 million by public transport and 560 million on foot.",
+   "context": "Trafikanalys (Transport Analysis), Resvanor i Sverige 2025 (official statistics, ages 6–84, approx. 14,500 respondents, published 28 May 2026). Shares calculated by the compiler from the number of trips. Walking trips increased by 12% and car trips decreased by 5% compared with 2024; cycling trips decreased by 1% (the cycling share is not given in the retrieved text)."
+  },
+  "mobility_e5": {
+   "claim": "Regular cycling equivalent to 11.25 MET-hours per week (roughly 100 minutes) reduces the risk of premature death from all causes by 10%; the corresponding figure for walking is 11%.",
+   "context": "Systematic review and meta-analysis (cycling: 7 studies, 187,000 people; walking: 14 studies, 280,000 people), adjusted for other physical activity. The effect is greatest at low levels – getting inactive people to start cycling yields the most. This is the dose–response relationship used in the WHO HEAT tool for health economic assessment. Use as the dose–response in the model's health module."
+  },
+  "mobility_e6": {
+   "claim": "People who commuted by bicycle had a 41% lower risk of death from all causes, a 46% lower risk of cardiovascular disease and a 45% lower risk of cancer compared with those who commuted by car or public transport.",
+   "context": "Prospective cohort study, UK Biobank, 263,450 participants, median follow-up 5 years. HR 0.59 (all-cause mortality), 0.54 (cardiovascular disease, incidence), 0.55 (cancer incidence). Walking to work: HR 0.73 for cardiovascular disease but no significant effect on all-cause mortality. Observational study – causality is probably overestimated (healthier people cycle more); use mobility_e5 as the more cautious main parameter."
+  },
+  "mobility_e7": {
+   "claim": "Implementing 503 superblocks in Barcelona is estimated to prevent 667 premature deaths per year, give adults an average of almost 200 days' longer life expectancy and yield an annual economic benefit of EUR 1.7 billion.",
+   "context": "Quantitative health impact assessment (modelling, not measured outcomes). Largest contributions: reduced NO2 (291), noise (163), heat (117), green space (60), increased physical activity (36). Approx. 51 deaths per 100,000 adults per year."
+  },
+  "mobility_e8": {
+   "claim": "Since 1999, Pontevedra (Spain, approx. 84,000 inhabitants) has handed back to pedestrians approx. 80% of the street space that was allocated to motor vehicles. Motor traffic has fallen by 92% in the historic city centre, 77% in the centre and 53% in the outer district (ensanche).",
+   "context": "The municipality's own figures, published in the Spanish Directorate-General for Traffic's (DGT) catalogue of good practice (NIPO 128-22-050-6, approx. 2022). It also states that 66% of internal trips are made on foot, 5% by bicycle or public transport and 28% by car. Seriously injured road casualties fell from 129 in 1999 to 4 in 2020. No road deaths are reported for 12 years from 2007. The European Commission reports zero deaths in 2011–2018 (see mobility_e18). The figures have not been independently evaluated. The previously often-cited figure of 67% lower CO2 emissions could not be verified in a primary source and is not used."
+  },
+  "mobility_e9": {
+   "claim": "Oslo removed 760 parking spaces in the city centre inside Ring 1 under the Car-free City Life programme (Bilfritt byliv) 2016–2023 and replaced them with seating, greenery, bicycle parking and activities.",
+   "context": "Oslo Municipality's programme page (accessed 2026; the programme ran 2016–2023). The programme chose to remove parking and through traffic rather than ban cars entirely; goods deliveries and parking for people with reduced mobility were retained. Quantitative effects on retail are reported in separate “Byregnskap” (city accounts) that have not been reviewed here."
+  },
+  "mobility_e10": {
+   "claim": "Ghent's Circulation Plan (April 2017) divided the inner city into sectors without through traffic for cars. After a year and a half, the number of cars entering and leaving the inner city had fallen by an average of 17%, while the number of cyclists had increased by approx. 50% within the inner city and approx. 60% to and from it.",
+   "context": "The city's evaluation (measurements April–November 2018, carried out together with Transport & Mobility Leuven). The modal split of Ghent residents changed as follows between 2015 and 2018: car as driver 40 → 33%, bicycle 30 → 35%, public transport 9 → 14% and walking 15 → 13%. The car-free area increased from 22.4 to 51.2 ha (2.9 → 6.5% of the inner city). Public transport use rose by 6% per day but fell by 9% in the morning rush hour. The plan was implemented with relatively cheap means (signs, barriers, cameras). The effect can therefore be used as a benchmark for a quick, cheap measure: −15 to −20% car traffic in the centre within 1–2 years."
+  },
+  "mobility_e11": {
+   "claim": "More than 70 case studies from eleven countries show that when street space is reallocated from car traffic to walking, cycling and public transport, the feared traffic problems are often considerably smaller than expected – some of the traffic “disappears”.",
+   "context": "Cairns, Atkins & Goodwin (2002), summary of two research phases and a survey of more than 200 transport experts. The effect size varies with local conditions; the abstract gives no single figure. In modelling terms: traffic volume is not constant – reduced road capacity leads to some reduction in total traffic (an elasticity assumption should be stated separately)."
+  },
+  "mobility_e12": {
+   "claim": "In outer London areas where Low Traffic Neighbourhoods were introduced, car ownership and car use fell and active travel increased more than in comparison areas.",
+   "context": "Aldred & Goodman (2020), panel study 2016–2019 in Outer London. The small sample size in LTN areas makes the effect size uncertain, but the direction is consistent. Reduced car ownership was seen only in areas with LTNs – not from cycle lanes alone."
+  },
+  "mobility_e13": {
+   "claim": "In Copenhagen, two thirds of shopping trips and half of shops' turnover come from customers who walk or cycle; retailers often overestimate how many customers arrive by car.",
+   "context": "Compiled in Transport for London's evidence review (2018), citing the Copenhagen Bicycle Account 2012 and O'Connor et al. 2011 respectively (retailers on two shopping streets overestimated car-borne customers and underestimated cyclists)."
+  },
+  "mobility_e14": {
+   "claim": "The “15-minute city” (Carlos Moreno, 2016) means that residents should be able to reach their everyday needs – work, shopping, healthcare, school, culture and recreation – within 15 minutes on foot or by bicycle (“chrono-urbanism”).",
+   "context": "A concept paper, not an impact study: the empirical evidence for the health and climate effects of 15-minute planning is still limited, and the concept has been criticised for potentially driving gentrification and for suiting rural areas less well. Use as a planning indicator (share of inhabitants with services within 15 min)."
+  },
+  "mobility_e15": {
+   "claim": "In Augustenborg in Malmö, 90% of stormwater from roofs and hard surfaces is channelled into open ditches and ponds, reducing annual runoff to the drainage network by about 20%; the area came through the cloudbursts of 2007 and 2014 without flood damage.",
+   "context": "EU Climate-ADAPT case study (2017). More than 11,000 m² of green roofs (of which 9,000 m² is a botanical roof garden); total investment approx. EUR 24 million (approx. SEK 200 million) in 1998–2002, of which the housing company MKB paid roughly half. During a 50-year rainfall event in 2007, large parts of Malmö were affected but not Augustenborg; in 2014 (over 100 mm in 6 hours) there was no local damage. Model parameter for de-paving and blue-green solutions."
+  },
+  "mobility_e16": {
+   "claim": "The 2011 cloudburst in Copenhagen caused damage of more than 6 billion Danish kroner; the city's cloudburst plan with surface solutions (streets as channels, parks as detention areas) was estimated to cost approx. DKK 12 billion, compared with DKK 20 billion for a purely pipe-based solution.",
+   "context": "Climate-ADAPT case study. The plan comprises approx. 300 projects (approx. 15 per year over 20–30 years). The combined solution gave an estimated net gain of approx. DKK 3 billion, while the traditional solution gave a net loss of approx. DKK 4 billion. Shows that surface solutions can be both cheaper and provide added value (greenery, recreation)."
+  },
+  "mobility_e18": {
+   "claim": "Pontevedra received the EU's first Urban Road Safety Award (2020). According to the Commission, the local police recorded no road deaths in 2011–2018, and 80% of children aged 6–12 walk to school on their own.",
+   "context": "The European Commission's (DG Mobility and Transport) citation, 18 May 2020. Measures included speed limits of 10–30 km/h and attractive public spaces for pedestrians. The share of children who walk to school on their own is a good indicator for the game of how independent children are and how safe the streets are."
+  },
+  "mobility_e19": {
+   "claim": "Retail in Ghent after the Circulation Plan: 30% of Ghent residents said they shop less often in the inner city, 65% that it had not affected them and 5% that they shop more often. At the same time, new retail and hospitality (horeca) businesses in the centre increased by 20% (2018 compared with 2017), and closures and bankruptcies fell by 7%.",
+   "context": "Survey (mobility survey) and business data (Graydon) in the city's 2019 evaluation. The evaluators point out that answers about shopping “less often” cannot be translated directly into an equally large loss of turnover. The business data show no hampered growth in the centre. A good basis for a trade-off in the game: retailers' concerns are real and measurable in surveys, but the structural effect on the business community was not negative."
+  },
+  "community_e1": {
+   "claim": "People with stronger social relationships have a 50% higher likelihood of surviving over the follow-up period than people with weak relationships.",
+   "context": "Meta-analysis of 148 prospective studies with 308,849 participants (mean follow-up 7.5 years). The effect was consistent across age, sex, health status and cause of death. Used as the base parameter for how a 'social network index' affects mortality in the model; observational data, so causality is not fully established."
+  },
+  "community_e2": {
+   "claim": "Perceived loneliness increases mortality by an average of 26%.",
+   "context": "Meta-analysis of 70 prospective studies (approx. 3.4 million participants) in which confounders were controlled for. Same study: social isolation OR 1.29 and living alone OR 1.32 (see community_e3). Suitable as a risk multiplier in the model's mortality calculation for the share of the population reporting loneliness."
+  },
+  "community_e3": {
+   "claim": "Objective social isolation increases mortality by 29% and living alone by 32%.",
+   "context": "From the same meta-analysis as community_e2: social isolation OR 1.29; living alone OR 1.32. Objective isolation and subjective loneliness are different mechanisms – the model can use both."
+  },
+  "community_e4": {
+   "claim": "Loneliness is linked to an estimated 871,000 deaths a year worldwide (about 100 per hour); one in six people is affected by loneliness.",
+   "context": "WHO Commission on Social Connection (report, June 2025). In high-income countries about 11% say they feel lonely (versus about 24% in low-income countries). Lonely teenagers are 22% more likely to get lower grades; lonely people are twice as likely to become depressed. Provides global context and supports treating social connection as a public health issue; the World Health Assembly adopted a resolution on social connection in May 2025."
+  },
+  "community_e5": {
+   "claim": "About 664,000 people in Sweden (aged 16+) have no close friend, 7–8% of the population.",
+   "context": "Statistics Sweden (SCB) Living Conditions Surveys (ULF) 2023, confidence interval 610,000–720,000 people. Men 9.4%, women 6.1%; foreign-born 13.1% versus 6.2% for Swedish-born; less than upper secondary education 12.2% versus 5.2% for post-secondary education; 65+ 8.0%."
+  },
+  "community_e6": {
+   "claim": "26% of adults in Sweden (28% of women, 24% of men) are mildly or severely troubled by loneliness or isolation; about 3% are severely troubled.",
+   "context": "National Public Health Survey 2022, reported in the Public Health Agency of Sweden's 2024 mapping. Highest among 16–29-year-olds and those aged 85+. People living alone 47% versus those living with others 21%. Severely troubled: 2% among those in work, 11% among the unemployed and 14% among those on long-term sick leave. In ULF 2022, 8% said they feel lonely most or all of the time (14% among the oldest). The Public Health Agency of Sweden estimates involuntary loneliness at about 6% of the population. Starting value for the model's loneliness indicator."
+  },
+  "community_e7": {
+   "claim": "Among people troubled by loneliness, 24% have serious psychological distress, compared with 4% among those who are not troubled; 28% versus 9% have had suicidal thoughts.",
+   "context": "National Public Health Survey 2022. Share in good general health: 56% among the lonely versus 78% among the non-lonely; good mental well-being 65% versus 93%. Cross-sectional data – the association probably runs in both directions. Links the community indicator to the health indicator in the model."
+  },
+  "community_e8": {
+   "claim": "41% of all households in Sweden consist of one person.",
+   "context": "Statistics Sweden (SCB) population statistics 2022, cited in the Public Health Agency of Sweden's loneliness mapping. The share of single-person households is higher in older age groups."
+  },
+  "community_e9": {
+   "claim": "In residential care homes (säbo) with daily activities, 17% often feel lonely, compared with 36% where activities are offered less than once a month.",
+   "context": "National Board of Health and Welfare survey 'Vad tycker de äldre om äldreomsorgen?' (What do older people think of elderly care?), reported by the Public Health Agency of Sweden in 2024. Overall, 19% in residential care homes and 12% receiving home care say they are often troubled by loneliness. Cross-sectional comparison (may be affected by other differences between the homes), but gives a reasonable upper bound for what the range of activities offered in municipal elderly care can influence."
+  },
+  "community_e10": {
+   "claim": "The 1995 Chicago heat wave killed 739 people in one week; mortality was roughly ten times higher in North Lawndale than in the neighbouring district of Little Village, which had similar levels of poverty but a stronger social life.",
+   "context": "Klinenberg's 'social autopsy' showed that many died alone at home and that differences in social infrastructure (shops, street life, associations, density) explained part of the differences between neighbourhoods. The figure of 40 versus 4 deaths per 100,000 inhabitants is taken from secondary summaries of the book. Klinenberg developed the concept of social infrastructure (libraries, parks, meeting places) in 'Palaces for the People' (2018)."
+  },
+  "community_e11": {
+   "claim": "Restoring vacant lots (clean-up, grass, trees, fencing) reduced gun violence by 29% in poor neighbourhoods and increased the use of outdoor spaces for socialising by 76%.",
+   "context": "Cluster-randomised study in Philadelphia with 541 lots and 445 residents interviewed over 38 months. Also reduced perceived crime (−36.8%) and fear of going outside (−57.8%). A cheap, scalable 'social infrastructure' measure."
+  },
+  "community_e12": {
+   "claim": "Eight out of ten studies examining health and well-being in cohousing found a positive association, but the quality of the evidence is low.",
+   "context": "Scoping review: 2,560 articles screened, 25 included, analysing 77 housing examples, all in high-income countries. 22 studies on psychosocial determinants of health (social support, community, safety) – most of them positive. Mostly cross-sectional and qualitative studies; selection effects (those who choose cohousing are already sociable) cannot be ruled out. The model should therefore use a small effect size."
+  },
+  "community_e13": {
+   "claim": "The Färdknäppen cohousing building in Stockholm ('the second half of life') has 43 flats of 37–75 m² and about 400 m² of shared space, with shared dinners cooked by rotating cooking teams.",
+   "context": "Initiated in 1993 together with the municipal housing company Familjebostäder. Gives a design parameter: about 9 m² of shared space per flat. Facts from the CO-HOPE research project (TU Wien) and an architecture database."
+  },
+  "community_e14": {
+   "claim": "The Humanitas care home in Deventer (the Netherlands) lets students live rent-free in return for spending at least 30 hours a month being 'good neighbours' to the older residents.",
+   "context": "Running since around 2013; a handful of students among about 160 older residents according to press reports. No published impact evaluation found – the example is an inspirational model for intergenerational housing, not a proven effect."
+  },
+  "community_e15": {
+   "claim": "Ostrom's design principles for governing the commons have strong empirical support in a review of 91 studies.",
+   "context": "Ostrom (1990, Governing the Commons) formulated eight principles (clear boundaries, locally adapted rules, participation in rule-making, monitoring, graduated sanctions, conflict resolution, recognised right to self-determination, nested levels). Cox et al. found the principles well supported and proposed a refined version with ten principles. Used as a qualitative basis for the game's 'commons' (allotment gardens, tool libraries, energy communities, fishing waters)."
+  },
+  "community_e16": {
+   "claim": "Ireland's Citizens' Assembly (99 randomly selected citizens) proposed changing the abortion ban; the referendum on 25 May 2018 returned 66.4% yes.",
+   "context": "The assembly (2016–2018) considered five issues (including the ageing population and climate) and met at weekends. Its recommendations went via a parliamentary committee to a referendum. In the assembly, 64% supported abortion without restrictions. An example of how randomly selected assemblies can break political deadlock – but the effect depends on a clear link to decision-making."
+  },
+  "community_e17": {
+   "claim": "France's Citizens' Convention for Climate: 150 randomly selected citizens drew up 149 proposals, but the link to implementation was weak and support among the wider public was low.",
+   "context": "Giraudet et al. show that the steering committee's influence did not erode the citizens' freedom of action, but that the process did not create broad support outside the convention and that the commitment on how the proposals would be handled was too weak. The President promised to take forward 146 of the proposals; reviews (e.g. Reporterre) have claimed that only about 10% were implemented unchanged – the figure is disputed (verified only via secondary sources). Warns of 'cherry-picking' – a risk the model should include."
+  },
+  "community_e18": {
+   "claim": "In Gdańsk, citizens' assembly proposals with at least 80% support become binding on the city; the first assembly (about 60 people, four Saturdays), on flooding after the 2016 cloudburst, produced 16 proposals.",
+   "context": "Mayor Adamowicz committed to implementing proposals with ≥80% support. The proposals included investment in monitoring and stormwater infrastructure (nearly USD 40 million according to the article), grants to property owners for local stormwater management and an information campaign. The source is an opinion piece (grey literature)."
+  },
+  "community_e19": {
+   "claim": "The OECD has mapped 289 representative deliberative processes (citizens' assemblies, juries, panels) from 1986–2019, with a clear increase after 2010.",
+   "context": "282 of the cases were in OECD countries. The report identifies twelve models, good-practice principles and three routes to institutionalising citizen deliberation. Used as support for the view that randomly selected citizens' assemblies are an established, not experimental, form of democracy."
+  },
+  "community_e20": {
+   "claim": "Brazilian municipalities with participatory budgeting directed more money to sanitation and health and saw infant mortality fall by about 1–3 per 1,000 (roughly 10–20%).",
+   "context": "Panel data for Brazilian municipalities 1990–2004. The effect sizes (1–3 per 1,000; budget share for health and sanitation +1.2 percentage points) are taken from the author's working paper (LSE 2009); the published version confirms the direction. Touchton & Wampler (2014, Comparative Political Studies) found similar associations that grow stronger the longer participatory budgeting has been in place. Transferability to a Swedish context with low infant mortality is limited – the mechanism (resources directed to needs that would otherwise be overlooked) is what is relevant."
+  },
+  "community_e21": {
+   "claim": "Paris allocates 5% of the city's investment budget, about EUR 100 million a year, to participatory budgeting; in 2019, 231,822 people voted.",
+   "context": "About EUR 0.5 billion over the 2014–2020 term of office. 2019: 2,084 projects submitted, 196 winners, including an earmarked share for disadvantaged neighbourhoods and one for schools."
+  },
+  "community_e22": {
+   "claim": "In the 2022 UK four-day week trial (61 companies, about 2,900 employees), 56 companies (92%) continued after the trial and staff turnover fell by 57%.",
+   "context": "The 100-80-100 model (full pay, 80% of the time, maintained productivity), June–December 2022. 18 companies made the change permanent; 71% reported lower burnout, 39% less stress; sick days fell by about 65% (figure from secondary summaries). Voluntary participation and no control group – the effects are probably overestimated for a whole labour market."
+  },
+  "community_e23": {
+   "claim": "Iceland's working-time trials of 2015–2019 covered about 2,500 employees (over 1% of the workforce) on a 35–36-hour week without pay cuts; since then 86% of the workforce have gained shorter hours or the right to them.",
+   "context": "Trials in the City of Reykjavík and the state sector. Productivity and service provision were maintained or improved in most workplaces; well-being increased; cost-neutral according to the report. The report was written by advocacy think tanks – hence medium confidence."
+  },
+  "community_e24": {
+   "claim": "The six-hour-day trial at the Svartedalen care home for older people in Gothenburg (2015–2017) cost about SEK 12 million for 17 extra staff; sick days fell by 4.7% while those in the control group rose by 62.5%.",
+   "context": "68 assistant nurses moved to six-hour days on full pay. Staff reported better health and the quality of care improved; the trial was ended because permanent introduction was considered too expensive. The net cost (taking into account reduced unemployment and sickness absence) was not fully calculated. SVT (2015) instead gave SEK 8 million a year and 14 new hires early in the trial – the figures differ between sources."
+  },
+  "community_e25": {
+   "claim": "The London time bank network valued its social value for 2015–2017 at about GBP 3.1 million against a budget of about GBP 0.3 million (roughly 10:1).",
+   "context": "Valued using HACT's Social Value tool across 14 outcomes (including relief from depression/anxiety and good health). Members report reduced loneliness and a greater sense of belonging. The evaluation was carried out by the umbrella organisation itself, without a control group – the ratio is a rough indication, not an effect. British research (Naughton-Doe et al. 2021) points to implementation problems: safety bureaucracy, professional paternalism and the need for resources for coordinators."
+  },
+  "community_e26": {
+   "claim": "Assumption: A strong and sustained municipal programme for social infrastructure and community housing can reduce the share of adults troubled by loneliness by 2–5 percentage points (from about 26%) and the share with no close friend by 1–2 percentage points over 10–20 years.",
+   "context": "Model assumption. Reasoning: the difference between residential care homes with and without daily activities (17% versus 36%, community_e9) shows that environment and activities matter, but applies to a small group; cohousing studies show positive but weak associations (community_e12); loneliness is strongly linked to unemployment and income (community_e6), which the municipality can only partly influence. No population study shows how much a municipality can reduce loneliness – hence a cautious effect and a time lag. The mortality effect is calculated via OR 1.26 (community_e2)."
+  },
+  "health_e1": {
+   "claim": "Spending at least 120 minutes a week in nature is associated with a 59% higher likelihood of reporting good health and a 23% higher likelihood of high well-being.",
+   "context": "n = 19,806, representative English survey (MENE 2014–2016). Well-being OR 1.23 (1.08–1.40). The effect levels off at 200–300 min/week; no effect below 120 min. It also applied to older people and people with long-term illness; it made no difference whether the time was spent in one visit or several. Cross-sectional study – reverse causality possible. Model parameter: share of inhabitants reaching ≥120 min/week."
+  },
+  "health_e2": {
+   "claim": "Children who grow up with the least greenery around their homes have up to 55% higher risk of psychiatric disorders later in life than those with the most greenery.",
+   "context": "Danish register study, about 1 million people; greenery measured by satellite (NDVI) within 210×210 m around the home from birth to age 10. The association remained after adjustment for urbanisation, socio-economic status and parental mental illness; cumulative exposure throughout childhood mattered most. 'Up to' – the effect varies between diagnoses. A strong argument for greenery at preschools, schools and homes."
+  },
+  "health_e3": {
+   "claim": "Greater exposure to green space is associated with 31% lower all-cause mortality, 28% lower risk of type 2 diabetes and 16% lower cardiovascular mortality.",
+   "context": "Systematic review and meta-analysis of 103 observational and 40 intervention studies, about 100 health outcomes. Type 2 diabetes OR 0.72 (0.61–0.85); cardiovascular mortality OR 0.84 (0.76–0.93); preterm birth OR 0.87; diastolic blood pressure −1.97 mmHg; heart rate −2.57 beats/min; lower cortisol. The authors particularly recommend investment in socio-economically disadvantaged areas."
+  },
+  "health_e4": {
+   "claim": "WHO Europe proposes as an indicator that everyone should live within 300 metres in a straight line (about a 5-minute walk) of a green space of at least 0.5 hectares (alternatively 1 hectare).",
+   "context": "The report summarises evidence for improved mental health, reduced cardiovascular disease, obesity and type 2 diabetes, and better pregnancy outcomes, via stress reduction, physical activity, and reduced air pollution, noise and heat. 0.5 ha is the core indicator, 1 ha an additional indicator."
+  },
+  "health_e5": {
+   "claim": "Greening vacant lots reduced feelings of depression among nearby residents by 41.5%, and by 68.7% in neighbourhoods below the poverty line.",
+   "context": "Cluster-randomised study in Philadelphia, 541 lots, 342 participants with follow-up. Feelings of worthlessness −50.9%. A simple, cheap measure (clean-up, grass, trees, fencing, maintenance). Shows that even small green spaces in the local environment affect mental health – especially where needs are greatest."
+  },
+  "health_e6": {
+   "claim": "The WHO recommends that adults do 150–300 minutes a week of moderate-intensity physical activity (or 75–150 minutes of vigorous-intensity activity) and that children and young people are active for an average of 60 minutes a day.",
+   "context": "WHO guidelines 2020; muscle-strengthening activity is recommended for all ages and sedentary time should be reduced. Used as the threshold for the model indicator 'share meeting recommended physical activity levels'."
+  },
+  "health_e7": {
+   "claim": "Physical inactivity causes about 9% of all premature deaths worldwide (over 5.3 of 57 million deaths in 2008); eliminating inactivity would increase life expectancy by 0.68 years.",
+   "context": "The Lancet series on physical activity. A 10% reduction in inactivity would prevent over 533,000 deaths a year globally, and a 25% reduction over 1.3 million. Model parameter: life expectancy gain of up to about 0.7 years with full activity (0.41–0.95), scaled by the change in the share of inactive people."
+  },
+  "health_e8": {
+   "claim": "Only about one in five Swedish schoolchildren (aged 11–15) is sufficiently physically active (at least 60 minutes a day).",
+   "context": "Skolbarns hälsovanor 2021/2022 (the Swedish part of the WHO Health Behaviour in School-aged Children study, HBSC). The next survey, 2025/2026, will be published in 2026–2027. The Public Health Agency of Sweden notes that sedentary behaviour is increasing in all age groups."
+  },
+  "health_e9": {
+   "claim": "77% of 15-year-old girls and 46% of 15-year-old boys have at least two psychosomatic complaints more than once a week – the highest level since measurements began in the 1980s.",
+   "context": "Skolbarns hälsovanor 2021/2022: 13-year-old girls 68%, boys 39%; 15-year-old girls 77%, boys 46%. Complaints = e.g. headache, stomach ache, feeling low, irritability, nervousness, difficulty sleeping. The share has gradually increased since the mid-1980s. A central indicator for young people's mental health in the model."
+  },
+  "health_e10": {
+   "claim": "19% of girls and 10% of boys aged 11–15 feel lonely most of the time or always.",
+   "context": "Skolbarns hälsovanor, reported in the Public Health Agency of Sweden's 2024 loneliness mapping. The share is lowest among 11-year-olds and highest among 15-year-olds. Links young people's mental health to the community theme (see community_e6)."
+  },
+  "health_e11": {
+   "claim": "Cycling to work is associated with 41% lower all-cause mortality, 45% lower risk of cancer and 46% lower risk of cardiovascular disease.",
+   "context": "UK Biobank, 263,450 participants. Cycle commuting: cardiovascular disease HR 0.54, cancer incidence HR 0.55, cancer mortality HR 0.60. Walking to work: lower cardiovascular disease (HR 0.73) but no significant effect on all-cause mortality. Observational study. Links the mobility theme to health."
+  },
+  "health_e12": {
+   "claim": "Public health interventions in high-income countries return a median of 14 times the money invested (ROI 14.3:1); local interventions 4.1:1 and national ones (e.g. legislation) 27.2:1.",
+   "context": "Systematic review of 52 studies. Median benefit–cost ratio 8.3. The authors conclude that cuts to public health budgets are a 'false economy'. For a municipality, the ROI of 4.1:1 for local interventions is the most relevant parameter; the benefits often accrue to other bodies (the region, the state) and with a delay."
+  },
+  "health_e15": {
+   "claim": "About 130,000–150,000 people in Sweden have dementia (2023), 20,000–25,000 develop it each year, and the number is expected to reach 230,000–270,000 by 2050.",
+   "context": "The cost to society was estimated in 2023 at about SEK 90–100 billion a year, of which SEK 81–84.5 billion is borne by the municipalities (mainly elderly care), SEK 1.3 billion by the regions and SEK 11.4–14.4 billion by relatives providing informal care. This is why dementia is the heaviest ageing-related item in the municipal budget in the model. Physical activity, social connection and blood pressure control are commonly cited as preventive factors (not quantified here)."
+  },
+  "health_e16": {
+   "claim": "70% of Sweden's population feel they are in good health, but health inequalities between socio-economic groups are widening in several areas.",
+   "context": "The Public Health Agency of Sweden's follow-up 'Folkhälsan i Sverige – årsrapport 2025' (page updated March 2026). The national goal is to close the avoidable health gaps within a generation."
+  },
+  "health_e17": {
+   "claim": "Assumption: In the model, every 10-percentage-point increase in the share of inhabitants getting ≥120 minutes in nature per week increases the share with good self-rated health by about 0.5–1 percentage point.",
+   "context": "Model assumption. Derived from White et al. (health_e1): OR 1.59 for good health at 120–179 min versus 0 min. With a baseline of about 70% in good health (health_e16), OR 1.59 corresponds to a difference of roughly 9 percentage points between the groups; we halve the effect to allow for reverse causality (healthy people go outdoors more) and because not everyone starts from 0 min. 10% of the population × about 4.5–9 p.p. ≈ 0.5–1 p.p. in total. Should be recalibrated if Swedish longitudinal data become available."
+  },
+  "digital_resilience_e1": {
+   "claim": "The state set aside SEK 685 million in 2023 and SEK 658 million in 2024 in government grants for textbooks and teachers’ guides, and estimates just over SEK 0.5 billion per year from 2025, with the goal of “one textbook per pupil and subject”.",
+   "context": "A government grant that head teachers apply for, covering preschool class, compulsory school, adapted compulsory school, special school and Sami school. The Government argues that basic skills are best developed in analogue environments with analogue tools."
+  },
+  "digital_resilience_e2": {
+   "claim": "In its 2023 consultation response to the Swedish National Agency for Education’s proposed national digitalisation strategy, Karolinska Institutet wrote that there is clear scientific evidence that digital tools impair rather than enhance pupils’ learning, and advocated printed textbooks and teachers’ expertise.",
+   "context": "The statement is dated 28 April 2023 and was written by professors Lisa Thorell, Torkel Klingberg, Agneta Herlitz, Andreas Olsson and Ulrika Ådén. As an example, it notes that students with an internet-connected computer spent up to 40% of lecture time on unrelated activities (Kraushaar & Novak 2010). The often-quoted statement in English translation via AP/VOA reads: “There's clear scientific evidence that digital tools impair rather than enhance student learning.” KI’s own statement (ki.se/media/260512/download) requires a login and could not be opened. It has therefore been verified via secondary sources (AP/VOA and search results on the statement’s content), so the exact Swedish wording has not been checked. The statement is contested: critics argue that the effect depends on how the technology is used. Use it as a political driver, not as an effect size."
+  },
+  "digital_resilience_e3": {
+   "claim": "Swedish 15-year-olds scored 482 points in mathematics (−21 compared with 2018) and 487 in reading comprehension (−19) in PISA 2022; science 494 (−6, within the margin of error).",
+   "context": "The decline was larger than the OECD average (approx. −15 in mathematics, −10 in reading) and brought Sweden back close to its 2012 low point. The causes are debated (screens, the pandemic, pupil composition); use as the starting point for the ‘basic skills’ indicator, not as proof of the effect of screens. Figures verified via The Local, citing the OECD country report (the OECD page blocked automated retrieval)."
+  },
+  "digital_resilience_e4": {
+   "claim": "The Public Health Agency of Sweden’s recommendations (Sept 2024) for leisure screen use: children under 2 should as far as possible not use screens, ages 2–5 at most 1 hour/day, ages 6–12 at most 1–2 hours/day, ages 13–18 at most 2–3 hours/day; no screens before bedtime and phones kept out of the bedroom at night.",
+   "context": "Applies to leisure time (social media, video, TV, gaming) – not schoolwork, music, podcasts or e-books. Justified by links to poorer sleep and depressive symptoms. Model parameter: the share of children who follow the guidelines can be used as an indicator of ‘screen balance’. Figures verified via Sveriges Radio and communications from the Public Health Agency of Sweden and the Government (the press release of 2 Sept 2024 refers to the FoHM website)."
+  },
+  "digital_resilience_e5": {
+   "claim": "On 21 May 2026 the Riksdag decided (committee report 2025/26:UbU22, Government bill 2025/26:193) that pupils’ mobile phones are to be collected at the start of the school day and returned at its end in compulsory school, adapted compulsory school, special school, Sami school, school-age educare and open leisure activities. The law applies from 1 August 2026.",
+   "context": "Exceptions: educational use as instructed by the teacher, additional adaptations/special support, special reasons for an individual pupil, and outdoor teaching. The bill mentions ‘certain financial consequences for the municipalities’ (storage, staff time) without giving an exact amount. Upper secondary school is not covered. In the game this is a national constraint from 2026 – the municipality’s choice concerns how far beyond the law to go (e.g. upper secondary school, screen-free breaks)."
+  },
+  "digital_resilience_e6": {
+   "claim": "After schools in four English cities banned mobile phones, pupils’ results in final exams rose by an average of about 0.07 standard deviations, driven by the lowest-performing pupils.",
+   "context": "Difference-in-differences across 91 schools (Birmingham, London, Leicester, Manchester), 16-year-olds. Often cited as ‘6.4% of a standard deviation’. The effect is small on average but larger for weaker pupils – relevant to equality indicators. English context 2001–2011; transferability to Sweden is uncertain."
+  },
+  "digital_resilience_e7": {
+   "claim": "A British study of 1,227 pupils (aged 12–15) in 30 schools found no difference in mental well-being (WEMWBS, p=0.62) between schools with restrictive and permissive phone policies. Pupils in restrictive schools used their phones about 0.67 hours less during school time, but total use on weekdays and at weekends did not differ.",
+   "context": "Cross-sectional study (SMART Schools), not randomised. However, more total phone and social media time was linked to poorer well-being, sleep and school performance – the authors conclude that school bans alone are not enough. Use to limit the expected health effect of phone-free schools to close to zero unless leisure use also decreases."
+  },
+  "digital_resilience_e8": {
+   "claim": "Norwegian register study (477 lower secondary schools): phone bans reduced girls’ healthcare contacts for psychological symptoms and illnesses, reduced bullying for both sexes and improved girls’ grades and transition to academic upper secondary programmes – with the largest effect for girls from low socio-economic backgrounds.",
+   "context": "Event study using administrative data 2010–2018. Working paper (NHH Discussion Paper 1/2024), not yet finally peer-reviewed at the time of checking; exact effect sizes could not be verified from the full text. Contrasts with Goodyear et al. 2025 (digital_resilience_e7) – the evidence is therefore mixed. In the model: a possible positive effect on girls’ mental health and equality, with an uncertainty interval that includes zero."
+  },
+  "digital_resilience_e9": {
+   "claim": "According to UNESCO’s GEM Report, 79 education systems (40%) worldwide had bans on smartphones in school at the end of 2024, up from 60 (30%) at the end of 2023.",
+   "context": "Based on UNESCO’s PEER database of laws and policies. Finland restricts phone use during lessons in basic education from 1 August 2025 (Finnish National Agency for Education, Utbildningsstyrelsen). Shows rapid policy diffusion – useful for arguing that ‘phone-free school’ has become the norm, not for effect size."
+  },
+  "digital_resilience_e10": {
+   "claim": "Roughly one in ten in-store purchases in Sweden is made with cash (2024); in the euro area the share is about 50%.",
+   "context": "The share fell sharply 2010–2020 and has since levelled off, with a small increase in 2023. Cash in circulation and cash withdrawals continue to decline. Model parameter for ‘payment redundancy’: low cash share = high vulnerability during digital outages unless offline solutions are in place."
+  },
+  "digital_resilience_e11": {
+   "claim": "Since 1 July 2026, card payments with a physical card and PIN must work offline when buying essential goods (food, medicines, fuel) during disruptions to data communications for up to seven days. Sveriges Riksbank also recommends that households keep about SEK 1,000 in cash per adult.",
+   "context": "Based on an agreement from October 2025 between Sveriges Riksbank, card issuers (including Handelsbanken, Nordea, SEB and Swedbank), Visa/Mastercard, acquirers and the retail sector (Ica, Coop, Axfood, Apoteket and others). Model parameter: number of days that basic retail keeps functioning during a telecoms/IT outage; the cash recommendation provides the household buffer."
+  },
+  "digital_resilience_e12": {
+   "claim": "In 2026 the Riksdag decided (committee report 2025/26:FiU39, Government bill 2025/26:199) that grocery stores and pharmacies with staffed checkouts must, as a general rule, accept cash from 1 July 2026. The obligation applies to amounts up to 0.1 price base amounts and at most 25 coins per purchase.",
+   "context": "Exceptions apply if staff safety cannot be maintained, if cash handling risks forcing the outlet to close, or if money laundering is suspected in the individual case. 0.1 price base amounts corresponds to about SEK 5,900 in 2026 (figure via a summary of the committee report). National constraint; the municipality can itself choose to accept cash in its own services."
+  },
+  "digital_resilience_e13": {
+   "claim": "The brochure “Om krisen eller kriget kommer” (If Crisis or War Comes, 2024) urges everyone to be prepared at home for at least one week: at least three litres of water per person per day, a radio powered by batteries, solar cells or a crank, important phone numbers on paper, and cash in various denominations for at least one week. Sveriges Radio P4 is the emergency broadcast channel.",
+   "context": "Published by the Swedish Civil Contingencies Agency (MSB) in 2024 (publ. no. MSB2398) and distributed to the country’s households in November 2024; since 2026 the agency has been called the Swedish Civil Defence and Resilience Agency (Myndigheten för civilt försvar, MCF) and the brochure is available at mcf.se. ‘Most of us will have to manage on our own for at least a week.’ Analogue reserves (paper, radio, cash) are thus official policy. Parameter: share of households prepared for one week."
+  },
+  "digital_resilience_e14": {
+   "claim": "In 2025, 97% of Swedes (aged 16+) use the internet and 93% use it daily; 3% do not use the internet at all – almost exclusively people of retirement age. 95% use electronic ID.",
+   "context": "National survey (Internetstiftelsen, the Swedish Internet Foundation). Practically everyone who lacks electronic ID is 65+."
+  },
+  "digital_resilience_e15": {
+   "claim": "Almost a quarter of Swedes have refrained from booking a doctor’s appointment because healthcare e-services and apps are perceived as too difficult; more than one in ten feel that digital services make booking appointments harder.",
+   "context": "Those most affected are the oldest, especially older women, people with disabilities and people born abroad – but also young adults. Shows that ‘digital first’ can lead to forgone care (health, equality). An exact percentage is not given in the summary; the value 25 is rounded up."
+  },
+  "digital_resilience_e16": {
+   "claim": "Using a broader definition (rarely or never online), Internetstiftelsen (the Swedish Internet Foundation) estimated in 2018 that 1.1 million Swedes lived in digital exclusion, of whom 579,000 were over 76.",
+   "context": "Older figure and broader definition than e14; corresponds to roughly one tenth of the population. Shows the range of 3–11% depending on definition. Verified via SVT’s reporting on Internetstiftelsen’s survey."
+  },
+  "tech_ai_e1": {
+   "claim": "In the Swedish randomised MASAI trial (just over 105,900 women), AI-supported mammography screening found 29% more breast cancers (6.4 compared with 5.0 per 1,000 women screened) without significantly more false positives, and radiologists’ reading workload fell by 44%.",
+   "context": "Four screening units in south-western Sweden (Region Skåne) 2021–2022, AI system Transpara. The increase mainly concerned small lymph-node-negative invasive cancers and in situ cancer – some of this may be overdiagnosis. Model parameter for regional healthcare: early detection +, staffing need −44% in image reading."
+  },
+  "tech_ai_e2": {
+   "claim": "MASAI’s primary outcome: interval cancer (cancer detected between screenings) was 1.55 per 1,000 in the AI group versus 1.76 in the control group (about 12% fewer), sensitivity was 80.5% versus 73.8%, and specificity was unchanged at 98.5%.",
+   "context": "Non-inferiority confirmed; the difference in interval cancer was not statistically significant (ratio 0.88, CI 0.65–1.18), but the AI group had fewer aggressive/large interval cancers (−27% aggressive subtypes according to Lund University). Published in The Lancet on 30 Jan 2026. Strengthens the case that AI screening is safe to introduce."
+  },
+  "tech_ai_e3": {
+   "claim": "Experienced endoscopists who had become used to AI support found fewer adenomas when performing colonoscopy without AI: the adenoma detection rate fell from 28.4% to 22.4% (−6 percentage points, approx. −20% in relative terms).",
+   "context": "Observational study, four Polish centres, 19 endoscopists, 1,443 colonoscopies 2021–2022. The first study to suggest that regular AI use makes clinicians worse at tasks performed without AI. Model parameter for ‘deskilling’: if the AI system drops out (cyberattack, change of supplier), performance becomes worse than before AI."
+  },
+  "tech_ai_e4": {
+   "claim": "Data centres used about 415 TWh of electricity in 2024, equivalent to about 1.5% of global electricity use; the USA accounted for 45%, China 25% and Europe 15%.",
+   "context": "The IEA’s best estimate. Data centre electricity use has grown by approx. 12%/year since 2017, four times faster than total electricity use. Emissions from data centre electricity are estimated at approx. 180 Mt CO2."
+  },
+  "tech_ai_e5": {
+   "claim": "IEA base case: data centres’ electricity use more than doubles to about 945 TWh in 2030 and about 1,200 TWh in 2035 (range 700–1,700 TWh), with AI as the main driver; emissions rise from 180 to 300 Mt CO2.",
+   "context": "The range refers to 2035 across sensitivity scenarios. Relevant to Sweden as a host country for data centres (the AI Commission mentions, among other things, Microsoft’s SEK 33.7 billion investment in Swedish data centres)."
+  },
+  "tech_ai_e6": {
+   "claim": "AI-based fault location in power grids can shorten outage duration by 30–50%, and AI tools for grid operation can free up as much as 175 GW of transmission capacity globally without new power lines.",
+   "context": "The IEA’s compilation of applications. The 175 GW figure is global and refers in part to dynamic line rating. Model parameter for the local grid (e.g. The actual effect depends on metering data and grid structure."
+  },
+  "tech_ai_e7": {
+   "claim": "The IEA estimates that broad application of existing AI solutions could reduce emissions by the equivalent of about 5% of energy-related emissions in 2035 – more than data centres’ own emissions, but not enough to solve the climate problem.",
+   "context": "Scenario calculation that assumes widespread adoption; rebound effects (e.g. cheaper transport leading to more travel) can eat up the gains. Use as a ceiling for AI’s climate benefit in the model, not as a certain effect."
+  },
+  "tech_ai_e8": {
+   "claim": "According to Google’s own measurement, a median text prompt to Gemini (May 2025) used 0.24 Wh of electricity and 0.26 ml of water and produced 0.03 g CO2e; energy per prompt fell 33-fold in one year.",
+   "context": "The company’s self-reporting, not independently reviewed; refers to text prompts, not image/video or model training. Shows that individual use is small but that total volume and training drive demand (cf. tech_ai_e5). Model parameter: energy per AI interaction in municipal services."
+  },
+  "tech_ai_e9": {
+   "claim": "AI-based flood forecasts achieve equal or better reliability for extreme flows with up to five days’ lead time than the global reference system GloFAS achieves in real time (zero days’ lead time), even in ungauged rivers; the system is used operationally in more than 80 countries.",
+   "context": "Peer-reviewed in Nature (Google Research et al.). Assumption in the model: earlier warning reduces damage; see also tech_ai_e10."
+  },
+  "tech_ai_e10": {
+   "claim": "Only half of the world’s countries report adequate multi-hazard early warning systems; according to the WMO, early warning systems deliver an almost tenfold return on investment. The UN goal is for everyone to be protected by warning systems by the end of 2027.",
+   "context": "The WMO’s Early Warnings for All initiative. The return figure is a global summary; Swedish conditions (already well-developed warning systems: VMA (Important Public Announcements), SE-Alert) mean a lower marginal benefit. Used to justify AI-supported climate adaptation modelling."
+  },
+  "tech_ai_e11": {
+   "claim": "In experiments with 5,734 participants, people preferred group statements written by an AI mediator (the ‘Habermas Machine’) to statements from human mediators – they were rated as more informative, clear and unbiased – and participants often moved towards a shared position. The result was replicated in a virtual citizens’ panel representative of the UK.",
+   "context": "Google DeepMind study in Science. Shows potential for AI-supported deliberation at scale (e.g. citizens’ assemblies, the comprehensive plan). Risks: the model’s values, manipulation, minority voices being smoothed out. The effect size on actual political participation is unknown."
+  },
+  "tech_ai_e12": {
+   "claim": "The AI Commission’s roadmap contains 75 proposals estimated to cost SEK 16,712 million over ten years, of which SEK 11,507 million in the first five years. The Commission notes that smaller government agencies, small regions and municipalities ‘often have not even begun using AI’ and proposes a voluntary AI workshop for the public sector.",
+   "context": "SOU 2025:12, dated 2025-02-04 in the Riksdag’s document database. Approx. SEK 2.3 billion/year during the first five years. According to the Commission, the proposals do not restrict municipal self-government."
+  },
+  "tech_ai_e13": {
+   "claim": "A rough estimate by the Agency for Digital Government (Digg) and McKinsey (2020) states that full use of today’s AI in public administration could yield gains of about SEK 140 billion per year, about 5–6% of public expenditure.",
+   "context": "The range gives % of public expenditure. Itself called a ‘rough estimate’ in SOU 2025:12; refers to full implementation and includes reduced incorrect payments. Should be seen as a theoretical ceiling – the benefit actually realised in a municipality is likely to be considerably lower (see tech_ai_e19)."
+  },
+  "tech_ai_e14": {
+   "claim": "Public administration spends around SEK 1.5 billion per year on interpreting services; AI-supported interpreting is realistically judged usable in 20–30% of interpreting situations, giving an annual savings potential of SEK 300–450 million. The Swedish National Courts Administration’s AI translation of legal text is estimated to cost 90% less than a translation agency and takes seconds instead of weeks.",
+   "context": "Range = savings potential in SEK billion/year. Example from SOU 2025:12. Risk: mistranslation in legal and medical contexts – a human interpreter is needed where mistakes have serious consequences."
+  },
+  "tech_ai_e15": {
+   "claim": "The EU AI Act (Regulation (EU) 2024/1689) entered into force on 1 August 2024; the bans on unacceptable AI applications have applied since 2 February 2025, rules for general-purpose AI models since 2 August 2025, and the regulation applies in general from 2 August 2026.",
+   "context": "Prohibited: harmful manipulation and exploitation of vulnerabilities, social scoring, individual crime-risk prediction, untargeted scraping of facial images, emotion recognition in workplaces and schools, biometric categorisation by sensitive characteristics, and real-time remote biometric identification for law enforcement in publicly accessible spaces (with narrow exceptions). A ninth ban (non-consensual intimate material/CSAM) will be added in December 2026 via the AI omnibus. Sets a floor for municipal surveillance."
+  },
+  "tech_ai_e16": {
+   "claim": "Through the AI omnibus (proposed 19 Nov 2025, political agreement 7 May 2026, in force 27 July 2026), the requirements for high-risk AI are postponed: for systems in areas such as biometrics, critical infrastructure, education, employment and migration they apply from 2 December 2027, and for AI in products (e.g. lifts, toys) from 2 August 2028.",
+   "context": "Relevant to municipal applications in schools, recruitment and energy/water (critical infrastructure). Until then, responsibility rests largely on the municipality’s own governance. Information from the European Commission’s website, October 2026; details may change."
+  },
+  "tech_ai_e17": {
+   "claim": "Almost 40% of global employment and about 60% of jobs in advanced economies are exposed to AI; roughly half of the exposed jobs in advanced economies may benefit (productivity), while the rest risk lower labour demand, lower wages and fewer hires.",
+   "context": "IMF Staff Discussion Note (Cazzaniga et al. 2024), summarised by the head of the IMF. ‘Exposed’ does not mean replaced."
+  },
+  "tech_ai_e18": {
+   "claim": "In 2025, 4 in 10 Swedes (aged 8+) use AI tools, as do 57% of children and young people aged 8–19. More than one in four people in employment use AI at work and one in three Swedes believe AI will cause high unemployment, but only 7% of those in employment worry about becoming unemployed themselves.",
+   "context": "An increase of 5 percentage points 2024–2025 (ages 18–84); men have overtaken women by 7 percentage points. One in five AI users has asked AI health questions (7% of the population). Starting value for AI adoption in the game; uneven adoption links to gender equality and the digital divide."
+  },
+  "tech_ai_e19": {
+   "claim": "The City of Amsterdam has published around 80 algorithm descriptions in the Dutch public algorithm register, stating purpose, status (in use/in development/decommissioned) and impact assessments carried out (DPIA, ethical review).",
+   "context": "An example of a transparency instrument that a Swedish municipality could copy. The number changes over time. Helsinki has a similar AI register (not verified in this review)."
+  },
+  "tech_ai_e20": {
+   "claim": "Precision agriculture (variable-rate application of seed, fertiliser and pesticides, machine guidance, site-specific weed control) can reduce inputs and greenhouse gas emissions while maintaining or improving productivity and profitability.",
+   "context": "Review article (EU project). Exact percentage reductions vary greatly between technology, crop and farm and could not be verified in this review – model as an uncertain effect (assumption: −5 to −20% nitrogen and pesticide use with broad adoption, to be calibrated). Links to eutrophication of the Baltic Sea via nitrogen leaching."
+  },
+  "resilience_e1": {
+   "claim": "The Swedish Civil Defence and Resilience Agency (MCF) recommends that households should be able to manage without help from society for at least one week (seven days), with water, food, heat and information.",
+   "context": "Official home preparedness recommendation from the Swedish Civil Defence and Resilience Agency (the Swedish Civil Contingencies Agency, MSB, was renamed MCF on 1 January 2026). Used as the target value for the indicator 'household self-sufficiency days'. The recommendation is normative – it says nothing about how many households actually meet it."
+  },
+  "resilience_e2": {
+   "claim": "Households need at least three litres of water per person per day for home preparedness, plus food for at least seven days that can be stored at room temperature and prepared without electricity.",
+   "context": "From home preparedness information based on the brochure 'Om krisen eller kriget kommer' (If Crisis or War Comes), published on the website of the Swedish Civil Defence and Resilience Agency (MCF) (municipal version, Kinda Municipality). For a family of four over seven days, this equals at least 84 litres (own calculation: 4 × 3 × 7). Used as the design household stock in the model."
+  },
+  "resilience_e3": {
+   "claim": "The new edition of the brochure 'Om krisen eller kriget kommer' (If Crisis or War Comes) was sent out in over 5 million copies to Sweden’s households on 18–29 November 2024, with a stronger focus on war preparedness than the 2018 version.",
+   "context": "Shows the state’s national information effort. Can be used as a reference for a municipal campaign (e.g."
+  },
+  "resilience_e4": {
+   "claim": "The Swedish Food Agency’s planning levels for emergency water: 3–5 litres/person/day for the first few days (survival), 10–15 litres within 48–72 hours and for the following 10 days (drinking, cooking, basic hygiene), 50–100 litres during a prolonged water shortage in peacetime and 15 litres during a sustained crisis in wartime. Normal consumption is about 140 litres/person/day.",
+   "context": "The figures are reproduced in municipal emergency water plans (here Östhammar Municipality) with reference to the Swedish Food Agency’s calculations; normal consumption of 140 l is given with reference to Svenskt Vatten (the Swedish Water and Wastewater Association). The Swedish Food Agency’s own 'Guide för planering av nödvattenförsörjning' (Guide to planning emergency water supply, 2017) describes the methodology. In the model: the municipality’s emergency water capacity (m³/day) divided by the population gives litres/person/day, which is compared against the thresholds 5/10/15/50."
+  },
+  "resilience_e5": {
+   "claim": "The starting point for total defence planning is to be able to cope, for at least three months, with a security policy crisis in Europe and Sweden’s neighbourhood involving serious disruption to the functioning of society, as well as war during part of that time.",
+   "context": "The Government’s guidelines for civil defence 2021–2025 (Government decision 2020-12-17, based on Government bill (prop.) 2020/21:30 Totalförsvaret 2021–2025). Used as the design endurance target for vital societal functions (healthcare, water, food, energy) in the municipality – separate from the households’ 7 days."
+  },
+  "resilience_e6": {
+   "claim": "The Government is allocating SEK 575 million in the 2026 budget bill to emergency stockpiles, mainly grain and critical inputs for primary production; in September 2025 the Swedish Board of Agriculture was tasked with starting to purchase and store grain.",
+   "context": "Decision of 25 September 2025. Shows that food preparedness is being rebuilt nationally after the emergency stockpiles were dismantled following the Cold War. The municipality cannot build state stockpiles itself but can cooperate (e.g."
+  },
+  "resilience_e7": {
+   "claim": "Sweden became NATO’s 32nd member on 7 March 2024. In 2023–2024, several critical undersea connections in the Baltic Sea were damaged: Balticconnector (gas, October 2023), two data cables Finland–Germany and Lithuania–Sweden (November 2024) and the Estlink 2 power cable (25 December 2024, suspected anchor dragging by the tanker Eagle S). In January 2025 NATO launched the surveillance operation Baltic Sentry.",
+   "context": "Background for the game’s 'threat level' and for justifying local redundancy in electricity, data and payments. No power outages occurred in Finland/Estonia in 2024 thanks to reserve capacity – an argument for redundancy rather than total self-sufficiency."
+  },
+  "resilience_e14": {
+   "claim": "Seawater reverse osmosis (SWRO) typically uses 3.5–4.5 kWh of electricity per m³ of water produced; the range in the literature is 3–6.7 kWh/m³ depending on the raw water, quality requirements and plant efficiency.",
+   "context": "Applies to ocean seawater (~35 per mille salt). Used to link water security to the energy system: 3,000 m³/day × 4 kWh ≈ 12 MWh/day. Globally, in 2019, about 95 million m³ of desalinated water and 142 million m³ of brine were produced per day (Jones et al."
+  },
+  "resilience_e19": {
+   "claim": "IPCC AR6: global mean sea level is projected to rise by 28–55 cm by 2100 under very low emissions (SSP1-1.9), 44–76 cm under intermediate emissions (SSP2-4.5) and 63–101 cm under very high emissions (SSP5-8.5), relative to 1995–2014.",
+   "context": ""
+  },
+  "resilience_e20": {
+   "claim": "Municipal crisis preparedness is governed by the Act (2006:544) on municipal and regional measures before and during extraordinary events in peacetime and periods of heightened alert (LEH): risk and vulnerability analyses, planning, geographical area responsibility, training and exercises, and reporting. A government inquiry was appointed in 2023 to replace LEH with more detailed regulation and to review funding.",
+   "context": "The framework for what the municipality must do (the floor) and what it can choose to do (the game’s policy choices). The inquiry’s terms of reference (30 March 2023, to report by 29 March 2024) state that the current regulation is not fit for purpose given the security situation."
+  },
+  "resilience_e21": {
+   "claim": "Styrel is the national method for prioritising, in advance, vital electricity users if parts of the grid have to be disconnected during a power shortage. Municipalities, county administrative boards, grid companies and other actors set the priorities together; disconnections can be rotated so that no one is hit too hard.",
+   "context": "The priority classes range from 'critical to life and health (short term)' to 'other users'. Svenska kraftnät orders manual load shedding. In the model: the share of the municipality’s electricity demand that is 'priority load' determines how much local generation/storage is needed for island operation."
+  },
+  "resilience_e23": {
+   "claim": "According to the Swedish Food Agency’s population survey (October 2025), 61% of Swedes (aged 16–84) have food at home that will last at least a week, but only 36% have enough to drink for a week. 78% have containers to store drinking water in and 63% have a way to cook food or boil water without electricity.",
+   "context": "Web panel conducted by Origo Group, n = 8,108, with about 1,000 interviews per NUTS2 area, weighted by area, gender and age. The shares are self-reported. Younger people (16–49) and tenants have smaller supplies than older people and homeowners. Only 48% correctly state that the authorities recommend a week’s supply of food and water. The values provide an empirical starting value for the indicator 'households with 7 days of home preparedness'. The share that manages both food and water is probably at most 36%."
+  },
+  "biodiversity_baltic_e1": {
+   "claim": "The original planetary boundaries framework (2009) defined nine boundaries and assessed that three had already been transgressed: climate change, the rate of biodiversity loss and interference with the nitrogen cycle. The climate boundary was set at below 350 ppm carbon dioxide.",
+   "context": "Starting point for the game’s ecological ceiling. Published in Ecology and Society and in short form in Nature 461:472–475."
+  },
+  "biodiversity_baltic_e2": {
+   "claim": "The third update (2023) quantified all nine boundaries for the first time and found that six of nine had been transgressed, with increasing pressure on all except the ozone layer.",
+   "context": "Richardson et al. 2023 in Science Advances 9(37). Summarised by the Stockholm Resilience Centre."
+  },
+  "biodiversity_baltic_e3": {
+   "claim": "The Planetary Health Check 2025 (Potsdam Institute for Climate Impact Research, PIK) assesses that seven of nine planetary boundaries have been transgressed; ocean acidification is the seventh boundary to be crossed.",
+   "context": "Annual report. Shows the trend of 3 → 6 → 7 transgressed boundaries over 2009–2025."
+  },
+  "biodiversity_baltic_e4": {
+   "claim": "Over 96% of the Baltic Sea area is not in good status with regard to eutrophication, including the entire open sea and 86% of coastal waters (HELCOM assessment 2011–2016), despite a slight long-term improvement.",
+   "context": "From HELCOM’s updated Baltic Sea Action Plan (BSAP 2021, adopted in Lübeck on 20 October 2021, measures to be implemented by 2030). Status has recently deteriorated in four of 17 sub-basins."
+  },
+  "biodiversity_baltic_e6": {
+   "claim": "Sweden’s net input ceiling (NIC) for inputs to the Baltic Proper is 30,690 tonnes of nitrogen and 318 tonnes of phosphorus per year. All measures required to meet the ceilings must be fully implemented by 2027.",
+   "context": "HELCOM BSAP 2021, tables 2a/2b. Provides a concrete 'budget' for the game’s nitrogen indicator."
+  },
+  "biodiversity_baltic_e7": {
+   "claim": "Oxygen deficiency (hypoxia) in the Baltic Sea has increased tenfold over the past 115 years, mainly due to increased nutrient inputs from land; higher temperatures have worsened the situation over the past two decades.",
+   "context": "Reconstruction from oxygen and salinity profiles. The Baltic Sea is the world’s largest human-induced hypoxic area. Shows that warming and eutrophication interact – in the model, the climate scenario should make recovery harder."
+  },
+  "biodiversity_baltic_e8": {
+   "claim": "Along the Swedish Baltic coast, a regime shift has taken place from dominance by large predatory fish (perch, pike) to three-spined stickleback. Fish surveys in 486 shallow bays along 1,200 km of coastline in 1979–2017 show that the shift began in the outer archipelago and has gradually spread towards the mainland coast; sticklebacks eat the predators’ fry, which reinforces the shift.",
+   "context": "Eklöf et al. 2020 (Swedish University of Agricultural Sciences, SLU, and others). Seals and cormorants are discussed in the literature as contributing factors but are not included in this summary."
+  },
+  "biodiversity_baltic_e9": {
+   "claim": "In July 2019 the EU introduced emergency measures (Implementing Regulation 2019/1248) banning targeted fishing for eastern Baltic cod in subdivisions 24–26, because the stock had unsustainably low biomass due to weak recruitment, environmental factors, high natural mortality and excessive fishing.",
+   "context": "Targeted cod fishing has since been closed in practice. The source is an environmental organisation’s summary of the regulation."
+  },
+  "biodiversity_baltic_e10": {
+   "claim": "In the 2025 Red List (Rödlista 2025), 23,103 species in Sweden were assessed; 5,217 (nearly 23%) are red-listed and 2,373 (10%) are threatened. The number of red-listed species has increased by 10% since 2020 (from 4,746). The factors affecting the most red-listed species are overgrowth on land and a lack of continuity forest, followed by fishing (e.g. bottom trawling), land development, drainage of wetlands and climate change.",
+   "context": "Published on 24 March 2026 by the SLU Swedish Species Information Centre (SLU Artdatabanken; report 37). The increase is partly due to better knowledge. The otter and the white-tailed eagle left the list thanks to growing populations – measures work."
+  },
+  "biodiversity_baltic_e11": {
+   "claim": "Constructed or restored wetlands remove a median of 93 g of nitrogen and 1.2 g of phosphorus per m² per year (equivalent to about 930 kg N and 12 kg P per hectare), with a median efficiency of 37% for nitrogen and 46% for phosphorus. Removal depends strongly on loading, temperature and wetland area.",
+   "context": "Systematic review (93 articles, 203 sites), partly funded by Mistra EviEM. The median is pushed up by heavily loaded wetlands (e.g. wastewater); agricultural wetlands with lower loading remove less per unit area – see the assumption in biodiversity_baltic_e18."
+  },
+  "biodiversity_baltic_e12": {
+   "claim": "Non-legume catch crops (mainly ryegrass) undersown in spring cereals reduce nitrogen leaching by an average of 50% under Nordic conditions, at the cost of about 3% lower grain yield. Clover did not reduce the leaching risk but raised yields by 6%.",
+   "context": "Meta-analysis of 35 Nordic studies (Denmark, Sweden, Finland, Norway) on clay and coarse-textured soils, fertiliser rates of 50–160 kg N/ha and precipitation of 480–1,040 mm. The figures come from the authors’ 2016 EGU abstract of the article in Agriculture, Ecosystems & Environment 203:93–101 (2015)."
+  },
+  "biodiversity_baltic_e13": {
+   "claim": "The environmental quality objective Thriving Wetlands (Myllrande våtmarker) will not be achieved (2025 assessment). Work on constructing, restoring and protecting wetlands is producing good results, but negative impacts continue from altered hydrology, climate change, invasive species and nitrogen deposition. Large areas of wetland have been drained since the early 19th century.",
+   "context": "Official follow-up of Sweden’s environmental objectives. Justifies an active wetland programme in the game."
+  },
+  "biodiversity_baltic_e14": {
+   "claim": "In the plains of southern Sweden, an estimated 80–90% of the original wetlands have disappeared through drainage since the 19th century.",
+   "context": "The figure is often cited with reference to the Swedish Environmental Protection Agency, but has only been verified here in secondary sources (material from environmental organisations). Use it as an order of magnitude for restoration potential, not as an exact value."
+  },
+  "biodiversity_baltic_e15": {
+   "claim": "The EU Nature Restoration Regulation (EU 2024/1991, in force 18 August 2024) requires restoration measures on at least 20% of the EU’s land and sea areas by 2030 and on all ecosystems in need of restoration by 2050. Among other things, it requires no net loss of urban green space and tree cover by 2030, that the decline of pollinators be reversed by 2030, and that at least 25,000 km of rivers be restored to free-flowing rivers. National restoration plans must be submitted by September 2026.",
+   "context": "In the game: a floor level that cannot be opted out of after 2030."
+  },
+  "biodiversity_baltic_e20": {
+   "claim": "HELCOM’s updated Baltic Sea Action Plan (BSAP) was adopted on 20 October 2021 in Lübeck. It contains around 200 concrete actions in four segments (biodiversity, eutrophication, hazardous substances and litter, sea-based activities) to be implemented by 2030.",
+   "context": "HELCOM states 'about 200 concrete actions'. Other sources give exactly 199. The original plan from 2007 has helped reduce inputs of nutrients and hazardous substances, but the goal of a Baltic Sea unaffected by eutrophication was not achieved by 2021 (cf. biodiversity_baltic_e4). The year 2030 is thus a natural checkpoint in the game’s second decade."
+  },
+  "governance_e1": {
+   "claim": "The Welsh Well-being of Future Generations Act sets out 7 statutory well-being goals and 5 mandatory ways of working (long term, prevention, integration, collaboration, involvement) for public bodies.",
+   "context": "The goals: a prosperous, resilient, healthier and more equal Wales, cohesive communities, a vibrant culture and thriving Welsh language, and global responsibility. The Act originally covered 44 public bodies (local authorities, health boards, national parks, etc.); 8 bodies were added by regulations that came into force on 30 June 2024 (https://www.legislation.gov.uk/wsi/2024/775/made). The sustainable development principle in section 5 requires bodies to “balance short-term needs with the need to safeguard the ability to meet long-term needs”. Used in the game as a template for local well-being goals."
+  },
+  "governance_e2": {
+   "claim": "The Future Generations Commissioner for Wales helped persuade the Welsh Government to halt the M4 relief road at Newport in June 2019, a road project estimated at about £1.4 billion.",
+   "context": "In the report Transport Fit for Future Generations (Sept 2018) and at the public inquiry, Commissioner Sophie Howe argued that the project was contrary to the Act and proposed public transport and active travel at a fraction of the cost. First Minister Mark Drakeford took the decision; the official reasons were mainly cost and environmental impact, so the Commissioner’s causal role is a judgement. An example of how a future generations commissioner can influence major investments."
+  },
+  "governance_e3": {
+   "claim": "Ten years after its adoption, the Act has gained greater prominence but is not driving the system-wide change that was intended, according to Wales’s public audit body (Audit Wales, April 2025).",
+   "context": "The report “No time to lose” found good examples but also bodies that had given the Act no explicit consideration; health care lagged behind. Recommendations: reduce financial uncertainty, invest in prevention, review monitoring."
+  },
+  "governance_e4": {
+   "claim": "The Finnish Parliament has had a Committee for the Future since 1993 (permanent since 2000) with 17 members, which conducts a dialogue with the Government on future issues and scrutinises the Government’s Report on the Future.",
+   "context": "Set up in 1993 to scrutinise the Government’s first Report on the Future; a permanent committee since 2000. The 17 members and the move to permanent status in 2000 were confirmed via the Eduskunta website (search results) and a review by the United Nations University (Aceituno 2025), which counts at least 14 committees for the future or similar bodies worldwide. Research (Koskimaa & Raunio) describes the committee as unique but with limited direct influence on legislation. Local equivalent: a committee for the future in the municipal council."
+  },
+  "governance_e5": {
+   "claim": "The Haudenosaunee Confederacy’s principle of the seventh generation means that decisions should take into account those who are not yet born but will inherit the world.",
+   "context": "The Confederacy’s own website describes Seventh Generation as a core value: chiefs are to consider how today’s decisions affect their descendants, and nations are taught that they are “borrowing” the world from future generations. The principle is popularly attributed to the Great Law of Peace in varying wordings; the exact phrasings in circulation are often uncertain and should not be romanticised or taken out of their cultural context. Seven generations corresponds roughly to 150–200 years (our own calculation, 25–30 years per generation) – that is, longer than the game’s 100 years."
+  },
+  "governance_e6": {
+   "claim": "None of just over 150 countries studied meets its inhabitants’ basic needs at a level of resource use that would be globally sustainable.",
+   "context": "O’Neill et al. downscaled planetary boundaries to per capita level and compared them with social thresholds. Physical needs (nutrition, sanitation, electricity, eliminating extreme poverty) can probably be met for everyone within the boundaries, but more ambitious social goals currently require unsustainable resource use."
+  },
+  "governance_e7": {
+   "claim": "The share of countries exceeding biophysical boundaries rose from 32–55% to 50–66% between 1992 and 2015, while social thresholds were achieved more slowly.",
+   "context": "11 social and 6 biophysical indicators for over 140 countries, 1992–2015. The share of countries reaching thresholds increased for five social indicators (e.g. life expectancy, education) but decreased for social support and equality. Business as usual to 2050 deepens the crisis. Used as a trend parameter: overshoot grows faster than social goal achievement."
+  },
+  "governance_e8": {
+   "claim": "On 8 April 2020, Amsterdam adopted a circular strategy based on the Doughnut model, aiming to halve the use of new raw materials by 2030 and to be fully circular by 2050.",
+   "context": "Kate Raworth and the Doughnut Economics Action Lab (DEAL) produced the “Amsterdam City Doughnut” as a basis. The city ran about 200 projects (sharing, repair, reuse). These are targets, not results achieved – the outcome for 2030 is not yet known."
+  },
+  "governance_e9": {
+   "claim": "Tomelilla (about 7,000 inhabitants) is the first Swedish municipality to work with the Doughnut model: since 2021 in planning, monitoring and evaluation, and in 2024 the municipality published its first city portrait.",
+   "context": "The Doughnut model has influenced investment decisions (renovating an existing building instead of building a new ice rink, according to The Guardian/DEAL 2025) and a new school project. Since May 2023, RISE has been running the project “The Doughnut Model in Municipal Sustainability Work” with Kalix, Tomelilla and Vadstena (https://www.ri.se/en/what-we-do/projects/the-doughnut-model-in-municipal-sustainability-work). Shows that even small Swedish municipalities can produce doughnut portraits."
+  },
+  "governance_e10": {
+   "claim": "The Stockholm Resilience Centre’s “wedding cake” (Rockström & Sukhdev, 13 June 2016) shows the economy as embedded in society, which in turn is embedded in the biosphere.",
+   "context": "Presented at the EAT Stockholm Food Forum 2016 as a way of moving beyond a sector-by-sector view of the Global Goals. The biosphere goals form the base. Useful for arranging the game’s indicators in three layers (biosphere – society – economy)."
+  },
+  "governance_e11": {
+   "claim": "To stay within 1.5 °C, lifestyle carbon footprints need to fall to 2.5 t CO2e per person per year by 2030 (current global average about 4.6 t).",
+   "context": "Equity-based per capita targets: 2.5 t (2030), 1.4 t (2040), 0.7 t (2050). Refers to households’ lifestyle footprints (food, housing, transport, goods, leisure, services), and does not fully include public consumption and investment – compare with Sweden’s 7.6–8.3 t (governance_e13, e14) with caution. The report is grey literature from a think tank but builds on earlier peer-reviewed work (IGES/Aalto)."
+  },
+  "governance_e12": {
+   "claim": "The target level for 1.5-degree lifestyles in 2050 is 0.7 t CO2e per person per year (1.4 t in 2040).",
+   "context": "Same source as governance_e11; the project website, which presents the 2025 update “A Climate for Sufficiency”, gives the same target levels. The Swedish Environmental Protection Agency gives a rough guideline of no more than 1 t CO2e per person per year globally by 2050."
+  },
+  "governance_e13": {
+   "claim": "Sweden’s consumption-based greenhouse gas emissions were 80 million tonnes CO2e in 2023, an average of 7.6 tonnes per person, of which 64% occur abroad.",
+   "context": "Includes household and public sector consumption as well as investment. A decrease from 110 Mt (2008) to 80 Mt (2023), −27%. Official statistics (Swedish Environmental Protection Agency/Statistics Sweden (SCB)). The page returned a 404 when checked on 2026-10-08 (probably moved); the figures were verified via the search engine’s excerpt of the page. Starting value for the game’s consumption indicator."
+  },
+  "governance_e15": {
+   "claim": "Sweden is to reach net zero emissions by 2045 at the latest, which means that domestic emissions must be at least 85% lower than in 1990; in 2026 the Swedish Climate Policy Council judged the policies of the current term of office to have been inadequate.",
+   "context": "The remaining 15% at most may be covered by supplementary measures (increased uptake in forests and land, bio-CCS, measures abroad). The Climate Act requires a climate report every year and an action plan every four years. The Climate Policy Council’s 2026 report (19 March): “the room for postponing decisions is exhausted” (https://www.klimatpolitiskaradet.se/rapport-2026/). According to media coverage of the Council’s 2025 report, emissions rose in 2024, partly as a result of the lowered fuel reduction obligation (not checked in the original report)."
+  },
+  "governance_e20": {
+   "claim": "Under the Planning and Building Act, every municipality must adopt a planning strategy each term of office (within 24 months of the election); otherwise the comprehensive plan ceases to be considered up to date.",
+   "context": "The rule (in force since 2020) ties long-term comprehensive planning to the electoral cycle. It creates a recurring opportunity to revise a long-term vision – but also a risk that the vision is renegotiated every four years. The game’s decision rounds (decades) can mark two to three terms of office."
+  },
+  "governance_e21": {
+   "claim": "In 2020, the Swedish Agency for Public Management (Statskontoret) found that the Government’s high ambitions for the 2030 Agenda had not yet had a noticeable impact on the sustainability work of municipalities, regions and government agencies, and that the level of ambition varied widely between different parts of the country.",
+   "context": "Statskontoret 2020:15 (25 June 2020): most use the 2030 Agenda in some way, but there are few examples of far-reaching changes to their operations; small municipalities often lack capacity. In 2025 the Swedish National Audit Office (RiR 2025:22, “Statens arbete med Agenda 2030”, The central government’s work on the 2030 Agenda) concluded that central government’s work had not been effective and that the Government had not set out a clear direction (https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/riksrevisionens-rapport-om-statens-arbete-med_hd01fiu19/html/). Supports the claim that long-term vision-based governance is weak in Sweden – but it concerns the 2030 Agenda, not visions in general."
+  },
+  "governance_e22": {
+   "claim": "Researchers on local government describe Swedish municipalities’ capacity for horizon scanning and strategic work as “rather weak”, and changes as usually small and incremental.",
+   "context": "Kommuninvest’s research report (CERUM, CKS, KEFU, KFi) is based on interviews and documents in 11 municipalities and summarises the Natkom programme (2010–2016, 47 reports). Conclusion: a sustainable municipal future requires more inclusive, dialogue-based and experimental strategic work. Qualitative support for the view that municipalities lack long-term visions; not a representative survey."
+  },
+  "governance_e23": {
+   "claim": "Sweden’s national work on the future has been temporary: the Commission on the Future of Sweden (Framtidskommissionen, 2011–2013) looked ahead to 2020 and 2050, and there was a minister for the future in 2014–2016, but there is no permanent institution for the future equivalent to those in Wales or Finland.",
+   "context": "The Commission’s final report, Svenska framtidsutmaningar (Future Challenges for Sweden, Ds 2013:19), covered sustainable growth, demography, integration, democracy, gender equality and social cohesion. Kristina Persson was minister for strategy and future issues in 2014–2016, with three analysis groups (https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/funktionen-som-framtidsminister_h21238/). That no permanent institution exists is our conclusion from the review (low–medium confidence)."
+  },
+  "demography_e1": {
+   "claim": "Statistics Sweden (SCB) projects that Sweden’s population will be 11.8 million in 2070 (10.6 million in 2025 and 11.3 million in 2050).",
+   "context": "Sveriges framtida befolkning 2026–2070 (The future population of Sweden 2026–2070, published 2026-04-16, Demografiska rapporter 2026:3). Growth in 2026–2030 is projected at only just over 5,000 per year, compared with 45,000 per year in 2021–2025. The share of foreign-born people rises from 21% (2025) to 25% (2070). Statistics Sweden (SCB) stresses that in the long term the projection is a calculation of what happens if current trends continue, not a forecast."
+  },
+  "demography_e2": {
+   "claim": "In the Statistics Sweden (SCB) statistical database, the national projection extends to 2120: 12.96 million inhabitants in 2120, with more deaths than births in most years and net immigration of about 30,000 per year.",
+   "context": "Table BefPrognosOversiktN (2026 projection): population 11.29 M (2050), 11.80 M (2070), 12.51 M (2100), 12.96 M (2120); about 114,000–124,000 births and about 119,000–131,000 deaths per year after 2060; net migration 29,500–36,000 per year. Retrieved via the Statistics Sweden (SCB) API on 2026-10-08. A mechanical extension with unchanged assumptions – highly uncertain, but the only official Swedish series that reaches the game’s final year. Shows that long-term population growth depends entirely on migration."
+  },
+  "demography_e3": {
+   "claim": "Sweden’s total fertility rate was 1.43 children per woman in both 2024 and 2025 – the lowest level ever recorded (1.98 in 2010).",
+   "context": "The series: 2.14 (1990), 1.50 (1999), 1.98 (2010), 1.67 (2020), 1.53 (2022), 1.45 (2023), 1.43 (2024), 1.43 (2025). In 2025, 97,500 children were born, the lowest number since 2002. The Government has appointed the inquiry “Framtid med barn” (A future with children) into the causes and consequences, due to report on 30 June 2028. Starting value for the game’s fertility parameter."
+  },
+  "demography_e4": {
+   "claim": "Statistics Sweden (SCB) assumes that fertility among women born in Sweden will recover to a long-term level of 1.7 children per woman by the end of the projection period; in the long term, about 110,000 children are projected to be born per year.",
+   "context": "The long-term assumptions are reviewed every three years (most recently in 2024, next in 2027). Statistics Sweden (SCB) points out that the assumption should be seen as an average future level, not the most likely level for any single year. If the recovery does not happen (remaining at ~1.4), the population will be smaller and older than in the main scenario – suitable as a scenario parameter for the game (1.4–1.8)."
+  },
+  "demography_e5": {
+   "claim": "Life expectancy was 85.5 years for women and 82.5 years for men in 2025 and is projected to rise to 89.7 and 87.5 years respectively by 2070.",
+   "context": "Intermediate years: 86.3/83.5 (2035), 87.8/85.4 (2050). Life expectancy has risen by about 8 years (women) and 10 years (men) since 1970. The number of 100-year-olds is projected to rise from just under 3,000 (2025) to 13,500 (2070). Used for the game’s mortality parameter; in the model it is affected by health indicators."
+  },
+  "demography_e6": {
+   "claim": "The share of the population aged 80 or over rises from just over 6% (2025) to 11.2% (2070), i.e. just over 1.3 million people.",
+   "context": "According to the Statistics Sweden (SCB) database extension (our own calculation from table BefolkprognRevNb), the share aged 80+ will be 13.7% in 2100 and 13.6% in 2120. The share aged 20 or younger falls from just over 22% to 20%. Drives health and social care costs in the game."
+  },
+  "demography_e7": {
+   "claim": "Sweden’s old-age dependency ratio (people aged 65+ per 100 people aged 20–64) rises from about 38 (2026) to about 52 (2070) and about 59 (2120).",
+   "context": "Our own calculation from the Statistics Sweden (SCB) 2026 projection (table BefolkprognRevNb, retrieved via the API on 2026-10-08): 37.7 (2026), 45.5 (2050), 51.8 (2070), 56.5 (2100), 59.0 (2120). Total dependency ratio (0–19 + 65+ per 20–64): 0.77 → 0.89 → 0.98. Eurostat’s EUROPOP2023 gives 60.3 in 2100 (demography_e12) – consistent. A key parameter for the tax base versus welfare needs."
+  },
+  "demography_e8": {
+   "claim": "Over the next ten years (2025–2035), Sweden is expected to have 165,000 fewer children of compulsory school age and 179,000 more people over 85.",
+   "context": "At the same time: 30,000 more deaths than births, 200,000 more immigrants than emigrants, population +170,000. The number of people aged 85+ rises from 304,000 to 483,000 as the 1940s generation ages. Short-term planning parameter: schools risk overcapacity while elderly care needs to grow."
+  },
+  "demography_e12": {
+   "claim": "Eurostat’s EUROPOP2023 (baseline) gives Sweden 12.1 million inhabitants in 2050, 12.9 million in 2070 and 13.3 million in 2100, with 14.0% aged 80+ and a median age of 48.2 years in 2100.",
+   "context": "Higher than the Statistics Sweden (SCB) series (12.5 M in 2100) because the assumptions on migration and fertility differ. Old-age dependency ratio (65+/20–64): 36.5 (2025), 42.2 (2050), 60.3 (2100). Retrieved via the Eurostat API (tables proj_23np and proj_23ndbi) on 2026-10-08. Provides a reasonable upper range for the game’s scenarios."
+  },
+  "demography_e14": {
+   "claim": "Swedish households are among the smallest in the EU (2.0 people on average compared with 2.3 in the EU in 2025), and young people leave the parental home early (at 23.1 years compared with 26.3 years in the EU in 2025).",
+   "context": "Eurostat yth_demo_030 and ilc_lvph01 (retrieved via the API on 2026-10-08). The Swedish series has a break in 2021 (17.5 years in 2020, 22.0 years in 2021) and has risen since (21.6–21.9 years in 2022–2024, 23.1 years in 2025). Shows a strong norm of independent living – multigenerational living requires a cultural change, not just new housing."
+  },
+  "demography_e15": {
+   "claim": "Caring for others – within and outside the family, e.g. grandparents looking after grandchildren – is associated with lower mortality for the person giving the care.",
+   "context": "A prospective study of older people in Berlin (Berlin Aging Study). Observational data – an association, not proven causation (healthier older people may be able to look after children more often). We could only verify the title and metadata (Crossref), not the effect size in the abstract; therefore use only the direction, not a figure. Supports the idea that multigenerational solutions can benefit older people’s health."
+  },
+  "demography_e16": {
+   "claim": "Stronger social relationships are associated with a 50% higher likelihood of survival over the follow-up period (OR 1.50; 95% CI 1.42–1.59) in a meta-analysis of 148 studies with 308,849 participants.",
+   "context": "Holt-Lunstad et al. 2010: the effect is comparable to established risk factors such as smoking and alcohol. Relevant to demography because single-person households are numerous and the share of older people living alone is growing (demography_e13). See also the Community theme. Model parameter: link between social networks and mortality/health."
+  },
+  "demography_e17": {
+   "claim": "The WHO guide to age-friendly cities (2007) provides a framework for making cities supportive and enabling for older people, so that their potential is put to good use.",
+   "context": "The guide starts from the two megatrends of ageing and urbanisation and forms the basis of the WHO Global Network for Age-friendly Cities and Communities. We verified the guide and its purpose but not the list of domains in detail. Basis for levers on age-friendly urban planning."
+  }
+ },
+ "quotes": [
+  {
+   "text": "the body must act in a manner which seeks to ensure that the needs of the present are met without compromising the ability of future generations to meet their own needs.",
+   "who": "Well-being of Future Generations (Wales) Act 2015, section 5(1)"
+  },
+  {
+   "text": "Sustainable development is development that meets the needs of the present without compromising the ability of future generations to meet their own needs.",
+   "who": "World Commission on Environment and Development (Brundtland Commission), Our Common Future, 1987, ch. 2"
+  },
+  {
+   "text": "Humanity’s 21st century challenge is to meet the needs of all within the means of the planet.",
+   "who": "Kate Raworth, economist, originator of the Doughnut model (Doughnut Economics)"
+  },
+  {
+   "text": "We propose a new approach to global sustainability in which we define planetary boundaries within which we expect that humanity can operate safely.",
+   "who": "Johan Rockström et al., Planetary Boundaries: Exploring the Safe Operating Space for Humanity, Ecology and Society 2009"
+  },
+  {
+   "text": "Nations are taught to respect the world in which they live as they are borrowing it from future generations.",
+   "who": "Haudenosaunee Confederacy, on the value of the Seventh Generation"
+  },
+  {
+   "text": "I raised serious concerns that the Black Route proposal was a short-term, 20th century solution that did not reflect or support the ambitions of the Well-being of Future Generations Act.",
+   "who": "Sophie Howe, Future Generations Commissioner for Wales, on the decision to stop the M4 relief road, 5 June 2019"
+  },
+  {
+   "text": "We cannot afford to design solutions that do not meet people’s needs, burden future generations with avoidable higher costs, or miss opportunities to deliver more with the same or less.",
+   "who": "Adrian Crompton, Auditor General for Wales, 29 April 2025"
+  },
+  {
+   "text": "The influence of social relationships on risk for mortality is comparable with well-established risk factors for mortality.",
+   "who": "Julianne Holt-Lunstad, Timothy B. Smith, J. Bradley Layton, meta-analysis in PLoS Medicine 2010"
+  },
+  {
+   "text": "If Sweden is attacked, we will never give up. All information suggesting that resistance is to cease is false.",
+   "who": "Swedish Civil Contingencies Agency (MSB), the brochure Om krisen eller kriget kommer (If Crisis or War Comes) (MSB2398, November 2024; now the Swedish Civil Defence and Resilience Agency, MCF)"
+  }
+ ]
+}

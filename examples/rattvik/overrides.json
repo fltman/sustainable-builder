@@ -1,0 +1,3769 @@
+{
+ "defaults": {
+  "max_levels": 3
+ },
+ "buildings": {
+  "w1154732353": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Storgatan 2, 50s block, red balconies, corner shop"
+  },
+  "w1154732354": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "red",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Storgatan 1, beige boards, yellow shopfront storey"
+  },
+  "w1154732356": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "red",
+   "shopfront": true,
+   "note": "Street View (2010–2024): same building as Storgatan 1"
+  },
+  "w1154732355": {
+   "building:levels": 2,
+   "shopfront": false,
+   "note": "Street View (2010–2024): behind Storgatan 1, hidden: keep low"
+  },
+  "w1154732352": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): yellow timber house, white trim"
+  },
+  "w298594086": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": true,
+   "roof:height": 3.6,
+   "note": "Street View (2010–2024): Storgatan 5, white 1.5-storey cafe, steep roof + cross gable (roof:height 3.6)"
+  },
+  "w298594060": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Ungdomsmottagningen, beige-grey boards"
+  },
+  "w298594088": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): same as x060, dormers"
+  },
+  "w1154730720": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "salmon",
+   "roof": "hipped",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Furutorp corner (Storgatan/Ågatan): salmon-red render, white trim, striped awnings, red tile hipped roof"
+  },
+  "w1154730721": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "salmon",
+   "roof": "hipped",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": true,
+   "note": "Street View (2010–2024): left part of the Furutorp block (Arkitektkontor, Inside.Outside)"
+  },
+  "w1093562877": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "beige",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Storgatan 9: light beige render, blue awnings, red-brown tile roof"
+  },
+  "w1093562878": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): low pub/pizzeria + Coop wing, brown boards, glazed front"
+  },
+  "w1154730717": {
+   "building:levels": 4,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): 50s red brick corner block (shops + 3 floors), green balconies, light bay windows (Dala Guldsmide, Sörlins)"
+  },
+  "w1093562873": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "blue",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): pale blue-grey render, long blue shop canopy, corner Knihsgatan"
+  },
+  "w1154730716": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): red brick block down Knihsgatan"
+  },
+  "r15608646": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "petrol",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Storgatan 15 Conditori: dark petrol-blue boards, white trim, pointed gable dormer"
+  },
+  "r15608645": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "rose",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): dusty red render, striped awnings"
+  },
+  "w1198323604": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "salmon",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Storgatan 15-17 galleria: postmodern peach/beige render, arched glazed central gable, balconies, shops"
+  },
+  "r15608644": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "terracotta",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "shopfront": true,
+   "note": "Street View (2010–2024): rust-red render, white trim, dormer in roof"
+  },
+  "w1198323606": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Storgatan 17 flower shop: yellow boards, white trim, central gable, veranda"
+  },
+  "w1198323607": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "beige",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Storgatan 21 corner: sand render, funkis rounded balcony, Expert shop"
+  },
+  "w1154729892": {
+   "building:levels": 2,
+   "style": "concrete",
+   "colour": "light",
+   "roof": "flat",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Vasagatan 6: 60s/70s office-shop block, pale upper floor, red ground-floor panels + red-pillared walkway"
+  },
+  "w1093562876": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): deep red rendered block, balconies (Vasagatan/Annikasgatan corner)"
+  },
+  "w362479859": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): white 2-storey + attic, dark hipped roof, small ridge turret with spire"
+  },
+  "w1154729893": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Vasagatan 3: white timber house, gable to the street, small shop windows"
+  },
+  "w568319891": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): long yellow rendered house, orange-red tiles with dormers"
+  },
+  "w568319890": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "no_tower": true,
+   "shopfront": false,
+   "note": "Street View (2011–2024): Församlingshemmet, Torggatan 19: long dark-brown timber hall, red-brown tile roof with dormers and chimneys — no tower (OSM building=chapel)"
+  },
+  "w1154729867": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Vasagatan 5: modern cream apartment block, glazed balconies"
+  },
+  "w1154729863": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): ochre-yellow rendered block, white window surrounds"
+  },
+  "w1154729860": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): yellow rendered house, white trim, chimney"
+  },
+  "w1154729859": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Vasagatan 12: cream rendered villa, central entrance, flagpole"
+  },
+  "w1154729891": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "roof:height": 3.0,
+   "note": "Street View (2010–2024): Torggatan 13: falu-red timber barn/garage, big doors (roof:height 3)"
+  },
+  "w1154733479": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Vasagatan 18: red brick block, 2 floors + basement windows, white rendered wing to the north-west"
+  },
+  "w326305886": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): long falu-red single-storey timber building, white trim"
+  },
+  "w1154729858": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): red brick block (far, partly under construction 2024)"
+  },
+  "w1156218853": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red outbuilding/garage"
+  },
+  "w1156218849": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red timber house, white trim"
+  },
+  "w1305132896": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "green",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Torggatan 20: sage-green rendered block, white window surrounds"
+  },
+  "w1305132895": {
+   "building:levels": 3,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red apartment block, white trim (Centralgatan/Torggatan)"
+  },
+  "w568319893": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "ochre",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": true,
+   "note": "Street View (2010–2024): Torggatan 17: ochre 1920s corner block, decorated window surrounds, chamfered corner entrance"
+  },
+  "w1154729873": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red timber apartment block with balconies, white trim"
+  },
+  "w1154729874": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red timber apartment block with balconies (twin of 39)"
+  },
+  "w1154729876": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): light rendered house behind 42"
+  },
+  "w1154729889": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "rose",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Torggatan 12: dusty-pink rendered block, white window surrounds"
+  },
+  "w1154732376": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): red brick block on Knihsgatan"
+  },
+  "w1154729880": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): long yellow rendered block on Knihsgatan, glazed white stair towers"
+  },
+  "w1154729877": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): white chapel/meeting hall, tall round-arched windows (church-like)"
+  },
+  "w1154732385": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "rose",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "note": "Street View (2010–2024): pink rendered low house, big dark-grey hipped roof"
+  },
+  "w1154732389": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): light rendered apartment block behind 50"
+  },
+  "w1154732386": {
+   "building:levels": 1,
+   "style": "metal",
+   "colour": "grey",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "note": "Street View (2010–2024): white corrugated garage row"
+  },
+  "w1154732384": {
+   "building:levels": 4,
+   "style": "plaster",
+   "colour": "rose",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): pink-beige block with balconies at the end of Knihsgatan"
+  },
+  "w1154732393": {
+   "building:levels": 1,
+   "style": "metal",
+   "colour": "grey",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "note": "Street View (2010–2024): white corrugated garage row"
+  },
+  "w1154732381": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "beige",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Torggatan 6: beige rendered upper floor over a red brick ground floor, low hipped roof"
+  },
+  "w1154732392": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "note": "Street View (2010–2024): modern cream apartment block, same estate as 67"
+  },
+  "w1154732390": {
+   "building:levels": 4,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "note": "Street View (2010–2024): modern cream apartment block"
+  },
+  "w1154732369": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Torggatan 5: white rendered block with red stair-hall bay"
+  },
+  "w1154732373": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red carport/garages"
+  },
+  "w1154732375": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): red brick block on Knihsgatan"
+  },
+  "w1154732374": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): red brick block on Knihsgatan"
+  },
+  "w1154732372": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): red brick block on Knihsgatan"
+  },
+  "w1154732379": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "pale",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): terraced houses: pale boards (balcony side darker)"
+  },
+  "w1154732378": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "pale",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): terraced houses: pale grey boards"
+  },
+  "w1154732370": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): white rendered block with red stair-hall bay (twin of 71)"
+  },
+  "w1154732368": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "beige",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): long low beige rendered building, red corrugated roof, brown window frames"
+  },
+  "w1154732362": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Ågatan 1: 60s pale brick block, mustard panels under the windows, basement windows"
+  },
+  "w1154732363": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2010–2024): garage row, brown doors"
+  },
+  "w1228801581": {
+   "building:levels": 5,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Ågatan 6: modern 5-storey point block, cream render + copper-brown panels"
+  },
+  "w1154732364": {
+   "building:levels": 1,
+   "style": "brick",
+   "colour": "tan",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "height": 7.5,
+   "note": "Street View (2010–2024): modern chapel: sandy-brown brick, asymmetric (saltbox) roof, tall arched windows; height 7.5"
+  },
+  "w1154732365": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): yellow timber villa with white carved verandas (snickarglädje)"
+  },
+  "w1154732377": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2010–2024): dark brown storage/garage block"
+  },
+  "w1154732383": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "green",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Ågatan 12: red brick villa, green metal hipped roof"
+  },
+  "w1154732382": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "Street View (2010–2024): white timber house, orange-red tiles"
+  },
+  "w1154732380": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): terraced houses: dark brown boards, balconies on the lane"
+  },
+  "w326305896": {
+   "building:levels": 3,
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): Centralgatan: ochre board-clad 40s/50s apartment block; red-painted window frames and door surround, roof dormers, brick chimneys (Street View 2011/2024)"
+  },
+  "w326305897": {
+   "building:levels": 3,
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): ochre board-clad block (same estate); red-painted window frames and door surround, roof dormers, brick chimneys (Street View 2011/2024)",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1168468448": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "roof:height": 3.0,
+   "note": "Street View (2010–2024): falu-red cottage, white trim (roof:height 3)"
+  },
+  "w1168468449": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red cottage"
+  },
+  "w1168468447": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red cottage"
+  },
+  "w1168468446": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red cottage"
+  },
+  "w1168468454": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red cottage"
+  },
+  "w1156218850": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2010–2024): falu-red house"
+  },
+  "w206310976": {
+   "building:levels": 1,
+   "height": 4.0,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "hipped",
+   "roof_style": "slate",
+   "roof_colour": "dark",
+   "shopfront": false,
+   "note": "Sankt Olofs gravkapell (1967): white render, single storey, two dark grey hipped roofs (references/kyrka/NOTES.md, aerials)"
+  },
+  "w1348775771": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "shopfront": false,
+   "note": "falu-red log building north-west of the church tower (aerial photos)"
+  },
+  "w1348775772": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "small red building with a red roof by the churchyard (toilets)"
+  },
+  "w326305891": {
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "slate",
+   "roof_colour": "dark",
+   "shopfront": true,
+   "note": "Street View (2011–2024): Torget 2 (resecentrum): cream boards, dark roof with dormers, red glass doors"
+  },
+  "w313489284": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2011–2024): Rättviksskolans sporthall: red brick, low, flat roof"
+  },
+  "w1154729857": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2011–2024): Järnvägsgatan 18: red brick school block with a big red door"
+  },
+  "w1154729856": {
+   "building:levels": 1,
+   "style": "brick",
+   "colour": "red",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2011–2024): red brick single-storey school wing, big windows"
+  },
+  "w326305899": {
+   "building:levels": 1,
+   "style": "brick",
+   "colour": "brown",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2011–2024): low brown brick building, flat roof"
+  },
+  "w1168468458": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "grey",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2011–2024): Centralgatan: grey timber house"
+  },
+  "w1154729868": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2011–2024): low falu-red timber building"
+  },
+  "w326305890": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "beige",
+   "roof": "hipped",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "shopfront": false,
+   "note": "Street View (2011–2024): beige rendered block with brown balconies"
+  },
+  "w313487015": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Rättviks vårdcentral, Reparatörvägen: long low white building, red fascia"
+  },
+  "w1154730719": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "beige",
+   "roof": "flat",
+   "shopfront": true,
+   "note": "Street View (2011–2025): big retail hall on Annikasgatan",
+   "height": 5.5
+  },
+  "w1154732361": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Storgatan 2: dark-brown timber building with a big glazed gable",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1093562874": {
+   "building:levels": 1,
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "shopfront": true,
+   "note": "Street View (2011–2025): ICA supermarket, Vasagatan 2: red brick, dark red roof, glass entrance",
+   "height": 6.0,
+   "roof_style": "metal",
+   "roof_colour": "red"
+  },
+  "w326305885": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "terracotta",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Stiernhöökgatan: coral-red rendered block with balconies",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1154732359": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): dark-brown timber house with a red-brown tile roof",
+   "roof_style": "tiles",
+   "roof_colour": "brown"
+  },
+  "w1156560701": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Hvilan: yellow timber houses, white balconies and trim",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w773581005": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Hotell Rättvik: red brick, set-back attic storey",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1154733453": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Skolgatan 8: low falu-red timber wings",
+   "roof_style": "metal",
+   "roof_colour": "red"
+  },
+  "w313487014": {
+   "building:levels": 1,
+   "style": "metal",
+   "colour": "grey",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Circle K: grey metal box, red car-wash end",
+   "height": 5.0
+  },
+  "w690113214": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "green",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): sage-green rendered block, white window surrounds",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w690113211": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "ochre",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): ochre rendered block, white window surrounds",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1156218857": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": true,
+   "note": "Street View (2011–2025): Knihsgatan 18: falu-red timber block, white balconies, dormers, shop on the corner",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w702634586": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "ochre",
+   "roof": "hipped",
+   "shopfront": true,
+   "note": "Street View (2011–2025): HSB-gatan 3: ochre rendered block with shops and awnings",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w326305898": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2011–2025): white garage row"
+  },
+  "w1154729885": {
+   "building:levels": 1,
+   "style": "metal",
+   "colour": "grey",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): grey corrugated store with a red tile roof",
+   "height": 5.0,
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w1198323605": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "beige",
+   "roof": "gabled",
+   "shopfront": true,
+   "note": "Street View (2011–2025): Storgatan/Knihsgatan corner: beige render, shops",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w206306958": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): old railway goods shed: pale boards, loading platform",
+   "height": 5.0,
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w702634587": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "flat",
+   "shopfront": true,
+   "note": "Street View (2011–2025): low white shop building"
+  },
+  "w1154729870": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Skolgatan 9: falu-red timber, white windows, entrance canopy",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w326305894": {
+   "building:levels": 3,
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Torggatan 23: ochre board-clad block, red trim",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w326305893": {
+   "building:levels": 3,
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): ochre board-clad block (same estate); red-painted window frames and door surround, roof dormers, brick chimneys (Street View 2011/2024)",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w326305892": {
+   "building:levels": 3,
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Prästskogsgatan 4: ochre board-clad block, red trim",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w326305895": {
+   "building:levels": 3,
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): ochre board-clad block with balconies; red-painted window frames and door surround, roof dormers, brick chimneys (Street View 2011/2024)",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1154729869": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Skolgatan: falu-red terraced houses",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w313489408r": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "hipped",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Stiernhöökgatan 1: yellow rendered block, pale stair bays",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w313489409r": {
+   "building:levels": 3,
+   "style": "plaster",
+   "colour": "green",
+   "roof": "hipped",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Stiernhöökgatan 3: sage-green rendered block, pale stair bays",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1156560705": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2011–2025): Kvarngatan 22: falu-red timber house on a light rendered basement",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w313489283": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View 2024 (Centralgatan, Backavägen, Prästskogsgatan): Rättviksskolan, red-brick 2-storey school blocks with flat roofs among pines"
+  },
+  "w206306960": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "shopfront": false,
+   "note": "Street View 2024: low cream board shed south of the station (kiosk/bike room)"
+  },
+  "w362479861": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "hipped",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "shopfront": false,
+   "note": "photo 2019 (references/kommunalhus/front_sw_2019.jpg): pale-yellow rendered block beside the kommunalhus, hipped roof, white window surrounds"
+  },
+  "w1154729898": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "shopfront": false,
+   "note": "photo 2019: yellow timber house with red-brown roof behind the kommunalhus square"
+  },
+  "w313489070": {
+   "building:levels": 1,
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Nyhedsskolan (Hällebergs väg): low red-brick school wings, dark roofs",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1429391770": {
+   "building:levels": 1,
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Nyhedsskolan wing",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1429391771": {
+   "building:levels": 1,
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Nyhedsskolan wing",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1429391784": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): falu-red school outbuilding",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1021070737": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "grey",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Nyåkersvägen 4: dark-grey board facade with white end walls, flat roof"
+  },
+  "w1395591846": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Hällebergs väg 46: red brick 2-storey, flat roof"
+  },
+  "w206319166": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "hipped",
+   "shopfront": true,
+   "note": "Street View (2024–2025): Fauna (Riksvägen): long low brown timber store, red tile hipped roof, glass front",
+   "height": 5.5,
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w1396097018": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Masvägen 7: red brick block with basement windows and loading dock",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1429391758": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Backavägen: long red-brick apartment block with balconies",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1396042200": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Gjutarvägen 4 (Spegels): ochre board-clad workshop",
+   "height": 5.0
+  },
+  "w1395589828": {
+   "building:levels": 1,
+   "style": "brick",
+   "colour": "red",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Filarvägen 4: red brick and brown-panel industrial hall, garage doors",
+   "height": 6.0
+  },
+  "w1021070736": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Filarvägen 8: white warehouse, dark-red metal roof",
+   "height": 6.5,
+   "roof_style": "metal",
+   "roof_colour": "red"
+  },
+  "w1021070735": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "flat",
+   "shopfront": true,
+   "note": "Street View (2024–2025): Mekonomen, Filarvägen 9: cream low building",
+   "height": 5.0
+  },
+  "w1396065114": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Reparatörvägen 5: white industrial hall, light-blue metal roof",
+   "height": 5.5,
+   "roof_style": "metal",
+   "roof_colour": "grey"
+  },
+  "w1395677946": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "grey",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2024–2025): low grey rendered workshop",
+   "height": 4.5
+  },
+  "w1396065104": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Hällebergs väg 42: white hall, red window frames",
+   "height": 5.0,
+   "roof_style": "metal",
+   "roof_colour": "grey"
+  },
+  "w1396078638": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Hällebergs väg 39: long falu-red timber office, dormers",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w1396065106": {
+   "building:levels": 1,
+   "style": "metal",
+   "colour": "green",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Gjutarvägen 6: green and red corrugated barn",
+   "height": 5.5,
+   "roof_style": "metal",
+   "roof_colour": "grey"
+  },
+  "w1395595060": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Hällebergs väg 40: cream low building, red windows",
+   "height": 4.5,
+   "roof_style": "metal",
+   "roof_colour": "grey"
+  },
+  "w1396042203": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Reparatörvägen 5: cream low office block",
+   "height": 4.5
+  },
+  "w690113213": {
+   "building:levels": 2,
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "shopfront": true,
+   "note": "Street View (2024–2025): Riksvägen: brown-red brick 2-storey with big shop windows (Rättviks måleri)",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1396070112": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Gjutarvägen 9: long falu-red timber workshop",
+   "height": 5.0,
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w1168453995": {
+   "building:levels": 1,
+   "style": "plaster",
+   "colour": "white",
+   "roof": "flat",
+   "shopfront": false,
+   "note": "Street View (2024–2025): Faluvägen 3: white garages",
+   "height": 4.0
+  },
+  "w733303477r": {
+   "building:levels": 3,
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "shopfront": false,
+   "note": "Street View (May 2024): Vandrarhemmet Kullan: red-brick 3-storey block, white windows",
+   "roof_style": "metal",
+   "roof_colour": "black"
+  },
+  "w476060681": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (May 2024): Röda Lägergården (Kyrkvägen 2): falu-red timber, white windows, porch",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w253811715": {
+   "building:levels": 2,
+   "style": "plaster",
+   "colour": "ivory",
+   "roof": "hipped",
+   "shopfront": false,
+   "note": "Street View (May 2024): Karlsviks herrgård: cream rendered manor, red tile hipped roof, columned veranda with balcony",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w313487013": {
+   "building:levels": 1,
+   "style": "wood",
+   "colour": "brown",
+   "roof": "flat",
+   "shopfront": true,
+   "note": "Street View (May 2024): Sibylla (Riksvägen 27): low dark-brown fast-food building",
+   "height": 4.5
+  },
+  "w273499269": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (May 2024): Hvilan 7: falu-red timber house, white trim",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w206311243": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (May 2024): Pilgatan 17: falu-red farmhouse",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w206311245": {
+   "building:levels": 2,
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "shopfront": false,
+   "note": "Street View (May 2024): Pilgatan 19: falu-red farmhouse and garage wing",
+   "roof_style": "tiles",
+   "roof_colour": "red"
+  },
+  "w1154729879": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red 1940s two-storey timber apartment house, white trim, entrance porches with canopies and steps, brown tile roof"
+  },
+  "w1154729875": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red 1940s two-storey timber apartment house, white windows, entrance porch with canopy, brown tile roof, chimney"
+  },
+  "w1154729872": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey row house, white windows, covered entrances, brown tile roof"
+  },
+  "w1154729862": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red carport and garage row with dark open bays"
+  },
+  "w1154729861": {
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 3,
+   "note": "Street View May 2024: pale yellow three-storey apartment block with white balconies"
+  },
+  "w1154733478": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: long garage row, falu red, dark grey garage doors, brown tile roof"
+  },
+  "w1154733461": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "height": 6.5,
+   "note": "Street View May 2024: falu red 1½-storey villa behind a hedge, white trim, steep red tile roof, chimney, gable windows"
+  },
+  "w1154733466": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red 1½-storey house, white trim and corner boards, red tile roof, chimney"
+  },
+  "w1154733472": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: low falu red outbuilding, red tile roof"
+  },
+  "w1154733467": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red timber house behind the hedge, red tile roof"
+  },
+  "w1154733469": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: one-storey falu red annex, white trim, red tile roof"
+  },
+  "w1154733470": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white external stair to an upper balcony gallery, small white cross gable, red tile roof, chimney"
+  },
+  "w1154733462": {
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: ochre-yellow two-storey timber house, gable end to the street, white trim and corner boards, white window surrounds"
+  },
+  "w1154733474": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white entrance porches with gabled canopies and stairs, red tile roof"
+  },
+  "w1154733468": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: long one-storey falu red house, white windows, red tile roof"
+  },
+  "w1154733475": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white external stair to an upper balcony gallery"
+  },
+  "w1154733480": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey timber house, white trim"
+  },
+  "w1154733473": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey timber house"
+  },
+  "w1156560700": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: garage row with four doors, red tile roof"
+  },
+  "w1156560697": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white external stair and balcony gallery"
+  },
+  "w1156560689": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white trim and corner boards, white windows, brown tile roof, chimneys"
+  },
+  "w1156560688": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white balcony with a gabled canopy"
+  },
+  "w1156560687": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house by the lake, white trim, brown tile roof"
+  },
+  "w1156560691": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white trim, brown tile roof"
+  },
+  "w1156560686": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: small falu red barn, red tile roof"
+  },
+  "w1156560704": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey house, white windows, dark tile roof"
+  },
+  "w1168453959": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 2,
+   "note": "Street View May 2024: dark brown timber house behind a hedge, grey metal roof"
+  },
+  "w1168454025": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey villa, white trim, red tile roof, chimney"
+  },
+  "w1168454024": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: white two-storey house with a big white veranda and balcony on top, red tile roof"
+  },
+  "w1396065110": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "height": 3.6,
+   "note": "Street View May 2024: low falu red board shed, grey metal roof"
+  },
+  "w1396065107": {
+   "style": "metal",
+   "colour": "blue",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: navy blue workshop with white trim, grey metal roof"
+  },
+  "w1396042201": {
+   "style": "wood",
+   "colour": "ochre",
+   "roof": "flat",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: yellow corrugated hall wall beside the SPEGELS hall"
+  },
+  "w1396042202": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: long one-storey falu red board building, white windows"
+  },
+  "w1396070111": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "height": 7.0,
+   "note": "Street View May 2024: falu red board hall, gable end to the street with white trim, big white garage doors and a door"
+  },
+  "w1396078639": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "height": 6.5,
+   "note": "Street View May 2024: falu red hall with big doors, low grey metal roof"
+  },
+  "w1396078637": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red office with a red entrance canopy on posts"
+  },
+  "w1396075981": {
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: yellow plastered two-storey house, white windows, red tile roof"
+  },
+  "w1396069225": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: long one-storey falu red building, white windows, red tile roof, glazed entrance link to the next wing"
+  },
+  "w1396069226": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: long one-storey falu red building, white windows, red tile roof"
+  },
+  "w221194520": {
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: long light grey one-storey hall, dark band of windows"
+  },
+  "w221194521": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: low one-storey falu red building behind bushes"
+  },
+  "w206306954r": {
+   "style": "plaster",
+   "colour": "white",
+   "roof": "flat",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "shopfront": true,
+   "note": "Street View May 2024: petrol station shop, white one-storey with a glazed front and red signs"
+  },
+  "w313489403": {
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: garage row, beige panels, grey doors, low roof"
+  },
+  "w1156218852": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red garage building with white trim and red doors"
+  },
+  "w1156218851": {
+   "style": "wood",
+   "colour": "black",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: black-stained timber garage row, gable to the street"
+  },
+  "w1154729883": {
+   "style": "wood",
+   "colour": "grey",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: light grey horizontal board building on a concrete base beside the parking deck"
+  },
+  "w1154729884": {
+   "style": "concrete",
+   "colour": "light",
+   "roof": "flat",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: concrete parking deck base with a railing on top"
+  },
+  "w1396195055": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown 1970s one-storey timber villa, black tile roof"
+  },
+  "w1396195273": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: brown one-storey timber villa, brown tile roof, carport"
+  },
+  "w1396190196": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown one-storey timber villa, dark tile roof"
+  },
+  "w1396190470": {
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: light rendered one-storey villa, dark brown tile roof"
+  },
+  "w1396192670": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown one-storey villa with a white garage door, dark tile roof"
+  },
+  "w1396191771": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown one-storey villa with garage, dark tile roof"
+  },
+  "w1396189977": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown one-storey villa, white garage door, dark tile roof"
+  },
+  "w1396191377": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: brown 1½-storey villa, dark tile roof, dormer"
+  },
+  "w1396189767": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "height": 6.0,
+   "note": "Street View May 2024: dark brown 1½-storey villa, black tile roof, dormer, white trim"
+  },
+  "w1429391791": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown one-storey villa, white trim, porch, garage at the end, grey tile roof"
+  },
+  "w1429391792": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa, grey tile roof"
+  },
+  "w1320068740": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red garage, grey roof"
+  },
+  "w1320068777": {
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: pale yellow one-storey villa, red tile roof, red awnings, red garage"
+  },
+  "w1320068779": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa, dark tile roof, chimney"
+  },
+  "w1320068781": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream brick one-storey villa, orange-red tile roof, entrance steps"
+  },
+  "w1320068780": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa, dark tile roof, white glazed veranda, chimney"
+  },
+  "w1320068727": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa, brown tile roof, chimney"
+  },
+  "w1320068768": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: brown one-storey villa, dark tile roof, chimney, grey veranda"
+  },
+  "w1320068752": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa with a brown timber garage, brown tile roof, chimney"
+  },
+  "w1320068751": {
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: yellow one-storey timber villa, black tile roof, chimney, entrance steps"
+  },
+  "w1320068747": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey villa, black roof, glazed veranda, brick chimney"
+  },
+  "w1320068746": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey timber villa, black metal roof, red brick chimney, white veranda"
+  },
+  "w1320068765": {
+   "style": "wood",
+   "colour": "grey",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: grey-brown one-storey villa, dark tile roof, chimney"
+  },
+  "w1320068764": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey villa, black roof, chimney"
+  },
+  "w1320068726": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa, red tile roof, chimney"
+  },
+  "w1320068725": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey timber villa, red tile roof, awnings"
+  },
+  "w1154729882": {
+   "style": "wood",
+   "colour": "grey",
+   "roof": "flat",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: row of garages on Arnikasgatan: light grey boards on a concrete base, white garage doors"
+  },
+  "w1154729895": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 2,
+   "note": "Street View Aug 2010: dark brown timber house by Järnvägsgatan, white windows, dark roof"
+  },
+  "w1154729896": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View Aug 2010: falu red two-storey timber house, white trim and corner boards, red tile roof, chimney"
+  },
+  "w1154732366": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "height": 6.0,
+   "note": "Street View Aug 2010: old dark red-brown timber barn on Badhusgatan with big board doors and a hatch in the gable"
+  },
+  "w1154732358": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View Aug 2010: falu red workshop with big red glazed folding doors, white trim"
+  },
+  "w1154729864": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: small falu red outbuilding with white trim, red tile roof"
+  },
+  "w907559160": {
+   "style": "plaster",
+   "colour": "beige",
+   "roof": "hipped",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 3,
+   "note": "Street View May 2024: turn-of-the-century villa on Dalagatan: pale pinkish-beige render, steep dark hipped roof with gables and dormers, chimneys"
+  },
+  "w1168468438": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: white 1½-storey house with a carved white gable and red tile roof"
+  },
+  "w1156560702": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white trim, brown tile roof, white outside stair"
+  },
+  "w1156560707": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: new garage house in stained pine boards, steep black roof, two grey garage doors, chimney (garage row)"
+  },
+  "w1156560706": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 2,
+   "note": "Street View May 2024: white two-storey timber villa, dark tile roof, cross gable, glazed veranda"
+  },
+  "w1168453981": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red 1½-storey cottage on a white plinth, white trim, red tile roof, view over Siljan"
+  },
+  "w1168453983": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red 1½-storey cottage, white trim, red tile roof"
+  },
+  "w1168454018": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey house behind bushes, red tile roof"
+  },
+  "w1429391782": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey villa, red tile roof, grey plinth, white windows"
+  },
+  "w1429391780": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey house, gable to the street, white trim, black metal roof, low annex in front"
+  },
+  "w710375174": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: long one-storey falu red building, white windows, red tile roof"
+  },
+  "w1429391769": {
+   "style": "wood",
+   "colour": "pale",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: light grey 1½-storey villa, black tile roof, white deck with railing (veranda), cross gable"
+  },
+  "w1429391767": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: white 1½-storey villa, steep red tile roof, white trim, falu red annex, chimney"
+  },
+  "w1429391764": {
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: white rendered one-storey house, red tile roof, chimney"
+  },
+  "w1429391765": {
+   "style": "plaster",
+   "colour": "rose",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: pink 1½-storey villa, dark tile roof, gable dormer"
+  },
+  "w1396029230": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: light grey-white one-storey villa, dark tile roof, chimney"
+  },
+  "w1396029231": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey house, black roof"
+  },
+  "w1320068744": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: 1960s red brick one-storey villa, brown boards under big windows, dark tile roof, chimney, entrance steps"
+  },
+  "w1320068743": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey villa, dark tile roof"
+  },
+  "w1320068738": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey timber villa, brown tile roof, chimney, dark shutters"
+  },
+  "w1320068737": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey villa, black tile roof, chimney"
+  },
+  "w1429391761": {
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: yellow timber 1½-storey villa, dark brown tile roof"
+  },
+  "w1429391790": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey house, red tile roof, white trim"
+  },
+  "w1320068783": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 2,
+   "note": "Street View May 2024: white two-storey house, dark roof"
+  },
+  "w1429391814": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: long falu red one-storey house, grey metal roof, chimney"
+  },
+  "w1429391811": {
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: beige board annex with an entrance ramp, low grey roof"
+  },
+  "w1396192055": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown timber villa with garage, white garage door"
+  },
+  "w1320068776": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey villa, red tile roof, white glazed veranda, chimney"
+  },
+  "w1320068732": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream brick one-storey villa with garage, red-brown tile roof, grey garage door"
+  },
+  "w1320068772": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream brick one-storey villa, dark tile roof, chimney, black-stained deck"
+  },
+  "w1320068773": {
+   "style": "plaster",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: yellow 1½-storey house, red tile roof"
+  },
+  "w1320068734": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey villa, red tile roof, white entrance porch with a gabled roof, chimney"
+  },
+  "w1320068745": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey villa, dark tile roof, white glazed veranda, white trim"
+  },
+  "w1429391795": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey villa, dark tile roof, white trim"
+  },
+  "w1429391794": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown one-storey villa, dark tile roof, white trim, white entrance porch with steps"
+  },
+  "w1320068770": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey villa, red tile roof, white entrance porch with a carved gable, white trim, chimney"
+  },
+  "w1320068769": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa, brown tile roof"
+  },
+  "w1320068748": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown one-storey timber villa, red tile roof, white glazed veranda"
+  },
+  "w1429391797": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown timber garage house, dark roof"
+  },
+  "w1320068753": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey timber villa, dark tile roof, chimney, entrance steps"
+  },
+  "w1320068754": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey villa, red tile roof, white glazed veranda"
+  },
+  "w1429391803": {
+   "style": "wood",
+   "colour": "blue",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: blue timber villa with garage, white trim, dark tile roof, white garage door"
+  },
+  "w1429391804": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream brick one-storey villa, brown tile roof"
+  },
+  "w1429391802": {
+   "style": "wood",
+   "colour": "black",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: charcoal timber one-storey villa, black metal roof, white entrance porch with a gable and steps"
+  },
+  "w1429391800": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey villa, red tile roof"
+  },
+  "w1396095094": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red 1½-storey storehouse, gable to the street with a single window, steep dark roof"
+  },
+  "w1093562871": {
+   "style": "wood",
+   "colour": "blue",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: pale blue two-storey timber house at Knihsgatan 1, white trim and window surrounds, red tile roof"
+  },
+  "w1154730718": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 3,
+   "note": "Street View May 2024: red brick three-storey apartment block on Arnikasgatan"
+  },
+  "w1395445599": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: RÄTTVIKS ANTIK: one-storey falu red shop with a low grey metal roof and the sign along the eave"
+  },
+  "w1154729894": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View Aug 2010: long dark brown timber house by the bell tower on Järnvägsgatan, brown tile roof"
+  },
+  "w1154732357": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: long one-storey falu red house, white windows, black tile roof"
+  },
+  "w1154729871": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white balconies, red tile roof"
+  },
+  "w206306966": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "hipped",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: Surt sushi: white one-storey board building, dark hipped tile roof, double doors and the green-and-red sign"
+  },
+  "w1154732360": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: dark brown timber two-storey building, brown tile roof"
+  },
+  "w1154733471": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey apartment house, white balconies, red tile roof"
+  },
+  "w1154732367": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 2,
+   "note": "Street View Jun 2023: old dark falu red two-storey timber house on Torggatan, white windows, black roof, chimney"
+  },
+  "w1156560695": {
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: yellow two-storey timber house, white trim and corner boards"
+  },
+  "w1156560693": {
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: pale yellow two-storey timber house with a white garage wing"
+  },
+  "w206307673": {
+   "style": "concrete",
+   "colour": "light",
+   "roof": "flat",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: pebble-dash technical building with a flat roof and a radio mast behind"
+  },
+  "w1156218854": {
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 3,
+   "note": "Street View May 2024: white rendered three-storey block, red stair-hall strip up the gable, red board entrance porch"
+  },
+  "w1156218855": {
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 3,
+   "note": "Street View May 2024: white rendered three-storey block, red awnings and balconies"
+  },
+  "w1156218856": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: red board entrance porch of the white block"
+  },
+  "w326305887": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "flat",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: long open carport row behind a red fence, dark roof"
+  },
+  "w1168468441": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: white 1½-storey timber house among birches, red tile roof, chimney"
+  },
+  "w1168453961": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red 1½-storey cottage, steep red tile roof, chimney, small glazed entrance porch"
+  },
+  "w1168453970": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: long falu red one-storey house, white trim, red tile roof"
+  },
+  "w1168453962": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey villa with garage door in the basement, balcony, red tile roof"
+  },
+  "w1429369268": {
+   "style": "wood",
+   "colour": "cream",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream 1½-storey timber villa on Faluvägen, steep red tile roof, cross gable, brick chimneys"
+  },
+  "w1168453958": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 2,
+   "note": "Street View May 2024: long falu red two-storey house, white trim, dark tile roof"
+  },
+  "w1168453963": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "mint",
+   "building:levels": 2,
+   "note": "Street View May 2024: white two-storey timber house, pale green metal roof, cross gable, glazed balcony, chimney"
+  },
+  "w1168453965": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey villa, white balcony across the front, dark roof"
+  },
+  "w1168468455": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red 1½-storey house, red tile roof, cross gable, white trim"
+  },
+  "w1168468433": {
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: yellow two-storey timber house, white trim, white entrance porch with a gable"
+  },
+  "w1168453982": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey cottage on a white basement, red tile roof"
+  },
+  "w1168454022": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: white 1½-storey house, red tile roof, cross gable"
+  },
+  "w1168453984": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: red two-storey house with a hipped red tile roof"
+  },
+  "w1168453976": {
+   "style": "wood",
+   "colour": "pale",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: pale grey-green board garage on Bryggerivägen with a wide door"
+  },
+  "w1396031390": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "height": 3.6,
+   "note": "Street View May 2024: low brown timber building on Prästskogsgatan with dark board doors and an open front on posts"
+  },
+  "w1168454048": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: old dark log house on Bryggerivägen, red tile roof, two chimneys, white windows"
+  },
+  "w1168453989": {
+   "style": "wood",
+   "colour": "grey",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 2,
+   "note": "Street View May 2024: grey board two-storey building on Faluvägen with a vertical sign"
+  },
+  "w1168453978": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey villa with a bright red metal roof and green doors, flagpole, view over Siljan"
+  },
+  "w1168453994": {
+   "style": "wood",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 2,
+   "note": "Street View May 2024: yellow two-storey villa on Faluvägen with three garage doors in a low wing, brown tile roof, dormer"
+  },
+  "w1168454017": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "height": 6.0,
+   "note": "Street View May 2024: falu red barn on Kvarngatan with white corner boards and yellow board doors"
+  },
+  "w1168454037": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: falu red two-storey house on Bockgatan, white trim, red tile roof, cross gable, glazed entrance porch"
+  },
+  "w1168454035": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red 1½-storey house behind a red board fence, red tile roof"
+  },
+  "w1429391781": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick 1½-storey house on Höök Olles väg, steep black roof, chimney, grey board annex"
+  },
+  "w1429391778": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 2,
+   "note": "Street View Jun 2023: falu red upper storey over a red brick ground floor, black roof, glazed veranda"
+  },
+  "w206306969": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "green",
+   "building:levels": 1,
+   "note": "Street View May 2024: long low falu red service building at the camping by Långbryggan, green metal roof"
+  },
+  "w1396065255": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: long low falu red board shed on Gjutarvägen"
+  },
+  "w1429391772": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream brick one-storey villa, red tile roof, entrance porch with a gabled roof, chimney"
+  },
+  "w1429391773": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: yellow brick 1½-storey villa, gable to the street, steep dark roof, white deck"
+  },
+  "w1429391774": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: yellow 1½-storey villa, brown tile roof"
+  },
+  "w1429391775": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: white 1½-storey timber villa, brown tile roof, entrance porch with a gabled roof and steps"
+  },
+  "w1429391776": {
+   "style": "wood",
+   "colour": "weathered",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark grey 1½-storey timber villa, black roof, entrance porch, chimney"
+  },
+  "w1429391763": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "hipped",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa, red tile roof, big white veranda on a stone base"
+  },
+  "w1429391777": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "green",
+   "building:levels": 2,
+   "note": "Street View May 2024: red brick 1½-storey house, green-grey metal roof, garage beside it"
+  },
+  "w1396065103": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "height": 5.5,
+   "note": "Street View May 2024: hall on Hällebergs väg: red brick front, light grey sheet metal above, blue garage doors"
+  },
+  "w1320068742": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream brick one-storey villa on a basement, red tile roof, chimney"
+  },
+  "w1396029228": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "brown",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey villa, dark brown tile roof, chimney, entrance steps"
+  },
+  "w1396029226": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream brick one-storey villa, red tile roof, chimney"
+  },
+  "w1320068739": {
+   "style": "brick",
+   "colour": "red",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: red brick one-storey villa, red tile roof, chimney"
+  },
+  "w1320068736": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 1,
+   "note": "Street View May 2024: cream brick and white board one-storey villa, red tile roof, glazed veranda, chimney"
+  },
+  "w1429391823": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: long falu red one-storey row house, grey metal roof, chimney"
+  },
+  "w1396072870": {
+   "style": "plaster",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "height": 5.0,
+   "note": "Street View May 2024: white car workshop hall on Filarvägen with a garage door and the sign"
+  },
+  "w1320068728": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown one-storey timber villa with a carport, dark roof"
+  },
+  "w1396065113": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "red",
+   "building:levels": 2,
+   "note": "Street View May 2024: dark-stained two-storey timber building with a red tile roof and an open timber shed in front"
+  },
+  "w1429391817": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey row house, black corrugated roof, chimney"
+  },
+  "w1429391820": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey row house, grey corrugated roof, chimney"
+  },
+  "w1429391819": {
+   "style": "wood",
+   "colour": "falu",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "grey",
+   "building:levels": 1,
+   "note": "Street View May 2024: falu red one-storey row house end, grey corrugated roof"
+  },
+  "w1396065105": {
+   "style": "wood",
+   "colour": "brown",
+   "roof": "gabled",
+   "roof_style": "metal",
+   "roof_colour": "black",
+   "building:levels": 1,
+   "note": "Street View May 2024: dark brown timber shop on Filarvägen with a sign on the roof"
+  },
+  "w1320068778": {
+   "style": "wood",
+   "colour": "white",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: white one-storey villa, black roof, glazed veranda with a white rail, chimney"
+  },
+  "w1320068733": {
+   "style": "brick",
+   "colour": "yellow",
+   "roof": "gabled",
+   "roof_style": "tiles",
+   "roof_colour": "dark",
+   "building:levels": 1,
+   "note": "Street View May 2024: yellow brick 1½-storey villa, gable to the street, dark roof, garage in the basement"
+  }
+ },
+ "areas": [
+  {
+   "name": "Gamla byn vid kyrkan",
+   "polygon": [
+    [
+     60.893725,
+     15.093922
+    ],
+    [
+     60.893725,
+     15.103707
+    ],
+    [
+     60.891031,
+     15.103707
+    ],
+    [
+     60.890222,
+     15.101307
+    ],
+    [
+     60.890222,
+     15.098722
+    ],
+    [
+     60.89139,
+     15.097984
+    ],
+    [
+     60.89139,
+     15.093922
+    ]
+   ],
+   "buildings": {
+    "style": "wood",
+    "colour": "falu",
+    "roof": "gabled",
+    "roof_style": "tiles",
+    "roof_colour": "red",
+    "shopfront": false
+   },
+   "note": "Street View May 2024 (Pilgatan, Kyrkvägen, Stiftsgården): the old village around the church is falu-red timber farmsteads with white trim and red tile roofs; specific entries win"
+  },
+  {
+   "name": "Villaområdet Ängsås/Skommars/Furutorp",
+   "polygon": [
+    [
+     60.889414,
+     15.116816
+    ],
+    [
+     60.889414,
+     15.125678
+    ],
+    [
+     60.893725,
+     15.125678
+    ],
+    [
+     60.893725,
+     15.116816
+    ]
+   ],
+   "buildings": {
+    "look_mix": {
+     "brick/red": 4,
+     "wood/brown": 4,
+     "wood/white": 3,
+     "brick/yellow": 1,
+     "wood/yellow": 1,
+     "plaster/white": 1,
+     "wood/falu": 1
+    },
+    "roof_look_mix": {
+     "tiles/dark": 5,
+     "tiles/red": 3,
+     "metal/black": 2
+    },
+    "roof_mix": {
+     "gabled": 3,
+     "hipped": 1
+    },
+    "max_levels": 2,
+    "shopfront": false,
+    "levels_mix": {
+     "1": 5,
+     "2": 1
+    }
+   },
+   "note": "Street View May 2024 (Ängsås väg, Skommars väg, Furutorpsvägen): 1950s–70s villas, 1–1½ storeys; red brick, white/brown/falu/yellow boards; dark concrete or red tile roofs; round 5 (Skommars väg, Ängsås väg, Prästskogsgatan, Libergs väg, Backavägen): nearly all one-storey bungalows — red or cream brick, dark brown or white boards, black/dark tile roofs"
+  },
+  {
+   "name": "Östra stan (Knihsgatan/Dalagatan/Parkgatan)",
+   "polygon": [
+    [
+     60.883664,
+     15.120878
+    ],
+    [
+     60.883664,
+     15.125678
+    ],
+    [
+     60.889414,
+     15.125678
+    ],
+    [
+     60.889414,
+     15.120878
+    ]
+   ],
+   "buildings": {
+    "look_mix": {
+     "wood/falu": 6,
+     "wood/yellow": 2,
+     "wood/white": 1,
+     "wood/ochre": 1
+    },
+    "roof_look_mix": {
+     "tiles/brown": 3,
+     "tiles/red": 3,
+     "tiles/dark": 1
+    },
+    "roof_mix": {
+     "gabled": 3,
+     "hipped": 1
+    },
+    "max_levels": 2,
+    "shopfront": false
+   },
+   "note": "Street View May 2024 (Knihsgatan, Dalagatan, Parkgatan): older timber villas (falu red, white, yellow, grey-green), some rendered with mansard roofs, garages; round 5 (Skolgatan, Dalagatan, Knihsgatan): almost all falu red 1940s two-storey timber apartment houses with white external stairs/galleries and brown-red tile roofs"
+  },
+  {
+   "name": "Södra sluttningen (Hvilan/Kvarngatan/Slalomvägen)",
+   "polygon": [
+    [
+     60.878275,
+     15.116816
+    ],
+    [
+     60.878275,
+     15.125678
+    ],
+    [
+     60.882586,
+     15.125678
+    ],
+    [
+     60.882586,
+     15.116816
+    ]
+   ],
+   "buildings": {
+    "look_mix": {
+     "wood/falu": 5,
+     "wood/white": 2,
+     "wood/yellow": 1,
+     "plaster/ivory": 1
+    },
+    "roof_look_mix": {
+     "tiles/brown": 2,
+     "tiles/red": 3,
+     "tiles/dark": 1
+    },
+    "roof_mix": {
+     "gabled": 4,
+     "hipped": 1
+    },
+    "max_levels": 2,
+    "shopfront": false,
+    "levels_mix": {
+     "1": 1,
+     "2": 2
+    }
+   },
+   "note": "Street View May 2024 (Hvilan, Kvarngatan, Slalomvägen): timber houses on the slope towards Siljan, falu red and white, red tile roofs; round 5 (Hvilan, Perjonsgatan): falu red two-storey apartment houses with white stairs and galleries dominate"
+  },
+  {
+   "name": "Industriområdet Hälleberg",
+   "polygon": [
+    [
+     60.888336,
+     15.108692
+    ],
+    [
+     60.888336,
+     15.116816
+    ],
+    [
+     60.893725,
+     15.116816
+    ],
+    [
+     60.893725,
+     15.108692
+    ]
+   ],
+   "buildings": {
+    "look_mix": {
+     "plaster/white": 3,
+     "plaster/ivory": 2,
+     "metal/grey": 2,
+     "brick/red": 2,
+     "wood/falu": 1,
+     "wood/ochre": 1
+    },
+    "roof_look_mix": {
+     "metal/grey": 3,
+     "metal/black": 2,
+     "metal/red": 1
+    },
+    "roof_mix": {
+     "gabled": 2,
+     "flat": 2
+    },
+    "max_levels": 2,
+    "levels_mix": {
+     "1": 4,
+     "2": 1
+    },
+    "shopfront": false
+   },
+   "note": "Street View May 2024 (Hällebergs väg, Filarvägen, Gjutarvägen, Reparatörvägen): low white, cream and grey halls, red-brick and ochre workshops, metal roofs"
+  },
+  {
+   "name": "Nyåker villas (Envägen/Alvägen)",
+   "polygon": [
+    [
+     60.890804,
+     15.115969
+    ],
+    [
+     60.890805,
+     15.115897
+    ],
+    [
+     60.89081,
+     15.115825
+    ],
+    [
+     60.890818,
+     15.115754
+    ],
+    [
+     60.89083,
+     15.115686
+    ],
+    [
+     60.890845,
+     15.11562
+    ],
+    [
+     60.890862,
+     15.115557
+    ],
+    [
+     60.890883,
+     15.115499
+    ],
+    [
+     60.890907,
+     15.115445
+    ],
+    [
+     60.890932,
+     15.115395
+    ],
+    [
+     60.890961,
+     15.115352
+    ],
+    [
+     60.890991,
+     15.115314
+    ],
+    [
+     60.891022,
+     15.115282
+    ],
+    [
+     60.891055,
+     15.115257
+    ],
+    [
+     60.891089,
+     15.115239
+    ],
+    [
+     60.891124,
+     15.115227
+    ],
+    [
+     60.89116,
+     15.115223
+    ],
+    [
+     60.892168,
+     15.115201
+    ],
+    [
+     60.892203,
+     15.115204
+    ],
+    [
+     60.892238,
+     15.115213
+    ],
+    [
+     60.892272,
+     15.11523
+    ],
+    [
+     60.892306,
+     15.115254
+    ],
+    [
+     60.892338,
+     15.115284
+    ],
+    [
+     60.892368,
+     15.115321
+    ],
+    [
+     60.892397,
+     15.115363
+    ],
+    [
+     60.892423,
+     15.115412
+    ],
+    [
+     60.892447,
+     15.115465
+    ],
+    [
+     60.892468,
+     15.115523
+    ],
+    [
+     60.892487,
+     15.115584
+    ],
+    [
+     60.892502,
+     15.115649
+    ],
+    [
+     60.892514,
+     15.115717
+    ],
+    [
+     60.892523,
+     15.115788
+    ],
+    [
+     60.892529,
+     15.115859
+    ],
+    [
+     60.892531,
+     15.115931
+    ],
+    [
+     60.892559,
+     15.117329
+    ],
+    [
+     60.892559,
+     15.117401
+    ],
+    [
+     60.892555,
+     15.117473
+    ],
+    [
+     60.892548,
+     15.117544
+    ],
+    [
+     60.892537,
+     15.117613
+    ],
+    [
+     60.892523,
+     15.11768
+    ],
+    [
+     60.892506,
+     15.117743
+    ],
+    [
+     60.892486,
+     15.117803
+    ],
+    [
+     60.892464,
+     15.117859
+    ],
+    [
+     60.892438,
+     15.117909
+    ],
+    [
+     60.892411,
+     15.117955
+    ],
+    [
+     60.892381,
+     15.117994
+    ],
+    [
+     60.89235,
+     15.118027
+    ],
+    [
+     60.892317,
+     15.118054
+    ],
+    [
+     60.892283,
+     15.118075
+    ],
+    [
+     60.892249,
+     15.118088
+    ],
+    [
+     60.892214,
+     15.118094
+    ],
+    [
+     60.891211,
+     15.118171
+    ],
+    [
+     60.891176,
+     15.11817
+    ],
+    [
+     60.891141,
+     15.118162
+    ],
+    [
+     60.891106,
+     15.118147
+    ],
+    [
+     60.891073,
+     15.118125
+    ],
+    [
+     60.89104,
+     15.118096
+    ],
+    [
+     60.891009,
+     15.118061
+    ],
+    [
+     60.89098,
+     15.11802
+    ],
+    [
+     60.890953,
+     15.117974
+    ],
+    [
+     60.890929,
+     15.117922
+    ],
+    [
+     60.890907,
+     15.117865
+    ],
+    [
+     60.890887,
+     15.117805
+    ],
+    [
+     60.890871,
+     15.11774
+    ],
+    [
+     60.890858,
+     15.117673
+    ],
+    [
+     60.890848,
+     15.117603
+    ],
+    [
+     60.890842,
+     15.117532
+    ],
+    [
+     60.890839,
+     15.11746
+    ]
+   ],
+   "buildings": {
+    "look_mix": {
+     "wood/brown": 5,
+     "wood/white": 1,
+     "plaster/white": 1,
+     "brick/brown": 1
+    },
+    "roof_look_mix": {
+     "tiles/dark": 4,
+     "tiles/brown": 1
+    },
+    "roof_mix": {
+     "gabled": 4,
+     "hipped": 1
+    },
+    "max_levels": 1,
+    "shopfront": false
+   },
+   "note": "Street View May 2024 (Envägen, Alvägen): 1970s one-storey villas in dark brown stained boards with black/dark brown tile roofs, white garage doors; wins over the industrial area"
+  }
+ ]
+}

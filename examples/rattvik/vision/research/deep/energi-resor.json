@@ -1,0 +1,767 @@
+{
+  "topic": "energi-resor",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "elproduktion_vattenkraft",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Elproduktion från vattenkraft inom kommunen",
+      "value": 16106,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Elproduktion och bränsleanvändning (MWh) efter region, produktionssätt och bränsletyp. År 2009–2024 (tabell EN0203A/ProdbrEl, Kommunal och regional energistatistik)",
+        "publisher": "SCB och Energimyndigheten",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/ProdbrEl/"
+      },
+      "note_sv": "Vattenkraften gav 16 106 MWh av kommunens totala elproduktion på 104 671 MWh 2024; resten var vindkraft (82 531 MWh) och solel (6 033 MWh), och ingen el kom från kraftvärme. Produktionen följer vattenåret: 9 776 MWh 2022 och 20 855 MWh 2019.",
+      "confidence": "high"
+    },
+    {
+      "id": "elanvandning_total",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Total elanvändning i kommunen",
+      "value": 139830,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Slutanvändning (MWh) efter region, förbrukarkategori och bränsletyp. År 2009–2024 (tabell EN0203A/SlutAnvSektor, Kommunal och regional energistatistik)",
+        "publisher": "SCB och Energimyndigheten",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/SlutAnvSektor/"
+      },
+      "note_sv": "Slutanvändning av el i alla sektorer, enligt nätbolagens kommunvisa leveranser. Största posterna är småhus (46 653 MWh), industri (33 386 MWh), övriga tjänster (21 306 MWh), offentlig verksamhet (15 822 MWh) och fritidshus (15 138 MWh). Elanvändningen har legat mellan 129 och 155 GWh per år 2010–2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "lokal_elproduktion_andel_av_elanvandning",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Lokal elproduktion i förhållande till kommunens elanvändning",
+      "value": 74.9,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kommunal och regional energistatistik 2024: tabellerna ProdbrEl (produktion) och SlutAnvSektor (användning)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB och Energimyndigheten)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/ProdbrEl/"
+      },
+      "note_sv": "104 671 MWh producerad el / 139 830 MWh använd el = 74,9 % (2023: 100 450 / 140 237 = 71,6 %). Måttet gäller hela året; timme för timme köps och säljs el via nätet. Vindkraften på Hedbodberget står för ungefär fyra femtedelar av den lokala produktionen.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "fjarrvarme_produktion",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Fjärrvärmeproduktion i kommunen",
+      "value": 56446,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Fjärrvärmeproduktion och bränsleanvändning (MWh) efter region, produktionssätt och bränsletyp. År 2009–2024 (tabell EN0203A/ProdbrFj)",
+        "publisher": "SCB och Energimyndigheten",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/ProdbrFj/"
+      },
+      "note_sv": "45 813 MWh kom från fristående värmeverk och 10 633 MWh från rökgaskondensering. Bränslet var 55 964 MWh: 54 953 MWh fasta biobränslen, 580 MWh förnybar olja och 431 MWh fossil olja (0,8 %). Fjärrvärmen ger ingen el, eftersom det inte finns någon kraftvärme.",
+      "confidence": "high"
+    },
+    {
+      "id": "fjarrvarme_levererad",
+      "sdg": [
+        7,
+        11
+      ],
+      "name_sv": "Levererad fjärrvärme till slutkunder",
+      "value": 47509,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Slutanvändning (MWh) efter region, förbrukarkategori och bränsletyp. År 2009–2024 (tabell EN0203A/SlutAnvSektor, Kommunal och regional energistatistik)",
+        "publisher": "SCB och Energimyndigheten",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/SlutAnvSektor/"
+      },
+      "note_sv": "Flerbostadshus 16 232 MWh, offentlig verksamhet 11 868 MWh, småhus 9 519 MWh, övriga tjänster 8 593 MWh och industri 1 297 MWh. Adven driver nätet sedan 2020 och ägs till 51 % av Adven och till 24,5 % vardera av Dala Energi och kommunen. Bolaget anger ca 31 GWh per år och ca 380 kunder (500 anslutningar) i Rättviks centrum, Boda och Vikarbyn; skillnaden mot SCB är inte förklarad.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fjarrvarme_andel_flerbostadshus",
+      "sdg": [
+        7,
+        11
+      ],
+      "name_sv": "Fjärrvärmens andel av energianvändningen i flerbostadshus",
+      "value": 84.7,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Slutanvändning (MWh) efter region, förbrukarkategori och bränsletyp. År 2009–2024 (tabell EN0203A/SlutAnvSektor, Kommunal och regional energistatistik)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB och Energimyndigheten)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/SlutAnvSektor/"
+      },
+      "note_sv": "16 232 MWh fjärrvärme av 19 164 MWh total energianvändning i flerbostadshus = 84,7 %. I småhus är andelen 10,7 % (9 519 av 88 623 MWh). Småhusen värms främst med el (46 653 MWh) och ved, flis eller pellets (32 276 MWh); vedsiffran är modellskattad av SCB utifrån 2010 års fördelning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "slutlig_energianvandning_total",
+      "sdg": [
+        7,
+        12
+      ],
+      "name_sv": "Total slutlig energianvändning i kommunen",
+      "value": 598329,
+      "unit": "MWh/år",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Slutanvändning (MWh) efter region, förbrukarkategori och bränsletyp. År 2009–2024 (tabell EN0203A/SlutAnvSektor, Kommunal och regional energistatistik)",
+        "publisher": "SCB och Energimyndigheten",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/SlutAnvSektor/"
+      },
+      "note_sv": "Alla sektorer och energibärare 2023; totalen har legat mellan 512 och 598 GWh per år sedan 2011. Totalen för 2024 är sekretessbelagd. Transportsiffrorna har dessutom ett tidsseriebrott 2024 (ny modell för oljeleveranser), så 2023 används.",
+      "confidence": "high"
+    },
+    {
+      "id": "industri_andel_slutlig_energianvandning",
+      "sdg": [
+        7,
+        9,
+        12
+      ],
+      "name_sv": "Industrins andel av kommunens slutliga energianvändning",
+      "value": 47.8,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Slutanvändning (MWh) efter region, förbrukarkategori och bränsletyp. År 2009–2024 (tabell EN0203A/SlutAnvSektor, Kommunal och regional energistatistik)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB och Energimyndigheten)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/SlutAnvSektor/"
+      },
+      "note_sv": "285 935 MWh i industri och byggverksamhet / 598 329 MWh totalt = 47,8 % (2022: 42,2 %). Bränslena är sekretessbelagda 2023. För 2024 redovisas 149 386 MWh fossil olja och 15 779 MWh fasta fossila bränslen i industrin, sannolikt främst i SMA Minerals kalkverk (se kalkverk_co2_fossil).",
+      "confidence": "medium"
+    },
+    {
+      "id": "fossilfri_andel_slutanvandning_utom_industri",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Fossilfri andel av slutlig energianvändning utanför industrin",
+      "value": 67.5,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Slutanvändning (MWh) efter region, förbrukarkategori och bränsletyp. År 2009–2024 (tabell EN0203A/SlutAnvSektor, Kommunal och regional energistatistik)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB och Energimyndigheten)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/SlutAnvSektor/"
+      },
+      "note_sv": "Hushåll, service, offentlig sektor, jord- och skogsbruk och transporter använde 312 395 MWh 2023, varav 101 582 MWh fossila bränslen (95 390 MWh i transporter): 1 − 101 582 / 312 395 = 67,5 % (2022: 68,8 %). El och fjärrvärme räknas som fossilfria. Industrin är utelämnad eftersom dess bränslen är sekretessbelagda, så en förnybar andel för hela kommunen går inte att räkna fram.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "transporter_fornybar_andel",
+      "sdg": [
+        7,
+        11,
+        13
+      ],
+      "name_sv": "Förnybar andel av energin till transporter, inklusive el",
+      "value": 19.3,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Slutanvändning (MWh) efter region, förbrukarkategori och bränsletyp. År 2009–2024 (tabell EN0203A/SlutAnvSektor, Kommunal och regional energistatistik)",
+        "publisher": "Egen beräkning (ursprungskällor: SCB och Energimyndigheten)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/SlutAnvSektor/"
+      },
+      "note_sv": "(22 277 MWh förnybara drivmedel + 473 MWh el) / 118 140 MWh = 19,3 %; resten är fossil bensin och diesel. Siffran bygger på leveranser till tankställen i kommunen, inte på invånarnas körning, och el som laddas i elbilar ingår inte. 2023 används eftersom 2024 har ett tidsseriebrott (260 362 MWh) och reduktionsplikten då sänktes.",
+      "confidence": "medium"
+    },
+    {
+      "id": "elanvandning_fritidshus",
+      "sdg": [
+        7,
+        11
+      ],
+      "name_sv": "Elanvändning i fritidshus",
+      "value": 15138,
+      "unit": "MWh/år",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Slutanvändning (MWh) efter region, förbrukarkategori och bränsletyp. År 2009–2024 (tabell EN0203A/SlutAnvSektor, Kommunal och regional energistatistik)",
+        "publisher": "SCB och Energimyndigheten",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0203__EN0203A/SlutAnvSektor/"
+      },
+      "note_sv": "Fritidshusen använde 10,8 % av kommunens el 2024 (15 138 av 139 830 MWh). Det är ungefär en tredjedel av vad alla permanenta småhus använde (46 653 MWh). Siffran visar Rättviks roll som fritidshuskommun vid Siljan.",
+      "confidence": "high"
+    },
+    {
+      "id": "kalkverk_co2_fossil",
+      "sdg": [
+        9,
+        13
+      ],
+      "name_sv": "Utsläpp av fossil koldioxid från SMA Minerals kalkverk i Rättvik",
+      "value": 119818,
+      "unit": "ton CO2/år",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "SMA Mineral AB Rättvik Kalkverk – anläggningssida i Utsläpp i siffror",
+        "publisher": "Naturvårdsverket",
+        "url": "https://utslappisiffror.naturvardsverket.se/en/Search/Plant-page/?pid=1838"
+      },
+      "note_sv": "Rapporterade utsläpp: 119 818 ton 2024, 87 761 ton 2023 och 120 418 ton 2022. Vid kalkbränning frigörs koldioxid ur själva kalkstenen, inte bara ur bränslet, så bränslebyte räcker inte för att få bort utsläppen. SMA:s andra anläggning i kommunen, Boda kalkverk, har inga CO2-uppgifter i registret.",
+      "confidence": "high"
+    },
+    {
+      "id": "broboberget_lannaberget_effekt",
+      "sdg": [
+        7,
+        9,
+        13
+      ],
+      "name_sv": "Planerad vindkraft på Broboberget och Lannaberget: effekt i nätanslutningsavtalet",
+      "value": 740,
+      "unit": "MW",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Broboberget & Lannaberget – projektsida",
+        "publisher": "wpd Scandinavia",
+        "url": "https://www.wpd.se/vara-projekt/broboberget-lannaberget/"
+      },
+      "note_sv": "Tillståndet gäller högst 115 verk (80 på Broboberget, 35 på Lannaberget) med högst 230 m totalhöjd, ca 5 mil nordost om Rättvik på gränsen mot Ovanåker, och vann laga kraft 27 maj 2022 efter överklaganden. Ellevios avtal av 16 oktober 2023 gäller upp till 740 MW via en ny 400 kV-station, med första etappen 2027. Något investeringsbeslut hittades inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "broboberget_lannaberget_produktion",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Beräknad årsproduktion från Broboberget och Lannaberget",
+      "value": 1500,
+      "unit": "GWh/år",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "wpd tar nästa viktiga steg för att bygga 1,5 TWh förnybar elproduktion i Dalarna (pressmeddelande 16 oktober 2023)",
+        "publisher": "wpd Scandinavia",
+        "url": "https://www.wpd.se/wpd-tar-nasta-viktiga-steg-for-att-bygga-15-twh-fornybar-elproduktion-i-dalarna/"
+      },
+      "note_sv": "wpd räknar med ca 1,5 TWh per år, drygt tio gånger kommunens elanvändning (139,8 GWh 2024) och drygt 14 gånger dagens lokala produktion (104,7 GWh). En del av parkerna ligger i Ovanåkers kommun, och fördelningen anges inte. Elen är tänkt för industrins omställning, bland annat hos SSAB och Ovako.",
+      "confidence": "medium"
+    },
+    {
+      "id": "okat_behov_elnat_forbrukning_dalarna",
+      "sdg": [
+        7,
+        9
+      ],
+      "name_sv": "Prognostiserad ökning av behovet av överföringskapacitet för elförbrukning i Dalarna fram till 2034",
+      "value": 57,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Preliminär nätutvecklingsplan 2025–2034, s. 4, 20 och 31",
+        "publisher": "Ellevio",
+        "url": "https://www.ellevio.se/globalassets/content/natutvecklingsplaner/ellevio_prel_natutvecklingsplan_2025-2034.pdf"
+      },
+      "note_sv": "Ellevios scenario 1 ger +57 % för förbrukning och +129 % för produktion 2025–2034 jämfört med det högsta behovet sedan 2022, drivet av industrins elektrifiering, datahallar och nya kraftverk (topplast i dag ca 800 MW). Svag stamnätsreserv har tvingat Ellevio att stoppa ny storskalig produktion i Dalanätet tills stamstationen Tandö står klar. Rättviks lokalnät fördes 2025 från Dala Energi till Sambygd AB (Nordion Energi 51 %, kommunen ca 10 %; årsredovisning 2025 s. 19), och delar av norra Rättvik hör till Ellevios Hälsinglandsnät.",
+      "confidence": "medium"
+    },
+    {
+      "id": "personbilar_per_1000_inv",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Personbilar i trafik per 1 000 invånare",
+      "value": 679,
+      "unit": "bilar/1 000 inv",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Personbilar i trafik efter län och kommun samt ägande. År 2002–2025 (tabell TK1001A/PersBilarA)",
+        "publisher": "SCB (ursprungskälla: Trafikanalys fordonsstatistik)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__TK__TK1001__TK1001A/PersBilarA/"
+      },
+      "note_sv": "7 465 personbilar i trafik 2025, eller 679 per 1 000 invånare, mot 598 i Dalarna och 475 i riket. Räknat bara på privatpersoners bilar blir talet 500 (Dalarna 480, riket 377); 1 967 av bilarna ägs av företag och organisationer. År 2015 var talet 630.",
+      "confidence": "high"
+    },
+    {
+      "id": "utpendlare_leksand",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Förvärvsarbetande Rättviksbor med arbetsplats i Leksands kommun",
+      "value": 524,
+      "unit": "personer",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Sysselsatta 15–74 år efter bostadskommun, arbetsställekommun och kön. Årligt register. År 2020–2024 (tabell AM0210F/ArRegPend2)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0210__AM0210F/ArRegPend2/"
+      },
+      "note_sv": "Den största utpendlingsströmmen: av 5 191 sysselsatta Rättviksbor arbetade 3 305 (63,7 %) i den egna kommunen. I motsatt riktning pendlade 327 från Leksand till Rättvik. Tåget till Leksand tar 14–16 minuter.",
+      "confidence": "high"
+    },
+    {
+      "id": "utpendlare_falun",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Förvärvsarbetande Rättviksbor med arbetsplats i Falu kommun",
+      "value": 383,
+      "unit": "personer",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Sysselsatta 15–74 år efter bostadskommun, arbetsställekommun och kön. Årligt register. År 2020–2024 (tabell AM0210F/ArRegPend2)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0210__AM0210F/ArRegPend2/"
+      },
+      "note_sv": "173 personer pendlade från Falun till Rättvik, så 556 pendlar i någon riktning. Det stämmer med Region Dalarnas uppgift att Falun–Rättvik har 500–700 pendlare. Det finns inget direkttåg; bussen tar knappt en timme.",
+      "confidence": "high"
+    },
+    {
+      "id": "utpendlare_mora",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Förvärvsarbetande Rättviksbor med arbetsplats i Mora kommun",
+      "value": 356,
+      "unit": "personer",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Sysselsatta 15–74 år efter bostadskommun, arbetsställekommun och kön. Årligt register. År 2020–2024 (tabell AM0210F/ArRegPend2)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0210__AM0210F/ArRegPend2/"
+      },
+      "note_sv": "167 personer pendlade från Mora till Rättvik. Tåget tar 23–25 minuter och går 17 gånger per vardag i varje riktning.",
+      "confidence": "high"
+    },
+    {
+      "id": "utpendlare_borlange",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Förvärvsarbetande Rättviksbor med arbetsplats i Borlänge kommun",
+      "value": 173,
+      "unit": "personer",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Sysselsatta 15–74 år efter bostadskommun, arbetsställekommun och kön. Årligt register. År 2020–2024 (tabell AM0210F/ArRegPend2)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0210__AM0210F/ArRegPend2/"
+      },
+      "note_sv": "44 personer pendlade i motsatt riktning. Ytterligare 70 Rättviksbor hade sin arbetsplats i Stockholms kommun och 20 i Uppsala kommun; registret visar arbetsställe, inte hur ofta man reser dit.",
+      "confidence": "high"
+    },
+    {
+      "id": "kollektivtrafik_marknadsandel",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Kollektivtrafikens marknadsandel av motoriserade resor i Dalarna",
+      "value": 9,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Dalarnas län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kollektivtrafikplan 2026 med utblick 2027–2028 (KTN 2025/134), tabell 3 s. 11",
+        "publisher": "Region Dalarna (ursprungskälla: Kollektivtrafikbarometern)",
+        "url": "https://www.regiondalarna.se/contentassets/c8cf0dc398bf4ee298ce2f3e4c8fa144/kollektivtrafikplan-2026-med-utblick-2027---2028.pdf"
+      },
+      "note_sv": "Andelen resor med buss och tåg av alla resor med motorfordon (gång och cykel ingår inte): 12 % 2019, 6 % 2021, 11 % 2023, 9 % 2024 och preliminärt 7 % januari–oktober 2025. Målet är 12,5 % 2026 och 20 % 2035. Någon siffra för Rättvik finns inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kollektivtrafik_vardagsresor_bra_andel",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Andel invånare som anser att kollektivtrafiken enkelt kan användas för vardagliga resor",
+      "value": 36.5,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N00572: Medborgarundersökningen – Möjligheterna att enkelt använda kollektivtrafik för vardagliga resor är bra, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: SCB:s medborgarundersökning)",
+        "url": "https://api.kolada.se/v3/data/kpi/N00572/municipality/2031/year/2025"
+      },
+      "note_sv": "36,5 % 2025 (27,2 % 2023), mot 44,4 % i Dalarna och 68,8 % i riket. 52,9 % anser att man enkelt kan göra längre resor utan bil (N00574) och 18,0 % att kollektivtrafiken fungerar till fritidsaktiviteter (N00573). Detta är en urvalsundersökning med felmarginal.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bilandel_resor_sverige",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Bilens andel av huvudresorna i Sverige",
+      "value": 53.0,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "RVU Sverige, tabell t1101: antal tusen huvudresor per år efter huvudsakligt färdsätt, 2024",
+        "publisher": "Trafikanalys (Sveriges officiella statistik)",
+        "url": "https://api.trafa.se/api/data?query=t1101|ar:2024|hfardsatt|anthresar&lang=sv"
+      },
+      "note_sv": "Egen beräkning: 2 052 673 av 3 872 529 tusen huvudresor = 53,0 %; gång 12,9 %, cykel 12,4 % och kollektiva färdsätt 18,3 %. Någon resvaneundersökning för Rättvik eller Dalarna hittades inte. Andelen resta kilometer till fots, med cykel och kollektivt är högst i storstäderna, så bilandelen i Rättvik är sannolikt högre än riksnivån.",
+      "confidence": "medium"
+    },
+    {
+      "id": "restid_tag_stockholm_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Snabbaste direkttåget Rättvik–Stockholm C en vardag",
+      "value": 201,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "lower_better",
+      "source": {
+        "title": "GTFS Sverige 2: tidtabelldata för all kollektivtrafik, feed-version 2026-10-10",
+        "publisher": "Egen beräkning (ursprungskälla: Samtrafiken via Trafiklab)",
+        "url": "https://www.trafiklab.se/api/gtfs-datasets/gtfs-sverige-2/"
+      },
+      "note_sv": "SJ:s tåg 47 går 14.55 från Rättvik och är i Stockholm C 18.16 (3 h 21 min); morgontåget 41 tar 3 h 26 min och norrut är tåg 48 snabbast med 3 h 15 min. Med byte i Borlänge tar resan som snabbast 3 h 24 min (05.22–08.46). I tidtabellen från 13 december 2026 blir direkttågen 1–9 minuter långsammare.",
+      "confidence": "medium"
+    },
+    {
+      "id": "direkttag_stockholm_per_vardag",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Direkta tåg Rättvik–Stockholm per vardag och riktning",
+      "value": 2,
+      "unit": "avgångar per vardag och riktning",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "higher_better",
+      "source": {
+        "title": "GTFS Sverige 2: tidtabelldata för all kollektivtrafik, feed-version 2026-10-10",
+        "publisher": "Egen beräkning (ursprungskälla: Samtrafiken via Trafiklab)",
+        "url": "https://www.trafiklab.se/api/gtfs-datasets/gtfs-sverige-2/"
+      },
+      "note_sv": "SJ kör två turer om dagen Mora–Stockholm C via Borlänge, Uppsala och Arlanda (tåg 41 och 47 söderut, 42 och 48 norrut) en vanlig vardag i oktober–november 2026; på söndagar går tre. Övriga resor kräver byte i Borlänge, där SJ har åtta avgångar mot Stockholm per vardag, och Masexpressens bussar tar 3 h 40–3 h 55 min till Cityterminalen. Inga nattåg stannar i Rättvik enligt tidtabelldata fram till januari 2027.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tag_avgangar_per_vardag",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Tågavgångar från Rättvik per vardag och riktning",
+      "value": 17,
+      "unit": "avgångar per vardag och riktning",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "higher_better",
+      "source": {
+        "title": "GTFS Sverige 2: tidtabelldata för all kollektivtrafik, feed-version 2026-10-10",
+        "publisher": "Egen beräkning (ursprungskällor: Samtrafiken via Trafiklab; Tåg i Bergslagen, tidtabell linje 50)",
+        "url": "https://www.trafiklab.se/api/gtfs-datasets/gtfs-sverige-2/"
+      },
+      "note_sv": "Onsdag 11 november 2026 går 15 regionaltåg med Tåg i Bergslagen (linje 50 Morastrand–Borlänge; från december 2026 fortsätter vissa till Sala) och 2 SJ-tåg i vardera riktningen. På lördagar går 7 och på söndagar 8 per riktning. Region Dalarna räknar med 17 dubbelturer Mora–Borlänge sedan december 2022, med 40–80 minuter mellan avgångarna.",
+      "confidence": "medium"
+    },
+    {
+      "id": "restid_tag_borlange_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Restid med tåg Rättvik–Borlänge",
+      "value": 47,
+      "unit": "minuter",
+      "year": 2023,
+      "scope": "Rättvik tätort",
+      "direction": "lower_better",
+      "source": {
+        "title": "Utvecklingsplan för regional persontågtrafik i Dalarna 2025 med utblick mot 2050 (KTN2024/56), tabell 1 (pdf-sida 26)",
+        "publisher": "Region Dalarna (ursprungskälla: Kollektivtrafikrapport 2023)",
+        "url": "https://www.regiondalarna.se/contentassets/c8cf0dc398bf4ee298ce2f3e4c8fa144/utvecklingsplan-for-regional-persontagtrafik-i-dalarna-2025-med-utblick-mot-2050.pdf"
+      },
+      "note_sv": "Tåget tar 47 minuter enligt tidtabell, mot 55 minuter med bil enligt Google, vilket ger restidskvoten 0,8. Hösten 2026 tar resan 46–52 minuter. Borlänge är bytespunkten mot Stockholm, Falun och Göteborg.",
+      "confidence": "high"
+    },
+    {
+      "id": "restid_tag_mora_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Kortaste restid med tåg Rättvik–Mora",
+      "value": 23,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "lower_better",
+      "source": {
+        "title": "Tidtabell linje 50 Dalabanan Morastrand–Borlänge C–Sala, giltig 9 augusti–12 december 2026",
+        "publisher": "Tåg i Bergslagen",
+        "url": "https://tagibergslagen.se/app/uploads/tag-i-bergslagen-tidtabell-50-20260809-20261212-tg.pdf"
+      },
+      "note_sv": "Resan tar 23–25 minuter, till exempel 10.08–10.31. Bussen 350 tar 35–45 minuter. Mora är den största inpendlingsorten i norra Dalarna, med stor inpendling från Rättvik och Orsa enligt Region Dalarna.",
+      "confidence": "high"
+    },
+    {
+      "id": "restid_buss_falun_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Restid med buss Rättvik–Falun",
+      "value": 54,
+      "unit": "minuter",
+      "year": 2024,
+      "scope": "Rättvik tätort",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kollektivtrafikrapport 2024 (KTN 2023/210), tabell 3 s. 10",
+        "publisher": "Region Dalarna",
+        "url": "https://inte.regiondalarna.se/contentassets/c8cf0dc398bf4ee298ce2f3e4c8fa144/kollektivtrafikrapport-2024.pdf"
+      },
+      "note_sv": "Rättvik resecentrum–Falun Knutpunkten tar 54 minuter med buss, mot 45 minuter med bil (restidskvot 1,20). Direktturer tar 49 minuter (kvot 1,09). Med tåg måste man byta i Borlänge, och resan tar då minst 83 minuter enligt tidtabelldata hösten 2026.",
+      "confidence": "high"
+    },
+    {
+      "id": "bussturer_falun_per_vardag",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Bussturer Rättvik–Falun per vardag (linje 350)",
+      "value": 20,
+      "unit": "turer per vardag",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "higher_better",
+      "source": {
+        "title": "Tidtabell linje 350 Mora–Rättvik–Falun, giltig 17 augusti–12 december 2026",
+        "publisher": "Dalatrafik (Region Dalarna)",
+        "url": "https://www.iphone.fskab.se/DAL/Landsbygdstrafik/260817_261212/Landsbygdstrafik_350_260817_261212.pdf"
+      },
+      "note_sv": "20 avgångar mot Falun måndag–fredag (05.43–21.05) och 21 mot Mora; lördag och söndag går 6 per riktning, och vissa turer måste förbeställas. Stråklinjen 102 Rättvik–Borlänge kördes till och med 16 juni 2025. Linje 351 Rättvik–Furudal har 13 turer per vardag och riktning.",
+      "confidence": "high"
+    },
+    {
+      "id": "restid_uppsala_borlange_efter_atgarder_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Restid Uppsala–Borlänge efter planerade åtgärder på Dalabanan (omkring 2031)",
+      "value": 93,
+      "unit": "minuter",
+      "year": 2025,
+      "scope": "Dalarnas län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Dalabanan Uppsala–Mora: kortare restid och fler turer (projektsida, uppdaterad 2 juli 2025)",
+        "publisher": "Trafikverket",
+        "url": "https://www.trafikverket.se/vara-projekt/alla-strak/kortare-restid-och-fler-turer-pa-dalabanan/"
+      },
+      "note_sv": "Dagens restid är 100 minuter; åtgärder för närmare 2 miljarder kronor fram till 2030 (mötesstationer med samtidig infart, nya mötesstationer vid Lustån och Heby, spårbyten) ska korta den med ca 7 minuter och ge plats för ett fjärrtåg i timmen. Regionernas mål på 89 minuter kräver enligt Region Dalarna åtgärder som inte ryms i nationell plan 2026–2037. Hela banan är enkelspårig, och delen Borlänge–Leksand–Rättvik–Mora kallas Siljansbanan.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mal_restid_mora_stockholm_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Regionalt mål för restid med tåg Mora–Stockholm",
+      "value": 180,
+      "unit": "minuter",
+      "year": 2024,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Utvecklingsplan för regional persontågtrafik i Dalarna 2025 med utblick mot 2050 (KTN2024/56), avsnitt 7.1.4–7.1.8 (pdf-sidor 41–43)",
+        "publisher": "Region Dalarna",
+        "url": "https://www.regiondalarna.se/contentassets/c8cf0dc398bf4ee298ce2f3e4c8fa144/utvecklingsplan-for-regional-persontagtrafik-i-dalarna-2025-med-utblick-mot-2050.pdf"
+      },
+      "note_sv": "Regionplanen 2023–2025 har som mål en tågförbindelse Mora–Stockholm på under tre timmar; i dag tar direkttåget 3 h 40–3 h 51 min. Målet hänger ihop med 89 minuter Uppsala–Borlänge och kräver snabbare tåg med få stopp och mer kapacitet, och Region Dalarna skriver att det bör konkretiseras i en förstudie. Timtrafik Mora–Stockholm ska också utredas.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mora_siljan_passagerare",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Passagerare vid Mora–Siljan flygplats",
+      "value": 3807,
+      "unit": "passagerare/år",
+      "year": 2025,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Flygtrafikstatistik 2025, tabell 1 s. 3",
+        "publisher": "Transportstyrelsen",
+        "url": "https://www.transportstyrelsen.se/globalassets/global/publikationer-och-rapporter/luftfart/flygtrafikstatistik-2025.pdf"
+      },
+      "note_sv": "3 807 ankommande och avresande passagerare 2025, mot 3 394 år 2024. År 2019 var de 2 838 och 2018 4 701 (Transportstyrelsen, Flygtrafikstatistik 2019), efter att linjetrafiken till Arlanda upphört i februari 2018. Sedan 2023 flygs Sveg–Mora–Arlanda med allmän trafikplikt.",
+      "confidence": "high"
+    },
+    {
+      "id": "dala_airport_passagerare",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Passagerare vid Dala Airport i Borlänge",
+      "value": 15820,
+      "unit": "passagerare/år",
+      "year": 2025,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Flygtrafikstatistik 2025, tabell 1 s. 3",
+        "publisher": "Transportstyrelsen",
+        "url": "https://www.transportstyrelsen.se/globalassets/global/publikationer-och-rapporter/luftfart/flygtrafikstatistik-2025.pdf"
+      },
+      "note_sv": "15 820 passagerare 2025, mot 15 357 år 2024, 21 421 år 2019 och 26 456 år 2018 (Transportstyrelsen, Flygtrafikstatistik 2019). Från Rättvik nås Borlänge med tåg på 46–52 minuter.",
+      "confidence": "high"
+    },
+    {
+      "id": "flyglinje_mora_arlanda_statligt_stod",
+      "sdg": [
+        9,
+        11,
+        13
+      ],
+      "name_sv": "Statens kostnad för den upphandlade flyglinjen Sveg–Mora–Arlanda",
+      "value": 22,
+      "unit": "mnkr/år",
+      "year": 2026,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Flyglinjen mellan Mora och Arlanda kan läggas ned (uppdaterad 12 mars 2026)",
+        "publisher": "SVT Nyheter Dalarna (uppgifter från Trafikverket)",
+        "url": "https://www.svt.se/nyheter/lokalt/dalarna/flyglinjen-mellan-mora-och-arlanda-kan-laggas-ned"
+      },
+      "note_sv": "Drygt 9 000 resenärer flög sträckan 2025, vilket motsvarar ca 2 425 kronor i statligt stöd per passagerare; Mora står för ca 4 000 resenärer per år. I mars 2026 föreslog Trafikverket att trafikplikten inte förnyas när avtalen går ut i oktober 2027. Ett skäl är att resan till Stockholm med andra färdmedel tar under fyra timmar från Mora.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bilandel_turistresor",
+      "sdg": [
+        8,
+        11,
+        13
+      ],
+      "name_sv": "Bilens andel av inhemska turistresor till Dalarna",
+      "value": 91.5,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Transportsystemet för turism – kunskapssammanställning och framåtblick, s. 5",
+        "publisher": "Ramboll på uppdrag av Tillväxtverket och Myndighetsgruppen för turism och besöksnäring (ursprungskälla: Tillväxtverket och SCB)",
+        "url": "https://orta.regionorebrolan.se/contentassets/36ec90f4d52a47148f6241391e73b2d7/transportsystemet-for-turism---kunskapssammanstallning-och-framatblick.pdf"
+      },
+      "note_sv": "Rapporten anger att bilandelen är högst i Jönköpings, Kalmar och Dalarnas län, 91–92 %, och lägst i Stockholm, 43 %, med data för 2017–2021; 91,5 är mittvärdet. I hela landet ökade bilens andel av inhemska turistresor med 14 procentenheter under pandemiåren. Ingen siffra för Siljansområdet hittades.",
+      "confidence": "medium"
+    },
+    {
+      "id": "rv70_adt",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Årsdygnstrafik på riksväg 70 söder om Rättviks centrum",
+      "value": 8698,
+      "unit": "fordon/dygn",
+      "year": 2025,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "NVDB-lagret ÅDT samtliga fordon (ADT_total) i WMS-tjänsten NetInfo 1.8, punkt 60,8747 N 15,1067 E",
+        "publisher": "Trafikverket",
+        "url": "https://geo-netinfo.trafikverket.se/MapService/wms.axd/NetInfo_1_8?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&LAYERS=ADT_total&QUERY_LAYERS=ADT_total&STYLES=&CRS=EPSG:4326&BBOX=60.87389,15.10506,60.87549,15.10826&WIDTH=101&HEIGHT=101&I=50&J=50&INFO_FORMAT=text/plain&FEATURE_COUNT=5&FORMAT=image/png"
+      },
+      "note_sv": "8 698 fordon per dygn (±7 %), varav 468 tunga eller medeltunga, enligt ett värde som gäller från 1 januari 2025. Norr om centrum mot Mora går 9 349 fordon per dygn (±12 %, 2023) och i centrums enkelriktade körfält ca 3 750–3 850 per riktning (2022). Kartan visar bara årsmedeltal; se rv70_adt_juli för sommaren.",
+      "confidence": "high"
+    },
+    {
+      "id": "rv70_adt_juli",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Uppskattad dygnstrafik på riksväg 70 vid Rättvik en genomsnittlig julidag",
+      "value": 11800,
+      "unit": "fordon/dygn",
+      "year": 2025,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Effektsamband: trafikvariation och fordonsandelar (2026), tabell 1 månadsindex s. 5; ÅDT enligt NVDB",
+        "publisher": "Egen beräkning (ursprungskälla: Trafikverket)",
+        "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/effektsamband-trafikvariation-och-fordonsandelar.pdf"
+      },
+      "note_sv": "ÅDT 8 698 består av 8 230 lätta och 468 tunga fordon; med Trafikverkets juliindex för genomfarter (136,9 för personbilar, 113,8 för lastbilar) blir det 8 230 × 1,369 + 468 × 1,138 ≈ 11 800. Index för turistvägar ger ≈ 15 900 och för statliga vägar i allmänhet ≈ 9 750. Ingen sommarmätning för Rättvik hittades, och Classic Car Week i slutet av juli ger toppar utöver detta.",
+      "confidence": "estimate"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+ "indicators": {
+  "gastnatter_kalmar_kommun": {
+   "name": "Guest nights in commercial accommodation in Kalmar Municipality",
+   "unit": "guest nights/year",
+   "note": "Hotels, holiday villages, hostels, campsites and commercially mediated private cottages and flats (SoL). Multiplying Kolada N45850 (guest nights per inhabitant) by population gives 418,023 (2019), 343,499 (2020), 428,410 (2023) and 445,963 (2024): +8% since 2019, and 6.2 guest nights per inhabitant in 2025 (Sweden 6.7). Kolada's 2022 value (44.4 per inhabitant) is clearly wrong and was not used."
+  },
+  "gastnatter_kalmar_lan": {
+   "name": "Guest nights in commercial accommodation in Kalmar County",
+   "unit": "guest nights/year",
+   "note": "Fifth highest of Sweden's counties; −1.0% on 2024 (3,340,127) but +17% on 2019 (2,822,492 from Kolada N45850 times population). Accommodation revenue was SEK 1,189 million, and there were 13 guest nights per inhabitant (Sweden about 7). Region Kalmar län's report gives a rounded 3.4 million and +1.8%, which differs from Tillväxtverket's final figures."
+  },
+  "gastnatter_borgholm": {
+   "name": "Guest nights in commercial accommodation in Borgholm Municipality (Öland)",
+   "unit": "guest nights/year",
+   "note": "The county's largest tourism municipality, with 102 guest nights per inhabitant (10,626 inhabitants). Kolada N45850 times population gives 1,016,297 (2019) and 1,115,271 (2024), so 2025 was −3.2%. Together with Mörbylånga, Öland had 1,443,657 guest nights in 2025, 44% of the county's total."
+  },
+  "gastnatter_morbylanga": {
+   "name": "Guest nights in commercial accommodation in Mörbylånga Municipality (Öland)",
+   "unit": "guest nights/year",
+   "note": "22 guest nights per inhabitant (16,306 inhabitants). Kolada N45850 times population gives 369,521 (2019) and 362,536 (2024), so the level is broadly unchanged since 2019."
+  },
+  "gastnatter_utlandsk_andel_lan": {
+   "name": "Foreign guests' share of guest nights in Kalmar County",
+   "unit": "%",
+   "note": "Swedish guests accounted for 80.2% in 2025. Foreign guest nights were about 640,000, about 15,000 fewer than in 2024; Germany is the largest market and the USA grew fastest (+19%). Tillväxtverket's Figure 1.8 gives 20% (Sweden 26%), and for 2024 the figure is 19.7% (Visita) or 21% (Region Kalmar län), depending on how guests with unknown home country are counted."
+  },
+  "gastnatter_sommarandel_lan": {
+   "name": "Share of the county's guest nights falling in June–August",
+   "unit": "%",
+   "note": "\"About 72 per cent\" in 2025, against 75% in 2024 and 73% in 2023; nationally the share is 43% (Tillväxtverket). The season is widening: April 2025 had about 50,000 more guest nights than April 2024 (+60%), May about 40,000 more (+16%) and September about 35,000 more (+23%). The county's visitor-economy strategy aims to make it a year-round destination by 2030."
+  },
+  "gastnatter_camping_andel_lan": {
+   "name": "Campsites' share of guest nights in Kalmar County",
+   "unit": "%",
+   "note": "The highest camping share of any county (Halland 53%, whereas hotels account for 91% in Stockholm County). Camping grew by about 20,000 guest nights in 2025 and earns about 32% of the county's accommodation revenue; hotels earn just over half (Region Kalmar län). Camping-heavy tourism is especially sensitive to weather, beaches and water quality."
+  },
+  "korttidsuthyrning_gastnatter_lan": {
+   "name": "Guest nights booked through short-term rental platforms in Kalmar County",
+   "unit": "guest nights/year",
+   "note": "The series is 115,604 (2018), 164,752 (2019), 124,668 (2020), 188,916 (2021), 256,094 (2022), 322,537 (2023) and 425,481 (2024): +268% since 2018. That adds about 13% on top of the county's commercial guest nights in 2024 (own calculation). The statistics are experimental and may partly overlap the SoL category in the accommodation statistics."
+  },
+  "belaggningsgrad_kalmar_kommun": {
+   "name": "Occupancy rate in commercial accommodation in Kalmar Municipality",
+   "unit": "%",
+   "note": "The highest in the county in 2025, ahead of Oskarshamn (54%); Borgholm had 42% and Mörbylånga 39.1%. High occupancy points to steadier demand through the year (conferences and business travel). Kalmar's destination strategy (2024) names a shortage of hotel, conference and arena capacity as a weakness."
+  },
+  "logiintakter_kalmar_kommun": {
+   "name": "Accommodation revenue in commercial accommodation in Kalmar Municipality",
+   "unit": "SEK million/year",
+   "note": "SEK 263,980,018 in 2025 (SEK 262,911,689 in 2024). Borgholm had SEK 278.9 million and Mörbylånga SEK 114.1 million; the county SEK 1,188.6 million (Tillväxtverket). Per guest night this is about SEK 584 in Kalmar but about SEK 258 in Borgholm (own calculation), reflecting hotels in the city and camping on Öland."
+  },
+  "turismkonsumtion_kalmar_kommun": {
+   "name": "Tourism consumption in Kalmar Municipality (inbound visitors)",
+   "unit": "SEK million/year (current prices)",
+   "note": "Spending in the municipality by visitors from elsewhere, from Tillväxtverket's regional tourism accounts: SEK 2,539 million in 2024 and SEK 2,748 million in 2025, or SEK 37,609 per inhabitant. Borgholm had SEK 2,463 million (SEK 231,790 per inhabitant) and Mörbylånga SEK 1,105 million. In Kalmar, retail is the largest product group; on Öland, accommodation is."
+  },
+  "turismkonsumtion_kalmar_lan": {
+   "name": "Tourism consumption in Kalmar County (inbound visitors)",
+   "unit": "SEK billion/year (current prices)",
+   "note": "\"About 11 billion\" in 2025; the municipal values sum to SEK 11,102 million (SEK 10,600 million in 2024). Retail accounts for 32%, accommodation 30%, second homes/flats 14% and culture 3%. Inbound domestic tourism exceeded county residents' own tourism elsewhere in Sweden by about SEK 1.6 billion."
+  },
+  "turism_foradlingsvarde_andel_kalmar_kommun": {
+   "name": "Tourism's share of value added in Kalmar Municipality",
+   "unit": "%",
+   "note": "Own calculation: tourism value added of SEK 607 million divided by the municipality's total value added of SEK 29,340 million (current prices, 2022). For the whole county the share is 2.3% (2,118 of 92,273 SEK million). Tourism value added in Kalmar was SEK 609 million in 2023."
+  },
+  "turism_foradlingsvarde_andel_borgholm": {
+   "name": "Tourism's share of value added in Borgholm Municipality (Öland)",
+   "unit": "%",
+   "note": "Own calculation: SEK 334 million of the municipality's SEK 2,935 million (current prices, 2022), five times Kalmar's share. Mörbylånga is at 4.5% (178 of 3,997 SEK million). Borgholm's tourism value added rose to SEK 442 million in 2023."
+  },
+  "turism_arsarbetskrafter_kalmar_kommun": {
+   "name": "Full-time equivalents in tourism production in Kalmar Municipality",
+   "unit": "full-time equivalents",
+   "note": "1,004.87 FTEs in 2022 according to the tourism accounts; Borgholm 275, Mörbylånga 193 and the county 2,676 in total (own sum). This corresponds to about 2.6% of the 39,331 people employed at workplaces in the municipality in 2024, although FTEs and persons are different measures."
+  },
+  "besoksnaring_anstallda_lan": {
+   "name": "Employees in accommodation and restaurants in Kalmar County",
+   "unit": "employees",
+   "note": "694 units (88 accommodation, 606 restaurants) with 4,584 employees and SEK 3,893 million in domestic turnover excluding VAT in 2024. The visitor economy generated SEK 885 million in tax revenue in 2023 (SEK 294 million in employer contributions and SEK 591 million in VAT). The industry expects to need 1,661 hires over the next three years."
+  },
+  "sommarbefolkning_borgholm_juli": {
+   "name": "People present in Borgholm Municipality at night in July (Öland)",
+   "unit": "persons (July average)",
+   "note": "Mobile network data at 03:00–05:00: 10,880 people in October–November, 42,940 at Midsummer and 52,160 in July 2022, i.e. +379%. Mörbylånga rose from 15,970 to 27,610 (+73%), while Kalmar was unchanged (+0.8% in July, −4.8% at Midsummer). The figure of 250,000 people in Borgholm in summer quoted in the media could not be substantiated."
+  },
+  "oland_befolkning_juli_faktor": {
+   "name": "Öland's population in July relative to October–November (Öland)",
+   "unit": "times",
+   "note": "Own calculation from SCB's table: (52,160 + 27,610) / (10,880 + 15,970) = 79,770 / 26,850. That is about 52,900 more people on the island on July nights in 2022. The value is a monthly average; individual peak days are higher."
+  },
+  "fritidshus_per_1000_borgholm": {
+   "name": "Second homes per 1,000 inhabitants in Borgholm Municipality (Öland)",
+   "unit": "second homes/1,000 inhabitants",
+   "note": "About 9,200 second homes (own conversion using population). Mörbylånga has 255 per 1,000 (about 4,150), Kalmar 31 (about 2,300) and Sweden 60, so Öland has about 13,300 second homes. According to Region Kalmar län, about 10% of the county's second homes have foreign owners; 2,268 are German-owned, the most in Sweden."
+  },
+  "vatten_borgholm_juli": {
+   "name": "Water consumption in Borgholm Municipality in July (Öland)",
+   "unit": "m³/month",
+   "note": "About 260,000 m³ in July against about 110,000 m³ in January, i.e. 2.4 times as much. Combined with SCB's mobile data, the extra use is about 120 litres per additional person per day (own calculation: 150,000 m³ over 31 days divided by 41,280 additional people). Borgholm Energi produces about 1.8 million m³ of drinking water a year and runs a desalination plant."
+  },
+  "bilandel_turistresor_lan": {
+   "name": "Car share of domestic tourist trips to Kalmar County",
+   "unit": "%",
+   "note": "The report states that the car share is highest in Jönköping, Kalmar and Dalarna counties (91–92%) and lowest in Stockholm (43%), using data for 2017–2021; 91.5 is the midpoint. The car's share of domestic tourist trips nationally rose by 14 percentage points during the pandemic years. The Öland Bridge is the island's only fixed link."
+  },
+  "kalmar_lans_museum_besok": {
+   "name": "Visits to Kalmar läns museum (county museum)",
+   "unit": "visits/year",
+   "note": "86,978 visits in 2024 (+5.7%). Kalmar konstmuseum had 26,650 visits in 2025 (22,144 in 2024, including Designarkivet in Nybro) and Ölands museum Himmelsberga 29,171. Kalmar Castle has about 190,000 visitors a year (see kalmar_slott_besokare)."
+  },
+  "ironman_kalmar_omsattning": {
+   "name": "Tourism turnover generated by Ironman Kalmar",
+   "unit": "SEK million per year",
+   "note": "Destination Kalmar's estimate using the Event Impact Calculator tool. More than 3,000 triathletes have registered for the 2027 race (sold out in one hour); each athlete stays four nights on average with four companions, and in 2025 half of the 2,850 participants came from abroad. That is roughly 60,000 person-nights in one week of August (own rough calculation)."
+  },
+  "skordefest_besokare_oland": {
+   "name": "Visitors to Öland's Harvest Festival (Skördefest) (Öland)",
+   "unit": "visitors (expected)",
+   "note": "Expected visitors in 2018, with over 900 activities across the island. The festival is held on the last weekend of September and thus extends the season. No later official figure was found."
+  },
+  "kryssningsanlop_kalmar": {
+   "name": "Cruise ship calls in Kalmar",
+   "unit": "calls/year",
+   "note": "Two calls (Ocean Nova and Ocean Majesty) with about 700 guests were expected in 2019, against one call in 2018. Cruise tourism is thus negligible compared with 452,000 commercial guest nights. Kalmar Hamn publishes no cruise statistics."
+  },
+  "badvatten_eu_utmarkt_antal": {
+   "name": "EU bathing waters of excellent quality (Kalmar Municipality and Öland)",
+   "unit": "of 27 EU bathing waters",
+   "note": "2025 classification under the Bathing Water Directive (E. coli and enterococci over four seasons): Kalmar's 4 and Mörbylånga's 6 are excellent, while Borgholm has 13 excellent, 2 good and 2 sufficient (Böda Riviera/Kyrketorp and Byrum-Sandvik). Böda Riviera was classed as poor in 2024. Algal blooms are not part of the classification."
+  },
+  "badplatser_cyanorisk_oland_antal": {
+   "name": "Bathing sites on Öland with cyanobacterial bloom risk in their bathing water profile (Öland)",
+   "unit": "of 31 bathing sites",
+   "note": "Borgholm 10 of 17 and Mörbylånga 12 of 14 sites have bloom risk flagged; none of Kalmar Municipality's 26 sites has. The official 2026 bathing season was only 21 June–15 August."
+  },
+  "badvattenprover_algblomning_antal": {
+   "name": "Bathing water samples with an observed algal bloom (Kalmar Municipality and Öland)",
+   "unit": "of 986 samples 2022–2026",
+   "note": "Own count in the sample results (/{id}/results) for 57 bathing sites: 1, 1, 2, 4 and 3 samples with a bloom in 2022–2026, 10 of the 11 on Öland. Samples are taken only 3–4 times a season and only until mid-August, so short blooms are poorly captured. 9 samples were unfit for bathing because of bacteria."
+  },
+  "oland_algblomning_turismforlust_2005": {
+   "name": "Tourism losses in the 2005 algal bloom summer (Öland)",
+   "unit": "million euros",
+   "note": "The authors report losses of 17–23 million euros for Öland's tourism industry in summer 2005; the abstract does not describe the method. The following summer, with daily algae monitoring (\"Miss Algae\"), this turned into a gain of 17 million euros. The value 20 is the midpoint."
+  },
+  "jrc_turismefterfragan_se21_sommar": {
+   "name": "Increase in summer and early-autumn tourism demand in Småland with the islands at 3–4 °C global warming",
+   "unit": "% (at least)",
+   "note": "Panel model of 269 EU regions, 2000–2019: a 1% better climate comfort (Tourism Climate Index) gives 0.57% more bed nights, 1.2% in coastal regions. The coastal region SE21 (which includes Kalmar County) is projected to gain more than +5% demand in summer and early autumn at 3–4 °C, while the EU as a whole gains 1.58% at 4 °C and July falls by 5.7% across Europe."
+  },
+  "varldsarv_betesmark_havsniva_25m": {
+   "name": "Grazed alvar and shore meadows in the World Heritage site affected by a 2.5 m sea-level rise (Öland)",
+   "unit": "ha (of 28,000 ha)",
+   "note": "GIS analysis: 900 ha are affected at +1 m and 3,000 ha at +2.5 m, and 13,000 ha lie in areas that can flood during heavy high flows. Of the site's 18 harbours and boathouse sites, 7 are affected at +1 m and all at +2.5 m. The World Heritage site covers just over 56,000 ha (Swedish National Heritage Board) and depends on continued grazing and farming."
+  },
+  "invanare_turism_trafikproblem_andel": {
+   "name": "Residents who think tourism increases traffic problems in their municipality",
+   "unit": "% agreeing",
+   "note": "Survey of county residents with 1,864 responses (response rate 23%). At the same time, 85% agreed that tourism improves the local economy and 80% were positive about tourism development, while 40% thought more tourism harms natural areas and 9% that tourists affect their daily life negatively."
+  },
+  "utslapp_per_gastnatt": {
+   "name": "Climate impact per tourist guest night (West Sweden)",
+   "unit": "kg CO2e/guest night",
+   "note": "Life-cycle calculation for tourism in West Sweden: 110 kg CO2e per tourist and 39 kg per guest night, of which travel to and from the destination is 54% and accommodation 23%. Applying the same factor, Kalmar Municipality's 452,248 guest nights give about 17,600 tonnes a year and Öland's about 56,000 tonnes (own rough calculation). With 91–92% of trips by car, the transport share in Kalmar County is probably at least as large."
+  }
+ }
+}

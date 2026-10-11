@@ -1,0 +1,204 @@
+{
+  "indicators": {
+    "befolkning_1970": {
+      "name": "Population in 1970",
+      "unit": "inhabitants",
+      "note": "Population on 31 December within today's municipal boundary (SCB reports 1968–1982 on the 1983 division; Rättvik Municipality was formed in 1971 and Ore was added in 1974). In 1968 the area had 11,300 inhabitants; the 1970s low was 10,634 (1973)."
+    },
+    "befolkning_1990": {
+      "name": "Population in 1990",
+      "unit": "inhabitants",
+      "note": "The population grew during the 1980s and peaked at 11,418 in 1992. It then fell to a low of 10,748 in 2014."
+    },
+    "befolkning_2010": {
+      "name": "Population in 2010",
+      "unit": "inhabitants",
+      "note": "The population has stayed between 10,600 and 11,450 since 1970. After 2014 it rose to 11,103 in 2021 (high in-migration during the pandemic years); it was 10,978 on 31 December 2025 and 10,962 in August 2026 (SCB, BE0101)."
+    },
+    "befolkning_prognos_2030": {
+      "name": "Population in 2030 according to SCB's regional projection (2024)",
+      "unit": "inhabitants",
+      "note": "The projection starts from 11,053 inhabitants in 2024 and 11,061 in 2025. The outcome was 10,978 (December 2025) and 10,962 (August 2026), i.e. below SCB's path. The municipality's own forecast in its 2025 annual report gives 10,965 in 2034, against SCB's 11,103."
+    },
+    "befolkning_prognos_2040": {
+      "name": "Population in 2040 according to SCB's regional projection (2024)",
+      "unit": "inhabitants",
+      "note": "SCB's projection (published 11 June 2024) gives an almost unchanged population: 11,106 in 2035 and 11,107 in 2040. It assumes a natural decrease of about 100 a year offset by in-migration; the number of people aged 20–64 falls from 5,326 (2024) to about 5,250 (2030–2040)."
+    },
+    "befolkning_prognos_2070": {
+      "name": "Population in 2070 according to SCB's regional projection (2024)",
+      "unit": "inhabitants",
+      "note": "SCB's longest projection for the municipality: 11,224 in 2050, 11,393 in 2060 and 11,580 in 2070. On average it assumes 79 births and 180 deaths a year in 2025–2070 (own calculation from the table), which requires net in-migration of just over 100 a year. No official projection beyond 2070 exists."
+    },
+    "andel_65plus_prognos_2040": {
+      "name": "Share of residents aged 65 and over in 2040 according to SCB's projection",
+      "unit": "%",
+      "note": "4,054 of 11,107 residents are 65+ in 2040 (summed over single-year ages in SCB's table). Projection base year 2024: 34.3%; 2070: 37.4%. Dalarna County in 2040: 28.9%."
+    },
+    "andel_80plus_prognos_2040": {
+      "name": "Share of residents aged 80 and over in 2040 according to SCB's projection",
+      "unit": "%",
+      "note": "1,605 of 11,107 residents are 80+ in 2040, against 10.7% in 2024 and 16.4% in 2070; the fastest rise comes before 2030 (already 14.0% then). The 2025 outcome was 1,236 people or 11.3% (annual report 2025). Dalarna County in 2040: 10.8%."
+    },
+    "fodelseoverskott_2025": {
+      "name": "Natural increase (births minus deaths)",
+      "unit": "people/year",
+      "note": "72 births and 143 deaths in 2025, that is 6.6 and 13.0 per 1,000 residents (own calculation; Sweden 9.2 and 8.7). Deaths have exceeded births every year since at least 2000; 2015–2024 averaged 79 births and 159 deaths a year. First half of 2026: 30 births and 90 deaths."
+    },
+    "flyttnetto_2025": {
+      "name": "Net migration (domestic and international)",
+      "unit": "people/year",
+      "note": "535 in-movers and 479 out-movers: net −30 against the rest of Dalarna and +57 against the rest of Sweden, and net immigration +28 (48 immigrants, 20 emigrants). 2015–2024 averaged +101 a year (own calculation), with peaks in 2016 (+203, refugee reception) and 2020 (+168). First half of 2026: +53."
+    },
+    "fritidshus_antal": {
+      "name": "Second homes owned by private persons or estates",
+      "unit": "second homes",
+      "note": "Up from 2,520 in 1998 (+18%). That is 271 second homes per 1,000 residents, against 164 in Dalarna County and 60 in Sweden (own calculation with SCB's 2025 population). Company-owned second homes are not included."
+    },
+    "sommarbefolkning_topp_faktor": {
+      "name": "Summer population peak (Saturday of Classic Car Week) relative to the annual median",
+      "unit": "times the annual median",
+      "note": "SCB's analysis of mobile-network data (Telia Crowd Insights) for summer 2023: \"On the Saturday of Classic Car Week the population of Rättvik triples\". For most of the summer the population was close to the annual median; Rättvik belongs to the municipalities with a few peak days rather than a long summer season. No absolute count of summer residents exists."
+    },
+    "ensamhet_besvar": {
+      "name": "Share of residents 16+ bothered by loneliness sometimes, often or always",
+      "unit": "%",
+      "note": "Health on Equal Terms 2024 with Dalarna's extra sample (about 940 respondents in Rättvik). Confidence interval 10.2–14.5%, significantly below Sweden (18.2%); Dalarna 17.2%. The question is only reported for 2024, so there is no time series."
+    },
+    "ensamhet_ofta": {
+      "name": "Share of residents 16+ bothered by loneliness often or always",
+      "unit": "%",
+      "note": "Confidence interval 2.7–5.1%, significantly below Sweden (5.5%); Dalarna 5.4%."
+    },
+    "lagt_socialt_deltagande": {
+      "name": "Share of residents with low social participation (latest pre-pandemic measurement)",
+      "unit": "%",
+      "note": "The indicator counts how few of the survey's social activities a person took part in during the past year. 2014: Rättvik 26.5% (CI 23.7–29.4), Dalarna 25.4%, Sweden 20.4%. The 2021 survey gave 61.1% (Dalarna 53.7%, Sweden 48.6%) but was taken under pandemic restrictions and is not comparable; the question is not reported for 2024."
+    },
+    "positiv_syn_pa_framtiden": {
+      "name": "Share of residents 16+ who always or mostly feel positive about the future",
+      "unit": "%",
+      "note": "The survey's closest measure of hope and sense of meaning. CI 70.3–76.0%; Dalarna 71.3%, Sweden 72.0%. In 2021 the share was 80.7% in Rättvik, a fall of 7.5 percentage points in three years (Dalarna −5.2)."
+    },
+    "radd_ga_ut_ensam": {
+      "name": "Share of residents 16+ who have refrained from going out alone for fear of being attacked",
+      "unit": "%",
+      "note": "CI 10.6–14.9%, significantly below Sweden (28.3%); Dalarna 22.9%. In 2014 the share was 8.8% in Rättvik. Kolada U01420 (years 2021–2024 pooled) gives 13.2%."
+    },
+    "ensamhet_hemtjanst_65plus": {
+      "name": "Share of people aged 65+ with home care who are bothered by loneliness",
+      "unit": "%",
+      "note": "Share answering 'yes, mild' or 'yes, severe' in the National Board of Health and Welfare's survey of people 65+ receiving home care; Sweden 51.0%. Severe: 8.7% (Sweden 10.0%, Kolada U21478). Compare 3.9% of all residents 16+ who are often or always bothered by loneliness."
+    },
+    "klarar_inte_ovantad_utgift": {
+      "name": "Share of residents 16+ who could not cover an unexpected expense",
+      "unit": "%",
+      "note": "CI 17.2–22.3%; Dalarna 21.4%, Sweden 20.3%; in 2021 the share was 20.5% in Rättvik. According to Kolada (Health on Equal Terms 2021–2024 pooled) 14.5% have had an economic crisis in the past year (U01407) and 11.3% have gone without dental care for financial reasons (N01464, Sweden 10.5%)."
+    },
+    "unga_nojda_med_livet": {
+      "name": "Share of young people (lower and upper secondary) who are very or fairly satisfied with life as a whole",
+      "unit": "%",
+      "note": "158 of 179 respondents (Dalarna 86%); upper secondary 91%, lower secondary 86%, and 81% in 2021. The picture differs from the school-health interviews, where 66.7% of first-year upper-secondary students say they feel good; the questions and samples differ."
+    },
+    "unga_tror_flytta_fran_kommunen": {
+      "name": "Share of young people (lower and upper secondary) who think they will move away from the municipality",
+      "unit": "%",
+      "note": "114 of 180 respondents in Rättvik (Dalarna 56%; Rättvik 2021: 66%), among upper-secondary students 78% (Dalarna 73%). Of those who expect to move, 54% give work and 37% further studies as the reason. The best things about living in the municipality: family and relatives (53%) and nearness to nature (38%)."
+    },
+    "gymnasieelever_ar1_mar_bra": {
+      "name": "Share of first-year upper-secondary students who feel good or very good most of the time",
+      "unit": "%",
+      "note": "(26 'very good' + 64 'good') / 135 respondents in the school-health interviews at the municipality's upper-secondary school, which also has students from other municipalities; Dalarna 75.4%, and Rättvik 67.8% in school year 2024/25. 42% of the students felt low or sad at least once a week (Dalarna 30%). In year 7, 85% felt good (Dalarna 80%)."
+    },
+    "unga_mojlighet_paverka": {
+      "name": "Share of young people who feel they have good opportunities to put their views to the municipality's decision-makers",
+      "unit": "%",
+      "note": "39 of 180 respondents in lower and upper secondary answer very or fairly good opportunities (Dalarna 16%). 36% have very or fairly high trust in politicians (Dalarna 38%), against 45% in 2021."
+    },
+    "valdeltagande_kommunval_2022": {
+      "name": "Turnout in the 2022 municipal council election",
+      "unit": "%",
+      "note": "7,813 of 9,289 eligible voters; lowest voting district 75.3%, highest 88.0% (Vikarbyn) according to Kolada N05831/N05833. The election of 13 September 2026 gave exactly the same turnout, 84.11% (7,780 of 9,250; Dalarna County 83.33%, Sweden 82.34%). Seats 2022: S 11, C 10, M 7, SD 7, KD 3, V 1; 2026: S 13, C 8, M 8, SD 7, KD 2, V 1."
+    },
+    "barnfattigdom_andel": {
+      "name": "Share of children aged 0–17 in economic hardship (Save the Children's revised measure)",
+      "unit": "%",
+      "note": "161 of 1,714 children live in households with a low income standard based on the Consumer Agency's basic needs and/or receiving social assistance; rank 75 of 290 municipalities. Dalarna County 14.3%, Sweden 12.9%; with Save the Children's earlier measure 5.7% (98 children). The same figures are in the report's Excel annex for counties and municipalities 2023."
+    },
+    "skattesats_total_2026": {
+      "name": "Total municipal tax rate 2026 (municipality + region)",
+      "unit": "%",
+      "note": "21.81% to the municipality and 11.99% to Region Dalarna. The national average is 32.38% and Dalarna County's 34.18%. Unchanged since 2025; 33.45% in 2020."
+    },
+    "sarskilt_boende_65plus_antal": {
+      "name": "People aged 65+ in special housing (residential care)",
+      "unit": "people",
+      "note": "Median over the year, including needs-assessed sheltered housing; 148 in 2021. That is 3.05% of residents aged 65+ (Sweden 3.82%, Kolada N23890). The municipality rents 185 flats from Rättviks Fastigheter for elderly and disability housing, and its housing plan for older people is being revised (annual report 2025)."
+    },
+    "hemtjanst_65plus_antal": {
+      "name": "People aged 65+ receiving home care in ordinary housing",
+      "unit": "people",
+      "note": "Up from 250 (2022) and 270 (2024); 224 of them are 80+. In all, 25.6% of residents aged 80+ have home care or special housing (Sweden 25.5%, Kolada N20892), against 33.5% in 2018: more older people are cared for at home and fewer live in care homes."
+    },
+    "listade_invanare_per_allmanlakare": {
+      "name": "Listed residents per full-time GP (specialist in general practice) at health centres",
+      "unit": "residents per doctor",
+      "note": "The National Board of Health and Welfare's guideline is 1,100; the survey average for Sweden is 1,750 and regions range from 1,275 to 2,337. 66% of the county's 29 health centres responded; Rättvik health centre (Region Dalarna, in the same building as the Prästskogen care home) is not reported separately."
+    },
+    "hyrlakare_andel_vardcentral": {
+      "name": "Share of GP specialist work at health centres done by agency (locum) doctors",
+      "unit": "%",
+      "note": "In Region Dalarna 80% of the work is done by permanent staff and 2% by substitutes. Sweden 11%; highest in Gävleborg (31%) and lowest in Halland (0%). The report warns that long-term dependence on agency doctors puts continuity of care at risk."
+    },
+    "gymnasieelever_i_kommunen": {
+      "name": "Students at upper-secondary schools located in the municipality (Stiernhööksgymnasiet)",
+      "unit": "students",
+      "note": "Counted on 15 October 2025; the largest programme is natural resource use (the national upper-secondary school for naturbruk) with about 190 students, followed by electricity and energy (about 60), building, business and social science (about 50 each), introductory programmes (about 40) and natural science (about 10), according to the Swedish National Agency for Education 2025/26. The agriculture track had 42 first-choice applicants for 24 places in 2025. Of the 308 upper-secondary students registered in Rättvik, 28% attend another municipality's school (Sweden 20%)."
+    },
+    "bostader_antal": {
+      "name": "Number of dwellings (all building types including special housing)",
+      "unit": "dwellings",
+      "note": "Sum of the table cells: 3,753 in one- or two-dwelling houses (64%), 1,680 in multi-dwelling buildings, 137 in other buildings and 292 special-housing units. Up 270 since 2015 (5,592), about 27 a year. In addition there are 2,980 second homes."
+    },
+    "andel_hyresratt": {
+      "name": "Share of dwellings that are rental flats (including special housing)",
+      "unit": "%",
+      "note": "1,590 of 5,862 dwellings. Owner-occupied houses 3,574 (61.0%), tenant-owned (bostadsrätt) 694 (11.8%). Excluding special housing the rental share is 23.3% (1,298 of 5,570)."
+    },
+    "allmannyttan_lagenheter": {
+      "name": "Flats owned by the municipal housing company Rättviks Fastigheter AB",
+      "unit": "flats",
+      "note": "About 36,000 m² of residential floor area; in addition the municipality block-rents 185 flats for elderly and disability housing, and the page 'Våra bostadsområden' (2025) gives 594 flats in three categories: ordinary (from age 18), 55+ and sheltered housing (from age 70). The queue has grown (annual report 2025), but its length is not published. The company plans two buildings with eight flats in Boda, ready in spring 2027."
+    },
+    "kollektivhus_lagenheter_lan": {
+      "name": "Flats in cohousing communities in Dalarna County (members of Kollektivhus NU)",
+      "unit": "flats",
+      "note": "The only house in the county is Tersen in Falun: a cooperative rental for 'the second half of life' with 44 flats. There is no start-up group in Dalarna and no cohousing in Rättvik. Houses that are not members of the association are not on the list."
+    },
+    "foreningar_i_registret": {
+      "name": "Associations in the municipality's register of associations",
+      "unit": "associations",
+      "note": "Sum of the register's categories: 33 sports clubs, 24 village-hall associations, 13 other, 9 cultural associations (incl. the Rättvik, Boda and Ore local-history societies and Boda fiddlers' group), 6 adult-education associations, 3 pensioners' associations, 2 church, 2 political and 1 disability association. Only associations that chose to be listed are included."
+    },
+    "unga_medlem_forening": {
+      "name": "Share of young people (lower and upper secondary) who are members of an association",
+      "unit": "%",
+      "note": "95 of 180 respondents (Dalarna 50%). Lower secondary 62% (Dalarna 55%), upper secondary 45% (Dalarna 43%). 62% think there is a lot or quite a lot to do in their free time (Dalarna 63%)."
+    },
+    "idrottsforeningar_lok_per_10000": {
+      "name": "Sports clubs receiving state LOK activity grants per 10,000 residents",
+      "unit": "clubs per 10,000 residents",
+      "note": "About 19 clubs (own calculation: 17.28 × 1.0998). Sweden 9.59. Participation is lower, however: 25.7 activity sessions per resident aged 7–20 against 33.4 in Sweden (Kolada U09800)."
+    },
+    "anmalda_brott_per_100000": {
+      "name": "Reported crimes per 100,000 residents",
+      "unit": "crimes per 100,000 residents",
+      "note": "Sweden 13,581. The rise from 7,305 (2024) is large; the cause has not been checked in BRÅ's statistics by offence type, and in a small municipality single cases with many reports can make a big difference. Reported violent crimes 2025: 1,110 per 100,000 (Sweden 1,067)."
+    },
+    "utsatthet_brott_mot_person_ntu": {
+      "name": "Share of people aged 16–84 exposed to crime against the person (Swedish Crime Survey, NTU)",
+      "unit": "%",
+      "note": "At least one of: card or sales fraud, pickpocketing, robbery, sexual offence, assault, threats, harassment or online abuse in the previous year; Sweden 20.0%. For Rättvik only 2020–2021 exists (10.5%, two years pooled). Worry about crime in society: Dalarna 52.2% (2025), Sweden 53.6%."
+    }
+  }
+}

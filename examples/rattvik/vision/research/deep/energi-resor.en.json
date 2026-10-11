@@ -1,0 +1,194 @@
+{
+  "indicators": {
+    "elproduktion_vattenkraft": {
+      "name": "Hydropower electricity generation in the municipality",
+      "unit": "MWh/year",
+      "note": "Hydropower supplied 16,106 MWh of the municipality's total generation of 104,671 MWh in 2024. The rest was wind (82,531 MWh) and solar (6,033 MWh); none came from combined heat and power. Output follows the water year: 9,776 MWh in 2022 and 20,855 MWh in 2019."
+    },
+    "elanvandning_total": {
+      "name": "Total electricity use in the municipality",
+      "unit": "MWh/year",
+      "note": "Final electricity use in all sectors, based on the grid companies' deliveries by municipality. The largest users are detached houses (46,653 MWh), industry (33,386 MWh), other services (21,306 MWh), the public sector (15,822 MWh) and holiday homes (15,138 MWh). Use has stayed between 129 and 155 GWh a year from 2010 to 2024."
+    },
+    "lokal_elproduktion_andel_av_elanvandning": {
+      "name": "Local electricity generation relative to the municipality's electricity use",
+      "unit": "%",
+      "note": "104,671 MWh generated / 139,830 MWh used = 74.9% (2023: 100,450 / 140,237 = 71.6%). This is an annual balance; hour by hour, power is bought and sold through the grid. The wind farm on Hedbodberget supplies about four fifths of local generation."
+    },
+    "fjarrvarme_produktion": {
+      "name": "District heating production in the municipality",
+      "unit": "MWh/year",
+      "note": "45,813 MWh came from heat-only boilers and 10,633 MWh from flue-gas condensation. Fuel input was 55,964 MWh: 54,953 MWh solid biofuels, 580 MWh renewable oil and 431 MWh fossil oil (0.8%). The district heating produces no electricity, since there is no combined heat and power."
+    },
+    "fjarrvarme_levererad": {
+      "name": "District heating delivered to end users",
+      "unit": "MWh/year",
+      "note": "Apartment blocks 16,232 MWh, public sector 11,868 MWh, detached houses 9,519 MWh, other services 8,593 MWh and industry 1,297 MWh. Adven has run the network since 2020; it owns 51%, and Dala Energi and the municipality own 24.5% each. Adven states about 31 GWh a year and about 380 customers (500 connections) in central Rättvik, Boda and Vikarbyn. The gap to the SCB figure is unexplained."
+    },
+    "fjarrvarme_andel_flerbostadshus": {
+      "name": "District heating's share of energy use in apartment blocks",
+      "unit": "%",
+      "note": "16,232 MWh of district heating out of 19,164 MWh total energy use in apartment blocks = 84.7%. In detached houses the share is 10.7% (9,519 of 88,623 MWh). Detached houses are heated mainly with electricity (46,653 MWh) and wood, chips or pellets (32,276 MWh); SCB models the wood figure from the 2010 distribution."
+    },
+    "slutlig_energianvandning_total": {
+      "name": "Total final energy use in the municipality",
+      "unit": "MWh/year",
+      "note": "All sectors and energy carriers in 2023; the total has stayed between 512 and 598 GWh a year since 2011. The 2024 total is confidential. The transport figures also have a break in the series in 2024 (a new model for oil deliveries), so 2023 is used."
+    },
+    "industri_andel_slutlig_energianvandning": {
+      "name": "Industry's share of the municipality's final energy use",
+      "unit": "%",
+      "note": "285,935 MWh in industry and construction / 598,329 MWh in total = 47.8% (2022: 42.2%). The fuel mix is confidential for 2023. For 2024, industry is shown using 149,386 MWh of fossil oil and 15,779 MWh of solid fossil fuels, probably mainly in SMA Mineral's lime works (see kalkverk_co2_fossil)."
+    },
+    "fossilfri_andel_slutanvandning_utom_industri": {
+      "name": "Fossil-free share of final energy use outside industry",
+      "unit": "%",
+      "note": "Households, services, the public sector, agriculture and forestry, and transport used 312,395 MWh in 2023, of which 101,582 MWh was fossil fuel (95,390 MWh in transport): 1 − 101,582 / 312,395 = 67.5% (2022: 68.8%). Electricity and district heating count as fossil-free. Industry is left out because its fuels are confidential, so a renewable share for the whole municipality cannot be calculated."
+    },
+    "transporter_fornybar_andel": {
+      "name": "Renewable share of transport energy, including electricity",
+      "unit": "%",
+      "note": "(22,277 MWh renewable fuels + 473 MWh electricity) / 118,140 MWh = 19.3%; the rest is fossil petrol and diesel. The figure is based on deliveries to filling stations in the municipality, not on how far residents drive, and electricity used to charge electric cars is not included. 2023 is used because 2024 has a break in the series (260,362 MWh) and the biofuel blending mandate was lowered that year."
+    },
+    "elanvandning_fritidshus": {
+      "name": "Electricity use in holiday homes",
+      "unit": "MWh/year",
+      "note": "Holiday homes used 10.8% of the municipality's electricity in 2024 (15,138 of 139,830 MWh), about a third of what all year-round detached houses used (46,653 MWh). The figure shows Rättvik's role as a holiday-home area by Lake Siljan."
+    },
+    "kalkverk_co2_fossil": {
+      "name": "Fossil CO2 emissions from SMA Mineral's lime works in Rättvik",
+      "unit": "tonnes CO2/year",
+      "note": "Reported emissions: 119,818 t in 2024, 87,761 t in 2023 and 120,418 t in 2022. Burning lime releases CO2 from the limestone itself, not only from the fuel, so switching fuel does not remove the emissions. SMA's other plant in the municipality, Boda lime works, has no CO2 data in the register."
+    },
+    "broboberget_lannaberget_effekt": {
+      "name": "Planned wind power at Broboberget and Lannaberget: capacity in the grid connection agreement",
+      "unit": "MW",
+      "note": "The permit covers up to 115 turbines (80 at Broboberget, 35 at Lannaberget), at most 230 m tall, about 50 km north-east of Rättvik on the border with Ovanåker, and became final on 27 May 2022 after appeals. Ellevio's agreement of 16 October 2023 covers up to 740 MW through a new 400 kV substation, with the first stage in 2027. No investment decision was found."
+    },
+    "broboberget_lannaberget_produktion": {
+      "name": "Expected annual generation from Broboberget and Lannaberget",
+      "unit": "GWh/year",
+      "note": "wpd expects about 1.5 TWh a year, more than ten times the municipality's electricity use (139.8 GWh in 2024) and more than 14 times today's local generation (104.7 GWh). Part of the farms lies in Ovanåker municipality, and the split is not stated. The power is intended for industry's transition, including at SSAB and Ovako."
+    },
+    "okat_behov_elnat_forbrukning_dalarna": {
+      "name": "Forecast increase in transmission capacity needed for electricity consumption in Dalarna up to 2034",
+      "unit": "%",
+      "note": "Ellevio's scenario 1 gives +57% for consumption and +129% for generation over 2025–2034, compared with the highest need since 2022, driven by electrification of industry, data centres and new power plants (peak load today about 800 MW). A weak margin in the national grid has forced Ellevio to stop connecting new large-scale generation in its Dalarna network until the Tandö substation is ready. Rättvik's local grid passed from Dala Energi to Sambygd AB in 2025 (Nordion Energi 51%, the municipality about 10%; annual report 2025, p. 19), and parts of northern Rättvik belong to Ellevio's Hälsingland network."
+    },
+    "personbilar_per_1000_inv": {
+      "name": "Passenger cars in use per 1,000 inhabitants",
+      "unit": "cars per 1,000 inhabitants",
+      "note": "7,465 passenger cars in use in 2025, or 679 per 1,000 inhabitants, against 598 in Dalarna and 475 in Sweden. Counting only cars owned by private individuals, the figure is 500 (Dalarna 480, Sweden 377); 1,967 cars are owned by companies and organisations. In 2015 the figure was 630."
+    },
+    "utpendlare_leksand": {
+      "name": "Employed Rättvik residents working in Leksand municipality",
+      "unit": "people",
+      "note": "The largest outbound commuting flow: of 5,191 employed Rättvik residents, 3,305 (63.7%) worked in their home municipality. In the other direction, 327 people commuted from Leksand to Rättvik. The train to Leksand takes 14–16 minutes."
+    },
+    "utpendlare_falun": {
+      "name": "Employed Rättvik residents working in Falun municipality",
+      "unit": "people",
+      "note": "173 people commuted from Falun to Rättvik, so 556 commute between the two in one direction or the other. This matches Region Dalarna's figure of 500–700 commuters between Falun and Rättvik. There is no direct train; the bus takes just under an hour."
+    },
+    "utpendlare_mora": {
+      "name": "Employed Rättvik residents working in Mora municipality",
+      "unit": "people",
+      "note": "167 people commuted from Mora to Rättvik. The train takes 23–25 minutes and runs 17 times each way on weekdays."
+    },
+    "utpendlare_borlange": {
+      "name": "Employed Rättvik residents working in Borlänge municipality",
+      "unit": "people",
+      "note": "44 people commuted in the opposite direction. Another 70 Rättvik residents had their workplace in Stockholm municipality and 20 in Uppsala municipality; the register shows the workplace, not how often people travel there."
+    },
+    "kollektivtrafik_marknadsandel": {
+      "name": "Public transport's share of motorised trips in Dalarna",
+      "unit": "%",
+      "note": "The share of trips by bus and train among all trips by motor vehicle (walking and cycling excluded): 12% in 2019, 6% in 2021, 11% in 2023, 9% in 2024 and a provisional 7% for January–October 2025. The target is 12.5% in 2026 and 20% in 2035. No figure exists for Rättvik itself."
+    },
+    "kollektivtrafik_vardagsresor_bra_andel": {
+      "name": "Share of residents who find public transport easy to use for everyday trips",
+      "unit": "%",
+      "note": "36.5% in 2025 (27.2% in 2023), against 44.4% in Dalarna and 68.8% in Sweden. 52.9% say it is easy to make longer trips without a car (N00574), and 18.0% say public transport works for leisure activities (N00573). This is a sample survey with a margin of error."
+    },
+    "bilandel_resor_sverige": {
+      "name": "Car's share of main trips in Sweden",
+      "unit": "%",
+      "note": "Own calculation: 2,052,673 of 3,872,529 thousand main trips = 53.0%; walking 12.9%, cycling 12.4% and public transport 18.3%. No travel survey for Rättvik or Dalarna was found. The share of kilometres travelled on foot, by bike or by public transport is highest in the big cities, so the car share in Rättvik is probably higher than the national figure."
+    },
+    "restid_tag_stockholm_min": {
+      "name": "Fastest direct train Rättvik–Stockholm Central on a weekday",
+      "unit": "minutes",
+      "note": "SJ train 47 leaves Rättvik at 14:55 and reaches Stockholm Central at 18:16 (3 h 21 min); morning train 41 takes 3 h 26 min, and northbound train 48 is fastest at 3 h 15 min. With a change at Borlänge, the fastest trip takes 3 h 24 min (05:22–08:46). In the timetable from 13 December 2026, the direct trains become 1–9 minutes slower."
+    },
+    "direkttag_stockholm_per_vardag": {
+      "name": "Direct trains Rättvik–Stockholm per weekday in each direction",
+      "unit": "departures per weekday in each direction",
+      "note": "SJ runs two trips a day between Mora and Stockholm Central via Borlänge, Uppsala and Arlanda (trains 41 and 47 southbound, 42 and 48 northbound) on an ordinary weekday in October–November 2026; on Sundays there are three. Other journeys need a change at Borlänge, where SJ has eight departures to Stockholm per weekday, and Masexpressen coaches take 3 h 40 min–3 h 55 min to the City Terminal. No night trains stop in Rättvik in the timetable data up to January 2027."
+    },
+    "tag_avgangar_per_vardag": {
+      "name": "Train departures from Rättvik per weekday in each direction",
+      "unit": "departures per weekday in each direction",
+      "note": "On Wednesday 11 November 2026, 15 Tåg i Bergslagen regional trains (line 50 Morastrand–Borlänge; from December 2026 some continue to Sala) and 2 SJ trains run in each direction. Saturdays have 7 and Sundays 8 per direction. Region Dalarna counts 17 round trips Mora–Borlänge since December 2022, with 40–80 minutes between departures."
+    },
+    "restid_tag_borlange_min": {
+      "name": "Train travel time Rättvik–Borlänge",
+      "unit": "minutes",
+      "note": "The timetable gives 47 minutes by train, against 55 minutes by car according to Google, a travel-time ratio of 0.8. In autumn 2026 the trip takes 46–52 minutes. Borlänge is where passengers change for Stockholm, Falun and Gothenburg."
+    },
+    "restid_tag_mora_min": {
+      "name": "Shortest train travel time Rättvik–Mora",
+      "unit": "minutes",
+      "note": "The trip takes 23–25 minutes, for example 10:08–10:31. Bus 350 takes 35–45 minutes. Mora is the main commuting destination in northern Dalarna, with many commuters from Rättvik and Orsa according to Region Dalarna."
+    },
+    "restid_buss_falun_min": {
+      "name": "Bus travel time Rättvik–Falun",
+      "unit": "minutes",
+      "note": "Rättvik travel centre to Falun Knutpunkten takes 54 minutes by bus, against 45 minutes by car (travel-time ratio 1.20). Direct buses take 49 minutes (ratio 1.09). By train, passengers must change at Borlänge, and the trip then takes at least 83 minutes according to the autumn 2026 timetable data."
+    },
+    "bussturer_falun_per_vardag": {
+      "name": "Bus trips Rättvik–Falun per weekday (line 350)",
+      "unit": "trips per weekday",
+      "note": "20 departures towards Falun Monday–Friday (05:43–21:05) and 21 towards Mora; Saturdays and Sundays have 6 per direction, and some trips must be booked in advance. The express line 102 Rättvik–Borlänge ran until 16 June 2025. Line 351 Rättvik–Furudal has 13 trips per weekday in each direction."
+    },
+    "restid_uppsala_borlange_efter_atgarder_min": {
+      "name": "Travel time Uppsala–Borlänge after the planned works on the Dalabanan line (around 2031)",
+      "unit": "minutes",
+      "note": "Today's travel time is 100 minutes; works costing almost SEK 2 billion up to 2030 (passing loops that two trains can enter at once, new passing loops at Lustån and Heby, track renewal) are meant to cut it by about 7 minutes and make room for one long-distance train an hour. According to Region Dalarna, the regions' goal of 89 minutes needs works that do not fit in the 2026–2037 national plan. The whole line is single-track, and the Borlänge–Leksand–Rättvik–Mora section is called the Siljansbanan."
+    },
+    "mal_restid_mora_stockholm_min": {
+      "name": "Regional target for train travel time Mora–Stockholm",
+      "unit": "minutes",
+      "note": "The 2023–2025 regional plan sets a target of a Mora–Stockholm train link under three hours; today the direct train takes 3 h 40 min–3 h 51 min. The target is tied to 89 minutes Uppsala–Borlänge and needs faster trains with few stops and more capacity, and Region Dalarna writes that it should be worked out in a pre-study. An hourly Mora–Stockholm service is also to be studied."
+    },
+    "mora_siljan_passagerare": {
+      "name": "Passengers at Mora–Siljan airport",
+      "unit": "passengers/year",
+      "note": "3,807 arriving and departing passengers in 2025, against 3,394 in 2024. In 2019 there were 2,838, and in 2018 4,701 (Transportstyrelsen, air traffic statistics 2019), after scheduled flights to Arlanda ended in February 2018. Since 2023, the route Sveg–Mora–Arlanda has been flown under a public service obligation."
+    },
+    "dala_airport_passagerare": {
+      "name": "Passengers at Dala Airport in Borlänge",
+      "unit": "passengers/year",
+      "note": "15,820 passengers in 2025, against 15,357 in 2024, 21,421 in 2019 and 26,456 in 2018 (Transportstyrelsen, air traffic statistics 2019). Borlänge is 46–52 minutes from Rättvik by train."
+    },
+    "flyglinje_mora_arlanda_statligt_stod": {
+      "name": "State cost of the publicly procured air route Sveg–Mora–Arlanda",
+      "unit": "MSEK/year",
+      "note": "Just over 9,000 passengers flew the route in 2025, which works out at about SEK 2,425 of state support per passenger; Mora accounts for about 4,000 passengers a year. In March 2026, Trafikverket proposed not to renew the public service obligation when the contracts end in October 2027. One reason is that the trip to Stockholm by other means takes under four hours from Mora."
+    },
+    "bilandel_turistresor": {
+      "name": "Car's share of domestic tourist trips to Dalarna",
+      "unit": "%",
+      "note": "The report says the car share is highest in Jönköping, Kalmar and Dalarna counties, at 91–92%, and lowest in Stockholm, at 43%, using data for 2017–2021; 91.5 is the midpoint. Nationally, the car's share of domestic tourist trips rose by 14 percentage points during the pandemic years. No figure for the Siljan area was found."
+    },
+    "rv70_adt": {
+      "name": "Annual average daily traffic on national road 70 south of central Rättvik",
+      "unit": "vehicles/day",
+      "note": "8,698 vehicles a day (±7%), of which 468 are heavy or medium-heavy, according to a value valid from 1 January 2025. North of the centre, towards Mora, 9,349 vehicles a day pass (±12%, 2023), and on the one-way carriageways through the centre about 3,750–3,850 in each direction (2022). The map only shows annual averages; see rv70_adt_juli for summer."
+    },
+    "rv70_adt_juli": {
+      "name": "Estimated daily traffic on national road 70 at Rättvik on an average July day",
+      "unit": "vehicles/day",
+      "note": "The annual average of 8,698 is made up of 8,230 light and 468 heavy vehicles; applying Trafikverket's July index for through routes (136.9 for cars, 113.8 for trucks) gives 8,230 × 1.369 + 468 × 1.138 ≈ 11,800. The tourist-road index gives ≈ 15,900, and the general state-road index ≈ 9,750. No summer count for Rättvik was found, and Classic Car Week at the end of July adds peaks on top of this."
+    }
+  }
+}

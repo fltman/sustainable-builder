@@ -1,8 +1,8 @@
 """Street View survey rounds: plan viewpoints that see many unchecked houses, then match the frames you
 captured to building ids.
 
-    python3 wasteland.py survey <slug> plan [--unsurveyed | --street NAME | --near NAME|lat,lon] [--max 40] [--out DIR]
-    python3 wasteland.py survey <slug> compare DIR
+    python3 sustainable.py survey <slug> plan [--unsurveyed | --street NAME | --near NAME|lat,lon] [--max 40] [--out DIR]
+    python3 sustainable.py survey <slug> compare DIR
 
 plan
     Picks viewpoints on the streets (greedy: each one sees as many not-yet-checked houses as possible,
@@ -16,7 +16,7 @@ compare
     frame above model, every building labelled with the last digits of its id; targets of the plan
     are yellow. DIR/labels.json maps the labels to full ids.
     Then write what you see to overrides.json (style, colour, roof, levels, a `note`), run
-    `python3 wasteland.py seed <slug> --ids …`, edit the scripts by hand and `rebuild`.
+    `python3 sustainable.py seed <slug> --ids …`, edit the scripts by hand and `rebuild`.
 """
 from __future__ import annotations
 
@@ -117,7 +117,7 @@ def plan(args):
     (out / 'plan.json').write_text(json.dumps(chosen, indent=1))
     covered = sum(len(v['new']) for v in chosen)
     say(f'{len(chosen)} viewpoints see {covered} of {len(want)} houses to check → {out / "plan.json"}')
-    say(f'Save each frame as {out}/<index>.jpg, then: python3 wasteland.py survey {args.slug} compare {out}')
+    say(f'Save each frame as {out}/<index>.jpg, then: python3 sustainable.py survey {args.slug} compare {out}')
     for v in chosen:
         say(f'{v["k"]:3d}  {len(v["new"]):2d} houses  {v["url"]}')
 
@@ -184,7 +184,7 @@ def sheets(args):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog='wasteland.py survey')
+    ap = argparse.ArgumentParser(prog='sustainable.py survey')
     ap.add_argument('slug')
     sub = ap.add_subparsers(dest='action', required=True)
     p = sub.add_parser('plan')

@@ -1,0 +1,139 @@
+{
+ "indicators": {
+  "lnu_helarsstudenter_totalt": {
+   "name": "Full-time equivalent students at Linnaeus University as a whole (Kalmar and Växjö)",
+   "unit": "full-time equivalent students (whole university)",
+   "note": "Covers the whole university including distance learning (39% of full-time equivalents in 2025, 41% in 2024); the schema has no level for Kalmar + Kronoberg, hence Kalmar County. The series is 16,383 (2020), 16,180 (2021), 15,640 (2022), 15,642 (2023), 15,128 (2024) and 15,440 (2025), i.e. −5.8% since 2020. The funding ceiling for education is being lowered for 2025–2027, and in 2025 the university delivered 104% of its ceiling according to the Swedish Higher Education Authority (UKÄ), i.e. teaching beyond what the state pays for."
+  },
+  "lnu_andel_verksamhet_kalmar": {
+   "name": "Kalmar's share of Linnaeus University's activity",
+   "unit": "% of the university (estimate)",
+   "note": "Own estimate from three independent measures: 16,000 of 44,000 registered students belong to Kalmar according to lnu.se (36%), about 6,000 of 16,180 full-time equivalents in 2021 according to Kalmar Municipality (37%), and Universitetskajen's 48,800 of the university's 131,300 leased m² in 2023 (37%); in 2015 the university itself gave about 40% (Barometern). Region Kalmar County's minutes of 2024-03-20 state about 8,000 full-time equivalents in Kalmar (≈ 51%), which does not match the other sources and probably counts differently."
+  },
+  "registrerade_studenter_kalmar": {
+   "name": "Registered students belonging to the Kalmar campus",
+   "unit": "students per year (approx.)",
+   "note": "Linnaeus University's website states that about 16,000 of 44,000 students belong to Kalmar and 28,000 to Växjö; the figure is undated, but the total of 44,000 matches the situation around 2021–2022. In 2025 the whole university had 40,259 registered students, and at the same share (36%) Kalmar would have about 14,500 (own calculation). The figure counts heads including distance students, not people living in Kalmar."
+  },
+  "campusstudenter_kalmar_uppskattning": {
+   "name": "Full-time equivalent students studying on site in Kalmar (estimate)",
+   "unit": "full-time equivalents on campus",
+   "note": "Own estimate: the municipality's figure of about 6,000 full-time equivalents in Kalmar includes distance study, which made up 39% of the university's full-time equivalents in 2025 (61% × 6,000 ≈ 3,700). Kalmar's own distance share is unknown, hence the range of 25–50% distance; on top of this come about 120 medical students from Linköping University."
+  },
+  "lnu_anstallda_kalmar_uppskattning": {
+   "name": "Linnaeus University employees in Kalmar (estimate)",
+   "unit": "employees (approx.)",
+   "note": "Own estimate: 36–40% of the university's 2,145 employees (2025 average) gives 770–860; the university publishes no breakdown by campus. Already in 2019 about 400 staff worked in the Magna, Radix and Vita buildings, before the School of Business and Economics, the library and the administration had moved in. This is about 2% of the 39,331 jobs in the municipality."
+  },
+  "lnu_doktorander_totalt": {
+   "name": "Active doctoral students at Linnaeus University as a whole",
+   "unit": "doctoral students (whole university)",
+   "note": "Down from 315 (2021) and 306 (2024), and new admissions fell to 34 in 2025 from 55 in 2023. 155 full-time equivalents were employed as doctoral students and 51 doctoral degrees were awarded in 2025. No split between Kalmar and Växjö is published."
+  },
+  "lakarstudenter_kalmar": {
+   "name": "Medical students in Kalmar (Linköping University's medical programme)",
+   "unit": "study places (the last six semesters)",
+   "note": "Since 2019, medical students from Linköping can take the clinical part (six semesters) in Kalmar, about 20 places per semester based at the county hospital; Linnaeus University and Region Kalmar County take part. In 2021 there were 117 medical students in Kalmar, and of the first 14 who graduated that year, 9 stayed to work for Region Kalmar County (Kalmar Municipality 2022)."
+  },
+  "sjofartshogskolan_studenter": {
+   "name": "Programme students at Kalmar Maritime Academy",
+   "unit": "students (approx.)",
+   "note": "Kalmar Maritime Academy was founded in 1842 and trains master mariners, marine engineers and operating technicians; almost as many again take single courses and contract education. About 10% of the students are women, and since 2010 the university has graduated 925 master mariners and marine engineers (vice-chancellor, 2024), about 60 a year. Training relies on simulators, and research covers working life and risk, the environmental impact of shipping and marine spatial planning, and energy efficiency."
+  },
+  "universitetskajen_forhyrd_yta": {
+   "name": "Floor area leased by Linnaeus University at Universitetskajen",
+   "unit": "m²",
+   "note": "Sum of two rows in the premises plan (Intea/Eldaren 6: 27,000 m², P&E/Eldaren 1: 21,800 m²), 37% of the university's 131,300 m²; Växjö (Vöfab) has 78,400 m². Six connected buildings in Ölandshamnen next to Kalmar Central Station house all faculties, the library and the administration; the campus was completed in 2020 and inaugurated on 27 August 2021 (ground broken in January 2016). The university judges its Kalmar premises to have low utilisation at high cost, with 2% of the area vacant against 0.5% in Växjö."
+  },
+  "universitetskajen_forsta_hyresavtal_lopertid": {
+   "name": "Year in which the first lease at Universitetskajen expires",
+   "unit": "year",
+   "note": "The eastern part (the Vita, Culmen and Stella buildings, with health and life sciences, the university library, the main lecture hall and the administration) is rented from Intea on two ten-year leases that expire in 2028 and 2030; the western part (Forma, Magna and Radix) has a 20-year lease with Kalmar Eldaren AB (P&E) until 2038. The expiries are natural decision points for where activities should be located, at the same time as the university must save about SEK 120 million in 2027–2029."
+  },
+  "tidigare_universitetsadresser_kalmar": {
+   "name": "Addresses across which Linnaeus University in Kalmar was spread before Universitetskajen",
+   "unit": "addresses (more than)",
+   "note": "Plans for a single, city-integrated university began around 2008 and the move took place in 2018–2021, reducing the university's total leased area. Akademiska Hus, which owned about 28,000 m² in Kalmar, sold just over 16,000 m² in 2012 (nine buildings on southern Malmen and Rostad, including the then library) to LW Fastigheter, and in 2013 the harbour property that became the western part of Universitetskajen. What the older buildings are used for today could not be verified."
+  },
+  "lmo_provtagningstillfallen": {
+   "name": "Sampling occasions at the Linnaeus Microbial Observatory (LMO) in the Baltic Sea since 2011",
+   "unit": "sampling occasions (more than)",
+   "note": "A time series 11 km off Kårehamn on Öland's east coast, sampled about every second week since 2011 (status May 2026); the samples are analysed in the laboratory in Kalmar by up to ten people. It is complemented by the Kalmar Strait Station (K-station) opposite Kalmar Castle, sampled weekly since March 2018; both are part of the government-funded research programme EcoChange."
+  },
+  "eemis_medarbetare": {
+   "name": "Staff of the EEMiS centre of excellence (ecology and evolution in aquatic systems)",
+   "unit": "staff (approx.)",
+   "note": "EEMiS studies Baltic Sea food webs from microbes to fish and birds; the figure includes students, doctoral students, technicians, postdocs and principal investigators. The centre runs LMO, the K-station, a warming bay and acoustic monitoring, and the Linnaeus Knowledge Environment Water is part of it. In 2024 the EEMiS microbiologist Jarone Pinhassi became the university's first Wallenberg Scholar, with an unrestricted grant of SEK 20 million over five years (annual report 2024)."
+  },
+  "ecodriving_bransle_besparing": {
+   "name": "Fuel saving from simulator-based eco-driving training (Kalmar Maritime Academy)",
+   "unit": "% (up to)",
+   "note": "Courses for masters of small passenger ferries in the Stockholm archipelago have cut fuel use by up to 13%. Since 2015 more than 400 crew members on the Swedish Transport Administration's road ferries have been trained (1.5 litres less per crossing, a claimed 11,000 tonnes of CO₂ a year), and more than 700 officers in total. The figures are the simulator maker Kongsberg's account of a Linnaeus University report that has not been reviewed here."
+  },
+  "lnu_forskningsintakter": {
+   "name": "Revenue for research and doctoral education, Linnaeus University as a whole",
+   "unit": "SEK million (whole university)",
+   "note": "This is 31% of total revenue of SEK 2,435 million (own calculation), and 45% of research revenue is external. The goals for 2026–2030 say research should become as large a part of the university as education, and that external funding should make up 50% of research funding. The split between Kalmar and Växjö is not reported."
+  },
+  "ehalsa_magister_sokande": {
+   "name": "Applicants to the master's programme in eHealth (eHealth collaboration with Region Kalmar County)",
+   "unit": "applicants, autumn 2025",
+   "note": "The eHealth collaboration is a joint ten-year initiative (2022–2032) of Linnaeus University and Region Kalmar County covering education, research, infrastructure and innovation. In 2025 a graduate school with seven doctoral students in health and data science started, and a professor of health informatics took up the post on 1 January 2026; the programme is described as unique in Sweden."
+  },
+  "rattsvetenskap_satsning_mnkr": {
+   "name": "Legal science initiative in Kalmar (Kalmar Municipality and Linnaeus University)",
+   "unit": "SEK million over ten years (at least)",
+   "note": "Under the agreement of December 2021 the municipality contributes SEK 100 million and the university at least SEK 200 million, aiming for a law degree programme with first admission no later than 2027. The bachelor's programme in legal science started in 2024 (60 students) and had 587 applicants for 70 places in 2025; the unit gained degree-awarding powers at master's and doctoral level in 2025, and the application to award the professional law degree (juristexamen) was submitted in September 2025 (annual report 2025)."
+  },
+  "kommunens_forskningsavtal_mnkr_per_ar": {
+   "name": "Kalmar Municipality's annual grant to Linnaeus University for research, development and growth",
+   "unit": "SEK million per year (for ten years)",
+   "note": "Agreement signed on 2 February 2018 for SEK 1.5 million a year for ten years to strengthen the university in Kalmar, cooperation with business and growth. In 2019 the municipal group reported a record SEK 2.7 million in research funding. The strategic partnership with Växjö Municipality and the Linnaeus students' union (since 2017, now 2026–2028) has no budget of its own."
+  },
+  "kvarstannande_examinerade_3ar": {
+   "name": "Linnaeus University graduates still living in Kalmar or Kronoberg County three years after graduating",
+   "unit": "% of 2015–2017 graduates",
+   "note": "The 'stayers' measure for the 8,800 who graduated in 2015–2017; just under two thirds moved away from the region. Of those recruited locally (from Kalmar and Kronoberg counties) 78.6% still lived there, but only 16.6% of those recruited from the rest of the country. Covers both counties, not Kalmar Municipality alone."
+  },
+  "examinerade_bor_i_kalmar_lan_2017": {
+   "name": "Share of Linnaeus University's 2011–2017 graduates living in Kalmar County in 2017",
+   "unit": "% of graduates",
+   "note": "A further 27% lived in Kronoberg County, so 53% lived in the Linnaeus region; among other counties Stockholm (11%) and Skåne (9%) were the largest. Of those born outside the region 36% stayed, against 83% of those born in Kalmar or Kronoberg County (STATIV 2017)."
+  },
+  "hogskoleutbildade_med_lnu_examen": {
+   "name": "Share of university graduates established in Kalmar and Växjö who hold a Linnaeus University degree",
+   "unit": "%",
+   "note": "The figure in the 2024 annual report comes from an unpublished internal report (Studentrekrytering, etableringsmönster och kompetensförsörjning, 2023) and covers Kalmar and Växjö together. The vice-chancellor also states that 80% of applicants from the region stay in the regional labour market, against 20% of those who come from elsewhere."
+  },
+  "studentbostader_kalmarhem": {
+   "name": "Student homes in Kalmarhem's housing stock",
+   "unit": "student homes",
+   "note": "Down from 984 the year before; Kalmarhem describes falling demand for student housing over several years and has adjusted its supply. Through the student housing guarantee (newly admitted students who register as residents of Kalmar are offered a student home), 428 contracts were signed in 2024 against 386 in 2021, and annual turnover in the student stock is 63%. Kalmar was named Student City of the Year 2023 by the Swedish National Union of Students (Linnaeus University annual report 2024)."
+  },
+  "lnu_kostnader_kalmar_uppskattning": {
+   "name": "Linnaeus University's annual spending in Kalmar (estimate)",
+   "unit": "SEK million per year",
+   "note": "Own estimate: 36–40% of the university's total costs of SEK 2,504 million in 2025, of which 68% is staff and 12% premises. This is gross spending, not a calculated regional impact; no study of the university's economic importance for Kalmar has been found."
+  },
+  "lnu_resultat_mnkr": {
+   "name": "Linnaeus University's annual result (change in capital), whole university",
+   "unit": "SEK million (whole university)",
+   "note": "The second deficit in a row after −SEK 95 million in 2024 (+SEK 28 million in 2023), and agency capital has fallen from SEK 383 million to SEK 221 million. The vice-chancellor points to reduced government funding; the education funding ceiling is being lowered for 2025–2027 while student numbers rose in 2025, so the university delivered 104% of its ceiling (UKÄ)."
+  },
+  "lnu_sparkrav_mnkr": {
+   "name": "Linnaeus University's savings requirement 2027–2029",
+   "unit": "SEK million over three years",
+   "note": "In June 2026 the university board decided on savings of about SEK 120 million, including SEK 50 million in support functions in 2027–2028, after staffing had been cut by 30 full-time equivalents in 2025; a hiring freeze in the administration applies from 18 May 2026 to 30 June 2027. According to the Saco-S union the changes are under way in both Kalmar and Växjö, with no faculty hit especially hard (Universitetsläraren, 2026-09-21). In March 2026 the vice-chancellor said the university may have a thousand fewer students and that its range of courses and programmes is to shrink by 15% by 2030, mainly distance learning (SVT)."
+  },
+  "unga_19_24_kalmar_prognos_2050": {
+   "name": "Residents aged 19–24 in Kalmar Municipality in 2050 according to Statistics Sweden's projection",
+   "unit": "people",
+   "note": "Sum of single-year ages 19–24, both sexes (own summation): 5,851 (2025), peaking at 6,688 (2035), 5,730 (2050) and 6,560 (2070). The 19–24 share is 8.0% in Kalmar Municipality in 2025 against 7.0% for Sweden as a whole and 5.9% for the county (own calculations), a university-town effect. The projection assumes that today's migration patterns, and with them the university, continue."
+  },
+  "unga_19_24_sverige_prognos_2050": {
+   "name": "Residents aged 19–24 in Sweden in 2050 according to Statistics Sweden's population projection",
+   "unit": "people",
+   "note": "Sum of single-year ages 19–24 (own summation): 740,827 (2026), peaking at 779,316 (2035) and 667,595 (2050), i.e. −14% from the peak and −10% compared with 2026 (own calculations). Higher education's natural recruitment base grows until the mid-2030s and then shrinks, which sharpens competition for students."
+  }
+ }
+}

@@ -1,0 +1,760 @@
+{
+ "topic": "nationellt",
+ "compiled": "2026-10-08",
+ "about": "Records for all of Sweden from the research behind Kalmar 2126; merged into every Swedish place before its own research (which wins on the same id).",
+ "indicators": [
+  {
+   "id": "konsumtionsbaserade_utslapp_sverige",
+   "sdg": [
+    12,
+    13
+   ],
+   "name_sv": "Konsumtionsbaserade växthusgasutsläpp per person",
+   "value": 7.6,
+   "unit": "ton CO2e/person/år",
+   "year": 2023,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Växthusgaser, konsumtionsbaserade utsläpp per person",
+    "publisher": "Naturvårdsverket",
+    "url": "https://www.naturvardsverket.se/data-och-statistik/konsumtion/vaxthusgaser-konsumtionsbaserade-utslapp-per-person/"
+   },
+   "note_sv": "Minskat ca 36 % per capita 2008–2023; ca 60 % kommer från hushållens konsumtion. Betydligt högre än de territoriella ca 4,5 t/inv. Kalmars klimatkontrakt omfattar även konsumtionsutsläpp.",
+   "confidence": "high"
+  },
+  {
+   "id": "forsorjningsformaga_spannmal_sverige",
+   "sdg": [
+    2
+   ],
+   "name_sv": "Sveriges försörjningsförmåga, spannmål",
+   "value": 105,
+   "unit": "%",
+   "year": 2023,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "På tal om jordbruk och fiske 2024-06-12: Hur stor andel av svensk matkonsumtion skulle kunna täckas av livsmedel producerade i Sverige?",
+    "publisher": "Jordbruksverket",
+    "url": "https://jordbruksverket.se/download/18.224634c81900509cce84f98/1718192143943/Pa-tal-om-jordbruk-och-fiske-juni-2024-tga.pdf"
+   },
+   "note_sv": "Säsongen 2023/24 (svag skörd). Sverige är nettoexportör av spannmål. Jordbruksverket redovisar ingen samlad självförsörjningsgrad för all mat.",
+   "confidence": "high"
+  },
+  {
+   "id": "forsorjningsformaga_mejeri_sverige",
+   "sdg": [
+    2
+   ],
+   "name_sv": "Sveriges försörjningsförmåga, mejerivaror",
+   "value": 75,
+   "unit": "%",
+   "year": 2023,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "På tal om jordbruk och fiske 2024-06-12: Hur stor andel av svensk matkonsumtion skulle kunna täckas av livsmedel producerade i Sverige?",
+    "publisher": "Jordbruksverket",
+    "url": "https://jordbruksverket.se/download/18.224634c81900509cce84f98/1718192143943/Pa-tal-om-jordbruk-och-fiske-juni-2024-tga.pdf"
+   },
+   "note_sv": "Har sjunkit från 112 % 1995. Ost bara 39 %. Ägg 95 % (2023, salmonellautbrott).",
+   "confidence": "high"
+  },
+  {
+   "id": "forsorjningsformaga_tomat_sverige",
+   "sdg": [
+    2,
+    12
+   ],
+   "name_sv": "Sveriges försörjningsförmåga, färska tomater",
+   "value": 19,
+   "unit": "%",
+   "year": 2023,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "På tal om jordbruk och fiske 2024-06-12: Hur stor andel av svensk matkonsumtion skulle kunna täckas av livsmedel producerade i Sverige?",
+    "publisher": "Jordbruksverket",
+    "url": "https://jordbruksverket.se/download/18.224634c81900509cce84f98/1718192143943/Pa-tal-om-jordbruk-och-fiske-juni-2024-tga.pdf"
+   },
+   "note_sv": "Exempel på importberoende för frukt och grönt: äpplen 29 %, gurka 48 %, jordgubbar 69 %, lök 78 %, morötter 97 %.",
+   "confidence": "high"
+  },
+  {
+   "id": "ensamhet_ofta_alltid_sverige",
+   "sdg": [
+    3,
+    10
+   ],
+   "name_sv": "Besväras ofta eller alltid av ensamhet",
+   "value": 6,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Så vanligt är ensamhet",
+    "publisher": "Folkhälsomyndigheten",
+    "url": "https://www.folkhalsomyndigheten.se/vara-amnesomraden/psykisk-halsa/befolkningens-psykiska-halsa/sa-vanligt-ar-ensamhet/"
+   },
+   "note_sv": "Nationella folkhälsoenkäten 2024. Ytterligare 13 % besväras ibland.",
+   "confidence": "high"
+  },
+  {
+   "id": "unga_skarmtid_over_3h",
+   "sdg": [
+    3
+   ],
+   "name_sv": "13–16-åringar med mer än 3 timmar skärmtid per dag på fritiden",
+   "value": 87,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Ungar & medier 2025",
+    "publisher": "Mediemyndigheten",
+    "url": "https://www.mediemyndigheten.se/globalassets/rapporter-och-analyser/ungar--medier/mediemyndigheten-rapport-ungar-och-medier.pdf"
+   },
+   "note_sv": "Dator, mobil och surfplatta en vanlig dag; 93 % bland 17–18-åringar. Folkhälsomyndigheten rekommenderar högst 2–3 timmar för 13–18-åringar.",
+   "confidence": "high"
+  },
+  {
+   "id": "internet_dagligen",
+   "sdg": [
+    9,
+    17
+   ],
+   "name_sv": "Använder internet dagligen",
+   "value": 93,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Svenskarna och internet 2025 – sammanfattning",
+    "publisher": "Internetstiftelsen",
+    "url": "https://svenskarnaochinternet.se/app/uploads/2025/09/svenskarna-och-internet-2025-sammanfattning.pdf"
+   },
+   "note_sv": "Befolkningen 16+. 97 % använder internet; nästan alla som inte gör det är pensionärer. 4 av 10 svenskar (8+) använder AI-verktyg.",
+   "confidence": "high"
+  },
+  {
+   "id": "hemberedskap_en_vecka",
+   "sdg": [
+    11,
+    16
+   ],
+   "name_sv": "Hushåll med hemberedskap för minst en vecka",
+   "value": 43,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "Undersökning visar positivt mottagande av broschyren men också ökad oro (pressmeddelande 2025-03-14)",
+    "publisher": "MSB (nu Myndigheten för civilt försvar, MCF)",
+    "url": "https://mcf.mynewsdesk.com/pressreleases/undersoekning-visar-positivt-mottagande-av-broschyren-men-ocksaa-oekad-oro-3375311"
+   },
+   "note_sv": "Webbpanel, 2 009 personer 16+, dec 2024–feb 2025. 63 % planerar att stärka sin beredskap.",
+   "confidence": "high"
+  },
+  {
+   "id": "dryck_hemma_en_vecka",
+   "sdg": [
+    2,
+    6,
+    11
+   ],
+   "name_sv": "Har dryck/vatten hemma för minst en vecka",
+   "value": 36,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "Hemberedskap 2025 (Origo Group för Livsmedelsverket)",
+    "publisher": "Livsmedelsverket",
+    "url": "https://www.livsmedelsverket.se/4904e7/globalassets/publikationsdatabas/rapporter/2026/2026---origo-hemberedskap-2025.pdf"
+   },
+   "note_sv": "8 108 svar, december 2025. 61 % har mat för minst en vecka – vatten är den svagaste länken i hushållens beredskap.",
+   "confidence": "high"
+  },
+  {
+   "id": "kontant_senaste_kop",
+   "sdg": [
+    10,
+    16
+   ],
+   "name_sv": "Betalade kontant vid senaste köpet",
+   "value": 5,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Betalningsrapport 2026 – Svenska folkets betalningsvanor",
+    "publisher": "Sveriges riksbank",
+    "url": "https://www.riksbank.se/sv/betalningar--kontanter/sa-betalar-svenskarna/betalningsrapport-2026/utvecklingen-pa-betalningsmarknaden/svenska-folkets-betalningsvanor/"
+   },
+   "note_sv": "10 % år 2023 och 40 % år 2010. Låg kontantanvändning ökar sårbarheten vid störningar i digitala betalningar.",
+   "confidence": "high"
+  },
+  {
+   "id": "beredskapslager_livsmedel_budget",
+   "sdg": [
+    2,
+    16
+   ],
+   "name_sv": "Statliga medel till beredskapslager i livsmedelskedjan",
+   "value": 575,
+   "unit": "mnkr",
+   "year": 2026,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Regeringen prioriterar försörjningsberedskap för livsmedel och dricksvatten (dec 2025)",
+    "publisher": "Regeringskansliet",
+    "url": "https://regeringen.se/pressmeddelanden/2025/12/regeringen-prioriterar-forsorjningsberedskap-for-livsmedel-och-dricksvatten/"
+   },
+   "note_sv": "Del av 1 071 mnkr för livsmedels- och dricksvattenberedskap 2026. Statliga livsmedelslager byggs nu upp från i princip noll; ny lag om beredskapslager föreslås gälla från 1 juli 2026.",
+   "confidence": "high"
+  },
+  {
+   "id": "livsmedelsavfall_per_person_sverige",
+   "sdg": [
+    12
+   ],
+   "name_sv": "Livsmedelsavfall i butiks- och konsumentledet",
+   "value": 84,
+   "unit": "kg/person/år",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Livsmedelsavfall och matsvinn 2024 (statistikblad)",
+    "publisher": "Naturvårdsverket",
+    "url": "https://www.naturvardsverket.se/4af847/contentassets/337b7600c2144a09b3e2457431bf4390/livsmedelsavfall-och-matsvinn-2024-statistikblad.pdf"
+   },
+   "note_sv": "880 000 ton totalt. Hushållen står för 72 %: 16 kg matsvinn + 45 kg övrigt livsmedelsavfall per person. Ingen minskning sedan 2020 trots etappmål om −20 % till 2025.",
+   "confidence": "high"
+  },
+  {
+   "id": "skyfall_klimatfaktor_2071_2100_rcp85",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Klimatfaktor för skyfall 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "value": 1.4,
+   "unit": "faktor",
+   "year": 2017,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Klimatologi 47: Sammanfattning till extremregn i nuvarande och framtida klimat, tabell 2",
+    "publisher": "SMHI",
+    "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e8329c86/1717801000638/klimatologi_47%20Sammanfattning%20till%20extremregn%20i%20nuvarande%20och%20framtida%20klimat.pdf"
+   },
+   "note_sv": "Korta skyfall blir ca 40 % kraftigare till 2071–2100 med RCP8.5 och ca 20 % med RCP4.5 (2041–2070: 20 % respektive 15 %). Gäller alla återkomsttider och hela landet. Svenskt Vatten rekommenderar minst 1,25 för regn kortare än en timme.",
+   "confidence": "high",
+   "range": [
+    1.36,
+    1.41
+   ],
+   "topic": "klimat"
+  },
+  {
+   "id": "overdodlighet_varmebolja_2018",
+   "sdg": [
+    3,
+    13
+   ],
+   "name_sv": "Överdödlighet under värmeböljan sommaren 2018",
+   "value": 700,
+   "unit": "dödsfall",
+   "year": 2018,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Att hantera hälsoeffekter av värmeböljor – vägledning till handlingsplaner (2022)",
+    "publisher": "Folkhälsomyndigheten",
+    "url": "https://www.folkhalsomyndigheten.se/contentassets/ea328afcc93f4ad6a37693176fbb3158/hantera-halsoeffekter-varmeboljor.pdf"
+   },
+   "note_sv": "Cirka 700 fler dödsfall än normalt under hela sommaren; SMHI återger 600–745 som kan tillskrivas värmen. Främst äldre och kroniskt sjuka drabbades. Kalmar hade 43 högsommardagar det året.",
+   "confidence": "high",
+   "topic": "klimat"
+  },
+  {
+   "id": "dodlighetsokning_varme_26c",
+   "sdg": [
+    3,
+    13
+   ],
+   "name_sv": "Ökning av dödligheten per dygn när det är minst 26 °C tre dygn i rad",
+   "value": 10,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Tillsynsvägledning om temperatur inomhus",
+    "publisher": "Folkhälsomyndigheten (ursprungskälla: svenska studier, ref. 14)",
+    "url": "https://www.folkhalsomyndigheten.se/publikationer-och-material/publikationsarkiv/t/tillsynsvagledning-om-temperatur-inomhus/?pub=133705"
+   },
+   "note_sv": "Dödligheten ökar med ca 10 % per dag vid 26 °C eller mer tre dygn i rad och med ytterligare 10 % vid 30 °C. Äldre, kroniskt sjuka och små barn är mest känsliga.",
+   "confidence": "high",
+   "topic": "klimat"
+  },
+  {
+   "id": "rvu_bil_andel_sverige",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Bilens andel av huvudresorna i Sverige",
+   "value": 52.6,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Resvanor i Sverige 2024 (Statistik 2025:17)",
+    "publisher": "Trafikanalys (Sveriges officiella statistik)",
+    "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
+   },
+   "note_sv": "Egen beräkning: 2 053 miljoner bilresor av nästan 3,9 miljarder huvudresor. Trafikanalys skriver \"drygt hälften av alla resor\". Kalmar (60 %) ligger alltså över riket.",
+   "confidence": "estimate",
+   "topic": "resor-energi"
+  },
+  {
+   "id": "rvu_kollektiv_andel_sverige",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Kollektiva färdsätts andel av huvudresorna i Sverige",
+   "value": 18.2,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "Resvanor i Sverige 2024 (Statistik 2025:17)",
+    "publisher": "Trafikanalys (Sveriges officiella statistik)",
+    "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
+   },
+   "note_sv": "Egen beräkning: 708 miljoner av ca 3 900 miljoner huvudresor. Ökade med 5 % från 2023 men ligger 10 % under 2019.",
+   "confidence": "estimate",
+   "topic": "resor-energi"
+  },
+  {
+   "id": "rvu_gang_andel_sverige",
+   "sdg": [
+    3,
+    11
+   ],
+   "name_sv": "Gångens andel av huvudresorna i Sverige",
+   "value": 12.8,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "Resvanor i Sverige 2024 (Statistik 2025:17)",
+    "publisher": "Trafikanalys (Sveriges officiella statistik)",
+    "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
+   },
+   "note_sv": "Egen beräkning: 499 miljoner av ca 3 900 miljoner huvudresor. Gångresorna minskade 9 % från 2023 och ligger 20 % under 2019.",
+   "confidence": "estimate",
+   "topic": "resor-energi"
+  },
+  {
+   "id": "rvu_cykel_andel_sverige",
+   "sdg": [
+    3,
+    11
+   ],
+   "name_sv": "Cykelns andel av huvudresorna i Sverige",
+   "value": 12.3,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "Resvanor i Sverige 2024 (Statistik 2025:17)",
+    "publisher": "Trafikanalys (Sveriges officiella statistik)",
+    "url": "https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf"
+   },
+   "note_sv": "Egen beräkning: 480 miljoner av ca 3 900 miljoner huvudresor; +12 % från 2023. Cykeln står för bara 2,2 av 137 miljarder resta km.",
+   "confidence": "estimate",
+   "topic": "resor-energi"
+  },
+  {
+   "id": "fritidsbatar_elmotor_andel_sverige",
+   "sdg": [
+    7,
+    14
+   ],
+   "name_sv": "Motorbåtar med elmotor",
+   "value": 4,
+   "unit": "% av motorbåtarna",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "Båtlivsundersökningen 2025 (Swedish Boating Survey 2025)",
+    "publisher": "Transportstyrelsen",
+    "url": "https://www.transportstyrelsen.se/globalassets/global/publikationer-och-rapporter/rapporter/sjofart/swedish-boatings-survey2025-batlivsundersokningen-2025-eng.pdf"
+   },
+   "note_sv": "Andel av motorbåtarna med elmotor (flera svar möjliga): 4 % för öppna motorbåtar, 2 % för ruffade. 17 % har fortfarande en förbjuden tvåtaktsmotor med förgasare. Räknat i energi eller trafikarbete är eldriftens andel mycket lägre. Ett nationellt mått: data för Kalmarsund saknas.",
+   "confidence": "medium",
+   "replaces": "boatElectric",
+   "topic": "resor-energi"
+  },
+  {
+   "id": "arbetstid_overenskommen",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Överenskommen (avtalad) medelarbetstid per vecka, sysselsatta 15–74 år",
+   "value": 37.3,
+   "unit": "timmar/vecka",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Medelarbetstid (överenskommen) per vecka för sysselsatta 15–74 år (AKU), NAKUOkMedArbtidAr",
+    "publisher": "SCB (AKU)",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0401__AM0401S/NAKUOkMedArbtidAr/"
+   },
+   "note_sv": "Felmarginal ±0,1. 20–64 år: 38,1 timmar. Män 38,2 och kvinnor 36,2 timmar (15–74 år). Den avtalade veckotiden är det mått som bäst motsvarar modellens 'arbetstid'. Kommunsiffror finns inte i AKU.",
+   "confidence": "high",
+   "replaces": "workHours",
+   "range": [
+    37.2,
+    37.4
+   ],
+   "topic": "samhalle"
+  },
+  {
+   "id": "arbetstid_faktisk",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Faktiskt arbetad medeltid per vecka, sysselsatta 15–74 år",
+   "value": 29.7,
+   "unit": "timmar/vecka",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Medelarbetstid (faktisk) per vecka för sysselsatta 15–74 år (AKU), NAKUFaktMedArbtidAr",
+    "publisher": "SCB (AKU)",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0401__AM0401S/NAKUFaktMedArbtidAr/"
+   },
+   "note_sv": "Felmarginal ±0,2. Snitt över årets alla veckor, så semester, sjukdom och föräldraledighet räknas med. Därför går måttet inte att jämföra med en avtalad 40-timmarsvecka. 20–64 år: 30,6; män 31,6, kvinnor 27,7. År 2015: 30,1 timmar.",
+   "confidence": "high",
+   "range": [
+    29.5,
+    29.9
+   ],
+   "topic": "samhalle"
+  },
+  {
+   "id": "deltid_andel",
+   "sdg": [
+    5,
+    8
+   ],
+   "name_sv": "Sysselsatta med avtalad arbetstid under 35 timmar per vecka",
+   "value": 16.7,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Sysselsatta 15–74 år (AKU) efter veckoarbetstid (överenskommen), NAKUSysselOkArbtidAr",
+    "publisher": "SCB (AKU)",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0401__AM0401S/NAKUSysselOkArbtidAr/"
+   },
+   "note_sv": "Egen beräkning: (277,8 + 601,9 tusen med 1–34 timmar) / 5 263,0 tusen sysselsatta = 16,7 %. Kvinnor 21,6 %, män 12,3 %. Ca 254 tusen saknar avtalad arbetstid; räknas de bort blir andelen 17,6 %.",
+   "confidence": "estimate",
+   "topic": "samhalle"
+  },
+  {
+   "id": "sex_timmars_arbetsdag_stod",
+   "sdg": [
+    8
+   ],
+   "name_sv": "Andel som tycker att sex timmars arbetsdag är ett bra förslag",
+   "value": 55,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Svenska trender 1986–2025 (Införa sex timmars arbetsdag)",
+    "publisher": "SOM-institutet, Göteborgs universitet",
+    "url": "https://www.gu.se/sites/default/files/2026-03/Svenska%20trender%201986-2025.pdf"
+   },
+   "note_sv": "Den nationella SOM-undersökningen 2025: 55 % bra förslag, 22 % varken eller, 23 % dåligt förslag. Visar hur stort stödet för en arbetstidsförkortning är.",
+   "confidence": "high",
+   "topic": "samhalle"
+  },
+  {
+   "id": "hog_tillit_till_manniskor",
+   "sdg": [
+    16
+   ],
+   "name_sv": "Hög mellanmänsklig tillit (7–10 på skala 0–10)",
+   "value": 57,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "Svenska trender 1986–2025 (Mellanmänsklig tillit)",
+    "publisher": "SOM-institutet, Göteborgs universitet",
+    "url": "https://www.gu.se/sites/default/files/2026-03/Svenska%20trender%201986-2025.pdf"
+   },
+   "note_sv": "Frågan lyder: 'i vilken utsträckning går det att lita på människor i allmänhet?'. 31 % har medelhög (4–6) och 12 % låg (0–3) tillit. Ett annat mått än HLV:s ja/nej-fråga, som modellens tillit bygger på (66 % i Kalmar).",
+   "confidence": "high",
+   "topic": "samhalle"
+  },
+  {
+   "id": "ideellt_arbete_andel",
+   "sdg": [
+    16,
+    17
+   ],
+   "name_sv": "Andel som arbetat ideellt det senaste året, 16–84 år",
+   "value": 52,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "Många bidrar, få orkar bära: Ideellt arbete i Sverige 1992–2024",
+    "publisher": "Marie Cederschiöld högskola (rapportkopia hos Borås stad)",
+    "url": "https://www.boras.se/download/18.59db80a9195a83af567c39bd/1743414059369/M%C3%A5nga%20bidrar%20f%C3%A5%20orkar%20b%C3%A4ra%20MCHS.pdf"
+   },
+   "note_sv": "Befolkningsstudie 2024. Andelen har legat stabilt på 48–53 % sedan 1992, med flest män och medelålders. Enligt SOM 2025 är 34 % medlemmar i en idrotts- eller friluftsförening, 40 % i facket och 14 % i en kulturförening.",
+   "confidence": "high",
+   "topic": "samhalle"
+  },
+  {
+   "id": "livsmedelsberedskap_planeringsmal_dagar",
+   "sdg": [
+    2,
+    16
+   ],
+   "name_sv": "Nationellt planeringsmål: livsmedelsförsörjning under en säkerhetspolitisk kris (minst tre månader)",
+   "value": 90,
+   "unit": "dagar (minst)",
+   "year": 2022,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Kommittédirektiv 2022:33 En ny livsmedelsberedskap",
+    "publisher": "Regeringen (ursprungskälla: prop. Totalförsvaret 2021–2025)",
+    "url": "https://www.regeringen.se/contentassets/420126e0060141278a5dfa39d8a73b95/en-ny-livsmedelsberedskap-dir.-202233.pdf"
+   },
+   "note_sv": "Livsmedelsförsörjningen ska tryggas 'under minst tre månader där logistikflödena med omvärlden är begränsade' (90 dagar = egen omräkning). Riksdagen beslutade den 26 maj 2026 om lag om beredskapslager i livsmedelskedjan (SFS 2026:837), i kraft 1 juli 2026. De första statliga spannmålslagren byggs i Norrland under 2026. Målnivå, inte uppmätt lager.",
+   "confidence": "high",
+   "replaces": "foodStockDays",
+   "topic": "samhalle"
+  },
+  {
+   "id": "internet_icke_anvandare",
+   "sdg": [
+    9,
+    10
+   ],
+   "name_sv": "Andel av befolkningen 16+ som inte använder internet",
+   "value": 3,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Svenskarna och internet 2025 – sammanfattning",
+    "publisher": "Internetstiftelsen",
+    "url": "https://svenskarnaochinternet.se/app/uploads/2025/09/svenskarna-och-internet-2025-sammanfattning.pdf"
+   },
+   "note_sv": "Nästan bara personer i pensionsåldern. 95 % använder e-legitimation, i praktiken mobilt Bank-id, ett enskilt kritiskt beroende. Nästan var fjärde har avstått från att boka läkartid för att vårdens e-tjänster är för svåra.",
+   "confidence": "high",
+   "topic": "samhalle"
+  },
+  {
+   "id": "generativ_ai_anvandning",
+   "sdg": [
+    9
+   ],
+   "name_sv": "Andel 16+ som använt generativa AI-verktyg",
+   "value": 37,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Artificiell intelligens i Sverige 2026 (statistiknyhet 2026-05-21)",
+    "publisher": "SCB",
+    "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/forskning-och-det-digitala-samhallet/ovrigt/artificiell-intelligens-i-sverige/pong/statistiknyhet/artificiell-intelligens-i-sverige-2026/"
+   },
+   "note_sv": "25 % år 2024. 18 % använder AI i arbetet. 35 % av företagen använde AI 2025, och bland stora företag 72 %.",
+   "confidence": "high",
+   "topic": "samhalle"
+  },
+  {
+   "id": "kommuner_ai_i_alla_delar",
+   "sdg": [
+    9,
+    16
+   ],
+   "name_sv": "Kommuner där AI i viss utsträckning används inom alla delar av verksamheten",
+   "value": 25,
+   "unit": "% av svarande kommuner",
+   "year": 2025,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "AI i kommunens tjänst – så använder Sveriges kommuner AI (Rapport 2026)",
+    "publisher": "Akavia (enkät till alla 290 kommuner, 170 svar)",
+    "url": "https://www.akavia.se/siteassets/04-om-akavia/rapporter/ai-i-kommunens-tjanst-sa-anvander-sverges-kommuner-ai.pdf"
+   },
+   "note_sv": "Ingen kommun säger att AI genomsyrar hela kommunen. 40 % använder AI i vissa delar och 34 % bara hos enstaka personer. Knappt var fjärde kommun har en AI-strategi (fyra av tio bland kommuner med minst 50 000 invånare), och nära hälften har riktlinjer. 7 % har utbildat all personal. Detta är ingen SKR-enkät, eftersom ingen sådan hittades.",
+   "confidence": "medium",
+   "replaces": "aiCapacity",
+   "topic": "samhalle"
+  },
+  {
+   "id": "ai_forordningen_hogrisk_tillampning",
+   "sdg": [
+    9,
+    16
+   ],
+   "name_sv": "År då EU:s AI-förordning börjar gälla för fristående högrisksystem (bilaga III), 2 december",
+   "value": 2027,
+   "unit": "år",
+   "year": 2026,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "AI Act – Regulatory framework for AI / AI Omnibus enters into force",
+    "publisher": "Europeiska kommissionen",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+   },
+   "note_sv": "AI-förordningen trädde i kraft 1 augusti 2024. Förbud och AI-kunnighet gäller sedan 2 februari 2025, GPAI-regler sedan augusti 2025 och resten av förordningen sedan 2 augusti 2026. AI-omnibusen (i kraft 27 juli 2026) sköt upp högriskkraven till 2 december 2027 (bilaga III, bland annat offentliga förmåner) och 2 augusti 2028 (bilaga I). Kommunernas AI i myndighetsutövning berörs främst av bilaga III.",
+   "confidence": "high",
+   "replaces": "aiGovernance",
+   "topic": "samhalle"
+  },
+  {
+   "id": "konsumtion_kokvaxter_per_person",
+   "sdg": [
+    2,
+    12
+   ],
+   "name_sv": "Konsumtion av färska och frysta köksväxter per person",
+   "value": 62.2,
+   "unit": "kg/person/år",
+   "year": 2023,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Livsmedelskonsumtion och näringsinnehåll. Uppgifter till och med 2023",
+    "publisher": "Jordbruksverket",
+    "url": "https://jordbruksverket.se/om-jordbruksverket/jordbruksverkets-officiella-statistik/jordbruksverkets-statistikrapporter/statistik/2024-12-10-livsmedelskonsumtion-och-naringsinnehall.--uppgifter-till-och-med-2023"
+   },
+   "note_sv": "Totalkonsumtion, nästan fördubblad sedan 1980. Direktkonsumtionen av färska köksväxter är 45,8 kg och av rotfrukter 10,5 kg. Används som nämnare när stadsodlingens andel räknas ut.",
+   "confidence": "high",
+   "replaces": "cityVeg",
+   "topic": "stad"
+  },
+  {
+   "id": "konsumtion_frukt_bar_per_person",
+   "sdg": [
+    2,
+    12
+   ],
+   "name_sv": "Konsumtion av färsk och fryst frukt och bär per person",
+   "value": 54.7,
+   "unit": "kg/person/år",
+   "year": 2023,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Livsmedelskonsumtion och näringsinnehåll. Uppgifter till och med 2023",
+    "publisher": "Jordbruksverket",
+    "url": "https://jordbruksverket.se/om-jordbruksverket/jordbruksverkets-officiella-statistik/jordbruksverkets-statistikrapporter/statistik/2024-12-10-livsmedelskonsumtion-och-naringsinnehall.--uppgifter-till-och-med-2023"
+   },
+   "note_sv": "Samma nivå som 1980. Med förädlade produkter (juice, sylt med mera) är konsumtionen av frukt och bär 82,4 kg per person och år.",
+   "confidence": "high",
+   "replaces": "cityVeg",
+   "topic": "stad"
+  },
+  {
+   "id": "utslapp_per_gastnatt",
+   "sdg": [
+    12,
+    13
+   ],
+   "name_sv": "Klimatpåverkan per turistgästnatt (Västsverige)",
+   "value": 39,
+   "unit": "kg CO2e/gästnatt",
+   "year": 2015,
+   "scope": "Sverige",
+   "direction": "lower_better",
+   "source": {
+    "title": "Turistens klimatpåverkan – modell och beräkning för Västsverige (Brunklaus m.fl. 2015)",
+    "publisher": "Chalmers tekniska högskola",
+    "url": "https://research.chalmers.se/publication/226288"
+   },
+   "note_sv": "Livscykelberäkning för turismen i Västsverige: 110 kg CO2e per turist och 39 kg per gästnatt, varav resan till och från resmålet 54 % och logi 23 %. Med samma faktor ger Kalmar kommuns 452 248 gästnätter ca 17 600 ton per år och Ölands ca 56 000 ton (egen överslagsberäkning). Med 91–92 % bilresor är transportdelen i Kalmar län sannolikt minst lika stor.",
+   "confidence": "medium",
+   "topic": "turism"
+  },
+  {
+   "id": "ecodriving_bransle_besparing",
+   "sdg": [
+    13,
+    14
+   ],
+   "name_sv": "Bränslebesparing med simulatorbaserad sparsam framföring (Sjöfartshögskolan)",
+   "value": 13,
+   "unit": "% (upp till)",
+   "year": 2026,
+   "scope": "Sverige",
+   "direction": "higher_better",
+   "source": {
+    "title": "How simulation drives sustainable maritime transportation and IMO compliance",
+    "publisher": "Kongsberg Maritime",
+    "url": "https://www.kongsberg.com/maritime/feature_articles/2026/1/driving-a-greener-future-for-global-shipping"
+   },
+   "note_sv": "Kurser för befälhavare på mindre passagerarfärjor i Stockholms skärgård har gett upp till 13 % lägre bränsleförbrukning. Sedan 2015 har över 400 besättningsmedlemmar på Trafikverkets vägfärjor utbildats (1,5 liter mindre per tur, uppgivet 11 000 ton CO₂ per år) och totalt över 700 befäl. Uppgifterna är simulatortillverkaren Kongsbergs återgivning av en LNU-rapport som inte har granskats här.",
+   "confidence": "medium",
+   "topic": "universitet"
+  },
+  {
+   "id": "unga_19_24_sverige_prognos_2050",
+   "sdg": [
+    4
+   ],
+   "name_sv": "Invånare 19–24 år i Sverige 2050 enligt SCB:s befolkningsframskrivning",
+   "value": 667595,
+   "unit": "personer",
+   "year": 2050,
+   "scope": "Sverige",
+   "direction": "context",
+   "source": {
+    "title": "Folkmängd efter inrikes/utrikes född, ålder och kön. År 2026–2120 (BefolkprognRevNb)",
+    "publisher": "SCB",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefolkprognRevNb/"
+   },
+   "note_sv": "Summa av ettårsklasserna 19–24 år (egen summering): 740 827 (2026), topp 779 316 (2035) och 667 595 (2050), alltså −14 % från toppen och −10 % jämfört med 2026 (egna beräkningar). Högskolans naturliga rekryteringsbas växer till mitten av 2030-talet och krymper sedan, vilket skärper konkurrensen om studenter.",
+   "confidence": "medium",
+   "topic": "universitet"
+  }
+ ]
+}

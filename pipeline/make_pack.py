@@ -78,7 +78,8 @@ def game_terrain(t, half):
 def copy_media(media, pack):
     """Theme assets live in cities/<slug>/media/ (the source); the pack gets fresh copies.
     splash.(jpg|png|webp) wins over the Blender-rendered splash-default.jpg; voice-*.mp3 and
-    music/*.mp3 (+ music/music.json) go to pack/audio/."""
+    music/*.mp3 (+ music/music.json) go to pack/audio/, and so does media/audio/ (the site's narration
+    vo-*.mp3 and soundtrack music.mp3)."""
     for old in list(pack.glob('splash.*')):
         old.unlink()
     audio = pack / 'audio'
@@ -92,8 +93,12 @@ def copy_media(media, pack):
     voices = sorted(media.glob('voice-*.mp3'))
     music = media / 'music'
     tracks = sorted(music.glob('*.mp3')) if music.exists() else []
-    if voices or tracks:
+    # The site's own audio: the narration (vo-*.mp3) and the soundtrack (music.mp3) in media/audio/.
+    site_audio = sorted((media / 'audio').glob('*.mp3')) + sorted((media / 'audio').glob('*.json')) if (media / 'audio').exists() else []
+    if voices or tracks or site_audio:
         audio.mkdir()
+    for f in site_audio:
+        shutil.copy2(f, audio / f.name)
     for v in voices:
         shutil.copy2(v, audio / v.name)
     if tracks:
@@ -106,7 +111,7 @@ def copy_media(media, pack):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog='wasteland.py pack')
+    ap = argparse.ArgumentParser(prog='sustainable.py pack')
     ap.add_argument('slug')
     args = ap.parse_args(argv)
     folder = city_dir(args.slug)

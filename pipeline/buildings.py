@@ -1,9 +1,9 @@
 """List generated buildings for a refinement round, with Street View and OpenStreetMap links.
 
-    python3 wasteland.py buildings visby --street "Strandgatan"
-    python3 wasteland.py buildings visby --near "Stora torget" --radius 80
-    python3 wasteland.py buildings visby --near 57.6405,18.2930 --json
-    python3 wasteland.py buildings visby --id w123456
+    python3 sustainable.py buildings visby --street "Strandgatan"
+    python3 sustainable.py buildings visby --near "Stora torget" --radius 80
+    python3 sustainable.py buildings visby --near 57.6405,18.2930 --json
+    python3 sustainable.py buildings visby --id w123456
 
 Each row shows what the generator guessed (levels, height, wall style/colour, roof). Compare with
 Street View, then write corrections to cities/<slug>/overrides.json and run `rebuild`.
@@ -27,7 +27,7 @@ def bearing(dx, dy):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog='wasteland.py buildings')
+    ap = argparse.ArgumentParser(prog='sustainable.py buildings')
     ap.add_argument('slug')
     ap.add_argument('--street')
     ap.add_argument('--near')

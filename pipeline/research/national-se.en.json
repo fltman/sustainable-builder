@@ -1,0 +1,184 @@
+{
+ "indicators": {
+  "konsumtionsbaserade_utslapp_sverige": {
+   "name": "Consumption-based greenhouse gas emissions per person",
+   "note": "Down about 36% per capita 2008–2023; about 60% comes from household consumption. Considerably higher than the territorial figure of about 4.5 t per inhabitant. Kalmar's climate contract also covers consumption-based emissions.",
+   "unit": "t CO2e per person per year"
+  },
+  "forsorjningsformaga_spannmal_sverige": {
+   "name": "Sweden's self-sufficiency, cereals",
+   "note": "The 2023/24 season (weak harvest). Sweden is a net exporter of cereals. The Swedish Board of Agriculture does not report an overall self-sufficiency rate for all food.",
+   "unit": "%"
+  },
+  "forsorjningsformaga_mejeri_sverige": {
+   "name": "Sweden's self-sufficiency, dairy products",
+   "note": "Down from 112% in 1995. Cheese only 39%. Eggs 95% (2023, salmonella outbreak).",
+   "unit": "%"
+  },
+  "forsorjningsformaga_tomat_sverige": {
+   "name": "Sweden's self-sufficiency, fresh tomatoes",
+   "note": "An example of import dependence for fruit and vegetables: apples 29%, cucumbers 48%, strawberries 69%, onions 78%, carrots 97%.",
+   "unit": "%"
+  },
+  "ensamhet_ofta_alltid_sverige": {
+   "name": "Often or always troubled by loneliness",
+   "note": "National Public Health Survey 2024. A further 13% are sometimes troubled by it.",
+   "unit": "%"
+  },
+  "unga_skarmtid_over_3h": {
+   "name": "13–16-year-olds with more than 3 hours of leisure screen time per day",
+   "note": "Computer, mobile phone and tablet on a typical day; 93% among 17–18-year-olds. The Public Health Agency of Sweden recommends no more than 2–3 hours for 13–18-year-olds.",
+   "unit": "%"
+  },
+  "internet_dagligen": {
+   "name": "Use the internet daily",
+   "note": "Population aged 16+. 97% use the internet; almost everyone who does not is a pensioner. 4 in 10 Swedes (aged 8+) use AI tools.",
+   "unit": "%"
+  },
+  "hemberedskap_en_vecka": {
+   "name": "Households prepared at home for at least one week",
+   "note": "Web panel, 2,009 people aged 16+, Dec 2024–Feb 2025. 63% plan to strengthen their preparedness.",
+   "unit": "%"
+  },
+  "dryck_hemma_en_vecka": {
+   "name": "Have drinks/water at home for at least one week",
+   "note": "8,108 responses, December 2025. 61% have food for at least one week – water is the weakest link in household preparedness.",
+   "unit": "%"
+  },
+  "kontant_senaste_kop": {
+   "name": "Paid in cash at their most recent purchase",
+   "note": "10% in 2023 and 40% in 2010. Low cash use increases vulnerability when digital payments are disrupted.",
+   "unit": "%"
+  },
+  "beredskapslager_livsmedel_budget": {
+   "name": "Government funding for emergency stockpiles in the food supply chain",
+   "note": "Part of SEK 1,071 million for food and drinking water preparedness in 2026. Government food stockpiles are now being built up from virtually zero; a new law on emergency stockpiles is proposed to apply from 1 July 2026.",
+   "unit": "SEK million"
+  },
+  "livsmedelsavfall_per_person_sverige": {
+   "name": "Food waste in the retail and consumer stages",
+   "note": "880,000 tonnes in total. Households account for 72%: 16 kg of avoidable food waste + 45 kg of other food waste per person. No reduction since 2020, despite an interim target of −20% by 2025.",
+   "unit": "kg/person/year"
+  },
+  "skyfall_klimatfaktor_2071_2100_rcp85": {
+   "name": "Climate factor for cloudbursts 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+   "unit": "factor",
+   "note": "Short cloudbursts become about 40% more intense by 2071–2100 with RCP8.5 and about 20% with RCP4.5 (2041–2070: 20% and 15% respectively). Applies to all return periods and the whole country. Svenskt Vatten recommends at least 1.25 for rain shorter than one hour."
+  },
+  "overdodlighet_varmebolja_2018": {
+   "name": "Excess mortality during the heatwave in summer 2018",
+   "unit": "deaths",
+   "note": "About 700 more deaths than normal over the whole summer; SMHI cites 600–745 attributable to the heat. Mainly older people and the chronically ill were affected. Kalmar had 43 high-summer days that year."
+  },
+  "dodlighetsokning_varme_26c": {
+   "name": "Increase in mortality per day when it is at least 26 °C for three days in a row",
+   "unit": "%",
+   "note": "Mortality rises by about 10% per day at 26 °C or more three days in a row, and by a further 10% at 30 °C. Older people, the chronically ill and small children are most sensitive."
+  },
+  "rvu_bil_andel_sverige": {
+   "name": "Car share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 2,053 million car trips out of almost 3.9 billion main trips. Trafikanalys writes \"just over half of all trips\". Kalmar (60%) is thus above the national figure."
+  },
+  "rvu_kollektiv_andel_sverige": {
+   "name": "Public transport modes' share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 708 million of approx. 3,900 million main trips. Increased by 5% from 2023 but is 10% below 2019."
+  },
+  "rvu_gang_andel_sverige": {
+   "name": "Walking's share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 499 million of approx. 3,900 million main trips. Walking trips fell by 9% from 2023 and are 20% below 2019."
+  },
+  "rvu_cykel_andel_sverige": {
+   "name": "Cycling's share of main trips in Sweden",
+   "unit": "%",
+   "note": "Own calculation: 480 million of approx. 3,900 million main trips; +12% from 2023. Cycling accounts for only 2.2 of 137 billion kilometres travelled."
+  },
+  "fritidsbatar_elmotor_andel_sverige": {
+   "name": "Motorboats with an electric motor",
+   "unit": "% of motorboats",
+   "note": "Share of motorboats with an electric motor (multiple answers possible): 4% for open motorboats, 2% for cabin boats. 17% still have a banned carburettor two-stroke engine. Measured in energy or traffic work, the electric share is much lower. A national measure: data for Kalmarsund is lacking."
+  },
+  "arbetstid_overenskommen": {
+   "name": "Agreed (contractual) mean working hours per week, employed aged 15–74",
+   "unit": "hours/week",
+   "note": "Margin of error ±0.1. Aged 20–64: 38.1 hours. Men 38.2 and women 36.2 hours (aged 15–74). Agreed weekly hours is the measure that best matches the model's \"working time\". Municipal figures are not available in the Labour Force Survey (AKU)."
+  },
+  "arbetstid_faktisk": {
+   "name": "Actual mean hours worked per week, employed aged 15–74",
+   "unit": "hours/week",
+   "note": "Margin of error ±0.2. Average over all weeks of the year, so holiday, sickness and parental leave are counted. The measure therefore cannot be compared with an agreed 40-hour week. Aged 20–64: 30.6; men 31.6, women 27.7. In 2015: 30.1 hours."
+  },
+  "deltid_andel": {
+   "name": "Employed with agreed working hours under 35 hours per week",
+   "unit": "%",
+   "note": "Own calculation: (277.8 + 601.9 thousand with 1–34 hours) / 5,263.0 thousand employed = 16.7%. Women 21.6%, men 12.3%. About 254 thousand lack agreed working hours; if they are excluded, the share becomes 17.6%."
+  },
+  "sex_timmars_arbetsdag_stod": {
+   "name": "Share who think a six-hour working day is a good proposal",
+   "unit": "%",
+   "note": "The national SOM survey 2025: 55% good proposal, 22% neither, 23% bad proposal. Shows how large the support is for a reduction in working time."
+  },
+  "hog_tillit_till_manniskor": {
+   "name": "High interpersonal trust (7–10 on a scale of 0–10)",
+   "unit": "%",
+   "note": "The question reads: \"to what extent can people in general be trusted?\". 31% have medium (4–6) and 12% low (0–3) trust. A different measure from the yes/no question in the Health in Sweden survey (HLV), on which the model's trust is based (66% in Kalmar)."
+  },
+  "ideellt_arbete_andel": {
+   "name": "Share who have done voluntary work in the past year, aged 16–84",
+   "unit": "%",
+   "note": "Population study 2024. The share has been stable at 48–53% since 1992, with the most men and middle-aged people. According to SOM 2025, 34% are members of a sports or outdoor association, 40% of a trade union and 14% of a cultural association."
+  },
+  "livsmedelsberedskap_planeringsmal_dagar": {
+   "name": "National planning target: food supply during a security-policy crisis (at least three months)",
+   "unit": "days (minimum)",
+   "note": "Food supply is to be secured \"for at least three months where logistics flows with the outside world are limited\" (90 days = own conversion). On 26 May 2026 the Riksdag adopted an act on emergency stockpiles in the food chain (SFS 2026:837), in force 1 July 2026. The first state grain stores are being built in Norrland during 2026. A target level, not a measured stock."
+  },
+  "internet_icke_anvandare": {
+   "name": "Share of the population aged 16+ who do not use the internet",
+   "unit": "%",
+   "note": "Almost exclusively people of retirement age. 95% use e-ID, in practice mobile BankID, a single critical dependency. Almost one in four has refrained from booking a medical appointment because healthcare e-services are too difficult."
+  },
+  "generativ_ai_anvandning": {
+   "name": "Share aged 16+ who have used generative AI tools",
+   "unit": "%",
+   "note": "25% in 2024. 18% use AI at work. 35% of companies used AI in 2025, and among large companies 72%."
+  },
+  "kommuner_ai_i_alla_delar": {
+   "name": "Municipalities where AI is used to some extent in all parts of the operations",
+   "unit": "% of responding municipalities",
+   "note": "No municipality says that AI permeates the whole municipality. 40% use AI in some parts and 34% only among a few individuals. Barely one in four municipalities has an AI strategy (four in ten among municipalities with at least 50,000 inhabitants), and nearly half have guidelines. 7% have trained all staff. This is not an SKR survey, since none was found."
+  },
+  "ai_forordningen_hogrisk_tillampning": {
+   "name": "Year the EU AI Act starts to apply to stand-alone high-risk systems (Annex III), 2 December",
+   "unit": "year",
+   "note": "The AI Act entered into force on 1 August 2024. Prohibitions and AI literacy have applied since 2 February 2025, GPAI rules since August 2025 and the rest of the regulation since 2 August 2026. The AI Omnibus (in force 27 July 2026) postponed the high-risk requirements to 2 December 2027 (Annex III, including public benefits) and 2 August 2028 (Annex I). Municipalities' AI in the exercise of public authority is mainly affected by Annex III."
+  },
+  "konsumtion_kokvaxter_per_person": {
+   "name": "Consumption of fresh and frozen vegetables per person",
+   "unit": "kg/person/year",
+   "note": "Total consumption, almost doubled since 1980. Direct consumption of fresh vegetables is 45.8 kg and of root vegetables 10.5 kg. Used as the denominator when calculating urban cultivation's share."
+  },
+  "konsumtion_frukt_bar_per_person": {
+   "name": "Consumption of fresh and frozen fruit and berries per person",
+   "unit": "kg/person/year",
+   "note": "Same level as in 1980. Including processed products (juice, jam and so on), consumption of fruit and berries is 82.4 kg per person per year."
+  },
+  "utslapp_per_gastnatt": {
+   "name": "Climate impact per tourist guest night (West Sweden)",
+   "unit": "kg CO2e/guest night",
+   "note": "Life-cycle calculation for tourism in West Sweden: 110 kg CO2e per tourist and 39 kg per guest night, of which travel to and from the destination is 54% and accommodation 23%. Applying the same factor, Kalmar Municipality's 452,248 guest nights give about 17,600 tonnes a year and Öland's about 56,000 tonnes (own rough calculation). With 91–92% of trips by car, the transport share in Kalmar County is probably at least as large."
+  },
+  "ecodriving_bransle_besparing": {
+   "name": "Fuel saving from simulator-based eco-driving training (Kalmar Maritime Academy)",
+   "unit": "% (up to)",
+   "note": "Courses for masters of small passenger ferries in the Stockholm archipelago have cut fuel use by up to 13%. Since 2015 more than 400 crew members on the Swedish Transport Administration's road ferries have been trained (1.5 litres less per crossing, a claimed 11,000 tonnes of CO₂ a year), and more than 700 officers in total. The figures are the simulator maker Kongsberg's account of a Linnaeus University report that has not been reviewed here."
+  },
+  "unga_19_24_sverige_prognos_2050": {
+   "name": "Residents aged 19–24 in Sweden in 2050 according to Statistics Sweden's population projection",
+   "unit": "people",
+   "note": "Sum of single-year ages 19–24 (own summation): 740,827 (2026), peaking at 779,316 (2035) and 667,595 (2050), i.e. −14% from the peak and −10% compared with 2026 (own calculations). Higher education's natural recruitment base grows until the mid-2030s and then shrinks, which sharpens competition for students."
+  }
+ }
+}

@@ -1,0 +1,795 @@
+{
+  "topic": "turism-ekonomi",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "gastnatter",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden",
+      "value": 226773,
+      "unit": "gästnätter",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Rättvik, period 2025-01–2025-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "Alla gästnätter 2025 på hotell, campingar, stugbyar, vandrarhem och förmedlade stugor som rapporterar till inkvarteringsstatistiken, +0,6 % mot 2024 (svenska 201 559, utländska 24 788). Övernattningar i egna fritidshus, hos släkt och via Airbnb ingår inte. I portalen väljs Nivå = Kommun, Kommun = Rättvik och perioden 2025-01–2025-12.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_2019",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden 2019 (före pandemin)",
+      "value": 281099,
+      "unit": "gästnätter",
+      "year": 2019,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Rättvik, period 2019-01–2019-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "Toppåret före pandemin, +7,7 % mot 2018 (svenska 253 421, utländska 26 014); hotell 23 %, camping 38 %, vandrarhem 6 % och sekretesskyddade boendeformer 34 %. År 2025 låg Rättvik 19 % under 2019, medan de fyra Siljanskommunerna tillsammans låg 9 % under.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_2020",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden 2020 (pandemiåret)",
+      "value": 203421,
+      "unit": "gästnätter",
+      "year": 2020,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Rättvik, period 2020-01–2020-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "−27,6 % mot 2019. De utländska gästnätterna föll med 69 % till 7 970 och de svenska med 23 % till 194 943.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_2023",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden 2023",
+      "value": 232173,
+      "unit": "gästnätter",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Rättvik, period 2023-01–2023-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "−12,0 % mot 2022, då 263 802 gästnätter var en topp under hemesterboomen efter pandemin. Utländska gästnätter 22 204.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_2024",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på kommersiella boenden 2024",
+      "value": 225327,
+      "unit": "gästnätter",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Rättvik, period 2024-01–2024-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "−2,9 % mot 2023: de svenska gästnätterna minskade 5,1 %, medan de utländska ökade 17,3 % till 26 051. Camping 52 %, hotell 23 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_sommar_andel",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Andel av årets gästnätter i juni–augusti",
+      "value": 66.1,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Rättvik, perioderna 2025-06–2025-08 och 2025-01–2025-12)",
+        "publisher": "Egen beräkning (ursprungskällor: Tillväxtverket)",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "149 979 gästnätter i juni–augusti 2025 delat med 226 773 för hela året = 66,1 %; juli ensam hade 80 487 (35 %), varav 74 % på camping. År 2019 var andelen 63,4 % (178 305 / 281 099): sedan dess har sommaren minskat 16 % och resten av året 25 %.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gastnatter_vinter",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter under vintersäsongen december–mars",
+      "value": 26164,
+      "unit": "gästnätter",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Rättvik, period 2024-12–2025-03)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "December 2024–mars 2025, −9,7 % mot vintern innan (28 965); motsvarar cirka 12 % av 2025 års gästnätter (egen jämförelse, perioderna överlappar inte helt). I Dalarna som helhet ligger ungefär hälften av gästnätterna på vintern (3,07 miljoner december 2025–april 2026 enligt Visit Dalarna), främst i fjällen.",
+      "confidence": "high"
+    },
+    {
+      "id": "utlandska_gastnatter_andel",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Utländska gästers andel av gästnätterna",
+      "value": 10.9,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Rättvik, period 2025-01–2025-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "24 788 utländska gästnätter av 226 773 år 2025 (−4,8 % mot 2024); största marknader Norge, Tyskland, Nederländerna, Storbritannien och Danmark. Andelen var 9,3 % 2019 och 11,6 % 2024, jämfört med 15,4 % i de fyra Siljanskommunerna och 20 % i Dalarna.",
+      "confidence": "high"
+    },
+    {
+      "id": "camping_andel_gastnatter",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Campingens andel av gästnätterna",
+      "value": 52.6,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Rättvik, period 2025-01–2025-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "Camping 52,6 %, hotell 23,0 % och sekretesskyddade boendeformer (stugbyar, vandrarhem, förmedlade stugor) 24,4 % av gästnätterna 2025. Campingens andel var 37,7 % år 2019; campinggästerna är väderkänsliga och koncentrerade till juli.",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_per_invanare",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter per invånare",
+      "value": 20.66,
+      "unit": "gästnätter per invånare",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N45850: Gästnätter, antal nätter, totalt per invånare (källa: Tillväxtverket)",
+        "publisher": "RKA Kolada",
+        "url": "https://api.kolada.se/v3/data/kpi/N45850/municipality/2031/year/2025"
+      },
+      "note_sv": "Årets kommersiella gästnätter delat med folkmängden 31 december. Dalarna 18,0 och riket 6,7; Leksand 21,8, Orsa 19,6 och Mora 16,4 (2025); Rättvik hade 25,7 år 2019.",
+      "confidence": "high"
+    },
+    {
+      "id": "disponibla_baddar",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Disponibla bäddar per dag på kommersiella boenden (årsgenomsnitt)",
+      "value": 1020,
+      "unit": "bäddar",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Beläggning: Bäddar (Nivå = Kommun, Kommun = Rättvik, 2025-01–2025-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=ca139d0f-82c5-41aa-b7fb-b9213ca6653a"
+      },
+      "note_sv": "I snitt 1 020 bäddar per dag 2025 (+1,8 %), varav 244 belagda, vilket ger beläggningsgraden 23,9 %; för rum 396 disponibla och 34,1 % beläggning. Campingens tomter för tält, husvagn och husbil ingår sannolikt inte, så sommarkapaciteten är större än siffran visar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "logiintakter",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Logiintäkter på kommersiella boenden",
+      "value": 79.9,
+      "unit": "mnkr",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Logiintäkter: Överblick (Nivå = Kommun, Kommun = Rättvik, 2025-01–2025-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=7804d816-ead0-4160-bdf6-d14ad49d669c"
+      },
+      "note_sv": "79 886 431 kr år 2025, +1,5 % mot 2024, cirka 350 kr per gästnatt (egen beräkning). Snittpriset per belagt rum var 1 092 kr och intäkten per disponibelt rum 372 kr; Dalarnas län hade 2 005 mnkr (Tillväxtverket, Inkvartering 2025, s. 13).",
+      "confidence": "high"
+    },
+    {
+      "id": "gastnatter_siljan",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter i de fyra Siljanskommunerna (Leksand, Mora, Orsa, Rättvik)",
+      "value": 1049756,
+      "unit": "gästnätter",
+      "year": 2025,
+      "scope": "Siljansbygden",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Inkvartering, Gästnätter: Överblick (Nivå = Kommun, Kommun = Leksand, Mora, Orsa, Rättvik, 2025-01–2025-12)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+      },
+      "note_sv": "−1,4 % mot 2024 och 9 % under 2019 (1 151 570); Rättviks andel är 21,6 %. Leksand hade cirka 352 400, Mora 335 500 och Orsa 135 100 (härlett genom stegvis urval i portalen, stämmer med Kolada).",
+      "confidence": "high"
+    },
+    {
+      "id": "turismkonsumtion",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Turismkonsumtion i kommunen (besökarnas utgifter)",
+      "value": 889,
+      "unit": "mnkr",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Turismräkenskaper, Konsumtion: Total turism i området, fasta priser (Geografi = Kommun, Kommun = Rättvik, 2025)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=d4ed96a5-165a-428e-a630-64beb42b5fa3"
+      },
+      "note_sv": "Svenska och utländska besökares konsumtion 2025: inkvartering 29 %, detaljhandel 23 %, fritidshus/lägenhet 16 %, kultur 11 %, restaurang 9 %; cirka 81 000 kr per invånare mot riksnittet 47 500. År 2019 var den 915 mnkr i 2025 års priser (−3 %), och de fyra Siljanskommunerna hade tillsammans 3 956 mnkr 2025. Experimentell statistik som Tillväxtverket säger ska tolkas försiktigt på kommunnivå.",
+      "confidence": "medium"
+    },
+    {
+      "id": "turism_arsarbetskrafter",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Sysselsättning som turismen ger (årsarbetskrafter)",
+      "value": 186,
+      "unit": "årsarbetskrafter",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Statistikportalen – Turismräkenskaper, Sysselsättning: Årsarbetskrafter (Geografi = Kommun, Kommun = Rättvik, 2025)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=20ddbfcf-ffb0-4f54-bd13-c923559accc6"
+      },
+      "note_sv": "Heltidsjobb som besökarnas efterfrågan ger i kommunen 2025, −2 mot 2024 och 202 år 2019; säsongsjobb är omräknade till helår, så fler personer arbetar i näringen. De fyra Siljanskommunerna har tillsammans 955. Experimentell kommunstatistik.",
+      "confidence": "medium"
+    },
+    {
+      "id": "turism_andel_bkp",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Turismens andel av kommunens ekonomi (bruttokommunalprodukt)",
+      "value": 6.4,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Statistikportalen – Turismräkenskaper, Förädlingsvärde: Turismens andel av BNP/BKP, löpande priser (Geografi = Kommun, Kommun = Rättvik, 2023)",
+        "publisher": "Tillväxtverket",
+        "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=a516ca12-7318-43bf-a25e-138052fa8127"
+      },
+      "note_sv": "Andel i löpande priser inklusive produktskatter, 2023 är senaste år; turismens förädlingsvärde var 182 mnkr (44,9 % i inkvartering, 22,0 % i detaljhandel, 18,6 % i restaurang) och kommunens BRP 3 605 mnkr. År 2019 var andelen 8 %, och 2020 föll den till cirka 5,5 %. Riket 2,6 %; grannkommunen Orsa är bland de tio kommuner i landet där andelen är högst.",
+      "confidence": "medium"
+    },
+    {
+      "id": "overnattningar_eget_fritidshus_dalarna",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Övernattningar i egna fritidshus i Dalarna",
+      "value": 7.6,
+      "unit": "miljoner övernattningar",
+      "year": 2025,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Dalarnas besöksnäring på ny rekordnivå – omsättningen nådde 12,6 miljarder kronor (pressmeddelande 16 september 2026)",
+        "publisher": "Visit Dalarna",
+        "url": "https://www.mynewsdesk.com/se/visit-dalarna-ab/pressreleases/dalarnas-besoeksnaering-paa-ny-rekordnivaa-omsaettningen-naadde-126-miljarder-kronor-3467239"
+      },
+      "note_sv": "Visit Dalarnas turistekonomiska modell (TEM) ger 17,4 miljoner turistiska övernattningar i Dalarna 2025, varav 7,6 miljoner (44 %; 4,6 miljoner 2019) i egna fritidshus, fler än de 5,15 miljoner kommersiella gästnätterna. Med länets 46 945 fritidshus blir det cirka 160 nätter per fritidshus och år (egen beräkning); TEM ger också 12,6 mdkr i omsättning och 7 795 årsverken i länets besöksnäring.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fritidshus",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Fritidshus i kommunen",
+      "value": 2980,
+      "unit": "fritidshus",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Fritidshus och ägarspridning per kommun 2025 (Excel, rad 2031 Rättvik), tabell till Kort analys \"Borta bra men nära bäst för fritidshuset\" (2026-06-25)",
+        "publisher": "SCB",
+        "url": "https://www.scb.se/contentassets/f9fbddfa6dbd40feb71d98c6fd4fd4a3/fritidshus-och-agarspridning-per-kommun-2025.xlsx"
+      },
+      "note_sv": "Småhus utan folkbokförda som ägs av privatpersoner eller dödsbon, enligt fastighetstaxeringsregistret 1 januari 2025; 2 520 år 1998 och 2 902 år 2019 (SCB tabell TAB825). Det blir 271 fritidshus per 1 000 invånare (riket 60); Leksand har 4 157, Mora 5 003 och Orsa 1 830.",
+      "confidence": "high"
+    },
+    {
+      "id": "fritidshus_lokalt_agda_andel",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Andel av fritidshusen som ägs av personer folkbokförda i kommunen",
+      "value": 17.4,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Fritidshus och ägarspridning per kommun 2025 (Excel, rad 2031 Rättvik), tabell till Kort analys \"Borta bra men nära bäst för fritidshuset\" (2026-06-25)",
+        "publisher": "SCB",
+        "url": "https://www.scb.se/contentassets/f9fbddfa6dbd40feb71d98c6fd4fd4a3/fritidshus-och-agarspridning-per-kommun-2025.xlsx"
+      },
+      "note_sv": "Drygt fyra av fem fritidshus (cirka 83 %) ägs alltså av personer i andra kommuner, utlandsboende eller dödsbon, och ägarna kommer från 160 kommuner. I riket ägs vart fjärde fritidshus lokalt.",
+      "confidence": "high"
+    },
+    {
+      "id": "befolkning_juli_okning",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Ökning av antalet närvarande personer i juli jämfört med oktober–november",
+      "value": 58.3,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Befolkning kommunvis midsommar och juli jämfört med oktober och november (2022) (Excel, rad 2031 Rättvik), tabell till Kort analys \"Snart väntas sommarens stora folkförflyttning\"",
+        "publisher": "SCB",
+        "url": "https://www.scb.se/contentassets/0a2bcdf10d5d4d44a597d3656257ffa8/kort_analys_kommuntabell.xlsx"
+      },
+      "note_sv": "SCB:s experimentella statistik från mobilnätsdata (Telia, kalibrerad mot befolkningsstatistiken): cirka 11 140 personer i oktober–november, 17 630 i juli (+6 490) och 20 310 vid midsommar (+82 %) år 2022. Leksand ökade 49 % i juli, Orsa 35 % och Mora 22 %.",
+      "confidence": "medium"
+    },
+    {
+      "id": "befolkning_max_faktor",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Högsta antal närvarande under sommaren i förhållande till årets medianbefolkning (Classic Car Weeks lördag)",
+      "value": 3.0,
+      "unit": "gånger medianbefolkningen",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kort analys: Musik, idrott och bilar drar folk i Sommarsverige (2024), med tabell över maxbefolkning per kommun 2023",
+        "publisher": "SCB",
+        "url": "https://www.scb.se/hitta-statistik/artiklar/2024/musik-idrott-och-bilar-drar-folk-i-sommarsverige/"
+      },
+      "note_sv": "Lördagen den 29 juli 2023 klockan 20 fanns enligt mobilnätsdata tre gånger så många personer i kommunen som årets median (cirka 10 000), det femte högsta värdet bland landets kommuner den sommaren. Leksand nådde 2,4 gånger på midsommarafton.",
+      "confidence": "medium"
+    },
+    {
+      "id": "classic_car_week_gastnatter",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Gästnätter i samband med Classic Car Week (vecka 30–31)",
+      "value": 35000,
+      "unit": "gästnätter",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Lägesbild brott och otrygghet i Rättviks kommun (2024-03-08), bilaga i kallelse till kommunstyrelsen 2026-09-22, s. 112",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/ad0c2f78-52d7-4d13-928c-a812ba2c5dee/c927daad-27ae-4ee0-9c25-30025fceadca.pdf"
+      },
+      "note_sv": "Kommunens lägesbild anger ungefär 35 000 gästnätter i anslutning till bilveckan, plus dagsbesökare; siffran omfattar sannolikt även privat uthyrning, tillfällig camping och fritidshus. Arrangören talar om 10 000 bilar under veckan, som hållits vecka 31 sedan 1992; en riksdagsmotion 2018 angav 40 000 gästnätter.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "classic_car_week_andel_brott",
+      "sdg": [
+        16,
+        11
+      ],
+      "name_sv": "Andel av årets anmälda brott i kommunen som anmäls under Classic Car Week",
+      "value": 20,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Polisen om brottsligheten under Classic car week: \"Ren misär\" (7 augusti 2026)",
+        "publisher": "SVT Nyheter Dalarna",
+        "url": "https://www.svt.se/nyheter/lokalt/dalarna/polisen-om-brottsligheten-i-under-classic-car-week-ren-misar"
+      },
+      "note_sv": "Polisens bedömning efter 2026 års bilvecka, då bland annat fem misstänkta våldtäkter, 30 misshandelsfall och cirka 900 bötesbrott anmäldes; 245 personer fick böter för hög musik (89 år 2025). Kommunens lägesbild visar cirka 100 anmälda brott vecka 31 mot cirka 20 en vanlig vecka.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "dalhalla_besokare",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Konsertbesökare i Dalhalla per säsong",
+      "value": 120000,
+      "unit": "besökare",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dalhalla avslutar säsongen med högsta publiksnittet någonsin (pressmeddelande 9 september 2026)",
+        "publisher": "Dalhalla (Rättvik Event AB)",
+        "url": "https://www.mynewsdesk.com/se/dalhalla/pressreleases/dalhalla-avslutar-saesongen-med-hoegsta-publiksnittet-naagonsin-3466242"
+      },
+      "note_sv": "Omkring 120 000 besökare sommaren 2026 med arenans högsta publiksnitt hittills; rekordet är 129 000 (2023) och 2012 var det 40 000 (dalhalla.se/historia). Kalkbrottet Draggängarna, där brytningen upphörde 1990, blev konsertarena 1994–1995 och tar i dag cirka 4 800–6 000 personer; upp till 400 personer står på lönelistan per säsong.",
+      "confidence": "medium"
+    },
+    {
+      "id": "rattviks_marknad_besokare",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Besökare per tillfälle på Rättviks marknad (maj och oktober)",
+      "value": 100000,
+      "unit": "besökare",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Evenemang – Rättviks marknad",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/uppleva-och-gora/evenemang.html"
+      },
+      "note_sv": "Kommunen anger drygt 1 000 bokade stånd och 100 000–120 000 besökare per tillfälle; här används den nedre gränsen. Marknaden hålls i början av maj och i början av oktober och har anor från 1890-talet; uppskattning, ingen räkning.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "skiddagar_2100_rcp45",
+      "sdg": [
+        13,
+        8
+      ],
+      "name_sv": "Dagar per år med bra skidföre i södra Dalarna 2069–2098 (RCP4.5)",
+      "value": 40,
+      "unit": "dagar per år",
+      "year": 2015,
+      "scope": "Dalarnas län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Framtidsklimat i Dalarnas län – enligt RCP-scenarier, Klimatologi nr 16, PDF s. 72 (rapportsida 62)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e832c51b/1717804158612/Klimatologi_16%20Framtidsklimat%20i%20Dalarnas%20l%C3%A4n%20-%20enligt%20RCP-scenarier.pdf"
+      },
+      "note_sv": "SMHI:s beräkning för Runn vid Falun, närmaste exempelområde (snötäcke över 20 mm vatteninnehåll): från cirka 90 dagar 1961–1990 till knappt 40 i slutet av seklet med begränsade utsläpp, och med höga utsläpp (RCP8.5) blir bra skidföre sällsynt. Någon beräkning för Rättvik, som ligger något nordligare, finns inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vegetationsperiod_2100_rcp85",
+      "sdg": [
+        13,
+        15
+      ],
+      "name_sv": "Vegetationsperiodens längd runt Siljan 2069–2098 (RCP8.5)",
+      "value": 7,
+      "unit": "månader",
+      "year": 2015,
+      "scope": "Siljansbygden",
+      "direction": "context",
+      "source": {
+        "title": "Framtidsklimat i Dalarnas län – enligt RCP-scenarier, Klimatologi nr 16, PDF s. 28 (rapportsida 18) och s. 32 (rapportsida 22)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e832c51b/1717804158612/Klimatologi_16%20Framtidsklimat%20i%20Dalarnas%20l%C3%A4n%20-%20enligt%20RCP-scenarier.pdf"
+      },
+      "note_sv": "Perioden med dygnsmedeltemperatur över cirka 5 °C, i snitt 5 månader runt Siljan 1961–1990, väntas bli cirka 7 månader vid seklets slut med höga utsläpp (2–3 veckor kortare med RCP4.5). Ett längre sommarhalvår kan gynna camping och friluftsliv, men SMHI räknar också med värmeböljor på upp till två veckor runt Siljan.",
+      "confidence": "medium"
+    },
+    {
+      "id": "klimat_hotellnatt",
+      "sdg": [
+        13,
+        12
+      ],
+      "name_sv": "Klimatpåverkan per hotellnatt i Sverige",
+      "value": 3.7,
+      "unit": "kg CO2 per gästnatt",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Metodrapport för www.klimatsmartsemester.se, version 4.0, tabell 4, PDF s. 18",
+        "publisher": "Chalmers tekniska högskola",
+        "url": "https://research.chalmers.se/publication/541526/file/541526_Fulltext.pdf"
+      },
+      "note_sv": "Energi för värme, el, varmvatten och tvätt på ett fyrstjärnigt hotell (vandrarhem och liknande 0,9 kg); mat och byggande ingår inte. Boendet väger lätt mot resan: en vecka på hotell ger 26 kg, medan 100 mil med fossilbil ger 76 kg per person.",
+      "confidence": "medium"
+    },
+    {
+      "id": "klimat_bilresa_100mil",
+      "sdg": [
+        13,
+        12,
+        11
+      ],
+      "name_sv": "Klimatpåverkan per person för 100 mil semesterresa med fossilbil (tre personer i bilen)",
+      "value": 76,
+      "unit": "kg CO2e per person",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Metodrapport för www.klimatsmartsemester.se, version 4.0, tabell 5, PDF s. 20",
+        "publisher": "Chalmers tekniska högskola",
+        "url": "https://research.chalmers.se/publication/541526/file/541526_Fulltext.pdf"
+      },
+      "note_sv": "Medelstor dieselbil, 229 g CO2e per fordonskilometer inklusive tillverkning av bilen, delat på tre resenärer; samma sträcka med elbil i Norden ger 20 kg, buss 30 kg och tåg i Norden 7 kg per person. En veckas hotellboende ger 26 kg, så resan väger tyngre än boendet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "sysselsatta_hotell_restaurang_andel",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Sysselsatta inom hotell och restaurang, andel av dem som arbetar i kommunen",
+      "value": 6.94,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02222: Sysselsatta inom hotell- och restaurangverksamhet, efter arbetsställets belägenhet, andel (%) (källa: SCB BAS)",
+        "publisher": "RKA Kolada",
+        "url": "https://api.kolada.se/v3/data/kpi/N02222/municipality/2031/year/2024"
+      },
+      "note_sv": "Andel av de sysselsatta med arbetsplats i kommunen i november 2024, nästan dubbelt så hög som i Dalarna (3,3 %) och riket (3,75 %). Med 4 324 sysselsatta motsvarar det cirka 300 personer (egen beräkning); kommunen kallar besöksnäringen sin största privata näring.",
+      "confidence": "high"
+    },
+    {
+      "id": "sysselsatta_vard_omsorg_andel",
+      "sdg": [
+        3,
+        8
+      ],
+      "name_sv": "Sysselsatta inom vård och omsorg, andel av dem som arbetar i kommunen",
+      "value": 21.16,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02241: Sysselsatta inom vård och omsorg, sociala tjänster, efter arbetsställets belägenhet, andel (%) (källa: SCB BAS)",
+        "publisher": "RKA Kolada",
+        "url": "https://api.kolada.se/v3/data/kpi/N02241/municipality/2031/year/2024"
+      },
+      "note_sv": "Vård, omsorg och sociala tjänster i november 2024; Dalarna 20,3 %, riket 16,4 %. Kommun- och regionsektorn sysselsätter sammanlagt 34,5 % av dem som arbetar i Rättvik (riket 23,3 %), och kommunen är största arbetsgivare med 1 056 tillsvidareanställda 2025.",
+      "confidence": "high"
+    },
+    {
+      "id": "sysselsatta_bygg_andel",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Sysselsatta inom byggverksamhet, andel av dem som arbetar i kommunen",
+      "value": 11.12,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02210: Sysselsatta inom byggverksamhet, efter arbetsställets belägenhet, andel (%) (källa: SCB BAS)",
+        "publisher": "RKA Kolada",
+        "url": "https://api.kolada.se/v3/data/kpi/N02210/municipality/2031/year/2024"
+      },
+      "note_sv": "November 2024; Dalarna 8,9 %, riket 7,1 %. Andelen har legat på 11–11,5 % sedan 2020.",
+      "confidence": "high"
+    },
+    {
+      "id": "sysselsatta_tillverkning_andel",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Sysselsatta inom tillverkning och utvinning, andel av dem som arbetar i kommunen",
+      "value": 9.76,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02235: Sysselsatta inom tillverkning och utvinning, efter arbetsställets belägenhet, andel (%) (källa: SCB BAS)",
+        "publisher": "RKA Kolada",
+        "url": "https://api.kolada.se/v3/data/kpi/N02235/municipality/2031/year/2024"
+      },
+      "note_sv": "November 2024; Dalarna 14,3 %, riket 10,7 %. Kommunen räknar träindustrin till sina huvudnäringar; andelen har sjunkit från 10,6 % 2020.",
+      "confidence": "high"
+    },
+    {
+      "id": "sysselsatta_jord_skog_andel",
+      "sdg": [
+        8,
+        15
+      ],
+      "name_sv": "Sysselsatta inom jordbruk, skogsbruk och fiske, andel av dem som arbetar i kommunen",
+      "value": 5.5,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02226: Sysselsatta inom jordbruk, skogsbruk och fiske, efter arbetsställets belägenhet, andel (%) (källa: SCB BAS)",
+        "publisher": "RKA Kolada",
+        "url": "https://api.kolada.se/v3/data/kpi/N02226/municipality/2031/year/2024"
+      },
+      "note_sv": "November 2024; Dalarna 3,1 %, riket 1,8 %. Andelen var 6,3 % år 2020.",
+      "confidence": "high"
+    },
+    {
+      "id": "storsta_privata_arbetsgivare",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Största privata arbetsgivaren (Rättvik Event AB, som driver Dalhalla), anställda",
+      "value": 275,
+      "unit": "anställda",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Regional jämförelse: Rättvik – Största privata arbetsgivare 2025 (källa: SCB:s företagsregister)",
+        "publisher": "Ekonomifakta",
+        "url": "https://www.ekonomifakta.se/regional-jamforelse/rattvik/"
+      },
+      "note_sv": "SCB:s storleksklass 250–299 anställda i november 2025, visad som 275 av Ekonomifakta; siffran speglar många säsongs- och timanställda. Att den största privata arbetsgivaren är ett evenemangsbolag visar besöksnäringens tyngd; kommunen själv hade 1 056 tillsvidareanställda.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gastnatter_per_ankomst",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Genomsnittlig vistelselängd (gästnätter per ankomst)",
+      "value": 2.29,
+      "unit": "nätter per ankomst",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N45851 Gästnätter, antal ankomster, totalt per invånare och N45850 Gästnätter, antal nätter, totalt per invånare (källa: Tillväxtverket)",
+        "publisher": "Egen beräkning (ursprungskällor: Tillväxtverket via RKA Kolada)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45851/municipality/2031/year/2025"
+      },
+      "note_sv": "20,66 gästnätter per invånare delat med 9,02 ankomster per invånare = 2,29 nätter per ankomst, vilket motsvarar cirka 99 100 ankomster 2025 (9,024 × 10 978). År 2019 var vistelsen 2,64 nätter; Dalarna 3,12, riket 2,00, Leksand 1,89, Mora 1,95 och Orsa 2,54 (2025).",
+      "confidence": "medium"
+    },
+    {
+      "id": "besparing_socialforvaltning",
+      "sdg": [
+        3,
+        16
+      ],
+      "name_sv": "Sparbeting i äldreomsorg och LSS (socialförvaltningen)",
+      "value": 25,
+      "unit": "mnkr",
+      "year": 2025,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Rättviks kommun varslar 60 tjänster – \"Det är olyckligt\" (4 februari 2025)",
+        "publisher": "SVT Nyheter Dalarna",
+        "url": "https://www.svt.se/nyheter/lokalt/dalarna/rattviks-kommun-varslar-60-tjanster-det-ar-olyckligt"
+      },
+      "note_sv": "Socialförvaltningen behövde minska kostnaderna med cirka 25 mnkr och varslade omkring 60 tjänster inom äldreomsorg och LSS i februari 2025. Förvaltningen gick ändå 5,6 mnkr över budget 2025, och utan reavinsten från Dala Energi blev kommunens resultat 14,8 mnkr (1,7 % av skatter och bidrag, under målet 2 %).",
+      "confidence": "high"
+    },
+    {
+      "id": "foretagsklimat_ranking",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Företagsklimat, placering bland 290 kommuner (Svenskt Näringsliv)",
+      "value": 65,
+      "unit": "placering",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Företagsklimatet i Rättviks kommun 2026, kommunrapport, PDF s. 27 (Rankingutveckling) och s. 29 (Dalarnas kommuner)",
+        "publisher": "Svenskt Näringsliv",
+        "url": "https://www.foretagsklimat.se/rapporter/kommun/rattvik.pdf"
+      },
+      "note_sv": "Plats 65 i 2026 års ranking (72 år 2025, 50 år 2024, bäst 31 år 2018 och sämst 240 år 2009); företagarnas sammanfattande omdöme är 4,0 av 6 mot Sverigesnittet 3,5. I Dalarna ligger Orsa på plats 53, Leksand 76 och Mora 153.",
+      "confidence": "high"
+    },
+    {
+      "id": "brp_per_invanare",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Bruttoregionprodukt (BRP) per invånare",
+      "value": 338,
+      "unit": "tkr per invånare",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Bruttoregionprodukt (BRP), (ENS2010) efter region, tabellinnehåll och år (tabell NR0105ENS2010T06A)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__NR__NR0105__NR0105A/NR0105ENS2010T06A/"
+      },
+      "note_sv": "Kommunens BRP var 3 751 mnkr 2024 i löpande priser, 56 % av riksgenomsnittet per invånare (606 tkr); Leksand 424, Mora 492 och Orsa 282 tkr. Per sysselsatt 834 tkr mot rikets 1 184, vilket speglar arbetsintensiva branscher som besöksnäring, handel och omsorg och en stor andel äldre.",
+      "confidence": "high"
+    },
+    {
+      "id": "foretagare_andel_sysselsatta",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Företagare som andel av de sysselsatta",
+      "value": 16,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Företagarfakta 2026: Rättviks kommun, PDF s. 14",
+        "publisher": "Företagarna",
+        "url": "https://www.foretagarna.se/contentassets/3b9addad54214736951acde61b75bd68/rattvik.pdf"
+      },
+      "note_sv": "833 företagare 2024 (844 året innan), plats 29 av 290; Dalarna 10,6 %, riket 9,9 %. Småföretag med färre än 50 anställda har 2 008 jobb, 46 % av alla jobb i kommunen (s. 11).",
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "topic": "samhalle",
+  "compiled": "2026-10-08",
+  "indicators": [
+    {
+      "id": "bostadsmarknadslage_bme",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Kommunens bedömning av bostadsmarknaden (0 = underskott, 1 = balans, 2 = överskott)",
+      "value": 0,
+      "unit": "index 0–2",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada U30446: Bostadsmarknadsläge i kommunen totalt",
+        "publisher": "RKA Kolada (ursprungskälla: Boverkets bostadsmarknadsenkät)",
+        "url": "https://api.kolada.se/v3/data/kpi/U30446/municipality/0880/year/2026"
+      },
+      "note_sv": "Kalmar har angett underskott 2024, 2025 och 2026 (läget i januari 2026). Enligt Länsstyrelsens bostadsmarknadsanalys 2026 är Kalmar en av fyra kommuner i länet med underskott (med Torsås, Mörbylånga och Borgholm), både i centralorten och i övriga kommundelar, medan fem kommuner anger överskott.",
+      "confidence": "high"
+    },
+    {
+      "id": "bostadsmarknadslage_ungdomar_bme",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Kommunens bedömning av bostadsmarknaden för ungdomar 19–25 år (0 = underskott)",
+      "value": 0,
+      "unit": "index 0–2",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada U30460: Bostadsmarknadsläget i kommunen, ungdomar",
+        "publisher": "RKA Kolada (ursprungskälla: Boverkets bostadsmarknadsenkät)",
+        "url": "https://api.kolada.se/v3/data/kpi/U30460/municipality/0880/year/2026"
+      },
+      "note_sv": "Underskott 2026 (balans 2024–2025). Länsstyrelsen (Regional bostadsmarknadsanalys 2026) skriver att Kalmar anger generell bostadsbrist och att lediga bostäder är för dyra för unga. För studenter råder balans; Kalmarhem har haft överskott på studentbostäder och ombildat en del till vanliga hyresrätter.",
+      "confidence": "high"
+    },
+    {
+      "id": "hyra_median_kr_per_kvm",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Medianhyra i hyreslägenhet (årshyra per kvm)",
+      "value": 1496,
+      "unit": "kr/m²/år",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Hyra i hyreslägenheter efter län och kommun (BO0406Tab01)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BO__BO0406__BO0406E/BO0406Tab01/"
+      },
+      "note_sv": "Felmarginal ±77 kr. Riket 1 483 kr, Kalmar län 1 274 kr; medelhyran i Kalmar 1 485 kr. Ny månadshyra 125 kr/m², vilket för 70 m² blir ca 8 700 kr i månaden (egen beräkning: 1 496 × 70 / 12). Hyran steg ca 10 % från 2024 (1 352 kr).",
+      "confidence": "high",
+      "range": [
+        1419,
+        1573
+      ]
+    },
+    {
+      "id": "enpersonshushall_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Hushåll med en person",
+      "value": 16046,
+      "unit": "hushåll",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal och andel hushåll efter region, boendeform och hushållets storlek (HushallT26)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__HE__HE0111__HE0111A/HushallT26/"
+      },
+      "note_sv": "44,7 % av kommunens 35 876 hushåll (egen beräkning), mot 42,0 % i riket (2 103 186 av 5 002 559). Kolada N02942 (51,2 %) räknar även ensamstående med barn och mäter alltså något annat.",
+      "confidence": "high"
+    },
+    {
+      "id": "personer_som_bor_ensamma_andel",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Andel av invånarna som bor ensamma",
+      "value": 22.0,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Antal och andel hushåll efter region, boendeform och hushållets storlek (HushallT26)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__HE__HE0111__HE0111A/HushallT26/"
+      },
+      "note_sv": "Egen beräkning: 16 046 enpersonshushåll / 73 068 invånare (Kolada N01951, 2025) = 22,0 %. Riket 19,8 % (2 103 186 / 10 605 529). Personer utan hushållsregistrering ingår i nämnaren, så andelen är något underskattad.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "kollektivhus_kalmar_lan",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Kollektivhus och startgrupper i Kalmar län anslutna till Kollektivhus NU",
+      "value": 0,
+      "unit": "antal",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kollektivhus i övriga Sverige (medlemsförteckning)",
+        "publisher": "Kollektivhus NU (riksföreningen)",
+        "url": "https://kollektivhus.se/kollektivhus-ovriga-sverige/"
+      },
+      "note_sv": "Inget kollektivhus, ingen bogemenskap och ingen startgrupp i länet finns med i Kollektivhus NU:s förteckningar (även startgrupperna kontrollerade). Närmast ligger Växjö (Slånbäret 34 lägenheter, Sämjan). Förteckningen omfattar bara medlemmar. Seniorboendet Bovieran med gemensam vinterträdgård finns i Kalmar men är inte verifierat här.",
+      "confidence": "medium",
+      "replaces": "cohousing"
+    },
+    {
+      "id": "kalmarhem_uthyrningsgrad",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Uthyrningsgrad i Kalmarhems bestånd",
+      "value": 99,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Hållbarhetsrapport och årsredovisning 2024",
+        "publisher": "Kalmarhem AB",
+        "url": "https://kalmarhem.se/app/uploads/2025/06/ID_Arsredovisning-och-hallbarhetsrapport-2024_webb.pdf"
+      },
+      "note_sv": "Vid årsskiftet 2024/25 hade Kalmarhem 5 218 bostäder, varav 928 studentbostäder (5 247 respektive 984 året innan). Omflyttningen var 20 % i ordinarie bostäder och 63 % i studentbostäder. Kalmarhem publicerar ingen köstatistik: man får en köpoäng per dag, och poängen som krävs syns bara per annons.",
+      "confidence": "high"
+    },
+    {
+      "id": "arbetstid_overenskommen",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Överenskommen (avtalad) medelarbetstid per vecka, sysselsatta 15–74 år",
+      "value": 37.3,
+      "unit": "timmar/vecka",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Medelarbetstid (överenskommen) per vecka för sysselsatta 15–74 år (AKU), NAKUOkMedArbtidAr",
+        "publisher": "SCB (AKU)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0401__AM0401S/NAKUOkMedArbtidAr/"
+      },
+      "note_sv": "Felmarginal ±0,1. 20–64 år: 38,1 timmar. Män 38,2 och kvinnor 36,2 timmar (15–74 år). Den avtalade veckotiden är det mått som bäst motsvarar modellens 'arbetstid'. Kommunsiffror finns inte i AKU.",
+      "confidence": "high",
+      "replaces": "workHours",
+      "range": [
+        37.2,
+        37.4
+      ]
+    },
+    {
+      "id": "arbetstid_faktisk",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Faktiskt arbetad medeltid per vecka, sysselsatta 15–74 år",
+      "value": 29.7,
+      "unit": "timmar/vecka",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Medelarbetstid (faktisk) per vecka för sysselsatta 15–74 år (AKU), NAKUFaktMedArbtidAr",
+        "publisher": "SCB (AKU)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0401__AM0401S/NAKUFaktMedArbtidAr/"
+      },
+      "note_sv": "Felmarginal ±0,2. Snitt över årets alla veckor, så semester, sjukdom och föräldraledighet räknas med. Därför går måttet inte att jämföra med en avtalad 40-timmarsvecka. 20–64 år: 30,6; män 31,6, kvinnor 27,7. År 2015: 30,1 timmar.",
+      "confidence": "high",
+      "range": [
+        29.5,
+        29.9
+      ]
+    },
+    {
+      "id": "deltid_andel",
+      "sdg": [
+        5,
+        8
+      ],
+      "name_sv": "Sysselsatta med avtalad arbetstid under 35 timmar per vecka",
+      "value": 16.7,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Sysselsatta 15–74 år (AKU) efter veckoarbetstid (överenskommen), NAKUSysselOkArbtidAr",
+        "publisher": "SCB (AKU)",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0401__AM0401S/NAKUSysselOkArbtidAr/"
+      },
+      "note_sv": "Egen beräkning: (277,8 + 601,9 tusen med 1–34 timmar) / 5 263,0 tusen sysselsatta = 16,7 %. Kvinnor 21,6 %, män 12,3 %. Ca 254 tusen saknar avtalad arbetstid; räknas de bort blir andelen 17,6 %.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "sex_timmars_arbetsdag_stod",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Andel som tycker att sex timmars arbetsdag är ett bra förslag",
+      "value": 55,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Svenska trender 1986–2025 (Införa sex timmars arbetsdag)",
+        "publisher": "SOM-institutet, Göteborgs universitet",
+        "url": "https://www.gu.se/sites/default/files/2026-03/Svenska%20trender%201986-2025.pdf"
+      },
+      "note_sv": "Den nationella SOM-undersökningen 2025: 55 % bra förslag, 22 % varken eller, 23 % dåligt förslag. Visar hur stort stödet för en arbetstidsförkortning är.",
+      "confidence": "high"
+    },
+    {
+      "id": "sysselsatta_arbetsstalle_kommun",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Sysselsatta med arbetsställe i Kalmar kommun",
+      "value": 39331,
+      "unit": "personer",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02201: Sysselsatta efter arbetsställets belägenhet, antal",
+        "publisher": "RKA Kolada (ursprungskälla: SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N02201/municipality/0880/year/2024"
+      },
+      "note_sv": "36 588 sysselsatta bor i kommunen (N02202), så kommunen har ett nettoinflöde av ca 2 700 pendlare (egen beräkning). 30,9 % av jobben finns i kommun- eller regionsektorn (N02203: kvinnor 45,6 %, män 16,3 %) och 7,4 % i staten.",
+      "confidence": "high"
+    },
+    {
+      "id": "storsta_privata_arbetsgivare_anstallda",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Anställda hos största privata arbetsgivaren (KLS Ugglarps AB)",
+      "value": 575,
+      "unit": "anställda",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Regional jämförelse: Kalmar",
+        "publisher": "Ekonomifakta (Svenskt Näringsliv; ursprungskälla anges inte på sidan)",
+        "url": "https://www.ekonomifakta.se/regional-jamforelse/kalmar/"
+      },
+      "note_sv": "Samma sida anger 5 978 anställda för Kalmar kommun (2025). Kommunens egen lista över de största arbetsgivarna 2022 (Kalmar i fickformat 2023, utan antal och med oklar ordning) tar upp Kalmar kommun, Region Kalmar län, Linnéuniversitetet, Kalmarsunds gymnasieförbund, KLS Ugglarps, Sitel Sweden, Försäkringskassan, Bergkvarabuss, Webhelp Sweden och Nordic Nest.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kommunen_tillsvidareanstallda",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Tillsvidareanställda månadsavlönade i Kalmar kommun",
+      "value": 5702,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N00071: Månadsavlönad personal, tillsvidareanställda i kommunen, antal",
+        "publisher": "RKA Kolada (ursprungskälla: SKR)",
+        "url": "https://api.kolada.se/v3/data/kpi/N00071/municipality/0880/year/2025"
+      },
+      "note_sv": "Räknar personer, inte årsarbetare, och kan därför inte jämföras direkt med baslinjens 5 426 årsarbetare (2022). 5 678 år 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "foretag_antal_uppskattat",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Företag med arbetsställe i kommunen (företagsförekomster), uppskattat antal",
+      "value": 3684,
+      "unit": "företag",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N45700: Företagsförekomster, antal/1000 inv",
+        "publisher": "RKA Kolada (ursprungskälla: SCB, BAS)",
+        "url": "https://api.kolada.se/v3/data/kpi/N45700/municipality/0880/year/2023"
+      },
+      "note_sv": "Egen beräkning: 50,95 företagsförekomster per 1000 invånare × 72 304 invånare (2023) ≈ 3 680. Riket 54,0 per 1000. Måttet omfattar bara företag med ett eller flera arbetsställen i kommunen enligt SCB:s BAS, inte alla registrerade (även vilande) bolag hos Bolagsverket. Publiceras vartannat år.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "trygg_i_skolan_ak8",
+      "sdg": [
+        4,
+        16
+      ],
+      "name_sv": "Elever i åk 8 som känner sig trygga i skolan",
+      "value": 83.6,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N15643: Elever i åk 8: Känner du dig trygg i skolan? (Helt och hållet/Till stor del)",
+        "publisher": "RKA Kolada (ursprungskälla: Skolinspektionens skolenkät)",
+        "url": "https://api.kolada.se/v3/data/kpi/N15643/municipality/0880/year/2026"
+      },
+      "note_sv": "Flickor 80 %, pojkar 89 %. År 2024–2025 låg andelen på 78,1 % (flickor 70 %). Liv & hälsa ung publiceras bara som Power BI, så detta är det närmaste verifierbara kommunmåttet på ungas trygghet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "hog_tillit_till_manniskor",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Hög mellanmänsklig tillit (7–10 på skala 0–10)",
+      "value": 57,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "higher_better",
+      "source": {
+        "title": "Svenska trender 1986–2025 (Mellanmänsklig tillit)",
+        "publisher": "SOM-institutet, Göteborgs universitet",
+        "url": "https://www.gu.se/sites/default/files/2026-03/Svenska%20trender%201986-2025.pdf"
+      },
+      "note_sv": "Frågan lyder: 'i vilken utsträckning går det att lita på människor i allmänhet?'. 31 % har medelhög (4–6) och 12 % låg (0–3) tillit. Ett annat mått än HLV:s ja/nej-fråga, som modellens tillit bygger på (66 % i Kalmar).",
+      "confidence": "high"
+    },
+    {
+      "id": "ideellt_arbete_andel",
+      "sdg": [
+        16,
+        17
+      ],
+      "name_sv": "Andel som arbetat ideellt det senaste året, 16–84 år",
+      "value": 52,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Sverige",
+      "direction": "higher_better",
+      "source": {
+        "title": "Många bidrar, få orkar bära: Ideellt arbete i Sverige 1992–2024",
+        "publisher": "Marie Cederschiöld högskola (rapportkopia hos Borås stad)",
+        "url": "https://www.boras.se/download/18.59db80a9195a83af567c39bd/1743414059369/M%C3%A5nga%20bidrar%20f%C3%A5%20orkar%20b%C3%A4ra%20MCHS.pdf"
+      },
+      "note_sv": "Befolkningsstudie 2024. Andelen har legat stabilt på 48–53 % sedan 1992, med flest män och medelålders. Enligt SOM 2025 är 34 % medlemmar i en idrotts- eller friluftsförening, 40 % i facket och 14 % i en kulturförening.",
+      "confidence": "high"
+    },
+    {
+      "id": "foreningar_kalmar",
+      "sdg": [
+        16,
+        17
+      ],
+      "name_sv": "Föreningar i Kalmar kommun",
+      "value": 366,
+      "unit": "föreningar",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kalmar i fickformat 2023",
+        "publisher": "Kalmar kommun",
+        "url": "https://www.kalmar.se/download/18.5cdfe20c18bab7888161f7a/1699442629322/Kalmar_i_fickformat_2023_1.0_Tryck.pdf"
+      },
+      "note_sv": "Varav 108 med barn- och ungdomsverksamhet och 62 kulturföreningar. Troligen de föreningar som är registrerade hos kommunens kultur- och fritidsförvaltning, alltså inte alla ideella föreningar i kommunen. Källan anger inget exakt referensdatum (broschyren är från oktober 2023).",
+      "confidence": "medium"
+    },
+    {
+      "id": "individuellt_valbefinnande_index",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Individuellt välbefinnande, kommunindex (0–100)",
+      "value": 57.7,
+      "unit": "index 0–100",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N00366: Individuellt välbefinnande – Kommunindex",
+        "publisher": "RKA Kolada (ursprungskälla: Tillväxtverket; Folkhälsomyndigheten HLV)",
+        "url": "https://api.kolada.se/v3/data/kpi/N00366/municipality/0880/year/2025"
+      },
+      "note_sv": "Tillväxtverkets index väger samman självskattad hälsa, tandhälsa och psykiskt välbefinnande, normaliserat mellan landets kommuner. Riksvärdet i Kolada är 55,2. Ett mätt ankare för modellens välbefinnande (0,58 på skala 0–1).",
+      "confidence": "medium",
+      "replaces": "wellbeing"
+    },
+    {
+      "id": "gott_psykiskt_valbefinnande",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Invånare 16–84 år med gott psykiskt välbefinnande",
+      "value": 83.2,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada U01473: Invånare 16–84 år med gott psykiskt välbefinnande, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: Folkhälsomyndigheten (HLV))",
+        "url": "https://api.kolada.se/v3/data/kpi/U01473/municipality/0880/year/2024"
+      },
+      "note_sv": "Sammanslagna HLV-år (2021–2024). Riket 84,9 %. Andelen sjönk från 86,2 % i föregående mätning. Enligt SOM 2025 är 92 % nationellt mycket eller ganska nöjda med livet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "livsmedelsberedskap_planeringsmal_dagar",
+      "sdg": [
+        2,
+        16
+      ],
+      "name_sv": "Nationellt planeringsmål: livsmedelsförsörjning under en säkerhetspolitisk kris (minst tre månader)",
+      "value": 90,
+      "unit": "dagar (minst)",
+      "year": 2022,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Kommittédirektiv 2022:33 En ny livsmedelsberedskap",
+        "publisher": "Regeringen (ursprungskälla: prop. Totalförsvaret 2021–2025)",
+        "url": "https://www.regeringen.se/contentassets/420126e0060141278a5dfa39d8a73b95/en-ny-livsmedelsberedskap-dir.-202233.pdf"
+      },
+      "note_sv": "Livsmedelsförsörjningen ska tryggas 'under minst tre månader där logistikflödena med omvärlden är begränsade' (90 dagar = egen omräkning). Riksdagen beslutade den 26 maj 2026 om lag om beredskapslager i livsmedelskedjan (SFS 2026:837), i kraft 1 juli 2026. De första statliga spannmålslagren byggs i Norrland under 2026. Målnivå, inte uppmätt lager.",
+      "confidence": "high",
+      "replaces": "foodStockDays"
+    },
+    {
+      "id": "sarskilda_samlingsplatser_kalmar",
+      "sdg": [
+        11,
+        16
+      ],
+      "name_sv": "Planerade särskilda samlingsplatser (trygghetspunkter) i Kalmar kommun",
+      "value": 20,
+      "unit": "platser (ca)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Särskilda samlingsplatser",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/omsorg-och-stod/trygg-och-saker/kris-och-beredskap/sarskilda-samlingsplatser.html"
+      },
+      "note_sv": "Kommunen skriver 'ett 20-tal utpekade lokaler eller platser'. De ska erbjuda värme, information, laddning, dricksvatten, toalett och första hjälpen vid kris. Kommunen uppmanar invånarna att klara sig minst en vecka utan samhällets stöd.",
+      "confidence": "high"
+    },
+    {
+      "id": "skyddsrum_platser_kalmar",
+      "sdg": [
+        11,
+        16
+      ],
+      "name_sv": "Skyddsrumsplatser i Kalmar",
+      "value": 55000,
+      "unit": "personer (ca)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Skyddsrum",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/omsorg-och-stod/trygg-och-saker/kris-och-beredskap/skyddsrum.html"
+      },
+      "note_sv": "Motsvarar ca 75 % av invånarna (egen beräkning: 55 000 / 73 068). Fastighetsägarna ansvarar för underhållet och Myndigheten för civilt försvar för tillsynen.",
+      "confidence": "high"
+    },
+    {
+      "id": "it_angrepp_stabslage_dagar",
+      "sdg": [
+        9,
+        16
+      ],
+      "name_sv": "Dagar i stabsläge efter IT-angreppet mot Kalmar kommun (februari 2024)",
+      "value": 13,
+      "unit": "dagar",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Hållbarhetsrapport och årsredovisning 2024 (förvaltningsberättelsen)",
+        "publisher": "Kalmarhem AB",
+        "url": "https://kalmarhem.se/app/uploads/2025/06/ID_Arsredovisning-och-hallbarhetsrapport-2024_webb.pdf"
+      },
+      "note_sv": "Den 6 februari 2024 drabbades hela kommunkoncernen av ett IT-angrepp, och stabsläget varade i tretton dagar. Ett lokalt exempel på det digitala beroende som modellens analoga reserv beskriver.",
+      "confidence": "high",
+      "replaces": "analogResilience"
+    },
+    {
+      "id": "internet_icke_anvandare",
+      "sdg": [
+        9,
+        10
+      ],
+      "name_sv": "Andel av befolkningen 16+ som inte använder internet",
+      "value": 3,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "lower_better",
+      "source": {
+        "title": "Svenskarna och internet 2025 – sammanfattning",
+        "publisher": "Internetstiftelsen",
+        "url": "https://svenskarnaochinternet.se/app/uploads/2025/09/svenskarna-och-internet-2025-sammanfattning.pdf"
+      },
+      "note_sv": "Nästan bara personer i pensionsåldern. 95 % använder e-legitimation, i praktiken mobilt Bank-id, ett enskilt kritiskt beroende. Nästan var fjärde har avstått från att boka läkartid för att vårdens e-tjänster är för svåra.",
+      "confidence": "high"
+    },
+    {
+      "id": "generativ_ai_anvandning",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Andel 16+ som använt generativa AI-verktyg",
+      "value": 37,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Artificiell intelligens i Sverige 2026 (statistiknyhet 2026-05-21)",
+        "publisher": "SCB",
+        "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/forskning-och-det-digitala-samhallet/ovrigt/artificiell-intelligens-i-sverige/pong/statistiknyhet/artificiell-intelligens-i-sverige-2026/"
+      },
+      "note_sv": "25 % år 2024. 18 % använder AI i arbetet. 35 % av företagen använde AI 2025, och bland stora företag 72 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "kommuner_ai_i_alla_delar",
+      "sdg": [
+        9,
+        16
+      ],
+      "name_sv": "Kommuner där AI i viss utsträckning används inom alla delar av verksamheten",
+      "value": 25,
+      "unit": "% av svarande kommuner",
+      "year": 2025,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "AI i kommunens tjänst – så använder Sveriges kommuner AI (Rapport 2026)",
+        "publisher": "Akavia (enkät till alla 290 kommuner, 170 svar)",
+        "url": "https://www.akavia.se/siteassets/04-om-akavia/rapporter/ai-i-kommunens-tjanst-sa-anvander-sverges-kommuner-ai.pdf"
+      },
+      "note_sv": "Ingen kommun säger att AI genomsyrar hela kommunen. 40 % använder AI i vissa delar och 34 % bara hos enstaka personer. Knappt var fjärde kommun har en AI-strategi (fyra av tio bland kommuner med minst 50 000 invånare), och nära hälften har riktlinjer. 7 % har utbildat all personal. Detta är ingen SKR-enkät, eftersom ingen sådan hittades.",
+      "confidence": "medium",
+      "replaces": "aiCapacity"
+    },
+    {
+      "id": "ai_forordningen_hogrisk_tillampning",
+      "sdg": [
+        9,
+        16
+      ],
+      "name_sv": "År då EU:s AI-förordning börjar gälla för fristående högrisksystem (bilaga III), 2 december",
+      "value": 2027,
+      "unit": "år",
+      "year": 2026,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "AI Act – Regulatory framework for AI / AI Omnibus enters into force",
+        "publisher": "Europeiska kommissionen",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      },
+      "note_sv": "AI-förordningen trädde i kraft 1 augusti 2024. Förbud och AI-kunnighet gäller sedan 2 februari 2025, GPAI-regler sedan augusti 2025 och resten av förordningen sedan 2 augusti 2026. AI-omnibusen (i kraft 27 juli 2026) sköt upp högriskkraven till 2 december 2027 (bilaga III, bland annat offentliga förmåner) och 2 augusti 2028 (bilaga I). Kommunernas AI i myndighetsutövning berörs främst av bilaga III.",
+      "confidence": "high",
+      "replaces": "aiGovernance"
+    },
+    {
+      "id": "konsumtionsutslapp_hushall_kalmar",
+      "sdg": [
+        12,
+        13
+      ],
+      "name_sv": "Hushållens konsumtionsbaserade växthusgasutsläpp per invånare",
+      "value": 5.235,
+      "unit": "ton CO2e/inv",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Konsumtionskompassen 2.1 – Kalmar",
+        "publisher": "Stockholm Environment Institute (SEI)",
+        "url": "https://konsumtionskompassen.se/kalmar/kalmar"
+      },
+      "note_sv": "Totalt 376 996 ton. Kalmar län 5,42 t och Sverige 5,64 t enligt samma modell. Avser bara hushållens konsumtion (ca 60 % av totalen), inte offentlig konsumtion och investeringar, som nationellt adderar ca 3,4 t (0,85 + 2,59). Långflyg och höghöjdseffekt räknas med, så nivån är högre än SCB:s ca 5,2 t. Trend 2019–2023: −0,4 % per år.",
+      "confidence": "medium"
+    },
+    {
+      "id": "konsumtionsutslapp_total_kalmar_uppskattad",
+      "sdg": [
+        12,
+        13
+      ],
+      "name_sv": "Konsumtionsbaserade utsläpp per invånare i Kalmar, uppskattade",
+      "value": 7.1,
+      "unit": "ton CO2e/person/år",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Konsumtionskompassen 2.1 – Kalmar (skalning av Naturvårdsverkets nationella värde)",
+        "publisher": "Egen beräkning (ursprungskällor: SEI, Naturvårdsverket)",
+        "url": "https://konsumtionskompassen.se/kalmar/kalmar"
+      },
+      "note_sv": "Egen beräkning: Naturvårdsverkets 7,6 t (Sverige 2023) × SEI:s kvot Kalmar/Sverige för hushållen 2022 (5 235 / 5 638 = 0,93) ≈ 7,1 t. Förutsätter att offentlig konsumtion och investeringar per person är desamma som i riket. Med SEI:s egen totalmodell blir det ca 8,7 t (5,24 + 0,85 + 2,59).",
+      "confidence": "estimate",
+      "replaces": "ghgCons"
+    },
+    {
+      "id": "demografisk_forsorjningskvot",
+      "sdg": [
+        1,
+        3,
+        8
+      ],
+      "name_sv": "Demografisk försörjningskvot ((0–19 + 65+) / 20–64 år)",
+      "value": 0.764,
+      "unit": "kvot",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kolada N00927: Demografisk försörjningskvot",
+        "publisher": "RKA Kolada (ursprungskälla: SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N00927/municipality/0880/year/2025"
+      },
+      "note_sv": "Riket 0,770. År 2024 var kvoten 0,760. Ett mätt underlag för hur försörjningsbördan påverkar modellens välfärdskapacitet. SCB:s 10-årsframskrivning (N02847) använder 67-årsgräns och är därför inte jämförbar.",
+      "confidence": "high",
+      "replaces": "welfare"
+    }
+  ]
+}

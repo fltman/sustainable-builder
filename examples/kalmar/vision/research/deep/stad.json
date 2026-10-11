@@ -1,0 +1,422 @@
+{
+  "topic": "stad",
+  "compiled": "2026-10-08",
+  "indicators": [
+    {
+      "id": "hardgjord_mark_andel_tatort",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Hårdgjord mark i Kalmar tätort",
+      "value": 40.4,
+      "unit": "% av landarealen",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Hårdgjord mark i hektar efter tätort, kategori och vart 5:e år (MI0805, tabell GYHgMarkTo37)",
+        "publisher": "SCB Statistikdatabasen",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0805__MI0805A/GYHgMarkTo37/"
+      },
+      "note_sv": "Andelen är 832 ha hårdgjord mark delat med 2 060 ha landareal i Kalmar tätort: byggnader 271 ha, vägar och järnväg 230 ha, övrig hårdgjord mark 331 ha. År 2010 var det 781 av 1 958 ha (39,9 %). SCB räknar även berg i dagen och grusplaner som hårdgjort.",
+      "confidence": "high",
+      "replaces": "greenShare"
+    },
+    {
+      "id": "gronyta_andel_tatort",
+      "sdg": [
+        11,
+        15
+      ],
+      "name_sv": "Grönyta i Kalmar tätort",
+      "value": 58.4,
+      "unit": "% av landarealen",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Grönyta, hårdgjord mark och övrig mark i hektar efter tätort och markanvändning (MI0805, tabell GYMarkTypTo37)",
+        "publisher": "SCB Statistikdatabasen",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0805__MI0805A/GYMarkTypTo37/"
+      },
+      "note_sv": "Andelen är 1 204 ha grönyta (619 ha öppen mark och 585 ha skog) delat med 2 060 ha land. Räknas 7 ha åker med blir ej hårdgjord mark 1 211 ha (58,8 %). Grönytan omfattar även villaträdgårdar och gräs mellan hus. Det är ett mått för hela tätorten, inte för stadskärnan.",
+      "confidence": "high",
+      "replaces": "greenShare"
+    },
+    {
+      "id": "genomslapplig_yta_kvarnholmen",
+      "sdg": [
+        11,
+        13,
+        15
+      ],
+      "name_sv": "Genomsläpplig (ej hårdgjord) mark på Kvarnholmen",
+      "value": 18.5,
+      "unit": "% av landarealen",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Nationella marktäckedata 2023, basskikt v2.x (WMS-lager lc-nmd:LC.LandCoverRaster.Bas.2023.v2.x, GetFeatureInfo)",
+        "publisher": "Naturvårdsverket (egen stickprovsberäkning; områdesgräns från OpenStreetMap, relation 6422397)",
+        "url": "https://geodata.naturvardsverket.se/geoserver/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+      },
+      "note_sv": "Egen beräkning: NMD-klassen avlästes i 1 533 punkter (rutnät med 20 m avstånd) inom stadsdelen Kvarnholmen. 1 235 av punkterna låg på land. 81,5 % var hårdgjorda (byggnad 32,1 %, väg 27,4 %, övrig anlagd mark 22,0 %) och 17,6 % hade vegetation (trädklädd 9,7 %). Barmark utgjorde 1,0 %. Områdesgränsen omfattar även hamnytorna. Med 10 m upplösning missas små gårdar och gatuträd.",
+      "confidence": "estimate",
+      "replaces": "greenShare",
+      "range": [
+        16.4,
+        20.7
+      ]
+    },
+    {
+      "id": "tradkronstackning_tatort",
+      "sdg": [
+        11,
+        13,
+        15
+      ],
+      "name_sv": "Trädkronornas täckningsgrad i Kalmar tätort",
+      "value": 21.7,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Samhällsbyggnadsnämnden 2023-01-26 § 6: Svar på motion om 3-30-300-regeln (SBN 2022/0088)",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.406d0a5d186e2b4f943327/1678968834223/08-motion-mp-infor-3-30-300-regeln-for-att-bevara-kommunens-gronomraden.PDF"
+      },
+      "note_sv": "Uppdaterar baslinjen, som var ca 22 % enligt Miljöbokslut 2024: värdet är nu mätningens exakta resultat. Kommunen mätte med i-Tree (LONA-bidrag) våren 2022. Resultatet är preliminärt. Av tätortens 32 delområden har 10 över 30 % krontäckning, 14 under 20 % och 5 under 10 %. Enligt handlingsplanen från 2024 prioriteras Malmen, Bremerlyckan och Sandås.",
+      "confidence": "medium",
+      "replaces": "canopy"
+    },
+    {
+      "id": "koloniomrade_areal_kommun",
+      "sdg": [
+        2,
+        11
+      ],
+      "name_sv": "Mark med koloniområden i Kalmar kommun",
+      "value": 24,
+      "unit": "hektar",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Mark med koloniområden, hektar efter region (MI0803, tabell Koloniomrade)",
+        "publisher": "SCB Statistikdatabasen",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0803__MI0803A/Koloniomrade/"
+      },
+      "note_sv": "Arealen var 18 ha 2010 och 25 ha 2015. I Kalmar län finns 59 ha och i riket 1 985 ha. Det är markanvändning, inte odlad yta: stigar, stugor och gräsmattor ingår.",
+      "confidence": "high",
+      "replaces": "cityVeg"
+    },
+    {
+      "id": "odlingslotter_kommunala",
+      "sdg": [
+        2,
+        11
+      ],
+      "name_sv": "Kommunala odlingslotter i Kalmar",
+      "value": 250,
+      "unit": "lotter (ca)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Odlingslotter",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/uppleva-och-gora/natur-friluftsliv-och-parker/parker-lek-och-odling/odlingslotter.html"
+      },
+      "note_sv": "Ungefär 250 lotter på 6 platser, 50–250 m² vardera. Hyran är 9,68 kr per m² och år (2026). År 2019 fanns 317 lotter på 9 platser (Servicenämnden 2019-06-19 § 90); Stallgärdsgatans område lades ned samma år. Koloniträdgårdarna drivs av föreningar och ingår inte.",
+      "confidence": "medium",
+      "replaces": "cityVeg"
+    },
+    {
+      "id": "tradgardsvaxter_areal_kommun",
+      "sdg": [
+        2
+      ],
+      "name_sv": "Åkermark med trädgårdsväxter i Kalmar kommun",
+      "value": 74,
+      "unit": "hektar",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "JO0104B2 Åkermarkens användning efter kommun, gröda och år",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Arealer__1%20Riket%20l%C3%A4n%20kommun/JO0104B2.px/"
+      },
+      "note_sv": "Det är 0,4 % av kommunens 20 129 ha åker. Arealen var 208 ha 2020, 77 ha 2023 och 89 ha 2024. Matpotatis odlades på 12 ha 2025. Odlingen av frukt och grönt i kommunen är liten och har minskat.",
+      "confidence": "high",
+      "replaces": "foodRegional"
+    },
+    {
+      "id": "tradgardsodling_areal_lan",
+      "sdg": [
+        2
+      ],
+      "name_sv": "Trädgårdsodling på friland i Kalmar län",
+      "value": 474,
+      "unit": "hektar",
+      "year": 2023,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "JO0102L02 Översikt trädgårdsodling efter län och odlingsform",
+        "publisher": "Jordbruksverkets statistikdatabas",
+        "url": "https://statistik.sjv.se/PXWeb/pxweb/sv/Jordbruksverkets%20statistikdatabas/Jordbruksverkets%20statistikdatabas__Tradgardsodling__Oversikt/JO0102L02.px/"
+      },
+      "note_sv": "81 företag och 28 378 m² växthus. År 2020: 106 företag, 676 ha och 42 725 m² växthus. Länet har 3,5 % av rikets trädgårdsareal (13 506 ha) och 1,0 % av växthusytan, men 2,3 % av befolkningen. Köksväxter på friland: 233 ha.",
+      "confidence": "high",
+      "replaces": "foodRegional"
+    },
+    {
+      "id": "konsumtion_kokvaxter_per_person",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Konsumtion av färska och frysta köksväxter per person",
+      "value": 62.2,
+      "unit": "kg/person/år",
+      "year": 2023,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Livsmedelskonsumtion och näringsinnehåll. Uppgifter till och med 2023",
+        "publisher": "Jordbruksverket",
+        "url": "https://jordbruksverket.se/om-jordbruksverket/jordbruksverkets-officiella-statistik/jordbruksverkets-statistikrapporter/statistik/2024-12-10-livsmedelskonsumtion-och-naringsinnehall.--uppgifter-till-och-med-2023"
+      },
+      "note_sv": "Totalkonsumtion, nästan fördubblad sedan 1980. Direktkonsumtionen av färska köksväxter är 45,8 kg och av rotfrukter 10,5 kg. Används som nämnare när stadsodlingens andel räknas ut.",
+      "confidence": "high",
+      "replaces": "cityVeg"
+    },
+    {
+      "id": "konsumtion_frukt_bar_per_person",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Konsumtion av färsk och fryst frukt och bär per person",
+      "value": 54.7,
+      "unit": "kg/person/år",
+      "year": 2023,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Livsmedelskonsumtion och näringsinnehåll. Uppgifter till och med 2023",
+        "publisher": "Jordbruksverket",
+        "url": "https://jordbruksverket.se/om-jordbruksverket/jordbruksverkets-officiella-statistik/jordbruksverkets-statistikrapporter/statistik/2024-12-10-livsmedelskonsumtion-och-naringsinnehall.--uppgifter-till-och-med-2023"
+      },
+      "note_sv": "Samma nivå som 1980. Med förädlade produkter (juice, sylt med mera) är konsumtionen av frukt och bär 82,4 kg per person och år.",
+      "confidence": "high",
+      "replaces": "cityVeg"
+    },
+    {
+      "id": "ekologiska_livsmedel_kommunen",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Ekologiska livsmedel i kommunens verksamhet",
+      "value": 24.0,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada U07514: Ekologiska livsmedel i kommunens verksamhet, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: Ekomatcentrum)",
+        "url": "https://api.kolada.se/v3/data/kpi/U07514/municipality/0880/year/2025"
+      },
+      "note_sv": "Andel av inköpsvärdet i kronor (KRAV, Demeter, EU-ekologiskt eller MSC); entreprenad ingår inte. Andelen sjunker: 28,0 % (2022), 27,6 % (2023), 24,6 % (2024). Kommunens eget mål är 30 % (Miljöbokslut 2023). Kolada redovisar inget riksvärde.",
+      "confidence": "high",
+      "replaces": "foodRegional"
+    },
+    {
+      "id": "ekologiska_livsmedel_regionen",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Ekologiska livsmedel i Region Kalmar läns verksamhet",
+      "value": 48.5,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada U60494: Ekologiska livsmedel i regionens verksamhet, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: Region Kalmar läns egna uppgifter)",
+        "url": "https://api.kolada.se/v3/data/kpi/U60494/municipality/0008/year/2025"
+      },
+      "note_sv": "Andel av inköpsvärdet i kronor i regionens egna verksamheter, till exempel sjukhusen, med entreprenad inräknad. Andelen var 43,9 % 2024 och är dubbelt så hög som i Kalmar kommuns verksamhet.",
+      "confidence": "high"
+    },
+    {
+      "id": "livsmedel_naromradet_kommunen",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Livsmedel från närområdet i kommunkoncernens inköp",
+      "value": 42.2,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Miljöbokslut 2023 – Miljöpåverkan från kommunens livsmedel",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.2d968bd118fa4331a052b624/1717507982779/Miljobokslut_2023_Lowres.pdf"
+      },
+      "note_sv": "Andelen var 40 % 2021 och 45,9 % 2022. Enligt ”Ett grönare Kalmar” ska minst 45 % komma från närområdet och 85 % vara ekologiskt eller svenskt (82,0 % 2023). Hur ”närområdet” avgränsas står inte i källan. Gäller bara offentliga måltider, ca 12 000 portioner per dag.",
+      "confidence": "medium",
+      "replaces": "foodRegional"
+    },
+    {
+      "id": "svenska_livsmedel_kommunen",
+      "sdg": [
+        2,
+        12
+      ],
+      "name_sv": "Svenska livsmedel av kommunens livsmedelsinköp",
+      "value": 53,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Miljöbokslut 2024 – Mer hållbar mat i kommunen",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.5138cb75196c385630127a/1747039600684/Miljobokslut_2024_v1.1_h%C3%B6guppl%C3%B6st.pdf"
+      },
+      "note_sv": "Under 2024 var 25 % av inköpen ekologiska och klimatpåverkan 1,6 kg CO2e per kg livsmedel. Kostverksamheten lagar ca 12 000 portioner per dag. Andelen från närområdet redovisas inte för 2024.",
+      "confidence": "high",
+      "replaces": "foodRegional"
+    },
+    {
+      "id": "byggnadsminnen_kvarnholmen",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Byggnader skyddade som byggnadsminnen på Kvarnholmen",
+      "value": 35,
+      "unit": "byggnader",
+      "year": 2016,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Underlag till riksintressen för kulturmiljövården, Kalmar kommun – H48 Kalmar (antagen av RAÄ 2016)",
+        "publisher": "Riksantikvarieämbetet",
+        "url": "https://www.raa.se/app/uploads/2016/12/Kalmar_kn.pdf"
+      },
+      "note_sv": "Riksintresse H48 Kalmar: ”renässansstad med slottsmiljö och befästningssystem”. Uttrycken för riksintresset är bland annat rutnätsplanen, stenhusen från 1600- och 1700-talen, silhuetten med Domkyrkan, kanalerna, resterna av vallar och bastioner och siktlinjerna mot slottet. Vid revideringen 2015–2016 begränsades området till 1600-talsmiljöerna, så att stadskvarteren på Ängö, delar av Malmen, Kalmarsundsparken och Stensö hamnade utanför (RAÄ:s pressmeddelande).",
+      "confidence": "high",
+      "replaces": "heritage"
+    },
+    {
+      "id": "byggnadsminnen_klimatrisk_lan",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Byggnadsminnen i Kalmar län som riskerar skador av klimatförändringar till 2100",
+      "value": 35.3,
+      "unit": "%",
+      "year": 2019,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kulturarv och klimatförändringar i Kalmar län – underlag för klimatanpassning av värdefulla kulturmiljöer (Meddelande 2019:08)",
+        "publisher": "Länsstyrelsen i Kalmar län",
+        "url": "https://www.lansstyrelsen.se/download/18.1b1d393819324610c374ba26/1732522114862/Kulturarv%20och%20klimatf%C3%B6r%C3%A4ndringar%20i%20Kalmar%20l%C3%A4n.pdf"
+      },
+      "note_sv": "48 av 136 byggnadsminnen; 46 av dem hotas av havsnivåhöjning. I samma GIS-analys berörs 24,9 % av de q-märkta byggnaderna (622 av 2 497), 41,6 % av riksintressena (32 av 77) och 14,4 % av fornlämningarna. Scenariot är RCP8.5: 1 m högre medelvattennivå plus 1,5 m högvatten, alltså 2,5 m. I Kalmar ligger slottet, residenset och klapphuset i riskzonen.",
+      "confidence": "medium",
+      "replaces": "heritage"
+    },
+    {
+      "id": "kalmar_slott_besokare",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Besökare på Kalmar slott per år",
+      "value": 190000,
+      "unit": "besökare (ca)",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kulturvärden 1/2025: Kungligt i Kalmar",
+        "publisher": "Statens fastighetsverk",
+        "url": "https://sfv.se/upptack-mer/kulturvarden/sok-innehall/kulturvarden-1-2025/kungligt-i-kalmar"
+      },
+      "note_sv": "”Senaste årsstatistiken” i ett nummer från 2025; årtalet 2024 är antaget. Slottet är statligt byggnadsminne och ägs och förvaltas av Statens fastighetsverk. Siffran visar slottets roll som besöksmål i den kulturmiljö som hotas av stigande hav.",
+      "confidence": "medium",
+      "replaces": "heritage"
+    },
+    {
+      "id": "op_planeringsniva_invanare_2035",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Översiktsplanens planeringsnivå: invånare i Kalmar kommun år 2035",
+      "value": 82000,
+      "unit": "invånare",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Verksamhetsplan med budget 2024 och ekonomisk planering 2025–2026 (avsnitt Bra bostäder till alla, s. 28)",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.75090db718c8ae9e906625f6/1705492390237/Verksamhetsplan%20med%20budget%202024.pdf"
+      },
+      "note_sv": "”Översiktsplanen tar höjd för cirka 82 000 invånare år 2035.” Det motsvarar ca +1,2 % per år från 73 068 invånare 2025, mot +0,5 % under 2025. Själva ÖP-texten anger inga bostadstal per område (samrådsredogörelsen 2022).",
+      "confidence": "high"
+    },
+    {
+      "id": "mal_fardigstallda_bostader_per_ar",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Mål: färdigställda bostäder per år (snitt över fem år)",
+      "value": 500,
+      "unit": "bostäder/år",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Verksamhetsplan med budget 2024 och ekonomisk planering 2025–2026 (Majoritetens inriktning, s. 28)",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.75090db718c8ae9e906625f6/1705492390237/Verksamhetsplan%20med%20budget%202024.pdf"
+      },
+      "note_sv": "Kommunkoncernen ska medverka till att minst 500 bostäder per år färdigställs och att 50 nya villatomter tillförs varje år. År 2025 färdigställdes ca 70 bostäder (0,96 per 1 000 invånare). Ett nytt bostadsförsörjningsprogram ska tas fram.",
+      "confidence": "high"
+    },
+    {
+      "id": "snurrom_friluftsstaden_kapacitet",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Snurrom (friluftsstaden): personer som kan bo och arbeta där vid full utbyggnad",
+      "value": 8400,
+      "unit": "personer",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Planprogram Snurrom (godkänt av samhällsbyggnadsnämnden hösten 2023)",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/bygga-bo-och-miljo/samhallsutveckling/planering/oversiktlig-planering/planprogram/snurrom.html"
+      },
+      "note_sv": "Ca 1 100 bostäder är redan klara. Planprogrammet omfattar Krafslösa, Vimpeltorpet och Snurrom. Verksamhetsplanen för 2024 anger att ca 8 500 invånare långsiktigt kan bo där. Det är kommunens största utbyggnadsområde.",
+      "confidence": "high"
+    }
+  ]
+}

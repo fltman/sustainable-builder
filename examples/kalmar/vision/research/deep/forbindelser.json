@@ -1,0 +1,702 @@
+{
+  "topic": "forbindelser",
+  "compiled": "2026-10-09",
+  "indicators": [
+    {
+      "id": "olandsbron_livslangd_planerad_till",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Ölandsbrons planerade livslängd (minst till år)",
+      "value": 2075,
+      "unit": "år",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Ölandsbron fyller 50 år: ”Ska hålla till 2075” (30 september 2022)",
+        "publisher": "Vi Bilägare (citerar Trafikverkets broförvaltare)",
+        "url": "https://www.vibilagare.se/nyheter/olandsbron-fyller-50-ar-ska-halla-till-2075"
+      },
+      "note_sv": "Trafikverkets broförvaltare 2022: bron ”ska hålla till minst år 2075, om det inte blir några större förändringar i vårt sätt att leva eller resa”, och tanken är en total livslängd på minst 100 år från invigningen 1972. Motion 2025/26:3712 bekräftar att Trafikverket planerar för 2075, och renoveringen 2026–2030 ska förlänga livslängden.",
+      "confidence": "medium"
+    },
+    {
+      "id": "olandsbron_renovering_2027_2030_mnkr",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Kontraktssumma för Ölandsbrons betongrenovering 2027–2030",
+      "value": 688.7,
+      "unit": "mnkr",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Ölandsbron vittrar sönder – räddas för 700 miljoner (26 september 2026)",
+        "publisher": "Dagens PS (uppgifter från Trafikverket via Byggindustrin)",
+        "url": "https://www.dagensps.se/foretag/olandsbron-vittrar-sonder-raddas-for-700-miljoner/"
+      },
+      "note_sv": "NCC:s vinnande anbud (W-Tech bjöd 787,5 mnkr) för att återställa och utöka täckande betong på huvud- och tvärbalkar i 135 spann januari 2027–juni 2030, efter ett pilotprojekt 2025 med 13 spann. Trafikverket byter också övergångskonstruktioner aug 2026–mars 2027 med ett körfält stängt per riktning; bron kostade 130 mnkr att bygga.",
+      "confidence": "medium"
+    },
+    {
+      "id": "olandsbron_segelfri_hojd_m",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Segelfri höjd under Ölandsbrons högbro",
+      "value": 36,
+      "unit": "m",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Ölandsbron fyller 50 år: ”Ska hålla till 2075” (30 september 2022)",
+        "publisher": "Vi Bilägare (uppgifter från Trafikverket)",
+        "url": "https://www.vibilagare.se/nyheter/olandsbron-fyller-50-ar-ska-halla-till-2075"
+      },
+      "note_sv": "Bron är 6 072 m lång, byggd av armerad betong i 155 spann och når högst 41,69 m (Dagens PS 2026). Den segelfria höjden styr fartygstrafiken genom Kalmarsund och lutningen på en framtida ersättningsbro.",
+      "confidence": "medium"
+    },
+    {
+      "id": "olandsbron_bredd_m",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Ölandsbrons bredd mellan kantbalkarna",
+      "value": 12.8,
+      "unit": "m",
+      "year": 2010,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Beslut i överklagningsärende: Ölandsbron (förbud mot gång- och cykeltrafik), beslutsdatum 2010-06-21",
+        "publisher": "Transportstyrelsen",
+        "url": "https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/beslut-i-overklagningsarenden/ovrigt/olandsbron/"
+      },
+      "note_sv": "Brobanan är indelad i fyra körfält med 0,2 m breda vägrenar och har varken gång- eller cykelbana; hastigheten varierar mellan 50 och 90 km/h. Ett körfält för spårväg, buss eller cykel ryms bara om biltrafiken får färre körfält eller om en ny bro byggs.",
+      "confidence": "high"
+    },
+    {
+      "id": "olandsbron_adt_2009",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Årsmedeldygnstrafik på Ölandsbron 2009",
+      "value": 16914,
+      "unit": "fordon/dygn (årsmedel)",
+      "year": 2009,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Beslut i överklagningsärende: Ölandsbron, beslutsdatum 2010-06-21",
+        "publisher": "Transportstyrelsen",
+        "url": "https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/beslut-i-overklagningsarenden/ovrigt/olandsbron/"
+      },
+      "note_sv": "Senaste exakta årsmedelvärde i en officiell källa som hittats. Trafikverket anger i dag avrundat cirka 15 000 fordon per dygn utanför sommaren och 25 000 under sommaren (se olandsbron_fordon_per_dygn); motion 2025/26:3712 anger nära 7 miljoner fordon per år, ungefär 19 000 per dygn.",
+      "confidence": "high"
+    },
+    {
+      "id": "olandsbron_fordon_toppdygn",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Trafik på Ölandsbron under toppdygn (Ölands skördefest)",
+      "value": 36000,
+      "unit": "fordon/dygn",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Ölandsbron fyller 50 år: ”Ska hålla till 2075” (30 september 2022)",
+        "publisher": "Vi Bilägare (uppgifter från Trafikverket)",
+        "url": "https://www.vibilagare.se/nyheter/olandsbron-fyller-50-ar-ska-halla-till-2075"
+      },
+      "note_sv": "Under skördefesten sista helgen i september kan 36 000 fordon passera per dygn, mot i genomsnitt 25 000 sommartid och 15 000 övrig tid. Toppdygnen dimensionerar köerna vid brofästena i Färjestaden och Kalmar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "olandsbron_vind_avradan_ms",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Vindstyrka då vindkänsliga fordon avråds från att köra över Ölandsbron",
+      "value": 27,
+      "unit": "m/s",
+      "year": 2018,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Rödljus och bommar på Ölandsbron (pressmeddelande 8 maj 2018)",
+        "publisher": "Trafikverket",
+        "url": "https://via.tt.se/pressmeddelande/rodljus-och-bommar-pa-olandsbron?publisherId=44450&releaseId=2579105"
+      },
+      "note_sv": "”Redan vid 27 meter per sekund rekommenderar vi vindkänsliga fordon att inte köra över”; släp har vält vid hårda vindar. Sedan 14 maj 2018 stänger Trafikverket, inte polisen, bron med rödljus och bommar, och trafiken vänds vid Svinö och Färjestaden.",
+      "confidence": "high"
+    },
+    {
+      "id": "olandsbron_vind_stangning_ms",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Vindstyrka då Ölandsbron stängs för all trafik",
+      "value": 32,
+      "unit": "m/s",
+      "year": 2018,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Rödljus och bommar på Ölandsbron (pressmeddelande 8 maj 2018)",
+        "publisher": "Trafikverket",
+        "url": "https://via.tt.se/pressmeddelande/rodljus-och-bommar-pa-olandsbron?publisherId=44450&releaseId=2579105"
+      },
+      "note_sv": "”Om det är orkan och blåser 32 meter per sekund stängs bron.” Trafikverket beskriver vindstängningar som ”enstaka tillfällen”; ingen officiell statistik över antal stängningsdygn per år har hittats.",
+      "confidence": "high"
+    },
+    {
+      "id": "olandsbron_gang_cykelforbud_sedan",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Gång- och cykelförbud på Ölandsbron gäller sedan",
+      "value": 2009,
+      "unit": "år",
+      "year": 2010,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Beslut i överklagningsärende: Ölandsbron, beslutsdatum 2010-06-21",
+        "publisher": "Transportstyrelsen",
+        "url": "https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/beslut-i-overklagningsarenden/ovrigt/olandsbron/"
+      },
+      "note_sv": "Länsstyrelsen beslutade förbudet 17 december 2009, och Transportstyrelsen avslog Cykelfrämjandets och Kalmar miljögrupps överklagande 21 juni 2010 med hänvisning till fyra körfält, höga hastigheter och 0,2 m vägren. Alternativen i dag är cykel på regionbussen i mån av plats och den säsongsbundna cykelfärjan.",
+      "confidence": "high"
+    },
+    {
+      "id": "olandsleden_tallhagen_lagsta_niva",
+      "sdg": [
+        9,
+        11,
+        13
+      ],
+      "name_sv": "Lägsta marknivå på väg 137 (Ölandsleden) mellan Ölandsbron och fastlandet, Tallhagen",
+      "value": 2.3,
+      "unit": "m RH2000",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Översvämningskartering, hotkartor 2026, lager 93 (100-årsnivå 2150 SSP5-8.5, +3,4 m): punktförfrågan 56,68467 N 16,35516 E",
+        "publisher": "Myndigheten för civilt försvar (MCF), höjddata Lantmäteriet",
+        "url": "https://gis-tjanster.mcf.se/arcgis/rest/services/Oversvamningskarteringar/hotkartor_2026/MapServer/identify?geometry=16.35516,56.68467&geometryType=esriGeometryPoint&sr=4326&layers=all:93&tolerance=0&mapExtent=16.34,56.67,16.37,56.69&imageDisplay=800,600,96&returnGeometry=false&f=json"
+      },
+      "note_sv": "Eget härlett värde: vattendjupet 1,09 m vid nivån +3,4 m ger marknivån 2,31 m, och kustöversvämningsskikten ger ”våt från” 2,4 m. Ungefär 440 m av vägen 1,0–1,4 km väster om brofästet på Svinö ligger under 3,4 m. Vägen klarar modellens 100-årsnivåer 2126 (1,89–2,18 m) med 0,1–0,4 m marginal men står 0,4 m under vatten vid 2150-nivån 2,7 m (SSP2-4.5), medan Ölandssidan vid Möllstorp ligger över 3,4 m.",
+      "confidence": "estimate",
+      "range": [
+        2.28,
+        2.4
+      ]
+    },
+    {
+      "id": "olandsbron_reservfarja_ledtid",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Tid att få en ersättningsfärja på plats vid stopp på Ölandsbron (uppgift i riksdagsfråga)",
+      "value": 14,
+      "unit": "dygn",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Fråga 2025/26:523 Ölandsbron (Mikael Larsson, C)",
+        "publisher": "Sveriges riksdag",
+        "url": "https://data.riksdagen.se/dokument/HD11523.html"
+      },
+      "note_sv": "Enligt frågeställaren (även fråga 2022/23:131) kan det ta upp till två veckor att klassa om och flytta Trafikverkets vägfärja från Blekinge skärgård till Kalmarsund; han kräver högst 24 timmar. Regeringens svar 13 december 2022 och 24 februari 2026 bekräftar inte siffran men hänvisar till Trafikverkets kontinuitetsplanering, och någon permanent reservförbindelse för bilar finns inte.",
+      "confidence": "estimate",
+      "range": [
+        1,
+        14
+      ]
+    },
+    {
+      "id": "olandsbron_bargning_installelsetid",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Tillåten inställelsetid för upphandlad bärgning på Ölandsbron",
+      "value": 120,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Fråga 2025/26:523 Ölandsbron (Mikael Larsson, C)",
+        "publisher": "Sveriges riksdag",
+        "url": "https://data.riksdagen.se/dokument/HD11523.html"
+      },
+      "note_sv": "Uppgiften lämnades i en riksdagsfråga efter minst två olyckor vintern 2025/26 som gav långa köer över bron. Infrastrukturministern svarade 24 februari 2026 att Trafikverket analyserar om rutiner och avtalskrav behöver ändras.",
+      "confidence": "medium"
+    },
+    {
+      "id": "oland_arbetspendlare_till_kalmar",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Förvärvsarbetande boende på Öland med arbetsställe i Kalmar kommun (Öland)",
+      "value": 3767,
+      "unit": "personer",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Sysselsatta 15–74 år efter bostadskommun, arbetsställekommun och kön. Årligt register. År 2020–2024 (ArRegPend2)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__AM__AM0210__AM0210F/ArRegPend2/"
+      },
+      "note_sv": "Summan av Mörbylånga (2 988) och Borgholm (779) enligt SCB:s registerstatistik 2024. Därtill har 1 017 Ölandsbor arbetsställe i andra fastlandskommuner, och 2 077 fastlandsbor (varav 1 537 i Kalmar) arbetar på Öland, så totalt pendlar cirka 6 860 personer över sundet. Registret visar arbetsställe, inte att resan görs varje dag.",
+      "confidence": "high"
+    },
+    {
+      "id": "morbylanga_utpendling_andel",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Andel förvärvsarbetande i Mörbylånga kommun som pendlar till annan kommun (Öland)",
+      "value": 52.4,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kolada N02279 Utpendling, andel (%), Mörbylånga 2024 (API)",
+        "publisher": "RKA/Kolada (källa SCB, BAS)",
+        "url": "https://api.kolada.se/v3/data/kpi/N02279/municipality/0840/year/2024"
+      },
+      "note_sv": "Högst i länet och ökande (51,3 % 2020). Borgholm hade 28,9 % och Kalmar 20,1 % 2024; de flesta utpendlarna från Mörbylånga arbetar i Kalmar och är därmed beroende av Ölandsbron.",
+      "confidence": "high"
+    },
+    {
+      "id": "cykelfarja_cyklar_per_sasong",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Cyklar med cykelfärjan Kalmar–Färjestaden per säsong (Öland)",
+      "value": 13000,
+      "unit": "cyklar/säsong",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Efter Dessis osäkra framtid – nu ska cykelfärjan i Kalmarsund upphandlas (6 november 2025)",
+        "publisher": "SVT Nyheter Småland",
+        "url": "https://www.svt.se/nyheter/lokalt/smaland/efter-dessis-osakra-framtid-nu-ska-cykelfarjan-i-kalmar-upphandlas"
+      },
+      "note_sv": "Kravnivå i kommunernas direktupphandling av trafiken från 2026: rederiet ska klara drygt 40 000 passagerare och 13 000 cyklar per säsong. Trafikverkets stöd på 1,4 mnkr per år upphörde, och Kalmar och Mörbylånga bidrar med cirka 100 000 kr vardera.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kalmar_c_tagrorelser_per_dygn",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Tågrörelser till och från Kalmar C per dygn",
+      "value": 70,
+      "unit": "tågrörelser/dygn",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kartläggning Kust till kustbanan, version 1.1 (ÅVS TRV 2019/16039), avsnitt 5.2.10 Kalmar centralstation",
+        "publisher": "Trafikverket",
+        "url": "https://bransch.trafikverket.se/contentassets/6774d6e00d214f61907e825eb8c15e86/kartlaggning-kust-till-kustbanan-1.1.pdf"
+      },
+      "note_sv": "”Knappt 70 tågrörelser”, alltså drygt 30 avgångar per dygn. Kalmar C är en säckstation med tre plattformsspår för högst 250 m långa tåg, och bommarna i de tre plankorsningarna på enkelspåret mot Kalmar södra är nere upp till 20 minuter per timme i rusningstid.",
+      "confidence": "medium",
+      "range": [
+        65,
+        70
+      ]
+    },
+    {
+      "id": "kalmar_c_ombyggnad_mnkr",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Investeringskostnad för ny mittplattform och nya plattformsspår på Kalmar C",
+      "value": 261,
+      "unit": "mnkr (prisnivå 2023-06)",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Samlad effektbedömning JSYR2601 Kalmar C, spår och plattformar (godkänd 2025-03-17)",
+        "publisher": "Trafikverket",
+        "url": "https://bransch.trafikverket.se/TrvSeFiler/Samhallsekonomiskt_beslutsunderlag/Sydostra/Syd%C3%B6stra%20regionen/1.%20Investering/JSYR2601%20Kalmar%20C,%20sp%C3%A5r%20och%20plattformar/SEB_utan_SEK_tidigt_planeringsskede_d972ce50-88b5-4553-b6d4-b2bbf8191c98.pdf"
+      },
+      "note_sv": "Ny mittplattform, nya plattformsspår 6–7 och förlängd plattform för längre tåg. Åtgärden står i den nationella plan som fastställdes 24 april 2026 men bara som ”Planering”, utan beslutad byggstart, medan ombyggnaden av Emmaboda station ströks.",
+      "confidence": "high"
+    },
+    {
+      "id": "kalmar_c_resor_prognos_2045",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Prognos för tågresor till och från Kalmar C år 2045",
+      "value": 1400000,
+      "unit": "resor/år",
+      "year": 2045,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Samlad effektbedömning JSYR2601 Kalmar C, spår och plattformar, trafikslagsspecifik information",
+        "publisher": "Trafikverket",
+        "url": "https://bransch.trafikverket.se/TrvSeFiler/Samhallsekonomiskt_beslutsunderlag/Sydostra/Syd%C3%B6stra%20regionen/1.%20Investering/JSYR2601%20Kalmar%20C,%20sp%C3%A5r%20och%20plattformar/SEB_utan_SEK_tidigt_planeringsskede_d972ce50-88b5-4553-b6d4-b2bbf8191c98.pdf"
+      },
+      "note_sv": "Trafikverkets basprognos för 2045: 80 persontåg per dygn och 1,4 miljoner resor per år på spåret in till Kalmar C. Dagens resandeutbyte vid Kalmar C redovisas inte i någon av de källor som hittats.",
+      "confidence": "medium"
+    },
+    {
+      "id": "oresundstag_avgangar_kalmar_vardag",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Direkta Öresundståg från Kalmar C mot Malmö/Köpenhamn per vardag",
+      "value": 13,
+      "unit": "avgångar/vardag",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Tidtabell Kalmar–Växjö–Hässleholm–Malmö–Köpenhamn, giltig 14 dec 2025–12 dec 2026",
+        "publisher": "Öresundståg",
+        "url": "https://www.datocms-assets.com/56794/1762775450-kalmar-vaxjo-hassleholm-malmo-kopenhamn-1-kalmar-vaxjo-hassleholm-malmo-kopenhamn_2025-12-14-2026-12-12.pdf"
+      },
+      "note_sv": "Egen räkning i tidtabellen: avgångar från Kalmar mellan 06.00 och 21.00 måndag–fredag, de flesta till Østerport. Därtill kör Krösatåg Kalmar–Emmaboda–Karlskrona/Växjö och Kalmar–Linköping samt SJ mot Alvesta och Göteborg.",
+      "confidence": "high"
+    },
+    {
+      "id": "restid_tag_kalmar_kobenhavn_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Snabbaste tågrestid Kalmar C–København H",
+      "value": 224,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Tidtabell Kalmar–Växjö–Hässleholm–Malmö–Köpenhamn, giltig 14 dec 2025–12 dec 2026",
+        "publisher": "Öresundståg",
+        "url": "https://www.datocms-assets.com/56794/1762775450-kalmar-vaxjo-hassleholm-malmo-kopenhamn-1-kalmar-vaxjo-hassleholm-malmo-kopenhamn_2025-12-14-2026-12-12.pdf"
+      },
+      "note_sv": "Direkt Öresundståg utan byte, till exempel avgång 06.00 och ankomst 09.44; till Kastrup tar resan 3 h 28 min. Alla genomgående turer under dagen har samma körtid.",
+      "confidence": "high"
+    },
+    {
+      "id": "restid_tag_kalmar_malmo_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Snabbaste tågrestid Kalmar C–Malmö C",
+      "value": 183,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Tidtabell Kalmar–Växjö–Hässleholm–Malmö–Köpenhamn, giltig 14 dec 2025–12 dec 2026",
+        "publisher": "Öresundståg",
+        "url": "https://www.datocms-assets.com/56794/1762775450-kalmar-vaxjo-hassleholm-malmo-kopenhamn-1-kalmar-vaxjo-hassleholm-malmo-kopenhamn_2025-12-14-2026-12-12.pdf"
+      },
+      "note_sv": "Öresundståg Kalmar 06.00–Malmö C 09.03, via Växjö, Alvesta, Hässleholm och Lund. Objektet Hässleholm–Lund, två nya spår, finns i den nationella planen 2026–2037 och förbättrar enligt SVT tågtrafiken mellan Kalmar och Malmö/Köpenhamn.",
+      "confidence": "high"
+    },
+    {
+      "id": "restid_tag_kalmar_vaxjo_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Snabbaste tågrestid Kalmar C–Växjö",
+      "value": 67,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Tidtabell Kalmar–Växjö–Hässleholm–Malmö–Köpenhamn, giltig 14 dec 2025–12 dec 2026",
+        "publisher": "Öresundståg",
+        "url": "https://www.datocms-assets.com/56794/1762775450-kalmar-vaxjo-hassleholm-malmo-kopenhamn-1-kalmar-vaxjo-hassleholm-malmo-kopenhamn_2025-12-14-2026-12-12.pdf"
+      },
+      "note_sv": "Öresundståg med uppehåll i Nybro, Emmaboda, Lessebo och Hovmantorp; Kust till kust-banan är elektrifierad men enkelspårig. Regionsamverkan Sydsveriges mål är 45 minuter år 2040 (se restid_mal_kalmar_vaxjo_2040).",
+      "confidence": "high"
+    },
+    {
+      "id": "restid_tag_kalmar_linkoping_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Snabbaste tågrestid Kalmar C–Linköping (Stångådalsbanan)",
+      "value": 185,
+      "unit": "minuter",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Stångådalsbanans och Tjustbanans funktion för regional utveckling (2024-03-28), tabell 2 Tågtidtabell T24",
+        "publisher": "Trafikverket",
+        "url": "https://trafikverket.diva-portal.org/smash/get/diva2:1850351/FULLTEXT01.pdf"
+      },
+      "note_sv": "Krösatåg Kalmar 10.35–Linköping 13.40 enligt Tågplan 2024; resan är upp till 20 minuter kortare via Alvesta och Södra stambanan. Upprustningen på 1990-talet kortade restiden från cirka fyra till tre timmar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "restid_tag_kalmar_stockholm_min",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Ungefärlig snabbaste tågrestid Kalmar C–Stockholm C (med byte)",
+      "value": 270,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Stångådalsbanans och Tjustbanans funktion för regional utveckling (2024-03-28), s. 13 och tabell 2",
+        "publisher": "Trafikverket",
+        "url": "https://trafikverket.diva-portal.org/smash/get/diva2:1850351/FULLTEXT01.pdf"
+      },
+      "note_sv": "Härlett: Trafikverket anger att Kalmar–Stockholm är 20–30 minuter snabbare via Alvesta än via Linköping. Kalmar–Linköping 3 h 05 plus byte och SJ:s cirka 1 h 40 Linköping–Stockholm (antagande) ger cirka 4 h 55–5 h 05, alltså cirka 4 h 30–4 h 45 via Alvesta (Kalmar–Alvesta tar 1 h 20 med Öresundståg). Det går inga direkttåg; direkttågen via Linköping upphörde efter 2003.",
+      "confidence": "estimate",
+      "range": [
+        265,
+        290
+      ]
+    },
+    {
+      "id": "stangadalsbanan_elektrifierad_andel",
+      "sdg": [
+        7,
+        9,
+        13
+      ],
+      "name_sv": "Elektrifierad andel av Stångådalsbanan Kalmar–Linköping",
+      "value": 0,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Stångådals- och Tjustbanan (kort fakta, senast uppdaterad 3 juli 2025)",
+        "publisher": "Trafikverket",
+        "url": "https://www.trafikverket.se/aktuellt-i-lanet/ostergotland/stangadals--och-tjustbanan"
+      },
+      "note_sv": "Banan är 235 km lång, enkelspårig och saknar kontaktledning, och Trafikverket föreslog 2024 varken kontaktledning eller delelektrifiering. Kust till kust-banan Kalmar–Emmaboda–Alvesta är däremot elektrifierad, och 8 nya bimodala Krösatåg (el och biodiesel) som levereras från 2026–2027 ska möjliggöra fossilfri drift.",
+      "confidence": "high"
+    },
+    {
+      "id": "stangadalsbanan_resor_per_ar",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Resor per år på Stångådalsbanan",
+      "value": 340000,
+      "unit": "resor/år",
+      "year": 2018,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Stångådalsbanans och Tjustbanans funktion för regional utveckling (2024-03-28), avsnitt 4.1.1",
+        "publisher": "Trafikverket",
+        "url": "https://trafikverket.diva-portal.org/smash/get/diva2:1850351/FULLTEXT01.pdf"
+      },
+      "note_sv": "”Knappt 340 000” resor 2018, drygt 230 000 2020 och drygt 180 000 2021; resandet har planat ut sedan millennieskiftet. Kalmar C ingår i 45 % av resorna längs banan, och Kalmar–Linköping är den största relationen (14 %).",
+      "confidence": "medium",
+      "range": [
+        330000,
+        340000
+      ]
+    },
+    {
+      "id": "stangadalsbanan_genomgaende_turer",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Genomgående tåg Kalmar–Linköping per vardag",
+      "value": 7,
+      "unit": "dubbelturer/vardag",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Stångådalsbanans och Tjustbanans funktion för regional utveckling (2024-03-28), avsnitt 4.1 och tabell 2",
+        "publisher": "Trafikverket",
+        "url": "https://trafikverket.diva-portal.org/smash/get/diva2:1850351/FULLTEXT01.pdf"
+      },
+      "note_sv": "Sju genomgående dubbelturer enligt Tågplan 2024 plus delade turer, totalt cirka 23 persontåg per dygn på banan (Trafikverket 2024). Trädpåkörningar ökar: 37 fall 2018–2022 och 30 bara 2023.",
+      "confidence": "high"
+    },
+    {
+      "id": "stangadalsbanan_atgarder_2022_2033_mnkr",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Beslutade statliga åtgärder på Stångådals- och Tjustbanan 2022–2033",
+      "value": 2200,
+      "unit": "mnkr",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Stångådalsbanans och Tjustbanans funktion för regional utveckling (2024-03-28), sammanfattning och avsnitt 3.3",
+        "publisher": "Trafikverket",
+        "url": "https://trafikverket.diva-portal.org/smash/get/diva2:1850351/FULLTEXT01.pdf"
+      },
+      "note_sv": "”Drygt 2,2 miljarder kronor”, varav ungefär hälften basunderhåll; en ny radioblockering kostar cirka 800 mnkr. Ett triangelspår i Berga och ett mötesspår i Kåremo skulle korta Kalmar–Linköping med knappt 10 minuter.",
+      "confidence": "medium"
+    },
+    {
+      "id": "restid_mal_kalmar_vaxjo_2040",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Mål för tågrestid Kalmar–Växjö år 2040 (Regionsamverkan Sydsverige)",
+      "value": 45,
+      "unit": "minuter",
+      "year": 2040,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Åtgärdsvalsstudie Kust till kustbanan, Borås–Kalmar/Karlskrona (december 2020), avsnitt om Regionsamverkan Sydsveriges positionspapper",
+        "publisher": "Trafikverket",
+        "url": "https://bransch.trafikverket.se/contentassets/6774d6e00d214f61907e825eb8c15e86/rapport_avs_kust-till-kustbanan_boras-kalmar-karlskrona_2020-12.pdf"
+      },
+      "note_sv": "Ner från 60 minuter 2018; samma positionspapper vill korta Kalmar–Karlskrona från 75 till 60 minuter. Region Kalmar vill ha dubbelspår Kalmar–Alvesta på sikt, men dubbelspår Växjö–Alvesta saknas i den nationella planen 2026–2037.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kollektivtrafik_marknadsandel_mal_2028",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Mål för kollektivtrafikens andel av de motoriserade resorna i länet 2028",
+      "value": 17,
+      "unit": "%",
+      "year": 2028,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Trafikförsörjningsprogram för Kalmar län 2025–2033, kapitel 5 (Mått B)",
+        "publisher": "Region Kalmar län",
+        "url": "https://utveckling.regionkalmar.se/globalassets/utvecklingsomraden/kollektivtrafik/styrdokument/trafikforsorjningsprogram_2025-2033.pdf"
+      },
+      "note_sv": "Andelen var 12 % 2022 (14 % före pandemin) och 21 % i Kalmar kommun. Antalet resor ska också öka från 2019 års nivå; 2022 gjordes nästan 10 miljoner resor i den samhällsstödda kollektivtrafiken.",
+      "confidence": "high"
+    },
+    {
+      "id": "lansplan_kalmar_2026_2037_mnkr",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Ram för länsplanen för regional transportinfrastruktur i Kalmar län 2026–2037",
+      "value": 1375,
+      "unit": "mnkr",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Fastställelse av nationell trafikslagsövergripande plan för transportinfrastrukturen för perioden 2026–2037 (regeringsbeslut 2026-04-24, inkl. bilagor)",
+        "publisher": "Regeringen",
+        "url": "https://www.regeringen.se/contentassets/00e64b6eb5734035903ab0243b7b25a6/faststallelse-av-nationell-trafikslagsovergripande-plan-for-transportinfrastrukturen-for-perioden-2026-2037_inkl-bilagor.pdf"
+      },
+      "note_sv": "Av en nationell ram på 1 171 miljarder kronor; enligt SVT 307 mnkr mer än förra perioden. Ölandsbron, en andra förbindelse till Öland och elektrifiering av Stångådalsbanan finns inte som namngivna objekt i den nationella planen.",
+      "confidence": "high"
+    },
+    {
+      "id": "flyg_passagerare_kalmar_2025",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Passagerare på Kalmar Öland Airport 2025",
+      "value": 88216,
+      "unit": "passagerare/år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Flygtrafikstatistik helåret 2025 (Tabell 1, ankommande och avresande passagerare)",
+        "publisher": "Transportstyrelsen",
+        "url": "https://www.transportstyrelsen.se/globalassets/global/publikationer-och-rapporter/luftfart/flygtrafikstatistik-2025.pdf"
+      },
+      "note_sv": "−1,3 % mot 2024 och 38 % av 2019 års nivå; andra kvartalet 2026 var 13 % lägre än året innan. Linjetrafiken är bara SAS till Arlanda (ingen Bromma-linje sedan januari 2025) plus charter, och flygplatsen ägs till hälften av Kalmar kommun och till hälften av Region Kalmar län.",
+      "confidence": "high"
+    },
+    {
+      "id": "flyg_passagerare_kalmar_2019",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Passagerare på Kalmar Öland Airport 2019",
+      "value": 232122,
+      "unit": "passagerare/år",
+      "year": 2019,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Flygtrafikstatistik – utvecklingen under 2019",
+        "publisher": "Transportstyrelsen",
+        "url": "https://www.transportstyrelsen.se/globalassets/global/publikationer-och-rapporter/luftfart/flygtrafikstatistik_q42019.pdf"
+      },
+      "note_sv": "Minskning med 4,6 % från 243 296 passagerare 2018. Nivån före pandemin, då både Arlanda- och Bromma-linjer fanns.",
+      "confidence": "high"
+    },
+    {
+      "id": "flyg_co2_inrikes_kalmar_2024",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Koldioxid från inrikes flyg fördelad på Kalmar kommun",
+      "value": 516,
+      "unit": "ton CO2",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Nationella emissionsdatabasen: Kalmar kommun, Transporter, Inrikes flygtrafik, CO2 (API, submission 2026)",
+        "publisher": "SMHI/Naturvårdsverket (RUS)",
+        "url": "https://nationellaemissionsdatabasen.smhi.se/api/getdata/?county=8&municipality=880&hsektor=4&usektor=4.10&sub=CO2"
+      },
+      "note_sv": "Utsläppen var 1 636 ton 1990, 1 001 ton 2015 och 686 ton 2023. Värdet gäller bara den del av utsläppen som databasen fördelar geografiskt till kommunen, främst start och landning nära flygplatsen, inte hela flygresorna; utrikes charter redovisas som 0.",
+      "confidence": "medium"
+    }
+  ]
+}

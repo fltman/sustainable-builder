@@ -1,7 +1,0 @@
-node_modules/
-dist/
-.DS_Store
-*.blend1
-test-results/
-__pycache__/
-*.pyc

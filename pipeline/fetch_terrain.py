@@ -327,7 +327,7 @@ def main(argv=None):
     try:
         data = fetch(load_place(args.slug))
     except Exception as exc:  # offline or the source is unreachable: build the city flat
-        say(f'  ! no terrain ({exc}); the city will be flat. Try again later with: python3 wasteland.py build {args.slug} --only terrain')
+        say(f'  ! no terrain ({exc}); the city will be flat. Try again later with: python3 sustainable.py build {args.slug} --only terrain')
         return
     write_json(out, data, compact=True)
     z = data['z']

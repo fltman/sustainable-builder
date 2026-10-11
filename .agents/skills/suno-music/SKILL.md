@@ -1,11 +1,11 @@
 ---
 name: suno-music
-description: Music for a generated city's in-game radio with Suno — write Suno-ready style prompts (exactly 300 characters) and tagged lyrics or instrumental structures that fit the wasteland chase mood and the town, generate them on suno.com in the user's browser, and add the downloaded tracks to the city. Use when the user wants a soundtrack, a theme song or radio tracks for their city ("gör musik till Visby", "make a song about our town").
+description: A soundtrack for a place's vision site and film with Suno – write Suno-ready style prompts (exactly 300 characters) and tagged lyrics or instrumental structures, the user generates in the Suno web app, and the chosen track becomes the place's music. Use when the user wants music of the place's own for the site or the film.
 ---
 
 # Suno music for a city
 
-The game's radio plays `cities/<slug>/media/music/*.mp3` when present, otherwise the bundled
+The site and the film play `cities/<slug>/media/audio/music.mp3` (then `build <slug> --only pack`) when present, otherwise the bundled
 soundtrack (Sandstorm Pursuit, Iron Tide, Dusk Convoy). Suno has no public API key flow here: songs are
 made in the official web app with the **user's own Suno account**.
 
@@ -14,7 +14,7 @@ made in the official web app with the **user's own Suno account**.
 For each track give exactly two sections.
 
 **Style description** — exactly 300 characters including spaces, one English paragraph, no line
-breaks: genre and subgenre, mood, tempo (BPM), instruments, vocal style. For gameplay music:
+breaks: genre and subgenre, mood, tempo (BPM), instruments, vocal style. For the site:
 instrumental, 120–140 BPM, starts at full energy (no long intro), loopable ending. Count the
 characters and adjust adjectives until it is exactly 300. `theme.json` → `music` has a starting point.
 
@@ -41,18 +41,18 @@ Save the packages in `cities/<slug>/media/music/prompts.md`.
 - Without a browser tool: give the user the packages to paste themselves.
 - Suno makes two variations per request; let the user pick. Download as MP3.
 
-## 3. Add to the game
+## 3. Add to the place
 
 ```sh
-python3 wasteland.py music <slug> --add ~/Downloads/<file>.mp3 --title "Visby — Ring Wall Run" \
+python3 sustainable.py music <slug> --add ~/Downloads/<file>.mp3 --title "Visby — Ring Wall Run" \
     --source https://suno.com/song/<id> --generator "Suno"
-python3 wasteland.py music <slug>            # list
-python3 wasteland.py music <slug> --clear    # back to the default soundtrack
+python3 sustainable.py music <slug>            # list
+python3 sustainable.py music <slug> --clear    # back to the default soundtrack
 ```
 Any MP3 the user has rights to works the same way.
 
 ## Rights
 
 Suno's terms decide who may use the music: on paid plans the user owns the songs; on the free plan
-songs are for non-commercial use and Suno keeps ownership. Tell the user before they publish the game
+songs are for non-commercial use and Suno keeps ownership. Tell the user before they publish the site
 publicly, and keep the `--source` link for attribution.

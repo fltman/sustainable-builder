@@ -1,156 +1,79 @@
-# Wasteland Builder
+# Sustainable Builder
 
-**Turn your town into a Mad Max battle-car game.** Name a place — a town, an old-town square, your
-street — and an AI coding agent (Claude Code or Codex) builds it: real streets and buildings from
-OpenStreetMap, an editable 3D city in Blender, and a browser game where armored cars fight raiders
-through *your* streets. The title, splash screen, narrator and radio are made for the place.
-
-![Kalmar Wasteland, the game this template comes from](docs/images/kalmar-wasteland-menu.jpg)
-
-*[Kalmar Wasteland](https://bjarby.com/kalmar-wasteland/) — the game this template was extracted from.
-Its city went through more than 140 refinement rounds against Google Street View, photos and drawings
-([kalmar-kvarnholmen](https://github.com/fltman/kalmar-kvarnholmen)). Your town starts from the
-generator and gets there the same way, one street at a time.*
-
-| | |
-|---|---|
-| ![Street War on Storgatan, Kalmar](docs/images/kalmar-storgatan-war.jpg) | ![Refined facades and cobbles](docs/images/kalmar-street.jpg) |
-| Street War on Storgatan: raiders, awnings, trees, benches | Facades refined from Street View, house by house |
-| ![Stortorget in the dust](docs/images/kalmar-stortorget.jpg) | ![The driver's seat](docs/images/kalmar-cockpit.jpg) |
-| Stortorget at dusk, looking back across the square | The driver's seat: dials, warning lamps, cracked glass |
-
-![Tactical map of Kalmar](docs/images/kalmar-map.jpg)
-
-*Screenshots from the published game at [bjarby.com/kalmar-wasteland](https://bjarby.com/kalmar-wasteland/).*
+**A research-based vision of your town, a hundred years ahead.** Name a place – a town, a village, a
+district – and an AI coding agent (Claude Code or Codex) builds a site like
+[Kalmar 2126](https://bjarby.com/kalmar-2126/): the real streets and houses in 3D, the municipality's own
+statistics and deep research with a source for every number, a model that plays the century 2026–2126
+year by year under the choices you make, visions to compare, a family that lives through five
+generations, a journey decade by decade, crises that test the place – and, if you like, a film with a
+narrator and music.
 
 ## Quick start
 
-You need **Python 3.10+**, **Node.js 20+**, **Blender 4.2+** and ~2 GB of disk.
+You need **Python 3.10+**, **Node.js 20+**, **Blender 4.2+**, **ffmpeg** (for the film) and ~2 GB of disk.
 
 ```sh
-git clone https://github.com/fltman/wasteland-builder.git
-cd wasteland-builder
+git clone https://github.com/fltman/sustainable-builder.git
+cd sustainable-builder
 ```
 
-Open the folder in **Claude Code** (`claude`) or **Codex** (`codex`) and just say what you want:
+Open the folder in **Claude Code** (`claude`) or **Codex** (`codex`) and say what you want:
 
-> Build Visby.  ·  Bygg Ystad, liten karta.  ·  Make a wasteland of Dubrovnik's old town and give it a theme song.
+> Bygg Ystad 2126. · Make a vision for Visby, with a film. · Gör en hållbar vision för Rättvik.
 
-The agent checks your setup, finds the place, shows you the area, builds the city (a few minutes),
-writes the game's title and texts with local landmarks, and starts the game at
-**http://localhost:5220**. Ask for more afterwards: *"make the cathedral look right"*, *"refine
-Strandgatan from Street View"*, *"give the narrator a Gotland accent"*, *"put it online so my friends
-can play"*.
+The agent checks your setup, finds the place, asks a few things once (languages, terrain, film, narrator,
+music, how far to refine the houses), builds the city, researches it (Kolada's key figures for Swedish
+municipalities, then deep research in parallel: climate and water, energy and travel, society and health,
+nature and food, tourism and economy, the municipality's own plans, places and history), writes the
+place's model, visions, family, journey and events, and starts the site at **http://localhost:5230**.
 
-Without an agent, three commands do the same:
+Without an agent the tools still run:
 
 ```sh
-python3 wasteland.py doctor              # installs and checks everything (once)
-python3 wasteland.py make "Visby"        # find → build → play
-python3 wasteland.py make "Lund" --size small   # small 600 m · medium 1 km (default) · large 1.6 km
+python3 sustainable.py doctor               # installs and checks everything (once)
+python3 sustainable.py make "Ystad"         # find → build → Kolada → a first vision
+python3 sustainable.py site ystad           # the site
 ```
 
 ## What gets built
 
-1. **Place** — OpenStreetMap search (Nominatim); a square play area around it.
-2. **Map data** — buildings, streets, sidewalks, squares, parks, water and coast, trees, walls, lamps
-   and benches from OpenStreetMap.
-3. **City model** (`cities/<slug>/city.blend`) — every building extruded with storeys, window facades
-   and roofs (gabled, hipped, flat with parapets; churches get towers); raised sidewalks and kerbs,
-   cobbles where the map says so, quay walls, bridges, trees, street furniture, rails, and a wall of
-   rusty containers at the edge of the map. Heights, colours and materials come from OSM where mapped
-   and from regional style presets (Nordic, brick north, Mediterranean …) where not.
-4. **Game pack** — streamed 60 m tiles (a 1 km town is ~10–20 MB), the street graph for the AI,
-   spawn point, map labels, supply drops.
-5. **Theme** — title (*VISBY WASTELAND*), menu texts, narrator lines and prompts that name real
-   landmarks and streets.
+1. **The city** – streets, buildings, parks, water, trees and terrain from OpenStreetMap and
+   Lantmäteriet/Copernicus, built in Blender and streamed to the browser in 60 m tiles
+   (the pipeline of [wasteland-builder](https://github.com/fltman/wasteland-builder)).
+2. **The starting point** – sourced records in `cities/<slug>/vision/research/`: ~70 from Kolada, a few
+   dozen for all of Sweden, and 200–300 from the deep research, each with its value, year, source URL and
+   confidence, in Swedish and English.
+3. **The model** – the engine of Kalmar 2126: population and ageing, food, energy, travel, climate,
+   water, nature, health, trust and democracy, welfare, AI and the analogue, the place's sea or lake and
+   floods, and what only this place has. Every starting value names its record; every effect its evidence.
+4. **The site** – choose levers or play a vision through the century; the 3D town changes (green
+   roofs, solar, gardens where the asphalt was, timber blocks on the car parks, boats on the water), the
+   numbers and the 17 goals follow, the family lives its life, events strike, and you can print your
+   vision, send a postcard or walk the streets.
+5. **The film** (optional) – rendered from the site itself, with a narrator (ElevenLabs) and music
+   (Suno), in Swedish and English.
 
-The game: three armored machines, machine guns, homing rockets, a flamethrower and mines, three waves of
-raiders, free roam, and an **online arena** for up to eight friends.
+## Examples
 
-## Refinement rounds: from generated to real
-
-The generator gets the street plan and every building footprint right, because they come from
-OpenStreetMap. Storeys, colours, roofs and facades are *estimated* where the map says nothing — fine
-for a game, but not yet *your* town. Refinement rounds fix that from pictures, the same way the Kalmar
-city above was built:
-
-1. **Pick a street, a square or one landmark** — *"refine Strandgatan"*, *"make the cathedral look right"*.
-2. **The agent looks at reality.** `python3 wasteland.py buildings <slug> --street "Strandgatan"` lists
-   each house with what the generator guessed and a **Google Street View** link aimed at its facade.
-   With browser access (Claude in Chrome, Codex's browser) the agent opens every view, plus the
-   satellite view for roof shapes, and counts storeys, reads wall colours and materials, roof shapes,
-   shopfronts, gables and towers.
-3. **Your own pictures count too.** Put photos you took (or openly licensed ones, e.g. from Wikimedia
-   Commons) in `cities/<slug>/references/` and say what they show; drawings and old postcards work as
-   well. Local knowledge beats any camera: tell the agent what you know.
-4. **Corrections, not guesswork.** Observations go into `cities/<slug>/overrides.json` — per building,
-   for whole areas or for streets (cobbles, widths, sidewalks). Landmarks that need real shapes get a
-   hand-written Blender model (`cities/<slug>/custom/<id>.py`,
-   [example](docs/custom-building-example.py)).
-5. **Rebuild and compare.** `python3 wasteland.py rebuild <slug>` (about a minute) and
-   `python3 wasteland.py render <slug> --street "Strandgatan"` renders the street from the same
-   viewpoints, so the agent can put its images next to Street View and iterate.
-6. **Logged.** Every round is written to `cities/<slug>/refinements.md` (what changed, from which view
-   or photo), so the next round — or the next person — continues where it stopped.
-
-Street View is used only to look; no Google imagery is stored in the project or the game. The skill
-behind this is [`refine-city`](.agents/skills/refine-city/SKILL.md).
-
-| Straight from the generator (Visby, ~1 minute) | After a custom-model round (example church) |
-|---|---|
-| ![Generated street](docs/images/visby-street.jpg) | ![Custom church](docs/images/custom-church-example.jpg) |
-
-## Make it yours
-
-| | How | Needs |
-|---|---|---|
-| **Refinement rounds** from Google Street View, satellite views and your own photos (see above) | `refine-city` skill · `wasteland.py buildings / rebuild / render` | a browser tool for Street View |
-| **Splash art** with your town's landmarks | `imagegen` skill | Codex (built in), or `OPENAI_API_KEY` / `OPENROUTER_API_KEY` |
-| **Narrator** who names your town | `elevenlabs` skill · `wasteland.py voices` | `ELEVENLABS_API_KEY` |
-| **Soundtrack** | `suno-music` skill · `wasteland.py music --add` | a Suno account (web), or any MP3 |
-| **Online multiplayer** on a small VPS (e.g. Vultr) | `deploy-arena` skill · [game/deploy/README.md](game/deploy/README.md) | a server, a domain |
-
-Keys go in `.env` (copy `.env.example`). Everything is optional: without keys the game uses generic
-narrator lines, the bundled soundtrack and a Blender-rendered splash screen.
-
-## Publish
-
-```sh
-python3 wasteland.py publish visby --arena wss://arena.example.com/ws
-```
-Upload `game/dist/` to any web host. The arena relay setup (Ubuntu VPS, nginx, Let's Encrypt) is one
-command: see [game/deploy/README.md](game/deploy/README.md).
-
-## How it works
-
-```
-place.py ─► fetch_osm.py ─► prepare_city.py ─► blender/build_city.py ─► blender/export_tiles.py ─► web/tiles.mjs ─► make_pack.py
-Nominatim    OSM API +       Shapely: every      city.blend (editable)     raw GLB per 60 m tile      meshopt + WebP     map.json, config.json,
-             Overpass        geometry decision                                                                         media → game/public/city
-                             → city.json
-```
-See [AGENTS.md](AGENTS.md) for the layout and conventions, [game/README.md](game/README.md) for the
-game and its city contract.
-
-## På svenska
-
-Klona repot, öppna mappen i Claude Code eller Codex och skriv till exempel *"Bygg Visby"*. Agenten
-installerar det som behövs, hämtar kartdata från OpenStreetMap, bygger staden i Blender och startar
-spelet på http://localhost:5220 med stadens namn, en egen startbild, berättarröst och musik.
-
-Sedan gör ni **förbättringsrundor**: välj en gata, ett torg eller ett hus (*"förbättra Strandgatan"*).
-Agenten öppnar Google Street View och satellitvyn för varje fasad, jämför med sina egna renderingar
-från samma vinkel och rättar våningar, färger, material, tak och skyltfönster — eller modellerar
-landmärken för hand i Blender. Egna foton (lägg dem i `cities/<ort>/references/`) och lokalkännedom
-fungerar lika bra. Det är så staden i [Kalmar Wasteland](https://bjarby.com/kalmar-wasteland/) har
-byggts upp, runda för runda. Be också om en server på t.ex. Vultr så att ni kan spela online tillsammans.
+- **Kalmar** (`examples/kalmar/`) – the original: a coastal city with a rising sea, a bridge to Öland and
+  a university. The engine reproduces Kalmar 2126's numbers exactly (a test guards it).
+- **Rättvik** (built with this repository) – a town of 11 000 by Lake Siljan in Dalarna: an old
+  population, summer farms, summer guests, a regulated lake and a lime works.
 
 ## Credits and licenses
 
-- Game engine, vehicles and shared effects: from **Kalmar Wasteland**; the city generator is inspired by
-  **kalmar-kvarnholmen** — both by Anders Bjarby.
-- Map data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), ODbL. Generated
-  cities are derived databases: keep the attribution (the game shows it).
-- Code: MIT ([LICENSE](LICENSE)). Bundled art, sounds and music: see [THIRD_PARTY.md](THIRD_PARTY.md).
-- Built with Blender, three.js, three-mesh-bvh, glTF-Transform, meshoptimizer, Shapely, sharp and Vite.
+- The site's engine: **Kalmar 2126**; the city pipeline: **Wasteland Builder** – both by Anders Bjarby.
+- Map data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), ODbL. Terrain ©
+  Lantmäteriet (CC BY 4.0) or Copernicus. Statistics: Kolada (RKA), SCB, SMHI and the sources each
+  record names.
+- Code: MIT ([LICENSE](LICENSE)). Bundled sounds, music and models: see [THIRD_PARTY.md](THIRD_PARTY.md).
+- Built with Blender, three.js, three-mesh-bvh, glTF-Transform, meshoptimizer, Shapely, Vite and Playwright.
+
+## På svenska
+
+Klona repot, öppna mappen i Claude Code eller Codex och skriv till exempel *"Bygg Ystad 2126"*. Agenten
+bygger staden i 3D ur OpenStreetMap och Lantmäteriets höjddata och hämtar kommunens nyckeltal ur Kolada.
+Den forskar sedan, med en källa för varje siffra, om klimat och vatten, energi och resor, samhälle och
+hälsa, natur och mat, turism och ekonomi, kommunens egna planer och ortens historia. Ur det skriver den
+modellen, visionerna, släktkrönikan, Resan och händelserna. Du får en sajt där du väljer ortens väg de
+kommande hundra åren och ser den växa fram. Om du vill blir det också en film med berättarröst och musik.

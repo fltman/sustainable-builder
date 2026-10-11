@@ -1,0 +1,556 @@
+{
+  "topic": "universitet",
+  "compiled": "2026-10-09",
+  "indicators": [
+    {
+      "id": "lnu_helarsstudenter_totalt",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Helårsstudenter vid hela Linnéuniversitetet (Kalmar och Växjö)",
+      "value": 15440,
+      "unit": "helårsstudenter (hela LNU)",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2025",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/globalassets/dokument---gemensamma/universitetsledningens-kansli/verksamhetsplanering/linneuniversitetet-arsredovisning-2025.pdf"
+      },
+      "note_sv": "Avser hela universitetet inklusive distans (39 % av helårsstudenterna 2025, 41 % 2024); schemat saknar en nivå för Kalmar + Kronoberg, därför Kalmar län. Serien är 16 383 (2020), 16 180 (2021), 15 640 (2022), 15 642 (2023), 15 128 (2024) och 15 440 (2025), alltså −5,8 % sedan 2020. Takbeloppet för utbildning sänks 2025–2027 och 2025 producerade LNU 104 % av taket enligt UKÄ, dvs. utbildning utöver det staten betalar för.",
+      "confidence": "high"
+    },
+    {
+      "id": "lnu_andel_verksamhet_kalmar",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Kalmars andel av Linnéuniversitetets verksamhet",
+      "value": 37,
+      "unit": "% av LNU (uppskattning)",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Universitetskajen Kalmar",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/mot-linneuniversitetet/kontakta-och-besoka/universitetskajen-kalmar/"
+      },
+      "note_sv": "Egen uppskattning från tre oberoende mått: 16 000 av 44 000 registrerade studenter tillhör Kalmar enligt lnu.se (36 %), ca 6 000 av 16 180 helårsstudenter 2021 enligt Kalmar kommun (37 %) och Universitetskajens 48 800 av LNU:s 131 300 förhyrda m² 2023 (37 %); 2015 angav LNU själv ca 40 % (Barometern). Region Kalmar läns protokoll 2024-03-20 anger ca 8 000 helårsstudenter i Kalmar (≈ 51 %), vilket inte går ihop med övriga källor och troligen räknar på annat sätt.",
+      "confidence": "estimate",
+      "range": [
+        36,
+        40
+      ]
+    },
+    {
+      "id": "registrerade_studenter_kalmar",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Registrerade studenter som tillhör campus Kalmar",
+      "value": 16000,
+      "unit": "studenter per år (ca)",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Universitetskajen Kalmar",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/mot-linneuniversitetet/kontakta-och-besoka/universitetskajen-kalmar/"
+      },
+      "note_sv": "Linnéuniversitetets webbsida anger att ungefär 16 000 av 44 000 studenter tillhör Kalmar och 28 000 Växjö; uppgiften är odaterad men totalen 44 000 motsvarar läget runt 2021–2022. År 2025 hade hela LNU 40 259 registrerade studenter, och med samma andel (36 %) blir Kalmar ca 14 500 (egen beräkning). Siffran räknar huvuden inklusive distansstudenter, inte personer som bor i Kalmar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "campusstudenter_kalmar_uppskattning",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Helårsstudenter som studerar på plats i Kalmar (uppskattning)",
+      "value": 3700,
+      "unit": "helårsstudenter på campus",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2025",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/globalassets/dokument---gemensamma/universitetsledningens-kansli/verksamhetsplanering/linneuniversitetet-arsredovisning-2025.pdf"
+      },
+      "note_sv": "Egen uppskattning: kommunens ca 6 000 helårsstudenter i Kalmar inkluderar distansstudier, som utgjorde 39 % av LNU:s helårsstudenter 2025 (61 % × 6 000 ≈ 3 700). Kalmars egen distansandel är okänd, därav spannet 25–50 % distans; till detta kommer ca 120 läkarstudenter från Linköpings universitet.",
+      "confidence": "estimate",
+      "range": [
+        3000,
+        4500
+      ]
+    },
+    {
+      "id": "lnu_anstallda_kalmar_uppskattning",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Anställda vid Linnéuniversitetet i Kalmar (uppskattning)",
+      "value": 800,
+      "unit": "anställda (ca)",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Om Linnéuniversitetet (siffror från årsredovisning 2025)",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/mot-linneuniversitetet/om-linneuniversitetet/"
+      },
+      "note_sv": "Egen uppskattning: 36–40 % av LNU:s 2 145 anställda (medeltal 2025) ger 770–860; LNU publicerar ingen fördelning per ort. Redan 2019 hade ca 400 anställda sin arbetsplats i husen Magna, Radix och Vita, innan Ekonomihögskolan, biblioteket och förvaltningen flyttat in. Motsvarar ca 2 % av de 39 331 arbetstillfällena i kommunen.",
+      "confidence": "estimate",
+      "range": [
+        700,
+        900
+      ]
+    },
+    {
+      "id": "lnu_doktorander_totalt",
+      "sdg": [
+        4,
+        9
+      ],
+      "name_sv": "Doktorander med aktivitet vid hela Linnéuniversitetet",
+      "value": 288,
+      "unit": "doktorander (hela LNU)",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2025",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/globalassets/dokument---gemensamma/universitetsledningens-kansli/verksamhetsplanering/linneuniversitetet-arsredovisning-2025.pdf"
+      },
+      "note_sv": "Minskat från 315 (2021) och 306 (2024), och antalet nyantagna föll till 34 år 2025 från 55 år 2023. 155 årsarbetskrafter hade doktorandanställning och 51 doktorsexamina utfärdades 2025. Ingen fördelning mellan Kalmar och Växjö publiceras.",
+      "confidence": "high"
+    },
+    {
+      "id": "lakarstudenter_kalmar",
+      "sdg": [
+        3,
+        4
+      ],
+      "name_sv": "Läkarstudenter i Kalmar (Linköpings universitets läkarprogram)",
+      "value": 120,
+      "unit": "studieplatser (de sex sista terminerna)",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2024",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://lnu.se/contentassets/c6337c0fe04d4efaaf5d49e3b624e104/linneuniversitetet-arsredovisning-2024.pdf"
+      },
+      "note_sv": "Sedan 2019 kan läkarstudenter från Linköping läsa den kliniska delen (sex terminer) i Kalmar, ca 20 platser per termin med bas på Länssjukhuset; Linnéuniversitetet och Region Kalmar län medverkar. 2021 fanns 117 läkarstudenter i Kalmar, och av de 14 första som tog examen samma år stannade 9 för att arbeta i Region Kalmar län (Kalmar kommun 2022).",
+      "confidence": "high"
+    },
+    {
+      "id": "sjofartshogskolan_studenter",
+      "sdg": [
+        4,
+        9,
+        14
+      ],
+      "name_sv": "Programstudenter vid Sjöfartshögskolan i Kalmar",
+      "value": 700,
+      "unit": "studenter (ca)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kalmar Maritime Academy",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/en/meet-linnaeus-university/Organisation/faculty-of-technology/kalmar-maritime-academy/"
+      },
+      "note_sv": "Sjöfartshögskolan grundades 1842 och utbildar sjökaptener, sjöingenjörer och drifttekniker; nästan lika många läser dessutom kurser och uppdragsutbildning. Cirka 10 % av studenterna är kvinnor och sedan 2010 har LNU examinerat 925 sjökaptener och sjöingenjörer (rektor 2024), ca 60 per år. Utbildningen bygger på simulatorer, och forskningen gäller arbetsliv och risk, sjöfartens miljöpåverkan och havsplanering samt energieffektivisering.",
+      "confidence": "medium"
+    },
+    {
+      "id": "universitetskajen_forhyrd_yta",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Linnéuniversitetets förhyrda yta på Universitetskajen",
+      "value": 48800,
+      "unit": "m²",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Lokalförsörjningsplan 2025–2027 (dnr 2024/354, beslutad 2024-02-20)",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://lnu.se/globalassets/dokument---gemensamma/lokal--och-serviceavdelningen/beslutad_lokalforsorjningsplan-2025-2027.pdf"
+      },
+      "note_sv": "Summan av två rader i lokalförsörjningsplanen (Intea/Eldaren 6: 27 000 m², P&E/Eldaren 1: 21 800 m²), 37 % av universitetets 131 300 m²; Växjö (Vöfab) har 78 400 m². Sex sammanbyggda hus i Ölandshamnen intill Kalmar C rymmer alla fakulteter, biblioteket och förvaltningen; campus stod klart 2020 och invigdes 27 augusti 2021 (första spadtaget januari 2016). LNU bedömer att lokalerna i Kalmar har låg nyttjandegrad och hög kostnad, med 2 % tomställd yta mot 0,5 % i Växjö.",
+      "confidence": "high"
+    },
+    {
+      "id": "universitetskajen_forsta_hyresavtal_lopertid",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "År då det första hyresavtalet på Universitetskajen löper ut",
+      "value": 2028,
+      "unit": "årtal",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Lokalförsörjningsplan 2025–2027 (dnr 2024/354, beslutad 2024-02-20)",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://lnu.se/globalassets/dokument---gemensamma/lokal--och-serviceavdelningen/beslutad_lokalforsorjningsplan-2025-2027.pdf"
+      },
+      "note_sv": "Östra delen (husen Vita, Culmen och Stella med hälso- och livsvetenskap, universitetsbiblioteket, aulan och förvaltningen) hyrs av Intea på två tioåriga avtal som löper ut 2028 respektive 2030; västra delen (Forma, Magna och Radix) har ett 20-årigt avtal med Kalmar Eldaren AB (P&E) till 2038. Utgångarna blir naturliga beslutspunkter för var verksamheten ska finnas, samtidigt som LNU ska spara ca 120 mnkr 2027–2029.",
+      "confidence": "high"
+    },
+    {
+      "id": "tidigare_universitetsadresser_kalmar",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Adresser som Linnéuniversitetet i Kalmar var utspritt på före Universitetskajen",
+      "value": 15,
+      "unit": "adresser (fler än)",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Universitetskajen",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/bygga-bo-och-miljo/universitetsstaden-kalmar/linneuniversitetet-i-kalmar---ett-stadsintegrerat-universitet/universitetskajen.html"
+      },
+      "note_sv": "Planerna på ett samlat, stadsintegrerat universitet började runt 2008 och flytten skedde 2018–2021, varvid LNU:s totala förhyrda yta minskade. Akademiska Hus, som ägde ca 28 000 m² i Kalmar, sålde 2012 drygt 16 000 m² (nio byggnader på södra Malmen och Rostad, bl.a. det dåvarande biblioteket) till LW Fastigheter och 2013 hamnfastigheten som blev Universitetskajens västra del. Vad de äldre byggnaderna används till i dag har inte kunnat verifieras.",
+      "confidence": "high"
+    },
+    {
+      "id": "lmo_provtagningstillfallen",
+      "sdg": [
+        14
+      ],
+      "name_sv": "Provtagningar vid Linnaeus Microbial Observatory (LMO) i Östersjön sedan 2011",
+      "value": 437,
+      "unit": "provtagningstillfällen (fler än)",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Linnaeus Microbial Observatory (LMO)",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://lnu.se/en/research/research-groups/linnaeus-microbial-observatory-lmo/"
+      },
+      "note_sv": "Tidsserie 11 km ut från Kårehamn på Ölands östkust, provtagen ungefär varannan vecka sedan 2011 (läget maj 2026); proverna analyseras i laboratoriet i Kalmar av upp till tio personer. Kompletteras av Kalmarsundsstationen (K-station) mitt emot Kalmar slott, provtagen varje vecka sedan mars 2018; båda ingår i det statliga forskningsprogrammet EcoChange.",
+      "confidence": "high"
+    },
+    {
+      "id": "eemis_medarbetare",
+      "sdg": [
+        14,
+        6,
+        15
+      ],
+      "name_sv": "Medarbetare i spetsforskningsmiljön EEMiS (ekologi och evolution i akvatiska system)",
+      "value": 60,
+      "unit": "medarbetare (ca)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Linnaeus University Centre for Ecology and Evolution in Microbial model Systems (EEMiS)",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://lnu.se/en/research/research-groups/linnaeus-university-centre-for-ecology-and-evolution-in-microbial-model-systems/"
+      },
+      "note_sv": "EEMiS studerar näringsvävar i Östersjön från mikrober till fisk och fåglar; i siffran ingår studenter, doktorander, tekniker, postdoktorer och forskningsledare. Miljön driver LMO, K-station, en uppvärmd vik och akustisk övervakning, och Kunskapsmiljö Linné Vatten ingår i den. 2024 blev mikrobiologen Jarone Pinhassi i EEMiS universitetets första Wallenberg Scholar, med ett fritt anslag på 20 mnkr över fem år (årsredovisning 2024).",
+      "confidence": "medium"
+    },
+    {
+      "id": "ecodriving_bransle_besparing",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Bränslebesparing med simulatorbaserad sparsam framföring (Sjöfartshögskolan)",
+      "value": 13,
+      "unit": "% (upp till)",
+      "year": 2026,
+      "scope": "Sverige",
+      "direction": "higher_better",
+      "source": {
+        "title": "How simulation drives sustainable maritime transportation and IMO compliance",
+        "publisher": "Kongsberg Maritime",
+        "url": "https://www.kongsberg.com/maritime/feature_articles/2026/1/driving-a-greener-future-for-global-shipping"
+      },
+      "note_sv": "Kurser för befälhavare på mindre passagerarfärjor i Stockholms skärgård har gett upp till 13 % lägre bränsleförbrukning. Sedan 2015 har över 400 besättningsmedlemmar på Trafikverkets vägfärjor utbildats (1,5 liter mindre per tur, uppgivet 11 000 ton CO₂ per år) och totalt över 700 befäl. Uppgifterna är simulatortillverkaren Kongsbergs återgivning av en LNU-rapport som inte har granskats här.",
+      "confidence": "medium"
+    },
+    {
+      "id": "lnu_forskningsintakter",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Intäkter för forskning och utbildning på forskarnivå, hela Linnéuniversitetet",
+      "value": 765,
+      "unit": "mnkr (hela LNU)",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2025",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/globalassets/dokument---gemensamma/universitetsledningens-kansli/verksamhetsplanering/linneuniversitetet-arsredovisning-2025.pdf"
+      },
+      "note_sv": "Motsvarar 31 % av de totala intäkterna på 2 435 mnkr (egen beräkning), och 45 % av forskningsintäkterna är externa. Målen för 2026–2030 säger att forskningen ska bli lika stor del av verksamheten som utbildningen och att extern finansiering ska utgöra 50 % av forskningsanslaget. Fördelningen mellan Kalmar och Växjö redovisas inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "ehalsa_magister_sokande",
+      "sdg": [
+        3,
+        9
+      ],
+      "name_sv": "Sökande till magisterprogrammet i e-hälsa (Samverkan e-hälsa med Region Kalmar län)",
+      "value": 360,
+      "unit": "sökande HT 2025",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2025",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/globalassets/dokument---gemensamma/universitetsledningens-kansli/verksamhetsplanering/linneuniversitetet-arsredovisning-2025.pdf"
+      },
+      "note_sv": "Samverkan e-hälsa är en gemensam tioårssatsning 2022–2032 mellan Linnéuniversitetet och Region Kalmar län inom utbildning, forskning, infrastruktur och innovation. 2025 startade en forskarskola med sju doktorander i hälso- och datavetenskap, och en professor i hälsoinformatik tillträdde 1 januari 2026; programmet beskrivs som unikt i Sverige.",
+      "confidence": "high"
+    },
+    {
+      "id": "rattsvetenskap_satsning_mnkr",
+      "sdg": [
+        4,
+        16
+      ],
+      "name_sv": "Rättsvetenskaplig satsning i Kalmar (Kalmar kommun och Linnéuniversitetet)",
+      "value": 300,
+      "unit": "mnkr på tio år (minst)",
+      "year": 2021,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Universitetsstaden Kalmar – vad har hänt 2010–2021?",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.3b29c6f61850e1588a02134/1672674701170/Universitetsstaden_bokslut_A4_Web.pdf"
+      },
+      "note_sv": "Avtalet från december 2021: kommunen bidrar med 100 mnkr och LNU med minst 200 mnkr, med mål om juristutbildning med första antagning senast 2027. Rättsvetarprogrammet startade 2024 (60 studenter) och hade 587 sökande till 70 platser 2025; miljön fick examensrätt på avancerad nivå och forskarnivå 2025, och ansökan om att få utfärda juristexamen lämnades in i september 2025 (årsredovisning 2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "kommunens_forskningsavtal_mnkr_per_ar",
+      "sdg": [
+        9,
+        17
+      ],
+      "name_sv": "Kalmar kommuns årliga anslag till Linnéuniversitetet för forskning, utveckling och tillväxt",
+      "value": 1.5,
+      "unit": "mnkr per år (i tio år)",
+      "year": 2018,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Universitetsstaden Kalmar – vad har hänt 2010–2021?",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.3b29c6f61850e1588a02134/1672674701170/Universitetsstaden_bokslut_A4_Web.pdf"
+      },
+      "note_sv": "Överenskommelse signerad 2 februari 2018 om 1,5 mnkr per år i tio år för att stärka LNU i Kalmar, samverkan med näringslivet och tillväxten. Kommunkoncernen redovisade 2019 rekordhöga 2,7 mnkr i forskningsfinansiering. Det strategiska partnerskapet med Växjö kommun och Linnékåren (sedan 2017, nu 2026–2028) har ingen egen budget.",
+      "confidence": "high"
+    },
+    {
+      "id": "kvarstannande_examinerade_3ar",
+      "sdg": [
+        4,
+        8
+      ],
+      "name_sv": "Examinerade från Linnéuniversitetet som bor kvar i Kalmar eller Kronobergs län tre år efter examen",
+      "value": 37.7,
+      "unit": "% av examinerade 2015–2017",
+      "year": 2020,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Universitetsstaden Kalmar – vad har hänt 2010–2021?",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.3b29c6f61850e1588a02134/1672674701170/Universitetsstaden_bokslut_A4_Web.pdf"
+      },
+      "note_sv": "Mätpunkten ”kvarstannare” för de 8 800 som tog examen 2015–2017; knappt två tredjedelar flyttade från regionen. Av de lokalt rekryterade (från Kalmar och Kronobergs län) bodde 78,6 % kvar, men bara 16,6 % av dem som rekryterats från resten av landet. Avser båda länen, inte enbart Kalmar kommun.",
+      "confidence": "high"
+    },
+    {
+      "id": "examinerade_bor_i_kalmar_lan_2017",
+      "sdg": [
+        4,
+        8
+      ],
+      "name_sv": "Andel av Linnéuniversitetets examinerade 2011–2017 som bodde i Kalmar län 2017",
+      "value": 26,
+      "unit": "% av examinerade",
+      "year": 2017,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Var tar studenterna från LNU vägen? (R. Bennsäter och N. Öhrn Karlsson)",
+        "publisher": "Region Kalmar län (publicerad av Region Kronoberg)",
+        "url": "https://www.regionkronoberg.se/contentassets/75728e1cfc754c2c952086ff69982f02/var-tar-studenterna-fran-lnu-vagen.pdf"
+      },
+      "note_sv": "Ytterligare 27 % bodde i Kronobergs län, alltså 53 % i Linnéregionen; bland övriga län var Stockholms län (11 %) och Skåne län (9 %) störst. Av dem som var födda utanför regionen bodde 36 % kvar, mot 83 % av dem som var födda i Kalmar eller Kronobergs län (STATIV 2017).",
+      "confidence": "high"
+    },
+    {
+      "id": "hogskoleutbildade_med_lnu_examen",
+      "sdg": [
+        4,
+        8
+      ],
+      "name_sv": "Andel av högskoleutbildade som etablerat sig i Kalmar och Växjö som har examen från Linnéuniversitetet",
+      "value": 70,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2024",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://lnu.se/contentassets/c6337c0fe04d4efaaf5d49e3b624e104/linneuniversitetet-arsredovisning-2024.pdf"
+      },
+      "note_sv": "Uppgiften i årsredovisningen 2024 bygger på en intern rapport (Studentrekrytering, etableringsmönster och kompetensförsörjning, 2023) som inte är publicerad, och avser Kalmar och Växjö tillsammans. Rektor anger också att 80 % av dem som söker från regionen stannar på den regionala arbetsmarknaden, mot 20 % av dem som kommer utifrån.",
+      "confidence": "medium"
+    },
+    {
+      "id": "studentbostader_kalmarhem",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Studentbostäder i Kalmarhems bestånd",
+      "value": 928,
+      "unit": "studentbostäder",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Kalmarhem: Årsredovisning och hållbarhetsrapport 2024",
+        "publisher": "Kalmarhem AB",
+        "url": "https://kalmarhem.se/app/uploads/2025/06/ID_Arsredovisning-och-hallbarhetsrapport-2024_webb.pdf"
+      },
+      "note_sv": "Minskat från 984 året innan; Kalmarhem beskriver en minskad efterfrågan på studentbostäder som pågått i flera år och har anpassat utbudet. Via studentbostadsgarantin (nyantagna som skriver sig i Kalmar erbjuds en studentbostad) tecknades 428 kontrakt 2024, mot 386 år 2021, och omflyttningen i studentbeståndet är 63 % per år. Kalmar utsågs till Årets studentstad 2023 av Sveriges förenade studentkårer (LNU:s årsredovisning 2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "lnu_kostnader_kalmar_uppskattning",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Linnéuniversitetets årliga kostnader i Kalmar (uppskattning)",
+      "value": 930,
+      "unit": "mnkr per år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2025",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/globalassets/dokument---gemensamma/universitetsledningens-kansli/verksamhetsplanering/linneuniversitetet-arsredovisning-2025.pdf"
+      },
+      "note_sv": "Egen uppskattning: 36–40 % av LNU:s totala kostnader på 2 504 mnkr 2025, som till 68 % består av personal och till 12 % av lokaler. Det är bruttoutgifter, inte en beräknad regional effekt; ingen studie av universitetets ekonomiska betydelse för Kalmar har hittats.",
+      "confidence": "estimate",
+      "range": [
+        900,
+        1000
+      ]
+    },
+    {
+      "id": "lnu_resultat_mnkr",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Linnéuniversitetets årsresultat (årets kapitalförändring), hela universitetet",
+      "value": -69,
+      "unit": "mnkr (hela LNU)",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Linnéuniversitetet: Årsredovisning 2025",
+        "publisher": "Linnéuniversitetet",
+        "url": "https://www.lnu.se/globalassets/dokument---gemensamma/universitetsledningens-kansli/verksamhetsplanering/linneuniversitetet-arsredovisning-2025.pdf"
+      },
+      "note_sv": "Andra underskottsåret i rad efter −95 mnkr 2024 (+28 mnkr 2023), och myndighetskapitalet har sjunkit från 383 till 221 mnkr. Rektor förklarar läget med minskade anslag; takbeloppet för utbildning sänks 2025–2027 medan antalet helårsstudenter ökade 2025, så LNU producerade 104 % av taket (UKÄ).",
+      "confidence": "high"
+    },
+    {
+      "id": "lnu_sparkrav_mnkr",
+      "sdg": [
+        4,
+        8
+      ],
+      "name_sv": "Linnéuniversitetets sparkrav 2027–2029",
+      "value": 120,
+      "unit": "mnkr över tre år",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Oro för uppsägningar på Linnéuniversitetet (2026-10-06)",
+        "publisher": "Publikt (Fackförbundet ST)",
+        "url": "https://www.publikt.se/nyhet/oro-uppsagningar-pa-linneuniversitetet-28060"
+      },
+      "note_sv": "Universitetsstyrelsen beslutade i juni 2026 om ett sparkrav på ca 120 mnkr, varav 50 mnkr i stödfunktionerna 2027–2028, efter att bemanningen minskat med 30 årsarbetskrafter 2025; anställningsstopp i förvaltningen gäller 18 maj 2026–30 juni 2027. Enligt Saco-S pågår förändringarna i både Kalmar och Växjö utan att någon fakultet är särskilt drabbad (Universitetsläraren 2026-09-21). I mars 2026 sa rektor att LNU kan få tusen färre studenter och att utbildningsutbudet ska minska med 15 % till 2030, främst distans (SVT).",
+      "confidence": "medium"
+    },
+    {
+      "id": "unga_19_24_kalmar_prognos_2050",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Invånare 19–24 år i Kalmar kommun 2050 enligt SCB:s framskrivning",
+      "value": 5730,
+      "unit": "personer",
+      "year": 2050,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd efter region, inrikes/utrikes född, ålder och kön. År 2024–2070 (BefProgRegFakN)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefProgRegFakN/"
+      },
+      "note_sv": "Summa av ettårsklasserna 19–24 år, båda könen (egen summering): 5 851 (2025), topp 6 688 (2035), 5 730 (2050) och 6 560 (2070). Andelen 19–24 år är 8,0 % i Kalmar kommun 2025 mot 7,0 % i riket och 5,9 % i länet (egna beräkningar), en universitetsstadseffekt. Framskrivningen förutsätter att dagens flyttmönster, och därmed universitetet, består.",
+      "confidence": "medium"
+    },
+    {
+      "id": "unga_19_24_sverige_prognos_2050",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Invånare 19–24 år i Sverige 2050 enligt SCB:s befolkningsframskrivning",
+      "value": 667595,
+      "unit": "personer",
+      "year": 2050,
+      "scope": "Sverige",
+      "direction": "context",
+      "source": {
+        "title": "Folkmängd efter inrikes/utrikes född, ålder och kön. År 2026–2120 (BefolkprognRevNb)",
+        "publisher": "SCB",
+        "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefolkprognRevNb/"
+      },
+      "note_sv": "Summa av ettårsklasserna 19–24 år (egen summering): 740 827 (2026), topp 779 316 (2035) och 667 595 (2050), alltså −14 % från toppen och −10 % jämfört med 2026 (egna beräkningar). Högskolans naturliga rekryteringsbas växer till mitten av 2030-talet och krymper sedan, vilket skärper konkurrensen om studenter.",
+      "confidence": "medium"
+    }
+  ]
+}

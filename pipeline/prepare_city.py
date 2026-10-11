@@ -296,14 +296,14 @@ def build_water(osm: OSM, B: Polygon):
 
 # ------------------------------------------------------------------------------------------ main
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog='wasteland.py prepare')
+    ap = argparse.ArgumentParser(prog='sustainable.py prepare')
     ap.add_argument('slug')
     args = ap.parse_args(argv)
     place = load_place(args.slug)
     folder = city_dir(args.slug)
     osm_path = folder / 'osm.json'
     if not osm_path.exists():
-        raise SystemExit('osm.json is missing. Run: python3 wasteland.py fetch ' + args.slug)
+        raise SystemExit('osm.json is missing. Run: python3 sustainable.py fetch ' + args.slug)
     proj = projection_for(place)
     osm = OSM(json.loads(osm_path.read_text()), proj)
     overrides, defaults = {}, {}
@@ -571,7 +571,13 @@ def main(argv=None):
         if not g.is_empty:
             layer_geom[name] = g
     rest = land.difference(taken).difference(unary_union(list(layer_geom.values())) if layer_geom else Polygon())
-    layer_geom['ground'] = unary_union(clean(rest, 0.3))
+    # Land the map says nothing about: grass in a sustainable place (bare ground only with
+    # "defaults": {"rest": "ground"} in overrides.json, as the battle-car game had it).
+    if defaults.get('rest', 'grass') == 'ground':
+        layer_geom['ground'] = unary_union(clean(rest, 0.3))
+    else:
+        layer_geom['grass'] = unary_union([layer_geom.get('grass', Polygon()), *clean(rest, 0.3)])
+        layer_geom['ground'] = Polygon()
     terrain = load_terrain(folder, proj, half, B, land, water, FOOT, layer_geom.get('forest', Polygon()), defaults)
     sub = TSTEP if terrain else None
     for name, g in layer_geom.items():
@@ -593,10 +599,12 @@ def main(argv=None):
                 bridge_edges.append(seg)
 
     # ---------------------------------------------------------------- the edge of the world
-    # A wall of rusty shipping containers wherever land meets the edge of the play area.
+    # The battle-car game walls the play area in with rusty shipping containers wherever land meets its
+    # edge. A sustainable place has no such wall: only with "defaults": {"edge_containers": true} in
+    # overrides.json.
     barriers = []
-    edge_line = B.exterior
-    land_edge = land.boundary.intersection(edge_line.buffer(0.05)) if not land.is_empty else Polygon()
+    edge_line = B.exterior if defaults.get('edge_containers') else None
+    land_edge = land.boundary.intersection(edge_line.buffer(0.05)) if edge_line is not None and not land.is_empty else Polygon()
     on_edge = [g for g in (land_edge.geoms if hasattr(land_edge, 'geoms') else [land_edge]) if g.geom_type == 'LineString' and g.length > 0.5]
     on_edge = linemerge(on_edge) if on_edge else None
     lines = [] if on_edge is None or on_edge.is_empty else (list(on_edge.geoms) if hasattr(on_edge, 'geoms') else [on_edge])
@@ -1027,12 +1035,14 @@ def load_terrain(folder, proj, half, B, land, water, foot, forest, defaults):
     d[~raised] *= np.clip(dist / reach, 0.0, 1.0)[~raised]
     # The surroundings: 15 m squares out to the edge of the terrain, so the horizon has hills instead of
     # open water. A 30 m model can't tell forest from field, so flat low land becomes field and the
-    # slopes and heights forest (what most Nordic towns have round them).
+    # slopes and heights forest (what most Nordic towns have round them). A sustainable place leaves
+    # them out: its horizon (pipeline/horizon.py) takes over at the play area's edge, on these same
+    # heights, with OpenStreetMap's woods, homes and buildings – "defaults": {"outskirts": true} keeps them.
     gy, gx = np.gradient(d, TSTEP)
     flat = _blur(np.hypot(gx, gy), 2.0) < 0.035
     step = 15.0
     fields, woods = Buf(), Buf()
-    k = int(round(2 * ext / step))
+    k = int(round(2 * ext / step)) if defaults.get('outskirts') else 0
     for a in range(k):
         for c in range(k):
             x0, y0 = -ext + a * step, -ext + c * step
@@ -1044,7 +1054,7 @@ def load_terrain(folder, proj, half, B, land, water, foot, forest, defaults):
             m = fields if (flat[j, i] and d[j, i] < 20.0) else woods
             m.quad((x0, y0, 0.0), (x0 + step, y0, 0.0), (x0 + step, y0 + step, 0.0), (x0, y0 + step, 0.0),
                    (x0 / 6, y0 / 6), ((x0 + step) / 6, y0 / 6), ((x0 + step) / 6, (y0 + step) / 6), (x0 / 6, (y0 + step) / 6))
-    T['outskirts'] = {'field': fields.dump(), 'forest': woods.dump()}
+    T['outskirts'] = {'field': fields.dump(), 'forest': woods.dump()} if k else {}
     T['low'], T['high'] = float(d[in_b].min()), float(d[in_b].max())
     T['source'], T['attribution'], T['lake'] = src.get('source'), src.get('attribution'), lake
     return T

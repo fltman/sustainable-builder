@@ -1,0 +1,595 @@
+{
+  "topic": "dricksvatten",
+  "compiled": "2026-10-09",
+  "indicators": [
+    {
+      "id": "dricksvattenproduktion_kalmar",
+      "sdg": [6],
+      "name_sv": "Dricksvattenproduktion i Kalmar kommun (årsmedel, alla vattenverk)",
+      "value": 14900,
+      "unit": "m³/dygn",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Verksamheten i siffror 2025 – Producerad mängd dricksvatten 5 437 000 kubikmeter",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/om-kalmar-vatten-ab/ekonomi-och-statistik/verksamheten-i-siffror.html"
+      },
+      "note_sv": "Uppdaterar tidigare 16 000 m³/dygn, som var ett odaterat och avrundat årsmedel på sidan Produktion av dricksvatten. 5 437 000 m³ under 2025 delat med 365 ger 14 900 m³/dygn; 2023 var produktionen sannolikt ca 16 400 m³/dygn (såld volym 5 038 773 m³ delad med faktureringsgraden 84 %, egen beräkning). Siffran omfattar även leveranser till Torsås och Öland.",
+      "confidence": "high"
+    },
+    {
+      "id": "dricksvatten_per_invanare_kalmar",
+      "sdg": [6],
+      "name_sv": "Producerat dricksvatten per ansluten invånare och dygn, Kalmar kommun",
+      "value": 221,
+      "unit": "liter/person/dygn",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Verksamheten i siffror 2025 (producerad mängd 5 437 000 m³, 67 380 anslutna till dricksvatten) samt Kolada N01951 folkmängd 2025",
+        "publisher": "Kalmar Vatten AB; RKA Kolada (ursprungskälla: SCB)",
+        "url": "https://www.kalmarvatten.se/om-kalmar-vatten-ab/ekonomi-och-statistik/verksamheten-i-siffror.html"
+      },
+      "note_sv": "Egen beräkning: 5 437 000 m³ / 67 380 anslutna / 365 ger 221 l; räknat på hela befolkningen (73 068) blir det 204 l. Siffran gäller total produktion inklusive verksamheter, ledningsförluster och leveranser till Torsås och Öland, alltså inte hushållens förbrukning. Ersätter den tidigare uppskattningen 230 l (219–238).",
+      "confidence": "estimate",
+      "range": [204, 221]
+    },
+    {
+      "id": "dricksvattenmarginal_kalmar",
+      "sdg": [6, 13],
+      "name_sv": "Dricksvattenmarginal i Kalmar (tillgängligt råvatten utöver behovet)",
+      "value": 19,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Årsredovisning 2025, avsnitt Vattenförsörjningen ('Dricksvattenmarginalen ... blev 19%')",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/download/18.7c1d3d6019e02430f08fdfe/1778491389668/%C3%85rsredovisning%202025_tillg%C3%A4nglig.pdf"
+      },
+      "note_sv": "Kalmar Vattens nyckeltal för kvoten mellan tillgängligt råvatten och vad som behövs för samhällets behov. Vid utgången av 2024 var marginalen 39 % ('överkapacitet i vattentillgångar med 39 %', årsredovisning 2024); under torråret 2025 sjönk den till 19 % när brunnar utanför infiltrationsområdena tappade kapacitet. Det framgår inte om marginalen räknas på årsvolym eller på maxdygn.",
+      "confidence": "high"
+    },
+    {
+      "id": "ofakturerat_dricksvatten_andel_kalmar",
+      "sdg": [6],
+      "name_sv": "Andel producerat dricksvatten som inte faktureras i Kalmar (läckage, mätfel, egen förbrukning)",
+      "value": 11,
+      "unit": "% av producerad mängd",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Årsredovisning 2024: 'Faktureringsgraden är högre i år ... med 89% 2024 och mot 84% 2023'",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/download/18.12edb3819c47e6dc29301c1/1771933373902/%C3%85rsredovisning%20Bokslut%202024_tillg%C3%A4nglig.pdf"
+      },
+      "note_sv": "Ofakturerat vatten = 100 minus faktureringsgraden. Andelen var 16 % 2023 och ca 9 % 2025 (såld volym 4 947 670 m³ av producerade 5 437 000 m³, egen beräkning), vilket motsvarar en minskning med ungefär 0,5 miljoner m³/år på två år. Rikssnittet för levererad volym som inte ger intäkter var 22 % 2024 (Svenskt Vatten, VASS).",
+      "confidence": "high"
+    },
+    {
+      "id": "hushallens_vattenanvandning_per_person_kalmar",
+      "sdg": [6, 12],
+      "name_sv": "Hushållens dricksvattenförbrukning per ansluten person och dygn, Kalmar kommun",
+      "value": 162,
+      "unit": "liter/person/dygn",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "WaterMan: Underlag till strategisk inriktning för återanvändning av vatten i Kalmar kommun (tabell 1: hushåll 70 % av 5,56 miljoner m³; 92 % anslutna, 66 000)",
+        "publisher": "Kalmar kommun (Interreg-projektet WaterMan)",
+        "url": "https://www.eurobalt.org/wp-content/uploads/2026/06/Kalmar_Water-recycling-strategy_SE.pdf"
+      },
+      "note_sv": "Egen beräkning: hushållens 3,9 miljoner m³/år delat med 66 000 anslutna och 365 dygn. Rikssnittet är 140 l enligt Kalmar Vatten och 135 l enligt Svenskt Vatten 2024; länets hushåll använde ca 150 l (SCB 2020). Sektorsfördelningen i källan är avrundad och dess totalvolym (5,56 miljoner m³) är högre än den sålda volymen 2025.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "hushallens_vattenbehov_2050_kalmar",
+      "sdg": [6, 11],
+      "name_sv": "Prognos för hushållens dricksvattenförbrukning i Kalmar kommun år 2050",
+      "value": 5.4,
+      "unit": "miljoner m³/år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "WaterMan-underlaget, avsnitt Nuvarande råvattenkällor och användning (hänvisar till Vattenförsörjningsplan Kalmar kommun, version 2025-04-11)",
+        "publisher": "Kalmar kommun (Interreg-projektet WaterMan)",
+        "url": "https://www.eurobalt.org/wp-content/uploads/2026/06/Kalmar_Water-recycling-strategy_SE.pdf"
+      },
+      "note_sv": "Ökning från 3,9 miljoner m³/år idag, med fler invånare och högre anslutningsgrad; det motsvarar ca 100 000 anslutna vid 140–150 l per person och dygn (egen beräkning). Om förbrukningen sänks 15 % till 120 l per person och dygn räcker 4,5 miljoner m³. Vattenförsörjningsplanens slutsats är att vattentillgången i kommunen inte räcker för att säkra framtida behov.",
+      "confidence": "medium"
+    },
+    {
+      "id": "oberoende_ravattensystem_kalmar",
+      "sdg": [6, 13],
+      "name_sv": "Antal oberoende råvattensystem för Kalmars dricksvatten",
+      "value": 1,
+      "unit": "råvattensystem (mål: flera oberoende)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Långsiktig vattenförsörjning ('Idag får vi vårt vatten från en rullstensås'; målbild 'Flera och oberoende råvattenkällor')",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/om-vatten-och-avlopp/dricksvatten/langsiktig-vattenforsorjning.html"
+      },
+      "note_sv": "All produktion kommer från Nybroåsen: naturligt grundvatten plus grundvatten som bildas av förbehandlat vatten från Hagbyån, som fylls på från ett sjömagasin (Hultebräan ligger i Hagbyåns vattenskyddsområde); täkterna ligger i Hagbymassivet (Bottorp–Stenkällan), Vassmolösa–Ölvingstorp och Råsbäck, och vattnet renas i Skälby vattenverk. Avsaltning och återvunnet vatten utreds men inget beslut finns. Enligt den regionala planen från 2013 fanns inget reservvatten som kan ersätta Hagbyån.",
+      "confidence": "high"
+    },
+    {
+      "id": "nybroasen_teoretiskt_max_uttag",
+      "sdg": [6],
+      "name_sv": "Teoretiskt maximalt uttag ur Nybroåsen (Nybro och Kalmar)",
+      "value": 5.0,
+      "unit": "miljoner m³/år",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Regional vattenförsörjningsplan för Kalmar län 2024–2030 (rapport 2023:13), tabell 3.1",
+        "publisher": "Länsstyrelsen i Kalmar län",
+        "url": "https://catalog.lansstyrelsen.se/store/36/resource/151"
+      },
+      "note_sv": "Grov uppskattning av teoretisk maximal uttagsmöjlighet, inte ett tillstånd. Samma tabell anger 1,2 miljoner m³/år för Hagbyån med Hultebräan (Kalmars källa för infiltrationen) och 1,8 miljoner m³/år för Ljungbyån med Orranäsasjön. Som jämförelse producerade Kalmar 5,4 miljoner m³ dricksvatten 2025, varav ungefär hälften från infiltrerat åvatten, och Nybro tar också vatten ur åsen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "hagbymassivet_naturlig_grundvattenbildning",
+      "sdg": [6],
+      "name_sv": "Naturlig grundvattenbildning i Hagbymassivet, Kalmars huvudvattentäktsområde i Nybroåsen",
+      "value": 42.5,
+      "unit": "l/s",
+      "year": 2004,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Grundvattentillgångar i Nybroåsen (SGU Rapporter och meddelanden 118)",
+        "publisher": "Sveriges geologiska undersökning (SGU)",
+        "url": "https://resource.sgu.se/dokument/publikation/rm/rm118rapport/rm118-rapport.pdf"
+      },
+      "note_sv": "SGU anger 40–45 l/s, alltså 1,3–1,4 miljoner m³/år, medan uttaget i området var ca 140 l/s (4,4 miljoner m³/år) tack vare bassänginfiltration sedan slutet av 1950-talet. SGU bedömde att uttaget kan ökas till 300 l/s med mer infiltration, och pekade ut Fröstorps- och Råsbäcksområdena (vardera minst ca 25 l/s) som viktigaste framtida tillskott. Kalmar Vatten arbetar nu med en ny vattendom för Hockland och Fröstorp.",
+      "confidence": "medium",
+      "range": [40, 45]
+    },
+    {
+      "id": "reservvattentakter_kapacitet_kalmar",
+      "sdg": [6, 13],
+      "name_sv": "Sammanlagd kapacitet i Kalmars reservvattentäkter",
+      "value": 3700,
+      "unit": "m³/dygn",
+      "year": 2020,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Plan för översyn av vattenskyddsområden (Kalmar Vatten AB 2020-02-12, KF-ärende)",
+        "publisher": "Kalmar kommun / Kalmar Vatten AB",
+        "url": "https://kalmar.se/download/18.23a628f51748ec60af034d7/1602763115406/04-plan-oversyn-vattenskyddsomraden.PDF"
+      },
+      "note_sv": "Summa av angiven kapacitet för nio små reservvattentäkter (Halltorp 1 och 2, Tvärskog, Påryd/Ugglebo, Trekanten, Norra Hagby, Lindsdal, Läckeby, Rockneby): 43 l/s, egen beräkning. Det motsvarar ca 25 % av medelproduktionen 2025; den regionala planen 2013 angav ca 3 400 m³/dygn. Täkterna är små grundvattentäkter som också påverkas av torka, och 2020 var det oklart om de ska behållas.",
+      "confidence": "estimate",
+      "range": [3400, 3700]
+    },
+    {
+      "id": "dricksvatten_sasongsokning_juli_kalmar",
+      "sdg": [6, 13],
+      "name_sv": "Ökning av Kalmars dricksvattenproduktion i juli jämfört med januari",
+      "value": 3900,
+      "unit": "m³/dygn",
+      "year": 2010,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Regional vattenförsörjningsplan för Kalmar län (2013), Bilaga A – Översikt Kalmar kommun",
+        "publisher": "Länsstyrelsen i Kalmar län",
+        "url": "https://catalog.lansstyrelsen.se/store/36/resource/2013__2"
+      },
+      "note_sv": "Produktionen i juli var ca 3 900 m³/dygn högre än i januari 2010, ungefär 25 % av årsmedlet 15 600 m³/dygn (5,7 miljoner m³, egen beräkning). Ingen nyare uppgift om maxdygn eller installerad kapacitet har hittats. I Borgholm var juliuttaget 2,4 gånger januariuttaget samma år.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kalmar_vatten_investeringar_2026_2032",
+      "sdg": [6, 9],
+      "name_sv": "Kalmar Vattens planerade investeringar under sju år (2026–2032)",
+      "value": 3100,
+      "unit": "miljoner kr",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Årsredovisning 2025, Förväntad framtida utveckling ('de totala investeringarna ... under de närmaste sju åren till 3 100 262 tkr')",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/download/18.7c1d3d6019e02430f08fdfe/1778491389668/%C3%85rsredovisning%202025_tillg%C3%A4nglig.pdf"
+      },
+      "note_sv": "Varav 834 miljoner kr 2026; planen domineras av Kalmarsundsverket och ledningsförnyelse. Dricksvattenprojekten är ombyggnad av Yxneberga infiltrationsvattenverk för högre kapacitet, ny råvattenledning Bottorp–Kalmar (klar 2027), en extra utpumpningslinje i Skälby, ny vattendom för Hockland och Fröstorp (ca 5 år) och reservkraft, där en utredning gäller full drift i tre månader utan extern el. Själva vattenverksamheten investerade 46 miljoner kr 2025.",
+      "confidence": "high"
+    },
+    {
+      "id": "torsas_dricksvatten_fran_kalmar_andel",
+      "sdg": [6, 17],
+      "name_sv": "Andel av Torsås kommuns allmänna dricksvatten som köps från Kalmar",
+      "value": 97,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Regional vattenförsörjningsplan för Kalmar län 2024–2030 (rapport 2023:13), tabell 6.1",
+        "publisher": "Länsstyrelsen i Kalmar län",
+        "url": "https://catalog.lansstyrelsen.se/store/36/resource/151"
+      },
+      "note_sv": "Kalmar Vatten levererar sedan 2001 dricksvatten till Torsås (ca 0,37 miljoner m³/år enligt planen 2013) och sedan 2016 via ledning även till Öland. Försäljningen till Torsås var 1,8 miljoner kr och till Ölandskommunerna 0,35 miljoner kr 2025 (årsredovisning). Kalmar är alltså nav och leverantör i den regionala samverkan, inte mottagare.",
+      "confidence": "high"
+    },
+    {
+      "id": "kalmarsundsverket_atervunnet_vatten_kapacitet",
+      "sdg": [6, 12],
+      "name_sv": "Kapacitet för återvunnet vatten från Kalmarsundsverket (från 2027)",
+      "value": 12000,
+      "unit": "m³/dygn",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "WaterMan-underlaget, avsnitt Kalmarsundverket bidrar med nya möjligheter",
+        "publisher": "Kalmar kommun (Interreg-projektet WaterMan)",
+        "url": "https://www.eurobalt.org/wp-content/uploads/2026/06/Kalmar_Water-recycling-strategy_SE.pdf"
+      },
+      "note_sv": "Planerad kapacitet motsvarande klass A enligt EU-förordning 2020/741, 50–80 % av inkommande spillvatten (5,2 miljoner m³ 2025); det motsvarar ca 80 % av dagens medelproduktion av dricksvatten. Till en början planeras vattenkiosk, eget processvatten (ca 200 m³/dygn) och eventuellt toalettspolning m.m. på Länssjukhuset (250–300 m³/dygn, ca 10 miljoner kr enligt Region Kalmars förstudie). Dricksvatten av återvunnet vatten utreds med en tvåårig pilot som kräver extern finansiering.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tekniskt_vatten_bevattningsbehov_kalmar",
+      "sdg": [6, 12],
+      "name_sv": "Uppskattat behov av tekniskt (återvunnet) vatten för bevattning i Kalmar",
+      "value": 143000,
+      "unit": "m³/år",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "WaterMan-underlaget (hänvisar till Norconsult 2025, Tillägg Vattenförsörjningsplan Kalmar kommun)",
+        "publisher": "Kalmar kommun (Interreg-projektet WaterMan)",
+        "url": "https://www.eurobalt.org/wp-content/uploads/2026/06/Kalmar_Water-recycling-strategy_SE.pdf"
+      },
+      "note_sv": "Mittvärde av 113 000–172 500 m³/år för bland andra Kalmar golfklubb, fotbollsplaner, parker och koloniområden. Det motsvarar 2–3 % av årsproduktionen men ligger på sommarens topp; fotbollsplanerna (ca 34 000 m³/år) bevattnas i dag till största delen med dricksvatten. Ett separat ledningsnät bedöms bli för dyrt, så vattenkiosker och punktlösningar är mer realistiska.",
+      "confidence": "medium",
+      "range": [113000, 172500]
+    },
+    {
+      "id": "atervunnet_vatten_pilot_kostnad_kalmar",
+      "sdg": [6, 12],
+      "name_sv": "Produktionskostnad för återvunnet vatten i kommunens bevattningspilot",
+      "value": 150,
+      "unit": "kr/m³",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "WaterMan-underlaget, avsnitt Kalmars pilotprojekt – Kostnader",
+        "publisher": "Kalmar kommun (Interreg-projektet WaterMan)",
+        "url": "https://www.eurobalt.org/wp-content/uploads/2026/06/Kalmar_Water-recycling-strategy_SE.pdf"
+      },
+      "note_sv": "UV-anläggning för renat avloppsvatten (investering 1,69 miljoner kr plus ca 0,2 miljoner kr, 10 års avskrivning, 4 % ränta) vid dagens ca 1 500 m³/år, trots en kapacitet på 864 m³/dygn. Efter EU- och HaV-bidrag (90 %) blir kommunens kostnad ca 15 kr/m³, mot ca 34 kr/m³ för dricksvatten. Kostnaden per m³ faller kraftigt med större volymer.",
+      "confidence": "medium"
+    },
+    {
+      "id": "avsaltning_sandvik_kapacitet",
+      "sdg": [6, 9],
+      "name_sv": "Kapacitet i Sandviks avsaltningsverk, Borgholms kommun (Öland)",
+      "value": 3000,
+      "unit": "m³/dygn",
+      "year": 2017,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Från havet till dricksglaset (Sandviks avsaltningsverk)",
+        "publisher": "Borgholm Energi AB",
+        "url": "https://borgholmenergi.se/privat/vatten-och-avlopp/dricksvatten/olands-goda-dricksvatten/fran-havet-till-dricksglaset/"
+      },
+      "note_sv": "Bräckt vatten tas från 28 m djup i Kalmarsund och avsaltas med omvänd osmos; verket byggdes på rekordtid (spadtag augusti 2016, invigning juni 2017) och försörjer ca 3 000 hushåll. Enligt SVT (2017) kostade verket 85 miljoner kr plus 28 miljoner kr för ledningar, och det pumpar in 6 000 m³ havsvatten per dygn. Energianvändningen redovisas inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "avsaltning_morbylanga_kapacitet",
+      "sdg": [6, 9, 12],
+      "name_sv": "Kapacitet i Mörbylånga vattenverk för avsaltning och återanvändning (Öland)",
+      "value": 4000,
+      "unit": "m³/dygn",
+      "year": 2019,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Mörbylånga Vattenverk – Dricksvatten från bräckt vatten och industriellt processvatten (Vattendagen Kristianstad 2019-03-22)",
+        "publisher": "Mörbylånga kommun",
+        "url": "https://handelskammaren.com/wp-content/uploads/2019/04/Peter-Asteberg-M%C3%B6rbyl%C3%A5nga-kommun.pdf"
+      },
+      "note_sv": "Verket (invigt 2019) renar bräckt grundvatten från strandbrunnar (upp till 5 800 m³/dygn råvatten) och upp till 1 500 m³/dygn processvatten från Guldfågelns industrireningsverk; vattenförlusterna i verket är drygt 30 %. Kommunen beskriver det som först i Sverige med att återanvända använt vatten som dricksvatten. Tillsammans med Sandvik har Öland 7 000 m³/dygn, ca 2,5 miljoner m³/år, som inte beror på regn.",
+      "confidence": "high"
+    },
+    {
+      "id": "avsaltning_morbylanga_investering",
+      "sdg": [6, 9],
+      "name_sv": "Investering i Mörbylånga vattenverk för avsaltning och återanvändning (Öland)",
+      "value": 130,
+      "unit": "miljoner kr",
+      "year": 2019,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Nyttan med bättre vatten ('Senare tillkom 130 miljoner för ett vattenverk som avsaltar och renar både havs- och industrivatten')",
+        "publisher": "Vattenmyndigheterna",
+        "url": "https://www.vattenmyndigheterna.se/download/18.4a4eb7416faedec125632f/1680528671257/Nyttan%20med%20ba%CC%88ttre%20vatten_webb.pdf"
+      },
+      "note_sv": "Kommunens prognos våren 2019 var ca 110 miljoner kr, och vattentjänstplanen anger ca 180 miljoner kr för de två vattenverk som byggts sedan 2015. Per m³/dygn kapacitet blir det ca 33 000 kr, i nivå med Sandvik (85 miljoner kr för 3 000 m³/dygn, ca 28 000 kr; egen beräkning).",
+      "confidence": "medium",
+      "range": [110, 130]
+    },
+    {
+      "id": "morbylanga_forbrukning_hogsasong",
+      "sdg": [6, 11],
+      "name_sv": "Dricksvattenförbrukning i Mörbylånga kommun under högsäsong (Öland)",
+      "value": 5500,
+      "unit": "m³/dygn",
+      "year": 2019,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Mörbylånga Vattenverk – Några fakta om Mörbylånga vattenverk (Vattendagen Kristianstad 2019-03-22)",
+        "publisher": "Mörbylånga kommun",
+        "url": "https://handelskammaren.com/wp-content/uploads/2019/04/Peter-Asteberg-M%C3%B6rbyl%C3%A5nga-kommun.pdf"
+      },
+      "note_sv": "Mot ca 3 500 m³/dygn under lågsäsong, alltså 57 % högre sommartid. Kommunen levererade ca 1,4 miljoner m³ 2023 till nästan 70 % av 15 700 invånare och räknar med att förbrukningen överstiger 2 miljoner m³/år 2037 om ökningen fortsätter (vattentjänstplan 2025–2037). Avsaltningsverket på 4 000 m³/dygn täcker alltså knappt tre fjärdedelar av sommarbehovet.",
+      "confidence": "high"
+    },
+    {
+      "id": "borgholm_vattenuttag_juli_jamfort_januari",
+      "sdg": [6, 11],
+      "name_sv": "Vattenuttaget i Borgholms kommun i juli jämfört med januari (Öland)",
+      "value": 2,
+      "unit": "gånger januariuttaget",
+      "year": 2025,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Vattentjänstplan 2025–2040, avsnitt Våra dricksvattentäkter ('Det totala uttaget dubbleras från januari till juli månad')",
+        "publisher": "Borgholms kommun",
+        "url": "https://www.borgholm.se/wp-content/uploads/2026/02/Vattentjanstplan-2025-2040.pdf"
+      },
+      "note_sv": "Flera vattenverk når då sin maxkapacitet. 2010 var uttaget 3 890 m³/dygn i januari och 9 208 i juli (2,4 gånger, regional plan 2013), och SVT rapporterade 2024 ca 110 000 m³ i januari och 260 000 m³ i juli. Kommunens sex vattenverk producerar ca 2 miljoner m³/år, och ca 70 % av 11 000 invånare är anslutna.",
+      "confidence": "high",
+      "range": [2, 2.4]
+    },
+    {
+      "id": "befolkning_borgholm_juli_okning",
+      "sdg": [6, 11],
+      "name_sv": "Ökning av antalet personer i Borgholms kommun i juli jämfört med oktober–november (Öland)",
+      "value": 379,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "context",
+      "source": {
+        "title": "Kort analys: Snart väntas sommarens stora folkförflyttning – kommuntabell, befolkning midsommar och juli 2022 jämfört med oktober–november",
+        "publisher": "SCB",
+        "url": "https://www.scb.se/contentassets/0a2bcdf10d5d4d44a597d3656257ffa8/kort_analys_kommuntabell.xlsx"
+      },
+      "note_sv": "Från ca 10 900 till 52 200 personer enligt SCB:s experimentella statistik från mobilnätsdata. Mörbylånga ökade med 73 % (16 000 till 27 600), Öland som helhet ungefär tredubblades, medan Kalmar kommun ökade 1 %. Sommaren 2023 var Borgholms maxbefolkning 4,5 gånger årsmedianen.",
+      "confidence": "high"
+    },
+    {
+      "id": "ledning_fastland_oland_kapacitet",
+      "sdg": [6, 13, 17],
+      "name_sv": "Kapacitet i dricksvattenledningen över Kalmarsund (Öland)",
+      "value": 1000,
+      "unit": "m³/dygn",
+      "year": 2016,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Vatten i nöd och kris (föredrag, Hushållningssällskapet 2026): 'Ledning mellan fastlandet och Öland byggdes på rekordsnabba tre månader och kunde leverera 1 000 m³/dygn'",
+        "publisher": "Borgholm Energi AB",
+        "url": "https://hushallningssallskapet.se/wp-content/uploads/2026/02/foredrag-borgholm-energi.pdf"
+      },
+      "note_sv": "Ledningen över Kalmarsund byggdes under vattenkrisen 2016 och levererar fortfarande vatten från Kalmar Vatten. Mörbylånga anger ca 7,3 miljoner kr för ledningen med tryckstegring, som kan föra vatten åt båda hållen och vidare till Borgholm. Kapaciteten motsvarar ca 7 % av Kalmars medelproduktion och ca en femtedel av Mörbylångas sommarbehov.",
+      "confidence": "high"
+    },
+    {
+      "id": "vattentransporter_morbylanga_2016_kostnad",
+      "sdg": [6, 13],
+      "name_sv": "Kostnad för vattentransporter till Mörbylånga under vattenkrisen 2016 (Öland)",
+      "value": 11,
+      "unit": "miljoner kr",
+      "year": 2016,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Nyttan med bättre vatten, avsnitt Dyrt när vattenförsörjningen brister",
+        "publisher": "Vattenmyndigheterna",
+        "url": "https://www.vattenmyndigheterna.se/download/18.4a4eb7416faedec125632f/1680528671257/Nyttan%20med%20ba%CC%88ttre%20vatten_webb.pdf"
+      },
+      "note_sv": "När dricksvattnet sinade i Mörbylånga 2016 fraktade tankbilar 1 000 m³ vatten om dagen från fastlandet under vår, sommar och höst. Därefter byggdes vattenverket som avsaltar och renar havs- och industrivatten för 130 miljoner kr. Enligt den regionala planen var grundvattennivån på norra Öland rekordlåg i november 2016.",
+      "confidence": "high"
+    },
+    {
+      "id": "bevattningsforbud_borgholm_dagar",
+      "sdg": [6, 13],
+      "name_sv": "Dagar per år med bevattningsförbud för kommunalt vatten i Borgholms kommun (Öland)",
+      "value": 122,
+      "unit": "dagar/år (1 maj–30 augusti)",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Bevattningsförbud ('Under perioden 1 maj till 30 augusti har vi därför bevattningsförbud')",
+        "publisher": "Borgholm Energi AB",
+        "url": "https://borgholmenergi.se/privat/vatten-och-avlopp/bevattningsforbud/"
+      },
+      "note_sv": "Förbudet är återkommande varje år, dels för att nederbörden är låg, dels för att sommarbelastningen kan ge leveransproblem och sämre vattenkvalitet. Pooler på 3 m³ eller mer får inte fyllas från nätet. Kalmar har däremot inte haft restriktioner sedan sommaren 2016.",
+      "confidence": "high"
+    },
+    {
+      "id": "grundvatten_god_status_morbylanga",
+      "sdg": [6],
+      "name_sv": "Grundvattenförekomster med god kemisk och kvantitativ status i Mörbylånga kommun (Öland)",
+      "value": 0,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N85053: Grundvattenförekomster med god kemisk och kvantitativ status, andel (%), Mörbylånga",
+        "publisher": "RKA Kolada (ursprungskälla: VISS, Länsstyrelserna)",
+        "url": "https://api.kolada.se/v3/data/kpi/N85053/municipality/0840/year/2022"
+      },
+      "note_sv": "Borgholm har 22,2 %, Kalmar kommun 77,8 %, länet 90 % och riket 97 % (Kolada 2022). Mörbylångas vattentjänstplan anger att alla grundvattenförekomster på Öland har otillfredsställande kvantitativ men god kemisk status.",
+      "confidence": "high"
+    },
+    {
+      "id": "grundvattentorrar_nybroasen_andel_2016_2026",
+      "sdg": [6, 13],
+      "name_sv": "Andel år 2016–2026 med grundvattentorka i Nybroåsens naturliga delar",
+      "value": 27,
+      "unit": "% av åren (3 av 11)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Observerade grundvattennivåer, station 6_26 (Nybroåsen vid Råsbäck södra) och 6_24 (Nybroåsen vid Vassmolösa), OGC API",
+        "publisher": "Sveriges geologiska undersökning (SGU)",
+        "url": "https://api.sgu.se/oppnadata/grundvattennivaer-observerade/ogc/features/v1/collections/nivaer/items?f=text%2Fcsv&limit=10000&filter-lang=cql-text&filter=platsbeteckning%3D%276_26%27"
+      },
+      "note_sv": "Egen analys: ett torrår har minst tre månader under 10:e percentilen för samma månad 1961–1990. Båda stationerna ger 2016, 2025 och 2026 (data till 9 september), mot 6 av 29 år 1961–1990 och 1 av 25 år 1991–2015; vintern 2025/26 låg 6_26 bara 0,1 m över rekordet från 1964. Stationen 6_23 i det infiltrerade området hade inget torrår 2016–2026.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "grundvattentorrar_oland_andel_2016_2026",
+      "sdg": [6, 13],
+      "name_sv": "Andel år 2016–2026 med grundvattentorka vid SGU:s station Böda på norra Öland (Öland)",
+      "value": 64,
+      "unit": "% av åren (7 av 11)",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Observerade grundvattennivåer, station 7_7 (Böda_7), OGC API",
+        "publisher": "Sveriges geologiska undersökning (SGU)",
+        "url": "https://api.sgu.se/oppnadata/grundvattennivaer-observerade/ogc/features/v1/collections/nivaer/items?f=text%2Fcsv&limit=10000&filter-lang=cql-text&filter=platsbeteckning%3D%277_7%27"
+      },
+      "note_sv": "Egen analys med samma definition som för Nybroåsen: torrår 2016, 2017, 2019, 2020, 2023, 2025 och 2026, mot 3 av 23 år 1968–1990. Grannstationen Böda_9 ger 6 av 11 år, och båda hade sina lägsta nivåer sedan 1968 i oktober 2016. Serien har över 23 000 värden och hämtas i flera sidor (startIndex); uttag i närliggande vattentäkter kan påverka nivåerna.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "grundvattenbildning_nybroasen_2071_2100_ssp585",
+      "sdg": [6, 13],
+      "name_sv": "Förändring av grundvattenbildningen vid Kalmars vattentäkter i Nybroåsen 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": -22.6,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Klimatindikatorer grundvatten, SGU-HYPE-område 106068 (Hagby): Förändring av potentiell grundvattenbildning, år, små magasin",
+        "publisher": "Sveriges geologiska undersökning (SGU)",
+        "url": "https://api.sgu.se/oppnadata/klimatindikatorer-sgu-hype-omraden/ogc/features/v1/collections/klimatindikatorer-rcp/items?f=text%2Fcsv&filter=omrade_id=106068&limit=1000"
+      },
+      "note_sv": "Medel av 17 simuleringar mot 1971–2000 (149 mm/år); intervallet är ±1 standardavvikelse, och 15 av 17 simuleringar visar minskning. RCP4.5 ≈ SSP2-4.5 ger −7,1 % 2041–2070 och −4,6 % 2071–2100, och RCP8.5 ger −9,6 % 2041–2070. Vårens grundvattenbildning minskar mest (−29 % 2071–2100 under RCP8.5).",
+      "confidence": "medium",
+      "range": [-43.1, -2.1]
+    },
+    {
+      "id": "grundvattenbildning_torrar_nybroasen_2071_2100_ssp585",
+      "sdg": [6, 13],
+      "name_sv": "Förändring av grundvattenbildningen ett torrt år vid Kalmars vattentäkter i Nybroåsen 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": -35.4,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Klimatindikatorer grundvatten, SGU-HYPE-område 106068 (Hagby): Förändring av potentiell grundvattenbildning, 25:e percentilen",
+        "publisher": "Sveriges geologiska undersökning (SGU)",
+        "url": "https://api.sgu.se/oppnadata/klimatindikatorer-sgu-hype-omraden/ogc/features/v1/collections/klimatindikatorer-rcp/items?f=text%2Fcsv&filter=omrade_id=106068&limit=1000"
+      },
+      "note_sv": "Ett torrt år är 25:e percentilen av årsvärdena; torra år försämras alltså mer än medelåret (−22,6 %). Under RCP4.5 ≈ SSP2-4.5 är förändringen −8,1 % 2041–2070 och −10,2 % 2071–2100, och under RCP8.5 −19,9 % 2041–2070. Intervallet är ±1 standardavvikelse över 17 simuleringar.",
+      "confidence": "medium",
+      "range": [-66.2, -4.6]
+    },
+    {
+      "id": "langsta_grundvattentorka_okning_nybroasen_2071_2100_ssp585",
+      "sdg": [6, 13],
+      "name_sv": "Förlängning av årets längsta grundvattentorka vid Kalmars vattentäkter i Nybroåsen 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 31.8,
+      "unit": "dygn",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatindikatorer grundvatten, SGU-HYPE-område 106068 (Hagby): Förändring av längsta grundvattentorka",
+        "publisher": "Sveriges geologiska undersökning (SGU)",
+        "url": "https://api.sgu.se/oppnadata/klimatindikatorer-sgu-hype-omraden/ogc/features/v1/collections/klimatindikatorer-rcp/items?f=text%2Fcsv&filter=omrade_id=106068&limit=1000"
+      },
+      "note_sv": "Grundvattentorka är en period då grundvattenbildningen de senaste 30 dygnen understiger 10 mm; den längsta perioden var ca 187 dygn 1971–2000, och alla 17 simuleringar visar förlängning. RCP4.5 ≈ SSP2-4.5 ger +15,8 dygn 2041–2070 och +14,9 dygn 2071–2100, och RCP8.5 ger +22,0 dygn 2041–2070. Ett torrt år förlängs med 37 dygn under RCP8.5.",
+      "confidence": "medium",
+      "range": [14.7, 48.9]
+    },
+    {
+      "id": "grundvattenbildning_oland_2071_2100_ssp585",
+      "sdg": [6, 13],
+      "name_sv": "Förändring av grundvattenbildningen vid Borgholms huvudvattentäkt 2071–2100 (Öland, RCP8.5 ≈ SSP5-8.5)",
+      "value": -26.9,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Klimatindikatorer grundvatten, SGU-HYPE-område 114077 (Köpingsvik): Förändring av potentiell grundvattenbildning, år, små magasin",
+        "publisher": "Sveriges geologiska undersökning (SGU)",
+        "url": "https://api.sgu.se/oppnadata/klimatindikatorer-sgu-hype-omraden/ogc/features/v1/collections/klimatindikatorer-rcp/items?f=text%2Fcsv&filter=omrade_id=114077&limit=1000"
+      },
+      "note_sv": "Området ligger vid Solbergafältet, Borgholms största täkt; referensen 1971–2000 är 144 mm/år. Böda på norra Öland får −34 % och Mörbylånga −22 %, och ett torrt år minskar med 41 % vid Köpingsvik och 54 % vid Böda. Under RCP4.5 ≈ SSP2-4.5 är förändringen vid Köpingsvik −11,5 % 2041–2070 och −7,3 % 2071–2100.",
+      "confidence": "medium",
+      "range": [-45.2, -8.6]
+    },
+    {
+      "id": "lagvattenforing_hagbyan_2071_2100_rcp85",
+      "sdg": [6, 13, 15],
+      "name_sv": "Förändring av medellågvattenföring (MLQ) i Hagbyån, källan för Kalmars konstgjorda infiltration, 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": -20.2,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi – vattenföring (MLQ), Hagbyån, jämfört med 1971–2000",
+        "publisher": "SMHI (HYPE-modellen driven av 17 EURO-CORDEX-körningar)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/wdisyearminAnom_unregulated/rcp85/graphs/wdisyearminAnom_unregulated_rcp85_ANN_172.json"
+      },
+      "note_sv": "Alla 17 modeller ger minskning; intervallet är min–max. RCP4.5 ≈ SSP2-4.5 ger −9,9 % 2041–2070 och −6,7 % 2071–2100, och RCP8.5 ger −11,1 % 2041–2070. Kalmar Vatten fyller på ån sommartid från sitt sjömagasin, så lägre lågflöden betyder att magasinet töms snabbare.",
+      "confidence": "medium",
+      "range": [-36.3, -7.7]
+    },
+    {
+      "id": "torrar_sannolikhet_nybroasen_2071_2100_ssp585",
+      "sdg": [6, 13],
+      "name_sv": "Sannolikhet per år för ett grundvattenbildningsår lika torrt som dagens 10-årstorrår vid Kalmars vattentäkter 2071–2100 (RCP8.5 ≈ SSP5-8.5)",
+      "value": 21,
+      "unit": "% per år",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Klimatindikatorer grundvatten, SGU-HYPE-område 106068 (Hagby): potentiell grundvattenbildning, medel och 25:e percentil (historisk 1971–2000 och RCP)",
+        "publisher": "Sveriges geologiska undersökning (SGU)",
+        "url": "https://api.sgu.se/oppnadata/klimatindikatorer-sgu-hype-omraden/ogc/features/v1/collections/klimatindikatorer-rcp/items?f=text%2Fcsv&filter=omrade_id=106068&limit=1000"
+      },
+      "note_sv": "Egen uppskattning: årsvärdena antas normalfördelade med medel och 25:e percentil från SGU, och tröskeln är dagens 10-årstorrår (10 % per år 1971–2000). RCP4.5 ≈ SSP2-4.5 ger 9 % 2041–2070 och 11 % 2071–2100, och RCP8.5 ≈ SSP5-8.5 ger 15 % 2041–2070 och 21 % 2071–2100, alltså ungefär vart femte år. För Böda på norra Öland blir det 16–18 % (SSP2-4.5) och 19–24 % (SSP5-8.5).",
+      "confidence": "estimate"
+    }
+  ]
+}

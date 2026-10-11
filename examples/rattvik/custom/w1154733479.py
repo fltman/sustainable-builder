@@ -1,0 +1,7 @@
+"""w1154733479: Street View (2010–2024): Vasagatan 18: red brick block, 2 floors + basement windows, white rendered wing to the north-west
+(Starter script from housekit_seed.py — compare with the photo and edit by hand.)"""
+import housekit
+
+h = housekit.House(ctx, levels=2, wall='M_Wall_Brick_red_Blank', trim='M_Wall_Plaster_white_Blank', shop=False)
+h.facades(window=(1.2, 1.45), pitch=2.9, kind='modern')
+h.roof(shape='hipped', pitch=22, mat='M_Roof_Metal_black')

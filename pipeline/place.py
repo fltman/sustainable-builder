@@ -1,9 +1,9 @@
 """Find a place with OpenStreetMap Nominatim and write cities/<slug>/place.json.
 
-    python3 wasteland.py new "Visby"                    # first hit, 1 km square
-    python3 wasteland.py new "Visby" --size large       # 1.6 km square
-    python3 wasteland.py new "Lund" --pick 2            # second search hit
-    python3 wasteland.py new "Ystad" --center 55.4295,13.8204 --size 800
+    python3 sustainable.py new "Visby"                    # first hit, 1 km square
+    python3 sustainable.py new "Visby" --size large       # 1.6 km square
+    python3 sustainable.py new "Lund" --pick 2            # second search hit
+    python3 sustainable.py new "Ystad" --center 55.4295,13.8204 --size 800
 """
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ def bbox_around(lat, lon, size_m):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog='wasteland.py new')
+    ap = argparse.ArgumentParser(prog='sustainable.py new')
     ap.add_argument('query', help='Town, district, square or address, e.g. "Visby" or "Möllevångstorget, Malmö"')
     ap.add_argument('--size', default='medium', help='small (600 m), medium (1000 m), large (1600 m) or metres')
     ap.add_argument('--pick', type=int, default=1, help='Use search hit number N')
@@ -77,7 +77,7 @@ def main(argv=None):
     say(f'Centre {lat:.5f}, {lon:.5f}; area {size} × {size} m')
     say(f'Map:   https://www.openstreetmap.org/?mlat={lat:.5f}&mlon={lon:.5f}#map=16/{lat:.5f}/{lon:.5f}')
     say(f'Saved: cities/{slug}/place.json')
-    say(f'\nNext:  python3 wasteland.py build {slug}')
+    say(f'\nNext:  python3 sustainable.py build {slug}')
     return slug
 
 

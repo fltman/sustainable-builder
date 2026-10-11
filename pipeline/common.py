@@ -33,7 +33,7 @@ def city_dir(slug: str) -> Path:
     path = CITIES / slug
     if not (path / 'place.json').exists():
         known = ', '.join(sorted(p.name for p in CITIES.glob('*') if (p / 'place.json').exists())) or 'none yet'
-        sys.exit(f'No city "{slug}". Create it with: python3 wasteland.py new "<place>"   (existing: {known})')
+        sys.exit(f'No city "{slug}". Create it with: python3 sustainable.py new "<place>"   (existing: {known})')
     return path
 
 

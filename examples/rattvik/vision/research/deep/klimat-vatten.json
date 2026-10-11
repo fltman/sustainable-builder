@@ -1,0 +1,834 @@
+{
+  "topic": "klimat-vatten",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "temp_okning_2071_2100_rcp26",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperaturen till 2071–2100 jämfört med 1971–2000, RCP2.6",
+      "value": 1.8,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, medeltemperatur, avvikelse, år, RCP2.6, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp26/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Ensemblemedelvärde av regionala klimatmodeller (ca 12×12 km) för hela länet; modellerad referens 1971–2000 är 2,9 °C (observerat 3,0 °C). Delområdet Siljan–Nedre Österdalälven: +1,7 °C.",
+      "confidence": "high"
+    },
+    {
+      "id": "temp_okning_2071_2100_rcp45",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperaturen till 2071–2100 jämfört med 1971–2000, RCP4.5",
+      "value": 3.0,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, medeltemperatur, avvikelse, år, RCP4.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp45/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Ensemblemedelvärde av regionala klimatmodeller (ca 12×12 km) för hela länet; modellerad referens 1971–2000 är 2,9 °C (observerat 3,0 °C). Delområdet Siljan–Nedre Österdalälven: +2,9 °C; vintern (dec–feb) +3,9 °C.",
+      "confidence": "high"
+    },
+    {
+      "id": "temp_okning_2071_2100_rcp85",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperaturen till 2071–2100 jämfört med 1971–2000, RCP8.5",
+      "value": 4.9,
+      "unit": "°C",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, medeltemperatur, avvikelse, år, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/tasAnom/rcp85/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Ensemblemedelvärde av regionala klimatmodeller (ca 12×12 km) för hela länet; modellerad referens 1971–2000 är 2,9 °C (observerat 3,0 °C). Delområdet Siljan–Nedre Österdalälven: +4,8 °C; vintern +6,2 °C och sommaren +4,5 °C.",
+      "confidence": "high"
+    },
+    {
+      "id": "hogsommardygn_1971_2000_lan",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Högsommardygn per år (maxtemperatur över 25 °C), observerat medel 1971–2000",
+      "value": 7.8,
+      "unit": "dygn/år",
+      "year": 2000,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, högsommardygn, RCP4.5, 2071–2100 (fältet refGclim) (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/su/rcp45/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Observationsbaserat (griddade data) länsmedel; klimatmodellernas egen referens för samma period är 6,6–6,7 dygn, och scenariovärdena nedan ska jämföras med den. Länsmedlet dras ned av fjällen – vid Siljan är antalet ungefär dubbelt så högt (se hogsommardygn_1991_2020_lokal).",
+      "confidence": "high"
+    },
+    {
+      "id": "hogsommardygn_2071_2100_rcp26_lan",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Högsommardygn per år (maxtemperatur över 25 °C) 2071–2100, RCP2.6",
+      "value": 13.1,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, högsommardygn, år, RCP2.6, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/su/rcp26/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Ensemblemedelvärde för länet; ökning med 6,5 dygn jämfört med den modellerade referensen 1971–2000 (6,6 dygn). För Siljanbygden, se de lokala uppskattningarna.",
+      "confidence": "high"
+    },
+    {
+      "id": "hogsommardygn_2071_2100_rcp45_lan",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Högsommardygn per år (maxtemperatur över 25 °C) 2071–2100, RCP4.5",
+      "value": 17.7,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, högsommardygn, år, RCP4.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/su/rcp45/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Ensemblemedelvärde för länet; ökning med 11,0 dygn jämfört med den modellerade referensen 1971–2000 (6,7 dygn). För Siljanbygden, se de lokala uppskattningarna.",
+      "confidence": "high"
+    },
+    {
+      "id": "hogsommardygn_2071_2100_rcp85_lan",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Högsommardygn per år (maxtemperatur över 25 °C) 2071–2100, RCP8.5",
+      "value": 31.7,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, högsommardygn, år, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/su/rcp85/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Ensemblemedelvärde för länet; ökning med 25,0 dygn jämfört med den modellerade referensen 1971–2000 (6,7 dygn). Mitten av seklet (2041–2070): 18,8 dygn. För Siljanbygden, se de lokala uppskattningarna.",
+      "confidence": "high"
+    },
+    {
+      "id": "hogsommardygn_2018_lan",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Högsommardygn sommaren 2018 (maxtemperatur över 25 °C), observerat",
+      "value": 32.3,
+      "unit": "dygn",
+      "year": 2018,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, högsommardygn, årsserie 1951–2100 (fältet obs_based för 2018) (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/su/rcp45/graphs/su_rcp45_ANN_yr_1951_2100_dalarnas_lan.json"
+      },
+      "note_sv": "Observationsbaserat länsmedel för 2018, det högsta i serien 1961–2018 och i nivå med medelåret 2071–2100 enligt RCP8.5 (31,7). SMHI:s station i Leksand hade 46 sådana dygn samma sommar (egen räkning).",
+      "confidence": "high"
+    },
+    {
+      "id": "hogsommardygn_1991_2020_lokal",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Högsommardygn per år (maxtemperatur över 25 °C) vid Siljan, observerat medel 1991–2020 (station Leksand)",
+      "value": 16.4,
+      "unit": "dygn/år",
+      "year": 2020,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Meteorologiska observationer, lufttemperatur max 1 gång/dygn, station Leksand (105450), kvalitetskontrollerad serie",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI)",
+        "url": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/20/station/105450/period/corrected-archive/data.csv"
+      },
+      "note_sv": "Medelantal dygn per år över 25 °C vid SMHI:s station Leksand (172 m ö.h., vid Siljans utlopp, ca 19 km från Rättvik), 27 fullständiga år 1991–2020 (1992, 1993 och 2019 har luckor). 1971–2000 var medelvärdet 14,0; Mora A hade 14,5 (1991–2020). Varmaste dag i serien: 33,5 °C (1975).",
+      "confidence": "medium"
+    },
+    {
+      "id": "hogsommardygn_2071_2100_rcp45_lokal",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Högsommardygn per år vid Siljan 2071–2100, RCP4.5 (uppskattning)",
+      "value": 25,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, högsommardygn, RCP4.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI Klimatscenariotjänsten, SMHI station Leksand)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/su/rcp45/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Leksands observerade medel 1971–2000 (14,0 dygn) plus länets beräknade ökning enligt RCP4.5 (+11,0 dygn) = 25 dygn. Additiv skalning; en proportionell skalning skulle ge fler dygn, så värdet är snarast försiktigt.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "hogsommardygn_2071_2100_rcp85_lokal",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Högsommardygn per år vid Siljan 2071–2100, RCP8.5 (uppskattning)",
+      "value": 39,
+      "unit": "dygn/år",
+      "year": 2021,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, högsommardygn, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI Klimatscenariotjänsten, SMHI station Leksand)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/su/rcp85/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Leksands observerade medel 1971–2000 (14,0 dygn) plus länets beräknade ökning enligt RCP8.5 (+25,0 dygn) = 39 dygn. Additiv skalning; en proportionell skalning skulle ge fler dygn, så värdet är snarast försiktigt.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "langsta_period_hogsommardygn_2071_2100_rcp85",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Längsta sammanhängande period med högsommardygn (värmebölja) 2071–2100, RCP8.5",
+      "value": 11.0,
+      "unit": "dygn",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, längsta period med högsommardygn, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/csu/rcp85/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Årets längsta följd av dygn med maxtemperatur över 25 °C, länsmedel; observerat 1971–2000: 3,6 dygn. RCP4.5 ger 6,6 och RCP2.6 5,3 dygn.",
+      "confidence": "high"
+    },
+    {
+      "id": "arsnederbord_forandring_2071_2100_rcp85",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Förändring av årsnederbörden till 2071–2100 jämfört med 1971–2000, RCP8.5",
+      "value": 21,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, nederbörd, avvikelse, år, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI Klimatscenariotjänsten)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/prAnom/rcp85/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "SMHI anger +13 mm/månad mot den modellerade referensen 61 mm/månad 1971–2000: 13/61 = 21 %. RCP4.5 ger +9 mm/månad (15 %) och RCP2.6 +5 mm/månad (8 %).",
+      "confidence": "medium"
+    },
+    {
+      "id": "vinternederbord_forandring_2071_2100_rcp85",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Förändring av vinternederbörden (dec–feb) till 2071–2100, RCP8.5",
+      "value": 35,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, nederbörd, avvikelse, vinter, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI Klimatscenariotjänsten)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/prAnom/rcp85/textdata/dalarnas_lan_DJF_2071_2100.json"
+      },
+      "note_sv": "+15 mm/månad mot modellerad referens 43 mm/månad: 15/43 = 35 %. RCP4.5: +9 mm/månad (21 %). En växande del faller som regn i stället för snö.",
+      "confidence": "medium"
+    },
+    {
+      "id": "sommarnederbord_forandring_2071_2100_rcp85",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Förändring av sommarnederbörden (jun–aug) till 2071–2100, RCP8.5",
+      "value": 11,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, nederbörd, avvikelse, sommar, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI Klimatscenariotjänsten)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/prAnom/rcp85/textdata/dalarnas_lan_JJA_2071_2100.json"
+      },
+      "note_sv": "+9 mm/månad mot modellerad referens 81 mm/månad: 9/81 = 11 %. RCP4.5: +8 mm/månad (10 %). Högre avdunstning i varmare somrar gör att torka ändå blir vanligare (se markfuktighet).",
+      "confidence": "medium"
+    },
+    {
+      "id": "max_dygnsnederbord_forandring_2069_2098_rcp85",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Förändring av årets största dygnsnederbörd till 2069–2098 jämfört med 1961–1990, RCP8.5",
+      "value": 20,
+      "unit": "%",
+      "year": 2015,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Framtidsklimat i Dalarnas län – enligt RCP-scenarier, Klimatologi nr 16 (2015), s. 36 (PDF-sida 46)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e832c51b/1717804158612/Klimatologi_16%20Framtidsklimat%20i%20Dalarnas%20l%C3%A4n%20-%20enligt%20RCP-scenarier.pdf"
+      },
+      "note_sv": "Länets medelvärde av årets största dygnsnederbörd var 32 mm 1961–1990 och väntas öka med ca 20 % enligt RCP8.5, något mindre enligt RCP4.5. För korttidsregn (skyfall) räknar SMHI med klimatfaktor ca 1,2 (RCP4.5) och 1,4 (RCP8.5) i slutet av seklet.",
+      "confidence": "high"
+    },
+    {
+      "id": "vegetationsperiod_2071_2100_rcp45",
+      "sdg": [
+        2,
+        13,
+        15
+      ],
+      "name_sv": "Vegetationsperiodens längd 2071–2100, RCP4.5",
+      "value": 191,
+      "unit": "dygn",
+      "year": 2021,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, Dalarnas län, vegetationsperiodens längd, RCP4.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/met/gsl/rcp45/textdata/dalarnas_lan_ANN_2071_2100.json"
+      },
+      "note_sv": "Antal dygn från vegetationsperiodens start (dygnsmedel över 5 °C fyra dygn i följd) till dess slut, länsmedel; observerat 1971–2000: 157 dygn. RCP2.6 ger 176 och RCP8.5 217 dygn.",
+      "confidence": "high"
+    },
+    {
+      "id": "max_snovatteninnehall_forandring_2071_2100_rcp85",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Förändring av årets största snömängd (vatteninnehåll) till 2071–2100, RCP8.5",
+      "value": -69.6,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi, snövatteninnehåll (max), delområde Siljan – Nedre Österdalälven, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/snowyearmaxAnom_unregulated/rcp85/textdata/123_ANN_2071_2100.json"
+      },
+      "note_sv": "Gäller SMHI:s delområde Siljan–Nedre Österdalälven, där det modellerade maximala snövatteninnehållet var 71 mm 1971–2000; minskningen är 47 % enligt RCP4.5. Mindre snö ger lägre vårflod men fler regnflöden höst och vinter.",
+      "confidence": "high"
+    },
+    {
+      "id": "dagar_lag_markfuktighet_2069_2098_rcp85",
+      "sdg": [
+        2,
+        6,
+        13,
+        15
+      ],
+      "name_sv": "Dagar per år med låg markfuktighet i slutet av seklet (2069–2098), RCP8.5",
+      "value": 35,
+      "unit": "dagar/år",
+      "year": 2015,
+      "scope": "Dalarnas län",
+      "direction": "context",
+      "source": {
+        "title": "Framtidsklimat i Dalarnas län – enligt RCP-scenarier, Klimatologi nr 16 (2015), s. 65 (PDF-sida 75)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI)",
+        "url": "https://www.smhi.se/download/18.18f5a56618fc9f08e832c51b/1717804158612/Klimatologi_16%20Framtidsklimat%20i%20Dalarnas%20l%C3%A4n%20-%20enligt%20RCP-scenarier.pdf"
+      },
+      "note_sv": "SMHI anger 30–40 dagar per år med låg markfuktighet för större delen av länet enligt RCP8.5 (20–25 enligt RCP4.5), mot dagens 5–10 dagar; värdet är intervallets mitt. Måttet är ett torkindex för bevattningsbehov och brandrisk.",
+      "confidence": "medium"
+    },
+    {
+      "id": "istacke_dagar_2016_2026",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Isperiodens längd på Siljan (Storsiljan), medel för vintrarna 2015/16–2025/26",
+      "value": 74,
+      "unit": "dagar",
+      "year": 2026,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Hydrologiska observationer, isläggning och islossning, station Siljan Storsiljan SO Sollerön (70222)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI)",
+        "url": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/6/station/70222/period/corrected-archive/data.csv"
+      },
+      "note_sv": "Medel av antal dagar mellan isläggning och islossning för de tio vintrar som har observation (2019/20 saknas). 1871–1900 var medelvärdet 129 dagar och islossningen kom i medel 7 maj, mot 9 april 2016–2026; vintern 2024/25 låg isen bara 35 dagar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "siljan_medelvattenstand",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Siljans medelvattenstånd 1964–2024",
+      "value": 161.18,
+      "unit": "m ö.h. (RH 1900)",
+      "year": 2024,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Fakta om Siljan (tabell 2)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/kunskapsbanken/hydrologi/de-stora-sjoarna/fakta-om-siljan"
+      },
+      "note_sv": "Medelvattenstånd under nuvarande vattendom, mätt vid Byrviksbanken (Siljansnäs). Normalt lågvatten 160,07 och normalt högvatten 161,98 m; före regleringen (1900–1925) var medelvattenståndet 161,0 m. Lägg till ca 0,4 m för RH 2000 (se hojdskillnad_rh2000_rh1900).",
+      "confidence": "high"
+    },
+    {
+      "id": "siljan_dammningsgrans",
+      "sdg": [
+        6,
+        7,
+        13
+      ],
+      "name_sv": "Siljans högsta regleringsgräns (dämningsgräns) enligt vattendomen 1964",
+      "value": 161.78,
+      "unit": "m ö.h. (RH 1900)",
+      "year": 1964,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Gråda–Siljan. Nulägesbeskrivning (2025), bilaga 1, PDF-sida 33–34",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.57c2d35a1969f8a67de2cc10/1746791796734/Gr%C3%A5da-Siljan.pdf"
+      },
+      "note_sv": "Vattendomen (AD 45/1947, 1964-02-27) tillåter reglering mellan +159,90 och +161,78 m – en amplitud på 1,88 m – från Gråda kraftverk ca 2 mil nedströms Leksand. Över gränsen ska tappningen följa den naturliga avbördningen: 293 m³/s vid +161,78 och ca 2 m³/s mer per cm.",
+      "confidence": "high"
+    },
+    {
+      "id": "siljan_hogsta_vattenstand_1985",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Siljans högsta vattenstånd sedan nuvarande reglering (13 september 1985)",
+      "value": 163.04,
+      "unit": "m ö.h. (RH 1900)",
+      "year": 1985,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Fakta om Siljan (tabell 2 och 3)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/kunskapsbanken/hydrologi/de-stora-sjoarna/fakta-om-siljan"
+      },
+      "note_sv": "Kulmen efter en mycket regnig sommar och höst; Siljan steg en meter på en vecka, under samma regnperiod som fick dammen i Noppikoski att brista. Därefter de högsta: 162,90 (nov 2000), 162,73 (juni 1995) och 162,62 (aug 2023). Ca +163,4 m i RH 2000.",
+      "confidence": "high"
+    },
+    {
+      "id": "siljan_hogsta_kanda_vattenstand_1860",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Siljans högsta kända vattenstånd (1860)",
+      "value": 165.0,
+      "unit": "m ö.h. (RH 1900)",
+      "year": 1860,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Gråda–Siljan. Nulägesbeskrivning (2025), PDF-sida 6",
+        "publisher": "Egen beräkning (ursprungskällor: Länsstyrelsen i Dalarnas län, SMHI)",
+        "url": "https://www.lansstyrelsen.se/download/18.57c2d35a1969f8a67de2cc10/1746791796734/Gr%C3%A5da-Siljan.pdf"
+      },
+      "note_sv": "Länsstyrelsen anger att det högsta kända vattenståndet före regleringen låg 3,25 m över dämningsgränsen 161,78 m: 161,78 + 3,25 = 165,03 m. SMHI daterar rekordet till 1860, ca två meter över 1985 års nivå; under 1900–1925 var högsta nivån 163,9 m.",
+      "confidence": "medium"
+    },
+    {
+      "id": "siljan_hogvatten_2023",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Siljans högsta vattenstånd efter ovädret Hans (18 augusti 2023)",
+      "value": 162.62,
+      "unit": "m ö.h. (RH 1900)",
+      "year": 2023,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Fakta om Siljan (tabell 3, högsta vattenstånd i augusti)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/kunskapsbanken/hydrologi/de-stora-sjoarna/fakta-om-siljan"
+      },
+      "note_sv": "Enligt SMHI den högsta nivån sedan 2000 och den högsta augustinivån sedan regleringen 1964; kulmen nåddes 18 augusti enligt SMHI:s dygnsserie för Byrviksbanken. Av de fyra högsta nivåerna sedan 1964 kom tre efter sommar- eller höstregn (1985, 2000, 2023) och en vid försommarflod (1995).",
+      "confidence": "high"
+    },
+    {
+      "id": "siljan_andel_ar_over_dammningsgrans",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel år då Siljan steg över dämningsgränsen +161,78 m, 1967–2025",
+      "value": 68,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Hydrologiska observationer, vattenstånd dygn, station Byrviksbanken (1906)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI)",
+        "url": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/1906/period/corrected-archive/data.csv"
+      },
+      "note_sv": "Årshögsta vattenståndet översteg +161,78 m under 40 av 59 år (1967–2025); 1991–2020 under 17 av 30 år, i linje med Länsstyrelsens 'i genomsnitt vartannat år'. Mer än en meter över gränsen (+162,78) har Siljan nått två gånger: 1985 och 2000.",
+      "confidence": "medium"
+    },
+    {
+      "id": "siljan_utflode_100ar_idag",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "100-årsflöde ur Siljan vid Gråda kraftverk, dagens klimat",
+      "value": 612,
+      "unit": "m³/s",
+      "year": 2013,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Översvämningskartering utmed Dalälven (2013, reviderad 2021-09-16), bilaga 13a, PDF-sida 135",
+        "publisher": "MSB (nu Myndigheten för civilt försvar)",
+        "url": "https://lastkaj.msb.se/Karteringar/oversvamning-vattendrag/dalalven-falun-malung-vansbro.pdf"
+      },
+      "note_sv": "Gråda kraftverk reglerar Siljans utlopp. 200-årsflödet är 655 m³/s och beräknat högsta flöde (BHF) 1 405 m³/s. MSB:s klimatanpassade 100-årsflöde för år 2098 är lägre, 490 m³/s, eftersom vårfloden minskar i de då använda scenarierna; SMHI:s nyare beräkning pekar i stället på ökning (se siljan_hogflode_50ar_forandring_2071_2100_rcp85).",
+      "confidence": "high"
+    },
+    {
+      "id": "siljan_100arsniva_idag",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Siljans 100-årsnivå i dagens klimat (uppskattning)",
+      "value": 163.3,
+      "unit": "m ö.h. (RH 1900)",
+      "year": 2013,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Gråda–Siljan. Nulägesbeskrivning (2025), avbördningstabell i bilaga 1, PDF-sida 33–34",
+        "publisher": "Egen beräkning (ursprungskällor: MSB, Länsstyrelsen i Dalarnas län, SMHI)",
+        "url": "https://www.lansstyrelsen.se/download/18.57c2d35a1969f8a67de2cc10/1746791796734/Gr%C3%A5da-Siljan.pdf"
+      },
+      "note_sv": "Vattendomens avbördningstabell ger 612 m³/s (MSB:s 100-årsflöde vid Gråda) vid nivån +163,30 m; tabellen stämmer med SMHI:s observationer (163,04 m och ca 570 m³/s 1985). Ca +163,7 m i RH 2000; ingen officiell 100-årsnivå för Siljan har hittats publicerad i text.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "siljan_hogflode_50ar_forandring_2071_2100_rcp85",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Förändring av 50-årsflödet ut från Siljanområdet till 2071–2100, RCP8.5 (nuvarande reglering)",
+      "value": 13.2,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi, vattenföring 50-års återkomsttid, nuvarande regleringar, delområde Siljan – Nedre Österdalälven, RCP8.5, 2071–2100 (dataversion 1.0, 2021-11-17)",
+        "publisher": "SMHI",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/wdisreturnmax50Anom_regulated/rcp85/textdata/123_ANN_2071_2100.json"
+      },
+      "note_sv": "Gäller utloppet av SMHI:s delområde Siljan–Nedre Österdalälven (modellerat 465 m³/s 1971–2000). RCP4.5 ger +9,9 % och RCP2.6 +11,8 %; 10-årsflödet ökar 15 % (RCP8.5). MSB:s äldre beräkning (2013) pekar i stället på minskning, så riktningen är osäker.",
+      "confidence": "high"
+    },
+    {
+      "id": "siljan_100arsniva_2071_2100_rcp85",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Siljans 100-årsnivå 2071–2100, RCP8.5 (uppskattning)",
+      "value": 163.6,
+      "unit": "m ö.h. (RH 1900)",
+      "year": 2021,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Klimatscenariotjänsten, hydrologi, vattenföring 50-års återkomsttid, delområde Siljan – Nedre Österdalälven, RCP8.5 (dataversion 1.0, 2021-11-17)",
+        "publisher": "Egen beräkning (ursprungskällor: SMHI, MSB, Länsstyrelsen i Dalarnas län)",
+        "url": "https://www.smhi.se/pd/klimatsystem/climate_scenario/hyd/wdisreturnmax50Anom_regulated/rcp85/textdata/123_ANN_2071_2100.json"
+      },
+      "note_sv": "612 m³/s × 1,132 = 693 m³/s, som enligt vattendomens avbördningstabell motsvarar +163,63 m (RCP4.5: 673 m³/s, +163,55 m). Ca +164,0 m i RH 2000 – i höjd med Rättviks lägsta strandgator. Med MSB:s flöde för 2098 (490 m³/s) blir nivån i stället +162,76 m.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "hojdskillnad_rh2000_rh1900",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Skillnad mellan höjdsystemen RH 2000 och RH 1900 vid Siljan (uppskattning)",
+      "value": 0.4,
+      "unit": "m",
+      "year": 2020,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Markhöjdmodell, ursprungsdata för ruta 675_50 (laserskanning 2020-11-06)",
+        "publisher": "Egen beräkning (ursprungskällor: Lantmäteriet, SMHI)",
+        "url": "https://dl1.lantmateriet.se/hojd/pub/grid/mhm/67_5/m675_50_ursprung.json"
+      },
+      "note_sv": "I Lantmäteriets markhöjdmodell ligger Siljans yta vid Rättvik på +162,18 m (RH 2000); rutan laserskannades 6 november 2020, samma dag som SMHI uppmätte +161,78 m (RH 1900) vid Byrviksbanken. Skillnad ca 0,40 m (osäkerhet ca ±0,15 m); används för att räkna om SMHI:s Siljannivåer till RH 2000.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "lagsta_strandgata_niva",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Lägsta marknivå på gator vid Siljan och Enåns nedersta lopp i Rättvik",
+      "value": 164.0,
+      "unit": "m ö.h. (RH 2000)",
+      "year": 2020,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Markhöjdmodell (dtm-cog), rutor 675_50 och 674_50",
+        "publisher": "Egen beräkning (ursprungskällor: Lantmäteriet Markhöjdmodell, OpenStreetMap)",
+        "url": "https://api.lantmateriet.se/stac-hojd/v1/search?collections=dtm-cog&bbox=15.094,60.878,15.125,60.894"
+      },
+      "note_sv": "Lägsta punkt längs gatorna närmast vattnet: Badhusgatan +164,04 och Båthamnsvägen +164,12 m (4 m-rutnät, gatornas mittlinjer i OSM). Motsvarar ca +163,6 m i RH 1900 – ca 2,4 m över Siljans medelvattenstånd och 0,6 m över 1985 års rekord; Torget och stationen ligger på ca +166 m.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "byggnader_under_100arsniva",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Byggnader i centrala Rättvik med marknivå under Siljans uppskattade 100-årsnivå (+163,7 m RH 2000)",
+      "value": 8,
+      "unit": "byggnader",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "lower_better",
+      "source": {
+        "title": "Markhöjdmodell (dtm-cog) och OpenStreetMaps byggnader",
+        "publisher": "Egen beräkning (ursprungskällor: Lantmäteriet Markhöjdmodell, OpenStreetMap, MSB, SMHI)",
+        "url": "https://api.lantmateriet.se/stac-hojd/v1/search?collections=dtm-cog&bbox=15.094,60.878,15.125,60.894"
+      },
+      "note_sv": "Byggnader (OSM, ca 2,9 × 2,9 km kring centrum) vars lägsta hörn ligger under +163,7 m RH 2000, varav 7 inom 150 m från Siljan eller Enåns sjöpåverkade nedre lopp – främst hus kring Badhusgatan–Knihsgatan vid Enån, en bod vid Enåns mynning och en butiksbyggnad vid campingen. Under +164,0 m: 19 byggnader; under +165,0 m: 62.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "camping_andel_under_100arsniva",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av Siljanbadets Campings markyta under Siljans uppskattade 100-årsnivå (+163,7 m RH 2000)",
+      "value": 45,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Rättvik tätort",
+      "direction": "lower_better",
+      "source": {
+        "title": "Markhöjdmodell (dtm-cog) och campingens yta i OpenStreetMap",
+        "publisher": "Egen beräkning (ursprungskällor: Lantmäteriet Markhöjdmodell, OpenStreetMap)",
+        "url": "https://api.lantmateriet.se/stac-hojd/v1/search?collections=dtm-cog&bbox=15.094,60.878,15.125,60.894"
+      },
+      "note_sv": "Andel av campingens 9,1 ha (OSM-polygon) med marknivå under +163,7 m RH 2000 (uppskattad 100-årsnivå i dag); under +164,0 m (uppskattad 100-årsnivå 2071–2100, RCP8.5): 57 %. Campingen och stranden är Rättviks lägst liggande bebyggda mark.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "lagsta_grundlaggningsniva_siljan",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Lägsta grundläggningsnivå för ny bebyggelse vid Siljans utlopp (Leksands kommun)",
+      "value": 165,
+      "unit": "m ö.h.",
+      "year": 2014,
+      "scope": "Siljan",
+      "direction": "context",
+      "source": {
+        "title": "Detaljplan för Åkerö brofäste, planbeskrivning, PDF-sida 15",
+        "publisher": "Leksands kommun",
+        "url": "https://leksand.se/download/18.58e0ed1f18bfae8ae2b2cca7/1701435149338/Planbeskrivning%20%C3%85ker%C3%B6%20brof%C3%A4ste.pdf"
+      },
+      "note_sv": "Leksands översiktsplan (2014) anger +165 m ö.h. som lägsta grundläggningsnivå för ny bebyggelse vid Österdalälven/Siljans utlopp, grundat på 10 000-årsflödet; detaljplanen Limsjöänget i Leksand använder +165 m i RH 2000. Någon motsvarande publicerad nivå för Rättvik har inte hittats.",
+      "confidence": "medium"
+    },
+    {
+      "id": "skyfall_2023_skadade_villor",
+      "sdg": [
+        1,
+        11,
+        13
+      ],
+      "name_sv": "Villor skadade av skyfall och översvämning i augusti 2023 (ovädret Hans)",
+      "value": 150,
+      "unit": "villor",
+      "year": 2023,
+      "scope": "Rättviks kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Översvämning Dalarna augusti 2023, rapport 2024:05, PDF-sida 6 och 22",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.8cd5a1b19362fb4fc22181/1732536813580/%C3%96versv%C3%A4mning%20Dalarna%20augusti%202023.pdf"
+      },
+      "note_sv": "Lokala skyfall 6–8 augusti 2023 skadade ca 150 villor i Lerdal, Gärdebyn, Söderås, Utby och delar av centrala Rättvik (bebyggelse i branta sluttningar mot Siljan); ca 2,5 mil väg förstördes helt eller delvis och banvallen vid Tällberg spolades bort. Rättvik saknar egen SMHI-station; Leksand fick 145 mm 30 juli–10 augusti.",
+      "confidence": "high"
+    },
+    {
+      "id": "dimensionerande_skyfall_100ar_2h",
+      "sdg": [
+        6,
+        11,
+        13
+      ],
+      "name_sv": "Dimensionerande skyfall i Rättviks skyfallskartering: 100-årsregn, 2 timmar, med klimatfaktor",
+      "value": 72,
+      "unit": "mm",
+      "year": 2024,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Vattentjänstplan – en del av Rättviks kommuns VA-plan (KF 2024-09-26 § 58), tabell 1, s. 16",
+        "publisher": "Rättviks kommun",
+        "url": "https://ess-app.rattvik.se/api/download/82d29d1b-ecae-4896-ab1d-de1569234132/1d0db0b5-fac6-4563-8b79-e8f29152afb3"
+      },
+      "note_sv": "Skyfallskarteringen av VA-anläggningarna (Scalgo LIVE) använde ett 100-årsregn på 2 timmar med klimatfaktor 1,2 (72 mm; 40 mm efter avdrag för ledningsnät och infiltration) och ett 500-årsregn med klimatfaktor 1,35 (149 mm). Den fann 11 riskplatser, alla spillvattenpumpstationer, varav fyra med högre riskklass; dagvattnet renas inte i dag.",
+      "confidence": "high"
+    },
+    {
+      "id": "vattentakt_tillstand_max_dygn",
+      "sdg": [
+        6
+      ],
+      "name_sv": "Tillståndsgivet största grundvattenuttag i Gärdsjö vattentäkt (Rättviks huvudtäkt)",
+      "value": 4500,
+      "unit": "m³/dygn",
+      "year": 2025,
+      "scope": "Rättvik tätort",
+      "direction": "context",
+      "source": {
+        "title": "Enån – Prövningsgrupp Siljan med mindre biflöden. Nulägesbeskrivning (2025), PDF-sida 14",
+        "publisher": "Länsstyrelsen i Dalarnas län",
+        "url": "https://www.lansstyrelsen.se/download/18.57c2d35a1969f8a67de2cb2a/1746791248818/En%C3%A5n.pdf"
+      },
+      "note_sv": "Tillståndet för kommunens uttag strax väster om Gärdsjön medger högst 4 500 m³/dygn och 1,46 miljoner m³/år (i snitt ca 4 000 m³/dygn). Täkten ligger i vattenförsörjningsintresset Gärdsjöfältet med skyddsområdena Jutjärn Boda, Rättvik och Västanå (regional vattenförsörjningsplan 2023); ny täkt och nytt Gärdsjö vattenverk togs i drift 2025 och vattnet behandlas bara med luftning och UV (Rättvik Vatten och Avfall AB, Dala Vatten).",
+      "confidence": "high"
+    },
+    {
+      "id": "andel_egen_brunn",
+      "sdg": [
+        6
+      ],
+      "name_sv": "Andel av kommunens invånare med egen brunn",
+      "value": 40,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Rättviks kommun",
+      "direction": "context",
+      "source": {
+        "title": "Dricksvatten och vattenprov",
+        "publisher": "Rättviks kommun",
+        "url": "https://www.rattvik.se/bygga-bo-och-miljo/vatten-och-avlopp/dricksvatten-och-vattenprov.html"
+      },
+      "note_sv": "Kommunen anger att 'närmare 40 %' av befolkningen har egen grävd eller borrad brunn; i Dalarnas län som helhet hade ca 20 % enskild försörjning 2020 (Länsstyrelsen, SCB). Kommunen ansvarar inte för kvaliteten; uran och radon förekommer i bergborrade brunnar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "siljan_ekologisk_status",
+      "sdg": [
+        6,
+        15
+      ],
+      "name_sv": "Siljans ekologiska status (VISS)",
+      "value": 3,
+      "unit": "statusklass (1 = hög … 5 = dålig)",
+      "year": 2021,
+      "scope": "Siljan",
+      "direction": "lower_better",
+      "source": {
+        "title": "VISS – Siljan, WA71688194, senaste bedömning",
+        "publisher": "Länsstyrelserna / Vattenmyndigheterna (VISS)",
+        "url": "https://viss.lansstyrelsen.se/Waters.aspx?waterMSCD=WA71688194"
+      },
+      "note_sv": "Måttlig ekologisk status, främst på grund av fisk och konnektivitet (dammar och reglering – ålen har försvunnit och Siljansöringen minskat från tusentals till något hundratal); näringsämnen, ljusförhållanden och växtplankton har hög status. Kemisk status: uppnår ej god (kvicksilver, PBDE). Kvalitetskrav: god ekologisk status 2033; Enån genom Rättvik har god ekologisk status.",
+      "confidence": "high"
+    },
+    {
+      "id": "siljansbadet_prov_algblomning",
+      "sdg": [
+        3,
+        6
+      ],
+      "name_sv": "Badvattenprov med algblomning vid Siljansbadet 2023–2026",
+      "value": 0,
+      "unit": "prov",
+      "year": 2026,
+      "scope": "Rättvik tätort",
+      "direction": "lower_better",
+      "source": {
+        "title": "Badvatten – Siljansbadet, campingen (SE0622031000002963), provresultat",
+        "publisher": "Havs- och vattenmyndigheten",
+        "url": "https://gw.havochvatten.se/external-public/bathing-waters/v2/bathing-waters/SE0622031000002963/results"
+      },
+      "note_sv": "Inget av 26 prov vid EU-badet Siljansbadet 2023–2026 visade algblomning och badprofilen anger ingen risk för cyanobakterier – Siljan är näringsfattig. Klassning: utmärkt 2023–2024, bra 2025; ett prov 7 juli 2026 var otjänligt (bakterier) och provet dagen för ovädret Hans (8 aug 2023) fick anmärkning.",
+      "confidence": "high"
+    }
+  ]
+}

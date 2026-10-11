@@ -1,4 +1,4 @@
-"""Render the model from Street View viewpoints for `wasteland.py survey <slug> compare DIR`.
+"""Render the model from Street View viewpoints for `sustainable.py survey <slug> compare DIR`.
 
     Blender -b cities/<slug>/city.blend --python pipeline/blender/render_survey.py -- DIR/views.json DIR/render
 

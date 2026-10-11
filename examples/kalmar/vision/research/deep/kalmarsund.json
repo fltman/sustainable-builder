@@ -1,0 +1,420 @@
+{
+  "topic": "kalmarsund",
+  "compiled": "2026-10-08",
+  "indicators": [
+    {
+      "id": "kustvatten_kalmar_god_ekologisk_status_antal",
+      "sdg": [14],
+      "name_sv": "Kustvattenförekomster i Kalmar kommun med god ekologisk status",
+      "value": 0,
+      "unit": "av 9 kustvattenförekomster",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "VISS: S n Kalmarsund (WA75592769) samt övriga kustvattenförekomster som berör Kalmar kommun, senaste bedömning",
+        "publisher": "Länsstyrelserna/Vattenmyndigheterna (VISS)",
+        "url": "https://viss.lansstyrelsen.se/Waters.aspx?waterMSCD=WA75592769"
+      },
+      "note_sv": "Sju av nio vattenförekomster har måttlig och två (Hossmoviken, Västra sjön) otillfredsställande ekologisk status. Ingen når god kemisk status, främst på grund av kvicksilver och PBDE i fisk, som överskrids i hela landet. Bekräftar Koladas 0 % (N85089) på vattenförekomstnivå. Vattenförekomsterna och deras MS_CD står i notes-filen.",
+      "confidence": "high",
+      "replaces": "baltic"
+    },
+    {
+      "id": "kustvatten_kalmar_naringsamnen_ej_god_andel",
+      "sdg": [6, 14],
+      "name_sv": "Kustvattenförekomster i Kalmar kommun där kvalitetsfaktorn näringsämnen är otillfredsställande",
+      "value": 100,
+      "unit": "% (9 av 9)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "VISS: statusklassning för S n Kalmarsund, Västra sjön m.fl. (senaste bedömning)",
+        "publisher": "Länsstyrelserna/Vattenmyndigheterna (VISS)",
+        "url": "https://viss.lansstyrelsen.se/Waters.aspx?waterMSCD=WA27917257"
+      },
+      "note_sv": "Näringsämnen är otillfredsställande i alla nio vattenförekomster. I S n Kalmarsund och Västra sjön klassas totalfosfor sommartid som dålig. Växtplankton (klorofyll) är måttlig i sju och otillfredsställande i två. Bottenfauna och makrofyter (ålgräs) är inte klassade i VISS.",
+      "confidence": "high",
+      "replaces": "baltic"
+    },
+    {
+      "id": "kustvatten_kalmar_tidsfrist_god_status",
+      "sdg": [14],
+      "name_sv": "Tidsfrist för god ekologisk status i Kalmars kustvatten (miljökvalitetsnorm)",
+      "value": 2039,
+      "unit": "år",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "VISS: Miljökvalitetsnorm – God ekologisk status 2039 (S n Kalmarsund m.fl.)",
+        "publisher": "Vattenmyndigheterna (VISS)",
+        "url": "https://viss.lansstyrelsen.se/Waters.aspx?waterMSCD=WA75592769"
+      },
+      "note_sv": "Alla nio vattenförekomster har undantag med tidsfrist till 2039 av skälet naturliga förhållanden. Påverkan som pekas ut är jordbruk och omgivande havsvatten. För påverkan från enskilda avlopp, reningsverk och dagvatten gäller tidsfrist 2027.",
+      "confidence": "high",
+      "replaces": "baltic"
+    },
+    {
+      "id": "kalmarstationer_naringsamnen_nklass",
+      "sdg": [14],
+      "name_sv": "Näringsstatus vid Kalmarstationerna (medel av numerisk klass, 0–1)",
+      "value": 0.31,
+      "unit": "Nklass (god ≥ 0,6)",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Sammanfattande rapport av recipientkontrollen i Kalmar läns kustvatten 2023, tabell 2",
+        "publisher": "Kustvattenkommittén i Kalmar län (ursprungskälla: Calluna AB/Linnéuniversitetet)",
+        "url": "https://www.kalmarlanskustvatten.org/files/Arsrapport_2023b.pdf"
+      },
+      "note_sv": "Egen medelvärdesberäkning för perioden 2021–2023 och stationerna K15-MV (0,34), K3-V (0,28) och K11-MV (0,30), som alla är otillfredsställande. Gränsen för god status är 0,6. Klorofyll vid samma stationer: 0,50, 0,50 och 0,69.",
+      "confidence": "medium",
+      "replaces": "baltic"
+    },
+    {
+      "id": "kuststationer_god_klorofyll_lan",
+      "sdg": [14],
+      "name_sv": "Kuststationer med god eller hög status för växtplankton (klorofyll a)",
+      "value": 9,
+      "unit": "antal av 21",
+      "year": 2023,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Sammanfattande rapport av recipientkontrollen i Kalmar läns kustvatten 2023",
+        "publisher": "Kustvattenkommittén i Kalmar län",
+        "url": "https://www.kalmarlanskustvatten.org/files/Arsrapport_2023b.pdf"
+      },
+      "note_sv": "Avser 2021–2023 och är samma antal som perioden före. Klorofyllstatusen är ofta bättre än näringsstatusen eftersom kväve begränsar växtplanktonen medan fosforhalterna är höga. Siktdjup: 5 stationer god, 6 måttlig, 9 otillfredsställande.",
+      "confidence": "high",
+      "replaces": "bloom"
+    },
+    {
+      "id": "kalmar_arv_kvaveutslapp",
+      "sdg": [6, 14],
+      "name_sv": "Kväveutsläpp från Kalmar avloppsreningsverk",
+      "value": 87300,
+      "unit": "kg N/år",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Recipientkontrollen i Kalmar läns kustvatten 2023, tabell 1 Punktutsläpp",
+        "publisher": "Kustvattenkommittén i Kalmar län (ursprungskälla: Kalmar Vatten AB)",
+        "url": "https://www.kalmarlanskustvatten.org/files/Arsrapport_2023b.pdf"
+      },
+      "note_sv": "6,24 miljoner m³ renat avloppsvatten. Kalmar ARV är länets största punktutsläpp av kväve. Som jämförelse förde Ljungbyån ut cirka 390 ton kväve 2021. Jordbrukets diffusa utsläpp är den största källan.",
+      "confidence": "high",
+      "replaces": "baltic"
+    },
+    {
+      "id": "kalmar_arv_fosforutslapp",
+      "sdg": [6, 14],
+      "name_sv": "Fosforutsläpp från Kalmar avloppsreningsverk",
+      "value": 1580,
+      "unit": "kg P/år",
+      "year": 2023,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Recipientkontrollen i Kalmar läns kustvatten 2023, tabell 1 Punktutsläpp",
+        "publisher": "Kustvattenkommittén i Kalmar län (ursprungskälla: Kalmar Vatten AB)",
+        "url": "https://www.kalmarlanskustvatten.org/files/Arsrapport_2023b.pdf"
+      },
+      "note_sv": "Som jämförelse förde Ljungbyån ut cirka 4,2 ton fosfor till havet 2021, enligt samma rapport.",
+      "confidence": "high",
+      "replaces": "baltic"
+    },
+    {
+      "id": "kalmarsundsverket_minskning_n_p",
+      "sdg": [6, 14],
+      "name_sv": "Planerad minskning av kväve- och fosforutsläpp med Kalmarsundsverket (klart 2027)",
+      "value": 35,
+      "unit": "% (minst), jämfört med dagens verk",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kalmarsundsverket – ett kretsloppsverk",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/om-kalmar-vatten-ab/kalmarsundsverket.html"
+      },
+      "note_sv": "Verket tas i drift stegvis 2026 och ska vara klart 2027. Upp till 80 % av vattnet ska kunna renas för återanvändning. Med 2023 års utsläpp motsvarar 35 % cirka 30 ton kväve och 0,55 ton fosfor per år (egen beräkning).",
+      "confidence": "medium",
+      "replaces": "baltic"
+    },
+    {
+      "id": "algras_djuputbredning_kalmarsund",
+      "sdg": [14],
+      "name_sv": "Ålgräsets maximala djuputbredning i Kalmarsund",
+      "value": 6.3,
+      "unit": "m",
+      "year": 2023,
+      "scope": "Kalmar län",
+      "direction": "higher_better",
+      "source": {
+        "title": "Recipientkontrollen i Kalmar läns kustvatten 2023 – Bottenvegetation, ålgräs",
+        "publisher": "Kustvattenkommittén i Kalmar län (ursprungskälla: Linnéuniversitetet)",
+        "url": "https://www.kalmarlanskustvatten.org/files/Arsrapport_2023b.pdf"
+      },
+      "note_sv": "Spannet var 6,0–6,6 m på tre lokaler (Beijershamn, Stora Rör, Köpingsvik), med en minskande trend 2007–2023. Vid basinventeringen 2006/07 fanns ålgräs ner till minst 8,3 m. Vid Stora Rör täckte borstnate mer än ålgräs 2021–2023. Rapporten bedömer ändå djuputbredningen som minst god.",
+      "confidence": "high",
+      "replaces": "biodiversity",
+      "range": [6.0, 6.6]
+    },
+    {
+      "id": "storspigg_andel_kustfangst_lan",
+      "sdg": [14],
+      "name_sv": "Spiggens andel av fångsten vid kustnära småfiskinventering",
+      "value": 92,
+      "unit": "% av totalfångsten",
+      "year": 2022,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Recipientkontrollen i Kalmar läns kustvatten 2023 – Kustfiskövervakning",
+        "publisher": "Kustvattenkommittén i Kalmar län (ursprungskälla: Fredriksson 2022/2023, Nilsson 2022)",
+        "url": "https://www.kalmarlanskustvatten.org/files/Arsrapport_2023b.pdf"
+      },
+      "note_sv": "Avser 2021 och 2022. Tätheten av storspigg i Kalmarsund har mer än tiodubblats på 30–40 år. Längs ostkusten har lek- och uppväxtområden för abborre och gädda minskat med 40–65 %. Rapporten beskriver ett fortsatt svårt läge för rovfisken i Kalmarsund.",
+      "confidence": "high",
+      "replaces": "biodiversity"
+    },
+    {
+      "id": "dricksvattenproduktion_kalmar",
+      "sdg": [6],
+      "name_sv": "Dricksvattenproduktion i Kalmar kommun (årsmedel, alla vattenverk)",
+      "value": 16000,
+      "unit": "m³/dygn",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Produktion av dricksvatten",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/om-vatten-och-avlopp/dricksvatten/produktion-av-dricksvatten.html"
+      },
+      "note_sv": "Ett årsmedelvärde för alla vattenverk, men sidan anger inte vilket år. Råvattnet kommer från Nybroåsen, som förstärks med förbehandlat åvatten. Vattenverk och vattentorn i Berga stod klara 1972. Någon uppgift om maxkapacitet eller vattendomens tak har inte hittats.",
+      "confidence": "medium",
+      "replaces": "water"
+    },
+    {
+      "id": "dricksvatten_per_invanare_kalmar",
+      "sdg": [6],
+      "name_sv": "Producerat dricksvatten per invånare och dygn, Kalmar kommun",
+      "value": 230,
+      "unit": "liter/inv/dygn",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Produktion av dricksvatten (16 000 m³/dygn) samt Kolada N01951 folkmängd 2025",
+        "publisher": "Kalmar Vatten AB; RKA Kolada (ursprungskälla: SCB)",
+        "url": "https://www.kalmarvatten.se/om-vatten-och-avlopp/dricksvatten/produktion-av-dricksvatten.html"
+      },
+      "note_sv": "Egen beräkning: 16 000 m³ per dygn delat med hela befolkningen (73 068) ger 219 l, och delat med de anslutna (92 %) ger 238 l. Siffran gäller total produktion, alltså även verksamheter, läckage och leverans till Torsås, och är inte hushållsförbrukning (länet: cirka 150 l). Kalmar Vatten anger 140 l som rikssnitt för hushåll.",
+      "confidence": "estimate",
+      "replaces": "water",
+      "range": [219, 238]
+    },
+    {
+      "id": "kalmar_ravatten_konstgjord_infiltration",
+      "sdg": [6],
+      "name_sv": "Kalmar kommuns råvatten från konstgjord infiltration",
+      "value": 50,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Vattensituationen i Kalmar kommun (uppdatering 5 augusti 2026) och Produktion av dricksvatten",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/om-vatten-och-avlopp/dricksvatten/produktion-av-dricksvatten.html"
+      },
+      "note_sv": "Uppdaterar baslinjens 80 % (regional vattenförsörjningsplan, enkät 2021). Kalmar Vatten anger nu att ungefär hälften är naturligt grundvatten och hälften konstgjord infiltration. Infiltrationen beskrivs som avgörande för försörjningen under torrsomrar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "somrar_utan_vattenrestriktioner_kalmar",
+      "sdg": [6, 13],
+      "name_sv": "Somrar i rad utan restriktioner för kommunalt vatten i Kalmar (sedan 2016)",
+      "value": 10,
+      "unit": "somrar (2017–2026)",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Vattensituationen i Kalmar kommun (uppdatering 17 september 2026)",
+        "publisher": "Kalmar Vatten AB",
+        "url": "https://www.kalmarvatten.se/om-vatten-och-avlopp/dricksvatten/vattensituationen-i-kalmar-kommun.html"
+      },
+      "note_sv": "Enligt Kalmar Vatten har det inte funnits restriktioner sedan sommaren 2016. Kommunen klarade 2026 utan bevattningsförbud trots att grundvattennivåerna var mycket låga och ytvattenmagasinen låga för årstiden.",
+      "confidence": "high",
+      "replaces": "water"
+    },
+    {
+      "id": "kommuner_bevattningsforbud_lan",
+      "sdg": [6, 13],
+      "name_sv": "Kommuner i länet med bevattningsförbud (september 2026)",
+      "value": 3,
+      "unit": "av 12 kommuner",
+      "year": 2026,
+      "scope": "Kalmar län",
+      "direction": "lower_better",
+      "source": {
+        "title": "Vattenläget i Kalmar län (senast uppdaterad 24 september 2026)",
+        "publisher": "Länsstyrelsen i Kalmar län (ursprungskälla: SGU, SMHI)",
+        "url": "https://www.lansstyrelsen.se/kalmar/miljo-och-vatten/vatten--och-avloppsforsorjning/vattenlaget-i-kalmar-lan.html"
+      },
+      "note_sv": "Förbuden gäller i Mönsterås (från 1 sept), Nybro (från 15 juli) och Vimmerby (från 1 april). Grundvattnet i stora magasin är ovanligt lågt i nästan hela länet, mycket under det normala för perioden 1961–2025. Alla mätlokaler i vattendragen låg under medellågvattenföring (MLQ).",
+      "confidence": "high",
+      "replaces": "water"
+    },
+    {
+      "id": "medborgare_nojda_dricksvattenarbete",
+      "sdg": [6],
+      "name_sv": "Invånare som anser att kommunens arbete för att säkra dricksvattnet är bra",
+      "value": 87.8,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N00638: Medborgarundersökningen – Kommunens arbete för att säkerställa tillgången till dricksvatten är bra, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: SCB Medborgarundersökningen)",
+        "url": "https://api.kolada.se/v3/data/kpi/N00638/municipality/0880/year/2025"
+      },
+      "note_sv": "Andelen var 94,6 % 2024 och 90,7 % 2022. Riket låg på 88,9 % 2025.",
+      "confidence": "high"
+    },
+    {
+      "id": "atervunnet_vatten_bevattning_andel",
+      "sdg": [6, 12],
+      "name_sv": "Andel av kommunens bevattning av parkträd och växter med renat avloppsvatten",
+      "value": 20,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Miljöbokslut 2024 – Återvunnet vatten till bevattning av träd och växter",
+        "publisher": "Kalmar kommun",
+        "url": "https://kalmar.se/download/18.5138cb75196c385630127a/1747039600684/Miljobokslut_2024_v1.1_h%C3%B6guppl%C3%B6st.pdf"
+      },
+      "note_sv": "Ersätter 1,5 miljoner liter dricksvatten per år. Vattnet UV-behandlas i en container. Kalmar Vatten utreder också ett stadsnära avsaltningsverk på uppdrag av kommunfullmäktige, och en pilot med återvunnet vatten som råvatten för dricksvatten.",
+      "confidence": "high",
+      "replaces": "water"
+    },
+    {
+      "id": "vattenforekomster_god_status_kalmar",
+      "sdg": [6],
+      "name_sv": "Vattenförekomster (alla typer) med god status",
+      "value": 30,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N85050: Vattenförekomster med god status, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: VISS, Länsstyrelserna)",
+        "url": "https://api.kolada.se/v3/data/kpi/N85050/municipality/0880/year/2022"
+      },
+      "note_sv": "Länet ligger på 39,5 % och riket på 48,5 %. För vattendrag med god ekologisk status (N85052) är siffrorna 16,7 % i Kalmar, 15,0 % i länet och 34,3 % i riket.",
+      "confidence": "high",
+      "replaces": "water"
+    },
+    {
+      "id": "skyddad_natur_hav_kalmar",
+      "sdg": [14],
+      "name_sv": "Skyddad natur, andel av havsarealen",
+      "value": 6.04,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N85056: Skyddad natur hav, andel (%)",
+        "publisher": "RKA Kolada (ursprungskälla: SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N85056/municipality/0880/year/2025"
+      },
+      "note_sv": "Länet ligger på 4,06 % och riket på 10,09 %. Skyddet av inlandsvatten i Kalmar är 7,11 % (N85057), och landskyddet 0,99 % (N85055, 2025). Stensö naturreservat ingår inte.",
+      "confidence": "high",
+      "replaces": "biodiversity"
+    },
+    {
+      "id": "medelavstand_skyddad_natur",
+      "sdg": [15],
+      "name_sv": "Medelavstånd till skyddad natur",
+      "value": 2.6,
+      "unit": "km",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "lower_better",
+      "source": {
+        "title": "Kolada N85084: Medelavstånd till skyddad natur, km",
+        "publisher": "RKA Kolada (ursprungskälla: SCB)",
+        "url": "https://api.kolada.se/v3/data/kpi/N85084/municipality/0880/year/2025"
+      },
+      "note_sv": "Länet ligger på 2,4 km och riket på 2,0 km. Värdet är oförändrat 2022–2025.",
+      "confidence": "high",
+      "replaces": "biodiversity"
+    },
+    {
+      "id": "stenso_naturreservat_areal",
+      "sdg": [14, 15],
+      "name_sv": "Stensö naturreservat, Kalmar kommuns första kommunala reservat",
+      "value": 355,
+      "unit": "ha (86 ha land, 269 ha vatten)",
+      "year": 2025,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Bildande av Stensö naturreservat, Kalmar kommun (KF 2025-12-15, KS 2025/0770 §228)",
+        "publisher": "Kalmar kommun (via Naturvårdsverkets reservatsdatabas)",
+        "url": "https://geodata.naturvardsverket.se/handlingar/rest/dokument/1032274"
+      },
+      "note_sv": "Reservatet skyddar ekskog, betesmark, strandängar, blåstångsbälten och ålgräsängar, och föreskrifterna begränsar slitage från båtlivet. Enligt Miljöbokslut 2024 ska ett reservat på Revsudden (Skäggenäs) bildas 2026.",
+      "confidence": "high",
+      "replaces": "biodiversity"
+    },
+    {
+      "id": "skyddad_natur_total_inkl_stenso",
+      "sdg": [14, 15],
+      "name_sv": "Skyddad natur, andel av total areal, inklusive Stensö naturreservat",
+      "value": 2.47,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Kalmar kommun",
+      "direction": "higher_better",
+      "source": {
+        "title": "Kolada N85054 (2,18 % 2025) + Stensö 355 ha; SCB MI0802 Areal2025 (Kalmar kommun 125 626 ha)",
+        "publisher": "RKA Kolada/SCB; Kalmar kommun",
+        "url": "https://api.kolada.se/v3/data/kpi/N85054/municipality/0880/year/2025"
+      },
+      "note_sv": "Egen beräkning: 2,18 % av 125 626 ha är 2 743 ha. Med Stensös 355 ha blir det 3 098 ha, alltså 2,47 %. Landskyddet blir då cirka 1,08 % och havsskyddet cirka 6,96 %. Beräkningen förutsätter att reservatet inte överlappar redan skyddad areal och att beslutet har vunnit laga kraft.",
+      "confidence": "estimate",
+      "replaces": "biodiversity"
+    },
+    {
+      "id": "rodlistade_arter_kalmar_kommun",
+      "sdg": [15],
+      "name_sv": "Rödlistade arter i Kalmar kommun",
+      "value": 700,
+      "unit": "arter (ca)",
+      "year": 2021,
+      "scope": "Kalmar kommun",
+      "direction": "context",
+      "source": {
+        "title": "Naturmarkspolicy Kalmar kommun (Vatten- och miljönämnden 2022-11-17, § 55)",
+        "publisher": "Kalmar kommun (ursprungskälla: Artdatabanken, Rödlista 2020/Artportalen)",
+        "url": "https://kalmar.se/download/18.2409eec0185c384aa95305/1674127099463/03-naturmarkspolicy.PDF"
+      },
+      "note_sv": "Ungefär 700 rödlistade arter enligt 2020 års rödlista: 1 RE, 6 CR, ca 60 EN, 180 VU och ca 450 NT. Det ger cirka 246 hotade arter (CR+EN+VU, egen summering). Dessutom omfattas ungefär 70 arter av åtgärdsprogram (ÅGP). Antalet speglar också hur mycket som har inventerats.",
+      "confidence": "medium",
+      "replaces": "biodiversity"
+    }
+  ]
+}
