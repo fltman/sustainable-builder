@@ -40,15 +40,16 @@ const ACTIVITIES={
 export function jobFor(p,age,year,I={}){return L(jobForSv(p,age,year,I));}
 function jobForSv(p,age,year,I={}){
   if(age<6)return 'förskolebarn';if(age<19)return 'elev';
-  if(age<23)return (I.arbetstid||0)>.8?'gör sitt år av medborgartjänst':'student';
-  if(age>=67)return 'pensionär';
+  if(age<23)return PEOPLE.youth?.(I)||'student';                    // the place's own (Kalmar: a year of civic service)
+  if(age>=(PEOPLE.retireAge??67))return 'pensionär';
   const pool=[...JOBS_TODAY.map(j=>[j,1])];for(const [lever,job] of JOBS_FUTURE){const w=(I[lever]||0)*3;if(w>.3)pool.push([job,w]);}
   const total=pool.reduce((s,[,w])=>s+w,0);let r=hash(p.id*7.7+Math.floor(year/10)*3.1)*total;
   for(const [j,w] of pool){if((r-=w)<=0)return j;}return pool[0][0];
 }
 if(LANG!=='sv'){for(const n of NEEDS)n.name=L(n.name);for(const a of Object.values(ACTIVITIES))a.name=L(a.name);}
 // The place's age mix in 2026 (its starting values: SCB via Kolada in Sweden).
-const BASE_MIX={young:BASE.share0_19,old:BASE.share65,old80:BASE.share80};
+// The age mix in 2026 (a share the place lacks falls back to a typical one, so no age is ever NaN).
+const BASE_MIX={young:BASE.share0_19??(BASE.share0_14!=null?BASE.share0_14*1.33:.2),old:BASE.share65??.2,old80:BASE.share80??.05};
 // The age at place u (0–1) in an age mix, spread evenly within each band; the under-20s keep 2026's share.
 export function ageFrom(u,old=BASE_MIX.old,old80=BASE_MIX.old80){
   const y=BASE_MIX.young;
@@ -141,7 +142,7 @@ export function createResidents(scene,{graph,land,planning,features,places:named
   function choose(p,year,hour){
     const age=ageAt(p,year);let best=null,score=-Infinity;
     for(const [id,a] of Object.entries(ACTIVITIES)){
-      if(a.adult&&(age<20||age>(ctx.retire??66)))continue;
+      if(a.adult&&(age<20||age>(ctx.retire??((PEOPLE.retireAge??67)-1))))continue;
       if(a.child&&(age<6||age>18))continue;
       if(id==='sleep'&&!inHours(a,hour))continue;
       if(!inHours(a,hour))continue;
@@ -168,13 +169,9 @@ export function createResidents(scene,{graph,land,planning,features,places:named
   function think(p,id,year){return L(thinkSv(p,id,year));}
   function thinkSv(p,id,year){
     const list=THOUGHTS[id]||[''];let t=list[Math.floor(hash(p.id+year*.13+(p.thoughtSeed=(p.thoughtSeed||0)+1))*list.length)];
-    if(id==='quay'&&(ctx.bloom??0)>.4)t='Algblomning igen… ingen badar idag.';
     if(id==='home'&&(ctx.lonely??0)>.3&&p.needs.social<35)t='Det var länge sedan någon frågade hur jag mår.';
-    if(p.walking&&(vision.cars??1)>.6&&hash(p.id+year)<.3)t='Bilarna på gatan bullrar så.';
-    if(p.walking&&(vision.depave??0)>.6&&hash(p.id+year*1.3)<.25)t=['Körsbären på Storgatan är mogna!','Det doftar lind hela vägen hem.','Svårt att tro att det var asfalt här en gång.'][Math.floor(hash(p.id*1.1+year)*3)];
-    if(id==='work'&&(ctx.I?.ai??0)>.6&&hash(p.id+year*.7)<.3)t=(ctx.I?.demokrati??0)>.5?'AI:n föreslog, men det är vi som bestämmer.':'Jag förstår inte längre hur systemet fattar sina beslut.';
-    if(id==='home'&&(ctx.I?.analog??0)>.6&&hash(p.id*2+year)<.3)t='Telefonen ligger i lådan. Vi spelar kort ikväll.';
-    if(id==='quay'&&(vision.wind??0)>.4&&hash(p.id*3+year)<.3)t='Vindsnurrorna ute i sundet snurrar fint idag – det är våra.';
+    // What people think of the place's own changes, where it says (people.js situational: Kalmar's cherries on Storgatan).
+    const own=PEOPLE.situational?.(p,id,year,{ctx,vision,hash});if(own)t=own;
     return t;
   }
   function start(p,choice,year){

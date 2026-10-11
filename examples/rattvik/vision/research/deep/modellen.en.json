@@ -1,0 +1,29 @@
+{
+ "indicators": {
+  "siljansoring_lekomraden_utestangda": {
+   "name": "Former spawning and nursery grounds of the Siljan trout shut off by hydropower development",
+   "unit": "% (more than)",
+   "note": "Building out the main channel of the Österdalälven in 1955–1970 shut the Siljan trout, the 'Siljan salmon', a large, long-migrating stock, out of more than 95% of its former spawning and nursery grounds (p. 9). The trout in Lake Siljan has fallen from thousands of individuals to a few hundred, and the eel has disappeared entirely; this is why Siljan has only moderate ecological status (p. 12). Trout have been stocked as compensation since the early 1950s."
+  },
+  "osterdalalven_fiskvagar": {
+   "name": "Hydropower plants on the Österdalälven where fish passes for trout are being built",
+   "unit": "power plants",
+   "note": "Following the 2019 settlement (M 7483-17), fish passes are being built past the power plants at Spjutmo, Blyberg and Väsa, so that the remaining spawning grounds in the river and its tributaries can be reached; the upstream pass at Spjutmo and the downstream passes at all three came into use in summer 2023. Trout stocking is now meant to help build a naturally reproducing stock rather than only compensate the fishery."
+  },
+  "vindkraft_lokalagda_verk": {
+   "name": "Wind turbines on Hedbodberget owned by the municipality and its residents",
+   "unit": "turbines of 15",
+   "note": "The municipality bought two of the first turbines on Hedbodberget (Vestas V90, 2 MW): one was sold as shares to residents in the association Rättviksvind, the other supplies the municipality and its companies. The wind farm's community fund goes to development in Dalfors and Orebygden. The association's current status was not found (research/deep/energi-resor)."
+  },
+  "befolkning_siljansbygden_1990_2024": {
+   "name": "Population change 1990–2024 in Leksand, the neighbouring municipality by Lake Siljan that grew most",
+   "unit": "%",
+   "note": "Population 1990 → 2024: Leksand 14,805 → 16,137 (+9.0%), Mora 20,549 → 20,540 (±0), Gagnef 10,453 → 10,384 (−0.7%), Rättvik 11,345 → 10,998 (−3.1%), Orsa 7,351 → 6,851 (−6.8%), Malung-Sälen 11,605 → 10,254 (−11.6%), Vansbro 7,901 → 6,752 (−14.5%), Älvdalen 8,353 → 6,882 (−17.6%). Åre, a rural municipality with tourism that turned decline into growth, went from 9,975 to 12,693 (+27.2%; +23.5% since 2010). Leksand grew most in the 1970s and 80s (12,347 inhabitants in 1970)."
+  },
+  "batlinje_rattvik_leksand_1895": {
+   "name": "The year the Gävle–Dala railway put a boat into service between Rättvik and Leksand",
+   "unit": "year",
+   "note": "Lake Siljan's first steamboat, Prins August, sailed from 1839. The first passenger boat, s/s Mora, ran from 1866 with one trip each way every weekday of the sailing season between Ål parish and Mora, and more piers were added as competition grew. The Gävle–Dala railway, which reached Rättvik in 1890, put a boat into service between Rättvik and Leksand in 1895 (S/S Rättvik, calling at Långbryggan). The service did well until the Siljan railway reached Rättvik in 1914; after that it ran excursions to Gesunda, Mora, Tunsta and Gråda. The boats came to be seen as slow once cars and the railway arrived, and the shipping companies' good years were over by the 1950s."
+  }
+ }
+}

@@ -1,18 +1,26 @@
-// Rättvik's visions for "Utforska" (the engine adds today's course first). The first is the
-// research-based one; the others contrast with it. A schedule is a list of {from:year, set:{lever:level}}
-// steps, each building on the previous.
+// Rättvik's visions for "Utforska" (the engine adds today's course first), on Rättvik's own levers. The first is
+// the research-based one: what holds an ageing bygd together first – homes for every age, care close by, the
+// villages' voice and the schools – then the fäbodar, Siljan and the forest, then the centre, the journeys and
+// the energy, at a pace a kommun with a thin budget and too few of working age can carry: a step every seven
+// years, so that the strain stays near the limit but not over it (model.js capacity()). Radical only where
+// Rättvik's research points hardest (homes, care, the villages' voice, the fäbodar, Siljan, the visitors, the
+// schools and room for the water); welfare technology stays at the steady level, as the evidence on what it
+// saves is thin (rattvik_e5). The others contrast with it. A schedule is a list of {from:year,
+// set:{lever:level}} steps, each building on the previous.
 export const VISIONS=[
-  {id:'siljansbygden',name:'Siljansbygden',short:'Forskningens förslag för Rättvik: börja med gemenskap, beredskap, hälsa och demokrati – en åldrande bygd behöver varandra – ta hand om fäbodarna och Siljan, bygg sedan om gatorna och energin.',
+  {id:'siljansbygden',name:'Siljansbygden',short:'Forskningens förslag för Rättvik: börja med det som håller ihop en åldrande bygd – bostäder för alla åldrar, omsorg nära, byarnas röst och skolan – ta hand om fäbodarna, Siljan och skogen, och bygg sedan om centrum, resorna och energin.',
     schedule:[
-      {from:2026,set:{demokrati:2,bogemenskap:2,analog:2,beredskap:2,forebyggande:2,regionalt:2,kost:2,stadsodling:1,kollektivt:1,sol:2,hav:1,bilfritt:1,arbetstid:1,anpassning:1,effektivitet:1,ai:1,kunskap:1}},
-      {from:2036,set:{bilfritt:2,hav:2,regionalt:3,anpassning:2,forebyggande:3,demokrati:3,kunskap:2}},
-      {from:2046,set:{vind:2,ai:2,arbetstid:2,kollektivt:2,effektivitet:2,forbindelser:2}},
-      {from:2056,set:{stadsodling:2,bogemenskap:3,hav:3}},
-      {from:2066,set:{sol:3,anpassning:3,bilfritt:3}},
-      {from:2076,set:{beredskap:3,kost:3,kollektivt:3}},
+      {from:2026,set:{bogemenskap:2,forebyggande:2,demokrati:2,kunskap:1,regionalt:1,hav:1,skog:1,beredskap:1,analog:1,anpassning:1,kollektivt:1,turism:1,bilfritt:1,sol:1,effektivitet:1,vind:1,forbindelser:1,ai:1}},
+      {from:2033,set:{regionalt:2,kunskap:2,hav:2,beredskap:2,analog:2}},
+      {from:2040,set:{anpassning:2,bilfritt:2,turism:2,forbindelser:2,vind:2}},
+      {from:2047,set:{bogemenskap:3,kollektivt:2}},
+      {from:2054,set:{demokrati:3,forebyggande:3,skog:2}},
+      {from:2061,set:{regionalt:3,hav:3,sol:2}},
+      {from:2068,set:{turism:3,kunskap:3,effektivitet:2}},
+      {from:2075,set:{anpassning:3}},
     ]},
-  {id:'teknikorten',name:'Teknikorten',short:'Allt på AI, automation och energi – en vindkraftsbygd med självkörande skyttlar – men lite om gemenskap, demokrati och analoga reserver.',
-    schedule:[{from:2026,set:{ai:3,sol:3,vind:3,kollektivt:3,effektivitet:2,anpassning:2,stadsodling:1,beredskap:1,kunskap:2,forbindelser:3}}]},
-  {id:'fabodbyn',name:'Den nya fäbodbyn',short:'Gemenskap, fäbodar och tid för varandra – men ingen AI och ingen storskalig energi.',
-    schedule:[{from:2026,set:{analog:3,arbetstid:3,bogemenskap:3,stadsodling:2,regionalt:3,kost:3,demokrati:2,beredskap:2,bilfritt:2,kunskap:2,forbindelser:1}}]},
+  {id:'teknikorten',name:'Teknikorten',short:'Allt på vindkraft, automation och snabba förbindelser – en energibygd med självkörande skyttlar till byarna – men lite om fäbodarna, naturen, gemenskapen och byarnas röst.',
+    schedule:[{from:2026,set:{vind:3,sol:3,ai:3,kollektivt:3,forbindelser:3,effektivitet:2,turism:2,anpassning:2,kunskap:2,beredskap:1,bilfritt:1}}]},
+  {id:'fabodbyn',name:'Den nya fäbodbyn',short:'Fäbodarna, skogen och Siljan, och tid och plats för varandra – men ingen ny vindkraft, ingen AI och få nya förbindelser.',
+    schedule:[{from:2026,set:{regionalt:3,skog:3,hav:3,analog:3,bogemenskap:3,demokrati:2,forebyggande:2,beredskap:2,kunskap:2,turism:1,bilfritt:1,sol:1,anpassning:1}}]},
 ];

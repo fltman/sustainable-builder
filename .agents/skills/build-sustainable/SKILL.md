@@ -73,15 +73,21 @@ python3 sustainable.py research <slug> merge      # → research/baseline.json (
 
 ## 4. The vision – the place's modules
 
+**Place first** (`AGENTS.md`, *Place first*): the place's levers, measures, calculations and what may be seen
+in 3D come from its own conditions and research – not from Kalmar's. Before writing texts, list from the
+research what this place can decide, what matters and can be counted there, how each lever acts (sized by
+local research where it exists, cited general research where not), and what can physically change in its
+streets, roofs and water. An example's model is that example's: a new place writes its own.
+
 `python3 sustainable.py vision <slug> init` starts `cities/<slug>/vision/` from the nearest example; then
 write each module from the research (the contract for every file is in `AGENTS.md`):
 
 | file | what | from |
 |---|---|---|
 | `config.js` | names (sv/en), latitude, the model's water level, camera, squares, station, protected landmarks, boats, credits | place.json, city.json (`water_z`, `terrain.lake`), map.json, the research |
-| `model.js` | BASE (starting values, each with its record in FACTS), PARAMS (growth calibrated on the official projection, ageing, energy, rail, tourism), FLOOD (`node site/tools/flood-map.mjs <slug>` prints the table and the street level), WATER, WATERS, LOCAL (what only this place has) | research/baseline.json |
-| `levers.js` | the levers in the place's words, its climate in three worlds, which research each lever leans on | the research |
-| `indicators.js` | names, notes and `base` records for the indicators; KEY_FIGURES | the research |
+| `levers.js` | the place's own levers (LEVER_DEFS: what it can decide, four levels each, cost and pace), its climate in three worlds, the research each lever leans on | the research: challenges, assets, local studies |
+| `indicators.js` | the place's own measures (INDICATOR_DEFS), their names, notes and `base` records; KEY_FIGURES | the research |
+| `model.js` | BASE (starting values, each with its record in FACTS) and the place's own model: init, step (each lever's effects, sized by the research), vision (only what can physically show there), SDG_PARTS, doughnut, EXPECT; FLOOD (`node site/tools/flood-map.mjs <slug>` prints the table and the street level) | research/baseline.json, research/evidence.json |
 | `presets.js` | the research-based vision first, then two that contrast with it | the research |
 | `places.js` | 12–20 real places in the model with now/future texts | research notes (coordinates through the pipeline's projection) |
 | `people.js` | today's jobs, the levers' new jobs, what people say | the research |
@@ -89,8 +95,9 @@ write each module from the research (the contract for every file is in `AGENTS.m
 | `en.js` (+ `en/*.js`) | English for every Swedish string passed to `L()` | |
 
 Calibrate and check:
-- Today's course follows the official population projection (PARAMS.growth/growthDecay, attractMid =
-  the model's `attract` in 2026); the research-based vision beats today's course clearly by 2126.
+- Today's course follows the official population projection; the research-based vision beats today's
+  course clearly by 2126; EXPECT says what each lever does, and the tests hold the model to it.
+- In the 2126 pictures, every change could physically happen in this place.
 - `python3 sustainable.py test <slug>` – the site's tests for the place (the journey, ranges, links …).
 - The narrative modules are long; writing them in parallel with one agent each works well (Rättvik's
   were written that way) – each agent edits only its module and its `en/<module>.js`.

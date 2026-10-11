@@ -20,6 +20,9 @@ python3 sustainable.py example rattvik      # the city model and its horizon →
 python3 sustainable.py site rattvik         # the site reads its vision from here
 ```
 
-What is Rättvik's own: Siljan as a regulated lake (`FLOOD.kind: 'lake'`, its 100-year level and the
-street level from the terrain), the summer people (`LOCAL.step`), the train to Stockholm, the summer
-farms, Classic Car Week, the lime works' emissions, and the Halvars family's five generations.
+What is Rättvik's own: its model (`vision/model.js`, `levers.js`, `indicators.js`) – 18 levers acting on
+Rättvik's measures: the summer farms, Siljan's trout, the forest and its mires, wind in the north owned by the
+villages (whose power lets the lime works capture its CO₂ long before emissions trading forces it), visitors all
+year, summer boat lines between the villages; Siljan as a regulated lake (`FLOOD.kind: 'lake'`, its 100-year
+level and the street level from the terrain), the summer people, the train to Stockholm, Classic Car Week, and the
+Halvars family's five generations.

@@ -1,5 +1,5 @@
 import { el, sparkline, ring, doughnutChart, centuryChart, tooltip } from './charts.js';
-import { LEVERS, THEMES, LEVELS, LEVER, WORLDS } from '../data/levers.js';
+import { LEVERS, THEMES, LEVELS, LEVER, WORLDS, CAPACITY_NOTE } from '../data/levers.js';
 import { SDGS, DOUGHNUT } from '../data/sdg.js';
 import { INDICATORS, KEY_FIGURES } from '../data/indicators.js';
 import { PLACES } from '@city/places.js';
@@ -253,7 +253,7 @@ export function createApp(engine){
     const d=y.ind,ratio=d.demand/Math.max(1,d.capacity);
     meterFill.style.width=`${Math.min(100,ratio*100)}%`;meter.className='meter'+(ratio>1.15?' over':ratio>.9?' warn':'');
     capR.textContent=t(`${Math.round(ratio*100)} % använd`,`${Math.round(ratio*100)}% used`,`${Math.round(ratio*100)}% utilizzata`);
-    capNote.textContent=ratio>1.15?t('Staden tar på sig mer än den orkar: allt går långsammare och tilliten sjunker. Gemenskap, demokrati och tid för varandra bygger förmåga.','The city is taking on more than it can manage: everything slows down and trust falls. Community, democracy and time for each other build capacity.','La città si sta caricando di più di quanto riesca a sostenere: tutto rallenta e la fiducia cala. Comunità, democrazia e tempo per gli altri costruiscono capacità.'):ratio>.9?t('Nära gränsen för vad staden orkar just nu.','Close to the limit of what the city can manage right now.','Vicino al limite di ciò che la città riesce a sostenere in questo momento.'):t('Det finns utrymme för fler satsningar.','There is room for more initiatives.',"C'è spazio per altre iniziative.");
+    capNote.textContent=ratio>1.15?t('Staden tar på sig mer än den orkar: allt går långsammare och tilliten sjunker.','The city is taking on more than it can manage: everything slows down and trust falls.','La città si sta caricando di più di quanto riesca a sostenere: tutto rallenta e la fiducia cala.')+(CAPACITY_NOTE?' '+t(CAPACITY_NOTE.sv,CAPACITY_NOTE.en,CAPACITY_NOTE.it):''):ratio>.9?t('Nära gränsen för vad staden orkar just nu.','Close to the limit of what the city can manage right now.','Vicino al limite di ciò che la città riesce a sostenere in questo momento.'):t('Det finns utrymme för fler satsningar.','There is room for more initiatives.',"C'è spazio per altre iniziative.");
   }
   let lastDash=0,lastYearShown=-1,dashPending=false;
   function renderDashboard(force=false){

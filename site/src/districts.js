@@ -92,7 +92,7 @@ export function createDistricts(scene,planning,land,{lite=false}={}){
         for(let a=-.45;a<=.45;a+=.15)for(let b=-.45;b<=.45;b+=.15){const px=x+a*sx,pz=z+b*sz;tot++;if(onLot(px,pz))ok++;const rd=planning.roadAt(px,pz,0);if(planning.buildingAt(px,pz,1.5)||(rd?.car&&rd.kind!=='service'))bad=true;}
         // Parking aisles (service ways) are part of the lot; real streets and buildings are not.
         if(!bad&&ok/tot>.6){
-          const floors=4+Math.floor(R()*4);
+          const [f0,f1]=CITY.housingFloors||[4,7],floors=f0+Math.floor(R()*(f1-f0+1));   // the place's own heights (Kalmar: four to seven storeys)
           blocks.push({x,z,y:lot.y,sx,sz,floors,order:Math.min(.97,order+R()*.08),wood:[0xd2a878,0xa9a296,0xc8955a,0x4a4642,0xe0c39a,0xb98a5e][Math.floor(R()*6)],alongX,lot:lot.k});
         }
         s+=L+4+R()*3;

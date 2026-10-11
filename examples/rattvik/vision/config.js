@@ -35,19 +35,28 @@ export const CITY={
   heritage:[{x:-720,z:-541,r:40},{x:-791,z:-614,r:75},{x:-625,z:-370,r:10},{x:649,z:559,r:10}],
   // Squares that get market stalls and long tables: the square by the station, and Lokstallarna's yard.
   squares:[{x:405,z:71,r:26},{x:8,z:-265,r:18}],
-  // The station: the vertical farm takes the big lot nearest to it.
+  // The station (Rättvik's model never raises the engine's vertical farm on the lot nearest to it).
   station:{x:329,z:118},
   // No flood wall round the centre: Siljan floods slowly, and adaptation here means room for the water.
   floodWall:false,
-  // Floating gardens and homes in Rättviken, by Långbryggan.
-  harbour:{minX:-420,maxX:-80,minZ:150,maxZ:500},
-  floatingQuarter:{minX:-500,maxX:-100,minZ:200,maxZ:650},
-  // Boats on Siljan: electric boat buses round Rättviken and out from Långbryggan towards Leksand.
+  // New houses are two to four storeys, as in Rättvik's centre (the engine's default is Kalmar's four to seven).
+  housingFloors:[2,4],
+  // No floating gardens or homes (no `harbour`, no `floatingQuarter`): Siljan is regulated – its level
+  // swings about two metres over the year – it freezes most winters, and its open shore below Kyrkudden is
+  // to stay open. No hydrofoil line (`ferries`): Leksand is fifteen minutes away by train.
+  // Boats on Siljan, kept clear of Långbryggan (from the shore at 201,184 to its T-shaped landing at about
+  // −320,520): small electric tour and hire boats round Rättviken, north and south of the pier (vision.boats),
+  // and in summer the boat buses from the landing towards Tällberg and Leksand (south-south-west) and towards
+  // Vikarbyn, Sollerön and Mora (north-west, past Kyrkudden), there and back, as the steamboats ran
+  // (vision.boatLines – model.js; the boat-bus model is the engine's water bus).
   boats:{
-    ferries:{a:{x:-80,z:470},b:{x:-3000,z:3500}},
     loops:[
-      [[-100,420],[-350,300],[-550,100],[-650,-150],[-450,-250],[-250,-150],[-150,150]],
-      [[-60,480],[-300,700],[-700,800],[-800,500],[-500,450]],
+      [[-140,250],[-380,320],[-600,150],[-660,-120],[-470,-260],[-250,-140],[-120,90]],
+      [[-40,470],[-200,580],[-430,700],[-700,790],[-760,620],[-520,610],[-290,590]],
+    ],
+    lines:[
+      {kind:'vaporetto',name:'Sommarbåten mot Tällberg och Leksand',pts:[[-345,540],[-420,760],[-470,850]],n:2,speed:6,lane:6,vision:'boatLines'},
+      {kind:'vaporetto',name:'Sommarbåten mot Vikarbyn, Sollerön och Mora',pts:[[-345,505],[-560,150],[-790,-260],[-850,-470]],n:2,speed:6,lane:6,vision:'boatLines'},
     ],
   },
   // The pack's meshes the site leaves out: the battle-car game's edge containers (gone after a rebuild).

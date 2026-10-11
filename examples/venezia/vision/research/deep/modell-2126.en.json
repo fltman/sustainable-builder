@@ -1,0 +1,59 @@
+{
+ "indicators": {
+  "mod_mose_stangningar_medel_2020_2026": {
+   "name": "MOSE closures per season, average 2020/21–2025/26",
+   "unit": "closures per season",
+   "note": "Closures per season: 2020/21 20, 2021/22 13, 2022/23 19, 2023/24 32, 2024/25 23 and 2025/26 49 – 156 in six seasons, 26 on average (own calculation). The barriers are raised when tides above 110 cm are forecast, in practice from 101 cm. The 2025/26 season was the highest so far, with 30 closures in three weeks."
+  },
+  "mod_medellivslangd_provinsen_2025": {
+   "name": "Life expectancy at birth, both sexes",
+   "unit": "years",
+   "note": "ISTAT's preliminary estimate for the province in 2025: both sexes 84.2 years, women 86.4 and men 82.2 (Italy 83.7, 85.7 and 81.7). There is no figure for the historic city alone."
+  },
+  "mod_tomma_offentliga_bostader_2026": {
+   "name": "Empty public homes in the Comune (Comune and ATER)",
+   "unit": "dwellings",
+   "note": "The Comune owns about 5,000 homes and ATER as many; according to OCIO about 1,250 municipal and 1,700 ATER homes stand empty (council question of 29 July 2026). About a thousand municipal and ATER homes in the lagoon stand empty awaiting renovation (OCIO). The model assumes 800 in the historic city."
+  },
+  "mod_piano_casa_2026": {
+   "name": "The Comune's budget for the Piano Casa 2026",
+   "unit": "million euro",
+   "note": "About 17.5 million euro for 2026 but only 3.9 million for 2027 and 2028. The mayor wants to complete the Piano Casa 2024–2026 and quickly bring the empty public homes into use, with social housing and 'bandi auto-restauro' (tenants who renovate themselves). The Region has its own 50-million-euro plan for the whole Veneto."
+  },
+  "mod_varmedodsfall_uppskattning": {
+   "name": "Heat-related deaths in the historic city in an ordinary summer (estimate)",
+   "unit": "deaths a year",
+   "note": "Own calculation: Italy had 18,010 heat-related deaths in the summer of 2022, 295 per million inhabitants, the most in Europe. With the historic city's older population (12.2% over 80 against 7.8% in Italy, a factor of 1.56) that gives about 22 among 47,625 residents in an equally hot summer, and – assumption – about 60% of that, 13, in an ordinary summer."
+  },
+  "mod_cer_centro_storico_adsp": {
+   "name": "Solar plants on the port's roofs at Santa Marta and San Basilio, approved by the Soprintendenza",
+   "unit": "plants",
+   "note": "The port authority plans six solar plants on its buildings at Santa Marta and San Basilio; Venice's Soprintendenza gave a favourable opinion on 8 July 2024, and the project received state funding (Green Ports) in 2025. On 25 July 2025 a feasibility study was commissioned for a renewable energy community (CER) for the historic city, with families as members."
+  },
+  "mod_palazzo_ducale_lagunvatten": {
+   "name": "The Doge's Palace is heated and cooled with a lagoon-water heat pump",
+   "unit": "plant",
+   "note": "The project renews the Doge's Palace's 'centrale termo frigorifera condensata ad acqua di mare': a water-cooled heat pump that draws lagoon water with its own pumps and heats and cools the palace through fan coils, with no outdoor units on the facade. Similar plants exist at the Biennale and Palazzo Grassi."
+  },
+  "mod_broar_tillgangliga_staden": {
+   "name": "Bridges in Venice made accessible to people with reduced mobility",
+   "unit": "bridges of 430",
+   "note": "In the survey for the Venezia accessibile app: 37 of the city's more than 430 bridges have been made accessible, 162 have new handrails and 235 graspable parapets; of 198 changes in level, 45 have small ramps. Ponte dei Lavraneri (Giudecca) was rebuilt with ramps in 2004 and Ponte Papadopoli got removable ramps in 2014; Venice has also tried the 'gradino agevolato', long sloping steps."
+  },
+  "mod_fontaner_offentliga": {
+   "name": "Public fountains and water dispensers",
+   "unit": "fountains",
+   "note": "In the 2022 drought the Comune closed 61 of the 155 public fountains and water dispensers, spread evenly across the districts. Venice's network in the historic city is 403 km long."
+  },
+  "mod_atervandare_coses_2009": {
+   "name": "People who left and would move back if homes were affordable",
+   "unit": "% of those who want to move back",
+   "note": "COSES 2009: 60.3% of those who had left the city named high rents and prices; 58% wanted to move back, and 81% of them would do so if homes had affordable prices; two in three would have stayed had they found a good home. CENSIS 1973: 60.2% moved for a healthier and more modern home, and 35.1% had lived on ground floors that flooded regularly."
+  },
+  "mod_andel_0_19_centro_storico_2025": {
+   "name": "Share of residents aged 0–19 in the historic city",
+   "unit": "%",
+   "note": "6,088 of 47,625 residents: 1,066 aged 0–4, 1,309 aged 5–9, 1,659 aged 10–14 and 2,054 aged 15–19 (own calculation from the Comune's table). Of the 27,806 aged 15–64, 13,138 (47.3%) are under 45 and 14,668 between 45 and 64; 9,971 are 65–79 and 5,814 over 80. The whole Comune: 14.7% under 20."
+  }
+ }
+}

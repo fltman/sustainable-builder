@@ -6004,6 +6004,110 @@
    "topic": "kommun-plats-historia"
   },
   {
+   "id": "siljansoring_lekomraden_utestangda",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Siljansöringens forna lek- och uppväxtområden som stängts ute av kraftutbyggnaden",
+   "value": 95,
+   "unit": "% (mer än)",
+   "year": 2025,
+   "scope": "Siljan och Österdalälven",
+   "direction": "lower_better",
+   "source": {
+    "title": "Gråda–Siljan. Nulägesbeskrivning (underlag för prövning enligt den nationella planen för moderna miljövillkor, prövningsgrupp 53_9), s. 9 och 12",
+    "publisher": "Länsstyrelsen i Dalarnas län",
+    "url": "https://www.lansstyrelsen.se/download/18.57c2d35a1969f8a67de2cc10/1746791796734/Gr%C3%A5da-Siljan.pdf"
+   },
+   "note_sv": "Utbyggnaden av Österdalälvens huvudfåra 1955–1970 stängde ute Siljansöringen, ”Siljanslaxen”, en storvuxen långvandrande stam, från mer än 95 % av dess forna lek- och yngeluppväxtområden (s. 9). Öringen i Siljan har minskat från tusentals individer till något hundratal, och ålen har försvunnit helt; därför har Siljan bara måttlig ekologisk status (s. 12). Öring har satts ut som kompensation sedan tidigt 1950-tal.",
+   "confidence": "high",
+   "topic": "modellen"
+  },
+  {
+   "id": "osterdalalven_fiskvagar",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Kraftverk i Österdalälven där vandringsvägar för öring byggs",
+   "value": 3,
+   "unit": "kraftverk",
+   "year": 2023,
+   "scope": "Österdalälven",
+   "direction": "higher_better",
+   "source": {
+    "title": "Gråda–Siljan. Nulägesbeskrivning (underlag för prövning enligt den nationella planen för moderna miljövillkor), s. 10",
+    "publisher": "Länsstyrelsen i Dalarnas län",
+    "url": "https://www.lansstyrelsen.se/download/18.57c2d35a1969f8a67de2cc10/1746791796734/Gr%C3%A5da-Siljan.pdf"
+   },
+   "note_sv": "Efter förlikningsdomen 2019 (M 7483-17) byggs vandringsvägar förbi kraftverken i Spjutmo, Blyberg och Väsa, så att kvarvarande lekplatser i älven och dess biflöden blir nåbara; uppströmspassagen vid Spjutmo och nedströmspassagerna vid alla tre togs i drift sommaren 2023. Utsättningarna av öring ska nu bidra till ett naturligt reproducerande bestånd i stället för att bara kompensera fisket.",
+   "confidence": "high",
+   "topic": "modellen"
+  },
+  {
+   "id": "vindkraft_lokalagda_verk",
+   "sdg": [
+    7
+   ],
+   "name_sv": "Vindkraftverk på Hedbodberget som ägs av kommunen och dess invånare",
+   "value": 2,
+   "unit": "verk av 15",
+   "year": 2011,
+   "scope": "Rättviks kommun",
+   "direction": "higher_better",
+   "source": {
+    "title": "Vindbruksplan – tillägg till översiktsplanen (KF 2011-02-03)",
+    "publisher": "Rättviks kommun",
+    "url": "https://www.rattvik.se/download/18.6793631719a04f687a0dbf66/1762352452002/Vindbruksplan.pdf"
+   },
+   "note_sv": "Kommunen köpte två av de första verken på Hedbodberget (Vestas V90, 2 MW): det ena såldes som andelar till invånarna i föreningen Rättviksvind, det andra ger el till kommunen och dess bolag. Bygdepengen från parken går till utveckling i Dalfors och Orebygden. Föreningens nuvarande status har inte hittats (research/deep/energi-resor).",
+   "confidence": "medium",
+   "topic": "modellen"
+  },
+  {
+   "id": "befolkning_siljansbygden_1990_2024",
+   "sdg": [
+    8,
+    11
+   ],
+   "name_sv": "Befolkningsförändring 1990–2024 i Leksand, den grannkommun vid Siljan som vuxit mest",
+   "value": 9,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Leksands kommun, jämfört med Rättvik och grannkommunerna",
+   "direction": "higher_better",
+   "source": {
+    "title": "Folkmängden efter region, civilstånd, ålder och kön. År 1968–2024 (BefolkningNy), hämtat via SCB:s API 2026-10-11",
+    "publisher": "SCB",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0101__BE0101A/BefolkningNy/"
+   },
+   "note_sv": "Folkmängd 1990 → 2024: Leksand 14 805 → 16 137 (+9,0 %), Mora 20 549 → 20 540 (±0), Gagnef 10 453 → 10 384 (−0,7 %), Rättvik 11 345 → 10 998 (−3,1 %), Orsa 7 351 → 6 851 (−6,8 %), Malung-Sälen 11 605 → 10 254 (−11,6 %), Vansbro 7 901 → 6 752 (−14,5 %), Älvdalen 8 353 → 6 882 (−17,6 %). Åre, en landsbygdskommun med besöksnäring som vände minskning till tillväxt, gick från 9 975 till 12 693 (+27,2 %; +23,5 % sedan 2010). Leksand växte mest på 1970- och 80-talen (12 347 invånare 1970).",
+   "confidence": "high",
+   "topic": "modellen"
+  },
+  {
+   "id": "batlinje_rattvik_leksand_1895",
+   "sdg": [
+    9,
+    11
+   ],
+   "name_sv": "Året då Gävle–Dala järnväg satte in en båt mellan Rättvik och Leksand",
+   "value": 1895,
+   "unit": "år",
+   "year": 1895,
+   "scope": "Siljan",
+   "direction": "higher_better",
+   "source": {
+    "title": "Sjöfarten på Siljan under tre århundraden (Anton Bråmå), s. 22–28; Ångbåtsbryggan (Torsten Kjellgren), s. 27–31",
+    "publisher": "Sollerö hembygdsförening",
+    "url": "https://www.sollero-hembygd.se/wp-content/uploads/2022/08/Sjofarten-pa-Siljan.pdf"
+   },
+   "note_sv": "Siljans första ångbåt, Prins August, gick från 1839. Den första passagerarbåten, s/s Mora, gick från 1866 en tur i vardera riktningen alla helgfria dagar under seglationen mellan Åls socken och Mora, och fler bryggor kom till när konkurrensen ökade. Gävle–Dala järnväg, som nådde Rättvik 1890, satte 1895 in en båt mellan Rättvik och Leksand (S/S Rättvik, med Långbryggan som tilläggsplats). Trafiken gick bra tills Siljansbanan nådde Rättvik 1914; sedan blev det utfärder till Gesunda, Mora, Tunsta och Gråda. Båtarna uppfattades som långsamma när bilarna och järnvägen kom, och rederiernas goda tider var över på 1950-talet.",
+   "confidence": "medium",
+   "topic": "modellen"
+  },
+  {
    "id": "akermark_hektar",
    "sdg": [
     2,
@@ -8718,6 +8822,7 @@
   "energi-resor",
   "klimat-vatten",
   "kommun-plats-historia",
+  "modellen",
   "natur-mat-stad",
   "samhalle-halsa",
   "turism-ekonomi"

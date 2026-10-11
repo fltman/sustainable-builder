@@ -52,15 +52,17 @@ export const CITY={
   // On foot, by gondola or by water taxi along the canals: no bicycles and no cars in the alleys.
   ride:{modes:['walk','gondola','boat']},
   // Boats from today: water buses on the Grand Canal, in the Giudecca canal and the Bacino, taxis and
-  // working boats, and gondolas in the side canals (routes: OpenStreetMap's canal centre lines).
+  // working boats, and gondolas in the side canals (routes: OpenStreetMap's canal centre lines). The taxi and
+  // transport lines follow the model's motor-boat traffic (vision.boats: 1 today, fewer with shared freight and
+  // taxis and fewer day-trippers – model.js).
   boats:{
     lines:[
       {kind: "vaporetto", name: "Canal Grande, linjerna 1 och 2", pts: [[-1000, -763], [-840, -819], [-789, -824], [-658, -815], [-567, -789], [-457, -734], [-314, -621], [-167, -525], [-127, -472], [-113, -441], [-102, -394], [-108, -360], [-163, -293], [-216, -246], [-340, -175], [-530, -99], [-574, -87], [-681, -39], [-751, -1], [-801, 42], [-810, 74], [-767, 286], [-702, 350], [-631, 391], [-565, 413], [-529, 418], [-389, 417], [-34, 380], [65, 381], [247, 398]], n: 5, speed: 2.6, lane: 7},
-      {kind: "watertaxi", name: "Canal Grande, vattentaxi och transportbåtar", pts: [[-1000, -763], [-840, -819], [-789, -824], [-658, -815], [-567, -789], [-457, -734], [-314, -621], [-167, -525], [-127, -472], [-113, -441], [-102, -394], [-108, -360], [-163, -293], [-216, -246], [-340, -175], [-530, -99], [-574, -87], [-681, -39], [-751, -1], [-801, 42], [-810, 74], [-767, 286], [-702, 350], [-631, 391], [-565, 413], [-529, 418], [-389, 417], [-34, 380], [65, 381], [247, 398]], n: 9, speed: 3.6, lane: 3, color: 7225638},
+      {kind: "watertaxi", name: "Canal Grande, vattentaxi och transportbåtar", pts: [[-1000, -763], [-840, -819], [-789, -824], [-658, -815], [-567, -789], [-457, -734], [-314, -621], [-167, -525], [-127, -472], [-113, -441], [-102, -394], [-108, -360], [-163, -293], [-216, -246], [-340, -175], [-530, -99], [-574, -87], [-681, -39], [-751, -1], [-801, 42], [-810, 74], [-767, 286], [-702, 350], [-631, 391], [-565, 413], [-529, 418], [-389, 417], [-34, 380], [65, 381], [247, 398]], n: 9, speed: 3.6, lane: 3, color: 7225638, vision: 'boats'},
       {kind: "gondola", name: "Canal Grande vid Rialto", pts: [[-127, -472], [-113, -441], [-102, -394], [-108, -360], [-163, -293], [-216, -246], [-340, -175], [-530, -99], [-574, -87], [-681, -39], [-751, -1], [-801, 42]], n: 3, speed: 1.1, lane: 10},
       {kind: "vaporetto", name: "Giudeccakanalen", pts: [[-1000, 710], [-690, 827], [-460, 887], [-325, 867], [-213, 814], [-92, 743], [-40, 704], [76, 569], [247, 398]], n: 3, speed: 3.4, lane: 25},
       {kind: "vaporetto", name: "Bacino San Marco", pts: [[247, 398], [345, 345], [511, 305], [639, 300], [815, 354], [1000, 471]], n: 2, speed: 3.2, lane: 20},
-      {kind: "watertaxi", name: "Bacino San Marco, taxi", pts: [[247, 398], [345, 345], [511, 305], [639, 300], [815, 354], [1000, 471]], n: 4, speed: 4.2, lane: 8, color: 7225638},
+      {kind: "watertaxi", name: "Bacino San Marco, taxi", pts: [[247, 398], [345, 345], [511, 305], [639, 300], [815, 354], [1000, 471]], n: 4, speed: 4.2, lane: 8, color: 7225638, vision: 'boats'},
       {kind: "gondola", name: "Rio del Palazzo", pts: [[324, 356], [222, -68], [200, -97]], n: 2, speed: 1.1, lane: 0.8},
       {kind: "gondola", name: "Rio de San Trovaso", pts: [[-1000, 658], [-930, 597], [-885, 524], [-867, 489], [-846, 417], [-800, 303], [-784, 294], [-761, 292]], n: 1, speed: 1.1, lane: 0.8},
       {kind: "gondola", name: "Rio San Luca", pts: [[-173, 170], [-192, 160], [-211, 91], [-236, 52], [-270, 14], [-303, -64], [-360, -118], [-383, -157]], n: 2, speed: 1.1, lane: 0.8},
@@ -83,7 +85,7 @@ export const CITY={
   tintMask:true,
   materialAlias:{M_Ground_Ground:'M_Ground_Paving'},
   rideSkip:/^$/,
-  alwaysPinned:[],
+  alwaysPinned:['piazza','mercato'],
   credits:{
     about:{sv:'Stadsmodellen är byggd med sustainable-builder ur OpenStreetMap (kartdata © OpenStreetMap contributors, ODbL), Regione del Venetos laserskannade terrängmodell (CC BY 3.0, via ARPAV) och Copernicus höjdmodell; marknivåerna är kalibrerade mot Venedigs kommuns höjdkarta (Venezia altimetria, 2009).',
       en:"The city model is built with sustainable-builder from OpenStreetMap (map data © OpenStreetMap contributors, ODbL), the Veneto Region's laser-scanned terrain model (CC BY 3.0, via ARPAV) and the Copernicus elevation model; the ground levels are calibrated on the City of Venice's height map (Venezia altimetria, 2009)."},

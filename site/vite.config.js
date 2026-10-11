@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import { createReadStream, existsSync, statSync, cpSync } from 'node:fs';
+import { createReadStream, existsSync, statSync, cpSync,readdirSync } from 'node:fs';
 import { join, normalize, extname } from 'node:path';
 import { cityOf, ENGINE, ROOT } from './city.config.mjs';
 // The engine imports the place's own modules as @city/… (city.config.mjs decides which place);
@@ -28,6 +28,8 @@ const filmBase=`film/${city.slug}-2126`,filmOf=l=>l==='sv'?filmBase:`${filmBase}
 const films=Object.fromEntries(LANGS.filter(l=>existsSync(join(city.pack,`${filmOf(l)}.mp4`))).map(l=>[l,filmOf(l)])),hasFilm=Object.keys(films).length>0;
 // Which optional pack files the place has, so the engine never asks for one that is not there.
 const PACK=Object.fromEntries(Object.entries({horizon:'horizon.json',addresses:'addresses.json',flood:'terrain/flood.json'}).map(([k,f])=>[k,existsSync(join(city.pack,f))]));
+// The pack's own sound clips (pack/audio/*.mp3), so the site only plays narration a place has.
+PACK.audio=existsSync(join(city.pack,'audio'))?readdirSync(join(city.pack,'audio')).filter(f=>f.endsWith('.mp3')).map(f=>f.slice(0,-4)):[];
 const FILM=CITY.film||(hasFilm?{...films,poster:'film/poster.jpg',length:{sv:'1½ minut',en:'1½ minutes',it:'un minuto e mezzo'}}:null);
 const TYPES={'.json':'application/json','.glb':'model/gltf-binary','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp',
   '.mp3':'audio/mpeg','.mp4':'video/mp4','.vtt':'text/vtt','.bin':'application/octet-stream','.svg':'image/svg+xml'};

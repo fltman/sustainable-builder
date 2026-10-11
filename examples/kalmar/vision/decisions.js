@@ -245,3 +245,26 @@ if(LANG==='en')for(const list of Object.values(DECISIONS))for(const c of list){c
 // How the journey begins (the first page of Resan).
 export const JOURNEY_INTRO={sv:'Kalmar kommun har 73 000 invånare och mål om att vara klimatneutral 2030. Men den längsta officiella planeringshorisonten sträcker sig till 2050 – ingen har skrivit ner hur vi vill leva här om hundra år. Det får du göra nu, tillsammans med släkten Ek på Kvarnholmen.',
   en:'Kalmar Municipality has 73,000 inhabitants and a goal of being climate-neutral by 2030. But its longest official planning horizon reaches 2050 – no one has written down how we want to live here in a hundred years. Now you get to, together with the Ek family on Kvarnholmen.'};
+
+// The journey's closing lines: what Kalmar's century came to, in Kalmar's own measures (the framework shows
+// them under "Ditt Kalmar 2126"). d: the year 2126, d0: 2026, I: the levers' implementation, today: today's
+// course run to 2126.
+import { t as tt } from '@engine/i18n.js';
+import { INDICATORS } from '@engine/data/indicators.js';
+import { PLACE } from '@engine/city-config.js';
+export function JOURNEY_SUMMARY({d,d0,I,today}){
+  const t=tt;const lines=[];
+  lines.push(t(`${INDICATORS.foodRegional.fmt(d.ind.foodRegional)} av maten kommer från länet, och ${INDICATORS.cityVeg.fmt(d.ind.cityVeg)} av frukten och grönsakerna odlas i staden.`,`${INDICATORS.foodRegional.fmt(d.ind.foodRegional)} of the food comes from the county, and ${INDICATORS.cityVeg.fmt(d.ind.cityVeg)} of the fruit and vegetables are grown in the city.`,`Cibo prodotto in regione: ${INDICATORS.foodRegional.fmt(d.ind.foodRegional)}; frutta e verdura coltivate in città: ${INDICATORS.cityVeg.fmt(d.ind.cityVeg)}.`));
+  lines.push(`${t(`Bilen används för ${INDICATORS.carShare.fmt(d.ind.carShare)} av resorna.`,`The car is used for ${INDICATORS.carShare.fmt(d.ind.carShare)} of trips.`,`Spostamenti in auto: ${INDICATORS.carShare.fmt(d.ind.carShare)}.`)} ${d.ind.depave>.4?t(`De flesta av ${PLACE.centreGenitive} gator är trädgårdar.`,`Most of ${PLACE.centre}'s streets are gardens.`,`La maggior parte delle strade ${PLACE.centreGenitive} sono giardini.`):t('Gatorna ser ut ungefär som 2026.','The streets look much as they did in 2026.','Le strade sono più o meno come nel 2026.')}`);
+  lines.push(I.analog>.6?t('Barndomen är skärmfri till tolv år, och allt viktigt – betalningar, journaler, larm – fungerar också utan nät.','Childhood is screen-free until twelve, and everything important – payments, medical records, alarms – also works without the network.',"L'infanzia è senza schermi fino ai dodici anni, e tutto ciò che conta – pagamenti, cartelle cliniche, allarmi – funziona anche senza rete."):I.analog>.3?t('Skolan är mobilfri och kontanter finns kvar som reserv.','School is phone-free and cash remains as a backup.','La scuola è senza cellulari e i contanti restano come riserva.'):t('Nästan allt är digitalt, också reserven.','Almost everything is digital, the backups too.','Quasi tutto è digitale, anche le riserve.'));
+  lines.push(I.ai>.6?(d.ind.aiGovernance>.6?t('AI används i vård, energi och odling – öppet granskad och i invånarnas ägo.','AI is used in care, energy and farming – openly scrutinised and owned by the residents.',"L'IA si usa nella sanità, nell'energia e in agricoltura – controllata apertamente e di proprietà dei residenti."):t('AI sköter mycket av vården och förvaltningen, men få vet hur besluten fattas.','AI runs much of healthcare and administration, but few know how decisions are made.',"L'IA gestisce gran parte della sanità e dell'amministrazione, ma pochi sanno come vengono prese le decisioni.")):t('AI används sparsamt.','AI is used sparingly.',"L'IA si usa con parsimonia."));
+  {const lp=INDICATORS.lowParticipation.fmt(d.ind.lowParticipation),lp0=INDICATORS.lowParticipation.fmt(d0.ind.lowParticipation),co=INDICATORS.cohousing.fmt(d.ind.cohousing);lines.push(t(`${lp} har lågt socialt deltagande (2026: ${lp0}). ${co} bor i någon form av bogemenskap.`,`${lp} have low social participation (2026: ${lp0}). ${co} live in some form of co-housing.`,`Scarsa partecipazione sociale: ${lp} (2026: ${lp0}). Abitare collaborativo, in qualche forma: ${co}.`));}
+  {const le=INDICATORS.lifeExp.fmt(d.ind.lifeExp),sr=INDICATORS.seaRise.fmt(d.ind.seaRise).replace('+',''),fr=d.ind.floodRisk;lines.push(t(`Medellivslängden är ${le} år. Havet har stigit ${sr} och översvämningsrisken ${PLACE.onCentre} är ${fr<.2?'låg':fr<.5?'måttlig':'hög'}.`,`Life expectancy is ${le} years. The sea has risen ${sr} and the flood risk ${PLACE.onCentre} is ${fr<.2?'low':fr<.5?'moderate':'high'}.`,`La speranza di vita è di ${le} anni. Il mare si è alzato di ${sr} e il rischio di allagamento ${PLACE.onCentre} è ${fr<.2?'basso':fr<.5?'moderato':'alto'}.`));}
+  return lines;
+}
+
+// The decade's headline: Kalmar's travel and food after the index and people.
+export function JOURNEY_HEADLINE(d){
+  const car=INDICATORS.carShare.fmt(d.ind.carShare),food=INDICATORS.foodRegional.fmt(d.ind.foodRegional);
+  return tt(`${car} av resorna med bil · ${food} av maten från länet`,`${car} of trips by car · ${food} of food from the county`,`${car} degli spostamenti in auto · ${food} del cibo prodotto in regione`);
+}

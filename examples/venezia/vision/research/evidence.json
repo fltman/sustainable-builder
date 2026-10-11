@@ -1,1 +1,249 @@
-{"evidence":{},"themes":{},"quotes":[],"en":{"evidence":{},"themes":{},"quotes":[]}}
+{
+ "evidence": {
+  "ve_umgiesser_2020": {
+   "id": "ve_umgiesser_2020",
+   "claim_sv": "Med 50 cm högre hav måste MOSE stängas i snitt en gång om dygnet, och med 75 cm är lagunen i snitt fler timmar stängd än öppen. Delvisa stängningar skyddar inte staden; bara hela stängningar sänker vattnet i lagunen märkbart.",
+   "value": 50,
+   "unit": "cm högre hav → en stängning om dygnet",
+   "context_sv": "Modellstudie för Venedigs lagun. Upp till 50 cm havshöjning håller barriärerna vattnet under 110 cm nästan hela tiden, och flödet genom inloppen minskar bara omkring 10 %; därefter blir lagunen allt mer stängd. Modellen använder det som ankarpunkt för stängningarna och för hur stor del av året lagunen är stängd.",
+   "source": {"title": "The impact of operating the mobile barriers in Venice (MOSE) under climate change", "authors": "Umgiesser, G.", "year": 2020, "publisher": "Journal for Nature Conservation 54", "url": "https://doi.org/10.1016/j.jnc.2019.125783"},
+   "confidence": "medium",
+   "theme": "resilience"
+  },
+  "ve_tognin_2021": {
+   "id": "ve_tognin_2021",
+   "claim_sv": "Över 70 % av saltängarnas sedimentation sker under stormfloder – just när MOSE stänger – och med barriären i drift minskar den med minst 25 %.",
+   "value": 25,
+   "unit": "% mindre sedimentation (minst)",
+   "context_sv": "Fältmätningar och modell för saltängar i Venedigs lagun. Ju oftare barriären stängs, desto mindre slam når saltängarna, och desto sämre klarar de ett stigande hav.",
+   "source": {"title": "Marsh resilience to sea-level rise reduced by storm-surge barriers in the Venice Lagoon", "authors": "Tognin, D., D'Alpaos, A., Marani, M., Carniello, L.", "year": 2021, "publisher": "Nature Geoscience 14", "url": "https://www.nature.com/articles/s41561-021-00853-7"},
+   "confidence": "high",
+   "theme": "biodiversity"
+  },
+  "ve_marsh_accretion": {
+   "id": "ve_marsh_accretion",
+   "claim_sv": "Saltängen vid San Felice växte 1,7–4,3 mm om året 2000–2019, medan det relativa havet steg omkring 4,4 mm om året: stora delar av den dränks långsamt.",
+   "value": 4.4,
+   "unit": "mm/år relativ havshöjning",
+   "range": [1.7, 4.3],
+   "context_sv": "Tjugo års fältdata om höjd och vegetation på en saltäng i norra lagunen. När havet stiger fortare än saltängen hinner bygga på sig flyttar växterna uppåt tills det inte finns någon höjd kvar. Modellen räknar med omkring 3 mm tillväxt om året i dag.",
+   "source": {"title": "Salt-marsh vulnerability and halophytic vegetation vertical migration in response to sea level rise: inferences from the Venice Lagoon (EGU21-13624)", "authors": "Yang, Z., D'Alpaos, A., m.fl.", "year": 2021, "publisher": "EGU General Assembly 2021", "url": "https://meetingorganizer.copernicus.org/EGU21/EGU21-13624.html"},
+   "confidence": "medium",
+   "theme": "biodiversity"
+  },
+  "ve_cibic_2025": {
+   "id": "ve_cibic_2025",
+   "claim_sv": "Försök med inhägnader i lagunen visar att stängt, stilla vatten ändrar plankton, näringsämnen och bottenliv inom 28–48 timmar.",
+   "value": 48,
+   "unit": "timmar",
+   "range": [28, 48],
+   "context_sv": "Mesokosmförsök som efterliknar en MOSE-stängning. Längre och tätare stängningar ger enligt Canu m.fl. (2026) också längre omsättningstid och varmare vatten i lagunen.",
+   "source": {"title": "Effects of the mobile gates (MOSE) closure on the ecosystem functioning of the Venice Lagoon", "authors": "Cibic, T., m.fl.", "year": 2025, "publisher": "Frontiers in Marine Science", "url": "https://doi.org/10.3389/fmars.2025.1675001"},
+   "confidence": "medium",
+   "theme": "biodiversity"
+  },
+  "ve_alberti_2023": {
+   "id": "ve_alberti_2023",
+   "claim_sv": "MOSE dämpar de extrema tidvattnen bäst om barriärerna reses flera timmar före toppen – bättre prognoser gör varje stängning effektivare.",
+   "value": null,
+   "unit": null,
+   "context_sv": "Analys av extrema högvatten i Venedigs lagun. Modellen låter skarpare tidvattenprognoser (Data och AI för lagunen) minska marginalen när luckorna reses från 9 till 4 cm under stängningsgränsen – ett antagande om storleken.",
+   "source": {"title": "Dynamical diagnostic of extreme events in Venice lagoon and their mitigation with the MoSE", "authors": "Alberti, T., m.fl.", "year": 2023, "publisher": "Scientific Reports 13", "url": "https://doi.org/10.1038/s41598-023-36816-8"},
+   "confidence": "medium",
+   "theme": "resilience"
+  },
+  "ve_teatini_2011": {
+   "id": "ve_teatini_2011",
+   "claim_sv": "Att pumpa havsvatten ned i ett saltvattenförande lager 600–800 m under lagunen kan enligt modellberäkningar lyfta Venedig jämnt 25–30 cm på tio år.",
+   "value": 27.5,
+   "unit": "cm på tio år",
+   "range": [25, 30],
+   "context_sv": "En tredimensionell modell av lagren under lagunen, byggd på 1 050 km seismiska profiler och åtta borrhål. Lyftet har aldrig prövats i full skala; ett pilotprojekt har föreslagits. Modellen låter den radikala nivån av Leva med vattnet lyfta staden 28 cm.",
+   "source": {"title": "A new hydrogeologic model to predict anthropogenic uplift of Venice", "authors": "Teatini, P., Castelletto, N., Ferronato, M., Gambolati, G., Tosi, L.", "year": 2011, "publisher": "Water Resources Research 47", "url": "https://doi.org/10.1029/2011WR010900"},
+   "confidence": "medium",
+   "theme": "resilience"
+  },
+  "ve_comerlati_2004": {
+   "id": "ve_comerlati_2004",
+   "claim_sv": "Med tolv brunnar som pumpar havsvatten ned under lagunen skulle Venedig kunna höjas 11–40 cm på tio år.",
+   "value": 40,
+   "unit": "cm (övre skattning)",
+   "range": [11, 40],
+   "context_sv": "Den första modellstudien av att lyfta Venedig med havsvatten; spannet beror på lagrens egenskaper. Teatini m.fl. (2011) ger med en bättre bild av lagren 25–30 cm.",
+   "source": {"title": "Saving Venice by seawater", "authors": "Comerlati, A., Ferronato, M., Gambolati, G., Putti, M., Teatini, P.", "year": 2004, "publisher": "Journal of Geophysical Research: Earth Surface 109", "url": "https://doi.org/10.1029/2004JF000119"},
+   "confidence": "medium",
+   "theme": "resilience"
+  },
+  "ve_hybrid_vaporetto": {
+   "id": "ve_hybrid_vaporetto",
+   "claim_sv": "En hybridombyggnad av en av ACTV:s vaporetti minskade utsläppen med 28 %: kväveoxider −26 %, partiklar −31 % och kolmonoxid −32 % i bänkprov.",
+   "value": 28,
+   "unit": "% lägre utsläpp",
+   "context_sv": "MotoBattello 3 fick en seriehybrid med batterier och en 147 kW elmotor (2025). ACTV planerar 18 nya hybridvaporetti och sju hybridbåtar för lagunen till 2029, och kommunens mål är att alla båtar på Canal Grande har hybridmotor 2032.",
+   "source": {"title": "FPT Industrial, Bimotor e Vulkan Italia: il retrofit ibrido del MotoBattello 3 di ACTV (pressmeddelande 17 juni 2025)", "authors": "", "year": 2025, "publisher": "FPT Industrial", "url": "https://www.fptindustrial.com/-/media/FPT/PDF-Press-Release/2025/ACTV-MotoBattello-3/20250617_FPT_MOTOBATTELLO-3_IT.pdf?rev=-1"},
+   "confidence": "medium",
+   "theme": "mobility"
+  },
+  "ve_palazzo_ducale_lagunvarme": {
+   "id": "ve_palazzo_ducale_lagunvarme",
+   "claim_sv": "Dogepalatset värms och kyls av en värmepump som kyls med lagunvatten, med egna pumpar för lagunvattnet och utan utedelar på fasaden.",
+   "value": null,
+   "unit": null,
+   "context_sv": "Den skyddade stadens hus får inga värmepumpar med utedelar på fasader och tak; vatten ur lagunen och kanalerna är en värmekälla och kylkälla som inte syns. Liknande anläggningar finns vid Biennalen och Palazzo Grassi. Modellen låter Värme ur lagunen ersätta gaspannorna.",
+   "source": {"title": "Relazione descrittiva – Adeguamento impianti Palazzo Ducale", "authors": "", "year": 2019, "publisher": "Fondazione Musei Civici di Venezia (MUVE)", "url": "https://www.visitmuve.it/wp-content/uploads/2019/07/Relazione-Descrittiva-Adeguamento-Impianti-Palazzo-Ducale.pdf"},
+   "confidence": "high",
+   "theme": "energy"
+  },
+  "ve_comune_abaco_solare": {
+   "id": "ve_comune_abaco_solare",
+   "claim_sv": "I Venedigs historiska stad är solpaneler förbjudna på hus byggda före 1945. På senare hus tillåts de bara på plana ytor som inte syns från kanal, lagun eller gata – aldrig på takfall med coppi – och på nya hus bara integrerade i takfallet, alltid efter Soprintendenzas bedömning.",
+   "value": 1945,
+   "unit": "byggår",
+   "context_sv": "Omkring 90 % av bostadshusen i den historiska staden är byggda före 1946. Panelerna kan därför bara komma på ett fåtal tak; staden får sin el från nätet och från energigemenskaper vid sina kanter.",
+   "source": {"title": "Pannelli fotovoltaici / solari – abaco DL 17/2022 art. 9", "authors": "", "year": 2022, "publisher": "Comune di Venezia", "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/Abaco_pannelli_DL_17_2022_%20art%209.pdf"},
+   "confidence": "high",
+   "theme": "energy"
+  },
+  "ve_cer_adsp_2025": {
+   "id": "ve_cer_adsp_2025",
+   "claim_sv": "Soprintendenza i Venedig godkände 2024 sex solcellsanläggningar på hamnens byggnader vid Santa Marta och San Basilio, och 2025 började hamnmyndigheten utreda en förnybar energigemenskap för den historiska staden, med familjer som medlemmar.",
+   "value": 6,
+   "unit": "anläggningar",
+   "context_sv": "En energigemenskap (comunità energetica rinnovabile) delar el från anläggningar i samma område mellan sina medlemmar och får statligt stöd för den delade elen (Decreto CACER). Hamnens och garagens platta tak vid stadens kanter är de största som får bära solceller.",
+   "source": {"title": "Decretazione n. 2025.0000426: Studio di fattibilità tecnico economico per la realizzazione di una Comunità Energetica Rinnovabile nel centro storico di Venezia", "authors": "", "year": 2025, "publisher": "Autorità di Sistema Portuale del Mare Adriatico Settentrionale", "url": "https://trasparenza.port.venice.it/wp-content/uploads/2025/07/2025.0000426_decretazione.pdf"},
+   "confidence": "high",
+   "theme": "energy"
+  },
+  "ve_invisible_solar": {
+   "id": "ve_invisible_solar",
+   "claim_sv": "Soltegel som ser ut som terrakottategel (Dyaqua, Invisible Solar) har lagts på husen i Pompejis arkeologiska park. Ett tegel ger omkring 7,5 W; en kilowatt kräver 134 tegel.",
+   "value": 7.5,
+   "unit": "W per tegel",
+   "context_sv": "Tegel med solceller under en keramisk yta ger mycket mindre el per kvadratmeter än vanliga paneler – enligt artikeln omkring 1 kW per 90 m² tak. Modellen låter dem bära den radikala nivån av Sol där det är tillåtet, där Soprintendenza tillåter dem.",
+   "source": {"title": "Tegole con celle fotovoltaiche prodotte da un'azienda italiana per gli edifici storici", "authors": "", "year": 2023, "publisher": "greenMe", "url": "https://www.greenme.it/casa-e-giardino/bioedilizia-e-bioarchitettura/tegole-con-celle-fotovoltaiche-prodotte-azienda-italiana-per-edifici-storici/"},
+   "confidence": "low",
+   "theme": "energy"
+  },
+  "ve_garcia_lopez_2020": {
+   "id": "ve_garcia_lopez_2020",
+   "claim_sv": "I Barcelona höjde Airbnb hyrorna med 1,9 % och köpepriserna med 4,6 % i ett genomsnittligt kvarter, och hyrorna med omkring 7 % i de kvarter där korttidsuthyrningen var tätast.",
+   "value": 7,
+   "unit": "% högre hyror (tätast uthyrning)",
+   "range": [1.9, 7],
+   "context_sv": "Ekonometrisk studie med detaljerade hyres- och prisdata. I Venedigs historiska stad är 14,5 % av bostäderna registrerade turistlägenheter, tätare än i något kvarter i studien; modellen räknar med att priserna följer andelen.",
+   "source": {"title": "Do short-term rental platforms affect housing markets? Evidence from Airbnb in Barcelona", "authors": "Garcia-López, M.-À., Jofre-Monseny, J., Martínez-Mazza, R., Segú, M.", "year": 2020, "publisher": "Journal of Urban Economics 119", "url": "https://doi.org/10.1016/j.jue.2020.103278"},
+   "confidence": "high",
+   "theme": "community"
+  },
+  "ve_nyc_ll18": {
+   "id": "ve_nyc_ll18",
+   "claim_sv": "När New York 2023 krävde registrering och förbjöd uthyrning kortare än 30 dagar där värden inte bor (Local Law 18) föll antalet korttidsannonser med 85–92 %.",
+   "value": 85,
+   "unit": "% färre annonser (minst)",
+   "range": [85, 92],
+   "context_sv": "I en stor stad som New York märktes knappt effekten på hyror och vakanser. I Venedig, där turistlägenheterna är en sjundedel av alla bostäder, betyder varje lägenhet som blir hem mer; Venedig fick 2022 rätt att begränsa korttidsuthyrningen (art. 37-bis i lagdekret 50/2022).",
+   "source": {"title": "Four months later: An update on New York City's short-term rental rules", "authors": "", "year": 2024, "publisher": "Hospitality Net (Airbnb)", "url": "https://www.hospitalitynet.org/news/4120011/four-months-later-an-update-on-new-york-citys-short-term-rental-rules"},
+   "confidence": "medium",
+   "theme": "community"
+  },
+  "ve_coses_2009": {
+   "id": "ve_coses_2009",
+   "claim_sv": "81 % av de utflyttade venetianer som ville flytta tillbaka skulle göra det om bostäderna hade överkomliga priser; 60,3 % angav höga hyror och priser som skäl till att de flyttade.",
+   "value": 81,
+   "unit": "% av dem som vill flytta tillbaka",
+   "context_sv": "COSES enkät 2009, återgiven av OCIO. Redan 1973 hade 60,2 % av dem som flyttat flyttat för en sundare och modernare bostad, och 35,1 % hade bott i bottenvåningar som regelbundet svämmade över (CENSIS). Efterfrågan på hem i staden finns – det är bostäderna som saknas.",
+   "source": {"title": "\"A mente fredda\" sullo spopolamento di Venezia", "authors": "", "year": 2022, "publisher": "OCIO Venezia", "url": "https://ocio-venezia.it/report/a-mente-fredda-sullo-spopolamento-di-venezia"},
+   "confidence": "medium",
+   "theme": "community"
+  },
+  "ve_piano_casa_2026": {
+   "id": "ve_piano_casa_2026",
+   "claim_sv": "Venedigs Piano Casa har omkring 17,5 miljoner euro för 2026 men bara 3,9 miljoner om året 2027–2028, medan omkring 2 950 kommunala och ATER-bostäder i kommunen står tomma.",
+   "value": 17.5,
+   "unit": "miljoner euro (2026)",
+   "context_sv": "ATER renoverar 34 bostäder om året medan 150 lämnas tillbaka. Med omkring 50 000 euro per renovering räcker 17,5 miljoner till några hundra hem; turistskatten gav 38,7 miljoner euro 2025.",
+   "source": {"title": "Interrogazione n. 29: Piano Casa e relative risorse a bilancio", "authors": "", "year": 2026, "publisher": "Consiglio comunale di Venezia", "url": "https://consiglio.comune.venezia.it/pdf/atti_ispettivi/1/43_interrogazione_29.pdf"},
+   "confidence": "high",
+   "theme": "community"
+  },
+  "ve_bertocchi_2020": {
+   "id": "ve_bertocchi_2020",
+   "claim_sv": "Venedigs historiska stad bär omkring 52 000 besökare om dagen – 37 500 som övernattar och 14 600 dagsbesökare – mot omkring 77 000 om dagen i studiens underlag, varav 57 500 dagsbesökare.",
+   "value": 52111,
+   "unit": "besökare per dag",
+   "context_sv": "En modell av turismens bärkraft (fuzzy linjärprogrammering) med Markusplatsen, vaporettona, restaurangerna och avfallet som flaskhalsar. Den första beräkningen 1988 gav omkring tio miljoner besökare om året.",
+   "source": {"title": "Venice and Overtourism: Simulating Sustainable Development Scenarios through a Tourism Carrying Capacity Model", "authors": "Bertocchi, D., Camatti, N., Giove, S., van der Borg, J.", "year": 2020, "publisher": "Sustainability 12(2), 512", "url": "https://www.mdpi.com/2071-1050/12/2/512"},
+   "confidence": "medium",
+   "theme": "community"
+  },
+  "ve_cda_2024_2026": {
+   "id": "ve_cda_2024_2026",
+   "claim_sv": "Under inträdesavgiftens försöksår minskade de betalande dagsbesökarna per avgiftsdag från 16 676 (2024) till 11 326 (2026), och dagarna med fler än 20 000 betalande från fyra till en; 46 % bokade i förväg.",
+   "value": 11326,
+   "unit": "betalande per avgiftsdag (2026)",
+   "context_sv": "Avgiften (5–10 euro) gällde 29 dagar 2024, 54 dagar 2025 och 60 dagar 2026. Kommunen kallar den ett verktyg för att styra flödena, inte ett tak; kritiker menar att den är för låg för att styra. Fler avgiftsdagar under lågsäsong drar också ner snittet.",
+   "source": {"title": "Contributo d'accesso, i dati 2026: 11 mila paganti al giorno, il 46 % ha prenotato", "authors": "", "year": 2026, "publisher": "VeneziaToday", "url": "https://www.veneziatoday.it/attualita/contributo-d-accesso-i-dati-2026-11-mila-paganti-al-giorno-il-46-ha-prenotato.html"},
+   "confidence": "medium",
+   "theme": "community"
+  },
+  "ve_ballester_2023": {
+   "id": "ve_ballester_2023",
+   "claim_sv": "Sommaren 2022 dog uppskattningsvis 61 672 människor i Europa av värmen, 18 010 av dem i Italien – 295 per miljon invånare, flest i Europa.",
+   "value": 295,
+   "unit": "värmedödsfall per miljon invånare (Italien 2022)",
+   "context_sv": "Studien bygger på Eurostats dödsfall i 823 regioner. Kvinnor och de äldsta drabbades mest – och var åttonde i Venedigs historiska stad är över 80.",
+   "source": {"title": "Heat-related mortality in Europe during the summer of 2022", "authors": "Ballester, J., Quijal-Zamorano, M., Méndez Turrubiates, R. F., m.fl.", "year": 2023, "publisher": "Nature Medicine 29", "url": "https://doi.org/10.1038/s41591-023-02419-z"},
+   "confidence": "high",
+   "theme": "health"
+  },
+  "ve_iungman_2023": {
+   "id": "ve_iungman_2023",
+   "claim_sv": "Att öka trädtäckningen till 30 % i 93 europeiska städer skulle sänka sommartemperaturen med i snitt 0,4 °C och förhindra en tredjedel (2 644) av de dödsfall som städernas värmeöar orsakade sommaren 2015.",
+   "value": 33,
+   "unit": "% färre dödsfall av värmeön",
+   "context_sv": "Hälsokonsekvensbedömning. Venedigs stenstad kan inte få 30 % trädtäckning; skugga, fontäner och svala rum på campi och i klostren är dess sätt att göra samma sak, och modellen räknar med en mindre effekt.",
+   "source": {"title": "Cooling cities through urban green infrastructure: a health impact assessment of European cities", "authors": "Iungman, T., Cirach, M., Marando, F., m.fl.", "year": 2023, "publisher": "The Lancet 401", "url": "https://doi.org/10.1016/S0140-6736(22)02585-5"},
+   "confidence": "high",
+   "theme": "health"
+  },
+  "ve_techne_2020": {
+   "id": "ve_techne_2020",
+   "claim_sv": "37 av Venedigs drygt 430 broar har gjorts tillgängliga för rörelsehindrade. Till fots når en rullstolsburen bara omkring 2 % av den historiska staden, med vaporetto omkring 70 %.",
+   "value": 37,
+   "unit": "tillgängliga broar",
+   "context_sv": "Kartläggningen för appen Venezia accessibile. Trapphissar på broarna klarar inte den salta luften; ramper med under 8 % lutning och 'gradino agevolato' – långa, sluttande trappsteg – har prövats, och vid Venice Marathon får tretton broar tillfälliga ramper.",
+   "source": {"title": "Venezia accessibile: una mappatura interattiva per persone con disabilità motoria", "authors": "Tatano, V., Revellini, R., Mazzanti, A.", "year": 2020, "publisher": "TECHNE 19, Firenze University Press", "url": "https://oaj.fupress.net/index.php/techne/article/download/7784/8150/13850"},
+   "confidence": "high",
+   "theme": "health"
+  }
+ },
+ "themes": {},
+ "quotes": [],
+ "en": {
+  "evidence": {
+   "ve_umgiesser_2020": {"claim": "With a sea 50 cm higher MOSE has to close on average once a day, and with 75 cm the lagoon is on average closed for more hours than it is open. Partial closures do not protect the city; only full closures lower the water in the lagoon noticeably.", "context": "A model study of the Venice lagoon. Up to 50 cm of sea-level rise the barriers keep the water below 110 cm almost all the time, and the flow through the inlets falls only about 10%; beyond that the lagoon is closed more and more. The model uses it as an anchor for the closures and for the share of the year the lagoon is closed."},
+   "ve_tognin_2021": {"claim": "Over 70% of the salt marshes' sedimentation happens during storm surges – just when MOSE closes – and with the barrier in operation it falls by at least 25%.", "context": "Field measurements and a model for salt marshes in the Venice lagoon. The more often the barrier closes, the less silt reaches the marshes, and the worse they cope with a rising sea."},
+   "ve_marsh_accretion": {"claim": "The San Felice salt marsh grew 1.7–4.3 mm a year in 2000–2019, while the relative sea rose about 4.4 mm a year: large parts of it are slowly drowning.", "context": "Twenty years of field data on the height and vegetation of a salt marsh in the northern lagoon. When the sea rises faster than the marsh can build up, the plants move upwards until no height is left. The model assumes about 3 mm of growth a year today."},
+   "ve_cibic_2025": {"claim": "Enclosure experiments in the lagoon show that closed, still water changes the plankton, nutrients and bottom life within 28–48 hours.", "context": "Mesocosm experiments that mimic a MOSE closure. Longer and more frequent closures also mean, according to Canu et al. (2026), longer residence times and warmer water in the lagoon."},
+   "ve_alberti_2023": {"claim": "MOSE damps the extreme tides best when the barriers are raised several hours before the peak – better forecasts make every closure more effective.", "context": "An analysis of extreme high waters in the Venice lagoon. The model lets sharper tide forecasts (Data and AI for the lagoon) narrow the margin at which the gates are raised from 9 to 4 cm below the closing level – an assumption about the size."},
+   "ve_teatini_2011": {"claim": "Pumping seawater into a saline aquifer 600–800 m below the lagoon could, according to model calculations, lift Venice evenly by 25–30 cm in ten years.", "context": "A three-dimensional model of the layers below the lagoon, built on 1,050 km of seismic profiles and eight boreholes. The lift has never been tried at full scale; a pilot project has been proposed. The model lets the radical level of Living with the water lift the city 28 cm."},
+   "ve_comerlati_2004": {"claim": "With twelve wells pumping seawater below the lagoon, Venice could be raised 11–40 cm in ten years.", "context": "The first model study of lifting Venice with seawater; the range depends on the properties of the layers. Teatini et al. (2011), with a better picture of the layers, give 25–30 cm."},
+   "ve_hybrid_vaporetto": {"claim": "A hybrid conversion of one of ACTV's vaporetti cut its emissions by 28%: nitrogen oxides −26%, particles −31% and carbon monoxide −32% in bench tests.", "context": "MotoBattello 3 received a series hybrid with batteries and a 147 kW electric motor (2025). ACTV plans 18 new hybrid vaporetti and seven hybrid lagoon boats by 2029, and the Comune's goal is for every boat on the Grand Canal to have a hybrid engine by 2032."},
+   "ve_palazzo_ducale_lagunvarme": {"claim": "The Doge's Palace is heated and cooled by a heat pump cooled with lagoon water, with its own pumps for the lagoon water and no outdoor units on the facade.", "context": "The protected city's houses get no heat pumps with outdoor units on facades and roofs; water from the lagoon and the canals is an invisible source of heat and cooling. Similar plants exist at the Biennale and Palazzo Grassi. The model lets Heat from the lagoon replace the gas boilers."},
+   "ve_comune_abaco_solare": {"claim": "In Venice's historic city solar panels are banned on buildings from before 1945. On later buildings they are allowed only on flat surfaces not visible from a canal, the lagoon or a street – never on pitched roofs of coppi – and on new buildings only integrated into the roof, always after the Soprintendenza's assessment.", "context": "About 90% of the historic city's residential buildings were built before 1946. Panels can therefore go on only a few roofs; the city gets its power from the grid and from energy communities at its edges."},
+   "ve_cer_adsp_2025": {"claim": "In 2024 Venice's Soprintendenza approved six solar plants on the port's buildings at Santa Marta and San Basilio, and in 2025 the port authority began studying a renewable energy community for the historic city, with families as members.", "context": "An energy community (comunità energetica rinnovabile) shares power from plants in the same area among its members and receives state support for the shared power (Decreto CACER). The flat roofs of the port and the garages at the city's edges are the largest that may carry solar panels."},
+   "ve_invisible_solar": {"claim": "Solar tiles that look like terracotta tiles (Dyaqua, Invisible Solar) have been laid on houses in the archaeological park of Pompeii. One tile gives about 7.5 W; a kilowatt takes 134 tiles.", "context": "Tiles with solar cells under a ceramic surface give much less power per square metre than ordinary panels – about 1 kW per 90 m² of roof according to the article. The model lets them carry the radical level of Sun where it is allowed, where the Soprintendenza permits them."},
+   "ve_garcia_lopez_2020": {"claim": "In Barcelona Airbnb raised rents by 1.9% and purchase prices by 4.6% in an average neighbourhood, and rents by about 7% in the neighbourhoods where short-term letting was densest.", "context": "An econometric study with detailed rent and price data. In Venice's historic city 14.5% of the dwellings are registered tourist apartments, denser than any neighbourhood in the study; the model lets prices follow that share."},
+   "ve_nyc_ll18": {"claim": "When New York in 2023 required registration and banned lets shorter than 30 days where the host does not live (Local Law 18), the number of short-term listings fell by 85–92%.", "context": "In a city as large as New York the effect on rents and vacancies was hardly noticeable. In Venice, where tourist apartments are a seventh of all dwellings, every apartment that becomes a home counts for more; in 2022 Venice got the right to limit short-term letting (art. 37-bis of decree law 50/2022)."},
+   "ve_coses_2009": {"claim": "81% of the Venetians who had moved away and wanted to come back would do so if homes had affordable prices; 60.3% named high rents and prices as a reason for leaving.", "context": "COSES survey 2009, reported by OCIO. Already in 1973, 60.2% of those who left had moved for a healthier and more modern home, and 35.1% had lived on ground floors that flooded regularly (CENSIS). The demand for homes in the city is there – it is the homes that are missing."},
+   "ve_piano_casa_2026": {"claim": "Venice's Piano Casa has about 17.5 million euro for 2026 but only 3.9 million a year in 2027–2028, while about 2,950 municipal and ATER homes in the Comune stand empty.", "context": "ATER renovates 34 homes a year while 150 are handed back. At about 50,000 euro a renovation, 17.5 million is enough for a few hundred homes; the tourist tax brought in 38.7 million euro in 2025."},
+   "ve_bertocchi_2020": {"claim": "Venice's historic city can carry about 52,000 visitors a day – 37,500 staying overnight and 14,600 day visitors – against about 77,000 a day in the study's data, 57,500 of them day visitors.", "context": "A model of tourism's carrying capacity (fuzzy linear programming) with St Mark's Square, the vaporetti, the restaurants and the waste as bottlenecks. The first calculation, in 1988, gave about ten million visitors a year."},
+   "ve_cda_2024_2026": {"claim": "Over the access fee's trial years the paying day visitors per fee day fell from 16,676 (2024) to 11,326 (2026), and the days with more than 20,000 paying from four to one; 46% booked in advance.", "context": "The fee (5–10 euro) applied on 29 days in 2024, 54 in 2025 and 60 in 2026. The Comune calls it a tool to steer the flows, not a cap; critics say it is too low to steer. More fee days in the low season also pull the average down."},
+   "ve_ballester_2023": {"claim": "In the summer of 2022 an estimated 61,672 people in Europe died of the heat, 18,010 of them in Italy – 295 per million inhabitants, the most in Europe.", "context": "The study is based on Eurostat's deaths in 823 regions. Women and the oldest were hit hardest – and one in eight in Venice's historic city is over 80."},
+   "ve_iungman_2023": {"claim": "Raising tree cover to 30% in 93 European cities would lower summer temperatures by 0.4 °C on average and prevent a third (2,644) of the deaths caused by the cities' heat islands in the summer of 2015.", "context": "A health impact assessment. Venice's stone city cannot get 30% tree cover; shade, fountains and cool rooms on the campi and in the cloisters are its way to the same end, and the model counts on a smaller effect."},
+   "ve_techne_2020": {"claim": "37 of Venice's more than 430 bridges have been made accessible to people with reduced mobility. On foot a wheelchair user reaches only about 2% of the historic city, by vaporetto about 70%.", "context": "The survey for the Venezia accessibile app. Stairlifts on the bridges cannot stand the salt air; ramps with less than 8% slope and the 'gradino agevolato' – long, sloping steps – have been tried, and for the Venice Marathon thirteen bridges get temporary ramps."}
+  },
+  "themes": {},
+  "quotes": []
+ }
+}

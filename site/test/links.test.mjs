@@ -16,7 +16,9 @@ test('a vision left as it is is shared by its name',()=>{
 });
 test('no choices at all is the current course',()=>{
   assert.equal(planHash({schedule:[]},2076),'dagens-2076');
-  assert.equal(planHash({schedule:[{from:START,set:{sol:0,ai:0}}],world:'ssp585'},2126),'dagens-ssp585-2126');
+  // Any two of the place's levers left at today's course.
+  const [l1,l2]=LEVERS.map(l=>l.id);
+  assert.equal(planHash({schedule:[{from:START,set:{[l1]:0,[l2]:0}}],world:'ssp585'},2126),'dagens-ssp585-2126');
 });
 test('a vision someone has changed gets a code, not the name',()=>{
   // The place's research-based vision (its first), changed a little.

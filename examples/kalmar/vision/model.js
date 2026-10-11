@@ -131,6 +131,16 @@ export const LOCAL={
 };
 // The global goals' measures beyond the engine's own: the university's students, the train to
 // Stockholm and the visitors' climate footprint (normalised between a poor value and the goal).
-export const SDG_PARTS={
+const OWN_SDG_PARTS={
   4:[['education',.6,.95],['youthScreen',1,.3],['students',4000,7500]],
 };
+
+// Kalmar's model: its system dynamics (system.js) on Kalmar's own numbers, and its SDG parts over the system's.
+import { kalmarSystem } from './system.js';
+const SYSTEM=kalmarSystem({BASE,PARAMS,FLOOD,WATER,WATERS,LOCAL});
+export const {P,init,capacity,step,vision,doughnut,SYSTEM_SPREAD,VARY}=SYSTEM;
+export const EXPECT=SYSTEM.expect;
+export const SDG_PARTS={...SYSTEM.sdgBase,...OWN_SDG_PARTS};
+
+// The measures whose uncertainty band the tests check (besides the population): measured today, uncertain later.
+export const BAND_CHECK=['trust','lifeExp'];

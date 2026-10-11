@@ -12,10 +12,10 @@
   "text": "[thoughtful] Men hur vill vi egentligen leva här om hundra år? Tillsammans med våra barn, barnbarn och grannar?"
  },
  "vo-film-3b": {
-  "hash": "00c55aa38bd10a62",
+  "hash": "8ffd102637eb6f75",
   "model": "eleven_v4",
   "voice_id": "B7OAdN7qiPFwZhhjfkxq",
-  "text": "[warm] Rättvik tjugoett tjugosex räknar fram ett svar, år för år – ur forskningen och kommunens egen statistik. Varje vägval syns i orten."
+  "text": "[warm] Rättvik tjugoett tjugosex räknar fram ett svar, år för år – ur forskningen och kommunens egen statistik. Valen syns i orten – i människorna, gatorna och sjön."
  },
  "vo-film-4b": {
   "hash": "7b08c6bda775eb2b",
@@ -48,10 +48,10 @@
   "text": "[thoughtful] But how do we really want to live here in a hundred years? Together with our children, grandchildren and neighbours?"
  },
  "vo-film-3b-en": {
-  "hash": "63eaed53e4aeedb3",
+  "hash": "a7ba5014b2266bf5",
   "model": "eleven_v4",
   "voice_id": "B7OAdN7qiPFwZhhjfkxq",
-  "text": "[warm] Rättvik twenty-one twenty-six works out an answer, year by year – from the research and the municipality's own statistics. Every choice shows in the town."
+  "text": "[warm] Rättvik twenty-one twenty-six works out an answer, year by year – from the research and the municipality's own statistics. The choices show in the town – in its people, its streets and its lake."
  },
  "vo-film-4b-en": {
   "hash": "b88c75845a8ed6a8",

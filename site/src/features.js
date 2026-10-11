@@ -18,7 +18,7 @@ const pick=(list,v)=>list[Math.floor(v*list.length)%list.length];
 
 export function createFeatures(scene,planning,land,{lite=false,skipLot=()=>false,crowd=null,vehicles=null}={}){
   const mat=kitMaterial(),glass=new THREE.MeshPhysicalMaterial({color:0xdff2ea,roughness:.08,metalness:0,transmission:0,transparent:true,opacity:.28,depthWrite:false,side:THREE.DoubleSide,emissive:0xffb27a,emissiveIntensity:0});
-  const items={trees:[],beds:[],fruit:[],bushes:[],stalls:[],tables:[],parked:[],greenhouses:[],farmTrees:[],farmBeds:[],parkedLots:[],wall:[],buoys:[],rafts:[],homes:[],turbines:[]};
+  const items={shadeTrees:[],shadeSails:[],trees:[],beds:[],fruit:[],bushes:[],stalls:[],tables:[],parked:[],greenhouses:[],farmTrees:[],farmBeds:[],parkedLots:[],wall:[],buoys:[],rafts:[],homes:[],turbines:[]};
   const walkable=(x,z)=>{const k=land.kindAt(x,z);return k===LAND.ROAD||k===LAND.PAVED||k===LAND.PARKING||k===LAND.LAND;};
   // Verges of car streets: trees every ~11 m, beds between them; today a parked car stands there.
   let n=0;
@@ -74,6 +74,18 @@ export function createFeatures(scene,planning,land,{lite=false,skipLot=()=>false
       const target=k%3===0?items.tables:items.stalls;
       if(target.some(o=>Math.hypot(o.x-x,o.z-z)<(target===items.tables?6:4)))continue;
       target.push({x,y:land.heightAt(x,z),z,rot:Math.round(hash(k)*4)*Math.PI/2,order:hash(k*1.9+1)*.9,color:0xffffff});
+    }
+  }
+  // Shade on the squares (vision.shade: Venice's svalka): trees in planters and sails, clear of stalls and tables.
+  const SAILS=[0xf2ead8,0xe6c9a0,0xd98c5f,0xf4f1e8,0xc96f4a];
+  for(const sq of squares){
+    for(let k=0;k<30;k++){
+      const a=hash(k*5.3+sq.x*.7)*Math.PI*2,r=Math.sqrt(hash(k*9.1+sq.z*.3))*sq.r*.92,x=sq.x+Math.cos(a)*r,z=sq.z+Math.sin(a)*r;
+      if(sq.keepClear&&Math.hypot(x-sq.keepClear.x,z-sq.keepClear.z)<sq.keepClear.r)continue;
+      if(planning.buildingAt(x,z,4)||land.kindAt(x,z)!==LAND.PAVED)continue;
+      const sail=k%2===0,list=sail?items.shadeSails:items.shadeTrees,gap=sail?9:6;
+      if([...items.shadeSails,...items.shadeTrees].some(o=>Math.hypot(o.x-x,o.z-z)<gap)||[...items.stalls,...items.tables].some(o=>Math.hypot(o.x-x,o.z-z)<3.5))continue;
+      list.push({x,y:land.heightAt(x,z),z,rot:hash(k*2.3)*Math.PI*2,order:hash(k*4.1+2)*.9,scale:sail?1:.9+hash(k)*.25,color:sail?SAILS[k%SAILS.length]:0xffffff});
     }
   }
   // Flood wall along the core's shore, 2 m inside the coastline (CITY.floodWall).
@@ -142,6 +154,8 @@ export function createFeatures(scene,planning,land,{lite=false,skipLot=()=>false
     ghGlass:createLayer(scene,K.greenhouseGlass(),glass,items.greenhouses.map(o=>({...o})),{shadow:false,name:'greenhouse glass'}),
     fruit:createLayer(scene,K.fruitTree(),mat,items.fruit,{name:'food forest'}),
     bushes:createLayer(scene,K.berryBush(),mat,items.bushes,{name:'berry bushes'}),
+    shadeTrees:createLayer(scene,K.planterTree(),mat,items.shadeTrees,{name:'square trees'}),
+    shadeSails:createLayer(scene,K.shadeSail(),mat,items.shadeSails,{name:'shade sails'}),
     stalls:createLayer(scene,K.marketStall(),mat,items.stalls,{name:'market stalls'}),
     tables:createLayer(scene,K.longTable(),mat,items.tables,{name:'long tables'}),
     wall:createLayer(scene,K.wallSegment(),mat,items.wall,{grow:0,name:'flood wall'}),
@@ -185,7 +199,7 @@ export function createFeatures(scene,planning,land,{lite=false,skipLot=()=>false
   const m=new THREE.Matrix4(),q=new THREE.Quaternion(),e=new THREE.Euler(),p=new THREE.Vector3(),s=new THREE.Vector3(1,1,1);
   // Which vision value each layer follows (used by setVision and the before/after view).
   const drive=v=>({trees:Math.max(v.depave,v.verge??0),beds:Math.max(v.depave*v.gardens,(v.verge??0)*.9),parked:v.depave,parkedLots:v.parking,farmTrees:v.parking,farmBeds:v.parking,ghFrame:v.parking*v.greenhouses,ghGlass:v.parking*v.greenhouses,
-    fruit:v.foodForest,bushes:v.foodForest,stalls:v.market,tables:v.community,buoys:v.mussels,rafts:v.floating,homes:v.floating*.8,turbines:v.wind});
+    fruit:v.foodForest,bushes:v.foodForest,shadeTrees:v.shade??0,shadeSails:v.shade??0,stalls:v.market,tables:v.community,buoys:v.mussels,rafts:v.floating,homes:v.floating*.8,turbines:v.wind});
   let current=null;
   function showFor(v){
     const d=drive(v);for(const [k,val] of Object.entries(d))L[k].showFor(val);
@@ -199,6 +213,7 @@ export function createFeatures(scene,planning,land,{lite=false,skipLot=()=>false
     L.trees.update(Math.max(v.depave,v.verge??0),grown);L.beds.update(Math.max(v.depave*v.gardens,(v.verge??0)*.9));L.parked.update(v.depave);
     L.parkedLots.update(v.parking);L.farmTrees.update(v.parking,grown);L.farmBeds.update(v.parking);L.ghFrame.update(v.parking*v.greenhouses);L.ghGlass.update(v.parking*v.greenhouses);
     L.fruit.update(v.foodForest,grown);L.bushes.update(v.foodForest,.7+.3*(v.maturity??1));
+    L.shadeTrees.update(v.shade??0,grown);L.shadeSails.update(v.shade??0);
     L.stalls.update(v.market);L.tables.update(v.community);
     L.buoys.update(v.mussels);L.rafts.update(v.floating);L.homes.update(0);
     L.turbines.update(v.wind);

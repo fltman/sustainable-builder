@@ -12,10 +12,10 @@
   "text": "[thoughtful] Ma come vogliamo davvero vivere qui fra cent'anni? Insieme ai nostri figli, ai nipoti e ai vicini?"
  },
  "vo-film-3-it": {
-  "hash": "f35492dee0c4b33b",
+  "hash": "dfff7a9ed971cfb8",
   "model": "eleven_v4",
   "voice_id": "13Cuh3NuYvWOVQtLbRN8",
-  "text": "[warm] Venezia duemilacentoventisei calcola una risposta, anno per anno – dalla ricerca e dalle statistiche del Comune. Ogni scelta si vede in città."
+  "text": "[warm] Venezia duemilacentoventisei calcola una risposta, anno per anno – dalla ricerca e dalle statistiche del Comune. Le scelte si vedono in città – nella gente, nelle barche e nell'acqua."
  },
  "vo-film-4-it": {
   "hash": "c059e01c800fe125",
@@ -30,16 +30,16 @@
   "text": "[warm, smiling] Nei campi i bambini giocano di nuovo. Gli appartamenti vuoti sono tornati case – e i visitatori prenotano la loro giornata."
  },
  "vo-film-6-it": {
-  "hash": "b607f7b8a0172ffe",
+  "hash": "7368312017dda8a9",
   "model": "eleven_v4",
   "voice_id": "13Cuh3NuYvWOVQtLbRN8",
-  "text": "[calm, wonder] La laguna respira di nuovo. Le barene sono tornate – crescono con il mare e smorzano le onde."
+  "text": "[calm, wonder] La laguna respira ancora. Le barene resistono – meno di oggi, ma vive, mentre la rotta attuale le sommerge tutte."
  },
  "vo-film-7-it": {
-  "hash": "8bddcef11d7fa16e",
+  "hash": "e9e70198c96f8d72",
   "model": "eleven_v4",
   "voice_id": "13Cuh3NuYvWOVQtLbRN8",
-  "text": "[calm, steady] Il mare è salito di quasi un metro. Ma piazza San Marco è asciutta – la città ha imparato a vivere con l'acqua."
+  "text": "[calm, steady] Il mare è salito di quasi novanta centimetri, e la città si è alzata di quasi trenta. Ma piazza San Marco è asciutta – la città ha imparato a vivere con l'acqua."
  },
  "vo-film-8-it": {
   "hash": "3c5088da417c89ab",
@@ -60,10 +60,10 @@
   "text": "[thoughtful] But how do we really want to live here in a hundred years? Together with our children, grandchildren and neighbours?"
  },
  "vo-film-3-en": {
-  "hash": "01c213a021d87b74",
+  "hash": "2db54b33fc58f3b8",
   "model": "eleven_v4",
   "voice_id": "B7OAdN7qiPFwZhhjfkxq",
-  "text": "[warm] Venezia twenty-one twenty-six works out an answer, year by year – from the research and the city's own statistics. Every choice shows in the city."
+  "text": "[warm] Venezia twenty-one twenty-six works out an answer, year by year – from the research and the city's own statistics. The choices show in the city – in its people, its boats and its water."
  },
  "vo-film-4-en": {
   "hash": "07f18816ce2a8b38",
@@ -78,16 +78,16 @@
   "text": "[warm, smiling] Children play in the squares again. The empty flats have become homes – and visitors book their day."
  },
  "vo-film-6-en": {
-  "hash": "94c79b9e9219c48f",
+  "hash": "32b0f05c1f097666",
   "model": "eleven_v4",
   "voice_id": "B7OAdN7qiPFwZhhjfkxq",
-  "text": "[calm, wonder] The lagoon breathes again. The salt marshes have come back – they grow with the sea and calm the waves."
+  "text": "[calm, wonder] The lagoon still breathes. The salt marshes hold on – fewer than today, but alive, where today's course drowns them all."
  },
  "vo-film-7-en": {
-  "hash": "4b3c6e60acf9e9be",
+  "hash": "1f3148a9b6ef440a",
   "model": "eleven_v4",
   "voice_id": "B7OAdN7qiPFwZhhjfkxq",
-  "text": "[calm, steady] The sea is almost a metre higher. But St Mark's Square is dry – the city has learned to live with the water."
+  "text": "[calm, steady] The sea is almost ninety centimetres higher, and the city has been raised almost thirty. But St Mark's Square is dry – the city has learned to live with the water."
  },
  "vo-film-8-en": {
   "hash": "b8b33031a9eed5e2",

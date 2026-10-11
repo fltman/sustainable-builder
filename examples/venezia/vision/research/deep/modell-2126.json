@@ -1,0 +1,224 @@
+{
+ "topic": "modell-2126",
+ "compiled": "2026-10-11",
+ "indicators": [
+  {
+   "id": "mod_mose_stangningar_medel_2020_2026",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "MOSE-stängningar per säsong, medel 2020/21–2025/26",
+   "value": 26,
+   "unit": "stängningar per säsong",
+   "year": 2026,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Operatività M.O.S.E. – Sintesi del passato",
+    "publisher": "Autorità per la Laguna di Venezia – Nuovo Magistrato alle Acque",
+    "url": "https://www.autoritalaguna.it/operativita-m-o-s-e/"
+   },
+   "note_sv": "Stängningar per säsong: 2020/21 20, 2021/22 13, 2022/23 19, 2023/24 32, 2024/25 23 och 2025/26 49 – 156 på sex säsonger, i snitt 26 (egen beräkning). Barriärerna reses vid prognoser över 110 cm, i praktiken från 101 cm. Säsongen 2025/26 var den hittills högsta, med 30 stängningar på tre veckor.",
+   "confidence": "estimate"
+  },
+  {
+   "id": "mod_medellivslangd_provinsen_2025",
+   "sdg": [
+    3
+   ],
+   "name_sv": "Förväntad livslängd vid födseln, båda könen",
+   "value": 84.2,
+   "unit": "år",
+   "year": 2025,
+   "scope": "Città metropolitana di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Tavole di mortalità: speranza di vita per provincia (IstatData 26_295_DF_DCIS_MORTALITA1_1)",
+    "publisher": "ISTAT",
+    "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,26_295_DF_DCIS_MORTALITA1_1,1.0/A.ITD35.LIFEXP..?startPeriod=2022"
+   },
+   "note_sv": "ISTAT:s preliminära skattning för provinsen 2025: båda könen 84,2 år, kvinnor 86,4 och män 82,2 (Italien 83,7, 85,7 och 81,7). Ingen siffra finns för den historiska staden ensam.",
+   "confidence": "high"
+  },
+  {
+   "id": "mod_tomma_offentliga_bostader_2026",
+   "sdg": [
+    1,
+    11
+   ],
+   "name_sv": "Tomma offentliga bostäder i kommunen (Comune och ATER)",
+   "value": 2950,
+   "unit": "bostäder",
+   "year": 2026,
+   "scope": "Comune di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "Interrogazione n. 29: Piano Casa e relative risorse a bilancio (29 juli 2026)",
+    "publisher": "Consiglio comunale di Venezia",
+    "url": "https://consiglio.comune.venezia.it/pdf/atti_ispettivi/1/43_interrogazione_29.pdf"
+   },
+   "note_sv": "Kommunen äger omkring 5 000 bostäder och ATER lika många; enligt OCIO står omkring 1 250 kommunala och 1 700 ATER-bostäder tomma (fullmäktigefrågan 29 juli 2026). Omkring tusen kommunala och ATER-bostäder i lagunen står tomma i väntan på renovering (OCIO). Modellen antar 800 i den historiska staden.",
+   "confidence": "medium"
+  },
+  {
+   "id": "mod_piano_casa_2026",
+   "sdg": [
+    1,
+    11
+   ],
+   "name_sv": "Kommunens budget för Piano Casa 2026",
+   "value": 17.5,
+   "unit": "miljoner euro",
+   "year": 2026,
+   "scope": "Comune di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Interrogazione n. 29: Piano Casa e relative risorse a bilancio (29 juli 2026)",
+    "publisher": "Consiglio comunale di Venezia",
+    "url": "https://consiglio.comune.venezia.it/pdf/atti_ispettivi/1/43_interrogazione_29.pdf"
+   },
+   "note_sv": "Omkring 17,5 miljoner euro för 2026 men bara 3,9 miljoner för 2027 och 2028. Borgmästaren vill avsluta Piano Casa 2024–2026 och snabbt få de tomma offentliga bostäderna i bruk, med social housing och 'bandi auto-restauro' (hyresgäster som själva renoverar). Regionen har en egen plan på 50 miljoner euro för hela Veneto.",
+   "confidence": "high"
+  },
+  {
+   "id": "mod_varmedodsfall_uppskattning",
+   "sdg": [
+    3,
+    13
+   ],
+   "name_sv": "Värmerelaterade dödsfall i den historiska staden en vanlig sommar (uppskattning)",
+   "value": 13,
+   "unit": "dödsfall per år",
+   "year": 2022,
+   "scope": "Venezia centro storico",
+   "direction": "lower_better",
+   "source": {
+    "title": "Heat-related mortality in Europe during the summer of 2022 (Ballester m.fl., Nature Medicine 29, 2023)",
+    "publisher": "Nature Medicine",
+    "url": "https://doi.org/10.1038/s41591-023-02419-z"
+   },
+   "note_sv": "Egen beräkning: Italien hade 18 010 värmerelaterade dödsfall sommaren 2022, 295 per miljon invånare, flest i Europa. Med den historiska stadens äldre befolkning (12,2 % över 80 mot 7,8 % i Italien, faktor 1,56) blir det omkring 22 en lika het sommar bland 47 625 invånare, och antagande omkring 60 % av det, 13, en vanlig sommar.",
+   "confidence": "estimate"
+  },
+  {
+   "id": "mod_cer_centro_storico_adsp",
+   "sdg": [
+    7,
+    11
+   ],
+   "name_sv": "Solcellsanläggningar på hamnens tak vid Santa Marta och San Basilio, godkända av Soprintendenza",
+   "value": 6,
+   "unit": "anläggningar",
+   "year": 2025,
+   "scope": "Venezia centro storico (Dorsoduro)",
+   "direction": "higher_better",
+   "source": {
+    "title": "Decretazione n. 2025.0000426: Studio di fattibilità tecnico economico per la realizzazione di una Comunità Energetica Rinnovabile nel centro storico di Venezia",
+    "publisher": "Autorità di Sistema Portuale del Mare Adriatico Settentrionale",
+    "url": "https://trasparenza.port.venice.it/wp-content/uploads/2025/07/2025.0000426_decretazione.pdf"
+   },
+   "note_sv": "Hamnmyndigheten planerar sex solcellsanläggningar på sina byggnader vid Santa Marta och San Basilio; Soprintendenza i Venedig gav ett positivt yttrande 8 juli 2024, och projektet fick statliga pengar (Green Ports) 2025. Den 25 juli 2025 beställdes en förstudie för en förnybar energigemenskap (CER) för den historiska staden, med familjer som medlemmar.",
+   "confidence": "high"
+  },
+  {
+   "id": "mod_palazzo_ducale_lagunvatten",
+   "sdg": [
+    7,
+    11
+   ],
+   "name_sv": "Dogepalatset värms och kyls med en värmepump på lagunvatten",
+   "value": 1,
+   "unit": "anläggning",
+   "year": 2019,
+   "scope": "Venezia centro storico (San Marco)",
+   "direction": "context",
+   "source": {
+    "title": "Relazione descrittiva – Adeguamento impianti Palazzo Ducale",
+    "publisher": "Fondazione Musei Civici di Venezia (MUVE)",
+    "url": "https://www.visitmuve.it/wp-content/uploads/2019/07/Relazione-Descrittiva-Adeguamento-Impianti-Palazzo-Ducale.pdf"
+   },
+   "note_sv": "Projektet förnyar Dogepalatsets 'centrale termo frigorifera condensata ad acqua di mare': en vattenkyld värmepump som tar lagunvatten med egna pumpar och värmer och kyler palatset genom fläktkonvektorer, utan utedelar på fasaden. Liknande anläggningar finns vid Biennalen och Palazzo Grassi.",
+   "confidence": "high"
+  },
+  {
+   "id": "mod_broar_tillgangliga_staden",
+   "sdg": [
+    10,
+    11
+   ],
+   "name_sv": "Broar i Venedig som gjorts tillgängliga för rörelsehindrade",
+   "value": 37,
+   "unit": "broar av 430",
+   "year": 2020,
+   "scope": "Venezia centro storico",
+   "direction": "higher_better",
+   "source": {
+    "title": "Tatano, Revellini, Mazzanti: Venezia accessibile – una mappatura interattiva per persone con disabilità motoria (TECHNE 19/2020)",
+    "publisher": "TECHNE, Firenze University Press",
+    "url": "https://oaj.fupress.net/index.php/techne/article/download/7784/8150/13850"
+   },
+   "note_sv": "I kartläggningen för appen Venezia accessibile: 37 av stadens drygt 430 broar har gjorts tillgängliga, 162 har fått nya ledstänger och 235 räcken man kan greppa; av 198 nivåskillnader har 45 fått små ramper. Ponte dei Lavraneri (Giudecca) byggdes om med ramper 2004 och Ponte Papadopoli fick flyttbara ramper 2014; i Venedig har man också prövat 'gradino agevolato', långa sluttande trappsteg.",
+   "confidence": "high"
+  },
+  {
+   "id": "mod_fontaner_offentliga",
+   "sdg": [
+    3,
+    6
+   ],
+   "name_sv": "Offentliga fontäner och vattenautomater",
+   "value": 155,
+   "unit": "fontäner",
+   "year": 2022,
+   "scope": "Venezia (Veritas)",
+   "direction": "higher_better",
+   "source": {
+    "title": "Siccità: Venezia chiude parte delle fontane pubbliche (juni 2022)",
+    "publisher": "MeteoWeb",
+    "url": "https://www.meteoweb.eu/2022/06/siccita-venezia-chiude-parte-fontane/1811452/"
+   },
+   "note_sv": "Under torkan 2022 stängde kommunen 61 av de 155 offentliga fontänerna och vattenautomaterna, jämnt fördelade över stadsdelarna. Venedigs nät i den historiska staden är 403 km långt.",
+   "confidence": "medium"
+  },
+  {
+   "id": "mod_atervandare_coses_2009",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Utflyttade som skulle flytta tillbaka om bostäderna var överkomliga",
+   "value": 81,
+   "unit": "% av dem som vill flytta tillbaka",
+   "year": 2009,
+   "scope": "Venezia centro storico",
+   "direction": "context",
+   "source": {
+    "title": "\"A mente fredda\" sullo spopolamento di Venezia (23 november 2022)",
+    "publisher": "OCIO Venezia (om COSES 2009, Osservatorio Casa 1992–96 och CENSIS 1973)",
+    "url": "https://ocio-venezia.it/report/a-mente-fredda-sullo-spopolamento-di-venezia"
+   },
+   "note_sv": "COSES 2009: 60,3 % av dem som lämnat staden angav höga hyror och priser; 58 % ville flytta tillbaka, och 81 % av dem skulle göra det om bostäderna hade överkomliga priser; två av tre hade stannat om de hittat en bra bostad. CENSIS 1973: 60,2 % flyttade för en sundare och modernare bostad, och 35,1 % hade bott i bottenvåningar som regelbundet svämmade över.",
+   "confidence": "medium"
+  },
+  {
+   "id": "mod_andel_0_19_centro_storico_2025",
+   "sdg": [
+    4,
+    11
+   ],
+   "name_sv": "Andel invånare 0–19 år i centro storico",
+   "value": 12.8,
+   "unit": "%",
+   "year": 2025,
+   "scope": "Venezia centro storico",
+   "direction": "context",
+   "source": {
+    "title": "Residenti nei quartieri e nelle municipalità per classi d'età al 31.12.2025 – maschi e femmine (tabell B04_T03)",
+    "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B04_T03_MF_2025_classi.ods"
+   },
+   "note_sv": "6 088 av 47 625 invånare: 0–4 år 1 066, 5–9 år 1 309, 10–14 år 1 659 och 15–19 år 2 054 (egen beräkning ur kommunens tabell). Av de 27 806 i åldern 15–64 är 13 138 (47,3 %) under 45 och 14 668 mellan 45 och 64; 9 971 är 65–79 och 5 814 över 80. Hela kommunen: 14,7 % under 20.",
+   "confidence": "high"
+  }
+ ]
+}

@@ -64,3 +64,60 @@ export const INDICATORS={
 };
 // The key-figure board, in reading order.
 export const KEY_FIGURES=['pop','lifeExp','ghgCons','foodRegional','localEnergy','carShare','lowParticipation','trust','waters','waterMargin','seaRise','floodShare','homePrepared','analogResilience','workHours','cohousing','students','guestNights','railMain','heritage'];
+
+// Kalmar 2126's measures as its model computes them (system.js): their display metadata, which the names and
+// notes above complete with Kalmar's own. Number formats follow the interface language (decimal comma and
+// "42 %" in Swedish).
+import { LOCALE, t, dec } from '@engine/i18n.js';
+const gpct=v=>LANG==='sv'?`${Math.round(v*100)} %`:`${Math.round(v*100)}%`,gpct1=v=>`${dec(v*100,1)}${LANG==='sv'?' %':'%'}`;
+const gnum=(d=0)=>v=>v.toLocaleString(LOCALE,{maximumFractionDigits:d,minimumFractionDigits:d});
+export const INDICATOR_DEFS={
+  pop:{name:'Befolkning',unit:'invånare',fmt:v=>gnum(0)(v>=1e5?Math.round(v/1000)*1000:Math.round(v/100)*100),better:0,theme:'gemenskap'},
+  ghg:{name:'Utsläpp inom kommunen',unit:'ton CO₂e per invånare',fmt:gnum(2),better:-1,theme:'energi'},
+  ghgCons:{name:'Konsumtionens utsläpp',unit:'ton CO₂e per person',fmt:gnum(1),better:-1,theme:'energi'},
+  foodRegional:{name:'Mat från länet',unit:'av det vi äter',fmt:gpct,better:1,assumption:true,theme:'mat'},
+  cityVeg:{name:'Grönsaker odlade i staden',unit:'av frukt och grönt',fmt:gpct,better:1,assumption:true,theme:'mat'},
+  localEnergy:{name:'Lokal elproduktion',unit:'av elanvändningen',fmt:v=>v>1.5?t(`${dec(v,1)} × behovet`,`${dec(v,1)} × demand`,`${dec(v,1)} × il fabbisogno`):v>1?`${Math.round(v*100)} %`:gpct(v),better:1,theme:'energi'},
+  carShare:{name:'Resor med bil',unit:'av alla resor',fmt:gpct,better:-1,theme:'stad'},
+  greenShare:{name:'Grön mark i stadskärnan',unit:'genomsläpplig yta',fmt:gpct,better:1,theme:'stad'},
+  boatElectric:{name:'Eldriven sjötrafik',unit:'av båttrafiken',fmt:gpct,better:1,assumption:true,theme:'stad'},
+  canopy:{name:'Trädkronor i tätorten',unit:'krontäckning',fmt:gpct,better:1,theme:'stad'},
+  lifeExp:{name:'Medellivslängd',unit:'år',fmt:gnum(1),better:1,theme:'halsa'},
+  lowParticipation:{name:'Lågt socialt deltagande',unit:'av invånarna',fmt:gpct,better:-1,theme:'gemenskap'},
+  trust:{name:'Tillit till andra',unit:'av invånarna',fmt:gpct,better:1,theme:'gemenskap'},
+  distress:{name:'Allvarlig psykisk påfrestning',unit:'av vuxna',fmt:gpct,better:-1,theme:'halsa'},
+  youthScreen:{name:'Unga med mer än 3 timmars skärmtid',unit:'per dag (fritid)',fmt:gpct,better:-1,theme:'teknik'},
+  waters:{name:'Vattnets hälsa',unit:'index, 1 = god status',fmt:gnum(2),better:1,assumption:true,theme:'mat'},
+  water:{name:'Vattensäkerhet',unit:'index 0–1',fmt:gnum(2),better:1,assumption:true,theme:'resiliens'},
+  seaRise:{name:'Högvattnet jämfört med 2026',unit:'meter (efter landhöjning)',fmt:v=>`+${dec(v,2)} m`,better:-1,theme:'resiliens'},
+  floodRisk:{name:'Översvämningsrisk i centrum',unit:'index 0–1',fmt:gnum(2),better:-1,assumption:true,theme:'resiliens'},
+  floodShare:{name:'Centrum under vatten vid ett 100-årshögvatten',unit:'av centrum',fmt:gpct,better:-1,theme:'resiliens'},
+  foodStockDays:{name:'Matlager i kommunen',unit:'dagar',fmt:gnum(0),better:1,assumption:true,theme:'resiliens'},
+  homePrepared:{name:'Hemberedskap en vecka',unit:'av hushållen',fmt:gpct,better:1,theme:'resiliens'},
+  analogResilience:{name:'Analog reserv',unit:'index 0–1',fmt:gnum(2),better:1,assumption:true,theme:'teknik'},
+  aiCapacity:{name:'AI i välfärden',unit:'index 0–1',fmt:gnum(2),better:0,assumption:true,theme:'teknik'},
+  aiGovernance:{name:'Demokratisk kontroll över AI',unit:'index 0–1',fmt:gnum(2),better:1,assumption:true,theme:'teknik'},
+  workHours:{name:'Arbetstid',unit:'timmar per vecka',fmt:gnum(0),better:-1,theme:'gemenskap'},
+  cohousing:{name:'Bor i bogemenskap',unit:'av invånarna',fmt:gpct,better:1,theme:'gemenskap'},
+  gini:{name:'Inkomstskillnader',unit:'Gini 0–1',fmt:gnum(3),better:-1,theme:'gemenskap'},
+  childPoverty:{name:'Barnfattigdom',unit:'av barnen',fmt:gpct1,better:-1,theme:'gemenskap'},
+  heritage:{name:'Kulturarvet i centrum',unit:'index, 1 = intakt',fmt:gnum(2),better:1,assumption:true,theme:'stad'},
+  biodiversity:{name:'Biologisk mångfald',unit:'index 0–1',fmt:gnum(2),better:1,assumption:true,theme:'mat'},
+  solarMW:{name:'Solel',unit:'MW installerat',fmt:gnum(0),better:1,theme:'energi'},
+  windMW:{name:'Vindkraft',unit:'MW installerat',fmt:gnum(0),better:1,theme:'energi'},
+  unemployment:{name:'Arbetslöshet',unit:'20–64 år',fmt:gpct1,better:-1,theme:'gemenskap'},
+  education:{name:'Gymnasieexamen inom 4 år',unit:'av eleverna',fmt:gpct,better:1,theme:'teknik'},
+  selfHealth:{name:'Självskattad god hälsa',unit:'av vuxna',fmt:gpct,better:1,theme:'halsa'},
+  activity:{name:'Fysiskt aktiva',unit:'av vuxna',fmt:gpct,better:1,theme:'halsa'},
+  unsafe:{name:'Otrygga ute på kvällen',unit:'av invånarna',fmt:gpct,better:-1,theme:'gemenskap'},
+  welfare:{name:'Välfärdskapacitet',unit:'index, 2026 = 1',fmt:gnum(2),better:1,assumption:true,theme:'gemenskap'},
+  wellbeing:{name:'Välbefinnande',unit:'index 0–1',fmt:gnum(2),better:1,assumption:true,theme:'halsa'},
+  preparedness:{name:'Beredskap',unit:'index 0–1',fmt:gnum(2),better:1,assumption:true,theme:'resiliens'},
+  restrictions:{name:'Somrar med bevattningsförbud',unit:'av somrarna',fmt:gpct,better:-1,theme:'resiliens'},
+  share65:{name:'Invånare 65 år och äldre',unit:'av befolkningen',fmt:gpct,better:0,theme:'gemenskap'},
+  evShare:{name:'Elbilar',unit:'av personbilarna',fmt:gpct,better:1,theme:'stad'},
+  waterMargin:{name:'Vattenmarginal ett torrår',unit:'råvatten utöver behovet',fmt:v=>(v<0?'−':'')+gpct(Math.abs(v)),better:1,theme:'resiliens'},
+  guestNights:{name:'Gästnätter i kommunen',unit:'per år',fmt:v=>gnum(0)(Math.round(v/1000)*1000),better:0,theme:'stad'},
+  tourismCO2:{name:'Besökarnas klimatpåverkan',unit:'ton CO₂e per år',fmt:v=>gnum(0)(Math.round(v/100)*100),better:-1,assumption:true,theme:'energi'},
+  railMain:{name:'Tåget till huvudstaden',unit:'timmar',fmt:v=>{const h=Math.floor(v+1/120),m=Math.round((v-h)*60/5)*5;return LANG==='en'?`${h} h ${String(m).padStart(2,'0')}`:`${h} h ${String(m).padStart(2,'0')}`;},better:-1,theme:'stad'},
+};

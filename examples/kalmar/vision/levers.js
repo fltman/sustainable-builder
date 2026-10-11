@@ -73,3 +73,54 @@ export const LEVER_EVIDENCE={
   beredskap:['base:dricksvattenmarginal_kalmar','base:oberoende_ravattensystem_kalmar','base:kalmarsundsverket_atervunnet_vatten_kapacitet','base:avsaltning_morbylanga_investering','resilience_e1','resilience_e23','resilience_e5','resilience_e8','resilience_e13','resilience_e15'],
   anpassning:['resilience_e17','resilience_e16','resilience_e18','mobility_e15','mobility_e16'],
 };
+
+// Kalmar 2126's levers ("vägval"), the ones its model (system.js) acts on. Each has levels 0–3: 0 = today's
+// course, 1 = steady, 2 = ambitious, 3 = radical; `cost` is the yearly demand on the city's shared
+// capacity at full implementation, `tau` how many years implementation takes to settle. Kalmar says them
+// its own way in LEVER_TEXT above. Texts are Swedish, translated with L().
+export const LEVER_DEFS=[
+  {id:'stadsodling',theme:'mat',name:'Stadsodling',short:'Odling på gator, parkeringar, tak och i växthus',cost:1.2,tau:8,
+    levels:['Koloniområden som idag','Odlingslådor i kvarteren','Parkeringar blir matparker, växthus på tak','Ätbar stad: matskog, akvaponik och odling på varje gata']},
+  {id:'regionalt',theme:'mat',name:'Regional mat',short:'Bygden föder orten: regenerativt jordbruk, lokala förädlare',cost:1.4,tau:14,
+    levels:['Export och import som idag','Lokal upphandling i skolor och omsorg','Regenerativt jordbruk, lokala mejerier och kvarnar','Matsuveränitet: regionala livsmedelsråd och 90 dagars lager']},
+  {id:'kost',theme:'mat',name:'Kost & måltider',short:'Växtrika offentliga måltider, mindre matsvinn',cost:.5,tau:8,
+    levels:['Som idag','Mer växtbaserat i offentliga kök','Planetary health diet i all offentlig mat','Ny matkultur: säsong, baljväxter, nolltolerans mot svinn']},
+  {id:'hav',theme:'mat',name:'Levande vatten',short:'Våtmarker, fiskevård och mindre näring ut i sjöar och hav',cost:1.0,tau:18,
+    levels:['Som idag','Våtmarker och strandzoner','Våtmarker, skyddade lekområden och fiskefria zoner','Vattnets återkomst: storskalig restaurering tillsammans med bönderna']},
+  {id:'sol',theme:'energi',name:'Sol & energigemenskaper',short:'Solceller på tak, delad lagring, invånarägd energi',cost:1.0,tau:10,
+    levels:['Enskilda solcellstak','Solceller på kommunens tak','Energigemenskaper i varje kvarter','Varje lämpligt tak producerar, orten delar lagring']},
+  {id:'vind',theme:'energi',name:'Vindkraft',short:'Ny vindkraft, ägd tillsammans med invånarna',cost:1.3,tau:12,
+    levels:['Befintliga verk','Några nya verk','En större park, delägd av invånarna','Energibygd: el och vätgas till andra regioner']},
+  {id:'effektivitet',theme:'energi',name:'Renovering & cirkulärt',short:'Energieffektiva hus, återbruk, reparation och delning',cost:1.1,tau:15,
+    levels:['Som idag','Energirenovering av allmännyttan','Cirkulärt byggande, lånebibliotek för saker','Nollavfall: allt repareras, delas eller återbrukas']},
+  {id:'bilfritt',theme:'stad',name:'Bilfri stadskärna',short:'Gatorna avasfalteras till odling, träd och mötesplatser',cost:1.0,tau:10,
+    levels:['Bilar som idag','Gångfartsgator i centrum','Bilfritt centrum, parkeringar blir parker','Bilfri ort: gatorna blir trädgårdar i hela tätorten']},
+  {id:'kollektivt',theme:'stad',name:'Kollektivt & cykel',short:'Tätare bussar, cykelstråk och delade fordon',cost:1.4,tau:14,
+    levels:['Bussar som idag','Täta busslinjer och cykelstråk','Snabbcykelvägar, anropsstyrda skyttlar och eldrivna bussar','Avgiftsfri kollektivtrafik med självkörande skyttlar till varje by']},
+  {id:'forbindelser',theme:'stad',name:'Tåg och förbindelser',short:'Snabbare och tätare tåg till de stora städerna, i stället för bil och flyg',cost:1,tau:16,
+    levels:['Som idag','Tätare regionaltåg och snabbussar','Snabbare tåg och bättre byten mot storstäderna','Direkttåg till huvudstaden och nattåg till Europa']},
+  {id:'bogemenskap',theme:'gemenskap',name:'Bogemenskap',short:'Kollektivhus, flergenerationsboende, kvarterskök',cost:.9,tau:15,
+    levels:['Som idag','Gemensamma lokaler i nya hus','Generationshus och kvarterskök i varje kvarter','Delat boende som norm: alla åldrar under samma tak']},
+  {id:'demokrati',theme:'gemenskap',name:'Medborgarråd & barnbarnsombud',short:'Lottade medborgarråd, deltagande budget, ett ombud för framtida generationer',cost:.5,tau:6,
+    levels:['Representativ demokrati som idag','Medborgardialoger','Lottade medborgarråd och deltagande budget','Barnbarnsombud med vetorätt i långsiktiga frågor']},
+  {id:'arbetstid',theme:'gemenskap',name:'Tid för varandra',short:'Kortare arbetstid, tidsbank, medborgartjänst',cost:.9,tau:12,
+    levels:['40 timmar som idag','Försök med 6-timmarsdag i kommunen','Fyradagarsvecka och tidsbank','30-timmarsvecka och ett år av medborgartjänst']},
+  {id:'forebyggande',theme:'halsa',name:'Förebyggande hälsa',short:'Natur på recept, aktiv vardag, hälsotorg',cost:.8,tau:10,
+    levels:['Vård när man blir sjuk','Fysisk aktivitet och natur på recept','Hälsotorg i varje stadsdel','Hälsa i allt: stadsplanering för rörelse och möten']},
+  {id:'ai',theme:'teknik',name:'AI för välfärden',short:'AI i diagnostik, energinät, odling och klimatmodeller',cost:1.0,tau:8,
+    levels:['Ingen samordning','Pilotprojekt i vården','Lokal, öppen AI i vård, energi och jordbruk','AI-accelererad välfärd med data i medborgarnas ägo']},
+  {id:'analog',theme:'teknik',name:'Det analoga',short:'Skärmfri barndom, analoga reserver, rätt till ett analogt liv',cost:.5,tau:8,
+    levels:['Digitalt först','Böcker och mobilfri skola','Skärmfri barndom till 12 år, kontanter och papper som reserv','Rätten till ett analogt liv: varje tjänst finns även utan skärm']},
+  {id:'kunskap',theme:'teknik',name:'Kunskapsorten',short:'Skola, högskola och folkbildning tillsammans med invånarna',cost:.7,tau:10,
+    levels:['Som idag','Lärcentrum och distansstudier i orten','Orten som levande labb: forskning tillsammans med invånarna','Livslångt lärande för alla och medborgarforskning i varje skola']},
+  {id:'beredskap',theme:'resiliens',name:'Beredskap & vatten',short:'Lokala lager, vattensäkerhet, ö-drift av el',cost:1.1,tau:10,
+    levels:['Hemberedskap som idag','Kommunala lager och vattenplan','En andra vattenkälla, 30 dagars lager, ö-drift','Självförsörjande i kris: mat, vatten och energi i 90 dagar']},
+  {id:'anpassning',theme:'resiliens',name:'Klimatanpassning',short:'Skydd mot högvatten, skyfallsytor, svalka',cost:1.3,tau:16,
+    levels:['Som idag','Skyfallsytor och höjda kajer','Skyddsvallar och svampstad','Plats för vattnet: upphöjda och flytande kvarter']},
+];
+
+// The levers' order in share links – fixed, so the links people have shared keep working; it only ever grows.
+export const LINK_ORDER=['stadsodling','regionalt','kost','hav','sol','vind','effektivitet','bilfritt','kollektivt','forbindelser','bogemenskap','demokrati','arbetstid','forebyggande','ai','analog','kunskap','beredskap','anpassning'];
+
+// What builds Kalmar's capacity for change (its model: trust, participation and shared living).
+export const CAPACITY_NOTE={sv:'Gemenskap, demokrati och tid för varandra bygger förmåga.',en:'Community, democracy and time for each other build capacity.',it:'Comunità, democrazia e tempo per gli altri costruiscono capacità.'};

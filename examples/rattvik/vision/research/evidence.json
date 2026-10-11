@@ -1,1 +1,452 @@
-{"evidence":{},"themes":{},"quotes":[],"en":{"evidence":{},"themes":{},"quotes":[]}}
+{
+ "evidence": {
+  "rattvik_e1": {
+   "id": "rattvik_e1",
+   "claim_sv": "Med 2023 års regler för EU:s utsläppshandel (en linjär minskningsfaktor på 4,3 % 2024–2027 och 4,4 % därefter) skulle nya utsläppsrätter ta slut omkring 2039. Kommissionens förslag den 17 juli 2026 sänker faktorn till 3,7 % 2031–2035 och 1,7 % från 2036, så att utsläppsrätter ges ut in på 2040-talet, i linje med EU:s mål om 90 % nettominskning till 2040 jämfört med 1990.",
+   "value": 2039,
+   "unit": "år då nya utsläppsrätter tar slut med 2023 års regler",
+   "context_sv": "Kalkbruk ingår i utsläppshandeln. Rättviks kalkverk (SMA Mineral) släppte ut 119 818 ton fossil koldioxid 2024 – fyra femtedelar av kommunens territoriella utsläpp – och kalkbränning frigör koldioxid ur själva kalkstenen, så bara avskiljning (eller att produktionen flyttar) tar bort den. Modellens antagande: med dagens kurs fångas 80 % in till omkring 2055 (±30 % i tid i osäkerhetsberäkningen); med el från bygdens egen vindkraft kan det ske tio år tidigare. Avskiljning eller elektrisk kalkbränning antas kräva omkring 1 MWh el per ton koldioxid.",
+   "source": {
+    "title": "EU Commission publishes EU ETS review proposal",
+    "authors": "International Carbon Action Partnership",
+    "year": 2026,
+    "publisher": "ICAP",
+    "url": "https://icapcarbonaction.com/en/news/eu-commission-publishes-eu-ets-review-proposal"
+   },
+   "confidence": "high",
+   "theme": "energy"
+  },
+  "rattvik_e2": {
+   "id": "rattvik_e2",
+   "claim_sv": "SMA Mineral, som äger kalkverken i Rättvik och Boda och levererar 70 % av den brända kalk som Sveriges stålindustri behöver, har som mål att halvera sina koldioxidutsläpp till och med 2027. Tillsammans med SaltX utvecklar bolaget elektrisk kalkbränning, som med grön el minskar utsläppen med 30 % och gör att den koldioxid som frigörs kan fångas in och användas.",
+   "value": 50,
+   "unit": "% minskade CO₂-utsläpp till 2027 (bolagets mål)",
+   "context_sv": "Den första anläggningen planeras i Norge; inget beslut om kalkverket i Rättvik har hittats. Vägen för kalkindustrin är alltså el och avskiljning – och elen måste komma någonstans ifrån, vilket kopplar kalkverket till vindkraften i norr.",
+   "source": {
+    "title": "Svensk miljardsatsning på klimatneutral insatsvara för stål och massa",
+    "authors": "Nordea",
+    "year": 2024,
+    "publisher": "Nordea",
+    "url": "https://www.nordea.com/sv/nyhet/svensk-miljardsatsning-pa-klimatneutral-insatsvara-for-stal-och-massa"
+   },
+   "confidence": "medium",
+   "theme": "energy"
+  },
+  "rattvik_e3": {
+   "id": "rattvik_e3",
+   "claim_sv": "Med 3–4 graders global uppvärmning blir Central- och Nordeuropa mer attraktiva för turism året runt, på bekostnad av Medelhavsområdet; Sverige hör till länderna med regioner som ökar mer än 5 %. Efterfrågan flyttar från juli till vår och höst.",
+   "value": 5,
+   "unit": "% ökning av gästnätter (regioner med störst ökning, 4 °C)",
+   "context_sv": "Modellens antagande för Rättvik: sommar och vår/höst får omkring +2 % gästnätter per grad global uppvärmning utöver dagens, medan vintern förlorar på att snön och isen sviker (bra skiddagar nära Falun från 90 till under 40 om året, isen på Siljan från 129 till 74 dagar). Hälften av vinterns gästnätter antas hänga på snö och is.",
+   "source": {
+    "title": "Regional impact of climate change on European tourism demand",
+    "authors": "Matei, N.A., García-León, D., Dosio, A., Batista e Silva, F., Ribeiro Barranco, R., Císcar Martínez, J.C.",
+    "year": 2023,
+    "publisher": "Europeiska kommissionens gemensamma forskningscentrum (JRC)",
+    "url": "https://doi.org/10.2760/899611"
+   },
+   "confidence": "medium",
+   "theme": "tourism"
+  },
+  "rattvik_e4": {
+   "id": "rattvik_e4",
+   "claim_sv": "Äldreomsorgens andel av BNP skulle behöva öka från 2,7 till 3,6 % till 2040 för att behålla dagens omfattning av det offentliga åtagandet. Fallolyckor kostar kommunerna 6,5 miljarder kronor om året i eftervård och stöd i hemmet, och en allvarlig fallolycka ger i snitt 322 extra hemtjänsttimmar året efter; att arbeta förebyggande är ett sätt att öka effektiviteten.",
+   "value": 3.6,
+   "unit": "% av BNP till äldreomsorgen 2040 (2,7 % i dag)",
+   "context_sv": "Rättvik åldras snabbare än riket: försörjningskvoten är 1,09 (riket 0,77), och 85–89-åringarna väntas bli 74 % fler till 2034. Modellen låter välfärdskapaciteten sjunka när fler är unga eller gamla per invånare i arbetsför ålder, och förebyggande omsorg (fallprevention, hälsa i byarna) lätta något (antagande: +4 % vid full ambition).",
+   "source": {
+    "title": "Välfärdsteknik i äldreomsorgen: spår av ökad effektivitet? (SNS Analys 117), med hänvisning till Vård- och omsorgsanalys 2024 och Socialstyrelsen 2022",
+    "authors": "Ellegård, L.M., Persson, L.",
+    "year": 2026,
+    "publisher": "SNS",
+    "url": "https://cms-production.sns.se/app/uploads/2026/05/SNS-Analys-117.pdf"
+   },
+   "confidence": "high",
+   "theme": "health"
+  },
+  "rattvik_e5": {
+   "id": "rattvik_e5",
+   "claim_sv": "Sambandet mellan välfärdsteknik i hemtjänsten och sparade resurser är osäkert i svenska kommuner 2016–2023, medan hög teknikanvändning hänger ihop med fler registrerade fallolyckor; förväntningarna bör vara försiktiga. Digital nattillsyn, som cirka 80 % av kommunerna nu erbjuder, har beräknats kunna ge störst effektivisering: 1,4 miljarder kronor om året i hela landet.",
+   "value": 1.4,
+   "unit": "miljarder kronor om året (beräknad effektivisering, digital nattillsyn, riket)",
+   "context_sv": "Det motsvarar omkring en procent av äldreomsorgens kostnader. Rättvik har infört fjärrtillsyn i hemtjänsten. Modellen ger välfärdstekniken och AI en liten effekt på välfärdskapaciteten (högst +6 %, och lite arbetslöshet där inget annat jobb väntar – i en bygd med för få händer fyller tekniken mest luckor), och ökad ensamhet bland de äldre när tillsyn på skärm ersätter besök utan att någon människa kommer i stället.",
+   "source": {
+    "title": "Välfärdsteknik i äldreomsorgen: spår av ökad effektivitet? (SNS Analys 117)",
+    "authors": "Ellegård, L.M., Persson, L.",
+    "year": 2026,
+    "publisher": "SNS",
+    "url": "https://cms-production.sns.se/app/uploads/2026/05/SNS-Analys-117.pdf"
+   },
+   "confidence": "medium",
+   "theme": "tech_ai"
+  },
+  "rattvik_e6": {
+   "id": "rattvik_e6",
+   "claim_sv": "Siljans måttliga ekologiska status bygger på hur vattenkraften påverkat fisken: ålen har försvunnit och öringen minskat från tusentals till något hundratal, sedan utbyggnaden 1955–1970 stängde ute Siljansöringen från mer än 95 % av sina lek- och uppväxtområden. Vandringsvägar förbi Spjutmo, Blyberg och Väsa byggs nu, och Grådas reglering prövas enligt den nationella planen för moderna miljövillkor från 2026.",
+   "value": 95,
+   "unit": "% av lek- och uppväxtområdena utestängda (mer än)",
+   "context_sv": "Modellens antagande: fiskvägarna som byggs och prövningen lyfter Siljans status något med dagens kurs; fria vandringsvägar förbi fler dammar, restaurerade åmynningar och en naturligare vårflod kan nå god status. Andelen lekområden som öringen når (5 % i dag) antas bli omkring 10 % med de pågående fiskvägarna och upp till 40 % med ett levande Siljan.",
+   "source": {
+    "title": "Gråda–Siljan. Nulägesbeskrivning",
+    "authors": "Länsstyrelsen i Dalarnas län",
+    "year": 2025,
+    "publisher": "Länsstyrelsen i Dalarnas län",
+    "url": "https://www.lansstyrelsen.se/download/18.57c2d35a1969f8a67de2cc10/1746791796734/Gr%C3%A5da-Siljan.pdf"
+   },
+   "confidence": "high",
+   "theme": "biodiversity_baltic"
+  },
+  "rattvik_e7": {
+   "id": "rattvik_e7",
+   "claim_sv": "Formellt skyddad skogsmark var 9,4 % av Sveriges skogsmark och 6,3 % av den produktiva skogsmarken 2024. EU:s strategi för biologisk mångfald till 2030 vill att minst 30 % av EU:s land ska vara skyddat, varav 10 % strikt.",
+   "value": 9.4,
+   "unit": "% av Sveriges skogsmark formellt skyddad (2024)",
+   "context_sv": "I Rättvik, där 89,5 % av landet är skog, är bara 1,8 % av kommunens yta skyddad natur (riket 12,1 %, länet 10,9 %). Modellens antagande: med dagens kurs tillkommer omkring ett reservat per decennium; nya reservat, frivilliga avsättningar och återvätta myrar kan lyfta andelen till rikets nivå.",
+   "source": {
+    "title": "Formellt skyddad skogsmark, frivilliga avsättningar, hänsynsytor samt improduktiv skogsmark 2024",
+    "authors": "SCB, Naturvårdsverket, Skogsstyrelsen och SLU",
+    "year": 2025,
+    "publisher": "SCB",
+    "url": "https://www.scb.se/publikation/57997"
+   },
+   "confidence": "high",
+   "theme": "biodiversity_baltic"
+  },
+  "rattvik_e8": {
+   "id": "rattvik_e8",
+   "claim_sv": "Regeringen föreslår att den som driver en vindkraftsanläggning från den 1 juli 2026 ska betala vindkraftsersättning – en andel av årets intäkter – till ägare av bostadshus inom nio verkshöjder från ett verk, mer ju närmare huset ligger; ersättningen ska vara skattefri för privatbostäder.",
+   "value": 9,
+   "unit": "verkshöjder (avstånd som ger rätt till ersättning)",
+   "context_sv": "Rättvik var tidigt ute med bygdepeng och medborgarandelar (Rättviksvind på Hedbodberget). Modellen låter vindkraft som byarna äger tillsammans och får intäkter från möta mindre motstånd än vindkraft som byggs över deras huvuden (antagande).",
+   "source": {
+    "title": "Regeringens proposition 2025/26:239 Vindkraft i kommuner",
+    "authors": "Regeringen",
+    "year": 2026,
+    "publisher": "Riksdagen",
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/vindkraft-i-kommuner_hd03239/html/"
+   },
+   "confidence": "high",
+   "theme": "energy"
+  },
+  "rattvik_e9": {
+   "id": "rattvik_e9",
+   "claim_sv": "Antagande: med dagens kurs har Rättviks kommun omkring 12 450 invånare år 2126 och 17–18 % av dem är 80 år eller äldre.",
+   "value": 12450,
+   "unit": "invånare i Rättviks kommun (2126, antagande)",
+   "range": [
+    11600,
+    13300
+   ],
+   "context_sv": "SCB:s framskrivning (2024) slutar 2070 på 11 580 invånare. Rättvik växte 2050–2070 i ungefär 0,7 gånger rikets takt; i samma förhållande till SCB:s förlängning för riket (+0,19 % om året 2070–2120) blir det omkring +0,13 % om året. Med dagens kurs följer modellen den banan; en bygd som fler vill flytta till – eller färre – avviker från den genom inflyttningen. Antagandet ska läsas som en kurs, inte en prognos.",
+   "source": {
+    "title": "Härlett från SCB:s regionala och nationella befolkningsframskrivningar (BefProgOsiktRegN)",
+    "authors": "Rättvik 2126-projektet, baserat på Statistiska centralbyrån",
+    "year": 2026,
+    "publisher": "Modellantagande",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0401__BE0401A/BefProgOsiktRegN/"
+   },
+   "confidence": "assumption",
+   "theme": "demography"
+  },
+  "rattvik_e10": {
+   "id": "rattvik_e10",
+   "claim_sv": "Antagande: ett skyfall som ovädret Hans, som skadade omkring 150 villor i Rättvik i augusti 2023, skadar fler hus när regnet blir kraftigare – ungefär med kvadraten på regnets klimatfaktor – och färre där regnet får plats.",
+   "value": 150,
+   "unit": "skadade hus vid ett skyfall som Hans (2023)",
+   "context_sv": "SMHI:s klimatfaktor för korta skyfall är 1,2 (RCP4.5) och 1,4 (RCP8.5) till 2071–2100. Med dagens kurs blir det omkring 200 hus i mellanvägen och nästan 300 i en fossil värld. Skyfallsytor, öppna diken och översvämningsängar (Augustenborg, Köpenhamns skyfallsplan) antas kunna halvera skadorna; avasfalterade gator, planterade gaturum och återvätta myrar uppströms tar ytterligare något.",
+   "source": {
+    "title": "Härlett från SMHI:s klimatfaktorer för extremregn (Klimatologi 47) och Länsstyrelsen Dalarnas rapport Översvämning Dalarna augusti 2023",
+    "authors": "Rättvik 2126-projektet",
+    "year": 2026,
+    "publisher": "Modellantagande",
+    "url": "https://www.lansstyrelsen.se/download/18.8cd5a1b19362fb4fc22181/1732536813580/%C3%96versv%C3%A4mning%20Dalarna%20augusti%202023.pdf"
+   },
+   "confidence": "assumption",
+   "theme": "resilience"
+  },
+  "rattvik_e11": {
+   "id": "rattvik_e11",
+   "claim_sv": "Antagande: erbjudanden året runt – geoparken, Siljansleden, fäbodarna, kultur och friluftsliv – kan föra tillbaka de gästnätter utanför sommaren som Rättvik har förlorat sedan 2019 (−25 %) och lite till: omkring +45 % på vår och höst och +30 % på vintern.",
+   "value": 45,
+   "unit": "% fler gästnätter på vår och höst vid full ambition (antagande)",
+   "range": [
+    20,
+    60
+   ],
+   "context_sv": "Utanför juni–augusti hade Rättvik 102 794 kommersiella gästnätter 2019 och 76 794 år 2025. Sommaren (två tredjedelar av gästnätterna, mer än hälften på camping) antas växa lite. Classic Car Week (omkring 35 000 gästnätter) antas förlora upp till 30 % när cruisingen flyttar från centrum, om veckan inte formas om.",
+   "source": {
+    "title": "Härlett från Tillväxtverkets inkvarteringsstatistik för Rättvik (Statistikportalen; research/deep/turism-ekonomi)",
+    "authors": "Rättvik 2126-projektet",
+    "year": 2026,
+    "publisher": "Modellantagande",
+    "url": "https://tillvaxtdata.tillvaxtverket.se/statistikportal#page=72b01aa0-1d4a-425c-8684-dbce0319b39e"
+   },
+   "confidence": "assumption",
+   "theme": "tourism"
+  },
+  "rattvik_e12": {
+   "id": "rattvik_e12",
+   "claim_sv": "Antagande: av tillståndet för Broboberget och Lannaberget (upp till 115 verk, nätavtal för 740 MW, omkring 1,5 TWh om året) ligger omkring 400 MW i Rättvik; Gundåsmoren kan ge omkring 150 MW. Utan kommunens medverkan bygger marknaden en del, omkring 120 MW, senare.",
+   "value": 400,
+   "unit": "MW vindkraft i Rättvik från Broboberget och Lannaberget (antagande)",
+   "range": [
+    0,
+    550
+   ],
+   "context_sv": "wpd:s egen beräkning ger 1,5 TWh om året från 740 MW, alltså omkring 2 GWh per MW; Hedbodbergets verk gav 2,75 GWh per MW 2024. Elnätet tar emot ny storskalig produktion först med Ellevios första etapp 2027. Osäkerhetsberäkningen varierar marknadens del mellan noll och 190 MW.",
+   "source": {
+    "title": "wpd tar nästa viktiga steg för att bygga 1,5 TWh förnybar elproduktion i Dalarna (pressmeddelande 16 oktober 2023)",
+    "authors": "wpd Scandinavia",
+    "year": 2023,
+    "publisher": "wpd",
+    "url": "https://www.wpd.se/wpd-tar-nasta-viktiga-steg-for-att-bygga-15-twh-fornybar-elproduktion-i-dalarna/"
+   },
+   "confidence": "assumption",
+   "theme": "energy"
+  },
+  "rattvik_e13": {
+   "id": "rattvik_e13",
+   "claim_sv": "Fler svenskar vill bo på landsbygden än som faktiskt flyttar dit. Men de som vill och de som flyttar liknar varandra, och författarna bedömer att potentialen sannolikt inte blir verklig befolkningstillväxt på landsbygden.",
+   "value": null,
+   "unit": "",
+   "context_sv": "Studien jämför enkätsvar om önskat boende med registerdata över faktiska flyttningar. För Rättvik betyder det att en bygd som många drömmer om inte därmed växer: bostäder, arbete och service avgör hur många som faktiskt kommer (model.js premiumMax).",
+   "source": {
+    "title": "Is there hidden potential for rural population growth in Sweden?",
+    "authors": "Niedomysl, T., Amcoff, J.",
+    "year": 2011,
+    "publisher": "Rural Sociology 76(2), 257–279",
+    "url": "https://doi.org/10.1111/j.1549-0831.2010.00032.x"
+   },
+   "confidence": "medium",
+   "theme": "demography"
+  },
+  "rattvik_e14": {
+   "id": "rattvik_e14",
+   "claim_sv": "Under pandemiåren 2020–21 vände flyttnettot från negativt till positivt för mindre städer och landsbygdskommuner med besöksnäring; sedan dess har flyttmönstren till stor del återgått till hur de såg ut före pandemin.",
+   "value": 66,
+   "unit": "% av dem som flyttade under pandemiåren bodde kvar fyra år senare",
+   "context_sv": "SCB:s genomgång av flyttningar mellan kommuner 2014–2023 och uppföljningen 2025: i genomsnitt flyttade 13 400 fler än vanligt ut från storstäderna under pandemin, och lägst andel bor kvar bland dem som flyttat till lågpendlingskommuner. Rättvik fick +168 år 2020 mot i snitt +101 om året 2015–2024, och +56 år 2025.",
+   "source": {
+    "title": "Demografisk rapport: Flyttningar mellan kommuner 2014–2023 (2025) och Kort analys: Majoritet bor kvar efter pandemiflytt (2025)",
+    "authors": "Statistiska centralbyrån (Li Ma m.fl.)",
+    "year": 2025,
+    "publisher": "SCB",
+    "url": "https://www.scb.se/hitta-statistik/artiklar/2025/majoritet-bor-kvar-efter-pandemiflytt/"
+   },
+   "confidence": "high",
+   "theme": "demography"
+  },
+  "rattvik_e15": {
+   "id": "rattvik_e15",
+   "claim_sv": "Antalet som flyttade ut från Stockholms stad men behöll jobbet där ökade med 166 % till små städer och landsbygdskommuner efter pandemin (2020–2022 mot 2017–2019) – men de allra flesta stannade i Stockholmsregionen, och på kort sikt blir effekterna sannolikt relativt begränsade.",
+   "value": 166,
+   "unit": "% fler utflyttare till små städer och landsbygdskommuner som behöll jobbet i Stockholm",
+   "context_sv": "Jobb som kan göras på distans är 56 % i Stockholm men 15–20 % i små och medelstora kommuner, och det är chefer och högutbildade specialister som flyttat längre bort. För Rättvik är det ett tillskott, inte en vändning (modellens tolkning).",
+   "source": {
+    "title": "Work from home and big city out-migration before and after the pandemic (WP 2023:05), svensk sammanfattning",
+    "authors": "Tillväxtanalys",
+    "year": 2023,
+    "publisher": "Myndigheten för tillväxtpolitiska utvärderingar och analyser",
+    "url": "https://www.tillvaxtanalys.se/download/18.50008ca118c63645f0abf0b/1702649141521/Sammanfattning_WP_2023_05.pdf"
+   },
+   "confidence": "high",
+   "theme": "demography"
+  },
+  "rattvik_e16": {
+   "id": "rattvik_e16",
+   "claim_sv": "Antagande: ett Rättvik som blivit så attraktivt det kan bli – bostäder för unga och äldre, arbete, service i byarna, tåg och natur – får som mest omkring 10 % fler invånare än SCB:s bana, och närmar sig den storleken under några decennier.",
+   "value": 10,
+   "unit": "% över dagens kurs som mest (antagande)",
+   "range": [
+    5,
+    18
+   ],
+   "context_sv": "Rättvik har haft mellan 10 600 och 11 450 invånare sedan 1970. Sedan 1990 har grannkommunerna vid Siljan gått isär med upp till 27 procentenheter (Älvdalen −18 %, Leksand +9 %), och Åre har vuxit 27 % med en skidboom. Att många drömmer om landsbygden blir sällan flyttningar (rattvik_e13), och pandemins inflyttning ebbade ut (rattvik_e14). Halva gapet sluts på omkring tio år, och högst 0,5 % av befolkningen flyttar in utöver trenden ett enskilt år (pandemiåret 2020: 0,6 %). Osäkerhetsberäkningarna varierar storleken mellan 5 och 18 %.",
+   "source": {
+    "title": "Härlett från SCB:s befolkningsstatistik för Rättvik och grannkommunerna 1990–2024 och forskningen om flyttningar till landsbygden",
+    "authors": "Rättvik 2126-projektet",
+    "year": 2026,
+    "publisher": "Modellantagande",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__BE__BE0101__BE0101A/BefolkningNy/"
+   },
+   "confidence": "assumption",
+   "theme": "demography"
+  },
+  "rattvik_e17": {
+   "id": "rattvik_e17",
+   "claim_sv": "42,5 % av Sveriges unga 16–25 år vill vara med och påverka i frågor som rör den kommun där de bor (2021).",
+   "value": 42.5,
+   "unit": "% av unga 16–25 år",
+   "context_sv": "MUCF:s ungdomsenkät; tjejer 44,2 %, killar 40,5 %. Andelen som anser att de har stora möjligheter att påverka är betydligt lägre – i Rättvik 22 % och i Dalarna 16 % av de unga i högstadiet och gymnasiet (Lupp 2024). Modellen låter byarnas röst som mest fördubbla Rättviks andel, till ungefär så många som vill påverka.",
+   "source": {
+    "title": "Ung idag 2024 – tabellbilaga, tabell 57",
+    "authors": "Myndigheten för ungdoms- och civilsamhällesfrågor",
+    "year": 2024,
+    "publisher": "MUCF",
+    "url": "https://www.mucf.se/sites/default/files/2024/03/tabellbilaga-ungidag-rapport-2024.pdf"
+   },
+   "confidence": "high",
+   "theme": "governance"
+  },
+  "rattvik_e18": {
+   "id": "rattvik_e18",
+   "claim_sv": "Medborgarråd ökar hur legitima besluten uppfattas också bland dem som inte deltog – men nästan bara när rådens förslag genomförs, och mest bland dem som har lågt förtroende för politiken.",
+   "value": 1309,
+   "unit": "deltagare i ett förregistrerat surveyexperiment (Irland)",
+   "context_sv": "Det spelar ingen roll om förslagen stoppas av politikerna eller i en folkomröstning. För Rättvik: byarnas röst gör framför allt stora förändringar – vindkraft i skogen, ett bilfritt centrum, skyddad skog – möjliga att genomföra utan att tilliten tar skada; den höjer tilliten till andra människor bara lite (antagande).",
+   "source": {
+    "title": "Scaling Up? Unpacking the Effect of Deliberative Mini-Publics on Legitimacy Perceptions",
+    "authors": "Germann, M., Marien, S., Muradova, L.",
+    "year": 2024,
+    "publisher": "Political Studies 72(2), 677–700",
+    "url": "https://doi.org/10.1177/00323217221137444"
+   },
+   "confidence": "medium",
+   "theme": "governance"
+  },
+  "rattvik_e19": {
+   "id": "rattvik_e19",
+   "claim_sv": "Future of the Fjords, en 42 meter lång eldriven turistbåt för 400 passagerare, går 30 nautiska mil (56 km) i 16 knop på en laddning och gör omkring 700 turer om året mellan Flåm och Gudvangen sedan 2018.",
+   "value": 30,
+   "unit": "nautiska mil på en laddning",
+   "context_sv": "Batteriet är på 1 800 kWh. Från Rättvik är det omkring 20 km till Leksand och 38 km till Mora över Siljan (ungefärligt, mätt på kartan), alltså inom räckvidden med laddning vid bryggorna. I 16 knop tar Leksand omkring 40 minuter och Mora 75 – tåget tar 15 och 23.",
+   "source": {
+    "title": "The Fjords takes delivery of groundbreaking “Future of The Fjords”",
+    "authors": "Brødrene Aa",
+    "year": 2018,
+    "publisher": "Brødrene Aa",
+    "url": "https://www.braa.no/news/future-of-the-fjords"
+   },
+   "confidence": "high",
+   "theme": "mobility"
+  },
+  "rattvik_e20": {
+   "id": "rattvik_e20",
+   "claim_sv": "Eldrivna passagerarfartyg går redan i svensk kollektivtrafik: Västtrafik har fem helt eldrivna färjor (den första 2019), SL fick sin första 2014, och Trafikverket Färjerederiet har sju helt eldrivna färjor och ska elektrifiera ytterligare 50 till 2045.",
+   "value": 5,
+   "unit": "helt eldrivna färjor i Västtrafiks kollektivtrafik (2024)",
+   "context_sv": "Boverket redovisar goda exempel och vad kommunerna kan göra: planera för laddning och el vid bryggorna och samverka med den regionala kollektivtrafikmyndigheten. För Siljan betyder det laddning vid Långbryggan och de gamla ångbåtsbryggorna.",
+   "source": {
+    "title": "Goda exempel på elektrifiering av sjöfart (rapport 2024:14)",
+    "authors": "Boverket",
+    "year": 2024,
+    "publisher": "Boverket",
+    "url": "https://www.boverket.se/globalassets/publikationer/dokument/2024/rapport-goda-exempel-pa-elektrifiering-av-sjofart.pdf"
+   },
+   "confidence": "high",
+   "theme": "mobility"
+  },
+  "rattvik_e21": {
+   "id": "rattvik_e21",
+   "claim_sv": "Antagande: sommarbåtar mellan byarna runt Siljan gör att något färre besökare tar bilen (−4 procentenheter av bilandelen 91,5 %) och lockar något fler sommargäster (+2 % av sommarens gästnätter).",
+   "value": 4,
+   "unit": "procentenheter lägre bilandel bland besökarna (antagande)",
+   "range": [
+    0,
+    8
+   ],
+   "context_sv": "Ångbåtarna förlorade sin trafik när järnvägen och bilarna kom, eftersom de var långsamma (Sollerö hembygdsförening). En sommarbåt konkurrerar inte med tåget till Leksand (15 minuter) eller Mora (23 minuter), men når byarna utan station – Siljansnäs, Sollerön och Vikarbyn – och gör en dag på Siljan till ett mål i sig, som Gustaf Wasas turer redan gör. Ingen studie anger storleken.",
+   "source": {
+    "title": "Modellantagande, med stöd i Siljans båthistoria (Ångbåtsbryggan, Sollerö hembygdsförening)",
+    "authors": "Rättvik 2126-projektet",
+    "year": 2026,
+    "publisher": "Modellantagande",
+    "url": "https://www.sollero-hembygd.se/wp-content/uploads/2023/10/Angbatsbryggan.pdf"
+   },
+   "confidence": "assumption",
+   "theme": "tourism"
+  }
+ },
+ "themes": {},
+ "quotes": [],
+ "en": {
+  "evidence": {
+   "rattvik_e1": {
+    "claim": "Under the 2023 rules of the EU Emissions Trading System (a linear reduction factor of 4.3% in 2024–2027 and 4.4% thereafter), new allowances would run out around 2039. The Commission's proposal of 17 July 2026 lowers the factor to 3.7% in 2031–2035 and 1.7% from 2036, so that allowances are issued into the 2040s, in line with the EU's goal of a 90% net reduction by 2040 compared with 1990.",
+    "context": "Lime production is covered by emissions trading. Rättvik's lime works (SMA Mineral) emitted 119,818 tonnes of fossil carbon dioxide in 2024 – four fifths of the municipality's territorial emissions – and burning limestone releases carbon dioxide from the stone itself, so only capture (or production moving elsewhere) removes it. The model's assumption: on today's course 80% is captured by about 2055 (±30% in timing in the uncertainty runs); with electricity from the area's own wind power it can come ten years earlier. Capture or electric calcination is assumed to need about 1 MWh of electricity per tonne of carbon dioxide."
+   },
+   "rattvik_e2": {
+    "claim": "SMA Mineral, which owns the lime works in Rättvik and Boda and supplies 70% of the burnt lime Sweden's steel industry needs, aims to halve its carbon dioxide emissions by 2027. Together with SaltX it is developing electric calcination, which with green electricity cuts emissions by 30% and lets the carbon dioxide released be captured and used.",
+    "context": "The first plant is planned in Norway; no decision on the lime works in Rättvik has been found. The lime industry's path is thus electricity and capture – and the electricity has to come from somewhere, which links the lime works to the wind power in the north."
+   },
+   "rattvik_e3": {
+    "claim": "With 3–4 degrees of global warming, Central and Northern Europe become more attractive for tourism all year round, at the expense of the Mediterranean; Sweden is among the countries with regions gaining more than 5%. Demand shifts from July to spring and autumn.",
+    "context": "The model's assumption for Rättvik: summer, spring and autumn gain about 2% more guest nights per degree of global warming beyond today's, while winter loses as snow and ice fail (good skiing days near Falun from 90 to under 40 a year, the ice on Lake Siljan from 129 to 74 days). Half of winter's guest nights are assumed to depend on snow and ice."
+   },
+   "rattvik_e4": {
+    "claim": "Elderly care's share of GDP would have to rise from 2.7 to 3.6% by 2040 to keep today's public commitment. Falls cost municipalities 6.5 billion kronor a year in aftercare and support at home, and a serious fall brings on average 322 extra hours of home care the following year; working preventively is one way to raise efficiency.",
+    "context": "Rättvik is ageing faster than Sweden: its dependency ratio is 1.09 (Sweden 0.77), and those aged 85–89 are expected to be 74% more by 2034. The model lets welfare capacity fall as there are more young or old people per resident of working age, and preventive care (fall prevention, health in the villages) ease it somewhat (assumption: +4% at full ambition)."
+   },
+   "rattvik_e5": {
+    "claim": "The link between welfare technology in home care and saved resources is uncertain in Swedish municipalities 2016–2023, while high use of the technology goes with more registered falls; expectations should be cautious. Digital night supervision, now offered by about 80% of municipalities, has been estimated to give the largest efficiency gain: 1.4 billion kronor a year nationwide.",
+    "context": "That is about one per cent of the cost of elderly care. Rättvik has introduced remote supervision in home care. The model gives welfare technology and AI a small effect on welfare capacity (at most +6%, and a little unemployment where no other job awaits – in a community with too few hands the technology mostly fills gaps), and more loneliness among the old when supervision on a screen replaces visits without a person coming instead."
+   },
+   "rattvik_e6": {
+    "claim": "Lake Siljan's moderate ecological status rests on how hydropower has affected its fish: the eel has disappeared and the trout fallen from thousands to a few hundred, since the development of 1955–1970 shut the Siljan trout out of more than 95% of its spawning and nursery grounds. Fish passes past Spjutmo, Blyberg and Väsa are now being built, and Gråda's regulation is reviewed under the national plan for modern environmental conditions from 2026.",
+    "context": "The model's assumption: the fish passes being built and the review lift Siljan's status a little on today's course; free passage past more dams, restored river mouths and a more natural spring flood can reach good status. The share of spawning grounds the trout reaches (5% today) is assumed to become about 10% with the passes under way and up to 40% with a living Siljan."
+   },
+   "rattvik_e7": {
+    "claim": "Formally protected forest land was 9.4% of Sweden's forest land and 6.3% of its productive forest land in 2024. The EU's biodiversity strategy for 2030 wants at least 30% of the EU's land protected, a third of it strictly.",
+    "context": "In Rättvik, where 89.5% of the land is forest, only 1.8% of the municipality's area is protected nature (Sweden 12.1%, the county 10.9%). The model's assumption: on today's course about one reserve is added per decade; new reserves, voluntary set-asides and rewetted mires can lift the share to Sweden's level."
+   },
+   "rattvik_e8": {
+    "claim": "The government proposes that from 1 July 2026 the operator of a wind farm pays wind power compensation – a share of the year's revenue – to owners of homes within nine turbine heights of a turbine, more the closer the home; the compensation is to be tax-free for private homes.",
+    "context": "Rättvik was early with a community fund and citizens' shares (Rättviksvind on Hedbodberget). The model lets wind power that the villages own together and earn from meet less resistance than wind power built over their heads (assumption)."
+   },
+   "rattvik_e9": {
+    "claim": "Assumption: on today's course Rättvik Municipality has about 12,450 inhabitants in 2126, and 17–18% of them are 80 or older.",
+    "context": "SCB's projection (2024) ends in 2070 at 11,580 inhabitants. Rättvik grew in 2050–2070 at about 0.7 times Sweden's pace; at the same ratio to SCB's extension for Sweden (+0.19% a year 2070–2120) that gives about +0.13% a year. On today's course the model follows this path; a place more people want to move to – or fewer – departs from it through migration. The assumption is a course, not a forecast."
+   },
+   "rattvik_e10": {
+    "claim": "Assumption: a cloudburst like Storm Hans, which damaged about 150 houses in Rättvik in August 2023, damages more houses as rain grows heavier – roughly with the square of the rain's climate factor – and fewer where the rain is given room.",
+    "context": "SMHI's climate factor for short cloudbursts is 1.2 (RCP4.5) and 1.4 (RCP8.5) by 2071–2100. On today's course that is about 200 houses in the middle world and almost 300 in a fossil world. Cloudburst parks, open ditches and flood meadows (Augustenborg, Copenhagen's cloudburst plan) are assumed to halve the damage; depaved streets, planted streets and rewetted mires upstream take a little more."
+   },
+   "rattvik_e11": {
+    "claim": "Assumption: year-round offers – the geopark, Siljansleden, the summer farms, culture and outdoor life – can bring back the guest nights outside summer that Rättvik has lost since 2019 (−25%) and a little more: about +45% in spring and autumn and +30% in winter.",
+    "context": "Outside June–August, Rättvik had 102,794 commercial guest nights in 2019 and 76,794 in 2025. Summer (two thirds of the guest nights, more than half on campsites) is assumed to grow a little. Classic Car Week (about 35,000 guest nights) is assumed to lose up to 30% when its cruising leaves the centre, unless the week is reshaped."
+   },
+   "rattvik_e12": {
+    "claim": "Assumption: of the permit for Broboberget and Lannaberget (up to 115 turbines, a grid agreement for 740 MW, about 1.5 TWh a year) about 400 MW lies in Rättvik; Gundåsmoren could give about 150 MW. Without the municipality's involvement the market builds part of it, about 120 MW, later.",
+    "context": "wpd's own estimate gives 1.5 TWh a year from 740 MW, about 2 GWh per MW; Hedbodberget's turbines gave 2.75 GWh per MW in 2024. The grid takes new large-scale production only with Ellevio's first stage in 2027. The uncertainty runs vary the market's part between zero and 190 MW."
+   },
+   "rattvik_e13": {
+    "claim": "More Swedes want to live in the countryside than actually move there. But those who want to and those who move are alike, and the authors judge that the potential is unlikely to become real rural population growth.",
+    "context": "The study compares survey answers on preferred residence with register data on actual moves. For Rättvik this means that a place many dream of does not grow because of it: homes, work and services decide how many actually come (model.js premiumMax)."
+   },
+   "rattvik_e14": {
+    "claim": "In the pandemic years 2020–21 net migration turned from negative to positive for small towns and rural municipalities with tourism; since then migration patterns have largely returned to what they were before the pandemic.",
+    "context": "Statistics Sweden's review of migration between municipalities 2014–2023 and its 2025 follow-up: on average 13,400 more people than usual moved out of the big cities during the pandemic, and the smallest share stayed among those who moved to low-commuting municipalities. Rättvik gained +168 in 2020 against an average of +101 a year in 2015–2024, and +56 in 2025."
+   },
+   "rattvik_e15": {
+    "claim": "The number of people who moved out of the City of Stockholm but kept their jobs there rose by 166% to small towns and rural municipalities after the pandemic (2020–2022 against 2017–2019) – but the great majority stayed in the Stockholm region, and in the short term the effects are likely to be fairly limited.",
+    "context": "Jobs that can be done remotely are 56% of jobs in Stockholm but 15–20% in small and medium-sized municipalities, and it is managers and highly educated specialists who have moved further away. For Rättvik this is an addition, not a turnaround (the model's reading)."
+   },
+   "rattvik_e16": {
+    "claim": "Assumption: a Rättvik that has become as attractive as it can – homes for young and old, work, services in the villages, trains and nature – has at most about 10% more inhabitants than Statistics Sweden's path, and approaches that size over a few decades.",
+    "context": "Rättvik has had between 10,600 and 11,450 inhabitants since 1970. Since 1990 the municipalities round Lake Siljan have drifted up to 27 percentage points apart (Älvdalen −18%, Leksand +9%), and Åre has grown 27% with a ski boom. Many dream of the countryside but few move (rattvik_e13), and the pandemic's in-migration faded (rattvik_e14). Half the gap closes in about ten years, and at most 0.5% of the population moves in above the trend in a single year (the pandemic year 2020: 0.6%). The uncertainty runs vary the size between 5 and 18%."
+   },
+   "rattvik_e17": {
+    "claim": "42.5% of Sweden's young people aged 16–25 want to be involved and have a say in matters concerning the municipality where they live (2021).",
+    "context": "The youth survey of the Swedish Agency for Youth and Civil Society; young women 44.2%, young men 40.5%. The share who think they have good opportunities to have a say is much lower – 22% in Rättvik and 16% in Dalarna among pupils in lower and upper secondary school (Lupp 2024). In the model the villages' voice at most doubles Rättvik's share, to about as many as want to have a say."
+   },
+   "rattvik_e18": {
+    "claim": "Citizens' assemblies raise how legitimate decisions are perceived to be, also among those who did not take part – but almost only when the assemblies' proposals are carried out, and most among those with low trust in politics.",
+    "context": "It makes no difference whether the proposals are stopped by politicians or in a referendum. For Rättvik: the villages' voice above all makes large changes – wind power in the forest, a car-free centre, protected forest – possible without damaging trust; it raises trust in other people only a little (assumption)."
+   },
+   "rattvik_e19": {
+    "claim": "Future of the Fjords, a 42-metre electric tourist boat for 400 passengers, sails 30 nautical miles (56 km) at 16 knots on one charge and has made about 700 trips a year between Flåm and Gudvangen since 2018.",
+    "context": "The battery holds 1,800 kWh. From Rättvik it is about 20 km to Leksand and 38 km to Mora across Lake Siljan (approximate, measured on the map), within range with charging at the piers. At 16 knots Leksand takes about 40 minutes and Mora 75 – the train takes 15 and 23."
+   },
+   "rattvik_e20": {
+    "claim": "Electric passenger vessels already run in Swedish public transport: Västtrafik has five fully electric ferries (the first in 2019), SL got its first in 2014, and the Swedish Transport Administration's ferry operator has seven fully electric ferries and is to electrify another 50 by 2045.",
+    "context": "The National Board of Housing, Building and Planning reports good examples and what municipalities can do: plan for charging and power at the piers, and work with the regional public transport authority. For Lake Siljan this means charging at Långbryggan and the old steamboat piers."
+   },
+   "rattvik_e21": {
+    "claim": "Assumption: summer boats between the villages round Lake Siljan mean slightly fewer visitors take the car (−4 percentage points of the 91.5% car share) and draw slightly more summer guests (+2% of summer guest nights).",
+    "context": "The steamboats lost their traffic when the railway and the cars came, because they were slow (Sollerö local history society). A summer boat does not compete with the train to Leksand (15 minutes) or Mora (23 minutes), but it reaches the villages without a station – Siljansnäs, Sollerön and Vikarbyn – and makes a day on Lake Siljan a destination in itself, as Gustaf Wasa's cruises already do. No study gives the size."
+   }
+  },
+  "themes": {},
+  "quotes": []
+ }
+}

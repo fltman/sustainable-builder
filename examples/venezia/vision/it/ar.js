@@ -1,7 +1,7 @@
 // Italian for Venice's AR spots (keys are the exact Swedish strings ar.js passes to L(): kickers, titles,
 // units and the notes without figures). Those already translated elsewhere are not repeated: the engine's
-// Gemenskap, Mat, Hälsa, Energi, Medellivslängd, år and Tillit till andra; the indicators' titles
-// (it/indicators.js); and "över tidvattennollan" (it/changes.js). MOSE and MW stay.
+// Gemenskap, Mat, Hälsa, Energi, Medellivslängd and år; the indicators' names and units (it/indicators.js); and
+// "över tidvattennollan" (it/changes.js). MOSE stays.
 export const IT={
   // Kickers.
   "Tidvattnet":"La marea",
@@ -18,27 +18,30 @@ export const IT={
   // Titles.
   "Kulturarvet (1 = intakt)":"Il patrimonio (1 = intatto)",
   "Lagunens hälsa (1 = god status)":"La salute della laguna (1 = stato buono)",
-  "Har lågt socialt deltagande":"Ha una bassa partecipazione sociale",
-  "Maten från lagunen och fastlandet":"Il cibo dalla laguna e dalla terraferma",
   "Båttrafik som går på el":"Traffico acqueo elettrico",
-  "Solel på stadens tak":"Fotovoltaico sui tetti della città",
-  "Trädkronor i den historiska staden":"Chiome degli alberi nella città storica",
   // Notes.
-  "Luckorna står uppe nästan jämt: lagunen har blivit en sjö bakom en mur, och vattnet byts bara när de sänks.":"Le paratoie sono alzate quasi sempre: la laguna è diventata un lago dietro un muro, e l'acqua si rinnova solo quando si abbassano.",
+  "Inloppen är stängda för gott: lagunen har blivit en sjö bakom en mur, och fartygen går genom slussen vid Malamocco.":"Le bocche di porto sono chiuse per sempre: la laguna è diventata un lago dietro un muro, e le navi passano dalla conca di Malamocco.",
   "Förhallens mosaikgolv från 1100-talet, som förr stod under vatten över 200 gånger om året, skyddas av glasbarriären från 2022.":"Il pavimento a mosaico del XII secolo del nartece, un tempo sott'acqua più di 200 volte l'anno, è protetto dalla barriera di vetro del 2022.",
   "Höjda kajer och nya trösklar har tagit något av de gamla stenarna – priset för att hålla vattnet ute.":"Rive rialzate e nuove soglie hanno tolto qualcosa alle vecchie pietre – il prezzo per tenere fuori l'acqua.",
   "Saltvattnet har gnagt på tegel och marmor; högvattnen har skadat det som stått i tusen år.":"L'acqua salata ha roso mattoni e marmi; le acque alte hanno danneggiato ciò che stava in piedi da mille anni.",
-  "Från tornet syns gröna barene där det i dag är öppet vatten; de byggs av muddrat slam i takt med att havet stiger.":"Dalla torre si vedono barene verdi dove oggi c'è acqua aperta; si costruiscono con i fanghi di dragaggio al passo con il mare che sale.",
+  "Saltängarna är borta: från tornet syns bara öppet vatten där de låg. År 1912 fanns 158 km².":"Le barene sono scomparse: dalla torre si vede solo acqua aperta dove c'erano. Nel 1912 erano 158 km².",
+  "Från tornet syns nya barene där det i dag är öppet vatten, byggda av muddrat slam. År 1912 fanns 158 km².":"Dalla torre si vedono nuove barene dove oggi c'è acqua aperta, costruite con i fanghi di dragaggio. Nel 1912 erano 158 km².",
+  "Nya saltängar byggs av muddermassor, men havet dränker dem fortare än de växer. År 1912 fanns 158 km².":"Si costruiscono nuove barene con i fanghi di dragaggio, ma il mare le sommerge più in fretta di quanto crescano. Nel 1912 erano 158 km².",
+  "Saltängarna drunknar när havet stiger fortare än de växer. År 1912 fanns 158 km².":"Le barene affogano perché il mare sale più in fretta di quanto crescano. Nel 1912 erano 158 km².",
   "Omkring en halv kvadratkilometer försvinner varje år, och nya byggs av muddermassor. År 1912 fanns 158 km².":"Ogni anno se ne perde circa mezzo chilometro quadrato, e se ne costruiscono di nuove con i fanghi di dragaggio. Nel 1912 erano 158 km².",
-  "Saltängarna drunknar när havet stiger och MOSE stänger ute slammet. År 1912 fanns 158 km².":"Le barene affogano mentre il mare sale e il MOSE tiene fuori i sedimenti. Nel 1912 erano 158 km².",
+  "Inloppen är stängda för gott: lagunen har blivit en sjö, och vattnet byts inte längre med havet.":"Le bocche di porto sono chiuse per sempre: la laguna è diventata un lago, e l'acqua non si rinnova più con il mare.",
   "Algblomning och syrebrist de varmaste somrarna.":"Fioriture algali e anossia nelle estati più calde.",
-  "Sjögräs, saltängar och klarare vatten; fisken i fiskevallarna och musslorna mår bättre.":"Fanerogame, barene e acqua più limpida; il pesce nelle valli e le vongole stanno meglio.",
+  "Lagunen återhämtar sig: sjögräs på bottnarna, fiskefria zoner och klarare vatten för varje år.":"La laguna si riprende: fanerogame sui fondali, zone senza pesca e acqua ogni anno più limpida.",
+  "Lagunen återhämtar sig: klarare vatten för varje år.":"La laguna si riprende: acqua ogni anno più limpida.",
+  "Lagunen mår sämre än 2026: varmare vatten och färre saltängar.":"La laguna sta peggio che nel 2026: acqua più calda e meno barene.",
   "Inget av lagunens elva vattenområden hade god ekologisk status 2026, och sedimentet rinner ut i havet.":"Nessuno degli undici corpi idrici della laguna era in stato ecologico buono nel 2026, e i sedimenti finiscono in mare.",
-  "Lagunen återhämtar sig: nya saltängar, sjögräs på bottnarna och klarare vatten för varje år.":"La laguna si riprende: nuove barene, fanerogame sui fondali e acqua ogni anno più limpida.",
   "Familjer har flyttat in i de tomma husen, och skolorna har barn igen.":"Le famiglie sono tornate nelle case vuote, e le scuole hanno di nuovo bambini.",
   "År 1951 bodde 174 808 människor i den historiska staden.":"Nel 1951 nella città storica abitavano 174.808 persone.",
   "Tysta vaporetti och taxibåtar laddar vid bryggorna; svallvågorna mot kajerna har minskat.":"Vaporetti e taxi silenziosi si ricaricano agli imbarcaderi; il moto ondoso contro le rive è calato.",
-  "Mest diesel fortfarande: båtar och fartyg står för nästan hälften av kommunens kväveoxider.":"Ancora soprattutto diesel: barche e navi producono quasi metà degli ossidi di azoto del Comune.",
-  "Taken och havsvinden utanför Lido ger mer el än staden använder.":"I tetti e l'eolico al largo del Lido producono più elettricità di quanta la città ne consumi.",
+  "Tysta vaporetti och taxibåtar laddar vid bryggorna.":"Vaporetti e taxi silenziosi si ricaricano agli imbarcaderi.",
+  "Fortfarande mest diesel på kanalerna.":"Sui canali ancora soprattutto gasolio.",
+  "Soltegel som ser ut som coppi ligger på de tak där Soprintendenza tillåter dem – utifrån syns ingen skillnad.":"Coppi solari che sembrano quelli antichi stanno sui tetti dove la Soprintendenza li permette – da fuori non si vede la differenza.",
+  "Inga paneler på de gamla taken: solpaneler är förbjudna på hus från före 1945. Solelen kommer från hamnens och garagens tak vid stadens kanter.":"Nessun pannello sui tetti antichi: il fotovoltaico è vietato sugli edifici anteriori al 1945. L'energia solare viene dai tetti del porto e delle autorimesse ai margini della città.",
+  "Inga paneler på de gamla taken: solpaneler är förbjudna på hus från före 1945 och tillåts bara på enstaka plana tak.":"Nessun pannello sui tetti antichi: il fotovoltaico è vietato sugli edifici anteriori al 1945 ed è ammesso solo su qualche tetto piano.",
   "I Stora rådssalen möts igen ett råd: det lottade medborgarrådet, med ett ombud för lagunens framtida generationer.":"Nella Sala del Maggior Consiglio si riunisce di nuovo un consiglio: l'assemblea dei cittadini estratta a sorte, con un garante per le generazioni future della laguna.",
 };

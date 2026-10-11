@@ -235,6 +235,24 @@ export function birchOld(){
 export function pottedTree(){
   return merge([prep(T(new THREE.CylinderGeometry(.32,.25,.5,8),0,.25,0),0xb5653a),prep(T(new THREE.CylinderGeometry(.04,.05,.9,5),0,.9,0),0x6a4b33),prep(T(crown(.55,1,6),0,1.5,0,1,.9,1),0x4f7f34,.08,1)]);
 }
+// A tree in a stone planter for a paved square that cannot be dug (Venice's campi: wells and cisterns below).
+export function planterTree(){
+  return merge([prep(T(new THREE.BoxGeometry(1.6,.6,1.6),0,.3,0),0xd9d2c3),prep(T(new THREE.BoxGeometry(1.4,.05,1.4),0,.62,0),0x4a3b2c),
+    ...trunk(3,.18,.12,0x5a4331).map(g=>{g.translate(0,.6,0);return g;}),(()=>{const g=leafyCrown(2.2,4.6,7,2.1,0x4f7f34);g.translate(0,.6,0);return g;})()]);
+}
+// A shade sail: a triangle of cloth tensioned between three poles, high enough to walk under (tint: the
+// sail takes the instance colour – cream, terracotta, ochre).
+export function shadeSail(){
+  const P=[[-3.2,4.1,-2],[3.4,3.6,-1.4],[.2,3.9,3.3]];
+  const g=new THREE.BufferGeometry(),v=[];
+  const tri=(a,b,c)=>v.push(...a,...b,...c);
+  // The cloth sags a little towards its middle: a centre vertex fans to the three edges, both faces.
+  const m=[(P[0][0]+P[1][0]+P[2][0])/3,(P[0][1]+P[1][1]+P[2][1])/3-.35,(P[0][2]+P[1][2]+P[2][2])/3];
+  for(let i=0;i<3;i++){const a=P[i],b=P[(i+1)%3];tri(a,b,m);tri(b,a,m);}
+  g.setAttribute('position',new THREE.Float32BufferAttribute(v,3));g.computeVertexNormals();
+  const poles=P.map(([x,y,z])=>prep(T(new THREE.CylinderGeometry(.05,.07,y+.2,6),x,(y+.2)/2,z),0x8d8f92));
+  return merge([prep(g,0xf2ead8,0,1),...poles]);
+}
 export function umbrellaTable(){
   return merge([prep(T(new THREE.CylinderGeometry(.45,.45,.05,10),0,.74,0),0xeae3d2),prep(T(new THREE.CylinderGeometry(.03,.03,2.2,5),0,1.1,0),0xdddddd),
     prep(T(new THREE.ConeGeometry(1.25,.45,8,1,true),0,2.15,0),0xffffff,0,1),

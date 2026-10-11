@@ -7,7 +7,8 @@ const {LEVER_TEXT,WORLD_CLIMATE}=PLACE_LEVERS;
 // Every effect in model.js cites the evidence id it leans on (data/evidence.js). The words here fit any
 // place; a place says them its own way in @city/levers.js (LEVER_TEXT: Kalmar's "Levande Kalmarsund").
 // Texts are Swedish, translated with L().
-export const THEMES=[
+// The themes the levers are grouped in: the place's own (@city/levers.js THEMES), else these.
+export const THEMES=PLACE_LEVERS.THEMES||[
   {id:'mat',name:'Mat & odling',color:'#7aa83a'},
   {id:'energi',name:'Energi & klimat',color:'#e0a92b'},
   {id:'stad',name:'Stad & rörlighet',color:'#3f8fc2'},
@@ -17,50 +18,20 @@ export const THEMES=[
   {id:'resiliens',name:'Resiliens & beredskap',color:'#4a8c7a'},
 ];
 export const LEVELS=['Dagens kurs','Stadig','Ambitiös','Radikal'];
-const DEFS=[
-  {id:'stadsodling',theme:'mat',name:'Stadsodling',short:'Odling på gator, parkeringar, tak och i växthus',cost:1.2,tau:8,
-    levels:['Koloniområden som idag','Odlingslådor i kvarteren','Parkeringar blir matparker, växthus på tak','Ätbar stad: matskog, akvaponik och odling på varje gata']},
-  {id:'regionalt',theme:'mat',name:'Regional mat',short:'Bygden föder orten: regenerativt jordbruk, lokala förädlare',cost:1.4,tau:14,
-    levels:['Export och import som idag','Lokal upphandling i skolor och omsorg','Regenerativt jordbruk, lokala mejerier och kvarnar','Matsuveränitet: regionala livsmedelsråd och 90 dagars lager']},
-  {id:'kost',theme:'mat',name:'Kost & måltider',short:'Växtrika offentliga måltider, mindre matsvinn',cost:.5,tau:8,
-    levels:['Som idag','Mer växtbaserat i offentliga kök','Planetary health diet i all offentlig mat','Ny matkultur: säsong, baljväxter, nolltolerans mot svinn']},
-  {id:'hav',theme:'mat',name:'Levande vatten',short:'Våtmarker, fiskevård och mindre näring ut i sjöar och hav',cost:1.0,tau:18,
-    levels:['Som idag','Våtmarker och strandzoner','Våtmarker, skyddade lekområden och fiskefria zoner','Vattnets återkomst: storskalig restaurering tillsammans med bönderna']},
-  {id:'sol',theme:'energi',name:'Sol & energigemenskaper',short:'Solceller på tak, delad lagring, invånarägd energi',cost:1.0,tau:10,
-    levels:['Enskilda solcellstak','Solceller på kommunens tak','Energigemenskaper i varje kvarter','Varje lämpligt tak producerar, orten delar lagring']},
-  {id:'vind',theme:'energi',name:'Vindkraft',short:'Ny vindkraft, ägd tillsammans med invånarna',cost:1.3,tau:12,
-    levels:['Befintliga verk','Några nya verk','En större park, delägd av invånarna','Energibygd: el och vätgas till andra regioner']},
-  {id:'effektivitet',theme:'energi',name:'Renovering & cirkulärt',short:'Energieffektiva hus, återbruk, reparation och delning',cost:1.1,tau:15,
-    levels:['Som idag','Energirenovering av allmännyttan','Cirkulärt byggande, lånebibliotek för saker','Nollavfall: allt repareras, delas eller återbrukas']},
-  {id:'bilfritt',theme:'stad',name:'Bilfri stadskärna',short:'Gatorna avasfalteras till odling, träd och mötesplatser',cost:1.0,tau:10,
-    levels:['Bilar som idag','Gångfartsgator i centrum','Bilfritt centrum, parkeringar blir parker','Bilfri ort: gatorna blir trädgårdar i hela tätorten']},
-  {id:'kollektivt',theme:'stad',name:'Kollektivt & cykel',short:'Tätare bussar, cykelstråk och delade fordon',cost:1.4,tau:14,
-    levels:['Bussar som idag','Täta busslinjer och cykelstråk','Snabbcykelvägar, anropsstyrda skyttlar och eldrivna bussar','Avgiftsfri kollektivtrafik med självkörande skyttlar till varje by']},
-  {id:'forbindelser',theme:'stad',name:'Tåg och förbindelser',short:'Snabbare och tätare tåg till de stora städerna, i stället för bil och flyg',cost:1,tau:16,
-    levels:['Som idag','Tätare regionaltåg och snabbussar','Snabbare tåg och bättre byten mot storstäderna','Direkttåg till huvudstaden och nattåg till Europa']},
-  {id:'bogemenskap',theme:'gemenskap',name:'Bogemenskap',short:'Kollektivhus, flergenerationsboende, kvarterskök',cost:.9,tau:15,
-    levels:['Som idag','Gemensamma lokaler i nya hus','Generationshus och kvarterskök i varje kvarter','Delat boende som norm: alla åldrar under samma tak']},
-  {id:'demokrati',theme:'gemenskap',name:'Medborgarråd & barnbarnsombud',short:'Lottade medborgarråd, deltagande budget, ett ombud för framtida generationer',cost:.5,tau:6,
-    levels:['Representativ demokrati som idag','Medborgardialoger','Lottade medborgarråd och deltagande budget','Barnbarnsombud med vetorätt i långsiktiga frågor']},
-  {id:'arbetstid',theme:'gemenskap',name:'Tid för varandra',short:'Kortare arbetstid, tidsbank, medborgartjänst',cost:.9,tau:12,
-    levels:['40 timmar som idag','Försök med 6-timmarsdag i kommunen','Fyradagarsvecka och tidsbank','30-timmarsvecka och ett år av medborgartjänst']},
-  {id:'forebyggande',theme:'halsa',name:'Förebyggande hälsa',short:'Natur på recept, aktiv vardag, hälsotorg',cost:.8,tau:10,
-    levels:['Vård när man blir sjuk','Fysisk aktivitet och natur på recept','Hälsotorg i varje stadsdel','Hälsa i allt: stadsplanering för rörelse och möten']},
-  {id:'ai',theme:'teknik',name:'AI för välfärden',short:'AI i diagnostik, energinät, odling och klimatmodeller',cost:1.0,tau:8,
-    levels:['Ingen samordning','Pilotprojekt i vården','Lokal, öppen AI i vård, energi och jordbruk','AI-accelererad välfärd med data i medborgarnas ägo']},
-  {id:'analog',theme:'teknik',name:'Det analoga',short:'Skärmfri barndom, analoga reserver, rätt till ett analogt liv',cost:.5,tau:8,
-    levels:['Digitalt först','Böcker och mobilfri skola','Skärmfri barndom till 12 år, kontanter och papper som reserv','Rätten till ett analogt liv: varje tjänst finns även utan skärm']},
-  {id:'kunskap',theme:'teknik',name:'Kunskapsorten',short:'Skola, högskola och folkbildning tillsammans med invånarna',cost:.7,tau:10,
-    levels:['Som idag','Lärcentrum och distansstudier i orten','Orten som levande labb: forskning tillsammans med invånarna','Livslångt lärande för alla och medborgarforskning i varje skola']},
-  {id:'beredskap',theme:'resiliens',name:'Beredskap & vatten',short:'Lokala lager, vattensäkerhet, ö-drift av el',cost:1.1,tau:10,
-    levels:['Hemberedskap som idag','Kommunala lager och vattenplan','En andra vattenkälla, 30 dagars lager, ö-drift','Självförsörjande i kris: mat, vatten och energi i 90 dagar']},
-  {id:'anpassning',theme:'resiliens',name:'Klimatanpassning',short:'Skydd mot högvatten, skyfallsytor, svalka',cost:1.3,tau:16,
-    levels:['Som idag','Skyfallsytor och höjda kajer','Skyddsvallar och svampstad','Plats för vattnet: upphöjda och flytande kvarter']},
-];
+// The place's levers: its own (@city/levers.js LEVER_DEFS), which its model acts on.
+const DEFS=PLACE_LEVERS.LEVER_DEFS||[];
+// The order of the levers in share links: it only ever grows (@city/levers.js LINK_ORDER), else the levers' own.
+export const LINK_ORDER=PLACE_LEVERS.LINK_ORDER||DEFS.map(d=>d.id);
 // A place can add levers of its own (@city/levers.js EXTRA_LEVERS: Venice's visitor management): same shape as
 // DEFS; their effects are the place's own model (@city/model.js LOCAL), which reads them as I[id].
-export const LEVERS=[...DEFS,...(PLACE_LEVERS.EXTRA_LEVERS||[])].map(d=>({...d,...LEVER_TEXT?.[d.id]}));
+// A place can also leave out engine levers that mean nothing there (@city/levers.js HIDDEN_LEVERS: Venice has no
+// cars to give up): they are not shown, and the model keeps them at today's course (I = 0).
+const HIDDEN=new Set(PLACE_LEVERS.HIDDEN_LEVERS||[]);
+export const ALL_LEVER_IDS=[...DEFS,...(PLACE_LEVERS.EXTRA_LEVERS||[])].map(d=>d.id);
+export const LEVERS=[...DEFS,...(PLACE_LEVERS.EXTRA_LEVERS||[])].filter(d=>!HIDDEN.has(d.id)).map(d=>({...d,...LEVER_TEXT?.[d.id]}));
 export const LEVER=Object.fromEntries(LEVERS.map(l=>[l.id,l]));
+// What builds the city's capacity for change there, said when a plan asks too much ({sv,en,it}; none: nothing said).
+export const CAPACITY_NOTE=PLACE_LEVERS.CAPACITY_NOTE||null;
 // The three worlds around the place. gwl2100: global warming by 2100 in °C (IPCC AR6 best estimates),
 // for the tourist season; shape: how fast the climate arrives (share of the 2126 level by year t): the low
 // path levels off by mid-century, the middle one rises early, the fossil one keeps climbing. The place

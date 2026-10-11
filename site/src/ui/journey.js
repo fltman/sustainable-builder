@@ -1,4 +1,5 @@
-import { DECISIONS, JOURNEY_INTRO } from '@city/decisions.js';
+import * as PLACE_JOURNEY from '@city/decisions.js';
+const { DECISIONS, JOURNEY_INTRO }=PLACE_JOURNEY;
 import { t, L, dec, LANG } from '../i18n.js';
 import { familyText, familyEpilogue, FAMILY_TITLE } from '@city/family.js';
 import { CHALLENGES, ASSETS } from '../data/evidence.js';
@@ -18,7 +19,9 @@ export function createJourney({S,modal,closeModal,resimulate,setYear,engine,evid
   let anim=null,toast=null,toastTime=0;
   function start(){
     setYear(START);
-    setTimeout(()=>audio?.say(LANG==='sv'?'vo-journey':`vo-journey-${LANG}`),600);
+    // The journey's narration, where the place has recorded one (its pack's audio).
+    const clip=LANG==='sv'?'vo-journey':`vo-journey-${LANG}`;
+    if(typeof __PACK__==='undefined'||__PACK__.audio?.includes(clip))setTimeout(()=>audio?.say(clip),600);
     modal((box,close)=>{
       box.append(el('div','small muted',t('RESAN · 2026','THE JOURNEY · 2026','IL VIAGGIO · 2026')),el('h1','',t(`${PLACE.name} idag`,`${PLACE.name} today`,`${PLACE.name} oggi`)));
       // The place's own words for the start of the journey (@city/decisions.js JOURNEY_INTRO).
@@ -42,8 +45,10 @@ export function createJourney({S,modal,closeModal,resimulate,setYear,engine,evid
     setYear(y);
     modal((box,close)=>{
       const head=el('div','decade-head');head.append(el('span','y',`${y}–${Math.min(END,y+9)}`),el('h1','',ERAS[Math.floor((y-START)/10)]));box.append(head);
-      if(y>START){const d=S.run.years[y-START];const A=Math.round(mean(d.sdg)),A0=Math.round(mean(S.run.years[0].sdg)),pop=INDICATORS.pop.fmt(d.ind.pop),car=INDICATORS.carShare.fmt(d.ind.carShare),food=INDICATORS.foodRegional.fmt(d.ind.foodRegional);
-        const p=el('p','',t(`${PLACE.name}-index ${A} (2026: ${A0}) · ${pop} invånare · ${car} av resorna med bil · ${food} av maten från länet.`,`${PLACE.name} index ${A} (2026: ${A0}) · ${pop} inhabitants · ${car} of trips by car · ${food} of food from the county.`,`Indice ${PLACE.name} ${A} (2026: ${A0}) · ${pop} abitanti · ${car} degli spostamenti in auto · ${food} del cibo prodotto in regione.`));box.append(p);}
+      if(y>START){const d=S.run.years[y-START];const A=Math.round(mean(d.sdg)),A0=Math.round(mean(S.run.years[0].sdg)),pop=INDICATORS.pop.fmt(d.ind.pop);
+        // The decade's headline in the place's own measures (@city/decisions.js JOURNEY_HEADLINE), after the index and people.
+        const own=PLACE_JOURNEY.JOURNEY_HEADLINE?.(d),more=own?` · ${own}`:'';
+        const p=el('p','',t(`${PLACE.name}-index ${A} (2026: ${A0}) · ${pop} invånare${more}.`,`${PLACE.name} index ${A} (2026: ${A0}) · ${pop} inhabitants${more}.`,`Indice ${PLACE.name} ${A} (2026: ${A0}) · ${pop} abitanti${more}.`));box.append(p);}
       if(y>START){const fam=el('div','family');fam.append(el('h4','',FAMILY_TITLE[LANG]||FAMILY_TITLE.sv),el('p','',familyText(y,S.run)));box.append(fam);}
       const cards=el('div','cards');
       const go=el('button','btn primary',t(`Spola fram till ${Math.min(END,y+10)} →`,`Fast-forward to ${Math.min(END,y+10)} →`,`Avanti fino al ${Math.min(END,y+10)} →`));
@@ -91,13 +96,8 @@ export function createJourney({S,modal,closeModal,resimulate,setYear,engine,evid
     modal((box,close)=>{
       box.append(el('div','small muted',t('RESAN · 2126','THE JOURNEY · 2126','IL VIAGGIO · 2126')),el('h1','',t(`Ditt ${PLACE.name} 2126`,`Your ${PLACE.name} 2126`,`La tua ${PLACE.name} 2126`)));
       {const A=Math.round(mean(d.sdg)),A0=Math.round(mean(d0.sdg)),AT=Math.round(mean(today.years[100].sdg));box.append(el('p','',t(`${PLACE.name}-index ${A} av 100 – jämfört med ${A0} år 2026 och ${AT} om staden bara hade följt dagens kurs.`,`${PLACE.name} index ${A} of 100 – compared with ${A0} in 2026 and ${AT} if the city had only followed the current course.`,`Indice ${PLACE.name} ${A} su 100 – rispetto a ${A0} nel 2026 e a ${AT} se la città avesse solo seguito la rotta attuale.`)));}
-      const lines=[];
-      lines.push(t(`${INDICATORS.foodRegional.fmt(d.ind.foodRegional)} av maten kommer från länet, och ${INDICATORS.cityVeg.fmt(d.ind.cityVeg)} av frukten och grönsakerna odlas i staden.`,`${INDICATORS.foodRegional.fmt(d.ind.foodRegional)} of the food comes from the county, and ${INDICATORS.cityVeg.fmt(d.ind.cityVeg)} of the fruit and vegetables are grown in the city.`,`Cibo prodotto in regione: ${INDICATORS.foodRegional.fmt(d.ind.foodRegional)}; frutta e verdura coltivate in città: ${INDICATORS.cityVeg.fmt(d.ind.cityVeg)}.`));
-      lines.push(`${t(`Bilen används för ${INDICATORS.carShare.fmt(d.ind.carShare)} av resorna.`,`The car is used for ${INDICATORS.carShare.fmt(d.ind.carShare)} of trips.`,`Spostamenti in auto: ${INDICATORS.carShare.fmt(d.ind.carShare)}.`)} ${d.ind.depave>.4?t(`De flesta av ${PLACE.centreGenitive} gator är trädgårdar.`,`Most of ${PLACE.centre}'s streets are gardens.`,`La maggior parte delle strade ${PLACE.centreGenitive} sono giardini.`):t('Gatorna ser ut ungefär som 2026.','The streets look much as they did in 2026.','Le strade sono più o meno come nel 2026.')}`);
-      lines.push(I.analog>.6?t('Barndomen är skärmfri till tolv år, och allt viktigt – betalningar, journaler, larm – fungerar också utan nät.','Childhood is screen-free until twelve, and everything important – payments, medical records, alarms – also works without the network.',"L'infanzia è senza schermi fino ai dodici anni, e tutto ciò che conta – pagamenti, cartelle cliniche, allarmi – funziona anche senza rete."):I.analog>.3?t('Skolan är mobilfri och kontanter finns kvar som reserv.','School is phone-free and cash remains as a backup.','La scuola è senza cellulari e i contanti restano come riserva.'):t('Nästan allt är digitalt, också reserven.','Almost everything is digital, the backups too.','Quasi tutto è digitale, anche le riserve.'));
-      lines.push(I.ai>.6?(d.ind.aiGovernance>.6?t('AI används i vård, energi och odling – öppet granskad och i invånarnas ägo.','AI is used in care, energy and farming – openly scrutinised and owned by the residents.',"L'IA si usa nella sanità, nell'energia e in agricoltura – controllata apertamente e di proprietà dei residenti."):t('AI sköter mycket av vården och förvaltningen, men få vet hur besluten fattas.','AI runs much of healthcare and administration, but few know how decisions are made.',"L'IA gestisce gran parte della sanità e dell'amministrazione, ma pochi sanno come vengono prese le decisioni.")):t('AI används sparsamt.','AI is used sparingly.',"L'IA si usa con parsimonia."));
-      {const lp=INDICATORS.lowParticipation.fmt(d.ind.lowParticipation),lp0=INDICATORS.lowParticipation.fmt(d0.ind.lowParticipation),co=INDICATORS.cohousing.fmt(d.ind.cohousing);lines.push(t(`${lp} har lågt socialt deltagande (2026: ${lp0}). ${co} bor i någon form av bogemenskap.`,`${lp} have low social participation (2026: ${lp0}). ${co} live in some form of co-housing.`,`Scarsa partecipazione sociale: ${lp} (2026: ${lp0}). Abitare collaborativo, in qualche forma: ${co}.`));}
-      {const le=INDICATORS.lifeExp.fmt(d.ind.lifeExp),sr=INDICATORS.seaRise.fmt(d.ind.seaRise).replace('+',''),fr=d.ind.floodRisk;lines.push(t(`Medellivslängden är ${le} år. Havet har stigit ${sr} och översvämningsrisken ${PLACE.onCentre} är ${fr<.2?'låg':fr<.5?'måttlig':'hög'}.`,`Life expectancy is ${le} years. The sea has risen ${sr} and the flood risk ${PLACE.onCentre} is ${fr<.2?'low':fr<.5?'moderate':'high'}.`,`La speranza di vita è di ${le} anni. Il mare si è alzato di ${sr} e il rischio di allagamento ${PLACE.onCentre} è ${fr<.2?'basso':fr<.5?'moderato':'alto'}.`));}
+      // The place's own closing lines: what its century came to (@city/decisions.js JOURNEY_SUMMARY).
+      const lines=PLACE_JOURNEY.JOURNEY_SUMMARY?.({d,d0,I,today})||[];
       const ul=el('ul');ul.style.cssText='line-height:1.55;color:var(--ink-2);padding-left:18px';for(const l of lines)ul.append(el('li','',l));box.append(ul);
       const fam=el('div','family');fam.append(el('h4','',FAMILY_TITLE[LANG]||FAMILY_TITLE.sv),el('p','',familyEpilogue(r)));box.append(fam);
       const row=el('div','cards');

@@ -28,6 +28,7 @@ import { createDistricts } from './districts.js';
 import { AR_SPOTS, arSpec } from '@city/ar.js';
 import { createSea } from './sea.js';
 import { createFlood, SEA_CAP } from './flood.js';
+import { residentsContext } from './model.js';
 import { createWeather } from './weather.js';
 import { createHorizon } from './horizon.js';
 import { createRide } from './ride.js';
@@ -278,8 +279,9 @@ function frame(now){
   mark('vision');
   if(app.S.run&&spanRun!==app.S.run){spanRun=app.S.run;spanCache=lifespans(app.S.run);}
   const ind=ctxInfo?.d?.ind||{};
-  residents.setContext({vision:shown||{},spans:spanCache||{},I:ctxInfo?.I||{},community:shown?.community??.1,cohousing:ind.cohousing??0,analog:ctxInfo?.I?.analog??0,digital:ind.digitalDependence??.85,
-    bloom:ind.bloom??.7,lonely:ind.lowParticipation??.38,socialDecay:.7+(ind.lowParticipation??.38),retire:66,workday:1-(40-(ind.workHours??38))/40,stayIn:weather.now.empty});
+  const rc=residentsContext(ind,ctxInfo?.I||{});
+  residents.setContext({vision:shown||{},spans:spanCache||{},I:ctxInfo?.I||{},community:shown?.community??.1,cohousing:rc.cohousing,analog:ctxInfo?.I?.analog??0,digital:rc.digital,
+    bloom:rc.bloom,lonely:rc.lonely,socialDecay:.7+rc.lonely,workday:rc.workday,stayIn:weather.now.empty});
   // 1× = one game hour per 75 real seconds; 60× = a day in half a minute. While the century plays the
   // day runs as a time-lapse instead – about a day every twelve seconds, the dark hours three times
   // faster still – so the years are not spent in the dark (⏸ keeps the hour where it is).

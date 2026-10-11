@@ -1,17 +1,18 @@
-// "Visionen": historic Venice in a given year written out as a short vision document, from the model state.
-// Every sentence is conditioned on the numbers, so the text describes the plan the player made – including
-// what it did not do – and each section names what has changed since 2026. Today's facts come from the
+// "Visionen": historic Venice in a given year written out as a short vision document, from Venice's own model
+// (model.js): its levers (levers.js) and its measures (indicators.js). Every sentence is conditioned on the
+// numbers and on how far each lever has come, so the text describes the plan the player made – including what
+// it did not do – in whichever world, and each section names what has changed since 2026. Eight sections:
+// homes and residents, short lets and visitors, the sea and MOSE, the lagoon and its salt marshes, boats and
+// air, energy where it is allowed, heat and care for the old, voice and knowledge. Today's facts come from the
 // research (research/deep/*-notes.md, research/story.json); what a lever brings follows its levels in
-// levers.js and the places in places.js. Swedish, English and Italian inline with t(sv,en,it), so
-// en/vision-text.js and it/vision-text.js stay empty.
+// levers.js. Swedish, English and Italian inline with t(sv,en,it), so en/vision-text.js and it/vision-text.js
+// stay empty.
 import { t, dec, int, pct } from '@engine/i18n.js';
-import { BASE, PARAMS, FLOOD } from '@city/model.js';
-// Hours as "3 h 56", to the minute (the fastest train to Rome takes 236 minutes today).
-const railText=v=>{const m=Math.round(v*60);return `${Math.floor(m/60)} h ${String(m%60).padStart(2,'0')}`;};
+import { PARAMS, FLOOD } from '@city/model.js';
 const near=(v,step)=>Math.round(v/step)*step;
 // Centimetres on the tide gauge's zero (ZMPS, Punta della Salute 1897), the scale every Venetian tide is given in.
 const cm=m=>Math.round(m*100);
-// The lagoon's mean level today: 0.353 m on ZMPS (2020–2025, research/deep/hav-tidvatten).
+// The sea's mean level today: 0.353 m on ZMPS (2020–2025, research/deep/hav-tidvatten; model.js MEAN0).
 const MEAN=.353;
 // The share of the historic city's public walkways that lie below a water level (the Comune's table, model.js FLOOD).
 const under=level=>{const T=FLOOD.table;if(level<=T[0][0])return 0;
@@ -19,11 +20,18 @@ const under=level=>{const T=FLOOD.table;if(level<=T[0][0])return 0;
 // The historic city's people by census (the Comune's series A01_T01) and the year, to five, it last had as many.
 const HIST=[[1951,174808],[1961,137150],[1971,108426],[1981,93598],[1991,76644],[2001,65695],[2011,58991],[2021,50434],[2025,47625]];
 const yearAt=p=>{for(let i=1;i<HIST.length;i++){const [y0,p0]=HIST[i-1],[y1,p1]=HIST[i];if(p<=p0&&p>=p1)return Math.round((y0+(y1-y0)*(p0-p)/(p0-p1))/5)*5;}return p>HIST[0][1]?1951:2025;};
-// Tourist beds per resident in the historic city: 1.07 on OCIO's counter in September 2026 (research/deep/samhalle-halsa).
-const BEDS0=1.07;
-// Italian says l' before a percentage that begins with a vowel (l'8%, l'11%, l'80%); il() and Il() give the article.
-const vowel=v=>{const n=Math.round(Math.abs(v)*100);return n===1||n===8||n===11||(n>=80&&n<90);};
-const il=v=>vowel(v)?"l'":'il ',Il=v=>vowel(v)?"L'":'Il ';
+// A percentage with one decimal ("18,1 %").
+const pct1=v=>t(`${dec(v*100,1)} %`,`${dec(v*100,1)}%`,`${dec(v*100,1)}%`);
+// Italian article before a figure as written: "il 37%", "l'8%", "l'11%", "l'80%", "lo 0%"; Il() at the start of a
+// sentence, del() after "of".
+const artOf=s=>{const n=parseInt(String(s),10);return n===0?'lo ':n===1||n===8||n===11||(n>=80&&n<90)?"l'":'il ';};
+const il=v=>artOf(pct(v))+pct(v),Il=v=>{const s=il(v);return s[0].toUpperCase()+s.slice(1);};
+// Italian "ai"/"agli" before a number: "intorno agli 86 cm", "ai 74 cm".
+const agli=n=>n===1||n===8||n===11||(n>=80&&n<90)||(n>=800&&n<900)?'agli':'ai';
+// Times: "1 gång", "2 gånger".
+const times=n=>t(n===1?'gång':'gånger',n===1?'time':'times',n===1?'volta':'volte');
+// Millions, with k decimals.
+const mn=(v,k=1)=>t(`${dec(v/1e6,k)} miljoner`,`${dec(v/1e6,k)} million`,`${dec(v/1e6,k)} milioni`);
 // How far a lever must be implemented (0–1) before the text shows its first, second and third level.
 const L1=.12,L2=.45,L3=.8;
 
@@ -32,376 +40,417 @@ export function visionSections(run,year){
   const lvl=id=>I[id]||0;
   // 2026 is the starting point; from 2027 a figure carries its 2026 value.
   const now=year<=2026,was=x=>now?'':` (2026: ${x})`;
-  const mn=(v,k=1)=>t(`${dec(v/1e6,k)} miljoner`,`${dec(v/1e6,k)} million`,`${dec(v/1e6,k)} milioni`);
   const S=[];
 
-  // Residents and homes: the emptying city, the homes that became tourist beds, the families who could come back
-  // (research/deep/samhalle-halsa, turism-ekonomi, kommun-plats-historia; story.json; levers.js bogemenskap).
-  const home=lvl('bogemenskap'),prev=year>2026?run.years[year-2027].ind.pop:d.pop,rising=d.pop>prev+20;
-  const beds=BEDS0*(d.touristBeds/BASE.touristBeds)/(d.pop/BASE.pop);
-  const pop=int(near(d.pop,100)),pop0=int(d0.pop);
+  // 1. Homes and residents: the emptying city, three deaths for every birth, the homes that could be homes again
+  // (research/deep/samhalle-halsa; levers.js bogemenskap; model.js: the cohorts and the housing balance).
+  const home=lvl('bogemenskap'),prevPop=year>2026?run.years[year-2027].ind.pop:d.pop,rising=d.pop>prevPop+20;
+  const pop=int(near(d.pop,100)),born=int(d.births),died=int(d.deaths),fewerBorn=d.births<d.deaths;
+  const pe=int(near(d.publicEmpty,10));
   S.push({title:t('Invånare och hem','Residents and homes','Abitanti e case'),text:[
     now?t(`Den historiska staden har ${int(d.pop)} invånare, ${pct(d.pop/174808)} av de 174 808 som bodde här 1951, och det dör tre gånger så många som det föds: 689 mot 209 år 2025.`,
         `The historic city has ${int(d.pop)} residents, ${pct(d.pop/174808)} of the 174,808 who lived here in 1951, and three times as many people die as are born: 689 against 209 in 2025.`,
-        `La città storica ha ${int(d.pop)} abitanti, ${il(d.pop/174808)}${pct(d.pop/174808)} dei 174.808 che ci vivevano nel 1951, e i morti sono il triplo dei nati: 689 contro 209 nel 2025.`)
-    :d.pop>HIST.at(-2)[1]?t(`Den historiska staden har ${pop} invånare${was(pop0)}, lika många som omkring ${yearAt(d.pop)}: unga och barnfamiljer flyttar hit igen, för det dör fortfarande fler än det föds.`,
-        `The historic city has ${pop} residents${was(pop0)}, as many as around ${yearAt(d.pop)}: young people and families are moving here again, since more people still die than are born.`,
-        `La città storica ha ${pop} abitanti${was(pop0)}, tanti quanti intorno al ${yearAt(d.pop)}: giovani e famiglie tornano a stabilirsi qui, perché i morti sono ancora più dei nati.`)
-    :d.pop>d0.pop+300?t(`Den historiska staden har ${pop} invånare${was(pop0)}: unga och barnfamiljer har börjat flytta hit igen, men det dör fortfarande fler än det föds.`,
-        `The historic city has ${pop} residents${was(pop0)}: young people and families have begun to move here again, though more people still die than are born.`,
-        `La città storica ha ${pop} abitanti${was(pop0)}: giovani e famiglie hanno ricominciato a stabilirsi qui, ma i morti sono ancora più dei nati.`)
-    :d.pop<d0.pop-300?t(`Den historiska staden har ${pop} invånare${was(pop0)}, ${pct(d.pop/174808)} av dem som bodde här 1951${rising?' – de många gamla dör, men nu flyttar fler hit än härifrån, och staden har börjat växa igen':home>L2?' – de många gamla dör fortare än nya venetianer hinner flytta in, men bostäderna står nu redo för dem som kommer':' – det dör fler än det föds, och för få unga flyttar hit'}.`,
-        `The historic city has ${pop} residents${was(pop0)}, ${pct(d.pop/174808)} of those who lived here in 1951${rising?' – the many old people are dying, but more now move in than out, and the city has begun to grow again':home>L2?' – the many old people die faster than new Venetians can move in, but the homes now stand ready for those who come':' – more people die than are born, and too few young people move here'}.`,
-        `La città storica ha ${pop} abitanti${was(pop0)}, ${il(d.pop/174808)}${pct(d.pop/174808)} di quelli che ci vivevano nel 1951${rising?' – i tanti anziani se ne vanno, ma ora arriva più gente di quanta ne parta, e la città ha ripreso a crescere':home>L2?' – i tanti anziani se ne vanno più in fretta di quanto arrivino nuovi veneziani, ma le case ora sono pronte per chi verrà':' – i morti sono più dei nati, e troppo pochi giovani vengono a vivere qui'}.`)
-    :t(`Den historiska staden har ${pop} invånare, ungefär lika många som 2026.`,`The historic city has ${pop} residents, about as many as in 2026.`,`La città storica ha ${pop} abitanti, più o meno quanti nel 2026.`),
-    now?t('37,4 % av bostäderna har ingen folkbokförd boende, och sedan 2023–2024 finns det fler turistbäddar än invånare; i kommunen står 2 251 hushåll i kö till allmännyttan, medan omkring 2 900 offentliga bostäder står tomma i väntan på renovering.',
-        '37.4% of homes have no registered resident, and since 2023–2024 there have been more tourist beds than residents; in the municipality 2,251 households are waiting for public housing, while about 2,900 public homes stand empty awaiting renovation.',
-        'Il 37,4% delle abitazioni non ha residenti, e dal 2023–2024 i posti letto turistici superano gli abitanti; nel Comune 2251 famiglie sono in graduatoria per una casa popolare, mentre circa 2900 alloggi pubblici restano vuoti in attesa di ristrutturazione.')
-    :home>L3?t(`Staden har getts tillbaka åt dem som bor här: de flesta bostäder är hem igen – bara ${pct(d.emptyHomes)} står utan folkbokförd boende${was(pct(d0.emptyHomes))} – och varje campo har ett gemensamt kök.`,
-        `The city has been given back to the people who live here: most homes are homes again – only ${pct(d.emptyHomes)} have no registered resident${was(pct(d0.emptyHomes))} – and every campo has a shared kitchen.`,
-        `La città è tornata a chi la abita: quasi tutte le case sono di nuovo abitate – solo ${il(d.emptyHomes)}${pct(d.emptyHomes)} è senza residenti${was(pct(d0.emptyHomes))} – e ogni campo ha una cucina comune.`)
-    :home>L2?t(`Korttidsuthyrningen har ett tak, och tomma palats och offentliga bostäder har blivit generationshus och studentbostäder; ${pct(d.emptyHomes)} av bostäderna står utan folkbokförd boende${was(pct(d0.emptyHomes))}.`,
-        `Short-term lets have a ceiling, and empty palaces and public homes have become multi-generation houses and student housing; ${pct(d.emptyHomes)} of homes have no registered resident${was(pct(d0.emptyHomes))}.`,
-        `Gli affitti brevi hanno un tetto, e palazzi vuoti e alloggi pubblici sono diventati case tra generazioni e residenze per studenti; ${il(d.emptyHomes)}${pct(d.emptyHomes)} delle abitazioni è senza residenti${was(pct(d0.emptyHomes))}.`)
-    :home>L1?t(`Kommunens tomma bostäder har rustats upp och hyrts ut åt unga par och familjer, men ${pct(d.emptyHomes)} av bostäderna står fortfarande utan folkbokförd boende${was(pct(d0.emptyHomes))}.`,
-        `The municipality's empty homes have been renovated and let to young couples and families, but ${pct(d.emptyHomes)} of homes still have no registered resident${was(pct(d0.emptyHomes))}.`,
-        `Le case comunali vuote sono state ristrutturate e affittate a giovani coppie e famiglie, ma ${il(d.emptyHomes)}${pct(d.emptyHomes)} delle abitazioni è ancora senza residenti${was(pct(d0.emptyHomes))}.`)
-    :t(`${pct(d.emptyHomes)} av bostäderna står utan folkbokförd boende${was(pct(d0.emptyHomes))}${d.emptyHomes>d0.emptyHomes+.01?', och för varje år blir fler lägenheter turistbostäder':''}.`,
-        `${pct(d.emptyHomes)} of homes have no registered resident${was(pct(d0.emptyHomes))}${d.emptyHomes>d0.emptyHomes+.01?', and every year more flats become holiday lets':''}.`,
-        `${Il(d.emptyHomes)}${pct(d.emptyHomes)} delle abitazioni è senza residenti${was(pct(d0.emptyHomes))}${d.emptyHomes>d0.emptyHomes+.01?', e ogni anno altri appartamenti diventano affitti turistici':''}.`),
-    now?'':beds<.97?t(`Turistbäddarna är färre än invånarna igen: ${dec(beds,1)} per invånare (2026: 1,07).`,`Tourist beds are fewer than residents again: ${dec(beds,1)} per resident (2026: 1.07).`,`I posti letto turistici sono di nuovo meno degli abitanti: ${dec(beds,1)} per abitante (2026: 1,07).`)
-      :t(`Det finns ${dec(beds,1)} turistbäddar per invånare (2026: 1,07)${beds>2?' – i gränderna kring Rialto och San Marco bor nästan ingen längre':''}.`,
-        `There are ${dec(beds,1)} tourist beds per resident (2026: 1.07)${beds>2?' – hardly anyone lives in the alleys around Rialto and San Marco any more':''}.`,
-        `Ci sono ${dec(beds,1)} posti letto turistici per abitante (2026: 1,07)${beds>2?' – nelle calli intorno a Rialto e San Marco non abita quasi più nessuno':''}.`),
-    now?t('Över hälften av hushållen består av en enda person, och skolorna i centrum har 28,8 % färre elever än läsåret 2015/16.',
-        'More than half of households are one person, and the schools in the centre have 28.8% fewer pupils than in the 2015/16 school year.',
-        "Più di metà delle famiglie è composta da una sola persona, e le scuole del centro hanno il 28,8% di alunni in meno rispetto all'anno scolastico 2015/16.")
-    :home>L2&&d.pop>d0.pop?t('Barnfamiljerna har kommit tillbaka: Scuola Armando Diaz i Castello är full igen, och om kvällarna leker barnen på Campo Santa Maria Formosa.',
-        'Families with children have come back: the Scuola Armando Diaz in Castello is full again, and in the evenings children play in Campo Santa Maria Formosa.',
-        'Le famiglie con bambini sono tornate: la scuola Armando Diaz a Castello è di nuovo piena, e la sera i bambini giocano in campo Santa Maria Formosa.')
-    :d.pop<d0.pop*.8?t('Skolorna i centrum har fått slå ihop klasser och stänga, och allt fler av dem som bor kvar är gamla och bor ensamma.',
-        'The schools in the centre have had to merge classes and close, and more and more of those who remain are old and live alone.',
-        'Le scuole del centro hanno dovuto accorpare le classi e chiudere, e sempre più di quelli che restano sono anziani e vivono soli.'):'',
-  ].filter(Boolean).join(' ')});
+        `La città storica ha ${int(d.pop)} abitanti, ${il(d.pop/174808)} dei 174.808 che ci vivevano nel 1951, e i morti sono il triplo dei nati: 689 contro 209 nel 2025.`)
+    :d.pop>d0.pop+300?[
+      t(`Den historiska staden har ${pop} invånare${was(int(d0.pop))}${d.pop>HIST.at(-2)[1]?`, lika många som omkring ${yearAt(d.pop)}`:''}.`,
+        `The historic city has ${pop} residents${was(int(d0.pop))}${d.pop>HIST.at(-2)[1]?`, as many as around ${yearAt(d.pop)}`:''}.`,
+        `La città storica ha ${pop} abitanti${was(int(d0.pop))}${d.pop>HIST.at(-2)[1]?`, tanti quanti intorno al ${yearAt(d.pop)}`:''}.`),
+      fewerBorn?t(`Det dör fortfarande fler än det föds – ${died} mot ${born} om året (2026: 689 mot 209) – så staden lever på de unga och barnfamiljerna som flyttar hit.`,
+          `More people still die than are born – ${died} against ${born} a year (2026: 689 against 209) – so the city lives on the young people and families who move here.`,
+          `I morti sono ancora più dei nati – ${died} contro ${born} all'anno (2026: 689 contro 209) – e la città vive dei giovani e delle famiglie che vengono ad abitarci.`)
+        :t(`Nu föds det fler än det dör: ${born} mot ${died} om året (2026: 209 mot 689).`,`More people are now born than die: ${born} against ${died} a year (2026: 209 against 689).`,`Ora i nati sono più dei morti: ${born} contro ${died} all'anno (2026: 209 contro 689).`)]
+    :d.pop<d0.pop-300?[
+      t(`Den historiska staden har ${pop} invånare${was(int(d0.pop))}, ${pct(d.pop/174808)} av dem som bodde här 1951.`,
+        `The historic city has ${pop} residents${was(int(d0.pop))}, ${pct(d.pop/174808)} of those who lived here in 1951.`,
+        `La città storica ha ${pop} abitanti${was(int(d0.pop))}, ${il(d.pop/174808)} di quelli che ci vivevano nel 1951.`),
+      fewerBorn?t(`Det dör ${died} om året och föds ${born} (2026: 689 och 209)${rising?', men nu flyttar fler hit än härifrån, och staden har börjat växa igen':home>L2?', och de många gamla dör fortare än nya venetianer hinner flytta in':', och för få unga flyttar hit för att väga upp det'}.`,
+          `${died} people die a year and ${born} are born (2026: 689 and 209)${rising?', but now more people move in than out, and the city has begun to grow again':home>L2?', and the many old people die faster than new Venetians can move in':', and too few young people move here to make up for it'}.`,
+          `Muoiono ${died} persone all'anno e ne nascono ${born} (2026: 689 e 209)${rising?', ma ora arriva più gente di quanta ne parta, e la città ha ripreso a crescere':home>L2?', e i tanti anziani se ne vanno più in fretta di quanto arrivino nuovi veneziani':', e troppo pochi giovani vengono a vivere qui per compensarlo'}.`)
+        :t('Det föds nu fler än det dör, men fler flyttar härifrån än hit.','More people are now born than die, but more move out than in.','Ora i nati sono più dei morti, ma se ne va più gente di quanta ne arrivi.')]
+    :[t(`Den historiska staden har ${pop} invånare, ungefär lika många som 2026.`,`The historic city has ${pop} residents, about as many as in 2026.`,`La città storica ha ${pop} abitanti, più o meno quanti nel 2026.`),
+      fewerBorn?t(`Det dör fortfarande fler än det föds – ${died} mot ${born} om året – och de som flyttar hit väger upp det.`,`More people still die than are born – ${died} against ${born} a year – and those who move here make up for it.`,`I morti sono ancora più dei nati – ${died} contro ${born} all'anno – e chi viene ad abitare qui compensa la differenza.`):''],
+    now?t('37,4 % av bostäderna har ingen folkbokförd boende. I kommunen står 2 251 hushåll i kö till allmännyttan, medan omkring 2 950 kommunala och ATER-bostäder står tomma i väntan på renovering – uppskattningsvis 800 av dem i den historiska staden.',
+        '37.4% of homes have no registered resident. In the municipality 2,251 households are waiting for public housing, while about 2,950 municipal and ATER homes stand empty awaiting renovation – an estimated 800 of them in the historic city.',
+        'Il 37,4% delle abitazioni non ha residenti. Nel Comune 2251 famiglie sono in graduatoria per una casa popolare, mentre circa 2950 alloggi comunali e ATER restano vuoti in attesa di ristrutturazione – circa 800, secondo una stima, nella città storica.')
+    :[home>L3?(d.emptyHomes<.25?t('Staden har getts tillbaka åt dem som bor här: en bostadsfond av turistskatten och inträdesavgiften köper och hyr ut hem till hyror som vanliga löner räcker till.',
+          'The city has been given back to the people who live here: a housing fund fed by the tourist tax and the access fee buys homes and lets them at rents ordinary wages can pay.',
+          "La città è stata restituita a chi la abita: un fondo per la casa, alimentato dall'imposta di soggiorno e dal contributo di accesso, compra case e le affitta a canoni alla portata dei salari normali.")
+        :t('En bostadsfond av turistskatten och inträdesavgiften köper och hyr ut hem till hyror som vanliga löner räcker till.',
+          'A housing fund fed by the tourist tax and the access fee buys homes and lets them at rents ordinary wages can pay.',
+          "Un fondo per la casa, alimentato dall'imposta di soggiorno e dal contributo di accesso, compra case e le affitta a canoni alla portata dei salari normali."))
+      :home>L2?t('En bostadsfond av turistskatten och inträdesavgiften köper och hyr ut hem åt dem som bor och arbetar här, och generationshusen har fått kök vid campot.',
+          'A housing fund fed by the tourist tax and the access fee buys and lets homes for the people who live and work here, and the multi-generation houses have kitchens on the campo.',
+          "Un fondo per la casa, alimentato dall'imposta di soggiorno e dal contributo di accesso, compra e affitta case per chi vive e lavora qui, e le case tra generazioni hanno una cucina sul campo.")
+      :home>L1?t('De tomma kommunala och ATER-hemmen rustas och hyrs ut till unga par och familjer.','The empty municipal and ATER homes are being renovated and let to young couples and families.','Gli alloggi comunali e ATER vuoti vengono ristrutturati e affittati a giovani coppie e famiglie.'):'',
+      d.publicEmpty<5?t('Alla tomma offentliga hem i den historiska staden har rustats och fått hyresgäster (2026: omkring 800).','All the empty public homes in the historic city have been renovated and let (2026: about 800).','Tutti gli alloggi pubblici vuoti della città storica sono stati ristrutturati e affittati (2026: circa 800).')
+      :d.publicEmpty>d0.publicEmpty+50?t(`De tomma offentliga hemmen blir fler: ${pe} väntar på renovering (2026: omkring 800).`,`The empty public homes are growing in number: ${pe} await renovation (2026: about 800).`,`Gli alloggi pubblici vuoti aumentano: ${pe} attendono la ristrutturazione (2026: circa 800).`)
+      :d.publicEmpty<d0.publicEmpty-50?t(`${pe} offentliga hem står fortfarande tomma (2026: omkring 800).`,`${pe} public homes still stand empty (2026: about 800).`,`${pe} alloggi pubblici restano ancora vuoti (2026: circa 800).`):'',
+      t(`${pct(d.emptyHomes)} av bostäderna står utan folkbokförd boende${was(pct(d0.emptyHomes))}${d.emptyHomes>d0.emptyHomes+.01?' – för varje år blir fler hem turistlägenheter, fritidshem eller tomma':''}.`,
+        `${pct(d.emptyHomes)} of homes have no registered resident${was(pct(d0.emptyHomes))}${d.emptyHomes>d0.emptyHomes+.01?' – every year more homes become holiday lets or second homes, or stand empty':''}.`,
+        `${Il(d.emptyHomes)} delle abitazioni è senza residenti${was(pct(d0.emptyHomes))}${d.emptyHomes>d0.emptyHomes+.01?' – ogni anno altre case diventano affitti turistici o seconde case, o restano vuote':''}.`),
+      Math.abs(d.housePrice/d0.housePrice-1)>.05?t(`En bostad kostar ${int(near(d.housePrice,10))} euro per kvadratmeter${was(int(d0.housePrice))}.`,`A home costs ${int(near(d.housePrice,10))} euros per square metre${was(int(d0.housePrice))}.`,`Una casa costa ${int(near(d.housePrice,10))} euro al metro quadro${was(int(d0.housePrice))}.`):''],
+    now?t('Över hälften av hushållen består av en enda person, och grund- och mellanskolorna har 2 570 elever, 28,8 % färre än läsåret 2015/16.',
+        'More than half of households are one person, and the primary and middle schools have 2,570 pupils, 28.8% fewer than in the 2015/16 school year.',
+        "Più di metà delle famiglie è composta da una sola persona, e le scuole primarie e medie hanno 2570 alunni, il 28,8% in meno rispetto all'anno scolastico 2015/16.")
+    :t(`Grund- och mellanskolorna har ${int(near(d.pupils,10))} elever${was(int(d0.pupils))}${d.pupils>1.5*d0.pupils?' – Scuola Armando Diaz i Castello är full igen, och om kvällarna leker barnen på Campo Santa Maria Formosa':d.pupils<.75*d0.pupils?' – skolor har fått slå ihop klasser och stänga':''}.`,
+      `The primary and middle schools have ${int(near(d.pupils,10))} pupils${was(int(d0.pupils))}${d.pupils>1.5*d0.pupils?' – the Scuola Armando Diaz in Castello is full again, and in the evenings children play in Campo Santa Maria Formosa':d.pupils<.75*d0.pupils?' – schools have had to merge classes and close':''}.`,
+      `Le scuole primarie e medie hanno ${int(near(d.pupils,10))} alunni${was(int(d0.pupils))}${d.pupils>1.5*d0.pupils?' – la scuola Armando Diaz a Castello è di nuovo piena, e la sera i bambini giocano in campo Santa Maria Formosa':d.pupils<.75*d0.pupils?' – le scuole hanno dovuto accorpare classi e chiudere':''}.`),
+  ].flat().filter(Boolean).join(' ')});
 
-  // The visitors: day visitors and the access fee, guest nights, the train (research/deep/turism-ekonomi,
-  // energi-resor; levers.js besok and forbindelser).
-  const visit=lvl('besok'),rail=lvl('forbindelser'),rt=railText(d.railMain),rt0=rt===railText(d0.railMain)?'':was(railText(d0.railMain));
-  const fee=visit>L3?t(' – besöken bokas i förväg, och staden tar aldrig emot fler än den bär',' – visits are booked in advance, and the city never takes in more than it can carry',' – le visite si prenotano in anticipo, e la città non accoglie mai più di quanto possa sostenere')
+  // 2. Short lets and visitors: the homes let to tourists, Venice's own right to limit them (2022), the day-trippers
+  // against a carrying capacity of about 52 000 a day, the access fee (research/deep/turism-ekonomi, samhalle-halsa;
+  // levers.js korttid and besok).
+  const lets=lvl('korttid'),visit=lvl('besok'),T=d.shortLetHomes,T0=d0.shortLetHomes,apts=int(near(T,10)),apts0=int(T0);
+  const bpr=d.bedsPerResident,cr=d.crowding,vpr=d.visitorsPerResident;
+  const fee=visit>L3?t(' – varje besök bokas i förväg',' – every visit is booked in advance',' – ogni visita si prenota in anticipo')
     :visit>L2?t(' – den som vill komma bokar, och de mest trängda dagarna har ett tak',' – those who want to come book ahead, and the most crowded days have a cap',' – chi vuole venire prenota, e i giorni più affollati hanno un tetto')
     :visit>L1?t(' – inträdesavgift och bokning gäller alla högsäsongsdagar',' – the access fee and booking apply on every high-season day',' – contributo di accesso e prenotazione valgono in tutti i giorni di alta stagione')
     :t(' – inträdesavgiften gäller fortfarande bara omkring 60 dagar om året',' – the access fee still applies on only about 60 days a year'," – il contributo di accesso vale ancora solo una sessantina di giorni l'anno");
-  const crowd=d.visitorsPerResident>3?t(' – på broarna kring Rialto och San Marco är invånarna sällsynta',' – on the bridges around Rialto and San Marco, residents are rare',' – sui ponti intorno a Rialto e San Marco i residenti sono rari')
-    :!now&&d.visitorsPerResident<1.2?t(' – Venedig är en stad att bo i igen, som besökarna delar med venetianerna',' – Venice is a city to live in again, which the visitors share with the Venetians',' – Venezia è di nuovo una città da abitare, che i visitatori condividono con i veneziani'):'';
-  S.push({title:t('Besökarna','The visitors','I visitatori'),text:[
-    now?t(`En vanlig dag kommer i snitt ${int(d.dayVisitors)} dagsbesökare – den största dagen 2022 var 143 246 besökare i staden, omkring tre per invånare – och en studie har satt stadens bärkraft till omkring 52 000 besökare om dagen.`,
-        `On an ordinary day an average of ${int(d.dayVisitors)} day visitors come – on the busiest day of 2022, 143,246 visitors were in the city, about three per resident – and a study has put the city's carrying capacity at about 52,000 visitors a day.`,
-        `In un giorno qualunque arrivano in media ${int(d.dayVisitors)} visitatori giornalieri – nel giorno di punta del 2022 in città c'erano 143.246 visitatori, circa tre per abitante – e uno studio ha stimato la capacità di carico della città in circa 52.000 visitatori al giorno.`)
-    :t(`En vanlig dag kommer ${int(near(d.dayVisitors,100))} dagsbesökare${was(int(d0.dayVisitors))}${fee}.`,
-        `On an ordinary day ${int(near(d.dayVisitors,100))} day visitors come${was(int(d0.dayVisitors))}${fee}.`,
-        `In un giorno qualunque arrivano ${int(near(d.dayVisitors,100))} visitatori giornalieri${was(int(d0.dayVisitors))}${fee}.`),
-    t(`En vanlig dag går det ${dec(d.visitorsPerResident,1)} besökare på varje invånare${was(dec(d0.visitorsPerResident,1))}${crowd}.`,
-      `On an ordinary day there are ${dec(d.visitorsPerResident,1)} visitors for every resident${was(dec(d0.visitorsPerResident,1))}${crowd}.`,
-      `In un giorno qualunque ci sono ${dec(d.visitorsPerResident,1)} visitatori per ogni abitante${was(dec(d0.visitorsPerResident,1))}${crowd}.`),
-    now?t(`Besökarna stannar ${mn(d.guestNights,2)} nätter om året i den historiska staden och på öarna – nio av tio är utländska gäster – och korttidsuthyrda bostäder tog 31,5 % av ankomsterna 2025, mot 19,4 % 2019.`,
-        `Visitors stay ${mn(d.guestNights,2)} nights a year in the historic city and on the islands – nine in ten are foreign guests – and short-term lets took 31.5% of arrivals in 2025, against 19.4% in 2019.`,
-        `I visitatori trascorrono ${mn(d.guestNights,2)} di notti all'anno nella città storica e nelle isole – nove su dieci sono stranieri – e gli affitti brevi hanno accolto il 31,5% degli arrivi nel 2025, contro il 19,4% del 2019.`)
+  S.push({title:t('Turistlägenheter och besökare','Short lets and visitors','Affitti brevi e visitatori'),text:[
+    now?t('Det finns 6 145 registrerade turistlägenheter med 24 760 bäddar (september 2026), 1 105 fler än i april 2023, och sedan oktober 2024 finns det fler turistbäddar än invånare. Venedig fick 2022 som första stad i Italien rätt att begränsa korttidsuthyrningen, men ingen gräns gäller ännu.',
+        'There are 6,145 registered tourist apartments with 24,760 beds (September 2026), 1,105 more than in April 2023, and since October 2024 there have been more tourist beds than residents. In 2022 Venice became the first city in Italy with the right to limit short-term lets, but no limit applies yet.',
+        'Ci sono 6145 appartamenti turistici registrati con 24.760 posti letto (settembre 2026), 1105 in più che nell\'aprile 2023, e dall\'ottobre 2024 i posti letto turistici superano gli abitanti. Nel 2022 Venezia è stata la prima città italiana ad avere il diritto di limitare gli affitti brevi, ma nessun limite è ancora in vigore.')
+    :lets>L3?t(`Bara den som själv bor i sitt hem får hyra ut rum till turister, och ${T<.28*T0?'de flesta turistlägenheter har blivit hem igen':'turistlägenheterna blir hem igen'}: ${apts} finns kvar (2026: ${apts0}).`,
+        `Only people who live in their own home may let rooms to tourists, and ${T<.28*T0?'most tourist apartments have become homes again':'the tourist apartments are becoming homes again'}: ${apts} are left (2026: ${apts0}).`,
+        `Solo chi abita in casa propria può affittare stanze ai turisti, e ${T<.28*T0?'la maggior parte degli appartamenti turistici è tornata a essere casa':'gli appartamenti turistici tornano a essere case'}: ne restano ${apts} (2026: ${apts0}).`)
+    :lets>L2?t(`Varje sestiere har en kvot, och inga nya turistlägenheter får öppna i bostadshus: ${apts} finns kvar (2026: ${apts0}).`,
+        `Every sestiere has a quota, and no new tourist apartments may open in residential buildings: ${apts} are left (2026: ${apts0}).`,
+        `Ogni sestiere ha una quota, e nei palazzi residenziali non possono aprire nuovi appartamenti turistici: ne restano ${apts} (2026: ${apts0}).`)
+    :lets>L1?t(`Hela bostäder får hyras ut till turister högst 120 nätter om året, i ett register med kontroller: ${apts} turistlägenheter finns kvar (2026: ${apts0}).`,
+        `Whole homes may be let to tourists for at most 120 nights a year, on a register with inspections: ${apts} tourist apartments are left (2026: ${apts0}).`,
+        `Le case intere si possono affittare ai turisti al massimo 120 notti l'anno, con un registro e dei controlli: restano ${apts} appartamenti turistici (2026: ${apts0}).`)
+    :t(`Det finns ${apts} turistlägenheter (2026: ${apts0})${lets<.03&&T>T0+300?' – korttidsuthyrningen har fortfarande ingen gräns, och för varje år blir fler hem turistbäddar':''}.`,
+        `There are ${apts} tourist apartments (2026: ${apts0})${lets<.03&&T>T0+300?' – short-term letting still has no limit, and every year more homes become tourist beds':''}.`,
+        `Ci sono ${apts} appartamenti turistici (2026: ${apts0})${lets<.03&&T>T0+300?' – gli affitti brevi non hanno ancora un limite, e ogni anno altre case diventano posti letto turistici':''}.`),
+    now?'':bpr<.95?t(`Turistbäddarna är färre än invånarna igen: ${dec(bpr,1)} per invånare (2026: ${dec(d0.bedsPerResident,1)}).`,`Tourist beds are fewer than residents again: ${dec(bpr,1)} per resident (2026: ${dec(d0.bedsPerResident,1)}).`,`I posti letto turistici sono di nuovo meno degli abitanti: ${dec(bpr,1)} per abitante (2026: ${dec(d0.bedsPerResident,1)}).`)
+      :bpr>1.15?t(`Det finns ${dec(bpr,1)} turistbäddar per invånare (2026: ${dec(d0.bedsPerResident,1)})${bpr>2?' – i gränderna kring Rialto och San Marco bor nästan ingen längre':''}.`,
+          `There are ${dec(bpr,1)} tourist beds per resident (2026: ${dec(d0.bedsPerResident,1)})${bpr>2?' – hardly anyone lives in the alleys around Rialto and San Marco any more':''}.`,
+          `Ci sono ${dec(bpr,1)} posti letto turistici per abitante (2026: ${dec(d0.bedsPerResident,1)})${bpr>2?' – nelle calli intorno a Rialto e San Marco non abita quasi più nessuno':''}.`)
+      :t(`Turistbäddarna är ungefär lika många som invånarna (2026: ${dec(d0.bedsPerResident,1)} per invånare).`,`There are about as many tourist beds as residents (2026: ${dec(d0.bedsPerResident,1)} per resident).`,`I posti letto turistici sono più o meno quanti gli abitanti (2026: ${dec(d0.bedsPerResident,1)} per abitante).`),
+    now?t("En vanlig dag kommer i snitt 61 461 dagsbesökare, och den största dagen 2022 fanns 143 246 besökare i staden – omkring tre per invånare. En studie från Ca' Foscari har satt stadens bärkraft till omkring 52 000 besökare om dagen, och inträdesavgiften för dagsbesökare gällde 60 dagar 2026 och är fortfarande ett försök.",
+        "On an ordinary day an average of 61,461 day visitors come, and on the busiest day of 2022 there were 143,246 visitors in the city – about three per resident. A study from Ca' Foscari has put the city's carrying capacity at about 52,000 visitors a day, and the access fee for day visitors applied on 60 days in 2026 and is still a trial.",
+        "In un giorno qualunque arrivano in media 61.461 visitatori giornalieri, e nel giorno di punta del 2022 in città c'erano 143.246 visitatori – circa tre per abitante. Uno studio di Ca' Foscari ha stimato la capacità di carico della città in circa 52.000 visitatori al giorno, e il contributo di accesso per i visitatori giornalieri è valso 60 giorni nel 2026 ed è ancora una sperimentazione.")
+    :[t(`En vanlig dag kommer ${int(near(d.dayVisitors,100))} dagsbesökare${was(int(d0.dayVisitors))} och den största dagen omkring ${int(near(d.peakDay,1000))}${was(int(d0.peakDay))}${fee}.`,
+        `On an ordinary day ${int(near(d.dayVisitors,100))} day visitors come${was(int(d0.dayVisitors))} and on the busiest about ${int(near(d.peakDay,1000))}${was(int(d0.peakDay))}${fee}.`,
+        `In un giorno qualunque arrivano ${int(near(d.dayVisitors,100))} visitatori giornalieri${was(int(d0.dayVisitors))} e nel giorno di punta circa ${int(near(d.peakDay,1000))}${was(int(d0.peakDay))}${fee}.`),
+      cr>=1.1?t(`Med de övernattande gästerna är besökarna ${dec(cr,1)} gånger så många som staden bär (2026: ${dec(d0.crowding,1)}) – ${dec(vpr,1)} per invånare en vanlig dag (2026: ${dec(d0.visitorsPerResident,1)})${vpr>3?', och på broarna kring Rialto och San Marco är invånarna sällsynta':''}.`,
+          `With the overnight guests the visitors are ${dec(cr,1)} times as many as the city can carry (2026: ${dec(d0.crowding,1)}) – ${dec(vpr,1)} per resident on an ordinary day (2026: ${dec(d0.visitorsPerResident,1)})${vpr>3?', and on the bridges around Rialto and San Marco residents are rare':''}.`,
+          `Con gli ospiti che pernottano i visitatori sono ${dec(cr,1)} volte quanti la città può sostenere (2026: ${dec(d0.crowding,1)}) – ${dec(vpr,1)} per abitante in un giorno qualunque (2026: ${dec(d0.visitorsPerResident,1)})${vpr>3?', e sui ponti intorno a Rialto e San Marco i residenti sono rari':''}.`)
+      :cr>=1.005?t(`Med de övernattande gästerna är besökarna ungefär så många som staden bär – ${dec(vpr,1)} per invånare en vanlig dag (2026: ${dec(d0.visitorsPerResident,1)}).`,
+          `With the overnight guests the visitors are about as many as the city can carry – ${dec(vpr,1)} per resident on an ordinary day (2026: ${dec(d0.visitorsPerResident,1)}).`,
+          `Con gli ospiti che pernottano i visitatori sono più o meno quanti la città può sostenere – ${dec(vpr,1)} per abitante in un giorno qualunque (2026: ${dec(d0.visitorsPerResident,1)}).`)
+      :t(`Med de övernattande gästerna är besökarna inte fler än staden bär – ${dec(vpr,1)} per invånare en vanlig dag (2026: ${dec(d0.visitorsPerResident,1)})${vpr<1.2&&d.pop>=d0.pop?' – och Venedig är en stad att bo i igen, som besökarna delar med venetianerna':''}.`,
+          `With the overnight guests the visitors are no more than the city can carry – ${dec(vpr,1)} per resident on an ordinary day (2026: ${dec(d0.visitorsPerResident,1)})${vpr<1.2&&d.pop>=d0.pop?' – and Venice is a city to live in again, which the visitors share with the Venetians':''}.`,
+          `Con gli ospiti che pernottano i visitatori non sono più di quanti la città possa sostenere – ${dec(vpr,1)} per abitante in un giorno qualunque (2026: ${dec(d0.visitorsPerResident,1)})${vpr<1.2&&d.pop>=d0.pop?' – e Venezia è di nuovo una città da abitare, che i visitatori condividono con i veneziani':''}.`)],
+    now?t(`Besökarna stannar ${mn(d.guestNights,2)} nätter om året i den historiska staden och på öarna – nio av tio är utländska gäster – och turistlägenheterna tog 31,5 % av ankomsterna 2025, mot 19,4 % 2019.`,
+        `Visitors stay ${mn(d.guestNights,2)} nights a year in the historic city and on the islands – nine in ten are foreign guests – and tourist apartments took 31.5% of arrivals in 2025, against 19.4% in 2019.`,
+        `I visitatori trascorrono ${mn(d.guestNights,2)} di notti all'anno nella città storica e nelle isole – nove su dieci sono stranieri – e gli appartamenti turistici hanno accolto il 31,5% degli arrivi nel 2025, contro il 19,4% del 2019.`)
     :t(`Besökarna stannar ${mn(d.guestNights)} nätter om året${was(mn(d0.guestNights))}.`,`Visitors stay ${mn(d.guestNights)} nights a year${was(mn(d0.guestNights))}.`,`I visitatori trascorrono ${mn(d.guestNights)} di notti all'anno${was(mn(d0.guestNights))}.`),
-    rail>L3?t(`De flesta besökare kommer med tåg – Venedig är Europas tågstad – och tåget tar ${rt} till Rom${rt0}.`,`Most visitors arrive by train – Venice is Europe's railway city – and the train takes ${rt} to Rome${rt0}.`,`La maggior parte dei visitatori arriva in treno – Venezia è la città dei treni d'Europa – e il treno impiega ${rt} fino a Roma${rt0}.`)
-    :rail>L2?t(`Snabbare tåg tar ${rt} till Rom${rt0}, och nattåg går norrut över Alperna.`,`Faster trains take ${rt} to Rome${rt0}, and night trains run north over the Alps.`,`Treni più veloci impiegano ${rt} fino a Roma${rt0}, e treni notturni partono verso nord oltre le Alpi.`)
-    :rail>L1?t(`Regionaltågen går tätare, och tåget tar ${rt} till Rom${rt0}.`,`Regional trains run more often, and the train takes ${rt} to Rome${rt0}.`,`I treni regionali sono più frequenti, e il treno impiega ${rt} fino a Roma${rt0}.`)
-    :now?t(`Det snabbaste tåget tar ${rt} till Rom och 2 h 27 till Milano, och flygplatsen Marco Polo hade 11,9 miljoner passagerare 2025.`,`The fastest train takes ${rt} to Rome and 2 h 27 to Milan, and Marco Polo airport had 11.9 million passengers in 2025.`,`Il treno più veloce impiega ${rt} fino a Roma e 2 h 27 fino a Milano, e l'aeroporto Marco Polo ha avuto 11,9 milioni di passeggeri nel 2025.`)
-    :t(`Tåget tar ${rt} till Rom${rt0}.`,`The train takes ${rt} to Rome${rt0}.`,`Il treno impiega ${rt} fino a Roma${rt0}.`),
-    now?t('Sedan 2021 får stora kryssningsfartyg inte gå genom San Marco-bassängen och Giudeccakanalen, och kryssningspassagerarna minskade från 1,6 miljoner 2019 till 0,57 miljoner 2025.',
-        'Since 2021 large cruise ships may not pass through the San Marco basin and the Giudecca canal, and cruise passengers fell from 1.6 million in 2019 to 0.57 million in 2025.',
-        'Dal 2021 le grandi navi da crociera non possono più passare per il bacino di San Marco e il canale della Giudecca, e i crocieristi sono scesi da 1,6 milioni nel 2019 a 0,57 milioni nel 2025.'):'',
-  ].filter(Boolean).join(' ')});
+  ].flat().filter(Boolean).join(' ')});
 
-  // The sea and MOSE: the mean level and the 100-year tide on the tide gauge's zero, the barriers that close ever
-  // more often, the raised quays round St Mark's, the drinking water from the mainland (research/deep/hav-tidvatten,
-  // lagun-natur-mat; model.js FLOOD and LOCAL; levers.js anpassning and beredskap).
-  const adapt=lvl('anpassning'),mean=MEAN+d.seaRise,lift=Math.max(0,d.barrierCloses-FLOOD.barrier.closes),eff=d.seaRise-lift;
-  const daily=eff>.75?t('lagunen är oftare stängd än öppen mot havet','the lagoon is more often closed to the sea than open','la laguna è più spesso chiusa che aperta al mare')
-    :t('i snitt en gång om dygnet','on average once a day','in media una volta al giorno');
-  const margin=cm(d.floodMargin)>=2,same=Math.abs(d.floodShare-d0.floodShare)<.005,rialto=d.levelInside>=1.05;   // Rialto floods from 105 cm
+  // 3. The sea and MOSE: the sea's rise, the gates and how often they close, the lagoon behind them, St Mark's Square,
+  // the raised walkways and the city lifted with seawater, the drinking water (research/deep/hav-tidvatten; model.js
+  // FLOOD; levers.js anpassning, mose and beredskap). The model gives its levels against the city's stones: once the
+  // city is lifted (anpassning's third level) the city and its tide gauge rise with it, so d.seaRise – the sea against
+  // the stones – is the sea's own rise less the lift (d.uplift).
+  const adapt=lvl('anpassning'),gate=lvl('mose'),prep=lvl('beredskap');
+  const lift=d.uplift||0,sea=d.seaRise+lift,out=MEAN+d.seaRise,shut=d.lagoonClosed,closed=shut>.98;
+  const P=d.protection,C=d.barrierCloses,n=Math.round(d.moseClosures),smf=Math.round(d.stMarksFloods);
+  const behind=closed?t(' bakom de stängda inloppen',' behind the closed inlets',' dietro le bocche di porto chiuse'):d.levelInside<d.level100-.05?t(' bakom de stängda luckorna',' behind the closed gates',' dietro le paratoie chiuse'):'';
+  // Raising the walkways from 1.10 towards 1.20 m costs at most PARAMS.heritageCost of the heritage (model.js; lifting
+  // the city whole does not); more than two points beyond that is water that got in.
+  const raised=Math.max(0,Math.min(1,(Math.min(P,1.2)-1.1)/.1)),allowed=(PARAMS.heritageCost||0)*raised;
+  const why=gate>L2?t(` – en reglerad lagun: luckorna reses vid varje tidvatten över ${cm(C)} cm, och fartygen går genom slussar –`,` – a regulated lagoon: the gates rise at every tide above ${cm(C)} cm, and ships pass through locks –`,` – una laguna regolata: le paratoie si alzano a ogni marea oltre ${agli(cm(C))==='agli'?'gli':'i'} ${cm(C)} cm, e le navi passano dalle conche –`)
+    :gate>L1?t(` – staden har valt att resa luckorna redan vid ${cm(C)} cm, så att färre tidvatten når Markusplatsen –`,` – the city has chosen to raise the gates from ${cm(C)} cm, so that fewer tides reach St Mark's Square –`,` – la città ha scelto di alzare le paratoie già a ${cm(C)} cm, perché meno maree raggiungano piazza San Marco –`)
+    :C>1.105?t(` – de höjda gångvägarna låter luckorna vänta tills ett tidvatten över ${cm(C)} cm väntas –`,` – the raised walkways let the gates wait until a tide above ${cm(C)} cm is forecast –`,` – i percorsi rialzati permettono alle paratoie di aspettare finché non è prevista una marea oltre ${agli(cm(C))==='agli'?'gli':'i'} ${cm(C)} cm –`)
+    :t(', reses fortfarande när tidvatten över 110 cm väntas,',', still rising whenever a tide above 110 cm is forecast,',', alzandosi ancora quando è prevista una marea oltre i 110 cm,');
+  const ready=prep>L3?t('; staden klarar sig själv i en kris – vatten, mat och el räcker i 90 dagar','; the city can manage on its own in a crisis – water, food and power last 90 days','; in caso di crisi la città se la cava da sola – acqua, cibo ed elettricità bastano per 90 giorni')
+    :prep>L2?t('; en andra vattenkälla, lager för 30 dagar och reservkraft på öarna gör staden mindre sårbar','; a second water source, stocks for 30 days and backup power on the islands make the city less vulnerable',"; una seconda fonte d'acqua, scorte per 30 giorni ed energia di riserva sulle isole rendono la città meno vulnerabile")
+    :prep>L1?t('; ledningarna förnyas, och ett brandvattennät skyddar centrum','; the mains are being renewed, and a fire-water network protects the centre',"; le condotte si rinnovano, e una rete antincendio protegge il centro"):'';
   S.push({title:t('Havet och MOSE','The sea and MOSE','Il mare e il MOSE'),text:[
-    now?t(`Medelvattnet vid Punta della Salute står ${cm(MEAN)} cm över mareografens nolla från 1897 och stiger 4,8 mm om året, och ett hundraårshögvatten når uppskattningsvis ${cm(d.level100)} cm.`,
-        `The mean sea level at Punta della Salute stands ${cm(MEAN)} cm above the tide gauge's 1897 zero and rises 4.8 mm a year, and a 100-year high tide reaches an estimated ${cm(d.level100)} cm.`,
-        `Il livello medio del mare a Punta della Salute è ${cm(MEAN)} cm sopra lo zero mareografico del 1897 e sale di 4,8 mm l'anno, e un'acqua alta centenaria raggiunge circa ${cm(d.level100)} cm.`)
-    :t(`Havet står ${cm(d.seaRise)} cm högre än 2026: medelvattnet vid Punta della Salute ligger på ${cm(mean)} cm, och ett hundraårshögvatten når ${cm(d.level100)} cm (2026: ${cm(MEAN)} och uppskattningsvis ${cm(d0.level100)} cm).`,
-        `The sea stands ${cm(d.seaRise)} cm higher than in 2026: the mean level at Punta della Salute is ${cm(mean)} cm, and a 100-year high tide reaches ${cm(d.level100)} cm (2026: ${cm(MEAN)} and an estimated ${cm(d0.level100)} cm).`,
-        `Il mare è ${cm(d.seaRise)} cm più alto che nel 2026: il livello medio a Punta della Salute è di ${cm(mean)} cm, e un'acqua alta centenaria raggiunge ${cm(d.level100)} cm (2026: ${cm(MEAN)} e circa ${cm(d0.level100)} cm).`),
-    !now&&mean>FLOOD.streets?t(`Medelvattnet står nu högre än Markusplatsens stenar, och ${pct(under(mean))} av stadens gångytor ligger lägre: utan skydd skulle torget stå under vatten varje dag.`,
-        `The mean level now stands above the stones of St Mark's Square, and ${pct(under(mean))} of the city's walkways lie lower: without protection the square would be under water every day.`,
-        `Il livello medio è ormai più alto del selciato di piazza San Marco, e ${il(under(mean))}${pct(under(mean))} dei percorsi pedonali della città è più in basso: senza difese la piazza sarebbe sott'acqua ogni giorno.`):'',
-    now?t('MOSE stängdes 49 gånger säsongen 2025/26, fast barriärerna byggdes för 3–5 stängningar om året och för 60 cm högre hav. De reses när tidvatten över 110 cm väntas – mellan 80 och 110 cm står de öppna, och då svämmar Markusplatsen över.',
-        "MOSE closed 49 times in the 2025/26 season, although the barriers were built for 3–5 closures a year and for a sea 60 cm higher. They are raised when a tide above 110 cm is expected – between 80 and 110 cm they stay open, and then St Mark's Square floods.",
-        "Il MOSE si è chiuso 49 volte nella stagione 2025/26, anche se le barriere erano state progettate per 3–5 chiusure l'anno e per un mare più alto di 60 cm. Si alzano quando è prevista una marea oltre i 110 cm – tra 80 e 110 cm restano aperte, e piazza San Marco si allaga.")
-    :d.moseClosures>=300?t(`MOSE reser sig vid nästan varje högvatten – ${daily}${lift>.05?', fast höjda kajer låter barriärerna vänta längre innan de reses':''}.`,
-        `MOSE rises at almost every high tide – ${daily}${lift>.05?', although raised quays let the barriers wait longer before they rise':''}.`,
-        `Il MOSE si alza quasi a ogni alta marea – ${daily}${lift>.05?', anche se le rive rialzate permettono alle barriere di aspettare più a lungo prima di alzarsi':''}.`)
-    :t(`MOSE stängs ${int(d.moseClosures)} gånger om året${was(int(d0.moseClosures))}${lift>.05?' – höjda kajer och gator låter barriärerna vänta längre innan de reses':' och reses fortfarande när tidvatten över 110 cm väntas'}.`,
-        `MOSE closes ${int(d.moseClosures)} times a year${was(int(d0.moseClosures))}${lift>.05?' – raised quays and streets let the barriers wait longer before they rise':' and still rises whenever a tide above 110 cm is expected'}.`,
-        `Il MOSE si chiude ${int(d.moseClosures)} volte l'anno${was(int(d0.moseClosures))}${lift>.05?' – rive e calli rialzate permettono alle barriere di aspettare più a lungo prima di alzarsi':' e si alza ancora ogni volta che è prevista una marea oltre i 110 cm'}.`),
-    !now&&d.seaRise>.6?t('Havet har stigit mer än de 60 cm som barriärerna byggdes för, och varje stängning stänger ute havets vatten och slam, så att lagunen blir varmare och mer instängd.',
+    now?t('Medelvattnet vid Punta della Salute står 35 cm över mareografens nolla från 1897 och har stigit 4,8 mm om året sedan 1993, ungefär hälften av det sättning; ett hundraårshögvatten når uppskattningsvis 210 cm.',
+        "The mean sea level at Punta della Salute stands 35 cm above the tide gauge's 1897 zero and has risen 4.8 mm a year since 1993, about half of it subsidence; a 100-year high tide reaches an estimated 210 cm.",
+        "Il livello medio del mare a Punta della Salute è 35 cm sopra lo zero mareografico del 1897 ed è salito di 4,8 mm l'anno dal 1993, per circa metà a causa della subsidenza; un'acqua alta centenaria arriva a circa 210 cm.")
+    :lift>=.005?t(`Havet står ${cm(sea)} cm högre än 2026. Men staden har lyfts ${cm(lift)} cm med havsvatten som pumpats ned 600–800 m under lagunen, så mot dess stenar – och mot mareografen vid Punta della Salute, som lyfts med dem – står havet ${cm(d.seaRise)} cm högre, och ett hundraårshögvatten når ${cm(d.level100)} cm (2026: uppskattningsvis 210).`,
+        `The sea stands ${cm(sea)} cm higher than in 2026. But the city has been raised ${cm(lift)} cm by pumping seawater 600–800 m down under the lagoon, so against its stones – and against the tide gauge at Punta della Salute, raised with them – the sea stands ${cm(d.seaRise)} cm higher, and a 100-year high tide reaches ${cm(d.level100)} cm (2026: an estimated 210).`,
+        `Il mare è ${cm(sea)} cm più alto che nel 2026. Ma la città è stata sollevata di ${cm(lift)} cm pompando acqua di mare 600–800 m sotto la laguna, così contro le sue pietre – e contro il mareografo di Punta della Salute, sollevato con loro – il mare è più alto di ${cm(d.seaRise)} cm, e un'acqua alta centenaria arriva a ${cm(d.level100)} cm (2026: circa 210).`)
+    :t(`Havet står ${cm(sea)} cm högre än 2026: dess medelnivå ligger ${cm(out)} cm över mareografens nolla, och ett hundraårshögvatten når ${cm(d.level100)} cm (2026: 35 och uppskattningsvis 210).`,
+        `The sea stands ${cm(sea)} cm higher than in 2026: its mean level lies ${cm(out)} cm above the tide gauge's zero, and a 100-year high tide reaches ${cm(d.level100)} cm (2026: 35 and an estimated 210).`,
+        `Il mare è ${cm(sea)} cm più alto che nel 2026: il suo livello medio è ${cm(out)} cm sopra lo zero mareografico, e un'acqua alta centenaria arriva a ${cm(d.level100)} cm (2026: 35 e circa 210).`),
+    !now&&out>FLOOD.streets+.005?t(`Havets medelnivå står nu ${cm(out-FLOOD.streets)} cm över Markusplatsens stenar${under(out)>=.005?`, och ${pct(under(out))} av stadens gångytor ligger lägre än havet`:''}.`,
+        `The sea's mean level now stands ${cm(out-FLOOD.streets)} cm above the stones of St Mark's Square${under(out)>=.005?`, and ${pct(under(out))} of the city's walkways lie below the sea`:''}.`,
+        `Il livello medio del mare è ormai ${cm(out-FLOOD.streets)} cm sopra il selciato di piazza San Marco${under(out)>=.005?`, e ${il(under(out))} dei percorsi pedonali della città è più in basso del mare`:''}.`):'',
+    now?t('MOSE stängdes 49 gånger säsongen 2025/26 – i snitt 26 gånger om året sedan 2020 – fast barriärerna byggdes för 3–5 stängningar om året och för 60 cm högre hav. De reses när tidvatten över 110 cm väntas; mellan 80 och 110 cm står de öppna, och då svämmar Markusplatsen över.',
+        "MOSE closed 49 times in the 2025/26 season – 26 times a year on average since 2020 – although the barriers were built for 3–5 closures a year and a sea 60 cm higher. They rise when a tide above 110 cm is forecast; between 80 and 110 cm they stay open, and St Mark's Square floods.",
+        "Il MOSE si è chiuso 49 volte nella stagione 2025/26 – in media 26 volte l'anno dal 2020 – anche se le barriere erano state progettate per 3–5 chiusure l'anno e per un mare più alto di 60 cm. Si alzano quando è prevista una marea oltre i 110 cm; tra 80 e 110 cm restano aperte, e piazza San Marco si allaga.")
+    :closed?t(`Inloppen är stängda för gott: lagunen hålls nere med pumpar, i snitt ${cm(d.lagoonMean)} cm över mareografens nolla, och fartygen går genom slussen vid Malamocco${sea>.6?' – havet utanför har stigit mer än de 60 cm som barriärerna byggdes för':''}.`,
+        `The inlets are closed for good: the lagoon is held down by pumps, on average ${cm(d.lagoonMean)} cm above the tide gauge's zero, and ships pass through the lock at Malamocco${sea>.6?' – the sea outside has risen more than the 60 cm the barriers were built for':''}.`,
+        `Le bocche di porto sono chiuse per sempre: la laguna è tenuta bassa con le pompe, in media ${cm(d.lagoonMean)} cm sopra lo zero mareografico, e le navi passano dalla conca di Malamocco${sea>.6?' – il mare fuori è salito più dei 60 cm per cui le barriere erano state progettate':''}.`)
+    :n>=360?t(`MOSE reser sig vid nästan varje högvatten, och lagunen är stängd mot havet ${pct(shut)} av årets timmar${was(pct(d0.lagoonClosed))}${gate>L2?' – en reglerad lagun, där fartygen går genom slussar':''}.`,
+        `MOSE rises at almost every high tide, and the lagoon is closed to the sea ${pct(shut)} of the hours in the year${was(pct(d0.lagoonClosed))}${gate>L2?' – a regulated lagoon, where ships pass through locks':''}.`,
+        `Il MOSE si alza quasi a ogni alta marea, e la laguna è chiusa al mare per ${il(shut)} delle ore dell'anno${was(pct(d0.lagoonClosed))}${gate>L2?' – una laguna regolata, dove le navi passano dalle conche':''}.`)
+    :n<1?t(`MOSE behöver nästan aldrig resas: luckorna väntar tills ett tidvatten över ${cm(C)} cm väntas, och lagunen står öppen mot havet året runt.`,
+        `MOSE hardly ever needs to rise: the gates wait until a tide above ${cm(C)} cm is forecast, and the lagoon stays open to the sea all year.`,
+        `Il MOSE non deve quasi mai alzarsi: le paratoie aspettano finché non è prevista una marea oltre ${agli(cm(C))==='agli'?'gli':'i'} ${cm(C)} cm, e la laguna resta aperta al mare tutto l'anno.`)
+    :t(`MOSE stängs ${n} ${times(n)} om året (2026: ${Math.round(d0.moseClosures)})${why} och lagunen är stängd mot havet ${pct(shut)} av årets timmar${was(pct(d0.lagoonClosed))}.`,
+        `MOSE closes ${n} ${times(n)} a year (2026: ${Math.round(d0.moseClosures)})${why} and the lagoon is closed to the sea ${pct(shut)} of the hours in the year${was(pct(d0.lagoonClosed))}.`,
+        `Il MOSE si chiude ${n} ${times(n)} l'anno (2026: ${Math.round(d0.moseClosures)})${why} e la laguna è chiusa al mare per ${il(shut)} delle ore dell'anno${was(pct(d0.lagoonClosed))}.`),
+    !now&&!closed&&sea>.6?t('Havet har stigit mer än de 60 cm som barriärerna byggdes för, och varje stängning stänger ute havets vatten och slam, så att lagunen blir varmare och mer instängd.',
         "The sea has risen more than the 60 cm the barriers were built for, and every closure shuts out the sea's water and silt, leaving the lagoon warmer and more enclosed.",
         "Il mare è salito più dei 60 cm per cui le barriere erano state progettate, e ogni chiusura tiene fuori l'acqua e i sedimenti del mare, lasciando la laguna più calda e più chiusa."):'',
-    !now&&d.levelInside>FLOOD.barrier.inside+.04?t(`Bakom de stängda barriärerna stiger lagunen ändå med floderna, regnet och läckaget: vid ett hundraårshögvatten står vattnet kring ${cm(d.levelInside)} cm i staden.`,
-        `Behind the closed barriers the lagoon still rises with the rivers, the rain and the leaks: in a 100-year high tide the water in the city stands at about ${cm(d.levelInside)} cm.`,
-        `Dietro le barriere chiuse la laguna sale comunque con i fiumi, la pioggia e le infiltrazioni: con un'acqua alta centenaria in città l'acqua arriva a circa ${cm(d.levelInside)} cm.`):'',
-    now?'':adapt>L3?t('Staden växer med havet: gator och kajer har höjts, bottenvåningarna har blivit förråd, verkstäder och båthus, och livet har flyttat en trappa upp.',
-        'The city grows with the sea: streets and quays have been raised, the ground floors have become stores, workshops and boathouses, and life has moved one floor up.',
-        'La città cresce con il mare: calli e rive sono state rialzate, i piani terra sono diventati magazzini, laboratori e cavane, e la vita si è spostata di un piano più su.')
-    :adapt>L2?t('Gatorna har höjts mot 1,20 m där trösklarna tillåter, och bottenvåningarna har gjorts om så att de tål vatten.',
-        'The streets have been raised towards 1.20 m where the doorsteps allow, and the ground floors have been rebuilt to withstand water.',
-        "Le calli sono state rialzate verso 1,20 m dove le soglie lo consentono, e i piani terra sono stati rifatti per reggere l'acqua.")
-    :adapt>L1?t('Kajerna har höjts, och en låg kant av istrisk sten håller Markusplatsen och basilikan torra.',
-        "The quays have been raised, and a low edge of Istrian stone keeps St Mark's Square and the basilica dry.",
-        "Le rive sono state rialzate, e un basso bordo di pietra d'Istria tiene asciutte piazza San Marco e la basilica.")
-    :t('Kajerna är lika låga som 2026, och vid tidvatten över 80 cm står Markusplatsen fortfarande under vatten.',
-        "The quays are as low as in 2026, and at tides above 80 cm St Mark's Square is still under water.",
-        "Le rive sono basse come nel 2026, e con maree oltre gli 80 cm piazza San Marco finisce ancora sott'acqua."),
-    d.floodShare>.005?(now?t(`Med MOSE uppe stannar vattnet i staden uppskattningsvis kring ${cm(d.levelInside)} cm även när havet utanför stiger mot två meter – men det räcker för att Markusplatsen och ${pct(d.floodShare)} av gångytorna ska stå under vatten.`,
-        `With MOSE up, the water in the city stays at an estimated ${cm(d.levelInside)} cm even when the sea outside rises towards two metres – but that is enough to put St Mark's Square and ${pct(d.floodShare)} of the walkways under water.`,
-        `Con il MOSE alzato l'acqua in città resta intorno ai ${cm(d.levelInside)} cm anche quando il mare fuori sale verso i due metri – ma basta perché piazza San Marco e ${il(d.floodShare)}${pct(d.floodShare)} dei percorsi pedonali finiscano sott'acqua.`)
-      :t(`Ett hundraårshögvatten sätter ${pct(d.floodShare)} av stadens gångytor under vatten${same?', som 2026':was(pct(d0.floodShare))} – ${rialto?'Markusplatsen och Rialto':'Markusplatsen'} först.`,
-        `A 100-year high tide puts ${pct(d.floodShare)} of the city's walkways under water${same?', as in 2026':was(pct(d0.floodShare))} – ${rialto?"St Mark's Square and Rialto":"St Mark's Square"} first.`,
-        `Un'acqua alta centenaria allaga ${il(d.floodShare)}${pct(d.floodShare)} dei percorsi pedonali della città${same?', come nel 2026':was(pct(d0.floodShare))} – per prima ${rialto?'piazza San Marco, poi Rialto':'piazza San Marco'}.`))
-    :d.protection>d0.protection+.05?t(`Staden står torr upp till ${cm(d.protection)} cm${margin?` – ${cm(d.floodMargin)} cm över det vatten som ett hundraårshögvatten lämnar bakom barriärerna`:', med knapp marginal'}.`,
-        `The city stays dry up to ${cm(d.protection)} cm${margin?` – ${cm(d.floodMargin)} cm above the water a 100-year high tide leaves behind the barriers`:', with little to spare'}.`,
-        `La città resta asciutta fino a ${cm(d.protection)} cm${margin?` – ${cm(d.floodMargin)} cm sopra l'acqua che un'acqua alta centenaria lascia dietro le barriere`:', con un margine minimo'}.`):'',
-    // Adaptation costs at most heritageCost × its implementation (model.js); anything more is salt water that got in.
-    d.heritage<1-(PARAMS.heritageCost||0)*adapt-.01?t('Saltvattnet har tagit hårt på kulturarvet: det har ätit sig upp i murarna, och flera bottenvåningar har övergetts.',
+    now?'':smf>=700?t('Markusplatsen står under vatten vid varje högvatten, två gånger om dygnet (2026: omkring 90 gånger om året).',"St Mark's Square is under water at every high tide, twice a day (2026: about 90 times a year).",'Piazza San Marco finisce sott\'acqua a ogni alta marea, due volte al giorno (2026: circa 90 volte l\'anno).')
+      :smf<1?t('Markusplatsen står torr året runt (2026: vatten omkring 90 gånger om året).',"St Mark's Square stays dry all year round (2026: water about 90 times a year).","Piazza San Marco resta asciutta tutto l'anno (2026: acqua circa 90 volte l'anno).")
+      :t(`Vattnet når Markusplatsen ${smf} ${times(smf)} om året (2026: omkring 90).`,`The water reaches St Mark's Square ${smf} ${times(smf)} a year (2026: about 90).`,`L'acqua arriva in piazza San Marco ${smf} ${times(smf)} l'anno (2026: circa 90).`),
+    now?t(`Med MOSE uppe stannar ett hundraårshögvatten uppskattningsvis kring ${cm(d.levelInside)} cm i staden – men det räcker för att Markusplatsen och ${pct(d.floodShare)} av gångvägarna ska stå under vatten.`,
+        `With MOSE up, a 100-year high tide stops at an estimated ${cm(d.levelInside)} cm in the city – but that is enough to put St Mark's Square and ${pct(d.floodShare)} of the walkways under water.`,
+        `Con il MOSE alzato un'acqua alta centenaria si ferma in città intorno ${agli(cm(d.levelInside))} ${cm(d.levelInside)} cm – ma basta perché piazza San Marco e ${il(d.floodShare)} dei percorsi pedonali finiscano sott'acqua.`)
+    :d.floodShare>=.005?t(`Vid ett hundraårshögvatten står lagunen kring ${cm(d.levelInside)} cm i staden${behind}, och ${pct(d.floodShare)} av gångvägarna hamnar under vatten${was(pct(d0.floodShare))}.`,
+        `In a 100-year high tide the lagoon stands at about ${cm(d.levelInside)} cm in the city${behind}, and ${pct(d.floodShare)} of the walkways go under water${was(pct(d0.floodShare))}.`,
+        `Con un'acqua alta centenaria la laguna arriva in città intorno ${agli(cm(d.levelInside))} ${cm(d.levelInside)} cm${behind}, e ${il(d.floodShare)} dei percorsi pedonali finisce sott'acqua${was(pct(d0.floodShare))}.`)
+    :t(`Ett hundraårshögvatten lämnar lagunen kring ${cm(d.levelInside)} cm${behind}, ${cm(P-d.levelInside)>=2?`${cm(P-d.levelInside)} cm under gångvägarnas skydd`:'strax under gångvägarnas skydd'}.`,
+        `A 100-year high tide leaves the lagoon at about ${cm(d.levelInside)} cm${behind}, ${cm(P-d.levelInside)>=2?`${cm(P-d.levelInside)} cm below the walkways' protection`:"just below the walkways' protection"}.`,
+        `Un'acqua alta centenaria lascia la laguna intorno ${agli(cm(d.levelInside))} ${cm(d.levelInside)} cm${behind}, ${cm(P-d.levelInside)>=2?`${cm(P-d.levelInside)} cm sotto la protezione dei percorsi pedonali`:'appena sotto la protezione dei percorsi pedonali'}.`),
+    now?'':adapt>L2?t(`Gångvägarna har höjts mot 120 cm där trösklarna tillåter, och bottenvåningarna har gjorts om för vattnet: de lägsta gatorna står torra upp till ${cm(P)} cm (2026: 80).`,
+        `The walkways have been raised towards 120 cm where the doorsteps allow, and the ground floors have been rebuilt for the water: the lowest streets stay dry up to ${cm(P)} cm (2026: 80).`,
+        `I percorsi pedonali sono stati rialzati verso i 120 cm dove le soglie lo consentono, e i piani terra sono stati rifatti per l'acqua: le calli più basse restano asciutte fino a ${cm(P)} cm (2026: 80).`)
+      :adapt>L1?t(`Insulan San Marco och de lägsta kajerna tätas mot 110 cm: de lägsta gatorna står torra upp till ${cm(P)} cm (2026: 80).`,
+        `The insula of San Marco and the lowest quays are being sealed towards 110 cm: the lowest streets stay dry up to ${cm(P)} cm (2026: 80).`,
+        `L'insula di San Marco e le rive più basse vengono rese stagne verso i 110 cm: le calli più basse restano asciutte fino a ${cm(P)} cm (2026: 80).`)
+      :P>d0.protection+.025?t(`Arbetet med att täta insulan San Marco går långsamt: de lägsta gatorna står torra upp till ${cm(P)} cm (2026: 80).`,
+        `The work to seal the insula of San Marco is slow: the lowest streets stay dry up to ${cm(P)} cm (2026: 80).`,
+        `I lavori per rendere stagna l'insula di San Marco vanno a rilento: le calli più basse restano asciutte fino a ${cm(P)} cm (2026: 80).`)
+      :t('Kajerna är lika låga som 2026: Markusplatsen svämmar över så snart tidvattnet når 80 cm och luckorna står öppna.',"The quays are as low as in 2026: St Mark's Square floods as soon as the tide reaches 80 cm and the gates are open.",'Le rive sono basse come nel 2026: piazza San Marco si allaga appena la marea arriva a 80 cm e le paratoie sono aperte.'),
+    !now&&d.heritage<1-allowed-.02?t('Saltvattnet har tagit hårt på kulturarvet: det har ätit sig upp i murarna, och flera bottenvåningar har övergetts.',
         'The salt water has been hard on the heritage: it has crept up into the walls, and several ground floors have been abandoned.',
         "L'acqua salata ha colpito duramente il patrimonio: è risalita nei muri, e diversi piani terra sono stati abbandonati.")
-    :d.heritage<.985?t('Världsarvet står kvar, men höjda kajer och nya trösklar har förändrat stadens möte med vattnet.',
-        'The World Heritage still stands, but raised quays and new doorsteps have changed the way the city meets the water.',
-        "Il patrimonio mondiale resta intatto, ma rive rialzate e nuove soglie hanno cambiato l'incontro della città con l'acqua.")
+    :!now&&d.heritage<.985&&raised>0?t('Världsarvet står kvar, men höjda kajer och nya trösklar har förändrat stadens möte med vattnet.',
+        'The World Heritage site still stands, but raised quays and new doorsteps have changed the way the city meets the water.',
+        "Venezia resta patrimonio mondiale, ma rive rialzate e nuove soglie hanno cambiato l'incontro della città con l'acqua.")
     :now?t('Markuskyrkans förhall, stadens lägsta golv på 63 cm, stod under vatten mer än 200 gånger om året innan en barriär av glas byggdes runt kyrkan 2022.',
         "The narthex of St Mark's, the city's lowest floor at 63 cm, was under water more than 200 times a year until a glass barrier was built round the church in 2022.",
         "Il nartece della basilica di San Marco, il pavimento più basso della città a 63 cm, finiva sott'acqua più di 200 volte l'anno, finché nel 2022 è stata costruita una barriera di vetro intorno alla chiesa."):'',
     now?t('Dricksvattnet pumpas ur 34 djupa brunnar på fastlandet, och 41,7 % av vattnet i kommunens nät försvinner i läckor.',
         "Drinking water is pumped from 34 deep wells on the mainland, and 41.7% of the water in the municipality's network is lost to leaks.",
         "L'acqua potabile viene pompata da 34 pozzi profondi in terraferma, e il 41,7% dell'acqua della rete comunale si perde per strada.")
-    :d.waterMargin<0?t(`Ett torrt år räcker inte vattnet: brunnarna på fastlandet ger ${pct(-d.waterMargin)} mindre än staden behöver.`,
-        `In a dry year the water runs short: the wells on the mainland give ${pct(-d.waterMargin)} less than the city needs.`,
-        `In un anno secco l'acqua non basta: i pozzi in terraferma danno ${il(-d.waterMargin)}${pct(-d.waterMargin)} in meno di quanto serve alla città.`):'',
-    lvl('beredskap')>L3?t('Staden klarar sig själv i en kris: mat, vatten och energi räcker i 90 dagar, och elnätet kan köras i ö-drift.',
-        'The city can manage on its own in a crisis: food, water and energy last 90 days, and the grid can run in island mode.',
-        'In caso di crisi la città se la cava da sola: cibo, acqua ed energia bastano per 90 giorni, e la rete elettrica può funzionare in isola.')
-    :lvl('beredskap')>L2?t('En andra vattenkälla, lager för en månad och ett elnät som kan köras i ö-drift gör staden mindre sårbar om ledningarna från fastlandet går sönder.',
-        'A second water source, stocks for a month and a grid that can run in island mode make the city less vulnerable if the lines from the mainland fail.',
-        "Una seconda fonte d'acqua, scorte per un mese e una rete elettrica che può funzionare in isola rendono la città meno vulnerabile se le linee dalla terraferma si interrompono.")
-    :lvl('beredskap')>L1?t('Kommunen har nödlager och en plan för nödvatten.','The municipality has emergency stocks and an emergency water plan.',"Il Comune ha scorte di emergenza e un piano per l'acqua d'emergenza."):'',
-    t(`${now?'Uppskattningsvis ':''}${pct(d.homePrepared)} av hushållen klarar en vecka på egen hand${was(pct(d0.homePrepared))}.`,`${now?'An estimated ':''}${pct(d.homePrepared)} of households can manage a week on their own${was(pct(d0.homePrepared))}.`,`${now?`Si stima che ${il(d.homePrepared)}`:Il(d.homePrepared)}${pct(d.homePrepared)} delle famiglie ${now?'possa':'può'} cavarsela da sé per una settimana${was(pct(d0.homePrepared))}.`),
+    :t(`${pct(d.waterLoss)} av vattnet försvinner i ledningarna${was(pct(d0.waterLoss))}${ready}.`,`${pct(d.waterLoss)} of the water is lost in the mains${was(pct(d0.waterLoss))}${ready}.`,`${Il(d.waterLoss)} dell'acqua si perde nelle condotte${was(pct(d0.waterLoss))}${ready}.`),
+    !now&&d.water<d0.water-.05?t('En torr sommar tränger saltvattnet allt längre upp i floderna, och dricksvattnet är mindre säkert än 2026.','In a dry summer the salt water creeps further up the rivers, and the drinking water is less secure than in 2026.',"In un'estate secca l'acqua salata risale sempre più su per i fiumi, e l'acqua potabile è meno sicura che nel 2026."):'',
   ].filter(Boolean).join(' ')});
 
-  // The lagoon and its food: the salt marshes, the water's status, the Rialto market and the islands' gardens
-  // (research/deep/lagun-natur-mat; model.js LOCAL saltMarsh; levers.js hav, regionalt, stadsodling, kost).
-  const hav=lvl('hav'),food=lvl('regionalt'),days=Math.round(d.foodStockDays),days0=Math.round(d0.foodStockDays),marsh=int(d.saltMarsh);
-  S.push({title:t('Lagunen och maten','The lagoon and food','La laguna e il cibo'),text:[
-    now?t('Lagunen har omkring 40 km² saltängar kvar av 158 km² år 1912, och ungefär en halv kvadratkilometer går förlorad varje år när sedimentet försvinner ut i havet.',
-        'The lagoon has about 40 km² of salt marsh left of 158 km² in 1912, and about half a square kilometre is lost every year as the sediment escapes to the sea.',
-        'La laguna conserva circa 40 km² di barene dei 158 km² del 1912, e ogni anno ne perde circa mezzo chilometro quadrato, mentre i sedimenti finiscono in mare.')
-    :d.saltMarsh<1?t('Saltängarna är borta: lagunen har blivit en grund havsvik där vågorna rör upp bottnen.',
-        'The salt marshes are gone: the lagoon has become a shallow bay of the sea where the waves stir up the bottom.',
-        'Le barene sono scomparse: la laguna è diventata un braccio di mare poco profondo dove le onde sollevano il fondale.')
-    :d.saltMarsh>d0.saltMarsh+3?t(`Lagunen har ${marsh} km² saltängar (2026: omkring 40). De har byggts upp med muddrat sediment och slam som får komma in från havet${hav>L3?', och nu växer de i takt med havet':''}; de dämpar vågorna, binder kol och ger fåglarna platser att häcka.`,
-        `The lagoon has ${marsh} km² of salt marsh (2026: about 40). They have been built up with dredged sediment and silt let in from the sea${hav>L3?', and now they grow with the sea':''}; they calm the waves, store carbon and give the birds places to nest.`,
-        `La laguna ha ${marsh} km² di barene (2026: circa 40). Sono state ricostruite con i fanghi di dragaggio e con il sedimento che può di nuovo entrare dal mare${hav>L3?', e ora crescono con il mare':''}; smorzano le onde, trattengono carbonio e offrono agli uccelli posti dove nidificare.`)
-    :d.saltMarsh<d0.saltMarsh-3&&hav>L1?t(`Lagunen har ${marsh} km² saltängar kvar (2026: omkring 40): de nya som byggs av muddrat sediment hinner ännu inte ikapp dem som havet tar.`,
-        `The lagoon has ${marsh} km² of salt marsh left (2026: about 40): the new ones built from dredged sediment have not yet caught up with those the sea takes.`,
-        `In laguna restano ${marsh} km² di barene (2026: circa 40): le nuove costruite con i fanghi di dragaggio non tengono ancora il passo con quelle che il mare si porta via.`)
-    :d.saltMarsh<d0.saltMarsh-3?t(`Lagunen har ${marsh} km² saltängar kvar (2026: omkring 40) – det stigande havet och de allt oftare stängda barriärerna dränker dem.`,
-        `The lagoon has ${marsh} km² of salt marsh left (2026: about 40) – the rising sea and the ever more often closed barriers are drowning them.`,
-        `In laguna restano ${marsh} km² di barene (2026: circa 40) – il mare che sale e le barriere sempre più spesso chiuse le stanno sommergendo.`)
-    :t(`Lagunen har omkring ${marsh} km² saltängar, ungefär som 2026: de nya som byggs väger knappt upp dem som försvinner.`,
-        `The lagoon has about ${marsh} km² of salt marsh, much as in 2026: the new ones being built barely make up for those being lost.`,
-        `La laguna ha circa ${marsh} km² di barene, più o meno come nel 2026: le nuove compensano appena quelle che scompaiono.`),
-    d.waters>=.85&&hav>L2?t('Lagunens vattenområden har nått god ekologisk status, som EU:s vattendirektiv kräver, och sjögräsängarna breder ut sig igen.',
-        "The lagoon's water bodies have reached good ecological status, as the EU Water Framework Directive requires, and the seagrass meadows are spreading again.",
-        'I corpi idrici della laguna hanno raggiunto il buono stato ecologico richiesto dalla direttiva europea sulle acque, e le praterie di fanerogame tornano ad allargarsi.')
-    :d.waters>=.6?t('Lagunen är på väg mot god ekologisk status (2026: inget av elva vattenområden).','The lagoon is on its way to good ecological status (2026: none of eleven water bodies).','La laguna è sulla strada del buono stato ecologico (2026: nessuno degli undici corpi idrici).')
-    :d.waters>=d0.waters-.03?(now?t('Inget av lagunens elva klassade vattenområden har god ekologisk status, och inget av fjorton har god kemisk status.',
-          "None of the lagoon's eleven classified water bodies has good ecological status, and none of fourteen has good chemical status.",
-          'Nessuno degli undici corpi idrici classificati della laguna è in buono stato ecologico, e nessuno dei quattordici in buono stato chimico.')
-      :hav>L1?t('Lagunens ekologiska status är fortfarande inte god – den svarar långsamt.',"The lagoon's ecological status is still not good – it responds slowly.",'Lo stato ecologico della laguna non è ancora buono – risponde lentamente.')
-      :t('Inget av lagunens vattenområden har god ekologisk status, lika lite som 2026.',"None of the lagoon's water bodies has good ecological status, just as in 2026.",'Nessuno dei corpi idrici della laguna è in buono stato ecologico, proprio come nel 2026.'))
-    :t('Lagunen mår sämre än 2026: varmare vatten och barriärer som stängs allt oftare gör den instängd.','The lagoon is in worse health than in 2026: warmer water and barriers that close ever more often leave it enclosed.','La laguna sta peggio che nel 2026: acque più calde e barriere sempre più spesso chiuse la rendono asfittica.'),
-    !now&&d.bloom>.3?t('Varma somrar blommar alger i de grunda, instängda delarna av lagunen.','In warm summers algae bloom in the shallow, enclosed parts of the lagoon.','Nelle estati calde le alghe fioriscono nelle parti più basse e chiuse della laguna.'):'',
+  // 4. The lagoon and its salt marshes: the marshes that drown when the sea outruns their sediment, the water's
+  // status, the closed gates, the Rialto market and the lagoon's food (research/deep/lagun-natur-mat; model.js;
+  // levers.js hav and regionalt).
+  const hav=lvl('hav'),food=lvl('regionalt'),marsh=d.saltMarsh,m=Math.round(marsh),w=d.waters,stalls=Math.round(d.fishStalls);
+  const choke=shut>.1?t(', och varje stängning håller ute slammet som stormfloderna förr förde dit',', and every closure shuts out the silt the storm surges used to bring',', e ogni chiusura tiene fuori i sedimenti che un tempo portavano le mareggiate'):'';
+  S.push({title:t('Lagunen och saltängarna','The lagoon and its salt marshes','La laguna e le barene'),text:[
+    now?t('Lagunen har omkring 40 km² saltängar kvar av 158 km² år 1912, och omkring en halv kvadratkilometer går förlorad varje år, eftersom havet stiger fortare än saltängarna hinner växa; 15–16 km² har byggts upp igen med muddrat sediment.',
+        'The lagoon has about 40 km² of salt marsh left of 158 km² in 1912, and about half a square kilometre is lost every year, because the sea rises faster than the marshes can grow; 15–16 km² have been rebuilt with dredged sediment.',
+        "La laguna conserva circa 40 km² di barene dei 158 km² del 1912, e ogni anno ne perde circa mezzo chilometro quadrato, perché il mare sale più in fretta di quanto le barene riescano a crescere; 15–16 km² sono stati ricostruiti con i fanghi di dragaggio.")
+    :marsh<1?(closed?t('Saltängarna är borta: havet steg fortare än de kunde växa, och de stängda inloppen tog slammet från dem. Bakom inloppen har lagunen blivit en sjö.',
+          'The salt marshes are gone: the sea rose faster than they could grow, and the closed inlets took their silt. Behind the inlets the lagoon has become a lake.',
+          'Le barene sono scomparse: il mare è salito più in fretta di quanto potessero crescere, e le bocche chiuse hanno tolto loro i sedimenti. Dietro le bocche la laguna è diventata un lago.')
+      :t(`Saltängarna är borta: havet steg fortare än de kunde växa${choke}. Lagunen har blivit en grund vik där vågorna rör upp bottnen.`,
+          `The salt marshes are gone: the sea rose faster than they could grow${choke}. The lagoon has become a shallow bay where the waves stir up the bottom.`,
+          `Le barene sono scomparse: il mare è salito più in fretta di quanto potessero crescere${choke}. La laguna è diventata uno specchio d'acqua poco profondo dove le onde sollevano il fondale.`))
+    :marsh>d0.saltMarsh+3?t(`Lagunen har ${m} km² saltängar (2026: omkring 40): ${hav>L2?'muddrat sediment och slam som floderna får föra till lagunen igen bygger nya varje år':'muddermassorna har blivit nya saltängar'}${hav>L1?', och kanterna skyddas med faskiner':''}. De dämpar vågorna, binder kol och ger fåglarna platser att häcka.`,
+        `The lagoon has ${m} km² of salt marsh (2026: about 40): ${hav>L2?'dredged sediment and silt the rivers may carry to the lagoon again build new ones every year':'the dredged sediment has become new salt marsh'}${hav>L1?', and their edges are protected with fascines':''}. They calm the waves, store carbon and give the birds places to nest.`,
+        `La laguna ha ${m} km² di barene (2026: circa 40): ${hav>L2?'i fanghi di dragaggio e i sedimenti che i fiumi possono di nuovo portare in laguna ne costruiscono di nuove ogni anno':'i fanghi di dragaggio sono diventati nuove barene'}${hav>L1?', e i loro margini sono protetti con fascine':''}. Smorzano le onde, trattengono carbonio e offrono agli uccelli posti dove nidificare.`)
+    :marsh<d0.saltMarsh-3&&hav>L1?t(`Lagunen har ${m} km² saltängar kvar (2026: omkring 40): de nya som byggs av muddrat sediment hinner inte ikapp dem som havet dränker${choke}.`,
+        `The lagoon has ${m} km² of salt marsh left (2026: about 40): the new ones built from dredged sediment cannot keep up with those the sea drowns${choke}.`,
+        `In laguna restano ${m} km² di barene (2026: circa 40): le nuove costruite con i fanghi di dragaggio non tengono il passo con quelle che il mare sommerge${choke}.`)
+    :marsh<d0.saltMarsh-3?t(`Lagunen har ${m} km² saltängar kvar (2026: omkring 40) – havet stiger fortare än de hinner växa${choke}.`,
+        `The lagoon has ${m} km² of salt marsh left (2026: about 40) – the sea rises faster than they can grow${choke}.`,
+        `In laguna restano ${m} km² di barene (2026: circa 40) – il mare sale più in fretta di quanto riescano a crescere${choke}.`)
+    :t(`Lagunen har omkring ${m} km² saltängar, ungefär som 2026: de nya som byggs väger ungefär upp dem som havet tar.`,
+        `The lagoon has about ${m} km² of salt marsh, much as in 2026: the new ones being built roughly make up for those the sea takes.`,
+        `La laguna ha circa ${m} km² di barene, più o meno come nel 2026: le nuove compensano più o meno quelle che il mare si porta via.`),
+    now?t('Inget av lagunens elva klassade vattenområden har god ekologisk status, och inget av fjorton har god kemisk status.',
+        "None of the lagoon's eleven classified water bodies has good ecological status, and none of fourteen has good chemical status.",
+        'Nessuno degli undici corpi idrici classificati della laguna è in buono stato ecologico, e nessuno dei quattordici in buono stato chimico.')
+    :w>=.6?t(`Lagunen är på väg mot god ekologisk status, som EU:s vattendirektiv kräver (index ${dec(w,2)}; 2026: ${dec(d0.waters,2)}, då inget av elva vattenområden hade god status).`,
+        `The lagoon is on its way to good ecological status, as the EU Water Framework Directive requires (index ${dec(w,2)}; 2026: ${dec(d0.waters,2)}, when none of eleven water bodies had good status).`,
+        `La laguna è sulla strada del buono stato ecologico richiesto dalla direttiva europea sulle acque (indice ${dec(w,2)}; 2026: ${dec(d0.waters,2)}, quando nessuno degli undici corpi idrici era in buono stato).`)
+    :w>d0.waters+.05?t(`Lagunen mår bättre än 2026 (index ${dec(w,2)} mot ${dec(d0.waters,2)}) men har ännu inte god ekologisk status.`,
+        `The lagoon is healthier than in 2026 (index ${dec(w,2)} against ${dec(d0.waters,2)}) but has not yet reached good ecological status.`,
+        `La laguna sta meglio che nel 2026 (indice ${dec(w,2)} contro ${dec(d0.waters,2)}) ma non ha ancora raggiunto il buono stato ecologico.`)
+    :w>=d0.waters-.03?t('Lagunens ekologiska status är lika dålig som 2026, då inget av elva vattenområden hade god status.','The lagoon\'s ecological status is as poor as in 2026, when none of eleven water bodies had good status.','Lo stato ecologico della laguna è scarso come nel 2026, quando nessuno degli undici corpi idrici era in buono stato.')
+    :t(`Lagunen mår sämre än 2026 (index ${dec(w,2)} mot ${dec(d0.waters,2)}): ${closed?'den är stängd mot havet för gott, och vattnet står stilla och värms':shut>=.5?'den är stängd mot havet större delen av året, och vattnet står stilla och värms':shut>.1?`luckorna står stängda ${pct(shut)} av årets timmar, och det stilla vattnet värms`:'varmare vatten och färre saltängar gör den sjukare'}.`,
+        `The lagoon is in worse health than in 2026 (index ${dec(w,2)} against ${dec(d0.waters,2)}): ${closed?'it is closed to the sea for good, and its water stands still and warms':shut>=.5?'it is closed to the sea most of the year, and its water stands still and warms':shut>.1?`the gates are closed ${pct(shut)} of the hours in the year, and the still water warms`:'warmer water and fewer salt marshes make it sicker'}.`,
+        `La laguna sta peggio che nel 2026 (indice ${dec(w,2)} contro ${dec(d0.waters,2)}): ${closed?"è chiusa al mare per sempre, e l'acqua ristagna e si scalda":shut>=.5?"è chiusa al mare per gran parte dell'anno, e l'acqua ristagna e si scalda":shut>.1?`le paratoie restano chiuse per ${il(shut)} delle ore dell'anno, e l'acqua ferma si scalda`:"l'acqua più calda e le barene sempre meno la fanno ammalare"}.`),
+    !now&&d.bloom>.4&&d.bloom>d0.bloom+.05?t('Varma somrar blommar alger och syret tar slut i de grunda, instängda delarna av lagunen, som på 1980-talet.','In warm summers algae bloom and the oxygen runs out in the shallow, enclosed parts of the lagoon, as in the 1980s.',"Nelle estati calde le alghe fioriscono e l'ossigeno si esaurisce nelle parti più basse e chiuse della laguna, come negli anni Ottanta."):'',
     now?t('Omkring 24 000 flamingor övervintrade i lagunen 2025.','Some 24,000 flamingos wintered in the lagoon in 2025.',"Nell'inverno 2025 in laguna hanno svernato circa 24.000 fenicotteri.")
-    :d.biodiversity>d0.biodiversity+.2?t('Fiskar, fåglar och sjögräs har kommit tillbaka till de lugnare vattnen.','Fish, birds and seagrass have returned to the calmer waters.','Pesci, uccelli e fanerogame sono tornati nelle acque più calme.'):'',
-    t(`${now?'Uppskattningsvis ':''}${pct(d.foodRegional)} av maten som venetianerna äter kommer från lagunen och Veneto${was(pct(d0.foodRegional))}.`,
-      `${now?'An estimated ':''}${pct(d.foodRegional)} of the food Venetians eat comes from the lagoon and the Veneto${was(pct(d0.foodRegional))}.`,
-      `${now?`Si stima che ${il(d.foodRegional)}`:Il(d.foodRegional)}${pct(d.foodRegional)} del cibo che mangiano i veneziani ${now?'venga':'viene'} dalla laguna e dal Veneto${was(pct(d0.foodRegional))}.`),
-    food>L3?t(`Lagunens matråd bestämmer vad som odlas, fiskas och lagras, och staden har mat i lager för ${days} dagar${was(days0)}.`,
-        `A lagoon food council decides what is grown, fished and stored, and the city keeps food in store for ${days} days${was(days0)}.`,
-        `Un consiglio del cibo della laguna decide cosa coltivare, pescare e conservare, e la città ha scorte di cibo per ${days} giorni${was(days0)}.`)
-    :food>L2?t("Rialtomarknaden lever igen: kronärtskockor från Sant'Erasmo, musslor och fisk från lagunen och fiskevallarna, och grönsaker från altanerna.",
-        "The Rialto market is alive again: artichokes from Sant'Erasmo, clams and fish from the lagoon and its fish farms, and vegetables from the roof terraces.",
-        "Il mercato di Rialto è tornato a vivere: carciofi di Sant'Erasmo, vongole e pesce della laguna e delle valli da pesca, e ortaggi dalle altane.")
-    :food>L1?t('Skolornas och äldreboendenas kök köper sin mat av lagunöarnas odlare och fiskare.',"The kitchens of schools and care homes buy their food from the lagoon islands' growers and fishermen.",'Le cucine di scuole e case di riposo comprano il cibo dagli ortolani e dai pescatori delle isole della laguna.')
-    :now?t('Rialtomarknaden har sju fiskstånd kvar av ett trettiotal på 1980-talet, och musselskörden föll från omkring 40 000 ton 1999 till under 3 000 ton 2019.',
-        'The Rialto market has seven fish stalls left of some thirty in the 1980s, and the clam harvest fell from about 40,000 tonnes in 1999 to under 3,000 tonnes in 2019.',
-        'Al mercato di Rialto restano sette banchi del pesce dei circa trenta degli anni Ottanta, e la raccolta di vongole è scesa da circa 40.000 tonnellate nel 1999 a meno di 3000 nel 2019.')
-    :t('Rialtomarknaden har krympt ytterligare, och nästan all mat kommer över bron från fastlandet.','The Rialto market has shrunk further, and almost all the food comes over the bridge from the mainland.','Il mercato di Rialto si è ridotto ancora, e quasi tutto il cibo arriva dalla terraferma attraverso il ponte.'),
-    food>L3?'':t(`Staden har mat i lager för ${now?'uppskattningsvis ':''}${days} dagar${was(days0)}.`,`The city keeps food in store for ${now?'an estimated ':''}${days} days${was(days0)}.`,`La città ha scorte di cibo per ${now?'circa ':''}${days} giorni${was(days0)}.`),
-    lvl('stadsodling')>L2?t(`Klostrens och palatsens trädgårdar odlas, och växthus står på altanerna: staden odlar ${pct(d.cityVeg)} av sin egen frukt och sina grönsaker.`,
-        `The gardens of the cloisters and palaces are cultivated, and greenhouses stand on the roof terraces: the city grows ${pct(d.cityVeg)} of its own fruit and vegetables.`,
-        `Si coltivano i giardini dei chiostri e dei palazzi, e sulle altane ci sono serre: la città produce ${il(d.cityVeg)}${pct(d.cityVeg)} della frutta e della verdura che consuma.`)
-    :lvl('stadsodling')>L1?t('Odlingslådor står i gårdarna och på skolornas tak, men staden odlar fortfarande bara en liten del av det den äter.','There are planter boxes in the courtyards and on school roofs, but the city still grows only a small part of what it eats.','Ci sono cassoni da orto nelle corti e sui tetti delle scuole, ma la città produce ancora solo una piccola parte di ciò che mangia.'):'',
-    lvl('kost')>L2?t('Skolor och äldreboenden lagar säsongens mat – baljväxter, grönsaker och lagunens fisk – och svinnet är nästan borta.',"Schools and care homes cook the season's food – pulses, vegetables and fish from the lagoon – and food waste has almost disappeared.",'Scuole e case di riposo cucinano i prodotti di stagione – legumi, verdure e pesce della laguna – e lo spreco è quasi scomparso.')
-    :lvl('kost')>L1?t('Mer av maten i skolor och äldreboenden är växtbaserad.','More of the food in schools and care homes is plant-based.',"Nelle mense di scuole e case di riposo c'è più cibo vegetale."):'',
+    :hav>L2&&w>=d0.waters-.03?t('Sjögräs planteras tillsammans med fiskarna, och i fiskefria zoner får fisken växa till.','Seagrass is planted together with the fishermen, and in no-fishing zones the fish are left to grow.','Le fanerogame si piantano insieme ai pescatori, e nelle zone senza pesca il pesce ha il tempo di crescere.'):'',
+    now?t('Rialtomarknaden har sju fiskstånd kvar av ett trettiotal på 1980-talet och grönsaksstånden har gått från 90 till under 13, medan musselskörden föll från omkring 40 000 ton 1999 till 2 159 ton 2019.',
+        'The Rialto market has seven fish stalls left of some thirty in the 1980s and its vegetable stalls have gone from 90 to fewer than 13, while the clam harvest fell from about 40,000 tonnes in 1999 to 2,159 tonnes in 2019.',
+        'Al mercato di Rialto restano sette banchi del pesce dei circa trenta degli anni Ottanta e i banchi della verdura sono passati da 90 a meno di 13, mentre la raccolta di vongole è scesa da circa 40.000 tonnellate nel 1999 a 2159 nel 2019.')
+    :food>L3?t(`Lagunens matråd ser till att öarna, fiskevallarna och Rialto föder staden, och vid Rialto finns ${stalls} fiskstånd (2026: ${Math.round(d0.fishStalls)}).`,
+        `A lagoon food council makes sure the islands, the fish farms and the Rialto feed the city, and the Rialto has ${stalls} fish stalls (2026: ${Math.round(d0.fishStalls)}).`,
+        `Un consiglio del cibo della laguna fa sì che le isole, le valli da pesca e Rialto nutrano la città, e a Rialto ci sono ${stalls} banchi del pesce (2026: ${Math.round(d0.fishStalls)}).`)
+    :food>L2?t(`Rialto lever igen: odlarna från Sant'Erasmo, fiskevallarna och musselodlarna säljer direkt, och marknaden har ${stalls} fiskstånd (2026: ${Math.round(d0.fishStalls)}).`,
+        `The Rialto is alive again: the growers from Sant'Erasmo, the fish farms and the clam farmers sell direct, and the market has ${stalls} fish stalls (2026: ${Math.round(d0.fishStalls)}).`,
+        `Rialto è tornato a vivere: gli ortolani di Sant'Erasmo, le valli da pesca e chi alleva vongole vendono direttamente, e il mercato ha ${stalls} banchi del pesce (2026: ${Math.round(d0.fishStalls)}).`)
+    :food>L1?t(`Skolornas och omsorgens kök köper från Sant'Erasmo och lagunens fiskare, och Pescherian har rustats: vid Rialto finns ${stalls} fiskstånd (2026: ${Math.round(d0.fishStalls)}).`,
+        `The kitchens of schools and care homes buy from Sant'Erasmo and the lagoon's fishermen, and the Pescheria has been restored: the Rialto has ${stalls} fish stalls (2026: ${Math.round(d0.fishStalls)}).`,
+        `Le cucine di scuole e case di riposo comprano da Sant'Erasmo e dai pescatori della laguna, e la Pescheria è stata restaurata: a Rialto ci sono ${stalls} banchi del pesce (2026: ${Math.round(d0.fishStalls)}).`)
+    :stalls<Math.round(d0.fishStalls)?t(`Rialtomarknaden har krympt till ${stalls} fiskstånd (2026: ${Math.round(d0.fishStalls)}), och nästan all mat kommer över bron från fastlandet.`,
+        `The Rialto market has shrunk to ${stalls} fish stalls (2026: ${Math.round(d0.fishStalls)}), and almost all the food comes over the bridge from the mainland.`,
+        `Il mercato di Rialto si è ridotto a ${stalls} banchi del pesce (2026: ${Math.round(d0.fishStalls)}), e quasi tutto il cibo arriva dalla terraferma attraverso il ponte.`)
+    :t(`Rialtomarknaden har ${stalls} fiskstånd (2026: ${Math.round(d0.fishStalls)}).`,`The Rialto market has ${stalls} fish stalls (2026: ${Math.round(d0.fishStalls)}).`,`Il mercato di Rialto ha ${stalls} banchi del pesce (2026: ${Math.round(d0.fishStalls)}).`),
+    t(`Uppskattningsvis ${pct(d.foodRegional)} av maten venetianerna äter kommer från lagunen och Veneto${was(pct(d0.foodRegional))}.`,
+      `An estimated ${pct(d.foodRegional)} of the food Venetians eat comes from the lagoon and the Veneto${was(pct(d0.foodRegional))}.`,
+      `Circa ${il(d.foodRegional)} del cibo che mangiano i veneziani viene, secondo una stima, dalla laguna e dal Veneto${was(pct(d0.foodRegional))}.`),
   ].filter(Boolean).join(' ')});
 
-  // Boats, energy and climate: the vaporetti and the wakes, solar on the old roofs, wind off the Lido, gas heating,
-  // the city's own emissions and its visitors' (research/deep/energi-resor; levers.js kollektivt, sol, vind, effektivitet).
-  const boats=lvl('kollektivt'),le=d.localEnergy;
-  const share=le>1.5?t(`${dec(le,1)} gånger så mycket el som staden använder`,`${dec(le,1)} times as much electricity as the city uses`,`${dec(le,1)} volte l'elettricità che la città consuma`)
-    :le>1.02?t('mer el än staden använder','more electricity than the city uses','più elettricità di quella che la città consuma')
-    :le>=.98?t('ungefär lika mycket el som staden använder','about as much electricity as the city uses',"più o meno tutta l'elettricità che la città consuma")
-    :t(`${pct(le)} av den el staden använder`,`${pct(le)} of the electricity the city uses`,`${il(le)}${pct(le)} dell'elettricità che la città consuma`);
-  const quiet=boats>L3?t(' – kanalerna är tysta: vaporetti, taxibåtar och transportbåtar går på el, och transporterna delas',' – the canals are quiet: vaporetti, water taxis and delivery boats run on electricity, and transport is shared',' – i canali sono silenziosi: vaporetti, taxi acquei e barche da trasporto vanno a elettricità, e i trasporti si condividono')
-    :boats>L2?t(' – vattenbussarna laddar vid bryggorna, och på Canal Grande hörs gondolernas åror igen'," – the vaporetti charge at the landing stages, and on the Grand Canal the gondolas' oars can be heard again",' – i vaporetti si ricaricano agli imbarcaderi, e sul Canal Grande si sentono di nuovo i remi delle gondole')
-    :boats>L1?t(' – på Canal Grande går hybridbåtar',' – hybrid boats run on the Grand Canal',' – sul Canal Grande navigano barche ibride'):'';
-  const ratio=d.tourismCO2/Math.max(1,d.ghg*d.pop);
-  S.push({title:t('Båtar, energi och klimat','Boats, energy and climate','Barche, energia e clima'),text:[
-    now?t('Vattenbussarna och de flesta andra båtar går på diesel – ACTV har en enda hybridvaporetto av 148 båtar – och båtar och fartyg står för nästan hälften av kommunens kväveoxider.',
-        "The vaporetti and most other boats run on diesel – ACTV has a single hybrid vaporetto among 148 boats – and boats and ships produce almost half of the municipality's nitrogen oxides.",
-        'I vaporetti e quasi tutte le altre barche vanno a gasolio – ACTV ha un solo vaporetto ibrido su 148 mezzi – e barche e navi producono quasi metà degli ossidi di azoto del Comune.')
-    :t(`${pct(d.boatElectric)} av båttrafiken går på el${was(pct(d0.boatElectric))}${quiet}.`,`${pct(d.boatElectric)} of boat traffic is electric${was(pct(d0.boatElectric))}${quiet}.`,`${Il(d.boatElectric)}${pct(d.boatElectric)} del traffico acqueo va a elettricità${was(pct(d0.boatElectric))}${quiet}.`),
-    !now&&boats>L2?(d.saltMarsh>=1?t('Svallvågorna har lagt sig, och kajmurarna och saltängarna nöts inte längre ner av motorbåtarna.','The wakes have settled, and the motorboats no longer wear down the quay walls and the salt marshes.','Il moto ondoso si è calmato, e i motoscafi non consumano più le rive e le barene.')
-      :t('Svallvågorna har lagt sig, och kajmurarna nöts inte längre ner av motorbåtarna.','The wakes have settled, and the motorboats no longer wear down the quay walls.','Il moto ondoso si è calmato, e i motoscafi non consumano più le rive.')):'',
-    now?t('Solpaneler är förbjudna på hus i den historiska staden byggda före 1945, så här produceras nästan ingen el – kommunens 59 MW solceller står nästan alla på fastlandet – och husen värms mest med gas.',
-        "Solar panels are banned on buildings in the historic city built before 1945, so almost no electricity is produced here – nearly all the municipality's 59 MW of solar panels are on the mainland – and homes are heated mostly with gas.",
-        'Nella città storica i pannelli solari sono vietati sugli edifici costruiti prima del 1945, quindi qui non si produce quasi elettricità – quasi tutti i 59 MW di fotovoltaico del Comune sono in terraferma – e le case si scaldano soprattutto a gas.')
-    :t(`Solceller på ${Math.round(d.solarMW)} MW${d.windMW>=1?` och havsvind på ${Math.round(d.windMW)} MW`:''} ger ${share}${was(pct(d0.localEnergy))}.`,
-        `${Math.round(d.solarMW)} MW of solar panels${d.windMW>=1?` and ${Math.round(d.windMW)} MW of offshore wind`:''} provide ${share}${was(pct(d0.localEnergy))}.`,
-        `${Math.round(d.solarMW)} MW di fotovoltaico${d.windMW>=1?` e ${Math.round(d.windMW)} MW di eolico in mare`:''} forniscono ${share}${was(pct(d0.localEnergy))}.`),
-    lvl('sol')>L3?t('Varje tak som tål dem bär solpaneler som liknar tegel, och el lagras i bottenvåningar som inte längre går att bo i.','Every roof that can bear them carries solar panels that look like tiles, and electricity is stored in ground floors that can no longer be lived in.',"Ogni tetto che può portarli ha pannelli solari simili ai coppi, e l'elettricità si accumula nei piani terra non più abitabili.")
-    :lvl('sol')>L2?t('Soltegel är godkänt i hela staden, och energigemenskaper i varje sestiere delar solelen.','Solar tiles are approved throughout the city, and energy communities in every sestiere share the solar power.',"I coppi solari sono ammessi in tutta la città, e comunità energetiche in ogni sestiere si dividono l'energia del sole.")
-    :lvl('sol')>L1?t('Kommunens och skolornas tak har fått solceller.',"The roofs of the municipality's buildings and the schools have solar panels.",'I tetti degli edifici comunali e delle scuole hanno pannelli solari.'):'',
-    lvl('vind')>L2&&d.windMW>5?t(`Vindkraftsparken till havs utanför Lido ägs delvis av venetianerna${lvl('vind')>L3?', och vätgas från havsvinden driver hamnen och industrin på fastlandet':''}.`,
-        `The offshore wind farm off the Lido is partly owned by Venetians${lvl('vind')>L3?', and hydrogen from the sea wind powers the port and the industry on the mainland':''}.`,
-        `Il parco eolico al largo del Lido è in parte dei veneziani${lvl('vind')>L3?", e l'idrogeno prodotto dal vento del mare alimenta il porto e l'industria in terraferma":''}.`):'',
-    lvl('effektivitet')>L3?t(`Venedig är fossilfritt: husen värms med värmepumpar på lagunvatten, allt som går att laga lagas, och ${d.recycling>=.97?'nästan allt avfall':`${pct(d.recycling)} av avfallet`} sorteras.`,
-        `Venice is fossil-free: homes are heated by heat pumps using lagoon water, everything that can be repaired is repaired, and ${d.recycling>=.97?'almost all waste':`${pct(d.recycling)} of waste`} is sorted.`,
-        `Venezia è libera dai fossili: le case si scaldano con pompe di calore ad acqua di laguna, tutto ciò che si può riparare si ripara, e ${d.recycling>=.97?'quasi tutti i rifiuti vengono differenziati':`${il(d.recycling)}${pct(d.recycling)} dei rifiuti viene differenziato`}.`)
-    :lvl('effektivitet')>L2?t(`Värmepumpar på lagunvatten värmer husen i varje sestiere, gamla hus renoveras varsamt, och ${pct(d.recycling)} av avfallet sorteras${was(pct(d0.recycling))}.`,
-        `Heat pumps using lagoon water heat the homes in every sestiere, old houses are renovated with care, and ${pct(d.recycling)} of waste is sorted${was(pct(d0.recycling))}.`,
-        `Pompe di calore ad acqua di laguna scaldano le case in ogni sestiere, gli edifici antichi si ristrutturano con cura, e ${il(d.recycling)}${pct(d.recycling)} dei rifiuti viene differenziato${was(pct(d0.recycling))}.`)
-    :lvl('effektivitet')>L1?t('Kommunens bostäder har energirenoverats, men de flesta hus värms fortfarande med gas.',"The municipality's homes have been renovated to save energy, but most houses are still heated with gas.",'Le case comunali sono state riqualificate, ma la maggior parte degli edifici si scalda ancora a gas.')
-    :now?'':t('De flesta hus värms fortfarande med gaspannor.','Most houses are still heated by gas boilers.','La maggior parte delle case si scalda ancora con caldaie a gas.'),
-    t(`Stadens egna utsläpp är ${dec(d.ghg,1)} ton koldioxid per invånare${was(dec(d0.ghg,1))}${now?' – klimatplanen siktar på 72 % lägre till 2030 än 2005, medan kolkraftverket i Fusina ensamt släppte ut 1,65 miljoner ton 2023':''}.`,
-      `The city's own emissions are ${dec(d.ghg,1)} tonnes of carbon dioxide per resident${was(dec(d0.ghg,1))}${now?' – the climate plan aims for 72% lower by 2030 than in 2005, while the coal-fired power station at Fusina alone emitted 1.65 million tonnes in 2023':''}.`,
-      `Le emissioni proprie della città sono di ${dec(d.ghg,1)} tonnellate di anidride carbonica per abitante${was(dec(d0.ghg,1))}${now?' – il piano per il clima punta a ridurle del 72% entro il 2030 rispetto al 2005, mentre la sola centrale a carbone di Fusina ha emesso 1,65 milioni di tonnellate nel 2023':''}.`),
-    t(`Konsumtionens fotavtryck är ${now?'uppskattningsvis ':''}${dec(d.ghgCons,1)} ton per person${was(dec(d0.ghgCons,1))} – 1,5-gradersnivån 2050 är 0,7 ton.`,
-      `The consumption footprint is ${now?'an estimated ':''}${dec(d.ghgCons,1)} tonnes per person${was(dec(d0.ghgCons,1))} – the 1.5-degree level for 2050 is 0.7 tonnes.`,
-      `L'impronta dei consumi è di ${now?'circa ':''}${dec(d.ghgCons,1)} tonnellate a persona${was(dec(d0.ghgCons,1))} – il livello compatibile con 1,5 gradi nel 2050 è di 0,7 tonnellate.`),
-    t(`Besökarnas resor och nätter ger uppskattningsvis ${mn(d.tourismCO2)} ton koldioxid om året${was(mn(d0.tourismCO2))}${ratio>3?' – många gånger mer än invånarnas egna utsläpp':''}.`,
-      `Visitors' journeys and nights cause an estimated ${mn(d.tourismCO2)} tonnes of carbon dioxide a year${was(mn(d0.tourismCO2))}${ratio>3?" – many times more than the residents' own emissions":''}.`,
-      `I viaggi e i pernottamenti dei visitatori producono circa ${mn(d.tourismCO2)} di tonnellate di anidride carbonica l'anno${was(mn(d0.tourismCO2))}${ratio>3?' – molte volte più delle emissioni proprie degli abitanti':''}.`),
+  // 5. Boats and air: the vaporetti, taxis and transport boats, the wakes, the cruise ships and the air at Rio Novo
+  // (research/deep/energi-resor; levers.js kollektivt and hamn).
+  const boat=lvl('kollektivt'),port=lvl('hamn'),be=d.boatElectric,no2=Math.round(d.no2),cruise=int(near(d.cruisePassengers,1000)),cruise0=int(d0.cruisePassengers);
+  // Fewer taxis and transport boats: shared taxis and freight (kollektivt, at any level in the model) and fewer day visitors.
+  const shared=boat>L1,fewerDay=d.dayVisitors<.85*d0.dayVisitors;
+  S.push({title:t('Båtar och luft','Boats and air',"Le barche e l'aria"),text:[
+    now?t('Vattenbussarna och de flesta andra båtar går på diesel – ACTV har en enda hybridvaporetto av 148 båtar – och båtar och fartyg står för 46,7 % av kommunens kväveoxider.',
+        "The vaporetti and most other boats run on diesel – ACTV has a single hybrid vaporetto among 148 boats – and boats and ships produce 46.7% of the municipality's nitrogen oxides.",
+        'I vaporetti e quasi tutte le altre barche vanno a gasolio – ACTV ha un solo vaporetto ibrido su 148 mezzi – e barche e navi producono il 46,7% degli ossidi di azoto del Comune.')
+    :[t(`${pct(be)} av båttrafiken går på el${was(pct(d0.boatElectric))}.`,`${pct(be)} of boat traffic runs on electricity${was(pct(d0.boatElectric))}.`,`${Il(be)} del traffico acqueo va a elettricità${was(pct(d0.boatElectric))}.`),
+      boat>L3?t(`Tysta kanaler: vaporetti och sopbåtar laddar vid bryggorna${be>.9?' – nästan allt på vattnet går på el':''}.`,`Quiet canals: vaporetti and refuse boats charge at the landing stages${be>.9?' – almost everything on the water runs on electricity':''}.`,`Canali silenziosi: vaporetti e barche delle immondizie si ricaricano agli imbarcaderi${be>.9?" – quasi tutto sull'acqua va a elettricità":''}.`)
+      :boat>L2?t('Eldrivna vaporetti och sopbåtar laddar vid bryggorna, och varorna samlastas.','Electric vaporetti and refuse boats charge at the landing stages, and goods are carried together.','Vaporetti e barche delle immondizie elettrici si ricaricano agli imbarcaderi, e le merci viaggiano insieme.')
+      :boat>L1?t('Hybridvaporetti går på Canal Grande, och fartkameror vaktar svallvågorna i alla kanaler.','Hybrid vaporetti run on the Grand Canal, and speed cameras watch for wakes in every canal.','Sul Canal Grande navigano vaporetti ibridi, e in tutti i canali i rilevatori di velocità sorvegliano il moto ondoso.'):'',
+      d.boats<.9?t(`Det går ${pct(1-d.boats)} färre taxi- och transportbåtar på kanalerna än 2026${shared&&fewerDay?', eftersom taxi och transporter delas allt mer och dagsbesökarna är färre':shared?', eftersom taxi och transporter delas allt mer':fewerDay?', eftersom dagsbesökarna är färre':''}.`,
+          `There are ${pct(1-d.boats)} fewer water taxis and transport boats on the canals than in 2026${shared&&fewerDay?', as taxis and deliveries are ever more shared and day visitors are fewer':shared?', as taxis and deliveries are ever more shared':fewerDay?', as day visitors are fewer':''}.`,
+          `Sui canali i taxi e le barche da trasporto sono ${il(1-d.boats)} in meno rispetto al 2026${shared&&fewerDay?', perché taxi e trasporti si condividono sempre di più e i visitatori giornalieri sono meno':shared?', perché taxi e trasporti si condividono sempre di più':fewerDay?', perché i visitatori giornalieri sono meno':''}.`)
+        :d.boats>1.05?t(`Fler dagsbesökare ger ${pct(d.boats-1)} fler taxibåtar på kanalerna än 2026.`,`More day visitors bring ${pct(d.boats-1)} more water taxis on the canals than in 2026.`,`Con più visitatori giornalieri, sui canali i taxi sono ${il(d.boats-1)} in più rispetto al 2026.`):'',
+      boat>L2&&d.boats<.8?t(`Svallvågorna har lagt sig, och kajmurarna${marsh>=1?' och saltängarna':''} nöts mindre av motorbåtarna.`,`The wakes have settled, and the motorboats wear the quay walls${marsh>=1?' and the salt marshes':''} less.`,`Il moto ondoso si è calmato, e i motoscafi consumano meno le rive${marsh>=1?' e le barene':''}.`):''],
+    now?t('Vid kanalen Rio Novo var kvävedioxiden 34 µg/m³ år 2025 – 70 % över EU:s gränsvärde från 2030.','At the Rio Novo canal nitrogen dioxide was 34 µg/m³ in 2025 – 70% above the EU limit from 2030.','Lungo il rio Novo il biossido di azoto era di 34 µg/m³ nel 2025 – il 70% sopra il limite europeo dal 2030.')
+    :t(`Kvävedioxiden vid Rio Novo är ${no2} µg/m³${was(Math.round(d0.no2))}${no2<20?' – under EU:s gränsvärde från 2030, 20':no2===20?' – precis vid EU:s gränsvärde från 2030':' – EU:s gränsvärde från 2030 är 20'}.`,
+        `Nitrogen dioxide at Rio Novo is ${no2} µg/m³${was(Math.round(d0.no2))}${no2<20?' – below the EU limit from 2030, 20':no2===20?' – right at the EU limit from 2030':' – the EU limit from 2030 is 20'}.`,
+        `Il biossido di azoto a rio Novo è di ${no2} µg/m³${was(Math.round(d0.no2))}${no2<20?' – sotto il limite europeo dal 2030, 20':no2===20?' – proprio al limite europeo dal 2030':' – il limite europeo dal 2030 è 20'}.`),
+    now?t('Sedan 1 augusti 2021 får fartyg över 25 000 bruttoton inte gå genom San Marco-bassängen och Giudeccakanalen; kryssningspassagerarna minskade från 1,6 miljoner 2019 till 0,58 miljoner 2025, och fartygen lägger till i Marghera och Fusina.',
+        'Since 1 August 2021 ships over 25,000 gross tonnes may not pass through the San Marco basin and the Giudecca canal; cruise passengers fell from 1.6 million in 2019 to 0.58 million in 2025, and the ships berth at Marghera and Fusina.',
+        'Dal 1° agosto 2021 le navi oltre le 25.000 tonnellate di stazza lorda non possono passare per il bacino di San Marco e il canale della Giudecca; i crocieristi sono scesi da 1,6 milioni nel 2019 a 0,58 milioni nel 2025, e le navi attraccano a Marghera e a Fusina.')
+    :port>L3?t(`Inga stora fartyg går längre in i lagunen – den är till för båtarna, fisket och fåglarna – och de ${cruise} kryssningspassagerare som kommer varje år går i land utanför inloppen (2026: ${cruise0}).`,
+        `No big ships enter the lagoon any more – it is for the boats, the fishing and the birds – and the ${cruise} cruise passengers who come each year land outside the inlets (2026: ${cruise0}).`,
+        `Nessuna grande nave entra più in laguna – è delle barche, della pesca e degli uccelli – e i ${cruise} crocieristi che arrivano ogni anno sbarcano fuori dalle bocche di porto (2026: ${cruise0}).`)
+    :port>L2?t(`Kryssnings- och containerterminalerna ligger utanför inloppen, och kanalen mellan Malamocco och Marghera har grundats upp: ${cruise} kryssningspassagerare om året (2026: ${cruise0}).`,
+        `The cruise and container terminals lie outside the inlets, and the channel between Malamocco and Marghera has been made shallower: ${cruise} cruise passengers a year (2026: ${cruise0}).`,
+        `I terminal delle crociere e dei container sono fuori dalle bocche di porto, e il canale tra Malamocco e Marghera è stato reso meno profondo: ${cruise} crocieristi all'anno (2026: ${cruise0}).`)
+    :port>L1?t(`Bara fartyg som ryms utan ny muddring går in i lagunen, och de tar landström vid kajerna: ${cruise} kryssningspassagerare om året (2026: ${cruise0}).`,
+        `Only ships that fit without new dredging enter the lagoon, and they take shore power at the quays: ${cruise} cruise passengers a year (2026: ${cruise0}).`,
+        `In laguna entrano solo le navi che ci stanno senza nuovi dragaggi, e in banchina si allacciano alla corrente elettrica: ${cruise} crocieristi all'anno (2026: ${cruise0}).`)
+    :t(`Kryssningsfartygen lägger fortfarande till i Marghera och Fusina, genom de djupa kanalerna i lagunen: ${cruise} kryssningspassagerare om året (2026: ${cruise0}).`,
+        `The cruise ships still berth at Marghera and Fusina, through the deep channels in the lagoon: ${cruise} cruise passengers a year (2026: ${cruise0}).`,
+        `Le navi da crociera attraccano ancora a Marghera e a Fusina, attraverso i canali profondi della laguna: ${cruise} crocieristi all'anno (2026: ${cruise0}).`),
+  ].flat().filter(Boolean).join(' ')});
+
+  // 6. Energy where it is allowed: gas heat and heat pumps on lagoon water, the sun only where the heritage allows it
+  // (never panels on the old roofs), the city's own emissions and its visitors' (research/deep/energi-resor,
+  // lagun-natur-mat; levers.js effektivitet and sol).
+  const warm=lvl('effektivitet'),sun=lvl('sol'),ratio=d.tourismCO2/Math.max(1,d.ghg*d.pop);
+  S.push({title:t('Energi där den får finnas','Energy where it is allowed',"L'energia dove è permessa"),text:[
+    now?t('Husen värms mest med gas – 83,5 % av bostädernas energi var naturgas 2005, och ingen nyare räkning finns – men Dogepalatset värms och kyls redan med en värmepump på lagunvatten, utan utedelar på fasaden.',
+        "Homes are heated mostly with gas – 83.5% of homes' energy was natural gas in 2005, and there is no newer count – but the Doge's Palace is already heated and cooled by a heat pump on lagoon water, with no outdoor units on its facade.",
+        "Le case si scaldano soprattutto a gas – nel 2005 l'83,5% dell'energia delle abitazioni era metano, e non esiste un conteggio più recente – ma Palazzo Ducale si scalda e si raffresca già con una pompa di calore ad acqua di laguna, senza unità esterne sulla facciata.")
+    :t(`${warm>L3?`Venedig värms och kyls med lagunens vatten – värmepumparna ${d.gasHeat<.1?'har ersatt gaspannorna i nästan alla hus':'ersätter gaspannorna hus för hus'} –`:warm>L2?'I varje sestiere ersätter värmepumpar på lagunvatten gaspannorna, utan utedelar på fasaderna,':warm>L1?'Kommunens hus och skolor har gått över till värmepumpar och isolerats varsamt,':d.gasHeat>.5?'De flesta hus värms fortfarande med gaspannor,':'Gaspannorna fasas långsamt ut, i EU:s takt,'} och ${pct(d.gasHeat)} av hemmens energi är gas${was(pct(d0.gasHeat))}.`,
+        `${warm>L3?`Venice is heated and cooled with the lagoon's water – heat pumps ${d.gasHeat<.1?'have replaced the gas boilers in almost every house':'are replacing the gas boilers house by house'} –`:warm>L2?'In every sestiere heat pumps on lagoon water are replacing the gas boilers, with no outdoor units on the facades,':warm>L1?"The municipality's buildings and schools have switched to heat pumps and been carefully insulated,":d.gasHeat>.5?'Most houses are still heated by gas boilers,':"The gas boilers are being phased out slowly, at the EU's pace,"} and ${pct(d.gasHeat)} of homes' energy is gas${was(pct(d0.gasHeat))}.`,
+        `${warm>L3?`Venezia si scalda e si raffresca con l'acqua della laguna – le pompe di calore ${d.gasHeat<.1?'hanno sostituito le caldaie a gas in quasi tutte le case':'sostituiscono le caldaie a gas casa per casa'} –`:warm>L2?'In ogni sestiere le pompe di calore ad acqua di laguna sostituiscono le caldaie a gas, senza unità esterne sulle facciate,':warm>L1?'Gli edifici e le scuole del Comune sono passati alle pompe di calore e sono stati isolati con cura,':d.gasHeat>.5?'Quasi tutte le case si scaldano ancora con caldaie a gas,':"Le caldaie a gas escono di scena lentamente, al ritmo dell'UE,"} e ${il(d.gasHeat)} dell'energia delle case è gas${was(pct(d0.gasHeat))}.`),
+    now?t('Solpaneler är förbjudna på hus i den historiska staden byggda före 1945 och tillåts annars bara på plana tak som inte syns från kanal, lagun eller gata; kommunens 59 MW solceller står nästan alla på fastlandet.',
+        "Solar panels are banned on buildings in the historic city built before 1945 and otherwise allowed only on flat roofs that cannot be seen from a canal, the lagoon or a street; nearly all the municipality's 59 MW of solar panels are on the mainland.",
+        'Nella città storica i pannelli solari sono vietati sugli edifici costruiti prima del 1945 e altrimenti ammessi solo sui tetti piani non visibili da canali, laguna o calli; quasi tutti i 59 MW di fotovoltaico del Comune sono in terraferma.')
+    :t(`${sun>L3?'Soltegel som ser ut som coppi ligger på tegeltaken där Soprintendenza tillåter dem – utifrån syns ingen skillnad – och energigemenskaperna delar lagringen':sun>L2?'Energigemenskaper i varje sestiere delar elen från solcellerna på stadens kanter, och de gamla taken är som förr':sun>L1?'Solceller ligger på hamnens tak vid Santa Marta och San Basilio och på garagen vid Tronchetto, i en energigemenskap med familjer som medlemmar, men de gamla taken är som förr':'Solpaneler ligger bara på enstaka plana tak från efter 1945, och de gamla taken är som förr'}: ${dec(d.solarMW,0)} MW sol i och kring den historiska staden${was(dec(d0.solarMW,0)+' MW')} ger ${pct(d.localEnergy)} av den el staden använder.`,
+        `${sun>L3?'Solar tiles that look like coppi lie on the tiled roofs where the Soprintendenza allows them – from outside nobody can tell – and the energy communities share the storage':sun>L2?'Energy communities in every sestiere share the power from the solar panels at the city\'s edges, and the old roofs are as they were':sun>L1?'Solar panels lie on the port\'s roofs at Santa Marta and San Basilio and on the garages at Tronchetto, in an energy community with families as members, but the old roofs are as they were':'Solar panels lie only on the odd flat roof built after 1945, and the old roofs are as they were'}: ${dec(d.solarMW,0)} MW of sun in and around the historic city${was(dec(d0.solarMW,0)+' MW')} provide ${pct(d.localEnergy)} of the electricity the city uses.`,
+        `${sun>L3?'Coppi solari che sembrano quelli antichi stanno sui tetti dove la Soprintendenza li permette – da fuori non si vede la differenza – e le comunità energetiche si dividono gli accumuli':sun>L2?"Comunità energetiche in ogni sestiere si dividono l'elettricità del fotovoltaico ai margini della città, e i tetti antichi sono quelli di sempre":sun>L1?'Ci sono pannelli solari sui tetti del porto a Santa Marta e San Basilio e sulle autorimesse del Tronchetto, in una comunità energetica con le famiglie come socie, ma i tetti antichi sono quelli di sempre':'Ci sono pannelli solari solo su qualche tetto piano costruito dopo il 1945, e i tetti antichi sono quelli di sempre'}: ${dec(d.solarMW,0)} MW di sole dentro e intorno alla città storica${was(dec(d0.solarMW,0)+' MW')} forniscono ${il(d.localEnergy)} dell'elettricità che la città consuma.`),
+    now?t('Stadens egna utsläpp var 3,8 ton koldioxid per invånare 2016, och klimatplanen siktar på 72 % lägre till 2030 än 2005 – medan kolkraftverket i Fusina ensamt släppte ut 1,65 miljoner ton 2023.',
+        "The city's own emissions were 3.8 tonnes of carbon dioxide per resident in 2016, and the climate plan aims for 72% lower by 2030 than in 2005 – while the coal-fired power station at Fusina alone emitted 1.65 million tonnes in 2023.",
+        'Le emissioni proprie della città erano di 3,8 tonnellate di anidride carbonica per abitante nel 2016, e il piano per il clima punta a ridurle del 72% entro il 2030 rispetto al 2005 – mentre la sola centrale a carbone di Fusina ha emesso 1,65 milioni di tonnellate nel 2023.')
+    :t(`Stadens egna utsläpp är ${dec(d.ghg,1)} ton koldioxid per invånare${was(dec(d0.ghg,1))}, och ${pct(d.renewable)} av elen är förnybar${was(pct(d0.renewable))}.`,
+        `The city's own emissions are ${dec(d.ghg,1)} tonnes of carbon dioxide per resident${was(dec(d0.ghg,1))}, and ${pct(d.renewable)} of the electricity is renewable${was(pct(d0.renewable))}.`,
+        `Le emissioni proprie della città sono di ${dec(d.ghg,1)} tonnellate di anidride carbonica per abitante${was(dec(d0.ghg,1))}, e ${il(d.renewable)} dell'elettricità è rinnovabile${was(pct(d0.renewable))}.`),
+    t(`Besökarnas resor och nätter ger uppskattningsvis ${mn(d.tourismCO2)} ton CO₂e om året${was(mn(d0.tourismCO2))}${ratio>3?' – många gånger mer än invånarnas egna utsläpp':''}.`,
+      `Visitors' journeys and nights cause an estimated ${mn(d.tourismCO2)} tonnes of CO₂e a year${was(mn(d0.tourismCO2))}${ratio>3?" – many times more than the residents' own emissions":''}.`,
+      `I viaggi e i pernottamenti dei visitatori producono circa ${mn(d.tourismCO2)} di tonnellate di CO₂e all'anno${was(mn(d0.tourismCO2))}${ratio>3?' – molte volte più delle emissioni proprie degli abitanti':''}.`),
   ].filter(Boolean).join(' ')});
 
-  // Community and democracy: the households of one, the campi, the citizens' assemblies in the Doge's Palace
-  // (research/deep/samhalle-halsa, kommun-plats-historia; places.js; levers.js bilfritt = "Svalka i campi").
-  const hours=Math.round(d.workHours),hours0=Math.round(d0.workHours),campi=lvl('bilfritt'),dem=lvl('demokrati');
-  S.push({title:t('Gemenskap och demokrati','Community and democracy','Comunità e democrazia'),text:[
-    t(`${now?'Uppskattningsvis ':''}${pct(d.lowParticipation)} har lågt socialt deltagande${was(pct(d0.lowParticipation))} och ${pct(d.trust)} litar på andra människor${was(pct(d0.trust))}.`,
-      `${now?'An estimated ':''}${pct(d.lowParticipation)} have low social participation${was(pct(d0.lowParticipation))} and ${pct(d.trust)} trust other people${was(pct(d0.trust))}.`,
-      `${now?`Si stima che ${il(d.lowParticipation)}`:Il(d.lowParticipation)}${pct(d.lowParticipation)} ${now?'abbia':'ha'} una scarsa partecipazione sociale${was(pct(d0.lowParticipation))} e ${now?'che ':''}${il(d.trust)}${pct(d.trust)} si ${now?'fidi':'fida'} degli altri${was(pct(d0.trust))}.`),
-    now?t('Bara 69,5 % av kommunens invånare säger att de har vänner att räkna med, och hälften känner sig otrygga när de går ensamma ute i mörkret.',
-        "Only 69.5% of the municipality's residents say they have friends to count on, and half feel unsafe walking alone after dark.",
-        'Solo il 69,5% degli abitanti del Comune dice di avere amici su cui contare, e la metà non si sente sicura a camminare da sola al buio.')
-    :home>L2?t(`${pct(d.cohousing)} bor i generationshus eller andra bogemenskaper, där unga, familjer och de äldsta delar trapphus, kök och altaner.`,
-        `${pct(d.cohousing)} live in multi-generation houses or other cohousing, where the young, families and the oldest share stairwells, kitchens and roof terraces.`,
-        `${Il(d.cohousing)}${pct(d.cohousing)} vive in case tra generazioni o in altre forme di coabitazione, dove giovani, famiglie e grandi anziani condividono scale, cucine e altane.`)
-    :home>L1?t(`Renoverade hus får gemensamma rum, och ${pct(d.cohousing)} bor i någon form av bogemenskap${was(pct(d0.cohousing))}.`,
-        `Renovated houses get shared rooms, and ${pct(d.cohousing)} live in some form of cohousing${was(pct(d0.cohousing))}.`,
-        `Le case ristrutturate hanno spazi comuni, e ${il(d.cohousing)}${pct(d.cohousing)} vive in qualche forma di coabitazione${was(pct(d0.cohousing))}.`)
-    :t('De flesta bor som 2026, och över hälften av hushållen består av en enda person.','Most people live as they did in 2026, and more than half of households are one person.','Quasi tutti vivono come nel 2026, e più di metà delle famiglie è composta da una sola persona.'),
-    campi>L3?t('Campi är gröna och svala: träd ger skugga, fontänerna ger dricksvatten, och klostrens trädgårdar står öppna för alla.','The campi are green and cool: trees give shade, the fountains give drinking water, and the cloister gardens are open to all.',"I campi sono verdi e freschi: gli alberi fanno ombra, le fontane danno acqua da bere, e i giardini dei chiostri sono aperti a tutti.")
-    :campi>L2?t('Varje sestiere har skuggande träd och gröna gårdar, och på campi äter grannarna vid långbord om kvällarna.','Every sestiere has shade trees and green courtyards, and in the campi neighbours eat at long tables in the evenings.',"Ogni sestiere ha alberi d'ombra e corti verdi, e la sera nei campi i vicini cenano a lunghe tavolate.")
-    :campi>L1?t('De största campi – Santa Maria Formosa, Santo Stefano och San Polo – har fått träd och fontäner.','The largest campi – Santa Maria Formosa, Santo Stefano and San Polo – have trees and fountains.','I campi più grandi – Santa Maria Formosa, Santo Stefano e San Polo – hanno alberi e fontane.')
-    :now?t('Campi är stadens vardagsrum, men de flesta är stenytor utan skugga.',"The campi are the city's living rooms, but most are stone surfaces with no shade.","I campi sono i salotti della città, ma per lo più sono distese di pietra senz'ombra."):'',
-    dem>L3?t('Ett lottat medborgarråd sammanträder i Stora rådssalen i Dogepalatset, och ett barnbarnsombud med vetorätt prövar lagunens långsiktiga frågor mot dem som ännu inte är födda.',
-        "A citizens' assembly chosen by lot meets in the Great Council Hall of the Doge's Palace, and a Grandchildren's Ombudsman with a veto weighs the lagoon's long-term questions against those not yet born.",
-        "Un'assemblea di cittadini sorteggiati si riunisce nella Sala del Maggior Consiglio di Palazzo Ducale, e un garante dei nipoti con diritto di veto valuta le scelte di lungo periodo per la laguna pensando a chi non è ancora nato.")
-    :dem>L2?t('Lottade medborgarråd i varje sestiere ger råd i de stora frågorna, och invånarna bestämmer själva över en del av budgeten.',"Citizens' assemblies chosen by lot in every sestiere advise on the big questions, and residents decide part of the budget themselves.",'Assemblee di cittadini sorteggiati in ogni sestiere danno consigli sulle grandi questioni, e gli abitanti decidono da sé una parte del bilancio.')
-    :dem>L1?t('Kommunen håller medborgardialoger i varje sestiere.',"The municipality holds citizens' dialogues in every sestiere.",'Il Comune organizza dialoghi con i cittadini in ogni sestiere.')
-    :now?t('I kommunvalet 2026 röstade 55,9 %, och den historiska staden röstade på en annan borgmästarkandidat än fastlandet och öarna.',
-        'In the 2026 municipal election turnout was 55.9%, and the historic city voted for a different mayoral candidate from the mainland and the islands.',
-        'Alle comunali del 2026 ha votato il 55,9%, e la città storica ha scelto un candidato sindaco diverso da quello della terraferma e delle isole.'):'',
-    `${t(`Arbetsveckan är ${hours} timmar${hours!==hours0?was(hours0):''}.`,`The working week is ${hours} hours${hours!==hours0?was(hours0):''}.`,`La settimana lavorativa è di ${hours} ore${hours!==hours0?was(hours0):''}.`)}${lvl('arbetstid')>L2?t(' Den frigjorda tiden går till grannarna, campo-köken och tidsbanken.',' The time freed up goes to the neighbours, the campo kitchens and the time bank.',' Il tempo liberato va ai vicini, alle cucine dei campi e alla banca del tempo.'):''}`,
-    now?'':d.lowParticipation>d0.lowParticipation+.02?t('Ensamheten har ökat sedan 2026: fler bor ensamma, och grannarna blir färre.','Loneliness has grown since 2026: more people live alone, and there are fewer neighbours.','La solitudine è cresciuta dal 2026: più persone vivono sole, e i vicini sono sempre meno.')
-      :d.lowParticipation<d0.lowParticipation-.02?t('Ensamheten har minskat sedan 2026.','Loneliness has fallen since 2026.','La solitudine è diminuita dal 2026.'):'',
-  ].filter(Boolean).join(' ')});
-
-  // Health and care in an old city of steps and bridges, and its heat (research/deep/samhalle-halsa, hav-tidvatten,
-  // energi-resor; levers.js forebyggande).
-  const care=lvl('forebyggande');
-  S.push({title:t('Hälsa och omsorg','Health and care','Salute e cura'),text:[
-    now?t(`Kvinnorna i provinsen lever i snitt ${dec(d.lifeExp,1)} år och männen 82,2. Uppskattningsvis ${pct(d.activity)} rör sig tillräckligt och ${pct(d.selfHealth)} anser sig ha god hälsa.`,
-        `Women in the province live ${dec(d.lifeExp,1)} years on average and men 82.2. An estimated ${pct(d.activity)} get enough exercise and ${pct(d.selfHealth)} rate their health as good.`,
-        `Le donne della provincia vivono in media ${dec(d.lifeExp,1)} anni e gli uomini 82,2. Si stima che ${il(d.activity)}${pct(d.activity)} faccia abbastanza movimento e che ${il(d.selfHealth)}${pct(d.selfHealth)} si consideri in buona salute.`)
-    :t(`Kvinnorna lever i snitt ${dec(d.lifeExp,1)} år${was(dec(d0.lifeExp,1))} och männen omkring fyra år kortare. ${pct(d.activity)} rör sig tillräckligt och ${pct(d.selfHealth)} anser sig ha god hälsa.`,
-        `Women live ${dec(d.lifeExp,1)} years on average${was(dec(d0.lifeExp,1))} and men about four years less. ${pct(d.activity)} get enough exercise and ${pct(d.selfHealth)} rate their health as good.`,
-        `Le donne vivono in media ${dec(d.lifeExp,1)} anni${was(dec(d0.lifeExp,1))} e gli uomini circa quattro anni meno. ${Il(d.activity)}${pct(d.activity)} fa abbastanza movimento e ${il(d.selfHealth)}${pct(d.selfHealth)} si considera in buona salute.`),
-    t(`${pct(d.share65)} av invånarna är 65 år eller äldre och ${pct(d.share80)} är 80 eller äldre${now?' – mot 25 % och 8 % i Italien':` (2026: ${pct(d0.share65)} och ${pct(d0.share80)})`}.`,
-      `${pct(d.share65)} of residents are 65 or older and ${pct(d.share80)} are 80 or older${now?' – against 25% and 8% in Italy':` (2026: ${pct(d0.share65)} and ${pct(d0.share80)})`}.`,
-      `${Il(d.share65)}${pct(d.share65)} degli abitanti ha 65 anni o più e ${il(d.share80)}${pct(d.share80)} 80 o più${now?" – contro il 25% e l'8% in Italia":` (2026: ${pct(d0.share65)} e ${pct(d0.share80)})`}.`),
-    care>L3?t('Staden planeras för gång, möten och vila: bänkar i skuggan, ramper vid broarna och vård nära hemmet.','The city is planned for walking, meeting and resting: benches in the shade, ramps at the bridges and care close to home.',"La città è pensata per camminare, incontrarsi e riposare: panchine all'ombra, rampe ai ponti e cure vicino a casa.")
-    :care>L2?t('Varje sestiere har ett hälsotorg, och hemtjänsten kommer med båt.','Every sestiere has a health centre, and home care comes by boat.',"Ogni sestiere ha una casa della salute, e l'assistenza domiciliare arriva in barca.")
-    :care>L1?t('Läkarna skriver ut promenader över broarna, kultur och sällskap på recept.','Doctors prescribe walks over the bridges, culture and company.','I medici prescrivono passeggiate sui ponti, cultura e compagnia.')
-    :now?t('Sjukhuset SS. Giovanni e Paolo i Castello, med omkring 310 vårdplatser, är det enda på öarna, och patienterna kommer dit med ambulansbåt.',
+  // 7. Heat and care for the old: the ages, the hot days and the deaths in the heat, shade on the campi, the bridges
+  // and the care that lets the old stay, the friends to count on (research/deep/samhalle-halsa, hav-tidvatten;
+  // levers.js svalka and forebyggande).
+  const cool=lvl('svalka'),care=lvl('forebyggande'),hd=Math.round(d.hotDays),deaths=Math.round(d.heatDeaths);
+  S.push({title:t('Värmen och omsorgen om de gamla','Heat and care for the old','Il caldo e la cura degli anziani'),text:[
+    now?t('33,1 % av invånarna är 65 år eller äldre och 12,2 % är 80 eller äldre – mot 24,7 % och 7,8 % i Italien – och 1 136 har fyllt 90.',
+        '33.1% of residents are 65 or older and 12.2% are 80 or older – against 24.7% and 7.8% in Italy – and 1,136 have turned 90.',
+        'Il 33,1% degli abitanti ha 65 anni o più e il 12,2% 80 o più – contro il 24,7% e il 7,8% in Italia – e 1136 hanno compiuto 90 anni.')
+    :t(`${pct(d.share65)} av invånarna är 65 år eller äldre och ${pct(d.share80)} är 80 eller äldre (2026: ${pct(d0.share65)} och ${pct(d0.share80)}).`,
+        `${pct(d.share65)} of residents are 65 or older and ${pct(d.share80)} are 80 or older (2026: ${pct(d0.share65)} and ${pct(d0.share80)}).`,
+        `${Il(d.share65)} degli abitanti ha 65 anni o più e ${il(d.share80)} 80 o più (2026: ${pct(d0.share65)} e ${pct(d0.share80)}).`),
+    now?t('Staden har omkring 22 dagar om året över 30 °C – 52 år 2024 – och 67 tropiska nätter, då det aldrig svalnar under 20 °C.',
+        'The city has about 22 days a year above 30 °C – 52 in 2024 – and 67 tropical nights, when it never cools below 20 °C.',
+        "La città ha circa 22 giorni l'anno sopra i 30 °C – 52 nel 2024 – e 67 notti tropicali, in cui non si scende mai sotto i 20 °C.")
+    :t(`Staden har omkring ${hd} dagar om året över 30 °C${was(Math.round(d0.hotDays))}${hd>=30?(cool>L2?' – men skuggiga campi, fontäner och öppna klosterträdgårdar ger svalka':' – och de gamla som bor ensamma under heta tak är mest utsatta'):''}.`,
+        `The city has about ${hd} days a year above 30 °C${was(Math.round(d0.hotDays))}${hd>=30?(cool>L2?' – but shady campi, fountains and open cloister gardens give relief':' – and the old who live alone under hot roofs are the most exposed'):''}.`,
+        `La città ha circa ${hd} giorni l'anno sopra i 30 °C${was(Math.round(d0.hotDays))}${hd>=30?(cool>L2?' – ma campi ombreggiati, fontane e chiostri aperti danno sollievo':' – e gli anziani che vivono soli sotto tetti roventi sono i più esposti'):''}.`),
+    t(`Värmen tar uppskattningsvis ${deaths} liv en vanlig sommar${was(Math.round(d0.heatDeaths))}${now?' – ingen räkning finns för Venedig, men Italien hade flest värmedödsfall i Europa sommaren 2022':''}.`,
+      `The heat takes an estimated ${deaths} lives in an ordinary summer${was(Math.round(d0.heatDeaths))}${now?' – there is no count for Venice, but Italy had the most heat deaths in Europe in the summer of 2022':''}.`,
+      `Il caldo costa circa ${deaths} vite in un'estate normale${was(Math.round(d0.heatDeaths))}${now?" – per Venezia non esiste un conteggio, ma nell'estate del 2022 l'Italia ha avuto più morti per il caldo di ogni altro paese europeo":''}.`),
+    now?t('Campi är stadens vardagsrum, men de flesta är stenytor utan skugga; staden har 155 offentliga fontäner och vattenautomater.',
+        "The campi are the city's living rooms, but most are stone surfaces with no shade; the city has 155 public fountains and water points.",
+        "I campi sono i salotti della città, ma per lo più sono distese di pietra senz'ombra; la città ha 155 fontane pubbliche e casette dell'acqua.")
+    :cool>L1?t(`${cool>L3?'Skugga, vatten och öppna trädgårdar finns i varje sestiere':cool>L2?'Varje sestiere har skugga och svala rum, och klostrens trädgårdar står öppna för grannarna':'De största campi har fått träd och fontäner'}: ${pct(d.shade)} av torgens yta ligger i skugga (2026: uppskattningsvis ${pct(d0.shade)}).`,
+        `${cool>L3?'Every sestiere has shade, water and open gardens':cool>L2?'Every sestiere has shade and cool rooms, and the cloister gardens are open to the neighbours':'The largest campi have trees and fountains'}: ${pct(d.shade)} of the squares lie in shade (2026: an estimated ${pct(d0.shade)}).`,
+        `${cool>L3?'Ogni sestiere ha ombra, acqua e giardini aperti':cool>L2?'Ogni sestiere ha ombra e luoghi freschi, e i giardini dei chiostri sono aperti ai vicini':'I campi più grandi hanno alberi e fontane'}: ${il(d.shade)} della superficie dei campi è in ombra (2026: circa ${pct(d0.shade)}).`):'',
+    now?t('Sjukhuset SS. Giovanni e Paolo i Castello, med omkring 310 vårdplatser, är det enda på öarna, och patienterna kommer dit med ambulansbåt.',
         'The SS. Giovanni e Paolo hospital in Castello, with about 310 beds, is the only one on the islands, and patients arrive by water ambulance.',
-        "L'ospedale Santi Giovanni e Paolo a Castello, con circa 310 posti letto, è l'unico delle isole, e i pazienti ci arrivano in idroambulanza."):'',
-    now?t('95 % av broarna i stadens centrala delar har trappsteg, och med vaporetto når en rullstolsburen omkring 70 % av staden – utan båt 2 %.',
-        '95% of the bridges in the central city have steps, and by vaporetto a wheelchair user can reach about 70% of the city – without a boat, 2%.',
-        'Il 95% dei ponti del centro ha gradini, e in vaporetto chi usa la sedia a rotelle raggiunge circa il 70% della città – senza barca il 2%.')
-    :care>L2?t('Ramper och långa, sluttande trappsteg gör att allt fler broar går att ta sig över med rullstol och barnvagn.','Ramps and long, sloping steps mean ever more bridges can be crossed in a wheelchair or with a pram.','Rampe e gradini agevolati permettono di attraversare sempre più ponti in sedia a rotelle o con il passeggino.'):'',
-    now?'':d.welfare>1.08?t('Omsorgen har mer resurser än 2026, trots att fler är mycket gamla.','Care has more resources than in 2026, even though more people are very old.',"L'assistenza ha più risorse che nel 2026, anche se i grandi anziani sono di più.")
-      :d.welfare<.975?t('Omsorgen har mindre att röra sig med än 2026, samtidigt som fler är mycket gamla.','Care has less room to manoeuvre than in 2026, while more people are very old.',"L'assistenza ha meno margini che nel 2026, mentre i grandi anziani sono di più."):'',
-    now?t('I dag har staden omkring 22 dagar om året över 30 grader och 67 tropiska nätter.','Today the city has about 22 days a year above 30 °C and 67 tropical nights.',"Oggi la città ha circa 22 giorni l'anno sopra i 30 gradi e 67 notti tropicali.")
-    :d.gwl>2.2?t(`Somrarna har blivit hetare, med fler dagar över 30 grader och fler tropiska nätter${campi>L2?' – men skuggiga campi och svala gårdar ger andrum':' – och de äldre som bor ensamma under heta tak är mest utsatta'}.`,
-        `Summers have grown hotter, with more days above 30 °C and more tropical nights${campi>L2?' – but shady campi and cool courtyards give relief':' – and the old who live alone under hot roofs are the most exposed'}.`,
-        `Le estati sono diventate più calde, con più giorni sopra i 30 gradi e più notti tropicali${campi>L2?' – ma campi ombreggiati e corti fresche danno sollievo':' – e gli anziani che vivono soli sotto tetti roventi sono i più esposti'}.`):'',
+        "L'ospedale Santi Giovanni e Paolo a Castello, con circa 310 posti letto, è l'unico delle isole, e i pazienti ci arrivano in idroambulanza.")
+    :care>L2?t('Varje sestiere har ett hälsotorg, hemtjänsten kommer med båt, och grannar tittar in hos de äldsta.','Every sestiere has a health centre, home care comes by boat, and neighbours look in on the oldest.',"Ogni sestiere ha una casa della salute, l'assistenza domiciliare arriva in barca, e i vicini passano a trovare i più anziani.")
+    :care>L1?t('Ramper vid sjukhuset, skolorna och hållplatserna, och hemtjänsten kommer med båt.','There are ramps at the hospital, the schools and the stops, and home care comes by boat.',"Ci sono rampe all'ospedale, alle scuole e agli imbarcaderi, e l'assistenza domiciliare arriva in barca."):'',
+    now?t('95 % av broarna i stadens centrala delar har trappsteg: med vaporetto når en rullstolsburen omkring 70 % av staden, utan båt 2 %.',
+        '95% of the bridges in the central city have steps: by vaporetto a wheelchair user can reach about 70% of the city, without a boat 2%.',
+        'Il 95% dei ponti del centro ha gradini: in vaporetto chi usa la sedia a rotelle raggiunge circa il 70% della città, senza barca il 2%.')
+    :t(`${pct(d.steppedBridges)} av broarna har trappsteg${was(pct(d0.steppedBridges))}${care>L1&&d.steppedBridges<d0.steppedBridges-.02?' – ramper och långa, sluttande trappsteg gör att allt fler går att ta sig över med rullstol och barnvagn':''}.`,
+        `${pct(d.steppedBridges)} of the bridges have steps${was(pct(d0.steppedBridges))}${care>L1&&d.steppedBridges<d0.steppedBridges-.02?' – ramps and long, sloping steps mean ever more of them can be crossed in a wheelchair or with a pram':''}.`,
+        `${Il(d.steppedBridges)} dei ponti ha gradini${was(pct(d0.steppedBridges))}${care>L1&&d.steppedBridges<d0.steppedBridges-.02?' – rampe e gradini agevolati permettono di attraversarne sempre di più in sedia a rotelle o con il passeggino':''}.`),
+    now?t(`Invånarna i provinsen lever i snitt ${dec(d.lifeExp,1)} år – kvinnorna 86,4 och männen 82,2 – och bara 69,5 % av kommunens invånare säger att de har vänner att räkna med, mot 74,4 % i Italien.`,
+        `People in the province live ${dec(d.lifeExp,1)} years on average – women 86.4 and men 82.2 – and only 69.5% of the municipality's residents say they have friends to count on, against 74.4% in Italy.`,
+        `Gli abitanti della provincia vivono in media ${dec(d.lifeExp,1)} anni – le donne 86,4 e gli uomini 82,2 – e solo il 69,5% degli abitanti del Comune dice di avere amici su cui contare, contro il 74,4% in Italia.`)
+    :t(`Medellivslängden är ${dec(d.lifeExp,1)} år${was(dec(d0.lifeExp,1))}, och ${pct(d.friends)} har vänner att räkna med${was(pct(d0.friends))}${d.friends<d0.friends-.02?' – ensamheten har ökat':d.friends>d0.friends+.05?' – grannarna känner varandra igen':''}.`,
+        `Life expectancy is ${dec(d.lifeExp,1)} years${was(dec(d0.lifeExp,1))}, and ${pct(d.friends)} have friends to count on${was(pct(d0.friends))}${d.friends<d0.friends-.02?' – loneliness has grown':d.friends>d0.friends+.05?' – neighbours know each other again':''}.`,
+        `La speranza di vita è di ${dec(d.lifeExp,1)} anni${was(dec(d0.lifeExp,1))}, e ${il(d.friends)} ha amici su cui contare${was(pct(d0.friends))}${d.friends<d0.friends-.02?' – la solitudine è cresciuta':d.friends>d0.friends+.05?' – i vicini si conoscono di nuovo':''}.`),
   ].filter(Boolean).join(' ')});
 
-  // The analogue and the accelerated: screen-free childhood and the squero, AI for the tides, the universities
-  // (places.js; levers.js analog, ai, kunskap).
-  const analog=lvl('analog'),ai=lvl('ai'),know=lvl('kunskap');
-  S.push({title:t('Det analoga och det accelererade','The analogue and the accelerated',"L'analogico e l'accelerato"),text:[
-    analog>L3?t('Barndomen är skärmfri till tolv år: böcker, hantverk och undervisning ute vid lagunen. På gondolvarvet San Trovaso lär sig unga att bygga båtar i trä, och betalningar, journaler och tidvattenvarningar fungerar också utan nät.',
-        'Childhood is screen-free until twelve: books, crafts and lessons outdoors by the lagoon. At the San Trovaso boatyard young people learn to build wooden boats, and payments, medical records and tide warnings also work offline.',
-        "L'infanzia è senza schermi fino a dodici anni: libri, mestieri e lezioni all'aperto in laguna. Allo squero di San Trovaso i giovani imparano a costruire barche di legno, e pagamenti, cartelle cliniche e avvisi di marea funzionano anche senza rete.")
-    :analog>L2?t('Barndomen är skärmfri till tolv år, och på gondolvarvet San Trovaso lär sig unga att bygga båtar i trä; kontanter och papper finns kvar som reserv.',
-        'Childhood is screen-free until twelve, and at the San Trovaso boatyard young people learn to build wooden boats; cash and paper are kept as a backup.',
-        "L'infanzia è senza schermi fino a dodici anni, e allo squero di San Trovaso i giovani imparano a costruire barche di legno; contanti e carta restano come riserva.")
-    :analog>L1?t('Skolan är mobilfri, och böckerna har kommit tillbaka i undervisningen.','School is phone-free, and books are back in the lessons.','La scuola è senza cellulari, e i libri sono tornati nelle lezioni.')
-    :t('Nästan allt är digitalt, också reserven.','Almost everything is digital, even the backup.','Quasi tutto è digitale, anche la riserva.'),
-    now?t('Squero di San Trovaso är ett av de sista varven som fortfarande bygger gondoler.','The Squero di San Trovaso is one of the last boatyards that still build gondolas.','Lo squero di San Trovaso è uno degli ultimi cantieri dove si costruiscono ancora gondole.'):'',
-    t(`${now?'Uppskattningsvis ':''}${pct(d.youthScreen)} av 13–16-åringarna har mer än tre timmars skärmtid om dagen på fritiden${was(pct(d0.youthScreen))}.`,
-      `${now?'An estimated ':''}${pct(d.youthScreen)} of 13–16-year-olds spend more than three hours a day on screens in their free time${was(pct(d0.youthScreen))}.`,
-      `${now?`Si stima che ${il(d.youthScreen)}`:Il(d.youthScreen)}${pct(d.youthScreen)} dei ragazzi tra 13 e 16 anni ${now?'passi':'passa'} più di tre ore al giorno davanti a uno schermo nel tempo libero${was(pct(d0.youthScreen))}.`),
-    ai>L2?(d.aiGovernance>.6?t('Öppen, lokal AI förutser tidvattnet, styr båttrafiken och hjälper vården – med data i invånarnas ägo och människor som fattar besluten.',
-          'Open, local AI forecasts the tides, guides the boat traffic and helps the health services – with data owned by the residents and people making the decisions.',
-          "Un'IA aperta e locale prevede le maree, regola il traffico acqueo e aiuta la sanità – con i dati in mano agli abitanti e le decisioni prese da persone.")
-      :t('AI styr mycket av båttrafiken, vården och barriärerna, men få vet hur besluten fattas, och vinsterna har hamnat hos få.',
-          'AI runs much of the boat traffic, health care and the barriers, but few know how the decisions are made, and the gains have gone to a few.',
-          "L'IA governa gran parte del traffico acqueo, della sanità e delle barriere, ma pochi sanno come si prendono le decisioni, e i vantaggi sono andati a pochi."))
-    :ai>L1?t('AI prövas i vården och i tidvattenprognoserna, med människor som fattar besluten.','AI is being tried out in health care and tide forecasting, with people making the decisions.',"L'IA si sperimenta nella sanità e nelle previsioni di marea, con le decisioni prese da persone.")
-    :t('AI används sparsamt och mest i beprövade verktyg.','AI is used sparingly, mostly in well-tested tools.',"L'IA si usa con parsimonia, soprattutto in strumenti collaudati."),
+  // 8. Voice and knowledge: the vote and the citizens' assemblies, the universities and the crafts beyond tourism,
+  // data and AI for the lagoon (research/deep/kommun-plats-historia, samhalle-halsa, turism-ekonomi; levers.js
+  // demokrati, kunskap and ai).
+  const dem=lvl('demokrati'),know=lvl('kunskap'),ai=lvl('ai'),gov=d.aiGovernance;
+  const govText=gov>.6?t(', med data i invånarnas ägo och människor som fattar besluten',', with data owned by the residents and people making the decisions',', con i dati in mano agli abitanti e le decisioni prese da persone')
+    :gov<.4?t(', men få vet hur systemen fattar sina beslut',', but few know how the systems make their decisions',', ma pochi sanno come i sistemi prendono le loro decisioni'):'';
+  S.push({title:t('Röst och kunskap','Voice and knowledge','Voce e conoscenza'),text:[
+    now?t('I kommunvalet i maj 2026 röstade 55,9 %, mot 62,2 % år 2020, och den historiska staden röstade på en annan borgmästare än fastlandet och öarna.',
+        'In the municipal election of May 2026 turnout was 55.9%, against 62.2% in 2020, and the historic city voted for a different mayor from the mainland and the islands.',
+        'Alle comunali del maggio 2026 ha votato il 55,9%, contro il 62,2% del 2020, e la città storica ha scelto un sindaco diverso da quello della terraferma e delle isole.')
+    :t(`${dem>L3?'Ett lottat medborgarråd sammanträder i Stora rådssalen i Dogepalatset, och ett ombud för lagunens barnbarn har vetorätt i de långsiktiga frågorna. ':dem>L2?'Lottade medborgarråd i varje sestiere ger råd i de stora frågorna, och invånarna bestämmer själva över en del av budgeten. ':dem>L1?'Kommunen håller medborgardialoger i varje sestiere. ':''}I kommunvalet röstar ${pct(d.turnout)}${was(pct(d0.turnout))}.`,
+        `${dem>L3?"A citizens' assembly chosen by lot meets in the Hall of the Great Council in the Doge's Palace, and an ombudsperson for the lagoon's grandchildren has a veto on the long-term questions. ":dem>L2?"Citizens' assemblies chosen by lot in every sestiere advise on the big questions, and residents decide part of the budget themselves. ":dem>L1?"The municipality holds citizens' dialogues in every sestiere. ":''}Turnout in the municipal election is ${pct(d.turnout)}${was(pct(d0.turnout))}.`,
+        `${dem>L3?"Un'assemblea di cittadini sorteggiati si riunisce nella Sala del Maggior Consiglio di Palazzo Ducale, e un garante dei nipoti della laguna ha diritto di veto sulle scelte di lungo periodo. ":dem>L2?'Assemblee di cittadini sorteggiati in ogni sestiere danno consigli sulle grandi questioni, e gli abitanti decidono da sé una parte del bilancio. ':dem>L1?'Il Comune organizza dialoghi con i cittadini in ogni sestiere. ':''}Alle comunali vota ${il(d.turnout)}${was(pct(d0.turnout))}.`),
+    now?t('En tredjedel av ledamöterna i kommunfullmäktige är kvinnor, och bara hälften av invånarna känner sig trygga när de går ensamma ute i mörkret.',
+        "A third of the city council's members are women, and only half of the residents feel safe walking alone after dark.",
+        'Un terzo dei consiglieri comunali sono donne, e solo metà degli abitanti si sente sicura a camminare da sola al buio.')
+    :t(`${pct(d.womenCouncil)} av ledamöterna i kommunfullmäktige är kvinnor${was(pct(d0.womenCouncil))}, och ${pct(d.safe)} känner sig trygga när de går ensamma ute i mörkret${was(pct(d0.safe))}.`,
+        `${pct(d.womenCouncil)} of the city council's members are women${was(pct(d0.womenCouncil))}, and ${pct(d.safe)} feel safe walking alone after dark${was(pct(d0.safe))}.`,
+        `${Il(d.womenCouncil)} dei consiglieri comunali sono donne${was(pct(d0.womenCouncil))}, e ${il(d.safe)} si sente sicuro a camminare da solo al buio${was(pct(d0.safe))}.`),
+    now?t("Omkring 24 000 studerar vid Ca' Foscari och IUAV, men få är folkbokförda här och studentbäddarna är 1 000; nästan vart femte jobb i kommunen finns i hotell och restauranger, och Squero di San Trovaso är ett av de sista varven som fortfarande bygger gondoler.",
+        "About 24,000 study at Ca' Foscari and IUAV, but few are registered residents and there are 1,000 student beds; nearly one job in five in the municipality is in hotels and restaurants, and the Squero di San Trovaso is one of the last boatyards that still build gondolas.",
+        "Circa 24.000 studenti frequentano Ca' Foscari e lo Iuav, ma pochi sono residenti e i posti letto per studenti sono 1000; quasi un posto di lavoro su cinque nel Comune è in alberghi e ristoranti, e lo squero di San Trovaso è uno degli ultimi cantieri dove si costruiscono ancora gondole.")
+    :[know>L1?t(`${know>L3&&d.tourismJobs<.12?'Venedig är en stad av kunskap och hantverk, lika stark som turismen':know>L2?'Lagunen och kulturarvet är ett levande labb: forskare, restauratörer och hantverkare arbetar i Arsenalen, och på gondolvarvet San Trovaso lär sig unga bygga båtar i trä':'Studentbostäder och ett forskningscentrum gör att fler av dem som utbildas här kan stanna'}.`,
+          `${know>L3&&d.tourismJobs<.12?'Venice is a city of knowledge and craft, as strong as its tourism':know>L2?'The lagoon and the heritage are a living lab: researchers, restorers and craftspeople work in the Arsenale, and at the San Trovaso boatyard young people learn to build wooden boats':'Student housing and a research centre mean more of those who study here can stay'}.`,
+          `${know>L3&&d.tourismJobs<.12?'Venezia è una città di sapere e di mestieri, forte quanto il turismo':know>L2?"La laguna e il patrimonio sono un laboratorio vivente: ricercatori, restauratori e artigiani lavorano all'Arsenale, e allo squero di San Trovaso i giovani imparano a costruire barche di legno":'Residenze per studenti e un centro di ricerca permettono a più di chi studia qui di restare'}.`):'',
+      t(`Ca' Foscari och IUAV har ${int(near(d.students,100))} studenter och staden ${int(near(d.studentBeds,10))} studentbäddar (2026: ${int(d0.students)} och ${int(d0.studentBeds)}), och ${pct1(d.tourismJobs)} av jobben i kommunen finns i hotell och restauranger${was(pct1(d0.tourismJobs))}.`,
+        `Ca' Foscari and IUAV have ${int(near(d.students,100))} students and the city ${int(near(d.studentBeds,10))} student beds (2026: ${int(d0.students)} and ${int(d0.studentBeds)}), and ${pct1(d.tourismJobs)} of the jobs in the municipality are in hotels and restaurants${was(pct1(d0.tourismJobs))}.`,
+        `Ca' Foscari e lo Iuav hanno ${int(near(d.students,100))} studenti e la città ${int(near(d.studentBeds,10))} posti letto per studenti (2026: ${int(d0.students)} e ${int(d0.studentBeds)}), e ${artOf(pct1(d.tourismJobs))}${pct1(d.tourismJobs)} dei posti di lavoro del Comune è in alberghi e ristoranti${was(pct1(d0.tourismJobs))}.`)],
     now?t('När tidvattnet stiger varnar högtalare i klocktornen: en ton för 110 cm, två för 120, tre för 130 och fyra för 140.',
         'When the tide rises, loudspeakers in the bell towers give warning: one tone for 110 cm, two for 120, three for 130 and four for 140.',
-        "Quando la marea sale, gli altoparlanti sui campanili danno l'allarme: un suono per 110 cm, due per 120, tre per 130 e quattro per 140."):'',
-    know>L3?t("Varje skola forskar på lagunen tillsammans med Ca' Foscari och IUAV, och lärandet fortsätter livet ut.","Every school does research on the lagoon with Ca' Foscari and IUAV, and learning continues for life.","Ogni scuola fa ricerca sulla laguna con Ca' Foscari e lo Iuav, e si impara per tutta la vita.")
-    :know>L2?t(`Lagunen är ett levande labb: i klostret på San Giorgio Maggiore mäter forskare och skolklasser sedimentet, havet och ${d.saltMarsh>=1?'saltängarna':'strömmarna'} tillsammans.`,
-        `The lagoon is a living lab: in the monastery on San Giorgio Maggiore, researchers and school classes measure the sediment, the sea and the ${d.saltMarsh>=1?'salt marshes':'currents'} together.`,
-        `La laguna è un laboratorio vivente: nel monastero di San Giorgio Maggiore ricercatori e classi misurano insieme i sedimenti, il mare e ${d.saltMarsh>=1?'le barene':'le correnti'}.`)
-    :know>L1?t("Studentbostäder i tomma hus gör att fler av studenterna vid Ca' Foscari och IUAV bor kvar i staden.","Student housing in empty buildings means more of the students at Ca' Foscari and IUAV live in the city.","Gli alloggi per studenti ricavati in edifici vuoti fanno sì che più studenti di Ca' Foscari e dello Iuav vivano in città.")
-    :now?t("Omkring 24 000 studerar vid Ca' Foscari och IUAV, men få är folkbokförda här, och två av tre som hyr ett rum bor trångt.","About 24,000 study at Ca' Foscari and IUAV, but few are registered residents, and two in three who rent a room live in cramped conditions.","Circa 24.000 studenti frequentano Ca' Foscari e lo Iuav, ma pochi sono residenti, e due su tre di quelli che affittano una stanza vivono stretti.")
-    :t("Studenterna vid Ca' Foscari och IUAV bor trångt och sällan länge, och fler unga akademiker flyttar från provinsen än till den.","The students at Ca' Foscari and IUAV live in cramped rooms and seldom for long, and more young graduates leave the province than move to it.","Gli studenti di Ca' Foscari e dello Iuav vivono stretti e per poco tempo, e i giovani laureati che lasciano la provincia sono più di quelli che arrivano."),
-  ].filter(Boolean).join(' ')});
+        "Quando la marea sale, gli altoparlanti sui campanili danno l'allarme: un suono per 110 cm, due per 120, tre per 130 e quattro per 140.")
+    :ai>L3?t(`En digital tvilling av lagunen förutser tidvattnet, besökarna och båttrafiken${gov>.6?' – i invånarnas ägo och öppet granskad':govText}.`,
+        `A digital twin of the lagoon forecasts the tides, the visitors and the boat traffic${gov>.6?' – owned by the residents and open to scrutiny':govText}.`,
+        `Un gemello digitale della laguna prevede le maree, i visitatori e il traffico acqueo${gov>.6?' – di proprietà degli abitanti e aperto al controllo pubblico':govText}.`)
+    :ai>L2?t(`AI i stadens tjänst ger skarpare tidvattenprognoser, så att MOSE reses först när det behövs, och hjälper bokningen, båttrafiken och vården på distans${govText}.`,
+        `AI in the city's service gives sharper tide forecasts, so that MOSE rises only when it must, and helps the booking, the boat traffic and care at a distance${govText}.`,
+        `L'IA al servizio della città dà previsioni di marea più precise, così che il MOSE si alzi solo quando serve, e aiuta le prenotazioni, il traffico acqueo e la cura a distanza${govText}.`)
+    :ai>L1?t('Tidvattnet, besökarna och båttrafiken finns som öppna data i realtid för alla.','The tides, the visitors and the boat traffic are open data, in real time, for everyone.','Maree, visitatori e traffico acqueo sono dati aperti, in tempo reale, per tutti.')
+    :d.aiCapacity>.3&&gov<.4?t('AI har kommit in i stadens tjänster, men utan öppen insyn i hur den används.',"AI has found its way into the city's services, but with no open view of how it is used.",'L\'IA è entrata nei servizi della città, ma senza che si possa vedere come viene usata.'):'',
+  ].flat().filter(Boolean).join(' ')});
   return S;
 }

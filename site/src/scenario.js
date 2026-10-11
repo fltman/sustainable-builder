@@ -1,4 +1,4 @@
-import { LEVERS } from './data/levers.js';
+import { LEVERS, LINK_ORDER as PLACE_LINK_ORDER } from './data/levers.js';
 import { LANG, L } from './i18n.js';
 import { VISIONS } from '@city/presets.js';
 import { simulate, ensemble, defaultPolicy, START, END } from './model.js';
@@ -53,10 +53,11 @@ export function decodePlan(text){
 // bits), then for each step its year after 2026 (7 bits), which levers it sets (one bit per lever in
 // LINK_ORDER) and their levels (2 bits each). LINK_ORDER only ever grows; the leading "1" of the code
 // says how many levers it counts, so links made before a lever was added keep working.
-const LINK_ORDER=['stadsodling','regionalt','kost','hav','sol','vind','effektivitet','bilfritt','kollektivt','forbindelser','bogemenskap','demokrati','arbetstid','forebyggande','ai','analog','kunskap','beredskap','anpassning'];
+// The place's own order (Kalmar's, for the links already shared; a new place: its levers as defined).
+const LINK_ORDER=PLACE_LINK_ORDER;
 // A place's own levers (Venice's visitor lever) come after the engine's, in codes that begin with "2".
 const LINK_EXTRA=LEVERS.map(l=>l.id).filter(id=>!LINK_ORDER.includes(id)),LINK_FULL=[...LINK_ORDER,...LINK_EXTRA];
-const LINK_LEVERS={1:19,2:LINK_FULL.length};
+const LINK_LEVERS={1:LINK_ORDER.length,2:LINK_FULL.length};
 const WORLD_IDS=['ssp126','ssp245','ssp585'];
 const B62='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 const toB62=bits=>{let n=BigInt('0b'+bits),s='';while(n>0n){s=B62[Number(n%62n)]+s;n/=62n;}return s;};

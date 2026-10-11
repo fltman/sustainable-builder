@@ -18,3 +18,19 @@ export const thoughts={
   library:['Mobilen ligger kvar i hallen.','Lånade en bok om fågelsång.','Schackklubben träffas ikväll.'],
   care:['Mormor berättade om när bilarna fyllde Storgatan.','Vi bakar med de äldre på torsdagar.','Generationshuset är som en stor familj.'],
 };
+
+// What the 19–22-year-olds do: study – or, once the shorter working week comes with a year of civic service
+// (Kalmar's arbetstid at its radical level), that year.
+export const youth=I=>(I.arbetstid||0)>.8?'gör sitt år av medborgartjänst':null;
+
+// What people think of Kalmar's own changes as they pass them (residents.js asks; null: their usual thoughts).
+export function situational(p,id,year,{ctx,vision,hash}){
+  let t=null;   // the last that applies wins, as in the residents' own thoughts
+  if(id==='quay'&&(ctx.bloom??0)>.4)t='Algblomning igen… ingen badar idag.';
+  if(p.walking&&(vision.cars??1)>.6&&hash(p.id+year)<.3)t='Bilarna på gatan bullrar så.';
+  if(p.walking&&(vision.depave??0)>.6&&hash(p.id+year*1.3)<.25)t=['Körsbären på Storgatan är mogna!','Det doftar lind hela vägen hem.','Svårt att tro att det var asfalt här en gång.'][Math.floor(hash(p.id*1.1+year)*3)];
+  if(id==='work'&&(ctx.I?.ai??0)>.6&&hash(p.id+year*.7)<.3)t=(ctx.I?.demokrati??0)>.5?'AI:n föreslog, men det är vi som bestämmer.':'Jag förstår inte längre hur systemet fattar sina beslut.';
+  if(id==='home'&&(ctx.I?.analog??0)>.6&&hash(p.id*2+year)<.3)t='Telefonen ligger i lådan. Vi spelar kort ikväll.';
+  if(id==='quay'&&(vision.wind??0)>.4&&hash(p.id*3+year)<.3)t='Vindsnurrorna ute i sundet snurrar fint idag – det är våra.';
+  return t;
+}

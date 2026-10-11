@@ -1,6 +1,7 @@
 import { LANG, L } from '../i18n.js';
+import * as PLACE_MODEL from '@city/model.js';
 // The 17 global goals (Swedish short names as used by Globala målen / Svenska FN-förbundet) with their
-// official colours, and which model indicators each score in model.js is built from.
+// official colours; each goal's measures are the place's own (below).
 export const SDGS=[
   {n:1,name:'Ingen fattigdom',color:'#E5243B',ind:['childPoverty','gini']},
   {n:2,name:'Ingen hunger',color:'#DDA63A',ind:['foodRegional','regen','foodStockDays']},
@@ -25,4 +26,6 @@ export const DOUGHNUT={
   ecological:[['climate','Klimatförändringar'],['acidification','Havsförsurning'],['chemical','Kemiska föroreningar'],['nutrients','Kväve & fosfor'],['freshwater','Sötvattenuttag'],['land','Markomvandling'],['biodiversity','Förlust av biologisk mångfald'],['air','Luftföroreningar'],['ozone','Ozonnedbrytning']],
 };
 
+// Which of the place's own measures each goal is built from: its SDG_PARTS (@city/model.js), not a fixed list.
+for(const g of SDGS){const own=(PLACE_MODEL.SDG_PARTS?.[g.n]||[]).filter(p=>Array.isArray(p)&&typeof p[0]==='string').map(p=>p[0]);g.ind=own;}
 if(LANG!=='sv'){for(const g of SDGS)g.name=L(g.name);for(const k of ['social','ecological'])for(const d of DOUGHNUT[k])d[1]=L(d[1]);}
