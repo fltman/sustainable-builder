@@ -69,6 +69,7 @@ export const CITY={
   // No film yet (the film tools make one: film/…).
   film:null,
   // Who the starting point comes from, for About.
+  printSources:{sv:'SCB, Kolada, SMHI och Rättviks kommun',en:'Statistics Sweden, Kolada, SMHI, Rättvik Municipality',it:"l'istituto statistico svedese (SCB), Kolada, SMHI e il Comune di Rättvik"},
   sources:{sv:'SCB, Kolada, SMHI, Folkhälsomyndigheten, Region Dalarna, Länsstyrelsen Dalarna, Jordbruksverket, Trafikverket, Valmyndigheten, Rättviks kommun och Lantmäteriet',
     en:'Statistics Sweden, Kolada, SMHI, the Public Health Agency, Region Dalarna, the County Administrative Board of Dalarna, the Board of Agriculture, the Transport Administration, the Election Authority, Rättvik Municipality and Lantmäteriet'},
 };

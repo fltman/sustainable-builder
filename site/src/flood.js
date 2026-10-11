@@ -12,7 +12,9 @@ import { STREETS_FLOOD } from './model.js';
 // of the elevation data, so harbour and streets meet at one waterline.
 // The place's water (CITY.water): its everyday level (m RH 2000) and the model's water surface y; the
 // 3D ground (y = 0) stands for the level 1.2–1.5 m above it (Kalmar: MEAN_SEA .14, GROUND_3D 1.5).
-export const MEAN_SEA=CITY.water.level,GROUND_3D=CITY.water.level-CITY.water.y,SEA_CAP=GROUND_3D-.22;
+// SEA_CAP: how far the model's water surface may rise – to 8 cm under the 3D ground (y = 0), wherever the
+// place's everyday level lies (Kalmar 1.28 m; Venice 1.12 m, not above its streets; Rättvik's lake likewise).
+export const MEAN_SEA=CITY.water.level,GROUND_3D=CITY.water.level-CITY.water.y,SEA_CAP=-CITY.water.y-.08;
 
 export async function createFlood(scene){
   let meta=null,tex=null;

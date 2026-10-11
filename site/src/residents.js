@@ -46,7 +46,7 @@ function jobForSv(p,age,year,I={}){
   const total=pool.reduce((s,[,w])=>s+w,0);let r=hash(p.id*7.7+Math.floor(year/10)*3.1)*total;
   for(const [j,w] of pool){if((r-=w)<=0)return j;}return pool[0][0];
 }
-if(LANG==='en'){for(const n of NEEDS)n.name=L(n.name);for(const a of Object.values(ACTIVITIES))a.name=L(a.name);}
+if(LANG!=='sv'){for(const n of NEEDS)n.name=L(n.name);for(const a of Object.values(ACTIVITIES))a.name=L(a.name);}
 // The place's age mix in 2026 (its starting values: SCB via Kolada in Sweden).
 const BASE_MIX={young:BASE.share0_19,old:BASE.share65,old80:BASE.share80};
 // The age at place u (0–1) in an age mix, spread evenly within each band; the under-20s keep 2026's share.

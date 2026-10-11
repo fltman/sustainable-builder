@@ -25,4 +25,4 @@ export const DOUGHNUT={
   ecological:[['climate','Klimatförändringar'],['acidification','Havsförsurning'],['chemical','Kemiska föroreningar'],['nutrients','Kväve & fosfor'],['freshwater','Sötvattenuttag'],['land','Markomvandling'],['biodiversity','Förlust av biologisk mångfald'],['air','Luftföroreningar'],['ozone','Ozonnedbrytning']],
 };
 
-if(LANG==='en'){for(const g of SDGS)g.name=L(g.name);for(const k of ['social','ecological'])for(const d of DOUGHNUT[k])d[1]=L(d[1]);}
+if(LANG!=='sv'){for(const g of SDGS)g.name=L(g.name);for(const k of ['social','ecological'])for(const d of DOUGHNUT[k])d[1]=L(d[1]);}

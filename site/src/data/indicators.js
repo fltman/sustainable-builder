@@ -1,19 +1,19 @@
-import { LANG, L } from '../i18n.js';
+import { LANG, L, LOCALE, t, dec } from '../i18n.js';
 import { INDICATORS as PLACE, KEY_FIGURES as PLACE_FIGURES } from '@city/indicators.js';
 // Display metadata for model indicators, the same for every place. A place adds its own names and notes,
 // `base` – the record in its research/baseline.json the 2026 value comes from (its source is shown in
 // the interface) – and the measures only it has (@city/indicators.js). `assumption` marks indicators
 // that are model constructs rather than measured statistics.
 // Number formats follow the interface language (decimal comma and "42 %" in Swedish).
-const pct=v=>LANG==='en'?`${Math.round(v*100)}%`:`${Math.round(v*100)} %`,pct1=v=>LANG==='en'?`${(v*100).toFixed(1)}%`:`${(v*100).toFixed(1).replace('.',',')} %`;
-const num=(d=0)=>v=>v.toLocaleString(LANG==='en'?'en-GB':'sv-SE',{maximumFractionDigits:d,minimumFractionDigits:d});
+const pct=v=>LANG==='sv'?`${Math.round(v*100)} %`:`${Math.round(v*100)}%`,pct1=v=>`${dec(v*100,1)}${LANG==='sv'?' %':'%'}`;
+const num=(d=0)=>v=>v.toLocaleString(LOCALE,{maximumFractionDigits:d,minimumFractionDigits:d});
 const GENERIC={
   pop:{name:'Befolkning',unit:'invånare',fmt:v=>num(0)(v>=1e5?Math.round(v/1000)*1000:Math.round(v/100)*100),better:0,theme:'gemenskap'},
   ghg:{name:'Utsläpp inom kommunen',unit:'ton CO₂e per invånare',fmt:num(2),better:-1,theme:'energi'},
   ghgCons:{name:'Konsumtionens utsläpp',unit:'ton CO₂e per person',fmt:num(1),better:-1,theme:'energi'},
   foodRegional:{name:'Mat från länet',unit:'av det vi äter',fmt:pct,better:1,assumption:true,theme:'mat'},
   cityVeg:{name:'Grönsaker odlade i staden',unit:'av frukt och grönt',fmt:pct,better:1,assumption:true,theme:'mat'},
-  localEnergy:{name:'Lokal elproduktion',unit:'av elanvändningen',fmt:v=>v>1.5?(LANG==='en'?`${v.toFixed(1)} × demand`:`${v.toFixed(1).replace('.',',')} × behovet`):v>1?`${Math.round(v*100)} %`:pct(v),better:1,theme:'energi'},
+  localEnergy:{name:'Lokal elproduktion',unit:'av elanvändningen',fmt:v=>v>1.5?t(`${dec(v,1)} × behovet`,`${dec(v,1)} × demand`,`${dec(v,1)} × il fabbisogno`):v>1?`${Math.round(v*100)} %`:pct(v),better:1,theme:'energi'},
   carShare:{name:'Resor med bil',unit:'av alla resor',fmt:pct,better:-1,theme:'stad'},
   greenShare:{name:'Grön mark i stadskärnan',unit:'genomsläpplig yta',fmt:pct,better:1,theme:'stad'},
   boatElectric:{name:'Eldriven sjötrafik',unit:'av båttrafiken',fmt:pct,better:1,assumption:true,theme:'stad'},
@@ -25,7 +25,7 @@ const GENERIC={
   youthScreen:{name:'Unga med mer än 3 timmars skärmtid',unit:'per dag (fritid)',fmt:pct,better:-1,theme:'teknik'},
   waters:{name:'Vattnets hälsa',unit:'index, 1 = god status',fmt:num(2),better:1,assumption:true,theme:'mat'},
   water:{name:'Vattensäkerhet',unit:'index 0–1',fmt:num(2),better:1,assumption:true,theme:'resiliens'},
-  seaRise:{name:'Högvattnet jämfört med 2026',unit:'meter (efter landhöjning)',fmt:v=>`+${LANG==='en'?v.toFixed(2):v.toFixed(2).replace('.',',')} m`,better:-1,theme:'resiliens'},
+  seaRise:{name:'Högvattnet jämfört med 2026',unit:'meter (efter landhöjning)',fmt:v=>`+${dec(v,2)} m`,better:-1,theme:'resiliens'},
   floodRisk:{name:'Översvämningsrisk i centrum',unit:'index 0–1',fmt:num(2),better:-1,assumption:true,theme:'resiliens'},
   floodShare:{name:'Centrum under vatten vid ett 100-årshögvatten',unit:'av centrum',fmt:pct,better:-1,theme:'resiliens'},
   foodStockDays:{name:'Matlager i kommunen',unit:'dagar',fmt:num(0),better:1,assumption:true,theme:'resiliens'},
@@ -62,4 +62,4 @@ for(const k of new Set([...Object.keys(GENERIC),...Object.keys(PLACE)]))INDICATO
 // The key-figure board, in reading order (the place's own, or these).
 export const KEY_FIGURES=PLACE_FIGURES||['pop','lifeExp','ghgCons','foodRegional','localEnergy','carShare','lowParticipation','trust','waters','waterMargin','homePrepared','analogResilience','workHours','cohousing','heritage'];
 
-if(LANG==='en')for(const m of Object.values(INDICATORS)){m.name=L(m.name);m.unit=L(m.unit);if(m.note)m.note=L(m.note);}
+if(LANG!=='sv')for(const m of Object.values(INDICATORS)){m.name=L(m.name);m.unit=L(m.unit);if(m.note)m.note=L(m.note);}

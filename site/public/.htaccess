@@ -1,0 +1,23 @@
+# Apache (a LAMP host): the file types a server may not know, compression and caching for the site.
+# Every directive is optional; a host that ignores .htaccess serves the site all the same.
+AddType model/gltf-binary .glb
+AddType text/vtt .vtt
+AddType application/octet-stream .bin
+AddType application/json .json
+AddType image/svg+xml .svg
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json image/svg+xml text/vtt application/octet-stream
+</IfModule>
+
+# Scripts and styles carry a hash in their names, so they never change; the city's files and the page may.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 day"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "^.*-[A-Za-z0-9_-]{8,}\.(js|css)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

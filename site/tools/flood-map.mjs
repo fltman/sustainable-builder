@@ -1,5 +1,6 @@
 // The flood map the 3D view draws from, for a place built by the pipeline (its terrain.json: a ground
-// model in the place's own plane, heights in m RH 2000): for every cell, the ground height and the level
+// model in the place's own plane, heights in m RH 2000 in Sweden, else in terrain.json's datum – ZMPS in
+// Venice): for every cell, the ground height and the level
 // at which the main water first reaches it (over the lowest connecting ground: a priority flood from the
 // open water, so a hollow behind a bank stays dry until the bank is overtopped), plus whether the cell
 // is in the core (inside a flood wall when one is built). Written to the pack as terrain/flood.png:
@@ -20,6 +21,8 @@ const cj=JSON.parse(readFileSync(join(city,'city.json'),'utf8'));
 const map=JSON.parse(readFileSync(join(pack,'map.json'),'utf8'));
 if(src.frame!=='local')throw new Error('terrain.json is not in the place\'s own plane (rebuild with the current pipeline)');
 const lake=cj.terrain?.lake;if(lake==null)throw new Error('city.json has no main water level (terrain.lake): the place has no water to flood from');
+// The height system: the place's own (terrain.json datum, e.g. ZMPS in Venice), else Sweden's.
+const DATUM=src.datum||'RH 2000';
 const n=src.n,step=src.step,N=n*n;
 // Game frame: x east, z south (pipeline y north). Row r of the map is pipeline row n-1-r.
 const x0=src.x0,z0=-(src.y0+(n-1)*step)-step/2,X0=x0-step/2;
@@ -37,10 +40,14 @@ while(size){const c=pop();if(done[c])continue;done[c]=1;const x=c%n,y=(c-x)/n;
   for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){const nx=x+dx,ny=y+dy;if(nx<0||ny<0||nx>=n||ny>=n)continue;const k=ny*n+nx;
     if(done[k])continue;const s=Math.max(height[k],spill[c]);if(s<spill[k]){spill[k]=s;if(size>=heap.length)throw new Error('heap');push(k);}}}
 
-// The core: the model's land (map.json land, or its largest land area) within the play area.
+// The core: the model's land (map.json land, or its largest land area) within the play area – or all of
+// its land where no one island holds half of it (a city of islands, like Venice).
 const area=p=>{let a=0;for(let i=0;i<p.length;i++){const q=p[(i+1)%p.length];a+=p[i][0]*q[1]-q[0]*p[i][1];}return Math.abs(a/2);};
-const poly=map.land?.[0]||(map.areas||[]).filter(a=>a.k==='land').map(a=>a.p[0]).sort((a,b)=>area(b)-area(a))[0];
-const inside=(px,pz)=>{if(!poly)return true;let c=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const [xi,zi]=poly[i],[xj,zj]=poly[j];if((zi>pz)!==(zj>pz)&&px<(xj-xi)*(pz-zi)/(zj-zi)+xi)c=!c;}return c;};
+const lands=map.land?.length?map.land.slice(0,1):(map.areas||[]).filter(a=>a.k==='land').map(a=>a.p[0]).sort((a,b)=>area(b)-area(a));
+const total=lands.reduce((s,p)=>s+area(p),0),polys=lands.length&&area(lands[0])<total/2?lands:lands.slice(0,1);
+const within=(poly,px,pz)=>{let c=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const [xi,zi]=poly[i],[xj,zj]=poly[j];if((zi>pz)!==(zj>pz)&&px<(xj-xi)*(pz-zi)/(zj-zi)+xi)c=!c;}return c;};
+const boxes=polys.map(p=>[Math.min(...p.map(q=>q[0])),Math.min(...p.map(q=>q[1])),Math.max(...p.map(q=>q[0])),Math.max(...p.map(q=>q[1]))]);
+const inside=(px,pz)=>!polys.length||polys.some((p,k)=>{const b=boxes[k];return px>=b[0]&&px<=b[2]&&pz>=b[1]&&pz<=b[3]&&within(p,px,pz);});
 const [bx0,bz0,bx1,bz1]=map.bounds||[-Infinity,-Infinity,Infinity,Infinity];
 const px=Buffer.alloc(N*3),q=v=>Math.max(0,Math.min(255,Math.round((v-base)*40)));
 const core=[];
@@ -50,9 +57,13 @@ for(let r=0;r<n;r++)for(let c=0;c<n;c++){const i=r*n+c,x=x0+c*step,z=z0+step/2+r
   if(on)core.push(spill[i]);}
 // Streets: where they begin to flood (the level that wets 1 % of their length).
 const roadLevels=[];
-// Streets that carry cars (planning.js CAR_KINDS), not shore paths and footways.
+// Streets that carry cars (planning.js CAR_KINDS), not shore paths and footways – or, in a city
+// without car streets (Venice), its alleys and squares.
 const CAR=new Set(['primary','secondary','tertiary','residential','unclassified','living_street','service','trunk']);
-for(const road of (map.roads||[]).filter(r=>CAR.has(r.kind)&&r.w>=3.5))for(let k=1;k<road.p.length;k++){const [ax,az]=road.p[k-1],[cx,cz]=road.p[k],len=Math.hypot(cx-ax,cz-az);
+const WALK=new Set(['pedestrian','footway','path','living_street','residential','service','unclassified']);
+const carStreets=(map.roads||[]).filter(r=>CAR.has(r.kind)&&r.w>=3.5);
+const streetsKind=carStreets.length?'streets':'walkways';
+for(const road of carStreets.length?carStreets:(map.roads||[]).filter(r=>WALK.has(r.kind)))for(let k=1;k<road.p.length;k++){const [ax,az]=road.p[k-1],[cx,cz]=road.p[k],len=Math.hypot(cx-ax,cz-az);
   for(let d=0;d<len;d+=4){const x=ax+(cx-ax)*d/len,z=az+(cz-az)*d/len,c=Math.round((x-x0)/step),r=Math.round((z-z0-step/2)/step);
     // Piers and bridges over the water itself do not count.
     if(c>=0&&r>=0&&c<n&&r<n&&height[r*n+c]>=OPEN)roadLevels.push(spill[r*n+c]);}}
@@ -63,13 +74,13 @@ mkdirSync(join(pack,'terrain'),{recursive:true});
 writeFileSync(join(pack,'terrain/flood.png'),Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ihdr),chunk('IDAT',deflateSync(rows,{level:9})),chunk('IEND',Buffer.alloc(0))]));
 writeFileSync(join(pack,'terrain/flood.json'),JSON.stringify({x0:X0,z0,step,w:n,h:n,scale:40,base:+base.toFixed(2),
   channels:'R ground, G spill level (m above base × 40), B the core',water:+lake.toFixed(2),
-  ground3D:`the 3D ground (y = 0) stands for ${(lake+1.2).toFixed(2)} m RH 2000 and higher ground for itself; the main water (y = -1.2) for ${lake.toFixed(2)} m`,
-  source:src.source,attribution:src.attribution},null,1));
+  ground3D:`the 3D ground (y = 0) stands for ${(lake+1.2).toFixed(2)} m ${DATUM} and higher ground for itself; the main water (y = -1.2) for ${lake.toFixed(2)} m`,
+  datum:DATUM,source:src.source,attribution:src.attribution},null,1));
 core.sort((a,b)=>a-b);roadLevels.sort((a,b)=>a-b);
 const share=(arr,l)=>{let lo=0,hi=arr.length;while(lo<hi){const m=(lo+hi)>>1;if(arr[m]<l)lo=m+1;else hi=m;}return lo/arr.length;};
 const levels=[];for(let d=.2;d<=4.01;d+=.2)levels.push(+(lake+d).toFixed(2));
 const table=levels.map(l=>[l,+share(core,l).toFixed(3)]).filter(([,s],i,a)=>i===0||s!==a[i-1][1]);
-const streets=roadLevels.length?roadLevels[Math.floor(roadLevels.length*.01)]:lake+1;
-console.log(`terrain/flood.png ${n}×${n} (${step} m); core ${(core.length*step*step/1e4).toFixed(0)} ha; main water ${lake.toFixed(2)} m RH 2000`);
-console.log(`streets begin to flood at ${streets.toFixed(2)} m (1 % of their length); ${[.005,.02,.05,.1].map(f=>`${f*100} %: ${roadLevels[Math.floor(roadLevels.length*f)].toFixed(2)} m`).join(', ')}`);
-console.log(`FLOOD.table (level m RH 2000, share of the core under water):\n${JSON.stringify(table)}`);
+const at=f=>roadLevels.length?roadLevels[Math.floor(roadLevels.length*f)]:lake+1;
+console.log(`terrain/flood.png ${n}×${n} (${step} m); core ${(core.length*step*step/1e4).toFixed(0)} ha; main water ${lake.toFixed(2)} m ${DATUM}`);
+console.log(`${streetsKind} begin to flood at ${at(.01).toFixed(2)} m (1 % of their length); ${[.005,.02,.05,.1].map(f=>`${f*100} %: ${at(f).toFixed(2)} m`).join(', ')}`);
+console.log(`FLOOD.table (level m ${DATUM}, share of the core under water):\n${JSON.stringify(table)}`);

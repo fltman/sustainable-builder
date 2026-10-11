@@ -142,7 +142,13 @@ def main(argv=None):
     terrain = city.get('terrain')
     if terrain and terrain.get('attribution'):
         attribution += ' · ' + terrain['attribution']
-    game_map = {'roads': roads, 'buildings': [ring(f) for f in city['footprints'] if len(f) >= 3], 'land': [], 'areas': areas,
+    waterways = []
+    for r in city.get('waterways', []):
+        g = LineString(r['p']).intersection(inner)
+        for part in (g.geoms if hasattr(g, 'geoms') else [g]):
+            if part.geom_type == 'LineString' and part.length > 5:
+                waterways.append({'id': r['id'], 'name': r['name'], 'kind': r['kind'], 'w': r['w'], 'p': [tz(p) for p in part.coords]})
+    game_map = {'roads': roads, 'waterways': waterways, 'buildings': [ring(f) for f in city['footprints'] if len(f) >= 3], 'land': [], 'areas': areas,
                 'attribution': attribution, 'bounds': [-half, -half, half, half], 'terrain': game_terrain(terrain, half)}
     write_json(pack / 'map.json', game_map, compact=True)
 

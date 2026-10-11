@@ -226,6 +226,8 @@ def main(argv=None):
         kind = KIND.get(t.get('building'), 2 if w * d > 900 else 0)
         if kind == 0 and w * d > 500:
             kind = 1
+        if kind == 3 and w * d > 300:          # a big shed roof or canopy (building=roof over a terminal)
+            kind = 2
         hh = levels * 3 + (.6 if kind == 1 else 0) if math.isfinite(levels) else 12 if kind == 1 else (9 if w * d > 3000 else 7) if kind == 2 else 2.6 if kind == 3 else 6 if w * d > 160 else 4.8
         blds.append([round(ox * 2), round(oz * 2), min(32767, round(w * 4)), min(32767, round(d * 4)),
                      round(((ang % math.pi) + math.pi) % math.pi / (2 * math.pi) * 65536) - 32768, round(hh * 10), kind])

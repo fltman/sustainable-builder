@@ -50,12 +50,12 @@ const lite=touch||params.has('lite')||safe;
 const loading=document.getElementById('loading');
 document.documentElement.lang=LANG;
 const progress=(p,text)=>{document.getElementById('load-fill').style.width=`${Math.round(p*100)}%`;if(text)document.getElementById('load-text').textContent=text;};
-function fail(e){console.error(e);progress(1,t(`Något gick fel: ${e.message||e}. Ladda om sidan i en webbläsare med WebGL.`,`Something went wrong: ${e.message||e}. Reload the page in a browser with WebGL.`));}
+function fail(e){console.error(e);progress(1,t(`Något gick fel: ${e.message||e}. Ladda om sidan i en webbläsare med WebGL.`,`Something went wrong: ${e.message||e}. Reload the page in a browser with WebGL.`,`Qualcosa è andato storto: ${e.message||e}. Ricarica la pagina in un browser con WebGL.`));}
 
 try{
 const renderer=new THREE.WebGLRenderer({canvas:document.getElementById('scene'),antialias:true,powerPreference:'high-performance'});
 // The 3D view is a picture; what it shows is also told in words in the Vision tab.
-renderer.domElement.setAttribute('role','img');renderer.domElement.setAttribute('aria-label',t(`${PLACE.model} i 3D, år för år. Det som syns beskrivs också i text under Visionen.`,`${PLACE.model} in 3D, year by year. What it shows is also described in words under Vision.`));
+renderer.domElement.setAttribute('role','img');renderer.domElement.setAttribute('aria-label',t(`${PLACE.model} i 3D, år för år. Det som syns beskrivs också i text under Visionen.`,`${PLACE.model} in 3D, year by year. What it shows is also described in words under Vision.`,`${PLACE.model} in 3D, anno per anno. Ciò che si vede è descritto anche a parole sotto Visione.`));
 const basePixelRatio=Math.min(devicePixelRatio,lite?1:1.25);renderer.setPixelRatio(basePixelRatio);renderer.setSize(innerWidth,innerHeight);
 renderer.toneMapping=THREE.AgXToneMapping;renderer.shadowMap.enabled=!lite;renderer.shadowMap.type=THREE.PCFShadowMap;
 // Shadows are re-rendered every other frame (the sun and the frustum move slowly).
@@ -72,7 +72,7 @@ post?.setClouds(clouds);
 if(params.has('cam')){const [x,y,z]=params.get('cam').split(',').map(Number);view.camera.position.set(x,y,z);}
 if(params.has('target')){const [x,y,z]=params.get('target').split(',').map(Number);view.controls.target.set(x,y,z);}
 view.controls.update();
-progress(.05,t('Läser kartan …','Reading the map …'));
+progress(.05,t('Läser kartan …','Reading the map …','Lettura della mappa …'));
 // People and vehicles modelled in Blender (tools/build-crowd.py, tools/build-vehicles.py). If they
 // cannot be loaded, the procedural kit figures stand in.
 const crowdP=safe?Promise.resolve(null):loadCrowd({time:FUTURE.uTime}).catch(e=>{console.warn('Folkmassan:',e);return null;});
@@ -94,15 +94,15 @@ const radiusFor=d=>THREE.MathUtils.clamp(140+d*.7,lite?130:180,safe?160:lite?210
 const nearFor=params.has('near')?()=>+params.get('near'):lite?d=>THREE.MathUtils.clamp(115-d*.3,25,safe?45:60):d=>THREE.MathUtils.clamp(70+d*.16,100,165);
 const streamCentre=new THREE.Vector3();
 const centre=()=>{const t=view.controls.target,c=view.camera.position;return streamCentre.set(t.x+(c.x-t.x)*.3,0,t.z+(c.z-t.z)*.3);};
-{const d=view.camera.position.distanceTo(view.controls.target);await city.ensure(centre(),radiusFor(d),nearFor(d),p=>progress(.1+.6*p,t(`Bygger ${PLACE.centre}, kvarter för kvarter …`,`Building ${PLACE.centre}, block by block …`)));}
+{const d=view.camera.position.distanceTo(view.controls.target);await city.ensure(centre(),radiusFor(d),nearFor(d),p=>progress(.1+.6*p,t(`Bygger ${PLACE.centre}, kvarter för kvarter …`,`Building ${PLACE.centre}, block by block …`,`Costruzione ${PLACE.centreGenitive}, isolato per isolato …`)));}
 await surfaces;
-progress(.72,t('Kartlägger gator, parker och kajer …','Mapping streets, parks and quays …'));
+progress(.72,t('Kartlägger gator, parker och kajer …','Mapping streets, parks and quays …','Mappatura di strade, parchi e banchine …'));
 // Asphalt off the mapped streets – or on a parking aisle (OSM service way) – is a car park.
 // The ground scan covers the place's model (CITY.scan, else the map's bounds) up to its highest ground.
 const groundTop=map.terrain?Math.max(...map.terrain.dm)/10:0;
 const scanRect=CITY.scan||(map.bounds?{minX:map.bounds[0],minZ:map.bounds[1],maxX:map.bounds[2],maxZ:map.bounds[3]}:{});
 const land=await scanLand(city.tiles.find(t=>t.id==='base').meshes,{...scanRect,top:groundTop+60,maxY:groundTop+14,isRoad:(x,z)=>{const r=planning.roadAt(x,z,.5);return Boolean(r)&&!(r.kind==='service'&&r.w<=4);}});
-progress(.85,t('Planterar framtiden …','Planting the future …'));
+progress(.85,t('Planterar framtiden …','Planting the future …','Semina del futuro …'));
 const districts=createDistricts(scene,planning,land,{lite});
 const lotKey=(x,z)=>Math.floor(x/48)+','+Math.floor(z/48);
 const features=createFeatures(scene,planning,land,{lite,crowd,vehicles,skipLot:(x,z)=>districts.usedLots.has(lotKey(x,z))});
@@ -111,10 +111,13 @@ const weather=createWeather(scene,{world,clouds,features,renderer,lite});
 const flood=await createFlood(scene);
 const horizon=await createHorizon(scene,{lite});
 const graph=createGraph(planning.roads);
-const traffic=createTraffic(scene,graph,land,{crowd,vehicles});
-const ride=createRide({view,land,planning,graph,scene,LAND,crowd,vehicles});
+// A place can change the street fleets (CITY.traffic: Venice has no cars and forbids bicycles).
+const traffic=createTraffic(scene,graph,land,{crowd,vehicles,max:{car:180,bike:260,pod:28,...CITY.traffic}});
+// The canals' centre lines (map.json waterways), for boats that find their way: Venice's gondolas and water taxis.
+const waterGraph=map.waterways?.length?createGraph(map.waterways,{merge:4}):null;
+const ride=createRide({view,land,planning,graph,scene,LAND,crowd,vehicles,waterGraph});
 const residents=createResidents(scene,{graph,land,planning,features,places:PLACES,family:FAMILY,crowd},{count:safe?150:lite?220:420});
-progress(.95,t('Väcker invånarna …','Waking the residents …'));
+progress(.95,t('Väcker invånarna …','Waking the residents …','Risveglio degli abitanti …'));
 
 // The vision the city shows eases toward the year's target, so scrubbing and playing read as growth.
 let shown=null,target=null,ctxYear=2026,ctxInfo=null;
@@ -288,7 +291,7 @@ function frame(now){
   city.update(dt,centre(),radiusFor(dist),nearFor(dist));mark('city');
   const sky=world.update(view.controls.target,Math.min(600,dist*1.1));
   clouds.update(view.controls.target,world.sky.material.uniforms.sunPosition.value,sky.day,view.camera);
-  mark('world');features.update(dt,world.hour);districts.update();sea.update(dt);mark('features');
+  mark('world');features.update(dt,world.hour);districts.update();sea.update(dt,ride.boatAt);mark('features');
   if(shown)roofProps.update(dt,shown,world.hour);mark('roofprops');
   traffic.setActivity(outdoors(world.hour)*(1-.6*weather.now.empty));
   {const pace=Math.max(.25,Math.min(3,speed||.25));traffic.update(dt*pace,view.controls.target,Math.max(260,dist*1.4),pace);}
@@ -335,7 +338,7 @@ function frame(now){
   }
   frames++;fpsTime+=dt;if(fpsTime>1){fps=frames/fpsTime;frames=fpsTime=0;}
 }
-progress(1,t('Klart.','Ready.'));
+progress(1,t('Klart.','Ready.','Pronto.'));
 loading.style.transition='opacity .6s';loading.style.opacity='0';setTimeout(()=>loading.remove(),700);
 // A language switch inside the app comes back to the same plan; everyone else starts at the start
 // screen (a shared plan in the address is offered there first).

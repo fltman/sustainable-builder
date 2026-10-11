@@ -140,14 +140,15 @@ class PipelineTest(unittest.TestCase):
         self.assertAlmostEqual(church['base'], 0.04 * 198, delta=1.5, msg='the surface-model bump on the church is cleaned away')
         for b in self.city['buildings']:
             self.assertGreaterEqual(b['base'], b['base_min'])
-        # Ground layers are cut into 7.5 m squares so they can follow the terrain.
-        ground = self.city['surfaces']['ground'][0]
+        # Ground layers are cut into 7.5 m squares so they can follow the terrain (the land no other layer
+        # covers is grass now – `defaults.rest` – where wasteland-builder had bare ground).
+        ground = next(layer[0] for k in ('grass', 'ground') if (layer := self.city['surfaces'].get(k)))
         v = ground['v']
         for k in range(0, len(ground['t']), 3):
             a, b, c = (v[3 * ground['t'][k + i]:3 * ground['t'][k + i] + 2] for i in range(3))
             longest = max(((p[0] - q[0]) ** 2 + (p[1] - q[1]) ** 2) ** 0.5 for p, q in ((a, b), (b, c), (c, a)))
             self.assertLessEqual(longest, 7.5 * 2 ** 0.5 + 0.01)
-        self.assertTrue(self.city['outskirts'], 'the surroundings beyond the play area')
+        self.assertFalse(self.city['outskirts'], 'no outskirts unless a place asks for them: the horizon takes over')
         self.assertEqual(self.map['terrain']['n'] ** 2, len(self.map['terrain']['dm']))
         self.assertIn('Terrain: test', self.map['attribution'])
 

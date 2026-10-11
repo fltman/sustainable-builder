@@ -1,13 +1,15 @@
 // Web copy of a place's film for the site: a streamable mp4, a poster and Swedish/English subtitles, in the
 // place's pack (film/<slug>-2126.mp4, film/poster.jpg, film/<slug>-2126.sv.vtt …).
 //   CITY=<slug> node tools/film-web.mjs [master.mp4]   (master from tools/film.mjs; SUBS_ONLY=1 rewrites only the subtitles)
-// FILM_LANG=en: the English film (<slug>-2126-en.mp4) with English subtitles timed on the English narration.
+// FILM_LANG=en: the English film (<slug>-2126-en.mp4) with English subtitles timed on the English narration;
+// FILM_LANG=it: the Italian one (<slug>-2126-it.mp4) with Italian and English subtitles.
 import { mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { cityOf } from '../city.config.mjs';
 const place=cityOf();
 const { SCENES, LINES, END_CARD }=await import(`${place.vision}/film.js`);
-const LANG=process.env.FILM_LANG==='en'?'en':'sv',sfx=LANG==='en'?'-en':'';
+const { CITY }=await import(`${place.vision}/config.js`);
+const LANG=['en','it'].includes(process.env.FILM_LANG)?process.env.FILM_LANG:'sv',sfx=LANG==='sv'?'':`-${LANG}`;
 const name=`${place.slug}-2126${sfx}`,master=process.argv[2]||`test-results/${name}.mp4`,out=`${place.pack}/film`;
 mkdirSync(out,{recursive:true});
 const ff=args=>execFileSync('ffmpeg',['-y','-loglevel','error',...args]);
@@ -19,7 +21,7 @@ ff(['-i',master,'-c:v','libx264','-preset','slow','-crf','23','-maxrate','5M','-
   '-c:a','aac','-b:a','160k','-movflags','+faststart',`${out}/${name}.mp4`]);
 // Poster: the place of 2126, just before the end title fades up (END_CARD.poster, else 4 s before the end card).
 const posterAt=END_CARD.poster??SCENES.slice(0,-1).reduce((s,sc)=>s+sc.d,0)-4;
-if(LANG==='sv')ff(['-ss',String(posterAt),'-i',master,'-frames:v','1','-vf','scale=1280:-1','-q:v','4',`${out}/poster.jpg`]);
+if(LANG===(CITY.langs||['sv'])[0])ff(['-ss',String(posterAt),'-i',master,'-frames:v','1','-vf','scale=1280:-1','-q:v','4',`${out}/poster.jpg`]);
 }
 
 // Subtitles: each spoken line is split into sentences, and the sentence breaks are put in pauses
@@ -31,8 +33,8 @@ const pauses=f=>{
 };
 const sentences=txt=>txt.match(/[^.?!]+[.?!]+/g).map(x=>x.trim());
 const stamp=s=>{const h=Math.floor(s/3600),m=Math.floor(s/60)%60,sec=(s%60).toFixed(3).padStart(6,'0');return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${sec}`;};
-// The Swedish film carries Swedish and English subtitles; the English film English ones.
-const SUBS=LANG==='en'?['en']:['sv','en'],cues={sv:[],en:[]};
+// The Swedish film carries Swedish and English subtitles, the Italian one Italian and English, the English film English ones.
+const SUBS=LANG==='en'?['en']:LANG==='it'?['it','en']:['sv','en'],cues={sv:[],en:[],it:[]};
 let t0=0;
 for(const sc of SCENES){
   if(sc.vo){

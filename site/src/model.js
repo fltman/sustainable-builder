@@ -156,7 +156,8 @@ export function simulate({policyAt=()=>defaultPolicy(),world='ssp245',events=tru
     const fossil=(1-B.renewable-.02)*(s.carShare/B.carShare)*(1-.95*ev)/(1-.95*B.evShare)*(1-.4*national)+.02*(1-national);
     const renewable=clamp(1-fossil);
     // --- Mobility & city form --------------------------------------------------------------
-    s.carShare=lag(s.carShare,clamp(B.carShare+driftCar-.28*I.bilfritt-.2*I.kollektivt-.04*I.arbetstid-.03*s.cohousing,.07),3);
+    // Car trips fall to 7 % at the least – or stay at a place's own share where it is lower (Venice: 2 %).
+    s.carShare=lag(s.carShare,clamp(B.carShare+driftCar-.28*I.bilfritt-.2*I.kollektivt-.04*I.arbetstid-.03*s.cohousing,Math.min(.07,B.carShare)),3);
     s.transitShare=lag(s.transitShare,clamp(B.transitShare+driftTransit+.24*I.kollektivt+.05*I.bilfritt,0,.5),3);
     const activeShare=clamp(1-s.carShare-s.transitShare,.1);
     const carsPer1000=B.carsPer1000*Math.pow(s.carShare/B.carShare,1.15)*(1-.25*I.kollektivt*I.bilfritt);
@@ -176,8 +177,12 @@ export function simulate({policyAt=()=>defaultPolicy(),world='ssp245',events=tru
     // Adaptation raises the protection up to protectGain metres above the streets (FLOOD).
     if(F)s.protection=lag(s.protection,STREETS_FLOOD+F.protectGain*I.anpassning,4);
     const floating=I.anpassning>.8?(I.anpassning-.8)*5:0;
-    const floodMargin=F?s.protection-level100:1;
-    const floodShare=F&&level100>s.protection?flooded(level100):0;                       // the core under water in a 100-year flood
+    // A storm-surge barrier at the sea's inlets (FLOOD.barrier: Venice's MOSE) shuts when a tide is forecast
+    // to reach `closes` and holds the water behind it at about `inside`; the town then floods only where it
+    // lies lower. The place's own model (LOCAL) can move both with the vision (s.barrierCloses, s.barrierInside).
+    const BR=F?.barrier,inside=BR&&level100>(s.barrierCloses??BR.closes)?Math.min(level100,s.barrierInside??BR.inside):level100;
+    const floodMargin=F?s.protection-inside:1;
+    const floodShare=F&&inside>s.protection?flooded(inside):0;                           // the core under water in a 100-year flood
     const floodRisk=F?clamp(sig(-floodMargin/.18)*(1-.4*floating)):0;
     // Walls and barriers on old quays cost some of what they protect; floods cost more (E: heritage).
     const heritage=clamp(s.heritage-P.heritageCost*I.anpassning*(1-floating*.5));
@@ -220,7 +225,7 @@ export function simulate({policyAt=()=>defaultPolicy(),world='ssp245',events=tru
     s.aiGovernance=lag(s.aiGovernance,clamp(.2+.05*clamp((year-2026)/2)+.4*I.demokrati+.25*I.analog+.15*I.ai),5);   // EU AI Act, high-risk rules 2027
     s.participation=lag(s.participation,clamp(B.participation+.35*I.demokrati+.15*I.arbetstid+.08*I.bogemenskap),5);
     s.gini=lag(s.gini,clamp(B.gini+.008*I.regionalt-.03*I.bogemenskap-.015*I.arbetstid-.02*I.demokrati+.05*s.aiCapacity*(1-s.aiGovernance)+.01*stress,.18,.45),8);
-    s.trust=lag(s.trust,clamp(B.trust+driftTrust*(1-I.demokrati)+.12*I.demokrati+.06*I.bogemenskap+.04*s.urbanFarm+.03*I.analog-1.2*(s.gini-B.gini)-.12*Math.max(0,load-1)-resistance+s.eventMood,.3,.86),6);   // (E: citizens_assemblies)
+    s.trust=lag(s.trust,clamp(B.trust+driftTrust*(1-I.demokrati)+.12*I.demokrati+.06*I.bogemenskap+.04*s.urbanFarm+.03*I.analog-1.2*(s.gini-B.gini)-.12*Math.max(0,load-1)-resistance+s.eventMood,Math.min(.3,.7*B.trust),.86),6);   // (E: citizens_assemblies; the floor follows a low-trust place's own start, Italy's ~0.3)
     s.eventMood*=.6;
     s.cohousing=lag(s.cohousing,B.cohousing+.42*I.bogemenskap,6);
     s.workHours=lag(s.workHours,B.workHours-8*I.arbetstid,4);
@@ -296,7 +301,7 @@ export function simulate({policyAt=()=>defaultPolicy(),world='ssp245',events=tru
       carShare:s.carShare,transitShare:s.transitShare,activeShare,carsPer1000,evShare:ev,
       urbanFarm:s.urbanFarm,cityVeg,regen:s.regen,diet:s.diet,foodRegional:s.foodRegional,foodStockDays:s.foodStockDays,
       greenShare:s.greenShare,canopy:s.canopy,depave,water:s.water,biodiversity:s.biodiversity,waters:s.waters,bloom,
-      seaRise,level100,protection:s.protection,floodMargin,floodRisk,floodShare,heritage,
+      seaRise,level100,levelInside:inside,protection:s.protection,floodMargin,floodRisk,floodShare,heritage,
       lifeExp:s.lifeExp,selfHealth:s.selfHealth,activity:s.activity,lowParticipation:s.lowParticipation,loneliness,distress:s.distress,youthScreen:s.youthScreen,
       trust:s.trust,participation:s.participation,gini:s.gini,childPoverty:clamp(B.childPoverty*(s.gini/B.gini)*(1.1-.1*s.welfare)),unsafe:s.unsafe,workHours:s.workHours,cohousing:s.cohousing,
       education:s.education,unemployment,welfare:s.welfare,circularity:s.circularity,waste:B.waste*(1-.5*I.effektivitet),recycling:clamp(B.recycling+.45*I.effektivitet),

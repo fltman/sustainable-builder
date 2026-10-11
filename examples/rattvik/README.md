@@ -9,6 +9,9 @@ Lake Siljan in Dalarna – a third of them over 65, and nearly 60 percent more p
 - `vision/` – every module of the site (see AGENTS.md) and the research behind it: 410 sourced records
   in `research/` – Kolada's key figures, the Sweden-wide ones, and six deep-research topics with their
   notes – and the film's scenes and narration (`film.js`).
+- `media/audio/` – the film's narration (ElevenLabs, the author's voice; `film-voices.json` logs each line)
+  and the soundtrack, `music.mp3` ("Rättvik 2126 – Midsommarnatt", Suno v6: melodic deep house with a
+  Dalecarlian fiddle hook); `sustainable.py example` copies them into cities/rattvik/media/.
 
 Build it and look at it:
 

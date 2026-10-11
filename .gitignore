@@ -15,4 +15,5 @@ site/.city
 site/dist/
 site/test-results/
 site/public/city
+site/art/
 *.blend1

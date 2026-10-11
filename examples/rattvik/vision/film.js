@@ -4,9 +4,9 @@
 // at the station is about 3 m, on Kyrkudden 7 m. vo: narration clip and its start within the scene; amb:
 // ambience beds; en: the captions in English (the English film uses the same scenes and timing).
 export const SCENES=[
-  {d:9.6,preset:'dagens',year:[2026,2026],hour:15.5,cam:[[760,520,560],[660,450,480]],target:[[120,0,-40],[110,0,-50]],y:'2026',t:'Rättvik idag',s:'10 978 invånare · 35 % över 65 · två direkttåg om dagen till Stockholm',
+  {d:11,preset:'dagens',year:[2026,2026],hour:15.5,cam:[[760,520,560],[660,450,480]],target:[[120,0,-40],[110,0,-50]],y:'2026',t:'Rättvik idag',s:'10 978 invånare · 35 % över 65 · två direkttåg om dagen till Stockholm',
     en:{t:'Rättvik today',s:'10,978 people · 35% over 65 · two direct trains a day to Stockholm'},vo:['vo-film-1',.3],amb:{wind:.5,sea:.35,traffic:.3,birds:.2}},
-  {d:7.4,preset:'dagens',year:[2026,2026],hour:15.5,cam:[[452,9,118],[440,9,104]],target:[[405,6,60],[405,6,56]],y:'',t:'Hur vill vi leva här om hundra år?',s:'– tillsammans med barn, barnbarn och grannar',
+  {d:7.4,preset:'dagens',year:[2026,2026],hour:15.5,cam:[[451,6.6,27.4],[441.8,6.4,35.1]],target:[[405,6,66],[404,6,64]],y:'',t:'Hur vill vi leva här om hundra år?',s:'– tillsammans med barn, barnbarn och grannar',
     en:{t:'How do we want to live here in a hundred years?',s:'– with our children, grandchildren and neighbours'},vo:['vo-film-2',.4],amb:{traffic:.7,birds:.3}},
   {d:16,preset:'siljansbygden',year:[2026,2126],hour:16,orbit:{c:[150,0,-50],r:760,h:420,a:[.2,1.3]},y:'year',t:'Siljansbygden',s:'Forskningens förslag – räknat år för år',
     en:{t:'The Siljan Country',s:'The research-based proposal – computed year by year'},vo:['vo-film-3b',.8],amb:{wind:.6,sea:.3,birds:.3}},
@@ -26,9 +26,9 @@ export const SCENES=[
 // The end card in each language.
 export const END_CARD={
   sv:{sub:'Ett sekel framåt – en forskningsförankrad vision för ett hållbart Rättvik',q:'Vilket Rättvik vill du bygga?',
-    small:'Byggd på Rättviks kommuns egen statistik, 410 belagda uppgifter och en 3D-modell ur OpenStreetMap och Lantmäteriets höjddata · Kartdata © OpenStreetMap'},
+    small:'Byggd på Rättviks kommuns egen statistik, 410 belagda uppgifter och en 3D-modell ur OpenStreetMap med höjddata från Lantmäteriet och Copernicus · Kartdata © OpenStreetMap'},
   en:{sub:'A century ahead – a research-based vision for a sustainable Rättvik',q:'Which Rättvik do you want to build?',
-    small:'Built on Rättvik Municipality\'s own statistics, 410 sourced figures and a 3D model from OpenStreetMap and Lantmäteriet\'s elevation data · Map data © OpenStreetMap'},
+    small:'Built on Rättvik Municipality\'s own statistics, 410 sourced figures and a 3D model from OpenStreetMap with elevation data from Lantmäteriet and Copernicus · Map data © OpenStreetMap'},
 };
 
 // The narration as written (subtitles).
@@ -66,5 +66,9 @@ export const SPOKEN={
     'vo-film-5':'[calm, sincere] It is not a forecast. It is a way of thinking – and of choosing. [pause] Which Rättvik do you want to build?',
   },
 };
-// The narrator: Kalmar 2126's voice.
-export const VOICE={id:'B7OAdN7qiPFwZhhjfkxq',model:'eleven_v3'};
+// The soundtrack (media/audio/music.mp3, Suno v6: "Rättvik 2126 – Midsommarnatt", melodic deep house with a
+// Dalecarlian fiddle hook, 121 BPM): the film starts 42.4 s in, in the groove, so the breakdown at 126.0 s
+// comes just as the end card's picture has gone black (83.4 s into the film), as in Kalmar 2126's film.
+export const MUSIC={start:42.4};
+// The narrator: Kalmar 2126's voice and model.
+export const VOICE={id:'B7OAdN7qiPFwZhhjfkxq',model:'eleven_v4'};

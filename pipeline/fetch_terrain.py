@@ -42,6 +42,19 @@ LM_STAC = 'https://api.lantmateriet.se/stac-hojd/v1'
 LM_TOKEN = 'https://apimanager.lantmateriet.se/oauth2/token'
 LM_ATTRIBUTION = 'Höjddata: Markhöjdmodell © Lantmäteriet (CC BY 4.0)'
 LM_STEP = 4.0           # metres between stored heights when the source is Lantmäteriet's 1 m model
+# Regional ground models that public geoservers show only as maps (WMS, no WCS): the server paints the
+# heights in a grey ramp over a narrow window we choose (an SLD style sent with the request) and the
+# greys are read back – 255 steps over at most 6 m, about 2.5 cm. Used inside their bbox (south, west,
+# north, east) before Copernicus; `step` is the stored grid.
+REGIONAL = [
+    {'name': 'Regione del Veneto DTM 5 m (LiDAR)', 'country': 'it', 'bbox': (44.7, 10.6, 46.7, 13.1),
+     'url': 'https://gaia.arpa.veneto.it/geoserver/ows', 'layer': 'geonode:DTM_5M_GBO', 'step': 2.0,
+     'datum': 'IGM (Genova 1942)', 'attribution': 'Terreno: DTM 5 m da rilievi LiDAR © Regione del Veneto, servizio ARPAV (CC BY 3.0)'},
+]
+GREY_SLD = ('<?xml version="1.0" encoding="UTF-8"?><StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld">'
+            '<NamedLayer><Name>{layer}</Name><UserStyle><FeatureTypeStyle><Rule><RasterSymbolizer><ColorMap type="ramp">'
+            '<ColorMapEntry color="#000000" quantity="{lo:.3f}"/><ColorMapEntry color="#FFFFFF" quantity="{hi:.3f}"/>'
+            '</ColorMap></RasterSymbolizer></Rule></FeatureTypeStyle></UserStyle></NamedLayer></StyledLayerDescriptor>')
 
 
 # ------------------------------------------------------------------------------------------ HTTP
@@ -268,6 +281,53 @@ def lantmateriet(lat, lon, auth, pixel):
     return out, used
 
 
+def _wms_grey(src, lat, lon, lo, hi):
+    """A regional WMS ground model painted in grey over [lo, hi] m and read back at arrays of lat/lon, in
+    tiles of at most 1024 px at half the stored step: (heights, greys); NaN and grey -1 where it has no data."""
+    import io
+    from PIL import Image
+    px = src['step'] / 2
+    s, w, n, e = float(lat.min()), float(lon.min()), float(lat.max()), float(lon.max())
+    dlat, dlon = px / EARTH, px / (EARTH * math.cos(math.radians((s + n) / 2)))
+    s, w, n, e = s - dlat, w - dlon, n + dlat, e + dlon
+    H, W = int(math.ceil((n - s) / dlat)), int(math.ceil((e - w) / dlon))
+    grey, alpha = np.zeros((H, W), np.uint8), np.zeros((H, W), np.uint8)
+    sld = GREY_SLD.format(layer=src['layer'], lo=lo, hi=hi)
+    for r0 in range(0, H, 1024):
+        for c0 in range(0, W, 1024):
+            h, wd = min(1024, H - r0), min(1024, W - c0)
+            bb = (w + c0 * dlon, n - (r0 + h) * dlat, w + (c0 + wd) * dlon, n - r0 * dlat)
+            q = {'service': 'WMS', 'version': '1.1.1', 'request': 'GetMap', 'layers': src['layer'], 'styles': '',
+                 'srs': 'EPSG:4326', 'bbox': ','.join(f'{v:.7f}' for v in bb), 'width': wd, 'height': h,
+                 'format': 'image/png', 'transparent': 'true', 'SLD_BODY': sld}
+            img = np.asarray(Image.open(io.BytesIO(get(src['url'] + '?' + urllib.parse.urlencode(q)))).convert('RGBA'))
+            grey[r0:r0 + h, c0:c0 + wd], alpha[r0:r0 + h, c0:c0 + wd] = img[..., 0], img[..., 3]
+    r = np.clip(((n - lat) / dlat).astype(int), 0, H - 1)
+    c = np.clip(((lon - w) / dlon).astype(int), 0, W - 1)
+    g = grey[r, c].astype(np.float32)
+    v = lo + (hi - lo) * g / 255.0
+    none = alpha[r, c] < 128
+    v[none], g[none] = np.nan, -1
+    return v, g
+
+
+def regional(src, lat, lon, lo, hi):
+    """Heights from a regional WMS ground model at arrays of lat/lon: a coarse read over [lo, hi] (from
+    Copernicus), then windows of at most 6 m over the range it finds (NaN where the model has no data)."""
+    out, _ = _wms_grey(src, lat, lon, lo, hi)
+    if np.isnan(out).all():
+        return out
+    pad = 2 * (hi - lo) / 255
+    a, b = float(np.nanmin(out)) - pad, float(np.nanmax(out)) + pad
+    k = int(min(8, max(1, math.ceil((b - a) / 6.0))))
+    width = (b - a) / k
+    for i in range(k):
+        v, g = _wms_grey(src, lat, lon, a + i * width - 0.1, a + (i + 1) * width + 0.1)
+        inside = (g > 0) & (g < 255)
+        out[inside] = v[inside]
+    return out
+
+
 def fetch(place: dict) -> dict:
     proj = projection_for(place)
     ext = place['size_m'] / 2 + MARGIN_M
@@ -279,23 +339,37 @@ def fetch(place: dict) -> dict:
             say(f'  ! Lantmäteriet login failed ({exc}); using Copernicus')
     if place.get('country_code', '').lower() == 'se' and not auth:
         say('  Tip: a free Geotorget account gives Swedish places a 1 m ground model (see .env.example)')
-    step = LM_STEP if auth else 30.0
+    lat0, lon0 = place['center']
+    reg = None if auth else next((r for r in REGIONAL if r['country'] == place.get('country_code', '').lower()
+                                  and r['bbox'][0] <= lat0 <= r['bbox'][2] and r['bbox'][1] <= lon0 <= r['bbox'][3]), None)
+    step = LM_STEP if auth else reg['step'] if reg else 30.0
     n = int(math.ceil(2 * ext / step)) + 1
     xs = -ext + np.arange(n) * step
     X, Y = np.meshgrid(xs, xs)                       # row = y (south → north), column = x (west → east)
     lat, lon = proj.lat0 + Y / EARTH, proj.lon0 + X / proj.kx
     z = np.full(X.shape, np.nan, np.float32)
-    sources, attribution, kind = [], [], 'dsm'
+    sources, attribution, kind, name = [], [], 'dsm', 'Copernicus DEM GLO-30 (DSM)'
     if auth:
         try:
             z, used = lantmateriet(lat, lon, auth, step / 2)
             if used:
                 sources += [f'Lantmäteriet {u}' for u in used]
                 attribution.append(LM_ATTRIBUTION)
-                kind = 'dtm'
+                kind, name = 'dtm', 'Lantmäteriet Markhöjdmodell (DTM)'
         except urllib.error.HTTPError as exc:
             hint = ' (no access: order "Markhöjdmodell Nedladdning" on Geotorget)' if exc.code in (401, 403) else ''
             say(f'  ! Lantmäteriet: HTTP {exc.code}{hint}; using Copernicus')
+    if reg:
+        try:
+            guess, _ = copernicus(lat[::8, ::8], lon[::8, ::8])
+            z = regional(reg, lat, lon, float(np.nanmin(guess)) - 10, float(np.nanmax(guess)) + 10).astype(np.float32)
+            if not np.isnan(z).all():
+                sources.append(reg['name'])
+                attribution.append(reg['attribution'])
+                kind, name = 'dtm', f'{reg["name"]}, {reg["datum"]}'
+        except Exception as exc:                     # the geoserver is down: Copernicus alone
+            say(f'  ! {reg["name"]}: {exc}; using Copernicus')
+            z = np.full(X.shape, np.nan, np.float32)
     if np.isnan(z).any():
         holes = np.isnan(z)
         cz, used = copernicus(lat[holes], lon[holes])
@@ -303,14 +377,70 @@ def fetch(place: dict) -> dict:
         sources += used
         attribution.append(COPERNICUS_ATTRIBUTION)
         if kind == 'dtm' and holes.mean() > 0.05:
-            say(f'  Lantmäteriet covers {100 * (1 - holes.mean()):.0f} %; Copernicus fills the rest')
+            say(f'  {name.split(",")[0]} covers {100 * (1 - holes.mean()):.0f} %; Copernicus fills the rest')
     z[(z < -500) | (z > 9000)] = np.nan
     if np.isnan(z).all():
         raise RuntimeError('no elevation data for this place')
     z = np.where(np.isnan(z), np.nanmin(z), z)
-    return {'source': 'Lantmäteriet Markhöjdmodell (DTM)' if kind == 'dtm' else 'Copernicus DEM GLO-30 (DSM)', 'kind': kind,
+    return {'source': name, 'kind': kind,
             'attribution': ' · '.join(attribution), 'tiles': sources, 'frame': 'local',
             'x0': float(xs[0]), 'y0': float(xs[0]), 'step': step, 'n': n, 'z': [round(float(v), 2) for v in z.ravel()]}
+
+
+WALKWAYS = {'footway', 'pedestrian', 'path', 'living_street', 'service', 'residential', 'unclassified', 'corridor'}
+
+
+def walkway_points(folder, proj, every=2.0):
+    """Points every 2 m along OpenStreetMap's footways and streets (not bridges, tunnels, steps or covered
+    passages), in the place's own plane: an (n, 2) array of x east, y north."""
+    osm = json.loads((folder / 'osm.json').read_text())
+    nodes = {e['id']: (e['lat'], e['lon']) for e in osm['elements'] if e['type'] == 'node'}
+    pts = []
+    for e in osm['elements']:
+        t = e.get('tags', {})
+        if e['type'] != 'way' or t.get('highway') not in WALKWAYS or t.get('bridge') or t.get('tunnel') or t.get('covered') == 'yes':
+            continue
+        ll = [(g['lat'], g['lon']) for g in e.get('geometry', [])] or [nodes[i] for i in e.get('nodes', []) if i in nodes]
+        xy = [((lo - proj.lon0) * proj.kx, (la - proj.lat0) * EARTH) for la, lo in ll]
+        for (ax, ay), (bx, by) in zip(xy, xy[1:]):
+            k = max(1, int(math.hypot(bx - ax, by - ay) / every))
+            pts += [(ax + (bx - ax) * f, ay + (by - ay) * f) for f in np.arange(k) / k]
+    return np.array(pts, float).reshape(-1, 2)
+
+
+def calibrate(data: dict, place: dict, folder) -> dict:
+    """A place's own height system and the official spread of its ground heights, from overrides.json
+    "defaults": terrain_datum {name, offset} adds the offset (e.g. IGM → Venice's tide-gauge zero, ZMPS);
+    terrain_hypsometry {table: [[level, share of the walkways at or below it], …], water_below, source}
+    maps the land so that the walkways (walkway_points) have exactly that spread, keeping their order –
+    the ground model says where, the table how high (rows above the last are bridges and steps, which
+    are not sampled, so the shares are scaled to end at 1); water_level is the main water's everyday level."""
+    ov = folder / 'overrides.json'
+    d = json.loads(ov.read_text()).get('defaults', {}) if ov.exists() else {}
+    datum, hyp, level = d.get('terrain_datum'), d.get('terrain_hypsometry'), d.get('water_level')
+    if not (datum or hyp or level is not None):
+        return data
+    n, step, x0, y0 = data['n'], data['step'], data['x0'], data['y0']
+    z = np.array(data['z'], float).reshape(n, n)
+    if datum:
+        z += float(datum.get('offset', 0.0))
+        data['datum'] = datum.get('name')
+    water = z < float((hyp or {}).get('water_below', d.get('water_below', -1e9)))
+    if hyp:
+        pts = walkway_points(folder, projection_for(place))
+        i = np.clip(np.round((pts[:, 0] - x0) / step).astype(int), 0, n - 1)
+        j = np.clip(np.round((pts[:, 1] - y0) / step).astype(int), 0, n - 1)
+        s = np.sort(z[j, i][~water[j, i]])
+        tab = np.array(hyp['table'], float)
+        lev, cdf = tab[:, 0], tab[:, 1] / tab[-1, 1]
+        z[~water] = np.interp(np.searchsorted(s, z[~water]) / len(s), cdf, lev)
+        data['calibration'] = f'{len(s)} walkway points mapped to {hyp.get("source", "the official spread of heights")}'
+        say(f'  calibrated: {data["calibration"]}')
+    if level is not None:
+        z[water] = float(level)
+        data['water_level'] = float(level)
+    data['z'] = [round(float(v), 2) for v in z.ravel()]
+    return data
 
 
 def main(argv=None):
@@ -324,14 +454,17 @@ def main(argv=None):
         say('  terrain.json is already there (use --refresh to download again)')
         step_done(args.slug, 'terrain', cached=True)
         return
+    place = load_place(args.slug)
     try:
-        data = fetch(load_place(args.slug))
+        data = fetch(place)
     except Exception as exc:  # offline or the source is unreachable: build the city flat
         say(f'  ! no terrain ({exc}); the city will be flat. Try again later with: python3 sustainable.py build {args.slug} --only terrain')
         return
+    data = calibrate(data, place, folder)
     write_json(out, data, compact=True)
     z = data['z']
-    say(f'  {data["n"]}×{data["n"]} heights every {data["step"]:g} m ({data["source"]}): {min(z):.0f}–{max(z):.0f} m above sea level')
+    say(f'  {data["n"]}×{data["n"]} heights every {data["step"]:g} m ({data["source"]}): {min(z):.0f}–{max(z):.0f} m'
+        + (f' ({data["datum"]})' if data.get('datum') else ' above sea level'))
     step_done(args.slug, 'terrain', source=data['source'], low=min(z), high=max(z))
 
 

@@ -150,9 +150,15 @@ export async function createHorizon(scene,{lite=false}={}){
       -.52,0,-.55,.52,0,-.55,.52,.42,0, -.52,0,-.55,.52,.42,0,-.52,.42,0, -.52,0,.55,-.52,.42,0,.52,.42,0, -.52,0,.55,.52,.42,0,.52,0,.55,
       -.52,0,-.55,-.52,.42,0,-.52,0,.55, .52,0,-.55,.52,0,.55,.52,.42,0],3));roofG.computeVertexNormals();
     const flatG=new THREE.BoxGeometry(1.02,.5,1.02).translate(0,.25,0);
-    const walls=[['#d6d0c4','#e0d3b0','#b8a58e','#8c3a2d','#c9c3b8','#a39f98','#9a3c2c'],['#c9c2b6','#b5aa9a','#9c8f80','#d2cdc3','#8e5a44'],['#bdbab3','#a8a49b','#d0ccc2','#8f8c85'],['#7d4a3a','#8a8680','#6f6a62']].map(l=>l.map(c=>new THREE.Color(c)));
-    const roofs=['#7a3a2c','#8d4a35','#3b3d3f','#4a4c4e','#6b2f26','#5a5148'].map(c=>new THREE.Color(c));
-    const pitched=list.filter(o=>o.kind===0||o.kind===3),flat=list.filter(o=>o.kind===1||o.kind===2);
+    // Wall tones by kind (house, flats, large, small) and roof tones; a place can give its own (CITY.horizonColours:
+    // Venice's ochre, rose and Venetian red under terracotta).
+    const HC=CITY.horizonColours||{};
+    const walls=(HC.walls||[['#d6d0c4','#e0d3b0','#b8a58e','#8c3a2d','#c9c3b8','#a39f98','#9a3c2c'],['#c9c2b6','#b5aa9a','#9c8f80','#d2cdc3','#8e5a44'],['#bdbab3','#a8a49b','#d0ccc2','#8f8c85'],['#7d4a3a','#8a8680','#6f6a62']]).map(l=>l.map(c=>new THREE.Color(c)));
+    const roofs=(HC.roofs||['#7a3a2c','#8d4a35','#3b3d3f','#4a4c4e','#6b2f26','#5a5148']).map(c=>new THREE.Color(c));
+    // Only houses and sheds of a house's size get a gable (it rises 0.42 of the depth): a big shed roof or
+    // canopy (building=roof over a terminal, a station's platforms) would make a pyramid tens of metres high.
+    const gable=o=>(o.kind===0||o.kind===3)&&o.w*o.dd<=400&&o.dd<=24;
+    const pitched=list.filter(gable),flat=list.filter(o=>!gable(o));
     // Facades: storeys of windows in world space (3 m a storey, a window every 2.6 m along the wall),
     // dark glass by day; after dusk a share of them lit like the city's own (FUTURE.uLit, uNight).
     const wallMat=capFog(new THREE.MeshStandardMaterial({roughness:.9}));

@@ -54,14 +54,17 @@ export function decodePlan(text){
 // LINK_ORDER) and their levels (2 bits each). LINK_ORDER only ever grows; the leading "1" of the code
 // says how many levers it counts, so links made before a lever was added keep working.
 const LINK_ORDER=['stadsodling','regionalt','kost','hav','sol','vind','effektivitet','bilfritt','kollektivt','forbindelser','bogemenskap','demokrati','arbetstid','forebyggande','ai','analog','kunskap','beredskap','anpassning'];
-const LINK_LEVERS={1:19};
+// A place's own levers (Venice's visitor lever) come after the engine's, in codes that begin with "2".
+const LINK_EXTRA=LEVERS.map(l=>l.id).filter(id=>!LINK_ORDER.includes(id)),LINK_FULL=[...LINK_ORDER,...LINK_EXTRA];
+const LINK_LEVERS={1:19,2:LINK_FULL.length};
 const WORLD_IDS=['ssp126','ssp245','ssp585'];
 const B62='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 const toB62=bits=>{let n=BigInt('0b'+bits),s='';while(n>0n){s=B62[Number(n%62n)]+s;n/=62n;}return s;};
 const fromB62=s=>{let n=0n;for(const c of s){const i=B62.indexOf(c);if(i<0)return null;n=n*62n+BigInt(i);}return n.toString(2);};
 const steps=schedule=>[...schedule].sort((a,b)=>a.from-b.from).filter(s=>Object.keys(s.set).length);
 function pack(schedule,world){
-  const order=LINK_ORDER.slice(0,LINK_LEVERS[1]);
+  const own=LINK_EXTRA.length&&steps(schedule).some(s=>Object.keys(s.set).some(k=>LINK_EXTRA.includes(k)));
+  const version=own?'2':'1',order=own?LINK_FULL:LINK_ORDER.slice(0,LINK_LEVERS[1]);
   let bits='1'+WORLD_IDS.indexOf(world).toString(2).padStart(2,'0');
   for(const s of steps(schedule)){
     if(Object.keys(s.set).some(k=>!order.includes(k)))return null;
@@ -69,10 +72,10 @@ function pack(schedule,world){
     bits+=order.map(k=>k in s.set?'1':'0').join('');
     for(const k of order)if(k in s.set)bits+=Math.max(0,Math.min(3,s.set[k])).toString(2).padStart(2,'0');
   }
-  return '1'+toB62(bits);
+  return version+toB62(bits);
 }
 function unpack(code){
-  const order=LINK_ORDER.slice(0,LINK_LEVERS[code[0]]||0);
+  const order=code[0]==='2'?LINK_FULL:LINK_ORDER.slice(0,LINK_LEVERS[code[0]]||0);
   const bits=order.length&&fromB62(code.slice(1));if(!bits||bits[0]!=='1')return null;
   let i=1;const read=n=>{const v=parseInt(bits.slice(i,i+n),2);i+=n;return v;};
   const world=WORLD_IDS[read(2)];if(!world)return null;
@@ -98,11 +101,11 @@ export function parsePlanHash(hash){
   const h=String(hash||'').replace(/^#/,'');
   const old=h.match(/(?:^|&)plan=([^&]+)/);
   if(old){const y=h.match(/year=(\d+)/);return {...decodePlan(old[1]),preset:null,year:y?Math.max(START,Math.min(END,+y[1])):END};}
-  const m=h.match(/^([a-z]+|1[0-9A-Za-z]+)(?:-(ssp\d{3}))?-(\d{4})$/);if(!m)return null;
+  const m=h.match(/^([a-z]+|[12][0-9A-Za-z]+)(?:-(ssp\d{3}))?-(\d{4})$/);if(!m)return null;
   const year=Math.max(START,Math.min(END,+m[3])),preset=PRESETS.find(p=>p.id===m[1]);
   if(preset)return {world:WORLD_IDS.includes(m[2])?m[2]:'ssp245',schedule:structuredClone(preset.schedule),preset:preset.id,year};
   const plan=!m[2]&&unpack(m[1]);
   return plan?{...plan,preset:null,year}:null;
 }
 
-if(LANG==='en')for(const p of PRESETS){p.name=L(p.name);p.short=L(p.short);}
+if(LANG!=='sv')for(const p of PRESETS){p.name=L(p.name);p.short=L(p.short);}

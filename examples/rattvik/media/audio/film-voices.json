@@ -1,0 +1,74 @@
+{
+ "vo-film-1": {
+  "hash": "f28e2bfafdec0667",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm, calm] Det här är Rättvik i dag. Elvatusen invånare vid Siljan, mer än var tredje över sextiofem – och på sommaren nästan sextio procent fler."
+ },
+ "vo-film-2": {
+  "hash": "c7c368aa62468ac6",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[thoughtful] Men hur vill vi egentligen leva här om hundra år? Tillsammans med våra barn, barnbarn och grannar?"
+ },
+ "vo-film-3b": {
+  "hash": "00c55aa38bd10a62",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm] Rättvik tjugoett tjugosex räknar fram ett svar, år för år – ur forskningen och kommunens egen statistik. Varje vägval syns i orten."
+ },
+ "vo-film-4b": {
+  "hash": "7b08c6bda775eb2b",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm, quietly amazed] Gatorna kring stationen och torget har blivit trädgårdar. Fäbodarna lever igen, och maten på torget kommer från bygden."
+ },
+ "vo-film-5b": {
+  "hash": "e1d13f5af2e99e90",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[calm, wonder] Siljan är lika klar som förr. Båtarna går tyst på el mellan byarna – och högvattnet har fått plats att komma och gå."
+ },
+ "vo-film-5": {
+  "hash": "2805227fddabd77f",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[calm, sincere] Det är ingen prognos. Det är ett sätt att tänka – och att välja. [pause] Vilket Rättvik vill du bygga?"
+ },
+ "vo-film-1-en": {
+  "hash": "73a037e20a5aff3c",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm, calm] This is Rättvik today. Eleven thousand people by Lake Siljan, more than one in three over sixty-five – and almost sixty percent more in summer."
+ },
+ "vo-film-2-en": {
+  "hash": "3efa25bc6bb5de7c",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[thoughtful] But how do we really want to live here in a hundred years? Together with our children, grandchildren and neighbours?"
+ },
+ "vo-film-3b-en": {
+  "hash": "63eaed53e4aeedb3",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm] Rättvik twenty-one twenty-six works out an answer, year by year – from the research and the municipality's own statistics. Every choice shows in the town."
+ },
+ "vo-film-4b-en": {
+  "hash": "b88c75845a8ed6a8",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm, quietly amazed] The streets round the station and the square have become gardens. The summer farms are alive again, and the food on the square comes from the countryside."
+ },
+ "vo-film-5b-en": {
+  "hash": "5989451ca920d43f",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[calm, wonder] Lake Siljan is as clear as it ever was. The boats run quietly on electricity between the villages – and the high water has room to come and go."
+ },
+ "vo-film-5-en": {
+  "hash": "8fa01c01a47c77b9",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[calm, sincere] It is not a forecast. It is a way of thinking – and of choosing. [pause] Which Rättvik do you want to build?"
+ }
+}

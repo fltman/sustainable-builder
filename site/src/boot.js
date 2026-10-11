@@ -20,31 +20,37 @@ const splash=document.getElementById('loading'),pickBox=splash.querySelector('.l
 // Fetch what every visit needs while the visitor reads the first screen.
 for(const u of ['city/map.json','city/tiles/tiles.json','models/crowd/crowd.json','models/vehicles.glb',...(__PACK__.addresses?['city/addresses.json']:[])])fetch(u).catch(()=>{});
 
+// The first screen's and the start menu's picture: the place's 2126, from its film's poster (none without a film).
+if(typeof __FILM__!=='undefined'&&__FILM__?.poster)document.documentElement.style.setProperty('--hero',`url("${new URL(`city/${__FILM__.poster}`,document.baseURI).href}")`);
+
+// The place's languages (vite.config.js: CITY.langs, its own first) and the first screen's words in each.
+const LANGS=typeof __LANGS__!=='undefined'?__LANGS__:['sv','en'],known=l=>LANGS.includes(l);
+const W={sv:{again:'Startar om med mindre detaljer så att telefonen orkar …',loading:c=>`Laddar ${c} …`,memory:'Sidan behöver mer minne än telefonen har ledigt just nu. Stäng andra flikar och försök igen – eller öppna den på en dator.',retry:'Försök igen'},
+  en:{again:'Starting again with less detail, so the phone can keep up …',loading:c=>`Loading ${c} …`,memory:'This page needs more memory than the phone has free right now. Close other tabs and try again – or open it on a computer.',retry:'Try again'},
+  it:{again:'Riparto con meno dettagli, così il telefono ce la fa …',loading:c=>`Carico ${c} …`,memory:'La pagina ha bisogno di più memoria di quella che il telefono ha libera adesso. Chiudi le altre schede e riprova – oppure aprila su un computer.',retry:'Riprova'}};
 function start(lang){
   window.__kalmarLang=lang;save('kalmar-lang',lang);document.documentElement.lang=lang;
   window.__kalmarSafe=crashes>0;
   splash.classList.add('chosen');pickBox.hidden=true;load.hidden=false;
-  document.getElementById('load-text').textContent=crashes>0
-    ?(lang==='en'?'Starting again with less detail, so the phone can keep up …':'Startar om med mindre detaljer så att telefonen orkar …')
-    :(lang==='en'?`Loading ${__PLACE__.en.centre} …`:`Laddar ${__PLACE__.sv.centre} …`);
+  document.getElementById('load-text').textContent=crashes>0?W[lang].again:W[lang].loading(__PLACE__[lang].centre);
   const alive=()=>ss.set('kalmar-alive',String(Date.now()));alive();setInterval(alive,4000);
   addEventListener('pagehide',()=>ss.del('kalmar-alive'));
   import('./main.js');
 }
-const given=params.get('lang'),lastLang=given==='en'||(!given&&saved==='en')?'en':'sv';
+const given=params.get('lang'),home=LANGS[0],lastLang=known(given)?given:!given&&known(saved)?saved:home;
 if(crashes>=3){
   // Out of memory again and again: say so instead of looping.
   pickBox.hidden=true;load.hidden=false;
-  const en=saved==='en';
-  document.getElementById('load-text').textContent=en?'This page needs more memory than the phone has free right now. Close other tabs and try again – or open it on a computer.':'Sidan behöver mer minne än telefonen har ledigt just nu. Stäng andra flikar och försök igen – eller öppna den på en dator.';
+  const w=W[known(saved)?saved:home];
+  document.getElementById('load-text').textContent=w.memory;
   splash.querySelector('.meter').hidden=true;
-  const retry=document.createElement('button');retry.className='splash-retry';retry.textContent=en?'Try again':'Försök igen';
+  const retry=document.createElement('button');retry.className='splash-retry';retry.textContent=w.retry;
   retry.onclick=()=>{ss.del('kalmar-crashes');ss.del('kalmar-alive');location.reload();};load.append(retry);
 }
 else if(given||params.has('film')||resume||died)start(lastLang);
 else{
   // The last choice (or the browser's language) is the default: Enter picks it.
-  const def=saved||((navigator.language||'sv').startsWith('sv')?'sv':'en');
+  const nav=(navigator.language||'sv').slice(0,2),def=known(saved)?saved:known(nav)?nav:'en';
   const buttons=[...pickBox.querySelectorAll('button')];
   for(const b of buttons){b.onclick=()=>start(b.dataset.lang);if(b.dataset.lang===def)b.classList.add('default');}
   buttons.find(b=>b.dataset.lang===def)?.focus();

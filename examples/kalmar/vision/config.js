@@ -67,6 +67,7 @@ export const CITY={
   // The film in the pack (film/…) and its length; none: no film button.
   film:{sv:'film/kalmar-2126',en:'film/kalmar-2126-en',poster:'film/poster.jpg',length:{sv:'1½ minut',en:'1½ minutes'}},
   // Who the starting point comes from, for About.
+  printSources:{sv:'SCB, Kolada, SMHI och Kalmar Vatten',en:'Statistics Sweden, Kolada, SMHI, Kalmar Vatten',it:"l'istituto statistico svedese (SCB), Kolada, SMHI e Kalmar Vatten"},
   sources:{sv:'SCB, Kolada, Folkhälsomyndigheten, SMHI, SGU, VISS, MCF, Trafikverket, Tillväxtverket, Linnéuniversitetet, Kalmar Vatten, Länsstyrelsen och Lantmäteriet',
     en:'Statistics Sweden, Kolada, the Public Health Agency, SMHI, the Geological Survey (SGU), VISS, the Swedish Civil Defence Agency (MCF), the Transport Administration, the Agency for Economic and Regional Growth, Linnaeus University, Kalmar Vatten, the County Administrative Board and Lantmäteriet'},
 };

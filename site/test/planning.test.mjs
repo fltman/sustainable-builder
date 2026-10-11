@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createPlanning, centroid, pointInPolygon } from '../src/planning.js';
 import { createGraph } from '../src/graph.js';
+import { CITY } from '../src/city-config.js';
 const map=JSON.parse(readFileSync(cityOf().pack+'/map.json'));
 test('polygon helpers',()=>{
   const sq=[[0,0],[10,0],[10,10],[0,10]];
@@ -15,8 +16,9 @@ test('planning ranks roofs by area share and protects the landmarks',()=>{
   const orders=p.buildings.filter(b=>!b.heritage).map(b=>b.order);
   assert.ok(Math.min(...orders)>0&&Math.max(...orders)<1);
   assert.ok(p.buildings.some(b=>b.heritage));
-  assert.ok(p.roads.some(r=>r.car)&&p.roads.some(r=>!r.car));
-  assert.ok(p.onIsland(20,-10),'Stortorget lies on Kvarnholmen');
+  // Car streets where the place has cars (not in Venice); its first square lies on its land (Kalmar's Stortorget on Kvarnholmen).
+  assert.ok(p.roads.some(r=>!r.car));if(CITY.traffic?.car!==0)assert.ok(p.roads.some(r=>r.car));
+  const sq=CITY.squares?.[0]||{x:20,z:-10};assert.ok(p.onIsland(sq.x,sq.z),'the first square lies on the land');
 });
 test('the street graph routes across Kvarnholmen',()=>{
   const p=createPlanning(map),g=createGraph(p.roads);

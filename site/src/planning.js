@@ -60,7 +60,10 @@ export function createPlanning(map){
     return {...r,car,order,length:r.p.slice(1).reduce((s,q,k)=>s+Math.hypot(q[0]-r.p[k][0],q[1]-r.p[k][1]),0)};
   });
   const island=map.land?.[0]||[...(map.areas||[]).filter(a=>a.k==='land').map(a=>a.p[0])].sort((a,b)=>Math.abs(polygonArea(b))-Math.abs(polygonArea(a)))[0]||[[PLAN_RECT.minX,PLAN_RECT.minZ],[PLAN_RECT.maxX,PLAN_RECT.minZ],[PLAN_RECT.maxX,PLAN_RECT.maxZ],[PLAN_RECT.minX,PLAN_RECT.maxZ]];
-  const onIsland=(x,z)=>pointInPolygon(x,z,island);
+  // A city of islands where no one island holds half the land (Venice): every island counts as the core.
+  const landPolys=map.land?.length?map.land:(map.areas||[]).filter(a=>a.k==="land").map(a=>a.p[0]);
+  const landArea=landPolys.reduce((s,p)=>s+Math.abs(polygonArea(p)),0),archipelago=landPolys.length>1&&Math.abs(polygonArea(island))<landArea/2;
+  const onIsland=archipelago?(x,z)=>landPolys.some(p=>pointInPolygon(x,z,p)):(x,z)=>pointInPolygon(x,z,island);
 
   // Texture painting: one canvas per channel (2D canvas cannot write channels independently).
   const toPx=(x,z)=>[(x-PLAN_RECT.minX)/(PLAN_RECT.maxX-PLAN_RECT.minX)*W,(z-PLAN_RECT.minZ)/(PLAN_RECT.maxZ-PLAN_RECT.minZ)*H];

@@ -11,8 +11,9 @@ import { LANG } from '../i18n.js';
 // local context).
 const themes=research.themes;
 const quotes=[...(research.quotes||[]),...(local.quotes||[])];
-// In English the *_sv fields are overwritten with the translations (the interface reads those fields).
-if(LANG==='en'){
+// In English (and Italian, until the research has Italian) the *_sv fields are overwritten with the
+// translations (the interface reads those fields).
+if(LANG!=='sv'){
   for(const th of themes){const e=researchEn.themes[th.id];if(e){th.title_sv=e.title;th.summary_sv=e.summary;}
     for(const ev of th.evidence){const x=researchEn.evidence[ev.id];if(x){ev.claim_sv=x.claim;if(x.context)ev.context_sv=x.context;}}}
   for(const [id,ev] of Object.entries(local.evidence||{})){const x=local.en?.evidence?.[id];if(x){ev.claim_sv=x.claim;if(x.context)ev.context_sv=x.context;}}

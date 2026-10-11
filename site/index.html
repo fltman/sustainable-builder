@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="sv">
+<html lang="%HTML_LANG%">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -16,8 +16,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="%OG_IMAGE_ALT%">
-<meta property="og:locale" content="sv_SE">
-<meta property="og:locale:alternate" content="en_GB">
+%OG_LOCALES%
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="./src/style.css">
 </head>
@@ -28,10 +27,9 @@
 <div id="loading" class="splash">
   <div class="box">
     <h1>%TITLE%</h1>
-    <p class="splash-tag"><span lang="sv">%TAGLINE_SV%</span><span lang="en">%TAGLINE_EN%</span></p>
+    <p class="splash-tag">%TAGLINES%</p>
     <div class="lang-pick">
-      <button data-lang="sv"><b>Svenska</b><span>Börja på svenska</span></button>
-      <button data-lang="en" lang="en"><b>English</b><span>Start in English</span></button>
+      %LANG_PICK%
     </div>
     <div class="splash-load" hidden>
       <p id="load-text" role="status"></p>

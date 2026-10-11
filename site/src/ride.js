@@ -7,8 +7,10 @@ import { CITY } from './city-config.js';
 // Experience the city at street level: walk (first person), cycle (third person) or ride a robot
 // taxi that drives itself between the places of Kvarnholmen. The camera leaves the Sims view and
 // comes back to it on exit. Walking and cycling are blocked by buildings (OSM footprints) and water.
-const SPEED={walk:1.6,run:3.6,bike:6.5,taxi:8};
-export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehicles=null}){
+const SPEED={walk:1.6,run:3.6,bike:6.5,taxi:8,gondola:1.9,boat:5.5};
+// Boats that find their way along the canals (map.json waterways: Venice's gondolas and water taxis).
+const BOATS=new Set(['gondola','boat']),AUTO=new Set(['taxi','gondola','boat']);
+export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehicles=null,waterGraph=null}){
   let onArrive=null;
   const camera=view.camera,controls=view.controls;
   // Seen from behind: the crowd's animated cyclist (pedalling with the speed, a foot down when
@@ -17,6 +19,9 @@ export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehic
   if(rider){rider.setMatrixAt(0,new THREE.Matrix4());rider.setColorAt(0,new THREE.Color(0x2f6f9f));rider.frustumCulled=false;}
   const bikeMesh=rider||new THREE.Mesh(K.bike(),kitMaterial());bikeMesh.castShadow=true;bikeMesh.visible=false;scene.add(bikeMesh);
   const podMesh=new THREE.Mesh(vehicles?.robotaxi||K.pod(),kitMaterial({roughness:.3,metalness:.2}));podMesh.castShadow=true;podMesh.visible=false;scene.add(podMesh);
+  // The boats you ride: the Blender gondola (with its gondolier) and the electric water taxi.
+  const boatMeshes={gondola:vehicles?.gondola,boat:vehicles?.watertaxi};
+  for(const k of Object.keys(boatMeshes)){if(!boatMeshes[k])continue;const mm=new THREE.Mesh(boatMeshes[k],kitMaterial({roughness:.68,metalness:0}));mm.castShadow=true;mm.visible=false;scene.add(mm);boatMeshes[k]=mm;}
   // First-person bike: what a rider sees below the horizon – drop of the handlebar, grips and
   // hands, the stem, a basket and the top of the front wheel. Posed from the rider every frame.
   const povBike=(()=>{
@@ -90,9 +95,11 @@ export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehic
   const ok=e=>e.w>=4&&e.kind!=='steps';
   function setDestination(dest){
     state.dest=dest;state.arrived=false;
-    const a=graph.nearest(state.x,state.z,ok),b=graph.nearest(dest.x,dest.z,ok);
-    const ids=graph.path(a,b,ok)||[];
-    state.path=ids.map(id=>graph.nodes[id]);state.step=0;
+    // A boat goes by the canals to the water nearest the address.
+    const boat=BOATS.has(state.mode),g=boat?waterGraph:graph,okk=boat?()=>true:ok;
+    const a=g.nearest(state.x,state.z,okk),b=g.nearest(dest.x,dest.z,okk);
+    const ids=g.path(a,b,okk)||[];
+    state.path=ids.map(id=>g.nodes[id]);state.step=0;
     state.total=state.path.reduce((s,n,i)=>i?s+Math.hypot(n.x-state.path[i-1].x,n.z-state.path[i-1].z):s,0);
     return state.path.length>0;
   }
@@ -102,18 +109,20 @@ export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehic
     return d;
   }
   function start(mode){
-    // Start where the view is looking, on the nearest street.
-    const t=controls.target,n=graph.nodes[graph.nearest(t.x,t.z)];
+    // Start where the view is looking, on the nearest street (a boat: on the nearest canal).
+    const g=BOATS.has(mode)?waterGraph:graph;
+    const t=controls.target,n=g.nodes[g.nearest(t.x,t.z)];
     state.saved={pos:camera.position.clone(),target:t.clone(),near:camera.near,fov:camera.fov};
     Object.assign(state,{mode,x:n.x,z:n.z,speed:0,pitch:mode==='bike'?-.08:0,bob:0,lean:0,outside:false});
-    const e=n.edges[0],o=e&&graph.nodes[graph.other(e,n.id)];state.heading=o?Math.atan2(o.x-n.x,o.z-n.z):0;
+    const e=n.edges[0],o=e&&g.nodes[g.other(e,n.id)];state.heading=o?Math.atan2(o.x-n.x,o.z-n.z):0;
+    if(BOATS.has(mode))state.y=CITY.water.y;
     controls.enabled=false;camera.near=.2;camera.fov=mode==='walk'?62:55;camera.updateProjectionMatrix();
     bikeMesh.visible=mode==='bike';podMesh.visible=mode==='taxi';
     state.path=null;state.dest=null;state.arrived=false;
   }
   function stop(){
     if(!state.mode)return;
-    state.mode=null;bikeMesh.visible=podMesh.visible=povBike.visible=false;
+    state.mode=null;bikeMesh.visible=podMesh.visible=povBike.visible=false;for(const mm of Object.values(boatMeshes))if(mm)mm.visible=false;
     const s=state.saved;controls.target.set(state.x,0,state.z);
     camera.position.set(state.x-60,70,state.z+90);camera.near=s.near;camera.fov=s.fov;camera.updateProjectionMatrix();
     controls.enabled=true;controls.update();keys.clear();
@@ -123,8 +132,8 @@ export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehic
     const m=state.mode;if(!m)return 0;
     const turnKey=(keys.has('KeyA')||keys.has('ArrowLeft')?1:0)-(keys.has('KeyD')||keys.has('ArrowRight')?1:0);
     const go=(keys.has('KeyW')||keys.has('ArrowUp')?1:0)-(keys.has('KeyS')||keys.has('ArrowDown')?1:0);
-    if(m==='taxi'){
-      // Autopilot: follow the route, slow for corners, stop on arrival.
+    if(AUTO.has(m)){
+      // Autopilot: follow the route, slow for corners, stop on arrival (boats turn slower).
       if(state.path&&state.step>=state.path.length&&!state.arrived){state.arrived=true;onArrive?.(state.dest);}
       const tgt=state.path&&state.path[state.step];
       if(!tgt)state.speed*=Math.max(0,1-dt*2);
@@ -133,8 +142,9 @@ export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehic
         if(d<2.5)state.step++;
         else{
           const want=Math.atan2(dx,dz);let diff=Math.atan2(Math.sin(want-state.heading),Math.cos(want-state.heading));
-          state.heading+=THREE.MathUtils.clamp(diff,-1.6*dt,1.6*dt);
-          const target=SPEED.taxi*(1-Math.min(.7,Math.abs(diff)));state.speed+=(target-state.speed)*Math.min(1,dt*1.5);
+          const turn=m==='gondola'?.7:m==='boat'?1.1:1.6;
+          state.heading+=THREE.MathUtils.clamp(diff,-turn*dt,turn*dt);
+          const target=SPEED[m]*(1-Math.min(.7,Math.abs(diff)));state.speed+=(target-state.speed)*Math.min(1,dt*(m==='gondola'?.6:1.5));
           state.x+=Math.sin(state.heading)*state.speed*dt;state.z+=Math.cos(state.heading)*state.speed*dt;
         }
       }
@@ -151,24 +161,32 @@ export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehic
       else if(!blocked(state.x,nz))state.z=nz;
       else state.speed*=.3;
     }
-    const ground=land.heightAt(state.x,state.z);state.y+=(ground-state.y)*Math.min(1,dt*8);
+    // On foot and on wheels the ground; a boat floats on the place's water, rocking a little.
+    const boatNow=BOATS.has(m),rock=boatNow?Math.sin(performance.now()/900)*.04:0;
+    const ground=boatNow?CITY.water.y:land.heightAt(state.x,state.z);state.y+=(ground-state.y)*Math.min(1,dt*8);
     state.bob+=dt*Math.abs(state.speed)*(m==='walk'?1.9:0);
     fwd.set(Math.sin(state.heading),0,Math.cos(state.heading));
-    const inside=m==='taxi'&&!state.outside,pov=m==='bike'&&!state.outside;
+    const inside=AUTO.has(m)&&!state.outside,pov=m==='bike'&&!state.outside;
     podMesh.visible=m==='taxi'&&!inside;bikeMesh.visible=m==='bike'&&!pov;povBike.visible=pov;
+    // A gondola stays in view from the passengers' seat (its bow and ferro ahead); a water taxi from outside only.
+    for(const [k,mm] of Object.entries(boatMeshes))if(mm){mm.visible=m===k&&(k==='gondola'||!inside);
+      if(mm.visible){mm.position.set(state.x,state.y+rock,state.z);mm.rotation.set(rock*.5,state.heading,rock*.8);}}
     if(pov){
       // Rider's eye: a gentle pedalling bob, leaning into the turn; the handlebar turns with the steering.
       state.bob+=dt*Math.abs(state.speed)*1.1;
       state.lean=(state.lean||0)+((-turnKey*.09*Math.min(1,state.speed/3))-(state.lean||0))*Math.min(1,dt*4);
       camera.position.set(state.x-fwd.x*.15,state.y+1.62+Math.sin(state.bob*2)*.012,state.z-fwd.z*.15);
     }else if(m==='walk'||inside){
-      // On foot: eye height with a little step bob. In the taxi: the front seat, under the canopy.
-      if(inside)camera.position.set(state.x+fwd.x*.6,state.y+1.42,state.z+fwd.z*.6);
+      // On foot: eye height with a little step bob. In the taxi: the front seat, under the canopy. In a
+      // gondola: the passengers' seat behind the middle, low over the water; in the water taxi, the bench.
+      if(inside&&m==='gondola')camera.position.set(state.x-fwd.x*1.0,state.y+1.25+rock,state.z-fwd.z*1.0);
+      else if(inside&&m==='boat')camera.position.set(state.x+fwd.x*.4,state.y+1.75+rock,state.z+fwd.z*.4);
+      else if(inside)camera.position.set(state.x+fwd.x*.6,state.y+1.42,state.z+fwd.z*.6);
       else camera.position.set(state.x,state.y+1.68+Math.sin(state.bob*2)*.035,state.z);
     }else{
-      const back=m==='bike'?4.6:8.5,up=m==='bike'?2.3:2.7;
+      const back=m==='bike'?4.6:m==='gondola'?9:8.5,up=m==='bike'?2.3:m==='gondola'?3.2:2.7;
       camera.position.set(state.x-fwd.x*back,state.y+up,state.z-fwd.z*back);
-      const mesh=m==='bike'?bikeMesh:podMesh;mesh.position.set(state.x,state.y,state.z);mesh.rotation.set(0,state.heading,m==='bike'?-turnKey*.12*Math.min(1,state.speed/3):0);
+      if(!boatNow){const mesh=m==='bike'?bikeMesh:podMesh;mesh.position.set(state.x,state.y,state.z);mesh.rotation.set(0,state.heading,m==='bike'?-turnKey*.12*Math.min(1,state.speed/3):0);}
       if(m==='bike'&&rider){const w=rider.geometry.attributes.aWalk;w.setXY(0,0,state.speed>.4?Math.min(1.5,Math.max(.5,state.speed/5.5)):0);w.needsUpdate=true;}
     }
     look.set(state.x+fwd.x*20,(m==='walk'||inside||pov?state.y+1.5:state.y+1.2)+Math.tan(state.pitch)*20,state.z+fwd.z*20);
@@ -185,5 +203,5 @@ export function createRide({view,land,planning,graph,scene,LAND,crowd=null,vehic
     camera.userData.dist=40;
     return 40;
   }
-  return {start,stop,update,addresses,ready,setDestination,remaining,set onArrive(f){onArrive=f;},get mode(){return state.mode;},get dest(){return state.dest;},get speed(){return state.speed;},get arrived(){return state.arrived;}};
+  return {start,stop,update,addresses,ready,setDestination,remaining,water:Boolean(waterGraph),set onArrive(f){onArrive=f;},get mode(){return state.mode;},get dest(){return state.dest;},get speed(){return state.speed;},get arrived(){return state.arrived;},get boatAt(){return state.mode&&BOATS.has(state.mode)?{x:state.x,z:state.z}:null;}};
 }

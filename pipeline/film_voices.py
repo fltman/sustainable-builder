@@ -2,9 +2,10 @@
 
     python3 sustainable.py film-voices <slug> [--lang sv,en] [--only vo-film-1] [--force]
 
-Reads the voiced lines from cities/<slug>/vision/film.js (SPOKEN.sv / SPOKEN.en, with audio tags and
-numbers written out; VOICE = {id, model} picks the narrator) and writes cities/<slug>/media/audio/<id>.mp3
-and <id>-en.mp3 (the source; the pack step copies them into pack/audio/, and so does this script), with a
+Reads the voiced lines from cities/<slug>/vision/film.js (SPOKEN.<lang>, with audio tags and numbers
+written out; VOICE = {id, model, <lang>: {id}} picks the narrator, per language where it names one) and writes
+cities/<slug>/media/audio/<id>.mp3 in Swedish and <id>-<lang>.mp3 in the others (the source; the pack step
+copies them into pack/audio/, and so does this script), with a
 log of each line's text hash so unchanged lines are never paid for twice.
 Needs ELEVENLABS_API_KEY (.env). Generation costs credits: the agent asks before running it.
 """
@@ -58,11 +59,14 @@ def main(argv=None):
         raise SystemExit('ELEVENLABS_API_KEY is not set (.env). The film works without narration, or record your own audio/<id>.mp3.')
     from elevenlabs import ElevenLabs
     client = ElevenLabs(api_key=os.environ['ELEVENLABS_API_KEY'])
+    default_voice = voice_id
     for lang in args.lang.split(','):
+        # A narrator per language where the film names one (VOICE.it = {id}: Venice's Italian narrator).
+        voice_id = (voice.get(lang) or {}).get('id') or default_voice
         for name, text in (spoken.get(lang) or {}).items():
             if args.only and name not in args.only.split(','):
                 continue
-            file = f'{name}{"-en" if lang == "en" else ""}'
+            file = f'{name}{"" if lang == "sv" else "-" + lang}'
             key = hashlib.sha256(f'{voice_id}|{model}|{text}'.encode()).hexdigest()[:16]
             out = audio_dir / f'{file}.mp3'
             if out.exists() and log.get(file, {}).get('hash') == key and not args.force:

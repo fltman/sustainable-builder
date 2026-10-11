@@ -54,7 +54,8 @@ test('levers move the indicators they should',()=>{
   const with_=(id,level)=>simulate({policyAt:()=>({...defaultPolicy(),[id]:level}),events:false}).years[50].ind;
   const base=simulate({events:false}).years[50].ind;
   assert.ok(with_('analog',3).youthScreen<base.youthScreen-.2);
-  assert.ok(with_('bilfritt',3).carShare<base.carShare-.15);
+  // A town of cars loses most of them; a place without them (Venice) has none to lose.
+  if(BASE.carShare>.2)assert.ok(with_('bilfritt',3).carShare<base.carShare-.15);
   assert.ok(with_('bogemenskap',3).lowParticipation<base.lowParticipation-.05);
   assert.ok(with_('hav',3).waters>base.waters+.1);
   if(FLOOD)assert.ok(with_('anpassning',3).floodRisk<base.floodRisk);
@@ -85,7 +86,7 @@ test('every journey decade has three or four dilemmas whose options name real le
 test('uncertainty bands start at today\'s measured values and widen over the century',async()=>{
   const { ensemble }=await import('../src/model.js');
   const b=ensemble({},{members:16});
-  for(const k of ['pop','carShare','trust','lifeExp']){
+  for(const k of ['pop',...(BASE.carShare>.2?['carShare']:[]),'trust','lifeExp']){
     assert.ok(b.hi[k][0]-b.lo[k][0]<=Math.abs(b.lo[k][0])*.01+1e-9,`${k} band at 2026 should be (near) zero`);
     assert.ok(b.hi[k][100]-b.lo[k][100]>b.hi[k][0]-b.lo[k][0],`${k} band should widen`);
   }

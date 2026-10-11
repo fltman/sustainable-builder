@@ -3,21 +3,22 @@
 //   CITY=<slug> node tools/film.mjs [out.mp4]   (python3 sustainable.py film <slug> runs the whole chain)
 // The film server must run: CITY=<slug> npx vite --config vite.film.config.js (port 5231, FILM_PORT).
 // FROM_SCENE=n re-renders scene n onwards, SCENES_ONLY=2,3,4 just those scenes; MIX_ONLY=1 only remixes.
-// Earlier frames are kept in test-results/frames-<slug>. FILM_LANG=en makes the English film: English
+// Earlier frames are kept in test-results/frames-<slug>. FILM_LANG=en (or it) makes the English (Italian) film:
 // captions, AR, end card and narration (<clip>-en.mp3), out test-results/<slug>-2126-en.mp4.
 import { chromium } from '@playwright/test';
 import { mkdirSync, rmSync, existsSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { cityOf } from '../city.config.mjs';
 const place=cityOf();
-const { SCENES, END_CARD }=await import(`${place.vision}/film.js`);
+const { SCENES, END_CARD, MUSIC }=await import(`${place.vision}/film.js`);
 const { CITY }=await import(`${place.vision}/config.js`);
 // Audio: the place's narration and soundtrack (its pack) before the engine's.
 const audio=name=>[`${place.pack}/audio/${name}.mp3`,`public/audio/${name}.mp3`].find(existsSync);
-const LANG=process.env.FILM_LANG==='en'?'en':'sv',sfx=LANG==='en'?'-en':'';
+const LANG=['en','it'].includes(process.env.FILM_LANG)?process.env.FILM_LANG:'sv',sfx=LANG==='sv'?'':`-${LANG}`;
 const out=process.argv[2]||`test-results/${place.slug}-2126${sfx}.mp4`,dir=`test-results/frames-${place.slug}${sfx}`,FPS=30,MIX_ONLY=process.env.MIX_ONLY,FROM=+(process.env.FROM_SCENE||0),ONLY=process.env.SCENES_ONLY?.split(',').map(Number);
-// The soundtrack starts two bars in (120 BPM), so its breakdown lands where the picture goes black.
-const MUSIC_START=4;
+// Where in the soundtrack the film starts: the place's own (film.js MUSIC.start, chosen so its breakdown
+// lands where the end card's picture has gone black), else two bars in (120 BPM), right for the engine's.
+const MUSIC_START=MUSIC?.start??4;
 if(!MIX_ONLY){
 mkdirSync(dir,{recursive:true});
 const wanted=i=>ONLY?ONLY.includes(i):i>=FROM;
@@ -80,7 +81,7 @@ for(const [si,sc] of SCENES.entries()){
       // Behind full black there is nothing to render.
       if(dark<1)for(let k=0;k<(warm?20:1);k++)window.kalmarStep(1/30);
       kalmar.app.callouts.update(window.__filmClock,{left:40,right:innerWidth-40,top:40,bottom:innerHeight-60});
-    },{sc:{...sc,cap:LANG==='en'&&sc.en?sc.en:{t:sc.t,s:sc.s}},t,e,warm:i===0});
+    },{sc:{...sc,cap:LANG!=='sv'&&sc[LANG]?sc[LANG]:{t:sc.t,s:sc.s}},t,e,warm:i===0});
     await page.screenshot({path:`${dir}/${String(frame++).padStart(5,'0')}.jpg`,type:'jpeg',quality:90});
   }
   console.log('scene done',sc.t,frame);

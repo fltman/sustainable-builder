@@ -1,5 +1,6 @@
 import { LANG, L } from '../i18n.js';
-import { LEVER_TEXT, WORLD_CLIMATE } from '@city/levers.js';
+import * as PLACE_LEVERS from '@city/levers.js';
+const {LEVER_TEXT,WORLD_CLIMATE}=PLACE_LEVERS;
 // The municipality's levers ("vägval"). Each has levels 0–3: 0 = today's course, 1 = steady,
 // 2 = ambitious, 3 = radical. `cost` is the yearly demand on the city's shared capacity (money,
 // people, attention) at full implementation; `tau` how many years implementation takes to settle.
@@ -56,7 +57,9 @@ const DEFS=[
   {id:'anpassning',theme:'resiliens',name:'Klimatanpassning',short:'Skydd mot högvatten, skyfallsytor, svalka',cost:1.3,tau:16,
     levels:['Som idag','Skyfallsytor och höjda kajer','Skyddsvallar och svampstad','Plats för vattnet: upphöjda och flytande kvarter']},
 ];
-export const LEVERS=DEFS.map(d=>({...d,...LEVER_TEXT?.[d.id]}));
+// A place can add levers of its own (@city/levers.js EXTRA_LEVERS: Venice's visitor management): same shape as
+// DEFS; their effects are the place's own model (@city/model.js LOCAL), which reads them as I[id].
+export const LEVERS=[...DEFS,...(PLACE_LEVERS.EXTRA_LEVERS||[])].map(d=>({...d,...LEVER_TEXT?.[d.id]}));
 export const LEVER=Object.fromEntries(LEVERS.map(l=>[l.id,l]));
 // The three worlds around the place. gwl2100: global warming by 2100 in °C (IPCC AR6 best estimates),
 // for the tourist season; shape: how fast the climate arrives (share of the 2126 level by year t): the low
@@ -71,8 +74,8 @@ export const WORLDS=[
   {id:'ssp585',name:'Fossil värld',short:'Över 4 °C till 2100 (SSP5-8.5)',gwl2100:4.4,shape:t=>Math.min(1,t/100)},
 ].map(w=>({...w,...CLIMATE_DEFAULT[w.id],...WORLD_CLIMATE?.[w.id]}));
 
-// English: translate the static texts in place when the interface runs in English.
-if(LANG==='en'){
+// English and Italian: translate the static texts in place when the interface runs in either.
+if(LANG!=='sv'){
   for(const th of THEMES)th.name=L(th.name);
   LEVELS.forEach((v,i)=>LEVELS[i]=L(v));
   for(const l of LEVERS){l.name=L(l.name);l.short=L(l.short);l.levels=l.levels.map(L);}

@@ -78,7 +78,14 @@ def wall_pattern(style, g, bay, storey):
     """Neutral wall albedo/height/roughness for one bay × one storey."""
     x, y = g.grid()
     n = g.n
-    if style == 'plaster':
+    if style == 'venetian':
+        # Lime plaster that has seen centuries of salt air: broad mottling and soft darker clouds.
+        rgb = tone(g, (0.86, 0.85, 0.82), 0.05, 22)
+        cloud = np.clip(g.noise(70) * 0.6 + g.noise(18) * 0.4, -2, 2)
+        rgb *= (1 - 0.05 * np.clip(cloud, 0, None))[:, :, None]
+        h = g.noise(1.0) * 0.0008 + g.noise(5) * 0.0012
+        rough = 0.88 + g.noise(10) * 0.03
+    elif style == 'plaster':
         rgb = tone(g, (0.86, 0.85, 0.82), 0.035, 30)
         h = g.noise(1.0) * 0.0006 + g.noise(6) * 0.0008
         rough = 0.85 + g.noise(10) * 0.03
@@ -179,6 +186,110 @@ def window(g, rgb, h, rough, mask, bay, storey, x0m, x1m, y0m, y1m, frame=(0.92,
         rough[s] = 0.7
 
 
+ISTRIAN = (0.87, 0.85, 0.79)          # Istrian stone: the white limestone of Venice's sills, arches and plinths
+
+
+def brick_patches(g, rgb, h, rough, mask, X, Y, bay, storey, amount, top=None):
+    """Plaster flaked off the wall where the brick shows through (Venice's salt-damp walls); amount 0..1.
+    top: the damp rises this high (m) – the flaking gathers below it, so a repeated bay reads as a band of
+    decay along the base rather than the same patch in every bay."""
+    blob = g.noise(26) + g.noise(7) * 0.35
+    if top:
+        blob = blob + 1.6 * np.clip(1 - Y / top, 0, 1) - 0.9
+    patch = blob > (2.25 - 0.9 * amount)
+    rows = (Y / 0.065).astype(int)
+    u = X / 0.24 + (rows % 2) * 0.5
+    mortar = ((u - np.floor(u)) < 0.07) | (((Y / 0.065) % 1.0) < 0.16)
+    var = (np.random.default_rng(5).uniform(-0.12, 0.12, (512, 64))[rows % 512, np.floor(u).astype(int) % 64])
+    bcol = np.dstack([0.63 + var, 0.34 + var * 0.6, 0.26 + var * 0.4])
+    bcol[mortar] = (0.78, 0.74, 0.66)
+    rgb[patch] = bcol[patch]
+    mask[patch] = 0
+    h[patch] -= 0.008
+    rough[patch] = 0.9
+    rim = (blob > (2.1 - 0.9 * amount)) & ~patch
+    h[rim] += 0.002
+    rgb[rim] *= 1.04
+
+
+def venetian_window(g, rgb, h, rough, mask, X, Y, cx, w, y0, y1, shutters=True, bars=False):
+    """A round-arched window (springing at y1) in an Istrian stone surround with a stone sill, two casements
+    and, either side, green louvred shutters folded back; bars=True: an iron grille instead (ground floor)."""
+    r, fw = w / 2, 0.12
+    def arch(pad, lo):
+        straight = (np.abs(X - cx) < r + pad) & (Y >= lo) & (Y < y1)
+        top = ((X - cx) ** 2 + (Y - y1) ** 2 < (r + pad) ** 2) & (Y >= y1)
+        return straight | top
+    if shutters:
+        for sx0 in (cx - r - fw - 0.03 - r, cx + r + fw + 0.03):
+            sh = rect(X, Y, sx0, sx0 + r, y0, y1)
+            lou = ((Y - y0) / 0.05) % 1.0
+            shade = 0.82 + 0.3 * (lou > 0.55)
+            col = np.dstack([0.17 * shade, 0.29 * shade, 0.21 * shade])
+            edge = sh & ~rect(X, Y, sx0 + 0.04, sx0 + r - 0.04, y0 + 0.04, y1 - 0.04)
+            col[edge] = (0.14, 0.24, 0.17)
+            rgb[sh] = col[sh]
+            mask[sh] = 0
+            h[sh] = 0.012 + 0.004 * (lou[sh] > 0.55)
+            rough[sh] = 0.6
+    stone = arch(fw, y0)
+    rgb[stone] = ISTRIAN
+    mask[stone] = 0
+    h[stone] = 0.015
+    rough[stone] = 0.75
+    sill = rect(X, Y, cx - r - fw - 0.06, cx + r + fw + 0.06, y0 - 0.12, y0)
+    rgb[sill] = (0.84, 0.82, 0.76)
+    mask[sill] = 0
+    h[sill] = 0.03
+    open_ = arch(0.0, y0)
+    gy = np.clip((Y - y0) / max(y1 + r - y0, 1e-3), 0, 1)
+    refl = 0.05 + 0.11 * gy ** 2 + g.noise(30) * 0.012
+    rgb[open_] = np.dstack([refl * 0.85, refl * 1.0, refl * 1.12])[open_]
+    mask[open_] = 0
+    rough[open_] = 0.08
+    h[open_] = -0.08
+    if bars:
+        bar = open_ & ((((X - cx + r) / 0.13) % 1.0) < 0.16)
+        rgb[bar] = (0.11, 0.11, 0.11)
+        rough[bar] = 0.5
+        h[bar] = -0.02
+    else:
+        frame = open_ & ~arch(-0.05, y0 + 0.05) | (open_ & (np.abs(X - cx) < 0.025)) | (open_ & (np.abs(Y - y1) < 0.025))
+        rgb[frame] = (0.86, 0.85, 0.81)
+        rough[frame] = 0.5
+        h[frame] = -0.04
+    # Rain has run down from the sill.
+    streak = np.exp(-((X - cx) / (r * 0.8)) ** 2) * np.clip(1 - (y0 - 0.12 - Y) / 1.6, 0, 1) * (Y < y0 - 0.12)
+    rgb *= (1 - 0.07 * streak)[:, :, None]
+
+
+def venetian(kind, g, rgb, h, rough, mask, bay, storey):
+    x, y = g.grid()
+    X, Y = x * bay, y * storey
+    cx = bay / 2
+    if kind == 'Ground':
+        # Istrian stone plinth, the green-brown tide line above it, a barred window.
+        brick_patches(g, rgb, h, rough, mask, X, Y, bay, storey, 0.9, top=1.5)
+        # Rising damp: a darker, greyer-green zone with a ragged top and a thin white salt line along it.
+        edge = 0.95 + 0.22 * g.noise(14) + 0.06 * g.noise(3)
+        damp = np.clip((edge - Y) / 0.35, 0, 1) * (Y >= 0.45)
+        rgb *= (1 - 0.26 * damp)[:, :, None] * (np.array([0.96, 1.0, 0.9])[None, None, :] ** damp[:, :, None])
+        salt = (np.abs(Y - edge) < 0.025) & (Y >= 0.45)
+        rgb[salt] = np.minimum(1, rgb[salt] * 1.12 + 0.03)
+        base = rect(X, Y, 0, bay, 0, 0.45)
+        rgb[base] = tone(g, ISTRIAN, 0.05, 4)[base] * (0.78 + 0.22 * np.clip(Y[base] / 0.45, 0, 1))[:, None]
+        mask[base] = 0
+        h[base] = 0.02
+        rough[base] = 0.8
+        venetian_window(g, rgb, h, rough, mask, X, Y, cx, 0.8, 1.35, 2.35, shutters=False, bars=True)
+        return rgb, h, rough, mask
+    if kind == 'Blank':
+        brick_patches(g, rgb, h, rough, mask, X, Y, bay, storey, 0.05)
+        return rgb, h, rough, mask
+    venetian_window(g, rgb, h, rough, mask, X, Y, cx, 0.95, 0.8, 2.05)
+    return rgb, h, rough, mask
+
+
 def facade(style, kind, g):
     spec = STYLE['wall_styles'][style]
     bay = spec['bay']
@@ -188,6 +299,8 @@ def facade(style, kind, g):
     x, y = g.grid()
     X, Y = x * bay, y * storey
     cx = bay / 2
+    if style == 'venetian':
+        return venetian(kind, g, rgb, h, rough, mask, bay, storey)
     if kind == 'Blank':
         return rgb, h, rough, mask
     if style == 'glass':

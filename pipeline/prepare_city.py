@@ -25,6 +25,7 @@ import re
 from collections import defaultdict
 
 import numpy as np
+from shapely.prepared import prep
 import shapely
 from shapely import affinity
 from shapely.geometry import LineString, MultiPolygon, Point, Polygon, box
@@ -314,6 +315,10 @@ def main(argv=None):
     B = box(-half, -half, half, half)
     country = place.get('country_code', '')
     preset = next((p for p in STYLE['region_presets'].values() if country in p['countries']), STYLE['region_presets']['default'])
+    # A place can tune its region's preset (overrides.json "defaults": {"preset": …}): the style weights, weighted
+    # colours per wall and roof style (Venice: ochre, salmon, rose and Venetian red under terracotta) and the
+    # largest footprint that still gets a pitched roof.
+    preset = {**preset, **defaults.get('preset', {})}
     say(f'Preparing {place["name"]}: {place["size_m"]} m square, style preset for "{country or "?"}"')
 
     # ---------------------------------------------------------------- water and land
@@ -548,10 +553,12 @@ def main(argv=None):
     forest = area_union(lambda t: t.get('landuse') == 'forest' or t.get('natural') in ('wood', 'tree_group'))
     field = area_union(lambda t: t.get('landuse') in ('farmland', 'farmyard', 'meadow') and False or t.get('landuse') in ('farmland',))
     dirt = area_union(lambda t: t.get('landuse') in ('brownfield', 'construction', 'landfill', 'quarry', 'railway') or t.get('natural') in ('bare_rock', 'scree', 'mud'))
-    # Yards: lawn round small houses (villas, terraces, cottages), so residential streets aren't bare dirt.
+    # Yards: lawn round small houses (villas, terraces, cottages), so residential streets aren't bare dirt
+    # – not in a stone city ("rest": "paving"), where small houses stand wall to wall round paved courts.
+    stone = defaults.get('rest', 'grass') == 'paving'
     house_polys = [v['poly'] for v in vol_info
                    if v['kind'] in HOUSE_KINDS or (v['kind'] in ('yes', 'residential') and v['poly'].area < 220 and v['levels'] <= 2)]
-    yards = unary_union([q.buffer(12.0) for q in house_polys]).intersection(B) if house_polys else Polygon()
+    yards = unary_union([q.buffer(12.0) for q in house_polys]).intersection(B) if house_polys and not stone else Polygon()
     grass = grass.union(yards)
     # A pier deck beats footpaths mapped along it (their strips would otherwise sit at ground level over the water).
     layers = [('asphalt', car_u), ('cobble', cob_u), ('sidewalk', sidewalk), ('pier', pier), ('paving', pav_u.union(platforms)), ('path', soft_u),
@@ -572,9 +579,13 @@ def main(argv=None):
             layer_geom[name] = g
     rest = land.difference(taken).difference(unary_union(list(layer_geom.values())) if layer_geom else Polygon())
     # Land the map says nothing about: grass in a sustainable place (bare ground only with
-    # "defaults": {"rest": "ground"} in overrides.json, as the battle-car game had it).
+    # "defaults": {"rest": "ground"} in overrides.json, as the battle-car game had it; stone with
+    # "rest": "paving", for a city of paved courts and alleys like Venice).
     if defaults.get('rest', 'grass') == 'ground':
         layer_geom['ground'] = unary_union(clean(rest, 0.3))
+    elif stone:
+        layer_geom['paving'] = unary_union([layer_geom.get('paving', Polygon()), *clean(rest, 0.3)])
+        layer_geom['ground'] = Polygon()
     else:
         layer_geom['grass'] = unary_union([layer_geom.get('grass', Polygon()), *clean(rest, 0.3)])
         layer_geom['ground'] = Polygon()
@@ -643,8 +654,10 @@ def main(argv=None):
 
     # Garden hedges and white fences along the street side of house yards, with a gap for the driveway.
     hard_near = hard.buffer(2.6)
+    foot_gap = FOOT.buffer(0.5)                      # once, not per house
     n_hedge = 0
-    for v in vol_info:
+    # A stone city (Venice: "rest": "paving") has no villa yards to fence.
+    for v in ([] if defaults.get('rest', 'grass') == 'paving' else vol_info):
         q = v['poly']
         if not (v['kind'] in HOUSE_KINDS or (v['kind'] in ('yes', 'residential') and q.area < 220 and v['levels'] <= 2)):
             continue
@@ -652,7 +665,7 @@ def main(argv=None):
         if roll > 0.8:
             continue
         kind = 'hedge' if roll < 0.55 else 'fence'
-        yard = q.buffer(12.0).difference(hard).difference(FOOT.buffer(0.5))
+        yard = q.buffer(12.0).difference(hard).difference(foot_gap)
         inner = yard.buffer(-0.9, join_style=2)
         if inner.is_empty:
             continue
@@ -670,7 +683,10 @@ def main(argv=None):
             n_hedge += 1
     say(f'  {n_hedge} garden hedges and fences')
     garden_trees = []
-    for v in vol_info:
+    # Buffered once and prepared: testing thousands of points against them is then cheap. A stone city
+    # (Venice) has no villa gardens to plant.
+    foot_clear, hard_clear = prep(FOOT.buffer(2.0)), prep(hard.buffer(1.5))
+    for v in ([] if stone else vol_info):
         q = v['poly']
         if not (v['kind'] in HOUSE_KINDS or (v['kind'] in ('yes', 'residential') and q.area < 220 and v['levels'] <= 2)):
             continue
@@ -680,7 +696,7 @@ def main(argv=None):
             ang = h01(v['id'], 'ga', k) * math.tau
             r = math.sqrt(q.area) / 2 + 3.5 + h01(v['id'], 'gr', k) * 4
             pt = Point(q.centroid.x + math.cos(ang) * r, q.centroid.y + math.sin(ang) * r)
-            if land.contains(pt) and not FOOT.buffer(2.0).contains(pt) and not hard.buffer(1.5).contains(pt):
+            if land.contains(pt) and not foot_clear.contains(pt) and not hard_clear.contains(pt):
                 garden_trees.append([r2(pt.x), r2(pt.y), round(0.6 + h01(v['id'], 'gs', k) * 0.45, 2),
                                      'conifer' if h01(v['id'], 'gk', k) < 0.3 else 'leaf'])
 
@@ -827,6 +843,11 @@ def main(argv=None):
         'terrain': terrain_out(terrain), 'water_bodies': terrain['water_bodies'] if terrain else [],
         'outskirts': terrain['outskirts'] if terrain else {},
         'roads': [r for r in roads_out if LineString(r['p']).intersects(B)],
+        # Canal and river centre lines, for boats that find their way (Venice's water taxis and gondolas).
+        'waterways': [{'id': f'w{el["id"]}', 'name': t.get('name', ''), 'kind': t['waterway'], 'w': num(t.get('width')) or {'river': 14, 'canal': 9}.get(t['waterway'], 9),
+                       'p': [[r2(x), r2(y)] for x, y in part.coords]}
+                      for el, t, g in osm.lines(lambda t: t.get('waterway') in ('canal', 'river') and not t.get('tunnel'))
+                      for part in (lambda c: c.geoms if hasattr(c, 'geoms') else [c])(g.intersection(B)) if part.geom_type == 'LineString' and part.length > 5],
         'footprints': [ring_list(q.exterior) for q in footprints] + [w['poly'] for w in walls if w['kind'] == 'city_wall'] + [container_ring(c) for c in barriers],
         'land': [{'outer': ring_list(p.exterior), 'holes': [ring_list(h) for h in p.interiors]} for p in clean(land, 20)],
         'areas': {k: [{'outer': ring_list(p.exterior), 'holes': [ring_list(h) for h in p.interiors]} for p in clean(g.simplify(0.8), 25)]
@@ -1166,6 +1187,8 @@ def make_building(v, vol_info, vtree, passage, preset, country):
         wall_col = pick(preset['wood_colours'], (vid, 'wc'))
     elif kind in CHURCH_KINDS and style == 'plaster':
         wall_col = 'white' if h01(vid, 'cw') < 0.6 else 'ivory'
+    elif preset.get('colours', {}).get(style):
+        wall_col = pick(preset['colours'][style], (vid, 'col'))
     else:
         wall_col = sorted(palette)[int(h01(vid, 'col') * len(palette))]
 
@@ -1176,7 +1199,7 @@ def make_building(v, vol_info, vtree, passage, preset, country):
     if v['ov'].get('roof') in ('flat', 'gabled', 'hipped', 'pyramidal'):
         shape = v['ov']['roof']
     if not shape:
-        pitched_ok = (house or (levels <= 5 and area < 900 and kind not in ('industrial', 'warehouse', 'retail', 'supermarket', 'commercial', 'office')))
+        pitched_ok = (house or (levels <= 5 and area < preset.get('pitched_area', 900) and kind not in ('industrial', 'warehouse', 'retail', 'supermarket', 'commercial', 'office')))
         if kind in SMALL_KINDS and kind not in ('kiosk',):
             shape = 'flat' if h01(vid, 'sh') < 0.6 else 'gabled'
         elif kind in CHURCH_KINDS:
@@ -1201,6 +1224,8 @@ def make_building(v, vol_info, vtree, passage, preset, country):
             roof_col = 'copper'
         elif roof_rgb:
             roof_col = nearest_key(roof_rgb, rpal)
+        elif preset.get('roof_colours', {}).get(roof_style):
+            roof_col = pick(preset['roof_colours'][roof_style], (vid, 'rc'))
         else:
             roof_col = sorted(rpal)[int(h01(vid, 'rc') * len(rpal))]
     if kind in CHURCH_KINDS and roof_style == 'metal' and h01(vid, 'cu') < 0.5:
@@ -1252,6 +1277,19 @@ def make_building(v, vol_info, vtree, passage, preset, country):
         for q in clean(rest, 0.5):
             parts['flat'].polygon(q, H - 0.02)
 
+    # ---- chimneys: Venice's funnel-topped camini on its pitched roofs (preset "chimneys": "venetian")
+    if preset.get('chimneys') == 'venetian' and rects and kind not in CHURCH_KINDS and kind not in SMALL_KINDS and area > 40:
+        ring = list(p.exterior.coords)
+        perim = p.exterior.length
+        for k in range(min(4, 1 + int(area / 160))):
+            pt = p.exterior.interpolate(perim * ((h01(vid, 'ch', k) + k * 0.37) % 1.0))
+            c0 = p.centroid
+            dx, dy = c0.x - pt.x, c0.y - pt.y
+            d = math.hypot(dx, dy) or 1
+            q = Point(pt.x + dx / d * 0.75, pt.y + dy / d * 0.75)
+            if p.contains(q.buffer(0.45)):
+                venetian_chimney(parts['blank'], q.x, q.y, H - 0.3, H + 1.6 + 1.1 * h01(vid, 'chh', k), h01(vid, 'chk', k))
+
     # ---- church tower
     if kind in CHURCH_KINDS and area > 150 and rects and not v['ov'].get('no_tower'):
         church_tower(parts, rects[0], H, vid)
@@ -1261,6 +1299,30 @@ def make_building(v, vol_info, vtree, passage, preset, country):
             'footprint': {'outer': ring_list(p.exterior), 'holes': [ring_list(h) for h in p.interiors]}, 'colour': wall_col, 'roof_style': roof_style, 'roof_colour': roof_col,
             'h': r2(H), 'levels': levels, 'cell': cell_of(c), 'landmark': False,
             'parts': {k: b.dump() for k, b in parts.items() if b}}
+
+
+def venetian_chimney(buf, x, y, z0, z1, kind):
+    """A Venetian camino: a square plastered stack and, on top, a funnel that flares out (a fumaiolo) or a
+    bell (a campana), capped flat."""
+    def box(s0, s1, za, zb, flare=0.0):
+        a0, a1 = s0, s1 + flare
+        pts0 = [(x - a0, y - a0), (x + a0, y - a0), (x + a0, y + a0), (x - a0, y + a0)]
+        pts1 = [(x - a1, y - a1), (x + a1, y - a1), (x + a1, y + a1), (x - a1, y + a1)]
+        for i in range(4):
+            j = (i + 1) % 4
+            buf.quad((*pts0[i], za), (*pts0[j], za), (*pts1[j], zb), (*pts1[i], zb), (0, za / 3), (0.4, za / 3), (0.4, zb / 3), (0, zb / 3))
+        return pts1
+    s = 0.27
+    box(s, s, z0, z1)
+    if kind < 0.6:                                  # a fumaiolo: an upturned funnel
+        top = box(s, s, z1, z1 + 0.65, 0.33)
+        zt = z1 + 0.65
+    else:                                           # a campana: a bell that bulges and closes
+        box(s, s, z1, z1 + 0.3, 0.2)
+        box(s + 0.2, s + 0.2, z1 + 0.3, z1 + 0.6, -0.12)
+        top = [(x - s - 0.08, y - s - 0.08), (x + s + 0.08, y - s - 0.08), (x + s + 0.08, y + s + 0.08), (x - s - 0.08, y + s + 0.08)]
+        zt = z1 + 0.6
+    buf.quad(*[(a, b, zt) for a, b in top], (0, 0), (0.4, 0), (0.4, 0.4), (0, 0.4))
 
 
 def emit_walls(parts, p, z0, H, top, levels, g_h, bay, others, vid):

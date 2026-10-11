@@ -264,7 +264,8 @@ const MASK=[
   #else
     float wbMask = 1.0;
   #endif`],
-  ['#include <color_fragment>',`#if defined( USE_COLOR )
+  // A batch's per-instance colour arrives as USE_COLOR_ALPHA (three.js r186), a vertex colour as USE_COLOR.
+  ['#include <color_fragment>',`#if defined( USE_COLOR ) || defined( USE_COLOR_ALPHA )
     wbTint *= vColor.rgb;
   #endif
   diffuseColor.rgb *= mix( vec3( 1.0 ), wbTint, wbMask );`],
@@ -278,7 +279,7 @@ function make(kind,{vertex=VERTEX_BODY,parts}){
       for(const [chunk,code] of parts)shader.fragmentShader=shader.fragmentShader.replace(chunk,code);
       if(mask)for(const [chunk,code] of MASK)shader.fragmentShader=shader.fragmentShader.replace(chunk,code);
     };
-    classes[kind+(mask?'-mask':'')]={fn,key:`future-v7-${kind}${mask?'-mask':''}`};
+    classes[kind+(mask?'-mask':'')]={fn,key:`future-v8-${kind}${mask?'-mask':''}`};
   }
 }
 make('building',{parts:[['#include <color_fragment>',BUILDING],['#include <roughnessmap_fragment>',BUILDING_ROUGH],['#include <metalnessmap_fragment>',BUILDING_METAL],['#include <normal_fragment_maps>',BUILDING_NORMAL]]});

@@ -42,6 +42,9 @@ PAL = {
     'chrome': (0xc6cacf, 0), 'interior': (0x34373b, 0), 'seat': (0x3f5466, 0), 'deck': (0xa77b4f, 0), 'antifoul': (0x2a3c4e, 0),
     'white': (0xf3f3f0, 0), 'rubber': (0x2c2d2f, 0), 'foil': (0x3a3f45, 0), 'panto': (0x5c6166, 0), 'wood': (0x9b7748, 0),
     'grey': (0x9ea3a8, 0), 'saddle': (0x4a3426, 0), 'grip': (0x3a2a20, 0), 'roofpod': (0xd9dcdf, 0), 'solar': (0x1d2b3d, 0),
+    # Venice: the gondola's lacquer, velvet, brass and its gondolier; the vaporetto's fender and hull.
+    'lacquer': (0x0e0f11, 0), 'velvet': (0x6e1b24, 0), 'brass': (0xb48d3c, 0), 'stripe_w': (0xf0efe9, 0), 'stripe_k': (0x1b2233, 0),
+    'straw': (0xd6b466, 0), 'skin': (0xc99779, 0), 'ribbon': (0xa11e25, 0), 'fender': (0x2b2622, 0), 'hulldark': (0x33383d, 0),
 }
 CLASSES = list(PAL)
 CI = {k: i for i, k in enumerate(CLASSES)}
@@ -523,6 +526,109 @@ def hydrofoil():
     return out
 
 
+def gondola():
+    """Venetian gondola, 10.8 m: a black lacquered, rockered hull that rises at both ends, the steel
+    ferro on the bow, red velvet seats amidships, the forcola and oar on the right, and the gondolier
+    in a striped shirt and straw hat standing on the stern deck."""
+    out = Geo(); L, n = 10.8, 28
+    rings = []
+    for k in range(n + 1):
+        t = k / n; y = lerp(L / 2, -L / 2, t)                       # t = 0 the stern (+y), 1 the bow (-y)
+        hb = max(0.025, 0.69 * math.sin(math.pi * clamp(t, 0.0, 1.0)) ** 0.55)
+        zs = 0.30 + 0.62 * smooth(0.72, 1.0, t) ** 1.7 + 0.50 * smooth(0.26, 0.0, t) ** 1.7    # sheer: bow higher
+        zk = -0.17 + 0.62 * smooth(0.78, 1.0, t) ** 1.4 + 0.52 * smooth(0.22, 0.0, t) ** 1.4   # keel rocker
+        half = [(0.0, zk), (0.5 * hb, zk + 0.04), (0.9 * hb, zk + 0.38 * (zs - zk)), (hb, zk + 0.72 * (zs - zk)), (0.96 * hb, zs), (0.0, zs - 0.02)]
+        pts = [half[0]] + [(-x, z) for x, z in half[1:-1]] + [half[-1]] + [(x, z) for x, z in reversed(half[1:-1])]
+        rings.append([v(x, y, z) for x, z in pts])
+    m = len(rings[0]); V = [p for r in rings for p in r]; F = []; M = []
+    for r in range(n):
+        o = r * m; t = (r + 0.5) / n
+        for i in range(m):
+            j = (i + 1) % m
+            F.append((o + i, o + j, o + m + j, o + m + i))
+            top = i in (4, 5)                                      # the faces round the centre of the deck
+            M.append(('deck' if 0.3 < t < 0.68 else 'lacquer') if top else 'lacquer')
+    g = Geo(V, F, M)
+    for ri in (0, n):
+        ci = len(g.v); g.v.append(centroid(rings[ri])); o = ri * m
+        for i in range(m):
+            g.f.append((o + (i + 1) % m, o + i, ci) if ri == 0 else (o + i, o + (i + 1) % m, ci)); g.m.append('lacquer')
+    out.add(realize(orient(g, v(0, 0, 0.1))))
+    # The ferro: a tall blade on the bow with six teeth forward and one back.
+    bz = 0.92; by = -L / 2 + 0.05
+    out.add(box(v(0, by - 0.05, bz + 0.30), (0.035, 0.22, 0.62), 'chrome', bevel=0.012, seg=1))
+    out.add(ellipsoid(v(0, by - 0.08, bz + 0.64), 0.02, 0.17, 0.08, 8, 4, 'chrome'))
+    for k in range(6):
+        out.add(box(v(0, by - 0.22, bz + 0.07 + k * 0.085), (0.03, 0.16, 0.035), 'chrome'))
+    out.add(box(v(0, by + 0.14, bz + 0.12), (0.03, 0.14, 0.035), 'chrome'))
+    out.add(box(v(0, L / 2 - 0.12, 0.84), (0.03, 0.16, 0.12), 'chrome', bevel=0.01, seg=1))      # the stern's small iron
+    # Amidships: a carpet, the velvet seats facing forward and two side chairs; brass seahorses.
+    out.add(box(v(0, 0.2, 0.31), (1.0, 2.6, 0.04), 'velvet'))
+    out.add(box(v(0, 1.05, 0.48), (0.95, 0.55, 0.30), 'velvet', bevel=0.06, seg=2))
+    out.add(box(v(0, 1.36, 0.72), (0.95, 0.12, 0.55), 'lacquer', bevel=0.04, seg=1))
+    out.add(box(v(0, 1.36, 1.0), (0.98, 0.14, 0.04), 'brass'))
+    for sx in (1, -1):
+        out.add(box(v(sx * 0.38, -0.25, 0.45), (0.34, 0.42, 0.24), 'velvet', bevel=0.05, seg=1))
+        out.add(ellipsoid(v(sx * 0.62, 0.55, 0.50), 0.04, 0.10, 0.12, 6, 4, 'brass'))
+    # The gondolier's deck at the stern.
+    out.add(box(v(0, 3.95, 0.52), (0.62, 1.7, 0.05), 'wood'))
+    # The forcola on the right and the oar reaching back into the water.
+    fy = 2.75
+    out.add(box(v(0.55, fy, 0.72), (0.12, 0.16, 0.62), 'wood', bevel=0.03, seg=1))
+    out.add(rod(v(0.58, fy - 0.35, 1.02), v(0.95, fy + 3.2, -0.15), 0.035, 6, 'wood'))
+    out.add(box(v(0.98, fy + 3.35, -0.25), (0.05, 0.75, 0.18), 'wood'))
+    # The gondolier on the stern deck: black trousers, a striped shirt, straw hat with a red ribbon.
+    gx, gy, gz = 0.05, 4.05, 0.55
+    for sx in (1, -1):
+        out.add(box(v(gx + sx * 0.10, gy, gz + 0.43), (0.15, 0.17, 0.86), 'stripe_k', bevel=0.04, seg=1))
+    for k in range(6):
+        out.add(box(v(gx, gy, gz + 0.90 + k * 0.085), (0.42 - 0.02 * (k == 5), 0.25, 0.085), 'stripe_w' if k % 2 == 0 else 'stripe_k', bevel=0.02, seg=1))
+    out.add(ellipsoid(v(gx, gy, gz + 1.55), 0.10, 0.11, 0.13, 10, 6, 'skin'))
+    out.add(cyl(v(gx, gy, gz + 1.62), v(gx, gy, gz + 1.635), 0.21, 18, 'straw'))
+    out.add(cyl(v(gx, gy, gz + 1.635), v(gx, gy, gz + 1.73), 0.115, 14, 'straw'))
+    out.add(cyl(v(gx, gy, gz + 1.64), v(gx, gy, gz + 1.68), 0.118, 14, 'ribbon', caps=False))
+    for sx, hx, hy in ((1, 0.50, -0.42), (-1, 0.36, -0.55)):     # both hands forward on the oar, on his right
+        sh, el, hd = v(gx + sx * 0.23, gy, gz + 1.32), v(gx + sx * 0.25, gy - 0.18, gz + 1.08), v(hx, gy + hy, gz + 1.04)
+        out.add(rod(sh, el, 0.05, 6, 'stripe_k')); out.add(rod(el, hd, 0.042, 6, 'skin'))
+    return out
+
+
+def vaporetto():
+    """ACTV water bus, ~23 m: dark hull with a heavy rubber fender all round, a white cabin with a band
+    of windows, the wheelhouse forward, an open deck at the bow and life rafts on the roof."""
+    out = Geo(); L, B = 23.5, 4.2
+    out.add(realize(hull(L, B, D=1.55, draft=0.75, bow=0.30, transom=0.94, deadrise=0.12, sheer_rise=0.08)))
+    dz = 0.80
+    for sx in (1, -1):                                             # the fender: a thick rubber belt
+        out.add(box(v(sx * (B / 2 + 0.06), 0.6, dz - 0.05), (0.26, L * 0.76, 0.30), 'fender', bevel=0.10, seg=2))
+    out.add(box(v(0, L / 2 - 0.25, dz - 0.05), (B * 0.93, 0.30, 0.30), 'fender', bevel=0.10, seg=2))
+    cab = []
+    for y, w, h, e in ((-5.7, 1.60, 2.05, 5.0), (-5.2, 1.88, 2.15, 9.0), (-4.2, 1.92, 2.15, 12.0), (8.7, 1.92, 2.15, 12.0), (9.7, 1.86, 2.10, 9.0), (10.2, 1.6, 2.0, 5.0)):
+        cab.append(ring(v(0, y, dz + h / 2), Y, 28, w, h / 2, e=e))
+    cg = orient(loft(cab, 'flat', 'flat', 'white'), v(0, 2.5, dz + 1.0))
+    ms = []
+    for f in cg.f:
+        c = centroid([cg.v[k] for k in f])
+        ms.append('glass' if dz + 0.7 < c.z < dz + 1.85 and -5.5 < c.y < 10.0 else 'white')
+    cg.m = ms
+    out.add(realize(cg))
+    for sx in (1, -1):                                             # window pillars and the roof's overhang
+        for y in [k * 1.25 - 4.4 for k in range(12)]:
+            out.add(box(v(sx * 1.93, y, dz + 1.27), (0.04, 0.12, 1.12), 'white'))
+    out.add(box(v(0, 2.25, dz + 2.17), (4.0, 16.6, 0.08), 'white', bevel=0.03, seg=1))
+    out.add(box(v(0, -4.2, dz + 2.45), (1.7, 1.5, 0.75), 'white', bevel=0.12, seg=2))  # wheelhouse
+    out.add(box(v(0, -4.95, dz + 2.48), (1.5, 0.05, 0.42), 'glass'))
+    for sx in (1, -1): out.add(box(v(sx * 0.86, -4.2, dz + 2.48), (0.04, 1.1, 0.40), 'glass'))
+    out.add(box(v(0, 2.5, dz + 2.23), (3.6, 13.0, 0.05), 'grey'))
+    for y in (1.0, 4.0, 7.0): out.add(cyl(v(-0.8, y - 0.9, dz + 2.42), v(-0.8, y + 0.9, dz + 2.42), 0.28, 12, 'white'))
+    for sx in (1, -1):                                             # the open bow deck's railing
+        out.add(rod(v(sx * 1.75, -6.0, dz + 0.95), v(sx * 1.2, -10.4, dz + 0.95), 0.03, 6, 'chrome'))
+        out.add(rod(v(sx * 1.75, -6.0, dz), v(sx * 1.75, -6.0, dz + 0.95), 0.03, 6, 'chrome'))
+    out.add(box(v(0, -11.0, dz + 0.55), (0.6, 0.4, 0.5), 'hulldark', bevel=0.05, seg=1))
+    out.add(ellipsoid(v(0, -11.6, dz + 0.9), 0.06, 0.06, 0.06, 6, 3, 'light_f'))
+    return out
+
+
 def car2026():
     """Ordinary small Swedish estate: 4.28 x 1.85 x 1.47 m, wheelbase 2.65, tall rear lamps."""
     R = 0.335; wy = 1.325
@@ -586,8 +692,8 @@ def robotaxi():
 
 
 VEHICLES = {'car2026': car2026, 'robotaxi': robotaxi, 'ebus': ebus, 'tram': tram, 'cargobike': lambda: bike_geo(True), 'bike': bike_geo,
-            'hydrofoil': hydrofoil, 'watertaxi': watertaxi}
-WATER = {'hydrofoil', 'watertaxi'}
+            'hydrofoil': hydrofoil, 'watertaxi': watertaxi, 'gondola': gondola, 'vaporetto': vaporetto}
+WATER = {'hydrofoil', 'watertaxi', 'gondola', 'vaporetto'}
 
 
 # ------------------------------------------------------------------------------------------------

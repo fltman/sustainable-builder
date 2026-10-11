@@ -514,7 +514,7 @@ def cmd_horizon(a):
 
 
 def cmd_example(a):
-    """A bundled example (examples/<slug>: place.json, overrides.json, custom/ and vision/): builds its city
+    """A bundled example (examples/<slug>: place.json, overrides.json, custom/, media/ and vision/): builds its city
     model and horizon in cities/<slug>/; the site then reads its vision from the example."""
     src = ROOT / 'examples' / a.slug
     if not (src / 'place.json').exists():
@@ -528,6 +528,12 @@ def cmd_example(a):
             shutil.copy2(src / name, dst / name)
     if (src / 'custom').exists() and not (dst / 'custom').exists():
         shutil.copytree(src / 'custom', dst / 'custom')
+    # The example's media (its film narration and soundtrack in media/audio/), without overwriting newer ones.
+    if (src / 'media').exists():
+        for f in (src / 'media').rglob('*'):
+            if f.is_file() and not (dst / 'media' / f.relative_to(src / 'media')).exists():
+                (dst / 'media' / f.relative_to(src / 'media')).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, dst / 'media' / f.relative_to(src / 'media'))
     cmd_build(argparse.Namespace(slug=a.slug, only=None, start=None, refresh=False, force_splash=False))
     cmd_horizon(argparse.Namespace(slug=a.slug, radius=10000, step=50))
     say(f'\n{G}{B}{a.slug}: built from the example.{X}  Next:  python3 sustainable.py site {a.slug}')
