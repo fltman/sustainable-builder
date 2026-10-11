@@ -1,0 +1,2147 @@
+{
+ "indicators": {
+  "en_elanvandning_distributionsnat": {
+   "name": "Electricity use by customers connected to the distribution grid in the Municipality of Venice",
+   "unit": "GWh/year",
+   "note": "ISTAT gives 128,208 tonnes of oil equivalent (toe); with ISTAT's factor of 86 toe per GWh this is 1,491 GWh, of which households 289 GWh and other users 1,202 GWh. Users connected directly to the transmission grid – probably the largest plants in Porto Marghera – are not included. In 2005 the figure was 275,373 toe, about 3,200 GWh."
+  },
+  "en_el_per_invanare": {
+   "name": "Electricity use per inhabitant (distribution grid)",
+   "unit": "kWh/inhabitant/year",
+   "note": "ISTAT: 51.3 toe per 100 inhabitants, the highest of Italy's 14 metropolitan cities; converted at 86 toe per GWh ≈ 5,970 kWh. The average of the 109 provincial capitals is 33.9 toe (≈ 3,940 kWh), of the north-eastern capitals 43.3 (≈ 5,030 kWh), and for all of Italy 41.9 toe per 100 inhabitants (Terna, ≈ 4,870 kWh). Use by hotels, shops and workplaces is divided here among residents, which probably explains part of the high figure."
+  },
+  "en_el_hushall_per_invanare": {
+   "name": "Household electricity use per inhabitant",
+   "unit": "kWh/inhabitant/year",
+   "note": "ISTAT: 9.95 toe per 100 inhabitants in 2024 (9.20 in 2023), converted ≈ 1,160 kWh. The provincial capitals average 9.24 toe (≈ 1,070 kWh) and the north-eastern capitals 9.36 (≈ 1,090 kWh); the 2024 rise follows a national increase after the record low of 2023."
+  },
+  "en_naturgas_per_invanare": {
+   "name": "Natural gas from the distribution grid per inhabitant",
+   "unit": "m³/inhabitant/year",
+   "note": "ISTAT: 58.9 toe per 100 inhabitants and 147,308 toe in total; with ISTAT's factor of 0.819 toe per 1,000 m³ ≈ 720 m³ per inhabitant and ≈ 180 million m³. The provincial capitals average ≈ 440 m³ and the north-eastern capitals ≈ 730 m³ per inhabitant. In 2005 the value was ≈ 1,050 m³."
+  },
+  "en_el_andel_av_el_och_gas": {
+   "name": "Electricity's share of combined electricity and natural gas use",
+   "unit": "%",
+   "note": "Electricity as a share of electricity plus natural gas, counted in toe; 41.8% in 2021. The provincial capitals are at 48.4% and the north-eastern capitals at 42.0%. A rough measure of how far heating and cooking have been electrified."
+  },
+  "en_solceller_effekt": {
+   "name": "Installed solar photovoltaic capacity in the municipality",
+   "unit": "MW",
+   "note": "5,284 installations averaging 11.2 kW, or 236 kW per 1,000 inhabitants against 272 in the provincial capitals. Capacity has almost doubled since 2021 (30.1 MW). No source splits the historic city from the mainland."
+  },
+  "en_solel_produktion": {
+   "name": "Net solar electricity generation in the municipality",
+   "unit": "GWh/year",
+   "note": "174.5 kWh per inhabitant against 269.3 in the provincial capitals. 52% of the solar power is used where it is produced (provincial capitals 32%). All installations in the municipality are included, per GSE."
+  },
+  "en_solel_andel_av_elanvandning": {
+   "name": "Local solar electricity relative to electricity use in the distribution grid",
+   "unit": "%",
+   "note": "43.6 GWh of solar power / 1,491 GWh of electricity = 2.9%. An annual balance; large industry connected to the transmission grid is not in the denominator."
+  },
+  "en_laddpunkter_publika": {
+   "name": "Public charging points for electric cars",
+   "unit": "charging points",
+   "note": "144 standard-power (up to 22 kW) and 52 high-power points, against 82 in 2022 and 2023. ISTAT notes that at least one 2024 value is estimated, and does not say where in the municipality the points are."
+  },
+  "en_bostader_naturgas_andel": {
+   "name": "Natural gas share of residential energy use (base year 2005)",
+   "unit": "%",
+   "note": "1,794,931 of 2,148,488 MWh; electricity 14.6%, heating oil 1.3% and LPG 0.6%. No newer split for the municipality was found; in north-east Italy 86.6% of households have their own boiler or other individual system and 13.7% central heating (ISTAT 2024)."
+  },
+  "en_co2_basinventering_2005": {
+   "name": "Carbon dioxide emissions in the municipality's baseline inventory (SEAP, 2005)",
+   "unit": "tonnes CO2/year",
+   "note": "5.54 tonnes per inhabitant. Residential 524,145 t, commerce and services 512,859 t, transport 424,350 t (of which public transport 42,792 t), municipal buildings 21,421 t and street lighting 11,968 t. Installations in the EU Emissions Trading System – the power plants and refineries of Porto Marghera – are not included."
+  },
+  "en_co2_uppfoljning_2016": {
+   "name": "Carbon dioxide emissions in the municipality's monitoring inventory (2016)",
+   "unit": "tonnes CO2/year",
+   "note": "Sum of the sector values the municipality reported to the Covenant of Mayors: residential 360,552 t, services 440,356 t, transport 178,910 t and municipal buildings and lighting 24,311 t. That is 32.8% below 2005 (1,494,744 t) and 3.83 tonnes per inhabitant (261,905 inhabitants). The municipality itself states that the −20% target for 2020 was met (council decision 29/2020); the fall in transport (−58%) is probably partly a change of method."
+  },
+  "en_co2_per_inv_bostader": {
+   "name": "Residential carbon dioxide per inhabitant",
+   "unit": "tonnes CO2/inhabitant/year",
+   "note": "360,552 t (266,175 t from fuels and 94,377 t from electricity) / 261,905 inhabitants = 1.38 t. In 2005 it was 524,145 t / 269,780 = 1.94 t."
+  },
+  "en_co2_per_inv_tjanster": {
+   "name": "Carbon dioxide from commerce, services and public buildings per inhabitant",
+   "unit": "tonnes CO2/inhabitant/year",
+   "note": "440,356 t (213,349 t from fuels and 227,007 t from electricity) / 261,905 inhabitants = 1.68 t. In 2005 it was 512,859 t / 269,780 = 1.90 t; of the three large sectors it fell least, −14%."
+  },
+  "en_co2_per_inv_transporter": {
+   "name": "Transport carbon dioxide per inhabitant (Covenant of Mayors scope)",
+   "unit": "tonnes CO2/inhabitant/year",
+   "note": "178,910 t / 261,905 inhabitants = 0.68 t; in 2005 it was 424,350 t / 269,780 = 1.57 t. The 2005 value was based on all fuel sold in the municipality, including the motorway stations around Mestre, and on ACTV's fuel use for buses and boats; the 58% fall in transport is probably partly a change of method."
+  },
+  "en_paesc_mal_2030": {
+   "name": "The climate plan's (SECAP) emission reduction target for 2030",
+   "unit": "% reduction from 2005",
+   "note": "The plan aims at −72% by 2030 through 33 mitigation actions, plus 46 adaptation actions, with climate neutrality by 2050. The municipality joined the Covenant of Mayors in 2020 with at least −40%, raised it to −55% in 2021, and the C40 Deadline 2020 pathway gives −68.9%. The council's committees examined the plan in January–February 2026 (proposal 2025/1070)."
+  },
+  "en_co2_alla_kallor_inemar": {
+   "name": "All carbon dioxide emitted within the municipality according to Veneto's emission inventory",
+   "unit": "kilotonnes CO2/year",
+   "note": "Power generation and refining in Porto Marghera account for 70% (2,813 kt), coal boilers alone for 1,649 kt. Without them ≈ 1,219 kt remain, or ≈ 4.9 tonnes per inhabitant with 249,490 inhabitants (1 January 2025); all emissions in Veneto amount to ≈ 4.8 tonnes per inhabitant (own calculations). Unlike the SEAP, this counts everything emitted in the municipality, including for electricity sold to the grid."
+  },
+  "en_co2_kolkraft_fusina": {
+   "name": "Carbon dioxide from coal-fired power boilers in the municipality (Fusina)",
+   "unit": "kilotonnes CO2/year",
+   "note": "INEMAR reports 1,649 kt CO2, 703 t NOx and 445 t SO2 from coal boilers above 300 MW, in practice Enel's Andrea Palladio power station at Fusina. Enel has applied to replace the coal units with a gas unit (environmental assessment at the ministry, ID 5147) and plans solar panels and battery storage on freed land; no end date for coal was found. Coal and lignite traffic in the port fell by 43% in 2024."
+  },
+  "en_nox_andel_batar_fartyg": {
+   "name": "Boats' and ships' share of the municipality's nitrogen oxide emissions",
+   "unit": "%",
+   "note": "Motorboats in the lagoon (inland waterways) emitted 898 tonnes of NOx and ships in the port (maritime traffic) 2,009 tonnes out of the municipality's 6,226 tonnes: 14.4% + 32.3% = 46.7%. Road traffic accounted for 11.2% and aviation (take-off and landing) for 6.9%. Across Veneto the shares for boats and ships are 2.4% and 4.1%."
+  },
+  "en_pm10_andel_batar_fartyg": {
+   "name": "Boats' and ships' share of the municipality's PM10 emissions",
+   "unit": "%",
+   "note": "Lagoon boats emitted 101 tonnes and ships 54 tonnes out of 397 tonnes of PM10: 25.5% + 13.6% = 39.1%. Residential heating, mainly wood, accounts for 30.9% and road traffic for 14.0%. Venice produces 73% of Veneto's PM10 from inland waterways."
+  },
+  "en_nox_lagunbatar": {
+   "name": "Nitrogen oxides from motorboat traffic in the lagoon",
+   "unit": "tonnes NOx/year",
+   "note": "INEMAR's item \"vie di navigazione interne\" (motorboats, \"imbarcazioni private\"): 842 tonnes from diesel boats and 56 tonnes from petrol boats. The same boats emitted 101 tonnes of PM10 and 76 kt of CO2 in 2023."
+  },
+  "en_bioraffinaderi_kapacitet": {
+   "name": "Capacity of Eni's biorefinery in Porto Marghera",
+   "unit": "tonnes of feedstock/year",
+   "note": "The world's first oil refinery fully converted into a biorefinery (2014). About 85% of the feedstock is waste such as used cooking oil and animal fat; the products are HVO diesel, bio-LPG, bio-jet fuel and bio-naphtha. Capacity is being raised to 600,000 tonnes a year, including sustainable aviation fuel (SAF); Eni is investing over €900 million in Porto Marghera in all (May 2026)."
+  },
+  "en_vatgas_elektrolys": {
+   "name": "Green hydrogen electrolyser under construction in Porto Marghera",
+   "unit": "MW",
+   "note": "Built by Eni and Magis; the hydrogen is meant, among other uses, for a refuelling station for public transport buses. The municipal climate plan foresees a \"hydrogen valley\" in Porto Marghera, and Eni has 6.2 MW of solar panels at two sites in the area."
+  },
+  "en_landstrom_investering": {
+   "name": "State funding for shore power at the quays of Venice and Marghera",
+   "unit": "million euro",
+   "note": "€57.6 million for Fusina and Canale Nord in Marghera and €32.2 million for Marittima, Santa Marta–San Basilio and Riva dei Sette Martiri, from the national fund complementing the PNRR (€700 million for shore power across Italy). The Marittima contract (€18.3 million) was signed on 6 June 2024; the grid is to supply 4 MW to Santa Marta–San Basilio and 2 MW to Riva dei Sette Martiri (decision 2024.0000138)."
+  },
+  "en_till_fots_in_i_staden": {
+   "name": "Share who walk into the historic city from Piazzale Roma, Tronchetto and the railway station",
+   "unit": "%",
+   "note": "Of about 100,000 people who reach the Tronchetto–Piazzale Roma–Santa Lucia hub on an ordinary weekday, 64,500 continue on foot and 33,000 by vaporetto (the plan rounds to 65% and 35%). The figure covers trips into the city, not all trips within it; no travel survey for the historic city was found."
+  },
+  "en_ankomster_knutpunkt_per_dag": {
+   "name": "People reaching the historic city via Tronchetto–Piazzale Roma–Santa Lucia on an ordinary weekday",
+   "unit": "people/day",
+   "note": "Surveys for the PUMS mobility plan in 2019, cleaned of events and peak days and with the universities in session; the figure therefore does not describe peak days in high season."
+  },
+  "en_ponte_liberta_bilar": {
+   "name": "Cars and light vehicles crossing the Ponte della Libertà per day",
+   "unit": "vehicles/day",
+   "note": "Over 30,000 light vehicles, 5,000 heavy vehicles (of which 1,800 buses), 100 trams and 370 trains a day; the plan calls the bridge a vulnerable umbilical cord between the mainland and Venice. More than 100,000 vehicles a day use the central section of the Mestre bypass."
+  },
+  "en_garage_piazzale_roma": {
+   "name": "Cars entering the municipal car park at Piazzale Roma",
+   "unit": "entries/year",
+   "note": "Entries to the Garage Comunale (season tickets excluded), on average ≈ 720 a day and most in August (31,795); 258,896 in 2019. The Sant'Andrea car park on the same square had another 119,592 entries."
+  },
+  "en_broar_historiska_staden": {
+   "name": "Bridges linking the islands of the historic city",
+   "unit": "bridges",
+   "note": "The Iuav researchers give \"over 430 bridges\" between \"more than 120 islands\"; the municipality's own accessibility guide says \"over 420 bridges\" and about 100 islands. Counts differ between sources depending on whether private bridges are included."
+  },
+  "en_broar_modellomrade": {
+   "name": "Bridges in the model's square (1.8 × 1.8 km)",
+   "unit": "bridges",
+   "note": "Own count of bridge outlines (man_made=bridge) with their centre inside 45.4269–45.4431 N and 12.3260–12.3490 E. OpenStreetMap is mapped by volunteers and may be incomplete."
+  },
+  "en_broar_med_trappor_andel": {
+   "name": "Share of bridges in the model's square with steps",
+   "unit": "%",
+   "note": "232 of 244 bridge outlines carry a path with steps (highway=steps): 223 steps only and 9 also a ramp or wheelchair tag; 5 have no steps and 7 no mapped path. 232 / 244 = 95.1%."
+  },
+  "en_tillganglig_yta_med_vaporetto": {
+   "name": "Share of the historic city's area a wheelchair user can reach by vaporetto",
+   "unit": "%",
+   "note": "Without boats a wheelchair user can \"barely visit 2%\" of the city, around the terminals; with the vaporetti and the more than 55 step-free landing stages \"almost 70%\". The text is undated but refers to the PEBA accessibility plan of late 2004 (pdf created 2007); the PEBA was updated in 2020 (decision 68/2020) and the stairlifts on bridges are being removed."
+  },
+  "en_kollektivtrafik_resor": {
+   "name": "Public transport trips in the municipality (vaporetto, bus, tram and People Mover)",
+   "unit": "million trips/year",
+   "note": "707.5 trips per inhabitant, the most in Italy (Milan 429.9, provincial capitals 176.4). In 2019 there were 218.9 million, so ridership is 19% below the pre-pandemic level. ISTAT does not split trips between water and land; tourists' trips are counted but not in the population."
+  },
+  "en_vattenburen_kollektivtrafik_andel": {
+   "name": "Waterborne public transport's share of supply (seat-kilometres)",
+   "unit": "%",
+   "note": "1,088 million seat-kilometres on water in 2024, or 4,354 per inhabitant; bus 49.0% and tram 6.8%. Venice accounts for 98% of all waterborne public transport in Italy's provincial capitals (1,088 of 1,106 million seat-km, own calculation)."
+  },
+  "en_actv_linjer_vatten": {
+   "name": "Vaporetto and ferry lines in the ACTV network",
+   "unit": "lines",
+   "note": "The network covers the Grand Canal, the Giudecca Canal, the Bacino di San Marco and the lagoon islands from Treporti to Chioggia, with two car-ferry lines (Tronchetto–Lido and Lido–Pellestrina). ACTV's open timetable data from October 2026 has 24 lines and 152 berths."
+  },
+  "en_actv_turer_per_vardag": {
+   "name": "ACTV boat departures on an ordinary weekday",
+   "unit": "trips/day",
+   "note": "Counted for Wednesday 14 October 2026, both directions. Line 1 along the Grand Canal has 177 trips and line 2 has 172, the short 2/ (Piazzale Roma–Rialto) 29 and the night line N 39; the lagoon lines 11 (Pellestrina–Chioggia) and 12 (Fondamente Nove–Burano–Punta Sabbioni) have 132 and 126."
+  },
+  "en_actv_flotta_vatten": {
+   "name": "ACTV's fleet for waterborne passenger service",
+   "unit": "vessels",
+   "note": "On 31 December 2023: 62 vaporetti (motobattelli), 51 motoscafi, 20 larger lagoon boats (motobattelli foranei), 7 motonavi, 7 car ferries and 1 experimental electric boat (E1); together 459,000 engine hours a year. Of the vaporetti, 38 were built in 1974–1988 and the newest 10 in 2010 (Gente Veneta, May 2024)."
+  },
+  "en_actv_hybridfartyg": {
+   "name": "Hybrid-powered vaporetti in service",
+   "unit": "vessels",
+   "note": "MotoBattello 3 (series 80, Grand Canal) was converted to a series hybrid with a diesel generator, LFP batteries and a 147 kW electric motor and trialled in service in 2025; bench tests gave −26% NOx, −31% particulates and −28% emissions overall. ACTV's plan (Carta della Mobilità 2024) includes 4 more conversions, 18 new hybrid vaporetti and 7 hybrid larger lagoon boats by 2029."
+  },
+  "en_vattentaxi_licenser": {
+   "name": "Water taxi licences",
+   "unit": "licences",
+   "note": "Of the municipality's 371 taxi licences, 251 are for water taxis (unchanged 2022–2024) and the rest for road taxis; 14.8 licences per 10,000 inhabitants against 13.1 in the provincial capitals. During the speed-monitoring trial in summer 2025 taxi boats accounted for half of the violations (Il Post)."
+  },
+  "en_gondol_licenser": {
+   "name": "Gondola service licences",
+   "unit": "licences",
+   "note": "The regulation sets 440 licences, a number the municipality may change. A licence is personal and tied to a gondola station (stazio); it can be transferred to a registered substitute, and in a family business the family member has first right. New substitutes are trained in the municipality's \"Arte del Gondoliere\" course."
+  },
+  "en_fartmatning_sensorer": {
+   "name": "Speed-measuring sensors for boats in the city's canals",
+   "unit": "sensors",
+   "note": "The Si.Sa. system (\"barcavelox\") measures boat speeds on the Grand Canal, the Giudecca Canal, at Piazzale Roma and San Marco; fines (at least €138) from 1 August 2025 after a trial from 1 June with about 150 violations a day. Limits are 5–20 km/h depending on the zone. The figures come from a news article; the municipal decision was not found."
+  },
+  "en_batpassager_punta_salute": {
+   "name": "Boat passages per day at Punta della Salute, the mouth of the Grand Canal",
+   "unit": "passages/day",
+   "note": "Counts in July–August 2001 (12 days, 7 am–9 pm, 30 stations): on average about 4,000 passages a day at Punta della Salute on weekdays and holidays alike, against 511 (weekday) and 1,109 (holiday) per station elsewhere in the lagoon. On a Sunday in July passages there rose from 1,649 (1998) to 3,302 (2001), mainly taxi boats. No newer published counts for the Grand Canal were found."
+  },
+  "en_tag_avgangar_santa_lucia": {
+   "name": "Train departures from Venezia Santa Lucia on an ordinary weekday",
+   "unit": "departures/day",
+   "note": "Own count for Wednesday 14 October 2026 in RFI's official timetable: 263–283 departures depending on how the running-day notes are read, and 267–289 arrivals. Of the departures 49 are high-speed trains (Frecciarossa and Italo, train numbers 8000–9999); the station has 23 tracks."
+  },
+  "en_tag_restid_milano": {
+   "name": "Fastest train Venezia Santa Lucia–Milano Centrale",
+   "unit": "minutes",
+   "note": "Frecciarossa 2 h 27 min (e.g. 06:48–09:15) and Italo 2 h 28 min; 22 direct trains on a weekday in October 2026. Mestre is 10 minutes away and Padua 26."
+  },
+  "en_tag_restid_roma": {
+   "name": "Fastest train Venezia Santa Lucia–Roma Termini",
+   "unit": "minutes",
+   "note": "Frecciarossa 9405, 07:26–11:22 (3 h 56 min); fastest Italo 4 h 00 min; 25 direct trains on a weekday. Florence is 2 h 13 min away and Bologna 1 h 33 min."
+  },
+  "en_flygplats_passagerare": {
+   "name": "Passengers at Venice Marco Polo airport",
+   "unit": "passengers/year",
+   "note": "+2.2% on 2024 and 2.5% above 2019 (11,561,594). 9.45 million travelled internationally and 2.37 million domestically, with 87,597 aircraft movements. The airport is at Tessera within the municipality; take-offs and landings emitted 428 tonnes of NOx in 2023 (INEMAR)."
+  },
+  "en_kryssning_passagerare": {
+   "name": "Cruise passengers in the port of Venice",
+   "unit": "passengers/year",
+   "note": "+6.7% on 2024 (547,587) but 36% of 2019, when 1,611,341 passengers came on 500 calls. Since 1 August 2021 large ships may not pass through the Bacino di San Marco, the San Marco canal and the Giudecca Canal, and the state then set aside €157 million for temporary berths in Marghera."
+  },
+  "en_pendlingsresor_utbyte": {
+   "name": "Commuting trips to and from the municipality for work and study",
+   "unit": "trips/day",
+   "note": "Over 70,000 trips according to the 2011 census: half to and from the 13 neighbouring municipalities and 22% beyond the metropolitan area. More than half of the drivers leaving the motorway at Mestre return through the same junction the same day, a sign of commuting."
+  },
+  "en_dagsbesokare_avgift": {
+   "name": "Paying day visitors per fee day (the access fee)",
+   "unit": "people/fee day",
+   "note": "Average over the 54 fee days of April–July 2025 (8:30 am–4 pm, payments through the platform); 723,497 paid entries in all against 485,062 over 29 days in 2024. The record was Friday 2 May 2025 with 24,951. Hotel guests, who do not pay, averaged 36,639 a day."
+  },
+  "en_bilar_per_1000_inv": {
+   "name": "Cars per 1,000 inhabitants",
+   "unit": "cars/1,000 inhabitants",
+   "note": "The lowest of Italy's provincial capitals (Frosinone highest at 856); Italy 701, provincial capitals 651, metropolitan cities 612 and the EU 578. The figure covers the whole municipality including Mestre; the historic city is entirely car-free and most of its residents own no car (PUMS). ACI counts 111,640 cars on 31 December 2025, which with 249,385 inhabitants gives ≈ 448 per 1,000 (Veneto ≈ 687, Italy ≈ 709; own calculation)."
+  },
+  "en_cykelvagar_km": {
+   "name": "Cycle paths in the municipality",
+   "unit": "km",
+   "note": "45.4 km per 100 km² against 31.3 in the provincial capitals; 144 km in 2019. ISTAT gives no split between the mainland, the Lido and the historic city."
+  },
+  "en_bussar_el_gas": {
+   "name": "Electric, hybrid or gas buses in public transport",
+   "unit": "buses",
+   "note": "Of 301 buses in 2024, 76 were electric or electric hybrids and 109 ran on gas (methane or LPG); there are also 20 trams on 19.2 km of line. With PNRR funds ACTV planned 44 new electric buses by 2024 and 90 fuel-cell buses by the first half of 2026 (Carta della Mobilità 2024)."
+  },
+  "en_no2_rio_novo": {
+   "name": "Nitrogen dioxide at Rio Novo (the boat-traffic station in the historic city), annual mean",
+   "unit": "µg/m³",
+   "note": "The station on the Rio Novo canal has measured since September 2017. The annual mean was 51 µg/m³ in 2018 and 2019 (above the 40 limit), 32 and 31 in the pandemic years 2020–2021, 37 in 2022, 36 in 2023, 35 in 2024 and 34 in 2025. The EU limit from 2030 is 20 µg/m³."
+  },
+  "en_no2_sacca_fisola": {
+   "name": "Nitrogen dioxide at the Sacca Fisola background station (Giudecca), annual mean",
+   "unit": "µg/m³",
+   "note": "The historic city's background station; 39 µg/m³ in 2004 and 26 in 2023 (ARPAV). The mainland traffic stations via Tagliamento and via Beccaria measured 25 and 28 µg/m³ in 2024, lower than the water city."
+  },
+  "en_pm10_dygn_sacca_fisola": {
+   "name": "Days with PM10 above 50 µg/m³ at Sacca Fisola",
+   "unit": "days",
+   "note": "At most 35 days a year are allowed; Sacca Fisola had 54 days in 2023 and 36 in 2024. 2025 was the best year in two decades in Veneto: Rio Novo 24, Parco Bissuola 25 and via Tagliamento 36 days, the only municipal station over the limit. From 2030 days above 45 µg/m³ count and at most 18 are allowed."
+  },
+  "en_pm10_rio_novo": {
+   "name": "PM10 at Rio Novo, annual mean",
+   "unit": "µg/m³",
+   "note": "Below the 40 µg/m³ limit but above the EU limit from 2030 (20 µg/m³), and equal to or lower than the municipality's other stations; 24 days above 50 µg/m³ out of 358 days measured. Sacca Fisola had 29 µg/m³ in 2024 (ISTAT)."
+  },
+  "mare_zmps_till_igm42": {
+   "name": "Height difference between Venice's tidal datum ZMPS (1897) and the national datum IGM 1942 (Genoa)",
+   "unit": "cm",
+   "note": "ZMPS (zero mareografico di Punta della Salute) is the zero for all tide measurements in Venice: the mean sea level from the tide-gauge records 1885–1909, central year 1897, treated as fixed relative to the city. The national datum Genova 1942 was 23.56 cm higher at the end of the 1960s (Cavazzoni 1977), so a pavement at 100 cm ZMPS lies at 76.44 cm in IGM 1942. The project's terrain (Copernicus GLO-30) is a surface model in EGM2008; its relation to ZMPS was not found."
+  },
+  "mare_medelhavsniva_2020_2025": {
+   "name": "Mean sea level at Punta della Salute 2020–2025, above ZMPS",
+   "unit": "cm ZMPS",
+   "note": "Mean of the annual means 2020–2025, using the sea level at the Acqua Alta platform (8 nautical miles offshore) on days when MOSE is closed; the validated in-city series alone gives 34.9 cm. The record year 2024 reached 41.1 cm (ahead of 2010: 40.5 and 2014: 40.0), and 2025 37.4 cm; the 1890s averaged 0.1 cm, so the sea now stands about 35 cm higher against the stones than in 1897."
+  },
+  "mare_havsnivatrend_1872_2024": {
+   "name": "Relative sea-level rise at Punta della Salute, mean 1872–2024",
+   "unit": "mm/year",
+   "note": "Relative rise (sea-level rise plus land subsidence) over the whole record. The rise came in steps: fast 1930–1970 when groundwater pumping at Porto Marghera lowered the land, almost flat about 1965–1995 and fast again since the mid-1990s; the last 16 years are the highest in the record."
+  },
+  "mare_havsnivatrend_1993_2024": {
+   "name": "Relative sea-level rise at Punta della Salute 1993–2024",
+   "unit": "mm/year",
+   "note": "Almost twice the long-term mean (2.6 mm/year). Ferrarin et al. (Frontiers in Climate 2024) give 4.9 mm/year and Zanchettin et al. (2021) 5.01 ± 1.75 mm/year for 1993–2019, of which 2.76 mm/year is the sea's own rise and the rest subsidence."
+  },
+  "mare_havsnivatrend_utan_sattning_1872_2019": {
+   "name": "The sea's own rise at Venice with subsidence removed, 1872–2019",
+   "unit": "mm/year",
+   "note": "1.23 ± 0.13 mm/year out of a total relative rise of 2.53 ± 0.14 mm/year, so subsidence accounts for about half. Natural subsidence (compaction, tectonics, isostasy) is about 1 mm/year, but Tosi et al. (2018) measure on average 3–4 mm/year in the northern, 1–2 in the central and 2–3 in the southern lagoon and up to 70 mm/year at the MOSE works."
+  },
+  "mare_sattning_1950_1970": {
+   "name": "Land subsidence in the Venice area 1950–1970",
+   "unit": "cm",
+   "note": "The subsidence was caused mainly by groundwater pumping in the Porto Marghera industrial zone and eased when pumping was cut in the early 1970s; Mestre was worst hit in 1968–69 at 17 mm/year (Zanchettin et al. 2021). The Comune says the sea itself rose 9 cm from 1900 to the 1970s and 10–12 cm since 1970, and that the city lost about 26 cm of height relative to the sea in a century (FAQ, 2019)."
+  },
+  "mare_oversvammad_andel_080": {
+   "name": "Share of the public walkways in the historic centre under water at a tide of +80 cm ZMPS",
+   "unit": "%",
+   "note": "At +80 cm, the 'acqua alta' threshold, only the lowest places flood, above all Piazza San Marco; the level was then reached on average 54 times a year (70 a year in 1966–2021). The value comes from the 2009 altimetry; the Comune's current table (2020) starts at 90 cm."
+  },
+  "mare_oversvammad_andel_090": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +90 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. Only negligible parts lie below 90 cm; the detailed table gives 1.8%."
+  },
+  "mare_oversvammad_andel_100": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +100 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 4.5%. Above 100 cm longer walking routes are affected, and water-bus routes are changed already above 95 cm."
+  },
+  "mare_oversvammad_andel_110": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +110 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 12.3%. The level for the sirens and for closing MOSE; the 2009 altimetry gave 14% and Frassetto's 1970s map 11.7%."
+  },
+  "mare_oversvammad_andel_120": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +120 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 28.2%. The raised walkways (about 4 km of passerelle) keep the main routes passable up to 120 cm; above that, boots are needed."
+  },
+  "mare_oversvammad_andel_130": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +130 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 45.8%. Half the pavement lies below about 133 cm (see mare_median_gangyta)."
+  },
+  "mare_oversvammad_andel_140": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +140 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 58.8%. The threshold for exceptional high water; in Piazza San Marco the water is then up to 60 cm deep."
+  },
+  "mare_oversvammad_andel_150": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +150 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 69.5%."
+  },
+  "mare_oversvammad_andel_160": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +160 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 77.3%."
+  },
+  "mare_oversvammad_andel_170": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +170 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 81.9%."
+  },
+  "mare_oversvammad_andel_180": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +180 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 84.7%."
+  },
+  "mare_oversvammad_andel_190": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +190 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 87.7%; the 2019 record (187 cm) put 'almost 90%' of the city under water according to the Comune."
+  },
+  "mare_oversvammad_andel_200": {
+   "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +200 cm ZMPS",
+   "unit": "%",
+   "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 91.0%; 9% of the pavement lies above 200 cm. The 1966 record was 194 cm."
+  },
+  "mare_lagsta_punkt_basilikan": {
+   "name": "Lowest point in Venice: the ground in front of the entrance to St Mark's Basilica",
+   "unit": "cm ZMPS",
+   "note": "Parts of Piazza San Marco lie at only about 70 cm. Because the water rose through the old storm drains, the church's narthex flooded more than 200 times a year until the Provveditorato fitted valves and pumps to the drains in 2019 (see mare_narthex_oversvammas_per_ar)."
+  },
+  "mare_narthex_oversvammas_per_ar": {
+   "name": "Number of times a year St Mark's narthex flooded before the protective works",
+   "unit": "times/year (more than)",
+   "note": "For 50 years the walls facing the square have stood with their feet in salt water, salt has risen into the brick and the 12th-century mosaic floor was soaked. Since 19 November 2022 the church has been ringed by a temporary steel-and-glass barrier with six watertight gates; according to a 2021 city-council motion it was meant to protect up to 110 cm until the Provveditorato raises the whole insula of San Marco to 110 cm."
+  },
+  "mare_san_marco_troskel": {
+   "name": "Tide level at which Piazza San Marco starts to flood",
+   "unit": "cm ZMPS",
+   "note": "The Comune's visitor page 'Venezia e l'acqua alta' says water becomes noticeable on the square above 82 cm. +80 cm is also the acqua alta threshold: marea sostenuta 80–109 cm, molto sostenuta 110–139 cm and eccezionale from 140 cm."
+  },
+  "mare_rialto_troskel": {
+   "name": "Tide level at which Rialto (by the water-bus stops) starts to flood",
+   "unit": "cm ZMPS",
+   "note": "In front of the railway station, one of the city's highest places (outside the model square), 135 cm is needed. Water-bus routes are changed once the tide passes 95 cm but keep running except in exceptional high water."
+  },
+  "mare_rialhojning_malniva": {
+   "name": "Minimum level to which quays and pavements in the lowest parts of the lagoon towns are to be raised",
+   "unit": "cm ZMPS",
+   "note": "The integrated system rests on raising the lowest districts to at least +110 cm and letting MOSE handle the rest; in the 1990s the aim was 'towards +120 cm' where possible (Comitatone), and Insula spa (founded 1997) has raised many of the busiest walking routes while dredging canals. The state says 100 km of urban quays and lagoon shores have been raised and reinforced (Autorità per la Laguna); private ground floors and thresholds are up to the owners."
+  },
+  "mare_median_gangyta": {
+   "name": "Median height of the public pedestrian pavement in the historic centre (estimate)",
+   "unit": "cm ZMPS",
+   "note": "Linear interpolation in the Comune's detailed table: 45.8% of the pavement below 130 cm and 58.8% below 140 cm give 50% at 130 + (50 − 45.8)/(58.8 − 45.8) × 10 ≈ 133 cm. With today's mean sea level (35 cm), half the pavement is thus less than a metre above mean sea level."
+  },
+  "mare_hogvatten_110_2010_2019": {
+   "name": "Number of tides of at least 110 cm at Punta della Salute in 2010–2019",
+   "unit": "tides/decade",
+   "note": "Per decade: 1870s 4, 1880s 2, 1890s 3, 1900s 2, 1910s 3, 1920s 3, 1930s 8, 1940s 5, 1950s 13, 1960s 31, 1970s 31, 1983–89 10, 1990s 40, 2000s 52, 2010s 95 and 2020–2022 only 2 thanks to MOSE (34 out at sea). The 1966–2021 average was 5.2 a year, and tides of 110–119 cm went from two to four a year between 1966–2001 and 2002–2021; on average the water stays above 110 cm for 2 h 33 min (1966–2018)."
+  },
+  "mare_hogvatten_80_per_ar": {
+   "name": "Tides of at least 80 cm per year, mean 1966–2021",
+   "unit": "tides/year",
+   "note": "80 cm is the level at which Piazza San Marco starts to flood; after 2020 the sea level outside MOSE is used on days when the barriers are closed. Corresponding frequencies: at least 90 cm 28.1, at least 100 cm 12.4, at least 110 cm 5.2 and at least 120 cm 2.2 times a year, at least 130 cm once every 1.1 years."
+  },
+  "mare_hogvatten_140_aterkomsttid": {
+   "name": "Return period of exceptional high water (at least 140 cm), 1966–2021",
+   "unit": "years",
+   "note": "22 occurrences in 1966–2021; at least 150 cm once every 7 years, at least 160 cm once every 18.7 years and at least 190 cm once every 56 years. Tides of 140–149 cm came once every 9 years in 1966–2001 but once every 2 years in 2002–2021, and of the 25 tides of at least 140 cm since 1872, 11 occurred in the 2010s (own count from the Comune's list)."
+  },
+  "mare_rekord_1966": {
+   "name": "Highest tide ever recorded in Venice, 4 November 1966",
+   "unit": "cm ZMPS",
+   "note": "At 18:00 on 4 November 1966; the water stayed above 110 cm for 22 hours, the lidi were breached in several places and the damage has been estimated at EUR 400 million (Lionello et al. 2021). Had the surge coincided with high tide the level would have been about 220 cm (the same calculation applies to 29 October 2018)."
+  },
+  "mare_rekord_2019": {
+   "name": "Second-highest tide on record, 12 November 2019",
+   "unit": "cm ZMPS",
+   "note": "187 cm at the Grand Canal side and 189 cm at the Giudecca side of Punta della Salute, at 22:50; local wind 100 km/h with gusts to 110 km/h, and almost 90% of the city was under water. In 2019, 110 cm was reached 28 times, 140 cm five times (never before more than twice in a year) and 150 cm three times in six days; the water stood above 110 cm for about 50 hours in November alone."
+  },
+  "mare_lagvatten_minus50_per_ar": {
+   "name": "Exceptional low tides (−50 cm or lower) per year, mean 1966–2021",
+   "unit": "occurrences/year",
+   "note": "Low tides are becoming rarer as the mean level rises: below −60 cm 4 times and below −70 cm about once a year in 1966–2021, but only five times below −60 cm in 2009–2020 (own count from the Comune's list). They come in winter with high pressure; the lowest value is −124 cm (18 January 1882), the lowest recently −83 cm (18 February 2008, at 1045 hPa), and already at −55 cm the inner canals become hard to navigate."
+  },
+  "mare_skada_2019": {
+   "name": "Estimated damage from the flood of 12 November 2019",
+   "unit": "million euros (at least)",
+   "note": "'Above EUR 460 million' (Godlewski et al. 2020, cited in the review); news reports and Faranda et al. (2023) give about EUR 1 billion. The 1966 flood is estimated to have cost EUR 400 million; the mayor was appointed the government's special commissioner (commissario delegato) after the storm (ordinance 616 of 16 November 2019)."
+  },
+  "mare_meteorologiskt_bidrag_max": {
+   "name": "Largest meteorological contribution to the tide (storm surge), 4 November 1966",
+   "unit": "cm",
+   "note": "The difference between observed and astronomical tide, the largest in 1966–2019 (Lionello et al. 2021 give 143 cm with a different definition); the largest change in a day was 133 cm (14 December 2019). Scirocco from the south-east along the whole Adriatic can by itself raise the water by more than a metre, low pressure adds up to 20 cm, bora from the north-east contributes less ('scontraura' when both blow) and the Adriatic's own oscillation (seiche, about 22 hours) can bring new high water in the days after a storm."
+  },
+  "mose_paratoier": {
+   "name": "Number of movable gates in MOSE at the lagoon's three inlets",
+   "unit": "gates",
+   "note": "Four barriers, 1.6 km in total: at Lido 20 (Treporti) and 21 (San Nicolò), at Malamocco 19 and at Chioggia 18 gates; each gate is 20 m wide and 18.6–29.6 m high and rises when filled with compressed air, and the inlets stay closed for 4–5 hours on average. Construction began in 2003, the first full test raising was on 10 July 2020 and the first operational closure on 3 October 2020."
+  },
+  "mose_anslag_totalt": {
+   "name": "Total appropriations for MOSE by the end of the first half of 2022",
+   "unit": "million euros",
+   "note": "EUR 6,689.07 million appropriated; in June 2022 the works were about 95% complete and completion, planned for 2021, was still under way. According to Pagella Politica the parliamentary infrastructure report gave EUR 6.2 billion (May 2022) against 4.1 billion in 2001, and Il Post (2026) writes 'over 6.7 billion' for MOSE and complementary works."
+  },
+  "mose_stangningsgrans": {
+   "name": "Tide level in the city that MOSE is to prevent (closure threshold)",
+   "unit": "cm ZMPS",
+   "note": "The level is a decision by the authorities, linked to the height of the lowest quays, not a technical limit, and can be lowered. In practice the barriers are raised when the forecast shows 101 cm or more (margin of error about 10 cm, Il Post 2026); during the trial year 2020 the threshold was 130 cm, and between 80 and 110 cm MOSE does not protect Piazza San Marco."
+  },
+  "mose_dimensionerad_havshojning": {
+   "name": "Sea-level rise MOSE was designed for (100 years)",
+   "unit": "cm",
+   "note": "MOSE and the reinforced lidi were designed on the precautionary principle for a 60 cm higher sea within 100 years (above the IPCC's range at the time, 18–59 cm) and for tides up to 3 m (the same figures are given by the Corte dei conti in 2024). With the integrated system, 3–5 closures a year were expected at the sea level of the time."
+  },
+  "mose_stangningar_2025_2026": {
+   "name": "Number of MOSE closures in the 2025/26 season",
+   "unit": "closures",
+   "note": "Per season: 2020/21 20, 2021/22 13, 2022/23 19, 2023/24 32, 2024/25 23 and 2025/26 49; per calendar year 13 (2020), 20 (2021), 11 (2022), 25 (2023), 28 (2024), 27 (2025) and 32 (2026 to May). In total 156 closures by 15 May 2026, the 100th on 12 March 2025, and 30 of them between 28 January and 20 February 2026; the Comune's Centro Maree counts slightly differently (e.g. 18 for 2020)."
+  },
+  "mose_kostnad_per_hojning": {
+   "name": "Cost of one raising of MOSE",
+   "unit": "euros",
+   "note": "News figure, since a primary source is lacking: 'about EUR 200,000' per raising (Il Post; Nuova Venezia: at least EUR 200,000 in staff alone, 31 people per raising); Pagella Politica gives EUR 272,000 in 2020–21 and EUR 211,000 in 2021–22. Energy cost EUR 4.5 million in 2025 (Nuova Venezia), and according to Pagella Politica the law allocates EUR 63 million a year to operation and maintenance (40 + 23 million)."
+  },
+  "mose_undvikna_skador": {
+   "name": "Damage MOSE's first 100 raisings (2020–2025) are estimated to have prevented",
+   "unit": "million euros",
+   "note": "The ministry's own estimate; most raisings, 44, were for tides between 80 and 110 cm. On 22 November 2022 the sea reached 173 cm at the Acqua Alta platform while the water at Punta della Salute stayed at 66 cm (Comune table)."
+  },
+  "mose_stangning_vid_50cm_havshojning": {
+   "name": "MOSE closures with a 50 cm higher sea (model study)",
+   "unit": "closures/day",
+   "note": "Hydrodynamic model using real forecasts for 2000–2002 with sea level raised in 10 cm steps up to 200 cm: up to 50 cm of rise the barriers keep the water below 110 cm nearly all the time, but then close on average once a day and cut the flow through the inlets by about 10%. At 75 cm the lagoon is closed more hours than open, and partial closures do not protect the city."
+  },
+  "mose_stangda_dagar_2095_2099_rcp85": {
+   "name": "Days per year the lagoon would be closed in 2095–2099 under RCP8.5 (model study)",
+   "unit": "days/year",
+   "note": "High-resolution model driven by downscaled climate projections: under RCP8.5 a third of the lagoon needs more than 20 days to renew its water and summer water exceeds 30 °C for more than three months a year; under RCP4.5 the impacts are roughly halved. Closures also cut the supply of sediment to the salt marshes, where more than 70% of sedimentation happens during storm surges (Tognin et al., Nature Geoscience 2021)."
+  },
+  "mare_rslr_2100_rcp26": {
+   "name": "Relative sea-level rise in Venice by 2100 relative to 1986–2005, RCP2.6",
+   "unit": "cm",
+   "note": "Likely range 32–62 cm, including subsidence of 1 mm/year (10.5 cm); based on AR5-generation regional projections. With the 1986–2005 mean level of 23.3 cm ZMPS (ISPRA), mean sea level becomes about 70 cm ZMPS in 2100."
+  },
+  "mare_rslr_2100_rcp85": {
+   "name": "Relative sea-level rise in Venice by 2100 relative to 1986–2005, RCP8.5",
+   "unit": "cm",
+   "note": "Likely range 58–110 cm, including 10.5 cm of subsidence; the scenarios only diverge after 2050. Corresponds to a mean sea level of about 104 cm ZMPS in 2100 – more than MOSE's design 60 cm."
+  },
+  "mare_rslr_2100_hogscenario": {
+   "name": "Relative sea-level rise in Venice by 2100, high-end scenario with strong ice-sheet melt",
+   "unit": "cm",
+   "note": "A 'plausible but unlikely' scenario taking each component from the highest physically based estimate; almost half comes from Antarctica (the article's short summary says about 170 cm). IPCC AR6 does not rule out global rise approaching 2 m by 2100 and 5 m by 2150 under SSP5-8.5 (low confidence)."
+  },
+  "mare_medelhavsniva_2100_ssp245": {
+   "name": "Mean sea level at Punta della Salute in 2100, SSP2-4.5 (estimate)",
+   "unit": "cm ZMPS",
+   "note": "Midpoint of AR6's likely global range for SSP2-4.5 (0.44–0.76 m above 1995–2014) + subsidence of 1 mm/year 2005–2100 (9.5 cm) + Venice's 1995–2014 mean level, 28.5 cm ZMPS (ISPRA): 28.5 + 60 + 9.5 ≈ 98 cm. In the same way 2050 gives about 51–56 cm ZMPS (AR6 median 0.18–0.23 m for SSP1-1.9 to SSP5-8.5 + 4.5 cm subsidence); the northern Adriatic may rise about 10% less than the global mean, but subsidence is larger in places."
+  },
+  "mare_medelhavsniva_2100_ssp585": {
+   "name": "Mean sea level at Punta della Salute in 2100, SSP5-8.5 (estimate)",
+   "unit": "cm ZMPS",
+   "note": "AR6 median for SSP5-8.5 0.77 m (likely 0.63–1.01 m above 1995–2014) + 9.5 cm subsidence + 28.5 cm = about 115 cm ZMPS (range about 101–139 cm). About 20% of the public pavement would then lie below mean sea level (midway between 12.3% at 110 cm and 28.2% at 120 cm in the Comune's table)."
+  },
+  "mare_medelhavsniva_2126_ssp245": {
+   "name": "Mean sea level at Punta della Salute in 2126, SSP2-4.5 (estimate)",
+   "unit": "cm ZMPS",
+   "note": "Linear interpolation between AR6 midpoints for 2100 (0.60 m) and 2150 (0.995 m; likely 0.66–1.33 m): 0.60 + 0.52 × 0.395 = 0.81 m, + subsidence of 12.1 cm (2005–2126) + 28.5 cm ≈ 121 cm ZMPS. About 30% of the pavement would then lie below mean sea level (Comune table: 28.2% at 120 cm, 45.8% at 130 cm)."
+  },
+  "mare_medelhavsniva_2126_ssp585": {
+   "name": "Mean sea level at Punta della Salute in 2126, SSP5-8.5 (estimate)",
+   "unit": "cm ZMPS",
+   "note": "0.77 m (median 2100) + 0.52 × (1.43 − 0.77) m (midpoint of the 2150 range 0.98–1.88 m) = 1.11 m, + 12.1 cm subsidence + 28.5 cm ≈ 152 cm ZMPS: about 70% of the pavement would lie below mean sea level, beyond what temporary closures can handle. Anzidei et al. (2025) warn that MOSE could be overtopped around 2100."
+  },
+  "mare_hogvatten_100ar_idag": {
+   "name": "100-year high-water level at Punta della Salute today (estimate)",
+   "unit": "cm ZMPS",
+   "note": "From the Comune's frequencies 1966–2021: at least 140 cm 22 times (0.39 a year) and at least 190 cm once (0.018 a year); an exponential tail through them gives 0.01 a year at 199 cm (206 cm if the tail is drawn from 160 cm). The period's mean sea level was 25.5 cm against 35.3 cm today (ISPRA), so today's level is about 10 cm higher: about 210 cm (about 200–216 cm)."
+  },
+  "mare_hogvatten_100ar_okning_2100_rcp85": {
+   "name": "Rise of the 100-year extreme sea level in the north-western Adriatic by 2100, RCP8.5 (midpoint of range)",
+   "unit": "cm",
+   "note": "Midpoint of the range 53–171 cm (5–95%) relative to 2001–2020, excluding local subsidence (Vousdoukas et al. 2018); RCP4.5 gives 24–56 cm, and by 2050 12–17 cm (RCP4.5) and 26–35 cm (RCP8.5). By 2100 today's 100-year event recurs at least every five years (RCP4.5) or every year (RCP8.5); added to mare_hogvatten_100ar_idag with about 9 cm of subsidence the 100-year level becomes about 2.6 m (RCP4.5) or 3.3 m ZMPS (RCP8.5) – above the 3 m MOSE is built for."
+  },
+  "mare_extremniva_2150": {
+   "name": "Possible peak water level in an extreme high-water event in 2150",
+   "unit": "cm ZMPS",
+   "note": "When tide, seiche and weather combine, the level in 2150 could temporarily reach 3.47 m above the Punta della Salute reference, with up to 65% of the land under water; by 2150 more than 112 km² (SSP1-2.6) or 139 km² (SSP5-8.5) of the lagoon's land is at risk of flooding. The study builds on AR6 and measured land subsidence of 1–3 mm/year (up to 7 mm/year); only the abstract has been read."
+  },
+  "mare_temp_okning_2071_2100_rcp45": {
+   "name": "Increase in Venice's annual mean temperature by 2071–2100 vs 1976–2005, RCP4.5 (estimate)",
+   "unit": "°C",
+   "note": "Annual mean 15.95 °C in 2071–2099 against 13.97 °C in 1976–2005 in the grid cell (about 12 km) = +1.98 °C; ARPAV's own seasonal anomalies are +1.7 to +2.2 °C (summer +2.17), and RCP2.6 gives +0.96 °C. Observed at ARPAV's Istituto Cavanis station: 14.6 °C in 2001–2010 and 15.6 °C in 2016–2025."
+  },
+  "mare_temp_okning_2071_2100_rcp85": {
+   "name": "Increase in Venice's annual mean temperature by 2071–2100 vs 1976–2005, RCP8.5 (estimate)",
+   "unit": "°C",
+   "note": "17.78 °C in 2071–2099 against 13.97 °C = +3.81 °C; ARPAV's seasonal anomalies are summer +4.41, autumn +4.14, winter +3.67 and spring +3.14 °C. For the region, ARPAV's 'barometro climatico' gives 15.38 against 11.30 °C, i.e. +4.1 °C, and the observed regional annual mean rose from 10.6 °C in 1991–2000 to 12.0 °C in 2016–2025, with a record in 2024 (own means from the same series)."
+  },
+  "mare_tropiska_natter_idag": {
+   "name": "Tropical nights per year (minimum above 20 °C) in Venice, mean 2001–2025 (Istituto Cavanis station)",
+   "unit": "nights/year",
+   "note": "Mean of ARPAV's annual values for the station in Dorsoduro (45.4300 N, 12.3281 E, inside the model square): 59.8 a year in 2001–2010 and 75.9 in 2016–2025, record 95 nights in 2022. The climate models' grid cell, which also covers lagoon and mainland, gives only 35 nights for 1976–2005 – the city is warmer at night than the cell."
+  },
+  "mare_tropiska_natter_okning_rcp45": {
+   "name": "Increase in tropical nights by 2071–2100 vs 1976–2005, RCP4.5",
+   "unit": "nights/year",
+   "note": "Ensemble mean for the grid cell; 2021–2050 +24.8. Added to the Cavanis station mean and adjusted for the model's own increase since 2001–2025, this gives about 96 tropical nights a year at the station in 2071–2100 (estimate: 66.9 + 75.6 − 46.4)."
+  },
+  "mare_tropiska_natter_okning_rcp85": {
+   "name": "Increase in tropical nights by 2071–2100 vs 1976–2005, RCP8.5",
+   "unit": "nights/year",
+   "note": "2021–2050 +28.6; RCP2.6 gives +20.5. Corresponds to about 125 tropical nights a year at Cavanis in 2071–2100 (estimate: 66.9 + 107.5 − 49.3), a third of the year's nights."
+  },
+  "mare_hetdagar_30_idag": {
+   "name": "Days per year with maximum above 30 °C in Venice, mean 2001–2025 (Istituto Cavanis station)",
+   "unit": "days/year",
+   "note": "14.4 a year in 2001–2010 and 27.4 in 2016–2025; record 52 days in 2024 (2003: 40, 2022: 39). The grid cell's 1976–2005 mean is 14.6."
+  },
+  "mare_hetdagar_30_okning_rcp45": {
+   "name": "Increase in days above 30 °C by 2071–2100 vs 1976–2005, RCP4.5",
+   "unit": "days/year",
+   "note": "Ensemble mean for the grid cell; 2021–2050 +12.9. Corresponds to about 41 days a year at Cavanis in 2071–2100 (estimate: 21.7 + 37.8 − 18.3)."
+  },
+  "mare_hetdagar_30_okning_rcp85": {
+   "name": "Increase in days above 30 °C by 2071–2100 vs 1976–2005, RCP8.5",
+   "unit": "days/year",
+   "note": "2021–2050 +14.5; corresponds to about 69 days a year at Cavanis in 2071–2100 (estimate: 21.7 + 68.9 − 21.4). The heatwave duration index HWDI (consecutive summer days at least 5 °C above normal) rises by 22.9 days under RCP8.5 but only 4.7 under RCP4.5."
+  },
+  "mare_sommarnederbord_rcp85": {
+   "name": "Change in summer precipitation (Jun–Aug) in Venice by 2071–2100 vs 1976–2005, RCP8.5",
+   "unit": "%",
+   "note": "Ensemble mean; winter +13%, autumn +13% and extreme autumn precipitation (R95pTOT) +78%, while RCP4.5 gives −2% in summer and +5% in winter. Observed annual precipitation at Cavanis 2001–2025 averaged 816 mm (from 471 mm in 2021 to 1,201 mm in 2008)."
+  },
+  "mare_dricksvatten_brunnar": {
+   "name": "Deep wells on the mainland supplying Venice and Cavallino-Treporti with drinking water",
+   "unit": "wells",
+   "note": "Five well fields: Quinto di Treviso 18, Sant'Ambrogio (Trebaseleghe) 7, Badoere 5, Canove (Scorzè) 2 and Zero Branco 2 wells, 25–500 m deep; at peak demand treated water from the river Sile is added (Ca' Solaro), and new pipes on the lagoon bed and a new storage and pumping station at Tronchetto (replacing Sant'Andrea) are being built. The aqueduct was inaugurated on 23 June 1884 with a fountain in Piazza San Marco; before that the city lived on rainwater in cisterns, and about 600 wells with their 'vere da pozzo' survive."
+  },
+  "com_folkmangd_kommun": {
+   "name": "Population of the Comune di Venezia, 31 December",
+   "unit": "people",
+   "note": "The municipality covers the historic city (centro storico), the lagoon islands (estuario) and the mainland (terraferma) with Mestre and Marghera. It peaked at 367,832 in 1968; Cavallino-Treporti has been a separate municipality since 1999 and is not included."
+  },
+  "com_folkmangd_centro_storico": {
+   "name": "Population of Venice's historic centre (centro storico), 31 December",
+   "unit": "people",
+   "note": "The six sestieri including the Giudecca. 864 fewer than a year earlier (48,489 − 47,625, own arithmetic). The year-end figure first fell below 50,000 in 2022 (49,665)."
+  },
+  "com_folkmangd_centro_storico_1931": {
+   "name": "Population of the centro storico at the 1931 census",
+   "unit": "people",
+   "note": "Roughly when the chronicle's first generation starts a family. The whole municipality then had 250,322 residents, 53,937 of them on the mainland."
+  },
+  "com_folkmangd_centro_storico_1951": {
+   "name": "Population of the centro storico at the 1951 census",
+   "unit": "people",
+   "note": "The highest value in the municipality's series since 1871 and the base of its index (1951 = 100). The mainland then had 96,966 residents."
+  },
+  "com_folkmangd_centro_storico_1966": {
+   "name": "Population of the centro storico in the year of the 1966 flood",
+   "unit": "people",
+   "note": "Since 1951 the centre had lost 53,499 residents (174,808 − 121,309, own arithmetic), while the mainland grew from 96,966 to 193,314."
+  },
+  "com_centro_storico_index": {
+   "name": "Population index for the centro storico (1951 = 100)",
+   "unit": "index",
+   "note": "The municipality's own index: the centre keeps just over a quarter of its 1951 population (27.24). The mainland stands at 183.7 and the whole municipality at 79.6."
+  },
+  "com_folkmangd_estuario": {
+   "name": "Population of the lagoon islands (estuario), 31 December",
+   "unit": "people",
+   "note": "The Lido, Pellestrina, Murano, Burano and the other inhabited islands. 44,037 residents in 1951; the series excludes Cavallino-Treporti from 1999."
+  },
+  "com_folkmangd_terraferma": {
+   "name": "Population of the mainland (terraferma), 31 December",
+   "unit": "people",
+   "note": "Mestre, Marghera, Favaro and Chirignago-Zelarino. Highest in 1975 (210,674); a slight increase in recent years (177,365 in 2024)."
+  },
+  "com_yta": {
+   "name": "Area of the municipality",
+   "unit": "km²",
+   "note": "Of which 257.73 km² inland water (the lagoon) according to the same source, which leaves about 158 km² of land (own arithmetic). The figure comes from the municipality's 'Superfici amministrative' page as quoted by Wikipedia."
+  },
+  "com_municipalita": {
+   "name": "Number of municipalità (borough councils)",
+   "unit": "municipalità",
+   "note": "Venezia-Murano-Burano (the centre and northern islands), Lido-Pellestrina, Favaro Veneto, Mestre-Carpenedo, Chirignago-Zelarino and Marghera; each elected a president and council at the same time as the mayor in 2026. They replaced 13 former quartieri in 2005 (council decision 37/2005, per Wikipedia)."
+  },
+  "com_sestieri": {
+   "name": "Number of sestieri in the historic city",
+   "unit": "sestieri",
+   "note": "Cannaregio, Castello, Dorsoduro (with the Giudecca), San Marco (with San Giorgio Maggiore), San Polo and Santa Croce; the division goes back to the Republic's early days."
+  },
+  "com_cm_folkmangd": {
+   "name": "Population of the Città metropolitana di Venezia",
+   "unit": "people",
+   "note": "'More than 833,000 inhabitants' in 44 municipalities on 2,473 km² (346 per km²) according to the metropolitan city's DUP 2026–2028; a rounded figure."
+  },
+  "com_studenter": {
+   "name": "Students at Venice's universities and academies",
+   "unit": "students",
+   "note": "The sustainability foundation VSF gives 'circa 28,000 students' and sees the city as a platform for research and education; one of its nine areas is called 'Venezia città campus'. An undated figure on the foundation's website."
+  },
+  "com_valdeltagande_2026": {
+   "name": "Turnout in the municipal election of 24–25 May 2026",
+   "unit": "%",
+   "note": "112,767 voters out of 201,713 registered. In 2020 turnout was 62.2% (128,025 of 205,720, own arithmetic from Eligendo data)."
+  },
+  "com_borgmastarval_venturini": {
+   "name": "Simone Venturini's share in the 2026 mayoral election",
+   "unit": "% of valid votes",
+   "note": "Venturini (centre-right: his own list, Brothers of Italy, Lega, Forza Italia, UDC and Partito dei Veneti) won 56,344 votes and was elected in the first round, so no run-off was needed. He was sworn in at the council's first sitting on 16 June 2026."
+  },
+  "com_borgmastarval_martella": {
+   "name": "Andrea Martella's share in the 2026 mayoral election",
+   "unit": "% of valid votes",
+   "note": "Martella (centre-left: PD, AVS, M5S, Terra e Acqua 2026 and others) won 43,294 votes. Next came Michele Boldrin (Venezia Ora!) 3.43%, Giovanni Martini 2.11% and Claudio Vernier 1.77%."
+  },
+  "com_kf_mandat_majoritet": {
+   "name": "Seats held by the governing majority in the city council",
+   "unit": "seats of 36",
+   "note": "Venturini's list 14, Brothers of Italy 5, Lega 2 and Forza Italia 1. The opposition holds 14: PD 9, AVS 1, M5S 1, Terra e Acqua 1 plus the defeated mayoral candidates Martella and Boldrin. The mayor is the council's 37th member. The same 22–14 split as after the 2020 election."
+  },
+  "com_kf_mandat_lista_venturini": {
+   "name": "Seats for the list 'Simone Venturini Sindaco'",
+   "unit": "seats",
+   "note": "The largest list with 30.10% (32,046 votes); it succeeds Brugnaro's list 'Luigi Brugnaro Sindaco', which also won 14 seats in 2020. In October 2026 two councillors sit in the mixed group (Misto) and Lega has no group of its own."
+  },
+  "com_kf_mandat_pd": {
+   "name": "Seats for the Partito Democratico",
+   "unit": "seats",
+   "note": "The PD won 24.84% (26,444 votes). With Martella, elected as a mayoral candidate, the PD group has 10 councillors in October 2026."
+  },
+  "com_centro_storico_martella": {
+   "name": "Andrea Martella's share in the centro storico, 2026",
+   "unit": "% of valid votes",
+   "note": "In the historic city (58 polling districts) Martella won 12,417 votes against Venturini's 8,414 (34.83%); Venturini carried the municipality thanks to the mainland and the islands. The municipality's provisional ('ufficiosi') figures by zone."
+  },
+  "com_valdeltagande_centro_storico_2026": {
+   "name": "Turnout in the centro storico, 2026",
+   "unit": "%",
+   "note": "24,599 voters out of 45,578 registered, lower than in the whole municipality (55.90%). The municipality's provisional figures."
+  },
+  "com_valdeltagande_2020": {
+   "name": "Turnout in the municipal election of 20–21 September 2020",
+   "unit": "%",
+   "note": "Own arithmetic from Eligendo open data: 128,025 voters / 205,720 registered = 62.2%. Luigi Brugnaro was then re-elected in the first round with 66,750 votes (54.1% of candidate votes, own arithmetic)."
+  },
+  "com_linee_mandato_omraden": {
+   "name": "Strategic areas in the draft 'Linee programmatiche di mandato 2026–2031'",
+   "unit": "areas",
+   "note": "Economy and work, security, housing, planning, social affairs, sport, mobility, tourism, culture, environment and organisation per the news site Notizie Plus; the committee notice of 6 October 2026 numbers the areas up to \"Area 11\". The executive has approved the draft (PD 2026.1074) with the DUP 2027–2029, and the council votes on 15 October 2026 (notice on consiglio.comune.venezia.it)."
+  },
+  "com_paesc_minskning_2030": {
+   "name": "PAESC: reduction of CO₂ emissions by 2030",
+   "unit": "%",
+   "note": "The municipality's PAESC (approved by the executive in January 2026) has 33 actions to cut emissions by 72% by 2030 relative to the baseline inventory (IBE; the base year is not stated in the presentation). The Covenant of Mayors minimum is −40%, and C40's 'Deadline 2020' pathway gives −68.9%."
+  },
+  "com_paesc_atagande_2030": {
+   "name": "The municipality's climate commitment since 2021: CO₂ reduction by 2030",
+   "unit": "%",
+   "note": "Venice joined the Covenant of Mayors for Climate and Energy in 2020 (council decision 29/2020) and in 2021 tightened its target to −55% by 2030. The municipality signed the Covenant of Mayors in 2011; its first action plan (SEAP) aimed at −20% by 2020, a goal the municipality says it has met."
+  },
+  "com_klimatneutral_ar": {
+   "name": "Target year for a climate-neutral municipality",
+   "unit": "year",
+   "note": "PAESC: 'emission neutrality (net-zero carbon balance) by 2050'. The plan is reviewed every two years (targets), every four years (emissions inventory) and every five years (climate risk assessment)."
+  },
+  "com_paesc_anpassningsatgarder": {
+   "name": "PAESC: climate adaptation actions",
+   "unit": "actions",
+   "note": "Based on a risk and vulnerability assessment of twelve hazards, including heatwaves, sea-level rise and changing tides, storm surges, cloudbursts and coastal erosion. Examples: the civil protection plan, stormwater, the Bosco dello Sport, fibre in the historic city and the Smart Control Room."
+  },
+  "com_canal_grande_hybridbatar_2032": {
+   "name": "Target: every boat on the Grand Canal with a hybrid engine",
+   "unit": "% of boats",
+   "note": "A target the municipality repeated when the PAESC was presented: by 2032 every boat on the Grand Canal is to have hybrid engines running on renewable energy or biodiesel. The municipality says PM10 emissions fell 90% in 2017–2025 (the chart refers to ACTV's fleet)."
+  },
+  "com_cm_utslappsmal_2030": {
+   "name": "Metropolitan city: greenhouse-gas reduction by 2030 relative to 1990",
+   "unit": "%",
+   "note": "A target in the metropolitan city's DUP 2026–2028, through building efficiency, the energy transition and green infrastructure. The same document says the metropolitan Agenda for sustainable development (the PAGES project with the environment ministry) 'must be filled with concrete content', and that since 2024 it has been drafting goals and indicators for the 17 SDGs."
+  },
+  "com_vsf_grundad": {
+   "name": "The Venezia Capitale Mondiale della Sostenibilità foundation is set up",
+   "unit": "year",
+   "note": "Founded on 14 March 2022 under the patronage of the Italian government by the Veneto Region, the municipality, the universities, cultural institutions and large companies. Chaired by Renato Brunetta; vice-chairs are the regional president Alberto Stefani and the mayor Simone Venturini. Nine themes, from hydrogen in Porto Marghera to housing and sustainable tourism."
+  },
+  "com_cda_betalningar_2024": {
+   "name": "Paid access fees (contributo di accesso), 2024",
+   "unit": "payments",
+   "note": "The first trial: 29 fee days at €5 per day visitor, about €2.4 million; 16,676 payments per day on average."
+  },
+  "com_cda_betalningar_2025": {
+   "name": "Paid access fees, 2025",
+   "unit": "payments",
+   "note": "54 fee days, 18 April–27 July; €5 if paid in advance, €10 in the last four days before the visit. 13,046 payments per day on average; 51% paid €5. Peak of 24,951 on Friday 2 May."
+  },
+  "com_cda_intakt_2025": {
+   "name": "Revenue from the access fee, 2025",
+   "unit": "€",
+   "note": "Almost twice the 2024 figure. After running costs at least €1.5 million went to lowering residents' waste charge (TARI). About 140 inspectors a day, more than 445,000 QR checks and some 2,500 reports."
+  },
+  "com_cda_dagar_2026": {
+   "name": "Fee days for the access fee, 2026",
+   "unit": "days",
+   "note": "3 April–26 July 2026, 8:30–16:00, €5 or €10; still a trial 'with a view to possible permanent application'. Veneto residents and students at schools in the historic city were fully exempt. Clean Cities' summary: more than 650,000 paid vouchers and over €5 million (provisional)."
+  },
+  "com_cda_hotellgaster_per_dag": {
+   "name": "Overnight guests exempt from the fee, average per fee day",
+   "unit": "people per day",
+   "note": "Guests in hotels and other lodgings pay the tourist tax instead and were registered as exempt: 36,639 per fee day in 2025, almost three times the paying day visitors (36,639 / 13,046 = 2.8; own arithmetic)."
+  },
+  "com_korttidsuthyrning_grans": {
+   "name": "Limit for short-term tourist lets without special requirements",
+   "unit": "days per year",
+   "note": "Article 37-bis of DL 50/2022 gives Venice alone the power to regulate short lets. The municipal proposal (executive, 24 October 2024) lets those who rent for more than 120 days a year in the historic city join a register with requirements, as a trial until 31 December 2026. It was still in committee on 25 November 2025; I have not found a final council decision."
+  },
+  "com_mose_grans": {
+   "name": "Tide level at which the MOSE barriers are raised",
+   "unit": "cm",
+   "note": "The barriers are raised when the forecast exceeds 110 cm above the Punta della Salute datum (ZMPS, the mean level of 1885–1909). At 110 cm about 12% of the city is under water (ISPRA), so the lowest parts, such as around Piazza San Marco, can still flood below the threshold."
+  },
+  "com_mose_stangningar_2020": {
+   "name": "MOSE closures in the first year",
+   "unit": "closures",
+   "note": "The first operational raising was on 3 October 2020 (ISPRA). By calendar year: 13 (2020), 20 (2021), 11 (2022), 25 (2023), 28 (2024), 27 (2025) and 32 (2026 up to mid-May)."
+  },
+  "com_mose_stangningar_sasong_2025_26": {
+   "name": "MOSE closures in the 2025/26 high-water season",
+   "unit": "closures",
+   "note": "The most so far: 49 against 20 in 2020/21, 13 (2021/22), 19 (2022/23), 32 (2023/24) and 23 (2024/25). In total 156 closures October 2020–May 2026 (own sum of the authority's table)."
+  },
+  "com_mose_stangningar_vid_50cm": {
+   "name": "MOSE closures with 50 cm higher sea level (model)",
+   "unit": "closures per day (average)",
+   "note": "Umgiesser (CNR, 2020): the barriers can keep the water below 110 cm nearly all the time if the sea rises no more than 50 cm, but they must then close once a day on average; at 75 cm the lagoon is closed more often than open. Partial closures do not protect the city."
+  },
+  "com_barene_aterskapade": {
+   "name": "Salt marshes (barene) rebuilt in the lagoon",
+   "unit": "km²",
+   "note": "The state lagoon programme (today the Autorità per la Laguna di Venezia): 16 km² of barene rebuilt and naturalised, 39 km of barene protected and 12 small islands restored. The lagoon covers about 550 km², some 80% of it mudflats, shallows and salt marshes (Wikipedia)."
+  },
+  "com_kajer_hojda": {
+   "name": "Urban quays and lagoon banks raised and reinforced",
+   "unit": "km",
+   "note": "Local defences against medium-high tides below the MOSE threshold; in addition 56 km of beaches rebuilt or reinforced, 12 km of dunes and 11 km of breakwaters. The city council counts quays, fondamente and walkways among the city's greatest needs (July 2026)."
+  },
+  "com_oversvamning_110cm": {
+   "name": "Share of the city under water at a 110 cm tide",
+   "unit": "%",
+   "note": "ISPRA: tides above 110 cm rose from fewer than 2 a year in the 1950s to more than 10 a year in the 2010s (28 in 2019), as the relative mean sea level rose from just over 15 to about 35 cm through sea-level rise and subsidence."
+  },
+  "com_oversvamning_140cm": {
+   "name": "Share of the city under water at a 140 cm tide",
+   "unit": "%",
+   "note": "The municipality's civil protection: at +140 cm, the threshold for an 'exceptional' tide, 59% of the city floods. The page was last updated in 2018."
+  },
+  "com_kryssningsfartyg_grans": {
+   "name": "Largest ship size allowed in the San Marco basin and the Giudecca canal",
+   "unit": "GT (gross tonnage)",
+   "note": "DL 103/2021 declared the Bacino di San Marco, Canale di San Marco and Canale della Giudecca national monuments and from 1 August 2021 banned ships over 25,000 GT, longer than 180 m or with an air draft above 35 m. The port authority's president became special commissioner for alternative berths, and a fund was set up to compensate shipping companies and terminals."
+  },
+  "com_fastlandet_inkorporeras": {
+   "name": "The mainland municipalities merge into Venice",
+   "unit": "year",
+   "note": "The Region: in 1926 the four mainland municipalities around the industrial zone (Mestre, Chirignago, Zelarino and Favaro Veneto) were joined to Venice. Marghera had been transferred from Mestre in 1917 and Pellestrina, Murano and Burano in 1923–24 (Wikipedia)."
+  },
+  "com_ponte_littorio": {
+   "name": "The road bridge across the lagoon opens",
+   "unit": "year",
+   "note": "The road bridge opened on 25 April 1933 as the 'Ponte Littorio' and was renamed Ponte della Libertà in 1946; it runs beside the 1846 railway bridge and is 3,850 m long."
+  },
+  "com_porto_marghera_anstallda": {
+   "name": "Workers in Porto Marghera in the early 1960s",
+   "unit": "workers",
+   "note": "The Region: about 200 companies with some 35,000 workers and more than 7 million tonnes of goods a year in the early 1960s; 24 million tonnes passed in 1974. De-industrialisation followed with 'substantial' job losses. Wikipedia gives 35,724 workers in 1971."
+  },
+  "com_mestre_invanare_1960": {
+   "name": "Inhabitants of Mestre in 1960",
+   "unit": "people",
+   "note": "The Region: as industry grew, Mestre rose from 20,000 to 90,000 inhabitants in 1920–1960 and Marghera from 5,000 to 25,000; Favaro, Chirignago and Zelarino became towns of 10,000–15,000. Rounded figures."
+  },
+  "com_acqua_granda_1966": {
+   "name": "The high water of 4 November 1966 at Punta della Salute",
+   "unit": "cm",
+   "note": "The highest level since records began in 1872; almost 90% of the city flooded. The disaster led to the Special Law 171/1973."
+  },
+  "com_speciallagen": {
+   "name": "The Special Law for Venice is passed",
+   "unit": "year",
+   "note": "Law no. 171 of 16 April 1973: safeguarding Venice and its lagoon is 'a problem of pre-eminent national interest'. On 23 July 2026 the council again asked for stable, multi-year refinancing (as in 2020, 2024 and February 2026)."
+  },
+  "com_unesco_varldsarv": {
+   "name": "'Venice and its Lagoon' becomes World Heritage",
+   "unit": "year",
+   "note": "World Heritage site no. 394, inscribed in 1987 under all six cultural criteria (i)–(vi). According to Wikipedia, the UN warned in 2014 that the city could be put on the List of World Heritage in Danger unless cruise ships were stopped."
+  },
+  "com_fenice_brand": {
+   "name": "The La Fenice opera house burns",
+   "unit": "year",
+   "note": "Destroyed by arson on 29 January 1996; rebuilt under the motto 'as it was, where it was' and reopened with an inaugural week on 14–21 December 2003. The owner of the electrical firm maintaining the theatre and his cousin, an electrician there, were convicted; the firm was behind schedule and faced penalties."
+  },
+  "com_mose_gripna_2014": {
+   "name": "People arrested in the MOSE corruption investigation",
+   "unit": "people",
+   "note": "On 4 June 2014, 35 people, among them the mayor Giorgio Orsoni, were arrested in an investigation into bribes and slush funds around the MOSE construction, which had begun on 14 May 2003."
+  },
+  "com_acqua_alta_2019": {
+   "name": "The high water of 12 November 2019 at Punta della Salute",
+   "unit": "cm",
+   "note": "The second highest since 1872: 187 cm on the Grand Canal side and 189 cm on the Giudecca side of Punta della Salute, with gusts above 100 km/h. In the week of 12–17 November 140 cm was exceeded four times."
+  },
+  "lag_laguna_yta": {
+   "name": "Area of the Venice Lagoon",
+   "unit": "km²",
+   "note": "The lagoon stretches about 60 km along the coast between the mouths of the Adige and the Piave and is separated from the sea by the barrier islands (lidi) with three inlets (Lido, Malamocco, Chioggia). The World Heritage management plan (2012) gives 539 km² of lagoon surface within a 629 km² lagoon including 90 km² of embanked fish farms; the Natura 2000 site IT3250046 covers 551.6 km². The Region divides the lagoon into the sub-basins Lido 100, Treporti 150, Malamocco 170 and Chioggia 130 km²."
+  },
+  "lag_oppet_vatten": {
+   "name": "Open water surfaces in the lagoon (specchi d'acqua)",
+   "unit": "km²",
+   "note": "Of 539 km² of lagoon surface, 368 km² is permanent water, 142 km² is land that lies above the water or is flooded only at high tide (salt marshes and mudflats) and 29 km² is islands in the open lagoon; in addition there are 90 km² of embanked areas, 83 km² of them fish farms. Open water is thus 68% of the lagoon surface (368/539, own calculation)."
+  },
+  "lag_medeldjup": {
+   "name": "Mean depth of the lagoon",
+   "unit": "m",
+   "note": "Figure from Consorzio Venezia Nuova (Cecconi 2011). The municipality's 2019 presentation gives 1.5 m and a maximum depth of 46 m in the Malamocco inlet. The lagoon is getting deeper: the most common depth fell from −0.62 to −0.88 m in 1927–2002 (lag_modaldjup_2002)."
+  },
+  "lag_modaldjup_2002": {
+   "name": "Most common water depth (modal depth) in the lagoon, 2002",
+   "unit": "m",
+   "note": "Comparison of bathymetric surveys from 1927, 1970 and 2002: the modal depth fell from −0.62 m to −0.88 m and the subtidal flats (bassifondi) grew from 88 to 206 km² as salt marshes and mudflats eroded. Causes according to the study: subsidence and channel dredging in 1927–1970, mechanical clam fishing in 1970–2002."
+  },
+  "lag_barene_1912": {
+   "name": "Salt marshes (barene) in the lagoon, 1912",
+   "unit": "km²",
+   "note": "Series by L. D'Alpaos (2010) in the municipality's presentation: 158 km² in 1912, 104 km² in 1930, 47 km² in 2003 and about 40 km² in 2017 (estimate). The 2012 World Heritage plan says salt marshes covered 20% of the lagoon basin at the start of the 20th century and just over 8% today. Other surveys give lower figures for the early century (Sarretta et al.: 68 km² in 1927), so definitions differ."
+  },
+  "lag_barene_idag": {
+   "name": "Salt marshes (barene) in the lagoon today",
+   "unit": "km²",
+   "note": "Estimate for 2017 in the municipality's presentation (D'Alpaos 2010); the same series gives 47 km² in 2003. Other measures: about 35 km² (Cecconi 2011) and 32 km² in 2002 (Sarretta et al. 2010). AP (May 2026) gives about 7% of the lagoon, roughly half of it rebuilt – so the figure probably includes the constructed marshes."
+  },
+  "lag_barene_2002_batymetri": {
+   "name": "Salt marshes in 2002 according to the bathymetric surveys",
+   "unit": "km²",
+   "note": "The area fell by more than half, from 68 km² in 1927 to 32 km² in 2002, in Sarretta et al.'s comparison of the 1927, 1970 and 2002 bathymetries. The figure is lower than the D'Alpaos series (lag_barene_idag); the sources use different methods and boundaries."
+  },
+  "lag_barene_forlust_per_ar": {
+   "name": "Loss of salt marshes per year",
+   "unit": "km² per year",
+   "note": "(47 − 40) km² / 14 years = 0.5 km² (50 ha) per year in 2003–2017. Over the whole period 1912–2017: (158 − 40) / 105 = 1.1 km² per year; according to Sarretta et al. (68 − 32) / 75 = 0.48 km² per year in 1927–2002. Rebuilding with dredged sediment runs at roughly the same rate (lag_aterskapade_barene)."
+  },
+  "lag_sediment_nettoforlust": {
+   "name": "Net sediment loss from the lagoon",
+   "unit": "million m³ per year",
+   "note": "The loss grew from 0.3 million m³ per year in 1927–1970 to 0.8 million m³ per year in 1970–2002; in total about 110 million m³ was lost in 1927–2002, 73 million of it before 1970. The municipality's 2019 presentation says '800 mc/year' (probably 800,000 m³), the SedNet case description about 300,000 m³ per year."
+  },
+  "lag_sediment_till_havet": {
+   "name": "Sediment exported to the sea through the inlets",
+   "unit": "million m³ per year",
+   "note": "Net export to the sea through the three inlets: on average 0.5 million m³ per year and 39 million m³ in total in 1927–2002. According to the SedNet case description the channels also silt up by about 400,000 m³ per year with sediment eroded from the shallows and salt marshes."
+  },
+  "lag_flodsediment": {
+   "name": "Sediment supply from the drainage basin",
+   "unit": "m³ per year",
+   "note": "The drainage basin (1,880 km²) delivers about 2.8 million m³ of water a day to the lagoon through 27 outlets but only about 30,000 m³ of sediment a year; about 400 million m³ of water is exchanged with the sea every day. Compared with the net loss of 0.5–0.8 million m³ a year, the rivers cover only 4–6% (own comparison)."
+  },
+  "lag_strandretratt_fartygsvagor": {
+   "name": "Shoreline retreat along the Malamocco–Marghera channel caused by ship wakes",
+   "unit": "m per year",
+   "note": "GIS analysis of aerial images shows an average retreat of 3–4 m per year in 1974–2015 (3.5 is the middle of the range); 1.19 million m³ of sediment was lost along the channel in 1968–2015. The 2012 World Heritage plan names the wash of motor boats (moto ondoso) as a main cause of damage to quay walls and building foundations in the city."
+  },
+  "lag_aterskapade_barene": {
+   "name": "Salt marshes and mudflats rebuilt with dredged sediment",
+   "unit": "hectares",
+   "note": "By December 2011 the Magistrato alle Acque (through Consorzio Venezia Nuova) had built 1,481 ha of salt marshes and mudflats with 22.4 million m³ of sediment from channel maintenance. Cecconi (SedNet 2011) gives 19.5 million m³ used for 123 units over 25 years, 11 km² of salt marsh and 2 km² of mudflat – about 50–60 ha a year (own calculation), roughly as much as the loss. The Lagoon Authority now reports 16 km² of rebuilt and naturalised salt marshes, 39 km of protected marsh edges and 12 restored minor islands; the World Heritage plan notes that the lagoon has lost more than 15,000 ha since 1850 to land claim, landfills and fish farms."
+  },
+  "lag_skyddade_barene_life_vimine": {
+   "name": "Natural salt marshes protected with fascines (LIFE VIMINE)",
+   "unit": "hectares",
+   "note": "The EU project of 2013–2017 protected salt-marsh edges with fascines of local wood; 60 m³ of litter was removed and 1,480 workdays went to local residents. The municipality notes that only 2.5% of the salt marshes were protected and that the work stopped when EU funding ended in 2017; a new agreement (Provveditorato, Region, municipality, Consorzio Acque Risorgive, University of Padua) was to start in spring 2025 according to Il Nordest (December 2024)."
+  },
+  "lag_sjogras_seresto": {
+   "name": "Seagrass meadows re-established in the northern lagoon (LIFE SeResto)",
+   "unit": "km²",
+   "note": "Eelgrass (Zostera marina), dwarf eelgrass (Zostera noltei) and Ruppia cirrhosa were planted in 2014–2017 at 35 sites, about 300 sods and at least 400 rhizomes per site and year, taken from donor areas of under 100 m². On average about 40% of the rhizomes took root, and after four years the meadows covered about 10 km², more than 25% of the project area, often in 20–50 m wide bands along salt-marsh edges and channels."
+  },
+  "lag_zostera_noltei": {
+   "name": "Dwarf eelgrass (Zostera noltei) in the northern lagoon, 2002",
+   "unit": "hectares",
+   "note": "684 ha in 1990, 100 ha in 2002 (−85%, Rismondo et al. 2003) and almost completely gone in 2011–2014, according to ISPRA's SeResto report. The habitat type 1150* coastal lagoon covers more than 20,000 ha of the Venice Lagoon."
+  },
+  "lag_wfd_ekologisk_status": {
+   "name": "Water bodies in the lagoon in good ecological status",
+   "unit": "of 11 classified",
+   "note": "Water Framework Directive classification for 2020–2025 (regional decree of 27 July 2026): 8 water bodies moderate (sufficiente) and 3 poor (scarso: Palude Maggiore, Chioggia, Marghera), none good. Benthic fauna and macrophytes are decisive; the two fish-farm water bodies could not be classified and the canals of the historic centre are monitored for chemistry only."
+  },
+  "lag_wfd_kemisk_status": {
+   "name": "Water bodies in the lagoon in good chemical status",
+   "unit": "of 14",
+   "note": "All 14, including the canals of the historic centre, are 'not good', mainly because PFOS in the water exceeds the standard of Legislative Decree 172/2015, in some areas also PAHs (benzo(a)pyrene etc.). The previous classification (2014–2019) failed on mercury and PBDEs in fish and shellfish, which were not measured this time; chemical monitoring lapsed after 2019 and restarted in 2025."
+  },
+  "lag_natura2000_zps": {
+   "name": "Special Protection Area (SPA) Laguna di Venezia, Natura 2000",
+   "unit": "hectares",
+   "note": "Site IT3250046 in the EEA Natura 2000 dataset (version 2024, GIS area). It covers practically the whole lagoon; according to ISTAT, 62% of the municipality's area is protected natural area (lag_skyddad_natur_andel_kommun)."
+  },
+  "lag_natura2000_zsc": {
+   "name": "Habitats Directive sites (SAC) in the lagoon, Natura 2000",
+   "unit": "hectares",
+   "note": "IT3250030 Laguna medio-inferiore di Venezia 26,364 ha + IT3250031 Laguna superiore di Venezia 20,344 ha = 46,708 ha (own sum). Both lie within the bird protection area IT3250046."
+  },
+  "lag_skyddad_natur_andel_kommun": {
+   "name": "Protected natural areas as a share of the municipality of Venice",
+   "unit": "%",
+   "note": "261.2 km² of protected natural areas – in practice the lagoon's Natura 2000 sites – out of the municipal area (table 10.1). Including urban green space it is 65.3% (table 18.1). The average for Italy's provincial capitals is 16.8%."
+  },
+  "lag_overvintrande_vattenfaglar": {
+   "name": "Wintering waterbirds in the lagoon (mean 2003–2007)",
+   "unit": "birds",
+   "note": "The January counts rose from 74,462 birds in 1993 to 201,717 in 2007 (peak 214,640 in 2005), making the lagoon Italy's most important wintering site. Ducks make up 53%, gulls 17%, waders 14% and coots 13%; about 80% were counted in the fish farms (9,500 ha), where hunting takes place. No more recent published total for the lagoon was found."
+  },
+  "lag_flamingor": {
+   "name": "Wintering flamingos in the lagoon",
+   "unit": "birds",
+   "note": "The record peak of 'nearly 24,000' in winter 2025, against about 18,000 the year before, according to ornithologist Alessandro Sartori in AP's report (May 2026). Breeding attempts in 2008 and 2013 failed. News source; the primary count was not found."
+  },
+  "lag_mose_stangd_tid_2050": {
+   "name": "Share of the year with MOSE closed in 2050 (RCP8.5)",
+   "unit": "% of the year",
+   "note": "Modelled closure time: 357 hours (3%) in the control year 2020, 917 h (7%) with the current trend, 1,008 h (8%) under RCP2.6, 1,097 h (9%) under RCP4.5 and 1,324 h (11%) under RCP8.5 in 2050. Under RCP8.5 the mean flow through the inlets falls by up to 40% in December and closures start to affect spring and summer too. In reality the barrier was raised for the hundredth time on 12 March 2025, four and a half years after it started in October 2020 (Ministry of Infrastructure)."
+  },
+  "lag_mose_marsksediment": {
+   "name": "Reduced sedimentation on salt marshes with MOSE in operation",
+   "unit": "% reduction per year (at least)",
+   "note": "Measurements October 2018–December 2021: more than 70% of the yearly salt-marsh sedimentation happens during storm surges, when water levels are high and the water carries much sediment. If the flooding is regulated away, yearly sedimentation falls by more than 25% (Tognin et al., Nature Geoscience 14:906–911, 2021). Natural marsh accretion is given as about 5 mm a year (Magistrato alle Acque 2002, in the World Heritage plan)."
+  },
+  "lag_vongole_produktion": {
+   "name": "Farmed Manila clams in the Venice Lagoon",
+   "unit": "tonnes",
+   "note": "Harvest in the sub-concessions granted by San Servolo srl (successor to GRAL), 2019; in addition an estimated 661 tonnes from fishing on free banks. In 2015 production was 3,613 tonnes (Osservatorio, 2016 report). The species Ruditapes philippinarum was released in the southern lagoon in 1983 (200,000 juveniles)."
+  },
+  "lag_vongole_topp_1999": {
+   "name": "Clam harvest in the lagoon at its peak, 1998–1999",
+   "unit": "tonnes",
+   "note": "From an estimated 1,300 tonnes in 1990 to about 40,000 tonnes in 1998–1999 (Boatto & Pellizzato 2005); in 2007 the lagoon produced half of Italy's output, and including illegal fishing the harvest was estimated at about 30,000 tonnes a year. Mechanical fishing ploughed up the bottom and is named as the main cause of erosion in 1970–2002 (Sarretta et al. 2010)."
+  },
+  "lag_vongole_koncessioner_ha": {
+   "name": "Lagoon area leased for clam farming",
+   "unit": "hectares",
+   "note": "104 sub-concessions in the northern, central and southern lagoon, about 2.5% of the lagoon area (own calculation: 14.04 / 550 km²), employing 547 members. In 2015 there were 67 cooperatives with 457 workers, 50 vibrating harvest boats and 255 small boats (Osservatorio 2016)."
+  },
+  "lag_vongole_varde": {
+   "name": "First-sale value of farmed clams in the lagoon",
+   "unit": "million euros",
+   "note": "2,159 tonnes × €6.50/kg (average producer price at the Venice fish market in 2019) ≈ €14.0 million. Veneto Agricoltura puts the average income at €25,655 per farmer in 2019."
+  },
+  "lag_valli_da_pesca": {
+   "name": "Fish farms (valli da pesca) in the Venice Lagoon",
+   "unit": "hectares",
+   "note": "28 embanked fish farms: 18 in the northern lagoon (5,781 ha, 3,906 ha of it water) and 10 in the southern (3,503 ha, 2,860 ha water), according to Federvalli Veneto 2014 (own sum). The whole of Veneto has 58 valli on 20,149 ha, with yields of 100–150 kg of fish per ha (eel, sea bass, gilthead bream, mullet). The World Heritage plan gives 83 km² of fish farms."
+  },
+  "lag_fiskeforetag_provins": {
+   "name": "Businesses in sea and lagoon fishing, province of Venice",
+   "unit": "businesses",
+   "note": "594 businesses with 1,271 people employed in sea and lagoon fishing in 2019 (Infocamere); the whole fishing primary sector has 829 businesses and 1,572 employed. In the lagoon there were 98 permits for fixed gear (9 cooperatives, 87.8 km of nets), 15 licences for fry fishing and 20 mussel farms. The number of boats was not found."
+  },
+  "lag_grossistmarknad_fisk": {
+   "name": "Fish sold at the Venice wholesale market (Tronchetto)",
+   "unit": "tonnes",
+   "note": "Just under 7,000 tonnes in 2022 (−8% on 2021) worth just over €58 million; volume has fallen by about 2.5% a year since 2000. 24 selling firms and about 215 buyers (60% fishmongers, 25% street vendors, 10% restaurants), with fish from the Adriatic and far away. The municipality plans a new market building on Isola Nova del Tronchetto."
+  },
+  "lag_rialto_fiskstand": {
+   "name": "Fish stalls at the Rialto market (Pescheria)",
+   "unit": "stalls",
+   "note": "According to a motion in the city council (January 2024): about thirty fish stalls in the 1980s, seven today; fruit and vegetable stalls have gone from 90 to fewer than 13 (IUAV study) and butchers from 27 to 2. The motion describes the Pescheria building of 1907 (Domenico Rupolo) as empty since 2008. A political document; the figures are not official statistics."
+  },
+  "lag_santerasmo_kronartskocka": {
+   "name": "Growers in the Slow Food Presidium Carciofo violetto di Sant'Erasmo",
+   "unit": "growers",
+   "note": "Fourteen named producers of the violet artichoke on Sant'Erasmo and on land on Vignole, Mazzorbo and Lio Piccolo. The island is 'half the size of the city' and has been 'one vast vegetable garden' since the 16th century; the season starts in late April with the castraure, the plant's first top shoot. Area and harvest are not given."
+  },
+  "lag_venissa_vingard": {
+   "name": "The Venissa vineyard on Mazzorbo",
+   "unit": "hectares",
+   "note": "A walled vineyard (vigna murata) of under 1 ha with the local Dorona grape: about 4,000 vines, about 4,000 bottles a year and a first vintage in 2010 (Drinks International 2014). It was started by Gianluca Bisol; vines came from Sant'Erasmo among other places (Wine Economist 2014). Trade press, no official figures."
+  },
+  "lag_gronyta_per_invanare": {
+   "name": "Urban green space per inhabitant, municipality of Venice",
+   "unit": "m² per inhabitant",
+   "note": "Publicly managed green space, 12.15 km², divided by the average population (table 12.1); 42.8 m² in 2011. The average for Italy's provincial capitals is 33.7 m² and for north-east Italy 64.3 m² (2024). 41% of the green space is protected historic green and 20% urban forestry; the figure covers the whole municipality including Mestre."
+  },
+  "lag_tillganglig_gronyta": {
+   "name": "Accessible green space (verde fruibile) per inhabitant",
+   "unit": "m² per inhabitant",
+   "note": "Parks, historic green, equipped areas, school gardens, outdoor sports areas and cemeteries, 8.45 km² (tables 14.1–14.2). The average for provincial capitals is 15.9 m². ISTAT's report for 2023 singled out Venice as best among the large cities (then 35.5 m²)."
+  },
+  "lag_gronyta_andel": {
+   "name": "Urban green space as a share of the municipal area",
+   "unit": "%",
+   "note": "12.15 km² of the municipal area, much of which is lagoon water (table 11.1); the average for provincial capitals is 3.0%. There are no separate figures for the historic centre. In OpenStreetMap the model square (1.8 × 1.8 km) has 3.8 ha of parks and 1.4 ha of gardens, including the Giardini Reali at 0.46 ha (own calculation; private gardens and cloisters are incompletely mapped)."
+  },
+  "lag_trad_per_100_invanare": {
+   "name": "Inventoried trees per 100 inhabitants",
+   "unit": "trees per 100 inhabitants",
+   "note": "70,546 trees in the municipality's inventory of public green space (parts of the municipality, updated 2024; table 2.1). The average for provincial capitals is 24.4 and for north-east Italy 62.1. 506 trees were felled in 2024 and 428 in 2023 (table 5.1); the model square has 470 trees in OpenStreetMap (own count, incomplete)."
+  },
+  "lag_hardgjord_mark_andel": {
+   "name": "Sealed and built-up land (suolo consumato)",
+   "unit": "%",
+   "note": "7,164 ha of artificial surface out of the municipality's total area, much of which is lagoon. Veneto 11.86%, Italy 7.17% and the province of Venice 14.10% (2024). The historic centre is not reported separately."
+  },
+  "lag_hardgjord_okning": {
+   "name": "Net increase of sealed land 2023–2024",
+   "unit": "hectares",
+   "note": "Gross 65.18 ha of new development, 0.97 ha restored. The sum of ISPRA's net increases 2006–2024 is about 486 ha (own sum of eleven periods)."
+  },
+  "lag_avfall_per_invanare": {
+   "name": "Municipal waste per inhabitant",
+   "unit": "kg per inhabitant and year",
+   "note": "173,318 tonnes divided by 249,466 inhabitants; visitors' waste is counted against residents, hence the high value. Veneto 524.95 kg and Italy 507.90 kg (2024); 709 kg in 2010."
+  },
+  "lag_sorteringsgrad": {
+   "name": "Share of separately collected waste (raccolta differenziata)",
+   "unit": "%",
+   "note": "110,442 of 173,318 tonnes; 32.65% in 2010 and a high of 65.98% in 2020. Veneto 78.16%, Italy 67.69% (2024); the legal target is 65%. Venice is third among cities over 200,000 inhabitants after Bologna and Padua."
+  },
+  "lag_dorrhamtning_andel": {
+   "name": "Households with door-to-door waste collection (porta a porta)",
+   "unit": "% of households",
+   "note": "29% of household customers have door-to-door collection, 71% use street bins. In the historic centre dry recyclables have also been collected at the door since 2016: collectors walk with light carts to compactor boats, and residents bring 35–50% of the weight themselves to 60 fixed points at set times (municipality 2023). In high season about 330 litter bins are emptied almost hourly using five motor boats."
+  },
+  "lag_avlopp_anpassningar": {
+   "name": "Approved sewage adaptations in the historic centre (septic tanks, small treatment plants)",
+   "unit": "installations",
+   "note": "Almost 1,800 adaptations approved by the Magistrato alle Acque, mostly septic tanks and grease traps for hotels, bars and restaurants under the special laws 71/90, 360/91 and 206/95, plus 85 small treatment plants for discharges above 100 p.e.; more than 1,100 projects were under way, about 2,900 plans in total. Otherwise the sewage reaches the canals through septic tanks and the old tunnels (gatoli); no share of households connected to a central treatment plant was found."
+  },
+  "lag_septiktank_krav": {
+   "name": "Required septic tank volume per person in the historic city",
+   "unit": "m³ per person",
+   "note": "Since the 1933 hygiene regulation, buildings discharging to a canal or to the gatoli must have a septic tank before the outlet; the volume of 0.4 m³ per person served was set in DPR 962/1973 and was still applied in 2004. The municipality requires adaptation when an owner applies for a permit to renovate; the gatoli were on average half blocked."
+  },
+  "lag_marghera_sin": {
+   "name": "Contaminated site of national interest (SIN) Venezia–Porto Marghera",
+   "unit": "hectares",
+   "note": "Now covers land areas only. Before the 2013 redefinition (DM 144/2013, corrected 2016) it included 3,221 ha of land, 350 ha of port channels and 2,200 ha of lagoon. Refining, petrochemicals and steelworks have left metals and PAHs in the soil and metals, PAHs and chlorinated organics in the groundwater; agreements on containment works were signed in 2020."
+  },
+  "lag_mikroplast_sediment": {
+   "name": "Microplastics in lagoon sediments (highest measured level)",
+   "unit": "particles per kg dry weight",
+   "note": "672–2,175 particles smaller than 1 mm per kg of sediment at ten sampling sites, highest near the mainland; polyethylene and polypropylene make up more than 82% and 93% are 30–500 µm in size. A single survey, no time series."
+  },
+  "lag_unesco_inskrivet": {
+   "name": "Venice and its Lagoon inscribed on UNESCO's World Heritage List",
+   "unit": "year",
+   "note": "World Heritage property no. 394, inscribed in 1987 under all six cultural criteria (i)–(vi) (UNESCO state-of-conservation document 2021); the area coincides with the landscape protection under the Ministerial Decree of 1 August 1985 and covers the lagoon municipalities. There is no buffer zone: the Committee referred the proposal back in 2019 and did not approve the new one in 2026 (decision 48 COM 8B.45)."
+  },
+  "lag_unesco_bevarandebeslut": {
+   "name": "World Heritage Committee state-of-conservation decisions on Venice 2014–2026",
+   "unit": "decisions",
+   "note": "38 COM 7B.27 (2014), 40 COM 7B.52 (2016), 41 COM 7B.48 (2017), 43 COM 7B.86 (2019), 44 COM 7B.50 (2021), 45 COM 7B.189 (2023), 47 COM 7B.113 (2025) and 48 COM 7B.40 (2026) – own count. The drafts of 2021 and 2023 proposed the List of World Heritage in Danger but the Committee adopted amended decisions; in 2025 and 2026 it warned that the conditions for such a listing may be met unless binding rules on tourism, building heights and impact assessment are introduced. The next report is due on 1 February 2027."
+  },
+  "lag_kulturminnesmarkta_byggnader": {
+   "name": "Listed buildings (edifici notificati)",
+   "unit": "buildings",
+   "note": "According to the then Soprintendente Renata Codello, the Venice Soprintendenza is Italy's smallest by area but the densest in protected buildings; the whole area has also been under landscape protection since 1985, so every intervention needs the authority's permission. A current number of churches and palaces in a primary source was not found."
+  },
+  "lag_byggnader_fore_1919": {
+   "name": "Residential buildings built before 1919 in the historic centre",
+   "unit": "%",
+   "note": "6,960 of 8,375 residential buildings in the districts San Marco–Castello–S. Elena–Cannaregio and Dorsoduro–S. Polo–S. Croce–Giudecca–Sacca Fisola (57,449 inhabitants in 2011); 89.6% date from before 1946 and 98% have load-bearing masonry. Whole municipality 26.6%, Veneto 11.7%, Italy 15.0% (same census, own sum)."
+  },
+  "lag_byggnader_daligt_skick": {
+   "name": "Residential buildings in mediocre or poor condition in the historic centre",
+   "unit": "%",
+   "note": "2,151 buildings in 'mediocre' and 88 in 'poor' condition out of 8,375 (own sum from the 2011 census). Italy 16.8%, Veneto 12.6% and the whole municipality 13.1%."
+  },
+  "lag_solceller_byggar_grans": {
+   "name": "Solar panels banned on buildings built before 1945 in the historic city",
+   "unit": "year of construction (threshold)",
+   "note": "The municipality's rule summary (March 2022, building regulation art. 38.6): solar PV and thermal panels are forbidden on buildings from before 1945 in the Città Antica. On later buildings they are allowed only on flat surfaces such as roofs, terraces and roof slabs (lastrici solari) – never on pitches clad with coppi tiles – and new buildings may only have panels integrated in the roof pitch; on the islands and the mainland the rules are more permissive."
+  },
+  "lag_hojning_max_cm": {
+   "name": "Largest practical raising of streets and quays in historic districts",
+   "unit": "cm",
+   "note": "At Rialto the protection level of +100 cm above the Punta della Salute datum was chosen, since the ground in places lies at only +70 cm. Raising by more than 15–20 cm is almost never possible: the number of critical thresholds rises from 6 at +100 cm to 21 at +110 and 51 at +120 cm, and the same applies to ground-floor floors."
+  },
+  "lag_forsamlingar_centro_storico": {
+   "name": "Catholic parishes in the historic centre",
+   "unit": "parishes",
+   "note": "In 2025 the Patriarchate merged 19 parishes into 6, each with several churches, because of population decline (under 50,000 inhabitants), fewer priests and lower participation. 17 churches charge admission through the Chorus association (the Patriarch in Finestre sull'Arte 2023). A reliable number of churches in the historic centre was not found."
+  },
+  "nt_folkmangd": {
+   "name": "Population of the Comune di Venezia",
+   "unit": "inhabitants",
+   "note": "Registered residents on 1 January 2026 (ISTAT, provisional); 249,490 on 1 January 2025 and 256,083 on 1 January 2021. The municipality's own register counts slightly more (251,295 in 2025) because ISTAT adjusts its figures to the census. Italy 58,942,828, Veneto 4,857,460 (2026)."
+  },
+  "nt_befolkningsforandring_1ar": {
+   "name": "Population change, past year",
+   "unit": "%",
+   "note": "Own calculation: (249,385 − 249,490) / 249,490 = −0.04% between 1 January 2025 and 1 January 2026 (ISTAT, provisional). The natural decrease (1,409 births, 3,345 deaths) was almost offset by in-migration, mainly from abroad (+2,414 net). Italy −0.001%, Veneto +0.08% (2025, own calculation)."
+  },
+  "nt_befolkningsforandring_5ar": {
+   "name": "Population change, past five years",
+   "unit": "%",
+   "note": "Own calculation: (249,385 − 256,083) / 256,083 = −2.62% between 1 January 2021 and 1 January 2026 (ISTAT; 2026 provisional). Italy −0.50%, Veneto −0.25% (2021–2026, own calculation; Veneto's 2021 population from Eurostat demo_r_gind3)."
+  },
+  "nt_folkmangd_centro_storico": {
+   "name": "Population of Venice's historic centre (centro storico)",
+   "unit": "inhabitants",
+   "note": "Registered residents of the centro storico (San Marco, Castello, Sant'Elena, Cannaregio, Dorsoduro, San Polo, Santa Croce and Giudecca) in the municipal register, 2025; the table gives the year but not the date. 55,589 in 2015 (−14.3%); over the decade 2,797 were born and 8,810 died. Italy and Veneto: not applicable; the whole municipality had 251,295 residents in the same register (2025)."
+  },
+  "nt_medelalder_centro_storico": {
+   "name": "Mean age in the centro storico",
+   "unit": "years",
+   "note": "The mean age of registered residents of the centro storico rose from 49.3 years in 2015 to 51.4 in 2025; the whole municipality 48.7 and the mainland (terraferma) 47.5 years. The mean age of Italy and Veneto is not in the same source; for comparison, the median age: Italy 49.1, Veneto 49.6 years (2025, Eurostat)."
+  },
+  "nt_medianalder": {
+   "name": "Median age",
+   "unit": "years",
+   "note": "Median age on 1 January 2025 in Eurostat's city statistics (Urban Audit, built on ISTAT data), unchanged since 2022. Italy 49.1, Veneto 49.6 years (2025, Eurostat demo_r_pjanind2)."
+  },
+  "nt_andel_0_19": {
+   "name": "Share of inhabitants aged 0–19",
+   "unit": "%",
+   "note": "Own calculation from ISTAT's single-year ages: 37,448 of 249,490 inhabitants were aged 0–19 on 1 January 2025 (14.9% in the provisional 2026 figures). Italy 16.9%, Veneto 16.7% (2025, Eurostat)."
+  },
+  "nt_andel_65_plus": {
+   "name": "Share of inhabitants aged 65+",
+   "unit": "%",
+   "note": "Own calculation from ISTAT's single-year ages: 71,091 of 249,490 inhabitants were 65 or older on 1 January 2025 (28.7% in the provisional 2026 figures). Italy 24.7%, Veneto 24.9% (2025, Eurostat)."
+  },
+  "nt_andel_80_plus": {
+   "name": "Share of inhabitants aged 80+",
+   "unit": "%",
+   "note": "Own calculation from ISTAT's single-year ages: 25,810 of 249,490 inhabitants were 80 or older on 1 January 2025 (also 10.3% in the provisional 2026 figures). Italy 7.8%, Veneto 8.0% (2025, Eurostat)."
+  },
+  "nt_forsorjningskvot": {
+   "name": "Demographic dependency ratio ((0–19 + 65+) / 20–64)",
+   "unit": "ratio",
+   "note": "Own calculation: (37,448 + 71,091) / 140,951 = 0.77 on 1 January 2025, i.e. 0.77 children, young people and older people per person of working age. Italy 0.71, Veneto 0.71 (2025, Eurostat demo_r_pjanind2, variant 3)."
+  },
+  "nt_fodda_per_1000": {
+   "name": "Live births per 1,000 inhabitants",
+   "unit": "per 1,000 inhabitants",
+   "note": "Live births per 1,000 inhabitants: 1,421 births in 2024 (Eurostat city statistics, break in series 2024). ISTAT's provisional 2025 balance gives 1,409 births. Italy 6.3, Veneto 6.2 (2024, Eurostat demo_r_gind3)."
+  },
+  "nt_doda_per_1000": {
+   "name": "Deaths per 1,000 inhabitants",
+   "unit": "per 1,000 inhabitants",
+   "note": "Deaths per 1,000 inhabitants: 3,354 deaths in 2024 and 3,345 in 2025 in ISTAT's provisional balance; the rate reflects the old population. Italy 11.1, Veneto 10.4 (2024, Eurostat demo_r_gind3)."
+  },
+  "nt_flyttnetto_per_1000": {
+   "name": "Net migration per 1,000 inhabitants",
+   "unit": "per 1,000 inhabitants",
+   "note": "Own calculation from ISTAT's 2024 demographic balance: total change −800 minus the natural decrease −1,933 gives +1,133 (net migration including statistical adjustment), divided by the mean population of 249,890 = 4.5 per 1,000. Abroad gave +1,404 and the rest of Italy −283. Italy 4.3, Veneto 4.5 (2024, Eurostat demo_r_gind3)."
+  },
+  "nt_hushall_antal": {
+   "name": "Number of households",
+   "unit": "households",
+   "note": "Households (famiglie anagrafiche) on 31 December 2024 according to ISTAT; 247,232 people lived in households, on average 1.96 per household (own calculation), and 2,258 in institutions. Italy and Veneto: no comparison fetched (a count, 2024)."
+  },
+  "nt_befolkningstathet": {
+   "name": "Population density",
+   "unit": "inhabitants/km²",
+   "note": "Own calculation: 249,490 inhabitants (1 January 2025, ISTAT) / 418.4 km² (the whole municipal area according to ISPRA) = 596 inhabitants/km². The area includes much of the lagoon, so density on the mainland and the islands is far higher. Italy 198.0, Veneto 279.7 inhabitants/km² (2024, Eurostat demo_r_d3dens)."
+  },
+  "nt_medellivslangd_man": {
+   "name": "Life expectancy, men",
+   "unit": "years",
+   "note": "Life expectancy at birth for men in the province (the Metropolitan City of Venice), provisional; not published for the municipality. 78.1 years in 2004 and 80.3 in the pandemic year 2020. Italy 81.4, Veneto 82.2 years (2024)."
+  },
+  "nt_medellivslangd_kvinnor": {
+   "name": "Life expectancy, women",
+   "unit": "years",
+   "note": "Life expectancy at birth for women in the province, provisional; 84.1 years in 2004. Both sexes together 84.0 years. Italy 85.5, Veneto 86.3 years (2024)."
+  },
+  "nt_undvikbar_dodlighet": {
+   "name": "Avoidable mortality, ages 0–74",
+   "unit": "per 10,000 inhabitants",
+   "note": "Deaths before age 75 from causes that can be prevented or treated (the OECD/Eurostat list), age-standardised per 10,000 inhabitants of the province. Italy 17.6, Veneto 15.2 (2022)."
+  },
+  "nt_sjukhussangar_per_10000": {
+   "name": "Hospital beds per 10,000 inhabitants",
+   "unit": "per 10,000 inhabitants",
+   "note": "Hospital beds (ordinary, day hospital and day surgery) in public and accredited private hospitals per 10,000 inhabitants of the province (ISTAT from Ministry of Health data). Italy 33.3, Veneto 32.3 (2022)."
+  },
+  "nt_specialistlakare_per_10000": {
+   "name": "Specialist doctors per 10,000 inhabitants",
+   "unit": "per 10,000 inhabitants",
+   "note": "Specialist doctors working in public and private care per 10,000 inhabitants of the province; GPs and primary-care paediatricians are not included (ISTAT from IQVIA OneKey). Italy 34.1, Veneto 29.6 (2023)."
+  },
+  "nt_hogskoleutbildade_25_64": {
+   "name": "Tertiary education, ages 25–64",
+   "unit": "%",
+   "note": "Own calculation from Eurostat city statistics: 35,458 of 129,073 residents aged 25–64 (the sum of the three education levels) had tertiary education (ISCED 5–8) in 2023. The city figure rests on ISTAT's register-based census, the comparisons on the labour force survey. Italy 21.6%, Veneto 20.5% (2023, Eurostat edat_lfse_04)."
+  },
+  "nt_hogskoleutbildade_25_39": {
+   "name": "Tertiary degree, ages 25–39",
+   "unit": "%",
+   "note": "Share of 25–39-year-olds in the province with a tertiary degree (ISCED 5–8), ISTAT labour force survey. Italy 30.9%, Veneto 34.4% (2024)."
+  },
+  "nt_tidiga_skolavhopp": {
+   "name": "Early leavers from education and training (18–24)",
+   "unit": "%",
+   "note": "Share of 18–24-year-olds with at most lower secondary education who are not in education or training (labour force survey); published for regions only. The EU target for 2030 is below 9%. Italy 8.2%, Veneto 7.6% (2025)."
+  },
+  "nt_neet_15_29": {
+   "name": "Young people aged 15–29 neither in work nor in education (NEET)",
+   "unit": "%",
+   "note": "Share of 15–29-year-olds in the province neither in work nor in education or training (ISTAT, labour force survey). For the regions 2025 is available: Italy 13.3%, Veneto 8.3% (Eurostat edat_lfse_22). Italy 15.2%, Veneto 9.0% (2024)."
+  },
+  "nt_forskoleplatser_0_2": {
+   "name": "Places in nurseries and other early childcare per 100 children aged 0–2",
+   "unit": "places per 100 children aged 0–2",
+   "note": "Authorised places in nurseries (asili nido) and supplementary early-childhood services per 100 children aged 0–2, school year 2024/25 (ISTAT database, year 2024): 12.0 public and 28.5 private, 1,847 places in 58 services. ISTAT compares with the EU target of 45% participation by 2030. Italy 33.2, Veneto: not fetched (2024/25)."
+  },
+  "nt_sysselsattningsgrad_15_64": {
+   "name": "Employment rate, ages 15–64 (province)",
+   "unit": "%",
+   "note": "Employed share of 15–64-year-olds in the province according to the labour force survey (68.1% in 2024); for the municipality the census gives 69.1% (nt_sysselsattningsgrad_kommun). Italy 62.5%, Veneto 69.3% (2025)."
+  },
+  "nt_arbetsloshet_15_74": {
+   "name": "Unemployment rate, ages 15–74 (province)",
+   "unit": "%",
+   "note": "Unemployed as a percentage of the labour force aged 15–74 in the province, labour force survey (3.9% in 2024). Italy 6.1%, Veneto 3.4% (2025)."
+  },
+  "nt_sysselsattningsgrad_kommun": {
+   "name": "Employment rate, ages 15–64 (municipality, census)",
+   "unit": "%",
+   "note": "Own calculation from the permanent census on 31 December 2024: 105,084 employed of 152,138 residents aged 15–64. The census rests on registers and a sample and differs from the labour force survey. Italy 63.4%, Veneto 70.0% (2024, same source and calculation)."
+  },
+  "nt_arbetsloshet_kommun": {
+   "name": "Unemployment rate, ages 15+ (municipality, census)",
+   "unit": "%",
+   "note": "Own calculation from the permanent census on 31 December 2024: 6,124 job seekers out of a labour force of 116,838 aged 15 and over; 2023 gives 5.4% (Eurostat city statistics: 5.39%). Italy 7.2%, Veneto 4.7% (2024, same source and calculation)."
+  },
+  "nt_beskattningsbar_inkomst": {
+   "name": "Taxable income per taxpayer (mean)",
+   "unit": "euros per taxpayer",
+   "note": "Own calculation from the income tax returns for 2024: taxable income of €5,156,700,571 for 190,227 taxpayers with taxable income (200,207 taxpayers in all). A mean, not a median. Italy €24,893, Veneto €25,885 (2024, summed over all municipalities in the same file)."
+  },
+  "nt_disponibel_inkomst_per_inv": {
+   "name": "Household disposable income per inhabitant (province)",
+   "unit": "euros per inhabitant",
+   "note": "Household disposable income per inhabitant of the province, current prices (Istituto Tagliacarne's provincial estimates in ISTAT's BES dei territori). Italy €22,359, Veneto €24,103 (2023)."
+  },
+  "nt_bnp_per_invanare": {
+   "name": "GDP per inhabitant (province)",
+   "unit": "euros per inhabitant",
+   "note": "GDP per inhabitant of the province (NUTS 3 ITH35), current prices; 40,200 in purchasing power standards (PPS). Italy and Veneto also have 2024: €37,300 and €41,500. Italy €36,300, Veneto €40,700 (2023)."
+  },
+  "nt_fattigdom_social_utestangning": {
+   "name": "At risk of poverty or social exclusion (Veneto)",
+   "unit": "%",
+   "note": "Share of the population with low income, severe material and social deprivation or very low work intensity (EU-SILC, AROPE); published for regions only. Veneto had 12.4% the year before. Italy 22.6%, Veneto 14.6% (2025)."
+  },
+  "nt_gastnatter_per_invanare": {
+   "name": "Overnight stays per inhabitant",
+   "unit": "overnight stays per inhabitant",
+   "note": "Nights spent in tourist accommodation (hotels and other, ISTAT tourism statistics via Eurostat) per inhabitant: 12,925,741 nights in 2025, 11,195,100 of them by foreign guests; break in series 2024. Day visitors are not included. Italy 9.1, Veneto 15.3 (2025, own calculation from Eurostat tour_occ_nin2 and the population on 1 January 2025)."
+  },
+  "nt_baddar_per_1000": {
+   "name": "Bed places in tourist accommodation per 1,000 inhabitants",
+   "unit": "bed places per 1,000 inhabitants",
+   "note": "Bed places in tourist accommodation per 1,000 inhabitants: 91,556 bed places in 2025 against 77,037 in 2022 (break in series 2024). Italy 130, Veneto 169 (2025, own calculation from Eurostat tour_cap_nuts2; Italy's bed places rose from 5.5 to 7.7 million in 2024–2025, which suggests a break in series)."
+  },
+  "nt_tomma_bostader": {
+   "name": "Dwellings without registered residents",
+   "unit": "% of dwellings",
+   "note": "Own calculation from the 2021 census: 25,627 of 148,319 dwellings had no registered residents (second homes, tourist lets, empty). The permanent census for 2023 gives 26,538 of 149,294 (17.8%). Italy 27.2%, Veneto 22.0% (2021, own calculation from Eurostat cens_21dwob_r3)."
+  },
+  "nt_bostadspris": {
+   "name": "Average housing price (OMI)",
+   "unit": "euros/m²",
+   "note": "OMI's average quoted value for homes in the municipality (mean of the central values of all OMI zones), +0.5% on 2024; 3,968 homes were sold in 2025. The rest of the province €1,454/m². Italy: no corresponding national value in OMI's reports; Veneto €1,975/m² in its provincial capitals (2025)."
+  },
+  "nt_bostadspris_centro_storico": {
+   "name": "Average housing price in the centro storico (OMI)",
+   "unit": "euros/m²",
+   "note": "OMI's average quoted value in the Centro storico e Giudecca macro-area in 2025 (+0.4%), highest in the San Marco zone (€5,388/m²); Lido 3,308, the minor islands 2,481 and the mainland €1,660/m². Italy: no national value; Veneto €1,975/m² in its provincial capitals (2025, a different basis)."
+  },
+  "nt_vaxthusgaser_per_inv": {
+   "name": "Territorial greenhouse gas emissions per inhabitant (CO2, methane, nitrous oxide)",
+   "unit": "t CO2e per inhabitant",
+   "note": "Own calculation from INEMAR Veneto 2023: 4,031.8 kt CO2, 2,441 t methane and 296 t nitrous oxide = 4,179 kt CO2e (GWP100, IPCC AR5) divided by the mean population of 250,602. Two thirds come from power and energy production at Fusina and Porto Marghera. Italy 6.4 (2023, Eurostat, excluding land use), Veneto 5.8 t (2023, own calculation from INEMAR)."
+  },
+  "nt_vaxthusgaser_energi_per_inv": {
+   "name": "Emissions from power and energy production per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Own calculation from INEMAR Veneto 2023, macro-sector 1 (energy production and fuel transformation): 2,819.8 kt CO2e / 250,602 inhabitants. Of this, 1,649 kt CO2 came from coal and 951 kt from natural gas; the power is used far beyond the municipality. Italy 1.3 (2023, fuel combustion in energy industries, Eurostat env_air_gge), Veneto 0.67 t (2023, own calculation from INEMAR)."
+  },
+  "nt_vaxthusgaser_vagtrafik_per_inv": {
+   "name": "Emissions from road transport per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Own calculation from INEMAR Veneto 2023, macro-sector 7 (road transport): 279.5 kt CO2e / 250,602 inhabitants. Ships, aircraft and mobile machinery (macro-sector 8) emitted another 288.6 kt. Italy 1.7 (2023, road transport, Eurostat env_air_gge), Veneto 1.9 t (2023, own calculation from INEMAR)."
+  },
+  "nt_vaxthusgaser_industri_per_inv": {
+   "name": "Emissions from industry per inhabitant",
+   "unit": "t CO2e per inhabitant",
+   "note": "Own calculation from INEMAR Veneto 2023, macro-sectors 3 and 4 (combustion in industry and process emissions): 236.5 kt CO2e / 250,602 inhabitants. Italy 1.2 (2023, manufacturing combustion and industrial processes, Eurostat env_air_gge), Veneto 1.3 t (2023, own calculation from INEMAR)."
+  },
+  "nt_fornybar_el_andel": {
+   "name": "Renewable share of electricity consumption (province)",
+   "unit": "%",
+   "note": "Renewable electricity production as a percentage of the province's gross electricity consumption (Terna via ISTAT's BES dei territori); the province has large fossil-fuelled power plants (see nt_vaxthusgaser_energi_per_inv). Italy 36.9%, Veneto 26.8% (2023)."
+  },
+  "nt_solceller_kw_per_1000": {
+   "name": "Installed solar PV capacity per 1,000 inhabitants",
+   "unit": "kW per 1,000 inhabitants",
+   "note": "Capacity of all solar PV installations in the municipality per 1,000 inhabitants (140.5 in 2022), about 59 MW in all (own calculation); net production was 174.5 kWh per inhabitant in 2024. Italy 272.3 kW in its provincial capitals (north-east Italy's 402.8); Veneto 239.7–576.5 kW in its other six provincial capitals (2024)."
+  },
+  "nt_elanvandning_per_inv": {
+   "name": "Electricity drawn from the distribution grid per inhabitant",
+   "unit": "MWh per inhabitant",
+   "note": "ISTAT reports 51.3 tonnes of oil equivalent per 100 inhabitants (1,490.8 GWh), the highest of the 14 metropolitan capitals; at 11.63 MWh per tonne that is 5.97 MWh per inhabitant (own conversion). Households and businesses are included; the household share is only shown in an ISTAT chart. Italy 3.94 MWh in its provincial capitals; Veneto 2.73–10.04 MWh in its other provincial capitals (2024, own conversion)."
+  },
+  "nt_avfall_per_inv": {
+   "name": "Municipal waste per inhabitant",
+   "unit": "kg per inhabitant",
+   "note": "Municipal waste (rifiuti urbani) collected per inhabitant: 173,318 tonnes in 2024, against 651.7 kg per inhabitant in 2023. Tourists add to the waste but not to the denominator. Italy 507.9, Veneto 525.0 kg (2024)."
+  },
+  "nt_utsortering_andel": {
+   "name": "Separately collected waste (raccolta differenziata)",
+   "unit": "%",
+   "note": "Share of municipal waste collected separately for recycling, 110,442 tonnes in 2024 (63.0% in 2023). The legal target of 65% applied from 2012. Italy 67.7%, Veneto 78.2% (2024)."
+  },
+  "nt_vatten_per_inv": {
+   "name": "Drinking water supplied per inhabitant per day",
+   "unit": "litres per inhabitant per day",
+   "note": "Water supplied for authorised uses in the municipal network per inhabitant per day (ISTAT water census 2022); tourists and commuters are in the consumption but not in the denominator. 517 litres per inhabitant per day were fed into the network. Italy 236 litres in its provincial capitals (north-east Italy's 215); Veneto 207–255 litres in its other provincial capitals (2022)."
+  },
+  "nt_vattenforluster": {
+   "name": "Water losses in the distribution network",
+   "unit": "% of water fed into the network",
+   "note": "Difference between water fed into and supplied from the municipal network, as a percentage of the water fed in (42.0% in both 2018 and 2020); the province 37.9%. Italy 42.4%, Veneto 42.2% (2022, all municipalities, ISTAT's BES dei territori)."
+  },
+  "nt_bilar_per_1000": {
+   "name": "Passenger cars per 1,000 inhabitants",
+   "unit": "cars per 1,000 inhabitants",
+   "note": "Registered passenger cars per 1,000 inhabitants (ISTAT from the ACI register; Eurostat city statistics give 443.85 for the same year). The centro storico has no streets for cars. The provincial capitals average 651. Italy 701, Veneto 680 (2024, Eurostat tran_r_vehst)."
+  },
+  "nt_elbilar_andel": {
+   "name": "Share of electric cars in the passenger car fleet",
+   "unit": "%",
+   "note": "Fully electric cars: 8.2 per 1,000 passenger cars (6.9 in 2023); hybrid cars 97.7 per 1,000. The provincial capitals average 8.1 per 1,000. Italy 0.68%, Veneto 0.71% (2024, Eurostat tran_r_elvehst)."
+  },
+  "nt_kollektivtrafik_platskm": {
+   "name": "Public transport supply (seat-km per inhabitant)",
+   "unit": "seat-km per inhabitant",
+   "note": "Seat-kilometres by bus, tram and boat per inhabitant: 2,486.5 million seat-km in 2024 (10,522 per inhabitant in 2023), 4,354 per inhabitant of them on the water. Italy 4,699 in its provincial capitals (2024); Veneto 5,144 in its provincial capitals (2023, BES)."
+  },
+  "nt_kollektivtrafik_resor": {
+   "name": "Public transport trips per inhabitant",
+   "unit": "trips per inhabitant",
+   "note": "Public transport boardings per inhabitant: 176.8 million trips in 2024; tourists and commuters make many of them but only residents are in the denominator. Italy 176.4 in its provincial capitals (north-east Italy's 193.6); Veneto 12.0–178.9 in its other provincial capitals (2024)."
+  },
+  "nt_vattenburen_kollektivtrafik": {
+   "name": "Waterborne public transport (seat-km per inhabitant)",
+   "unit": "seat-km per inhabitant",
+   "note": "Supply of the vaporetto and ferry services: 1,088 million seat-km in 2024, 44% of the city's public transport and 98% of all waterborne public transport in Italy's provincial capitals (own calculation: 1,088 / 1,106). Italy 63 in its provincial capitals (north-east Italy's 341); Veneto: no other provincial capital has such services (2024)."
+  },
+  "nt_cykelvag_per_inv": {
+   "name": "Cycle paths per inhabitant",
+   "unit": "metres per inhabitant",
+   "note": "Own calculation: 190 km of cycle paths (ISTAT) / 249,490 inhabitants = 0.76 m; they are on the mainland and the Lido, cycling is not allowed in the centro storico. Density is 45.4 km per 100 km² of municipal area. Italy 31.3 km per 100 km² in its provincial capitals; Veneto 18.3–219.3 in its other provincial capitals (2024)."
+  },
+  "nt_gronyta_per_inv": {
+   "name": "Public urban green space per inhabitant",
+   "unit": "m² per inhabitant",
+   "note": "Managed urban green space (parks, gardens, sports grounds, urban woodland and more) per inhabitant; 33.8 m² is open to the public. The lagoon's natural areas are not counted. Italy 33.7 m² in its provincial capitals (2024); Veneto 36.8 m² in its provincial capitals (2023, BES)."
+  },
+  "nt_skyddad_natur_andel": {
+   "name": "Protected nature, share of the municipal area",
+   "unit": "%",
+   "note": "Protected natural areas (Natura 2000 and the national list) as a percentage of the municipal area, mainly the lagoon; with the city's green spaces 65.3%. The province 23.7% (2022, land only). Italy 16.8% in its provincial capitals (2024); for the whole country and Veneto 21.7% and 22.7% (2022, BES, land only)."
+  },
+  "nt_markanvandning_exploaterad_andel": {
+   "name": "Land take (consumo di suolo), share of the area",
+   "unit": "%",
+   "note": "Land covered by buildings, roads and other artificial surfaces: 7,164 ha, 17.2% of the whole municipal area including the lagoon; the province 14.1%. Italy 7.17%, Veneto 11.86% (2024)."
+  },
+  "nt_markanvandning_okning": {
+   "name": "New land take in the past year",
+   "unit": "hectares",
+   "note": "Net increase 2023–2024 (65.2 ha newly taken, 1.0 ha restored), the largest single-year increase since annual measurement began in 2015; 486 ha net in 2006–2024 (own sum). Italy 7,850 ha, Veneto 655 ha (2023–2024)."
+  },
+  "nt_oversvamningsrisk_befolkning": {
+   "name": "Residents in areas of medium flood hazard",
+   "unit": "% of inhabitants",
+   "note": "Share of residents (2021 census) living in areas with a medium probability of flooding (scenario P2, return period 100–200 years) in ISPRA's national mosaic of the basin plans: 64,592 people; 83.9% live in low-probability areas (P1). Italy 11.5%, Veneto 11.7% (2021)."
+  },
+  "nt_pm10_overskridandedygn": {
+   "name": "Days with PM10 above the limit (worst station)",
+   "unit": "days",
+   "note": "Number of days with PM10 above 50 µg/m³ at the city's worst fixed monitoring station; the EU allows 35 a year. 70 days in 2022 and 62 in 2023. Italy: no national value for this measure; Veneto 8–66 days in its other six provincial capitals (2024)."
+  },
+  "nt_pm10_arsmedel": {
+   "name": "Annual mean PM10 (worst station)",
+   "unit": "µg/m³",
+   "note": "Highest annual mean of PM10 among the city's fixed monitoring stations (34 in 2022). The EU limit is 40 µg/m³ today and 20 µg/m³ from 2030; the WHO recommends 15. Italy: no national value for this measure; Veneto 21–35 µg/m³ in its other provincial capitals (2024)."
+  },
+  "nt_no2_arsmedel": {
+   "name": "Annual mean NO2 (worst station)",
+   "unit": "µg/m³",
+   "note": "Highest annual mean of nitrogen dioxide among the city's fixed monitoring stations (37 in 2022). The EU limit is 40 µg/m³ today and 20 µg/m³ from 2030; the WHO recommends 10. Italy: no national value for this measure; Veneto 20–30 µg/m³ in its other provincial capitals (2024)."
+  },
+  "nt_anmalda_brott_per_100000": {
+   "name": "Reported offences per 100,000 inhabitants",
+   "unit": "offences per 100,000 inhabitants",
+   "note": "Offences reported by the police to the judicial authorities per 100,000 registered residents (8,669.6 in 2023 and 5,534.4 in 2021); the rate is high because offences against the many visitors are counted against a small population. Italy 4,069.6, Veneto: not fetched (2024)."
+  },
+  "nt_fickstolder_per_100000": {
+   "name": "Reported pickpocketing per 100,000 inhabitants (province)",
+   "unit": "reports per 100,000 inhabitants",
+   "note": "Reports of pickpocketing in the province per 100,000 inhabitants (ISTAT from the Ministry of the Interior's SDI register), more than three times the national level. Burglaries of homes: 347.9 (Italy 250.3, Veneto 327.6). Italy 236.8, Veneto 237.4 (2023)."
+  },
+  "nt_valdeltagande_kommunval": {
+   "name": "Turnout in the municipal election",
+   "unit": "%",
+   "note": "112,767 of 201,713 eligible voters voted in the municipal election of 24–25 May 2026, in which the mayor was elected in the first round; turnout in 2020 was 62.23%. The electoral roll includes Italians living abroad, which lowers the share. Italy and Veneto: municipal elections are not held everywhere at once, so there is no comparable value (2026)."
+  },
+  "nt_valdeltagande_parlamentsval": {
+   "name": "Turnout in the general election (Chamber of Deputies)",
+   "unit": "%",
+   "note": "124,105 of 187,202 eligible voters in the municipality voted for the Chamber of Deputies on 25 September 2022 (voters abroad are not included). Italy 63.91%, Veneto 70.17% (2022; Veneto's value is our own sum of the Veneto 1 and 2 constituencies)."
+  },
+  "nt_valdeltagande_europaval": {
+   "name": "Turnout in the European Parliament election",
+   "unit": "%",
+   "note": "92,711 of 197,090 eligible voters voted in the European Parliament election of 8–9 June 2024, the latest nationwide vote; the province 48.90%. Italy 49.69%, Veneto 52.60% (2024)."
+  },
+  "nt_kvinnor_kommunfullmaktige": {
+   "name": "Share of women in the municipal council (consiglio comunale)",
+   "unit": "%",
+   "note": "Own count in the Ministry of the Interior's register: 12 women among the 36 councillors elected in May 2026 (the mayor, a man, not counted); in the executive (giunta) 4 of the 10 assessori are women. Italy 35.4%, Veneto 37.9% of municipal councillors (August 2026, own count in the same register)."
+  },
+  "nt_bredband_ftth": {
+   "name": "Households with fibre-to-the-home coverage (FTTH, province)",
+   "unit": "% of households",
+   "note": "Share of households in the province living where a fibre-to-the-home (FTTH) connection is available, ISTAT's processing of the Agcom broadband map. Italy 70.7%, Veneto 64.9% (2024)."
+  },
+  "soc_pop_cs_1951": {
+   "name": "Population of Venice's historic centre (centro storico) in 1951",
+   "unit": "inhabitants",
+   "note": "Registered residents on 31 December in the historic city: the six sestieri plus Giudecca and Sacca Fisola, without the Lido and the other islands. 1951 (census) is the Comune's index year (= 100) and the highest value in the series; 128,787 lived here in 1871 and 163,849 in 1936. The whole municipality had 315,811 inhabitants, the mainland 96,966."
+  },
+  "soc_pop_cs_1966": {
+   "name": "Population of the centro storico in 1966",
+   "unit": "inhabitants",
+   "note": "31 December 1966. Since 1951 the population had fallen by 53,499 people, on average 3,567 a year (own calculation), while the mainland part of the municipality doubled from 96,966 to 193,314 inhabitants. The largest one-year drop in the series came in 1960–1961, with the 1961 census (−8,252)."
+  },
+  "soc_pop_cs_1971": {
+   "name": "Population of the centro storico in 1971",
+   "unit": "inhabitants",
+   "note": "The Comune's registry figure for 31 December 1971. OCIO cites the 1971 census for the water city including Giudecca: about 35,000 dwellings, of which roughly 10,000 owner-occupied, 23,000 rented or lent and 1,000 empty. A 1973 CENSIS survey of those who left in 1964–68 found that 60.2% moved to get a healthier, more modern home."
+  },
+  "soc_pop_cs_1981": {
+   "name": "Population of the centro storico in 1981",
+   "unit": "inhabitants",
+   "note": "31 December 1981. During the 1980s the population fell by an average of 1,695 people a year, to 76,644 in 1991 (own calculation). The figure 95,222, sometimes given for 1981, refers to 31 December 1980."
+  },
+  "soc_pop_cs_1991": {
+   "name": "Population of the centro storico in 1991",
+   "unit": "inhabitants",
+   "note": "31 December 1991 (1990: 78,165). The district series give 455 births and 1,252 deaths that year, and 35,242 households of which 14,448 one-person (41.0%; sum of districts 1 and 2, own calculation)."
+  },
+  "soc_pop_cs_2001": {
+   "name": "Population of the centro storico in 2001",
+   "unit": "inhabitants",
+   "note": "31 December 2001. The figure 66,386, sometimes given for 2001, refers to 31 December 2000. 505 births and 1,037 deaths that year (sum of districts 1 and 2). In OCIO's reading of the 2001 census, owners lived in just under 18,000 dwellings, 10,000–11,000 were rented and more than 5,000 empty."
+  },
+  "soc_pop_cs_2011": {
+   "name": "Population of the centro storico in 2011",
+   "unit": "inhabitants",
+   "note": "31 December 2011, less than half of the 121,309 of 1966 (−51%, own calculation). 421 births and 899 deaths that year (sum of districts 1 and 2). According to OCIO the 2011 census counted 8,909 rented dwellings in the water city, against about 23,000 in 1971."
+  },
+  "soc_pop_cs_2022_below_50000": {
+   "name": "Population of the centro storico in 2022, the year it fell below 50,000",
+   "unit": "inhabitants",
+   "note": "31 December 2022; a year earlier 50,434. The Comune publishes no date for the crossing; on 23 November 2022 OCIO wrote that the fall below the psychological 50,000 mark had produced a stream of articles and statements 'in recent weeks'. The association Venessia.com spreads the figure '49.999' on flags and posters as a symbol of the concern."
+  },
+  "soc_pop_cs_2025": {
+   "name": "Population of the centro storico on 31 December 2025",
+   "unit": "inhabitants",
+   "note": "In 2025 the population fell by 864 (−1.8%) from 48,489: 209 births, 689 deaths, 1,031 people moving in from other municipalities and abroad, 1,096 moving out, plus 600 moves in and 919 moves out within the municipality. That is 27.2% of the 1951 level and 19% of the municipality's residents (own calculations)."
+  },
+  "soc_pop_cs_2026_aug": {
+   "name": "Population of the centro storico on 31 August 2026 (latest monthly figure)",
+   "unit": "inhabitants",
+   "note": "−424 since the turn of the year; in August 2026 there were 14 births and 59 deaths in the centre. Whole municipality: 251,682. OCIO counts 46,964 residents in September 2026 (a different delimitation of the historic city), and the Venessia.com web counter showed 47,652 on 11 October 2026."
+  },
+  "soc_pop_comune_peak_1968": {
+   "name": "The municipality's highest population (1968)",
+   "unit": "inhabitants",
+   "note": "The whole Comune di Venezia, then including Cavallino-Treporti, which became a separate municipality in 1999. The mainland (terraferma) had 200,445 inhabitants, the islands (estuario) 51,117 and the centre 116,270. 31 December 2025: 251,294, of which 178,131 on the mainland and 25,538 on the Lido, Pellestrina, Murano, Burano and the other islands."
+  },
+  "soc_births_cs_2025": {
+   "name": "Births in the centro storico",
+   "unit": "births/year",
+   "note": "4.3 per 1,000 inhabitants (own calculation with the mean population 48,057), against 5.6 in the province and 6.3 in Italy in 2024 (Eurostat, demo_r_gind3). The centre had 455 births in 1991, 505 in 2001, 421 in 2011 and 236 in 2021 (sum of districts 1 and 2). Whole municipality: 1,416."
+  },
+  "soc_deaths_cs_2025": {
+   "name": "Deaths in the centro storico",
+   "unit": "deaths/year",
+   "note": "14.3 per 1,000 inhabitants (own calculation), against 11.4 in the province and 11.1 in Italy in 2024 (Eurostat). 3.3 times as many people die as are born. 1,252 died in 1991, 899 in 2011 and 837 in 2021 (sum of districts 1 and 2). Whole municipality: 3,374."
+  },
+  "soc_migration_external_cs_2025": {
+   "name": "Net migration with other municipalities and abroad, centro storico",
+   "unit": "people/year",
+   "note": "1,031 people moved in and 1,096 moved out. The municipality as a whole had positive net migration, 7,632 in and 6,181 out (+1,451), but the whole surplus went to the mainland (+1,671); the islands (estuario) had −155."
+  },
+  "soc_moves_within_comune_cs_2025": {
+   "name": "Net moves to the rest of the municipality (mainland and islands), centro storico",
+   "unit": "people/year",
+   "note": "600 moves into and 919 out of the two districts within the municipality (moves between the districts cancel out). The district tables give 309 arrivals from the rest of the municipality and 628 departures to it, 432 of them to the mainland (own sum). So every year a net of just over 300 Venetians move from the water city to Mestre, the Lido and the islands."
+  },
+  "soc_natural_balance_comune_2025": {
+   "name": "Natural increase (births minus deaths) in the whole municipality",
+   "unit": "people/year",
+   "note": "1,416 births and 3,374 deaths. Net migration of +1,451 offset most of it, so the population fell by 507 to 251,294 (31 December 2025). ISTAT's census-adjusted population was 249,490 on 1 January 2025. The number of foreign citizens rose by 1,591 during the year."
+  },
+  "soc_natural_balance_cs_2015_2025": {
+   "name": "Natural decrease in the centro storico, total 2015–2025",
+   "unit": "people (total 2015–2025)",
+   "note": "2,797 births and 8,810 deaths in 2015–2025. The flows sum to −8,669, which matches the change from the end of 2014 (56,311) to 2025, i.e. eleven years: on average 254 births and 801 deaths a year (own calculation). The natural decrease accounts for seven tenths of the decline; the rest is net moves to the rest of the municipality (−3,819), partly offset by net migration with other municipalities and abroad (+1,163). Municipality: −21,224."
+  },
+  "soc_moves_within_comune_cs_2015_2025": {
+   "name": "Net moves to the rest of the municipality, centro storico, total 2015–2025",
+   "unit": "people (total 2015–2025)",
+   "note": "7,978 moves into and 11,797 out of the centre within the municipality in 2015–2025, on average −347 a year over eleven years (own calculation). The mainland gained 3,103 and the islands 716 from moves within the municipality over the same period."
+  },
+  "soc_migration_external_cs_2015_2025": {
+   "name": "Net migration with other municipalities and abroad, centro storico, total 2015–2025",
+   "unit": "people (total 2015–2025)",
+   "note": "11,830 arrivals and 10,667 departures in 2015–2025 (+106 a year over eleven years, own calculation). Over the period more people arrived in the centre from outside than left it for other municipalities; in 2025, however, the net was −65. Whole municipality: +8,656, of which +8,022 on the mainland."
+  },
+  "soc_share_0_14_cs_2025": {
+   "name": "Share of children aged 0–14 in the centro storico",
+   "unit": "%",
+   "note": "4,034 of 47,625 residents (sum of the classes 0–4, 5–9 and 10–14 in the Comune's table; own calculation). Whole municipality 10.3%; province 11.0%, Veneto 11.8% and Italy 11.9% (Eurostat, 1 January 2025). In the centre the share was 11.0% in 2011."
+  },
+  "soc_share_65plus_cs_2025": {
+   "name": "Share of residents aged 65 and over in the centro storico",
+   "unit": "%",
+   "note": "15,785 of 47,625 (own calculation). Whole municipality 28.7%; province 26.5%, Veneto 24.9% and Italy 24.7% (Eurostat, 1 January 2025). There are 391 people aged 65+ per 100 children aged 0–14 (municipality 280). The share in the centre was 26.8% in 2001 and 29.5% in 2011."
+  },
+  "soc_share_80plus_cs_2025": {
+   "name": "Share of residents aged 80 and over in the centro storico",
+   "unit": "%",
+   "note": "5,814 people (own calculation), of whom 1,136 are 90 or older (2.4%). Whole municipality 10.3%; province 8.7%, Veneto 8.0% and Italy 7.8% (Eurostat, 1 January 2025)."
+  },
+  "soc_households_cs_2025": {
+   "name": "Registered households (famiglie anagrafiche) in the centro storico",
+   "unit": "households",
+   "note": "Average household size 1.80 people (municipality 1.97). In 2000 there were 32,608 households; their number has fallen by 19%, the population by 28% (own calculation)."
+  },
+  "soc_one_person_households_cs_2025": {
+   "name": "Share of one-person households in the centro storico",
+   "unit": "%",
+   "note": "14,801 of 26,499 households (own calculation). The number of one-person households has stayed around 14,400–15,200 since 1991, while the share rose from 41.0% (1991) and 44.6% (2001). Whole municipality 48.4% (61,842 households). How many people living alone are 65+ is not published by zone."
+  },
+  "soc_foreign_residents_cs_2025": {
+   "name": "Foreign citizens registered in the centro storico",
+   "unit": "people",
+   "note": "9.7% of residents (own calculation), against 17.2% in the whole municipality (43,255), where most live on the mainland. In the centre the number has stayed around 4,600 since 2011 (4,564); in 2000 it was 2,062."
+  },
+  "soc_born_in_venice_cs_2025": {
+   "name": "Share of centro storico residents born in Venice",
+   "unit": "%",
+   "note": "30,342 of 47,625 residents were born in Venice ('nativi'). In 2010 the share was 69.3% (41,332 of 59,621). Whole municipality 57.4%."
+  },
+  "soc_projection_comune_2050": {
+   "name": "Population on 1 January 2050 according to ISTAT's municipal projection (base 2025)",
+   "unit": "inhabitants",
+   "note": "Median scenario: 249,490 (1 Jan 2025), 245,422 (2030), 237,171 (2040) and 228,172 (2050), −8.5% in 25 years. It assumes 1,394–1,563 births and 3,375–3,521 deaths a year and net migration of +933 to +1,336 a year. ISTAT's earlier experimental projection (base 2022, published by the Comune) gave 235,713 in 2041. No projection exists for the centro storico."
+  },
+  "soc_projection_share_65plus_comune_2040": {
+   "name": "Share aged 65+ in 2040 according to ISTAT's municipal projection",
+   "unit": "%",
+   "note": "The share aged 65+ rises from 28.5% (2025) to 30.5% (2030) and 34.2% (2040) and stands at 33.7% in 2050; the mean age from 49.1 to 50.7. The share aged 80+ reaches 14.3% on 1 January 2050 (own calculation from ISTAT's five-year classes: 32,694 of 228,172), against 10.3% in 2025."
+  },
+  "soc_projection_veneto_2080": {
+   "name": "Veneto's population in 2080 according to ISTAT's regional projection (base 2025)",
+   "unit": "inhabitants",
+   "note": "Median scenario: 4,853,472 (2025), 4,685,576 (2050), 4,084,694 (2080). The share aged 65+ rises from 24.9% to 34.4% (2050) and 35.8% (2080), 85+ from 4.1% to 8.1%. Life expectancy in 2080: men 87.4 and women 90.0; fertility 1.16 → 1.35 children per woman. Official projections end in 2080 and are not made for provinces."
+  },
+  "soc_trend_pop_cs_2050": {
+   "name": "Population of the centro storico in 2050 if the 2015–2025 trend continues (trend line)",
+   "unit": "inhabitants",
+   "note": "No authority projects the centro storico. The decline in 2015–2025 was 1.53% a year (55,589 → 47,625); if it continues the population will be 44,082 in 2030, 37,766 in 2040 and 32,356 in 2050 (own calculation: 47,625 × 0.98466^(year − 2025)). A trend line, not a forecast; the 2011–2025 rate was almost the same (−1.52% a year)."
+  },
+  "soc_life_expectancy_men_province": {
+   "name": "Life expectancy at birth, men",
+   "unit": "years",
+   "note": "ISTAT's life table for the province in 2025 (provisional estimate): 82.2 years (2024: 82.1), Veneto 82.5 and Italy 81.7. At age 65, 20.2 years remain (Italy 20.0). Figures for the municipality or the centre are not published."
+  },
+  "soc_life_expectancy_women_province": {
+   "name": "Life expectancy at birth, women",
+   "unit": "years",
+   "note": "ISTAT's life table for the province in 2025 (provisional estimate): 86.4 years (2024: 86.3), Veneto 86.5 and Italy 85.7. At age 65, 23.4 years remain (Italy 22.8). Both sexes: 84.2 years."
+  },
+  "soc_avoidable_mortality_province": {
+   "name": "Avoidable mortality, ages 0–74",
+   "unit": "deaths per 10,000 inhabitants",
+   "note": "Age-standardised mortality from preventable or treatable causes (BES dei territori 2025): 15.5 in the province, 15.2 in Veneto and 17.6 in Italy per 10,000 inhabitants (2022); in 2021 the province's value was 17.8. Mortality from dementia and nervous-system diseases at 65+ is higher than nationally: 41.6 against 35.3."
+  },
+  "soc_life_satisfaction_comune": {
+   "name": "Share of people 14+ highly satisfied with life (score 8–10)",
+   "unit": "%",
+   "note": "ISTAT's small-area estimate for large municipalities (BesT): 52.6% of respondents give 8–10 on the 0–10 scale, against 55.2% in Italy; mean score 7.29 against 7.42 (own calculation from the counts per score). 6.7% did not answer. In 2022 the share was 54.7%."
+  },
+  "soc_friends_to_count_on_comune": {
+   "name": "Share of people 14+ who have friends to count on",
+   "unit": "%",
+   "note": "ISTAT BesT (own calculation from the counts): 69.5% have friends to count on (Italy 74.4%) and 18.3% have none (Italy 15.0%). 83.7% have relatives to count on (Italy 87.0%) and 67.6% can count on one or more neighbours (Italy 70.9%). No direct measure of loneliness exists at municipal level."
+  },
+  "soc_feel_safe_dark_comune": {
+   "name": "Share of people 14+ who feel safe walking alone in the dark where they live",
+   "unit": "%",
+   "note": "ISTAT BesT (own calculation): 11.5% very and 38.9% fairly safe, against 61.7% in Italy; 36.4% feel unsafe (Italy 27.6%) and 10.6% never go out alone or at all. 35.3% of households perceive a high or fairly high crime risk in their area (Italy 23.3%)."
+  },
+  "soc_hospital_beds_ss_giovanni_paolo": {
+   "name": "Hospital beds at the Ospedale Civile SS. Giovanni e Paolo",
+   "unit": "beds",
+   "note": "The island city's hospital in Castello, in the former Scuola Grande di San Marco, with an emergency department, maternity, paediatrics and geriatrics among 42 units; ULSS 3 states 'about 310 beds'. The province has 31.8 hospital beds per 10,000 inhabitants (Veneto 32.3, Italy 33.3; BES 2022) and 25.3 specialist doctors per 10,000 (Italy 34.1; 2023). I found no primary source for the number of water ambulances or their response times."
+  },
+  "soc_dwellings_unoccupied_cs_2023": {
+   "name": "Share of dwellings without registered residents in the centro storico",
+   "unit": "%",
+   "note": "ISTAT's permanent census of 31 December 2023, summed over the sections of the localities Venezia and Giudecca (own calculation): 42,431 dwellings, of which 26,552 occupied by at least one registered resident and 15,879 empty or used only by non-residents (second homes, tourist lets, students). Since 2021 ISTAT does not separate the two. The district Venezia-Murano-Burano: 36.2% (16,998 of 46,969); OCIO gives 21% for the island city in 2011."
+  },
+  "soc_dwellings_unoccupied_comune_2023": {
+   "name": "Share of dwellings without registered residents in the whole municipality",
+   "unit": "%",
+   "note": "26,538 of 149,294 dwellings (own sum of ISTAT's 2023 section data). On the mainland 7.0–7.5% in each district, on the Lido–Pellestrina 24.9%. OCIO: 11% in 2011 and 17% in 2021 for the whole municipality; in 2021–2023 empty dwellings increased mainly on the mainland (+1,010)."
+  },
+  "soc_model_area_residents_2023": {
+   "name": "Registered residents within the model's 1.8 km square",
+   "unit": "inhabitants",
+   "note": "Sum for the 647 census sections (2021 boundaries) whose centroid lies within 45.426915–45.443085 N, 12.325979–12.349021 E, according to ISTAT's census of 31 December 2023 (own GIS calculation). 12,118 households, 6,738 people aged 65+ (31.7%) and 1,924 children aged 0–14; roughly 43% of the centre's residents."
+  },
+  "soc_model_area_dwellings_unoccupied_2023": {
+   "name": "Share of dwellings without registered residents within the model's 1.8 km square",
+   "unit": "%",
+   "note": "9,160 of 20,503 dwellings (ISTAT 2023, own GIS calculation as above) are empty or used only by non-residents, against 37.4% in the whole centre. 58.7% of households in the square are one-person. Inside Airbnb counts 3,786 listings in the same square (September 2026), 3,187 of them entire homes."
+  },
+  "soc_tourist_beds_cs_2026": {
+   "name": "Tourist beds in the historic city",
+   "unit": "beds",
+   "note": "September 2026 according to OCIO's counter, based on the Comune's GeoIDS register: 25,447 beds in hotels, B&Bs and other establishments and 24,760 in tourist flats (locazioni turistiche). In April 2023 there were 44,484. The Comune does not publish the register as a table, hence a secondary source."
+  },
+  "soc_tourist_beds_per_resident_cs_2026": {
+   "name": "Tourist beds per resident in the historic city",
+   "unit": "beds per resident",
+   "note": "50,207 beds against 46,964 residents (OCIO, September 2026). The curves crossed in October 2024 at 48,469 beds against 48,451 residents – 'il sorpasso'. San Marco has 3.75 beds per resident, Dorsoduro 1.06, Santa Croce 1.05 and Giudecca 0.43. The historic city has 19% of the municipality's residents but 61% of its tourist beds. When the counter was new the press dated the crossing to September 2023 with different resident figures (see tur_baddar_fler_an_invanare_ar in turism-ekonomi.json)."
+  },
+  "soc_tourist_rental_units_cs_2026": {
+   "name": "Registered tourist flats (locazioni turistiche) in the historic city",
+   "unit": "flats",
+   "note": "September 2026 (OCIO/GeoIDS): 6,145 flats with 24,760 beds, against 5,040 and 19,016 in April 2023 (+30% beds). On 30 September 2025 OCIO counted 6,273. Share of tourist beds that are in flats: San Polo 70%, Castello 58%, Cannaregio 54%. Since 1 January 2025 every flat must have a national identification code (CIN). The Comune's tourism yearbook counts more, since it includes every dwelling open at any time in the year and the islands too (see tur_baddar_cs in turism-ekonomi.json)."
+  },
+  "soc_airbnb_entire_homes_cs_2026": {
+   "name": "Airbnb listings for entire homes in the centro storico",
+   "unit": "listings",
+   "note": "Inside Airbnb, 16 September 2026: 6,182 listings in the seven sestieri (with Giudecca), of which 5,151 entire homes (83%); 4,416 of them had a review in the last 12 months. Whole municipality 8,844 listings, 71% with hosts who have several listings; median nightly price for entire homes in the centre €283 (own calculations). That is 19 entire homes per 100 registered households in the centre."
+  },
+  "soc_new_leases_comune_2025": {
+   "name": "New residential leases in the municipality",
+   "unit": "new leases",
+   "note": "OMI 2025: 6,994 (−1.6%), of which 41% fixed-term leases at market terms (transitori, 2,878), 18% long market leases (1,255) and 41% leases with regulated rent (canone concordato: 1,222 short and 1,639 long). No breakdown by district is published."
+  },
+  "soc_public_housing_comune_empty_2025": {
+   "name": "Municipally owned dwellings not let",
+   "unit": "dwellings",
+   "note": "The Comune owns 5,348 dwellings (the list was published in 2025 after OCIO's freedom-of-information request); 1,143 (21%) were not let, 16% in the historic city. Half are in the island city. The average rent collected by the manager Insula was €195 a month, €228 in the centre. Since 2018 vacated 'non-ERP' dwellings have been let as social housing to middle-income households."
+  },
+  "soc_public_housing_ater_empty_share_2025": {
+   "name": "Share of empty dwellings in ATER's stock in the municipality",
+   "unit": "%",
+   "note": "ATER Venezia (the regional public housing company) owns 5,163 dwellings in the municipality, half in the island city; 3,443 were let on 31 December 2025. The number of empty dwellings has grown by about 500 since 2022, while on average 34 a year were refurbished. Only 8 dwellings were allocated in 2025 (37 in 2024), after the Comune paused allocations following the Constitutional Court's April 2024 ruling on the residence requirement."
+  },
+  "soc_public_housing_share_insular_2025": {
+   "name": "Share of households in the island city living in publicly owned housing",
+   "unit": "%",
+   "note": "OCIO: 4,527 let dwellings owned by the Comune, ATER and IPAV (2025) against 29,971 dwellings occupied by registered residents (ISTAT 2023). The Comune's housing director spoke in September 2026 of '30% of residents'; OCIO disputes the comparison. Of the Comune's 2,571 dwellings in the island city 1,798 are let as social housing; of ATER's 2,590, 492 are (OCIO, 2025)."
+  },
+  "soc_erp_applicants_2025": {
+   "name": "Applicants in the queue for public housing (ERP)",
+   "unit": "applicants",
+   "note": "The Comune's provisional 2025 list according to OCIO: 517 applicants with an ISEE below €6,000 a year, 274 homeless or in temporary accommodation and 54 with an enforceable eviction order. About 1,200 applied for social housing. The queue has been around 2,000 since 2020; according to OCIO supply covers just over 10% of applicants."
+  },
+  "soc_university_students_2025": {
+   "name": "Students enrolled at Ca' Foscari and IUAV",
+   "unit": "students",
+   "note": "Academic year 2025/26: Ca' Foscari 18,900 and IUAV 4,951. In 2000/01: 25,172 (16,257 + 8,915). The figure refers to enrolment at the universities, not where students live; in the '9mq' survey (2023, 1,071 responses) 82% of respondents lived in the municipality, three in four of them on the islands. The Academy of Fine Arts and the Conservatory are not included."
+  },
+  "soc_student_beds_esu": {
+   "name": "Student beds through ESU Venezia",
+   "unit": "beds",
+   "note": "ESU Venezia (the regional student-support agency) offered 1,000 beds in 2023/24, 748 by selection and 252 reserved, including ESU places in residences run by others (the '9mq' report). About 4 beds per 100 students (own calculation with 23,851 enrolled in 2025/26). Private student residences: Camplus Santa Marta 650 beds, Ai Crociferi 255, San Giobbe 230, CX Mestre 568."
+  },
+  "soc_turnout_european_2024_province": {
+   "name": "Turnout in the 2024 European Parliament election",
+   "unit": "%",
+   "note": "BES dei territori 2025: 48.9% in the province, against 52.6% in Veneto and 49.8% in Italy; in 2019 it was 60.0%. Regional election 2020: 62.5%. Turnout in the municipal election of 24–25 May 2026 (55.9%, centre 53.97%, 2020: 62.2%) is in kommun-plats-historia.json."
+  },
+  "soc_pupils_cs_primary_middle": {
+   "name": "Pupils in primary and lower-secondary schools in the centro storico",
+   "unit": "pupils",
+   "note": "State and private schools with an address in the centre, school year 2024/25 (own sum of MIM open data per school): 2,570, against 3,611 in 2015/16 (−28.8%). The eleven state primary schools went from 1,789 to 1,209 pupils, the four state lower-secondary schools from 1,396 to 1,006. Upper-secondary schools in the centre have 6,319 pupils, many from the mainland."
+  },
+  "soc_nonprofits_province": {
+   "name": "Non-profit organisations per 10,000 inhabitants",
+   "unit": "per 10,000 inhabitants",
+   "note": "BES dei territori 2025: 55.3 in the province, against 62.7 in Veneto and 61.0 in Italy (2022). The Comune's register of associations (Albo delle associazioni) has registration numbers up to 3,629 (September 2026), but the list also contains deregistered associations, so the number of active ones is unknown."
+  },
+  "soc_graduate_migration_province": {
+   "name": "Net migration of young graduates (aged 25–39)",
+   "unit": "per 1,000 graduates",
+   "note": "BES dei territori 2025: the province loses a net 11.3 Italian graduates aged 25–39 per 1,000 a year, against −5.2 in Veneto and −6.2 in Italy (2023); in 2021 the value was −7.9. The share of 25–39-year-olds with tertiary education is 32.1% (Italy 30.9%; 2024)."
+  },
+  "tur_presenze_comune_2025": {
+   "name": "Overnight stays in accommodation in the Municipality of Venice",
+   "unit": "overnight stays",
+   "note": "All registered overnight stays (presenze) in 2025 in hotels and other accommodation, short-term rentals included, in the whole municipality: the historic city with the islands, the Lido and the mainland. 5,858,665 arrivals and an average stay of 2.21 nights; −2.7% on the record year 2024 (13,290,973). Veneto had 74,157,123 overnight stays (Venice 17.4%) and Italy 476,853,549 (Venice 2.7%)."
+  },
+  "tur_presenze_comune_2019": {
+   "name": "Overnight stays in the Municipality of Venice 2019 (pre-pandemic)",
+   "unit": "overnight stays",
+   "note": "5,523,283 arrivals and an average stay of 2.34 nights; the highest year before the pandemic, only surpassed in 2024. The municipality's series starts in 1949 with 1,389,831 overnight stays and passed 5 million in 1995 and 10 million in 2015."
+  },
+  "tur_presenze_comune_2020": {
+   "name": "Overnight stays in the Municipality of Venice 2020 (pandemic year)",
+   "unit": "overnight stays",
+   "note": "−72.5% on 2019 and the lowest level since 1978. 1,337,626 arrivals: foreign arrivals fell by 80.7% and Italian ones by 44.3%, so the Italian share of arrivals rose from 13.5% to 31.1% (Annuario 2020)."
+  },
+  "tur_ankomster_cs_2025": {
+   "name": "Arrivals in accommodation in the historic city",
+   "unit": "arrivals",
+   "note": "Guests checking in to accommodation in the historic city including the smaller islands (Murano, Burano, Torcello etc.) in 2025, 67.9% of the municipality's arrivals; +1.8% on 2024 and +13.2% on 2019 (3,515,233, own calculation). 3,511,310 were foreign and 468,954 Italian."
+  },
+  "tur_presenze_cs_2025": {
+   "name": "Overnight stays in the historic city",
+   "unit": "overnight stays",
+   "note": "Overnight stays in 2025 in the historic centre including the smaller islands, 72.5% of the municipality's total; −0.6% on 2024 (9,432,844) and +6.3% on 2019 (own calculation). Hotels had 4,555,016 and other accommodation 4,821,622; since 2024 other accommodation has had more overnight stays than hotels."
+  },
+  "tur_presenze_cs_2019": {
+   "name": "Overnight stays in the historic city 2019 (pre-pandemic)",
+   "unit": "overnight stays",
+   "note": "3,515,233 arrivals and an average stay of 2.51 nights. Hotels had 5.09 million overnight stays and other accommodation 3.73 million, of which short-term rental flats 2,128,255 (24%, own calculation)."
+  },
+  "tur_presenze_cs_2020": {
+   "name": "Overnight stays in the historic city 2020 (pandemic year)",
+   "unit": "overnight stays",
+   "note": "−71.3% on 2019; 923,304 arrivals and an average stay of 2.74 nights. About 72% of the guests were foreign, against almost 90% in a normal year."
+  },
+  "tur_utlandska_andel_presenze_cs": {
+   "name": "Foreign guests' share of overnight stays in the historic city",
+   "unit": "%",
+   "note": "8,339,222 foreign overnight stays out of 9,376,638 in the historic centre in 2025 = 88.9%; for the whole municipality 86.6% (11,195,100 / 12,925,741). The largest markets in 2025 were the USA, Italy, France, the UK and Germany. In the pandemic year 2020 the share fell to about 72%."
+  },
+  "tur_medelvistelse_cs": {
+   "name": "Average length of stay in the historic city",
+   "unit": "nights per arrival",
+   "note": "Overnight stays per arrival in 2025; 2.51 in 2019 and 2.74 in the pandemic year 2020. Hotel guests stay 2.17 nights and guests in other accommodation 2.56; in the whole municipality 2.21 and on the mainland 1.82."
+  },
+  "tur_korttidsuthyrning_andel_ankomster_cs": {
+   "name": "Short-term rental flats' share of arrivals in the historic city",
+   "unit": "%",
+   "note": "Locazioni turistiche – flats let to tourists under regional law 11/2013 art. 27bis – received 1,252,286 of 3,980,264 arrivals and 3,371,970 overnight stays (36%, own calculation) in 2025. In 2019 the share of arrivals was 19.4% (682,097; Yearbook 2024 table 1.19). The category also includes lets longer than 30 days."
+  },
+  "tur_baddar_cs": {
+   "name": "Tourist beds in the historic city",
+   "unit": "beds",
+   "note": "Beds in accommodation open at some point in 2025 in the historic centre with the islands: 20,896 in 331 hotels and 49,345 in other accommodation, of which 42,011 in 9,560 short-term rental flats. 59,373 beds in 2019 and 53,578 in the pandemic year 2021; +4,707 in 2025 alone. The whole municipality has 91,556."
+  },
+  "tur_baddar_per_invanare_cs": {
+   "name": "Tourist beds per resident in the historic city",
+   "unit": "beds per resident",
+   "note": "70,241 beds divided by the 54,480 residents of the Venezia-Murano-Burano borough, which covers the same area as the historic centre of the tourism statistics (the municipality's population table by district 2015–2025) = 1.29. Against the 47,625 residents of the centro storico proper (the sestieri and Giudecca) it is 1.47. In 2015, 63,530 people lived in Venezia-Murano-Burano."
+  },
+  "tur_baddar_fler_an_invanare_ar": {
+   "name": "Year tourist beds came to outnumber residents in the historic city (OCIO counters)",
+   "unit": "year",
+   "note": "The civic observatory OCIO's bed counter in a bookshop on Campo Santa Margherita showed 48,596 tourist beds against 49,365 residents (Venessia.com's counter) in April 2023, 49,693 against 49,304 in September and 50,016 against 49,211 in December 2023. OCIO counts hotels and short-term rentals from the municipal register; in 2008 there were about 12,000 beds and just over 60,000 residents (Il Post)."
+  },
+  "tur_gaster_per_natt_cs": {
+   "name": "Overnight guests per night in the historic city (annual average)",
+   "unit": "guests per night",
+   "note": "9,376,638 overnight stays / 365 = 25,689 guests per night on average in 2025, a little over half as many as the 47,625 residents of the centro storico; in the peak month of October about 31,500 per night (975,072 / 31). Day-trippers come on top of this (see tur_dagsbesokare_per_dag_2022)."
+  },
+  "tur_presenze_per_invanare": {
+   "name": "Overnight stays per resident in the Municipality of Venice",
+   "unit": "overnight stays per resident",
+   "note": "12,925,741 overnight stays divided by 251,294 residents on 31 December 2025 (the municipality's auditors) = 51.4; in the historic city with the islands 172 per resident (9,376,638 / 54,480). Venice is one of five Italian cities (with Rimini, Verbania, Florence and Pisa) where overnight stays are at least 20 times the population, the threshold for charging up to €10 per night in tourist tax under the 2023 budget law (Il Post)."
+  },
+  "tur_belaggning_hotell": {
+   "name": "Gross bed occupancy rate in hotels",
+   "unit": "%",
+   "note": "Overnight stays / 365 / beds for the municipality's 33,320 hotel beds in 2025; 68.0% in the busiest month. 60.1% in 2024 and 66.0% in 2019. For all 91,556 beds 38.7% and for other accommodation including short-term rentals 28.5%."
+  },
+  "tur_toppmanad_presenze_cs": {
+   "name": "Overnight stays in the historic city in the busiest month (October 2025)",
+   "unit": "overnight stays",
+   "note": "October had the most overnight stays in 2025, ahead of July (942,427) and May (929,846); January the fewest (436,267), so the peak month has 2.2 times as many (own calculation). July had the most arrivals (427,099). Every month from April to October was above 898,000; in 2024 May was the largest (988,317)."
+  },
+  "tur_kryssning_2019": {
+   "name": "Cruise passengers at the Port of Venice 2019 (before the ban)",
+   "unit": "passengers",
+   "note": "Embarking, disembarking and transit cruise passengers on 500 calls in 2019, when large ships still passed through the Bacino di San Marco and the Giudecca Canal to the Marittima terminal. All port passengers: 1,822,703."
+  },
+  "tur_kryssning_2025": {
+   "name": "Cruise passengers at the Port of Venice 2025",
+   "unit": "passengers",
+   "note": "266 calls in 2025, +6.3% on 2024 but 64% fewer passengers than in 2019 (own calculation) since large cruise ships were shut out of the Bacino di San Marco and the Giudecca Canal in 2021; 5,237 in the pandemic year 2020. The port authority's accounts report 617,454 cruise movements in 2025 (542,496 home port, 74,958 transit) with a different definition. All port passengers: 708,267."
+  },
+  "tur_biennale_konst_2024": {
+   "name": "Visitors to the Art Biennale (60th International Art Exhibition)",
+   "unit": "visitors",
+   "note": "19 April–24 November 2024, −15.1% on the 2022 record (827,411); 593,616 in 2019. The 2025 Architecture Biennale had 280,770 visitors and the film festival on the Lido 254,443 spectators. The Biennale's venues lie at the eastern edge of the model area: the western part of the Arsenale on the edge and the Giardini just outside."
+  },
+  "tur_dogepalatset_besokare": {
+   "name": "Visitors to the Doge's Palace (Palazzo Ducale)",
+   "unit": "visitors",
+   "note": "+1.7% on 2024 and level with 2019 (1,351,656); 318,104 in 2020. All the Fondazione Musei Civici museums together had 2,393,315 visitors in 2025. The palace stands on the Piazzetta San Marco in the middle of the model area."
+  },
+  "tur_san_marco_basilika_besokare": {
+   "name": "Visitors to the St Mark's Basilica complex",
+   "unit": "visitors",
+   "note": "A joint ticket since 2025 for the basilica, the museum and the Pala d'Oro, of which the museum 444,627 and the Pala d'Oro 322,504. In 2024, 1,861,286 visits to the basilica itself were counted. The Campanile had 567,419 visitors in 2025."
+  },
+  "tur_accademia_besokare": {
+   "name": "Visitors to the Gallerie dell'Accademia",
+   "unit": "visitors",
+   "note": "+16.3% on 2023 and 305,099 in 2019. The state's figures for 2025 were not available when the yearbook was published. The gallery stands by the Accademia bridge over the Grand Canal."
+  },
+  "tur_guggenheim_besokare": {
+   "name": "Visitors to the Peggy Guggenheim Collection",
+   "unit": "visitors",
+   "note": "Palazzo Venier dei Leoni between the Accademia and the Salute; −11.8% on 2024 (388,630) and 350,475 in 2019."
+  },
+  "tur_dagsbesokare_per_ar": {
+   "name": "Day-trippers (escursionisti) per year, estimate",
+   "unit": "day-trippers per year",
+   "note": "Assessment in the study, after van der Borg (2017): almost 22 million day-trippers a year, against about 5 million in 1988. Day-trippers are not registered; the municipality's own estimate was about 53,000 per day (Tourist Report 2019). The figure is an assessment, not a count."
+  },
+  "tur_dagsbesokare_per_dag_2022": {
+   "name": "Day-trippers per day in the historic city (annual average, mobile data)",
+   "unit": "day-trippers per day",
+   "note": "Measured with mobile-phone data: on average 61,461 day-trippers and 32,339 overnight tourists per day in the historic city in 2022; the newspaper gives a total of about 98,000 visitors per day. Bertocchi et al. (2020) gave 66,800 visitors and tourists plus 20,500 commuting workers and students per day (2018)."
+  },
+  "tur_besokare_toppdag_2022": {
+   "name": "Visitors in the historic city on the busiest day of the year (30 October 2022)",
+   "unit": "visitors",
+   "note": "All Saints' weekend 2022: 54,253 overnight tourists and 88,993 day-trippers according to the same mobile-data study. With about 49,000–50,000 residents (the municipality: 55,589 in 2015 and 47,625 in 2025) that is roughly three visitors per resident that day (own rough calculation)."
+  },
+  "tur_barkraft_per_dag": {
+   "name": "Tourism carrying capacity of the historic city (visitors per day)",
+   "unit": "visitors per day",
+   "note": "Optimum in a fuzzy linear-programming model: 15,500 hotel guests, 22,000 guests in other accommodation and 14,611 day-trippers per day, in all 19.0 million visitors a year of whom 28% day-trippers. The bottlenecks are St Mark's Square, vaporetto capacity, restaurants, parking and waste handling. The first calculation in 1988 gave about 10 million visitors a year."
+  },
+  "tur_cda_betalningar_2024": {
+   "name": "Paid access fees for day-trippers 2024 (first trial year)",
+   "unit": "paid fees",
+   "note": "29 fee days from 25 April 2024 at €5, on average 16,676 payers per day; €2,249,505 according to the municipality's summary (the accounts report €2.43 million). According to Il Post, setting up and running the scheme cost at least €3 million in the first year."
+  },
+  "tur_cda_betalningar_2025": {
+   "name": "Paid access fees for day-trippers 2025",
+   "unit": "paid fees",
+   "note": "Provisional for 54 days from 18 April to 27 July 2025: 704,467 through the platform (51% at €5, 49% at €10) and 19,030 through agreements; on average 13,046 per day, most on Friday 2 May (24,951). Overnight guests registered as exempt at an average of 36,639 per day. The accounts report €5.44 million."
+  },
+  "tur_cda_betalningar_2026": {
+   "name": "Paid access fees for day-trippers 2026",
+   "unit": "paid fees",
+   "note": "60 fee days from 3 April to 26 July 2026 (every Friday–Sunday plus 27–30 April and 1–4 June, 8.30–16.00): 316,099 (46.5%) at €5 with advance booking and 363,454 at €10, in all €5,215,035, according to the municipality's provisional summary. Fewer payments than in 2025 despite six more days. The fee only applies to the Città antica, not Murano, Burano or the Lido; overnight guests, Veneto residents, students, commuters and children under 14 do not pay."
+  },
+  "tur_cda_intakter_2025": {
+   "name": "The municipality's revenue from the access fee (contributo di accesso)",
+   "unit": "million euros",
+   "note": "Accrued revenue (accertamenti) in the 2025 accounts, against €2.43 million in 2024; 1.6% of tax revenue excluding the casino. After running costs part goes to a lower waste charge (TARI): €1.0 million in the 2025 TARI budget (the municipality's summary speaks of at least €1.5 million) and €1,771,000 of the 2026 revenue, which was €5,215,035."
+  },
+  "tur_cda_snitt_per_dag_2026": {
+   "name": "Paying day-trippers per fee day 2026",
+   "unit": "payers per day",
+   "note": "−17% on 2025 (13,398) and −32% on 2024 according to the municipality, which notes that the years are not directly comparable: Fridays were not included in 2024 and 2026 had more weekdays. Saturdays 13,661 on average; May 13,940, June 10,179 and July 9,597 per day. The municipality's 2025 summary gave 13,046 for platform purchases."
+  },
+  "tur_cda_dagar_over_20000": {
+   "name": "Fee days with at least 20,000 paying day-trippers",
+   "unit": "days",
+   "note": "4 of 29 days (13.8%) in 2024, 3 of 54 (5.6%) in 2025 and 1 of 60 (1.7%) in 2026: Saturday 2 May 2026 with 25,471. The second-largest day in 2026 had 18,969 and the smallest (Wednesday 29 April) 7,441. The municipality sees signs that the peaks are being damped; the evaluation is being done with CISET (Ca' Foscari, Regione Veneto and Touring Club Italiano)."
+  },
+  "tur_imposta_soggiorno_2025": {
+   "name": "The municipality's revenue from the tourist tax (imposta di soggiorno)",
+   "unit": "million euros",
+   "note": "Accrued revenue 2025: €38.38 million plus €0.32 million in recovered arrears, −€1.6 million on 2024 (39.70 + 0.58) and €38.19 million in 2023. The tourist tax provides 11.4% of the municipality's tax revenue excluding the casino (€353.2 million). €5.5 million of earmarked tourist tax was used in 2025 to lower the waste charge (TARI)."
+  },
+  "tur_kommunens_lopande_intakter": {
+   "name": "The municipality's current revenue (entrate correnti)",
+   "unit": "million euros",
+   "note": "Accrued revenue 2025: taxes €471.0 million, transfers €207.3 million and other revenue €193.6 million; €825.1 million in 2024 and €818.9 million in 2023. The accounts (approved by the council on 23 April 2026) closed with a result (risultato di amministrazione) of €529.3 million, of which €25.5 million unrestricted. Staff costs were €114.7 million."
+  },
+  "tur_turistskatter_andel_intakter": {
+   "name": "Tourist tax and access fee as a share of the municipality's current revenue",
+   "unit": "%",
+   "note": "(€38.71 million in tourist tax + €5.44 million in access fees) / €871.83 million in current revenue = 5.1% in 2025 (own calculation from the accounts). The casino's gross takings correspond to 13.5%, but most of that goes back to the operating company (see tur_kasino_spelintakter)."
+  },
+  "tur_kasino_spelintakter": {
+   "name": "Gaming revenue from the Casinò di Venezia",
+   "unit": "million euros",
+   "note": "Of the 2025 gaming revenue, €88.3 million (75%) went as a fee to the operating company and €9.4 million in taxes, leaving €20.1 million net for the municipality, against €15.6 million in 2019 and −€0.7 million in 2020. The casino's historic seat, Ca' Vendramin Calergi, stands on the Grand Canal at the northern edge of the model area."
+  },
+  "tur_sysselsatta_foretag": {
+   "name": "Persons employed in business local units in the Municipality of Venice",
+   "unit": "persons employed",
+   "note": "Employees and self-employed (addetti) in 25,729 local units in 2022 according to ISTAT's territorial Frame SBS, with €6.76 billion in value added and €59,400 per person employed. Public administration, agriculture and finance are not included, so the staff of the municipality, the health service and the universities are missing here. ISTAT classes the Venezia local labour system as 'urbano prevalentemente portuale' (urban, mainly port)."
+  },
+  "tur_sysselsatta_hotell_restaurang_andel": {
+   "name": "Accommodation and food services: share of persons employed in business",
+   "unit": "%",
+   "note": "20,617 of the 113,676 persons employed in business local units worked in accommodation and food services (ATECO I) in 2022 = 18.1%, against 8.9% in Italy and 8.7% in Veneto (summed from ISTAT's provincial tables). Pay per employee in the sector was €21,500 against an average of €29,000 for the municipality's businesses."
+  },
+  "tur_sysselsatta_handel_andel": {
+   "name": "Wholesale and retail trade: share of persons employed in business",
+   "unit": "%",
+   "note": "18,518 of 113,676 persons employed in trade (ATECO G) in 2022 = 16.3% (Italy 19.5%, Veneto 17.8%). Transport and storage – the port, the airport and public transport – has 14,296 = 12.6% (Italy 6.6%, Veneto 5.7%), business support services 13,340 and professional and technical services (ATECO M) 10,131."
+  },
+  "tur_sysselsatta_tillverkning_andel": {
+   "name": "Manufacturing: share of persons employed in business",
+   "unit": "%",
+   "note": "9,876 of 113,676 persons employed in manufacturing and mining (ATECO B–C) in 2022 = 8.7%, against 21.6% in Italy and 30.9% in Veneto; all industry including construction, energy and waste 20,369 (17.9%). Value added per person employed in manufacturing was €90,400, more than twice that in accommodation and food services (€42,600)."
+  },
+  "tur_hotell_restaurang_andel_foradlingsvarde": {
+   "name": "Accommodation and food services: share of business value added",
+   "unit": "%",
+   "note": "€877.7 million of the €6,757.0 million in value added in the municipality's businesses in 2022 = 13.0% (Italy 4.0%, Veneto 4.1%). It only measures the direct visitor economy; trade, transport, museums and crafts selling to visitors are not included, so tourism's real share is larger. No official tourism satellite account for the municipality was found."
+  },
+  "tur_inkomst_per_skattebetalare": {
+   "name": "Average taxable income per taxpayer",
+   "unit": "euros",
+   "note": "Taxable income (reddito imponibile) of €5,156,700,571 divided by the 190,227 filers with taxable income, income year 2024. Veneto €25,885 and Italy €24,893; Padua €31,270 and Treviso €31,717. Venice had €23,482 in 2019. Employees earned €24,505 on average, less than in Veneto (€25,249)."
+  },
+  "tur_arbetsloshet_provins": {
+   "name": "Unemployment rate, age 15–74, Metropolitan City of Venice",
+   "unit": "%",
+   "note": "ISTAT labour force survey: 4.6% in 2025, 3.9% in 2024 and 6.0% in 2019. Veneto 3.4% and Italy 6.1% in 2025."
+  },
+  "tur_ungdomsarbetsloshet_provins": {
+   "name": "Youth unemployment rate, age 15–24, Metropolitan City of Venice",
+   "unit": "%",
+   "note": "24.7% in 2025 and 27.1% in 2024, against 13.7% in Veneto and 20.6% in Italy in 2025. Provincial figures for young people rest on small samples and swing between years."
+  },
+  "tur_hamn_gods": {
+   "name": "Cargo throughput at the Port of Venice",
+   "unit": "million tonnes",
+   "note": "+4.9% on 2024: commercial cargo +8.5% while industrial (−5.3%) and oil (−1.2%) traffic fell. Container traffic was 532,778 TEU (478,839 in 2024). With Chioggia the port authority handled 26.2 million tonnes."
+  },
+  "tur_marghera_sysselsatta_1965": {
+   "name": "Persons employed in the Porto Marghera industrial area at the 1965 peak",
+   "unit": "persons employed",
+   "note": "The municipality's historical series: 3,440 employed in 1925, 22,500 in 1950, the peak of 32,980 in 229 firms in 1965, 29,000 in 1980, 18,814 in 1990 and 12,958 in 1998. Parts of the area are still called Raffinerie, Vecchio and Nuovo Petrolchimico."
+  },
+  "tur_marghera_sysselsatta_2018": {
+   "name": "Persons employed in the Porto Marghera industrial area 2018",
+   "unit": "persons employed",
+   "note": "Persons employed in 915 firms on 31 December 2018, including workers on short-time support: a third of the 1965 peak; the low point was 10,060 in 2014. There are four times as many firms, but smaller. No later edition of the municipality's survey was found."
+  },
+  "tur_studenter_cafoscari": {
+   "name": "Students at Ca' Foscari University",
+   "unit": "enrolled students",
+   "note": "Enrolled in bachelor's, master's and single-cycle programmes in the 2025/26 academic year (11,629 women and 7,271 men); 21,121 in 2019/20. Doctoral students and single courses are not included. The main building, Ca' Foscari, stands on the Grand Canal in the western part of the model area."
+  },
+  "tur_studenter_iuav": {
+   "name": "Students at the Università Iuav di Venezia",
+   "unit": "enrolled students",
+   "note": "Iuav (architecture, design, planning, arts and theatre) in the 2025/26 academic year: 3,039 women and 1,912 men, against 3,935 in 2019/20; 172 teaching staff and 241 technical-administrative staff in 2024 (ANVUR). Together with Ca' Foscari 23,851 students, about half as many as the residents of the centro storico, though many live on the mainland (own comparison)."
+  },
+  "tur_murano_ugnar": {
+   "name": "Glass furnaces (fornaci) on Murano",
+   "unit": "furnaces",
+   "note": "In February 2024 the Promovetro consortium counted 151 glass firms on Murano: 64 furnaces and 87 secondary processing firms (lampwork, fusing, mirrors, grinding, decoration) employing 1,242 people. According to the same source, 80% of the glass objects in Venice's shops are not made on Murano. In the early 2000s there were about a hundred furnaces (Insula)."
+  },
+  "tur_murano_sysselsatta": {
+   "name": "Persons employed in Murano's glass firms",
+   "unit": "persons employed",
+   "note": "Banca Ifis counts 160 active glass firms employing 928 people in 2025, against 114 firms and 819 employed in 2015; turnover rose from about €104 million to €180 million, and to €288 million including the supply chain. Promovetro gives 1,242 employed (2024) with a wider definition. Energy and utilities are 13% of the value in the supply chain."
+  },
+  "tur_murano_sysselsatta_1971": {
+   "name": "Persons employed in Murano's glass industry 1971",
+   "unit": "persons employed",
+   "note": "About 4,000 employed in Murano's glass industry in the 1950s, 3,142 in 1971, 2,290 in 1981 and about 2,000 in the 1990s; in the early 2000s Promovetro had just under 200 member firms employing about 1,600. In the 1960s 24% of the firms had more than 100 employees; today small firms dominate."
+  },
+  "tur_gondoljarer_auktoriserade": {
+   "name": "Authorised gondoliers",
+   "unit": "gondoliers",
+   "note": "Gondoliers holding a licence according to EFE in October 2026, when the municipality opened a new 40-hour 'Arte del gondoliere' course; the municipality's 2020 regulation allows 440 licences (see en_gondol_licenser in energi-resor.json). Since Giorgia Boscolo became the first woman gondolier in 2009, 14 more women have followed. A 30-minute ride cost €90 in the daytime and €110 after 7 pm (dpa, 2024)."
+  },
+  "tur_souvenirbutiker_andel": {
+   "name": "Souvenir shops' share of retail in the historic city",
+   "unit": "%",
+   "note": "299 of the 2,876 retail businesses in the Chamber of Commerce register (January 2021) sold souvenirs, trinkets and costume jewellery, against 141 craft shops (4.9%); food, drink and tobacco were 13.9%. Hotels, restaurants and retail made up 58% of the historic city's 10,232 registered businesses."
+  },
+  "tur_vardagsbutiker_2007": {
+   "name": "Grocery and other everyday shops in the historic city 2007",
+   "unit": "shops",
+   "note": "720 shops in 1976 and 276 in 2007 (−62%), while shops for tourists rose from 303 to 997 (+229%), 'banal' souvenir shops by 265%. Already in 1971–1981 the share of services aimed at residents fell from 46.9% to 37.7% (Andreozzi et al. 1983)."
+  },
+  "tur_osm_presentbutiker_per_matbutik": {
+   "name": "Gift shops per food shop in the model area (OpenStreetMap)",
+   "unit": "gift shops per food shop",
+   "note": "Inside the model's bounding box: 119 gift shops and 15 variety stores against 84 food shops (19 supermarkets, 18 convenience stores, 18 bakeries, 10 delis, 8 greengrocers, 8 pastry shops, 2 fishmongers, 1 butcher) = 1.6. 785 shops in all, of which 151 clothes shops and 53 jewellers, plus 205 hotels and 374 restaurants. OSM is mapped by volunteers and incomplete."
+  }
+ },
+ "challenges": {
+  "avfolkning": {
+   "title": "A city emptying of its people",
+   "text": "The historic city has 47,625 residents, a quarter of the 174,808 who lived here in 1951, and loses 500–900 a year. In 2025, 209 children were born and 689 people died; seven tenths of the decline since 2015 is deaths outnumbering births, so the city needs young people and families to move in. If the trend continues, about 32,000 will live here in 2050."
+  },
+  "bostader": {
+   "title": "Homes that become tourist beds",
+   "text": "37.4% of the historic city's 42,431 homes have no registered resident, and since 2023–2024 there have been more tourist beds than residents. Short-term lets took 31.5% of tourist arrivals in 2025, against 19.4% in 2019, and a home in the centre costs 4,332 euros per square metre, against 1,660 on the mainland. Meanwhile about 2,900 municipal and regional public homes in the municipality stand empty awaiting renovation, while 2,251 households are on the waiting list."
+  },
+  "besokare": {
+   "title": "More visitors than the city can carry",
+   "text": "On an ordinary day in 2022 an average of 61,461 day visitors came to the historic city, and on the busiest day 143,246 visitors were there – about three per resident. The city had 9.38 million guest nights in 2025, nine in ten of them by foreign guests, and a 2020 study put its carrying capacity at about 52,000 visitors a day. The access fee for day visitors applied on 60 days in 2026 and is still a trial."
+  },
+  "havet": {
+   "title": "The sea is rising and MOSE closes ever more often",
+   "text": "MOSE closed 49 times in the 2025/26 season, but the barriers were built for 3–5 closures a year and for a sea rising 60 cm in a hundred years. With the sea 50 cm higher they would have to close on average once a day, and at tides between 80 and 110 cm, when they stay open, St Mark's Square floods. The sea now stands 35 cm higher against the city's stones than in 1897 and has risen 4.8 mm a year since 1993."
+  },
+  "lagunen": {
+   "title": "A lagoon turning into a shallow sea",
+   "text": "The salt marshes have shrunk from 158 km² in 1912 to about 40 km², and the lagoon loses a net 0.8 million m³ of sediment a year – the rivers bring only 30,000 m³. None of the lagoon's eleven classified water bodies has good ecological status, and while MOSE is closed the salt marshes miss the silt that storm surges would otherwise carry to them: their growth falls by at least 25%."
+  },
+  "aldrande": {
+   "title": "An ageing city – with bridges of steps",
+   "text": "33.1% of the historic city's residents are 65 or older and 12.2% are 80 or older, against 24.7% and 7.8% in Italy, and only 8.5% are under 15. More than half of the households are one person, and the schools in the centre have 28.8% fewer pupils than in 2015/16. 95% of the 244 bridges in the central city have steps, and by water bus a wheelchair user can reach about 70% of the city – without a boat, 2%."
+  },
+  "batar": {
+   "title": "Wakes and exhaust on the canals",
+   "text": "Boats and ships produce 46.7% of the municipality's nitrogen oxides and 39.1% of its particles, and by the Rio Novo canal nitrogen dioxide was 34 µg/m³ in 2025 – 70% above the EU limit from 2030. ACTV has 148 passenger boats but only one hybrid vaporetto in service, and the city council is asking for money against the wakes that wear down the quay walls."
+  }
+ },
+ "assets": {
+  "varldsarvet": {
+   "title": "The World Heritage",
+   "text": "Venice and its Lagoon became a World Heritage Site in 1987, and 2,742 buildings in the city and the lagoon are listed; 83% of the historic city's residential buildings were built before 1919. The motto 'com'era, dov'era' – as it was, where it was – has guided rebuilding from the Campanile in 1912 to La Fenice in 2003."
+  },
+  "till_fots": {
+   "title": "A city on foot and on the water",
+   "text": "The historic city has no cars: of some 100,000 people who arrive at Piazzale Roma, Tronchetto and the station on an ordinary weekday, 64.5% walk on and the rest take a boat. The municipality has 707 public-transport trips per resident a year, the most in Italy, and 460 cars per 1,000 residents, the fewest of Italy's provincial capitals (country 701)."
+  },
+  "lagunarbetet": {
+   "title": "MOSE and half a century of lagoon work",
+   "text": "Since 3 October 2020 MOSE has protected the city from most tides above 110 cm, and its first hundred raisings are estimated to have prevented 2.6 billion euros of damage. On 22 November 2022 the sea stood at 173 cm outside the lagoon but only 66 cm in the city. Since the Special Law of 1973 the state has also raised 100 km of quays and shores and rebuilt 16 km² of salt marsh."
+  },
+  "lagunens_natur": {
+   "title": "The lagoon's nature and food",
+   "text": "62% of the municipality's area is protected nature, almost the whole lagoon is a bird protection area, and some 24,000 flamingos wintered there in 2025. The Rialto market has been there since 1097, Sant'Erasmo has been Venice's kitchen garden since the 1500s with its purple artichoke, and 28 fish farms (valli da pesca) work 9,284 hectares of the lagoon."
+  },
+  "universiteten": {
+   "title": "The universities and research",
+   "text": "23,851 students are enrolled at Ca' Foscari and IUAV, as many as half the historic city's population. The VSF foundation wants to make Venice a university city – Venezia città campus – and the mayor wants to turn the old hospital on the Lido into a research centre with hundreds of specialists."
+  },
+  "offentliga_bostader": {
+   "title": "Homes to give back",
+   "text": "The municipality owns 5,348 homes and the regional housing company ATER 5,163 in the municipality, half of them in the island city, and about 2,900 stand empty awaiting renovation. In 2022 Venice became the first city in Italy with the right to limit short-term lets (Article 37-bis of Decree-Law 50/2022), and the new administration wants to renovate empty municipal flats for young couples."
+  },
+  "besoksverktyg": {
+   "title": "Tools for the visitors",
+   "text": "The access fee for day visitors has been tried since 2024, and the days with more than 20,000 paying have fallen from four to one; in 2025 it brought in 5.4 million euros and the tourist tax 38.7 million. Since August 2021 ships over 25,000 gross tonnes may not pass through the San Marco basin and the Giudecca canal, and cruise passengers fell from 1.6 million in 2019 to 0.57 million in 2025."
+  }
+ },
+ "kommun_vision": [
+  {
+   "title": "Casa, mobilità e lavoro – housing, mobility and work (2026–2031)",
+   "text": "The new administration sums up its vision in three pillars – housing, mobility and work – to strengthen the middle class both in the city on the water and on the mainland. Empty municipal flats are to be renovated and given above all to young couples, qualified jobs are to be drawn to the city, among them to a research centre in the old hospital on the Lido, and abandoned sites such as the old gasholders and Sant'Elena are to be brought back to life. The mayor wants stable funding for the Special Law for Venice and to leave a stronger, less indebted municipality to the next generation. The programme for the term, with eleven areas from housing and tourism to the environment, goes before the city council on 15 October 2026."
+  },
+  {
+   "title": "The PAESC climate plan – emissions 72% lower by 2030, climate neutral by 2050",
+   "text": "The climate plan the municipal giunta adopted in January 2026 has 33 measures to cut the municipality's carbon dioxide emissions by 72% by 2030 compared with 2005, and the municipality has committed to being climate neutral by 2050. 46 measures are to adapt the city to twelve climate risks, from heatwaves and cloudbursts to tides and the rising sea. Among the goals are more trees, a hydrogen valley in Porto Marghera and hybrid engines on every boat on the Grand Canal by 2032."
+  },
+  {
+   "title": "Venezia Capitale Mondiale della Sostenibilità",
+   "text": "The foundation was set up on 14 March 2022 to make Venice a model of sustainable development – environmental, economic and social. It brings together the region, the municipality, the universities, the Fondazione Giorgio Cini and large companies in nine areas, among them hydrogen in Porto Marghera, protecting the lagoon's ecosystem, a university city (Venezia città campus), countering depopulation and protecting homes from short-term lets, and managing the flows of visitors. The foundation calls the city a living laboratory on a small scale with global visibility."
+  },
+  {
+   "title": "The Special Law for Venice – the council's own list of needs",
+   "text": "Since 2020 the city council has four times asked the state to fund the Special Law for Venice steadily and over several years, most recently on 23 July 2026. The list is the city's own picture of what is needed: quays, bridges and walkways; dredging the canals and fighting the wakes; the fire-water network; support for the people who live here and measures against depopulation; trade and crafts that suit the city; the islands; the lagoon's ecosystem and adaptation to the rising sea."
+  }
+ ]
+}

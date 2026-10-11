@@ -1,0 +1,16 @@
+{
+  "input_file": "/private/tmp/claude-502/-Volumes-work2-Projekt-sustainable-kalmar/ea343c85-92e6-4657-b91e-098749edc3db/scratchpad/voices-venezia/vo-film-3-it.json",
+  "output_file": "/Volumes/work2/sustainable-builder/cities/venezia/media/audio/vo-film-3-it.mp3",
+  "max_chars": 2000,
+  "model": "eleven_v4",
+  "chunks": [
+    {
+      "index": 1,
+      "line_start": 0,
+      "line_end": 0,
+      "char_count": 149,
+      "text_hash": "26dfd22f67682dfa430f74cced1486429ff38f0affbe756ea932e9d7f7c14c77",
+      "audio_file": "chunk_26dfd22f6768.mp3"
+    }
+  ]
+}

@@ -321,7 +321,11 @@ def cmd_build(a):
             die(f'Unknown step {step}', f'Steps: {", ".join(STEPS)}')
         mark(slug, step, seconds=round(time.time() - t))
         say(f'  {D}{time.time() - t:.0f} s{X}')
-    say(f'\n{G}{B}Done in {time.time() - t0:.0f} s.{X}  Next:  python3 sustainable.py research {slug} kolada   ·   python3 sustainable.py site {slug}')
+    # Kolada's key figures exist for Swedish municipalities only.
+    place_file = CITIES / slug / 'place.json'
+    swedish = (json.loads(place_file.read_text()) if place_file.exists() else {}).get('country_code', 'se') == 'se'
+    kolada = f'python3 sustainable.py research {slug} kolada   ·   ' if swedish else ''
+    say(f'\n{G}{B}Done in {time.time() - t0:.0f} s.{X}  Next:  {kolada}python3 sustainable.py site {slug}')
 
 
 def cmd_rebuild(a):

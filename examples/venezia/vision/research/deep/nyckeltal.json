@@ -1,0 +1,1371 @@
+{
+  "topic": "nyckeltal",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "nt_folkmangd",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Comune di Venezia",
+      "value": 249385,
+      "unit": "invånare",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Popolazione residente al 1° gennaio (DCIS_POPRES1): Venezia 027042, Veneto, Italia",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_289/A.027042+IT+ITD3.JAN.9.TOTAL.99?startPeriod=2021"
+      },
+      "note_sv": "Folkbokförda invånare den 1 januari 2026 (ISTAT, provisoriskt); 249 490 den 1 januari 2025 och 256 083 den 1 januari 2021. Kommunens eget folkbokföringsregister räknar något fler (251 295 år 2025), eftersom ISTAT justerar mot folkräkningen. Italien 58 942 828, Veneto 4 857 460 (2026).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_befolkningsforandring_1ar",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Befolkningsförändring senaste året",
+      "value": -0.04,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Popolazione residente al 1° gennaio (DCIS_POPRES1): Venezia 027042, Veneto, Italia",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_289/A.027042+IT+ITD3.JAN.9.TOTAL.99?startPeriod=2021"
+      },
+      "note_sv": "Egen beräkning: (249 385 − 249 490) / 249 490 = −0,04 % mellan 1 januari 2025 och 1 januari 2026 (ISTAT, provisoriskt). Födelseunderskottet (1 409 födda, 3 345 döda) vägdes nästan upp av inflyttning, främst från utlandet (+2 414 netto). Italien −0,001 %, Veneto +0,08 % (2025, egen beräkning).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_befolkningsforandring_5ar",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Befolkningsförändring senaste fem åren",
+      "value": -2.62,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Popolazione residente al 1° gennaio (DCIS_POPRES1): Venezia 027042, Veneto, Italia",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_289/A.027042+IT+ITD3.JAN.9.TOTAL.99?startPeriod=2021"
+      },
+      "note_sv": "Egen beräkning: (249 385 − 256 083) / 256 083 = −2,62 % mellan 1 januari 2021 och 1 januari 2026 (ISTAT; 2026 provisoriskt). Italien −0,50 %, Veneto −0,25 % (2021–2026, egen beräkning; Venetos folkmängd 2021 enligt Eurostat demo_r_gind3).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_folkmangd_centro_storico",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Venedigs historiska centrum (centro storico)",
+      "value": 47625,
+      "unit": "invånare",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Comune di Venezia – Variazione della popolazione residente (2015–2025) och Età media della popolazione residente, svar på fråga 895 i kommunfullmäktige",
+        "publisher": "Comune di Venezia, Servizio Elettorale e Leva Militare – Statistica (kommunens folkbokföring)",
+        "url": "https://consiglio2020.comune.venezia.it/allegati/atti_ispettivi/risposte_1/895_variazioni_2015-2025etamedia.pdf"
+      },
+      "note_sv": "Folkbokförda i centro storico (San Marco, Castello, Sant'Elena, Cannaregio, Dorsoduro, San Polo, Santa Croce och Giudecca) enligt kommunens register 2025; tabellen anger år men inte datum. 55 589 år 2015 (−14,3 %); under tioårsperioden föddes 2 797 och dog 8 810. Italien och Veneto: ej tillämpligt; hela kommunen hade 251 295 invånare i samma register (2025).",
+      "confidence": "medium"
+    },
+    {
+      "id": "nt_medelalder_centro_storico",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Medelålder i centro storico",
+      "value": 51.4,
+      "unit": "år",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Comune di Venezia – Variazione della popolazione residente (2015–2025) och Età media della popolazione residente, svar på fråga 895 i kommunfullmäktige",
+        "publisher": "Comune di Venezia, Servizio Elettorale e Leva Militare – Statistica (kommunens folkbokföring)",
+        "url": "https://consiglio2020.comune.venezia.it/allegati/atti_ispettivi/risposte_1/895_variazioni_2015-2025etamedia.pdf"
+      },
+      "note_sv": "Medelåldern bland folkbokförda i centro storico steg från 49,3 år 2015 till 51,4 år 2025; hela kommunen 48,7 och fastlandet (terraferma) 47,5 år. Medelåldern för Italien och Veneto finns inte i samma källa; som jämförelse medianåldern: Italien 49,1, Veneto 49,6 år (2025, Eurostat).",
+      "confidence": "medium"
+    },
+    {
+      "id": "nt_medianalder",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Medianålder",
+      "value": 50.0,
+      "unit": "år",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Eurostat, City statistics (urb_cpopstr) DE1073V Median population age, Venezia (IT011C)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/urb_cpopstr?cities=IT011C&indic_ur=DE1073V&lang=EN"
+      },
+      "note_sv": "Medianåldern den 1 januari 2025 enligt Eurostats stadsstatistik (Urban Audit, byggd på ISTAT:s data), oförändrad sedan 2022. Italien 49,1, Veneto 49,6 år (2025, Eurostat demo_r_pjanind2).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_andel_0_19",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Andel invånare 0–19 år",
+      "value": 15.0,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Popolazione residente al 1° gennaio per età (DCIS_POPRES1, Veneto – comuni), Venezia 027042",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_289_DF_DCIS_POPRES1_9/A.027042.JAN.9..99?startPeriod=2025"
+      },
+      "note_sv": "Egen beräkning ur ISTAT:s ettårsklasser: 37 448 av 249 490 invånare var 0–19 år den 1 januari 2025 (14,9 % enligt de provisoriska siffrorna för 2026). Italien 16,9 %, Veneto 16,7 % (2025, Eurostat).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_andel_65_plus",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel invånare 65+ år",
+      "value": 28.5,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Popolazione residente al 1° gennaio per età (DCIS_POPRES1, Veneto – comuni), Venezia 027042",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_289_DF_DCIS_POPRES1_9/A.027042.JAN.9..99?startPeriod=2025"
+      },
+      "note_sv": "Egen beräkning ur ISTAT:s ettårsklasser: 71 091 av 249 490 invånare var 65 år eller äldre den 1 januari 2025 (28,7 % enligt de provisoriska siffrorna för 2026). Italien 24,7 %, Veneto 24,9 % (2025, Eurostat).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_andel_80_plus",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel invånare 80+ år",
+      "value": 10.3,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Popolazione residente al 1° gennaio per età (DCIS_POPRES1, Veneto – comuni), Venezia 027042",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_289_DF_DCIS_POPRES1_9/A.027042.JAN.9..99?startPeriod=2025"
+      },
+      "note_sv": "Egen beräkning ur ISTAT:s ettårsklasser: 25 810 av 249 490 invånare var 80 år eller äldre den 1 januari 2025 (10,3 % även enligt de provisoriska siffrorna för 2026). Italien 7,8 %, Veneto 8,0 % (2025, Eurostat).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_forsorjningskvot",
+      "sdg": [
+        1,
+        3,
+        8
+      ],
+      "name_sv": "Demografisk försörjningskvot ((0–19 + 65+) / 20–64 år)",
+      "value": 0.77,
+      "unit": "kvot",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Popolazione residente al 1° gennaio per età (DCIS_POPRES1, Veneto – comuni), Venezia 027042",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_289_DF_DCIS_POPRES1_9/A.027042.JAN.9..99?startPeriod=2025"
+      },
+      "note_sv": "Egen beräkning: (37 448 + 71 091) / 140 951 = 0,77 den 1 januari 2025, alltså 0,77 barn, unga och äldre per person i arbetsför ålder. Italien 0,71, Veneto 0,71 (2025, Eurostat demo_r_pjanind2, variant 3).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_fodda_per_1000",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Födda per 1 000 invånare",
+      "value": 5.68,
+      "unit": "per 1 000 invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Eurostat, City statistics (urb_cfermor) SA2007I/SA2007V och SA2029I/SA2019V, Venezia (IT011C)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/urb_cfermor?cities=IT011C&indic_ur=SA2007I&indic_ur=SA2007V&indic_ur=SA2029I&indic_ur=SA2019V&lang=EN"
+      },
+      "note_sv": "Levande födda per 1 000 invånare: 1 421 födda 2024 (Eurostats stadsstatistik, seriebrott 2024). ISTAT:s provisoriska bokslut för 2025 ger 1 409 födda. Italien 6,3, Veneto 6,2 (2024, Eurostat demo_r_gind3).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_doda_per_1000",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Döda per 1 000 invånare",
+      "value": 13.4,
+      "unit": "per 1 000 invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Eurostat, City statistics (urb_cfermor) SA2007I/SA2007V och SA2029I/SA2019V, Venezia (IT011C)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/urb_cfermor?cities=IT011C&indic_ur=SA2007I&indic_ur=SA2007V&indic_ur=SA2029I&indic_ur=SA2019V&lang=EN"
+      },
+      "note_sv": "Döda per 1 000 invånare: 3 354 döda 2024, 3 345 år 2025 enligt ISTAT:s provisoriska bokslut; talet speglar den gamla befolkningen. Italien 11,1, Veneto 10,4 (2024, Eurostat demo_r_gind3).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_flyttnetto_per_1000",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Flyttnetto per 1 000 invånare",
+      "value": 4.5,
+      "unit": "per 1 000 invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Bilancio demografico (DCIS_POPORESBIL1), Venezia 027042",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_315/A.027042..9?startPeriod=2020"
+      },
+      "note_sv": "Egen beräkning ur ISTAT:s demografiska bokslut 2024: total förändring −800 minus födelseunderskottet −1 933 ger +1 133 (flyttnetto inklusive statistisk justering), delat med medelfolkmängden 249 890 = 4,5 per 1 000. Utlandet gav +1 404 och övriga Italien −283. Italien 4,3, Veneto 4,5 (2024, Eurostat demo_r_gind3).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_hushall_antal",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Antal hushåll",
+      "value": 126113,
+      "unit": "hushåll",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Bilancio demografico (DCIS_POPORESBIL1), Venezia 027042",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/22_315/A.027042..9?startPeriod=2020"
+      },
+      "note_sv": "Hushåll (famiglie anagrafiche) den 31 december 2024 enligt ISTAT; 247 232 personer bodde i hushåll, i genomsnitt 1,96 per hushåll (egen beräkning), och 2 258 i kollektiva boenden. Italien och Veneto: ingen jämförelse hämtad (antal, 2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_befolkningstathet",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Befolkningstäthet",
+      "value": 596,
+      "unit": "inv/km²",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISPRA, IdroGEO – indicatori del comune di Venezia (ar_kmq = 418,395 km²); folkmängd ISTAT 1 januari 2025",
+        "publisher": "ISPRA",
+        "url": "https://idrogeo.isprambiente.it/api/pir/comuni/27042"
+      },
+      "note_sv": "Egen beräkning: 249 490 invånare (1 januari 2025, ISTAT) / 418,4 km² (kommunens hela yta enligt ISPRA) = 596 inv/km². Ytan omfattar en stor del av lagunen, så tätheten på fastlandet och öarna är mycket högre. Italien 198,0, Veneto 279,7 inv/km² (2024, Eurostat demo_r_d3dens).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_medellivslangd_man",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Medellivslängd män",
+      "value": 81.9,
+      "unit": "år",
+      "year": 2024,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 01SAL001 Speranza di vita alla nascita (maschi)",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Förväntad livslängd vid födseln för män i provinsen (storstadsregionen Venedig), provisoriskt värde; finns inte för kommunen. 78,1 år 2004 och 80,3 år under pandemiåret 2020. Italien 81,4, Veneto 82,2 år (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_medellivslangd_kvinnor",
+      "sdg": [
+        3,
+        5
+      ],
+      "name_sv": "Medellivslängd kvinnor",
+      "value": 86.2,
+      "unit": "år",
+      "year": 2024,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 01SAL001 Speranza di vita alla nascita (femmine)",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Förväntad livslängd vid födseln för kvinnor i provinsen, provisoriskt värde; 84,1 år 2004. Båda könen tillsammans 84,0 år. Italien 85,5, Veneto 86,3 år (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_undvikbar_dodlighet",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Undvikbar dödlighet 0–74 år",
+      "value": 15.5,
+      "unit": "per 10 000 invånare",
+      "year": 2022,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 01SAL020 Mortalità evitabile (0-74 anni)",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Dödsfall före 75 års ålder av orsaker som kan förebyggas eller behandlas (OECD:s och Eurostats lista), åldersstandardiserade per 10 000 invånare i provinsen. Italien 17,6, Veneto 15,2 (2022).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_sjukhussangar_per_10000",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Vårdplatser på sjukhus per 10 000 invånare",
+      "value": 31.8,
+      "unit": "per 10 000 invånare",
+      "year": 2022,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 12SER003P-N25 Posti letto negli ospedali",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Vårdplatser (ordinarie, dagsjukvård och dagkirurgi) på offentliga och ackrediterade privata sjukhus per 10 000 invånare i provinsen (ISTAT ur hälsoministeriets data). Italien 33,3, Veneto 32,3 (2022).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_specialistlakare_per_10000",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Specialistläkare per 10 000 invånare",
+      "value": 25.3,
+      "unit": "per 10 000 invånare",
+      "year": 2023,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 12SER002P Medici specialisti",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Specialistläkare i offentlig och privat vård per 10 000 invånare i provinsen; allmänläkare och barnläkare i primärvården ingår inte (ISTAT ur IQVIA OneKey). Italien 34,1, Veneto 29,6 (2023).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_hogskoleutbildade_25_64",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Eftergymnasial utbildning, 25–64 år",
+      "value": 27.5,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Eurostat, City statistics (urb_ceduc) TE2025V, TE2028V, TE2031V, Venezia (IT011C)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/urb_ceduc?cities=IT011C&indic_ur=TE2025V&indic_ur=TE2028V&indic_ur=TE2031V&lang=EN"
+      },
+      "note_sv": "Egen beräkning ur Eurostats stadsstatistik: 35 458 av 129 073 invånare 25–64 år (summan av de tre utbildningsnivåerna) hade eftergymnasial utbildning (ISCED 5–8) 2023. Kommunsiffran bygger på ISTAT:s registerbaserade folkräkning, jämförelsevärdena på arbetskraftsundersökningen. Italien 21,6 %, Veneto 20,5 % (2023, Eurostat edat_lfse_04).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_hogskoleutbildade_25_39",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Eftergymnasial examen, 25–39 år",
+      "value": 32.1,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 02IST003P-N22 Laureati e altri titoli terziari (25-39 anni)",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Andelen 25–39-åringar i provinsen med eftergymnasial examen (ISCED 5–8), ISTAT:s arbetskraftsundersökning. Italien 30,9 %, Veneto 34,4 % (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_tidiga_skolavhopp",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Unga som lämnat skolan i förtid (18–24 år)",
+      "value": 7.6,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Veneto",
+      "direction": "lower_better",
+      "source": {
+        "title": "Eurostat, Early leavers from education and training by sex and NUTS 2 region (edat_lfse_16)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_lfse_16?geo=IT&geo=ITH3&sex=T&unit=PC&lang=EN"
+      },
+      "note_sv": "Andelen 18–24-åringar med högst grundskoleutbildning som varken studerar eller deltar i utbildning (arbetskraftsundersökningen); publiceras bara för regioner. EU:s mål för 2030 är under 9 %. Italien 8,2 %, Veneto 7,6 % (2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_neet_15_29",
+      "sdg": [
+        4,
+        8
+      ],
+      "name_sv": "Unga 15–29 år som varken arbetar eller studerar",
+      "value": 10.4,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 02IST006-N22 Giovani che non lavorano e non studiano (NEET)",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Andelen 15–29-åringar i provinsen som varken arbetar eller studerar (ISTAT, arbetskraftsundersökningen). För regionerna finns 2025: Italien 13,3 %, Veneto 8,3 % (Eurostat edat_lfse_22). Italien 15,2 %, Veneto 9,0 % (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_forskoleplatser_0_2",
+      "sdg": [
+        4,
+        5
+      ],
+      "name_sv": "Platser i förskola och annan barnomsorg per 100 barn 0–2 år",
+      "value": 40.4,
+      "unit": "platser per 100 barn 0–2 år",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Servizi socio-educativi per la prima infanzia (DCIS_SERVSOCEDU1): servizi sul territorio – comuni, posti per 100 bambini di 0-2 anni",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/47_850_DF_DCIS_SERVSOCEDU1_6/A.027042+IT.P_100CH_Y0_2.ALL.ALL.?startPeriod=2021"
+      },
+      "note_sv": "Godkända platser i asili nido och kompletterande barnomsorg per 100 barn 0–2 år, verksamhetsåret 2024/25 (ISTAT:s databas, år 2024): 12,0 i offentlig och 28,5 i privat regi, 1 847 platser i 58 verksamheter. ISTAT jämför med EU:s mål om 45 % deltagande 2030. Italien 33,2, Veneto: ej hämtat (2024/25).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_sysselsattningsgrad_15_64",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Sysselsättningsgrad 15–64 år (provinsen)",
+      "value": 70.2,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Rilevazione sulle forze di lavoro: tasso di occupazione 15-64 anni (DCCV_TAXOCCU1)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/150_915/A.ITD35+ITD3+IT.EMP_R.9.Y15-64.99.TOTAL?startPeriod=2023"
+      },
+      "note_sv": "Andelen sysselsatta bland 15–64-åringar i provinsen enligt arbetskraftsundersökningen (68,1 % 2024); för kommunen ger folkräkningen 69,1 % (nt_sysselsattningsgrad_kommun). Italien 62,5 %, Veneto 69,3 % (2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_arbetsloshet_15_74",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Arbetslöshet 15–74 år (provinsen)",
+      "value": 4.6,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Rilevazione sulle forze di lavoro: tasso di disoccupazione 15-74 anni (DCCV_TAXDISOCCU1)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/151_914/A.ITD35+ITD3+IT.UNEM_R.9.Y15-74.99.TOTAL.TOTAL?startPeriod=2023"
+      },
+      "note_sv": "Arbetslösa i procent av arbetskraften 15–74 år i provinsen enligt arbetskraftsundersökningen (3,9 % 2024). Italien 6,1 %, Veneto 3,4 % (2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_sysselsattningsgrad_kommun",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Sysselsättningsgrad 15–64 år (kommunen, folkräkningen)",
+      "value": 69.1,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Censimento permanente della popolazione: popolazione residente di 15 anni e più per condizione professionale ed età – comuni (DF_DCSS_ISTR_LAV_PEN_2_TV_3)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/DF_DCSS_ISTR_LAV_PEN_2_TV_3/A.027042+IT+ITD3..T......"
+      },
+      "note_sv": "Egen beräkning ur den permanenta folkräkningen 31 december 2024: 105 084 sysselsatta av 152 138 invånare 15–64 år. Folkräkningen bygger på register och urval och skiljer sig från arbetskraftsundersökningen. Italien 63,4 %, Veneto 70,0 % (2024, samma källa och beräkning).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_arbetsloshet_kommun",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Arbetslöshet 15 år och äldre (kommunen, folkräkningen)",
+      "value": 5.2,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Censimento permanente della popolazione: popolazione residente di 15 anni e più per condizione professionale ed età – comuni (DF_DCSS_ISTR_LAV_PEN_2_TV_3)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/DF_DCSS_ISTR_LAV_PEN_2_TV_3/A.027042+IT+ITD3..T......"
+      },
+      "note_sv": "Egen beräkning ur den permanenta folkräkningen 31 december 2024: 6 124 arbetssökande av 116 838 i arbetskraften 15 år och äldre; 2023 blev det 5,4 % (Eurostats stadsstatistik anger 5,39 %). Italien 7,2 %, Veneto 4,7 % (2024, samma källa och beräkning).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_beskattningsbar_inkomst",
+      "sdg": [
+        8,
+        10
+      ],
+      "name_sv": "Beskattningsbar inkomst per skattebetalare (medelvärde)",
+      "value": 27108,
+      "unit": "euro per skattebetalare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "MEF – Dipartimento delle Finanze, Redditi e principali variabili IRPEF su base comunale, anno d'imposta 2024",
+        "publisher": "Ministero dell'Economia e delle Finanze",
+        "url": "https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2024.zip"
+      },
+      "note_sv": "Egen beräkning ur inkomstdeklarationerna för inkomståret 2024: beskattningsbar inkomst 5 156 700 571 euro för 190 227 skattebetalare med beskattningsbar inkomst (200 207 skattebetalare totalt). Medelvärde, inte median. Italien 24 893, Veneto 25 885 euro (2024, summerat över alla kommuner i samma fil).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_disponibel_inkomst_per_inv",
+      "sdg": [
+        1,
+        10
+      ],
+      "name_sv": "Hushållens disponibla inkomst per invånare (provinsen)",
+      "value": 23894,
+      "unit": "euro per invånare",
+      "year": 2023,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 04BEC001P Reddito medio disponibile pro capite",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Hushållens disponibla inkomst per invånare i provinsen, löpande priser (Istituto Tagliacarnes provinsskattningar i ISTAT:s BES dei territori). Italien 22 359, Veneto 24 103 euro (2023).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_bnp_per_invanare",
+      "sdg": [
+        8
+      ],
+      "name_sv": "BNP per invånare (provinsen)",
+      "value": 38700,
+      "unit": "euro per invånare",
+      "year": 2023,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Eurostat, Gross domestic product at current market prices by NUTS 3 region (nama_10r_3gdp)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_3gdp?geo=IT&geo=ITH3&geo=ITH35&unit=EUR_HAB&unit=PPS_EU27_2020_HAB&lang=EN"
+      },
+      "note_sv": "BNP per invånare i provinsen (NUTS 3 ITH35), löpande priser; 40 200 i köpkraftsstandard (PPS). För Italien och Veneto finns även 2024: 37 300 respektive 41 500 euro. Italien 36 300, Veneto 40 700 euro (2023).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_fattigdom_social_utestangning",
+      "sdg": [
+        1,
+        10
+      ],
+      "name_sv": "Risk för fattigdom eller social utestängning (Veneto)",
+      "value": 14.6,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Veneto",
+      "direction": "lower_better",
+      "source": {
+        "title": "Eurostat, Persons at risk of poverty or social exclusion by NUTS region (ilc_peps11n)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_peps11n?geo=IT&geo=ITH3&unit=PC&lang=EN"
+      },
+      "note_sv": "Andelen av befolkningen med låg inkomst, allvarlig materiell och social brist eller mycket låg arbetsintensitet (EU-SILC, AROPE); publiceras bara för regioner. Veneto hade 12,4 % året innan. Italien 22,6 %, Veneto 14,6 % (2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_gastnatter_per_invanare",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter per invånare",
+      "value": 51.8,
+      "unit": "gästnätter per invånare",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Eurostat, City statistics (urb_ctour) CR2011I, CR2001V, CR2011V, CR2010I, CR2009V, Venezia (IT011C)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/urb_ctour?cities=IT011C&indic_ur=CR2011I&indic_ur=CR2001V&indic_ur=CR2011V&indic_ur=CR2010I&indic_ur=CR2009V&lang=EN"
+      },
+      "note_sv": "Gästnätter på turistboenden (hotell och övriga, ISTAT:s turiststatistik via Eurostat) per invånare: 12 925 741 nätter 2025, varav 11 195 100 av utländska gäster; seriebrott 2024. Dagsbesökare ingår inte. Italien 9,1, Veneto 15,3 (2025, egen beräkning ur Eurostat tour_occ_nin2 och folkmängden 1 januari 2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_baddar_per_1000",
+      "sdg": [
+        8,
+        11,
+        12
+      ],
+      "name_sv": "Bäddar på turistboenden per 1 000 invånare",
+      "value": 367,
+      "unit": "bäddar per 1 000 invånare",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Eurostat, City statistics (urb_ctour) CR2011I, CR2001V, CR2011V, CR2010I, CR2009V, Venezia (IT011C)",
+        "publisher": "Eurostat",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/urb_ctour?cities=IT011C&indic_ur=CR2011I&indic_ur=CR2001V&indic_ur=CR2011V&indic_ur=CR2010I&indic_ur=CR2009V&lang=EN"
+      },
+      "note_sv": "Bäddar på turistboenden per 1 000 invånare: 91 556 bäddar 2025 mot 77 037 år 2022 (seriebrott 2024). Italien 130, Veneto 169 (2025, egen beräkning ur Eurostat tour_cap_nuts2; Italiens antal bäddar steg från 5,5 till 7,7 miljoner 2024–2025, vilket tyder på ett seriebrott).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_tomma_bostader",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Bostäder utan folkbokförda boende",
+      "value": 17.3,
+      "unit": "% av bostäderna",
+      "year": 2021,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Censimento permanente: abitazioni occupate e non occupate – comuni (DF_DCSS_ABITAZIONI_TV_1)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/DF_DCSS_ABITAZIONI_TV_1/A.027042+IT......."
+      },
+      "note_sv": "Egen beräkning ur folkräkningen 2021: 25 627 av 148 319 bostäder saknade folkbokförda boende (fritidsbostäder, turistuthyrning, tomma). Den permanenta folkräkningen 2023 ger 26 538 av 149 294 (17,8 %). Italien 27,2 %, Veneto 22,0 % (2021, egen beräkning ur Eurostat cens_21dwob_r3).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_bostadspris",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Genomsnittligt bostadspris (OMI)",
+      "value": 2405,
+      "unit": "euro/m²",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Agenzia delle Entrate – OMI, Statistiche regionali: il mercato immobiliare residenziale, Veneto 2026 (tabell 8 och 14)",
+        "publisher": "Agenzia delle Entrate, Osservatorio del Mercato Immobiliare",
+        "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10101383/SR2026_VENETO.pdf/b9d7b4cb-c99d-7191-ca20-902b5540bbc9?t=1780658612084"
+      },
+      "note_sv": "OMI:s genomsnittliga noteringsvärde för bostäder i kommunen (medel av mittvärdena i alla OMI-zoner), +0,5 % mot 2024; 3 968 bostäder såldes 2025. Övriga provinsen 1 454 euro/m². Italien: inget motsvarande riksvärde i OMI:s rapporter; Veneto 1 975 euro/m² i provinshuvudorterna (2025).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_bostadspris_centro_storico",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Genomsnittligt bostadspris i centro storico (OMI)",
+      "value": 4332,
+      "unit": "euro/m²",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Agenzia delle Entrate – OMI, Statistiche regionali: il mercato immobiliare residenziale, Veneto 2026 (tabell 8 och 14)",
+        "publisher": "Agenzia delle Entrate, Osservatorio del Mercato Immobiliare",
+        "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10101383/SR2026_VENETO.pdf/b9d7b4cb-c99d-7191-ca20-902b5540bbc9?t=1780658612084"
+      },
+      "note_sv": "OMI:s genomsnittliga noteringsvärde i makroområdet Centro storico e Giudecca 2025 (+0,4 %), högst i zonen San Marco (5 388 euro/m²); Lido 3 308, Isole minori 2 481 och fastlandet 1 660 euro/m². Italien: inget riksvärde; Veneto 1 975 euro/m² i provinshuvudorterna (2025, annan beräkningsgrund).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_vaxthusgaser_per_inv",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Territoriella växthusgasutsläpp per invånare (CO2, metan, lustgas)",
+      "value": 16.7,
+      "unit": "ton CO2e/inv",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ARPAV – Regione del Veneto, INEMAR Veneto 2023 (utgiven januari 2026): emissioni totali comunali",
+        "publisher": "ARPAV / Regione del Veneto",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_totalicomunali.csv/@@download/file"
+      },
+      "note_sv": "Egen beräkning ur INEMAR Veneto 2023: 4 031,8 kt CO2, 2 441 t metan och 296 t lustgas = 4 179 kt CO2e (GWP100 enligt IPCC AR5) delat med medelfolkmängden 250 602. Två tredjedelar kommer från el- och energiproduktionen i Fusina och Porto Marghera. Italien 6,4 (2023, Eurostat, utan markanvändning), Veneto 5,8 ton (2023, egen beräkning ur INEMAR).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_vaxthusgaser_energi_per_inv",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Utsläpp från el- och energiproduktion per invånare",
+      "value": 11.3,
+      "unit": "ton CO2e/inv",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ARPAV – Regione del Veneto, INEMAR Veneto 2023: emissioni comunali per macrosettore, attività e combustibile",
+        "publisher": "ARPAV / Regione del Veneto",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_emiss_comunali.csv/@@download/file"
+      },
+      "note_sv": "Egen beräkning ur INEMAR Veneto 2023, makrosektor 1 (energiproduktion och bränsleomvandling): 2 819,8 kt CO2e / 250 602 invånare. Därav 1 649 kt CO2 från kol och 951 kt från naturgas; elen används långt utanför kommunen. Italien 1,3 (2023, energiindustrins förbränning, Eurostat env_air_gge), Veneto 0,67 ton (2023, egen beräkning ur INEMAR).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_vaxthusgaser_vagtrafik_per_inv",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Utsläpp från vägtrafik per invånare",
+      "value": 1.1,
+      "unit": "ton CO2e/inv",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ARPAV – Regione del Veneto, INEMAR Veneto 2023: emissioni comunali per macrosettore, attività e combustibile",
+        "publisher": "ARPAV / Regione del Veneto",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_emiss_comunali.csv/@@download/file"
+      },
+      "note_sv": "Egen beräkning ur INEMAR Veneto 2023, makrosektor 7 (vägtrafik): 279,5 kt CO2e / 250 602 invånare. Fartyg, flyg och arbetsmaskiner (makrosektor 8) släppte ut ytterligare 288,6 kt. Italien 1,7 (2023, vägtrafik, Eurostat env_air_gge), Veneto 1,9 ton (2023, egen beräkning ur INEMAR).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_vaxthusgaser_industri_per_inv",
+      "sdg": [
+        9,
+        13
+      ],
+      "name_sv": "Utsläpp från industri per invånare",
+      "value": 0.94,
+      "unit": "ton CO2e/inv",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ARPAV – Regione del Veneto, INEMAR Veneto 2023: emissioni comunali per macrosettore, attività e combustibile",
+        "publisher": "ARPAV / Regione del Veneto",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_emiss_comunali.csv/@@download/file"
+      },
+      "note_sv": "Egen beräkning ur INEMAR Veneto 2023, makrosektor 3 och 4 (förbränning i industrin och processutsläpp): 236,5 kt CO2e / 250 602 invånare. Italien 1,2 (2023, industrins förbränning och processer, Eurostat env_air_gge), Veneto 1,3 ton (2023, egen beräkning ur INEMAR).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_fornybar_el_andel",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Förnybar andel av elförbrukningen (provinsen)",
+      "value": 17.0,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 10AMB016 Energia elettrica da fonti rinnovabili (Terna)",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Förnybar elproduktion i procent av provinsens bruttoförbrukning av el (Terna via ISTAT:s BES dei territori); inom provinsen finns stora fossileldade kraftverk (se nt_vaxthusgaser_energi_per_inv). Italien 36,9 %, Veneto 26,8 % (2023).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_solceller_kw_per_1000",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Installerad solcellseffekt per 1 000 invånare",
+      "value": 236.2,
+      "unit": "kW per 1 000 invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Energia: fonti rinnovabili (DCCV_URBANENV), TPPHKLW1000 och NETEKWH1000",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_8/A.027042+023091+024116+025006+026086+028060+029041+IT+ITD.TPPHKLW1000+NETEKWH1000?startPeriod=2022"
+      },
+      "note_sv": "Effekt i alla solcellsanläggningar i kommunen per 1 000 invånare (140,5 år 2022), omkring 59 MW totalt (egen beräkning); nettoproduktionen var 174,5 kWh per invånare 2024. Italien 272,3 kW i provinshuvudorterna (nordöstra Italiens 402,8); Veneto 239,7–576,5 kW i de övriga sex provinshuvudorterna (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_elanvandning_per_inv",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Elförbrukning från distributionsnätet per invånare",
+      "value": 5.97,
+      "unit": "MWh/inv",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Energia: consumi energetici (DCCV_URBANENV), CELECT100 och CELECTGWH",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_7/A.027042+023091+024116+025006+026086+028060+029041+IT+ITD.CELECT100+CELECTGWH?startPeriod=2022"
+      },
+      "note_sv": "ISTAT anger 51,3 ton oljeekvivalenter per 100 invånare (1 490,8 GWh), högst bland de 14 storstadskommunerna; med 11,63 MWh per ton blir det 5,97 MWh per invånare (egen omräkning). Hushåll och verksamheter ingår; hushållens del redovisas bara i ISTAT:s diagram. Italien 3,94 MWh i provinshuvudorterna; Veneto 2,73–10,04 MWh i de övriga provinshuvudorterna (2024, egen omräkning).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_avfall_per_inv",
+      "sdg": [
+        12
+      ],
+      "name_sv": "Kommunalt avfall per invånare",
+      "value": 694.8,
+      "unit": "kg/inv",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISPRA, Catasto rifiuti: produzione e raccolta differenziata dei rifiuti urbani, Comune di Venezia 2024 (med regionala och nationella CSV)",
+        "publisher": "ISPRA",
+        "url": "https://www.catasto-rifiuti.isprambiente.it/index.php?pg=detComune&aa=2024&regidb=05&nomereg=Veneto&providb=027&nomeprov=Venezia&regid=05027042&nomecom=Venezia&cerca=cerca&&p=1"
+      },
+      "note_sv": "Insamlat kommunalt avfall (rifiuti urbani) per invånare: 173 318 ton 2024, mot 651,7 kg per invånare 2023. Turisterna bidrar till avfallet men inte till nämnaren. Italien 507,9, Veneto 525,0 kg (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_utsortering_andel",
+      "sdg": [
+        12
+      ],
+      "name_sv": "Utsorterat avfall (raccolta differenziata)",
+      "value": 63.7,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISPRA, Catasto rifiuti: produzione e raccolta differenziata dei rifiuti urbani, Comune di Venezia 2024 (med regionala och nationella CSV)",
+        "publisher": "ISPRA",
+        "url": "https://www.catasto-rifiuti.isprambiente.it/index.php?pg=detComune&aa=2024&regidb=05&nomereg=Veneto&providb=027&nomeprov=Venezia&regid=05027042&nomecom=Venezia&cerca=cerca&&p=1"
+      },
+      "note_sv": "Andelen av det kommunala avfallet som samlats in sorterat för återvinning, 110 442 ton 2024 (63,0 % 2023). Lagens mål om 65 % gällde redan från 2012. Italien 67,7 %, Veneto 78,2 % (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_vatten_per_inv",
+      "sdg": [
+        6
+      ],
+      "name_sv": "Levererat dricksvatten per invånare och dygn",
+      "value": 301,
+      "unit": "liter per invånare och dygn",
+      "year": 2022,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Acqua (DCCV_URBANENV), W_SUPPL, W_FEDMUN och W_TOTLOS",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_1/A.027042+023091+024116+025006+026086+028060+029041+IT+ITD.W_SUPPL+W_FEDMUN+W_TOTLOS?startPeriod=2018"
+      },
+      "note_sv": "Vatten levererat för godkända ändamål i det kommunala nätet per invånare och dygn (ISTAT:s vattenräkning 2022); turister och pendlare ingår i förbrukningen men inte i nämnaren. Till nätet matades 517 liter per invånare och dygn. Italien 236 liter i provinshuvudorterna (nordöstra Italiens 215); Veneto 207–255 liter i de övriga provinshuvudorterna (2022).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_vattenforluster",
+      "sdg": [
+        6
+      ],
+      "name_sv": "Vattenförluster i distributionsnätet",
+      "value": 41.7,
+      "unit": "% av inmatat vatten",
+      "year": 2022,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Acqua (DCCV_URBANENV), W_SUPPL, W_FEDMUN och W_TOTLOS",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_1/A.027042+023091+024116+025006+026086+028060+029041+IT+ITD.W_SUPPL+W_FEDMUN+W_TOTLOS?startPeriod=2018"
+      },
+      "note_sv": "Skillnaden mellan inmatat och levererat vatten i kommunens nät, i procent av det inmatade (42,0 % både 2018 och 2020); provinsen 37,9 %. Italien 42,4 %, Veneto 42,2 % (2022, alla kommuner, ISTAT:s BES dei territori).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_bilar_per_1000",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Personbilar per 1 000 invånare",
+      "value": 460,
+      "unit": "bilar per 1 000 invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Mobilità urbana: parco veicolare (DCCV_URBANENV), CPASCAR1000, FULECAR1000 och HYBCAR1000",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_12/A.027042+IT+ITD.CPASCAR1000+FULECAR1000+HYBCAR1000?startPeriod=2022"
+      },
+      "note_sv": "Registrerade personbilar per 1 000 invånare (ISTAT ur ACI:s register; Eurostats stadsstatistik anger 443,85 för samma år). I centro storico finns inga bilgator. Provinshuvudorterna i snitt 651. Italien 701, Veneto 680 (2024, Eurostat tran_r_vehst).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_elbilar_andel",
+      "sdg": [
+        7,
+        11,
+        13
+      ],
+      "name_sv": "Andel elbilar av personbilsbeståndet",
+      "value": 0.82,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Mobilità urbana: parco veicolare (DCCV_URBANENV), CPASCAR1000, FULECAR1000 och HYBCAR1000",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_12/A.027042+IT+ITD.CPASCAR1000+FULECAR1000+HYBCAR1000?startPeriod=2022"
+      },
+      "note_sv": "Helt eldrivna bilar: 8,2 per 1 000 personbilar (6,9 år 2023); hybridbilar 97,7 per 1 000. Provinshuvudorterna i snitt 8,1 per 1 000. Italien 0,68 %, Veneto 0,71 % (2024, Eurostat tran_r_elvehst).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_kollektivtrafik_platskm",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Utbud i kollektivtrafiken (platskilometer per invånare)",
+      "value": 9950,
+      "unit": "platskilometer per invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Mobilità urbana: trasporto pubblico locale (DCCV_URBANENV), TOFTKM, ODELWSEATKM och TOTDEPC",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_13/A.027042+023091+024116+025006+026086+028060+029041+IT+ITD.TOFTKM+TOFTKMMIL+ODELWSEATKM+SEATKMWATMIL+TOTDEPC+LOCTP?startPeriod=2022"
+      },
+      "note_sv": "Platskilometer i buss, spårvagn och båt per invånare: 2 486,5 miljoner platskilometer 2024 (10 522 per invånare 2023), varav 4 354 per invånare på vattnet. Italien 4 699 i provinshuvudorterna (2024); Veneto 5 144 i provinshuvudorterna (2023, BES).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_kollektivtrafik_resor",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Resor med kollektivtrafik per invånare",
+      "value": 707.5,
+      "unit": "resor per invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Mobilità urbana: trasporto pubblico locale (DCCV_URBANENV), TOFTKM, ODELWSEATKM och TOTDEPC",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_13/A.027042+023091+024116+025006+026086+028060+029041+IT+ITD.TOFTKM+TOFTKMMIL+ODELWSEATKM+SEATKMWATMIL+TOTDEPC+LOCTP?startPeriod=2022"
+      },
+      "note_sv": "Påstigningar i kollektivtrafiken per invånare: 176,8 miljoner resor 2024; turister och pendlare står för en stor del men nämnaren är bara de folkbokförda. Italien 176,4 i provinshuvudorterna (nordöstra Italiens 193,6); Veneto 12,0–178,9 i de övriga provinshuvudorterna (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_vattenburen_kollektivtrafik",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Kollektivtrafik på vatten (platskilometer per invånare)",
+      "value": 4354,
+      "unit": "platskilometer per invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Mobilità urbana: trasporto pubblico locale (DCCV_URBANENV), TOFTKM, ODELWSEATKM och TOTDEPC",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_13/A.027042+023091+024116+025006+026086+028060+029041+IT+ITD.TOFTKM+TOFTKMMIL+ODELWSEATKM+SEATKMWATMIL+TOTDEPC+LOCTP?startPeriod=2022"
+      },
+      "note_sv": "Vaporetto- och färjetrafikens utbud: 1 088 miljoner platskilometer 2024, 44 % av stadens kollektivtrafik och 98 % av all vattenburen kollektivtrafik i Italiens provinshuvudorter (egen beräkning: 1 088 / 1 106). Italien 63 i provinshuvudorterna (nordöstra Italiens 341); Veneto: ingen annan provinshuvudort har sådan trafik (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_cykelvag_per_inv",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Cykelväg per invånare",
+      "value": 0.76,
+      "unit": "meter/inv",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Mobilità urbana: mobilità sostenibile (DCCV_URBANENV), BILANESKM och BILANES100KM",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_11/A.027042+023091+024116+025006+026086+028060+029041+IT+ITD.BILANESKM+BILANES100KM?startPeriod=2022"
+      },
+      "note_sv": "Egen beräkning: 190 km cykelbanor (ISTAT) / 249 490 invånare = 0,76 m; de ligger på fastlandet och Lido, i centro storico är cykling inte tillåten. Tätheten är 45,4 km per 100 km² kommunyta. Italien 31,3 km per 100 km² i provinshuvudorterna; Veneto 18,3–219,3 i de övriga provinshuvudorterna (2024).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_gronyta_per_inv",
+      "sdg": [
+        11,
+        15
+      ],
+      "name_sv": "Offentliga grönytor per invånare",
+      "value": 48.6,
+      "unit": "m² per invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Verde urbano: disponibilità (DCCV_URBANENV), AVURSQM och AVUSURSQM",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_19/A.027042+IT+ITD.AVURSQM+AVUSURSQM?startPeriod=2022"
+      },
+      "note_sv": "Förvaltade urbana grönytor (parker, trädgårdar, idrottsytor, stadsskog m.m.) per invånare; 33,8 m² är tillgängliga för allmänheten. Lagunens naturområden räknas inte. Italien 33,7 m² i provinshuvudorterna (2024); Veneto 36,8 m² i provinshuvudorterna (2023, BES).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_skyddad_natur_andel",
+      "sdg": [
+        14,
+        15
+      ],
+      "name_sv": "Skyddad natur, andel av kommunens yta",
+      "value": 62.4,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Verde urbano: densità (DCCV_URBANENV), DPROPINC och TDGREARPINC",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_18/A.027042+IT+ITD.DPROPINC+TDGREARPINC?startPeriod=2022"
+      },
+      "note_sv": "Naturskyddade områden (Natura 2000 och nationellt listade) i procent av kommunens yta, främst lagunen; med stadens grönytor 65,3 %. Provinsen 23,7 % (2022, bara landyta). Italien 16,8 % i provinshuvudorterna (2024); för hela landet och Veneto 21,7 % respektive 22,7 % (2022, BES, bara landyta).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_markanvandning_exploaterad_andel",
+      "sdg": [
+        11,
+        15
+      ],
+      "name_sv": "Exploaterad mark (consumo di suolo), andel av ytan",
+      "value": 17.2,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISPRA, Consumo di suolo – estratto dati 2025 (anni 2006–2024): Comuni, Province, Regioni",
+        "publisher": "ISPRA",
+        "url": "https://www.isprambiente.gov.it/it/attivita/suolo-e-territorio/suolo/il-consumo-di-suolo/consumo_di_suolo_estratto_dati_2025_anni_2006_2024.xlsx"
+      },
+      "note_sv": "Mark som tagits i anspråk av byggnader, vägar och andra artificiella ytor: 7 164 ha, 17,2 % av kommunens hela yta inklusive lagunen; provinsen 14,1 %. Italien 7,17 %, Veneto 11,86 % (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_markanvandning_okning",
+      "sdg": [
+        15
+      ],
+      "name_sv": "Nyexploaterad mark senaste året",
+      "value": 64.2,
+      "unit": "hektar",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISPRA, Consumo di suolo – estratto dati 2025 (anni 2006–2024): Comuni, Province, Regioni",
+        "publisher": "ISPRA",
+        "url": "https://www.isprambiente.gov.it/it/attivita/suolo-e-territorio/suolo/il-consumo-di-suolo/consumo_di_suolo_estratto_dati_2025_anni_2006_2024.xlsx"
+      },
+      "note_sv": "Nettoökning 2023–2024 (65,2 ha nyexploaterat, 1,0 ha återställt), den största ettårsökningen sedan de årliga mätningarna började 2015; 486 ha netto 2006–2024 (egen summering). Italien 7 850 ha, Veneto 655 ha (2023–2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_oversvamningsrisk_befolkning",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Invånare i områden med medelhög översvämningsrisk",
+      "value": 24.7,
+      "unit": "% av invånarna",
+      "year": 2021,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISPRA, IdroGEO – indicatori di rischio idrogeologico: Comune di Venezia, Regione Veneto och Italia",
+        "publisher": "ISPRA",
+        "url": "https://idrogeo.isprambiente.it/api/pir/comuni/27042"
+      },
+      "note_sv": "Andelen invånare (folkräkningen 2021) i områden med medelhög sannolikhet för översvämning (scenario P2, återkomsttid 100–200 år) enligt ISPRA:s nationella sammanställning av bassängplanerna: 64 592 personer; i områden med låg sannolikhet (P1) bor 83,9 %. Italien 11,5 %, Veneto 11,7 % (2021).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_pm10_overskridandedygn",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Dygn med PM10 över gränsvärdet (sämsta mätstationen)",
+      "value": 61,
+      "unit": "dygn",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Qualità dell'aria: valori di concentrazione e numero di superamenti (DCCV_URBANENV)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_4/A.027042+023091+024116+025006+026086+028060+029041.MAXDPM10+HIGDPM10+HIGMEANNO2?startPeriod=2022"
+      },
+      "note_sv": "Antal dygn med PM10 över 50 µg/m³ vid stadens sämsta fasta mätstation; EU tillåter 35 per år. 70 dygn 2022 och 62 år 2023. Italien: inget riksvärde för måttet; Veneto 8–66 dygn i de övriga sex provinshuvudorterna (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_pm10_arsmedel",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Årsmedelvärde PM10 (sämsta mätstationen)",
+      "value": 31,
+      "unit": "µg/m³",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Qualità dell'aria: valori di concentrazione e numero di superamenti (DCCV_URBANENV)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_4/A.027042+023091+024116+025006+026086+028060+029041.MAXDPM10+HIGDPM10+HIGMEANNO2?startPeriod=2022"
+      },
+      "note_sv": "Högsta årsmedelvärdet av PM10 bland stadens fasta mätstationer (34 år 2022). EU:s gränsvärde är 40 µg/m³ i dag och 20 µg/m³ från 2030; WHO rekommenderar 15. Italien: inget riksvärde för måttet; Veneto 21–35 µg/m³ i de övriga provinshuvudorterna (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_no2_arsmedel",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Årsmedelvärde NO2 (sämsta mätstationen)",
+      "value": 35,
+      "unit": "µg/m³",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Dati ambientali nelle città – Qualità dell'aria: valori di concentrazione e numero di superamenti (DCCV_URBANENV)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/609_1_DF_DCCV_URBANENV_4/A.027042+023091+024116+025006+026086+028060+029041.MAXDPM10+HIGDPM10+HIGMEANNO2?startPeriod=2022"
+      },
+      "note_sv": "Högsta årsmedelvärdet av kvävedioxid bland stadens fasta mätstationer (37 år 2022). EU:s gränsvärde är 40 µg/m³ i dag och 20 µg/m³ från 2030; WHO rekommenderar 10. Italien: inget riksvärde för måttet; Veneto 20–30 µg/m³ i de övriga provinshuvudorterna (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_anmalda_brott_per_100000",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Anmälda brott per 100 000 invånare",
+      "value": 9091.8,
+      "unit": "brott per 100 000 invånare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, Delitti denunciati dalle forze di polizia all'autorità giudiziaria: tasso di delittuosità – grandi comuni (DCCV_DELITTIPS)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/73_67_DF_DCCV_DELITTIPS_8/A.027042.CRIMET.TOT..?startPeriod=2021"
+      },
+      "note_sv": "Brott som polisen anmält till åklagare, per 100 000 folkbokförda (8 669,6 år 2023 och 5 534,4 år 2021); talet blir högt eftersom brott mot de många besökarna räknas mot en liten befolkning. Italien 4 069,6, Veneto: ej hämtat (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_fickstolder_per_100000",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Anmälda fickstölder per 100 000 invånare (provinsen)",
+      "value": 806.5,
+      "unit": "anmälningar per 100 000 invånare",
+      "year": 2023,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 07SIC005P Denunce di borseggio",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Anmälningar om fickstöld i provinsen per 100 000 invånare (ISTAT ur inrikesministeriets register SDI), mer än tre gånger riksnivån. Inbrott i bostäder: 347,9 (Italien 250,3, Veneto 327,6). Italien 236,8, Veneto 237,4 (2023).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_valdeltagande_kommunval",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i kommunvalet",
+      "value": 55.9,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Ministero dell'Interno, Eligendo – Archivio storico delle elezioni: Comunali 24 maggio 2026, Venezia",
+        "publisher": "Ministero dell'Interno (DAIT)",
+        "url": "https://elezionistorico.interno.gov.it/index.php?tpel=G&dtel=24/05/2026&tpa=I&tpe=C&lev0=0&levsut0=0&lev1=5&levsut1=1&lev2=87&levsut2=2&levsut3=3&ne1=5&ne2=87&es0=S&es1=S&es2=S&es3=S&ms=S&ne3=870420&lev3=420"
+      },
+      "note_sv": "112 767 av 201 713 röstberättigade röstade i kommunvalet 24–25 maj 2026, där borgmästaren valdes redan i första omgången; 2020 var deltagandet 62,23 %. Röstlängden omfattar även italienare som bor utomlands, vilket sänker andelen. Italien och Veneto: kommunvalen hålls inte samtidigt överallt, så inget jämförbart värde finns (2026).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_valdeltagande_parlamentsval",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i parlamentsvalet (deputeradekammaren)",
+      "value": 66.29,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Ministero dell'Interno, Eligendo – Archivio storico delle elezioni: Camera 25 settembre 2022, Venezia",
+        "publisher": "Ministero dell'Interno (DAIT)",
+        "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=25/09/2022&tpa=I&tpe=C&lev0=0&levsut0=0&lev1=7&levsut1=1&lev2=1&levsut2=2&lev3=1&levsut3=3&levsut4=4&ne1=7&ne2=71&ne3=711&es0=S&es1=S&es2=S&es3=S&es4=N&ms=S&ne4=110870420&lev4=870420"
+      },
+      "note_sv": "124 105 av 187 202 röstberättigade i kommunen röstade i valet till deputeradekammaren 25 september 2022 (röstberättigade utomlands ingår inte). Italien 63,91 %, Veneto 70,17 % (2022; Venetos värde är en egen sammanräkning av valkretsarna Veneto 1 och 2).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_valdeltagande_europaval",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i Europaparlamentsvalet",
+      "value": 47.04,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Ministero dell'Interno, Eligendo – Archivio storico delle elezioni: Europee 9 giugno 2024, Venezia",
+        "publisher": "Ministero dell'Interno (DAIT)",
+        "url": "https://elezionistorico.interno.gov.it/index.php?tpel=E&dtel=09/06/2024&tpa=I&tpe=C&lev0=0&levsut0=0&lev1=2&levsut1=1&lev2=5&levsut2=2&lev3=87&levsut3=3&levsut4=4&ne1=2&ne2=5&ne3=87&es0=S&es1=S&es2=S&es3=S&es4=S&ms=S&ne4=870420&lev4=420"
+      },
+      "note_sv": "92 711 av 197 090 röstberättigade röstade i Europaparlamentsvalet 8–9 juni 2024, det senaste val som hållits i hela landet; provinsen 48,90 %. Italien 49,69 %, Veneto 52,60 % (2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "nt_kvinnor_kommunfullmaktige",
+      "sdg": [
+        5,
+        16
+      ],
+      "name_sv": "Andel kvinnor i kommunfullmäktige (consiglio comunale)",
+      "value": 33.3,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Ministero dell'Interno (DAIT), Anagrafe degli amministratori locali: amministratori comunali in carica al 24/08/2026, provincia di Venezia (och ammcom.csv för hela Italien)",
+        "publisher": "Ministero dell'Interno (DAIT)",
+        "url": "https://dait.interno.gov.it/documenti/provincia_di_venezia.csv"
+      },
+      "note_sv": "Egen räkning i inrikesministeriets register: 12 kvinnor bland de 36 ledamöter som valdes i maj 2026 (borgmästaren, en man, oräknad); i kommunstyrelsen (giunta) är 4 av 10 assessori kvinnor. Italien 35,4 %, Veneto 37,9 % av kommunfullmäktigeledamöterna (augusti 2026, egen räkning i samma register).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "nt_bredband_ftth",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Hushåll med tillgång till fiber (FTTH, provinsen)",
+      "value": 67.3,
+      "unit": "% av hushållen",
+      "year": 2024,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "ISTAT, BES dei territori – edizione 2025 (Indicatori_per_provincia_sesso_ed.2025.xlsx), 12SER020 Copertura della rete fissa di accesso ultra veloce a internet (Agcom)",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Andelen familjer i provinsen som bor där en fiberanslutning hela vägen till bostaden (FTTH) finns, enligt ISTAT:s bearbetning av Agcoms bredbandskarta. Italien 70,7 %, Veneto 64,9 % (2024).",
+      "confidence": "high"
+    }
+  ]
+}

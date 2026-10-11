@@ -1,0 +1,284 @@
+{
+  "indicators": {
+    "en_elanvandning_distributionsnat": {
+      "name": "Electricity use by customers connected to the distribution grid in the Municipality of Venice",
+      "unit": "GWh/year",
+      "note": "ISTAT gives 128,208 tonnes of oil equivalent (toe); with ISTAT's factor of 86 toe per GWh this is 1,491 GWh, of which households 289 GWh and other users 1,202 GWh. Users connected directly to the transmission grid – probably the largest plants in Porto Marghera – are not included. In 2005 the figure was 275,373 toe, about 3,200 GWh."
+    },
+    "en_el_per_invanare": {
+      "name": "Electricity use per inhabitant (distribution grid)",
+      "unit": "kWh/inhabitant/year",
+      "note": "ISTAT: 51.3 toe per 100 inhabitants, the highest of Italy's 14 metropolitan cities; converted at 86 toe per GWh ≈ 5,970 kWh. The average of the 109 provincial capitals is 33.9 toe (≈ 3,940 kWh), of the north-eastern capitals 43.3 (≈ 5,030 kWh), and for all of Italy 41.9 toe per 100 inhabitants (Terna, ≈ 4,870 kWh). Use by hotels, shops and workplaces is divided here among residents, which probably explains part of the high figure."
+    },
+    "en_el_hushall_per_invanare": {
+      "name": "Household electricity use per inhabitant",
+      "unit": "kWh/inhabitant/year",
+      "note": "ISTAT: 9.95 toe per 100 inhabitants in 2024 (9.20 in 2023), converted ≈ 1,160 kWh. The provincial capitals average 9.24 toe (≈ 1,070 kWh) and the north-eastern capitals 9.36 (≈ 1,090 kWh); the 2024 rise follows a national increase after the record low of 2023."
+    },
+    "en_naturgas_per_invanare": {
+      "name": "Natural gas from the distribution grid per inhabitant",
+      "unit": "m³/inhabitant/year",
+      "note": "ISTAT: 58.9 toe per 100 inhabitants and 147,308 toe in total; with ISTAT's factor of 0.819 toe per 1,000 m³ ≈ 720 m³ per inhabitant and ≈ 180 million m³. The provincial capitals average ≈ 440 m³ and the north-eastern capitals ≈ 730 m³ per inhabitant. In 2005 the value was ≈ 1,050 m³."
+    },
+    "en_el_andel_av_el_och_gas": {
+      "name": "Electricity's share of combined electricity and natural gas use",
+      "unit": "%",
+      "note": "Electricity as a share of electricity plus natural gas, counted in toe; 41.8% in 2021. The provincial capitals are at 48.4% and the north-eastern capitals at 42.0%. A rough measure of how far heating and cooking have been electrified."
+    },
+    "en_solceller_effekt": {
+      "name": "Installed solar photovoltaic capacity in the municipality",
+      "unit": "MW",
+      "note": "5,284 installations averaging 11.2 kW, or 236 kW per 1,000 inhabitants against 272 in the provincial capitals. Capacity has almost doubled since 2021 (30.1 MW). No source splits the historic city from the mainland."
+    },
+    "en_solel_produktion": {
+      "name": "Net solar electricity generation in the municipality",
+      "unit": "GWh/year",
+      "note": "174.5 kWh per inhabitant against 269.3 in the provincial capitals. 52% of the solar power is used where it is produced (provincial capitals 32%). All installations in the municipality are included, per GSE."
+    },
+    "en_solel_andel_av_elanvandning": {
+      "name": "Local solar electricity relative to electricity use in the distribution grid",
+      "unit": "%",
+      "note": "43.6 GWh of solar power / 1,491 GWh of electricity = 2.9%. An annual balance; large industry connected to the transmission grid is not in the denominator."
+    },
+    "en_laddpunkter_publika": {
+      "name": "Public charging points for electric cars",
+      "unit": "charging points",
+      "note": "144 standard-power (up to 22 kW) and 52 high-power points, against 82 in 2022 and 2023. ISTAT notes that at least one 2024 value is estimated, and does not say where in the municipality the points are."
+    },
+    "en_bostader_naturgas_andel": {
+      "name": "Natural gas share of residential energy use (base year 2005)",
+      "unit": "%",
+      "note": "1,794,931 of 2,148,488 MWh; electricity 14.6%, heating oil 1.3% and LPG 0.6%. No newer split for the municipality was found; in north-east Italy 86.6% of households have their own boiler or other individual system and 13.7% central heating (ISTAT 2024)."
+    },
+    "en_co2_basinventering_2005": {
+      "name": "Carbon dioxide emissions in the municipality's baseline inventory (SEAP, 2005)",
+      "unit": "tonnes CO2/year",
+      "note": "5.54 tonnes per inhabitant. Residential 524,145 t, commerce and services 512,859 t, transport 424,350 t (of which public transport 42,792 t), municipal buildings 21,421 t and street lighting 11,968 t. Installations in the EU Emissions Trading System – the power plants and refineries of Porto Marghera – are not included."
+    },
+    "en_co2_uppfoljning_2016": {
+      "name": "Carbon dioxide emissions in the municipality's monitoring inventory (2016)",
+      "unit": "tonnes CO2/year",
+      "note": "Sum of the sector values the municipality reported to the Covenant of Mayors: residential 360,552 t, services 440,356 t, transport 178,910 t and municipal buildings and lighting 24,311 t. That is 32.8% below 2005 (1,494,744 t) and 3.83 tonnes per inhabitant (261,905 inhabitants). The municipality itself states that the −20% target for 2020 was met (council decision 29/2020); the fall in transport (−58%) is probably partly a change of method."
+    },
+    "en_co2_per_inv_bostader": {
+      "name": "Residential carbon dioxide per inhabitant",
+      "unit": "tonnes CO2/inhabitant/year",
+      "note": "360,552 t (266,175 t from fuels and 94,377 t from electricity) / 261,905 inhabitants = 1.38 t. In 2005 it was 524,145 t / 269,780 = 1.94 t."
+    },
+    "en_co2_per_inv_tjanster": {
+      "name": "Carbon dioxide from commerce, services and public buildings per inhabitant",
+      "unit": "tonnes CO2/inhabitant/year",
+      "note": "440,356 t (213,349 t from fuels and 227,007 t from electricity) / 261,905 inhabitants = 1.68 t. In 2005 it was 512,859 t / 269,780 = 1.90 t; of the three large sectors it fell least, −14%."
+    },
+    "en_co2_per_inv_transporter": {
+      "name": "Transport carbon dioxide per inhabitant (Covenant of Mayors scope)",
+      "unit": "tonnes CO2/inhabitant/year",
+      "note": "178,910 t / 261,905 inhabitants = 0.68 t; in 2005 it was 424,350 t / 269,780 = 1.57 t. The 2005 value was based on all fuel sold in the municipality, including the motorway stations around Mestre, and on ACTV's fuel use for buses and boats; the 58% fall in transport is probably partly a change of method."
+    },
+    "en_paesc_mal_2030": {
+      "name": "The climate plan's (SECAP) emission reduction target for 2030",
+      "unit": "% reduction from 2005",
+      "note": "The plan aims at −72% by 2030 through 33 mitigation actions, plus 46 adaptation actions, with climate neutrality by 2050. The municipality joined the Covenant of Mayors in 2020 with at least −40%, raised it to −55% in 2021, and the C40 Deadline 2020 pathway gives −68.9%. The council's committees examined the plan in January–February 2026 (proposal 2025/1070)."
+    },
+    "en_co2_alla_kallor_inemar": {
+      "name": "All carbon dioxide emitted within the municipality according to Veneto's emission inventory",
+      "unit": "kilotonnes CO2/year",
+      "note": "Power generation and refining in Porto Marghera account for 70% (2,813 kt), coal boilers alone for 1,649 kt. Without them ≈ 1,219 kt remain, or ≈ 4.9 tonnes per inhabitant with 249,490 inhabitants (1 January 2025); all emissions in Veneto amount to ≈ 4.8 tonnes per inhabitant (own calculations). Unlike the SEAP, this counts everything emitted in the municipality, including for electricity sold to the grid."
+    },
+    "en_co2_kolkraft_fusina": {
+      "name": "Carbon dioxide from coal-fired power boilers in the municipality (Fusina)",
+      "unit": "kilotonnes CO2/year",
+      "note": "INEMAR reports 1,649 kt CO2, 703 t NOx and 445 t SO2 from coal boilers above 300 MW, in practice Enel's Andrea Palladio power station at Fusina. Enel has applied to replace the coal units with a gas unit (environmental assessment at the ministry, ID 5147) and plans solar panels and battery storage on freed land; no end date for coal was found. Coal and lignite traffic in the port fell by 43% in 2024."
+    },
+    "en_nox_andel_batar_fartyg": {
+      "name": "Boats' and ships' share of the municipality's nitrogen oxide emissions",
+      "unit": "%",
+      "note": "Motorboats in the lagoon (inland waterways) emitted 898 tonnes of NOx and ships in the port (maritime traffic) 2,009 tonnes out of the municipality's 6,226 tonnes: 14.4% + 32.3% = 46.7%. Road traffic accounted for 11.2% and aviation (take-off and landing) for 6.9%. Across Veneto the shares for boats and ships are 2.4% and 4.1%."
+    },
+    "en_pm10_andel_batar_fartyg": {
+      "name": "Boats' and ships' share of the municipality's PM10 emissions",
+      "unit": "%",
+      "note": "Lagoon boats emitted 101 tonnes and ships 54 tonnes out of 397 tonnes of PM10: 25.5% + 13.6% = 39.1%. Residential heating, mainly wood, accounts for 30.9% and road traffic for 14.0%. Venice produces 73% of Veneto's PM10 from inland waterways."
+    },
+    "en_nox_lagunbatar": {
+      "name": "Nitrogen oxides from motorboat traffic in the lagoon",
+      "unit": "tonnes NOx/year",
+      "note": "INEMAR's item \"vie di navigazione interne\" (motorboats, \"imbarcazioni private\"): 842 tonnes from diesel boats and 56 tonnes from petrol boats. The same boats emitted 101 tonnes of PM10 and 76 kt of CO2 in 2023."
+    },
+    "en_bioraffinaderi_kapacitet": {
+      "name": "Capacity of Eni's biorefinery in Porto Marghera",
+      "unit": "tonnes of feedstock/year",
+      "note": "The world's first oil refinery fully converted into a biorefinery (2014). About 85% of the feedstock is waste such as used cooking oil and animal fat; the products are HVO diesel, bio-LPG, bio-jet fuel and bio-naphtha. Capacity is being raised to 600,000 tonnes a year, including sustainable aviation fuel (SAF); Eni is investing over €900 million in Porto Marghera in all (May 2026)."
+    },
+    "en_vatgas_elektrolys": {
+      "name": "Green hydrogen electrolyser under construction in Porto Marghera",
+      "unit": "MW",
+      "note": "Built by Eni and Magis; the hydrogen is meant, among other uses, for a refuelling station for public transport buses. The municipal climate plan foresees a \"hydrogen valley\" in Porto Marghera, and Eni has 6.2 MW of solar panels at two sites in the area."
+    },
+    "en_landstrom_investering": {
+      "name": "State funding for shore power at the quays of Venice and Marghera",
+      "unit": "million euro",
+      "note": "€57.6 million for Fusina and Canale Nord in Marghera and €32.2 million for Marittima, Santa Marta–San Basilio and Riva dei Sette Martiri, from the national fund complementing the PNRR (€700 million for shore power across Italy). The Marittima contract (€18.3 million) was signed on 6 June 2024; the grid is to supply 4 MW to Santa Marta–San Basilio and 2 MW to Riva dei Sette Martiri (decision 2024.0000138)."
+    },
+    "en_till_fots_in_i_staden": {
+      "name": "Share who walk into the historic city from Piazzale Roma, Tronchetto and the railway station",
+      "unit": "%",
+      "note": "Of about 100,000 people who reach the Tronchetto–Piazzale Roma–Santa Lucia hub on an ordinary weekday, 64,500 continue on foot and 33,000 by vaporetto (the plan rounds to 65% and 35%). The figure covers trips into the city, not all trips within it; no travel survey for the historic city was found."
+    },
+    "en_ankomster_knutpunkt_per_dag": {
+      "name": "People reaching the historic city via Tronchetto–Piazzale Roma–Santa Lucia on an ordinary weekday",
+      "unit": "people/day",
+      "note": "Surveys for the PUMS mobility plan in 2019, cleaned of events and peak days and with the universities in session; the figure therefore does not describe peak days in high season."
+    },
+    "en_ponte_liberta_bilar": {
+      "name": "Cars and light vehicles crossing the Ponte della Libertà per day",
+      "unit": "vehicles/day",
+      "note": "Over 30,000 light vehicles, 5,000 heavy vehicles (of which 1,800 buses), 100 trams and 370 trains a day; the plan calls the bridge a vulnerable umbilical cord between the mainland and Venice. More than 100,000 vehicles a day use the central section of the Mestre bypass."
+    },
+    "en_garage_piazzale_roma": {
+      "name": "Cars entering the municipal car park at Piazzale Roma",
+      "unit": "entries/year",
+      "note": "Entries to the Garage Comunale (season tickets excluded), on average ≈ 720 a day and most in August (31,795); 258,896 in 2019. The Sant'Andrea car park on the same square had another 119,592 entries."
+    },
+    "en_broar_historiska_staden": {
+      "name": "Bridges linking the islands of the historic city",
+      "unit": "bridges",
+      "note": "The Iuav researchers give \"over 430 bridges\" between \"more than 120 islands\"; the municipality's own accessibility guide says \"over 420 bridges\" and about 100 islands. Counts differ between sources depending on whether private bridges are included."
+    },
+    "en_broar_modellomrade": {
+      "name": "Bridges in the model's square (1.8 × 1.8 km)",
+      "unit": "bridges",
+      "note": "Own count of bridge outlines (man_made=bridge) with their centre inside 45.4269–45.4431 N and 12.3260–12.3490 E. OpenStreetMap is mapped by volunteers and may be incomplete."
+    },
+    "en_broar_med_trappor_andel": {
+      "name": "Share of bridges in the model's square with steps",
+      "unit": "%",
+      "note": "232 of 244 bridge outlines carry a path with steps (highway=steps): 223 steps only and 9 also a ramp or wheelchair tag; 5 have no steps and 7 no mapped path. 232 / 244 = 95.1%."
+    },
+    "en_tillganglig_yta_med_vaporetto": {
+      "name": "Share of the historic city's area a wheelchair user can reach by vaporetto",
+      "unit": "%",
+      "note": "Without boats a wheelchair user can \"barely visit 2%\" of the city, around the terminals; with the vaporetti and the more than 55 step-free landing stages \"almost 70%\". The text is undated but refers to the PEBA accessibility plan of late 2004 (pdf created 2007); the PEBA was updated in 2020 (decision 68/2020) and the stairlifts on bridges are being removed."
+    },
+    "en_kollektivtrafik_resor": {
+      "name": "Public transport trips in the municipality (vaporetto, bus, tram and People Mover)",
+      "unit": "million trips/year",
+      "note": "707.5 trips per inhabitant, the most in Italy (Milan 429.9, provincial capitals 176.4). In 2019 there were 218.9 million, so ridership is 19% below the pre-pandemic level. ISTAT does not split trips between water and land; tourists' trips are counted but not in the population."
+    },
+    "en_vattenburen_kollektivtrafik_andel": {
+      "name": "Waterborne public transport's share of supply (seat-kilometres)",
+      "unit": "%",
+      "note": "1,088 million seat-kilometres on water in 2024, or 4,354 per inhabitant; bus 49.0% and tram 6.8%. Venice accounts for 98% of all waterborne public transport in Italy's provincial capitals (1,088 of 1,106 million seat-km, own calculation)."
+    },
+    "en_actv_linjer_vatten": {
+      "name": "Vaporetto and ferry lines in the ACTV network",
+      "unit": "lines",
+      "note": "The network covers the Grand Canal, the Giudecca Canal, the Bacino di San Marco and the lagoon islands from Treporti to Chioggia, with two car-ferry lines (Tronchetto–Lido and Lido–Pellestrina). ACTV's open timetable data from October 2026 has 24 lines and 152 berths."
+    },
+    "en_actv_turer_per_vardag": {
+      "name": "ACTV boat departures on an ordinary weekday",
+      "unit": "trips/day",
+      "note": "Counted for Wednesday 14 October 2026, both directions. Line 1 along the Grand Canal has 177 trips and line 2 has 172, the short 2/ (Piazzale Roma–Rialto) 29 and the night line N 39; the lagoon lines 11 (Pellestrina–Chioggia) and 12 (Fondamente Nove–Burano–Punta Sabbioni) have 132 and 126."
+    },
+    "en_actv_flotta_vatten": {
+      "name": "ACTV's fleet for waterborne passenger service",
+      "unit": "vessels",
+      "note": "On 31 December 2023: 62 vaporetti (motobattelli), 51 motoscafi, 20 larger lagoon boats (motobattelli foranei), 7 motonavi, 7 car ferries and 1 experimental electric boat (E1); together 459,000 engine hours a year. Of the vaporetti, 38 were built in 1974–1988 and the newest 10 in 2010 (Gente Veneta, May 2024)."
+    },
+    "en_actv_hybridfartyg": {
+      "name": "Hybrid-powered vaporetti in service",
+      "unit": "vessels",
+      "note": "MotoBattello 3 (series 80, Grand Canal) was converted to a series hybrid with a diesel generator, LFP batteries and a 147 kW electric motor and trialled in service in 2025; bench tests gave −26% NOx, −31% particulates and −28% emissions overall. ACTV's plan (Carta della Mobilità 2024) includes 4 more conversions, 18 new hybrid vaporetti and 7 hybrid larger lagoon boats by 2029."
+    },
+    "en_vattentaxi_licenser": {
+      "name": "Water taxi licences",
+      "unit": "licences",
+      "note": "Of the municipality's 371 taxi licences, 251 are for water taxis (unchanged 2022–2024) and the rest for road taxis; 14.8 licences per 10,000 inhabitants against 13.1 in the provincial capitals. During the speed-monitoring trial in summer 2025 taxi boats accounted for half of the violations (Il Post)."
+    },
+    "en_gondol_licenser": {
+      "name": "Gondola service licences",
+      "unit": "licences",
+      "note": "The regulation sets 440 licences, a number the municipality may change. A licence is personal and tied to a gondola station (stazio); it can be transferred to a registered substitute, and in a family business the family member has first right. New substitutes are trained in the municipality's \"Arte del Gondoliere\" course."
+    },
+    "en_fartmatning_sensorer": {
+      "name": "Speed-measuring sensors for boats in the city's canals",
+      "unit": "sensors",
+      "note": "The Si.Sa. system (\"barcavelox\") measures boat speeds on the Grand Canal, the Giudecca Canal, at Piazzale Roma and San Marco; fines (at least €138) from 1 August 2025 after a trial from 1 June with about 150 violations a day. Limits are 5–20 km/h depending on the zone. The figures come from a news article; the municipal decision was not found."
+    },
+    "en_batpassager_punta_salute": {
+      "name": "Boat passages per day at Punta della Salute, the mouth of the Grand Canal",
+      "unit": "passages/day",
+      "note": "Counts in July–August 2001 (12 days, 7 am–9 pm, 30 stations): on average about 4,000 passages a day at Punta della Salute on weekdays and holidays alike, against 511 (weekday) and 1,109 (holiday) per station elsewhere in the lagoon. On a Sunday in July passages there rose from 1,649 (1998) to 3,302 (2001), mainly taxi boats. No newer published counts for the Grand Canal were found."
+    },
+    "en_tag_avgangar_santa_lucia": {
+      "name": "Train departures from Venezia Santa Lucia on an ordinary weekday",
+      "unit": "departures/day",
+      "note": "Own count for Wednesday 14 October 2026 in RFI's official timetable: 263–283 departures depending on how the running-day notes are read, and 267–289 arrivals. Of the departures 49 are high-speed trains (Frecciarossa and Italo, train numbers 8000–9999); the station has 23 tracks."
+    },
+    "en_tag_restid_milano": {
+      "name": "Fastest train Venezia Santa Lucia–Milano Centrale",
+      "unit": "minutes",
+      "note": "Frecciarossa 2 h 27 min (e.g. 06:48–09:15) and Italo 2 h 28 min; 22 direct trains on a weekday in October 2026. Mestre is 10 minutes away and Padua 26."
+    },
+    "en_tag_restid_roma": {
+      "name": "Fastest train Venezia Santa Lucia–Roma Termini",
+      "unit": "minutes",
+      "note": "Frecciarossa 9405, 07:26–11:22 (3 h 56 min); fastest Italo 4 h 00 min; 25 direct trains on a weekday. Florence is 2 h 13 min away and Bologna 1 h 33 min."
+    },
+    "en_flygplats_passagerare": {
+      "name": "Passengers at Venice Marco Polo airport",
+      "unit": "passengers/year",
+      "note": "+2.2% on 2024 and 2.5% above 2019 (11,561,594). 9.45 million travelled internationally and 2.37 million domestically, with 87,597 aircraft movements. The airport is at Tessera within the municipality; take-offs and landings emitted 428 tonnes of NOx in 2023 (INEMAR)."
+    },
+    "en_kryssning_passagerare": {
+      "name": "Cruise passengers in the port of Venice",
+      "unit": "passengers/year",
+      "note": "+6.7% on 2024 (547,587) but 36% of 2019, when 1,611,341 passengers came on 500 calls. Since 1 August 2021 large ships may not pass through the Bacino di San Marco, the San Marco canal and the Giudecca Canal, and the state then set aside €157 million for temporary berths in Marghera."
+    },
+    "en_pendlingsresor_utbyte": {
+      "name": "Commuting trips to and from the municipality for work and study",
+      "unit": "trips/day",
+      "note": "Over 70,000 trips according to the 2011 census: half to and from the 13 neighbouring municipalities and 22% beyond the metropolitan area. More than half of the drivers leaving the motorway at Mestre return through the same junction the same day, a sign of commuting."
+    },
+    "en_dagsbesokare_avgift": {
+      "name": "Paying day visitors per fee day (the access fee)",
+      "unit": "people/fee day",
+      "note": "Average over the 54 fee days of April–July 2025 (8:30 am–4 pm, payments through the platform); 723,497 paid entries in all against 485,062 over 29 days in 2024. The record was Friday 2 May 2025 with 24,951. Hotel guests, who do not pay, averaged 36,639 a day."
+    },
+    "en_bilar_per_1000_inv": {
+      "name": "Cars per 1,000 inhabitants",
+      "unit": "cars/1,000 inhabitants",
+      "note": "The lowest of Italy's provincial capitals (Frosinone highest at 856); Italy 701, provincial capitals 651, metropolitan cities 612 and the EU 578. The figure covers the whole municipality including Mestre; the historic city is entirely car-free and most of its residents own no car (PUMS). ACI counts 111,640 cars on 31 December 2025, which with 249,385 inhabitants gives ≈ 448 per 1,000 (Veneto ≈ 687, Italy ≈ 709; own calculation)."
+    },
+    "en_cykelvagar_km": {
+      "name": "Cycle paths in the municipality",
+      "unit": "km",
+      "note": "45.4 km per 100 km² against 31.3 in the provincial capitals; 144 km in 2019. ISTAT gives no split between the mainland, the Lido and the historic city."
+    },
+    "en_bussar_el_gas": {
+      "name": "Electric, hybrid or gas buses in public transport",
+      "unit": "buses",
+      "note": "Of 301 buses in 2024, 76 were electric or electric hybrids and 109 ran on gas (methane or LPG); there are also 20 trams on 19.2 km of line. With PNRR funds ACTV planned 44 new electric buses by 2024 and 90 fuel-cell buses by the first half of 2026 (Carta della Mobilità 2024)."
+    },
+    "en_no2_rio_novo": {
+      "name": "Nitrogen dioxide at Rio Novo (the boat-traffic station in the historic city), annual mean",
+      "unit": "µg/m³",
+      "note": "The station on the Rio Novo canal has measured since September 2017. The annual mean was 51 µg/m³ in 2018 and 2019 (above the 40 limit), 32 and 31 in the pandemic years 2020–2021, 37 in 2022, 36 in 2023, 35 in 2024 and 34 in 2025. The EU limit from 2030 is 20 µg/m³."
+    },
+    "en_no2_sacca_fisola": {
+      "name": "Nitrogen dioxide at the Sacca Fisola background station (Giudecca), annual mean",
+      "unit": "µg/m³",
+      "note": "The historic city's background station; 39 µg/m³ in 2004 and 26 in 2023 (ARPAV). The mainland traffic stations via Tagliamento and via Beccaria measured 25 and 28 µg/m³ in 2024, lower than the water city."
+    },
+    "en_pm10_dygn_sacca_fisola": {
+      "name": "Days with PM10 above 50 µg/m³ at Sacca Fisola",
+      "unit": "days",
+      "note": "At most 35 days a year are allowed; Sacca Fisola had 54 days in 2023 and 36 in 2024. 2025 was the best year in two decades in Veneto: Rio Novo 24, Parco Bissuola 25 and via Tagliamento 36 days, the only municipal station over the limit. From 2030 days above 45 µg/m³ count and at most 18 are allowed."
+    },
+    "en_pm10_rio_novo": {
+      "name": "PM10 at Rio Novo, annual mean",
+      "unit": "µg/m³",
+      "note": "Below the 40 µg/m³ limit but above the EU limit from 2030 (20 µg/m³), and equal to or lower than the municipality's other stations; 24 days above 50 µg/m³ out of 358 days measured. Sacca Fisola had 29 µg/m³ in 2024 (ISTAT)."
+    }
+  }
+}

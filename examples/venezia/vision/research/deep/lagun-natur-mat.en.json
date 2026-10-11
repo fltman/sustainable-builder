@@ -1,0 +1,284 @@
+{
+ "indicators": {
+  "lag_laguna_yta": {
+   "name": "Area of the Venice Lagoon",
+   "unit": "km²",
+   "note": "The lagoon stretches about 60 km along the coast between the mouths of the Adige and the Piave and is separated from the sea by the barrier islands (lidi) with three inlets (Lido, Malamocco, Chioggia). The World Heritage management plan (2012) gives 539 km² of lagoon surface within a 629 km² lagoon including 90 km² of embanked fish farms; the Natura 2000 site IT3250046 covers 551.6 km². The Region divides the lagoon into the sub-basins Lido 100, Treporti 150, Malamocco 170 and Chioggia 130 km²."
+  },
+  "lag_oppet_vatten": {
+   "name": "Open water surfaces in the lagoon (specchi d'acqua)",
+   "unit": "km²",
+   "note": "Of 539 km² of lagoon surface, 368 km² is permanent water, 142 km² is land that lies above the water or is flooded only at high tide (salt marshes and mudflats) and 29 km² is islands in the open lagoon; in addition there are 90 km² of embanked areas, 83 km² of them fish farms. Open water is thus 68% of the lagoon surface (368/539, own calculation)."
+  },
+  "lag_medeldjup": {
+   "name": "Mean depth of the lagoon",
+   "unit": "m",
+   "note": "Figure from Consorzio Venezia Nuova (Cecconi 2011). The municipality's 2019 presentation gives 1.5 m and a maximum depth of 46 m in the Malamocco inlet. The lagoon is getting deeper: the most common depth fell from −0.62 to −0.88 m in 1927–2002 (lag_modaldjup_2002)."
+  },
+  "lag_modaldjup_2002": {
+   "name": "Most common water depth (modal depth) in the lagoon, 2002",
+   "unit": "m",
+   "note": "Comparison of bathymetric surveys from 1927, 1970 and 2002: the modal depth fell from −0.62 m to −0.88 m and the subtidal flats (bassifondi) grew from 88 to 206 km² as salt marshes and mudflats eroded. Causes according to the study: subsidence and channel dredging in 1927–1970, mechanical clam fishing in 1970–2002."
+  },
+  "lag_barene_1912": {
+   "name": "Salt marshes (barene) in the lagoon, 1912",
+   "unit": "km²",
+   "note": "Series by L. D'Alpaos (2010) in the municipality's presentation: 158 km² in 1912, 104 km² in 1930, 47 km² in 2003 and about 40 km² in 2017 (estimate). The 2012 World Heritage plan says salt marshes covered 20% of the lagoon basin at the start of the 20th century and just over 8% today. Other surveys give lower figures for the early century (Sarretta et al.: 68 km² in 1927), so definitions differ."
+  },
+  "lag_barene_idag": {
+   "name": "Salt marshes (barene) in the lagoon today",
+   "unit": "km²",
+   "note": "Estimate for 2017 in the municipality's presentation (D'Alpaos 2010); the same series gives 47 km² in 2003. Other measures: about 35 km² (Cecconi 2011) and 32 km² in 2002 (Sarretta et al. 2010). AP (May 2026) gives about 7% of the lagoon, roughly half of it rebuilt – so the figure probably includes the constructed marshes."
+  },
+  "lag_barene_2002_batymetri": {
+   "name": "Salt marshes in 2002 according to the bathymetric surveys",
+   "unit": "km²",
+   "note": "The area fell by more than half, from 68 km² in 1927 to 32 km² in 2002, in Sarretta et al.'s comparison of the 1927, 1970 and 2002 bathymetries. The figure is lower than the D'Alpaos series (lag_barene_idag); the sources use different methods and boundaries."
+  },
+  "lag_barene_forlust_per_ar": {
+   "name": "Loss of salt marshes per year",
+   "unit": "km² per year",
+   "note": "(47 − 40) km² / 14 years = 0.5 km² (50 ha) per year in 2003–2017. Over the whole period 1912–2017: (158 − 40) / 105 = 1.1 km² per year; according to Sarretta et al. (68 − 32) / 75 = 0.48 km² per year in 1927–2002. Rebuilding with dredged sediment runs at roughly the same rate (lag_aterskapade_barene)."
+  },
+  "lag_sediment_nettoforlust": {
+   "name": "Net sediment loss from the lagoon",
+   "unit": "million m³ per year",
+   "note": "The loss grew from 0.3 million m³ per year in 1927–1970 to 0.8 million m³ per year in 1970–2002; in total about 110 million m³ was lost in 1927–2002, 73 million of it before 1970. The municipality's 2019 presentation says '800 mc/year' (probably 800,000 m³), the SedNet case description about 300,000 m³ per year."
+  },
+  "lag_sediment_till_havet": {
+   "name": "Sediment exported to the sea through the inlets",
+   "unit": "million m³ per year",
+   "note": "Net export to the sea through the three inlets: on average 0.5 million m³ per year and 39 million m³ in total in 1927–2002. According to the SedNet case description the channels also silt up by about 400,000 m³ per year with sediment eroded from the shallows and salt marshes."
+  },
+  "lag_flodsediment": {
+   "name": "Sediment supply from the drainage basin",
+   "unit": "m³ per year",
+   "note": "The drainage basin (1,880 km²) delivers about 2.8 million m³ of water a day to the lagoon through 27 outlets but only about 30,000 m³ of sediment a year; about 400 million m³ of water is exchanged with the sea every day. Compared with the net loss of 0.5–0.8 million m³ a year, the rivers cover only 4–6% (own comparison)."
+  },
+  "lag_strandretratt_fartygsvagor": {
+   "name": "Shoreline retreat along the Malamocco–Marghera channel caused by ship wakes",
+   "unit": "m per year",
+   "note": "GIS analysis of aerial images shows an average retreat of 3–4 m per year in 1974–2015 (3.5 is the middle of the range); 1.19 million m³ of sediment was lost along the channel in 1968–2015. The 2012 World Heritage plan names the wash of motor boats (moto ondoso) as a main cause of damage to quay walls and building foundations in the city."
+  },
+  "lag_aterskapade_barene": {
+   "name": "Salt marshes and mudflats rebuilt with dredged sediment",
+   "unit": "hectares",
+   "note": "By December 2011 the Magistrato alle Acque (through Consorzio Venezia Nuova) had built 1,481 ha of salt marshes and mudflats with 22.4 million m³ of sediment from channel maintenance. Cecconi (SedNet 2011) gives 19.5 million m³ used for 123 units over 25 years, 11 km² of salt marsh and 2 km² of mudflat – about 50–60 ha a year (own calculation), roughly as much as the loss. The Lagoon Authority now reports 16 km² of rebuilt and naturalised salt marshes, 39 km of protected marsh edges and 12 restored minor islands; the World Heritage plan notes that the lagoon has lost more than 15,000 ha since 1850 to land claim, landfills and fish farms."
+  },
+  "lag_skyddade_barene_life_vimine": {
+   "name": "Natural salt marshes protected with fascines (LIFE VIMINE)",
+   "unit": "hectares",
+   "note": "The EU project of 2013–2017 protected salt-marsh edges with fascines of local wood; 60 m³ of litter was removed and 1,480 workdays went to local residents. The municipality notes that only 2.5% of the salt marshes were protected and that the work stopped when EU funding ended in 2017; a new agreement (Provveditorato, Region, municipality, Consorzio Acque Risorgive, University of Padua) was to start in spring 2025 according to Il Nordest (December 2024)."
+  },
+  "lag_sjogras_seresto": {
+   "name": "Seagrass meadows re-established in the northern lagoon (LIFE SeResto)",
+   "unit": "km²",
+   "note": "Eelgrass (Zostera marina), dwarf eelgrass (Zostera noltei) and Ruppia cirrhosa were planted in 2014–2017 at 35 sites, about 300 sods and at least 400 rhizomes per site and year, taken from donor areas of under 100 m². On average about 40% of the rhizomes took root, and after four years the meadows covered about 10 km², more than 25% of the project area, often in 20–50 m wide bands along salt-marsh edges and channels."
+  },
+  "lag_zostera_noltei": {
+   "name": "Dwarf eelgrass (Zostera noltei) in the northern lagoon, 2002",
+   "unit": "hectares",
+   "note": "684 ha in 1990, 100 ha in 2002 (−85%, Rismondo et al. 2003) and almost completely gone in 2011–2014, according to ISPRA's SeResto report. The habitat type 1150* coastal lagoon covers more than 20,000 ha of the Venice Lagoon."
+  },
+  "lag_wfd_ekologisk_status": {
+   "name": "Water bodies in the lagoon in good ecological status",
+   "unit": "of 11 classified",
+   "note": "Water Framework Directive classification for 2020–2025 (regional decree of 27 July 2026): 8 water bodies moderate (sufficiente) and 3 poor (scarso: Palude Maggiore, Chioggia, Marghera), none good. Benthic fauna and macrophytes are decisive; the two fish-farm water bodies could not be classified and the canals of the historic centre are monitored for chemistry only."
+  },
+  "lag_wfd_kemisk_status": {
+   "name": "Water bodies in the lagoon in good chemical status",
+   "unit": "of 14",
+   "note": "All 14, including the canals of the historic centre, are 'not good', mainly because PFOS in the water exceeds the standard of Legislative Decree 172/2015, in some areas also PAHs (benzo(a)pyrene etc.). The previous classification (2014–2019) failed on mercury and PBDEs in fish and shellfish, which were not measured this time; chemical monitoring lapsed after 2019 and restarted in 2025."
+  },
+  "lag_natura2000_zps": {
+   "name": "Special Protection Area (SPA) Laguna di Venezia, Natura 2000",
+   "unit": "hectares",
+   "note": "Site IT3250046 in the EEA Natura 2000 dataset (version 2024, GIS area). It covers practically the whole lagoon; according to ISTAT, 62% of the municipality's area is protected natural area (lag_skyddad_natur_andel_kommun)."
+  },
+  "lag_natura2000_zsc": {
+   "name": "Habitats Directive sites (SAC) in the lagoon, Natura 2000",
+   "unit": "hectares",
+   "note": "IT3250030 Laguna medio-inferiore di Venezia 26,364 ha + IT3250031 Laguna superiore di Venezia 20,344 ha = 46,708 ha (own sum). Both lie within the bird protection area IT3250046."
+  },
+  "lag_skyddad_natur_andel_kommun": {
+   "name": "Protected natural areas as a share of the municipality of Venice",
+   "unit": "%",
+   "note": "261.2 km² of protected natural areas – in practice the lagoon's Natura 2000 sites – out of the municipal area (table 10.1). Including urban green space it is 65.3% (table 18.1). The average for Italy's provincial capitals is 16.8%."
+  },
+  "lag_overvintrande_vattenfaglar": {
+   "name": "Wintering waterbirds in the lagoon (mean 2003–2007)",
+   "unit": "birds",
+   "note": "The January counts rose from 74,462 birds in 1993 to 201,717 in 2007 (peak 214,640 in 2005), making the lagoon Italy's most important wintering site. Ducks make up 53%, gulls 17%, waders 14% and coots 13%; about 80% were counted in the fish farms (9,500 ha), where hunting takes place. No more recent published total for the lagoon was found."
+  },
+  "lag_flamingor": {
+   "name": "Wintering flamingos in the lagoon",
+   "unit": "birds",
+   "note": "The record peak of 'nearly 24,000' in winter 2025, against about 18,000 the year before, according to ornithologist Alessandro Sartori in AP's report (May 2026). Breeding attempts in 2008 and 2013 failed. News source; the primary count was not found."
+  },
+  "lag_mose_stangd_tid_2050": {
+   "name": "Share of the year with MOSE closed in 2050 (RCP8.5)",
+   "unit": "% of the year",
+   "note": "Modelled closure time: 357 hours (3%) in the control year 2020, 917 h (7%) with the current trend, 1,008 h (8%) under RCP2.6, 1,097 h (9%) under RCP4.5 and 1,324 h (11%) under RCP8.5 in 2050. Under RCP8.5 the mean flow through the inlets falls by up to 40% in December and closures start to affect spring and summer too. In reality the barrier was raised for the hundredth time on 12 March 2025, four and a half years after it started in October 2020 (Ministry of Infrastructure)."
+  },
+  "lag_mose_marsksediment": {
+   "name": "Reduced sedimentation on salt marshes with MOSE in operation",
+   "unit": "% reduction per year (at least)",
+   "note": "Measurements October 2018–December 2021: more than 70% of the yearly salt-marsh sedimentation happens during storm surges, when water levels are high and the water carries much sediment. If the flooding is regulated away, yearly sedimentation falls by more than 25% (Tognin et al., Nature Geoscience 14:906–911, 2021). Natural marsh accretion is given as about 5 mm a year (Magistrato alle Acque 2002, in the World Heritage plan)."
+  },
+  "lag_vongole_produktion": {
+   "name": "Farmed Manila clams in the Venice Lagoon",
+   "unit": "tonnes",
+   "note": "Harvest in the sub-concessions granted by San Servolo srl (successor to GRAL), 2019; in addition an estimated 661 tonnes from fishing on free banks. In 2015 production was 3,613 tonnes (Osservatorio, 2016 report). The species Ruditapes philippinarum was released in the southern lagoon in 1983 (200,000 juveniles)."
+  },
+  "lag_vongole_topp_1999": {
+   "name": "Clam harvest in the lagoon at its peak, 1998–1999",
+   "unit": "tonnes",
+   "note": "From an estimated 1,300 tonnes in 1990 to about 40,000 tonnes in 1998–1999 (Boatto & Pellizzato 2005); in 2007 the lagoon produced half of Italy's output, and including illegal fishing the harvest was estimated at about 30,000 tonnes a year. Mechanical fishing ploughed up the bottom and is named as the main cause of erosion in 1970–2002 (Sarretta et al. 2010)."
+  },
+  "lag_vongole_koncessioner_ha": {
+   "name": "Lagoon area leased for clam farming",
+   "unit": "hectares",
+   "note": "104 sub-concessions in the northern, central and southern lagoon, about 2.5% of the lagoon area (own calculation: 14.04 / 550 km²), employing 547 members. In 2015 there were 67 cooperatives with 457 workers, 50 vibrating harvest boats and 255 small boats (Osservatorio 2016)."
+  },
+  "lag_vongole_varde": {
+   "name": "First-sale value of farmed clams in the lagoon",
+   "unit": "million euros",
+   "note": "2,159 tonnes × €6.50/kg (average producer price at the Venice fish market in 2019) ≈ €14.0 million. Veneto Agricoltura puts the average income at €25,655 per farmer in 2019."
+  },
+  "lag_valli_da_pesca": {
+   "name": "Fish farms (valli da pesca) in the Venice Lagoon",
+   "unit": "hectares",
+   "note": "28 embanked fish farms: 18 in the northern lagoon (5,781 ha, 3,906 ha of it water) and 10 in the southern (3,503 ha, 2,860 ha water), according to Federvalli Veneto 2014 (own sum). The whole of Veneto has 58 valli on 20,149 ha, with yields of 100–150 kg of fish per ha (eel, sea bass, gilthead bream, mullet). The World Heritage plan gives 83 km² of fish farms."
+  },
+  "lag_fiskeforetag_provins": {
+   "name": "Businesses in sea and lagoon fishing, province of Venice",
+   "unit": "businesses",
+   "note": "594 businesses with 1,271 people employed in sea and lagoon fishing in 2019 (Infocamere); the whole fishing primary sector has 829 businesses and 1,572 employed. In the lagoon there were 98 permits for fixed gear (9 cooperatives, 87.8 km of nets), 15 licences for fry fishing and 20 mussel farms. The number of boats was not found."
+  },
+  "lag_grossistmarknad_fisk": {
+   "name": "Fish sold at the Venice wholesale market (Tronchetto)",
+   "unit": "tonnes",
+   "note": "Just under 7,000 tonnes in 2022 (−8% on 2021) worth just over €58 million; volume has fallen by about 2.5% a year since 2000. 24 selling firms and about 215 buyers (60% fishmongers, 25% street vendors, 10% restaurants), with fish from the Adriatic and far away. The municipality plans a new market building on Isola Nova del Tronchetto."
+  },
+  "lag_rialto_fiskstand": {
+   "name": "Fish stalls at the Rialto market (Pescheria)",
+   "unit": "stalls",
+   "note": "According to a motion in the city council (January 2024): about thirty fish stalls in the 1980s, seven today; fruit and vegetable stalls have gone from 90 to fewer than 13 (IUAV study) and butchers from 27 to 2. The motion describes the Pescheria building of 1907 (Domenico Rupolo) as empty since 2008. A political document; the figures are not official statistics."
+  },
+  "lag_santerasmo_kronartskocka": {
+   "name": "Growers in the Slow Food Presidium Carciofo violetto di Sant'Erasmo",
+   "unit": "growers",
+   "note": "Fourteen named producers of the violet artichoke on Sant'Erasmo and on land on Vignole, Mazzorbo and Lio Piccolo. The island is 'half the size of the city' and has been 'one vast vegetable garden' since the 16th century; the season starts in late April with the castraure, the plant's first top shoot. Area and harvest are not given."
+  },
+  "lag_venissa_vingard": {
+   "name": "The Venissa vineyard on Mazzorbo",
+   "unit": "hectares",
+   "note": "A walled vineyard (vigna murata) of under 1 ha with the local Dorona grape: about 4,000 vines, about 4,000 bottles a year and a first vintage in 2010 (Drinks International 2014). It was started by Gianluca Bisol; vines came from Sant'Erasmo among other places (Wine Economist 2014). Trade press, no official figures."
+  },
+  "lag_gronyta_per_invanare": {
+   "name": "Urban green space per inhabitant, municipality of Venice",
+   "unit": "m² per inhabitant",
+   "note": "Publicly managed green space, 12.15 km², divided by the average population (table 12.1); 42.8 m² in 2011. The average for Italy's provincial capitals is 33.7 m² and for north-east Italy 64.3 m² (2024). 41% of the green space is protected historic green and 20% urban forestry; the figure covers the whole municipality including Mestre."
+  },
+  "lag_tillganglig_gronyta": {
+   "name": "Accessible green space (verde fruibile) per inhabitant",
+   "unit": "m² per inhabitant",
+   "note": "Parks, historic green, equipped areas, school gardens, outdoor sports areas and cemeteries, 8.45 km² (tables 14.1–14.2). The average for provincial capitals is 15.9 m². ISTAT's report for 2023 singled out Venice as best among the large cities (then 35.5 m²)."
+  },
+  "lag_gronyta_andel": {
+   "name": "Urban green space as a share of the municipal area",
+   "unit": "%",
+   "note": "12.15 km² of the municipal area, much of which is lagoon water (table 11.1); the average for provincial capitals is 3.0%. There are no separate figures for the historic centre. In OpenStreetMap the model square (1.8 × 1.8 km) has 3.8 ha of parks and 1.4 ha of gardens, including the Giardini Reali at 0.46 ha (own calculation; private gardens and cloisters are incompletely mapped)."
+  },
+  "lag_trad_per_100_invanare": {
+   "name": "Inventoried trees per 100 inhabitants",
+   "unit": "trees per 100 inhabitants",
+   "note": "70,546 trees in the municipality's inventory of public green space (parts of the municipality, updated 2024; table 2.1). The average for provincial capitals is 24.4 and for north-east Italy 62.1. 506 trees were felled in 2024 and 428 in 2023 (table 5.1); the model square has 470 trees in OpenStreetMap (own count, incomplete)."
+  },
+  "lag_hardgjord_mark_andel": {
+   "name": "Sealed and built-up land (suolo consumato)",
+   "unit": "%",
+   "note": "7,164 ha of artificial surface out of the municipality's total area, much of which is lagoon. Veneto 11.86%, Italy 7.17% and the province of Venice 14.10% (2024). The historic centre is not reported separately."
+  },
+  "lag_hardgjord_okning": {
+   "name": "Net increase of sealed land 2023–2024",
+   "unit": "hectares",
+   "note": "Gross 65.18 ha of new development, 0.97 ha restored. The sum of ISPRA's net increases 2006–2024 is about 486 ha (own sum of eleven periods)."
+  },
+  "lag_avfall_per_invanare": {
+   "name": "Municipal waste per inhabitant",
+   "unit": "kg per inhabitant and year",
+   "note": "173,318 tonnes divided by 249,466 inhabitants; visitors' waste is counted against residents, hence the high value. Veneto 524.95 kg and Italy 507.90 kg (2024); 709 kg in 2010."
+  },
+  "lag_sorteringsgrad": {
+   "name": "Share of separately collected waste (raccolta differenziata)",
+   "unit": "%",
+   "note": "110,442 of 173,318 tonnes; 32.65% in 2010 and a high of 65.98% in 2020. Veneto 78.16%, Italy 67.69% (2024); the legal target is 65%. Venice is third among cities over 200,000 inhabitants after Bologna and Padua."
+  },
+  "lag_dorrhamtning_andel": {
+   "name": "Households with door-to-door waste collection (porta a porta)",
+   "unit": "% of households",
+   "note": "29% of household customers have door-to-door collection, 71% use street bins. In the historic centre dry recyclables have also been collected at the door since 2016: collectors walk with light carts to compactor boats, and residents bring 35–50% of the weight themselves to 60 fixed points at set times (municipality 2023). In high season about 330 litter bins are emptied almost hourly using five motor boats."
+  },
+  "lag_avlopp_anpassningar": {
+   "name": "Approved sewage adaptations in the historic centre (septic tanks, small treatment plants)",
+   "unit": "installations",
+   "note": "Almost 1,800 adaptations approved by the Magistrato alle Acque, mostly septic tanks and grease traps for hotels, bars and restaurants under the special laws 71/90, 360/91 and 206/95, plus 85 small treatment plants for discharges above 100 p.e.; more than 1,100 projects were under way, about 2,900 plans in total. Otherwise the sewage reaches the canals through septic tanks and the old tunnels (gatoli); no share of households connected to a central treatment plant was found."
+  },
+  "lag_septiktank_krav": {
+   "name": "Required septic tank volume per person in the historic city",
+   "unit": "m³ per person",
+   "note": "Since the 1933 hygiene regulation, buildings discharging to a canal or to the gatoli must have a septic tank before the outlet; the volume of 0.4 m³ per person served was set in DPR 962/1973 and was still applied in 2004. The municipality requires adaptation when an owner applies for a permit to renovate; the gatoli were on average half blocked."
+  },
+  "lag_marghera_sin": {
+   "name": "Contaminated site of national interest (SIN) Venezia–Porto Marghera",
+   "unit": "hectares",
+   "note": "Now covers land areas only. Before the 2013 redefinition (DM 144/2013, corrected 2016) it included 3,221 ha of land, 350 ha of port channels and 2,200 ha of lagoon. Refining, petrochemicals and steelworks have left metals and PAHs in the soil and metals, PAHs and chlorinated organics in the groundwater; agreements on containment works were signed in 2020."
+  },
+  "lag_mikroplast_sediment": {
+   "name": "Microplastics in lagoon sediments (highest measured level)",
+   "unit": "particles per kg dry weight",
+   "note": "672–2,175 particles smaller than 1 mm per kg of sediment at ten sampling sites, highest near the mainland; polyethylene and polypropylene make up more than 82% and 93% are 30–500 µm in size. A single survey, no time series."
+  },
+  "lag_unesco_inskrivet": {
+   "name": "Venice and its Lagoon inscribed on UNESCO's World Heritage List",
+   "unit": "year",
+   "note": "World Heritage property no. 394, inscribed in 1987 under all six cultural criteria (i)–(vi) (UNESCO state-of-conservation document 2021); the area coincides with the landscape protection under the Ministerial Decree of 1 August 1985 and covers the lagoon municipalities. There is no buffer zone: the Committee referred the proposal back in 2019 and did not approve the new one in 2026 (decision 48 COM 8B.45)."
+  },
+  "lag_unesco_bevarandebeslut": {
+   "name": "World Heritage Committee state-of-conservation decisions on Venice 2014–2026",
+   "unit": "decisions",
+   "note": "38 COM 7B.27 (2014), 40 COM 7B.52 (2016), 41 COM 7B.48 (2017), 43 COM 7B.86 (2019), 44 COM 7B.50 (2021), 45 COM 7B.189 (2023), 47 COM 7B.113 (2025) and 48 COM 7B.40 (2026) – own count. The drafts of 2021 and 2023 proposed the List of World Heritage in Danger but the Committee adopted amended decisions; in 2025 and 2026 it warned that the conditions for such a listing may be met unless binding rules on tourism, building heights and impact assessment are introduced. The next report is due on 1 February 2027."
+  },
+  "lag_kulturminnesmarkta_byggnader": {
+   "name": "Listed buildings (edifici notificati)",
+   "unit": "buildings",
+   "note": "According to the then Soprintendente Renata Codello, the Venice Soprintendenza is Italy's smallest by area but the densest in protected buildings; the whole area has also been under landscape protection since 1985, so every intervention needs the authority's permission. A current number of churches and palaces in a primary source was not found."
+  },
+  "lag_byggnader_fore_1919": {
+   "name": "Residential buildings built before 1919 in the historic centre",
+   "unit": "%",
+   "note": "6,960 of 8,375 residential buildings in the districts San Marco–Castello–S. Elena–Cannaregio and Dorsoduro–S. Polo–S. Croce–Giudecca–Sacca Fisola (57,449 inhabitants in 2011); 89.6% date from before 1946 and 98% have load-bearing masonry. Whole municipality 26.6%, Veneto 11.7%, Italy 15.0% (same census, own sum)."
+  },
+  "lag_byggnader_daligt_skick": {
+   "name": "Residential buildings in mediocre or poor condition in the historic centre",
+   "unit": "%",
+   "note": "2,151 buildings in 'mediocre' and 88 in 'poor' condition out of 8,375 (own sum from the 2011 census). Italy 16.8%, Veneto 12.6% and the whole municipality 13.1%."
+  },
+  "lag_solceller_byggar_grans": {
+   "name": "Solar panels banned on buildings built before 1945 in the historic city",
+   "unit": "year of construction (threshold)",
+   "note": "The municipality's rule summary (March 2022, building regulation art. 38.6): solar PV and thermal panels are forbidden on buildings from before 1945 in the Città Antica. On later buildings they are allowed only on flat surfaces such as roofs, terraces and roof slabs (lastrici solari) – never on pitches clad with coppi tiles – and new buildings may only have panels integrated in the roof pitch; on the islands and the mainland the rules are more permissive."
+  },
+  "lag_hojning_max_cm": {
+   "name": "Largest practical raising of streets and quays in historic districts",
+   "unit": "cm",
+   "note": "At Rialto the protection level of +100 cm above the Punta della Salute datum was chosen, since the ground in places lies at only +70 cm. Raising by more than 15–20 cm is almost never possible: the number of critical thresholds rises from 6 at +100 cm to 21 at +110 and 51 at +120 cm, and the same applies to ground-floor floors."
+  },
+  "lag_forsamlingar_centro_storico": {
+   "name": "Catholic parishes in the historic centre",
+   "unit": "parishes",
+   "note": "In 2025 the Patriarchate merged 19 parishes into 6, each with several churches, because of population decline (under 50,000 inhabitants), fewer priests and lower participation. 17 churches charge admission through the Chorus association (the Patriarch in Finestre sull'Arte 2023). A reliable number of churches in the historic centre was not found."
+  }
+ }
+}

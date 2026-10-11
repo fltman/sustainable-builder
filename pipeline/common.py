@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CITIES = ROOT / 'cities'
 GAME = ROOT / 'game'
-USER_AGENT = 'wasteland-builder/0.1 (+https://github.com/; OSM-based game city generator)'
+USER_AGENT = 'sustainable-builder/0.1 (OSM-based research vision sites for real places)'
 EARTH = 111_320.0
 
 

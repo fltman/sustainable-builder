@@ -1,0 +1,284 @@
+{
+  "indicators": {
+    "soc_pop_cs_1951": {
+      "name": "Population of Venice's historic centre (centro storico) in 1951",
+      "unit": "inhabitants",
+      "note": "Registered residents on 31 December in the historic city: the six sestieri plus Giudecca and Sacca Fisola, without the Lido and the other islands. 1951 (census) is the Comune's index year (= 100) and the highest value in the series; 128,787 lived here in 1871 and 163,849 in 1936. The whole municipality had 315,811 inhabitants, the mainland 96,966."
+    },
+    "soc_pop_cs_1966": {
+      "name": "Population of the centro storico in 1966",
+      "unit": "inhabitants",
+      "note": "31 December 1966. Since 1951 the population had fallen by 53,499 people, on average 3,567 a year (own calculation), while the mainland part of the municipality doubled from 96,966 to 193,314 inhabitants. The largest one-year drop in the series came in 1960–1961, with the 1961 census (−8,252)."
+    },
+    "soc_pop_cs_1971": {
+      "name": "Population of the centro storico in 1971",
+      "unit": "inhabitants",
+      "note": "The Comune's registry figure for 31 December 1971. OCIO cites the 1971 census for the water city including Giudecca: about 35,000 dwellings, of which roughly 10,000 owner-occupied, 23,000 rented or lent and 1,000 empty. A 1973 CENSIS survey of those who left in 1964–68 found that 60.2% moved to get a healthier, more modern home."
+    },
+    "soc_pop_cs_1981": {
+      "name": "Population of the centro storico in 1981",
+      "unit": "inhabitants",
+      "note": "31 December 1981. During the 1980s the population fell by an average of 1,695 people a year, to 76,644 in 1991 (own calculation). The figure 95,222, sometimes given for 1981, refers to 31 December 1980."
+    },
+    "soc_pop_cs_1991": {
+      "name": "Population of the centro storico in 1991",
+      "unit": "inhabitants",
+      "note": "31 December 1991 (1990: 78,165). The district series give 455 births and 1,252 deaths that year, and 35,242 households of which 14,448 one-person (41.0%; sum of districts 1 and 2, own calculation)."
+    },
+    "soc_pop_cs_2001": {
+      "name": "Population of the centro storico in 2001",
+      "unit": "inhabitants",
+      "note": "31 December 2001. The figure 66,386, sometimes given for 2001, refers to 31 December 2000. 505 births and 1,037 deaths that year (sum of districts 1 and 2). In OCIO's reading of the 2001 census, owners lived in just under 18,000 dwellings, 10,000–11,000 were rented and more than 5,000 empty."
+    },
+    "soc_pop_cs_2011": {
+      "name": "Population of the centro storico in 2011",
+      "unit": "inhabitants",
+      "note": "31 December 2011, less than half of the 121,309 of 1966 (−51%, own calculation). 421 births and 899 deaths that year (sum of districts 1 and 2). According to OCIO the 2011 census counted 8,909 rented dwellings in the water city, against about 23,000 in 1971."
+    },
+    "soc_pop_cs_2022_below_50000": {
+      "name": "Population of the centro storico in 2022, the year it fell below 50,000",
+      "unit": "inhabitants",
+      "note": "31 December 2022; a year earlier 50,434. The Comune publishes no date for the crossing; on 23 November 2022 OCIO wrote that the fall below the psychological 50,000 mark had produced a stream of articles and statements 'in recent weeks'. The association Venessia.com spreads the figure '49.999' on flags and posters as a symbol of the concern."
+    },
+    "soc_pop_cs_2025": {
+      "name": "Population of the centro storico on 31 December 2025",
+      "unit": "inhabitants",
+      "note": "In 2025 the population fell by 864 (−1.8%) from 48,489: 209 births, 689 deaths, 1,031 people moving in from other municipalities and abroad, 1,096 moving out, plus 600 moves in and 919 moves out within the municipality. That is 27.2% of the 1951 level and 19% of the municipality's residents (own calculations)."
+    },
+    "soc_pop_cs_2026_aug": {
+      "name": "Population of the centro storico on 31 August 2026 (latest monthly figure)",
+      "unit": "inhabitants",
+      "note": "−424 since the turn of the year; in August 2026 there were 14 births and 59 deaths in the centre. Whole municipality: 251,682. OCIO counts 46,964 residents in September 2026 (a different delimitation of the historic city), and the Venessia.com web counter showed 47,652 on 11 October 2026."
+    },
+    "soc_pop_comune_peak_1968": {
+      "name": "The municipality's highest population (1968)",
+      "unit": "inhabitants",
+      "note": "The whole Comune di Venezia, then including Cavallino-Treporti, which became a separate municipality in 1999. The mainland (terraferma) had 200,445 inhabitants, the islands (estuario) 51,117 and the centre 116,270. 31 December 2025: 251,294, of which 178,131 on the mainland and 25,538 on the Lido, Pellestrina, Murano, Burano and the other islands."
+    },
+    "soc_births_cs_2025": {
+      "name": "Births in the centro storico",
+      "unit": "births/year",
+      "note": "4.3 per 1,000 inhabitants (own calculation with the mean population 48,057), against 5.6 in the province and 6.3 in Italy in 2024 (Eurostat, demo_r_gind3). The centre had 455 births in 1991, 505 in 2001, 421 in 2011 and 236 in 2021 (sum of districts 1 and 2). Whole municipality: 1,416."
+    },
+    "soc_deaths_cs_2025": {
+      "name": "Deaths in the centro storico",
+      "unit": "deaths/year",
+      "note": "14.3 per 1,000 inhabitants (own calculation), against 11.4 in the province and 11.1 in Italy in 2024 (Eurostat). 3.3 times as many people die as are born. 1,252 died in 1991, 899 in 2011 and 837 in 2021 (sum of districts 1 and 2). Whole municipality: 3,374."
+    },
+    "soc_migration_external_cs_2025": {
+      "name": "Net migration with other municipalities and abroad, centro storico",
+      "unit": "people/year",
+      "note": "1,031 people moved in and 1,096 moved out. The municipality as a whole had positive net migration, 7,632 in and 6,181 out (+1,451), but the whole surplus went to the mainland (+1,671); the islands (estuario) had −155."
+    },
+    "soc_moves_within_comune_cs_2025": {
+      "name": "Net moves to the rest of the municipality (mainland and islands), centro storico",
+      "unit": "people/year",
+      "note": "600 moves into and 919 out of the two districts within the municipality (moves between the districts cancel out). The district tables give 309 arrivals from the rest of the municipality and 628 departures to it, 432 of them to the mainland (own sum). So every year a net of just over 300 Venetians move from the water city to Mestre, the Lido and the islands."
+    },
+    "soc_natural_balance_comune_2025": {
+      "name": "Natural increase (births minus deaths) in the whole municipality",
+      "unit": "people/year",
+      "note": "1,416 births and 3,374 deaths. Net migration of +1,451 offset most of it, so the population fell by 507 to 251,294 (31 December 2025). ISTAT's census-adjusted population was 249,490 on 1 January 2025. The number of foreign citizens rose by 1,591 during the year."
+    },
+    "soc_natural_balance_cs_2015_2025": {
+      "name": "Natural decrease in the centro storico, total 2015–2025",
+      "unit": "people (total 2015–2025)",
+      "note": "2,797 births and 8,810 deaths in 2015–2025. The flows sum to −8,669, which matches the change from the end of 2014 (56,311) to 2025, i.e. eleven years: on average 254 births and 801 deaths a year (own calculation). The natural decrease accounts for seven tenths of the decline; the rest is net moves to the rest of the municipality (−3,819), partly offset by net migration with other municipalities and abroad (+1,163). Municipality: −21,224."
+    },
+    "soc_moves_within_comune_cs_2015_2025": {
+      "name": "Net moves to the rest of the municipality, centro storico, total 2015–2025",
+      "unit": "people (total 2015–2025)",
+      "note": "7,978 moves into and 11,797 out of the centre within the municipality in 2015–2025, on average −347 a year over eleven years (own calculation). The mainland gained 3,103 and the islands 716 from moves within the municipality over the same period."
+    },
+    "soc_migration_external_cs_2015_2025": {
+      "name": "Net migration with other municipalities and abroad, centro storico, total 2015–2025",
+      "unit": "people (total 2015–2025)",
+      "note": "11,830 arrivals and 10,667 departures in 2015–2025 (+106 a year over eleven years, own calculation). Over the period more people arrived in the centre from outside than left it for other municipalities; in 2025, however, the net was −65. Whole municipality: +8,656, of which +8,022 on the mainland."
+    },
+    "soc_share_0_14_cs_2025": {
+      "name": "Share of children aged 0–14 in the centro storico",
+      "unit": "%",
+      "note": "4,034 of 47,625 residents (sum of the classes 0–4, 5–9 and 10–14 in the Comune's table; own calculation). Whole municipality 10.3%; province 11.0%, Veneto 11.8% and Italy 11.9% (Eurostat, 1 January 2025). In the centre the share was 11.0% in 2011."
+    },
+    "soc_share_65plus_cs_2025": {
+      "name": "Share of residents aged 65 and over in the centro storico",
+      "unit": "%",
+      "note": "15,785 of 47,625 (own calculation). Whole municipality 28.7%; province 26.5%, Veneto 24.9% and Italy 24.7% (Eurostat, 1 January 2025). There are 391 people aged 65+ per 100 children aged 0–14 (municipality 280). The share in the centre was 26.8% in 2001 and 29.5% in 2011."
+    },
+    "soc_share_80plus_cs_2025": {
+      "name": "Share of residents aged 80 and over in the centro storico",
+      "unit": "%",
+      "note": "5,814 people (own calculation), of whom 1,136 are 90 or older (2.4%). Whole municipality 10.3%; province 8.7%, Veneto 8.0% and Italy 7.8% (Eurostat, 1 January 2025)."
+    },
+    "soc_households_cs_2025": {
+      "name": "Registered households (famiglie anagrafiche) in the centro storico",
+      "unit": "households",
+      "note": "Average household size 1.80 people (municipality 1.97). In 2000 there were 32,608 households; their number has fallen by 19%, the population by 28% (own calculation)."
+    },
+    "soc_one_person_households_cs_2025": {
+      "name": "Share of one-person households in the centro storico",
+      "unit": "%",
+      "note": "14,801 of 26,499 households (own calculation). The number of one-person households has stayed around 14,400–15,200 since 1991, while the share rose from 41.0% (1991) and 44.6% (2001). Whole municipality 48.4% (61,842 households). How many people living alone are 65+ is not published by zone."
+    },
+    "soc_foreign_residents_cs_2025": {
+      "name": "Foreign citizens registered in the centro storico",
+      "unit": "people",
+      "note": "9.7% of residents (own calculation), against 17.2% in the whole municipality (43,255), where most live on the mainland. In the centre the number has stayed around 4,600 since 2011 (4,564); in 2000 it was 2,062."
+    },
+    "soc_born_in_venice_cs_2025": {
+      "name": "Share of centro storico residents born in Venice",
+      "unit": "%",
+      "note": "30,342 of 47,625 residents were born in Venice ('nativi'). In 2010 the share was 69.3% (41,332 of 59,621). Whole municipality 57.4%."
+    },
+    "soc_projection_comune_2050": {
+      "name": "Population on 1 January 2050 according to ISTAT's municipal projection (base 2025)",
+      "unit": "inhabitants",
+      "note": "Median scenario: 249,490 (1 Jan 2025), 245,422 (2030), 237,171 (2040) and 228,172 (2050), −8.5% in 25 years. It assumes 1,394–1,563 births and 3,375–3,521 deaths a year and net migration of +933 to +1,336 a year. ISTAT's earlier experimental projection (base 2022, published by the Comune) gave 235,713 in 2041. No projection exists for the centro storico."
+    },
+    "soc_projection_share_65plus_comune_2040": {
+      "name": "Share aged 65+ in 2040 according to ISTAT's municipal projection",
+      "unit": "%",
+      "note": "The share aged 65+ rises from 28.5% (2025) to 30.5% (2030) and 34.2% (2040) and stands at 33.7% in 2050; the mean age from 49.1 to 50.7. The share aged 80+ reaches 14.3% on 1 January 2050 (own calculation from ISTAT's five-year classes: 32,694 of 228,172), against 10.3% in 2025."
+    },
+    "soc_projection_veneto_2080": {
+      "name": "Veneto's population in 2080 according to ISTAT's regional projection (base 2025)",
+      "unit": "inhabitants",
+      "note": "Median scenario: 4,853,472 (2025), 4,685,576 (2050), 4,084,694 (2080). The share aged 65+ rises from 24.9% to 34.4% (2050) and 35.8% (2080), 85+ from 4.1% to 8.1%. Life expectancy in 2080: men 87.4 and women 90.0; fertility 1.16 → 1.35 children per woman. Official projections end in 2080 and are not made for provinces."
+    },
+    "soc_trend_pop_cs_2050": {
+      "name": "Population of the centro storico in 2050 if the 2015–2025 trend continues (trend line)",
+      "unit": "inhabitants",
+      "note": "No authority projects the centro storico. The decline in 2015–2025 was 1.53% a year (55,589 → 47,625); if it continues the population will be 44,082 in 2030, 37,766 in 2040 and 32,356 in 2050 (own calculation: 47,625 × 0.98466^(year − 2025)). A trend line, not a forecast; the 2011–2025 rate was almost the same (−1.52% a year)."
+    },
+    "soc_life_expectancy_men_province": {
+      "name": "Life expectancy at birth, men",
+      "unit": "years",
+      "note": "ISTAT's life table for the province in 2025 (provisional estimate): 82.2 years (2024: 82.1), Veneto 82.5 and Italy 81.7. At age 65, 20.2 years remain (Italy 20.0). Figures for the municipality or the centre are not published."
+    },
+    "soc_life_expectancy_women_province": {
+      "name": "Life expectancy at birth, women",
+      "unit": "years",
+      "note": "ISTAT's life table for the province in 2025 (provisional estimate): 86.4 years (2024: 86.3), Veneto 86.5 and Italy 85.7. At age 65, 23.4 years remain (Italy 22.8). Both sexes: 84.2 years."
+    },
+    "soc_avoidable_mortality_province": {
+      "name": "Avoidable mortality, ages 0–74",
+      "unit": "deaths per 10,000 inhabitants",
+      "note": "Age-standardised mortality from preventable or treatable causes (BES dei territori 2025): 15.5 in the province, 15.2 in Veneto and 17.6 in Italy per 10,000 inhabitants (2022); in 2021 the province's value was 17.8. Mortality from dementia and nervous-system diseases at 65+ is higher than nationally: 41.6 against 35.3."
+    },
+    "soc_life_satisfaction_comune": {
+      "name": "Share of people 14+ highly satisfied with life (score 8–10)",
+      "unit": "%",
+      "note": "ISTAT's small-area estimate for large municipalities (BesT): 52.6% of respondents give 8–10 on the 0–10 scale, against 55.2% in Italy; mean score 7.29 against 7.42 (own calculation from the counts per score). 6.7% did not answer. In 2022 the share was 54.7%."
+    },
+    "soc_friends_to_count_on_comune": {
+      "name": "Share of people 14+ who have friends to count on",
+      "unit": "%",
+      "note": "ISTAT BesT (own calculation from the counts): 69.5% have friends to count on (Italy 74.4%) and 18.3% have none (Italy 15.0%). 83.7% have relatives to count on (Italy 87.0%) and 67.6% can count on one or more neighbours (Italy 70.9%). No direct measure of loneliness exists at municipal level."
+    },
+    "soc_feel_safe_dark_comune": {
+      "name": "Share of people 14+ who feel safe walking alone in the dark where they live",
+      "unit": "%",
+      "note": "ISTAT BesT (own calculation): 11.5% very and 38.9% fairly safe, against 61.7% in Italy; 36.4% feel unsafe (Italy 27.6%) and 10.6% never go out alone or at all. 35.3% of households perceive a high or fairly high crime risk in their area (Italy 23.3%)."
+    },
+    "soc_hospital_beds_ss_giovanni_paolo": {
+      "name": "Hospital beds at the Ospedale Civile SS. Giovanni e Paolo",
+      "unit": "beds",
+      "note": "The island city's hospital in Castello, in the former Scuola Grande di San Marco, with an emergency department, maternity, paediatrics and geriatrics among 42 units; ULSS 3 states 'about 310 beds'. The province has 31.8 hospital beds per 10,000 inhabitants (Veneto 32.3, Italy 33.3; BES 2022) and 25.3 specialist doctors per 10,000 (Italy 34.1; 2023). I found no primary source for the number of water ambulances or their response times."
+    },
+    "soc_dwellings_unoccupied_cs_2023": {
+      "name": "Share of dwellings without registered residents in the centro storico",
+      "unit": "%",
+      "note": "ISTAT's permanent census of 31 December 2023, summed over the sections of the localities Venezia and Giudecca (own calculation): 42,431 dwellings, of which 26,552 occupied by at least one registered resident and 15,879 empty or used only by non-residents (second homes, tourist lets, students). Since 2021 ISTAT does not separate the two. The district Venezia-Murano-Burano: 36.2% (16,998 of 46,969); OCIO gives 21% for the island city in 2011."
+    },
+    "soc_dwellings_unoccupied_comune_2023": {
+      "name": "Share of dwellings without registered residents in the whole municipality",
+      "unit": "%",
+      "note": "26,538 of 149,294 dwellings (own sum of ISTAT's 2023 section data). On the mainland 7.0–7.5% in each district, on the Lido–Pellestrina 24.9%. OCIO: 11% in 2011 and 17% in 2021 for the whole municipality; in 2021–2023 empty dwellings increased mainly on the mainland (+1,010)."
+    },
+    "soc_model_area_residents_2023": {
+      "name": "Registered residents within the model's 1.8 km square",
+      "unit": "inhabitants",
+      "note": "Sum for the 647 census sections (2021 boundaries) whose centroid lies within 45.426915–45.443085 N, 12.325979–12.349021 E, according to ISTAT's census of 31 December 2023 (own GIS calculation). 12,118 households, 6,738 people aged 65+ (31.7%) and 1,924 children aged 0–14; roughly 43% of the centre's residents."
+    },
+    "soc_model_area_dwellings_unoccupied_2023": {
+      "name": "Share of dwellings without registered residents within the model's 1.8 km square",
+      "unit": "%",
+      "note": "9,160 of 20,503 dwellings (ISTAT 2023, own GIS calculation as above) are empty or used only by non-residents, against 37.4% in the whole centre. 58.7% of households in the square are one-person. Inside Airbnb counts 3,786 listings in the same square (September 2026), 3,187 of them entire homes."
+    },
+    "soc_tourist_beds_cs_2026": {
+      "name": "Tourist beds in the historic city",
+      "unit": "beds",
+      "note": "September 2026 according to OCIO's counter, based on the Comune's GeoIDS register: 25,447 beds in hotels, B&Bs and other establishments and 24,760 in tourist flats (locazioni turistiche). In April 2023 there were 44,484. The Comune does not publish the register as a table, hence a secondary source."
+    },
+    "soc_tourist_beds_per_resident_cs_2026": {
+      "name": "Tourist beds per resident in the historic city",
+      "unit": "beds per resident",
+      "note": "50,207 beds against 46,964 residents (OCIO, September 2026). The curves crossed in October 2024 at 48,469 beds against 48,451 residents – 'il sorpasso'. San Marco has 3.75 beds per resident, Dorsoduro 1.06, Santa Croce 1.05 and Giudecca 0.43. The historic city has 19% of the municipality's residents but 61% of its tourist beds. When the counter was new the press dated the crossing to September 2023 with different resident figures (see tur_baddar_fler_an_invanare_ar in turism-ekonomi.json)."
+    },
+    "soc_tourist_rental_units_cs_2026": {
+      "name": "Registered tourist flats (locazioni turistiche) in the historic city",
+      "unit": "flats",
+      "note": "September 2026 (OCIO/GeoIDS): 6,145 flats with 24,760 beds, against 5,040 and 19,016 in April 2023 (+30% beds). On 30 September 2025 OCIO counted 6,273. Share of tourist beds that are in flats: San Polo 70%, Castello 58%, Cannaregio 54%. Since 1 January 2025 every flat must have a national identification code (CIN). The Comune's tourism yearbook counts more, since it includes every dwelling open at any time in the year and the islands too (see tur_baddar_cs in turism-ekonomi.json)."
+    },
+    "soc_airbnb_entire_homes_cs_2026": {
+      "name": "Airbnb listings for entire homes in the centro storico",
+      "unit": "listings",
+      "note": "Inside Airbnb, 16 September 2026: 6,182 listings in the seven sestieri (with Giudecca), of which 5,151 entire homes (83%); 4,416 of them had a review in the last 12 months. Whole municipality 8,844 listings, 71% with hosts who have several listings; median nightly price for entire homes in the centre €283 (own calculations). That is 19 entire homes per 100 registered households in the centre."
+    },
+    "soc_new_leases_comune_2025": {
+      "name": "New residential leases in the municipality",
+      "unit": "new leases",
+      "note": "OMI 2025: 6,994 (−1.6%), of which 41% fixed-term leases at market terms (transitori, 2,878), 18% long market leases (1,255) and 41% leases with regulated rent (canone concordato: 1,222 short and 1,639 long). No breakdown by district is published."
+    },
+    "soc_public_housing_comune_empty_2025": {
+      "name": "Municipally owned dwellings not let",
+      "unit": "dwellings",
+      "note": "The Comune owns 5,348 dwellings (the list was published in 2025 after OCIO's freedom-of-information request); 1,143 (21%) were not let, 16% in the historic city. Half are in the island city. The average rent collected by the manager Insula was €195 a month, €228 in the centre. Since 2018 vacated 'non-ERP' dwellings have been let as social housing to middle-income households."
+    },
+    "soc_public_housing_ater_empty_share_2025": {
+      "name": "Share of empty dwellings in ATER's stock in the municipality",
+      "unit": "%",
+      "note": "ATER Venezia (the regional public housing company) owns 5,163 dwellings in the municipality, half in the island city; 3,443 were let on 31 December 2025. The number of empty dwellings has grown by about 500 since 2022, while on average 34 a year were refurbished. Only 8 dwellings were allocated in 2025 (37 in 2024), after the Comune paused allocations following the Constitutional Court's April 2024 ruling on the residence requirement."
+    },
+    "soc_public_housing_share_insular_2025": {
+      "name": "Share of households in the island city living in publicly owned housing",
+      "unit": "%",
+      "note": "OCIO: 4,527 let dwellings owned by the Comune, ATER and IPAV (2025) against 29,971 dwellings occupied by registered residents (ISTAT 2023). The Comune's housing director spoke in September 2026 of '30% of residents'; OCIO disputes the comparison. Of the Comune's 2,571 dwellings in the island city 1,798 are let as social housing; of ATER's 2,590, 492 are (OCIO, 2025)."
+    },
+    "soc_erp_applicants_2025": {
+      "name": "Applicants in the queue for public housing (ERP)",
+      "unit": "applicants",
+      "note": "The Comune's provisional 2025 list according to OCIO: 517 applicants with an ISEE below €6,000 a year, 274 homeless or in temporary accommodation and 54 with an enforceable eviction order. About 1,200 applied for social housing. The queue has been around 2,000 since 2020; according to OCIO supply covers just over 10% of applicants."
+    },
+    "soc_university_students_2025": {
+      "name": "Students enrolled at Ca' Foscari and IUAV",
+      "unit": "students",
+      "note": "Academic year 2025/26: Ca' Foscari 18,900 and IUAV 4,951. In 2000/01: 25,172 (16,257 + 8,915). The figure refers to enrolment at the universities, not where students live; in the '9mq' survey (2023, 1,071 responses) 82% of respondents lived in the municipality, three in four of them on the islands. The Academy of Fine Arts and the Conservatory are not included."
+    },
+    "soc_student_beds_esu": {
+      "name": "Student beds through ESU Venezia",
+      "unit": "beds",
+      "note": "ESU Venezia (the regional student-support agency) offered 1,000 beds in 2023/24, 748 by selection and 252 reserved, including ESU places in residences run by others (the '9mq' report). About 4 beds per 100 students (own calculation with 23,851 enrolled in 2025/26). Private student residences: Camplus Santa Marta 650 beds, Ai Crociferi 255, San Giobbe 230, CX Mestre 568."
+    },
+    "soc_turnout_european_2024_province": {
+      "name": "Turnout in the 2024 European Parliament election",
+      "unit": "%",
+      "note": "BES dei territori 2025: 48.9% in the province, against 52.6% in Veneto and 49.8% in Italy; in 2019 it was 60.0%. Regional election 2020: 62.5%. Turnout in the municipal election of 24–25 May 2026 (55.9%, centre 53.97%, 2020: 62.2%) is in kommun-plats-historia.json."
+    },
+    "soc_pupils_cs_primary_middle": {
+      "name": "Pupils in primary and lower-secondary schools in the centro storico",
+      "unit": "pupils",
+      "note": "State and private schools with an address in the centre, school year 2024/25 (own sum of MIM open data per school): 2,570, against 3,611 in 2015/16 (−28.8%). The eleven state primary schools went from 1,789 to 1,209 pupils, the four state lower-secondary schools from 1,396 to 1,006. Upper-secondary schools in the centre have 6,319 pupils, many from the mainland."
+    },
+    "soc_nonprofits_province": {
+      "name": "Non-profit organisations per 10,000 inhabitants",
+      "unit": "per 10,000 inhabitants",
+      "note": "BES dei territori 2025: 55.3 in the province, against 62.7 in Veneto and 61.0 in Italy (2022). The Comune's register of associations (Albo delle associazioni) has registration numbers up to 3,629 (September 2026), but the list also contains deregistered associations, so the number of active ones is unknown."
+    },
+    "soc_graduate_migration_province": {
+      "name": "Net migration of young graduates (aged 25–39)",
+      "unit": "per 1,000 graduates",
+      "note": "BES dei territori 2025: the province loses a net 11.3 Italian graduates aged 25–39 per 1,000 a year, against −5.2 in Veneto and −6.2 in Italy (2023); in 2021 the value was −7.9. The share of 25–39-year-olds with tertiary education is 32.1% (Italy 30.9%; 2024)."
+    }
+  }
+}

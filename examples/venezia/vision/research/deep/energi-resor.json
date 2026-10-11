@@ -1,0 +1,1129 @@
+{
+  "topic": "energi-resor",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "en_elanvandning_distributionsnat",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Elanvändning hos kunder anslutna till distributionsnätet i Venedigs kommun",
+      "value": 1491,
+      "unit": "GWh/år",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 1.3, 2.2 och 3.2)",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT, Rilevazione Dati ambientali nelle città)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "ISTAT anger 128 208 ton oljeekvivalenter (toe); med ISTAT:s faktor 86 toe per GWh blir det 1 491 GWh, varav hushåll 289 GWh och övriga användare 1 202 GWh. Användare som är anslutna direkt till stamnätet – sannolikt de största anläggningarna i Porto Marghera – ingår inte. År 2005 var siffran 275 373 toe, omkring 3 200 GWh.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_el_per_invanare",
+      "sdg": [
+        7
+      ],
+      "name_sv": "Elanvändning per invånare (distributionsnätet)",
+      "value": 5970,
+      "unit": "kWh/invånare och år",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 1.1)",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT, Rilevazione Dati ambientali nelle città)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "ISTAT: 51,3 toe per 100 invånare, den högsta nivån bland Italiens 14 storstadskommuner; omräknat med 86 toe per GWh ≈ 5 970 kWh. Genomsnittet för de 109 provinshuvudstäderna är 33,9 toe (≈ 3 940 kWh), för nordöstra Italiens huvudorter 43,3 (≈ 5 030 kWh) och för hela Italien 41,9 toe per 100 invånare (Terna, ≈ 4 870 kWh). Hotellens, butikernas och arbetsplatsernas förbrukning delas här på de boende, vilket sannolikt förklarar en del av den höga siffran.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_el_hushall_per_invanare",
+      "sdg": [
+        7,
+        11
+      ],
+      "name_sv": "Hushållens elanvändning per invånare",
+      "value": 1157,
+      "unit": "kWh/invånare och år",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 2.1)",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT, Rilevazione Dati ambientali nelle città)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "ISTAT: 9,95 toe per 100 invånare 2024 (9,20 år 2023), omräknat ≈ 1 160 kWh. Provinshuvudstäderna har i genomsnitt 9,24 toe (≈ 1 070 kWh) och nordöstra Italiens huvudorter 9,36 (≈ 1 090 kWh); ökningen 2024 följer en nationell uppgång efter rekordlåga 2023.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_naturgas_per_invanare",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Naturgas ur distributionsnätet per invånare",
+      "value": 720,
+      "unit": "m³/invånare och år",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 4.1 och 4.2)",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT, Rilevazione Dati ambientali nelle città)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "ISTAT: 58,9 toe per 100 invånare och 147 308 toe totalt, med ISTAT:s faktor 0,819 toe per 1 000 m³ ≈ 720 m³ per invånare och ≈ 180 miljoner m³. Provinshuvudstäderna använder i genomsnitt ≈ 440 m³ och nordöstra Italiens huvudorter ≈ 730 m³ per invånare. År 2005 var värdet ≈ 1 050 m³.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_el_andel_av_el_och_gas",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Elens andel av den samlade användningen av el och naturgas",
+      "value": 46.5,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 1.2)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città (dati Arera e GSE)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "Elens andel av el plus naturgas, räknat i toe; 41,8 % år 2021. Provinshuvudstäderna ligger på 48,4 % och nordöstra Italiens huvudorter på 42,0 %. Måttet visar ungefär hur långt elektrifieringen av värme och matlagning har kommit.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_solceller_effekt",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Installerad solcellseffekt i kommunen",
+      "value": 59.0,
+      "unit": "MW",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 6.2–6.5, bearbetning av GSE-data)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città (dati Arera e GSE)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "5 284 anläggningar med i genomsnitt 11,2 kW, eller 236 kW per 1 000 invånare mot 272 i provinshuvudstäderna. Effekten har nästan fördubblats sedan 2021 (30,1 MW). Ingen källa skiljer mellan den historiska staden och fastlandet.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_solel_produktion",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Nettoproduktion av solel i kommunen",
+      "value": 43.6,
+      "unit": "GWh/år",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 6.6–6.10)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città (dati Arera e GSE)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "174,5 kWh per invånare mot 269,3 i provinshuvudstäderna. 52 % av solelen används där den produceras (provinshuvudstäderna 32 %). Alla anläggningar i kommunen ingår enligt GSE.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_solel_andel_av_elanvandning",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Lokal solel i förhållande till elanvändningen i distributionsnätet",
+      "value": 2.9,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 1.3 och 6.7)",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT, Rilevazione Dati ambientali nelle città)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "43,6 GWh solel / 1 491 GWh el = 2,9 %. Ett årsbalansmått; stora industrier anslutna till stamnätet ingår inte i nämnaren.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_laddpunkter_publika",
+      "sdg": [
+        7,
+        11
+      ],
+      "name_sv": "Publika laddpunkter för elbilar",
+      "value": 196,
+      "unit": "laddpunkter",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Trasformazioni e innovazioni nei consumi elettrici delle città capoluogo – Anno 2024, serie storiche (ENERGIA_serie_storiche, tavola 7.2)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città (dati Arera e GSE)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/07/ENERGIA_serie_storiche-1.xlsx"
+      },
+      "note_sv": "144 med normal effekt (högst 22 kW) och 52 snabbladdare, mot 82 år 2022 och 2023. ISTAT anger att minst ett av värdena för 2024 är uppskattat och redovisar inte var i kommunen punkterna finns.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_bostader_naturgas_andel",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Naturgasens andel av bostädernas energianvändning (basåret 2005)",
+      "value": 83.5,
+      "unit": "%",
+      "year": 2005,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Piano d'Azione per l'Energia Sostenibile (PAES) del Comune di Venezia, Inventario di Base delle Emissioni 2005 (tabella A, p. 78)",
+        "publisher": "Egen beräkning (ursprungskälla: Comune di Venezia)",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Ambiente/PAES_WEB-compressed.pdf"
+      },
+      "note_sv": "1 794 931 av 2 148 488 MWh; el 14,6 %, eldningsolja 1,3 % och gasol 0,6 %. Någon nyare fördelning för kommunen hittades inte; i nordöstra Italien har 86,6 % av hushållen en egen panna eller annat individuellt system och 13,7 % central uppvärmning (ISTAT 2024).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_co2_basinventering_2005",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Koldioxidutsläpp i kommunens basinventering (PAES, 2005)",
+      "value": 1494744,
+      "unit": "ton CO2/år",
+      "year": 2005,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Piano d'Azione per l'Energia Sostenibile (PAES) del Comune di Venezia, Inventario di Base delle Emissioni 2005 (tabelle A e B, pp. 78–82)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Ambiente/PAES_WEB-compressed.pdf"
+      },
+      "note_sv": "5,54 ton per invånare. Bostäder 524 145 t, handel och tjänster 512 859 t, transporter 424 350 t (varav kollektivtrafik 42 792 t), kommunens byggnader 21 421 t och gatubelysning 11 968 t. Anläggningar i EU:s utsläppshandel – kraftverken och raffinaderierna i Porto Marghera – ingår inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_co2_uppfoljning_2016",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Koldioxidutsläpp i kommunens uppföljningsinventering (2016)",
+      "value": 1004129,
+      "unit": "ton CO2/år",
+      "year": 2016,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "A dataset of GHG emissions for 6,200 cities in Europe and the Southern Mediterranean countries (GlobalCoM.xlsx, Table 2, GCoM_ID IT0014 Venezia)",
+        "publisher": "Egen beräkning (ursprungskälla: Europeiska kommissionen, Joint Research Centre – Covenant of Mayors)",
+        "url": "https://jeodpp.jrc.ec.europa.eu/ftp/public/JRC-OpenData/CoM/GlobalCOM/LATEST/GlobalCoM.xlsx"
+      },
+      "note_sv": "Summan av sektorsvärdena som kommunen rapporterat till borgmästaravtalet: bostäder 360 552 t, tjänster 440 356 t, transporter 178 910 t och kommunala byggnader och belysning 24 311 t. Det är 32,8 % under 2005 (1 494 744 t) och 3,83 ton per invånare (261 905 invånare). Kommunen anger själv att målet −20 % till 2020 nåddes (rådsbeslut 29/2020); transporternas minskning (−58 %) beror troligen delvis på ändrad metod.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_co2_per_inv_bostader",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Koldioxid från bostäder per invånare",
+      "value": 1.38,
+      "unit": "ton CO2/invånare och år",
+      "year": 2016,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "A dataset of GHG emissions for 6,200 cities in Europe and the Southern Mediterranean countries (GlobalCoM.xlsx, Table 2, GCoM_ID IT0014 Venezia)",
+        "publisher": "Egen beräkning (ursprungskälla: Europeiska kommissionen, Joint Research Centre – Covenant of Mayors)",
+        "url": "https://jeodpp.jrc.ec.europa.eu/ftp/public/JRC-OpenData/CoM/GlobalCOM/LATEST/GlobalCoM.xlsx"
+      },
+      "note_sv": "360 552 t (266 175 t från bränslen och 94 377 t från el) / 261 905 invånare = 1,38 t. År 2005 var det 524 145 t / 269 780 = 1,94 t.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_co2_per_inv_tjanster",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Koldioxid från handel, tjänster och offentliga lokaler per invånare",
+      "value": 1.68,
+      "unit": "ton CO2/invånare och år",
+      "year": 2016,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "A dataset of GHG emissions for 6,200 cities in Europe and the Southern Mediterranean countries (GlobalCoM.xlsx, Table 2, GCoM_ID IT0014 Venezia)",
+        "publisher": "Egen beräkning (ursprungskälla: Europeiska kommissionen, Joint Research Centre – Covenant of Mayors)",
+        "url": "https://jeodpp.jrc.ec.europa.eu/ftp/public/JRC-OpenData/CoM/GlobalCOM/LATEST/GlobalCoM.xlsx"
+      },
+      "note_sv": "440 356 t (213 349 t från bränslen och 227 007 t från el) / 261 905 invånare = 1,68 t. År 2005 var det 512 859 t / 269 780 = 1,90 t; sektorn minskade minst av de tre stora, −14 %.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_co2_per_inv_transporter",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Koldioxid från transporter per invånare (borgmästaravtalets avgränsning)",
+      "value": 0.68,
+      "unit": "ton CO2/invånare och år",
+      "year": 2016,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "A dataset of GHG emissions for 6,200 cities in Europe and the Southern Mediterranean countries (GlobalCoM.xlsx, Table 2, GCoM_ID IT0014 Venezia)",
+        "publisher": "Egen beräkning (ursprungskälla: Europeiska kommissionen, Joint Research Centre – Covenant of Mayors)",
+        "url": "https://jeodpp.jrc.ec.europa.eu/ftp/public/JRC-OpenData/CoM/GlobalCOM/LATEST/GlobalCoM.xlsx"
+      },
+      "note_sv": "178 910 t / 261 905 invånare = 0,68 t; 2005 var det 424 350 t / 269 780 = 1,57 t. Värdet för 2005 byggde på all bränsleförsäljning i kommunen, även vid motorvägsstationerna runt Mestre, och ACTV:s förbrukning för bussar och båtar; att transporterna minskade med 58 % beror troligen delvis på ändrad metod.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_paesc_mal_2030",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Klimatplanens (PAESC) mål för minskade utsläpp till 2030",
+      "value": 72,
+      "unit": "% minskning mot 2005",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "P.A.E.S.C. Piano di Azione per l'Energia Sostenibile e il Clima del Comune di Venezia – conferenza stampa 19 gennaio 2026 (bilder 2–3 och 21–25)",
+        "publisher": "Comune di Venezia",
+        "url": "https://dam.comune.venezia.it/api/resource/f7c1e9bb-4880-4974-b551-385bab4ca132"
+      },
+      "note_sv": "Planen ska ge −72 % till 2030 genom 33 åtgärder för minskade utsläpp, och 46 åtgärder för klimatanpassning, med klimatneutralitet 2050 som mål. Kommunen anslöt 2020 till borgmästaravtalet med minst −40 %, skärpte 2021 till −55 %, och C40-programmet Deadline 2020 anger −68,9 %. Planen behandlades i fullmäktiges utskott januari–februari 2026 (förslag 2025/1070).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_co2_alla_kallor_inemar",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Alla koldioxidutsläpp inom kommunens gränser enligt Venetos utsläppsinventering",
+      "value": 4032,
+      "unit": "kton CO2/år",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "INEMAR Veneto 2023 – Inventario regionale delle emissioni in atmosfera, edizione 2023 (gennaio 2026): totali comunali",
+        "publisher": "ARPAV och Regione del Veneto",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_totalicomunali.csv/@@download/file"
+      },
+      "note_sv": "Elproduktion och raffinaderier i Porto Marghera står för 70 % (2 813 kt), varav kolpannorna för 1 649 kt. Utan dem återstår ≈ 1 219 kt, eller ≈ 4,9 ton per invånare med 249 490 invånare (1 januari 2025); alla utsläpp i Veneto motsvarar ≈ 4,8 ton per invånare (egna beräkningar). Till skillnad från PAES räknas här allt som släpps ut i kommunen, även för el som säljs till nätet.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_co2_kolkraft_fusina",
+      "sdg": [
+        7,
+        13
+      ],
+      "name_sv": "Koldioxid från kolpannor för elproduktion i kommunen (Fusina)",
+      "value": 1649,
+      "unit": "kton CO2/år",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "INEMAR Veneto 2023 – Inventario regionale delle emissioni in atmosfera, edizione 2023 (gennaio 2026): emissioni comunali per attività e combustibile",
+        "publisher": "ARPAV och Regione del Veneto",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_emiss_comunali.csv/@@download/file"
+      },
+      "note_sv": "INEMAR redovisar 1 649 kt CO2, 703 t NOx och 445 t SO2 från kolpannor över 300 MW, i praktiken Enels kraftverk Andrea Palladio i Fusina. Enel har sökt tillstånd att ersätta kolblocken med ett gasblock (miljöprövning hos MASE, ID 5147) och planerar solceller och batterilager på friställd mark; något slutdatum för kolet hittades inte. Hamnens kol- och brunkolstrafik minskade med 43 % 2024.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_nox_andel_batar_fartyg",
+      "sdg": [
+        3,
+        11,
+        14
+      ],
+      "name_sv": "Båtars och fartygs andel av kommunens utsläpp av kväveoxider",
+      "value": 46.7,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "INEMAR Veneto 2023 – Inventario regionale delle emissioni in atmosfera, edizione 2023 (gennaio 2026): emissioni comunali per attività e combustibile",
+        "publisher": "Egen beräkning (ursprungskälla: ARPAV och Regione del Veneto)",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_emiss_comunali.csv/@@download/file"
+      },
+      "note_sv": "Motorbåtarna i lagunen (inre vattenvägar) släppte ut 898 ton NOx och fartygen i hamnen (sjötrafik) 2 009 ton av kommunens totalt 6 226 ton: 14,4 % + 32,3 % = 46,7 %. Vägtrafiken stod för 11,2 % och flyget (start och landning) för 6,9 %. I hela Veneto är motsvarande andelar för båtar och fartyg 2,4 % och 4,1 %.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_pm10_andel_batar_fartyg",
+      "sdg": [
+        3,
+        11,
+        14
+      ],
+      "name_sv": "Båtars och fartygs andel av kommunens utsläpp av PM10",
+      "value": 39.1,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "INEMAR Veneto 2023 – Inventario regionale delle emissioni in atmosfera, edizione 2023 (gennaio 2026): emissioni comunali per attività e combustibile",
+        "publisher": "Egen beräkning (ursprungskälla: ARPAV och Regione del Veneto)",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_emiss_comunali.csv/@@download/file"
+      },
+      "note_sv": "Lagunens båtar släppte ut 101 ton och fartygen 54 ton av totalt 397 ton PM10: 25,5 % + 13,6 % = 39,1 %. Uppvärmning i bostäder, främst med ved, står för 30,9 % och vägtrafiken för 14,0 %. Venedig svarar för 73 % av Venetos PM10 från inre vattenvägar.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_nox_lagunbatar",
+      "sdg": [
+        3,
+        11,
+        14
+      ],
+      "name_sv": "Kväveoxider från motorbåtstrafiken i lagunen",
+      "value": 898,
+      "unit": "ton NOx/år",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "INEMAR Veneto 2023 – Inventario regionale delle emissioni in atmosfera, edizione 2023 (gennaio 2026): emissioni comunali per attività e combustibile",
+        "publisher": "ARPAV och Regione del Veneto",
+        "url": "https://www.arpa.veneto.it/dati-ambientali/open-data/file-e-allegati/emissioni-2023/inemarveneto2023_emiss_comunali.csv/@@download/file"
+      },
+      "note_sv": "INEMAR:s post «vie di navigazione interne» (motorbåtar, «imbarcazioni private»): 842 ton från dieselbåtar och 56 ton från bensinbåtar. Samma båtar gav 101 ton PM10 och 76 kt CO2 år 2023.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_bioraffinaderi_kapacitet",
+      "sdg": [
+        7,
+        9,
+        12,
+        13
+      ],
+      "name_sv": "Kapacitet i Enis bioraffinaderi i Porto Marghera",
+      "value": 400000,
+      "unit": "ton råvara/år",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Bioraffineria di Venezia (sida om verksamheten)",
+        "publisher": "Eni",
+        "url": "https://www.eni.com/it-IT/attivita/italia-venezia-bioraffineria.html"
+      },
+      "note_sv": "Världens första oljeraffinaderi som helt ställts om till bioraffinaderi (2014). Omkring 85 % av råvaran är avfall som använd frityrolja och animaliskt fett; produkterna är HVO-diesel, biogasol, biojetbränsle och bionafta. Kapaciteten byggs ut till 600 000 ton per år, även för flygbränsle (SAF); Eni investerar sammanlagt över 900 miljoner euro i Porto Marghera (maj 2026).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_vatgas_elektrolys",
+      "sdg": [
+        7,
+        9,
+        13
+      ],
+      "name_sv": "Elektrolysör för grön vätgas under byggnad i Porto Marghera",
+      "value": 8,
+      "unit": "MW",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Eni, oltre 900 milioni per la transizione energetica di Porto Marghera (nyhet, maj 2026)",
+        "publisher": "Eni",
+        "url": "https://www.eni.com/it-IT/media/news/2026/05/eni-900-milioni-transizione-energetica-porto-marghera.html"
+      },
+      "note_sv": "Byggs av Eni och Magis; vätgasen ska bland annat gå till en tankstation för kollektivtrafikens bussar. Kommunens klimatplan räknar med en «hydrogen valley» i Porto Marghera, och Eni har 6,2 MW solceller på två platser i området.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_landstrom_investering",
+      "sdg": [
+        7,
+        9,
+        14
+      ],
+      "name_sv": "Statlig finansiering av landström vid kajerna i Venedig och Marghera",
+      "value": 89.8,
+      "unit": "miljoner euro",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Decretazione n. 2025.0000396 del 10 luglio 2025 – Elettrificazione banchine (cold ironing), intervento di Marittima",
+        "publisher": "Autorità di Sistema Portuale del Mare Adriatico Settentrionale",
+        "url": "https://trasparenza.port.venice.it/wp-content/uploads/2025/07/2025.0000396_decretazione.pdf"
+      },
+      "note_sv": "57,6 miljoner till Fusina och Canale Nord i Marghera och 32,2 miljoner till Marittima, Santa Marta–San Basilio och Riva dei Sette Martiri, ur den nationella fond som kompletterar PNRR (700 miljoner euro för landström i hela Italien). Kontraktet för Marittima (18,3 miljoner euro) skrevs 6 juni 2024; elnätet ska leverera 4 MW till Santa Marta–San Basilio och 2 MW till Riva dei Sette Martiri (beslut 2024.0000138).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_till_fots_in_i_staden",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel som går till fots in i den historiska staden från Piazzale Roma, Tronchetto och järnvägsstationen",
+      "value": 64.5,
+      "unit": "%",
+      "year": 2019,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "PUMS – Piano Urbano della Mobilità Sostenibile, VAS Documento preliminare: 2.1 Relazione descrittiva (kap. 4.7 och s. 38–39)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/PUMS/2.1_%20Relazione%20Descrittiva.pdf"
+      },
+      "note_sv": "Av omkring 100 000 personer som en vanlig vardag kommer till knutpunkten Tronchetto–Piazzale Roma–Santa Lucia fortsätter 64 500 till fots och 33 000 med vaporetto (planen avrundar till 65 % och 35 %). Siffran gäller resor in i staden, inte alla resor inom den; någon resvaneundersökning för den historiska staden hittades inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_ankomster_knutpunkt_per_dag",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Personer som en vanlig vardag når den historiska staden via Tronchetto–Piazzale Roma–Santa Lucia",
+      "value": 100000,
+      "unit": "personer/dag",
+      "year": 2019,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "PUMS – Piano Urbano della Mobilità Sostenibile, VAS Documento preliminare: 2.1 Relazione descrittiva (kap. 4.7 och s. 38–39)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/PUMS/2.1_%20Relazione%20Descrittiva.pdf"
+      },
+      "note_sv": "Mätningar till trafikplanen PUMS 2019, rensade från evenemang och toppdagar och med universiteten i gång; siffran gäller alltså inte högsäsongens toppdagar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_ponte_liberta_bilar",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Personbilar och lätta fordon över Ponte della Libertà per dag",
+      "value": 30000,
+      "unit": "fordon/dag",
+      "year": 2019,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "PUMS – Piano Urbano della Mobilità Sostenibile, VAS Documento preliminare: 2.1 Relazione descrittiva (kap. 4.7 och s. 38–39)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/PUMS/2.1_%20Relazione%20Descrittiva.pdf"
+      },
+      "note_sv": "Över 30 000 lätta fordon, 5 000 tunga (varav 1 800 bussar), 100 spårvagnar och 370 tåg per dag; planen kallar bron en sårbar navelsträng mellan fastlandet och Venedig. På motorvägsringen genom Mestre passerar över 100 000 fordon per dag.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_garage_piazzale_roma",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Bilar in i kommunens parkeringshus vid Piazzale Roma",
+      "value": 264382,
+      "unit": "infarter/år",
+      "year": 2023,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del Turismo, dati 2023 (tabell 9.1–9.2, transiti Piazzale Roma)",
+        "publisher": "Comune di Venezia (data från AVM S.p.A.)",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_del_Turismo_dati_2023.pdf"
+      },
+      "note_sv": "Infarter till Garage Comunale (exklusive abonnemang), i genomsnitt ≈ 720 per dag och flest i augusti (31 795); 258 896 år 2019. Parkeringen Sant'Andrea på samma plats hade ytterligare 119 592 infarter.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_broar_historiska_staden",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Broar som förbinder öarna i den historiska staden",
+      "value": 430,
+      "unit": "broar",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Tatano, Revellini, Mazzanti: «Venezia accessibile: una mappatura interattiva per muoversi in città», TECHNE 19/2020, s. 153–161",
+        "publisher": "Università Iuav di Venezia / Firenze University Press",
+        "url": "https://oaj.fupress.net/index.php/techne/article/download/7784/8150/13850"
+      },
+      "note_sv": "Iuav-forskarna anger «över 430 broar» mellan «mer än 120 öar»; kommunens egen tillgänglighetsguide skriver «över 420 broar» och omkring 100 öar. Antalet skiljer sig mellan källor beroende på om privata broar räknas.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_broar_modellomrade",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Broar i modellens kvadrat (1,8 × 1,8 km)",
+      "value": 244,
+      "unit": "broar",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "OpenStreetMap-utdrag för modellens kvadrat (cities/venezia/osm.json, hämtat 2026-10-11): brokonturer man_made=bridge och gångvägar highway=steps/footway med bridge=yes",
+        "publisher": "Egen beräkning (ursprungskälla: OpenStreetMap contributors, ODbL)",
+        "url": "https://www.openstreetmap.org/#map=16/45.4350/12.3375"
+      },
+      "note_sv": "Egen räkning av brokonturer (man_made=bridge) med mittpunkt inom 45,4269–45,4431 N och 12,3260–12,3490 E. OpenStreetMap bygger på frivilliga kartläggare och kan vara ofullständigt.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_broar_med_trappor_andel",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Andel av broarna i modellens kvadrat som har trappsteg",
+      "value": 95.1,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "OpenStreetMap-utdrag för modellens kvadrat (cities/venezia/osm.json, hämtat 2026-10-11): brokonturer man_made=bridge och gångvägar highway=steps/footway med bridge=yes",
+        "publisher": "Egen beräkning (ursprungskälla: OpenStreetMap contributors, ODbL)",
+        "url": "https://www.openstreetmap.org/#map=16/45.4350/12.3375"
+      },
+      "note_sv": "232 av 244 brokonturer har gångväg med trappsteg (highway=steps): 223 bara trappor och 9 dessutom en ramp eller rullstolsmärkning; 5 saknar trappor och 7 saknar karterad gångväg. 232 / 244 = 95,1 %.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_tillganglig_yta_med_vaporetto",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Del av den historiska stadens yta som en rullstolsburen kan nå med vaporetto",
+      "value": 70,
+      "unit": "%",
+      "year": 2007,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "Venezia a ruota libera (Progetto Lettura Agevolata)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/venezia_a_ruota_libera.pdf"
+      },
+      "note_sv": "Utan båt kan en rullstolsburen «knappt besöka 2 %» av staden, kring terminalerna; med vaporetton och de över 55 bryggorna med plant tillträde «nästan 70 %». Texten är odaterad men hänvisar till tillgänglighetsplanen PEBA från slutet av 2004 (pdf skapad 2007); PEBA uppdaterades 2020 (beslut 68/2020) och trapphissarna på broarna avvecklas.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_kollektivtrafik_resor",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Resor med kollektivtrafik i kommunen (vaporetto, buss, spårvagn och People Mover)",
+      "value": 176.8,
+      "unit": "miljoner resor/år",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Ambiente urbano – Anno 2024: tavole MOBILITA_URBANA_2024 (tavola 2.1 och 2.2)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città",
+        "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+      },
+      "note_sv": "707,5 resor per invånare, mest i Italien (Milano 429,9, provinshuvudstäderna 176,4). År 2019 var det 218,9 miljoner, så resandet ligger 19 % under nivån före pandemin. ISTAT delar inte upp resorna mellan båt och land; turisternas resor ingår men inte i invånartalet.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_vattenburen_kollektivtrafik_andel",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Vattenburen kollektivtrafiks andel av utbudet (platskilometer)",
+      "value": 44.2,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Ambiente urbano – Anno 2024: tavole MOBILITA_URBANA_2024 (tavola 8.1, 8.2 och 10.1)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città",
+        "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+      },
+      "note_sv": "1 088 miljoner platskilometer på vatten 2024, eller 4 354 per invånare; buss 49,0 % och spårvagn 6,8 %. Venedig står för 98 % av all vattenburen kollektivtrafik i Italiens provinshuvudstäder (1 088 av 1 106 miljoner platskilometer, egen beräkning).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_actv_linjer_vatten",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Vaporetto- och färjelinjer i ACTV:s nät",
+      "value": 25,
+      "unit": "linjer",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Carta della Mobilità 2024 (s. 12–13 och 30–35)",
+        "publisher": "AVM – Azienda Veneziana della Mobilità / Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Partecipate/Carta%20della%20Mobilita_2024.pdf"
+      },
+      "note_sv": "Nätet täcker Canal Grande, Giudeccakanalen, Bacino di San Marco och lagunens öar från Treporti till Chioggia, med två bilfärjelinjer (Tronchetto–Lido och Lido–Pellestrina). ACTV:s öppna tidtabelldata från oktober 2026 har 24 linjer och 152 bryggplatser.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_actv_turer_per_vardag",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Turer med ACTV:s båtar en vanlig vardag",
+      "value": 1422,
+      "unit": "turer/dag",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Öppna data ACTV navigazione, GTFS actv_nav.zip (giltig 5 oktober 2026–4 oktober 2027)",
+        "publisher": "Egen beräkning (ursprungskälla: ACTV S.p.A.)",
+        "url": "https://actv.avmspa.it/sites/default/files/attachments/opendata/navigazione/actv_nav.zip"
+      },
+      "note_sv": "Räknat för onsdag 14 oktober 2026, båda riktningarna. Linje 1 längs Canal Grande har 177 turer och linje 2 har 172, den korta 2/ (Piazzale Roma–Rialto) 29 och nattlinjen N 39; lagunlinjerna 11 (Pellestrina–Chioggia) och 12 (Fondamente Nove–Burano–Punta Sabbioni) har 132 och 126.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_actv_flotta_vatten",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "ACTV:s flotta för passagerartrafik på vatten",
+      "value": 148,
+      "unit": "fartyg",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Carta della Mobilità 2024 (s. 12–13 och 30–35)",
+        "publisher": "AVM – Azienda Veneziana della Mobilità / Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Partecipate/Carta%20della%20Mobilita_2024.pdf"
+      },
+      "note_sv": "Den 31 december 2023: 62 vaporetton (motobattelli), 51 motoscafi, 20 större lagunbåtar (motobattelli foranei), 7 motonavi, 7 bilfärjor och 1 experimentell elbåt (E1); tillsammans 459 000 motortimmar per år. Av vaporettona byggdes 38 åren 1974–1988 och de senaste 10 år 2010 (Gente Veneta, maj 2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_actv_hybridfartyg",
+      "sdg": [
+        7,
+        11,
+        14
+      ],
+      "name_sv": "Hybriddrivna vaporetton i trafik",
+      "value": 1,
+      "unit": "fartyg",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "FPT Industrial, al fianco di Actv, Vulkan Italia e Bimotor, realizza il futuro ibrido di Venezia (pressmeddelande 17 juni 2025)",
+        "publisher": "FPT Industrial",
+        "url": "https://www.fptindustrial.com/-/media/FPT/PDF-Press-Release/2025/ACTV-MotoBattello-3/20250617_FPT_MOTOBATTELLO-3_IT.pdf?rev=-1"
+      },
+      "note_sv": "MotoBattello 3 (serie 80, Canal Grande) byggdes om till seriehybrid med dieselgenerator, LFP-batterier och en elmotor på 147 kW och provkördes i trafik 2025; bänkprov gav −26 % NOx, −31 % partiklar och −28 % utsläpp totalt. ACTV:s plan (Carta della Mobilità 2024) omfattar ytterligare 4 ombyggnader, 18 nya hybridvaporetton och 7 hybriddrivna större lagunbåtar till 2029.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_vattentaxi_licenser",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Licenser för vattentaxi",
+      "value": 251,
+      "unit": "licenser",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Ambiente urbano – Anno 2024: tavole MOBILITA_URBANA_2024 (tavola 12.1 och 12.2, not d)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città",
+        "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+      },
+      "note_sv": "Av kommunens 371 taxilicenser gäller 251 vattentaxi (oförändrat 2022–2024) och resten biltaxi; 14,8 licenser per 10 000 invånare mot 13,1 i provinshuvudstäderna. Under provperioden för fartmätning sommaren 2025 stod taxibåtar för hälften av överträdelserna (Il Post).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_gondol_licenser",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Licenser för gondoltrafik",
+      "value": 440,
+      "unit": "licenser",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Regolamento comunale per il servizio pubblico di gondola (ändrat 2020)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Qualita/Regol_Gondola_modificato_2020-def.pdf"
+      },
+      "note_sv": "Reglementet fastställer 440 licenser, ett antal som kommunen kan ändra. Licensen är personlig och hör till en gondolstation (stazio); den kan överlåtas till en registrerad ersättare, och i ett familjeföretag har familjemedlemmen förtur. Nya ersättare utbildas i kommunens kurs «Arte del Gondoliere».",
+      "confidence": "high"
+    },
+    {
+      "id": "en_fartmatning_sensorer",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Sensorer för fartmätning av båtar i stadens kanaler",
+      "value": 100,
+      "unit": "sensorer",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Solo a Venezia poteva esserci un «barcavelox» (2 augusti 2025)",
+        "publisher": "Il Post",
+        "url": "https://www.ilpost.it/2025/08/02/barcavelox-venezia/"
+      },
+      "note_sv": "Systemet Si.Sa. («barcavelox») mäter båtars fart i Canal Grande, Giudeccakanalen, vid Piazzale Roma och San Marco; böter (minst 138 euro) från 1 augusti 2025 efter en provperiod från 1 juni med omkring 150 överträdelser per dag. Gränserna är 5–20 km/h beroende på zon. Uppgifterna kommer från en nyhetsartikel; kommunens beslut hittades inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_batpassager_punta_salute",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Båtpassager per dag vid Punta della Salute, Canal Grandes mynning",
+      "value": 4000,
+      "unit": "passager/dag",
+      "year": 2001,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Il volume di traffico acqueo sulla laguna: monitoraggi e controlli (Insula Quaderni n. 12, s. 105–107)",
+        "publisher": "Magistrato alle Acque, sezione Polizia lagunare / Insula S.p.A.",
+        "url": "https://www.insula.it/images/pdf/resource/quadernipdf/Q12-25.pdf"
+      },
+      "note_sv": "Räkningar juli–augusti 2001 (12 dagar, kl. 7–21, 30 stationer): i genomsnitt omkring 4 000 passager per dag vid Punta della Salute både vardag och helg, mot 511 (vardag) och 1 109 (helg) per station i resten av lagunen. En söndag i juli steg passagerna där från 1 649 (1998) till 3 302 (2001), främst taxibåtar. Inga nyare publicerade räkningar för Canal Grande hittades.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_tag_avgangar_santa_lucia",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Tågavgångar från Venezia Santa Lucia en vanlig vardag",
+      "value": 273,
+      "unit": "avgångar/dag",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "Quadro orario partenze Venezia S. Lucia – orario programmato 14 giugno–12 dicembre 2026",
+        "publisher": "Egen beräkning (ursprungskälla: RFI – Rete Ferroviaria Italiana)",
+        "url": "https://prm.rfi.it/qo_prm/QO_Partenze_SiPMR.aspx?Id=2796&dalle=00.00&alle=23.59"
+      },
+      "note_sv": "Egen räkning för onsdag 14 oktober 2026 i RFI:s officiella tidtabell: 263–283 avgångar beroende på hur trafikdagsanmärkningarna tolkas, och 267–289 ankomster. Av avgångarna är 49 snabbtåg (Frecciarossa och Italo, tågnummer 8000–9999); stationen har 23 spår.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "en_tag_restid_milano",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Snabbaste tåget Venezia Santa Lucia–Milano Centrale",
+      "value": 147,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Quadro orario partenze Venezia S. Lucia – orario programmato 14 giugno–12 dicembre 2026",
+        "publisher": "RFI – Rete Ferroviaria Italiana (egen sammanställning)",
+        "url": "https://prm.rfi.it/qo_prm/QO_Partenze_SiPMR.aspx?Id=2796&dalle=00.00&alle=23.59"
+      },
+      "note_sv": "Frecciarossa 2 h 27 min (till exempel 06.48–09.15) och Italo 2 h 28 min; 22 direkta tåg en vardag i oktober 2026. Mestre nås på 10 minuter och Padova på 26.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_tag_restid_roma",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Snabbaste tåget Venezia Santa Lucia–Roma Termini",
+      "value": 236,
+      "unit": "minuter",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Quadro orario partenze Venezia S. Lucia – orario programmato 14 giugno–12 dicembre 2026",
+        "publisher": "RFI – Rete Ferroviaria Italiana (egen sammanställning)",
+        "url": "https://prm.rfi.it/qo_prm/QO_Partenze_SiPMR.aspx?Id=2796&dalle=00.00&alle=23.59"
+      },
+      "note_sv": "Frecciarossa 9405, 07.26–11.22 (3 h 56 min); Italo snabbast 4 h 00 min; 25 direkta tåg en vardag. Firenze nås på 2 h 13 min och Bologna på 1 h 33 min.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_flygplats_passagerare",
+      "sdg": [
+        8,
+        9,
+        13
+      ],
+      "name_sv": "Passagerare på Venedigs flygplats Marco Polo",
+      "value": 11850336,
+      "unit": "passagerare/år",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Dati di traffico gennaio–dicembre 2025, totali progressivi",
+        "publisher": "Assaeroporti (för Venedig: Aeroporti2030)",
+        "url": "https://assaeroporti.com/statistiche/?selectedYear=2025&month=12"
+      },
+      "note_sv": "+2,2 % mot 2024 och 2,5 % över 2019 (11 561 594). 9,45 miljoner reste utrikes och 2,37 miljoner inrikes, med 87 597 flygrörelser. Flygplatsen ligger i Tessera inom kommunen; flygets starter och landningar gav 428 ton NOx 2023 (INEMAR).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_kryssning_passagerare",
+      "sdg": [
+        8,
+        11,
+        14
+      ],
+      "name_sv": "Kryssningspassagerare i Venedigs hamn",
+      "value": 584284,
+      "unit": "passagerare/år",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Dati statistici sui traffici 2025 – consuntivo (18 januari 2026)",
+        "publisher": "Autorità di Sistema Portuale del Mare Adriatico Settentrionale",
+        "url": "https://www.port.venice.it/statistiche/dati-statistici-sui-traffici-2025/"
+      },
+      "note_sv": "+6,7 % mot 2024 (547 587) men 36 % av 2019, då 1 611 341 passagerare kom med 500 anlöp. Sedan 1 augusti 2021 får stora fartyg inte gå genom Bacino di San Marco, Canale di San Marco och Giudeccakanalen, och staten avsatte då 157 miljoner euro till tillfälliga kajplatser i Marghera.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_pendlingsresor_utbyte",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Pendlingsresor till och från kommunen för arbete och studier",
+      "value": 70000,
+      "unit": "resor/dag",
+      "year": 2011,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "PUMS – Piano Urbano della Mobilità Sostenibile, VAS Documento preliminare: 2.1 Relazione descrittiva (kap. 4.7 och s. 38–39)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/PUMS/2.1_%20Relazione%20Descrittiva.pdf"
+      },
+      "note_sv": "Över 70 000 resor enligt folkräkningen 2011: hälften till och från de 13 grannkommunerna och 22 % utanför storstadsregionen. Över hälften av bilisterna som lämnar motorvägen vid Mestre kör tillbaka genom samma påfart samma dag, vilket tyder på pendling.",
+      "confidence": "medium"
+    },
+    {
+      "id": "en_dagsbesokare_avgift",
+      "sdg": [
+        8,
+        11,
+        12
+      ],
+      "name_sv": "Betalande dagsbesökare per avgiftsdag (inträdesavgiften)",
+      "value": 13046,
+      "unit": "personer/avgiftsdag",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Contributo di accesso – sperimentazione 2025: i numeri complessivi (provvisori)",
+        "publisher": "Comune di Venezia (arkiverad kopia hos Internet Archive, 2 augusti 2025)",
+        "url": "https://web.archive.org/web/20250802151606/https://live.comune.venezia.it/sites/live.comune.venezia.it/files/articoli/allegati/CDA_report2025.pdf"
+      },
+      "note_sv": "Genomsnitt för de 54 avgiftsdagarna april–juli 2025 (kl. 8.30–16, betalningar via plattformen); totalt 723 497 betalda inträden mot 485 062 under 29 dagar 2024. Rekorddagen var fredag 2 maj 2025 med 24 951. Hotellgäster, som inte betalar, var i genomsnitt 36 639 per dag.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_bilar_per_1000_inv",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Personbilar per 1 000 invånare",
+      "value": 460,
+      "unit": "bilar/1 000 inv",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Statistica Today – Indicatori del parco veicolare, Anno 2024 (februari 2026)",
+        "publisher": "ISTAT (bearbetning av ACI-data)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/02/Statistica-Today_Indicatori-del-parco-veicolare_Anno-2024.pdf"
+      },
+      "note_sv": "Lägst av Italiens provinshuvudstäder (Frosinone högst med 856); Italien 701, provinshuvudstäderna 651, storstadskommunerna 612 och EU 578. Talet gäller hela kommunen med Mestre; den historiska staden är helt bilfri och de flesta som bor där har ingen egen bil (PUMS). ACI räknar 111 640 bilar den 31 december 2025, vilket med 249 385 invånare ger ≈ 448 per 1 000 (Veneto ≈ 687, Italien ≈ 709; egen beräkning).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_cykelvagar_km",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Cykelvägar i kommunen",
+      "value": 190,
+      "unit": "km",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Ambiente urbano – Anno 2024: tavole MOBILITA_URBANA_2024 (tavola 20.1 och 20.2)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città",
+        "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+      },
+      "note_sv": "45,4 km per 100 km² mot 31,3 i provinshuvudstäderna; 144 km år 2019. ISTAT redovisar ingen fördelning mellan fastlandet, Lido och den historiska staden.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_bussar_el_gas",
+      "sdg": [
+        7,
+        11,
+        13
+      ],
+      "name_sv": "Bussar med el-, hybrid- eller gasdrift i kollektivtrafiken",
+      "value": 185,
+      "unit": "bussar",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Ambiente urbano – Anno 2024: tavole MOBILITA_URBANA_2024 (tavola 4.2 och 6.2)",
+        "publisher": "ISTAT, Rilevazione Dati ambientali nelle città",
+        "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+      },
+      "note_sv": "Av 301 bussar 2024 var 76 el- eller elhybridbussar och 109 gasbussar (metan eller gasol); därtill 20 spårvagnar på 19,2 km linje. ACTV planerade med PNRR-medel 44 nya elbussar till 2024 och 90 bränslecellsbussar till första halvåret 2026 (Carta della Mobilità 2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "en_no2_rio_novo",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Kvävedioxid vid Rio Novo (station för båttrafiken i den historiska staden), årsmedel",
+      "value": 34,
+      "unit": "µg/m³",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Aria a Venezia Rio Novo: il report 2025 (pressmeddelande 17 april 2026)",
+        "publisher": "ARPAV",
+        "url": "https://www.arpa.veneto.it/arpav/comunicati-stampa/archivio-comunicati/comunicati-2026/aria-a-venezia-rio-novo-il-report-2025"
+      },
+      "note_sv": "Stationen vid kanalen Rio Novo mäter sedan september 2017. Årsmedlet var 51 µg/m³ 2018 och 2019 (över gränsen 40), 32 och 31 under pandemiåren 2020–2021, 37 år 2022, 36 år 2023, 35 år 2024 och 34 år 2025. EU:s gräns från 2030 är 20 µg/m³.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_no2_sacca_fisola",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Kvävedioxid vid bakgrundsstationen Sacca Fisola (Giudecca), årsmedel",
+      "value": 30,
+      "unit": "µg/m³",
+      "year": 2024,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Ambiente urbano – Anno 2024: tavole ARIA_2024, prospetto 2.1 (dati 2024 per centralina)",
+        "publisher": "ISTAT (dati ARPAV)",
+        "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+      },
+      "note_sv": "Den historiska stadens bakgrundsstation; 39 µg/m³ 2004 och 26 år 2023 (ARPAV). Fastlandets trafikstationer via Tagliamento och via Beccaria låg på 25 och 28 µg/m³ 2024, alltså lägre än vattenstadens.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_pm10_dygn_sacca_fisola",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Dygn med PM10 över 50 µg/m³ vid Sacca Fisola",
+      "value": 21,
+      "unit": "dygn",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "La qualità dell'aria in breve – anno 2025 (tabell 1)",
+        "publisher": "ARPAV",
+        "url": "https://www.arpa.veneto.it/api/arpavinforma/pubblicazioni/la-qualita-dellaria-in-breve-anno-2025/@@download/file"
+      },
+      "note_sv": "Högst 35 dygn per år tillåts; Sacca Fisola hade 54 dygn 2023 och 36 dygn 2024. År 2025 var det bästa på 20 år i Veneto: Rio Novo 24, Parco Bissuola 25 och via Tagliamento 36 dygn, den enda av kommunens stationer över gränsen. Från 2030 räknas dygn över 45 µg/m³ och högst 18 tillåts.",
+      "confidence": "high"
+    },
+    {
+      "id": "en_pm10_rio_novo",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "PM10 vid Rio Novo, årsmedel",
+      "value": 24,
+      "unit": "µg/m³",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Aria a Venezia Rio Novo: il report 2025 (pressmeddelande 17 april 2026)",
+        "publisher": "ARPAV",
+        "url": "https://www.arpa.veneto.it/arpav/comunicati-stampa/archivio-comunicati/comunicati-2026/aria-a-venezia-rio-novo-il-report-2025"
+      },
+      "note_sv": "Under gränsen 40 µg/m³ men över EU:s gräns från 2030 (20 µg/m³), och lika med eller lägre än kommunens övriga stationer; 24 dygn över 50 µg/m³ av 358 mätdygn. Sacca Fisola hade 29 µg/m³ 2024 (ISTAT).",
+      "confidence": "high"
+    }
+  ]
+}

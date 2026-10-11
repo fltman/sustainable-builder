@@ -1,0 +1,1099 @@
+{
+  "topic": "samhalle-halsa",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "soc_pop_cs_1951",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Venedigs historiska centrum (centro storico) 1951",
+      "value": 174808,
+      "unit": "invånare",
+      "year": 1951,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Folkbokförda den 31 december i den historiska staden: de sex sestieri med Giudecca och Sacca Fisola, utan Lido och de andra öarna. 1951 (folkräkningen) är kommunens indexår (= 100) och seriens högsta värde; 1871 bodde 128 787 här och 1936 163 849. Hela kommunen hade 315 811 invånare, fastlandet 96 966.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_1966",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 1966",
+      "value": 121309,
+      "unit": "invånare",
+      "year": 1966,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "31 december 1966. Sedan 1951 hade folkmängden minskat med 53 499 personer, i snitt 3 567 per år (egen beräkning), medan fastlandsdelen av kommunen fördubblades från 96 966 till 193 314 invånare. Den största ettårsminskningen i serien kom 1960–1961, med folkräkningen 1961 (−8 252).",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_1971",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 1971",
+      "value": 108426,
+      "unit": "invånare",
+      "year": 1971,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Kommunens registersiffra 31 december 1971. OCIO återger folkräkningen 1971 för vattenstaden med Giudecca: omkring 35 000 bostäder, varav cirka 10 000 bebodda av ägaren, 23 000 hyrda eller lånade och 1 000 tomma. En CENSIS-undersökning 1973 av dem som flyttat 1964–68 fann att 60,2 % flyttade för att få en sundare och modernare bostad.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_1981",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 1981",
+      "value": 93598,
+      "unit": "invånare",
+      "year": 1981,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "31 december 1981. Under 1980-talet minskade folkmängden med i snitt 1 695 personer per år, till 76 644 år 1991 (egen beräkning). Värdet 95 222, som ibland anges för 1981, avser 31 december 1980.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_1991",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 1991",
+      "value": 76644,
+      "unit": "invånare",
+      "year": 1991,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "31 december 1991 (1990: 78 165). Kvartersserierna ger 455 födda och 1 252 döda det året, och 35 242 hushåll varav 14 448 med en person (41,0 %; summa av kvarter 1 och 2, egen beräkning).",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_2001",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 2001",
+      "value": 65695,
+      "unit": "invånare",
+      "year": 2001,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "31 december 2001. Värdet 66 386, som ibland anges för 2001, avser 31 december 2000. 505 födda och 1 037 döda under året (summa av kvarter 1 och 2). Enligt OCIO:s läsning av folkräkningen 2001 bodde ägarna själva i knappt 18 000 bostäder, 10 000–11 000 var hyrda och över 5 000 tomma.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_2011",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 2011",
+      "value": 58991,
+      "unit": "invånare",
+      "year": 2011,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "31 december 2011, mindre än hälften av 1966 års 121 309 (−51 %, egen beräkning). 421 födda och 899 döda under året (summa av kvarter 1 och 2). Folkräkningen 2011 räknade enligt OCIO 8 909 hyrda bostäder i vattenstaden, mot omkring 23 000 år 1971.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_2022_below_50000",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 2022, året då den föll under 50 000",
+      "value": 49665,
+      "unit": "invånare",
+      "year": 2022,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "31 december 2022; ett år tidigare 50 434. Kommunen publicerar inget datum för passagen; OCIO skrev den 23 november 2022 att nedgången under den psykologiska gränsen 50 000 'under de senaste veckorna' gett upphov till en ström av artiklar och uttalanden. Föreningen Venessia.com sprider siffran '49.999' på flaggor och affischer som symbol för oron.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_2025",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 31 december 2025",
+      "value": 47625,
+      "unit": "invånare",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Popolazione residente e movimento demografico 2025 (tabell B01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B01_T01_movimento%20e%20calcolo_2025.ods"
+      },
+      "note_sv": "Under 2025 minskade folkmängden med 864 (−1,8 %) från 48 489: 209 födda, 689 döda, 1 031 inflyttade från andra kommuner och utlandet, 1 096 utflyttade, samt 600 in- och 919 utflyttningar inom kommunen. Det är 27,2 % av 1951 års nivå och 19 % av kommunens invånare (egna beräkningar).",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_cs_2026_aug",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 31 augusti 2026 (senaste månadssiffra)",
+      "value": 47201,
+      "unit": "invånare",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Popolazione residente e movimento nel mese di agosto 2026 (månadstabell)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/08_AGOSTO%202026.ods"
+      },
+      "note_sv": "−424 sedan årsskiftet; i augusti 2026 föddes 14 och dog 59 i centrum. Hela kommunen: 251 682. OCIO räknar 46 964 invånare i september 2026 (annan avgränsning av den historiska staden), och Venessia.com:s webbräknare visade 47 652 den 11 oktober 2026.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pop_comune_peak_1968",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Kommunens högsta folkmängd (1968)",
+      "value": 367832,
+      "unit": "invånare",
+      "year": 1968,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Hela Comune di Venezia, då inklusive Cavallino-Treporti som blev egen kommun 1999. Fastlandet (terraferma) hade 200 445 invånare, öarna (estuario) 51 117 och centrum 116 270. 31 december 2025: 251 294, varav 178 131 på fastlandet och 25 538 på Lido, Pellestrina, Murano, Burano och de andra öarna.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_births_cs_2025",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Födda i centro storico",
+      "value": 209,
+      "unit": "födda/år",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Popolazione residente e movimento demografico 2025 (tabell B01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B01_T01_movimento%20e%20calcolo_2025.ods"
+      },
+      "note_sv": "4,3 per 1 000 invånare (egen beräkning med medelfolkmängden 48 057), mot 5,6 i provinsen och 6,3 i Italien 2024 (Eurostat, demo_r_gind3). I centrum föddes 455 barn 1991, 505 år 2001, 421 år 2011 och 236 år 2021 (summa av kvarter 1 och 2). Hela kommunen: 1 416.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_deaths_cs_2025",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Döda i centro storico",
+      "value": 689,
+      "unit": "döda/år",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Popolazione residente e movimento demografico 2025 (tabell B01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B01_T01_movimento%20e%20calcolo_2025.ods"
+      },
+      "note_sv": "14,3 per 1 000 invånare (egen beräkning), mot 11,4 i provinsen och 11,1 i Italien 2024 (Eurostat). Det dör 3,3 gånger så många som det föds. 1991 dog 1 252, 2011 899 och 2021 837 (summa av kvarter 1 och 2). Hela kommunen: 3 374.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_migration_external_cs_2025",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Flyttnetto mot andra kommuner och utlandet, centro storico",
+      "value": -65,
+      "unit": "personer/år",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Popolazione residente e movimento demografico 2025 (tabell B01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B01_T01_movimento%20e%20calcolo_2025.ods"
+      },
+      "note_sv": "1 031 inflyttade och 1 096 utflyttade. Hela kommunen hade ett positivt flyttnetto, 7 632 in och 6 181 ut (+1 451), men hela överskottet hamnade på fastlandet (+1 671); öarna (estuario) hade −155.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_moves_within_comune_cs_2025",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Flyttnetto mot resten av kommunen (fastlandet och öarna), centro storico",
+      "value": -319,
+      "unit": "personer/år",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Popolazione residente e movimento demografico 2025 (tabell B01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B01_T01_movimento%20e%20calcolo_2025.ods"
+      },
+      "note_sv": "600 flyttningar in till och 919 ut från de två kvarteren inom kommunen (flyttningar mellan kvarteren tar ut varandra). Kvarterstabellerna ger 309 inflyttade från övriga kommunen och 628 utflyttade dit, varav 432 till fastlandet (egen summering). Varje år flyttar alltså netto drygt 300 venetianare från vattenstaden till Mestre, Lido och öarna.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_natural_balance_comune_2025",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Födelseöverskott (födda minus döda) i hela kommunen",
+      "value": -1958,
+      "unit": "personer/år",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Popolazione residente e movimento demografico 2025 (tabell B01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B01_T01_movimento%20e%20calcolo_2025.ods"
+      },
+      "note_sv": "1 416 födda och 3 374 döda. Flyttnettot +1 451 vägde upp det mesta, så folkmängden minskade med 507 till 251 294 (31 december 2025). ISTAT:s folkräkningsjusterade folkmängd var 249 490 den 1 januari 2025. Antalet utländska medborgare ökade med 1 591 under året.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_natural_balance_cs_2015_2025",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Födelseunderskott i centro storico, summa 2015–2025",
+      "value": -6013,
+      "unit": "personer (summa 2015–2025)",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Variazione della popolazione residente (2015–2025) och età media della popolazione residente – svar på fråga 895 i kommunfullmäktige",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://consiglio2020.comune.venezia.it/allegati/atti_ispettivi/risposte_1/895_variazioni_2015-2025etamedia.pdf"
+      },
+      "note_sv": "2 797 födda och 8 810 döda under 2015–2025. Flödena summerar till −8 669, vilket motsvarar förändringen från slutet av 2014 (56 311) till 2025, alltså elva år: i snitt 254 födda och 801 döda per år (egen beräkning). Födelseunderskottet står för sju tiondelar av minskningen; resten är flyttnettot mot resten av kommunen (−3 819), delvis motvägt av flyttnettot mot andra kommuner och utlandet (+1 163). Kommunen: −21 224.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_moves_within_comune_cs_2015_2025",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Flyttnetto mot resten av kommunen, centro storico, summa 2015–2025",
+      "value": -3819,
+      "unit": "personer (summa 2015–2025)",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Variazione della popolazione residente (2015–2025) och età media della popolazione residente – svar på fråga 895 i kommunfullmäktige",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://consiglio2020.comune.venezia.it/allegati/atti_ispettivi/risposte_1/895_variazioni_2015-2025etamedia.pdf"
+      },
+      "note_sv": "7 978 flyttningar in till och 11 797 ut från centrum inom kommunen under 2015–2025, i snitt −347 per år över elva år (egen beräkning). Fastlandet vann 3 103 och öarna 716 i flyttningar inom kommunen under samma tid.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_migration_external_cs_2015_2025",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Flyttnetto mot andra kommuner och utlandet, centro storico, summa 2015–2025",
+      "value": 1163,
+      "unit": "personer (summa 2015–2025)",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Variazione della popolazione residente (2015–2025) och età media della popolazione residente – svar på fråga 895 i kommunfullmäktige",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://consiglio2020.comune.venezia.it/allegati/atti_ispettivi/risposte_1/895_variazioni_2015-2025etamedia.pdf"
+      },
+      "note_sv": "11 830 inflyttade och 10 667 utflyttade under 2015–2025 (+106 per år över elva år, egen beräkning). Över perioden kom alltså fler till centrum utifrån än som lämnade det för andra kommuner; 2025 var nettot dock −65. Hela kommunen: +8 656, varav +8 022 på fastlandet.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_share_0_14_cs_2025",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Andel barn 0–14 år i centro storico",
+      "value": 8.5,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Residenti nei quartieri per classi di età al 31/12/2025 – totale (tabell B04_T03)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B04_T03_MF_2025_classi.ods"
+      },
+      "note_sv": "4 034 av 47 625 invånare (summa av klasserna 0–4, 5–9 och 10–14 i kommunens tabell; egen beräkning). Hela kommunen 10,3 %; provinsen 11,0 %, Veneto 11,8 % och Italien 11,9 % (Eurostat, 1 januari 2025). I centrum var andelen 11,0 % år 2011.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_share_65plus_cs_2025",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel invånare 65 år och äldre i centro storico",
+      "value": 33.1,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Residenti nei quartieri per classi di età al 31/12/2025 – totale (tabell B04_T03)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B04_T03_MF_2025_classi.ods"
+      },
+      "note_sv": "15 785 av 47 625 (egen beräkning). Hela kommunen 28,7 %; provinsen 26,5 %, Veneto 24,9 % och Italien 24,7 % (Eurostat, 1 januari 2025). Det finns 391 personer 65+ per 100 barn 0–14 (kommunen 280). Andelen i centrum var 26,8 % år 2001 och 29,5 % år 2011.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_share_80plus_cs_2025",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel invånare 80 år och äldre i centro storico",
+      "value": 12.2,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Residenti nei quartieri per classi di età al 31/12/2025 – totale (tabell B04_T03)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B04_T03_MF_2025_classi.ods"
+      },
+      "note_sv": "5 814 personer (egen beräkning), varav 1 136 är 90 år eller äldre (2,4 %). Hela kommunen 10,3 %; provinsen 8,7 %, Veneto 8,0 % och Italien 7,8 % (Eurostat, 1 januari 2025).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_households_cs_2025",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkbokförda hushåll (famiglie anagrafiche) i centro storico",
+      "value": 26499,
+      "unit": "hushåll",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica nuclei famigliari e famiglie monocomponenti residenti nei quartieri 2000–2025 (tabeller B05)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/it/content/famiglie"
+      },
+      "note_sv": "Genomsnittlig hushållsstorlek 1,80 personer (kommunen 1,97). År 2000 fanns 32 608 hushåll; antalet har minskat med 19 %, folkmängden med 28 % (egen beräkning).",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_one_person_households_cs_2025",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Andel enpersonshushåll i centro storico",
+      "value": 55.9,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica nuclei famigliari e famiglie monocomponenti residenti nei quartieri 2000–2025 (tabeller B05)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/it/content/famiglie"
+      },
+      "note_sv": "14 801 av 26 499 hushåll (egen beräkning). Antalet ensamhushåll har legat kring 14 400–15 200 sedan 1991, medan andelen stigit från 41,0 % (1991) och 44,6 % (2001). Hela kommunen 48,4 % (61 842 hushåll). Hur många ensamboende som är 65+ publiceras inte per zon.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_foreign_residents_cs_2025",
+      "sdg": [
+        10,
+        11
+      ],
+      "name_sv": "Utländska medborgare folkbokförda i centro storico",
+      "value": 4620,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente con cittadinanza straniera per quartiere 2000–2025 (tabell B06)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/B06_ST_POPOLAZIONE%20STRANIERA%20PER%20QUARTIERE_2000_2025.ods"
+      },
+      "note_sv": "9,7 % av invånarna (egen beräkning), mot 17,2 % i hela kommunen (43 255), där de flesta bor på fastlandet. I centrum har antalet legat kring 4 600 sedan 2011 (4 564); år 2000 var det 2 062.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_born_in_venice_cs_2025",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Andel invånare i centro storico som är födda i Venedig",
+      "value": 63.7,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica pop. res. totale/nativi 2010–2025 (tabell A01_T02)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T02_ST_Pop.res_Nativi_2010_2025.ods"
+      },
+      "note_sv": "30 342 av 47 625 invånare är födda i Venedig ('nativi'). År 2010 var andelen 69,3 % (41 332 av 59 621). Hela kommunen 57,4 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_projection_comune_2050",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Befolkning 1 januari 2050 enligt ISTAT:s kommunala framskrivning (bas 2025)",
+      "value": 228172,
+      "unit": "invånare",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Previsioni comunali della popolazione 2025–2050, scenario mediano (IstatData 165_1245, Comune di Venezia 027042)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,165_1245_DF_DCIS_PREVCOM_2,1.0/A.027042..."
+      },
+      "note_sv": "Mediant scenario: 249 490 (1 jan 2025), 245 422 (2030), 237 171 (2040) och 228 172 (2050), −8,5 % på 25 år. Den antar 1 394–1 563 födda och 3 375–3 521 döda per år och ett flyttnetto på +933 till +1 336 per år. ISTAT:s tidigare försöksframskrivning (bas 2022, publicerad av kommunen) gav 235 713 år 2041. Någon framskrivning för centro storico finns inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_projection_share_65plus_comune_2040",
+      "sdg": [
+        3,
+        11
+      ],
+      "name_sv": "Andel 65+ år 2040 enligt ISTAT:s kommunala framskrivning",
+      "value": 34.2,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Previsioni comunali: principali indicatori strutturali, scenario mediano (IstatData 165_1245_DF_DCIS_PREVCOM_4)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,165_1245_DF_DCIS_PREVCOM_4,1.0/A.027042..."
+      },
+      "note_sv": "Andelen 65+ stiger från 28,5 % (2025) till 30,5 % (2030) och 34,2 % (2040) och ligger på 33,7 % år 2050; medelåldern från 49,1 till 50,7 år. Andelen 80+ blir 14,3 % den 1 januari 2050 (egen beräkning ur ISTAT:s femårsklasser: 32 694 av 228 172), mot 10,3 % 2025.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_projection_veneto_2080",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Venetos befolkning 2080 enligt ISTAT:s regionala framskrivning (bas 2025)",
+      "value": 4084694,
+      "unit": "invånare",
+      "year": 2025,
+      "scope": "Veneto",
+      "direction": "context",
+      "source": {
+        "title": "Previsioni regionali della popolazione residente, base 1.1.2025 – Indicatori, Regione Veneto",
+        "publisher": "ISTAT (demo.istat.it)",
+        "url": "https://demo.istat.it/data/previsioni/Indicatori-Regioni.zip"
+      },
+      "note_sv": "Mediant scenario: 4 853 472 (2025), 4 685 576 (2050), 4 084 694 (2080). Andelen 65+ stiger från 24,9 % till 34,4 % (2050) och 35,8 % (2080), 85+ från 4,1 % till 8,1 %. Livslängd 2080: män 87,4 och kvinnor 90,0 år; fruktsamheten 1,16 → 1,35 barn per kvinna. Officiella framskrivningar slutar 2080 och görs inte för provinser.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_trend_pop_cs_2050",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico 2050 om trenden 2015–2025 fortsätter (trendlinje)",
+      "value": 32356,
+      "unit": "invånare",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (tabell A01_T01)",
+        "publisher": "Comune di Venezia – Servizio Elettorale e Leva Militare, Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Ingen myndighet gör framskrivningar för centro storico. Minskningen 2015–2025 var 1,53 % per år (55 589 → 47 625); fortsätter den blir folkmängden 44 082 år 2030, 37 766 år 2040 och 32 356 år 2050 (egen beräkning: 47 625 × 0,98466^(år − 2025)). En trendlinje, inte en prognos; takten 2011–2025 var nästan densamma (−1,52 % per år).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_life_expectancy_men_province",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Förväntad livslängd vid födseln, män",
+      "value": 82.2,
+      "unit": "år",
+      "year": 2025,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Tavole di mortalità: speranza di vita per provincia (IstatData 26_295_DF_DCIS_MORTALITA1_1)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,26_295_DF_DCIS_MORTALITA1_1,1.0/A.ITD35.LIFEXP..?startPeriod=2022"
+      },
+      "note_sv": "ISTAT:s livslängdstabell för provinsen 2025 (preliminär skattning): 82,2 år (2024: 82,1), Veneto 82,5 och Italien 81,7. Vid 65 års ålder återstår 20,2 år (Italien 20,0). Kommun- eller centrumsiffror publiceras inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_life_expectancy_women_province",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Förväntad livslängd vid födseln, kvinnor",
+      "value": 86.4,
+      "unit": "år",
+      "year": 2025,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Tavole di mortalità: speranza di vita per provincia (IstatData 26_295_DF_DCIS_MORTALITA1_1)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,26_295_DF_DCIS_MORTALITA1_1,1.0/A.ITD35.LIFEXP..?startPeriod=2022"
+      },
+      "note_sv": "ISTAT:s livslängdstabell för provinsen 2025 (preliminär skattning): 86,4 år (2024: 86,3), Veneto 86,5 och Italien 85,7. Vid 65 års ålder återstår 23,4 år (Italien 22,8). Båda könen: 84,2 år.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_avoidable_mortality_province",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Undvikbar dödlighet 0–74 år",
+      "value": 15.5,
+      "unit": "dödsfall per 10 000 invånare",
+      "year": 2022,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Bes dei territori – edizione 2025, indicatori per provincia",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "Åldersstandardiserad dödlighet i orsaker som kan förebyggas eller behandlas (BES dei territori 2025): 15,5 i provinsen, 15,2 i Veneto och 17,6 i Italien per 10 000 invånare (2022); 2021 var provinsens värde 17,8. Dödligheten i demens och nervsjukdomar 65+ är högre än i landet: 41,6 mot 35,3.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_life_satisfaction_comune",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Andel 14+ som är mycket nöjda med livet (betyg 8–10)",
+      "value": 52.6,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Persone di 14 anni e più per livello di soddisfazione della vita – province e grandi comuni (DF_DCSS_BEST_PPC_2_GC)",
+        "publisher": "ISTAT (BesT, stime per piccole aree)",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,DF_DCSS_BEST_PPC_2_GC,1.0/all/ALL/"
+      },
+      "note_sv": "ISTAT:s småområdesskattning för storkommuner (BesT): 52,6 % av dem som svarat ger 8–10 på skalan 0–10, mot 55,2 % i Italien; medelbetyget 7,29 mot 7,42 (egen beräkning ur antalen per betyg). 6,7 % svarade inte. 2022 var andelen 54,7 %.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_friends_to_count_on_comune",
+      "sdg": [
+        3,
+        10
+      ],
+      "name_sv": "Andel 14+ som har vänner att räkna med",
+      "value": 69.5,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Persone di 14 anni e più che hanno amici su cui contare – province e grandi comuni (DF_DCSS_BEST_PPC_4_GC; även PPC_3 och PPC_5)",
+        "publisher": "ISTAT (BesT, stime per piccole aree)",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,DF_DCSS_BEST_PPC_4_GC,1.0/all/ALL/"
+      },
+      "note_sv": "ISTAT BesT (egen beräkning ur antalen): 69,5 % har vänner att räkna med (Italien 74,4 %) och 18,3 % har inga (Italien 15,0 %). 83,7 % har släktingar att räkna med (Italien 87,0 %) och 67,6 % kan räkna med en eller flera grannar (Italien 70,9 %). Ett direkt mått på ensamhet finns inte på kommunnivå.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_feel_safe_dark_comune",
+      "sdg": [
+        11,
+        16
+      ],
+      "name_sv": "Andel 14+ som känner sig trygga när de går ensamma i mörker där de bor",
+      "value": 50.4,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Persone di 14 anni e più per percezione della sicurezza camminando al buio da soli – province e grandi comuni (DF_DCSS_BEST_PPC_6_GC; även PPC_1)",
+        "publisher": "ISTAT (BesT, stime per piccole aree)",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,DF_DCSS_BEST_PPC_6_GC,1.0/all/ALL/"
+      },
+      "note_sv": "ISTAT BesT (egen beräkning): 11,5 % mycket och 38,9 % ganska trygga, mot 61,7 % i Italien; 36,4 % känner sig otrygga (Italien 27,6 %) och 10,6 % går aldrig ut ensamma eller alls. 35,3 % av hushållen upplever stor eller ganska stor brottsrisk i sitt område (Italien 23,3 %).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_hospital_beds_ss_giovanni_paolo",
+      "sdg": [
+        3
+      ],
+      "name_sv": "Vårdplatser på Ospedale Civile SS. Giovanni e Paolo",
+      "value": 310,
+      "unit": "vårdplatser",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Ospedale di Venezia – Ospedale SS. Giovanni e Paolo",
+        "publisher": "Azienda ULSS 3 Serenissima",
+        "url": "https://www.aulss3.veneto.it/ospedali/ospedale-di-venezia"
+      },
+      "note_sv": "Den insulära stadens sjukhus i Castello, i den forna Scuola Grande di San Marco, med akutmottagning, förlossning, barn- och geriatrik bland 42 enheter; ULSS 3 anger 'cirka 310 vårdplatser'. Provinsen har 31,8 vårdplatser per 10 000 invånare (Veneto 32,3, Italien 33,3; BES 2022) och 25,3 specialistläkare per 10 000 (Italien 34,1; 2023). Ambulansbåtarnas antal och utryckningstider har jag inte hittat i någon primärkälla.",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_dwellings_unoccupied_cs_2023",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Andel bostäder utan folkbokförda boende i centro storico",
+      "value": 37.4,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Censimento permanente della popolazione e delle abitazioni 2023 – dati per sezioni di censimento e aree sub-comunali (Venezia_2023_sezioni.xlsx)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/databrowser/DWL/PERMPOP/SUBCOM/Comuni_2023.zip"
+      },
+      "note_sv": "ISTAT:s permanenta folkräkning 31 december 2023, summerad över sektionerna i orterna Venezia och Giudecca (egen beräkning): 42 431 bostäder, varav 26 552 bebodda av minst en folkbokförd och 15 879 tomma eller använda bara av icke-folkbokförda (andrabostäder, turistuthyrning, studenter). ISTAT skiljer sedan 2021 inte på de två. Kommundelen Venezia-Murano-Burano: 36,2 % (16 998 av 46 969); OCIO anger 21 % för den insulära staden 2011.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_dwellings_unoccupied_comune_2023",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Andel bostäder utan folkbokförda boende i hela kommunen",
+      "value": 17.8,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Censimento permanente della popolazione e delle abitazioni 2023 – dati per sezioni di censimento e aree sub-comunali (Venezia_2023_sezioni.xlsx)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/databrowser/DWL/PERMPOP/SUBCOM/Comuni_2023.zip"
+      },
+      "note_sv": "26 538 av 149 294 bostäder (egen summering av ISTAT:s sektionsdata 2023). På fastlandet 7,0–7,5 % i varje kommundel, på Lido–Pellestrina 24,9 %. OCIO: 11 % år 2011 och 17 % år 2021 för hela kommunen; 2021–2023 ökade de tomma främst på fastlandet (+1 010).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_model_area_residents_2023",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkbokförda invånare inom modellens 1,8 km-kvadrat",
+      "value": 21266,
+      "unit": "invånare",
+      "year": 2023,
+      "scope": "Modellens område (1,8 km-kvadraten kring Rialto–San Marco)",
+      "direction": "context",
+      "source": {
+        "title": "Basi territoriali 2021 (sezioni di censimento, Veneto) + censimento permanente 2023 per sezioni",
+        "publisher": "ISTAT (egen beräkning)",
+        "url": "https://www.istat.it/storage/cartografia/basi_territoriali/2021/R05_21.zip"
+      },
+      "note_sv": "Summa för de 647 folkräkningssektioner (2021 års gränser) vars tyngdpunkt ligger inom 45,426915–45,443085 N, 12,325979–12,349021 E, enligt ISTAT:s folkräkning 31 december 2023 (egen GIS-beräkning). 12 118 hushåll, 6 738 personer 65+ (31,7 %) och 1 924 barn 0–14; ungefär 43 % av centrumets invånare.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_model_area_dwellings_unoccupied_2023",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Andel bostäder utan folkbokförda boende inom modellens 1,8 km-kvadrat",
+      "value": 44.7,
+      "unit": "%",
+      "year": 2023,
+      "scope": "Modellens område (1,8 km-kvadraten kring Rialto–San Marco)",
+      "direction": "lower_better",
+      "source": {
+        "title": "Basi territoriali 2021 (sezioni di censimento, Veneto) + censimento permanente 2023 per sezioni",
+        "publisher": "ISTAT (egen beräkning)",
+        "url": "https://www.istat.it/storage/cartografia/basi_territoriali/2021/R05_21.zip"
+      },
+      "note_sv": "9 160 av 20 503 bostäder (ISTAT 2023, egen GIS-beräkning som ovan) är tomma eller används bara av icke-folkbokförda, mot 37,4 % i hela centrum. 58,7 % av hushållen i rutan består av en person. Inside Airbnb räknar 3 786 annonser i samma ruta (september 2026), varav 3 187 hela bostäder.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_tourist_beds_cs_2026",
+      "sdg": [
+        8,
+        11,
+        12
+      ],
+      "name_sv": "Turistbäddar i den historiska staden",
+      "value": 50207,
+      "unit": "bäddar",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Locazioni Brevi Turistiche nella città storica: uno sguardo al contatore (19 september 2026)",
+        "publisher": "OCIO – Osservatorio CIvicO sulla casa e la residenza (data från kommunens portal GeoIDS)",
+        "url": "https://ocio-venezia.it/report/aggiornamento-lbt"
+      },
+      "note_sv": "September 2026 enligt OCIO:s räknare, som bygger på kommunens register GeoIDS: 25 447 bäddar i hotell, B&B och andra boenden och 24 760 i turistlägenheter (locazioni turistiche). I april 2023 var det 44 484. Kommunen publicerar inte registret som tabell, därför sekundärkälla.",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_tourist_beds_per_resident_cs_2026",
+      "sdg": [
+        8,
+        11,
+        12
+      ],
+      "name_sv": "Turistbäddar per invånare i den historiska staden",
+      "value": 1.07,
+      "unit": "bäddar per invånare",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Locazioni Brevi Turistiche nella città storica: uno sguardo al contatore (19 september 2026)",
+        "publisher": "OCIO – Osservatorio CIvicO sulla casa e la residenza (data från kommunens portal GeoIDS)",
+        "url": "https://ocio-venezia.it/report/aggiornamento-lbt"
+      },
+      "note_sv": "50 207 bäddar mot 46 964 invånare (OCIO, september 2026). Kurvorna korsades i oktober 2024 med 48 469 bäddar mot 48 451 invånare – 'il sorpasso'. San Marco har 3,75 bäddar per invånare, Dorsoduro 1,06, Santa Croce 1,05 och Giudecca 0,43. Den historiska staden har 19 % av kommunens invånare men 61 % av turistbäddarna. När räknaren var ny daterade pressen korsningen till september 2023 med andra invånartal (se tur_baddar_fler_an_invanare_ar i turism-ekonomi.json).",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_tourist_rental_units_cs_2026",
+      "sdg": [
+        8,
+        11,
+        12
+      ],
+      "name_sv": "Registrerade turistlägenheter (locazioni turistiche) i den historiska staden",
+      "value": 6145,
+      "unit": "lägenheter",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Locazioni Brevi Turistiche nella città storica: uno sguardo al contatore (19 september 2026)",
+        "publisher": "OCIO – Osservatorio CIvicO sulla casa e la residenza (data från kommunens portal GeoIDS)",
+        "url": "https://ocio-venezia.it/report/aggiornamento-lbt"
+      },
+      "note_sv": "September 2026 (OCIO/GeoIDS): 6 145 lägenheter med 24 760 bäddar, mot 5 040 och 19 016 i april 2023 (+30 % bäddar). Den 30 september 2025 räknade OCIO 6 273. Andelen turistbäddar som finns i lägenheter: San Polo 70 %, Castello 58 %, Cannaregio 54 %. Sedan 1 januari 2025 måste varje lägenhet ha ett nationellt id (CIN). Kommunens turistårsbok räknar fler, eftersom den tar med alla bostäder som varit öppna någon gång under året och även öarna (se tur_baddar_cs i turism-ekonomi.json).",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_airbnb_entire_homes_cs_2026",
+      "sdg": [
+        11,
+        12
+      ],
+      "name_sv": "Airbnb-annonser för hela bostäder i centro storico",
+      "value": 5151,
+      "unit": "annonser",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Inside Airbnb – Venice, listings.csv (ögonblicksbild 16 september 2026)",
+        "publisher": "Inside Airbnb",
+        "url": "https://data.insideairbnb.com/italy/veneto/venice/2026-09-16/visualisations/listings.csv"
+      },
+      "note_sv": "Inside Airbnb, 16 september 2026: 6 182 annonser i de sju sestieri (med Giudecca), varav 5 151 hela bostäder (83 %); 4 416 av dem hade fått omdöme senaste 12 månaderna. Hela kommunen 8 844 annonser, 71 % hos värdar med flera annonser; mediannattpris för hela bostäder i centrum 283 € (egna beräkningar). Motsvarar 19 hela bostäder per 100 folkbokförda hushåll i centrum.",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_new_leases_comune_2025",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Nya hyresavtal för bostäder i kommunen",
+      "value": 6994,
+      "unit": "nya hyresavtal",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Statistiche regionali – Il mercato immobiliare residenziale, Veneto 2026 (FOCUS Venezia, tabell 12–15)",
+        "publisher": "Agenzia delle Entrate – Osservatorio del Mercato Immobiliare (OMI)",
+        "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10101383/SR2026_VENETO.pdf/b9d7b4cb-c99d-7191-ca20-902b5540bbc9?t=1780658612084"
+      },
+      "note_sv": "OMI 2025: 6 994 (−1,6 %), varav 41 % tidsbegränsade avtal på marknadsvillkor (transitori, 2 878), 18 % långa marknadsavtal (1 255) och 41 % avtal med reglerad hyra (canone concordato: 1 222 korta och 1 639 långa). Uppdelning per stadsdel publiceras inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_public_housing_comune_empty_2025",
+      "sdg": [
+        1,
+        11
+      ],
+      "name_sv": "Kommunägda bostäder som inte är uthyrda",
+      "value": 1143,
+      "unit": "bostäder",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Un primo quadro aggiornato sul patrimonio residenziale comunale (dati 2025)",
+        "publisher": "OCIO (analys av kommunens publicerade bostadslista)",
+        "url": "https://ocio-venezia.it/report/un-primo-quadro-aggiornato-sul-patrimonio-residenziale-comunale-dati-2025"
+      },
+      "note_sv": "Kommunen äger 5 348 bostäder (listan publicerades 2025 efter OCIO:s begäran om insyn); 1 143 (21 %) var inte uthyrda, i den historiska staden 16 %. Hälften ligger i den insulära staden. Medelhyran som förvaltaren Insula tog in var 195 € i månaden, 228 € i centrum. Sedan 2018 hyrs lediga 'icke-ERP'-bostäder ut som social housing till medelinkomsttagare.",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_public_housing_ater_empty_share_2025",
+      "sdg": [
+        1,
+        11
+      ],
+      "name_sv": "Andel tomma bostäder i ATER:s bestånd i kommunen",
+      "value": 33.5,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "ATER Venezia: il fallimento delle politiche di gestione del patrimonio abitativo pubblico – aggiornamento 2025 (2 april 2026)",
+        "publisher": "OCIO (data från ATER Venezia, 20 februari 2026)",
+        "url": "https://ocio-venezia.it/report/ater-venezia-il-fallimento-delle-politiche-di-gestione-del-patrimonio-abitativo-pubblico"
+      },
+      "note_sv": "ATER Venezia (regionens allmännyttiga bolag) äger 5 163 bostäder i kommunen, hälften i den insulära staden; 3 443 var uthyrda den 31 december 2025. Antalet tomma har ökat med omkring 500 sedan 2022, medan i snitt 34 renoverades per år. Endast 8 bostäder tilldelades 2025 (37 år 2024), sedan kommunen pausat tilldelningarna efter författningsdomstolens dom i april 2024 om bosättningskravet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_public_housing_share_insular_2025",
+      "sdg": [
+        1,
+        11
+      ],
+      "name_sv": "Andel hushåll i den insulära staden som bor i offentligt ägda bostäder",
+      "value": 15.1,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Venezia insulare (Venezia, Murano, Burano)",
+      "direction": "context",
+      "source": {
+        "title": "Quando i numeri non spiegano niente (4 oktober 2026)",
+        "publisher": "OCIO",
+        "url": "https://ocio-venezia.it/report/qando-i-numeri-non-spiegano-niente"
+      },
+      "note_sv": "OCIO: 4 527 uthyrda bostäder ägda av kommunen, ATER och IPAV (2025) mot 29 971 bostäder bebodda av folkbokförda (ISTAT 2023). Kommunens bostadschef talade i september 2026 om '30 % av invånarna'; OCIO ifrågasätter jämförelsen. Av kommunens 2 571 bostäder i den insulära staden hyrs 1 798 ut som social housing, av ATER:s 2 590 är det 492 (OCIO, 2025).",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_erp_applicants_2025",
+      "sdg": [
+        1,
+        11
+      ],
+      "name_sv": "Sökande i kön till allmännyttiga bostäder (ERP)",
+      "value": 2251,
+      "unit": "sökande",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Un Ocio sulle elezioni comunali a Venezia (5 mars 2026)",
+        "publisher": "OCIO",
+        "url": "https://ocio-venezia.it/report/un-ocio-sulle-elezioni-comunali-a-venezia"
+      },
+      "note_sv": "Kommunens preliminära kölista 2025 enligt OCIO: 517 sökande med ISEE under 6 000 € per år, 274 bostadslösa eller i tillfälliga boenden och 54 med verkställbart vräkningsbeslut. Omkring 1 200 sökte social housing. Kön har legat kring 2 000 sedan 2020; enligt OCIO räcker utbudet till drygt 10 % av de sökande.",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_university_students_2025",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Inskrivna studenter vid Ca' Foscari och IUAV",
+      "value": 23851,
+      "unit": "studenter",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Iscritti per ateneo (02_iscrittixateneo.csv), Ustat",
+        "publisher": "Ministero dell'Università e della Ricerca (MUR)",
+        "url": "https://dati-ustat.mur.gov.it/dataset/iscritti"
+      },
+      "note_sv": "Läsåret 2025/26: Ca' Foscari 18 900 och IUAV 4 951. År 2000/01: 25 172 (16 257 + 8 915). Siffran avser inskrivna vid universiteten, inte var de bor; i enkäten '9mq' (2023, 1 071 svar) bodde 82 % av de svarande i kommunen, tre av fyra av dem på öarna. Konstakademin och konservatoriet ingår inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_student_beds_esu",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Studentbäddar via ESU Venezia",
+      "value": 1000,
+      "unit": "bäddar",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "9mq – Perimetri dell'abitare: abitare universitario a Venezia, esiti dell'indagine a.a. 2022-23 (s. 52–53)",
+        "publisher": "OCIO / Cluster H-City, Università Iuav di Venezia",
+        "url": "https://ocio-venezia.it/report/report-9mq-sull-abitare-universitario-a-venezia-a-a-2022-2023"
+      },
+      "note_sv": "ESU Venezia (regionens organ för studiestöd) erbjöd 1 000 bäddar läsåret 2023/24, varav 748 genom antagning och 252 reserverade, inklusive ESU-platser i boenden som drivs av andra (rapporten '9mq'). Omkring 4 bäddar per 100 studenter (egen beräkning med 23 851 inskrivna 2025/26). Privata studentboenden: Camplus Santa Marta 650 bäddar, Ai Crociferi 255, San Giobbe 230, CX Mestre 568.",
+      "confidence": "medium"
+    },
+    {
+      "id": "soc_turnout_european_2024_province",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i Europaparlamentsvalet 2024",
+      "value": 48.9,
+      "unit": "%",
+      "year": 2024,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Bes dei territori – edizione 2025, indicatori per provincia",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "BES dei territori 2025: 48,9 % i provinsen, mot 52,6 % i Veneto och 49,8 % i Italien; 2019 var det 60,0 %. Regionvalet 2020: 62,5 %. Valdeltagandet i kommunalvalet 24–25 maj 2026 (55,9 %, centrum 53,97 %, 2020: 62,2 %) finns i kommun-plats-historia.json.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_pupils_cs_primary_middle",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Elever i grund- och mellanskolor (primaria och secondaria di I grado) i centro storico",
+      "value": 2570,
+      "unit": "elever",
+      "year": 2024,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Studenti per anno di corso e fascia di età + anagrafe scuole (statali och paritarie), a.s. 2015/16 och 2024/25",
+        "publisher": "Ministero dell'Istruzione e del Merito – Portale Unico dei Dati della Scuola",
+        "url": "https://dati.istruzione.it/opendata/opendata/catalogo/elements1/?area=Studenti"
+      },
+      "note_sv": "Statliga och fristående skolor med adress i centrum, läsåret 2024/25 (egen summering av MIM:s öppna data per skola): 2 570, mot 3 611 år 2015/16 (−28,8 %). De elva statliga primärskolorna gick från 1 789 till 1 209 elever, de fyra statliga mellanskolorna från 1 396 till 1 006. Gymnasierna i centrum har 6 319 elever, många från fastlandet.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "soc_nonprofits_province",
+      "sdg": [
+        16,
+        17
+      ],
+      "name_sv": "Ideella organisationer per 10 000 invånare",
+      "value": 55.3,
+      "unit": "per 10 000 invånare",
+      "year": 2022,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Bes dei territori – edizione 2025, indicatori per provincia",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "BES dei territori 2025: 55,3 i provinsen, mot 62,7 i Veneto och 61,0 i Italien (2022). Kommunens föreningsregister (Albo delle associazioni) har registreringsnummer upp till 3 629 (september 2026), men listan innehåller även avregistrerade föreningar, så antalet aktiva är okänt.",
+      "confidence": "high"
+    },
+    {
+      "id": "soc_graduate_migration_province",
+      "sdg": [
+        4,
+        8
+      ],
+      "name_sv": "Flyttnetto för unga akademiker (25–39 år)",
+      "value": -11.3,
+      "unit": "per 1 000 akademiker",
+      "year": 2023,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Bes dei territori – edizione 2025, indicatori per provincia",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2025/06/Bes_dei_territori_edizione_2025.zip"
+      },
+      "note_sv": "BES dei territori 2025: provinsen förlorar netto 11,3 italienska akademiker 25–39 år per 1 000 och år, mot −5,2 i Veneto och −6,2 i Italien (2023); 2021 var värdet −7,9. Andelen 25–39-åringar med högre utbildning är 32,1 % (Italien 30,9 %; 2024).",
+      "confidence": "high"
+    }
+  ]
+}

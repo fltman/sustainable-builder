@@ -1,0 +1,1077 @@
+{
+  "topic": "kommun-plats-historia",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "com_folkmangd_kommun",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Comune di Venezia 31 december",
+      "value": 251294,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Popolazione residente (serie storiche, Ufficio Statistica)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/it/content/serie-storiche"
+      },
+      "note_sv": "Kommunen omfattar den historiska staden (centro storico), lagunöarna (estuario) och fastlandet (terraferma) med Mestre och Marghera. Toppen var 367 832 invånare 1968; Cavallino-Treporti är egen kommun sedan 1999 och ingår inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_folkmangd_centro_storico",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Venedigs historiska centrum (centro storico) 31 december",
+      "value": 47625,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (A01_T01)",
+        "publisher": "Comune di Venezia, Ufficio Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "De sex sestieri med Giudecca. 864 färre än året innan (48 489 − 47 625, egen beräkning). Årsskiftessiffran föll under 50 000 för första gången 2022 (49 665).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_folkmangd_centro_storico_1931",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico vid folkräkningen 1931",
+      "value": 163559,
+      "unit": "personer",
+      "year": 1931,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (A01_T01)",
+        "publisher": "Comune di Venezia, Ufficio Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Ungefär när krönikans första generation bildar familj. Hela kommunen hade då 250 322 invånare, varav 53 937 på fastlandet.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_folkmangd_centro_storico_1951",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico vid folkräkningen 1951",
+      "value": 174808,
+      "unit": "personer",
+      "year": 1951,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (A01_T01)",
+        "publisher": "Comune di Venezia, Ufficio Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Det högsta värdet i kommunens serie sedan 1871 och basåret för dess index (1951 = 100). Fastlandet hade då 96 966 invånare.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_folkmangd_centro_storico_1966",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i centro storico året för översvämningen 1966",
+      "value": 121309,
+      "unit": "personer",
+      "year": 1966,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (A01_T01)",
+        "publisher": "Comune di Venezia, Ufficio Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Sedan 1951 hade centrum förlorat 53 499 invånare (174 808 − 121 309, egen beräkning), medan fastlandet växte från 96 966 till 193 314.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_centro_storico_index",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Befolkningsindex för centro storico (1951 = 100)",
+      "value": 27.2,
+      "unit": "index",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (A01_T01)",
+        "publisher": "Comune di Venezia, Ufficio Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Kommunens eget index: centrum har drygt en fjärdedel av 1951 års invånare kvar (27,24). Fastlandet ligger på 183,7 och hela kommunen på 79,6.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_folkmangd_estuario",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd på lagunöarna (estuario) 31 december",
+      "value": 25538,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Venezia estuario",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (A01_T01)",
+        "publisher": "Comune di Venezia, Ufficio Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Lido, Pellestrina, Murano, Burano och de andra bebodda öarna. 44 037 invånare 1951; serien saknar Cavallino-Treporti från 1999.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_folkmangd_terraferma",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd på fastlandet (terraferma) 31 december",
+      "value": 178131,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Venezia terraferma",
+      "direction": "context",
+      "source": {
+        "title": "Serie storica popolazione residente per zone dal 1871 al 2025 (A01_T01)",
+        "publisher": "Comune di Venezia, Ufficio Statistica",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/A01_T01_ST_Pop_zone_1871_2025.ods"
+      },
+      "note_sv": "Mestre, Marghera, Favaro och Chirignago-Zelarino. Högst 1975 (210 674); svag ökning de senaste åren (177 365 år 2024).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_yta",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Kommunens yta",
+      "value": 415.9,
+      "unit": "km²",
+      "year": 2019,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Venezia (infobox: superficie, citing Comune di Venezia 'Superfici amministrative')",
+        "publisher": "Wikipedia (it)",
+        "url": "https://it.wikipedia.org/wiki/Venezia"
+      },
+      "note_sv": "Varav 257,73 km² inre vatten (lagunen) enligt samma källa; landytan blir därmed omkring 158 km² (egen beräkning). Siffran kommer från kommunens sida \"Superfici amministrative\", återgiven av Wikipedia.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_municipalita",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Antal municipalità (stadsdelsnämnder)",
+      "value": 6,
+      "unit": "municipalità",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Elezioni amministrative 2026 – risultati intero Comune (dati ufficiosi)",
+        "publisher": "Comune di Venezia, Servizio Elettorale / Venis",
+        "url": "https://elezioni.comune.venezia.it/"
+      },
+      "note_sv": "Venezia-Murano-Burano (centrum och norra öarna), Lido-Pellestrina, Favaro Veneto, Mestre-Carpenedo, Chirignago-Zelarino och Marghera; var och en valde ordförande och råd samtidigt med borgmästaren 2026. De ersatte 13 tidigare kvarter 2005 (fullmäktigebeslut 37/2005, enligt Wikipedia).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_sestieri",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Antal sestieri i den historiska staden",
+      "value": 6,
+      "unit": "sestieri",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Sestiere (Venezia)",
+        "publisher": "Wikipedia (it)",
+        "url": "https://it.wikipedia.org/wiki/Sestiere_(Venezia)"
+      },
+      "note_sv": "Cannaregio, Castello, Dorsoduro (med Giudecca), San Marco (med San Giorgio Maggiore), San Polo och Santa Croce; indelningen går tillbaka till republikens tidiga tid.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_cm_folkmangd",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Folkmängd i Città metropolitana di Venezia",
+      "value": 833000,
+      "unit": "personer",
+      "year": 2025,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Documento Unico di Programmazione 2026–2028",
+        "publisher": "Città metropolitana di Venezia",
+        "url": "https://www.cittametropolitana.ve.it/sites/default/files/unita/AllegatiDUP26-28/D.U.P.%202026%20-%202028.pdf"
+      },
+      "note_sv": "\"Oltre 833.000 abitanti\" i 44 kommuner på 2 473 km² (346 invånare per km²) enligt storstadsregionens DUP 2026–2028; avrundat värde.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_studenter",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Studenter vid Venedigs universitet och högskolor",
+      "value": 28000,
+      "unit": "studenter",
+      "year": 2022,
+      "scope": "Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Fondazione – Venezia Capitale Mondiale della Sostenibilità",
+        "publisher": "Fondazione Venezia Capitale Mondiale della Sostenibilità (VSF)",
+        "url": "https://vsf.foundation/fondazione/"
+      },
+      "note_sv": "Hållbarhetsstiftelsen VSF anger \"circa 28.000 studenti\" och ser staden som plattform för forskning och utbildning; ett av stiftelsens nio områden heter \"Venezia città campus\". Odaterad siffra på stiftelsens webbplats.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_valdeltagande_2026",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i kommunalvalet 24–25 maj 2026",
+      "value": 55.9,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Open data comunali 24/05/2026 (Scrutini e Liste&Cand, livello comune)",
+        "publisher": "Ministero dell'Interno, Eligendo",
+        "url": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/comunali/comunali-20260524.zip"
+      },
+      "note_sv": "112 767 röstande av 201 713 röstberättigade. I valet 2020 var deltagandet 62,2 % (128 025 av 205 720, egen beräkning ur Eligendo).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_borgmastarval_venturini",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Simone Venturinis andel i borgmästarvalet 2026",
+      "value": 51.02,
+      "unit": "% av giltiga röster",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Elezioni amministrative 2026 – risultati intero Comune (dati ufficiosi)",
+        "publisher": "Comune di Venezia, Servizio Elettorale / Venis",
+        "url": "https://elezioni.comune.venezia.it/"
+      },
+      "note_sv": "Venturini (centerhögern: egen lista, Fratelli d'Italia, Lega, Forza Italia, UDC och Partito dei Veneti) fick 56 344 röster och vann i första omgången, så ingen andra omgång behövdes. Han svor eden vid fullmäktiges första möte 16 juni 2026.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_borgmastarval_martella",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Andrea Martellas andel i borgmästarvalet 2026",
+      "value": 39.2,
+      "unit": "% av giltiga röster",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Elezioni amministrative 2026 – risultati intero Comune (dati ufficiosi)",
+        "publisher": "Comune di Venezia, Servizio Elettorale / Venis",
+        "url": "https://elezioni.comune.venezia.it/"
+      },
+      "note_sv": "Martella (mitten-vänster: PD, AVS, M5S, Terra e Acqua 2026 m.fl.) fick 43 294 röster. Därefter Michele Boldrin (Venezia Ora!) 3,43 %, Giovanni Martini 2,11 % och Claudio Vernier 1,77 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_kf_mandat_majoritet",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Den styrande majoritetens mandat i kommunfullmäktige",
+      "value": 22,
+      "unit": "mandat av 36",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Open data comunali 24/05/2026 (Scrutini e Liste&Cand, livello comune)",
+        "publisher": "Ministero dell'Interno, Eligendo",
+        "url": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/comunali/comunali-20260524.zip"
+      },
+      "note_sv": "Lista Venturini 14, Fratelli d'Italia 5, Lega 2 och Forza Italia 1. Oppositionen har 14: PD 9, AVS 1, M5S 1, Terra e Acqua 1 samt de förlorande borgmästarkandidaterna Martella och Boldrin. Borgmästaren är fullmäktiges 37:e ledamot. Samma fördelning 22–14 som efter valet 2020.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_kf_mandat_lista_venturini",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat för listan \"Simone Venturini Sindaco\"",
+      "value": 14,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Open data comunali 24/05/2026 (Scrutini e Liste&Cand, livello comune)",
+        "publisher": "Ministero dell'Interno, Eligendo",
+        "url": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/comunali/comunali-20260524.zip"
+      },
+      "note_sv": "Största lista med 30,10 % (32 046 röster); den efterträder Brugnaros lista \"Luigi Brugnaro Sindaco\", som också fick 14 mandat 2020. I oktober 2026 sitter två ledamöter i blandgruppen (Misto) och Lega har ingen egen grupp.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_kf_mandat_pd",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Mandat för Partito Democratico",
+      "value": 9,
+      "unit": "mandat",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Open data comunali 24/05/2026 (Scrutini e Liste&Cand, livello comune)",
+        "publisher": "Ministero dell'Interno, Eligendo",
+        "url": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/comunali/comunali-20260524.zip"
+      },
+      "note_sv": "PD fick 24,84 % (26 444 röster). Med Martella, som valdes in som borgmästarkandidat, har PD-gruppen 10 ledamöter i oktober 2026.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_centro_storico_martella",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Andrea Martellas andel i centro storico 2026",
+      "value": 51.4,
+      "unit": "% av giltiga röster",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Elezioni amministrative 2026 – risultati zona Centro Storico (dati ufficiosi)",
+        "publisher": "Comune di Venezia, Servizio Elettorale / Venis",
+        "url": "https://elezioni.comune.venezia.it/risultati/amministrative-sindaco-2026/567/A/20201"
+      },
+      "note_sv": "I den historiska staden (58 valdistrikt) vann Martella med 12 417 röster mot Venturinis 8 414 (34,83 %); Venturini vann kommunen tack vare fastlandet och öarna. Kommunens preliminära (\"ufficiosi\") siffror per zon.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_valdeltagande_centro_storico_2026",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i centro storico 2026",
+      "value": 53.97,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "Elezioni amministrative 2026 – affluenze zona Centro Storico",
+        "publisher": "Comune di Venezia, Servizio Elettorale / Venis",
+        "url": "https://elezioni.comune.venezia.it/affluenze.php?at=A&an=20201"
+      },
+      "note_sv": "24 599 röstande av 45 578 röstberättigade, lägre än i hela kommunen (55,90 %). Kommunens preliminära siffror.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_valdeltagande_2020",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Valdeltagande i kommunalvalet 20–21 september 2020",
+      "value": 62.2,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Open data comunali 20/09/2020",
+        "publisher": "Ministero dell'Interno, Eligendo",
+        "url": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/comunali/comunali-20200920.zip"
+      },
+      "note_sv": "Egen beräkning ur Eligendos öppna data: 128 025 röstande / 205 720 röstberättigade = 62,2 %. Luigi Brugnaro omvaldes då i första omgången med 66 750 röster (54,1 % av kandidatrösterna, egen beräkning).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "com_linee_mandato_omraden",
+      "sdg": [
+        16,
+        17
+      ],
+      "name_sv": "Strategiska områden i förslaget till Linee programmatiche di mandato 2026–2031",
+      "value": 11,
+      "unit": "områden",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Linee di mandato Venezia 2026-2031: via libera della Giunta, ecco gli undici obiettivi",
+        "publisher": "Notizie Plus (nyhetssajt)",
+        "url": "https://notizieplus.it/linee-di-mandato-venezia-2026-2031-via-libera-della-giunta-ecco-gli-undici-obiettivi/"
+      },
+      "note_sv": "Ekonomi och arbete, säkerhet, bostäder, stadsplanering, socialt, idrott, mobilitet, turism, kultur, miljö och organisation enligt nyhetssajten Notizie Plus; utskottets kallelse 6 oktober 2026 numrerar områdena upp till \"Area 11\". Giuntan har godkänt förslaget (PD 2026.1074) med DUP 2027–2029, och fullmäktige ska rösta 15 oktober 2026 (kallelse på consiglio.comune.venezia.it).",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_paesc_minskning_2030",
+      "sdg": [
+        13
+      ],
+      "name_sv": "PAESC: minskade CO₂-utsläpp till 2030",
+      "value": 72,
+      "unit": "%",
+      "year": 2030,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "P.A.E.S.C. Piano di azione per l'energia sostenibile e il clima – conferenza stampa 19 gennaio 2026",
+        "publisher": "Comune di Venezia",
+        "url": "https://dam.comune.venezia.it/api/resource/f7c1e9bb-4880-4974-b551-385bab4ca132"
+      },
+      "note_sv": "Kommunens PAESC (antagen av giuntan i januari 2026) har 33 åtgärder för att minska utsläppen 72 % till 2030 jämfört med basinventeringen (IBE; basåret anges inte i presentationen). Miniminivån i borgmästaravtalet är −40 %, och C40-programmet \"Deadline 2020\" ger −68,9 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_paesc_atagande_2030",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Kommunens klimatåtagande sedan 2021: minskade CO₂-utsläpp till 2030",
+      "value": 55,
+      "unit": "%",
+      "year": 2030,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "P.A.E.S.C. Piano di azione per l'energia sostenibile e il clima – conferenza stampa 19 gennaio 2026",
+        "publisher": "Comune di Venezia",
+        "url": "https://dam.comune.venezia.it/api/resource/f7c1e9bb-4880-4974-b551-385bab4ca132"
+      },
+      "note_sv": "Venedig anslöt sig till borgmästaravtalet för klimat och energi 2020 (fullmäktigebeslut 29/2020) och skärpte 2021 målen till −55 % till 2030. Kommunen undertecknade borgmästaravtalet 2011; dess första handlingsplan (PAES) hade −20 % till 2020, ett mål som kommunen anger är nått.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_klimatneutral_ar",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Mål: klimatneutral kommun",
+      "value": 2050,
+      "unit": "år",
+      "year": 2050,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "P.A.E.S.C. Piano di azione per l'energia sostenibile e il clima – conferenza stampa 19 gennaio 2026",
+        "publisher": "Comune di Venezia",
+        "url": "https://dam.comune.venezia.it/api/resource/f7c1e9bb-4880-4974-b551-385bab4ca132"
+      },
+      "note_sv": "PAESC: \"neutralità emissiva (bilancio di carbonio pari a zero) entro il 2050\". Planen följs upp vartannat år (mål), vart fjärde år (utsläppsinventering) och vart femte år (klimatriskanalys).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_paesc_anpassningsatgarder",
+      "sdg": [
+        13,
+        11
+      ],
+      "name_sv": "PAESC: åtgärder för klimatanpassning",
+      "value": 46,
+      "unit": "åtgärder",
+      "year": 2026,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "P.A.E.S.C. Piano di azione per l'energia sostenibile e il clima – conferenza stampa 19 gennaio 2026",
+        "publisher": "Comune di Venezia",
+        "url": "https://dam.comune.venezia.it/api/resource/f7c1e9bb-4880-4974-b551-385bab4ca132"
+      },
+      "note_sv": "Bygger på en risk- och sårbarhetsanalys av tolv faror, bl.a. värmeböljor, havsnivåhöjning och ändrad tidvattenregim, stormfloder, skyfall och kusterosion. Exempel: civilskyddsplan, dagvatten, Bosco dello Sport, fiber i den historiska staden och Smart Control Room.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_canal_grande_hybridbatar_2032",
+      "sdg": [
+        7,
+        11,
+        13
+      ],
+      "name_sv": "Mål: alla båtar på Canal Grande med hybridmotor",
+      "value": 100,
+      "unit": "% av båtarna",
+      "year": 2032,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "Energia, clima e mobilità: presentato il PAESC (19/01/2026)",
+        "publisher": "Comune di Venezia (Live)",
+        "url": "https://live.comune.venezia.it/it/2026/01/energia-clima-e-mobilita-presentato-il-paesc-piano-di-azione-lenergia-sostenibile-e-il"
+      },
+      "note_sv": "Ett mål som kommunen upprepade när PAESC presenterades: senast 2032 ska alla båtar som trafikerar Canal Grande ha hybridmotorer som drivs med förnybar energi eller biodiesel. Kommunen anger att PM10-utsläppen minskade 90 % 2017–2025 (diagrammet gäller ACTV:s fordonspark).",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_cm_utslappsmal_2030",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Città metropolitana: minskade växthusgaser till 2030 jämfört med 1990",
+      "value": 40,
+      "unit": "%",
+      "year": 2030,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Documento Unico di Programmazione 2026–2028",
+        "publisher": "Città metropolitana di Venezia",
+        "url": "https://www.cittametropolitana.ve.it/sites/default/files/unita/AllegatiDUP26-28/D.U.P.%202026%20-%202028.pdf"
+      },
+      "note_sv": "Mål i storstadsregionens DUP 2026–2028, via energieffektivisering av byggnader, energiomställning och grön infrastruktur. Samma dokument säger att regionens Agenda för hållbar utveckling (projektet PAGES med miljöministeriet) \"dovrà essere riempita di contenuti concreti\" och att man sedan 2024 tar fram mål och indikatorer för de 17 globala målen.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_vsf_grundad",
+      "sdg": [
+        17
+      ],
+      "name_sv": "Stiftelsen Venezia Capitale Mondiale della Sostenibilità bildas",
+      "value": 2022,
+      "unit": "år",
+      "year": 2022,
+      "scope": "Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Chi siamo",
+        "publisher": "Fondazione Venezia Capitale Mondiale della Sostenibilità (VSF)",
+        "url": "https://vsf.foundation/fondazione/chi-siamo/"
+      },
+      "note_sv": "Bildad 14 mars 2022 under regeringens beskydd av Regione Veneto, kommunen, universiteten, kulturinstitutioner och storföretag. Ordförande Renato Brunetta; vice ordförande regionpresidenten Alberto Stefani och borgmästaren Simone Venturini. Nio tematiska områden, från vätgas i Porto Marghera till boende och hållbar turism.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_cda_betalningar_2024",
+      "sdg": [
+        8,
+        11,
+        12
+      ],
+      "name_sv": "Betalda inträdesavgifter (contributo di accesso) 2024",
+      "value": 485062,
+      "unit": "betalningar",
+      "year": 2024,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Contributo di accesso: i numeri del 2025 (04/08/2025)",
+        "publisher": "Comune di Venezia (Live)",
+        "url": "https://live.comune.venezia.it/it/2025/08/contributo-di-accesso-i-numeri-del-2025"
+      },
+      "note_sv": "Första försöket: 29 avgiftsdagar med 5 € per dagsbesökare, omkring 2,4 miljoner euro; i snitt 16 676 betalningar per dag.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_cda_betalningar_2025",
+      "sdg": [
+        8,
+        11,
+        12
+      ],
+      "name_sv": "Betalda inträdesavgifter 2025",
+      "value": 723497,
+      "unit": "betalningar",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Contributo di accesso: i numeri del 2025 (04/08/2025)",
+        "publisher": "Comune di Venezia (Live)",
+        "url": "https://live.comune.venezia.it/it/2025/08/contributo-di-accesso-i-numeri-del-2025"
+      },
+      "note_sv": "54 avgiftsdagar 18 april–27 juli; 5 € vid förhandsbetalning, 10 € de sista fyra dagarna före besöket. I snitt 13 046 betalningar per dag; 51 % betalade 5 €. Högst 24 951 fredagen 2 maj.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_cda_intakt_2025",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Intäkt från inträdesavgiften 2025",
+      "value": 5421425,
+      "unit": "€",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Contributo di accesso: i numeri del 2025 (04/08/2025)",
+        "publisher": "Comune di Venezia (Live)",
+        "url": "https://live.comune.venezia.it/it/2025/08/contributo-di-accesso-i-numeri-del-2025"
+      },
+      "note_sv": "Nästan dubbelt så mycket som 2024. Efter driftkostnaderna gick minst 1,5 miljoner euro till lägre avfallsavgift (TARI) för invånarna. Omkring 140 kontrollanter per dag, över 445 000 QR-kontroller och cirka 2 500 protokoll.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_cda_dagar_2026",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Avgiftsdagar för inträdesavgiften 2026",
+      "value": 60,
+      "unit": "dagar",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Venezia: oggi apre il portale per il Contributo di accesso 2026 (02/03/2026)",
+        "publisher": "Comune di Venezia (Live)",
+        "url": "https://live.comune.venezia.it/it/2026/03/domani-apre-il-portale-il-contributo-di-accesso-2026-confermata-quota-da-5-10-euro"
+      },
+      "note_sv": "3 april–26 juli 2026, kl. 8.30–16, 5 € eller 10 €; fortfarande ett försök \"i vista di un'eventuale applicazione a regime\". Boende i Veneto och studenter vid skolor i den historiska staden undantogs helt. Clean Cities sammanfattning: över 650 000 betalda vouchers och över 5 miljoner euro (preliminärt).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_cda_hotellgaster_per_dag",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Övernattande gäster undantagna från avgiften, snitt per avgiftsdag",
+      "value": 36639,
+      "unit": "personer per dag",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Contributo di accesso: i numeri del 2025 (04/08/2025)",
+        "publisher": "Comune di Venezia (Live)",
+        "url": "https://live.comune.venezia.it/it/2025/08/contributo-di-accesso-i-numeri-del-2025"
+      },
+      "note_sv": "Gäster på hotell och andra boenden betalar turistskatt i stället och registrerades som undantagna: 36 639 per avgiftsdag 2025, nästan tre gånger så många som de betalande dagsbesökarna (36 639 / 13 046 = 2,8; egen beräkning).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_korttidsuthyrning_grans",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Gräns för korttidsuthyrning till turister utan särskilda krav",
+      "value": 120,
+      "unit": "dagar per år",
+      "year": 2024,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Allegato 2 – Regolamento per lo svolgimento di attività di locazione esclusivamente per finalità turistiche per un periodo superiore a 120 giorni",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/Allegato_2_Regolamento_locazioni_turistiche_FD.pdf"
+      },
+      "note_sv": "Artikel 37-bis i DL 50/2022 ger Venedig ensamt rätt att reglera korttidsuthyrning. Kommunens förslag (giuntan 24 oktober 2024) låter den som hyr ut mer än 120 dagar per år i den historiska staden gå med i ett register med krav, på försök till 31 december 2026. Förslaget behandlades i utskott 25 november 2025; något slutligt beslut i fullmäktige har jag inte hittat.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_mose_grans",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Tidvattennivå då MOSE-barriärerna reses",
+      "value": 110,
+      "unit": "cm",
+      "year": 2026,
+      "scope": "Venedigs lagun",
+      "direction": "context",
+      "source": {
+        "title": "Operatività M.O.S.E. (sintesi chiusure per stagione e anno)",
+        "publisher": "Autorità per la Laguna di Venezia",
+        "url": "https://www.autoritalaguna.it/operativita-m-o-s-e/"
+      },
+      "note_sv": "Barriärerna reses vid en prognos över 110 cm över nollpunkten vid Punta della Salute (ZMPS, medelnivån 1885–1909). Vid 110 cm står omkring 12 % av staden under vatten (ISPRA), så de lägsta delarna, som kring Piazza San Marco, kan fortfarande översvämmas under gränsen.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_mose_stangningar_2020",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "MOSE-stängningar det första året",
+      "value": 13,
+      "unit": "stängningar",
+      "year": 2020,
+      "scope": "Venedigs lagun",
+      "direction": "context",
+      "source": {
+        "title": "Operatività M.O.S.E. (sintesi chiusure per stagione e anno)",
+        "publisher": "Autorità per la Laguna di Venezia",
+        "url": "https://www.autoritalaguna.it/operativita-m-o-s-e/"
+      },
+      "note_sv": "Första skarpa resningen var 3 oktober 2020 (ISPRA). Per kalenderår: 13 (2020), 20 (2021), 11 (2022), 25 (2023), 28 (2024), 27 (2025) och 32 (2026 fram till mitten av maj).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_mose_stangningar_sasong_2025_26",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "MOSE-stängningar under högvattensäsongen 2025/26",
+      "value": 49,
+      "unit": "stängningar",
+      "year": 2026,
+      "scope": "Venedigs lagun",
+      "direction": "context",
+      "source": {
+        "title": "Operatività M.O.S.E. (sintesi chiusure per stagione e anno)",
+        "publisher": "Autorità per la Laguna di Venezia",
+        "url": "https://www.autoritalaguna.it/operativita-m-o-s-e/"
+      },
+      "note_sv": "Flest hittills: 49 mot 20 säsongen 2020/21, 13 (2021/22), 19 (2022/23), 32 (2023/24) och 23 (2024/25). Sammanlagt 156 stängningar oktober 2020–maj 2026 (egen summering av myndighetens tabell).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_mose_stangningar_vid_50cm",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "MOSE-stängningar med 50 cm högre havsnivå (modell)",
+      "value": 1,
+      "unit": "stängningar per dag (snitt)",
+      "year": 2020,
+      "scope": "Venedigs lagun",
+      "direction": "context",
+      "source": {
+        "title": "Umgiesser, G. (2020) The impact of operating the mobile barriers in Venice (MOSE) under climate change. Journal for Nature Conservation",
+        "publisher": "CNR (UNI-FIND)",
+        "url": "https://explore.cnr.it/resource/item/347477"
+      },
+      "note_sv": "Umgiesser (CNR, 2020): barriärerna kan hålla vattnet under 110 cm nästan hela tiden om havet stiger högst 50 cm, men då måste de i snitt stängas en gång om dagen; vid 75 cm är lagunen oftare stängd än öppen. Delvisa stängningar skyddar inte staden.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_barene_aterskapade",
+      "sdg": [
+        14,
+        15
+      ],
+      "name_sv": "Saltängar (barene) som återskapats i lagunen",
+      "value": 16,
+      "unit": "km²",
+      "year": 2026,
+      "scope": "Venedigs lagun",
+      "direction": "higher_better",
+      "source": {
+        "title": "M.O.S.E. – La laguna di Venezia tra passato, presente e futuro",
+        "publisher": "Autorità per la Laguna di Venezia",
+        "url": "https://www.autoritalaguna.it/m-o-s-e/"
+      },
+      "note_sv": "Statens program för lagunen (i dag Autorità per la Laguna di Venezia): 16 km² barene återskapade och naturaliserade, 39 km barene skyddade och 12 småöar återställda. Lagunen är omkring 550 km², varav cirka 80 % slamslätter, grunda vatten och saltängar (Wikipedia).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_kajer_hojda",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Stadskajer och lagunstränder som höjts och förstärkts",
+      "value": 100,
+      "unit": "km",
+      "year": 2026,
+      "scope": "Venedigs lagun",
+      "direction": "higher_better",
+      "source": {
+        "title": "M.O.S.E. – La laguna di Venezia tra passato, presente e futuro",
+        "publisher": "Autorità per la Laguna di Venezia",
+        "url": "https://www.autoritalaguna.it/m-o-s-e/"
+      },
+      "note_sv": "Lokala skydd mot medelhöga tidvatten under MOSE-gränsen; därtill 56 km stränder återuppbyggda eller förstärkta, 12 km dyner och 11 km vågbrytare. Kommunfullmäktige räknar kajer, fondamente och gångstråk till de största behoven (juli 2026).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_oversvamning_110cm",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av staden under vatten vid tidvatten på 110 cm",
+      "value": 12,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "12 novembre 2019 – un anno dall'acqua alta eccezionale a Venezia",
+        "publisher": "ISPRA",
+        "url": "https://www.isprambiente.gov.it/it/archivio/notizie-e-novita-normative/notizie-ispra/2020/11/12-novembre-2019-2013-un-anno-dall2019acqua-alta-eccezionale-a-venezia"
+      },
+      "note_sv": "ISPRA: tidvatten över 110 cm ökade från färre än 2 per år på 1950-talet till över 10 per år på 2010-talet (28 under 2019), då den relativa medelhavsnivån steg från drygt 15 till cirka 35 cm genom havsnivåhöjning och sättningar.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_oversvamning_140cm",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av staden under vatten vid tidvatten på 140 cm",
+      "value": 59,
+      "unit": "%",
+      "year": 2018,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Alta e bassa marea eccezionale (Protezione civile)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/it/content/alta-e-bassa-marea-eccezionale"
+      },
+      "note_sv": "Kommunens civilskydd: vid +140 cm, gränsen för \"exceptionellt\" tidvatten, översvämmas 59 % av staden. Sidan uppdaterades senast 2018.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_kryssningsfartyg_grans",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Största tillåtna storlek för fartyg i San Marco-bassängen och Giudeccakanalen",
+      "value": 25000,
+      "unit": "GT (bruttodräktighet)",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "DL 103/2021: Misure urgenti per la tutela delle vie d'acqua di Venezia (dossier A.C. 3257)",
+        "publisher": "Camera dei deputati",
+        "url": "https://documenti.camera.it/Leg18/Dossier/Pdf/QR0185.Pdf"
+      },
+      "note_sv": "DL 103/2021 förklarade Bacino di San Marco, Canale di San Marco och Canale della Giudecca nationalmonument och förbjöd från 1 augusti 2021 fartyg över 25 000 GT, längre än 180 m eller med air draft över 35 m. Hamnmyndighetens ordförande blev särskild kommissarie för alternativa kajplatser, och en fond inrättades för att ersätta rederier och terminaler.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_fastlandet_inkorporeras",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Fastlandskommunerna slås ihop med Venedig",
+      "value": 1926,
+      "unit": "år",
+      "year": 1926,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Sistema Venezia – Riconversione di Porto Marghera: La storia",
+        "publisher": "Regione del Veneto",
+        "url": "https://sistemavenezia.regione.veneto.it/content/la-storia"
+      },
+      "note_sv": "Regionen: 1926 fördes de fyra fastlandskommunerna kring industriområdet (Mestre, Chirignago, Zelarino och Favaro Veneto) till Venedig. Marghera hade förts över från Mestre 1917 och Pellestrina, Murano och Burano 1923–24 (Wikipedia).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_ponte_littorio",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Vägbron över lagunen öppnas",
+      "value": 1933,
+      "unit": "år",
+      "year": 1933,
+      "scope": "Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Ponte della Libertà",
+        "publisher": "Wikipedia (it)",
+        "url": "https://it.wikipedia.org/wiki/Ponte_della_Libert%C3%A0"
+      },
+      "note_sv": "Vägbron invigdes 25 april 1933 som \"Ponte Littorio\" och fick namnet Ponte della Libertà 1946; den löper bredvid järnvägsbron från 1846 och är 3 850 m lång.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_porto_marghera_anstallda",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Anställda i Porto Marghera i början av 1960-talet",
+      "value": 35000,
+      "unit": "anställda",
+      "year": 1960,
+      "scope": "Porto Marghera",
+      "direction": "context",
+      "source": {
+        "title": "Sistema Venezia – Riconversione di Porto Marghera: La storia",
+        "publisher": "Regione del Veneto",
+        "url": "https://sistemavenezia.regione.veneto.it/content/la-storia"
+      },
+      "note_sv": "Regionen: omkring 200 företag med cirka 35 000 anställda och över 7 miljoner ton gods per år i början av 1960-talet; 1974 passerade 24 miljoner ton. Sedan följde avindustrialisering med \"betydande\" jobbförluster. Wikipedia anger 35 724 anställda 1971.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_mestre_invanare_1960",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Mestres invånare 1960",
+      "value": 90000,
+      "unit": "personer",
+      "year": 1960,
+      "scope": "Mestre",
+      "direction": "context",
+      "source": {
+        "title": "Sistema Venezia – Riconversione di Porto Marghera: La storia",
+        "publisher": "Regione del Veneto",
+        "url": "https://sistemavenezia.regione.veneto.it/content/la-storia"
+      },
+      "note_sv": "Regionen: när industrin växte ökade Mestre från 20 000 till 90 000 invånare 1920–1960 och Marghera från 5 000 till 25 000; Favaro, Chirignago och Zelarino blev samhällen med 10 000–15 000 invånare. Avrundade tal.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_acqua_granda_1966",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Högvattnet 4 november 1966 vid Punta della Salute",
+      "value": 194,
+      "unit": "cm",
+      "year": 1966,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Novembre 2019: un mese di maree eccezionali (ISPRA, CPSM Comune di Venezia, CNR-ISMAR)",
+        "publisher": "ISPRA / Comune di Venezia / CNR",
+        "url": "https://www.isprambiente.gov.it/files2020/notizie/ispra_cpsm_cnr_novembre_2019_maree_eccezionali.pdf"
+      },
+      "note_sv": "Den högsta nivån sedan mätningarna började 1872; nästan 90 % av staden översvämmades. Efter katastrofen kom speciallagen 171/1973.",
+      "confidence": "high"
+    },
+    {
+      "id": "com_speciallagen",
+      "sdg": [
+        11,
+        16
+      ],
+      "name_sv": "Speciallagen för Venedig antas",
+      "value": 1973,
+      "unit": "år",
+      "year": 1973,
+      "scope": "Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Ordine del giorno n. 1 (seduta 23-07-2026): Rifinanziamento stabile e pluriennale della Legge speciale per Venezia",
+        "publisher": "Comune di Venezia, Consiglio comunale",
+        "url": "https://consiglio.comune.venezia.it/atti-derivati/1/atto/1"
+      },
+      "note_sv": "Lag 16 april 1973 nr 171: att rädda Venedig och lagunen är \"un problema di preminente interesse nazionale\". Fullmäktige begärde 23 juli 2026 ännu en gång en stabil, flerårig refinansiering (som 2020, 2024 och februari 2026).",
+      "confidence": "high"
+    },
+    {
+      "id": "com_unesco_varldsarv",
+      "sdg": [
+        11
+      ],
+      "name_sv": "\"Venedig och dess lagun\" blir världsarv",
+      "value": 1987,
+      "unit": "år",
+      "year": 1987,
+      "scope": "Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Laguna di Venezia (infobox Patrimonio UNESCO 'Venezia e la sua laguna', 1987, n. 394)",
+        "publisher": "Wikipedia (it)",
+        "url": "https://it.wikipedia.org/wiki/Laguna_di_Venezia"
+      },
+      "note_sv": "Världsarv nr 394, inskrivet 1987 enligt alla sex kulturkriterierna (i)–(vi). Enligt Wikipedia varnade FN 2014 för att staden kunde hamna på listan över hotade världsarv om inte kryssningsfartygen stoppades.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_fenice_brand",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Operahuset La Fenice brinner",
+      "value": 1996,
+      "unit": "år",
+      "year": 1996,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Gran Teatro La Fenice",
+        "publisher": "Wikipedia (it)",
+        "url": "https://it.wikipedia.org/wiki/Gran_Teatro_La_Fenice"
+      },
+      "note_sv": "Förstört av en anlagd brand 29 januari 1996; återuppbyggt enligt devisen \"com'era, dov'era\" och återinvigt med en invigningsvecka 14–21 december 2003. Ägaren till elfirman som underhöll teatern och hans kusin, elektriker i firman, dömdes; firman låg efter med arbetet och riskerade vite.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_mose_gripna_2014",
+      "sdg": [
+        16
+      ],
+      "name_sv": "Gripna i korruptionsutredningen kring MOSE",
+      "value": 35,
+      "unit": "personer",
+      "year": 2014,
+      "scope": "Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "MOSE (sezione 'Indagine per tangenti e finanziamenti illeciti (2014)')",
+        "publisher": "Wikipedia (it)",
+        "url": "https://it.wikipedia.org/wiki/MOSE"
+      },
+      "note_sv": "4 juni 2014 greps 35 personer, bland dem borgmästaren Giorgio Orsoni, i en utredning om mutor och svarta fonder kring MOSE-bygget, som hade inletts 14 maj 2003.",
+      "confidence": "medium"
+    },
+    {
+      "id": "com_acqua_alta_2019",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Högvattnet 12 november 2019 vid Punta della Salute",
+      "value": 187,
+      "unit": "cm",
+      "year": 2019,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Novembre 2019: un mese di maree eccezionali (ISPRA, CPSM Comune di Venezia, CNR-ISMAR)",
+        "publisher": "ISPRA / Comune di Venezia / CNR",
+        "url": "https://www.isprambiente.gov.it/files2020/notizie/ispra_cpsm_cnr_novembre_2019_maree_eccezionali.pdf"
+      },
+      "note_sv": "Näst högst sedan 1872: 187 cm på Canal Grande-sidan och 189 cm på Giudecca-sidan av Punta della Salute, med vindbyar över 100 km/h. Under veckan 12–17 november passerades 140 cm fyra gånger.",
+      "confidence": "high"
+    }
+  ]
+}

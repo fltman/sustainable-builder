@@ -1,0 +1,279 @@
+{
+  "indicators": {
+    "com_folkmangd_kommun": {
+      "name": "Population of the Comune di Venezia, 31 December",
+      "unit": "people",
+      "note": "The municipality covers the historic city (centro storico), the lagoon islands (estuario) and the mainland (terraferma) with Mestre and Marghera. It peaked at 367,832 in 1968; Cavallino-Treporti has been a separate municipality since 1999 and is not included."
+    },
+    "com_yta": {
+      "name": "Area of the municipality",
+      "unit": "km²",
+      "note": "Of which 257.73 km² inland water (the lagoon) according to the same source, which leaves about 158 km² of land (own arithmetic). The figure comes from the municipality's 'Superfici amministrative' page as quoted by Wikipedia."
+    },
+    "com_municipalita": {
+      "name": "Number of municipalità (borough councils)",
+      "unit": "municipalità",
+      "note": "Venezia-Murano-Burano (the centre and northern islands), Lido-Pellestrina, Favaro Veneto, Mestre-Carpenedo, Chirignago-Zelarino and Marghera; each elected a president and council at the same time as the mayor in 2026. They replaced 13 former quartieri in 2005 (council decision 37/2005, per Wikipedia)."
+    },
+    "com_sestieri": {
+      "name": "Number of sestieri in the historic city",
+      "unit": "sestieri",
+      "note": "Cannaregio, Castello, Dorsoduro (with the Giudecca), San Marco (with San Giorgio Maggiore), San Polo and Santa Croce; the division goes back to the Republic's early days."
+    },
+    "com_folkmangd_centro_storico": {
+      "name": "Population of Venice's historic centre (centro storico), 31 December",
+      "unit": "people",
+      "note": "The six sestieri including the Giudecca. 864 fewer than a year earlier (48,489 − 47,625, own arithmetic). The year-end figure first fell below 50,000 in 2022 (49,665)."
+    },
+    "com_folkmangd_centro_storico_1931": {
+      "name": "Population of the centro storico at the 1931 census",
+      "unit": "people",
+      "note": "Roughly when the chronicle's first generation starts a family. The whole municipality then had 250,322 residents, 53,937 of them on the mainland."
+    },
+    "com_folkmangd_centro_storico_1951": {
+      "name": "Population of the centro storico at the 1951 census",
+      "unit": "people",
+      "note": "The highest value in the municipality's series since 1871 and the base of its index (1951 = 100). The mainland then had 96,966 residents."
+    },
+    "com_folkmangd_centro_storico_1966": {
+      "name": "Population of the centro storico in the year of the 1966 flood",
+      "unit": "people",
+      "note": "Since 1951 the centre had lost 53,499 residents (174,808 − 121,309, own arithmetic), while the mainland grew from 96,966 to 193,314."
+    },
+    "com_centro_storico_index": {
+      "name": "Population index for the centro storico (1951 = 100)",
+      "unit": "index",
+      "note": "The municipality's own index: the centre keeps just over a quarter of its 1951 population (27.24). The mainland stands at 183.7 and the whole municipality at 79.6."
+    },
+    "com_folkmangd_estuario": {
+      "name": "Population of the lagoon islands (estuario), 31 December",
+      "unit": "people",
+      "note": "The Lido, Pellestrina, Murano, Burano and the other inhabited islands. 44,037 residents in 1951; the series excludes Cavallino-Treporti from 1999."
+    },
+    "com_folkmangd_terraferma": {
+      "name": "Population of the mainland (terraferma), 31 December",
+      "unit": "people",
+      "note": "Mestre, Marghera, Favaro and Chirignago-Zelarino. Highest in 1975 (210,674); a slight increase in recent years (177,365 in 2024)."
+    },
+    "com_cm_folkmangd": {
+      "name": "Population of the Città metropolitana di Venezia",
+      "unit": "people",
+      "note": "'More than 833,000 inhabitants' in 44 municipalities on 2,473 km² (346 per km²) according to the metropolitan city's DUP 2026–2028; a rounded figure."
+    },
+    "com_studenter": {
+      "name": "Students at Venice's universities and academies",
+      "unit": "students",
+      "note": "The sustainability foundation VSF gives 'circa 28,000 students' and sees the city as a platform for research and education; one of its nine areas is called 'Venezia città campus'. An undated figure on the foundation's website."
+    },
+    "com_valdeltagande_2026": {
+      "name": "Turnout in the municipal election of 24–25 May 2026",
+      "unit": "%",
+      "note": "112,767 voters out of 201,713 registered. In 2020 turnout was 62.2% (128,025 of 205,720, own arithmetic from Eligendo data)."
+    },
+    "com_borgmastarval_venturini": {
+      "name": "Simone Venturini's share in the 2026 mayoral election",
+      "unit": "% of valid votes",
+      "note": "Venturini (centre-right: his own list, Brothers of Italy, Lega, Forza Italia, UDC and Partito dei Veneti) won 56,344 votes and was elected in the first round, so no run-off was needed. He was sworn in at the council's first sitting on 16 June 2026."
+    },
+    "com_borgmastarval_martella": {
+      "name": "Andrea Martella's share in the 2026 mayoral election",
+      "unit": "% of valid votes",
+      "note": "Martella (centre-left: PD, AVS, M5S, Terra e Acqua 2026 and others) won 43,294 votes. Next came Michele Boldrin (Venezia Ora!) 3.43%, Giovanni Martini 2.11% and Claudio Vernier 1.77%."
+    },
+    "com_kf_mandat_majoritet": {
+      "name": "Seats held by the governing majority in the city council",
+      "unit": "seats of 36",
+      "note": "Venturini's list 14, Brothers of Italy 5, Lega 2 and Forza Italia 1. The opposition holds 14: PD 9, AVS 1, M5S 1, Terra e Acqua 1 plus the defeated mayoral candidates Martella and Boldrin. The mayor is the council's 37th member. The same 22–14 split as after the 2020 election."
+    },
+    "com_kf_mandat_lista_venturini": {
+      "name": "Seats for the list 'Simone Venturini Sindaco'",
+      "unit": "seats",
+      "note": "The largest list with 30.10% (32,046 votes); it succeeds Brugnaro's list 'Luigi Brugnaro Sindaco', which also won 14 seats in 2020. In October 2026 two councillors sit in the mixed group (Misto) and Lega has no group of its own."
+    },
+    "com_kf_mandat_pd": {
+      "name": "Seats for the Partito Democratico",
+      "unit": "seats",
+      "note": "The PD won 24.84% (26,444 votes). With Martella, elected as a mayoral candidate, the PD group has 10 councillors in October 2026."
+    },
+    "com_centro_storico_martella": {
+      "name": "Andrea Martella's share in the centro storico, 2026",
+      "unit": "% of valid votes",
+      "note": "In the historic city (58 polling districts) Martella won 12,417 votes against Venturini's 8,414 (34.83%); Venturini carried the municipality thanks to the mainland and the islands. The municipality's provisional ('ufficiosi') figures by zone."
+    },
+    "com_valdeltagande_centro_storico_2026": {
+      "name": "Turnout in the centro storico, 2026",
+      "unit": "%",
+      "note": "24,599 voters out of 45,578 registered, lower than in the whole municipality (55.90%). The municipality's provisional figures."
+    },
+    "com_valdeltagande_2020": {
+      "name": "Turnout in the municipal election of 20–21 September 2020",
+      "unit": "%",
+      "note": "Own arithmetic from Eligendo open data: 128,025 voters / 205,720 registered = 62.2%. Luigi Brugnaro was then re-elected in the first round with 66,750 votes (54.1% of candidate votes, own arithmetic)."
+    },
+    "com_linee_mandato_omraden": {
+      "name": "Strategic areas in the draft 'Linee programmatiche di mandato 2026–2031'",
+      "unit": "areas",
+      "note": "Economy and work, security, housing, planning, social affairs, sport, mobility, tourism, culture, environment and organisation per the news site Notizie Plus; the committee notice of 6 October 2026 numbers the areas up to \"Area 11\". The executive has approved the draft (PD 2026.1074) with the DUP 2027–2029, and the council votes on 15 October 2026 (notice on consiglio.comune.venezia.it)."
+    },
+    "com_paesc_minskning_2030": {
+      "name": "PAESC: reduction of CO₂ emissions by 2030",
+      "unit": "%",
+      "note": "The municipality's PAESC (approved by the executive in January 2026) has 33 actions to cut emissions by 72% by 2030 relative to the baseline inventory (IBE; the base year is not stated in the presentation). The Covenant of Mayors minimum is −40%, and C40's 'Deadline 2020' pathway gives −68.9%."
+    },
+    "com_paesc_atagande_2030": {
+      "name": "The municipality's climate commitment since 2021: CO₂ reduction by 2030",
+      "unit": "%",
+      "note": "Venice joined the Covenant of Mayors for Climate and Energy in 2020 (council decision 29/2020) and in 2021 tightened its target to −55% by 2030. The municipality signed the Covenant of Mayors in 2011; its first action plan (SEAP) aimed at −20% by 2020, a goal the municipality says it has met."
+    },
+    "com_klimatneutral_ar": {
+      "name": "Target year for a climate-neutral municipality",
+      "unit": "year",
+      "note": "PAESC: 'emission neutrality (net-zero carbon balance) by 2050'. The plan is reviewed every two years (targets), every four years (emissions inventory) and every five years (climate risk assessment)."
+    },
+    "com_paesc_anpassningsatgarder": {
+      "name": "PAESC: climate adaptation actions",
+      "unit": "actions",
+      "note": "Based on a risk and vulnerability assessment of twelve hazards, including heatwaves, sea-level rise and changing tides, storm surges, cloudbursts and coastal erosion. Examples: the civil protection plan, stormwater, the Bosco dello Sport, fibre in the historic city and the Smart Control Room."
+    },
+    "com_canal_grande_hybridbatar_2032": {
+      "name": "Target: every boat on the Grand Canal with a hybrid engine",
+      "unit": "% of boats",
+      "note": "A target the municipality repeated when the PAESC was presented: by 2032 every boat on the Grand Canal is to have hybrid engines running on renewable energy or biodiesel. The municipality says PM10 emissions fell 90% in 2017–2025 (the chart refers to ACTV's fleet)."
+    },
+    "com_cm_utslappsmal_2030": {
+      "name": "Metropolitan city: greenhouse-gas reduction by 2030 relative to 1990",
+      "unit": "%",
+      "note": "A target in the metropolitan city's DUP 2026–2028, through building efficiency, the energy transition and green infrastructure. The same document says the metropolitan Agenda for sustainable development (the PAGES project with the environment ministry) 'must be filled with concrete content', and that since 2024 it has been drafting goals and indicators for the 17 SDGs."
+    },
+    "com_vsf_grundad": {
+      "name": "The Venezia Capitale Mondiale della Sostenibilità foundation is set up",
+      "unit": "year",
+      "note": "Founded on 14 March 2022 under the patronage of the Italian government by the Veneto Region, the municipality, the universities, cultural institutions and large companies. Chaired by Renato Brunetta; vice-chairs are the regional president Alberto Stefani and the mayor Simone Venturini. Nine themes, from hydrogen in Porto Marghera to housing and sustainable tourism."
+    },
+    "com_cda_betalningar_2024": {
+      "name": "Paid access fees (contributo di accesso), 2024",
+      "unit": "payments",
+      "note": "The first trial: 29 fee days at €5 per day visitor, about €2.4 million; 16,676 payments per day on average."
+    },
+    "com_cda_betalningar_2025": {
+      "name": "Paid access fees, 2025",
+      "unit": "payments",
+      "note": "54 fee days, 18 April–27 July; €5 if paid in advance, €10 in the last four days before the visit. 13,046 payments per day on average; 51% paid €5. Peak of 24,951 on Friday 2 May."
+    },
+    "com_cda_intakt_2025": {
+      "name": "Revenue from the access fee, 2025",
+      "unit": "€",
+      "note": "Almost twice the 2024 figure. After running costs at least €1.5 million went to lowering residents' waste charge (TARI). About 140 inspectors a day, more than 445,000 QR checks and some 2,500 reports."
+    },
+    "com_cda_dagar_2026": {
+      "name": "Fee days for the access fee, 2026",
+      "unit": "days",
+      "note": "3 April–26 July 2026, 8:30–16:00, €5 or €10; still a trial 'with a view to possible permanent application'. Veneto residents and students at schools in the historic city were fully exempt. Clean Cities' summary: more than 650,000 paid vouchers and over €5 million (provisional)."
+    },
+    "com_cda_hotellgaster_per_dag": {
+      "name": "Overnight guests exempt from the fee, average per fee day",
+      "unit": "people per day",
+      "note": "Guests in hotels and other lodgings pay the tourist tax instead and were registered as exempt: 36,639 per fee day in 2025, almost three times the paying day visitors (36,639 / 13,046 = 2.8; own arithmetic)."
+    },
+    "com_korttidsuthyrning_grans": {
+      "name": "Limit for short-term tourist lets without special requirements",
+      "unit": "days per year",
+      "note": "Article 37-bis of DL 50/2022 gives Venice alone the power to regulate short lets. The municipal proposal (executive, 24 October 2024) lets those who rent for more than 120 days a year in the historic city join a register with requirements, as a trial until 31 December 2026. It was still in committee on 25 November 2025; I have not found a final council decision."
+    },
+    "com_mose_grans": {
+      "name": "Tide level at which the MOSE barriers are raised",
+      "unit": "cm",
+      "note": "The barriers are raised when the forecast exceeds 110 cm above the Punta della Salute datum (ZMPS, the mean level of 1885–1909). At 110 cm about 12% of the city is under water (ISPRA), so the lowest parts, such as around Piazza San Marco, can still flood below the threshold."
+    },
+    "com_mose_stangningar_2020": {
+      "name": "MOSE closures in the first year",
+      "unit": "closures",
+      "note": "The first operational raising was on 3 October 2020 (ISPRA). By calendar year: 13 (2020), 20 (2021), 11 (2022), 25 (2023), 28 (2024), 27 (2025) and 32 (2026 up to mid-May)."
+    },
+    "com_mose_stangningar_sasong_2025_26": {
+      "name": "MOSE closures in the 2025/26 high-water season",
+      "unit": "closures",
+      "note": "The most so far: 49 against 20 in 2020/21, 13 (2021/22), 19 (2022/23), 32 (2023/24) and 23 (2024/25). In total 156 closures October 2020–May 2026 (own sum of the authority's table)."
+    },
+    "com_mose_stangningar_vid_50cm": {
+      "name": "MOSE closures with 50 cm higher sea level (model)",
+      "unit": "closures per day (average)",
+      "note": "Umgiesser (CNR, 2020): the barriers can keep the water below 110 cm nearly all the time if the sea rises no more than 50 cm, but they must then close once a day on average; at 75 cm the lagoon is closed more often than open. Partial closures do not protect the city."
+    },
+    "com_barene_aterskapade": {
+      "name": "Salt marshes (barene) rebuilt in the lagoon",
+      "unit": "km²",
+      "note": "The state lagoon programme (today the Autorità per la Laguna di Venezia): 16 km² of barene rebuilt and naturalised, 39 km of barene protected and 12 small islands restored. The lagoon covers about 550 km², some 80% of it mudflats, shallows and salt marshes (Wikipedia)."
+    },
+    "com_kajer_hojda": {
+      "name": "Urban quays and lagoon banks raised and reinforced",
+      "unit": "km",
+      "note": "Local defences against medium-high tides below the MOSE threshold; in addition 56 km of beaches rebuilt or reinforced, 12 km of dunes and 11 km of breakwaters. The city council counts quays, fondamente and walkways among the city's greatest needs (July 2026)."
+    },
+    "com_oversvamning_110cm": {
+      "name": "Share of the city under water at a 110 cm tide",
+      "unit": "%",
+      "note": "ISPRA: tides above 110 cm rose from fewer than 2 a year in the 1950s to more than 10 a year in the 2010s (28 in 2019), as the relative mean sea level rose from just over 15 to about 35 cm through sea-level rise and subsidence."
+    },
+    "com_oversvamning_140cm": {
+      "name": "Share of the city under water at a 140 cm tide",
+      "unit": "%",
+      "note": "The municipality's civil protection: at +140 cm, the threshold for an 'exceptional' tide, 59% of the city floods. The page was last updated in 2018."
+    },
+    "com_kryssningsfartyg_grans": {
+      "name": "Largest ship size allowed in the San Marco basin and the Giudecca canal",
+      "unit": "GT (gross tonnage)",
+      "note": "DL 103/2021 declared the Bacino di San Marco, Canale di San Marco and Canale della Giudecca national monuments and from 1 August 2021 banned ships over 25,000 GT, longer than 180 m or with an air draft above 35 m. The port authority's president became special commissioner for alternative berths, and a fund was set up to compensate shipping companies and terminals."
+    },
+    "com_fastlandet_inkorporeras": {
+      "name": "The mainland municipalities merge into Venice",
+      "unit": "year",
+      "note": "The Region: in 1926 the four mainland municipalities around the industrial zone (Mestre, Chirignago, Zelarino and Favaro Veneto) were joined to Venice. Marghera had been transferred from Mestre in 1917 and Pellestrina, Murano and Burano in 1923–24 (Wikipedia)."
+    },
+    "com_ponte_littorio": {
+      "name": "The road bridge across the lagoon opens",
+      "unit": "year",
+      "note": "The road bridge opened on 25 April 1933 as the 'Ponte Littorio' and was renamed Ponte della Libertà in 1946; it runs beside the 1846 railway bridge and is 3,850 m long."
+    },
+    "com_porto_marghera_anstallda": {
+      "name": "Workers in Porto Marghera in the early 1960s",
+      "unit": "workers",
+      "note": "The Region: about 200 companies with some 35,000 workers and more than 7 million tonnes of goods a year in the early 1960s; 24 million tonnes passed in 1974. De-industrialisation followed with 'substantial' job losses. Wikipedia gives 35,724 workers in 1971."
+    },
+    "com_mestre_invanare_1960": {
+      "name": "Inhabitants of Mestre in 1960",
+      "unit": "people",
+      "note": "The Region: as industry grew, Mestre rose from 20,000 to 90,000 inhabitants in 1920–1960 and Marghera from 5,000 to 25,000; Favaro, Chirignago and Zelarino became towns of 10,000–15,000. Rounded figures."
+    },
+    "com_acqua_granda_1966": {
+      "name": "The high water of 4 November 1966 at Punta della Salute",
+      "unit": "cm",
+      "note": "The highest level since records began in 1872; almost 90% of the city flooded. The disaster led to the Special Law 171/1973."
+    },
+    "com_speciallagen": {
+      "name": "The Special Law for Venice is passed",
+      "unit": "year",
+      "note": "Law no. 171 of 16 April 1973: safeguarding Venice and its lagoon is 'a problem of pre-eminent national interest'. On 23 July 2026 the council again asked for stable, multi-year refinancing (as in 2020, 2024 and February 2026)."
+    },
+    "com_unesco_varldsarv": {
+      "name": "'Venice and its Lagoon' becomes World Heritage",
+      "unit": "year",
+      "note": "World Heritage site no. 394, inscribed in 1987 under all six cultural criteria (i)–(vi). According to Wikipedia, the UN warned in 2014 that the city could be put on the List of World Heritage in Danger unless cruise ships were stopped."
+    },
+    "com_fenice_brand": {
+      "name": "The La Fenice opera house burns",
+      "unit": "year",
+      "note": "Destroyed by arson on 29 January 1996; rebuilt under the motto 'as it was, where it was' and reopened with an inaugural week on 14–21 December 2003. The owner of the electrical firm maintaining the theatre and his cousin, an electrician there, were convicted; the firm was behind schedule and faced penalties."
+    },
+    "com_mose_gripna_2014": {
+      "name": "People arrested in the MOSE corruption investigation",
+      "unit": "people",
+      "note": "On 4 June 2014, 35 people, among them the mayor Giorgio Orsoni, were arrested in an investigation into bribes and slush funds around the MOSE construction, which had begun on 14 May 2003."
+    },
+    "com_acqua_alta_2019": {
+      "name": "The high water of 12 November 2019 at Punta della Salute",
+      "unit": "cm",
+      "note": "The second highest since 1872: 187 cm on the Grand Canal side and 189 cm on the Giudecca side of Punta della Salute, with gusts above 100 km/h. In the week of 12–17 November 140 cm was exceeded four times."
+    }
+  }
+}

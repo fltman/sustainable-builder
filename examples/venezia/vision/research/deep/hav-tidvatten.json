@@ -1,0 +1,1253 @@
+{
+  "topic": "hav-tidvatten",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "mare_zmps_till_igm42",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Höjdskillnad mellan Venedigs tidvattennolla ZMPS (1897) och den nationella höjdnollan IGM 1942 (Genova)",
+      "value": 23.56,
+      "unit": "cm",
+      "year": 2019,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Riferimenti altimetrici",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/riferimenti-altimetrici"
+      },
+      "note_sv": "ZMPS (zero mareografico di Punta della Salute) är nollan för all tidvattenmätning i Venedig: medelhavsnivån ur mareografens registreringar 1885–1909 med centralåret 1897, betraktad som fast i förhållande till staden. Den nationella nollan Genova 1942 låg i slutet av 1960-talet 23,56 cm högre (Cavazzoni 1977), så en gångyta på 100 cm ZMPS ligger på 76,44 cm i IGM 1942. Projektets terrängmodell (Copernicus GLO-30) är en ytmodell i EGM2008; dess samband med ZMPS har inte hittats.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_medelhavsniva_2020_2025",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Medelvattenstånd vid Punta della Salute 2020–2025, över ZMPS",
+      "value": 35.3,
+      "unit": "cm ZMPS",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Crescita del livello medio del mare a Venezia (ICLMM), Tabella 1: Livello medio del mare a Venezia 1872–2025 (xlsx, aggiornamento dicembre 2025)",
+        "publisher": "ISPRA",
+        "url": "https://indicatoriambientali.isprambiente.it/sites/default/files/indicatori_ambientali/2026-09-21/Tabella%201%20Livello%20medio%20mare%20Venezia.xlsx"
+      },
+      "note_sv": "Medel av årsmedelvärdena 2020–2025, där havsnivån vid plattformen Acqua Alta (8 sjömil ut) används de dagar MOSE är stängt; med enbart den validerade serien inne i staden blir det 34,9 cm. Rekordåret 2024 nådde 41,1 cm (före 2010: 40,5 och 2014: 40,0), och 2025 37,4 cm; 1890-talets medel var 0,1 cm, så havet står i dag ca 35 cm högre mot stenarna än 1897.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_havsnivatrend_1872_2024",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Relativ havsnivåhöjning vid Punta della Salute, medel 1872–2024",
+      "value": 2.6,
+      "unit": "mm/år",
+      "year": 2024,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Crescita del livello medio del mare a Venezia (ICLMM)",
+        "publisher": "ISPRA",
+        "url": "https://indicatoriambientali.isprambiente.it/it/node/5086"
+      },
+      "note_sv": "Relativ höjning (havets höjning plus markens sättning) över hela mätserien. Ökningen har gått i steg: snabb 1930–1970 när grundvattenuttaget i Porto Marghera sänkte marken, nästan stilla ca 1965–1995 och snabb igen sedan mitten av 1990-talet; de senaste 16 åren är de högsta i serien.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_havsnivatrend_1993_2024",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Relativ havsnivåhöjning vid Punta della Salute 1993–2024",
+      "value": 4.8,
+      "unit": "mm/år",
+      "year": 2024,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Crescita del livello medio del mare a Venezia (ICLMM)",
+        "publisher": "ISPRA",
+        "url": "https://indicatoriambientali.isprambiente.it/it/node/5086"
+      },
+      "note_sv": "Nästan dubbelt så snabbt som seriens medel (2,6 mm/år). Ferrarin m.fl. (Frontiers in Climate 2024) anger 4,9 mm/år och Zanchettin m.fl. (2021) 5,01 ± 1,75 mm/år för 1993–2019, varav 2,76 mm/år är havets egen höjning och resten sättning.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_havsnivatrend_utan_sattning_1872_2019",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Havets egen nivåhöjning i Venedig med sättningen borträknad, 1872–2019",
+      "value": 1.23,
+      "unit": "mm/år",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Zanchettin m.fl.: Sea-level rise in Venice: historic and future trends (review article), NHESS 21, 2643–2678",
+        "publisher": "Natural Hazards and Earth System Sciences (EGU)",
+        "url": "https://nhess.copernicus.org/articles/21/2643/2021/"
+      },
+      "note_sv": "1,23 ± 0,13 mm/år av en total relativ höjning på 2,53 ± 0,14 mm/år; sättningen står alltså för ungefär hälften. Naturlig sättning (kompaktion, tektonik, isostasi) är ca 1 mm/år, men Tosi m.fl. (2018) mäter i medel 3–4 mm/år i norra, 1–2 i mellersta och 2–3 i södra lagunen och upp till 70 mm/år vid MOSE-byggena.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_sattning_1950_1970",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Markens sättning i Venedigområdet 1950–1970",
+      "value": 12,
+      "unit": "cm",
+      "year": 1970,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "La subsidenza e l'eustatismo",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/la-subsidenza-e-leustatismo"
+      },
+      "note_sv": "Sättningen orsakades främst av grundvattenuttag i industriområdet Porto Marghera och avtog när uttaget minskade i början av 1970-talet; värst var Mestre 1968–69 med 17 mm/år (Zanchettin m.fl. 2021). Comune anger att havet självt steg 9 cm från sekelskiftet till 1970-talet och 10–12 cm sedan 1970, och att staden totalt förlorat ca 26 cm i höjd mot havet på ett sekel (FAQ, 2019).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_080",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av de offentliga gångvägarna i centro storico som står under vatten vid tidvatten +80 cm ZMPS",
+      "value": 0.1,
+      "unit": "%",
+      "year": 2009,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Venezia altimetria (aggiornamento 2009), s. 5",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree och Insula spa",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/centro_maree/bibliografia/Venezia%20altimetria.pdf"
+      },
+      "note_sv": "Vid +80 cm, gränsen för 'acqua alta', svämmar bara de lägsta platserna över, främst Piazza San Marco; nivån nåddes då i medel 54 gånger per år (70 per år 1966–2021). Värdet kommer från 2009 års altimetri; Comunes nuvarande tabell (2020) börjar vid 90 cm.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_090",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +90 cm ZMPS",
+      "value": 2,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Under 90 cm ligger bara obetydliga delar; detaljtabellen anger 1,8 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_100",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +100 cm ZMPS",
+      "value": 5,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 4,5 %. Över 100 cm börjar längre gångstråk påverkas, och vaporettolinjerna läggs om redan över 95 cm.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_110",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +110 cm ZMPS",
+      "value": 12,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 12,3 %. Nivån för sirenerna och för MOSE:s stängning; 2009 års altimetri gav 14 % och Frassettos karta från 1970-talet 11,7 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_120",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +120 cm ZMPS",
+      "value": 28,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 28,2 %. Gångbroarna (ca 4 km passerelle) håller huvudstråken farbara upp till 120 cm; över den nivån behövs stövlar.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_130",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +130 cm ZMPS",
+      "value": 46,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 45,8 %. Halva gångytan ligger under ca 133 cm (se mare_median_gangyta).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_140",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +140 cm ZMPS",
+      "value": 59,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 58,8 %. Gränsen för exceptionellt högvatten; på Piazza San Marco står vattnet då upp till 60 cm djupt.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_150",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +150 cm ZMPS",
+      "value": 70,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 69,5 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_160",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +160 cm ZMPS",
+      "value": 77,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 77,3 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_170",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +170 cm ZMPS",
+      "value": 82,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 81,9 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_180",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +180 cm ZMPS",
+      "value": 85,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 84,7 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_190",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +190 cm ZMPS",
+      "value": 88,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 87,7 %; rekordet 2019 (187 cm) satte enligt Comune 'nästan 90 %' av staden under vatten.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_oversvammad_andel_200",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Andel av den offentliga gångytan i centro storico och på Giudecca som står under vatten vid tidvatten +200 cm ZMPS",
+      "value": 91,
+      "unit": "%",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca), uppdaterad 2020-10-02",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Comunes officiella tabell över hur stor del av den offentliga gångytan (inte hela landytan) som ligger under en given tidvattennivå. Detaljtabellen anger 91,0 %; 9 % av gångytan ligger över 200 cm. Rekordet 1966 var 194 cm.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_lagsta_punkt_basilikan",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Lägsta punkten i Venedig: marken framför Markuskyrkans ingång",
+      "value": 63,
+      "unit": "cm ZMPS",
+      "year": 2009,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Venezia altimetria (aggiornamento 2009), s. 5",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree och Insula spa",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/centro_maree/bibliografia/Venezia%20altimetria.pdf"
+      },
+      "note_sv": "Piazza San Marco ligger på sina ställen på bara ca 70 cm. Eftersom vattnet steg upp genom de gamla dagvattenledningarna översvämmades kyrkans förhall (narthex) över 200 gånger om året, tills Provveditorato 2019 satte ventiler och pumpar i ledningarna (se mare_narthex_oversvammas_per_ar).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_narthex_oversvammas_per_ar",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Antal gånger per år som Markuskyrkans förhall (narthex) översvämmades före skyddsåtgärderna",
+      "value": 200,
+      "unit": "gånger/år (över)",
+      "year": 2019,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Venezia, ecco il progetto per proteggere San Marco dalle maree (3 maggio 2019)",
+        "publisher": "Ministero delle Infrastrutture e dei Trasporti (Provveditorato OO.PP. Triveneto)",
+        "url": "https://mit.gov.it/node/10415"
+      },
+      "note_sv": "Murarna mot piazzan har i 50 år stått med foten i saltvatten och salt har sugits upp i teglet; mosaikgolvet från 1100-talet blöttes ned. Sedan 19 november 2022 omges kyrkan av en tillfällig barriär av stål och glas med sex vattentäta passager; enligt en motion i kommunfullmäktige 2021 var den tänkt att skydda upp till 110 cm tills Provveditorato höjt hela insula San Marco till 110 cm.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_san_marco_troskel",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Tidvattennivå då Piazza San Marco börjar översvämmas",
+      "value": 80,
+      "unit": "cm ZMPS",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Interpretare la previsione di marea (aggiornamento 18/05/2021)",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/interpretare-la-previsione-di-marea"
+      },
+      "note_sv": "Comunes turistsida 'Venezia e l'acqua alta' anger att vattnet blir märkbart på piazzan över 82 cm. +80 cm är också gränsen för acqua alta: marea sostenuta 80–109 cm, molto sostenuta 110–139 cm och eccezionale från 140 cm.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_rialto_troskel",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Tidvattennivå då Rialto (vid vaporettobryggorna) börjar översvämmas",
+      "value": 105,
+      "unit": "cm ZMPS",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Interpretare la previsione di marea (aggiornamento 18/05/2021)",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/interpretare-la-previsione-di-marea"
+      },
+      "note_sv": "Framför järnvägsstationen, en av stadens högsta platser (utanför modellens ruta), krävs 135 cm. Vaporettotrafiken läggs om redan när tidvattnet passerar 95 cm men fortsätter utom vid exceptionellt högvatten.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_rialhojning_malniva",
+      "sdg": [
+        9,
+        11,
+        13
+      ],
+      "name_sv": "Lägsta nivå som kajer och gångytor i lagunens lägsta delar ska höjas till",
+      "value": 110,
+      "unit": "cm ZMPS",
+      "year": 2016,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Sistema Mose – edilizia statale",
+        "publisher": "Ministero delle Infrastrutture e dei Trasporti",
+        "url": "https://mit.gov.it/node/4052"
+      },
+      "note_sv": "Det integrerade systemet bygger på att de lägsta stadsdelarna höjs till minst +110 cm och att MOSE tar resten; på 1990-talet var målet 'mot +120 cm' där det gick (Comitatone), och Insula spa (grundat 1997) har höjt många av de mest använda gångstråken i samband med kanalmuddring. Staten anger att 100 km stadskajer och lagunstränder har höjts och förstärkts (Autorità per la Laguna); privata bottenvåningar och trösklar är ägarnas sak.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_median_gangyta",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Medianhöjd för den offentliga gångytan i centro storico (uppskattning)",
+      "value": 133,
+      "unit": "cm ZMPS",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Le percentuali di allagamento (centro storico e Giudecca)",
+        "publisher": "Egen beräkning (ursprungskälla: Comune di Venezia – Centro Maree)",
+        "url": "https://www.comune.venezia.it/it/content/le-percentuali-allagamento"
+      },
+      "note_sv": "Linjär interpolation i Comunes detaljtabell: 45,8 % av gångytan under 130 cm och 58,8 % under 140 cm ger 50 % vid 130 + (50 − 45,8)/(58,8 − 45,8) × 10 ≈ 133 cm. Med dagens medelvattenstånd (35 cm) ligger alltså halva gångytan mindre än en meter över medelhavet.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_hogvatten_110_2010_2019",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Antal tidvatten på minst 110 cm vid Punta della Salute under 2010–2019",
+      "value": 95,
+      "unit": "tidvatten/årtionde",
+      "year": 2019,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Distribuzione decennale delle alte maree >= +110 cm registrate a Venezia, dal 1872 al 2022 (diagram)",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/centro_maree/grafici_statistici/dist_decennale_ve2022.jpg"
+      },
+      "note_sv": "Per årtionde: 1870-tal 4, 1880 2, 1890 3, 1900 2, 1910 3, 1920 3, 1930 8, 1940 5, 1950 13, 1960 31, 1970 31, 1983–89 10, 1990 40, 2000 52, 2010 95 och 2020–2022 bara 2 tack vare MOSE (34 ute i havet). Medel 1966–2021 var 5,2 per år, och tidvatten på 110–119 cm har gått från två till fyra om året mellan 1966–2001 och 2002–2021; i medel står vattnet 2 h 33 min över 110 cm (1966–2018).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_hogvatten_80_per_ar",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Tidvatten på minst 80 cm per år, medel 1966–2021",
+      "value": 70,
+      "unit": "tidvatten/år",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Durata e frequenza media della marea, periodo 1966–2021",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/durata-media-delle-maree2"
+      },
+      "note_sv": "80 cm är nivån där Piazza San Marco börjar svämma över; efter 2020 ingår havsnivån utanför MOSE de dagar barriärerna är stängda. Motsvarande frekvenser: minst 90 cm 28,1, minst 100 cm 12,4, minst 110 cm 5,2 och minst 120 cm 2,2 gånger per år, minst 130 cm en gång per 1,1 år.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_hogvatten_140_aterkomsttid",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Återkomsttid för exceptionellt högvatten (minst 140 cm), 1966–2021",
+      "value": 2.5,
+      "unit": "år",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Durata e frequenza media della marea, periodo 1966–2021",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/durata-media-delle-maree2"
+      },
+      "note_sv": "22 tillfällen 1966–2021; minst 150 cm en gång per 7 år, minst 160 cm en gång per 18,7 år och minst 190 cm en gång per 56 år. Tidvatten på 140–149 cm kom en gång per 9 år 1966–2001 men en gång per 2 år 2002–2021, och av de 25 tidvatten på minst 140 cm sedan 1872 inträffade 11 på 2010-talet (egen räkning ur Comunes lista).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_rekord_1966",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Högsta uppmätta tidvatten i Venedig, 4 november 1966",
+      "value": 194,
+      "unit": "cm ZMPS",
+      "year": 1966,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Valori caratteristici della marea a Venezia nel periodo 1872–2019",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/valori-caratteristici-marea-venezia-il-periodo-1872-2015"
+      },
+      "note_sv": "Kl. 18.00 den 4 november 1966; vattnet stod över 110 cm i 22 timmar, lidona bröts igenom på flera ställen och skadorna har uppskattats till 400 miljoner euro (Lionello m.fl. 2021). Om stormfloden hade sammanfallit med högvattnet hade nivån blivit ca 220 cm (samma beräkning för 29 oktober 2018).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_rekord_2019",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Näst högsta uppmätta tidvatten, 12 november 2019",
+      "value": 187,
+      "unit": "cm ZMPS",
+      "year": 2019,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Novembre 2019, un mese di maree eccezionali – Dinamica e anomalia dell'evento del 12 novembre 2019 (ISPRA, CPSM, CNR-ISMAR)",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/centro_maree/bibliografia/Novembre_2019_un_mese_di_maree_eccezionali-Dinamica_e_anomalia_dell%27evento_del_12novembre.pdf"
+      },
+      "note_sv": "187 cm vid mareografen på Canal Grande-sidan och 189 cm på Giudecca-sidan av Punta della Salute, kl. 22.50; lokal vind 100 km/h med byar till 110 km/h, och nästan 90 % av staden stod under vatten. År 2019 nåddes 110 cm 28 gånger, 140 cm fem gånger (aldrig tidigare mer än två gånger samma år) och 150 cm tre gånger på sex dagar; vattnet stod över 110 cm i ca 50 timmar bara i november.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_lagvatten_minus50_per_ar",
+      "sdg": [
+        9,
+        14
+      ],
+      "name_sv": "Exceptionellt lågvatten (−50 cm eller lägre) per år, medel 1966–2021",
+      "value": 14.9,
+      "unit": "tillfällen/år",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Durata e frequenza media della marea, periodo 1966–2021",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/durata-media-delle-maree2"
+      },
+      "note_sv": "Lågvattnen blir allt ovanligare när medelnivån stiger: under −60 cm 4 gånger och under −70 cm ungefär en gång per år 1966–2021, men bara fem gånger under −60 cm 2009–2020 (egen räkning ur Comunes lista). De kommer vintertid vid högtryck; lägsta värdet är −124 cm (18 januari 1882), lägsta på senare tid −83 cm (18 februari 2008, vid 1045 hPa), och redan vid −55 cm blir de inre kanalerna svåra att trafikera.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_skada_2019",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Uppskattade skador av översvämningen 12 november 2019",
+      "value": 460,
+      "unit": "miljoner euro (minst)",
+      "year": 2019,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Lionello m.fl.: Extreme floods of Venice: characteristics, dynamics, past and future evolution (review article), NHESS 21, 2705–2731",
+        "publisher": "Natural Hazards and Earth System Sciences (EGU)",
+        "url": "https://nhess.copernicus.org/articles/21/2705/2021/"
+      },
+      "note_sv": "'Över 460 miljoner euro' (Godlewski m.fl. 2020, citerat i översikten); i nyheter och i Faranda m.fl. (2023) förekommer ca 1 miljard euro. Översvämningen 1966 beräknas ha kostat 400 miljoner euro; borgmästaren utsågs till regeringens särskilda kommissarie (commissario delegato) efter ovädret (ordinanza 616 av 16 november 2019).",
+      "confidence": "medium"
+    },
+    {
+      "id": "mare_meteorologiskt_bidrag_max",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Största meteorologiska bidraget till tidvattnet (stormflod), 4 november 1966",
+      "value": 184,
+      "unit": "cm",
+      "year": 1966,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Valori caratteristici della marea a Venezia; Il contributo meteorologico; Le sesse",
+        "publisher": "Comune di Venezia – Centro Previsioni e Segnalazioni Maree",
+        "url": "https://www.comune.venezia.it/it/content/valori-caratteristici-marea-venezia-il-periodo-1872-2015"
+      },
+      "note_sv": "Skillnaden mellan uppmätt och astronomiskt tidvatten, störst 1966–2019 (Lionello m.fl. 2021 anger 143 cm med annan definition); den största ändringen på ett dygn var 133 cm (14 december 2019). Sirocco från sydost längs hela Adriatiska havet kan ensamt höja vattnet mer än en meter, lågtryck ger upp till 20 cm, bora från nordost bidrar mindre ('scontraura' när båda blåser) och Adriatiska havets egensvängning (sessa, ca 22 timmar) kan ge nytt högvatten dagarna efter en storm.",
+      "confidence": "high"
+    },
+    {
+      "id": "mose_paratoier",
+      "sdg": [
+        9,
+        11,
+        13
+      ],
+      "name_sv": "Antal rörliga luckor i MOSE vid lagunens tre inlopp",
+      "value": 78,
+      "unit": "luckor",
+      "year": 2016,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Sistema Mose – edilizia statale",
+        "publisher": "Ministero delle Infrastrutture e dei Trasporti",
+        "url": "https://mit.gov.it/node/4052"
+      },
+      "note_sv": "Fyra barriärer, sammanlagt 1,6 km: vid Lido 20 (Treporti) och 21 (San Nicolò), vid Malamocco 19 och vid Chioggia 18 luckor; varje lucka är 20 m bred och 18,6–29,6 m hög och reser sig när den fylls med tryckluft, och inloppen hålls i medel stängda 4–5 timmar. Bygget började 2003, första fullständiga provresningen var 10 juli 2020 och första skarpa stängningen 3 oktober 2020.",
+      "confidence": "high"
+    },
+    {
+      "id": "mose_anslag_totalt",
+      "sdg": [
+        9,
+        11,
+        13
+      ],
+      "name_sv": "Sammanlagda anslag till MOSE vid utgången av första halvåret 2022",
+      "value": 6689,
+      "unit": "miljoner euro",
+      "year": 2022,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Corte dei conti, Deliberazione 92/2024/G (uppföljning av Deliberazione 35/2023/G 'Stato di avanzamento ed esecuzione delle opere del Mose'), s. 55",
+        "publisher": "Corte dei conti – Sezione centrale di controllo sulla gestione delle Amministrazioni dello Stato",
+        "url": "https://www.corteconti.it/Download?id=a122f2f4-7a9d-4197-8697-d78fb7c74b65"
+      },
+      "note_sv": "6 689,07 miljoner euro beviljade; i juni 2022 var verket ca 95 % klart och slutförandet, planerat till 2021, pågick fortfarande. Enligt Pagella Politica angav parlamentets infrastrukturrapport 6,2 miljarder euro (maj 2022) mot 4,1 miljarder 2001, och Il Post (2026) skriver 'över 6,7 miljarder' för MOSE och kompletterande verk.",
+      "confidence": "high"
+    },
+    {
+      "id": "mose_stangningsgrans",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Tidvattennivå i staden som MOSE ska hindra (stängningsgräns)",
+      "value": 110,
+      "unit": "cm ZMPS",
+      "year": 2016,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Sistema Mose – edilizia statale",
+        "publisher": "Ministero delle Infrastrutture e dei Trasporti",
+        "url": "https://mit.gov.it/node/4052"
+      },
+      "note_sv": "Nivån är ett beslut av myndigheterna, kopplat till höjden på de lägsta kajerna, inte en teknisk gräns, och kan sänkas. I praktiken reses barriärerna när prognosen visar 101 cm eller mer (felmarginal ca 10 cm, Il Post 2026); under provåret 2020 gällde 130 cm, och mellan 80 och 110 cm skyddar MOSE inte Piazza San Marco.",
+      "confidence": "high"
+    },
+    {
+      "id": "mose_dimensionerad_havshojning",
+      "sdg": [
+        9,
+        13
+      ],
+      "name_sv": "Havsnivåhöjning som MOSE dimensionerades för (100 år)",
+      "value": 60,
+      "unit": "cm",
+      "year": 2016,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Sistema Mose – edilizia statale",
+        "publisher": "Ministero delle Infrastrutture e dei Trasporti",
+        "url": "https://mit.gov.it/node/4052"
+      },
+      "note_sv": "MOSE och de förstärkta lidona dimensionerades enligt försiktighetsprincipen för 60 cm högre hav på 100 år (över IPCC:s dåvarande 18–59 cm) och för tidvatten upp till 3 m (samma uppgift hos Corte dei conti 2024). Med det integrerade systemet räknade man med att stänga 3–5 gånger per år vid dåtidens havsnivå.",
+      "confidence": "high"
+    },
+    {
+      "id": "mose_stangningar_2025_2026",
+      "sdg": [
+        9,
+        11,
+        13
+      ],
+      "name_sv": "Antal MOSE-stängningar säsongen 2025/26",
+      "value": 49,
+      "unit": "stängningar",
+      "year": 2026,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Operatività M.O.S.E. – Sintesi del passato",
+        "publisher": "Autorità per la Laguna di Venezia – Nuovo Magistrato alle Acque",
+        "url": "https://www.autoritalaguna.it/operativita-m-o-s-e/"
+      },
+      "note_sv": "Per säsong: 2020/21 20, 2021/22 13, 2022/23 19, 2023/24 32, 2024/25 23 och 2025/26 49; per kalenderår 13 (2020), 20 (2021), 11 (2022), 25 (2023), 28 (2024), 27 (2025) och 32 (2026 t.o.m. maj). Totalt 156 stängningar till 15 maj 2026, den 100:e den 12 mars 2025, och 30 av dem mellan 28 januari och 20 februari 2026; Comunes Centro Maree räknar något annorlunda (t.ex. 18 för 2020).",
+      "confidence": "high"
+    },
+    {
+      "id": "mose_kostnad_per_hojning",
+      "sdg": [
+        9,
+        11
+      ],
+      "name_sv": "Kostnad för en resning av MOSE",
+      "value": 200000,
+      "unit": "euro",
+      "year": 2026,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Il Mose è molto attivo (11 febbraio 2026)",
+        "publisher": "Il Post",
+        "url": "https://www.ilpost.it/2026/02/11/mose-venezia-molto-attivo/"
+      },
+      "note_sv": "Nyhetsuppgift, eftersom primärkälla saknas: 'ca 200 000 euro' per resning (Il Post; Nuova Venezia: minst 200 000 euro bara i personal, 31 personer per resning); Pagella Politica anger 272 000 euro 2020–21 och 211 000 euro 2021–22. Energin kostade 4,5 miljoner euro 2025 (Nuova Venezia), och enligt Pagella Politica anslår lagen 63 miljoner euro per år till drift och underhåll (40 + 23 miljoner).",
+      "confidence": "medium"
+    },
+    {
+      "id": "mose_undvikna_skador",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Skador som MOSE:s 100 första resningar (2020–2025) beräknas ha förhindrat",
+      "value": 2600,
+      "unit": "miljoner euro",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "MIT: con il centesimo sollevamento del MOSE altro salvataggio per Venezia (12 marzo 2025)",
+        "publisher": "Ministero delle Infrastrutture e dei Trasporti",
+        "url": "https://mit.gov.it/node/20399"
+      },
+      "note_sv": "Ministeriets egen uppskattning; flest resningar, 44, gällde tidvatten mellan 80 och 110 cm. Den 22 november 2022 nådde havet 173 cm vid plattformen Acqua Alta medan vattnet vid Punta della Salute stannade på 66 cm (Comunes tabell).",
+      "confidence": "medium"
+    },
+    {
+      "id": "mose_stangning_vid_50cm_havshojning",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "MOSE-stängningar vid 50 cm högre hav (modellstudie)",
+      "value": 1,
+      "unit": "stängningar/dygn",
+      "year": 2020,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Umgiesser: The impact of operating the mobile barriers in Venice (MOSE) under climate change, Journal for Nature Conservation 54, 125783",
+        "publisher": "CNR-ISMAR / Elsevier",
+        "url": "https://doi.org/10.1016/j.jnc.2019.125783"
+      },
+      "note_sv": "Hydrodynamisk modell med verkliga prognoser 2000–2002 och havsnivån höjd i steg om 10 cm upp till 200 cm: upp till 50 cm höjning håller barriärerna vattnet under 110 cm nästan hela tiden, men stänger då i medel en gång per dygn och minskar vattenflödet genom inloppen med ca 10 %. Vid 75 cm är lagunen fler timmar stängd än öppen, och delvisa stängningar skyddar inte staden.",
+      "confidence": "high"
+    },
+    {
+      "id": "mose_stangda_dagar_2095_2099_rcp85",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Dagar per år som lagunen skulle vara stängd 2095–2099 under RCP8.5 (modellstudie)",
+      "value": 248,
+      "unit": "dagar/år",
+      "year": 2026,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Canu m.fl.: Cumulative impact of climate change and adaptation measures on Venice and its lagoon, Scientific Reports (2026)",
+        "publisher": "Scientific Reports (Nature Portfolio)",
+        "url": "https://www.nature.com/articles/s41598-026-73719-w"
+      },
+      "note_sv": "Högupplöst modell med nedskalade klimatprojektioner: under RCP8.5 behöver en tredjedel av lagunen mer än 20 dagar för att byta vatten och sommarvattnet blir varmare än 30 °C i över tre månader per år; under RCP4.5 halveras ungefär effekterna. Stängningarna minskar också tillförseln av slam till saltängarna, där över 70 % av sedimentationen sker under stormfloder (Tognin m.fl., Nature Geoscience 2021).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_rslr_2100_rcp26",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Relativ havsnivåhöjning i Venedig till 2100 jämfört med 1986–2005, RCP2.6",
+      "value": 47,
+      "unit": "cm",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Zanchettin m.fl.: Sea-level rise in Venice: historic and future trends (review article), NHESS 21, 2643–2678",
+        "publisher": "Natural Hazards and Earth System Sciences (EGU)",
+        "url": "https://nhess.copernicus.org/articles/21/2643/2021/"
+      },
+      "note_sv": "Sannolikt intervall 32–62 cm, inklusive sättning 1 mm/år (10,5 cm); bygger på AR5-generationens regionala projektioner. Med medelnivån 1986–2005, 23,3 cm ZMPS (ISPRA), blir medelvattenståndet ca 70 cm ZMPS år 2100.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_rslr_2100_rcp85",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Relativ havsnivåhöjning i Venedig till 2100 jämfört med 1986–2005, RCP8.5",
+      "value": 81,
+      "unit": "cm",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Zanchettin m.fl.: Sea-level rise in Venice: historic and future trends (review article), NHESS 21, 2643–2678",
+        "publisher": "Natural Hazards and Earth System Sciences (EGU)",
+        "url": "https://nhess.copernicus.org/articles/21/2643/2021/"
+      },
+      "note_sv": "Sannolikt intervall 58–110 cm, inklusive 10,5 cm sättning; scenarierna skiljer sig åt först efter 2050. Motsvarar ett medelvattenstånd på ca 104 cm ZMPS år 2100 – högre än MOSE:s dimensionerade 60 cm.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_rslr_2100_hogscenario",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Relativ havsnivåhöjning i Venedig till 2100, högscenario med kraftig isavsmältning",
+      "value": 180,
+      "unit": "cm",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Zanchettin m.fl.: Sea-level rise in Venice: historic and future trends (review article), NHESS 21, 2643–2678",
+        "publisher": "Natural Hazards and Earth System Sciences (EGU)",
+        "url": "https://nhess.copernicus.org/articles/21/2643/2021/"
+      },
+      "note_sv": "Ett 'rimligt men osannolikt' scenario där varje komponent tas från den högsta fysikaliskt grundade uppskattningen; nästan hälften kommer från Antarktis (artikelns sammanfattning anger ca 170 cm). IPCC AR6 utesluter inte att havet globalt stiger mot 2 m till 2100 och 5 m till 2150 under SSP5-8.5 (låg konfidens).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_medelhavsniva_2100_ssp245",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Medelvattenstånd vid Punta della Salute år 2100, SSP2-4.5 (uppskattning)",
+      "value": 98,
+      "unit": "cm ZMPS",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "IPCC AR6 WGI, Summary for Policymakers, B.5.3",
+        "publisher": "Egen beräkning (ursprungskällor: IPCC AR6, ISPRA, Zanchettin m.fl. 2021)",
+        "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf"
+      },
+      "note_sv": "Mitten av AR6:s sannolika globala intervall för SSP2-4.5 (0,44–0,76 m över 1995–2014) + sättning 1 mm/år 2005–2100 (9,5 cm) + Venedigs medelnivå 1995–2014, 28,5 cm ZMPS (ISPRA): 28,5 + 60 + 9,5 ≈ 98 cm. På samma sätt ger 2050 ca 51–56 cm ZMPS (AR6-median 0,18–0,23 m för SSP1-1.9 till SSP5-8.5 + 4,5 cm sättning); norra Adriatiska havet kan stiga ca 10 % mindre än det globala medlet, men sättningen är på sina håll större.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_medelhavsniva_2100_ssp585",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Medelvattenstånd vid Punta della Salute år 2100, SSP5-8.5 (uppskattning)",
+      "value": 115,
+      "unit": "cm ZMPS",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "IPCC AR6 WGI, Technical Summary, Box TS.4",
+        "publisher": "Egen beräkning (ursprungskällor: IPCC AR6, ISPRA, Zanchettin m.fl. 2021)",
+        "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_TS.pdf"
+      },
+      "note_sv": "AR6-median för SSP5-8.5 0,77 m (sannolikt 0,63–1,01 m över 1995–2014) + 9,5 cm sättning + 28,5 cm = ca 115 cm ZMPS (intervall ca 101–139 cm). Då ligger ca 20 % av den offentliga gångytan under medelvattenståndet (mitt emellan 12,3 % vid 110 cm och 28,2 % vid 120 cm i Comunes tabell).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_medelhavsniva_2126_ssp245",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Medelvattenstånd vid Punta della Salute år 2126, SSP2-4.5 (uppskattning)",
+      "value": 121,
+      "unit": "cm ZMPS",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "IPCC AR6 WGI, Summary for Policymakers, B.5.3",
+        "publisher": "Egen beräkning (ursprungskällor: IPCC AR6, ISPRA)",
+        "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf"
+      },
+      "note_sv": "Linjär interpolation mellan AR6:s mittvärden 2100 (0,60 m) och 2150 (0,995 m; sannolikt 0,66–1,33 m): 0,60 + 0,52 × 0,395 = 0,81 m, + sättning 12,1 cm (2005–2126) + 28,5 cm ≈ 121 cm ZMPS. Då ligger ca 30 % av gångytan under medelvattenståndet (Comunes tabell: 28,2 % vid 120 cm, 45,8 % vid 130 cm).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_medelhavsniva_2126_ssp585",
+      "sdg": [
+        13,
+        14
+      ],
+      "name_sv": "Medelvattenstånd vid Punta della Salute år 2126, SSP5-8.5 (uppskattning)",
+      "value": 152,
+      "unit": "cm ZMPS",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "IPCC AR6 WGI, Summary for Policymakers, B.5.3",
+        "publisher": "Egen beräkning (ursprungskällor: IPCC AR6, ISPRA)",
+        "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf"
+      },
+      "note_sv": "0,77 m (median 2100) + 0,52 × (1,43 − 0,77) m (mitten av 2150-intervallet 0,98–1,88 m) = 1,11 m, + 12,1 cm sättning + 28,5 cm ≈ 152 cm ZMPS: ungefär 70 % av gångytan skulle ligga under medelvattenståndet, alltså bortom vad tillfälliga stängningar kan hantera. Anzidei m.fl. (2025) varnar att MOSE kan komma att översköljas omkring 2100.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_hogvatten_100ar_idag",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "100-årsnivå för högvatten vid Punta della Salute i dag (uppskattning)",
+      "value": 210,
+      "unit": "cm ZMPS",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Durata e frequenza media della marea, periodo 1966–2021",
+        "publisher": "Egen beräkning (ursprungskällor: Comune di Venezia – Centro Maree, ISPRA)",
+        "url": "https://www.comune.venezia.it/it/content/durata-media-delle-maree2"
+      },
+      "note_sv": "Ur Comunes frekvenser 1966–2021: minst 140 cm 22 gånger (0,39 per år) och minst 190 cm en gång (0,018 per år); en exponentiell svans genom dem ger 0,01 per år vid 199 cm (206 cm om svansen dras från 160 cm). Periodens medelvattenstånd var 25,5 cm mot 35,3 cm i dag (ISPRA), så dagens nivå blir ca 10 cm högre: ca 210 cm (ca 200–216 cm).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_hogvatten_100ar_okning_2100_rcp85",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Höjning av 100-årsnivån för extremt havsvattenstånd i nordvästra Adriatiska havet till 2100, RCP8.5 (intervallets mitt)",
+      "value": 112,
+      "unit": "cm",
+      "year": 2021,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Lionello m.fl.: Extreme floods of Venice: characteristics, dynamics, past and future evolution (review article), NHESS 21, 2705–2731",
+        "publisher": "Natural Hazards and Earth System Sciences (EGU)",
+        "url": "https://nhess.copernicus.org/articles/21/2705/2021/"
+      },
+      "note_sv": "Mitten av intervallet 53–171 cm (5–95 %) jämfört med 2001–2020, utan lokal sättning (Vousdoukas m.fl. 2018); RCP4.5 ger 24–56 cm och 2050 12–17 cm (RCP4.5) resp. 26–35 cm (RCP8.5). Dagens 100-årshändelse kommer till 2100 minst vart femte år (RCP4.5) eller varje år (RCP8.5); lagt på mare_hogvatten_100ar_idag och ca 9 cm sättning blir 100-årsnivån ca 2,6 m (RCP4.5) eller 3,3 m ZMPS (RCP8.5) – över de 3 m MOSE är byggt för.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_extremniva_2150",
+      "sdg": [
+        11,
+        13
+      ],
+      "name_sv": "Möjlig högsta vattennivå vid extremt högvatten år 2150",
+      "value": 347,
+      "unit": "cm ZMPS",
+      "year": 2025,
+      "scope": "Laguna di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Anzidei m.fl.: Multi-Temporal Relative Sea Level Rise Scenarios up to 2150 for the Venice Lagoon (Italy), Remote Sensing 17(5), 820 (sammanfattning)",
+        "publisher": "MDPI Remote Sensing",
+        "url": "https://doi.org/10.3390/rs17050820"
+      },
+      "note_sv": "När tidvatten, sesse och väder samverkar kan nivån 2150 tillfälligt nå 3,47 m över Punta della Salutes referens, med upp till 65 % av marken under vatten; till 2150 hotas över 112 km² (SSP1-2.6) respektive 139 km² (SSP5-8.5) av lagunens land av översvämning. Studien bygger på AR6 och uppmätt landsänkning 1–3 mm/år (upp till 7 mm/år); endast sammanfattningen har lästs.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mare_temp_okning_2071_2100_rcp45",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperaturen i Venedig till 2071–2100 jämfört med 1976–2005, RCP4.5 (uppskattning)",
+      "value": 2.0,
+      "unit": "°C",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, forecast-tas-absolute-annual, rutan vid 45,4350 N 12,3375 E, RCP4.5",
+        "publisher": "Egen beräkning (ursprungskälla: ARPAV)",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-tas-absolute-annual-arpa_vfvg-only_year-ensemble-model_ensemble-rcp45-all_year?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING&include_observation_data=true&observation_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "Årsmedel 15,95 °C 2071–2099 mot 13,97 °C 1976–2005 i rutan (ca 12 km) = +1,98 °C; ARPAV:s egna säsongsanomalier ligger på +1,7 till +2,2 °C (sommar +2,17), och RCP2.6 ger +0,96 °C. Uppmätt vid ARPAV:s station Istituto Cavanis: 14,6 °C 2001–2010 och 15,6 °C 2016–2025.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_temp_okning_2071_2100_rcp85",
+      "sdg": [
+        13
+      ],
+      "name_sv": "Ökning av årsmedeltemperaturen i Venedig till 2071–2100 jämfört med 1976–2005, RCP8.5 (uppskattning)",
+      "value": 3.8,
+      "unit": "°C",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, forecast-tas-absolute-annual, rutan vid 45,4350 N 12,3375 E, RCP8.5",
+        "publisher": "Egen beräkning (ursprungskälla: ARPAV)",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-tas-absolute-annual-arpa_vfvg-only_year-ensemble-model_ensemble-rcp85-all_year?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING&include_observation_data=true&observation_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "17,78 °C 2071–2099 mot 13,97 °C = +3,81 °C; ARPAV:s säsongsanomalier är sommar +4,41, höst +4,14, vinter +3,67 och vår +3,14 °C. För regionen ger ARPAV:s 'barometro climatico' 15,38 mot 11,30 °C, alltså +4,1 °C, och den observerade regionala årsmedeltemperaturen steg från 10,6 °C 1991–2000 till 12,0 °C 2016–2025 med rekord 2024 (egna medelvärden ur samma serie).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_tropiska_natter_idag",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Tropiska nätter per år (minimitemperatur över 20 °C) i Venedig, medel 2001–2025 (station Istituto Cavanis)",
+      "value": 66.9,
+      "unit": "nätter/år",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, observationer station Venezia – Istituto Cavanis (arpa_v-252), tr absolute annual",
+        "publisher": "Egen beräkning (ursprungskälla: ARPAV)",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-tr-absolute-annual-arpa_vfvg-only_year-ensemble-model_ensemble-rcp45-all_year?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING&include_observation_data=true&observation_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "Medel av ARPAV:s årsvärden för stationen i Dorsoduro (45,4300 N, 12,3281 E, inne i modellens ruta): 59,8 per år 2001–2010 och 75,9 per år 2016–2025, rekord 95 nätter 2022. Klimatmodellernas ruta, som också täcker lagun och fastland, ger bara 35 nätter för 1976–2005 – staden är varmare om natten än rutan.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_tropiska_natter_okning_rcp45",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Ökning av antalet tropiska nätter till 2071–2100 jämfört med 1976–2005, RCP4.5",
+      "value": 40.3,
+      "unit": "nätter/år",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, forecast-tr-anomaly-thirty_year, rutan vid 45,4350 N 12,3375 E, RCP4.5, 2071–2100",
+        "publisher": "ARPAV",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-tr-anomaly-thirty_year-arpa_vfvg-only_year-ensemble-model_ensemble-rcp45-all_year-tw2?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "Ensemblemedel för rutan; 2021–2050 +24,8. Lagt på Cavanis-stationens medel och justerat för modellens egen ökning sedan 2001–2025 ger det ca 96 tropiska nätter per år vid stationen 2071–2100 (uppskattning: 66,9 + 75,6 − 46,4).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_tropiska_natter_okning_rcp85",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Ökning av antalet tropiska nätter till 2071–2100 jämfört med 1976–2005, RCP8.5",
+      "value": 72.5,
+      "unit": "nätter/år",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, forecast-tr-anomaly-thirty_year, rutan vid 45,4350 N 12,3375 E, RCP8.5, 2071–2100",
+        "publisher": "ARPAV",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-tr-anomaly-thirty_year-arpa_vfvg-only_year-ensemble-model_ensemble-rcp85-all_year-tw2?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "2021–2050 +28,6; RCP2.6 ger +20,5. Motsvarar ca 125 tropiska nätter per år vid Cavanis 2071–2100 (uppskattning: 66,9 + 107,5 − 49,3), en tredjedel av årets nätter.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_hetdagar_30_idag",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Dagar per år med maxtemperatur över 30 °C i Venedig, medel 2001–2025 (station Istituto Cavanis)",
+      "value": 21.7,
+      "unit": "dagar/år",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, observationer station Venezia – Istituto Cavanis (arpa_v-252), su30 absolute annual",
+        "publisher": "Egen beräkning (ursprungskälla: ARPAV)",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-su30-absolute-annual-arpa_vfvg-only_year-ensemble-model_ensemble-rcp45-all_year?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING&include_observation_data=true&observation_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "14,4 per år 2001–2010 och 27,4 per år 2016–2025; rekord 52 dagar 2024 (2003: 40, 2022: 39). Modellrutans medel för 1976–2005 är 14,6.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "mare_hetdagar_30_okning_rcp45",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Ökning av antalet dagar över 30 °C till 2071–2100 jämfört med 1976–2005, RCP4.5",
+      "value": 23.2,
+      "unit": "dagar/år",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, forecast-su30-anomaly-thirty_year, rutan vid 45,4350 N 12,3375 E, RCP4.5, 2071–2100",
+        "publisher": "ARPAV",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-su30-anomaly-thirty_year-arpa_vfvg-only_year-ensemble-model_ensemble-rcp45-all_year-tw2?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "Ensemblemedel för rutan; 2021–2050 +12,9. Motsvarar ca 41 dagar per år vid Cavanis 2071–2100 (uppskattning: 21,7 + 37,8 − 18,3).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_hetdagar_30_okning_rcp85",
+      "sdg": [
+        3,
+        11,
+        13
+      ],
+      "name_sv": "Ökning av antalet dagar över 30 °C till 2071–2100 jämfört med 1976–2005, RCP8.5",
+      "value": 54.5,
+      "unit": "dagar/år",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, forecast-su30-anomaly-thirty_year, rutan vid 45,4350 N 12,3375 E, RCP8.5, 2071–2100",
+        "publisher": "ARPAV",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-su30-anomaly-thirty_year-arpa_vfvg-only_year-ensemble-model_ensemble-rcp85-all_year-tw2?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "2021–2050 +14,5; motsvarar ca 69 dagar per år vid Cavanis 2071–2100 (uppskattning: 21,7 + 68,9 − 21,4). Värmeböljeindexet HWDI (sommardagar i följd minst 5 °C över normalt) ökar med 22,9 dagar under RCP8.5 men bara 4,7 under RCP4.5.",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_sommarnederbord_rcp85",
+      "sdg": [
+        6,
+        13
+      ],
+      "name_sv": "Förändring av sommarnederbörden (jun–aug) i Venedig till 2071–2100 jämfört med 1976–2005, RCP8.5",
+      "value": -24,
+      "unit": "%",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "CLINE, forecast-pr-anomaly-thirty_year, rutan vid 45,4350 N 12,3375 E, RCP8.5, sommar, 2071–2100",
+        "publisher": "ARPAV",
+        "url": "https://clima.arpa.veneto.it/api/v2/coverages/forecast-time-series/forecast-pr-anomaly-thirty_year-arpa_vfvgtaa-all_seasons-ensemble-model_ensemble-rcp85-summer-tw2?coords=POINT(12.3375%2045.4350)&datetime=..%2F..&include_coverage_data=true&coverage_data_smoothing=NO_SMOOTHING"
+      },
+      "note_sv": "Ensemblemedel; vintern +13 %, hösten +13 % och den extrema höstnederbörden (R95pTOT) +78 %, medan RCP4.5 ger −2 % på sommaren och +5 % på vintern. Uppmätt årsnederbörd vid Cavanis 2001–2025 var i medel 816 mm (från 471 mm 2021 till 1 201 mm 2008).",
+      "confidence": "high"
+    },
+    {
+      "id": "mare_dricksvatten_brunnar",
+      "sdg": [
+        6,
+        11
+      ],
+      "name_sv": "Djupa brunnar på fastlandet som försörjer Venedig och Cavallino-Treporti med dricksvatten",
+      "value": 34,
+      "unit": "brunnar",
+      "year": 2023,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Il ciclo urbano dell'acqua – Tracciabilità dei flussi della risorsa idrica, report dei risultati, dati anno 2023",
+        "publisher": "Veritas S.p.A.",
+        "url": "https://www.gruppoveritas.it/sites/default/files/allegati/tracciabilita_risorsa_idrica_report_dati_2023_rev02.pdf"
+      },
+      "note_sv": "Fem brunnsfält: Quinto di Treviso 18, Sant'Ambrogio (Trebaseleghe) 7, Badoere 5, Canove (Scorzè) 2 och Zero Branco 2 brunnar, 25–500 m djupa; vid hög efterfrågan tillsätts renat vatten ur floden Sile (Ca' Solaro), och nya ledningar på lagunbottnen och en ny lagrings- och pumpcentral vid Tronchetto (i stället för Sant'Andrea) byggs. Akvedukten invigdes 23 juni 1884 med en fontän på Piazza San Marco; dessförinnan levde staden på regnvatten i cisterner, och ca 600 brunnar med sina 'vere da pozzo' finns kvar.",
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "indicators": {
+    "mare_zmps_till_igm42": {
+      "name": "Height difference between Venice's tidal datum ZMPS (1897) and the national datum IGM 1942 (Genoa)",
+      "unit": "cm",
+      "note": "ZMPS (zero mareografico di Punta della Salute) is the zero for all tide measurements in Venice: the mean sea level from the tide-gauge records 1885–1909, central year 1897, treated as fixed relative to the city. The national datum Genova 1942 was 23.56 cm higher at the end of the 1960s (Cavazzoni 1977), so a pavement at 100 cm ZMPS lies at 76.44 cm in IGM 1942. The project's terrain (Copernicus GLO-30) is a surface model in EGM2008; its relation to ZMPS was not found."
+    },
+    "mare_medelhavsniva_2020_2025": {
+      "name": "Mean sea level at Punta della Salute 2020–2025, above ZMPS",
+      "unit": "cm ZMPS",
+      "note": "Mean of the annual means 2020–2025, using the sea level at the Acqua Alta platform (8 nautical miles offshore) on days when MOSE is closed; the validated in-city series alone gives 34.9 cm. The record year 2024 reached 41.1 cm (ahead of 2010: 40.5 and 2014: 40.0), and 2025 37.4 cm; the 1890s averaged 0.1 cm, so the sea now stands about 35 cm higher against the stones than in 1897."
+    },
+    "mare_havsnivatrend_1872_2024": {
+      "name": "Relative sea-level rise at Punta della Salute, mean 1872–2024",
+      "unit": "mm/year",
+      "note": "Relative rise (sea-level rise plus land subsidence) over the whole record. The rise came in steps: fast 1930–1970 when groundwater pumping at Porto Marghera lowered the land, almost flat about 1965–1995 and fast again since the mid-1990s; the last 16 years are the highest in the record."
+    },
+    "mare_havsnivatrend_1993_2024": {
+      "name": "Relative sea-level rise at Punta della Salute 1993–2024",
+      "unit": "mm/year",
+      "note": "Almost twice the long-term mean (2.6 mm/year). Ferrarin et al. (Frontiers in Climate 2024) give 4.9 mm/year and Zanchettin et al. (2021) 5.01 ± 1.75 mm/year for 1993–2019, of which 2.76 mm/year is the sea's own rise and the rest subsidence."
+    },
+    "mare_havsnivatrend_utan_sattning_1872_2019": {
+      "name": "The sea's own rise at Venice with subsidence removed, 1872–2019",
+      "unit": "mm/year",
+      "note": "1.23 ± 0.13 mm/year out of a total relative rise of 2.53 ± 0.14 mm/year, so subsidence accounts for about half. Natural subsidence (compaction, tectonics, isostasy) is about 1 mm/year, but Tosi et al. (2018) measure on average 3–4 mm/year in the northern, 1–2 in the central and 2–3 in the southern lagoon and up to 70 mm/year at the MOSE works."
+    },
+    "mare_sattning_1950_1970": {
+      "name": "Land subsidence in the Venice area 1950–1970",
+      "unit": "cm",
+      "note": "The subsidence was caused mainly by groundwater pumping in the Porto Marghera industrial zone and eased when pumping was cut in the early 1970s; Mestre was worst hit in 1968–69 at 17 mm/year (Zanchettin et al. 2021). The Comune says the sea itself rose 9 cm from 1900 to the 1970s and 10–12 cm since 1970, and that the city lost about 26 cm of height relative to the sea in a century (FAQ, 2019)."
+    },
+    "mare_oversvammad_andel_080": {
+      "name": "Share of the public walkways in the historic centre under water at a tide of +80 cm ZMPS",
+      "unit": "%",
+      "note": "At +80 cm, the 'acqua alta' threshold, only the lowest places flood, above all Piazza San Marco; the level was then reached on average 54 times a year (70 a year in 1966–2021). The value comes from the 2009 altimetry; the Comune's current table (2020) starts at 90 cm."
+    },
+    "mare_oversvammad_andel_090": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +90 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. Only negligible parts lie below 90 cm; the detailed table gives 1.8%."
+    },
+    "mare_oversvammad_andel_100": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +100 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 4.5%. Above 100 cm longer walking routes are affected, and water-bus routes are changed already above 95 cm."
+    },
+    "mare_oversvammad_andel_110": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +110 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 12.3%. The level for the sirens and for closing MOSE; the 2009 altimetry gave 14% and Frassetto's 1970s map 11.7%."
+    },
+    "mare_oversvammad_andel_120": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +120 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 28.2%. The raised walkways (about 4 km of passerelle) keep the main routes passable up to 120 cm; above that, boots are needed."
+    },
+    "mare_oversvammad_andel_130": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +130 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 45.8%. Half the pavement lies below about 133 cm (see mare_median_gangyta)."
+    },
+    "mare_oversvammad_andel_140": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +140 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 58.8%. The threshold for exceptional high water; in Piazza San Marco the water is then up to 60 cm deep."
+    },
+    "mare_oversvammad_andel_150": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +150 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 69.5%."
+    },
+    "mare_oversvammad_andel_160": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +160 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 77.3%."
+    },
+    "mare_oversvammad_andel_170": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +170 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 81.9%."
+    },
+    "mare_oversvammad_andel_180": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +180 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 84.7%."
+    },
+    "mare_oversvammad_andel_190": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +190 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 87.7%; the 2019 record (187 cm) put 'almost 90%' of the city under water according to the Comune."
+    },
+    "mare_oversvammad_andel_200": {
+      "name": "Share of the public pedestrian pavement in the historic centre and Giudecca under water at a tide of +200 cm ZMPS",
+      "unit": "%",
+      "note": "The Comune's official table of how much of the public pedestrian pavement (not the whole land area) lies below a given tide level. The detailed table gives 91.0%; 9% of the pavement lies above 200 cm. The 1966 record was 194 cm."
+    },
+    "mare_lagsta_punkt_basilikan": {
+      "name": "Lowest point in Venice: the ground in front of the entrance to St Mark's Basilica",
+      "unit": "cm ZMPS",
+      "note": "Parts of Piazza San Marco lie at only about 70 cm. Because the water rose through the old storm drains, the church's narthex flooded more than 200 times a year until the Provveditorato fitted valves and pumps to the drains in 2019 (see mare_narthex_oversvammas_per_ar)."
+    },
+    "mare_narthex_oversvammas_per_ar": {
+      "name": "Number of times a year St Mark's narthex flooded before the protective works",
+      "unit": "times/year (more than)",
+      "note": "For 50 years the walls facing the square have stood with their feet in salt water, salt has risen into the brick and the 12th-century mosaic floor was soaked. Since 19 November 2022 the church has been ringed by a temporary steel-and-glass barrier with six watertight gates; according to a 2021 city-council motion it was meant to protect up to 110 cm until the Provveditorato raises the whole insula of San Marco to 110 cm."
+    },
+    "mare_san_marco_troskel": {
+      "name": "Tide level at which Piazza San Marco starts to flood",
+      "unit": "cm ZMPS",
+      "note": "The Comune's visitor page 'Venezia e l'acqua alta' says water becomes noticeable on the square above 82 cm. +80 cm is also the acqua alta threshold: marea sostenuta 80–109 cm, molto sostenuta 110–139 cm and eccezionale from 140 cm."
+    },
+    "mare_rialto_troskel": {
+      "name": "Tide level at which Rialto (by the water-bus stops) starts to flood",
+      "unit": "cm ZMPS",
+      "note": "In front of the railway station, one of the city's highest places (outside the model square), 135 cm is needed. Water-bus routes are changed once the tide passes 95 cm but keep running except in exceptional high water."
+    },
+    "mare_rialhojning_malniva": {
+      "name": "Minimum level to which quays and pavements in the lowest parts of the lagoon towns are to be raised",
+      "unit": "cm ZMPS",
+      "note": "The integrated system rests on raising the lowest districts to at least +110 cm and letting MOSE handle the rest; in the 1990s the aim was 'towards +120 cm' where possible (Comitatone), and Insula spa (founded 1997) has raised many of the busiest walking routes while dredging canals. The state says 100 km of urban quays and lagoon shores have been raised and reinforced (Autorità per la Laguna); private ground floors and thresholds are up to the owners."
+    },
+    "mare_median_gangyta": {
+      "name": "Median height of the public pedestrian pavement in the historic centre (estimate)",
+      "unit": "cm ZMPS",
+      "note": "Linear interpolation in the Comune's detailed table: 45.8% of the pavement below 130 cm and 58.8% below 140 cm give 50% at 130 + (50 − 45.8)/(58.8 − 45.8) × 10 ≈ 133 cm. With today's mean sea level (35 cm), half the pavement is thus less than a metre above mean sea level."
+    },
+    "mare_hogvatten_110_2010_2019": {
+      "name": "Number of tides of at least 110 cm at Punta della Salute in 2010–2019",
+      "unit": "tides/decade",
+      "note": "Per decade: 1870s 4, 1880s 2, 1890s 3, 1900s 2, 1910s 3, 1920s 3, 1930s 8, 1940s 5, 1950s 13, 1960s 31, 1970s 31, 1983–89 10, 1990s 40, 2000s 52, 2010s 95 and 2020–2022 only 2 thanks to MOSE (34 out at sea). The 1966–2021 average was 5.2 a year, and tides of 110–119 cm went from two to four a year between 1966–2001 and 2002–2021; on average the water stays above 110 cm for 2 h 33 min (1966–2018)."
+    },
+    "mare_hogvatten_80_per_ar": {
+      "name": "Tides of at least 80 cm per year, mean 1966–2021",
+      "unit": "tides/year",
+      "note": "80 cm is the level at which Piazza San Marco starts to flood; after 2020 the sea level outside MOSE is used on days when the barriers are closed. Corresponding frequencies: at least 90 cm 28.1, at least 100 cm 12.4, at least 110 cm 5.2 and at least 120 cm 2.2 times a year, at least 130 cm once every 1.1 years."
+    },
+    "mare_hogvatten_140_aterkomsttid": {
+      "name": "Return period of exceptional high water (at least 140 cm), 1966–2021",
+      "unit": "years",
+      "note": "22 occurrences in 1966–2021; at least 150 cm once every 7 years, at least 160 cm once every 18.7 years and at least 190 cm once every 56 years. Tides of 140–149 cm came once every 9 years in 1966–2001 but once every 2 years in 2002–2021, and of the 25 tides of at least 140 cm since 1872, 11 occurred in the 2010s (own count from the Comune's list)."
+    },
+    "mare_rekord_1966": {
+      "name": "Highest tide ever recorded in Venice, 4 November 1966",
+      "unit": "cm ZMPS",
+      "note": "At 18:00 on 4 November 1966; the water stayed above 110 cm for 22 hours, the lidi were breached in several places and the damage has been estimated at EUR 400 million (Lionello et al. 2021). Had the surge coincided with high tide the level would have been about 220 cm (the same calculation applies to 29 October 2018)."
+    },
+    "mare_rekord_2019": {
+      "name": "Second-highest tide on record, 12 November 2019",
+      "unit": "cm ZMPS",
+      "note": "187 cm at the Grand Canal side and 189 cm at the Giudecca side of Punta della Salute, at 22:50; local wind 100 km/h with gusts to 110 km/h, and almost 90% of the city was under water. In 2019, 110 cm was reached 28 times, 140 cm five times (never before more than twice in a year) and 150 cm three times in six days; the water stood above 110 cm for about 50 hours in November alone."
+    },
+    "mare_lagvatten_minus50_per_ar": {
+      "name": "Exceptional low tides (−50 cm or lower) per year, mean 1966–2021",
+      "unit": "occurrences/year",
+      "note": "Low tides are becoming rarer as the mean level rises: below −60 cm 4 times and below −70 cm about once a year in 1966–2021, but only five times below −60 cm in 2009–2020 (own count from the Comune's list). They come in winter with high pressure; the lowest value is −124 cm (18 January 1882), the lowest recently −83 cm (18 February 2008, at 1045 hPa), and already at −55 cm the inner canals become hard to navigate."
+    },
+    "mare_skada_2019": {
+      "name": "Estimated damage from the flood of 12 November 2019",
+      "unit": "million euros (at least)",
+      "note": "'Above EUR 460 million' (Godlewski et al. 2020, cited in the review); news reports and Faranda et al. (2023) give about EUR 1 billion. The 1966 flood is estimated to have cost EUR 400 million; the mayor was appointed the government's special commissioner (commissario delegato) after the storm (ordinance 616 of 16 November 2019)."
+    },
+    "mare_meteorologiskt_bidrag_max": {
+      "name": "Largest meteorological contribution to the tide (storm surge), 4 November 1966",
+      "unit": "cm",
+      "note": "The difference between observed and astronomical tide, the largest in 1966–2019 (Lionello et al. 2021 give 143 cm with a different definition); the largest change in a day was 133 cm (14 December 2019). Scirocco from the south-east along the whole Adriatic can by itself raise the water by more than a metre, low pressure adds up to 20 cm, bora from the north-east contributes less ('scontraura' when both blow) and the Adriatic's own oscillation (seiche, about 22 hours) can bring new high water in the days after a storm."
+    },
+    "mose_paratoier": {
+      "name": "Number of movable gates in MOSE at the lagoon's three inlets",
+      "unit": "gates",
+      "note": "Four barriers, 1.6 km in total: at Lido 20 (Treporti) and 21 (San Nicolò), at Malamocco 19 and at Chioggia 18 gates; each gate is 20 m wide and 18.6–29.6 m high and rises when filled with compressed air, and the inlets stay closed for 4–5 hours on average. Construction began in 2003, the first full test raising was on 10 July 2020 and the first operational closure on 3 October 2020."
+    },
+    "mose_anslag_totalt": {
+      "name": "Total appropriations for MOSE by the end of the first half of 2022",
+      "unit": "million euros",
+      "note": "EUR 6,689.07 million appropriated; in June 2022 the works were about 95% complete and completion, planned for 2021, was still under way. According to Pagella Politica the parliamentary infrastructure report gave EUR 6.2 billion (May 2022) against 4.1 billion in 2001, and Il Post (2026) writes 'over 6.7 billion' for MOSE and complementary works."
+    },
+    "mose_stangningsgrans": {
+      "name": "Tide level in the city that MOSE is to prevent (closure threshold)",
+      "unit": "cm ZMPS",
+      "note": "The level is a decision by the authorities, linked to the height of the lowest quays, not a technical limit, and can be lowered. In practice the barriers are raised when the forecast shows 101 cm or more (margin of error about 10 cm, Il Post 2026); during the trial year 2020 the threshold was 130 cm, and between 80 and 110 cm MOSE does not protect Piazza San Marco."
+    },
+    "mose_dimensionerad_havshojning": {
+      "name": "Sea-level rise MOSE was designed for (100 years)",
+      "unit": "cm",
+      "note": "MOSE and the reinforced lidi were designed on the precautionary principle for a 60 cm higher sea within 100 years (above the IPCC's range at the time, 18–59 cm) and for tides up to 3 m (the same figures are given by the Corte dei conti in 2024). With the integrated system, 3–5 closures a year were expected at the sea level of the time."
+    },
+    "mose_stangningar_2025_2026": {
+      "name": "Number of MOSE closures in the 2025/26 season",
+      "unit": "closures",
+      "note": "Per season: 2020/21 20, 2021/22 13, 2022/23 19, 2023/24 32, 2024/25 23 and 2025/26 49; per calendar year 13 (2020), 20 (2021), 11 (2022), 25 (2023), 28 (2024), 27 (2025) and 32 (2026 to May). In total 156 closures by 15 May 2026, the 100th on 12 March 2025, and 30 of them between 28 January and 20 February 2026; the Comune's Centro Maree counts slightly differently (e.g. 18 for 2020)."
+    },
+    "mose_kostnad_per_hojning": {
+      "name": "Cost of one raising of MOSE",
+      "unit": "euros",
+      "note": "News figure, since a primary source is lacking: 'about EUR 200,000' per raising (Il Post; Nuova Venezia: at least EUR 200,000 in staff alone, 31 people per raising); Pagella Politica gives EUR 272,000 in 2020–21 and EUR 211,000 in 2021–22. Energy cost EUR 4.5 million in 2025 (Nuova Venezia), and according to Pagella Politica the law allocates EUR 63 million a year to operation and maintenance (40 + 23 million)."
+    },
+    "mose_undvikna_skador": {
+      "name": "Damage MOSE's first 100 raisings (2020–2025) are estimated to have prevented",
+      "unit": "million euros",
+      "note": "The ministry's own estimate; most raisings, 44, were for tides between 80 and 110 cm. On 22 November 2022 the sea reached 173 cm at the Acqua Alta platform while the water at Punta della Salute stayed at 66 cm (Comune table)."
+    },
+    "mose_stangning_vid_50cm_havshojning": {
+      "name": "MOSE closures with a 50 cm higher sea (model study)",
+      "unit": "closures/day",
+      "note": "Hydrodynamic model using real forecasts for 2000–2002 with sea level raised in 10 cm steps up to 200 cm: up to 50 cm of rise the barriers keep the water below 110 cm nearly all the time, but then close on average once a day and cut the flow through the inlets by about 10%. At 75 cm the lagoon is closed more hours than open, and partial closures do not protect the city."
+    },
+    "mose_stangda_dagar_2095_2099_rcp85": {
+      "name": "Days per year the lagoon would be closed in 2095–2099 under RCP8.5 (model study)",
+      "unit": "days/year",
+      "note": "High-resolution model driven by downscaled climate projections: under RCP8.5 a third of the lagoon needs more than 20 days to renew its water and summer water exceeds 30 °C for more than three months a year; under RCP4.5 the impacts are roughly halved. Closures also cut the supply of sediment to the salt marshes, where more than 70% of sedimentation happens during storm surges (Tognin et al., Nature Geoscience 2021)."
+    },
+    "mare_rslr_2100_rcp26": {
+      "name": "Relative sea-level rise in Venice by 2100 relative to 1986–2005, RCP2.6",
+      "unit": "cm",
+      "note": "Likely range 32–62 cm, including subsidence of 1 mm/year (10.5 cm); based on AR5-generation regional projections. With the 1986–2005 mean level of 23.3 cm ZMPS (ISPRA), mean sea level becomes about 70 cm ZMPS in 2100."
+    },
+    "mare_rslr_2100_rcp85": {
+      "name": "Relative sea-level rise in Venice by 2100 relative to 1986–2005, RCP8.5",
+      "unit": "cm",
+      "note": "Likely range 58–110 cm, including 10.5 cm of subsidence; the scenarios only diverge after 2050. Corresponds to a mean sea level of about 104 cm ZMPS in 2100 – more than MOSE's design 60 cm."
+    },
+    "mare_rslr_2100_hogscenario": {
+      "name": "Relative sea-level rise in Venice by 2100, high-end scenario with strong ice-sheet melt",
+      "unit": "cm",
+      "note": "A 'plausible but unlikely' scenario taking each component from the highest physically based estimate; almost half comes from Antarctica (the article's short summary says about 170 cm). IPCC AR6 does not rule out global rise approaching 2 m by 2100 and 5 m by 2150 under SSP5-8.5 (low confidence)."
+    },
+    "mare_medelhavsniva_2100_ssp245": {
+      "name": "Mean sea level at Punta della Salute in 2100, SSP2-4.5 (estimate)",
+      "unit": "cm ZMPS",
+      "note": "Midpoint of AR6's likely global range for SSP2-4.5 (0.44–0.76 m above 1995–2014) + subsidence of 1 mm/year 2005–2100 (9.5 cm) + Venice's 1995–2014 mean level, 28.5 cm ZMPS (ISPRA): 28.5 + 60 + 9.5 ≈ 98 cm. In the same way 2050 gives about 51–56 cm ZMPS (AR6 median 0.18–0.23 m for SSP1-1.9 to SSP5-8.5 + 4.5 cm subsidence); the northern Adriatic may rise about 10% less than the global mean, but subsidence is larger in places."
+    },
+    "mare_medelhavsniva_2100_ssp585": {
+      "name": "Mean sea level at Punta della Salute in 2100, SSP5-8.5 (estimate)",
+      "unit": "cm ZMPS",
+      "note": "AR6 median for SSP5-8.5 0.77 m (likely 0.63–1.01 m above 1995–2014) + 9.5 cm subsidence + 28.5 cm = about 115 cm ZMPS (range about 101–139 cm). About 20% of the public pavement would then lie below mean sea level (midway between 12.3% at 110 cm and 28.2% at 120 cm in the Comune's table)."
+    },
+    "mare_medelhavsniva_2126_ssp245": {
+      "name": "Mean sea level at Punta della Salute in 2126, SSP2-4.5 (estimate)",
+      "unit": "cm ZMPS",
+      "note": "Linear interpolation between AR6 midpoints for 2100 (0.60 m) and 2150 (0.995 m; likely 0.66–1.33 m): 0.60 + 0.52 × 0.395 = 0.81 m, + subsidence of 12.1 cm (2005–2126) + 28.5 cm ≈ 121 cm ZMPS. About 30% of the pavement would then lie below mean sea level (Comune table: 28.2% at 120 cm, 45.8% at 130 cm)."
+    },
+    "mare_medelhavsniva_2126_ssp585": {
+      "name": "Mean sea level at Punta della Salute in 2126, SSP5-8.5 (estimate)",
+      "unit": "cm ZMPS",
+      "note": "0.77 m (median 2100) + 0.52 × (1.43 − 0.77) m (midpoint of the 2150 range 0.98–1.88 m) = 1.11 m, + 12.1 cm subsidence + 28.5 cm ≈ 152 cm ZMPS: about 70% of the pavement would lie below mean sea level, beyond what temporary closures can handle. Anzidei et al. (2025) warn that MOSE could be overtopped around 2100."
+    },
+    "mare_hogvatten_100ar_idag": {
+      "name": "100-year high-water level at Punta della Salute today (estimate)",
+      "unit": "cm ZMPS",
+      "note": "From the Comune's frequencies 1966–2021: at least 140 cm 22 times (0.39 a year) and at least 190 cm once (0.018 a year); an exponential tail through them gives 0.01 a year at 199 cm (206 cm if the tail is drawn from 160 cm). The period's mean sea level was 25.5 cm against 35.3 cm today (ISPRA), so today's level is about 10 cm higher: about 210 cm (about 200–216 cm)."
+    },
+    "mare_hogvatten_100ar_okning_2100_rcp85": {
+      "name": "Rise of the 100-year extreme sea level in the north-western Adriatic by 2100, RCP8.5 (midpoint of range)",
+      "unit": "cm",
+      "note": "Midpoint of the range 53–171 cm (5–95%) relative to 2001–2020, excluding local subsidence (Vousdoukas et al. 2018); RCP4.5 gives 24–56 cm, and by 2050 12–17 cm (RCP4.5) and 26–35 cm (RCP8.5). By 2100 today's 100-year event recurs at least every five years (RCP4.5) or every year (RCP8.5); added to mare_hogvatten_100ar_idag with about 9 cm of subsidence the 100-year level becomes about 2.6 m (RCP4.5) or 3.3 m ZMPS (RCP8.5) – above the 3 m MOSE is built for."
+    },
+    "mare_extremniva_2150": {
+      "name": "Possible peak water level in an extreme high-water event in 2150",
+      "unit": "cm ZMPS",
+      "note": "When tide, seiche and weather combine, the level in 2150 could temporarily reach 3.47 m above the Punta della Salute reference, with up to 65% of the land under water; by 2150 more than 112 km² (SSP1-2.6) or 139 km² (SSP5-8.5) of the lagoon's land is at risk of flooding. The study builds on AR6 and measured land subsidence of 1–3 mm/year (up to 7 mm/year); only the abstract has been read."
+    },
+    "mare_temp_okning_2071_2100_rcp45": {
+      "name": "Increase in Venice's annual mean temperature by 2071–2100 vs 1976–2005, RCP4.5 (estimate)",
+      "unit": "°C",
+      "note": "Annual mean 15.95 °C in 2071–2099 against 13.97 °C in 1976–2005 in the grid cell (about 12 km) = +1.98 °C; ARPAV's own seasonal anomalies are +1.7 to +2.2 °C (summer +2.17), and RCP2.6 gives +0.96 °C. Observed at ARPAV's Istituto Cavanis station: 14.6 °C in 2001–2010 and 15.6 °C in 2016–2025."
+    },
+    "mare_temp_okning_2071_2100_rcp85": {
+      "name": "Increase in Venice's annual mean temperature by 2071–2100 vs 1976–2005, RCP8.5 (estimate)",
+      "unit": "°C",
+      "note": "17.78 °C in 2071–2099 against 13.97 °C = +3.81 °C; ARPAV's seasonal anomalies are summer +4.41, autumn +4.14, winter +3.67 and spring +3.14 °C. For the region, ARPAV's 'barometro climatico' gives 15.38 against 11.30 °C, i.e. +4.1 °C, and the observed regional annual mean rose from 10.6 °C in 1991–2000 to 12.0 °C in 2016–2025, with a record in 2024 (own means from the same series)."
+    },
+    "mare_tropiska_natter_idag": {
+      "name": "Tropical nights per year (minimum above 20 °C) in Venice, mean 2001–2025 (Istituto Cavanis station)",
+      "unit": "nights/year",
+      "note": "Mean of ARPAV's annual values for the station in Dorsoduro (45.4300 N, 12.3281 E, inside the model square): 59.8 a year in 2001–2010 and 75.9 in 2016–2025, record 95 nights in 2022. The climate models' grid cell, which also covers lagoon and mainland, gives only 35 nights for 1976–2005 – the city is warmer at night than the cell."
+    },
+    "mare_tropiska_natter_okning_rcp45": {
+      "name": "Increase in tropical nights by 2071–2100 vs 1976–2005, RCP4.5",
+      "unit": "nights/year",
+      "note": "Ensemble mean for the grid cell; 2021–2050 +24.8. Added to the Cavanis station mean and adjusted for the model's own increase since 2001–2025, this gives about 96 tropical nights a year at the station in 2071–2100 (estimate: 66.9 + 75.6 − 46.4)."
+    },
+    "mare_tropiska_natter_okning_rcp85": {
+      "name": "Increase in tropical nights by 2071–2100 vs 1976–2005, RCP8.5",
+      "unit": "nights/year",
+      "note": "2021–2050 +28.6; RCP2.6 gives +20.5. Corresponds to about 125 tropical nights a year at Cavanis in 2071–2100 (estimate: 66.9 + 107.5 − 49.3), a third of the year's nights."
+    },
+    "mare_hetdagar_30_idag": {
+      "name": "Days per year with maximum above 30 °C in Venice, mean 2001–2025 (Istituto Cavanis station)",
+      "unit": "days/year",
+      "note": "14.4 a year in 2001–2010 and 27.4 in 2016–2025; record 52 days in 2024 (2003: 40, 2022: 39). The grid cell's 1976–2005 mean is 14.6."
+    },
+    "mare_hetdagar_30_okning_rcp45": {
+      "name": "Increase in days above 30 °C by 2071–2100 vs 1976–2005, RCP4.5",
+      "unit": "days/year",
+      "note": "Ensemble mean for the grid cell; 2021–2050 +12.9. Corresponds to about 41 days a year at Cavanis in 2071–2100 (estimate: 21.7 + 37.8 − 18.3)."
+    },
+    "mare_hetdagar_30_okning_rcp85": {
+      "name": "Increase in days above 30 °C by 2071–2100 vs 1976–2005, RCP8.5",
+      "unit": "days/year",
+      "note": "2021–2050 +14.5; corresponds to about 69 days a year at Cavanis in 2071–2100 (estimate: 21.7 + 68.9 − 21.4). The heatwave duration index HWDI (consecutive summer days at least 5 °C above normal) rises by 22.9 days under RCP8.5 but only 4.7 under RCP4.5."
+    },
+    "mare_sommarnederbord_rcp85": {
+      "name": "Change in summer precipitation (Jun–Aug) in Venice by 2071–2100 vs 1976–2005, RCP8.5",
+      "unit": "%",
+      "note": "Ensemble mean; winter +13%, autumn +13% and extreme autumn precipitation (R95pTOT) +78%, while RCP4.5 gives −2% in summer and +5% in winter. Observed annual precipitation at Cavanis 2001–2025 averaged 816 mm (from 471 mm in 2021 to 1,201 mm in 2008)."
+    },
+    "mare_dricksvatten_brunnar": {
+      "name": "Deep wells on the mainland supplying Venice and Cavallino-Treporti with drinking water",
+      "unit": "wells",
+      "note": "Five well fields: Quinto di Treviso 18, Sant'Ambrogio (Trebaseleghe) 7, Badoere 5, Canove (Scorzè) 2 and Zero Branco 2 wells, 25–500 m deep; at peak demand treated water from the river Sile is added (Ca' Solaro), and new pipes on the lagoon bed and a new storage and pumping station at Tronchetto (replacing Sant'Andrea) are being built. The aqueduct was inaugurated on 23 June 1884 with a fountain in Piazza San Marco; before that the city lived on rainwater in cisterns, and about 600 wells with their 'vere da pozzo' survive."
+    }
+  }
+}

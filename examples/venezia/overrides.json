@@ -1,0 +1,897 @@
+{
+  "defaults": {
+    "rest": "paving",
+    "terrain_datum": {
+      "name": "ZMPS",
+      "offset": 0.23
+    },
+    "terrain_hypsometry": {
+      "source": "Comune di Venezia, Centro Previsioni e Segnalazioni Maree with Insula, \"Venezia altimetria\" (2009): public pedestrian paving by height, cm above ZMPS",
+      "water_below": 0.42,
+      "table": [
+        [
+          0.63,
+          0.0
+        ],
+        [
+          0.9,
+          0.0184
+        ],
+        [
+          1.0,
+          0.0517
+        ],
+        [
+          1.1,
+          0.1405
+        ],
+        [
+          1.2,
+          0.2876
+        ],
+        [
+          1.3,
+          0.4316
+        ],
+        [
+          1.4,
+          0.544
+        ],
+        [
+          1.5,
+          0.6299
+        ],
+        [
+          1.6,
+          0.6944
+        ],
+        [
+          1.7,
+          0.7421
+        ],
+        [
+          1.8,
+          0.7812
+        ],
+        [
+          1.9,
+          0.824
+        ],
+        [
+          2.0,
+          0.8641
+        ]
+      ]
+    },
+    "water_level": 0.35,
+    "preset": {
+      "house": {
+        "venetian": 0.92,
+        "brick": 0.05,
+        "stone": 0.03
+      },
+      "block": {
+        "venetian": 0.86,
+        "stone": 0.1,
+        "brick": 0.04
+      },
+      "roof": {
+        "tiles": 0.97,
+        "metal": 0.03
+      },
+      "colours": {
+        "venetian": {
+          "ochre": 3,
+          "salmon": 3,
+          "rose": 2.5,
+          "terracotta": 2,
+          "ivory": 2,
+          "beige": 1.5,
+          "red": 1.5,
+          "yellow": 1,
+          "white": 1
+        },
+        "brick": {
+          "red": 2,
+          "salmon": 1,
+          "tan": 1
+        },
+        "stone": {
+          "limestone": 3,
+          "sandstone": 1
+        }
+      },
+      "roof_colours": {
+        "tiles": {
+          "red": 3,
+          "brown": 2
+        }
+      },
+      "pitched_area": 3500,
+      "chimneys": "venetian"
+    }
+  },
+  "buildings": {
+    "w397821850": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w397821852": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w397821853": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w397821855": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w397821856": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003467": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003481": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003494": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003508": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003521": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003534": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003543": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003552": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003559": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003567": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003574": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003581": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003597": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003602": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003614": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003619": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003626": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003634": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003639": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003644": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003649": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003661": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003666": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003673": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003685": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003692": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003697": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w431003733": {
+      "hide": true,
+      "note": "part of the Basilica di San Marco, drawn by custom/w138800932.py"
+    },
+    "w252637696": {
+      "hide": true,
+      "note": "part of the Campanile di San Marco, drawn by custom/w252637693.py"
+    },
+    "w252637717": {
+      "hide": true,
+      "note": "part of the Campanile di San Marco, drawn by custom/w252637693.py"
+    },
+    "w252637763": {
+      "hide": true,
+      "note": "part of the Campanile di San Marco, drawn by custom/w252637693.py"
+    },
+    "w398015281": {
+      "hide": true,
+      "note": "part of the Campanile di San Marco, drawn by custom/w252637693.py"
+    },
+    "w810570622": {
+      "hide": true,
+      "note": "part of the Campanile di San Marco, drawn by custom/w252637693.py"
+    },
+    "w810570623": {
+      "hide": true,
+      "note": "part of the Campanile di San Marco, drawn by custom/w252637693.py"
+    },
+    "w810570624": {
+      "hide": true,
+      "note": "part of the Campanile di San Marco, drawn by custom/w252637693.py"
+    },
+    "w813983655": {
+      "hide": true,
+      "note": "part of the Campanile di San Marco, drawn by custom/w252637693.py"
+    },
+    "w252637695": {
+      "hide": true,
+      "note": "part of the Loggetta del Sansovino, drawn by custom/w252637693.py"
+    },
+    "w252637762": {
+      "hide": true,
+      "note": "part of the Loggetta del Sansovino, drawn by custom/w252637693.py"
+    },
+    "w430896949": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w431003719": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w431003726": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w452881848": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w452881858": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476260": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476261": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476262": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476263": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476264": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476265": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476266": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476267": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w810476268": {
+      "hide": true,
+      "note": "part of the Palazzo Ducale, drawn by custom/w138803915.py"
+    },
+    "w431003739": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003743": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w452881851": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w452881852": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003442": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003455": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w430963094": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003588": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003679": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003609": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003657": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003417": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w431003430": {
+      "hide": true,
+      "note": "part of the Piazzetta columns, drawn by custom/piazzetta_columns.py"
+    },
+    "w138801509": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430763199": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430763200": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430763201": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430763202": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430763203": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430763208": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430763210": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430787273": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430795559": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w430796502": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w432886609": {
+      "hide": true,
+      "note": "Santa Maria della Salute and its parts, drawn by custom/w138801509.py"
+    },
+    "w815190428": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190430": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190431": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190432": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190433": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190434": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190435": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190436": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190440": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190441": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190442": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190443": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190444": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815190445": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815397720": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815397722": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w815397724": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w1287188470": {
+      "hide": true,
+      "note": "part of the Ponte di Rialto, drawn by custom/w1287188470.py"
+    },
+    "w138804537": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w397824457": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w397824458": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w397824459": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w777223382": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w777223383": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607453": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607454": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607457": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607460": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607461": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607462": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607463": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607464": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607465": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607466": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813607467": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813612217": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813621196": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813621197": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813964245": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813964246": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813964247": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813964248": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813964249": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813964250": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813964251": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w813964256": {
+      "hide": true,
+      "note": "part of the Basilica di San Giorgio Maggiore or its campanile, drawn by custom/w138804537.py"
+    },
+    "w410344943": {
+      "hide": true,
+      "note": "part of the Torre dell'Orologio, drawn by custom/w410344943.py"
+    },
+    "w812556569": {
+      "hide": true,
+      "note": "part of the Torre dell'Orologio, drawn by custom/w410344943.py"
+    },
+    "w812556570": {
+      "hide": true,
+      "note": "part of the Torre dell'Orologio, drawn by custom/w410344943.py"
+    },
+    "w812556577": {
+      "hide": true,
+      "note": "part of the Torre dell'Orologio, drawn by custom/w410344943.py"
+    },
+    "w812556578": {
+      "hide": true,
+      "note": "part of the Torre dell'Orologio, drawn by custom/w410344943.py"
+    },
+    "w812556579": {
+      "hide": true,
+      "note": "part of the Torre dell'Orologio, drawn by custom/w410344943.py"
+    },
+    "w138800753": {
+      "hide": true,
+      "note": "the Dogana's tower block at the point, drawn by custom/r2317795.py"
+    },
+    "w431003622": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w431613704": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w452881827": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w452881831": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w452881837": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w452881839": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w452881843": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w452881846": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w810808821": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w452881757": {
+      "hide": true,
+      "note": "part of the Biblioteca Marciana or the Zecca, drawn by custom/w206333242.py"
+    },
+    "w452555067": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452881830": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452881834": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452881835": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556603": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556604": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556605": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556606": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556607": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812634403": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452555048": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452555056": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452555057": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452555063": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452555064": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452555065": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452555070": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w452555071": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556582": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556583": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556584": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556585": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556586": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556587": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556588": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556593": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556600": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556601": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556602": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812556611": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812634400": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812634401": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w812634402": {
+      "hide": true,
+      "note": "part of the Procuratie Vecchie, drawn by custom/w410344923.py"
+    },
+    "w430896950": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w452881756": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w452881817": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w810808822": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w810808846": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w452881842": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w452881845": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w810808847": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w810808848": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w810808860": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w810808861": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w810808862": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w810808886": {
+      "hide": true,
+      "note": "part of the Procuratie Nuove, drawn by custom/w138803888.py"
+    },
+    "w452555046": {
+      "hide": true,
+      "note": "part of the Ala Napoleonica, drawn by custom/w410344936.py"
+    },
+    "w452881755": {
+      "hide": true,
+      "note": "part of the Ala Napoleonica, drawn by custom/w410344936.py"
+    },
+    "w452881840": {
+      "hide": true,
+      "note": "part of the Ala Napoleonica, drawn by custom/w410344936.py"
+    },
+    "w452881849": {
+      "hide": true,
+      "note": "part of the Ala Napoleonica, drawn by custom/w410344936.py"
+    }
+  },
+  "areas": []
+}

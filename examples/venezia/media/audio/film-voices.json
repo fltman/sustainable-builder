@@ -1,0 +1,98 @@
+{
+ "vo-film-1-it": {
+  "hash": "7ae4c755f2b66b67",
+  "model": "eleven_v4",
+  "voice_id": "13Cuh3NuYvWOVQtLbRN8",
+  "text": "[warm, calm] Questa è Venezia oggi. Quarantottomila abitanti – un quarto di quelli che ci vivevano nel millenovecentocinquantuno – e più posti letto turistici che residenti."
+ },
+ "vo-film-2-it": {
+  "hash": "959506211d8a6b2b",
+  "model": "eleven_v4",
+  "voice_id": "13Cuh3NuYvWOVQtLbRN8",
+  "text": "[thoughtful] Ma come vogliamo davvero vivere qui fra cent'anni? Insieme ai nostri figli, ai nipoti e ai vicini?"
+ },
+ "vo-film-3-it": {
+  "hash": "f35492dee0c4b33b",
+  "model": "eleven_v4",
+  "voice_id": "13Cuh3NuYvWOVQtLbRN8",
+  "text": "[warm] Venezia duemilacentoventisei calcola una risposta, anno per anno – dalla ricerca e dalle statistiche del Comune. Ogni scelta si vede in città."
+ },
+ "vo-film-4-it": {
+  "hash": "c059e01c800fe125",
+  "model": "eleven_v4",
+  "voice_id": "13Cuh3NuYvWOVQtLbRN8",
+  "text": "[warm, quietly amazed] Il Canal Grande è silenzioso. I vaporetti vanno a elettricità, e nei palazzi lungo il canale abitano di nuovo i veneziani."
+ },
+ "vo-film-5-it": {
+  "hash": "c91ecee853f4be88",
+  "model": "eleven_v4",
+  "voice_id": "13Cuh3NuYvWOVQtLbRN8",
+  "text": "[warm, smiling] Nei campi i bambini giocano di nuovo. Gli appartamenti vuoti sono tornati case – e i visitatori prenotano la loro giornata."
+ },
+ "vo-film-6-it": {
+  "hash": "b607f7b8a0172ffe",
+  "model": "eleven_v4",
+  "voice_id": "13Cuh3NuYvWOVQtLbRN8",
+  "text": "[calm, wonder] La laguna respira di nuovo. Le barene sono tornate – crescono con il mare e smorzano le onde."
+ },
+ "vo-film-7-it": {
+  "hash": "8bddcef11d7fa16e",
+  "model": "eleven_v4",
+  "voice_id": "13Cuh3NuYvWOVQtLbRN8",
+  "text": "[calm, steady] Il mare è salito di quasi un metro. Ma piazza San Marco è asciutta – la città ha imparato a vivere con l'acqua."
+ },
+ "vo-film-8-it": {
+  "hash": "3c5088da417c89ab",
+  "model": "eleven_v4",
+  "voice_id": "13Cuh3NuYvWOVQtLbRN8",
+  "text": "[calm, sincere] Non è una previsione. È un modo di pensare – e di scegliere. [pause] Quale Venezia vuoi costruire?"
+ },
+ "vo-film-1-en": {
+  "hash": "f618d4b8bd5421fd",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm, calm] This is Venice today. Forty-eight thousand people – a quarter of those who lived here in nineteen fifty-one – and more tourist beds than residents."
+ },
+ "vo-film-2-en": {
+  "hash": "3efa25bc6bb5de7c",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[thoughtful] But how do we really want to live here in a hundred years? Together with our children, grandchildren and neighbours?"
+ },
+ "vo-film-3-en": {
+  "hash": "01c213a021d87b74",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm] Venezia twenty-one twenty-six works out an answer, year by year – from the research and the city's own statistics. Every choice shows in the city."
+ },
+ "vo-film-4-en": {
+  "hash": "07f18816ce2a8b38",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm, quietly amazed] The Grand Canal is quiet. The vaporetti run on electricity, and Venetians live in the palaces along the canal again."
+ },
+ "vo-film-5-en": {
+  "hash": "3b95de23c9cc63f5",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[warm, smiling] Children play in the squares again. The empty flats have become homes – and visitors book their day."
+ },
+ "vo-film-6-en": {
+  "hash": "94c79b9e9219c48f",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[calm, wonder] The lagoon breathes again. The salt marshes have come back – they grow with the sea and calm the waves."
+ },
+ "vo-film-7-en": {
+  "hash": "4b3c6e60acf9e9be",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[calm, steady] The sea is almost a metre higher. But St Mark's Square is dry – the city has learned to live with the water."
+ },
+ "vo-film-8-en": {
+  "hash": "b8b33031a9eed5e2",
+  "model": "eleven_v4",
+  "voice_id": "B7OAdN7qiPFwZhhjfkxq",
+  "text": "[calm, sincere] It is not a forecast. It is a way of thinking – and of choosing. [pause] Which Venice do you want to build?"
+ }
+}

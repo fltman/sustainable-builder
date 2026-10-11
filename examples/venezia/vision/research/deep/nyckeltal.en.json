@@ -1,0 +1,354 @@
+{
+  "indicators": {
+    "nt_folkmangd": {
+      "name": "Population of the Comune di Venezia",
+      "unit": "inhabitants",
+      "note": "Registered residents on 1 January 2026 (ISTAT, provisional); 249,490 on 1 January 2025 and 256,083 on 1 January 2021. The municipality's own register counts slightly more (251,295 in 2025) because ISTAT adjusts its figures to the census. Italy 58,942,828, Veneto 4,857,460 (2026)."
+    },
+    "nt_befolkningsforandring_1ar": {
+      "name": "Population change, past year",
+      "unit": "%",
+      "note": "Own calculation: (249,385 − 249,490) / 249,490 = −0.04% between 1 January 2025 and 1 January 2026 (ISTAT, provisional). The natural decrease (1,409 births, 3,345 deaths) was almost offset by in-migration, mainly from abroad (+2,414 net). Italy −0.001%, Veneto +0.08% (2025, own calculation)."
+    },
+    "nt_befolkningsforandring_5ar": {
+      "name": "Population change, past five years",
+      "unit": "%",
+      "note": "Own calculation: (249,385 − 256,083) / 256,083 = −2.62% between 1 January 2021 and 1 January 2026 (ISTAT; 2026 provisional). Italy −0.50%, Veneto −0.25% (2021–2026, own calculation; Veneto's 2021 population from Eurostat demo_r_gind3)."
+    },
+    "nt_folkmangd_centro_storico": {
+      "name": "Population of Venice's historic centre (centro storico)",
+      "unit": "inhabitants",
+      "note": "Registered residents of the centro storico (San Marco, Castello, Sant'Elena, Cannaregio, Dorsoduro, San Polo, Santa Croce and Giudecca) in the municipal register, 2025; the table gives the year but not the date. 55,589 in 2015 (−14.3%); over the decade 2,797 were born and 8,810 died. Italy and Veneto: not applicable; the whole municipality had 251,295 residents in the same register (2025)."
+    },
+    "nt_medelalder_centro_storico": {
+      "name": "Mean age in the centro storico",
+      "unit": "years",
+      "note": "The mean age of registered residents of the centro storico rose from 49.3 years in 2015 to 51.4 in 2025; the whole municipality 48.7 and the mainland (terraferma) 47.5 years. The mean age of Italy and Veneto is not in the same source; for comparison, the median age: Italy 49.1, Veneto 49.6 years (2025, Eurostat)."
+    },
+    "nt_medianalder": {
+      "name": "Median age",
+      "unit": "years",
+      "note": "Median age on 1 January 2025 in Eurostat's city statistics (Urban Audit, built on ISTAT data), unchanged since 2022. Italy 49.1, Veneto 49.6 years (2025, Eurostat demo_r_pjanind2)."
+    },
+    "nt_andel_0_19": {
+      "name": "Share of inhabitants aged 0–19",
+      "unit": "%",
+      "note": "Own calculation from ISTAT's single-year ages: 37,448 of 249,490 inhabitants were aged 0–19 on 1 January 2025 (14.9% in the provisional 2026 figures). Italy 16.9%, Veneto 16.7% (2025, Eurostat)."
+    },
+    "nt_andel_65_plus": {
+      "name": "Share of inhabitants aged 65+",
+      "unit": "%",
+      "note": "Own calculation from ISTAT's single-year ages: 71,091 of 249,490 inhabitants were 65 or older on 1 January 2025 (28.7% in the provisional 2026 figures). Italy 24.7%, Veneto 24.9% (2025, Eurostat)."
+    },
+    "nt_andel_80_plus": {
+      "name": "Share of inhabitants aged 80+",
+      "unit": "%",
+      "note": "Own calculation from ISTAT's single-year ages: 25,810 of 249,490 inhabitants were 80 or older on 1 January 2025 (also 10.3% in the provisional 2026 figures). Italy 7.8%, Veneto 8.0% (2025, Eurostat)."
+    },
+    "nt_forsorjningskvot": {
+      "name": "Demographic dependency ratio ((0–19 + 65+) / 20–64)",
+      "unit": "ratio",
+      "note": "Own calculation: (37,448 + 71,091) / 140,951 = 0.77 on 1 January 2025, i.e. 0.77 children, young people and older people per person of working age. Italy 0.71, Veneto 0.71 (2025, Eurostat demo_r_pjanind2, variant 3)."
+    },
+    "nt_fodda_per_1000": {
+      "name": "Live births per 1,000 inhabitants",
+      "unit": "per 1,000 inhabitants",
+      "note": "Live births per 1,000 inhabitants: 1,421 births in 2024 (Eurostat city statistics, break in series 2024). ISTAT's provisional 2025 balance gives 1,409 births. Italy 6.3, Veneto 6.2 (2024, Eurostat demo_r_gind3)."
+    },
+    "nt_doda_per_1000": {
+      "name": "Deaths per 1,000 inhabitants",
+      "unit": "per 1,000 inhabitants",
+      "note": "Deaths per 1,000 inhabitants: 3,354 deaths in 2024 and 3,345 in 2025 in ISTAT's provisional balance; the rate reflects the old population. Italy 11.1, Veneto 10.4 (2024, Eurostat demo_r_gind3)."
+    },
+    "nt_flyttnetto_per_1000": {
+      "name": "Net migration per 1,000 inhabitants",
+      "unit": "per 1,000 inhabitants",
+      "note": "Own calculation from ISTAT's 2024 demographic balance: total change −800 minus the natural decrease −1,933 gives +1,133 (net migration including statistical adjustment), divided by the mean population of 249,890 = 4.5 per 1,000. Abroad gave +1,404 and the rest of Italy −283. Italy 4.3, Veneto 4.5 (2024, Eurostat demo_r_gind3)."
+    },
+    "nt_hushall_antal": {
+      "name": "Number of households",
+      "unit": "households",
+      "note": "Households (famiglie anagrafiche) on 31 December 2024 according to ISTAT; 247,232 people lived in households, on average 1.96 per household (own calculation), and 2,258 in institutions. Italy and Veneto: no comparison fetched (a count, 2024)."
+    },
+    "nt_befolkningstathet": {
+      "name": "Population density",
+      "unit": "inhabitants/km²",
+      "note": "Own calculation: 249,490 inhabitants (1 January 2025, ISTAT) / 418.4 km² (the whole municipal area according to ISPRA) = 596 inhabitants/km². The area includes much of the lagoon, so density on the mainland and the islands is far higher. Italy 198.0, Veneto 279.7 inhabitants/km² (2024, Eurostat demo_r_d3dens)."
+    },
+    "nt_medellivslangd_man": {
+      "name": "Life expectancy, men",
+      "unit": "years",
+      "note": "Life expectancy at birth for men in the province (the Metropolitan City of Venice), provisional; not published for the municipality. 78.1 years in 2004 and 80.3 in the pandemic year 2020. Italy 81.4, Veneto 82.2 years (2024)."
+    },
+    "nt_medellivslangd_kvinnor": {
+      "name": "Life expectancy, women",
+      "unit": "years",
+      "note": "Life expectancy at birth for women in the province, provisional; 84.1 years in 2004. Both sexes together 84.0 years. Italy 85.5, Veneto 86.3 years (2024)."
+    },
+    "nt_undvikbar_dodlighet": {
+      "name": "Avoidable mortality, ages 0–74",
+      "unit": "per 10,000 inhabitants",
+      "note": "Deaths before age 75 from causes that can be prevented or treated (the OECD/Eurostat list), age-standardised per 10,000 inhabitants of the province. Italy 17.6, Veneto 15.2 (2022)."
+    },
+    "nt_sjukhussangar_per_10000": {
+      "name": "Hospital beds per 10,000 inhabitants",
+      "unit": "per 10,000 inhabitants",
+      "note": "Hospital beds (ordinary, day hospital and day surgery) in public and accredited private hospitals per 10,000 inhabitants of the province (ISTAT from Ministry of Health data). Italy 33.3, Veneto 32.3 (2022)."
+    },
+    "nt_specialistlakare_per_10000": {
+      "name": "Specialist doctors per 10,000 inhabitants",
+      "unit": "per 10,000 inhabitants",
+      "note": "Specialist doctors working in public and private care per 10,000 inhabitants of the province; GPs and primary-care paediatricians are not included (ISTAT from IQVIA OneKey). Italy 34.1, Veneto 29.6 (2023)."
+    },
+    "nt_hogskoleutbildade_25_64": {
+      "name": "Tertiary education, ages 25–64",
+      "unit": "%",
+      "note": "Own calculation from Eurostat city statistics: 35,458 of 129,073 residents aged 25–64 (the sum of the three education levels) had tertiary education (ISCED 5–8) in 2023. The city figure rests on ISTAT's register-based census, the comparisons on the labour force survey. Italy 21.6%, Veneto 20.5% (2023, Eurostat edat_lfse_04)."
+    },
+    "nt_hogskoleutbildade_25_39": {
+      "name": "Tertiary degree, ages 25–39",
+      "unit": "%",
+      "note": "Share of 25–39-year-olds in the province with a tertiary degree (ISCED 5–8), ISTAT labour force survey. Italy 30.9%, Veneto 34.4% (2024)."
+    },
+    "nt_tidiga_skolavhopp": {
+      "name": "Early leavers from education and training (18–24)",
+      "unit": "%",
+      "note": "Share of 18–24-year-olds with at most lower secondary education who are not in education or training (labour force survey); published for regions only. The EU target for 2030 is below 9%. Italy 8.2%, Veneto 7.6% (2025)."
+    },
+    "nt_neet_15_29": {
+      "name": "Young people aged 15–29 neither in work nor in education (NEET)",
+      "unit": "%",
+      "note": "Share of 15–29-year-olds in the province neither in work nor in education or training (ISTAT, labour force survey). For the regions 2025 is available: Italy 13.3%, Veneto 8.3% (Eurostat edat_lfse_22). Italy 15.2%, Veneto 9.0% (2024)."
+    },
+    "nt_forskoleplatser_0_2": {
+      "name": "Places in nurseries and other early childcare per 100 children aged 0–2",
+      "unit": "places per 100 children aged 0–2",
+      "note": "Authorised places in nurseries (asili nido) and supplementary early-childhood services per 100 children aged 0–2, school year 2024/25 (ISTAT database, year 2024): 12.0 public and 28.5 private, 1,847 places in 58 services. ISTAT compares with the EU target of 45% participation by 2030. Italy 33.2, Veneto: not fetched (2024/25)."
+    },
+    "nt_sysselsattningsgrad_15_64": {
+      "name": "Employment rate, ages 15–64 (province)",
+      "unit": "%",
+      "note": "Employed share of 15–64-year-olds in the province according to the labour force survey (68.1% in 2024); for the municipality the census gives 69.1% (nt_sysselsattningsgrad_kommun). Italy 62.5%, Veneto 69.3% (2025)."
+    },
+    "nt_arbetsloshet_15_74": {
+      "name": "Unemployment rate, ages 15–74 (province)",
+      "unit": "%",
+      "note": "Unemployed as a percentage of the labour force aged 15–74 in the province, labour force survey (3.9% in 2024). Italy 6.1%, Veneto 3.4% (2025)."
+    },
+    "nt_sysselsattningsgrad_kommun": {
+      "name": "Employment rate, ages 15–64 (municipality, census)",
+      "unit": "%",
+      "note": "Own calculation from the permanent census on 31 December 2024: 105,084 employed of 152,138 residents aged 15–64. The census rests on registers and a sample and differs from the labour force survey. Italy 63.4%, Veneto 70.0% (2024, same source and calculation)."
+    },
+    "nt_arbetsloshet_kommun": {
+      "name": "Unemployment rate, ages 15+ (municipality, census)",
+      "unit": "%",
+      "note": "Own calculation from the permanent census on 31 December 2024: 6,124 job seekers out of a labour force of 116,838 aged 15 and over; 2023 gives 5.4% (Eurostat city statistics: 5.39%). Italy 7.2%, Veneto 4.7% (2024, same source and calculation)."
+    },
+    "nt_beskattningsbar_inkomst": {
+      "name": "Taxable income per taxpayer (mean)",
+      "unit": "euros per taxpayer",
+      "note": "Own calculation from the income tax returns for 2024: taxable income of €5,156,700,571 for 190,227 taxpayers with taxable income (200,207 taxpayers in all). A mean, not a median. Italy €24,893, Veneto €25,885 (2024, summed over all municipalities in the same file)."
+    },
+    "nt_disponibel_inkomst_per_inv": {
+      "name": "Household disposable income per inhabitant (province)",
+      "unit": "euros per inhabitant",
+      "note": "Household disposable income per inhabitant of the province, current prices (Istituto Tagliacarne's provincial estimates in ISTAT's BES dei territori). Italy €22,359, Veneto €24,103 (2023)."
+    },
+    "nt_bnp_per_invanare": {
+      "name": "GDP per inhabitant (province)",
+      "unit": "euros per inhabitant",
+      "note": "GDP per inhabitant of the province (NUTS 3 ITH35), current prices; 40,200 in purchasing power standards (PPS). Italy and Veneto also have 2024: €37,300 and €41,500. Italy €36,300, Veneto €40,700 (2023)."
+    },
+    "nt_fattigdom_social_utestangning": {
+      "name": "At risk of poverty or social exclusion (Veneto)",
+      "unit": "%",
+      "note": "Share of the population with low income, severe material and social deprivation or very low work intensity (EU-SILC, AROPE); published for regions only. Veneto had 12.4% the year before. Italy 22.6%, Veneto 14.6% (2025)."
+    },
+    "nt_gastnatter_per_invanare": {
+      "name": "Overnight stays per inhabitant",
+      "unit": "overnight stays per inhabitant",
+      "note": "Nights spent in tourist accommodation (hotels and other, ISTAT tourism statistics via Eurostat) per inhabitant: 12,925,741 nights in 2025, 11,195,100 of them by foreign guests; break in series 2024. Day visitors are not included. Italy 9.1, Veneto 15.3 (2025, own calculation from Eurostat tour_occ_nin2 and the population on 1 January 2025)."
+    },
+    "nt_baddar_per_1000": {
+      "name": "Bed places in tourist accommodation per 1,000 inhabitants",
+      "unit": "bed places per 1,000 inhabitants",
+      "note": "Bed places in tourist accommodation per 1,000 inhabitants: 91,556 bed places in 2025 against 77,037 in 2022 (break in series 2024). Italy 130, Veneto 169 (2025, own calculation from Eurostat tour_cap_nuts2; Italy's bed places rose from 5.5 to 7.7 million in 2024–2025, which suggests a break in series)."
+    },
+    "nt_tomma_bostader": {
+      "name": "Dwellings without registered residents",
+      "unit": "% of dwellings",
+      "note": "Own calculation from the 2021 census: 25,627 of 148,319 dwellings had no registered residents (second homes, tourist lets, empty). The permanent census for 2023 gives 26,538 of 149,294 (17.8%). Italy 27.2%, Veneto 22.0% (2021, own calculation from Eurostat cens_21dwob_r3)."
+    },
+    "nt_bostadspris": {
+      "name": "Average housing price (OMI)",
+      "unit": "euros/m²",
+      "note": "OMI's average quoted value for homes in the municipality (mean of the central values of all OMI zones), +0.5% on 2024; 3,968 homes were sold in 2025. The rest of the province €1,454/m². Italy: no corresponding national value in OMI's reports; Veneto €1,975/m² in its provincial capitals (2025)."
+    },
+    "nt_bostadspris_centro_storico": {
+      "name": "Average housing price in the centro storico (OMI)",
+      "unit": "euros/m²",
+      "note": "OMI's average quoted value in the Centro storico e Giudecca macro-area in 2025 (+0.4%), highest in the San Marco zone (€5,388/m²); Lido 3,308, the minor islands 2,481 and the mainland €1,660/m². Italy: no national value; Veneto €1,975/m² in its provincial capitals (2025, a different basis)."
+    },
+    "nt_vaxthusgaser_per_inv": {
+      "name": "Territorial greenhouse gas emissions per inhabitant (CO2, methane, nitrous oxide)",
+      "unit": "t CO2e per inhabitant",
+      "note": "Own calculation from INEMAR Veneto 2023: 4,031.8 kt CO2, 2,441 t methane and 296 t nitrous oxide = 4,179 kt CO2e (GWP100, IPCC AR5) divided by the mean population of 250,602. Two thirds come from power and energy production at Fusina and Porto Marghera. Italy 6.4 (2023, Eurostat, excluding land use), Veneto 5.8 t (2023, own calculation from INEMAR)."
+    },
+    "nt_vaxthusgaser_energi_per_inv": {
+      "name": "Emissions from power and energy production per inhabitant",
+      "unit": "t CO2e per inhabitant",
+      "note": "Own calculation from INEMAR Veneto 2023, macro-sector 1 (energy production and fuel transformation): 2,819.8 kt CO2e / 250,602 inhabitants. Of this, 1,649 kt CO2 came from coal and 951 kt from natural gas; the power is used far beyond the municipality. Italy 1.3 (2023, fuel combustion in energy industries, Eurostat env_air_gge), Veneto 0.67 t (2023, own calculation from INEMAR)."
+    },
+    "nt_vaxthusgaser_vagtrafik_per_inv": {
+      "name": "Emissions from road transport per inhabitant",
+      "unit": "t CO2e per inhabitant",
+      "note": "Own calculation from INEMAR Veneto 2023, macro-sector 7 (road transport): 279.5 kt CO2e / 250,602 inhabitants. Ships, aircraft and mobile machinery (macro-sector 8) emitted another 288.6 kt. Italy 1.7 (2023, road transport, Eurostat env_air_gge), Veneto 1.9 t (2023, own calculation from INEMAR)."
+    },
+    "nt_vaxthusgaser_industri_per_inv": {
+      "name": "Emissions from industry per inhabitant",
+      "unit": "t CO2e per inhabitant",
+      "note": "Own calculation from INEMAR Veneto 2023, macro-sectors 3 and 4 (combustion in industry and process emissions): 236.5 kt CO2e / 250,602 inhabitants. Italy 1.2 (2023, manufacturing combustion and industrial processes, Eurostat env_air_gge), Veneto 1.3 t (2023, own calculation from INEMAR)."
+    },
+    "nt_fornybar_el_andel": {
+      "name": "Renewable share of electricity consumption (province)",
+      "unit": "%",
+      "note": "Renewable electricity production as a percentage of the province's gross electricity consumption (Terna via ISTAT's BES dei territori); the province has large fossil-fuelled power plants (see nt_vaxthusgaser_energi_per_inv). Italy 36.9%, Veneto 26.8% (2023)."
+    },
+    "nt_solceller_kw_per_1000": {
+      "name": "Installed solar PV capacity per 1,000 inhabitants",
+      "unit": "kW per 1,000 inhabitants",
+      "note": "Capacity of all solar PV installations in the municipality per 1,000 inhabitants (140.5 in 2022), about 59 MW in all (own calculation); net production was 174.5 kWh per inhabitant in 2024. Italy 272.3 kW in its provincial capitals (north-east Italy's 402.8); Veneto 239.7–576.5 kW in its other six provincial capitals (2024)."
+    },
+    "nt_elanvandning_per_inv": {
+      "name": "Electricity drawn from the distribution grid per inhabitant",
+      "unit": "MWh per inhabitant",
+      "note": "ISTAT reports 51.3 tonnes of oil equivalent per 100 inhabitants (1,490.8 GWh), the highest of the 14 metropolitan capitals; at 11.63 MWh per tonne that is 5.97 MWh per inhabitant (own conversion). Households and businesses are included; the household share is only shown in an ISTAT chart. Italy 3.94 MWh in its provincial capitals; Veneto 2.73–10.04 MWh in its other provincial capitals (2024, own conversion)."
+    },
+    "nt_avfall_per_inv": {
+      "name": "Municipal waste per inhabitant",
+      "unit": "kg per inhabitant",
+      "note": "Municipal waste (rifiuti urbani) collected per inhabitant: 173,318 tonnes in 2024, against 651.7 kg per inhabitant in 2023. Tourists add to the waste but not to the denominator. Italy 507.9, Veneto 525.0 kg (2024)."
+    },
+    "nt_utsortering_andel": {
+      "name": "Separately collected waste (raccolta differenziata)",
+      "unit": "%",
+      "note": "Share of municipal waste collected separately for recycling, 110,442 tonnes in 2024 (63.0% in 2023). The legal target of 65% applied from 2012. Italy 67.7%, Veneto 78.2% (2024)."
+    },
+    "nt_vatten_per_inv": {
+      "name": "Drinking water supplied per inhabitant per day",
+      "unit": "litres per inhabitant per day",
+      "note": "Water supplied for authorised uses in the municipal network per inhabitant per day (ISTAT water census 2022); tourists and commuters are in the consumption but not in the denominator. 517 litres per inhabitant per day were fed into the network. Italy 236 litres in its provincial capitals (north-east Italy's 215); Veneto 207–255 litres in its other provincial capitals (2022)."
+    },
+    "nt_vattenforluster": {
+      "name": "Water losses in the distribution network",
+      "unit": "% of water fed into the network",
+      "note": "Difference between water fed into and supplied from the municipal network, as a percentage of the water fed in (42.0% in both 2018 and 2020); the province 37.9%. Italy 42.4%, Veneto 42.2% (2022, all municipalities, ISTAT's BES dei territori)."
+    },
+    "nt_bilar_per_1000": {
+      "name": "Passenger cars per 1,000 inhabitants",
+      "unit": "cars per 1,000 inhabitants",
+      "note": "Registered passenger cars per 1,000 inhabitants (ISTAT from the ACI register; Eurostat city statistics give 443.85 for the same year). The centro storico has no streets for cars. The provincial capitals average 651. Italy 701, Veneto 680 (2024, Eurostat tran_r_vehst)."
+    },
+    "nt_elbilar_andel": {
+      "name": "Share of electric cars in the passenger car fleet",
+      "unit": "%",
+      "note": "Fully electric cars: 8.2 per 1,000 passenger cars (6.9 in 2023); hybrid cars 97.7 per 1,000. The provincial capitals average 8.1 per 1,000. Italy 0.68%, Veneto 0.71% (2024, Eurostat tran_r_elvehst)."
+    },
+    "nt_kollektivtrafik_platskm": {
+      "name": "Public transport supply (seat-km per inhabitant)",
+      "unit": "seat-km per inhabitant",
+      "note": "Seat-kilometres by bus, tram and boat per inhabitant: 2,486.5 million seat-km in 2024 (10,522 per inhabitant in 2023), 4,354 per inhabitant of them on the water. Italy 4,699 in its provincial capitals (2024); Veneto 5,144 in its provincial capitals (2023, BES)."
+    },
+    "nt_kollektivtrafik_resor": {
+      "name": "Public transport trips per inhabitant",
+      "unit": "trips per inhabitant",
+      "note": "Public transport boardings per inhabitant: 176.8 million trips in 2024; tourists and commuters make many of them but only residents are in the denominator. Italy 176.4 in its provincial capitals (north-east Italy's 193.6); Veneto 12.0–178.9 in its other provincial capitals (2024)."
+    },
+    "nt_vattenburen_kollektivtrafik": {
+      "name": "Waterborne public transport (seat-km per inhabitant)",
+      "unit": "seat-km per inhabitant",
+      "note": "Supply of the vaporetto and ferry services: 1,088 million seat-km in 2024, 44% of the city's public transport and 98% of all waterborne public transport in Italy's provincial capitals (own calculation: 1,088 / 1,106). Italy 63 in its provincial capitals (north-east Italy's 341); Veneto: no other provincial capital has such services (2024)."
+    },
+    "nt_cykelvag_per_inv": {
+      "name": "Cycle paths per inhabitant",
+      "unit": "metres per inhabitant",
+      "note": "Own calculation: 190 km of cycle paths (ISTAT) / 249,490 inhabitants = 0.76 m; they are on the mainland and the Lido, cycling is not allowed in the centro storico. Density is 45.4 km per 100 km² of municipal area. Italy 31.3 km per 100 km² in its provincial capitals; Veneto 18.3–219.3 in its other provincial capitals (2024)."
+    },
+    "nt_gronyta_per_inv": {
+      "name": "Public urban green space per inhabitant",
+      "unit": "m² per inhabitant",
+      "note": "Managed urban green space (parks, gardens, sports grounds, urban woodland and more) per inhabitant; 33.8 m² is open to the public. The lagoon's natural areas are not counted. Italy 33.7 m² in its provincial capitals (2024); Veneto 36.8 m² in its provincial capitals (2023, BES)."
+    },
+    "nt_skyddad_natur_andel": {
+      "name": "Protected nature, share of the municipal area",
+      "unit": "%",
+      "note": "Protected natural areas (Natura 2000 and the national list) as a percentage of the municipal area, mainly the lagoon; with the city's green spaces 65.3%. The province 23.7% (2022, land only). Italy 16.8% in its provincial capitals (2024); for the whole country and Veneto 21.7% and 22.7% (2022, BES, land only)."
+    },
+    "nt_markanvandning_exploaterad_andel": {
+      "name": "Land take (consumo di suolo), share of the area",
+      "unit": "%",
+      "note": "Land covered by buildings, roads and other artificial surfaces: 7,164 ha, 17.2% of the whole municipal area including the lagoon; the province 14.1%. Italy 7.17%, Veneto 11.86% (2024)."
+    },
+    "nt_markanvandning_okning": {
+      "name": "New land take in the past year",
+      "unit": "hectares",
+      "note": "Net increase 2023–2024 (65.2 ha newly taken, 1.0 ha restored), the largest single-year increase since annual measurement began in 2015; 486 ha net in 2006–2024 (own sum). Italy 7,850 ha, Veneto 655 ha (2023–2024)."
+    },
+    "nt_oversvamningsrisk_befolkning": {
+      "name": "Residents in areas of medium flood hazard",
+      "unit": "% of inhabitants",
+      "note": "Share of residents (2021 census) living in areas with a medium probability of flooding (scenario P2, return period 100–200 years) in ISPRA's national mosaic of the basin plans: 64,592 people; 83.9% live in low-probability areas (P1). Italy 11.5%, Veneto 11.7% (2021)."
+    },
+    "nt_pm10_overskridandedygn": {
+      "name": "Days with PM10 above the limit (worst station)",
+      "unit": "days",
+      "note": "Number of days with PM10 above 50 µg/m³ at the city's worst fixed monitoring station; the EU allows 35 a year. 70 days in 2022 and 62 in 2023. Italy: no national value for this measure; Veneto 8–66 days in its other six provincial capitals (2024)."
+    },
+    "nt_pm10_arsmedel": {
+      "name": "Annual mean PM10 (worst station)",
+      "unit": "µg/m³",
+      "note": "Highest annual mean of PM10 among the city's fixed monitoring stations (34 in 2022). The EU limit is 40 µg/m³ today and 20 µg/m³ from 2030; the WHO recommends 15. Italy: no national value for this measure; Veneto 21–35 µg/m³ in its other provincial capitals (2024)."
+    },
+    "nt_no2_arsmedel": {
+      "name": "Annual mean NO2 (worst station)",
+      "unit": "µg/m³",
+      "note": "Highest annual mean of nitrogen dioxide among the city's fixed monitoring stations (37 in 2022). The EU limit is 40 µg/m³ today and 20 µg/m³ from 2030; the WHO recommends 10. Italy: no national value for this measure; Veneto 20–30 µg/m³ in its other provincial capitals (2024)."
+    },
+    "nt_anmalda_brott_per_100000": {
+      "name": "Reported offences per 100,000 inhabitants",
+      "unit": "offences per 100,000 inhabitants",
+      "note": "Offences reported by the police to the judicial authorities per 100,000 registered residents (8,669.6 in 2023 and 5,534.4 in 2021); the rate is high because offences against the many visitors are counted against a small population. Italy 4,069.6, Veneto: not fetched (2024)."
+    },
+    "nt_fickstolder_per_100000": {
+      "name": "Reported pickpocketing per 100,000 inhabitants (province)",
+      "unit": "reports per 100,000 inhabitants",
+      "note": "Reports of pickpocketing in the province per 100,000 inhabitants (ISTAT from the Ministry of the Interior's SDI register), more than three times the national level. Burglaries of homes: 347.9 (Italy 250.3, Veneto 327.6). Italy 236.8, Veneto 237.4 (2023)."
+    },
+    "nt_valdeltagande_kommunval": {
+      "name": "Turnout in the municipal election",
+      "unit": "%",
+      "note": "112,767 of 201,713 eligible voters voted in the municipal election of 24–25 May 2026, in which the mayor was elected in the first round; turnout in 2020 was 62.23%. The electoral roll includes Italians living abroad, which lowers the share. Italy and Veneto: municipal elections are not held everywhere at once, so there is no comparable value (2026)."
+    },
+    "nt_valdeltagande_parlamentsval": {
+      "name": "Turnout in the general election (Chamber of Deputies)",
+      "unit": "%",
+      "note": "124,105 of 187,202 eligible voters in the municipality voted for the Chamber of Deputies on 25 September 2022 (voters abroad are not included). Italy 63.91%, Veneto 70.17% (2022; Veneto's value is our own sum of the Veneto 1 and 2 constituencies)."
+    },
+    "nt_valdeltagande_europaval": {
+      "name": "Turnout in the European Parliament election",
+      "unit": "%",
+      "note": "92,711 of 197,090 eligible voters voted in the European Parliament election of 8–9 June 2024, the latest nationwide vote; the province 48.90%. Italy 49.69%, Veneto 52.60% (2024)."
+    },
+    "nt_kvinnor_kommunfullmaktige": {
+      "name": "Share of women in the municipal council (consiglio comunale)",
+      "unit": "%",
+      "note": "Own count in the Ministry of the Interior's register: 12 women among the 36 councillors elected in May 2026 (the mayor, a man, not counted); in the executive (giunta) 4 of the 10 assessori are women. Italy 35.4%, Veneto 37.9% of municipal councillors (August 2026, own count in the same register)."
+    },
+    "nt_bredband_ftth": {
+      "name": "Households with fibre-to-the-home coverage (FTTH, province)",
+      "unit": "% of households",
+      "note": "Share of households in the province living where a fibre-to-the-home (FTTH) connection is available, ISTAT's processing of the Agcom broadband map. Italy 70.7%, Veneto 64.9% (2024)."
+    }
+  }
+}

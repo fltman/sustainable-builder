@@ -1,0 +1,294 @@
+{
+  "indicators": {
+    "tur_presenze_comune_2025": {
+      "name": "Overnight stays in accommodation in the Municipality of Venice",
+      "unit": "overnight stays",
+      "note": "All registered overnight stays (presenze) in 2025 in hotels and other accommodation, short-term rentals included, in the whole municipality: the historic city with the islands, the Lido and the mainland. 5,858,665 arrivals and an average stay of 2.21 nights; −2.7% on the record year 2024 (13,290,973). Veneto had 74,157,123 overnight stays (Venice 17.4%) and Italy 476,853,549 (Venice 2.7%)."
+    },
+    "tur_presenze_comune_2019": {
+      "name": "Overnight stays in the Municipality of Venice 2019 (pre-pandemic)",
+      "unit": "overnight stays",
+      "note": "5,523,283 arrivals and an average stay of 2.34 nights; the highest year before the pandemic, only surpassed in 2024. The municipality's series starts in 1949 with 1,389,831 overnight stays and passed 5 million in 1995 and 10 million in 2015."
+    },
+    "tur_presenze_comune_2020": {
+      "name": "Overnight stays in the Municipality of Venice 2020 (pandemic year)",
+      "unit": "overnight stays",
+      "note": "−72.5% on 2019 and the lowest level since 1978. 1,337,626 arrivals: foreign arrivals fell by 80.7% and Italian ones by 44.3%, so the Italian share of arrivals rose from 13.5% to 31.1% (Annuario 2020)."
+    },
+    "tur_ankomster_cs_2025": {
+      "name": "Arrivals in accommodation in the historic city",
+      "unit": "arrivals",
+      "note": "Guests checking in to accommodation in the historic city including the smaller islands (Murano, Burano, Torcello etc.) in 2025, 67.9% of the municipality's arrivals; +1.8% on 2024 and +13.2% on 2019 (3,515,233, own calculation). 3,511,310 were foreign and 468,954 Italian."
+    },
+    "tur_presenze_cs_2025": {
+      "name": "Overnight stays in the historic city",
+      "unit": "overnight stays",
+      "note": "Overnight stays in 2025 in the historic centre including the smaller islands, 72.5% of the municipality's total; −0.6% on 2024 (9,432,844) and +6.3% on 2019 (own calculation). Hotels had 4,555,016 and other accommodation 4,821,622; since 2024 other accommodation has had more overnight stays than hotels."
+    },
+    "tur_presenze_cs_2019": {
+      "name": "Overnight stays in the historic city 2019 (pre-pandemic)",
+      "unit": "overnight stays",
+      "note": "3,515,233 arrivals and an average stay of 2.51 nights. Hotels had 5.09 million overnight stays and other accommodation 3.73 million, of which short-term rental flats 2,128,255 (24%, own calculation)."
+    },
+    "tur_presenze_cs_2020": {
+      "name": "Overnight stays in the historic city 2020 (pandemic year)",
+      "unit": "overnight stays",
+      "note": "−71.3% on 2019; 923,304 arrivals and an average stay of 2.74 nights. About 72% of the guests were foreign, against almost 90% in a normal year."
+    },
+    "tur_utlandska_andel_presenze_cs": {
+      "name": "Foreign guests' share of overnight stays in the historic city",
+      "unit": "%",
+      "note": "8,339,222 foreign overnight stays out of 9,376,638 in the historic centre in 2025 = 88.9%; for the whole municipality 86.6% (11,195,100 / 12,925,741). The largest markets in 2025 were the USA, Italy, France, the UK and Germany. In the pandemic year 2020 the share fell to about 72%."
+    },
+    "tur_medelvistelse_cs": {
+      "name": "Average length of stay in the historic city",
+      "unit": "nights per arrival",
+      "note": "Overnight stays per arrival in 2025; 2.51 in 2019 and 2.74 in the pandemic year 2020. Hotel guests stay 2.17 nights and guests in other accommodation 2.56; in the whole municipality 2.21 and on the mainland 1.82."
+    },
+    "tur_korttidsuthyrning_andel_ankomster_cs": {
+      "name": "Short-term rental flats' share of arrivals in the historic city",
+      "unit": "%",
+      "note": "Locazioni turistiche – flats let to tourists under regional law 11/2013 art. 27bis – received 1,252,286 of 3,980,264 arrivals and 3,371,970 overnight stays (36%, own calculation) in 2025. In 2019 the share of arrivals was 19.4% (682,097; Yearbook 2024 table 1.19). The category also includes lets longer than 30 days."
+    },
+    "tur_baddar_cs": {
+      "name": "Tourist beds in the historic city",
+      "unit": "beds",
+      "note": "Beds in accommodation open at some point in 2025 in the historic centre with the islands: 20,896 in 331 hotels and 49,345 in other accommodation, of which 42,011 in 9,560 short-term rental flats. 59,373 beds in 2019 and 53,578 in the pandemic year 2021; +4,707 in 2025 alone. The whole municipality has 91,556."
+    },
+    "tur_baddar_per_invanare_cs": {
+      "name": "Tourist beds per resident in the historic city",
+      "unit": "beds per resident",
+      "note": "70,241 beds divided by the 54,480 residents of the Venezia-Murano-Burano borough, which covers the same area as the historic centre of the tourism statistics (the municipality's population table by district 2015–2025) = 1.29. Against the 47,625 residents of the centro storico proper (the sestieri and Giudecca) it is 1.47. In 2015, 63,530 people lived in Venezia-Murano-Burano."
+    },
+    "tur_baddar_fler_an_invanare_ar": {
+      "name": "Year tourist beds came to outnumber residents in the historic city (OCIO counters)",
+      "unit": "year",
+      "note": "The civic observatory OCIO's bed counter in a bookshop on Campo Santa Margherita showed 48,596 tourist beds against 49,365 residents (Venessia.com's counter) in April 2023, 49,693 against 49,304 in September and 50,016 against 49,211 in December 2023. OCIO counts hotels and short-term rentals from the municipal register; in 2008 there were about 12,000 beds and just over 60,000 residents (Il Post)."
+    },
+    "tur_gaster_per_natt_cs": {
+      "name": "Overnight guests per night in the historic city (annual average)",
+      "unit": "guests per night",
+      "note": "9,376,638 overnight stays / 365 = 25,689 guests per night on average in 2025, a little over half as many as the 47,625 residents of the centro storico; in the peak month of October about 31,500 per night (975,072 / 31). Day-trippers come on top of this (see tur_dagsbesokare_per_dag_2022)."
+    },
+    "tur_presenze_per_invanare": {
+      "name": "Overnight stays per resident in the Municipality of Venice",
+      "unit": "overnight stays per resident",
+      "note": "12,925,741 overnight stays divided by 251,294 residents on 31 December 2025 (the municipality's auditors) = 51.4; in the historic city with the islands 172 per resident (9,376,638 / 54,480). Venice is one of five Italian cities (with Rimini, Verbania, Florence and Pisa) where overnight stays are at least 20 times the population, the threshold for charging up to €10 per night in tourist tax under the 2023 budget law (Il Post)."
+    },
+    "tur_belaggning_hotell": {
+      "name": "Gross bed occupancy rate in hotels",
+      "unit": "%",
+      "note": "Overnight stays / 365 / beds for the municipality's 33,320 hotel beds in 2025; 68.0% in the busiest month. 60.1% in 2024 and 66.0% in 2019. For all 91,556 beds 38.7% and for other accommodation including short-term rentals 28.5%."
+    },
+    "tur_toppmanad_presenze_cs": {
+      "name": "Overnight stays in the historic city in the busiest month (October 2025)",
+      "unit": "overnight stays",
+      "note": "October had the most overnight stays in 2025, ahead of July (942,427) and May (929,846); January the fewest (436,267), so the peak month has 2.2 times as many (own calculation). July had the most arrivals (427,099). Every month from April to October was above 898,000; in 2024 May was the largest (988,317)."
+    },
+    "tur_kryssning_2019": {
+      "name": "Cruise passengers at the Port of Venice 2019 (before the ban)",
+      "unit": "passengers",
+      "note": "Embarking, disembarking and transit cruise passengers on 500 calls in 2019, when large ships still passed through the Bacino di San Marco and the Giudecca Canal to the Marittima terminal. All port passengers: 1,822,703."
+    },
+    "tur_kryssning_2025": {
+      "name": "Cruise passengers at the Port of Venice 2025",
+      "unit": "passengers",
+      "note": "266 calls in 2025, +6.3% on 2024 but 64% fewer passengers than in 2019 (own calculation) since large cruise ships were shut out of the Bacino di San Marco and the Giudecca Canal in 2021; 5,237 in the pandemic year 2020. The port authority's accounts report 617,454 cruise movements in 2025 (542,496 home port, 74,958 transit) with a different definition. All port passengers: 708,267."
+    },
+    "tur_biennale_konst_2024": {
+      "name": "Visitors to the Art Biennale (60th International Art Exhibition)",
+      "unit": "visitors",
+      "note": "19 April–24 November 2024, −15.1% on the 2022 record (827,411); 593,616 in 2019. The 2025 Architecture Biennale had 280,770 visitors and the film festival on the Lido 254,443 spectators. The Biennale's venues lie at the eastern edge of the model area: the western part of the Arsenale on the edge and the Giardini just outside."
+    },
+    "tur_dogepalatset_besokare": {
+      "name": "Visitors to the Doge's Palace (Palazzo Ducale)",
+      "unit": "visitors",
+      "note": "+1.7% on 2024 and level with 2019 (1,351,656); 318,104 in 2020. All the Fondazione Musei Civici museums together had 2,393,315 visitors in 2025. The palace stands on the Piazzetta San Marco in the middle of the model area."
+    },
+    "tur_san_marco_basilika_besokare": {
+      "name": "Visitors to the St Mark's Basilica complex",
+      "unit": "visitors",
+      "note": "A joint ticket since 2025 for the basilica, the museum and the Pala d'Oro, of which the museum 444,627 and the Pala d'Oro 322,504. In 2024, 1,861,286 visits to the basilica itself were counted. The Campanile had 567,419 visitors in 2025."
+    },
+    "tur_accademia_besokare": {
+      "name": "Visitors to the Gallerie dell'Accademia",
+      "unit": "visitors",
+      "note": "+16.3% on 2023 and 305,099 in 2019. The state's figures for 2025 were not available when the yearbook was published. The gallery stands by the Accademia bridge over the Grand Canal."
+    },
+    "tur_guggenheim_besokare": {
+      "name": "Visitors to the Peggy Guggenheim Collection",
+      "unit": "visitors",
+      "note": "Palazzo Venier dei Leoni between the Accademia and the Salute; −11.8% on 2024 (388,630) and 350,475 in 2019."
+    },
+    "tur_dagsbesokare_per_ar": {
+      "name": "Day-trippers (escursionisti) per year, estimate",
+      "unit": "day-trippers per year",
+      "note": "Assessment in the study, after van der Borg (2017): almost 22 million day-trippers a year, against about 5 million in 1988. Day-trippers are not registered; the municipality's own estimate was about 53,000 per day (Tourist Report 2019). The figure is an assessment, not a count."
+    },
+    "tur_dagsbesokare_per_dag_2022": {
+      "name": "Day-trippers per day in the historic city (annual average, mobile data)",
+      "unit": "day-trippers per day",
+      "note": "Measured with mobile-phone data: on average 61,461 day-trippers and 32,339 overnight tourists per day in the historic city in 2022; the newspaper gives a total of about 98,000 visitors per day. Bertocchi et al. (2020) gave 66,800 visitors and tourists plus 20,500 commuting workers and students per day (2018)."
+    },
+    "tur_besokare_toppdag_2022": {
+      "name": "Visitors in the historic city on the busiest day of the year (30 October 2022)",
+      "unit": "visitors",
+      "note": "All Saints' weekend 2022: 54,253 overnight tourists and 88,993 day-trippers according to the same mobile-data study. With about 49,000–50,000 residents (the municipality: 55,589 in 2015 and 47,625 in 2025) that is roughly three visitors per resident that day (own rough calculation)."
+    },
+    "tur_barkraft_per_dag": {
+      "name": "Tourism carrying capacity of the historic city (visitors per day)",
+      "unit": "visitors per day",
+      "note": "Optimum in a fuzzy linear-programming model: 15,500 hotel guests, 22,000 guests in other accommodation and 14,611 day-trippers per day, in all 19.0 million visitors a year of whom 28% day-trippers. The bottlenecks are St Mark's Square, vaporetto capacity, restaurants, parking and waste handling. The first calculation in 1988 gave about 10 million visitors a year."
+    },
+    "tur_cda_betalningar_2024": {
+      "name": "Paid access fees for day-trippers 2024 (first trial year)",
+      "unit": "paid fees",
+      "note": "29 fee days from 25 April 2024 at €5, on average 16,676 payers per day; €2,249,505 according to the municipality's summary (the accounts report €2.43 million). According to Il Post, setting up and running the scheme cost at least €3 million in the first year."
+    },
+    "tur_cda_betalningar_2025": {
+      "name": "Paid access fees for day-trippers 2025",
+      "unit": "paid fees",
+      "note": "Provisional for 54 days from 18 April to 27 July 2025: 704,467 through the platform (51% at €5, 49% at €10) and 19,030 through agreements; on average 13,046 per day, most on Friday 2 May (24,951). Overnight guests registered as exempt at an average of 36,639 per day. The accounts report €5.44 million."
+    },
+    "tur_cda_betalningar_2026": {
+      "name": "Paid access fees for day-trippers 2026",
+      "unit": "paid fees",
+      "note": "60 fee days from 3 April to 26 July 2026 (every Friday–Sunday plus 27–30 April and 1–4 June, 8.30–16.00): 316,099 (46.5%) at €5 with advance booking and 363,454 at €10, in all €5,215,035, according to the municipality's provisional summary. Fewer payments than in 2025 despite six more days. The fee only applies to the Città antica, not Murano, Burano or the Lido; overnight guests, Veneto residents, students, commuters and children under 14 do not pay."
+    },
+    "tur_cda_intakter_2025": {
+      "name": "The municipality's revenue from the access fee (contributo di accesso)",
+      "unit": "million euros",
+      "note": "Accrued revenue (accertamenti) in the 2025 accounts, against €2.43 million in 2024; 1.6% of tax revenue excluding the casino. After running costs part goes to a lower waste charge (TARI): €1.0 million in the 2025 TARI budget (the municipality's summary speaks of at least €1.5 million) and €1,771,000 of the 2026 revenue, which was €5,215,035."
+    },
+    "tur_cda_snitt_per_dag_2026": {
+      "name": "Paying day-trippers per fee day 2026",
+      "unit": "payers per day",
+      "note": "−17% on 2025 (13,398) and −32% on 2024 according to the municipality, which notes that the years are not directly comparable: Fridays were not included in 2024 and 2026 had more weekdays. Saturdays 13,661 on average; May 13,940, June 10,179 and July 9,597 per day. The municipality's 2025 summary gave 13,046 for platform purchases."
+    },
+    "tur_cda_dagar_over_20000": {
+      "name": "Fee days with at least 20,000 paying day-trippers",
+      "unit": "days",
+      "note": "4 of 29 days (13.8%) in 2024, 3 of 54 (5.6%) in 2025 and 1 of 60 (1.7%) in 2026: Saturday 2 May 2026 with 25,471. The second-largest day in 2026 had 18,969 and the smallest (Wednesday 29 April) 7,441. The municipality sees signs that the peaks are being damped; the evaluation is being done with CISET (Ca' Foscari, Regione Veneto and Touring Club Italiano)."
+    },
+    "tur_imposta_soggiorno_2025": {
+      "name": "The municipality's revenue from the tourist tax (imposta di soggiorno)",
+      "unit": "million euros",
+      "note": "Accrued revenue 2025: €38.38 million plus €0.32 million in recovered arrears, −€1.6 million on 2024 (39.70 + 0.58) and €38.19 million in 2023. The tourist tax provides 11.4% of the municipality's tax revenue excluding the casino (€353.2 million). €5.5 million of earmarked tourist tax was used in 2025 to lower the waste charge (TARI)."
+    },
+    "tur_kommunens_lopande_intakter": {
+      "name": "The municipality's current revenue (entrate correnti)",
+      "unit": "million euros",
+      "note": "Accrued revenue 2025: taxes €471.0 million, transfers €207.3 million and other revenue €193.6 million; €825.1 million in 2024 and €818.9 million in 2023. The accounts (approved by the council on 23 April 2026) closed with a result (risultato di amministrazione) of €529.3 million, of which €25.5 million unrestricted. Staff costs were €114.7 million."
+    },
+    "tur_turistskatter_andel_intakter": {
+      "name": "Tourist tax and access fee as a share of the municipality's current revenue",
+      "unit": "%",
+      "note": "(€38.71 million in tourist tax + €5.44 million in access fees) / €871.83 million in current revenue = 5.1% in 2025 (own calculation from the accounts). The casino's gross takings correspond to 13.5%, but most of that goes back to the operating company (see tur_kasino_spelintakter)."
+    },
+    "tur_kasino_spelintakter": {
+      "name": "Gaming revenue from the Casinò di Venezia",
+      "unit": "million euros",
+      "note": "Of the 2025 gaming revenue, €88.3 million (75%) went as a fee to the operating company and €9.4 million in taxes, leaving €20.1 million net for the municipality, against €15.6 million in 2019 and −€0.7 million in 2020. The casino's historic seat, Ca' Vendramin Calergi, stands on the Grand Canal at the northern edge of the model area."
+    },
+    "tur_sysselsatta_foretag": {
+      "name": "Persons employed in business local units in the Municipality of Venice",
+      "unit": "persons employed",
+      "note": "Employees and self-employed (addetti) in 25,729 local units in 2022 according to ISTAT's territorial Frame SBS, with €6.76 billion in value added and €59,400 per person employed. Public administration, agriculture and finance are not included, so the staff of the municipality, the health service and the universities are missing here. ISTAT classes the Venezia local labour system as 'urbano prevalentemente portuale' (urban, mainly port)."
+    },
+    "tur_sysselsatta_hotell_restaurang_andel": {
+      "name": "Accommodation and food services: share of persons employed in business",
+      "unit": "%",
+      "note": "20,617 of the 113,676 persons employed in business local units worked in accommodation and food services (ATECO I) in 2022 = 18.1%, against 8.9% in Italy and 8.7% in Veneto (summed from ISTAT's provincial tables). Pay per employee in the sector was €21,500 against an average of €29,000 for the municipality's businesses."
+    },
+    "tur_sysselsatta_handel_andel": {
+      "name": "Wholesale and retail trade: share of persons employed in business",
+      "unit": "%",
+      "note": "18,518 of 113,676 persons employed in trade (ATECO G) in 2022 = 16.3% (Italy 19.5%, Veneto 17.8%). Transport and storage – the port, the airport and public transport – has 14,296 = 12.6% (Italy 6.6%, Veneto 5.7%), business support services 13,340 and professional and technical services (ATECO M) 10,131."
+    },
+    "tur_sysselsatta_tillverkning_andel": {
+      "name": "Manufacturing: share of persons employed in business",
+      "unit": "%",
+      "note": "9,876 of 113,676 persons employed in manufacturing and mining (ATECO B–C) in 2022 = 8.7%, against 21.6% in Italy and 30.9% in Veneto; all industry including construction, energy and waste 20,369 (17.9%). Value added per person employed in manufacturing was €90,400, more than twice that in accommodation and food services (€42,600)."
+    },
+    "tur_hotell_restaurang_andel_foradlingsvarde": {
+      "name": "Accommodation and food services: share of business value added",
+      "unit": "%",
+      "note": "€877.7 million of the €6,757.0 million in value added in the municipality's businesses in 2022 = 13.0% (Italy 4.0%, Veneto 4.1%). It only measures the direct visitor economy; trade, transport, museums and crafts selling to visitors are not included, so tourism's real share is larger. No official tourism satellite account for the municipality was found."
+    },
+    "tur_inkomst_per_skattebetalare": {
+      "name": "Average taxable income per taxpayer",
+      "unit": "euros",
+      "note": "Taxable income (reddito imponibile) of €5,156,700,571 divided by the 190,227 filers with taxable income, income year 2024. Veneto €25,885 and Italy €24,893; Padua €31,270 and Treviso €31,717. Venice had €23,482 in 2019. Employees earned €24,505 on average, less than in Veneto (€25,249)."
+    },
+    "tur_arbetsloshet_provins": {
+      "name": "Unemployment rate, age 15–74, Metropolitan City of Venice",
+      "unit": "%",
+      "note": "ISTAT labour force survey: 4.6% in 2025, 3.9% in 2024 and 6.0% in 2019. Veneto 3.4% and Italy 6.1% in 2025."
+    },
+    "tur_ungdomsarbetsloshet_provins": {
+      "name": "Youth unemployment rate, age 15–24, Metropolitan City of Venice",
+      "unit": "%",
+      "note": "24.7% in 2025 and 27.1% in 2024, against 13.7% in Veneto and 20.6% in Italy in 2025. Provincial figures for young people rest on small samples and swing between years."
+    },
+    "tur_hamn_gods": {
+      "name": "Cargo throughput at the Port of Venice",
+      "unit": "million tonnes",
+      "note": "+4.9% on 2024: commercial cargo +8.5% while industrial (−5.3%) and oil (−1.2%) traffic fell. Container traffic was 532,778 TEU (478,839 in 2024). With Chioggia the port authority handled 26.2 million tonnes."
+    },
+    "tur_marghera_sysselsatta_1965": {
+      "name": "Persons employed in the Porto Marghera industrial area at the 1965 peak",
+      "unit": "persons employed",
+      "note": "The municipality's historical series: 3,440 employed in 1925, 22,500 in 1950, the peak of 32,980 in 229 firms in 1965, 29,000 in 1980, 18,814 in 1990 and 12,958 in 1998. Parts of the area are still called Raffinerie, Vecchio and Nuovo Petrolchimico."
+    },
+    "tur_marghera_sysselsatta_2018": {
+      "name": "Persons employed in the Porto Marghera industrial area 2018",
+      "unit": "persons employed",
+      "note": "Persons employed in 915 firms on 31 December 2018, including workers on short-time support: a third of the 1965 peak; the low point was 10,060 in 2014. There are four times as many firms, but smaller. No later edition of the municipality's survey was found."
+    },
+    "tur_studenter_cafoscari": {
+      "name": "Students at Ca' Foscari University",
+      "unit": "enrolled students",
+      "note": "Enrolled in bachelor's, master's and single-cycle programmes in the 2025/26 academic year (11,629 women and 7,271 men); 21,121 in 2019/20. Doctoral students and single courses are not included. The main building, Ca' Foscari, stands on the Grand Canal in the western part of the model area."
+    },
+    "tur_studenter_iuav": {
+      "name": "Students at the Università Iuav di Venezia",
+      "unit": "enrolled students",
+      "note": "Iuav (architecture, design, planning, arts and theatre) in the 2025/26 academic year: 3,039 women and 1,912 men, against 3,935 in 2019/20; 172 teaching staff and 241 technical-administrative staff in 2024 (ANVUR). Together with Ca' Foscari 23,851 students, about half as many as the residents of the centro storico, though many live on the mainland (own comparison)."
+    },
+    "tur_murano_ugnar": {
+      "name": "Glass furnaces (fornaci) on Murano",
+      "unit": "furnaces",
+      "note": "In February 2024 the Promovetro consortium counted 151 glass firms on Murano: 64 furnaces and 87 secondary processing firms (lampwork, fusing, mirrors, grinding, decoration) employing 1,242 people. According to the same source, 80% of the glass objects in Venice's shops are not made on Murano. In the early 2000s there were about a hundred furnaces (Insula)."
+    },
+    "tur_murano_sysselsatta": {
+      "name": "Persons employed in Murano's glass firms",
+      "unit": "persons employed",
+      "note": "Banca Ifis counts 160 active glass firms employing 928 people in 2025, against 114 firms and 819 employed in 2015; turnover rose from about €104 million to €180 million, and to €288 million including the supply chain. Promovetro gives 1,242 employed (2024) with a wider definition. Energy and utilities are 13% of the value in the supply chain."
+    },
+    "tur_murano_sysselsatta_1971": {
+      "name": "Persons employed in Murano's glass industry 1971",
+      "unit": "persons employed",
+      "note": "About 4,000 employed in Murano's glass industry in the 1950s, 3,142 in 1971, 2,290 in 1981 and about 2,000 in the 1990s; in the early 2000s Promovetro had just under 200 member firms employing about 1,600. In the 1960s 24% of the firms had more than 100 employees; today small firms dominate."
+    },
+    "tur_gondoljarer_auktoriserade": {
+      "name": "Authorised gondoliers",
+      "unit": "gondoliers",
+      "note": "Gondoliers holding a licence according to EFE in October 2026, when the municipality opened a new 40-hour 'Arte del gondoliere' course; the municipality's 2020 regulation allows 440 licences (see en_gondol_licenser in energi-resor.json). Since Giorgia Boscolo became the first woman gondolier in 2009, 14 more women have followed. A 30-minute ride cost €90 in the daytime and €110 after 7 pm (dpa, 2024)."
+    },
+    "tur_souvenirbutiker_andel": {
+      "name": "Souvenir shops' share of retail in the historic city",
+      "unit": "%",
+      "note": "299 of the 2,876 retail businesses in the Chamber of Commerce register (January 2021) sold souvenirs, trinkets and costume jewellery, against 141 craft shops (4.9%); food, drink and tobacco were 13.9%. Hotels, restaurants and retail made up 58% of the historic city's 10,232 registered businesses."
+    },
+    "tur_vardagsbutiker_2007": {
+      "name": "Grocery and other everyday shops in the historic city 2007",
+      "unit": "shops",
+      "note": "720 shops in 1976 and 276 in 2007 (−62%), while shops for tourists rose from 303 to 997 (+229%), 'banal' souvenir shops by 265%. Already in 1971–1981 the share of services aimed at residents fell from 46.9% to 37.7% (Andreozzi et al. 1983)."
+    },
+    "tur_osm_presentbutiker_per_matbutik": {
+      "name": "Gift shops per food shop in the model area (OpenStreetMap)",
+      "unit": "gift shops per food shop",
+      "note": "Inside the model's bounding box: 119 gift shops and 15 variety stores against 84 food shops (19 supermarkets, 18 convenience stores, 18 bakeries, 10 delis, 8 greengrocers, 8 pastry shops, 2 fishmongers, 1 butcher) = 1.6. 785 shops in all, of which 151 clothes shops and 53 jewellers, plus 205 hotels and 374 restaurants. OSM is mapped by volunteers and incomplete."
+    }
+  }
+}

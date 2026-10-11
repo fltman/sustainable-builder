@@ -1,0 +1,1156 @@
+{
+  "topic": "turism-ekonomi",
+  "compiled": "2026-10-11",
+  "indicators": [
+    {
+      "id": "tur_presenze_comune_2025",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter på boenden i Venedigs kommun",
+      "value": 12925741,
+      "unit": "gästnätter",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 1, 3, 36 och 37",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Alla registrerade gästnätter (presenze) 2025 på hotell och övriga boenden, korttidsuthyrning inräknad, i hela kommunen: den historiska staden med öarna, Lido och fastlandet. 5 858 665 ankomster och i snitt 2,21 nätter; −2,7 % mot rekordåret 2024 (13 290 973). Veneto hade 74 157 123 gästnätter (Venedig 17,4 %) och Italien 476 853 549 (Venedig 2,7 %).",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_presenze_comune_2019",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter i Venedigs kommun 2019 (före pandemin)",
+      "value": 12948519,
+      "unit": "gästnätter",
+      "year": 2019,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Yearbook of Tourism data 2024, tab. 1.2 och 1.3",
+        "publisher": "Comune di Venezia, Tourism Department",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2024_ENG.pdf"
+      },
+      "note_sv": "5 523 283 ankomster och 2,34 nätter i snitt; det högsta året före pandemin, som överträffades först 2024. Kommunens serie börjar 1949 med 1 389 831 gästnätter och passerade 5 miljoner 1995 och 10 miljoner 2015.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_presenze_comune_2020",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter i Venedigs kommun 2020 (pandemiåret)",
+      "value": 3557036,
+      "unit": "gästnätter",
+      "year": 2020,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Yearbook of Tourism data 2024, tab. 1.2, 1.3 och 1.10",
+        "publisher": "Comune di Venezia, Tourism Department",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2024_ENG.pdf"
+      },
+      "note_sv": "−72,5 % mot 2019 och den lägsta nivån sedan 1978. 1 337 626 ankomster: de utländska föll med 80,7 % och de italienska med 44,3 %, så italienarnas andel av ankomsterna steg från 13,5 % till 31,1 % (Annuario 2020).",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_ankomster_cs_2025",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Ankomster till boenden i den historiska staden",
+      "value": 3980264,
+      "unit": "ankomster",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 3, 5 och 14",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Gäster som checkat in i den historiska staden inklusive de mindre öarna (Murano, Burano, Torcello m.fl.) 2025, 67,9 % av kommunens ankomster; +1,8 % mot 2024 och +13,2 % mot 2019 (3 515 233, egen beräkning). 3 511 310 var utländska och 468 954 italienska.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_presenze_cs_2025",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter i den historiska staden",
+      "value": 9376638,
+      "unit": "gästnätter",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 3, 5 och 14",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Gästnätter 2025 i centro storico inklusive de mindre öarna, 72,5 % av kommunens; −0,6 % mot 2024 (9 432 844) och +6,3 % mot 2019 (egen beräkning). Hotellen hade 4 555 016 och övriga boenden 4 821 622; sedan 2024 har övriga boenden fler gästnätter än hotellen.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_presenze_cs_2019",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter i den historiska staden 2019 (före pandemin)",
+      "value": 8817623,
+      "unit": "gästnätter",
+      "year": 2019,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Yearbook of Tourism data 2024, tab. 1.15, 1.17 och 1.19",
+        "publisher": "Comune di Venezia, Tourism Department",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2024_ENG.pdf"
+      },
+      "note_sv": "3 515 233 ankomster och 2,51 nätter i snitt. Hotellen hade 5,09 miljoner gästnätter och övriga boenden 3,73 miljoner, varav korttidsuthyrda bostäder 2 128 255 (24 %, egen beräkning).",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_presenze_cs_2020",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter i den historiska staden 2020 (pandemiåret)",
+      "value": 2534368,
+      "unit": "gästnätter",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del Turismo dati 2020, kap. 1 (Città storica)",
+        "publisher": "Comune di Venezia, Assessorato al Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/Turismo/Annuario%20Turismo%20dati%202020_03_30_web.pdf"
+      },
+      "note_sv": "−71,3 % mot 2019; 923 304 ankomster och 2,74 nätter i snitt. Ungefär 72 % av gästerna var utländska, mot nära 90 % ett normalår.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_utlandska_andel_presenze_cs",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Utländska gästers andel av gästnätterna i den historiska staden",
+      "value": 88.9,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 4 och 5",
+        "publisher": "Egen beräkning (ursprungskälla: Comune di Venezia)",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "8 339 222 utländska gästnätter av 9 376 638 i centro storico 2025 = 88,9 %; för hela kommunen 86,6 % (11 195 100 / 12 925 741). De största marknaderna 2025 var USA, Italien, Frankrike, Storbritannien och Tyskland. Under pandemiåret 2020 sjönk andelen till ungefär 72 %.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_medelvistelse_cs",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Genomsnittlig vistelse i den historiska staden",
+      "value": 2.36,
+      "unit": "nätter per ankomst",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 3 och 16",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Gästnätter per ankomst 2025; 2,51 år 2019 och 2,74 under pandemiåret 2020. Hotellgäster stannar 2,17 nätter och gäster i övriga boenden 2,56; i hela kommunen 2,21 och på fastlandet 1,82.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_korttidsuthyrning_andel_ankomster_cs",
+      "sdg": [
+        11,
+        12
+      ],
+      "name_sv": "Korttidsuthyrda bostäders andel av ankomsterna i den historiska staden",
+      "value": 31.5,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 18",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Locazioni turistiche – bostäder som hyrs ut till turister enligt regional lag 11/2013 art. 27bis – tog emot 1 252 286 av 3 980 264 ankomster och 3 371 970 gästnätter (36 %, egen beräkning) 2025. År 2019 var andelen av ankomsterna 19,4 % (682 097; Yearbook 2024 tab. 1.19). Kategorin omfattar även uthyrning längre än 30 dagar.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_baddar_cs",
+      "sdg": [
+        11,
+        12
+      ],
+      "name_sv": "Turistbäddar i den historiska staden",
+      "value": 70241,
+      "unit": "bäddar",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 50, 54, 55 och 56",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Bäddar i boenden som var öppna någon gång under 2025 i centro storico med öarna: 20 896 i 331 hotell och 49 345 i övriga boenden, varav 42 011 i 9 560 korttidsuthyrda bostäder. 59 373 bäddar 2019 och 53 578 under pandemiåret 2021; +4 707 bara under 2025. Hela kommunen har 91 556.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_baddar_per_invanare_cs",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Turistbäddar per invånare i den historiska staden",
+      "value": 1.29,
+      "unit": "bäddar per invånare",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Annuario del turismo dati 2025 (tab. 56) och kommunens befolkningstabell 2015–2025",
+        "publisher": "Egen beräkning (ursprungskällor: Comune di Venezia)",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "70 241 bäddar delat med 54 480 invånare i municipaliteten Venezia-Murano-Burano, som täcker samma område som turiststatistikens centro storico (kommunens befolkningstabell per kvarter 2015–2025) = 1,29. Mot de 47 625 invånarna i själva centro storico (sestieri och Giudecca) blir det 1,47. År 2015 bodde 63 530 i Venezia-Murano-Burano.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_baddar_fler_an_invanare_ar",
+      "sdg": [
+        11
+      ],
+      "name_sv": "År då turistbäddarna blev fler än invånarna i den historiska staden (OCIO:s räknare)",
+      "value": 2023,
+      "unit": "år",
+      "year": 2023,
+      "scope": "Venezia centro storico (sestieri och Giudecca)",
+      "direction": "context",
+      "source": {
+        "title": "Venezia, per la prima volta i posti letto per i turisti superano quelli per i residenti (11 september 2023)",
+        "publisher": "Open",
+        "url": "https://www.open.online/2023/09/11/venezia-turisti-posti-letto-unesco/"
+      },
+      "note_sv": "Medborgarobservatoriet OCIO:s bäddräknare i en bokhandel vid Campo Santa Margherita visade 48 596 turistbäddar mot 49 365 invånare (Venessia.com:s räknare) i april 2023, 49 693 mot 49 304 i september och 50 016 mot 49 211 i december 2023. OCIO räknar hotell och korttidsuthyrning ur kommunens register; 2008 fanns cirka 12 000 bäddar och drygt 60 000 invånare (Il Post).",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_gaster_per_natt_cs",
+      "sdg": [
+        11,
+        12
+      ],
+      "name_sv": "Övernattande gäster per natt i den historiska staden (årsgenomsnitt)",
+      "value": 25689,
+      "unit": "gäster per natt",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 3 och 11",
+        "publisher": "Egen beräkning (ursprungskälla: Comune di Venezia)",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "9 376 638 gästnätter / 365 = 25 689 gäster per natt i snitt 2025, drygt hälften så många som de 47 625 invånarna i centro storico; i toppmånaden oktober cirka 31 500 per natt (975 072 / 31). Dagsbesökarna kommer till detta (se tur_dagsbesokare_per_dag_2022).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_presenze_per_invanare",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Gästnätter per invånare i Venedigs kommun",
+      "value": 51.4,
+      "unit": "gästnätter per invånare",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025 (tab. 3) och revisorernas rapport om bokslutet 2025 (folkmängd)",
+        "publisher": "Egen beräkning (ursprungskälla: Comune di Venezia)",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "12 925 741 gästnätter delat med 251 294 invånare 31 december 2025 (kommunens revisorer) = 51,4; i den historiska staden med öarna 172 per invånare (9 376 638 / 54 480). Venedig är en av fem italienska städer (med Rimini, Verbania, Florens och Pisa) där gästnätterna är minst 20 gånger befolkningen, gränsen för att få ta ut upp till 10 euro i turistskatt per natt enligt budgetlagen för 2023 (Il Post).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_belaggning_hotell",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Beläggningsgrad i hotellbäddarna (brutto)",
+      "value": 56.4,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 44–46; Yearbook 2024 tab. 4.2",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Gästnätter / 365 / bäddar för kommunens 33 320 hotellbäddar 2025; 68,0 % i årets största månad. 60,1 % 2024 och 66,0 % 2019. För alla 91 556 bäddar 38,7 % och för övriga boenden inklusive korttidsuthyrning 28,5 %.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_toppmanad_presenze_cs",
+      "sdg": [
+        8,
+        12
+      ],
+      "name_sv": "Gästnätter i den historiska staden under årets största månad (oktober 2025)",
+      "value": 975072,
+      "unit": "gästnätter",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 11",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Oktober hade flest gästnätter 2025, före juli (942 427) och maj (929 846); januari minst (436 267), så toppmånaden har 2,2 gånger så många (egen beräkning). Flest ankomster hade juli (427 099). Alla månader april–oktober låg över 898 000; 2024 var maj störst (988 317).",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_kryssning_2019",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Kryssningspassagerare i Venedigs hamn 2019 (före förbudet)",
+      "value": 1611341,
+      "unit": "passagerare",
+      "year": 2019,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Yearbook of Tourism data 2024, tab. 6.1 (källa: AdSP Mare Adriatico Settentrionale, VTP)",
+        "publisher": "Comune di Venezia, Tourism Department",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2024_ENG.pdf"
+      },
+      "note_sv": "Påstigande, avstigande och transiterande kryssningspassagerare på 500 anlöp 2019, när stora fartyg fortfarande gick genom Bacino di San Marco och Giudeccakanalen till terminalen vid Marittima. Hamnens alla passagerare: 1 822 703.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_kryssning_2025",
+      "sdg": [
+        11,
+        14
+      ],
+      "name_sv": "Kryssningspassagerare i Venedigs hamn 2025",
+      "value": 572471,
+      "unit": "passagerare",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 57 (källa: AdSP Mare Adriatico Settentrionale, VTP)",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "266 anlöp 2025, +6,3 % mot 2024 men 64 % färre passagerare än 2019 (egen beräkning) sedan stora kryssningsfartyg 2021 stängdes ute från Bacino di San Marco och Giudeccakanalen; 5 237 under pandemiåret 2020. Hamnmyndighetens bokslut redovisar 617 454 kryssningsrörelser 2025 (542 496 i hemmahamn, 74 958 i transit) med annan avgränsning. Hamnens alla passagerare: 708 267.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_biennale_konst_2024",
+      "sdg": [
+        4,
+        8,
+        11
+      ],
+      "name_sv": "Besökare på konstbiennalen (60:e internationella konstutställningen)",
+      "value": 702741,
+      "unit": "besökare",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 107–109 och 128 (källa: Fondazione La Biennale di Venezia)",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "19 april–24 november 2024, −15,1 % mot rekordet 2022 (827 411); 593 616 år 2019. Arkitekturbiennalen 2025 hade 280 770 besökare och filmfestivalen på Lido 254 443 åskådare. Biennalens utställningsområden ligger vid modellområdets östra kant: Arsenales västra del i kanten och Giardini strax utanför.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_dogepalatset_besokare",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Besökare i Dogepalatset (Palazzo Ducale)",
+      "value": 1355689,
+      "unit": "besökare",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 79 och 81 (källa: Fondazione Musei Civici di Venezia)",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "+1,7 % mot 2024 och i nivå med 2019 (1 351 656); 318 104 under 2020. Fondazione Musei Civicis alla museer hade 2 393 315 besökare 2025. Palatset ligger vid Piazzetta San Marco mitt i modellområdet.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_san_marco_basilika_besokare",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Besökare i San Marco-basilikans komplex",
+      "value": 2387995,
+      "unit": "besökare",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 99 (källa: Procuratoria di San Marco)",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Gemensam biljett sedan 2025 för basilikan, museet och Pala d'Oro, varav museet 444 627 och Pala d'Oro 322 504. År 2024 räknades 1 861 286 besök i själva basilikan. Kampanilen hade 567 419 besökare 2025.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_accademia_besokare",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Besökare i Gallerie dell'Accademia",
+      "value": 309202,
+      "unit": "besökare",
+      "year": 2024,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, statliga museer (källa: Ministero della Cultura)",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "+16,3 % mot 2023 och 305 099 år 2019. Statens siffror för 2025 fanns inte när årsboken publicerades. Galleriet ligger vid Accademiabron över Canal Grande.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_guggenheim_besokare",
+      "sdg": [
+        4,
+        11
+      ],
+      "name_sv": "Besökare i Peggy Guggenheim Collection",
+      "value": 342890,
+      "unit": "besökare",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Annuario del turismo dati 2025, tab. 110 (källa: Peggy Guggenheim Collection)",
+        "publisher": "Comune di Venezia, Servizio Governance Territoriale del Turismo",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Turismo/Annuario_2025.pdf"
+      },
+      "note_sv": "Palazzo Venier dei Leoni mellan Accademia och Salute; −11,8 % mot 2024 (388 630) och 350 475 år 2019.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_dagsbesokare_per_ar",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Dagsbesökare (escursionisti) per år, uppskattning",
+      "value": 22000000,
+      "unit": "dagsbesökare per år",
+      "year": 2019,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Bertocchi, Camatti, Giove och van der Borg (2020): Venice and Overtourism: Simulating Sustainable Development Scenarios through a Tourism Carrying Capacity Model. Sustainability 12(2), 512",
+        "publisher": "MDPI",
+        "url": "https://www.mdpi.com/2071-1050/12/2/512"
+      },
+      "note_sv": "Bedömning i studien efter van der Borg (2017): nästan 22 miljoner dagsbesökare per år, mot cirka 5 miljoner 1988. Dagsbesökare registreras inte; kommunens egen uppskattning var omkring 53 000 per dag (Tourist Report 2019). Siffran är en bedömning, inte en räkning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_dagsbesokare_per_dag_2022",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Dagsbesökare per dag i den historiska staden (årsgenomsnitt, mobildata)",
+      "value": 61461,
+      "unit": "dagsbesökare per dag",
+      "year": 2022,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Artikel 18 juni 2024 om studien Baldin, Bertocchi och Camatti, Tourism Economics 31(5) 2025",
+        "publisher": "il Resto del Carlino",
+        "url": "https://www.ilrestodelcarlino.it/venezia/economia/fuga-residenti-eventi-turismo-mm7xlphe"
+      },
+      "note_sv": "Mätt med mobiltelefondata: i snitt 61 461 dagsbesökare och 32 339 övernattande turister per dag i den historiska staden 2022; tidningen anger totalt omkring 98 000 besökare per dag. Bertocchi m.fl. (2020) angav 66 800 besökare och turister samt 20 500 pendlande arbetare och studenter per dag (2018).",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_besokare_toppdag_2022",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Besökare i den historiska staden under årets största dag (30 oktober 2022)",
+      "value": 143246,
+      "unit": "besökare",
+      "year": 2022,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Artikel 18 juni 2024 om studien Baldin, Bertocchi och Camatti, Tourism Economics 31(5) 2025",
+        "publisher": "il Resto del Carlino",
+        "url": "https://www.ilrestodelcarlino.it/venezia/economia/fuga-residenti-eventi-turismo-mm7xlphe"
+      },
+      "note_sv": "Allhelgonahelgen 2022: 54 253 övernattande turister och 88 993 dagsbesökare enligt samma mobildatastudie. Med omkring 49 000–50 000 invånare (kommunen: 55 589 år 2015 och 47 625 år 2025) blir det ungefär tre besökare per invånare den dagen (egen grov beräkning).",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_barkraft_per_dag",
+      "sdg": [
+        8,
+        11,
+        12
+      ],
+      "name_sv": "Turistisk bärkraft för den historiska staden (besökare per dag)",
+      "value": 52111,
+      "unit": "besökare per dag",
+      "year": 2020,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Bertocchi, Camatti, Giove och van der Borg (2020): Venice and Overtourism. Sustainability 12(2), 512",
+        "publisher": "MDPI",
+        "url": "https://www.mdpi.com/2071-1050/12/2/512"
+      },
+      "note_sv": "Optimum i en fuzzy linjärprogrammeringsmodell: 15 500 hotellgäster, 22 000 gäster i övriga boenden och 14 611 dagsbesökare per dag, totalt 19,0 miljoner besökare per år varav 28 % dagsbesökare. Flaskhalsar är Markusplatsen, vaporetto-kapaciteten, restaurangerna, parkeringen och avfallshanteringen. Den första beräkningen 1988 gav cirka 10 miljoner besökare per år.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_cda_betalningar_2024",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Betalda inträdesavgifter för dagsbesökare 2024 (första försöksåret)",
+      "value": 485062,
+      "unit": "betalda avgifter",
+      "year": 2024,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Contributo di accesso – Primi risultati 2025 (provvisori), jämförelse med 2024",
+        "publisher": "Comune di Venezia (arkiverad kopia hos Internet Archive, 2 augusti 2025)",
+        "url": "https://web.archive.org/web/20250802151606/https://live.comune.venezia.it/sites/live.comune.venezia.it/files/articoli/allegati/CDA_report2025.pdf"
+      },
+      "note_sv": "29 avgiftsdagar från 25 april 2024, 5 euro, i snitt 16 676 betalande per dag; 2 249 505 euro enligt kommunens sammanställning (bokslutet redovisar 2,43 miljoner). Uppbyggnad och drift kostade enligt Il Post minst 3 miljoner euro det första året.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_cda_betalningar_2025",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Betalda inträdesavgifter för dagsbesökare 2025",
+      "value": 723497,
+      "unit": "betalda avgifter",
+      "year": 2025,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Contributo di accesso – Primi risultati 2025 (provvisori)",
+        "publisher": "Comune di Venezia (arkiverad kopia hos Internet Archive, 2 augusti 2025)",
+        "url": "https://web.archive.org/web/20250802151606/https://live.comune.venezia.it/sites/live.comune.venezia.it/files/articoli/allegati/CDA_report2025.pdf"
+      },
+      "note_sv": "Preliminärt för 54 dagar 18 april–27 juli 2025: 704 467 via plattformen (51 % till 5 euro, 49 % till 10 euro) och 19 030 via avtal; i snitt 13 046 per dag och flest fredagen 2 maj (24 951). Övernattande gäster registrerade sig i snitt 36 639 per dag som undantagna. Bokslutet redovisar 5,44 miljoner euro.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_cda_betalningar_2026",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Betalda inträdesavgifter för dagsbesökare 2026",
+      "value": 679553,
+      "unit": "betalda avgifter",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Contributo d'accesso, i dati 2026: 11 mila paganti al giorno, il 46% ha prenotato (kommunens sammanställning)",
+        "publisher": "VeneziaToday",
+        "url": "https://www.veneziatoday.it/attualita/contributo-d-accesso-i-dati-2026-11-mila-paganti-al-giorno-il-46-ha-prenotato.html"
+      },
+      "note_sv": "60 avgiftsdagar 3 april–26 juli 2026 (alla helger fredag–söndag samt 27–30 april och 1–4 juni, kl. 8.30–16): 316 099 (46,5 %) till 5 euro med förhandsbokning och 363 454 till 10 euro, totalt 5 215 035 euro, enligt kommunens preliminära sammanställning. Färre betalningar än 2025 trots sex fler dagar. Avgiften gäller bara Città antica, inte Murano, Burano eller Lido; övernattande gäster, invånare i Veneto, studenter, pendlare och barn under 14 betalar inte.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_cda_intakter_2025",
+      "sdg": [
+        11,
+        17
+      ],
+      "name_sv": "Kommunens intäkter från inträdesavgiften (contributo di accesso)",
+      "value": 5.44,
+      "unit": "miljoner euro",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Documento di presentazione del Rendiconto 2025 – analisi dei dati economico-finanziari, s. 16 och 18",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Bilancio/documento%20presentazione%20Rendiconto%202025.pdf"
+      },
+      "note_sv": "Accertamenti i bokslutet 2025, mot 2,43 miljoner 2024; 1,6 % av skatteintäkterna exklusive kasinot. Efter driftskostnaderna går en del till lägre avfallsavgift (TARI): 1,0 miljon i 2025 års TARI-kalkyl (kommunens sammanställning talar om minst 1,5 miljoner) och 1 771 000 euro av 2026 års intäkter, som var 5 215 035 euro.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_cda_snitt_per_dag_2026",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Betalande dagsbesökare per avgiftsdag 2026",
+      "value": 11326,
+      "unit": "betalande per dag",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Contributo d'accesso, i dati 2026: 11 mila paganti al giorno, il 46% ha prenotato (kommunens sammanställning)",
+        "publisher": "VeneziaToday",
+        "url": "https://www.veneziatoday.it/attualita/contributo-d-accesso-i-dati-2026-11-mila-paganti-al-giorno-il-46-ha-prenotato.html"
+      },
+      "note_sv": "−17 % mot 2025 (13 398) och −32 % mot 2024 enligt kommunen, som påpekar att åren inte är direkt jämförbara: 2024 ingick inte fredagar och 2026 fler vardagar. Lördagar 13 661 i snitt; maj 13 940, juni 10 179 och juli 9 597 per dag. Kommunens sammanställning för 2025 angav 13 046 för plattformsköpen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_cda_dagar_over_20000",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Avgiftsdagar med minst 20 000 betalande dagsbesökare",
+      "value": 1,
+      "unit": "dagar",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Contributo d'accesso, i dati 2026: 11 mila paganti al giorno, il 46% ha prenotato (kommunens sammanställning)",
+        "publisher": "VeneziaToday",
+        "url": "https://www.veneziatoday.it/attualita/contributo-d-accesso-i-dati-2026-11-mila-paganti-al-giorno-il-46-ha-prenotato.html"
+      },
+      "note_sv": "4 av 29 dagar (13,8 %) 2024, 3 av 54 (5,6 %) 2025 och 1 av 60 (1,7 %) 2026: lördagen 2 maj 2026 med 25 471. Näst största dagen 2026 hade 18 969 och den minsta (onsdag 29 april) 7 441. Kommunen ser tecken på att topparna dämpas; utvärderingen görs med CISET (Ca' Foscari, Regione Veneto och Touring Club Italiano).",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_imposta_soggiorno_2025",
+      "sdg": [
+        8,
+        17
+      ],
+      "name_sv": "Kommunens intäkter från turistskatten (imposta di soggiorno)",
+      "value": 38.7,
+      "unit": "miljoner euro",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Documento di presentazione del Rendiconto 2025 – analisi dei dati economico-finanziari, s. 15, 16 och 18",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Bilancio/documento%20presentazione%20Rendiconto%202025.pdf"
+      },
+      "note_sv": "Accertamenti 2025: 38,38 miljoner plus 0,32 miljoner i indrivning, −1,6 miljoner mot 2024 (39,70 + 0,58) och 38,19 miljoner 2023. Turistskatten ger 11,4 % av kommunens skatteintäkter exklusive kasinot (353,2 miljoner). 5,5 miljoner av öronmärkt turistskatt användes 2025 för att sänka avfallsavgiften TARI.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_kommunens_lopande_intakter",
+      "sdg": [
+        16,
+        17
+      ],
+      "name_sv": "Kommunens löpande intäkter (entrate correnti)",
+      "value": 871.8,
+      "unit": "miljoner euro",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Documento di presentazione del Rendiconto 2025 – analisi dei dati economico-finanziari, s. 2, 9, 14 och 27",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Bilancio/documento%20presentazione%20Rendiconto%202025.pdf"
+      },
+      "note_sv": "Accertamenti 2025: skatter 471,0, överföringar 207,3 och övriga intäkter 193,6 miljoner euro; 825,1 miljoner 2024 och 818,9 miljoner 2023. Bokslutet (godkänt av fullmäktige 23 april 2026) slutade med ett resultat (risultato di amministrazione) på 529,3 miljoner, varav 25,5 miljoner fritt. Personalkostnaderna var 114,7 miljoner.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_turistskatter_andel_intakter",
+      "sdg": [
+        8,
+        17
+      ],
+      "name_sv": "Turistskattens och inträdesavgiftens andel av kommunens löpande intäkter",
+      "value": 5.1,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Documento di presentazione del Rendiconto 2025, s. 9 och 16",
+        "publisher": "Egen beräkning (ursprungskälla: Comune di Venezia)",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Bilancio/documento%20presentazione%20Rendiconto%202025.pdf"
+      },
+      "note_sv": "(38,71 miljoner i turistskatt + 5,44 miljoner i inträdesavgift) / 871,83 miljoner i löpande intäkter = 5,1 % 2025 (egen beräkning ur bokslutet). Kasinots bruttointäkter motsvarar 13,5 %, men det mesta går tillbaka till driftbolaget (se tur_kasino_spelintakter).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_kasino_spelintakter",
+      "sdg": [
+        8,
+        16
+      ],
+      "name_sv": "Spelintäkter från Casinò di Venezia",
+      "value": 117.7,
+      "unit": "miljoner euro",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Documento di presentazione del Rendiconto 2025, s. 15 och 17 (Dinamica saldo Casinò 2019–2025)",
+        "publisher": "Comune di Venezia",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Bilancio/documento%20presentazione%20Rendiconto%202025.pdf"
+      },
+      "note_sv": "Av spelintäkterna 2025 gick 88,3 miljoner (75 %) i ersättning till driftbolaget och 9,4 miljoner i skatter, så 20,1 miljoner blev kvar netto för kommunen, mot 15,6 miljoner 2019 och −0,7 miljoner 2020. Kasinots historiska säte Ca' Vendramin Calergi ligger vid Canal Grande i modellområdets norra kant.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_sysselsatta_foretag",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Sysselsatta i företagens arbetsställen i Venedigs kommun",
+      "value": 113676,
+      "unit": "sysselsatta",
+      "year": 2022,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Risultati economici delle imprese e delle multinazionali a livello territoriale, anno 2022: Appendice statistica Frame territoriale, tav. 22 (comuni capoluogo)",
+        "publisher": "ISTAT",
+        "url": "https://www.istat.it/wp-content/uploads/2024/12/Tavole-1.zip"
+      },
+      "note_sv": "Anställda och företagare (addetti) i 25 729 lokala enheter 2022 enligt ISTAT:s Frame SBS territoriale, med 6,76 miljarder euro i förädlingsvärde och 59 400 euro per sysselsatt. Offentlig förvaltning, jordbruk och finanssektorn ingår inte, så kommunens, sjukvårdens och universitetens anställda saknas här. ISTAT klassar lokalsystemet Venezia som ’urbano prevalentemente portuale’ (urbant, huvudsakligen hamn).",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_sysselsatta_hotell_restaurang_andel",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Hotell och restaurang: andel av sysselsatta i företagen",
+      "value": 18.1,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Frame territoriale 2022, tav. 22 och 30 (Venezia) samt tav. 5 och 13 (provinser)",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT)",
+        "url": "https://www.istat.it/wp-content/uploads/2024/12/Tavole-1.zip"
+      },
+      "note_sv": "20 617 av 113 676 sysselsatta i företagens arbetsställen arbetade i hotell och restaurang (ATECO I) 2022 = 18,1 %, mot 8,9 % i Italien och 8,7 % i Veneto (summerat ur ISTAT:s provinstabeller). Lönen per anställd i branschen var 21 500 euro mot 29 000 i snitt för kommunens företag.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_sysselsatta_handel_andel",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Handel: andel av sysselsatta i företagen",
+      "value": 16.3,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Frame territoriale 2022, tav. 22, 28, 29, 33 och 34 (Venezia) samt provinstabellerna",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT)",
+        "url": "https://www.istat.it/wp-content/uploads/2024/12/Tavole-1.zip"
+      },
+      "note_sv": "18 518 av 113 676 sysselsatta i handel (ATECO G) 2022 = 16,3 % (Italien 19,5 %, Veneto 17,8 %). Transport och magasinering – hamnen, flygplatsen och kollektivtrafiken – har 14 296 = 12,6 % (Italien 6,6 %, Veneto 5,7 %), företagstjänster 13 340 och fria yrken och konsulter (ATECO M) 10 131.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_sysselsatta_tillverkning_andel",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Tillverkning: andel av sysselsatta i företagen",
+      "value": 8.7,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Frame territoriale 2022, tav. 22–24 och 30 (Venezia) samt tav. 5 och 7 (provinser)",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT)",
+        "url": "https://www.istat.it/wp-content/uploads/2024/12/Tavole-1.zip"
+      },
+      "note_sv": "9 876 av 113 676 sysselsatta i tillverkning och utvinning (ATECO B–C) 2022 = 8,7 %, mot 21,6 % i Italien och 30,9 % i Veneto; hela industrin inklusive bygg, energi och avfall 20 369 (17,9 %). Förädlingsvärdet per sysselsatt i tillverkningen var 90 400 euro, mer än dubbelt så mycket som i hotell och restaurang (42 600).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_hotell_restaurang_andel_foradlingsvarde",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Hotell och restaurang: andel av företagens förädlingsvärde",
+      "value": 13.0,
+      "unit": "%",
+      "year": 2022,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Frame territoriale 2022, tav. 22 och 30 (Venezia) samt provinstabellerna",
+        "publisher": "Egen beräkning (ursprungskälla: ISTAT)",
+        "url": "https://www.istat.it/wp-content/uploads/2024/12/Tavole-1.zip"
+      },
+      "note_sv": "877,7 av 6 757,0 miljoner euro i förädlingsvärde i kommunens företag 2022 = 13,0 % (Italien 4,0 %, Veneto 4,1 %). Det mäter bara den direkta besöksnäringen; handel, transporter, museer och hantverk som säljer till besökare ingår inte, så turismens verkliga andel är större. Någon officiell turismsatellit för kommunen hittades inte.",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_inkomst_per_skattebetalare",
+      "sdg": [
+        1,
+        8,
+        10
+      ],
+      "name_sv": "Genomsnittlig beskattningsbar inkomst per skattebetalare",
+      "value": 27108,
+      "unit": "euro",
+      "year": 2024,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Redditi e principali variabili IRPEF su base comunale, anno d'imposta 2024 (CSV)",
+        "publisher": "Egen beräkning (ursprungskälla: MEF – Dipartimento delle Finanze)",
+        "url": "https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2024.zip"
+      },
+      "note_sv": "Beskattningsbar inkomst (reddito imponibile) 5 156 700 571 euro delat med 190 227 deklaranter med beskattningsbar inkomst, inkomståret 2024. Veneto 25 885 och Italien 24 893 euro; Padova 31 270 och Treviso 31 717. Venedig hade 23 482 år 2019. Löntagarna tjänade i snitt 24 505 euro, mindre än i Veneto (25 249).",
+      "confidence": "estimate"
+    },
+    {
+      "id": "tur_arbetsloshet_provins",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Arbetslöshet 15–74 år i storstadsregionen Venedig",
+      "value": 4.6,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Tasso di disoccupazione – dati provinciali (Rilevazione sulle forze di lavoro)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,151_914_DF_DCCV_TAXDISOCCU1_8,1.0/A.ITD35+ITD3+IT.UNEM_R.9.Y15-74.99.TOTAL.TOTAL/?startPeriod=2018&endPeriod=2025"
+      },
+      "note_sv": "ISTAT:s arbetskraftsundersökning: 4,6 % 2025, 3,9 % 2024 och 6,0 % 2019. Veneto 3,4 % och Italien 6,1 % 2025.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_ungdomsarbetsloshet_provins",
+      "sdg": [
+        8
+      ],
+      "name_sv": "Ungdomsarbetslöshet 15–24 år i storstadsregionen Venedig",
+      "value": 24.7,
+      "unit": "%",
+      "year": 2025,
+      "scope": "Città metropolitana di Venezia",
+      "direction": "lower_better",
+      "source": {
+        "title": "Tasso di disoccupazione – dati provinciali, 15–24 anni (Rilevazione sulle forze di lavoro)",
+        "publisher": "ISTAT",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,151_914_DF_DCCV_TAXDISOCCU1_8,1.0/A.ITD35+ITD3+IT.UNEM_R.9.Y15-24.99.TOTAL.TOTAL/?startPeriod=2024&endPeriod=2025"
+      },
+      "note_sv": "24,7 % 2025 och 27,1 % 2024, mot 13,7 % i Veneto och 20,6 % i Italien 2025. Provinssiffror för unga bygger på små urval och svänger mellan åren.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_hamn_gods",
+      "sdg": [
+        9
+      ],
+      "name_sv": "Godsomsättning i Venedigs hamn",
+      "value": 25.3,
+      "unit": "miljoner ton",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "context",
+      "source": {
+        "title": "Rendiconto generale 2025, Parte II – Relazione del Presidente",
+        "publisher": "Autorità di Sistema Portuale del Mare Adriatico Settentrionale",
+        "url": "https://trasparenza.port.venice.it/wp-content/uploads/2026/04/260429-DEL-006-RENDICONTO-GENERALE-2025_ALLEGATO_PARTE-II-RELAZIONE-PRESIDENTE.pdf"
+      },
+      "note_sv": "+4,9 % mot 2024: handelsgods +8,5 % medan industri (−5,3 %) och olja (−1,2 %) minskade. Containertrafiken var 532 778 TEU (478 839 år 2024). Med Chioggia hanterade hamnmyndigheten 26,2 miljoner ton.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_marghera_sysselsatta_1965",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Sysselsatta i Porto Margheras industriområde vid toppen 1965",
+      "value": 32980,
+      "unit": "sysselsatta",
+      "year": 1965,
+      "scope": "Porto Marghera (Comune di Venezia)",
+      "direction": "context",
+      "source": {
+        "title": "Indagine conoscitiva sulle attività economiche presenti nell'area di Porto Marghera al 31 dicembre 2018 (juli 2019), kap. 9 Aziende e addetti – serie storica",
+        "publisher": "Comune di Venezia, Servizio Sviluppo economico e gestione strategica Porto Marghera",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/progetti_strategici/report_2019_31072019_DW.pdf"
+      },
+      "note_sv": "Kommunens historiska serie: 3 440 sysselsatta 1925, 22 500 år 1950, toppen 32 980 i 229 företag 1965, 29 000 år 1980, 18 814 år 1990 och 12 958 år 1998. Områdets delar heter fortfarande Raffinerie, Vecchio och Nuovo Petrolchimico.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_marghera_sysselsatta_2018",
+      "sdg": [
+        8,
+        9
+      ],
+      "name_sv": "Sysselsatta i Porto Margheras industriområde 2018",
+      "value": 11826,
+      "unit": "sysselsatta",
+      "year": 2018,
+      "scope": "Porto Marghera (Comune di Venezia)",
+      "direction": "context",
+      "source": {
+        "title": "Indagine conoscitiva sulle attività economiche presenti nell'area di Porto Marghera al 31 dicembre 2018 (juli 2019), kap. 9",
+        "publisher": "Comune di Venezia, Servizio Sviluppo economico e gestione strategica Porto Marghera",
+        "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/progetti_strategici/report_2019_31072019_DW.pdf"
+      },
+      "note_sv": "Sysselsatta i 915 företag den 31 december 2018, inklusive anställda med korttidsstöd: en tredjedel av toppen 1965; lägst var 10 060 år 2014. Företagen har blivit fyra gånger fler men mindre. Någon senare upplaga av kommunens kartläggning hittades inte.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_studenter_cafoscari",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Studenter vid Ca' Foscari-universitetet",
+      "value": 18900,
+      "unit": "inskrivna studenter",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Iscritti per ateneo (02_iscrittixateneo.csv)",
+        "publisher": "MUR – Ufficio di Statistica (USTAT)",
+        "url": "https://dati-ustat.mur.gov.it/dataset/3dd9ca7f-9cc9-4a1a-915c-e569b181dbd5/resource/32d26e28-a0b5-45f3-9152-6072164f3e63/download/02_iscrittixateneo.csv"
+      },
+      "note_sv": "Inskrivna på kandidat-, master- och femåriga program läsåret 2025/26 (11 629 kvinnor och 7 271 män); 21 121 år 2019/20. Doktorander och fristående kurser ingår inte. Huvudbyggnaden Ca' Foscari ligger vid Canal Grande i modellområdets västra del.",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_studenter_iuav",
+      "sdg": [
+        4
+      ],
+      "name_sv": "Studenter vid Università Iuav di Venezia",
+      "value": 4951,
+      "unit": "inskrivna studenter",
+      "year": 2025,
+      "scope": "Comune di Venezia",
+      "direction": "higher_better",
+      "source": {
+        "title": "Iscritti per ateneo (02_iscrittixateneo.csv)",
+        "publisher": "MUR – Ufficio di Statistica (USTAT)",
+        "url": "https://dati-ustat.mur.gov.it/dataset/3dd9ca7f-9cc9-4a1a-915c-e569b181dbd5/resource/32d26e28-a0b5-45f3-9152-6072164f3e63/download/02_iscrittixateneo.csv"
+      },
+      "note_sv": "Iuav (arkitektur, design, planering, konst och teater) läsåret 2025/26: 3 039 kvinnor och 1 912 män, mot 3 935 år 2019/20; 172 lärare och 241 i teknisk-administrativ personal 2024 (ANVUR). Tillsammans med Ca' Foscari 23 851 studenter, ungefär hälften så många som invånarna i centro storico, men många bor på fastlandet (egen jämförelse).",
+      "confidence": "high"
+    },
+    {
+      "id": "tur_murano_ugnar",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Glasugnar (fornaci) på Murano",
+      "value": 64,
+      "unit": "ugnar",
+      "year": 2024,
+      "scope": "Murano (Comune di Venezia)",
+      "direction": "higher_better",
+      "source": {
+        "title": "Murano: viaggio alla scoperta del distretto veneziano del vetro (26 februari 2024), uppgifter från Promovetro",
+        "publisher": "Forbes Italia",
+        "url": "https://forbes.it/2024/02/26/murano-viaggio-scoperta-distretto-veneziano-vetro/"
+      },
+      "note_sv": "Konsortiet Promovetro räknade i februari 2024 151 glasföretag på Murano: 64 ugnar och 87 företag för vidareförädling (lampblåsning, fusing, speglar, slipning, dekor) med 1 242 sysselsatta. Enligt samma källa är 80 % av glasföremålen i Venedigs butiker inte gjorda på Murano. I början av 2000-talet fanns omkring hundra ugnar (Insula).",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_murano_sysselsatta",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Sysselsatta i Muranos glasföretag",
+      "value": 928,
+      "unit": "sysselsatta",
+      "year": 2025,
+      "scope": "Murano (Comune di Venezia)",
+      "direction": "higher_better",
+      "source": {
+        "title": "Banca Ifis: il vetro di Murano genera 288 milioni di euro e guarda all'export (9 september 2026)",
+        "publisher": "Teleborsa",
+        "url": "https://www.teleborsa.it/News/2026/09/09/banca-ifis-il-vetro-di-murano-genera-288-milioni-di-euro-e-guarda-all-export-129.html"
+      },
+      "note_sv": "Banca Ifis räknar 160 aktiva glasföretag med 928 sysselsatta 2025, mot 114 företag och 819 sysselsatta 2015; omsättningen steg från cirka 104 till 180 miljoner euro, och till 288 miljoner med leverantörsledet. Promovetro anger 1 242 sysselsatta (2024) med vidare avgränsning. Energi och el är 13 % av värdet i leverantörsledet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_murano_sysselsatta_1971",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Sysselsatta i Muranos glasindustri 1971",
+      "value": 3142,
+      "unit": "sysselsatta",
+      "year": 1971,
+      "scope": "Murano (Comune di Venezia)",
+      "direction": "higher_better",
+      "source": {
+        "title": "Murano isola del vetro, Insula Quaderni n. 19",
+        "publisher": "Insula spa (Comune di Venezia)",
+        "url": "https://www.insula.it/images/pdf/resource/quadernipdf/Q19-04.pdf"
+      },
+      "note_sv": "Omkring 4 000 sysselsatta i Muranos glasindustri på 1950-talet, 3 142 år 1971, 2 290 år 1981 och omkring 2 000 på 1990-talet; i början av 2000-talet hade Promovetro knappt 200 medlemsföretag med cirka 1 600 sysselsatta. På 1960-talet hade 24 % av företagen mer än 100 anställda; nu dominerar småföretagen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_gondoljarer_auktoriserade",
+      "sdg": [
+        8,
+        11
+      ],
+      "name_sv": "Auktoriserade gondoljärer",
+      "value": 433,
+      "unit": "gondoljärer",
+      "year": 2026,
+      "scope": "Venezia centro storico",
+      "direction": "context",
+      "source": {
+        "title": "Venecia en la búsqueda de nuevos gondoleros (EFE, oktober 2026)",
+        "publisher": "Última Hora",
+        "url": "https://www.ultimahora.com/venecia-en-la-busqueda-de-nuevos-gondoleros"
+      },
+      "note_sv": "Gondoljärer med licens enligt EFE i oktober 2026, då kommunen öppnade en ny 40-timmarskurs ’Arte del gondoliere’; kommunens reglemente från 2020 tillåter 440 licenser (se en_gondol_licenser i energi-resor.json). Sedan Giorgia Boscolo blev första kvinnliga gondoljär 2009 har 14 kvinnor följt efter. En tur på 30 minuter kostade 90 euro dagtid och 110 euro efter kl. 19 (dpa, 2024).",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_souvenirbutiker_andel",
+      "sdg": [
+        11,
+        12
+      ],
+      "name_sv": "Souvenirbutikers andel av detaljhandeln i den historiska staden",
+      "value": 10.4,
+      "unit": "%",
+      "year": 2021,
+      "scope": "Venezia centro storico",
+      "direction": "lower_better",
+      "source": {
+        "title": "Catalanotti, C. (2023): Competing landscapes of commerce and tourism: critical relations and possible strategies in Venice's historical city. European Spatial Research and Policy 30(1), tab. 1–3",
+        "publisher": "Łódź University Press",
+        "url": "https://czasopisma.uni.lodz.pl/esrap/article/download/13455/21509/50345"
+      },
+      "note_sv": "299 av 2 876 detaljhandelsföretag i Handelskammarens register (januari 2021) sålde souvenirer, prydnadssaker och bijouterier, mot 141 hantverksbutiker (4,9 %); mat, dryck och tobak var 13,9 %. Hotell, restauranger och detaljhandel utgjorde 58 % av den historiska stadens 10 232 registrerade verksamheter.",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_vardagsbutiker_2007",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Livsmedels- och andra vardagsbutiker i den historiska staden 2007",
+      "value": 276,
+      "unit": "butiker",
+      "year": 2007,
+      "scope": "Venezia centro storico",
+      "direction": "higher_better",
+      "source": {
+        "title": "Catalanotti, C. (2023), s. 127–128, med hänvisning till Zanini m.fl. (2008)",
+        "publisher": "Łódź University Press",
+        "url": "https://czasopisma.uni.lodz.pl/esrap/article/download/13455/21509/50345"
+      },
+      "note_sv": "720 butiker 1976 och 276 år 2007 (−62 %), medan butiker för turister ökade från 303 till 997 (+229 %), varav ’banala’ souvenirbutiker +265 %. Redan 1971–1981 föll andelen tjänster för invånare från 46,9 % till 37,7 % (Andreozzi m.fl. 1983).",
+      "confidence": "medium"
+    },
+    {
+      "id": "tur_osm_presentbutiker_per_matbutik",
+      "sdg": [
+        11
+      ],
+      "name_sv": "Presentbutiker per matbutik i modellområdet (OpenStreetMap)",
+      "value": 1.6,
+      "unit": "presentbutiker per matbutik",
+      "year": 2026,
+      "scope": "Modellområdet (1,8 km-kvadraten kring Rialto och San Marco)",
+      "direction": "lower_better",
+      "source": {
+        "title": "OpenStreetMap-uttag för modellområdet (cities/venezia/osm.json, hämtat 11 oktober 2026)",
+        "publisher": "Egen räkning (data © OpenStreetMap contributors, ODbL)",
+        "url": "https://www.openstreetmap.org/?minlon=12.325979&minlat=45.426915&maxlon=12.349021&maxlat=45.443085"
+      },
+      "note_sv": "Inom modellens bbox: 119 presentbutiker och 15 lågprisvaruhus mot 84 matbutiker (19 stormarknader, 18 närbutiker, 18 bagerier, 10 delikatessbutiker, 8 grönsakshandlare, 8 konditorier, 2 fiskaffärer, 1 slaktare) = 1,6. Totalt 785 butiker, varav 151 klädbutiker och 53 smyckesbutiker, samt 205 hotell och 374 restauranger. OSM kartläggs frivilligt och är ofullständigt.",
+      "confidence": "estimate"
+    }
+  ]
+}

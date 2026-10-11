@@ -1,0 +1,23 @@
+{
+  "name": "Venezia",
+  "query": "Venezia",
+  "display_name": "Venezia, Veneto, 30121-30176, Italia",
+  "country_code": "it",
+  "region": "Veneto",
+  "center": [
+    45.435,
+    12.3375
+  ],
+  "size_m": 1800,
+  "bbox": [
+    45.426915,
+    12.325979,
+    45.443085,
+    12.349021
+  ],
+  "osm": {
+    "type": "relation",
+    "id": 44741
+  },
+  "attribution": "Map data © OpenStreetMap contributors (ODbL)"
+}

@@ -1,0 +1,1124 @@
+{
+ "topic": "lagun-natur-mat",
+ "compiled": "2026-10-11",
+ "indicators": [
+  {
+   "id": "lag_laguna_yta",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Venedigs laguns yta",
+   "value": 550,
+   "unit": "km²",
+   "year": 2011,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Cecconi 2011: Il territorio lagunare – le soluzioni (Consorzio Venezia Nuova)",
+    "publisher": "Comune di Venezia (dokument på kommunens webbplats)",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/Ambiente/2011_2_Cecconi.pdf"
+   },
+   "note_sv": "Lagunen sträcker sig ca 60 km längs kusten mellan Adiges och Piaves mynningar och skiljs från havet av lidon med tre inlopp (Lido, Malamocco, Chioggia). Världsarvets förvaltningsplan (2012) anger 539 km² lagunyta inom en lagun på 629 km² inklusive 90 km² invallade fiskodlingar; Natura 2000-området IT3250046 är 551,6 km². Regionen delar lagunen i delbassängerna Lido 100, Treporti 150, Malamocco 170 och Chioggia 130 km².",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_oppet_vatten",
+   "sdg": [
+    14
+   ],
+   "name_sv": "Öppna vattenytor i lagunen (specchi d'acqua)",
+   "value": 368,
+   "unit": "km²",
+   "year": 2012,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Venezia e la sua Laguna, Patrimonio Mondiale UNESCO – Piano di Gestione 2012–2018",
+    "publisher": "Comune di Venezia (arkiverad hos MASE, va.mite.gov.it)",
+    "url": "https://va.mite.gov.it/File/Documento/122611"
+   },
+   "note_sv": "Av 539 km² lagunyta är 368 km² permanent vatten, 142 km² ytor som ligger över vattnet eller bara översvämmas vid högvatten (barene och velme) och 29 km² öar i den öppna lagunen; därtill kommer 90 km² invallade ytor, varav 83 km² fiskodlingar. Öppet vatten blir alltså 68 % av lagunytan (368/539, egen beräkning).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_medeldjup",
+   "sdg": [
+    14
+   ],
+   "name_sv": "Lagunens medeldjup",
+   "value": 1.2,
+   "unit": "m",
+   "year": 2011,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Cecconi 2011: Il territorio lagunare – le soluzioni (Consorzio Venezia Nuova)",
+    "publisher": "Comune di Venezia (dokument på kommunens webbplats)",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/Ambiente/2011_2_Cecconi.pdf"
+   },
+   "note_sv": "Uppgift från Consorzio Venezia Nuova (Cecconi 2011). Kommunens presentation 2019 anger 1,5 m och största djup 46 m i Malamocco-inloppet. Lagunen blir djupare: det vanligaste djupet sjönk från −0,62 till −0,88 m 1927–2002 (lag_modaldjup_2002).",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_modaldjup_2002",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Vanligaste vattendjupet (modaldjup) i lagunen 2002",
+   "value": -0.88,
+   "unit": "m",
+   "year": 2002,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Sediment budget in the Lagoon of Venice, Italy (Sarretta m.fl., Continental Shelf Research 30, 2010)",
+    "publisher": "Europeiska kommissionen, JRC Publications Repository",
+    "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC53192"
+   },
+   "note_sv": "Jämförelse av djupkartor från 1927, 1970 och 2002: modaldjupet sjönk från −0,62 m till −0,88 m och de grunda bottnarna under lågvattennivån (bassifondi) växte från 88 till 206 km² när saltängar och slikbankar eroderades. Orsaker enligt studien: sättningar och kanalmuddring 1927–1970, mekaniskt musselfiske 1970–2002.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_barene_1912",
+   "sdg": [
+    14,
+    15,
+    13
+   ],
+   "name_sv": "Saltängar (barene) i lagunen 1912",
+   "value": 158,
+   "unit": "km²",
+   "year": 1912,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "The Lagoon of Venice – an example of resilience… but for how long? (C. Ferrari, 2019)",
+    "publisher": "Comune di Venezia, avdelningen för strategiska projekt och miljö",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Ambiente/CDC_laguna%20resiliente_Ferrari.pdf"
+   },
+   "note_sv": "Serie enligt L. D'Alpaos (2010) i kommunens presentation: 158 km² 1912, 104 km² 1930, 47 km² 2003 och ca 40 km² 2017 (uppskattning). Världsarvsplanen 2012 anger att barene täckte 20 % av lagunbassängen i början av 1900-talet och drygt 8 % i dag. Andra kartläggningar ger lägre tal för början av seklet (Sarretta m.fl.: 68 km² 1927), så definitionerna skiljer sig.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_barene_idag",
+   "sdg": [
+    14,
+    15,
+    13
+   ],
+   "name_sv": "Saltängar (barene) i lagunen i dag",
+   "value": 40,
+   "unit": "km²",
+   "year": 2017,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "The Lagoon of Venice – an example of resilience… but for how long? (C. Ferrari, 2019)",
+    "publisher": "Comune di Venezia, avdelningen för strategiska projekt och miljö",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Ambiente/CDC_laguna%20resiliente_Ferrari.pdf"
+   },
+   "note_sv": "Uppskattning för 2017 i kommunens presentation (D'Alpaos 2010); samma serie ger 47 km² 2003. Andra mått: ca 35 km² (Cecconi 2011) och 32 km² 2002 (Sarretta m.fl. 2010). AP (maj 2026) anger ca 7 % av lagunen, varav ungefär hälften återuppbyggd – siffran omfattar alltså troligen även de konstgjorda saltängarna.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_barene_2002_batymetri",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Saltängar 2002 enligt djupkartorna",
+   "value": 32,
+   "unit": "km²",
+   "year": 2002,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Sediment budget in the Lagoon of Venice, Italy (Sarretta m.fl., Continental Shelf Research 30, 2010)",
+    "publisher": "Europeiska kommissionen, JRC Publications Repository",
+    "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC53192"
+   },
+   "note_sv": "Ytan minskade med över hälften, från 68 km² 1927 till 32 km² 2002, i Sarretta m.fl.:s jämförelse av batymetrier från 1927, 1970 och 2002. Talet ligger lägre än D'Alpaos-serien (lag_barene_idag); källorna använder olika metoder och avgränsningar.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_barene_forlust_per_ar",
+   "sdg": [
+    14,
+    15,
+    13
+   ],
+   "name_sv": "Förlust av saltängar per år",
+   "value": 0.5,
+   "unit": "km² per år",
+   "year": 2017,
+   "scope": "Laguna di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "The Lagoon of Venice – an example of resilience… but for how long? (C. Ferrari, 2019)",
+    "publisher": "Egen beräkning (ursprungskälla: Comune di Venezia / L. D'Alpaos 2010; Sarretta m.fl. 2010)",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Ambiente/CDC_laguna%20resiliente_Ferrari.pdf"
+   },
+   "note_sv": "(47 − 40) km² / 14 år = 0,5 km² (50 ha) per år 2003–2017. Över hela perioden 1912–2017: (158 − 40) / 105 = 1,1 km² per år; enligt Sarretta m.fl. (68 − 32) / 75 = 0,48 km² per år 1927–2002. Återuppbyggnaden med muddrat sediment har ungefär samma takt (lag_aterskapade_barene).",
+   "confidence": "estimate"
+  },
+  {
+   "id": "lag_sediment_nettoforlust",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Lagunens nettoförlust av sediment",
+   "value": 0.8,
+   "unit": "miljoner m³ per år",
+   "year": 2002,
+   "scope": "Laguna di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "Sediment budget in the Lagoon of Venice, Italy (Sarretta m.fl., Continental Shelf Research 30, 2010)",
+    "publisher": "Europeiska kommissionen, JRC Publications Repository",
+    "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC53192"
+   },
+   "note_sv": "Förlusten ökade från 0,3 miljoner m³ per år 1927–1970 till 0,8 miljoner m³ per år 1970–2002; totalt försvann ca 110 miljoner m³ 1927–2002, varav 73 miljoner före 1970. Kommunens presentation 2019 skriver '800 mc/year' (troligen 800 000 m³), SedNet:s fallbeskrivning ca 300 000 m³ per år.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_sediment_till_havet",
+   "sdg": [
+    14
+   ],
+   "name_sv": "Sediment som förs ut i havet genom inloppen",
+   "value": 0.5,
+   "unit": "miljoner m³ per år",
+   "year": 2002,
+   "scope": "Laguna di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "Sediment budget in the Lagoon of Venice, Italy (Sarretta m.fl., Continental Shelf Research 30, 2010)",
+    "publisher": "Europeiska kommissionen, JRC Publications Repository",
+    "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC53192"
+   },
+   "note_sv": "Nettoexport till havet genom de tre inloppen: i snitt 0,5 miljoner m³ per år och 39 miljoner m³ totalt 1927–2002. Enligt SedNet:s fallbeskrivning slammar kanalerna dessutom igen med ca 400 000 m³ per år av sediment som eroderats från grunden och saltängarna.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_flodsediment",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Sedimenttillförsel från tillrinningsområdet",
+   "value": 30000,
+   "unit": "m³ per år",
+   "year": 2011,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Cecconi 2011: Il territorio lagunare – le soluzioni (Consorzio Venezia Nuova)",
+    "publisher": "Comune di Venezia (dokument på kommunens webbplats)",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/Ambiente/2011_2_Cecconi.pdf"
+   },
+   "note_sv": "Tillrinningsområdet (1 880 km²) för ca 2,8 miljoner m³ vatten per dag till lagunen genom 27 utlopp men bara ca 30 000 m³ sediment per år; ca 400 miljoner m³ vatten byts med havet varje dag. Jämfört med nettoförlusten på 0,5–0,8 miljoner m³ per år täcker floderna bara 4–6 % (egen jämförelse).",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_strandretratt_fartygsvagor",
+   "sdg": [
+    14
+   ],
+   "name_sv": "Strandreträtt längs Malamocco–Marghera-kanalen orsakad av fartygssvall",
+   "value": 3.5,
+   "unit": "m per år",
+   "year": 2015,
+   "scope": "Laguna di Venezia (Canale Malamocco–Marghera)",
+   "direction": "lower_better",
+   "source": {
+    "title": "Fast shoreline erosion induced by ship wakes in a coastal lagoon (Zaggia m.fl., PLOS ONE 12(10): e0187210, 2017)",
+    "publisher": "PLOS ONE",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0187210"
+   },
+   "note_sv": "GIS-analys av flygbilder visar en genomsnittlig reträtt på 3–4 m per år 1974–2015 (3,5 är mitten av intervallet); 1,19 miljoner m³ sediment försvann längs kanalen 1968–2015. Världsarvsplanen 2012 pekar ut motorbåtarnas svall (moto ondoso) som en huvudorsak till skador på kajmurar och husgrunder i staden.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_aterskapade_barene",
+   "sdg": [
+    14,
+    15,
+    13
+   ],
+   "name_sv": "Saltängar och slikbankar återskapade med muddrat sediment",
+   "value": 1481,
+   "unit": "hektar",
+   "year": 2011,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Venezia e la sua Laguna, Patrimonio Mondiale UNESCO – Piano di Gestione 2012–2018",
+    "publisher": "Comune di Venezia (arkiverad hos MASE, va.mite.gov.it)",
+    "url": "https://va.mite.gov.it/File/Documento/122611"
+   },
+   "note_sv": "Magistrato alle Acque (via Consorzio Venezia Nuova) hade till december 2011 byggt 1 481 ha barene och velme med 22,4 miljoner m³ sediment från kanalunderhållet. Cecconi (SedNet 2011) anger 19,5 miljoner m³ till 123 enheter på 25 år, 11 km² saltäng och 2 km² slikbank – ca 50–60 ha per år (egen beräkning), ungefär lika mycket som förlusten. Autorità per la Laguna anger i dag 16 km² återuppbyggda och naturaliserade saltängar, 39 km skyddade saltängskanter och 12 återställda småöar; världsarvsplanen noterar att lagunen förlorat över 15 000 ha sedan 1850 genom invallning, deponier och fiskodlingar.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_skyddade_barene_life_vimine",
+   "sdg": [
+    14,
+    15
+   ],
+   "name_sv": "Naturliga saltängar skyddade med faskiner (LIFE VIMINE)",
+   "value": 95,
+   "unit": "hektar",
+   "year": 2017,
+   "scope": "Laguna nord (Burano, Mazzorbo, Torcello)",
+   "direction": "higher_better",
+   "source": {
+    "title": "The Lagoon of Venice – an example of resilience… but for how long? (C. Ferrari, 2019)",
+    "publisher": "Comune di Venezia, avdelningen för strategiska projekt och miljö",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/documenti/Ambiente/CDC_laguna%20resiliente_Ferrari.pdf"
+   },
+   "note_sv": "EU-projektet 2013–2017 skyddade saltängarnas kanter med faskiner av lokalt trä; 60 m³ skräp togs bort och 1 480 arbetsdagar gick till lokalbor. Kommunen konstaterar att bara 2,5 % av saltängarna skyddats och att arbetet upphörde när EU-pengarna tog slut 2017; ett nytt avtal (Provveditorato, regionen, kommunen, Consorzio Acque Risorgive, Padovas universitet) skulle starta våren 2025 enligt Il Nordest (december 2024).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_sjogras_seresto",
+   "sdg": [
+    14
+   ],
+   "name_sv": "Sjögräsängar återetablerade i norra lagunen (LIFE SeResto)",
+   "value": 10,
+   "unit": "km²",
+   "year": 2018,
+   "scope": "Laguna superiore di Venezia (ZSC IT3250031)",
+   "direction": "higher_better",
+   "source": {
+    "title": "Il trapianto di fanerogame acquatiche come misura per il ripristino delle lagune costiere. Risultati del progetto LIFE SeResto (Quaderni Ricerca Marina 12/2018)",
+    "publisher": "ISPRA",
+    "url": "https://www.isprambiente.gov.it/files2019/pubblicazioni/quaderni/Quad_RM_12_18_Fanerogame_acquatiche_SERESTO.pdf"
+   },
+   "note_sv": "Ålgräs (Zostera marina), dvärgbandtång (Zostera noltei) och Ruppia cirrhosa planterades 2014–2017 på 35 platser, ca 300 torvor och minst 400 rhizom per plats och år, från givarytor på under 100 m². I snitt slog ca 40 % av rhizomen rot, och efter fyra år täckte ängarna ca 10 km², över 25 % av projektområdet, ofta i 20–50 m breda band längs saltängskanter och kanaler.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_zostera_noltei",
+   "sdg": [
+    14
+   ],
+   "name_sv": "Dvärgbandtång (Zostera noltei) i norra lagunen 2002",
+   "value": 100,
+   "unit": "hektar",
+   "year": 2002,
+   "scope": "Laguna nord",
+   "direction": "higher_better",
+   "source": {
+    "title": "Il trapianto di fanerogame acquatiche come misura per il ripristino delle lagune costiere. Risultati del progetto LIFE SeResto (Quaderni Ricerca Marina 12/2018)",
+    "publisher": "ISPRA",
+    "url": "https://www.isprambiente.gov.it/files2019/pubblicazioni/quaderni/Quad_RM_12_18_Fanerogame_acquatiche_SERESTO.pdf"
+   },
+   "note_sv": "684 ha 1990, 100 ha 2002 (−85 %, Rismondo m.fl. 2003) och nästan helt försvunnen 2011–2014, enligt ISPRA:s SeResto-rapport. Naturtypen 1150* kustlagun täcker över 20 000 ha av Venedigs lagun.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_wfd_ekologisk_status",
+   "sdg": [
+    6,
+    14
+   ],
+   "name_sv": "Vattenförekomster i lagunen med god ekologisk status",
+   "value": 0,
+   "unit": "av 11 klassade",
+   "year": 2025,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Classificazione dello stato ecologico e chimico dei corpi idrici della Laguna di Venezia, ciclo 2020–2025 (Allegato A al DDR n. 16396 del 27/07/2026)",
+    "publisher": "Regione del Veneto / ARPAV",
+    "url": "https://burv-be.regione.veneto.it/api/PublicAtti/588372/DownloadAttachmentAtto/ALLEGATO%20A.PDF"
+   },
+   "note_sv": "Ramvattendirektivets klassning för 2020–2025 (regionens beslut 27 juli 2026): 8 vattenförekomster måttliga (sufficiente) och 3 otillfredsställande (scarso: Palude Maggiore, Chioggia, Marghera), ingen god. Bottenfauna och makrofyter fäller avgörandet; de två fiskodlingsområdena kunde inte klassas och kanalerna i centro storico mäts bara kemiskt.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_wfd_kemisk_status",
+   "sdg": [
+    6,
+    14,
+    3
+   ],
+   "name_sv": "Vattenförekomster i lagunen med god kemisk status",
+   "value": 0,
+   "unit": "av 14",
+   "year": 2025,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Classificazione dello stato ecologico e chimico dei corpi idrici della Laguna di Venezia, ciclo 2020–2025 (Allegato A al DDR n. 16396 del 27/07/2026)",
+    "publisher": "Regione del Veneto / ARPAV",
+    "url": "https://burv-be.regione.veneto.it/api/PublicAtti/588372/DownloadAttachmentAtto/ALLEGATO%20A.PDF"
+   },
+   "note_sv": "Alla 14, även kanalerna i centro storico, är 'non buono', främst för att PFOS i vattnet överskrider gränsvärdet i D.Lgs. 172/2015, i vissa områden även PAH (bens(a)pyren m.fl.). Förra klassningen (2014–2019) fälldes av kvicksilver och PBDE i fisk och musslor, som inte mättes denna gång; den kemiska övervakningen låg nere efter 2019 och kom igång igen 2025.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_natura2000_zps",
+   "sdg": [
+    15,
+    14
+   ],
+   "name_sv": "Fågelskyddsområdet (ZPS) Laguna di Venezia, Natura 2000",
+   "value": 55158,
+   "unit": "hektar",
+   "year": 2024,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Natura 2000 Sites, dataset version 2024 (IT3250046, IT3250030, IT3250031)",
+    "publisher": "European Environment Agency (EEA)",
+    "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/2/query?where=SITECODE+IN+(%27IT3250046%27,%27IT3250030%27,%27IT3250031%27)&outFields=SITECODE,SITENAME,SITETYPE,Area_ha&returnGeometry=false&f=json"
+   },
+   "note_sv": "Område IT3250046 enligt EEA:s Natura 2000-dataset (version 2024, GIS-yta). Det omfattar i stort sett hela lagunen; enligt ISTAT är 62 % av kommunens yta skyddade naturområden (lag_skyddad_natur_andel_kommun).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_natura2000_zsc",
+   "sdg": [
+    15,
+    14
+   ],
+   "name_sv": "Habitatområden (ZSC) i lagunen, Natura 2000",
+   "value": 46708,
+   "unit": "hektar",
+   "year": 2024,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Natura 2000 Sites, dataset version 2024 (IT3250046, IT3250030, IT3250031)",
+    "publisher": "Egen beräkning (ursprungskälla: EEA, Natura 2000 2024)",
+    "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/2/query?where=SITECODE+IN+(%27IT3250046%27,%27IT3250030%27,%27IT3250031%27)&outFields=SITECODE,SITENAME,SITETYPE,Area_ha&returnGeometry=false&f=json"
+   },
+   "note_sv": "IT3250030 Laguna medio-inferiore di Venezia 26 364 ha + IT3250031 Laguna superiore di Venezia 20 344 ha = 46 708 ha (egen summering). Båda ligger inom fågelskyddsområdet IT3250046.",
+   "confidence": "estimate"
+  },
+  {
+   "id": "lag_skyddad_natur_andel_kommun",
+   "sdg": [
+    15
+   ],
+   "name_sv": "Skyddade naturområden som andel av Venedigs kommun",
+   "value": 62.4,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Ambiente urbano – Anno 2024, tavole Verde urbano (VERDE_URBANO_2024.xlsx i TAVOLE_AMBURB_2024.zip)",
+    "publisher": "ISTAT, Dati ambientali nelle città (september 2026)",
+    "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+   },
+   "note_sv": "261,2 km² skyddade naturområden – i praktiken lagunens Natura 2000-områden – av kommunens yta (tavola 10.1). Med den urbana grönskan blir det 65,3 % (tavola 18.1). Snittet för Italiens provinshuvudstäder är 16,8 %.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_overvintrande_vattenfaglar",
+   "sdg": [
+    15
+   ],
+   "name_sv": "Övervintrande vattenfåglar i lagunen (medel 2003–2007)",
+   "value": 195672,
+   "unit": "fåglar",
+   "year": 2007,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Gli uccelli acquatici svernanti nella laguna di Venezia nel periodo 1993–2007 (Scarton & Bon, Avocetta 33(1), 2009)",
+    "publisher": "Avocetta – Journal of Ornithology",
+    "url": "https://riviste.unimi.it/index.php/avocetta/article/view/32455"
+   },
+   "note_sv": "Januariräkningarna steg från 74 462 fåglar 1993 till 201 717 år 2007 (topp 214 640 år 2005), vilket gör lagunen till Italiens viktigaste övervintringsplats. Änder utgör 53 %, måsar 17 %, vadare 14 % och sothöns 13 %; ca 80 % räknades i fiskodlingarna (9 500 ha), där jakt bedrivs. En nyare publicerad totalsiffra för lagunen hittades inte.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_flamingor",
+   "sdg": [
+    15
+   ],
+   "name_sv": "Övervintrande flamingor i lagunen",
+   "value": 24000,
+   "unit": "fåglar",
+   "year": 2025,
+   "scope": "Laguna di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Recovering wetlands fuel growth of flamingo population in Venice (AP, 31 maj 2026)",
+    "publisher": "PBS NewsHour / Associated Press (nyhetskälla)",
+    "url": "https://pbs.org/newshour/world/recovering-wetlands-fuel-growth-of-flamingo-population-in-venice"
+   },
+   "note_sv": "Rekordtoppen 'nästan 24 000' vintern 2025 mot ca 18 000 året innan, enligt ornitologen Alessandro Sartori i AP:s reportage (maj 2026). Häckningsförsök 2008 och 2013 misslyckades. Nyhetskälla; den primära räkningen hittades inte.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_mose_stangd_tid_2050",
+   "sdg": [
+    13,
+    14
+   ],
+   "name_sv": "Andel av året med MOSE stängd år 2050 (RCP8.5)",
+   "value": 11,
+   "unit": "% av året",
+   "year": 2050,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Sea level and temperature extremes in a regulated Lagoon of Venice (Ferrarin m.fl., Frontiers in Climate 5, 2024)",
+    "publisher": "Frontiers in Climate (CNR-ISMAR)",
+    "url": "https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2023.1330388/full"
+   },
+   "note_sv": "Modellerad stängningstid: 357 timmar (3 %) i kontrollåret 2020, 917 h (7 %) med dagens trend, 1 008 h (8 %) med RCP2.6, 1 097 h (9 %) med RCP4.5 och 1 324 h (11 %) med RCP8.5 år 2050. Vid RCP8.5 minskar medelflödet genom inloppen med upp till 40 % i december och stängningarna börjar påverka även vår och sommar. I verkligheten höjdes barriären för hundrade gången 12 mars 2025, fyra och ett halvt år efter starten i oktober 2020 (infrastrukturministeriet).",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_mose_marsksediment",
+   "sdg": [
+    13,
+    14,
+    15
+   ],
+   "name_sv": "Minskad sedimentation på saltängarna med MOSE i drift",
+   "value": 25,
+   "unit": "% minskning per år (minst)",
+   "year": 2021,
+   "scope": "Laguna di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "Salt-marsh sedimentation affected by storm surges and anthropogenic impacts (Tognin m.fl., EGU22-303); jfr Nature Geoscience 14:906–911 (2021)",
+    "publisher": "Copernicus / Università di Padova",
+    "url": "https://meetingorganizer.copernicus.org/EGU22/EGU22-303.html"
+   },
+   "note_sv": "Mätningar oktober 2018–december 2021: över 70 % av saltängarnas årliga sedimentation sker under stormfloder, när vattnet står högt och bär mycket slam. Om översvämningarna regleras bort minskar den årliga sedimentationen med mer än 25 % (Tognin m.fl., Nature Geoscience 14:906–911, 2021). Saltängarnas naturliga tillväxt anges till ca 5 mm per år (Magistrato alle Acque 2002, i världsarvsplanen).",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_vongole_produktion",
+   "sdg": [
+    14,
+    2,
+    8
+   ],
+   "name_sv": "Odlade venusmusslor (Manila clam) i Venedigs lagun",
+   "value": 2159,
+   "unit": "ton",
+   "year": 2019,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Relazione analisi socio-economica della pesca (Allegato H – R08, rev01), data för 2019",
+    "publisher": "Regione del Veneto / Veneto Agricoltura – Osservatorio Socio Economico della Pesca e dell'Acquacoltura",
+    "url": "https://www.regione.veneto.it/documents/6757143/12209810/Allegato_H_R08_Relazione+analisi+socio+-+economica+della+pesca_rev01.pdf/54c847d4-895c-42a5-8219-184b60b7da06"
+   },
+   "note_sv": "Skörd i de underkoncessioner som San Servolo srl (efterträdare till GRAL) delar ut, 2019; därtill uppskattningsvis 661 ton från fiske på fria bankar. År 2015 var produktionen 3 613 ton (Osservatorio, rapport 2016). Arten Ruditapes philippinarum släpptes ut i södra lagunen 1983 (200 000 ungdjur).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_vongole_topp_1999",
+   "sdg": [
+    14,
+    2
+   ],
+   "name_sv": "Musselskörd i lagunen vid toppen 1998–1999",
+   "value": 40000,
+   "unit": "ton",
+   "year": 1999,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Dalla pesca all'allevamento della vongola filippina in Laguna di Venezia: il preingrasso (Quaderni Ricerca Marina 2/2011)",
+    "publisher": "ISPRA",
+    "url": "https://www.isprambiente.gov.it/contentfiles/00010200/10207-quad-ric-marina2-2011.pdf"
+   },
+   "note_sv": "Från uppskattningsvis 1 300 ton 1990 till ca 40 000 ton 1998–1999 (Boatto & Pellizzato 2005); 2007 stod lagunen för hälften av Italiens produktion, och med det olagliga fisket uppskattades skörden till ca 30 000 ton per år. Det mekaniska fisket rev upp bottnarna och anges som huvudorsak till erosionen 1970–2002 (Sarretta m.fl. 2010).",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_vongole_koncessioner_ha",
+   "sdg": [
+    14,
+    2
+   ],
+   "name_sv": "Lagunyta utarrenderad för musselodling",
+   "value": 1404,
+   "unit": "hektar",
+   "year": 2019,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Relazione analisi socio-economica della pesca (Allegato H – R08, rev01), data för 2019",
+    "publisher": "Regione del Veneto / Veneto Agricoltura – Osservatorio Socio Economico della Pesca e dell'Acquacoltura",
+    "url": "https://www.regione.veneto.it/documents/6757143/12209810/Allegato_H_R08_Relazione+analisi+socio+-+economica+della+pesca_rev01.pdf/54c847d4-895c-42a5-8219-184b60b7da06"
+   },
+   "note_sv": "104 underkoncessioner i norra, mellersta och södra lagunen, ca 2,5 % av lagunytan (egen beräkning: 14,04 / 550 km²), som ger arbete åt 547 delägare. År 2015 fanns 67 kooperativ med 457 anställda, 50 vibrerande skördebåtar och 255 småbåtar (Osservatorio 2016).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_vongole_varde",
+   "sdg": [
+    14,
+    8
+   ],
+   "name_sv": "Förstahandsvärde av odlade musslor i lagunen",
+   "value": 14.0,
+   "unit": "miljoner euro",
+   "year": 2019,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Relazione analisi socio-economica della pesca (Allegato H – R08, rev01), data för 2019",
+    "publisher": "Egen beräkning (ursprungskälla: Regione del Veneto / Veneto Agricoltura – Osservatorio Socio Economico della Pesca e dell'Acquacoltura)",
+    "url": "https://www.regione.veneto.it/documents/6757143/12209810/Allegato_H_R08_Relazione+analisi+socio+-+economica+della+pesca_rev01.pdf/54c847d4-895c-42a5-8219-184b60b7da06"
+   },
+   "note_sv": "2 159 ton × 6,50 €/kg (genomsnittligt producentpris på Venedigs fiskmarknad 2019) ≈ 14,0 miljoner euro. Veneto Agricoltura beräknar snittinkomsten till 25 655 euro per odlare 2019.",
+   "confidence": "estimate"
+  },
+  {
+   "id": "lag_valli_da_pesca",
+   "sdg": [
+    14,
+    15,
+    2
+   ],
+   "name_sv": "Fiskodlingar (valli da pesca) i Venedigs lagun",
+   "value": 9284,
+   "unit": "hektar",
+   "year": 2014,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Report sulla pesca e l'acquacoltura nel distretto nord adriatico – 2016",
+    "publisher": "Egen beräkning (ursprungskälla: Federvalli Veneto via Osservatorio Socio Economico della Pesca, 2016)",
+    "url": "https://agricoltura.regione.emilia-romagna.it/pesca/pubblicazioni/osservatorio/report-2016/@@download/file/Report%20sulla%20pesca%20e%20l'acquacoltura%20nel%20distretto%20nord%20adriatico%20-%202016.pdf"
+   },
+   "note_sv": "28 invallade fiskodlingar: 18 i norra lagunen (5 781 ha, varav 3 906 ha vatten) och 10 i södra (3 503 ha, 2 860 ha vatten) enligt Federvalli Veneto 2014 (egen summering). Hela Veneto har 58 valli på 20 149 ha och avkastningen anges till 100–150 kg fisk per ha (ål, havsabborre, guldsparid, multe). Världsarvsplanen anger 83 km² fiskodlingar.",
+   "confidence": "estimate"
+  },
+  {
+   "id": "lag_fiskeforetag_provins",
+   "sdg": [
+    14,
+    8
+   ],
+   "name_sv": "Företag i havs- och lagunfiske, Venedigs provins",
+   "value": 594,
+   "unit": "företag",
+   "year": 2019,
+   "scope": "Città metropolitana di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Relazione analisi socio-economica della pesca (Allegato H – R08, rev01), data för 2019",
+    "publisher": "Regione del Veneto / Veneto Agricoltura – Osservatorio Socio Economico della Pesca e dell'Acquacoltura",
+    "url": "https://www.regione.veneto.it/documents/6757143/12209810/Allegato_H_R08_Relazione+analisi+socio+-+economica+della+pesca_rev01.pdf/54c847d4-895c-42a5-8219-184b60b7da06"
+   },
+   "note_sv": "594 företag med 1 271 sysselsatta i havs- och lagunfiske 2019 (Infocamere); hela fiskets primärsektor har 829 företag och 1 572 sysselsatta. I lagunen fanns 98 tillstånd för fasta redskap (9 kooperativ, 87,8 km nät), 15 licenser för yngelfiske och 20 musselodlare. Antalet båtar hittades inte.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_grossistmarknad_fisk",
+   "sdg": [
+    14,
+    12
+   ],
+   "name_sv": "Fisk såld på grossistmarknaden i Venedig (Tronchetto)",
+   "value": 7000,
+   "unit": "ton",
+   "year": 2022,
+   "scope": "Comune di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Mercato all'ingrosso di prodotti ittici di Venezia – nota informativa annualità 2022",
+    "publisher": "Veritas spa",
+    "url": "https://www.gruppoveritas.it/sites/default/files/documenti/sportello-fai-da-te/relazione_complessiva_anno_2022.pdf"
+   },
+   "note_sv": "Knappt 7 000 ton 2022 (−8 % mot 2021) för drygt 58 miljoner euro; volymen har minskat med ca 2,5 % per år sedan 2000. 24 säljföretag och ca 215 köpare (60 % fiskhandlare, 25 % gatuförsäljare, 10 % restauranger), med fisk från Adriatiska havet och långväga. Kommunen planerar en ny marknadsbyggnad på Isola Nova del Tronchetto.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_rialto_fiskstand",
+   "sdg": [
+    11,
+    12,
+    8
+   ],
+   "name_sv": "Fiskstånd på Rialtomarknaden (Pescheria)",
+   "value": 7,
+   "unit": "stånd",
+   "year": 2024,
+   "scope": "Venezia centro storico",
+   "direction": "higher_better",
+   "source": {
+    "title": "Mozione n. 555 – Mercato di Rialto e Area Realtina (24 januari 2024)",
+    "publisher": "Comune di Venezia, Consiglio comunale",
+    "url": "https://consiglio2020.comune.venezia.it/pdf/atti_indirizzo/1/502_mozione_555.pdf"
+   },
+   "note_sv": "Enligt en motion i kommunfullmäktige (januari 2024): ett trettiotal fiskstånd på 1980-talet, sju i dag; frukt- och grönsaksstånden har gått från 90 till under 13 (studie vid IUAV) och slaktarna från 27 till 2. Motionen beskriver Pescherians byggnad från 1907 (Domenico Rupolo) som tom sedan 2008. Politiskt dokument; siffrorna är inte officiell statistik.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_santerasmo_kronartskocka",
+   "sdg": [
+    2,
+    12,
+    15
+   ],
+   "name_sv": "Odlare i Slow Food-presidiet Carciofo violetto di Sant'Erasmo",
+   "value": 14,
+   "unit": "odlare",
+   "year": 2026,
+   "scope": "Sant'Erasmo, Vignole, Mazzorbo, Lio Piccolo",
+   "direction": "higher_better",
+   "source": {
+    "title": "Carciofo violetto di Sant'Erasmo – Presidio Slow Food",
+    "publisher": "Fondazione Slow Food per la Biodiversità",
+    "url": "https://www.fondazioneslowfood.com/it/presidi-slow-food/carciofo-violetto-di-santerasmo/"
+   },
+   "note_sv": "Fjorton namngivna producenter av den violetta kronärtskockan på Sant'Erasmo och på jordar på Vignole, Mazzorbo och Lio Piccolo. Ön är 'hälften så stor som staden' och har sedan 1500-talet varit 'en enda stor köksträdgård'; säsongen börjar i slutet av april med castraure, plantans första toppskott. Areal och skörd anges inte.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_venissa_vingard",
+   "sdg": [
+    2,
+    8,
+    15
+   ],
+   "name_sv": "Vingården Venissa på Mazzorbo",
+   "value": 1,
+   "unit": "hektar",
+   "year": 2014,
+   "scope": "Mazzorbo",
+   "direction": "context",
+   "source": {
+    "title": "Near-lost Venetian lagoon vines ready for fifth harvest (6 augusti 2014)",
+    "publisher": "Drinks International (fackpress)",
+    "url": "https://drinksint.com/news/fullstory.php/aid/4654/.html"
+   },
+   "note_sv": "En inmurad vingård (vigna murata) på under 1 ha med den lokala Dorona-druvan: ca 4 000 stockar, ca 4 000 flaskor per år och första årgång 2010 (Drinks International 2014). Initiativtagare är Gianluca Bisol; stockarna kom bland annat från Sant'Erasmo (Wine Economist 2014). Fackpress, inga officiella siffror.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_gronyta_per_invanare",
+   "sdg": [
+    11,
+    15
+   ],
+   "name_sv": "Urban grönyta per invånare i Venedigs kommun",
+   "value": 48.6,
+   "unit": "m² per invånare",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Ambiente urbano – Anno 2024, tavole Verde urbano (VERDE_URBANO_2024.xlsx i TAVOLE_AMBURB_2024.zip)",
+    "publisher": "ISTAT, Dati ambientali nelle città (september 2026)",
+    "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+   },
+   "note_sv": "Offentligt förvaltad grönska, 12,15 km², delad med medelbefolkningen (tavola 12.1); 42,8 m² år 2011. Snittet för Italiens provinshuvudstäder är 33,7 m² och för nordöstra Italien 64,3 m² (2024). 41 % av grönskan är skyddad historisk grönska och 20 % stadsskog; talet gäller hela kommunen inklusive Mestre.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_tillganglig_gronyta",
+   "sdg": [
+    11,
+    15
+   ],
+   "name_sv": "Tillgänglig grönyta (verde fruibile) per invånare",
+   "value": 33.8,
+   "unit": "m² per invånare",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Ambiente urbano – Anno 2024, tavole Verde urbano (VERDE_URBANO_2024.xlsx i TAVOLE_AMBURB_2024.zip)",
+    "publisher": "ISTAT, Dati ambientali nelle città (september 2026)",
+    "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+   },
+   "note_sv": "Parker, historisk grönska, utrustade ytor, skolgårdar, idrottsytor och kyrkogårdar, 8,45 km² (tavola 14.1–14.2). Snittet för provinshuvudstäderna är 15,9 m². ISTAT:s rapport för 2023 lyfte fram Venedig som bäst bland storstäderna (då 35,5 m²).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_gronyta_andel",
+   "sdg": [
+    11,
+    15
+   ],
+   "name_sv": "Urban grönyta som andel av kommunens yta",
+   "value": 2.9,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Ambiente urbano – Anno 2024, tavole Verde urbano (VERDE_URBANO_2024.xlsx i TAVOLE_AMBURB_2024.zip)",
+    "publisher": "ISTAT, Dati ambientali nelle città (september 2026)",
+    "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+   },
+   "note_sv": "12,15 km² av kommunens yta, som till stor del är lagunvatten (tavola 11.1); snittet för provinshuvudstäderna är 3,0 %. Separata siffror för centro storico finns inte. I OpenStreetMap har modellens kvadrat (1,8 × 1,8 km) 3,8 ha parker och 1,4 ha trädgårdar, bl.a. Giardini Reali 0,46 ha (egen beräkning; privata trädgårdar och klostergårdar är ofullständigt karterade).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_trad_per_100_invanare",
+   "sdg": [
+    11,
+    15,
+    13
+   ],
+   "name_sv": "Inventerade träd per 100 invånare",
+   "value": 28.2,
+   "unit": "träd per 100 invånare",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Ambiente urbano – Anno 2024, tavole Verde urbano (VERDE_URBANO_2024.xlsx i TAVOLE_AMBURB_2024.zip)",
+    "publisher": "ISTAT, Dati ambientali nelle città (september 2026)",
+    "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+   },
+   "note_sv": "70 546 träd i kommunens inventering av offentlig grönska (delar av kommunen, uppdaterad 2024; tavola 2.1). Snittet för provinshuvudstäderna är 24,4 och för nordöstra Italien 62,1. 506 träd fälldes 2024 och 428 år 2023 (tavola 5.1); i modellkvadraten finns 470 träd i OpenStreetMap (egen räkning, ofullständig).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_hardgjord_mark_andel",
+   "sdg": [
+    11,
+    15
+   ],
+   "name_sv": "Hårdgjord och bebyggd mark (suolo consumato)",
+   "value": 17.19,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "Consumo di suolo – estratto dati 2025, anni 2006–2024 (Munafò red., Report SNPA 46/2025)",
+    "publisher": "ISPRA / SNPA",
+    "url": "https://www.isprambiente.gov.it/it/attivita/suolo-e-territorio/suolo/il-consumo-di-suolo/consumo_di_suolo_estratto_dati_2025_anni_2006_2024.xlsx"
+   },
+   "note_sv": "7 164 ha artificiell yta av kommunens totala yta, som till stor del är lagun. Veneto 11,86 %, Italien 7,17 % och Venedigs provins 14,10 % (2024). Centro storico redovisas inte separat.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_hardgjord_okning",
+   "sdg": [
+    11,
+    15
+   ],
+   "name_sv": "Nettoökning av hårdgjord mark 2023–2024",
+   "value": 64.21,
+   "unit": "hektar",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "Consumo di suolo – estratto dati 2025, anni 2006–2024 (Munafò red., Report SNPA 46/2025)",
+    "publisher": "ISPRA / SNPA",
+    "url": "https://www.isprambiente.gov.it/it/attivita/suolo-e-territorio/suolo/il-consumo-di-suolo/consumo_di_suolo_estratto_dati_2025_anni_2006_2024.xlsx"
+   },
+   "note_sv": "Brutto 65,18 ha ny exploatering, 0,97 ha återställt. Summan av ISPRA:s nettoökningar 2006–2024 blir ca 486 ha (egen summering av elva perioder).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_avfall_per_invanare",
+   "sdg": [
+    11,
+    12
+   ],
+   "name_sv": "Kommunalt avfall per invånare",
+   "value": 694.76,
+   "unit": "kg per invånare och år",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "Catasto Rifiuti – produzione e raccolta differenziata, Comune di Venezia 2010–2024",
+    "publisher": "ISPRA",
+    "url": "https://www.catasto-rifiuti.isprambiente.it/index.php?pg=detComune&aa=2024&regidb=05&nomereg=Veneto&providb=027&nomeprov=Venezia&regid=05027042&nomecom=Venezia&cerca=cerca&&p=1"
+   },
+   "note_sv": "173 318 ton delat med 249 466 invånare; besökarnas avfall räknas på de bofasta, därav det höga värdet. Veneto 524,95 kg och Italien 507,90 kg (2024); 709 kg år 2010.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_sorteringsgrad",
+   "sdg": [
+    11,
+    12
+   ],
+   "name_sv": "Andel separat insamlat avfall (raccolta differenziata)",
+   "value": 63.72,
+   "unit": "%",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "higher_better",
+   "source": {
+    "title": "Catasto Rifiuti – produzione e raccolta differenziata, Comune di Venezia 2010–2024",
+    "publisher": "ISPRA",
+    "url": "https://www.catasto-rifiuti.isprambiente.it/index.php?pg=detComune&aa=2024&regidb=05&nomereg=Veneto&providb=027&nomeprov=Venezia&regid=05027042&nomecom=Venezia&cerca=cerca&&p=1"
+   },
+   "note_sv": "110 442 av 173 318 ton; 32,65 % år 2010 och högst 65,98 % år 2020. Veneto 78,16 %, Italien 67,69 % (2024); lagens mål är 65 %. Venedig ligger trea bland städer över 200 000 invånare efter Bologna och Padova.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_dorrhamtning_andel",
+   "sdg": [
+    11,
+    12
+   ],
+   "name_sv": "Hushåll med avfallshämtning vid dörren (porta a porta)",
+   "value": 29,
+   "unit": "% av hushållen",
+   "year": 2024,
+   "scope": "Comune di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Ambiente urbano – Anno 2024, tavole Rifiuti urbani, tavola 6.1 (RIFIUTI_URBANI_2024.xlsx i TAVOLE_AMBURB_2024.zip)",
+    "publisher": "ISTAT, Dati ambientali nelle città (september 2026)",
+    "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip"
+   },
+   "note_sv": "29 % av hushållskunderna har hämtning vid dörren, 71 % lämnar i gatukärl. I centro storico hämtas sedan 2016 även torra återvinningsfraktioner vid dörren: sophämtarna går med lätta kärror till kompaktorbåtar, och 35–50 % av vikten lämnar invånarna själva vid 60 fasta platser och tider (kommunen 2023). Under högsäsong töms ca 330 papperskorgar nästan varje timme med fem motorbåtar.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_avlopp_anpassningar",
+   "sdg": [
+    6,
+    14
+   ],
+   "name_sv": "Godkända avloppsanpassningar i centro storico (septiktankar, små reningsverk)",
+   "value": 1800,
+   "unit": "anläggningar",
+   "year": 2004,
+   "scope": "Venezia centro storico",
+   "direction": "higher_better",
+   "source": {
+    "title": "Il sistema di smaltimento delle acque reflue (Insula Quaderni n. 19, 2004)",
+    "publisher": "Insula spa (Comune di Venezia)",
+    "url": "https://www.insula.it/images/pdf/resource/quadernipdf/Q19-14.pdf"
+   },
+   "note_sv": "Nästan 1 800 anpassningar godkända av Magistrato alle Acque, mest septiktankar och fettavskiljare för hotell, barer och restauranger enligt speciallagarna 71/90, 360/91 och 206/95, och 85 små reningsverk för utsläpp över 100 pe; över 1 100 projekt pågick, totalt ca 2 900 planer. Avloppsvattnet når i övrigt kanalerna via septiktankar och de gamla tunnlarna (gatoli); någon andel hushåll anslutna till ett centralt reningsverk har inte hittats.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_septiktank_krav",
+   "sdg": [
+    6,
+    14
+   ],
+   "name_sv": "Krav på septiktankens volym per person i den historiska staden",
+   "value": 0.4,
+   "unit": "m³ per person",
+   "year": 1973,
+   "scope": "Venezia centro storico",
+   "direction": "context",
+   "source": {
+    "title": "Il sistema di smaltimento delle acque reflue (Insula Quaderni n. 19, 2004)",
+    "publisher": "Insula spa (Comune di Venezia)",
+    "url": "https://www.insula.it/images/pdf/resource/quadernipdf/Q19-14.pdf"
+   },
+   "note_sv": "Sedan hygienreglementet 1933 ska hus som leder avloppet till kanal eller till gatoli ha en septiktank före utsläppet; volymen 0,4 m³ per ansluten person fastställdes i DPR 962/1973 och tillämpades fortfarande 2004. Kommunen kräver anpassning när ägaren söker bygglov för renovering; gatoli var i snitt till hälften igensatta.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_marghera_sin",
+   "sdg": [
+    3,
+    6,
+    14
+   ],
+   "name_sv": "Förorenat område av nationellt intresse (SIN) Venezia–Porto Marghera",
+   "value": 1618,
+   "unit": "hektar",
+   "year": 2017,
+   "scope": "Comune di Venezia (Porto Marghera)",
+   "direction": "lower_better",
+   "source": {
+    "title": "SIN Venezia – Porto Marghera (scheda)",
+    "publisher": "Ministero dell'Ambiente e della Sicurezza Energetica (MASE)",
+    "url": "https://bonifichesiticontaminati.mite.gov.it/sin-1/"
+   },
+   "note_sv": "Omfattar nu bara landområden. Före omgränsningen 2013 (DM 144/2013, rättad 2016) ingick 3 221 ha land, 350 ha hamnkanaler och 2 200 ha lagun. Raffinaderi, petrokemi och stålverk har lämnat metaller och PAH i marken och metaller, PAH och klorerade organiska ämnen i grundvattnet; avtal om säkringsarbeten slöts 2020.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_mikroplast_sediment",
+   "sdg": [
+    14,
+    12
+   ],
+   "name_sv": "Mikroplast i lagunens sediment (högsta uppmätta halt)",
+   "value": 2175,
+   "unit": "partiklar per kg torrvikt",
+   "year": 2013,
+   "scope": "Laguna di Venezia",
+   "direction": "lower_better",
+   "source": {
+    "title": "Microplastic particles in sediments of Lagoon of Venice, Italy (Vianello m.fl., Estuarine, Coastal and Shelf Science 130:54–61, 2013)",
+    "publisher": "Aalborg Universitets forskningsportal / Elsevier",
+    "url": "https://vbn.aau.dk/da/publications/microplastic-particles-in-sediments-of-lagoon-of-venice-italy-fir"
+   },
+   "note_sv": "672–2 175 partiklar mindre än 1 mm per kg sediment på tio provplatser, högst nära fastlandet; polyeten och polypropen utgör över 82 % och 93 % är 30–500 µm stora. En enda undersökning, inga tidsserier.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_unesco_inskrivet",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Venedig och dess lagun upptaget på UNESCO:s världsarvslista",
+   "value": 1987,
+   "unit": "år",
+   "year": 1987,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Venezia e la sua Laguna, Patrimonio Mondiale UNESCO – Piano di Gestione 2012–2018",
+    "publisher": "Comune di Venezia (arkiverad hos MASE, va.mite.gov.it)",
+    "url": "https://va.mite.gov.it/File/Documento/122611"
+   },
+   "note_sv": "Världsarv nr 394, upptaget 1987 enligt samtliga sex kulturkriterier (i)–(vi) (UNESCO:s bevarandedokument 2021); området sammanfaller med landskapsskyddet enligt DM 1 augusti 1985 och omfattar lagunkommunerna. Någon buffertzon finns inte: kommittén återremitterade förslaget 2019 och godkände inte det nya 2026 (beslut 48 COM 8B.45).",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_unesco_bevarandebeslut",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Världsarvskommitténs bevarandebeslut om Venedig 2014–2026",
+   "value": 8,
+   "unit": "beslut",
+   "year": 2026,
+   "scope": "Laguna di Venezia",
+   "direction": "context",
+   "source": {
+    "title": "Decision 48 COM 7B.40 – Venice and its Lagoon (Italy)",
+    "publisher": "UNESCO World Heritage Committee (Busan 2026)",
+    "url": "https://whc.unesco.org/en/decisions/9123"
+   },
+   "note_sv": "38 COM 7B.27 (2014), 40 COM 7B.52 (2016), 41 COM 7B.48 (2017), 43 COM 7B.86 (2019), 44 COM 7B.50 (2021), 45 COM 7B.189 (2023), 47 COM 7B.113 (2025) och 48 COM 7B.40 (2026) – egen räkning. Utkasten 2021 och 2023 föreslog listan över hotade världsarv men kommittén antog ändrade beslut; 2025 och 2026 varnade den för att villkoren för en sådan listning kan bli uppfyllda om inte bindande regler för turism, byggnadshöjder och konsekvensbedömningar införs. Nästa rapport ska lämnas 1 februari 2027.",
+   "confidence": "estimate"
+  },
+  {
+   "id": "lag_kulturminnesmarkta_byggnader",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Kulturminnesförklarade byggnader (edifici notificati)",
+   "value": 2742,
+   "unit": "byggnader",
+   "year": 2013,
+   "scope": "Soprintendenza di Venezia (centro storico, öarna och 8 lagunkommuner)",
+   "direction": "context",
+   "source": {
+    "title": "R. Codello: tutela e restauro a Venezia (Ateneo Veneto, CC III serie 12/I, 2013)",
+    "publisher": "Ateneo Veneto",
+    "url": "https://ateneoveneto.org/wp-content/uploads/2023/06/Ateneo-Veneto-CC-III-serie-12_I-2013-estratto-Codello.pdf"
+   },
+   "note_sv": "Enligt dåvarande Soprintendente Renata Codello är Venedigs Soprintendenza Italiens minsta till ytan men tätast med skyddade byggnader; hela området har dessutom sedan 1985 landskapsskydd, så varje ingrepp kräver myndighetens tillstånd. Ett aktuellt antal kyrkor och palats i en primärkälla hittades inte.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_byggnader_fore_1919",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Bostadshus byggda före 1919 i centro storico",
+   "value": 83.1,
+   "unit": "%",
+   "year": 2011,
+   "scope": "Venezia centro storico",
+   "direction": "context",
+   "source": {
+    "title": "Censimento 2011 – variabili censuarie per sezione e area subcomunale (dati-cpa_2011.zip, R05)",
+    "publisher": "Egen beräkning (ursprungskälla: ISTAT, folk- och bostadsräkningen 2011)",
+    "url": "https://www.istat.it/storage/cartografia/variabili-censuarie/dati-cpa_2011.zip"
+   },
+   "note_sv": "6 960 av 8 375 bostadshus i stadsdelarna San Marco–Castello–S. Elena–Cannaregio och Dorsoduro–S. Polo–S. Croce–Giudecca–Sacca Fisola (57 449 invånare 2011); 89,6 % är från före 1946 och 98 % har bärande murverk. Hela kommunen 26,6 %, Veneto 11,7 %, Italien 15,0 % (samma räkning, egen summering).",
+   "confidence": "estimate"
+  },
+  {
+   "id": "lag_byggnader_daligt_skick",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Bostadshus i medelmåttigt eller dåligt skick i centro storico",
+   "value": 26.7,
+   "unit": "%",
+   "year": 2011,
+   "scope": "Venezia centro storico",
+   "direction": "lower_better",
+   "source": {
+    "title": "Censimento 2011 – variabili censuarie per sezione e area subcomunale (dati-cpa_2011.zip, R05)",
+    "publisher": "Egen beräkning (ursprungskälla: ISTAT, folk- och bostadsräkningen 2011)",
+    "url": "https://www.istat.it/storage/cartografia/variabili-censuarie/dati-cpa_2011.zip"
+   },
+   "note_sv": "2 151 hus i 'mediocre' och 88 i 'pessimo' skick av 8 375 (egen summering av census 2011). Italien 16,8 %, Veneto 12,6 % och hela kommunen 13,1 %.",
+   "confidence": "estimate"
+  },
+  {
+   "id": "lag_solceller_byggar_grans",
+   "sdg": [
+    7,
+    11
+   ],
+   "name_sv": "Solpaneler förbjudna på hus byggda före 1945 i den historiska staden",
+   "value": 1945,
+   "unit": "byggår (gräns)",
+   "year": 2022,
+   "scope": "Venezia centro storico (Città Antica)",
+   "direction": "context",
+   "source": {
+    "title": "Pannelli fotovoltaici / solari – abaco DL 17/2022 art. 9 (mars 2022)",
+    "publisher": "Comune di Venezia",
+    "url": "https://www.comune.venezia.it/sites/comune.venezia.it/files/page/files/Abaco_pannelli_DL_17_2022_%20art%209.pdf"
+   },
+   "note_sv": "Kommunens regelöversikt (mars 2022, byggnadsreglementet art. 38.6): på byggnader från före 1945 i Città Antica är solceller och solfångare förbjudna. På senare hus tillåts de bara på plana ytor som tak, terrasser och takplattor (lastrici solari) – aldrig på takfall med munk-och-nunnetegel (coppi) – och nya byggnader får bara integrerade paneler i takfallet; på öarna och fastlandet gäller friare regler.",
+   "confidence": "high"
+  },
+  {
+   "id": "lag_hojning_max_cm",
+   "sdg": [
+    11,
+    13
+   ],
+   "name_sv": "Största praktiska höjning av gator och kajer i historiska kvarter",
+   "value": 20,
+   "unit": "cm",
+   "year": 2002,
+   "scope": "Venezia centro storico (Rialto)",
+   "direction": "context",
+   "source": {
+    "title": "Rialto: il problema e la quota di difesa (Insula Quaderni n. 7, 2002)",
+    "publisher": "Insula spa / Magistrato alle Acque – Consorzio Venezia Nuova",
+    "url": "https://www.insula.it/images/pdf/resource/quadernipdf/Q07-09.pdf"
+   },
+   "note_sv": "Vid Rialto valdes skyddsnivån +100 cm över Punta della Salute-nollan, eftersom marken på sina håll ligger på bara +70 cm. Höjningar på mer än 15–20 cm går nästan aldrig: antalet kritiska trösklar stiger från 6 vid +100 cm till 21 vid +110 och 51 vid +120 cm, och detsamma gäller bottenvåningarnas golv.",
+   "confidence": "medium"
+  },
+  {
+   "id": "lag_forsamlingar_centro_storico",
+   "sdg": [
+    11
+   ],
+   "name_sv": "Katolska församlingar i centro storico",
+   "value": 6,
+   "unit": "församlingar",
+   "year": 2025,
+   "scope": "Venezia centro storico",
+   "direction": "context",
+   "source": {
+    "title": "Nel centro storico di Venezia la rivoluzione delle parrocchie: da 19 a 6 (20 november 2024)",
+    "publisher": "Avvenire (nyhetskälla)",
+    "url": "https://www.avvenire.it/chiesa/chiesa-italiana/nel-centro-storico-di-venezia-la-rivoluzione-delle-parrocchie-da-19-a-6_82951"
+   },
+   "note_sv": "Patriarkatet slog 2025 samman 19 församlingar till 6, med flera kyrkor i varje, på grund av befolkningsminskningen (under 50 000 invånare), färre präster och lägre deltagande. 17 kyrkor tar inträde via föreningen Chorus (patriarken i Finestre sull'Arte 2023). Ett säkert antal kyrkor i centro storico hittades inte.",
+   "confidence": "medium"
+  }
+ ]
+}
