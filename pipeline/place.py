@@ -22,6 +22,16 @@ def search(query: str, limit=5):
     return http_json(url, timeout=30)
 
 
+def best(hits):
+    """The hit to build around: the first, unless it is a boundary and a town, village or district follows.
+    A municipality's point is often far from its town ("Trosa" finds Trosa kommun first, with its point in the
+    woods south of the town)."""
+    kind = lambda h: h.get('category', h.get('class'))
+    if hits and kind(hits[0]) == 'boundary':
+        return next((i for i, h in enumerate(hits, 1) if kind(h) == 'place'), 1)
+    return 1
+
+
 def bbox_around(lat, lon, size_m):
     half = size_m / 2
     dlat = half / EARTH
@@ -33,7 +43,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog='sustainable.py new')
     ap.add_argument('query', help='Town, district, square or address, e.g. "Visby" or "Möllevångstorget, Malmö"')
     ap.add_argument('--size', default='medium', help='small (600 m), medium (1000 m), large (1600 m) or metres')
-    ap.add_argument('--pick', type=int, default=1, help='Use search hit number N')
+    ap.add_argument('--pick', type=int, help='Use search hit number N (default: the first, a town before a municipality)')
     ap.add_argument('--center', help='Override the centre as "lat,lon"')
     ap.add_argument('--slug', help='Folder name under cities/')
     ap.add_argument('--name', help='Display name used in the game title')
@@ -46,12 +56,13 @@ def main(argv=None):
     hits = search(args.query)
     if not hits and not args.center:
         raise SystemExit(f'Nominatim found nothing for "{args.query}". Try adding the country or region.')
+    pick = args.pick or best(hits)
     if hits:
         say('Search hits:')
         for i, h in enumerate(hits, 1):
-            mark = '->' if i == args.pick else '  '
+            mark = '->' if i == pick else '  '
             say(f' {mark} {i}. {h["display_name"]}  [{h.get("category", h.get("class"))}/{h.get("type")}]')
-    hit = hits[min(args.pick, len(hits)) - 1] if hits else {}
+    hit = hits[min(pick, len(hits)) - 1] if hits else {}
     if args.center:
         lat, lon = (float(v) for v in args.center.split(','))
     else:

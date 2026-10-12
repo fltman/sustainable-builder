@@ -262,7 +262,9 @@ def mark(slug, step, **info):
 
 
 def cmd_new(a):
-    args = [a.query, '--size', str(a.size), '--pick', str(a.pick)]
+    args = [a.query, '--size', str(a.size)]
+    if a.pick:
+        args += ['--pick', str(a.pick)]
     if a.center:
         args += ['--center', a.center]
     if a.slug:
@@ -586,7 +588,7 @@ def main():
         p = sub.add_parser(name, help=hlp)
         p.add_argument('query')
         p.add_argument('--size', default='medium', help='small (600 m), medium (1000 m), large (1600 m) or metres')
-        p.add_argument('--pick', type=int, default=1)
+        p.add_argument('--pick', type=int, help='search hit number N (default: the first, a town before a municipality)')
         p.add_argument('--center')
         p.add_argument('--slug')
         p.add_argument('--name')

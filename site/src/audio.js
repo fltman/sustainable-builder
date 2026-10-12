@@ -9,9 +9,10 @@ export function createAudio(){
   let ctx=null,master=null,ambBus=null,voBus=null,musicBus=null,on=false,loaded=null,lastHour=null,voice=null;
   const buffers={},gains={};
   // The place's own voices and soundtrack come from its pack (city/audio), the rest – and a soundtrack
-  // when the place has none – from the engine's (audio/).
+  // when the place has none – from the engine's (audio/). The pack is asked only for clips it has (__PACK__.audio).
   async function load(name){
-    let r=/^(vo-|music)/.test(name)?await fetch(`city/audio/${name}.mp3`).catch(()=>null):null;
+    const own=/^(vo-|music)/.test(name)&&(typeof __PACK__==='undefined'||__PACK__.audio?.includes(name));
+    let r=own?await fetch(`city/audio/${name}.mp3`).catch(()=>null):null;
     if(!r?.ok)r=await fetch(`audio/${name}.mp3`);
     if(!r.ok)throw new Error(name);return ctx.decodeAudioData(await r.arrayBuffer());
   }
